@@ -66,12 +66,12 @@
 
     .line 2
     .line 3
-    invoke-static {v0}, Lʾˉ/ᐧᐧ;->ˉˎ(Ljava/lang/Object;)V
+    invoke-static {v0}, Lʾˉ/ᴵᴵ;->ˉˎ(Ljava/lang/Object;)V
 
     .line 4
     .line 5
     .line 6
-    sget-object v0, Lʾˉ/ᐧᐧ;->ʼˎ:Lʾˉ/ᐧᐧ;
+    sget-object v0, Lʾˉ/ᴵᴵ;->ʼˎ:Lʾˉ/ᴵᴵ;
 
     .line 7
     .line 8
@@ -79,7 +79,7 @@
 
     .line 9
     .line 10
-    invoke-virtual {v0}, Lʾˉ/ᐧᐧ;->ˈˑ()Landroidx/fragment/app/ʿ;
+    invoke-virtual {v0}, Lʾˉ/ᴵᴵ;->ˈˑ()Landroidx/fragment/app/ʿ;
 
     .line 11
     .line 12
@@ -113,11 +113,11 @@
 
     .line 23
     .line 24
-    sget-object v1, Lʾˉ/ᐧᐧ;->ʼˎ:Lʾˉ/ᐧᐧ;
+    sget-object v1, Lʾˉ/ᴵᴵ;->ʼˎ:Lʾˉ/ᴵᴵ;
 
     .line 25
     .line 26
-    invoke-virtual {v1}, Lʾˉ/ᐧᐧ;->ˈˑ()Landroidx/fragment/app/ʿ;
+    invoke-virtual {v1}, Lʾˉ/ᴵᴵ;->ˈˑ()Landroidx/fragment/app/ʿ;
 
     .line 27
     .line 28
@@ -130,7 +130,7 @@
     .line 31
     .line 32
     .line 33
-    sget-object v1, Lʾˉ/ᐧᐧ;->ʽˆ:Landroid/widget/ArrayAdapter;
+    sget-object v1, Lʾˉ/ᴵᴵ;->ʽˆ:Landroid/widget/ArrayAdapter;
 
     .line 34
     .line 35
@@ -146,7 +146,7 @@
     .line 39
     .line 40
     .line 41
-    sget-object v1, Lʾˉ/ᐧᐧ;->ʽˆ:Landroid/widget/ArrayAdapter;
+    sget-object v1, Lʾˉ/ᴵᴵ;->ʽˆ:Landroid/widget/ArrayAdapter;
 
     .line 42
     .line 43

@@ -194,7 +194,7 @@
     return p1
 .end method
 
-.method protected ˊˊ(Lʿʿ/ﹳﹳ;)V
+.method protected ˊˊ(Lʿʿ/ʻʼ;)V
     .locals 3
 
     .line 1
@@ -210,7 +210,7 @@
     move-result v0
 
     .line 7
-    invoke-virtual {p1, v0}, Lʿʿ/ﹳﹳ;->ʻʼ(Z)V
+    invoke-virtual {p1, v0}, Lʿʿ/ʻʼ;->ʻʼ(Z)V
 
     .line 8
     .line 9
@@ -227,7 +227,7 @@
     move-result v0
 
     .line 16
-    invoke-virtual {p1, v0}, Lʿʿ/ﹳﹳ;->ʻʿ(Z)V
+    invoke-virtual {p1, v0}, Lʿʿ/ʻʼ;->ʻʿ(Z)V
 
     .line 17
     .line 18
@@ -272,7 +272,7 @@
 
     .line 37
     .line 38
-    invoke-virtual {p1, v0}, Lʿʿ/ﹳﹳ;->ʻʾ(Ljava/lang/CharSequence;)V
+    invoke-virtual {p1, v0}, Lʿʿ/ʻʼ;->ʻʾ(Ljava/lang/CharSequence;)V
 
     .line 39
     .line 40
@@ -311,7 +311,7 @@
     .line 54
     .line 55
     :goto_1
-    invoke-virtual {p1, v0}, Lʿʿ/ﹳﹳ;->ʻʾ(Ljava/lang/CharSequence;)V
+    invoke-virtual {p1, v0}, Lʿʿ/ʻʼ;->ʻʾ(Ljava/lang/CharSequence;)V
 
     .line 56
     .line 57
@@ -341,7 +341,7 @@
 
     .line 69
     .line 70
-    invoke-virtual {p1, v0}, Lʿʿ/ﹳﹳ;->ʼʾ(Ljava/lang/CharSequence;)V
+    invoke-virtual {p1, v0}, Lʿʿ/ʻʼ;->ʼʾ(Ljava/lang/CharSequence;)V
 
     .line 71
     .line 72
@@ -350,7 +350,7 @@
 
     .line 74
     :cond_3
-    invoke-virtual {p1, v0}, Lʿʿ/ﹳﹳ;->ʻˉ(Ljava/lang/CharSequence;)V
+    invoke-virtual {p1, v0}, Lʿʿ/ʻʼ;->ʻˉ(Ljava/lang/CharSequence;)V
 
     .line 75
     .line 76
@@ -392,7 +392,7 @@
     return-void
 .end method
 
-.method protected ˏˏ(ILʿʿ/ﹳﹳ;)V
+.method protected ˏˏ(ILʿʿ/ʻʼ;)V
     .locals 5
 
     .line 1
@@ -423,7 +423,7 @@
 
     .line 13
     .line 14
-    invoke-virtual {p2, p1}, Lʿʿ/ﹳﹳ;->ʻˉ(Ljava/lang/CharSequence;)V
+    invoke-virtual {p2, p1}, Lʿʿ/ʻʼ;->ʻˉ(Ljava/lang/CharSequence;)V
 
     .line 15
     .line 16
@@ -503,7 +503,7 @@
     move-result-object p1
 
     .line 52
-    invoke-virtual {p2, p1}, Lʿʿ/ﹳﹳ;->ʻˉ(Ljava/lang/CharSequence;)V
+    invoke-virtual {p2, p1}, Lʿʿ/ʻʼ;->ʻˉ(Ljava/lang/CharSequence;)V
 
     .line 53
     .line 54
@@ -521,16 +521,16 @@
     move-result-object p1
 
     .line 61
-    invoke-virtual {p2, p1}, Lʿʿ/ﹳﹳ;->ٴٴ(Landroid/graphics/Rect;)V
+    invoke-virtual {p2, p1}, Lʿʿ/ʻʼ;->ٴٴ(Landroid/graphics/Rect;)V
 
     .line 62
     .line 63
     .line 64
-    sget-object p1, Lʿʿ/ﹳﹳ$ʻ;->ˊ:Lʿʿ/ﹳﹳ$ʻ;
+    sget-object p1, Lʿʿ/ʻʼ$ʻ;->ˊ:Lʿʿ/ʻʼ$ʻ;
 
     .line 65
     .line 66
-    invoke-virtual {p2, p1}, Lʿʿ/ﹳﹳ;->ʼ(Lʿʿ/ﹳﹳ$ʻ;)V
+    invoke-virtual {p2, p1}, Lʿʿ/ʻʼ;->ʼ(Lʿʿ/ʻʼ$ʻ;)V
 
     .line 67
     .line 68
@@ -547,7 +547,7 @@
     move-result p1
 
     .line 75
-    invoke-virtual {p2, p1}, Lʿʿ/ﹳﹳ;->ʻˊ(Z)V
+    invoke-virtual {p2, p1}, Lʿʿ/ʻʼ;->ʻˊ(Z)V
 
     .line 76
     .line 77
@@ -556,7 +556,7 @@
 
     .line 79
     :cond_2
-    invoke-virtual {p2, v1}, Lʿʿ/ﹳﹳ;->ʻˉ(Ljava/lang/CharSequence;)V
+    invoke-virtual {p2, v1}, Lʿʿ/ʻʼ;->ʻˉ(Ljava/lang/CharSequence;)V
 
     .line 80
     .line 81
@@ -569,7 +569,7 @@
     move-result-object p1
 
     .line 86
-    invoke-virtual {p2, p1}, Lʿʿ/ﹳﹳ;->ٴٴ(Landroid/graphics/Rect;)V
+    invoke-virtual {p2, p1}, Lʿʿ/ʻʼ;->ٴٴ(Landroid/graphics/Rect;)V
 
     .line 87
     .line 88

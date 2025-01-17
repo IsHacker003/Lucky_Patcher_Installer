@@ -2284,7 +2284,7 @@
     .line 44
     const-string v7, "found"
 
-    invoke-static {v7}, Lʾˉ/ᐧᐧ;->ˉˎ(Ljava/lang/Object;)V
+    invoke-static {v7}, Lʾˉ/ᴵᴵ;->ˉˎ(Ljava/lang/Object;)V
 
     .line 45
     new-instance v7, Ljava/io/File;
@@ -2557,7 +2557,7 @@
 
     move-result-object v14
 
-    invoke-static {v14}, Lʾˉ/ᐧᐧ;->ˉˎ(Ljava/lang/Object;)V
+    invoke-static {v14}, Lʾˉ/ᴵᴵ;->ˉˎ(Ljava/lang/Object;)V
     :try_end_c
     .catch Ljava/lang/Exception; {:try_start_c .. :try_end_c} :catch_5
     .catchall {:try_start_c .. :try_end_c} :catchall_2
@@ -2635,7 +2635,7 @@
 
     move-result-object v3
 
-    invoke-static {v3}, Lʾˉ/ᐧᐧ;->ˉˎ(Ljava/lang/Object;)V
+    invoke-static {v3}, Lʾˉ/ᴵᴵ;->ˉˎ(Ljava/lang/Object;)V
     :try_end_d
     .catch Ljava/lang/Exception; {:try_start_d .. :try_end_d} :catch_4
     .catchall {:try_start_d .. :try_end_d} :catchall_2
@@ -2951,7 +2951,7 @@
     :try_start_16
     const-string v3, "empty certificates from scheme v1 signing"
 
-    invoke-static {v3}, Lʾˉ/ᐧᐧ;->ˉˎ(Ljava/lang/Object;)V
+    invoke-static {v3}, Lʾˉ/ᴵᴵ;->ˉˎ(Ljava/lang/Object;)V
     :try_end_16
     .catchall {:try_start_16 .. :try_end_16} :catchall_6
 
@@ -3579,7 +3579,7 @@
     :try_end_2a
     .catchall {:try_start_2a .. :try_end_2a} :catchall_8
 
-    const v25, 0x7f1103c7
+    const v25, 0x7f1103c9
 
     move-object/from16 v32, v5
 

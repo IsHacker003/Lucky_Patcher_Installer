@@ -9,6 +9,7 @@
 # annotations
 .annotation system Ldalvik/annotation/MemberClasses;
     value = {
+        Lcom/android/vending/licensing/ILicensingService$ʼ;,
         Lcom/android/vending/licensing/ILicensingService$ʻ;
     }
 .end annotation

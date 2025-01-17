@@ -64,7 +64,7 @@
 
     .line 10
     :sswitch_0
-    invoke-static {}, Lʾˉ/ᐧᐧ;->ˈˏ()Landroid/content/SharedPreferences;
+    invoke-static {}, Lʾˉ/ᴵᴵ;->ˈˏ()Landroid/content/SharedPreferences;
 
     .line 11
     .line 12
@@ -96,7 +96,7 @@
     .line 24
     .line 25
     .line 26
-    invoke-static {}, Lʾˉ/ᐧᐧ;->ˈˏ()Landroid/content/SharedPreferences;
+    invoke-static {}, Lʾˉ/ᴵᴵ;->ˈˏ()Landroid/content/SharedPreferences;
 
     .line 27
     .line 28
@@ -125,7 +125,7 @@
     .line 39
     .line 40
     .line 41
-    sput-boolean v1, Lʾˉ/ᐧᐧ;->ʼˊ:Z
+    sput-boolean v1, Lʾˉ/ᴵᴵ;->ʼˊ:Z
 
     .line 42
     .line 43
@@ -133,7 +133,7 @@
 
     .line 44
     :sswitch_1
-    invoke-static {}, Lʾˉ/ᐧᐧ;->ˈˏ()Landroid/content/SharedPreferences;
+    invoke-static {}, Lʾˉ/ᴵᴵ;->ˈˏ()Landroid/content/SharedPreferences;
 
     .line 45
     .line 46
@@ -162,7 +162,7 @@
     .line 57
     .line 58
     .line 59
-    invoke-static {}, Lʾˉ/ᐧᐧ;->ˈˏ()Landroid/content/SharedPreferences;
+    invoke-static {}, Lʾˉ/ᴵᴵ;->ˈˏ()Landroid/content/SharedPreferences;
 
     .line 60
     .line 61
@@ -191,7 +191,7 @@
     .line 72
     .line 73
     .line 74
-    sput-boolean v1, Lʾˉ/ᐧᐧ;->ʼˊ:Z
+    sput-boolean v1, Lʾˉ/ᴵᴵ;->ʼˊ:Z
 
     .line 75
     .line 76
@@ -199,7 +199,7 @@
 
     .line 77
     :sswitch_2
-    invoke-static {}, Lʾˉ/ᐧᐧ;->ˈˏ()Landroid/content/SharedPreferences;
+    invoke-static {}, Lʾˉ/ᴵᴵ;->ˈˏ()Landroid/content/SharedPreferences;
 
     .line 78
     .line 79
@@ -231,7 +231,7 @@
     .line 91
     .line 92
     .line 93
-    invoke-static {}, Lʾˉ/ᐧᐧ;->ˈˏ()Landroid/content/SharedPreferences;
+    invoke-static {}, Lʾˉ/ᴵᴵ;->ˈˏ()Landroid/content/SharedPreferences;
 
     .line 94
     .line 95
@@ -260,7 +260,7 @@
     .line 106
     .line 107
     .line 108
-    sput-boolean v1, Lʾˉ/ᐧᐧ;->ʼˊ:Z
+    sput-boolean v1, Lʾˉ/ᴵᴵ;->ʼˊ:Z
 
     .line 109
     .line 110

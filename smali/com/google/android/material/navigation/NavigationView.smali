@@ -1782,7 +1782,7 @@
     return-void
 .end method
 
-.method protected ʻ(Lʼʼ/ʽٴ;)V
+.method protected ʻ(Lʼʼ/ʽᴵ;)V
     .locals 1
 
     .line 1
@@ -1790,7 +1790,7 @@
 
     .line 2
     .line 3
-    invoke-virtual {v0, p1}, Lcom/google/android/material/internal/ˊ;->ˏ(Lʼʼ/ʽٴ;)V
+    invoke-virtual {v0, p1}, Lcom/google/android/material/internal/ˊ;->ˏ(Lʼʼ/ʽᴵ;)V
 
     .line 4
     .line 5

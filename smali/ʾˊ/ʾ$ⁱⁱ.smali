@@ -82,7 +82,7 @@
 
     .line 9
     .line 10
-    invoke-static {}, Lʾˉ/ᐧᐧ;->ˈי()Landroid/content/Context;
+    invoke-static {}, Lʾˉ/ᴵᴵ;->ˈי()Landroid/content/Context;
 
     .line 11
     .line 12
@@ -254,7 +254,7 @@
     move-result-object v5
 
     .line 96
-    invoke-static {}, Lʾˉ/ᐧᐧ;->ˈᵢ()I
+    invoke-static {}, Lʾˉ/ᴵᴵ;->ˈᵢ()I
 
     .line 97
     .line 98
@@ -275,7 +275,7 @@
     move-result-object v5
 
     .line 107
-    invoke-static {}, Lʾˉ/ᐧᐧ;->ˈᵢ()I
+    invoke-static {}, Lʾˉ/ᴵᴵ;->ˈᵢ()I
 
     .line 108
     .line 109
@@ -296,7 +296,7 @@
     move-result-object v5
 
     .line 118
-    invoke-static {}, Lʾˉ/ᐧᐧ;->ˈᵢ()I
+    invoke-static {}, Lʾˉ/ᴵᴵ;->ˈᵢ()I
 
     .line 119
     .line 120
@@ -309,7 +309,7 @@
     .line 123
     .line 124
     .line 125
-    invoke-static {}, Lʾˉ/ᐧᐧ;->ˈᵔ()Landroid/content/res/Resources;
+    invoke-static {}, Lʾˉ/ᴵᴵ;->ˈᵔ()Landroid/content/res/Resources;
 
     .line 126
     .line 127
@@ -366,12 +366,12 @@
 
     .line 153
     .line 154
-    const v6, 0x7f11040d
+    const v6, 0x7f11040f
 
     .line 155
     .line 156
     .line 157
-    const v11, 0x7f11040b
+    const v11, 0x7f11040d
 
     .line 158
     .line 159
@@ -814,7 +814,7 @@
     .line 386
     .line 387
     .line 388
-    const v2, 0x7f110404
+    const v2, 0x7f110406
 
     .line 389
     .line 390
@@ -945,7 +945,7 @@
     .line 456
     .line 457
     .line 458
-    const v1, 0x7f110406
+    const v1, 0x7f110408
 
     .line 459
     .line 460
@@ -1008,7 +1008,7 @@
     .line 489
     .line 490
     .line 491
-    const v1, 0x7f110403
+    const v1, 0x7f110405
 
     .line 492
     .line 493
@@ -1083,7 +1083,7 @@
     .line 530
     .line 531
     .line 532
-    const v2, 0x7f11040a
+    const v2, 0x7f11040c
 
     .line 533
     .line 534
@@ -1154,7 +1154,7 @@
     .line 569
     .line 570
     .line 571
-    const v1, 0x7f11040c
+    const v1, 0x7f11040e
 
     .line 572
     .line 573

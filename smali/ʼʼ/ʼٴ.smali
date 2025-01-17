@@ -4,13 +4,13 @@
 
 
 # direct methods
-.method public static bridge synthetic ʻ(Landroid/view/View;)Z
+.method public static bridge synthetic ʻ(Landroid/view/View;)Ljava/lang/CharSequence;
     .locals 0
 
     .line 1
-    invoke-virtual {p0}, Landroid/view/View;->isAccessibilityHeading()Z
+    invoke-virtual {p0}, Landroid/view/View;->getStateDescription()Ljava/lang/CharSequence;
 
-    move-result p0
+    move-result-object p0
 
-    return p0
+    return-object p0
 .end method

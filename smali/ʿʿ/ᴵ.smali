@@ -4,11 +4,11 @@
 
 
 # direct methods
-.method public static bridge synthetic ʻ(Landroid/view/accessibility/AccessibilityNodeInfo;Landroid/view/accessibility/AccessibilityNodeInfo$AccessibilityAction;)Z
+.method public static bridge synthetic ʻ(Landroid/view/accessibility/AccessibilityNodeInfo;)Z
     .locals 0
 
     .line 1
-    invoke-virtual {p0, p1}, Landroid/view/accessibility/AccessibilityNodeInfo;->removeAction(Landroid/view/accessibility/AccessibilityNodeInfo$AccessibilityAction;)Z
+    invoke-virtual {p0}, Landroid/view/accessibility/AccessibilityNodeInfo;->isAccessibilityFocused()Z
 
     move-result p0
 

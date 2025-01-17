@@ -324,12 +324,12 @@
 
     .line 21
     .line 22
-    invoke-static {p1, v1}, Lʾʾ/ʽ;->ʾ(Landroid/view/inputmethod/EditorInfo;[Ljava/lang/String;)V
+    invoke-static {p1, v1}, Lʾʾ/ʾ;->ʾ(Landroid/view/inputmethod/EditorInfo;[Ljava/lang/String;)V
 
     .line 23
     .line 24
     .line 25
-    invoke-static {p0}, Landroidx/appcompat/widget/ﾞ;->ʻ(Landroid/view/View;)Lʾʾ/ʾ$ʽ;
+    invoke-static {p0}, Landroidx/appcompat/widget/ﾞ;->ʻ(Landroid/view/View;)Lʾʾ/ʿ$ʽ;
 
     .line 26
     .line 27
@@ -337,7 +337,7 @@
     move-result-object v1
 
     .line 29
-    invoke-static {v0, p1, v1}, Lʾʾ/ʾ;->ʻ(Landroid/view/inputmethod/InputConnection;Landroid/view/inputmethod/EditorInfo;Lʾʾ/ʾ$ʽ;)Landroid/view/inputmethod/InputConnection;
+    invoke-static {v0, p1, v1}, Lʾʾ/ʿ;->ʻ(Landroid/view/inputmethod/InputConnection;Landroid/view/inputmethod/EditorInfo;Lʾʾ/ʿ$ʽ;)Landroid/view/inputmethod/InputConnection;
 
     .line 30
     .line 31

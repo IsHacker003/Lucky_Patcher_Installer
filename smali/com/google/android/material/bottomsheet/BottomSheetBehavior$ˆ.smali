@@ -3,12 +3,12 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lʿʿ/ʻˊ;
+.implements Lʿʿ/ʻˏ;
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/google/android/material/bottomsheet/BottomSheetBehavior;->ﹳﹳ(I)Lʿʿ/ʻˊ;
+    value = Lcom/google/android/material/bottomsheet/BottomSheetBehavior;->ﹳﹳ(I)Lʿʿ/ʻˏ;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -46,7 +46,7 @@
 
 
 # virtual methods
-.method public ʻ(Landroid/view/View;Lʿʿ/ʻˊ$ʻ;)Z
+.method public ʻ(Landroid/view/View;Lʿʿ/ʻˏ$ʻ;)Z
     .locals 0
 
     .line 1

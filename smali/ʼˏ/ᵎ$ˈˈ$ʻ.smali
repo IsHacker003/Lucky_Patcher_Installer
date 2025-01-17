@@ -44,7 +44,7 @@
     .locals 4
 
     .line 1
-    sget-boolean p1, Lʾˉ/ᐧᐧ;->ʽﾞ:Z
+    sget-boolean p1, Lʾˉ/ᴵᴵ;->ʽﾞ:Z
 
     .line 2
     .line 3
@@ -92,7 +92,7 @@
     .line 24
     .line 25
     .line 26
-    sget-object v0, Lʾˉ/ᐧᐧ;->ʼᐧ:Ljava/lang/String;
+    sget-object v0, Lʾˉ/ᴵᴵ;->ʼᐧ:Ljava/lang/String;
 
     .line 27
     .line 28
@@ -216,7 +216,7 @@
 
     .line 89
     .line 90
-    invoke-static {}, Lʾˉ/ᐧᐧ;->ˈי()Landroid/content/Context;
+    invoke-static {}, Lʾˉ/ᴵᴵ;->ˈי()Landroid/content/Context;
 
     .line 91
     .line 92
@@ -232,11 +232,11 @@
     .line 96
     .line 97
     .line 98
-    sput-object p2, Lʾˉ/ᐧᐧ;->ˉˑ:Lʾˉ/ˎ;
+    sput-object p2, Lʾˉ/ᴵᴵ;->ˉˑ:Lʾˉ/ˎ;
 
     .line 99
     .line 100
-    sget-object p1, Lʾˉ/ᐧᐧ;->ʼﾞ:Lru/aaaaacax/installer/MainActivity;
+    sget-object p1, Lʾˉ/ᴵᴵ;->ʼﾞ:Lru/aaaaacay/installer/MainActivity;
 
     .line 101
     .line 102
@@ -248,7 +248,7 @@
 
     .line 105
     .line 106
-    sget v0, Lʾˉ/ᐧᐧ;->ˉᐧ:I
+    sget v0, Lʾˉ/ᴵᴵ;->ˉᐧ:I
 
     .line 107
     .line 108
@@ -269,11 +269,11 @@
 
     .line 116
     :cond_1
-    sget-object p2, Lʾˉ/ᐧᐧ;->ʼﾞ:Lru/aaaaacax/installer/MainActivity;
+    sget-object p2, Lʾˉ/ᴵᴵ;->ʼﾞ:Lru/aaaaacay/installer/MainActivity;
 
     .line 117
     .line 118
-    sget v0, Lʾˉ/ᐧᐧ;->ˉᵎ:I
+    sget v0, Lʾˉ/ᴵᴵ;->ˉᵎ:I
 
     .line 119
     .line 120

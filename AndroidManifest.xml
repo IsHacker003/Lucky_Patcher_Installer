@@ -1,21 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
-<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:compileSdkVersion="29" android:compileSdkVersionCodename="10" android:installLocation="internalOnly" package="ru.aaaaacax.installer" platformBuildVersionCode="29" platformBuildVersionName="10">
-    <uses-permission android:name="android.permission.BLUETOOTH"/>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:compileSdkVersion="32" android:compileSdkVersionCodename="12" android:installLocation="internalOnly" package="ru.aaaaacay.installer" platformBuildVersionCode="32" platformBuildVersionName="12">
     <uses-permission android:name="com.android.vending.BILLING"/>
     <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
     <uses-permission android:name="android.permission.ACCESS_SUPERUSER"/>
     <uses-permission android:name="android.permission.INTERNET"/>
     <uses-permission android:name="android.permission.VIBRATE"/>
     <uses-permission android:name="com.android.vending.CHECK_LICENSE"/>
-    <uses-permission android:name="android.permission.INTERACT_ACROSS_USERS_FULL"/>
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
     <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
     <uses-permission android:name="android.permission.KILL_BACKGROUND_PROCESSES"/>
-    <uses-permission android:name="android.permission.WRITE_SETTINGS"/>
     <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES"/>
     <uses-permission android:name="android.permission.REQUEST_DELETE_PACKAGES"/>
+    <uses-permission android:name="android.permission.QUERY_ALL_PACKAGES"/>
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
-    <uses-permission android:name="android.permission.WRITE_MEDIA_STORAGE"/>
     <uses-permission android:name="android.permission.MANAGE_EXTERNAL_STORAGE"/>
     <uses-permission android:name="android.permission.REORDER_TASKS"/>
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
@@ -23,12 +20,7 @@
     <uses-permission android:name="oppo.permission.OPPO_COMPONENT_SAFE"/>
     <uses-permission android:name="android.permission.WAKE_LOCK"/>
     <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
-    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
-    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
-    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION"/>
     <uses-permission android:name="android.permission.FOREGROUND_SERVICE"/>
-    <uses-permission android:maxSdkVersion="23" android:name="android.permission.GET_TASKS"/>
-    <uses-permission android:name="android.permission.BATTERY_STATS"/>
     <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
     <uses-feature android:name="android.hardware.location.network"/>
     <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE"/>
@@ -43,14 +35,14 @@
         <package android:name="com.huawei.appmarket"/>
     </queries>
     <uses-permission android:name="com.google.android.gms.permission.AD_ID"/>
-    <application android:allowBackup="true" android:appComponentFactory="androidx.core.app.CoreComponentFactory" android:banner="@drawable/ic_launcher" android:debuggable="false" android:hardwareAccelerated="true" android:icon="@drawable/ic_launcher" android:label=" LP  Installer " android:largeHeap="true" android:name="ru.aaaaacax.installer.App" android:networkSecurityConfig="@xml/network_config" android:requestLegacyExternalStorage="true" android:testOnly="false" android:theme="@style/Theme.MyTheme" android:usesCleartextTraffic="true">
+    <application android:allowBackup="true" android:appComponentFactory="androidx.core.app.CoreComponentFactory" android:banner="@drawable/ic_launcher" android:debuggable="false" android:hardwareAccelerated="true" android:icon="@drawable/ic_launcher" android:label=" LP  Installer " android:largeHeap="true" android:name="ru.aaaaacay.installer.App" android:networkSecurityConfig="@xml/network_config" android:requestLegacyExternalStorage="true" android:testOnly="false" android:theme="@style/Theme.MyTheme" android:usesCleartextTraffic="true">
         <meta-data android:name="xposedmodule" android:value="true"/>
         <meta-data android:name="xposeddescription" android:value=" LP  Installer "/>
         <meta-data android:name="xposedscope" android:resource="@array/scope"/>
         <meta-data android:name="xposedminversion" android:value="82"/>
         <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"/>
         <meta-data android:name="android.support" android:value="\@$#"/>
-        <activity android:clearTaskOnLaunch="true" android:configChanges="keyboardHidden|locale|orientation|screenSize" android:exported="true" android:label=" LP  Installer " android:launchMode="singleTask" android:name="ru.aaaaacax.installer.MainActivity" android:stateNotNeeded="true">
+        <activity android:clearTaskOnLaunch="true" android:configChanges="keyboardHidden|locale|orientation|screenSize" android:exported="true" android:label=" LP  Installer " android:launchMode="singleTask" android:name="ru.aaaaacay.installer.MainActivity" android:stateNotNeeded="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
             </intent-filter>
@@ -74,7 +66,8 @@
                 <action android:name="android.intent.action.VIEW"/>
                 <category android:name="android.intent.category.DEFAULT"/>
                 <category android:name="android.intent.category.BROWSABLE"/>
-                <data android:host="*" android:mimeType="*/*"/>
+                <data android:host="*"/>
+                <data android:mimeType="*/*"/>
                 <data android:scheme="content"/>
                 <data android:scheme="file"/>
                 <data android:pathPattern=".*\\.lpzip"/>
@@ -97,8 +90,10 @@
                 <action android:name="android.intent.action.VIEW"/>
                 <category android:name="android.intent.category.DEFAULT"/>
                 <category android:name="android.intent.category.BROWSABLE"/>
-                <data android:host="*" android:scheme="http"/>
-                <data android:host="*" android:scheme="https"/>
+                <data android:scheme="http"/>
+                <data android:host="*"/>
+                <data android:scheme="https"/>
+                <data android:host="*"/>
                 <data android:pathPattern=".*\\.lpzip"/>
                 <data android:pathPattern=".*\\..*\\.lpzip"/>
                 <data android:pathPattern=".*\\..*\\..*\\.lpzip"/>
@@ -119,7 +114,8 @@
                 <action android:name="android.intent.action.VIEW"/>
                 <category android:name="android.intent.category.DEFAULT"/>
                 <category android:name="android.intent.category.BROWSABLE"/>
-                <data android:host="*" android:mimeType="*/*"/>
+                <data android:host="*"/>
+                <data android:mimeType="*/*"/>
                 <data android:scheme="content"/>
                 <data android:scheme="file"/>
                 <data android:pathPattern=".*\\.apks"/>
@@ -142,8 +138,10 @@
                 <action android:name="android.intent.action.VIEW"/>
                 <category android:name="android.intent.category.DEFAULT"/>
                 <category android:name="android.intent.category.BROWSABLE"/>
-                <data android:host="*" android:scheme="http"/>
-                <data android:host="*" android:scheme="https"/>
+                <data android:scheme="http"/>
+                <data android:host="*"/>
+                <data android:scheme="https"/>
+                <data android:host="*"/>
                 <data android:pathPattern=".*\\.apks"/>
                 <data android:pathPattern=".*\\..*\\.apks"/>
                 <data android:pathPattern=".*\\..*\\..*\\.apks"/>
@@ -164,7 +162,8 @@
                 <action android:name="android.intent.action.VIEW"/>
                 <category android:name="android.intent.category.DEFAULT"/>
                 <category android:name="android.intent.category.BROWSABLE"/>
-                <data android:host="*" android:mimeType="*/*"/>
+                <data android:host="*"/>
+                <data android:mimeType="*/*"/>
                 <data android:scheme="content"/>
                 <data android:scheme="file"/>
                 <data android:pathPattern=".*\\.xapk"/>
@@ -187,8 +186,10 @@
                 <action android:name="android.intent.action.VIEW"/>
                 <category android:name="android.intent.category.DEFAULT"/>
                 <category android:name="android.intent.category.BROWSABLE"/>
-                <data android:host="*" android:scheme="http"/>
-                <data android:host="*" android:scheme="https"/>
+                <data android:scheme="http"/>
+                <data android:host="*"/>
+                <data android:scheme="https"/>
+                <data android:host="*"/>
                 <data android:pathPattern=".*\\.xapk"/>
                 <data android:pathPattern=".*\\..*\\.xapk"/>
                 <data android:pathPattern=".*\\..*\\..*\\.xapk"/>
@@ -209,7 +210,8 @@
                 <action android:name="android.intent.action.VIEW"/>
                 <category android:name="android.intent.category.DEFAULT"/>
                 <category android:name="android.intent.category.BROWSABLE"/>
-                <data android:host="*" android:mimeType="*/*"/>
+                <data android:host="*"/>
+                <data android:mimeType="*/*"/>
                 <data android:scheme="content"/>
                 <data android:scheme="file"/>
                 <data android:pathPattern=".*\\.apkm"/>
@@ -232,8 +234,10 @@
                 <action android:name="android.intent.action.VIEW"/>
                 <category android:name="android.intent.category.DEFAULT"/>
                 <category android:name="android.intent.category.BROWSABLE"/>
-                <data android:host="*" android:scheme="http"/>
-                <data android:host="*" android:scheme="https"/>
+                <data android:scheme="http"/>
+                <data android:host="*"/>
+                <data android:scheme="https"/>
+                <data android:host="*"/>
                 <data android:pathPattern=".*\\.apkm"/>
                 <data android:pathPattern=".*\\..*\\.apkm"/>
                 <data android:pathPattern=".*\\..*\\..*\\.apkm"/>
@@ -254,7 +258,8 @@
                 <action android:name="android.intent.action.VIEW"/>
                 <category android:name="android.intent.category.DEFAULT"/>
                 <category android:name="android.intent.category.BROWSABLE"/>
-                <data android:host="*" android:mimeType="*/*"/>
+                <data android:host="*"/>
+                <data android:mimeType="*/*"/>
                 <data android:scheme="content"/>
                 <data android:scheme="file"/>
                 <data android:pathPattern=".*\\.@$#"/>
@@ -296,7 +301,7 @@
                 <data android:pathPattern=".*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\..*\\.@$#"/>
             </intent-filter>
         </activity>
-        <activity-alias android:enabled="true" android:icon="@drawable/ic_launcher" android:label=" LP  Installer " android:name="ru.aaaaacax.installer.MainActivity1" android:targetActivity="ru.aaaaacax.installer.MainActivity">
+        <activity-alias android:enabled="true" android:exported="true" android:icon="@drawable/ic_launcher" android:label=" LP  Installer " android:name="ru.aaaaacay.installer.MainActivity1" android:targetActivity="ru.aaaaacay.installer.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
                 <category android:name="android.intent.category.LAUNCHER"/>
@@ -306,7 +311,7 @@
                 <category android:name="android.intent.category.LEANBACK_LAUNCHER"/>
             </intent-filter>
         </activity-alias>
-        <activity-alias android:enabled="false" android:icon="@mipmap/ic_launcher2" android:label=" LP  Installer " android:name="ru.aaaaacax.installer.MainActivity10" android:targetActivity="ru.aaaaacax.installer.MainActivity">
+        <activity-alias android:enabled="false" android:exported="true" android:icon="@mipmap/ic_launcher2" android:label=" LP  Installer " android:name="ru.aaaaacay.installer.MainActivity10" android:targetActivity="ru.aaaaacay.installer.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
                 <category android:name="android.intent.category.LAUNCHER"/>
@@ -316,7 +321,7 @@
                 <category android:name="android.intent.category.LEANBACK_LAUNCHER"/>
             </intent-filter>
         </activity-alias>
-        <activity-alias android:enabled="false" android:icon="@mipmap/ic_launcher3" android:label=" LP  Installer " android:name="ru.aaaaacax.installer.MainActivity2" android:targetActivity="ru.aaaaacax.installer.MainActivity">
+        <activity-alias android:enabled="false" android:exported="true" android:icon="@mipmap/ic_launcher3" android:label=" LP  Installer " android:name="ru.aaaaacay.installer.MainActivity2" android:targetActivity="ru.aaaaacay.installer.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
                 <category android:name="android.intent.category.LAUNCHER"/>
@@ -326,7 +331,7 @@
                 <category android:name="android.intent.category.LEANBACK_LAUNCHER"/>
             </intent-filter>
         </activity-alias>
-        <activity-alias android:enabled="false" android:icon="@mipmap/ic_launcher4" android:label=" LP  Installer " android:name="ru.aaaaacax.installer.MainActivity3" android:targetActivity="ru.aaaaacax.installer.MainActivity">
+        <activity-alias android:enabled="false" android:exported="true" android:icon="@mipmap/ic_launcher4" android:label=" LP  Installer " android:name="ru.aaaaacay.installer.MainActivity3" android:targetActivity="ru.aaaaacay.installer.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
                 <category android:name="android.intent.category.LAUNCHER"/>
@@ -336,7 +341,7 @@
                 <category android:name="android.intent.category.LEANBACK_LAUNCHER"/>
             </intent-filter>
         </activity-alias>
-        <activity-alias android:enabled="false" android:icon="@mipmap/ic_launcher5" android:label=" LP  Installer " android:name="ru.aaaaacax.installer.MainActivity4" android:targetActivity="ru.aaaaacax.installer.MainActivity">
+        <activity-alias android:enabled="false" android:exported="true" android:icon="@mipmap/ic_launcher5" android:label=" LP  Installer " android:name="ru.aaaaacay.installer.MainActivity4" android:targetActivity="ru.aaaaacay.installer.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
                 <category android:name="android.intent.category.LAUNCHER"/>
@@ -346,7 +351,7 @@
                 <category android:name="android.intent.category.LEANBACK_LAUNCHER"/>
             </intent-filter>
         </activity-alias>
-        <activity-alias android:enabled="false" android:icon="@mipmap/ic_launcher6" android:label=" LP  Installer " android:name="ru.aaaaacax.installer.MainActivity5" android:targetActivity="ru.aaaaacax.installer.MainActivity">
+        <activity-alias android:enabled="false" android:exported="true" android:icon="@mipmap/ic_launcher6" android:label=" LP  Installer " android:name="ru.aaaaacay.installer.MainActivity5" android:targetActivity="ru.aaaaacay.installer.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
                 <category android:name="android.intent.category.LAUNCHER"/>
@@ -356,7 +361,7 @@
                 <category android:name="android.intent.category.LEANBACK_LAUNCHER"/>
             </intent-filter>
         </activity-alias>
-        <activity-alias android:enabled="false" android:icon="@mipmap/ic_launcher7" android:label=" LP  Installer " android:name="ru.aaaaacax.installer.MainActivity6" android:targetActivity="ru.aaaaacax.installer.MainActivity">
+        <activity-alias android:enabled="false" android:exported="true" android:icon="@mipmap/ic_launcher7" android:label=" LP  Installer " android:name="ru.aaaaacay.installer.MainActivity6" android:targetActivity="ru.aaaaacay.installer.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
                 <category android:name="android.intent.category.LAUNCHER"/>
@@ -366,7 +371,7 @@
                 <category android:name="android.intent.category.LEANBACK_LAUNCHER"/>
             </intent-filter>
         </activity-alias>
-        <activity-alias android:enabled="false" android:icon="@mipmap/ic_launcher8" android:label=" LP  Installer " android:name="ru.aaaaacax.installer.MainActivity7" android:targetActivity="ru.aaaaacax.installer.MainActivity">
+        <activity-alias android:enabled="false" android:exported="true" android:icon="@mipmap/ic_launcher8" android:label=" LP  Installer " android:name="ru.aaaaacay.installer.MainActivity7" android:targetActivity="ru.aaaaacay.installer.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
                 <category android:name="android.intent.category.LAUNCHER"/>
@@ -376,15 +381,15 @@
                 <category android:name="android.intent.category.LEANBACK_LAUNCHER"/>
             </intent-filter>
         </activity-alias>
-        <activity android:clearTaskOnLaunch="true" android:configChanges="keyboardHidden|locale|orientation|screenSize" android:launchMode="singleInstance" android:name="ru.aaaaacax.installer.SetPrefs" android:stateNotNeeded="true">
+        <activity android:clearTaskOnLaunch="true" android:configChanges="keyboardHidden|locale|orientation|screenSize" android:exported="true" android:launchMode="singleInstance" android:name="ru.aaaaacay.installer.SetPrefs" android:stateNotNeeded="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
                 <category android:name="android.intent.category.DEFAULT"/>
             </intent-filter>
         </activity>
-        <activity android:clearTaskOnLaunch="true" android:configChanges="keyboardHidden|locale|orientation|screenSize" android:launchMode="singleInstance" android:name="ru.aaaaacax.installer.BinderActivity" android:stateNotNeeded="true"/>
-        <activity android:configChanges="keyboardHidden|locale|orientation|screenSize" android:name="com.google.android.finsky.billing.iab.BuyActivity" android:theme="@style/buydialogstyle"/>
-        <receiver android:name="ru.aaaaacax.installer.PackageChangeReceiver">
+        <activity android:clearTaskOnLaunch="true" android:configChanges="keyboardHidden|locale|orientation|screenSize" android:exported="true" android:launchMode="singleInstance" android:name="ru.aaaaacay.installer.BinderActivity" android:stateNotNeeded="true"/>
+        <activity android:configChanges="keyboardHidden|locale|orientation|screenSize" android:exported="true" android:name="com.google.android.finsky.billing.iab.BuyActivity" android:theme="@style/buydialogstyle"/>
+        <receiver android:exported="true" android:name="ru.aaaaacay.installer.PackageChangeReceiver">
             <intent-filter>
                 <action android:name="android.intent.action.PACKAGE_REMOVED"/>
                 <action android:name="android.intent.action.PACKAGE_REPLACED"/>
@@ -393,12 +398,12 @@
                 <data android:scheme="package"/>
             </intent-filter>
         </receiver>
-        <receiver android:name="ru.aaaaacax.installer.OnAlarmReceiver">
+        <receiver android:exported="true" android:name="ru.aaaaacay.installer.OnAlarmReceiver">
             <intent-filter>
                 <action android:name="com.ui.OnAlarmReceiver.ACTION_WIDGET_RECEIVER"/>
             </intent-filter>
         </receiver>
-        <receiver android:name="ru.aaaaacax.installer.BinderBootReceiver" android:permission="android.permission.RECEIVE_BOOT_COMPLETED">
+        <receiver android:exported="true" android:name="ru.aaaaacay.installer.BinderBootReceiver" android:permission="android.permission.RECEIVE_BOOT_COMPLETED">
             <intent-filter>
                 <action android:name="android.intent.action.BOOT_COMPLETED"/>
                 <action android:name="android.intent.action.MEDIA_SCANNER_FINISHED"/>
@@ -410,7 +415,7 @@
                 <data android:scheme="file"/>
             </intent-filter>
         </receiver>
-        <receiver android:name="ru.aaaaacax.installer.OnBootReceiver" android:permission="android.permission.RECEIVE_BOOT_COMPLETED">
+        <receiver android:exported="true" android:name="ru.aaaaacay.installer.OnBootReceiver" android:permission="android.permission.RECEIVE_BOOT_COMPLETED">
             <intent-filter>
                 <action android:name="android.intent.action.BOOT_COMPLETED"/>
                 <action android:name="android.intent.action.EXTERNAL_APPLICATIONS_AVAILABLE"/>
@@ -420,21 +425,21 @@
                 <action android:name="android.intent.action.MY_PACKAGE_REPLACED"/>
             </intent-filter>
         </receiver>
-        <service android:enabled="true" android:name="ru.aaaaacax.installer.NotificationService"/>
-        <service android:enabled="true" android:name="ru.aaaaacax.installer.PatchService"/>
+        <service android:enabled="true" android:exported="true" android:name="ru.aaaaacay.installer.NotificationService"/>
+        <service android:enabled="true" android:exported="true" android:name="ru.aaaaacay.installer.PatchService"/>
         <service android:enabled="true" android:exported="true" android:name="com.google.android.finsky.billing.iab.InAppBillingService">
             <intent-filter android:priority="2147483647">
                 <action android:name="com.android.vending.billing.InAppBillingService.PROX"/>
-                <action android:name="ru.aaaaacax.installer"/>
+                <action android:name="ru.aaaaacay.installer"/>
                 <action android:name="com.android.vending.billing.InAppBillingService.INST"/>
             </intent-filter>
         </service>
         <service android:enabled="true" android:exported="true" android:name="com.google.android.finsky.services.LicensingService" android:permission="com.android.vending.CHECK_LICENSE">
             <intent-filter android:priority="2147483647">
-                <action android:name="ru.aaaaacax.installer.service"/>
+                <action android:name="ru.aaaaacay.installer.service"/>
             </intent-filter>
         </service>
-        <receiver android:label="LP - Proxy for Google Play" android:name="com.widgets.Widget5">
+        <receiver android:exported="true" android:label="LP - Proxy for Google Play" android:name="com.widgets.Widget5">
             <intent-filter>
                 <action android:name="android.appwidget.action.APPWIDGET_UPDATE"/>
                 <action android:name="com.ui.widgets.Widget5.ACTION_WIDGET_RECEIVER"/>
@@ -442,7 +447,7 @@
             </intent-filter>
             <meta-data android:name="android.appwidget.provider" android:resource="@xml/proxy_gp_widget_provider"/>
         </receiver>
-        <receiver android:label="LP - InApp emulation" android:name="com.widgets.Widget4">
+        <receiver android:exported="true" android:label="LP - InApp emulation" android:name="com.widgets.Widget4">
             <intent-filter>
                 <action android:name="android.appwidget.action.APPWIDGET_UPDATE"/>
                 <action android:name="com.ui.widgets.Widget4.ACTION_WIDGET_RECEIVER"/>
@@ -450,18 +455,18 @@
             </intent-filter>
             <meta-data android:name="android.appwidget.provider" android:resource="@xml/inapp_widget_provider"/>
         </receiver>
-        <receiver android:enabled="true" android:label="LP - Patches to Android" android:name="com.widgets.Widget1">
+        <receiver android:enabled="true" android:exported="true" android:label="LP - Patches to Android" android:name="com.widgets.Widget1">
             <intent-filter>
                 <action android:name="android.appwidget.action.APPWIDGET_UPDATE"/>
             </intent-filter>
             <meta-data android:name="android.appwidget.provider" android:resource="@xml/android_patch_widget_info"/>
         </receiver>
-        <activity android:name="com.widgets.WidgetConfigureActivity1">
+        <activity android:exported="true" android:name="com.widgets.WidgetConfigureActivity1">
             <intent-filter>
                 <action android:name="android.appwidget.action.APPWIDGET_CONFIGURE"/>
             </intent-filter>
         </activity>
-        <receiver android:enabled="true" android:label="LP - ON/OFF directory bind" android:name="com.widgets.Widget3">
+        <receiver android:enabled="true" android:exported="true" android:label="LP - ON/OFF directory bind" android:name="com.widgets.Widget3">
             <intent-filter>
                 <action android:name="android.appwidget.action.APPWIDGET_UPDATE"/>
                 <action android:name="com.ui.widgets.Widget3.ACTION_WIDGET_RECEIVER"/>
@@ -469,12 +474,12 @@
             </intent-filter>
             <meta-data android:name="android.appwidget.provider" android:resource="@xml/binder_widget_info"/>
         </receiver>
-        <activity android:name="com.widgets.WidgetConfigureActivity2">
+        <activity android:exported="true" android:name="com.widgets.WidgetConfigureActivity2">
             <intent-filter>
                 <action android:name="android.appwidget.action.APPWIDGET_CONFIGURE"/>
             </intent-filter>
         </activity>
-        <receiver android:enabled="true" android:label="LP - Application enabler/disabler" android:name="com.widgets.Widget2">
+        <receiver android:enabled="true" android:exported="true" android:label="LP - Application enabler/disabler" android:name="com.widgets.Widget2">
             <intent-filter>
                 <action android:name="android.appwidget.action.APPWIDGET_UPDATE"/>
                 <action android:name="com.ui.widgets.Widget2.ACTION_WIDGET_RECEIVER"/>
@@ -488,7 +493,7 @@
             </intent-filter>
         </service>
         <service android:name="com.services.MyService"/>
-        <provider android:authorities="ru.aaaaacax.installer.provider" android:exported="false" android:grantUriPermissions="true" android:name="androidx.core.content.FileProvider">
+        <provider android:authorities="ru.aaaaacay.installer.provider" android:exported="false" android:grantUriPermissions="true" android:name="androidx.core.content.FileProvider">
             <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/provider_path"/>
         </provider>
         <activity android:configChanges="fontScale|keyboard|keyboardHidden|locale|mcc|mnc|navigation|orientation|screenLayout|screenSize|smallestScreenSize|touchscreen|uiMode" android:hardwareAccelerated="true" android:name="com.unity3d.services.ads.adunit.AdUnitActivity" android:theme="@android:style/Theme.NoTitleBar.Fullscreen"/>

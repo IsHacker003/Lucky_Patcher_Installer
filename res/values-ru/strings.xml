@@ -393,6 +393,8 @@ Lucky Patcher может работать неправильно."</string>
     <string name="delete_system_app_for_user">Удалить системное приложение для пользователя</string>
     <string name="delete_system_app_for_user_message">Вы действительно хотите удалить системное приложение %s для текущего пользователя?</string>
     <string name="describe_for_Proxy_gp">(мини-верcия, содержащая только эмуляцию лицензии и покупок)</string>
+    <string name="dialog_android_art_update_remove">Вы действительно хотите удалить обновления для apex модуля com.google.android.art?</string>
+    <string name="dialog_android_art_update_remove_no_update">Обновления для apex модуля com.google.android.art не были найдены.</string>
     <string name="dialog_end_orig_resign_app">%1$s был подписан оригинальной подписью. Переподписанный файл лежит тут %2$s.</string>
     <string name="dialog_end_resign_app">%1$s был подписан тестовой подписью. Переподписанный файл лежит тут %2$s.</string>
     <string name="dialog_system">Это приложение является системным. Будьте очень осторожны с любыми действиями в сторону системных приложений, т.к. это может привести к полной неработоспособности как приложения, так и системы в целом. Всегда делайте резервные копии приложения перед работой с ними. Вы уверены, что хотите что-то сделать с этим приложением?</string>
@@ -1147,6 +1149,8 @@ WRITE_EXTERNAL_STORAGE
     <string name="remodexerror">ODEX не удалён, потому что не найден dalvik-cache приложения.</string>
     <string name="remove_all_saved_purchases">Удалить все сохранённые покупки</string>
     <string name="remove_all_saved_purchases_message">Вы действительно хотите удалить все сохранённые покупки из Lucky Patcher-а?</string>
+    <string name="remove_android_art_update">Удалить обновления для apex модуля com.google.android.art</string>
+    <string name="remove_android_art_update_description">Это иногда помогает, когда не применяются патчи через LSposed или патчи системных файлов прошивки.</string>
     <string name="removefixes">"Очистка всех odex файлов
 (в /data/app и /system/app)"</string>
     <string name="reset_dialog_settings">Сбросить настройки для всех диалогов</string>

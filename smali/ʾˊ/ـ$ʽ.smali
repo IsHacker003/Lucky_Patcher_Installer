@@ -44,7 +44,7 @@
     .locals 1
 
     .line 1
-    sget-object v0, Lʾˉ/ᐧᐧ;->ʼˎ:Lʾˉ/ᐧᐧ;
+    sget-object v0, Lʾˉ/ᴵᴵ;->ʼˎ:Lʾˉ/ᴵᴵ;
 
     .line 2
     .line 3

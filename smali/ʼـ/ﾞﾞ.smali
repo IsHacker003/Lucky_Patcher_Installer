@@ -914,7 +914,7 @@
     .locals 2
 
     .line 1
-    sget-object v0, Lʾˉ/ᐧᐧ;->ˆـ:Ljava/lang/Boolean;
+    sget-object v0, Lʾˉ/ᴵᴵ;->ˆـ:Ljava/lang/Boolean;
 
     .line 2
     .line 3

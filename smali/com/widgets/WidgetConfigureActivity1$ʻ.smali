@@ -82,7 +82,7 @@
     move-result-object v0
 
     .line 18
-    invoke-static {}, Lʾˉ/ᐧᐧ;->ˈᵢ()I
+    invoke-static {}, Lʾˉ/ᴵᴵ;->ˈᵢ()I
 
     .line 19
     .line 20
@@ -173,7 +173,7 @@
     .line 63
     .line 64
     .line 65
-    const v0, 0x7f11018d
+    const v0, 0x7f11018f
 
     .line 66
     .line 67
@@ -196,7 +196,7 @@
     .line 76
     .line 77
     .line 78
-    const v0, 0x7f11018e
+    const v0, 0x7f110190
 
     .line 79
     .line 80

@@ -168,7 +168,7 @@
 
     .line 63
     :cond_0
-    sput-object p3, Lʾˉ/ᐧᐧ;->ʽﹶ:Ljava/lang/String;
+    sput-object p3, Lʾˉ/ᴵᴵ;->ʽﹶ:Ljava/lang/String;
 
     .line 64
     .line 65

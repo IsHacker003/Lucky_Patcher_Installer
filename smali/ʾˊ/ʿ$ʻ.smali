@@ -45,7 +45,7 @@
 
     .line 1
     :try_start_0
-    sget-object p1, Lʾˉ/ᐧᐧ;->ʼᴵ:Lʾˉ/ᵔ;
+    sget-object p1, Lʾˉ/ᴵᴵ;->ʼᴵ:Lʾˉ/ᵔ;
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -73,7 +73,7 @@
     .line 12
     .line 13
     .line 14
-    sget-object p1, Lʾˉ/ᐧᐧ;->ʼᴵ:Lʾˉ/ᵔ;
+    sget-object p1, Lʾˉ/ᴵᴵ;->ʼᴵ:Lʾˉ/ᵔ;
 
     .line 15
     .line 16

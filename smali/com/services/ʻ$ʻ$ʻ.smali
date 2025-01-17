@@ -17,10 +17,6 @@
 .end annotation
 
 
-# static fields
-.field public static ʼ:Lcom/services/ʻ;
-
-
 # instance fields
 .field private ʻ:Landroid/os/IBinder;
 
@@ -105,111 +101,55 @@
     .line 19
     .line 20
     .line 21
-    move-result v2
+    invoke-virtual {v1}, Landroid/os/Parcel;->readException()V
 
     .line 22
-    if-nez v2, :cond_0
-
     .line 23
     .line 24
-    invoke-static {}, Lcom/services/ʻ$ʻ;->ﾞﾞ()Lcom/services/ʻ;
+    invoke-virtual {v1}, Landroid/os/Parcel;->readInt()I
 
     .line 25
     .line 26
     .line 27
-    move-result-object v2
+    move-result v2
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
     .line 28
     if-eqz v2, :cond_0
 
     .line 29
     .line 30
-    invoke-static {}, Lcom/services/ʻ$ʻ;->ﾞﾞ()Lcom/services/ʻ;
+    const/4 v3, 0x1
 
     .line 31
+    :cond_0
+    invoke-virtual {v1}, Landroid/os/Parcel;->recycle()V
+
     .line 32
     .line 33
-    move-result-object v2
-
     .line 34
-    invoke-interface {v2}, Lcom/services/ʻ;->ᐧ()Z
+    invoke-virtual {v0}, Landroid/os/Parcel;->recycle()V
 
     .line 35
     .line 36
     .line 37
-    move-result v2
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+    return v3
 
     .line 38
-    invoke-virtual {v1}, Landroid/os/Parcel;->recycle()V
-
-    .line 39
-    .line 40
-    .line 41
-    invoke-virtual {v0}, Landroid/os/Parcel;->recycle()V
-
-    .line 42
-    .line 43
-    .line 44
-    return v2
-
-    .line 45
     :catchall_0
     move-exception v2
 
-    .line 46
-    goto :goto_0
-
-    .line 47
-    :cond_0
-    :try_start_1
-    invoke-virtual {v1}, Landroid/os/Parcel;->readException()V
-
-    .line 48
-    .line 49
-    .line 50
-    invoke-virtual {v1}, Landroid/os/Parcel;->readInt()I
-
-    .line 51
-    .line 52
-    .line 53
-    move-result v2
-    :try_end_1
-    .catchall {:try_start_1 .. :try_end_1} :catchall_0
-
-    .line 54
-    if-eqz v2, :cond_1
-
-    .line 55
-    .line 56
-    const/4 v3, 0x1
-
-    .line 57
-    :cond_1
+    .line 39
     invoke-virtual {v1}, Landroid/os/Parcel;->recycle()V
 
-    .line 58
-    .line 59
-    .line 60
+    .line 40
+    .line 41
+    .line 42
     invoke-virtual {v0}, Landroid/os/Parcel;->recycle()V
 
-    .line 61
-    .line 62
-    .line 63
-    return v3
-
-    .line 64
-    :goto_0
-    invoke-virtual {v1}, Landroid/os/Parcel;->recycle()V
-
-    .line 65
-    .line 66
-    .line 67
-    invoke-virtual {v0}, Landroid/os/Parcel;->recycle()V
-
-    .line 68
-    .line 69
-    .line 70
+    .line 43
+    .line 44
+    .line 45
     throw v2
 .end method

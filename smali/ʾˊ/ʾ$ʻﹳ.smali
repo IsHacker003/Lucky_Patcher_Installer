@@ -67,7 +67,7 @@
 
     .line 6
     :try_start_0
-    sget-object v2, Lʾˉ/ᐧᐧ;->ʼﾞ:Lru/aaaaacax/installer/MainActivity;
+    sget-object v2, Lʾˉ/ᴵᴵ;->ʼﾞ:Lru/aaaaacay/installer/MainActivity;
 
     .line 7
     .line 8
@@ -101,7 +101,7 @@
     .line 22
     .line 23
     .line 24
-    sget-object v5, Lʾˉ/ᐧᐧ;->ʼᵎ:Lʾˉ/ᵎ;
+    sget-object v5, Lʾˉ/ᴵᴵ;->ʼᵎ:Lʾˉ/ᵎ;
 
     .line 25
     .line 26
@@ -170,7 +170,7 @@
     .line 57
     .line 58
     .line 59
-    invoke-static {}, Lʾˉ/ᐧᐧ;->ˈᵎ()Landroid/content/pm/PackageManager;
+    invoke-static {}, Lʾˉ/ᴵᴵ;->ˈᵎ()Landroid/content/pm/PackageManager;
 
     .line 60
     .line 61
@@ -243,7 +243,7 @@
 
     .line 95
     :goto_0
-    sget-object v2, Lʾˉ/ᐧᐧ;->ʼﾞ:Lru/aaaaacax/installer/MainActivity;
+    sget-object v2, Lʾˉ/ᴵᴵ;->ʼﾞ:Lru/aaaaacay/installer/MainActivity;
 
     .line 96
     .line 97
@@ -281,7 +281,7 @@
     .line 113
     .line 114
     .line 115
-    sget-object v3, Lʾˉ/ᐧᐧ;->ʼᵎ:Lʾˉ/ᵎ;
+    sget-object v3, Lʾˉ/ᴵᴵ;->ʼᵎ:Lʾˉ/ᵎ;
 
     .line 116
     .line 117
@@ -342,7 +342,7 @@
     .line 145
     .line 146
     .line 147
-    invoke-static {}, Lʾˉ/ᐧᐧ;->ˈᵎ()Landroid/content/pm/PackageManager;
+    invoke-static {}, Lʾˉ/ᴵᴵ;->ˈᵎ()Landroid/content/pm/PackageManager;
 
     .line 148
     .line 149

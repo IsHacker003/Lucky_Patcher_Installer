@@ -73,7 +73,7 @@
     move-result-object p1
 
     .line 7
-    invoke-static {p1}, Lʾˉ/ᐧᐧ;->ˉˎ(Ljava/lang/Object;)V
+    invoke-static {p1}, Lʾˉ/ᴵᴵ;->ˉˎ(Ljava/lang/Object;)V
 
     .line 8
     .line 9
@@ -176,7 +176,7 @@
 
     .line 59
     .line 60
-    invoke-static {}, Lʾˉ/ᐧᐧ;->ˈי()Landroid/content/Context;
+    invoke-static {}, Lʾˉ/ᴵᴵ;->ˈי()Landroid/content/Context;
 
     .line 61
     .line 62
@@ -303,7 +303,7 @@
 
     .line 126
     :goto_0
-    invoke-static {p1}, Lʾˉ/ᐧᐧ;->ˉˎ(Ljava/lang/Object;)V
+    invoke-static {p1}, Lʾˉ/ᴵᴵ;->ˉˎ(Ljava/lang/Object;)V
 
     .line 127
     .line 128
@@ -359,7 +359,7 @@
 
     .line 155
     :cond_2
-    invoke-static {}, Lʾˉ/ᐧᐧ;->ˈי()Landroid/content/Context;
+    invoke-static {}, Lʾˉ/ᴵᴵ;->ˈי()Landroid/content/Context;
 
     .line 156
     .line 157

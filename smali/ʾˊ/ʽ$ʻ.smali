@@ -49,7 +49,7 @@
     .line 2
     .line 3
     :try_start_0
-    sget-object v0, Lʾˉ/ᐧᐧ;->ʼﾞ:Lru/aaaaacax/installer/MainActivity;
+    sget-object v0, Lʾˉ/ᴵᴵ;->ʼﾞ:Lru/aaaaacay/installer/MainActivity;
 
     .line 4
     .line 5
@@ -79,7 +79,7 @@
     .line 17
     .line 18
     .line 19
-    sget-object v3, Lʾˉ/ᐧᐧ;->ʼᵎ:Lʾˉ/ᵎ;
+    sget-object v3, Lʾˉ/ᴵᴵ;->ʼᵎ:Lʾˉ/ᵎ;
 
     .line 20
     .line 21
@@ -127,7 +127,7 @@
     nop
 
     .line 42
-    sget-object v0, Lʾˉ/ᐧᐧ;->ʼﾞ:Lru/aaaaacax/installer/MainActivity;
+    sget-object v0, Lʾˉ/ᴵᴵ;->ʼﾞ:Lru/aaaaacay/installer/MainActivity;
 
     .line 43
     .line 44
@@ -157,7 +157,7 @@
     .line 56
     .line 57
     .line 58
-    sget-object v3, Lʾˉ/ᐧᐧ;->ʼᵎ:Lʾˉ/ᵎ;
+    sget-object v3, Lʾˉ/ᴵᴵ;->ʼᵎ:Lʾˉ/ᵎ;
 
     .line 59
     .line 60

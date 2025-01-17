@@ -1,14 +1,16 @@
-.class public interface abstract Lʼʼ/ʽˎ;
+.class public final synthetic Lʼʼ/ʽˎ;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
 
-# virtual methods
-.method public abstract ʻ(Landroid/view/View;)V
-.end method
+# direct methods
+.method public static bridge synthetic ʻ(Landroid/view/ViewPropertyAnimator;Landroid/animation/ValueAnimator$AnimatorUpdateListener;)Landroid/view/ViewPropertyAnimator;
+    .locals 0
 
-.method public abstract ʼ(Landroid/view/View;)V
-.end method
+    .line 1
+    invoke-virtual {p0, p1}, Landroid/view/ViewPropertyAnimator;->setUpdateListener(Landroid/animation/ValueAnimator$AnimatorUpdateListener;)Landroid/view/ViewPropertyAnimator;
 
-.method public abstract ʽ(Landroid/view/View;)V
+    move-result-object p0
+
+    return-object p0
 .end method

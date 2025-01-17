@@ -4,13 +4,11 @@
 
 
 # direct methods
-.method public static bridge synthetic ʻ(Landroid/view/accessibility/AccessibilityNodeInfo;)Z
+.method public static bridge synthetic ʻ(Landroid/view/accessibility/AccessibilityNodeInfo;Z)V
     .locals 0
 
     .line 1
-    invoke-virtual {p0}, Landroid/view/accessibility/AccessibilityNodeInfo;->isVisibleToUser()Z
+    invoke-virtual {p0, p1}, Landroid/view/accessibility/AccessibilityNodeInfo;->setShowingHintText(Z)V
 
-    move-result p0
-
-    return p0
+    return-void
 .end method

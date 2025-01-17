@@ -44,7 +44,7 @@
     .locals 2
 
     .line 1
-    const v0, 0x7f1104cb
+    const v0, 0x7f1104cf
 
     .line 2
     .line 3
@@ -57,7 +57,7 @@
     move-result-object v0
 
     .line 8
-    const v1, 0x7f1103fa
+    const v1, 0x7f1103fc
 
     .line 9
     .line 10
@@ -70,7 +70,7 @@
     move-result-object v1
 
     .line 15
-    invoke-static {v0, v1}, Lʾˉ/ᐧᐧ;->ˋⁱ(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lʾˉ/ᴵᴵ;->ˋⁱ(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 16
     .line 17

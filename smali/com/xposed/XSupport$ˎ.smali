@@ -63,7 +63,7 @@
 
     .line 9
     .line 10
-    invoke-virtual {v0}, Lcom/xposed/XSupport;->ˆ()V
+    invoke-virtual {v0}, Lcom/xposed/XSupport;->ˈ()V
 
     .line 11
     .line 12

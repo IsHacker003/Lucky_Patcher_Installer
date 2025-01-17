@@ -387,11 +387,11 @@
 
     .line 4
     .line 5
-    sget-object p2, Lʿʿ/ﹳﹳ$ʻ;->ᐧ:Lʿʿ/ﹳﹳ$ʻ;
+    sget-object p2, Lʿʿ/ʻʼ$ʻ;->ᐧ:Lʿʿ/ʻʼ$ʻ;
 
     .line 6
     .line 7
-    invoke-virtual {p2}, Lʿʿ/ﹳﹳ$ʻ;->ʼ()I
+    invoke-virtual {p2}, Lʿʿ/ʻʼ$ʻ;->ʼ()I
 
     .line 8
     .line 9
@@ -404,11 +404,11 @@
     .line 12
     .line 13
     .line 14
-    sget-object p2, Lʿʿ/ﹳﹳ$ʻ;->ᴵ:Lʿʿ/ﹳﹳ$ʻ;
+    sget-object p2, Lʿʿ/ʻʼ$ʻ;->ᴵ:Lʿʿ/ʻʼ$ʻ;
 
     .line 15
     .line 16
-    invoke-virtual {p2}, Lʿʿ/ﹳﹳ$ʻ;->ʼ()I
+    invoke-virtual {p2}, Lʿʿ/ʻʼ$ʻ;->ʼ()I
 
     .line 17
     .line 18

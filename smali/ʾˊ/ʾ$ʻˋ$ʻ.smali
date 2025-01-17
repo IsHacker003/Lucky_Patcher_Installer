@@ -67,7 +67,7 @@
 
     .line 8
     .line 9
-    invoke-static {}, Lʾˉ/ᐧᐧ;->ˈי()Landroid/content/Context;
+    invoke-static {}, Lʾˉ/ᴵᴵ;->ˈי()Landroid/content/Context;
 
     .line 10
     .line 11
@@ -167,7 +167,7 @@
     move-result-object v8
 
     .line 59
-    invoke-static {}, Lʾˉ/ᐧᐧ;->ˈᵢ()I
+    invoke-static {}, Lʾˉ/ᴵᴵ;->ˈᵢ()I
 
     .line 60
     .line 61
@@ -253,7 +253,7 @@
     .line 101
     :sswitch_0
     :try_start_1
-    invoke-static {}, Lʾˉ/ᐧᐧ;->ˈᵔ()Landroid/content/res/Resources;
+    invoke-static {}, Lʾˉ/ᴵᴵ;->ˈᵔ()Landroid/content/res/Resources;
 
     .line 102
     .line 103
@@ -330,7 +330,7 @@
     .line 138
     .line 139
     :sswitch_1
-    invoke-static {}, Lʾˉ/ᐧᐧ;->ˈᵔ()Landroid/content/res/Resources;
+    invoke-static {}, Lʾˉ/ᴵᴵ;->ˈᵔ()Landroid/content/res/Resources;
 
     .line 140
     .line 141
@@ -386,7 +386,7 @@
     .line 167
     .line 168
     :sswitch_2
-    invoke-static {}, Lʾˉ/ᐧᐧ;->ˈᵔ()Landroid/content/res/Resources;
+    invoke-static {}, Lʾˉ/ᴵᴵ;->ˈᵔ()Landroid/content/res/Resources;
 
     .line 169
     .line 170
@@ -447,7 +447,7 @@
     .line 199
     .line 200
     :sswitch_3
-    invoke-static {}, Lʾˉ/ᐧᐧ;->ˈᵔ()Landroid/content/res/Resources;
+    invoke-static {}, Lʾˉ/ᴵᴵ;->ˈᵔ()Landroid/content/res/Resources;
 
     .line 201
     .line 202
@@ -503,7 +503,7 @@
     .line 228
     .line 229
     :sswitch_4
-    invoke-static {}, Lʾˉ/ᐧᐧ;->ˈᵔ()Landroid/content/res/Resources;
+    invoke-static {}, Lʾˉ/ᴵᴵ;->ˈᵔ()Landroid/content/res/Resources;
 
     .line 230
     .line 231
@@ -559,7 +559,7 @@
     .line 257
     .line 258
     :sswitch_5
-    invoke-static {}, Lʾˉ/ᐧᐧ;->ˈᵔ()Landroid/content/res/Resources;
+    invoke-static {}, Lʾˉ/ᴵᴵ;->ˈᵔ()Landroid/content/res/Resources;
 
     .line 259
     .line 260
@@ -620,7 +620,7 @@
     .line 289
     .line 290
     :sswitch_6
-    invoke-static {}, Lʾˉ/ᐧᐧ;->ˈᵔ()Landroid/content/res/Resources;
+    invoke-static {}, Lʾˉ/ᴵᴵ;->ˈᵔ()Landroid/content/res/Resources;
 
     .line 291
     .line 292
@@ -676,7 +676,7 @@
     .line 318
     .line 319
     :sswitch_7
-    invoke-static {}, Lʾˉ/ᐧᐧ;->ˈᵔ()Landroid/content/res/Resources;
+    invoke-static {}, Lʾˉ/ᴵᴵ;->ˈᵔ()Landroid/content/res/Resources;
 
     .line 320
     .line 321
@@ -732,7 +732,7 @@
     .line 347
     .line 348
     :sswitch_8
-    invoke-static {}, Lʾˉ/ᐧᐧ;->ˈᵔ()Landroid/content/res/Resources;
+    invoke-static {}, Lʾˉ/ᴵᴵ;->ˈᵔ()Landroid/content/res/Resources;
 
     .line 349
     .line 350
@@ -787,7 +787,7 @@
 
     .line 376
     :sswitch_9
-    invoke-static {}, Lʾˉ/ᐧᐧ;->ˈᵔ()Landroid/content/res/Resources;
+    invoke-static {}, Lʾˉ/ᴵᴵ;->ˈᵔ()Landroid/content/res/Resources;
 
     .line 377
     .line 378
@@ -847,7 +847,7 @@
 
     .line 407
     :sswitch_a
-    invoke-static {}, Lʾˉ/ᐧᐧ;->ˈᵔ()Landroid/content/res/Resources;
+    invoke-static {}, Lʾˉ/ᴵᴵ;->ˈᵔ()Landroid/content/res/Resources;
 
     .line 408
     .line 409
@@ -902,7 +902,7 @@
 
     .line 435
     :sswitch_b
-    invoke-static {}, Lʾˉ/ᐧᐧ;->ˈᵔ()Landroid/content/res/Resources;
+    invoke-static {}, Lʾˉ/ᴵᴵ;->ˈᵔ()Landroid/content/res/Resources;
 
     .line 436
     .line 437
@@ -985,7 +985,7 @@
     .line 475
     .line 476
     :goto_3
-    invoke-static {}, Lʾˉ/ᐧᐧ;->ˈᵔ()Landroid/content/res/Resources;
+    invoke-static {}, Lʾˉ/ᴵᴵ;->ˈᵔ()Landroid/content/res/Resources;
 
     .line 477
     .line 478
@@ -1172,7 +1172,7 @@
         0x7f1100d0 -> :sswitch_4
         0x7f1100df -> :sswitch_3
         0x7f110170 -> :sswitch_2
-        0x7f110290 -> :sswitch_1
-        0x7f11044e -> :sswitch_0
+        0x7f110292 -> :sswitch_1
+        0x7f110452 -> :sswitch_0
     .end sparse-switch
 .end method

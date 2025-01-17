@@ -21,9 +21,9 @@
         "Ljava/lang/Object;",
         "L\u02c9\u02c9/\u02bc$\u02bc<",
         "L\u02cf/\u02c9<",
-        "L\u02bf\u02bf/\ufe73\ufe73;",
+        "L\u02bf\u02bf/\u02bb\u02bc;",
         ">;",
-        "L\u02bf\u02bf/\ufe73\ufe73;",
+        "L\u02bf\u02bf/\u02bb\u02bc;",
         ">;"
     }
 .end annotation
@@ -71,7 +71,7 @@
 
     .line 2
     .line 3
-    invoke-virtual {p0, p1, p2}, Lˉˉ/ʻ$ʼ;->ʽ(Lˏ/ˉ;I)Lʿʿ/ﹳﹳ;
+    invoke-virtual {p0, p1, p2}, Lˉˉ/ʻ$ʼ;->ʽ(Lˏ/ˉ;I)Lʿʿ/ʻʼ;
 
     .line 4
     .line 5
@@ -82,15 +82,15 @@
     return-object p1
 .end method
 
-.method public ʽ(Lˏ/ˉ;I)Lʿʿ/ﹳﹳ;
+.method public ʽ(Lˏ/ˉ;I)Lʿʿ/ʻʼ;
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
             "L\u02cf/\u02c9<",
-            "L\u02bf\u02bf/\ufe73\ufe73;",
+            "L\u02bf\u02bf/\u02bb\u02bc;",
             ">;I)",
-            "L\u02bf\u02bf/\ufe73\ufe73;"
+            "L\u02bf\u02bf/\u02bb\u02bc;"
         }
     .end annotation
 
@@ -103,7 +103,7 @@
     move-result-object p1
 
     .line 5
-    check-cast p1, Lʿʿ/ﹳﹳ;
+    check-cast p1, Lʿʿ/ʻʼ;
 
     .line 6
     .line 7
@@ -116,7 +116,7 @@
         value = {
             "(",
             "L\u02cf/\u02c9<",
-            "L\u02bf\u02bf/\ufe73\ufe73;",
+            "L\u02bf\u02bf/\u02bb\u02bc;",
             ">;)I"
         }
     .end annotation

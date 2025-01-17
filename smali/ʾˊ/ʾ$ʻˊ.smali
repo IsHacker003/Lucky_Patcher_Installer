@@ -57,7 +57,7 @@
 
     .line 8
     .line 9
-    invoke-static {}, Lʾˉ/ᐧᐧ;->ˈי()Landroid/content/Context;
+    invoke-static {}, Lʾˉ/ᴵᴵ;->ˈי()Landroid/content/Context;
 
     .line 10
     .line 11
@@ -123,7 +123,7 @@
     move-result-object v1
 
     .line 42
-    invoke-static {}, Lʾˉ/ᐧᐧ;->ˈᵢ()I
+    invoke-static {}, Lʾˉ/ᴵᴵ;->ˈᵢ()I
 
     .line 43
     .line 44
@@ -219,7 +219,7 @@
 
     .line 89
     .line 90
-    invoke-static {}, Lʾˉ/ᐧᐧ;->ˈᵔ()Landroid/content/res/Resources;
+    invoke-static {}, Lʾˉ/ᴵᴵ;->ˈᵔ()Landroid/content/res/Resources;
 
     .line 91
     .line 92
@@ -288,7 +288,7 @@
 
     .line 121
     .line 122
-    invoke-static {}, Lʾˉ/ᐧᐧ;->ˈᵔ()Landroid/content/res/Resources;
+    invoke-static {}, Lʾˉ/ᴵᴵ;->ˈᵔ()Landroid/content/res/Resources;
 
     .line 123
     .line 124
@@ -318,7 +318,7 @@
 
     .line 137
     :cond_3
-    invoke-static {}, Lʾˉ/ᐧᐧ;->ˈᵔ()Landroid/content/res/Resources;
+    invoke-static {}, Lʾˉ/ᴵᴵ;->ˈᵔ()Landroid/content/res/Resources;
 
     .line 138
     .line 139

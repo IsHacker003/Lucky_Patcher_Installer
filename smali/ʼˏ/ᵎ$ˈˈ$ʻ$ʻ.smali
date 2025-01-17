@@ -145,7 +145,7 @@
     .line 51
     .line 52
     .line 53
-    sget-object v4, Lʾˉ/ᐧᐧ;->ʼٴ:Ljava/lang/String;
+    sget-object v4, Lʾˉ/ᴵᴵ;->ʼٴ:Ljava/lang/String;
 
     .line 54
     .line 55
@@ -176,7 +176,7 @@
     .line 68
     .line 69
     .line 70
-    invoke-static {}, Lʾˉ/ᐧᐧ;->ˈי()Landroid/content/Context;
+    invoke-static {}, Lʾˉ/ᴵᴵ;->ˈי()Landroid/content/Context;
 
     .line 71
     .line 72
@@ -184,7 +184,7 @@
     move-result-object v0
 
     .line 74
-    sget-object v1, Lʾˉ/ᐧᐧ;->ʼʽ:Ljava/lang/String;
+    sget-object v1, Lʾˉ/ᴵᴵ;->ʼʽ:Ljava/lang/String;
 
     .line 75
     .line 76

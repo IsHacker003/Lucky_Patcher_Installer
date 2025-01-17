@@ -70,7 +70,7 @@
 
     .line 18
     .line 19
-    invoke-static {p1}, Lʾˉ/ᐧᐧ;->ˉʼ(Landroid/content/Context;)V
+    invoke-static {p1}, Lʾˉ/ᴵᴵ;->ˉʼ(Landroid/content/Context;)V
 
     .line 20
     .line 21
@@ -190,7 +190,7 @@
 
     .line 82
     .line 83
-    invoke-static {}, Lʾˉ/ᐧᐧ;->ˈᵎ()Landroid/content/pm/PackageManager;
+    invoke-static {}, Lʾˉ/ᴵᴵ;->ˈᵎ()Landroid/content/pm/PackageManager;
 
     .line 84
     .line 85
@@ -202,7 +202,7 @@
 
     .line 88
     .line 89
-    invoke-static {}, Lʾˉ/ᐧᐧ;->ˈי()Landroid/content/Context;
+    invoke-static {}, Lʾˉ/ᴵᴵ;->ˈי()Landroid/content/Context;
 
     .line 90
     .line 91
@@ -241,7 +241,7 @@
 
     .line 109
     :cond_0
-    invoke-static {}, Lʾˉ/ᐧᐧ;->ˈᵎ()Landroid/content/pm/PackageManager;
+    invoke-static {}, Lʾˉ/ᴵᴵ;->ˈᵎ()Landroid/content/pm/PackageManager;
 
     .line 110
     .line 111
@@ -253,7 +253,7 @@
 
     .line 114
     .line 115
-    invoke-static {}, Lʾˉ/ᐧᐧ;->ˈי()Landroid/content/Context;
+    invoke-static {}, Lʾˉ/ᴵᴵ;->ˈי()Landroid/content/Context;
 
     .line 116
     .line 117
@@ -275,7 +275,7 @@
 
     .line 126
     .line 127
-    invoke-static {}, Lʾˉ/ᐧᐧ;->ˈי()Landroid/content/Context;
+    invoke-static {}, Lʾˉ/ᴵᴵ;->ˈי()Landroid/content/Context;
 
     .line 128
     .line 129
@@ -288,7 +288,7 @@
     .line 132
     .line 133
     .line 134
-    invoke-static {}, Lʾˉ/ᐧᐧ;->ˈי()Landroid/content/Context;
+    invoke-static {}, Lʾˉ/ᴵᴵ;->ˈי()Landroid/content/Context;
 
     .line 135
     .line 136
@@ -318,7 +318,7 @@
     .line 148
     .line 149
     .line 150
-    invoke-static {}, Lʾˉ/ᐧᐧ;->ˈי()Landroid/content/Context;
+    invoke-static {}, Lʾˉ/ᴵᴵ;->ˈי()Landroid/content/Context;
 
     .line 151
     .line 152
@@ -367,7 +367,7 @@
     .line 173
     .line 174
     :try_start_0
-    sput-boolean v2, Lʾˉ/ᐧᐧ;->ʿʽ:Z
+    sput-boolean v2, Lʾˉ/ᴵᴵ;->ʿʽ:Z
 
     .line 175
     .line 176
@@ -484,126 +484,130 @@
     const/4 v2, 0x0
 
     .line 33
-    invoke-static {p1, v2, v1, v2}, Landroid/app/PendingIntent;->getBroadcast(Landroid/content/Context;ILandroid/content/Intent;I)Landroid/app/PendingIntent;
+    const/high16 v3, 0x2000000
 
     .line 34
     .line 35
+    invoke-static {p1, v2, v1, v3}, Landroid/app/PendingIntent;->getBroadcast(Landroid/content/Context;ILandroid/content/Intent;I)Landroid/app/PendingIntent;
+
     .line 36
+    .line 37
+    .line 38
     move-result-object v1
 
-    .line 37
+    .line 39
     const v2, 0x7f0902a5
 
-    .line 38
-    .line 39
     .line 40
-    invoke-virtual {v0, v2, v1}, Landroid/widget/RemoteViews;->setOnClickPendingIntent(ILandroid/app/PendingIntent;)V
-
     .line 41
     .line 42
-    .line 43
-    const-string v1, "InApp"
+    invoke-virtual {v0, v2, v1}, Landroid/widget/RemoteViews;->setOnClickPendingIntent(ILandroid/app/PendingIntent;)V
 
+    .line 43
     .line 44
     .line 45
-    invoke-virtual {v0, v2, v1}, Landroid/widget/RemoteViews;->setTextViewText(ILjava/lang/CharSequence;)V
+    const-string v1, "InApp"
 
     .line 46
     .line 47
-    .line 48
-    const v1, 0x7f0901b5
+    invoke-virtual {v0, v2, v1}, Landroid/widget/RemoteViews;->setTextViewText(ILjava/lang/CharSequence;)V
 
+    .line 48
     .line 49
     .line 50
-    .line 51
-    const/16 v3, 0x8
+    const v1, 0x7f0901b5
 
+    .line 51
     .line 52
     .line 53
-    invoke-virtual {v0, v1, v3}, Landroid/widget/RemoteViews;->setViewVisibility(II)V
+    const/16 v3, 0x8
 
     .line 54
     .line 55
-    .line 56
-    invoke-virtual {p1}, Landroid/content/Context;->getPackageManager()Landroid/content/pm/PackageManager;
+    invoke-virtual {v0, v1, v3}, Landroid/widget/RemoteViews;->setViewVisibility(II)V
 
+    .line 56
     .line 57
     .line 58
+    invoke-virtual {p1}, Landroid/content/Context;->getPackageManager()Landroid/content/pm/PackageManager;
+
     .line 59
+    .line 60
+    .line 61
     move-result-object v1
 
-    .line 60
-    new-instance v3, Landroid/content/ComponentName;
-
-    .line 61
     .line 62
-    const-class v4, Lcom/google/android/finsky/billing/iab/InAppBillingService;
+    new-instance v3, Landroid/content/ComponentName;
 
     .line 63
     .line 64
-    invoke-direct {v3, p1, v4}, Landroid/content/ComponentName;-><init>(Landroid/content/Context;Ljava/lang/Class;)V
+    const-class v4, Lcom/google/android/finsky/billing/iab/InAppBillingService;
 
     .line 65
     .line 66
-    .line 67
-    invoke-virtual {v1, v3}, Landroid/content/pm/PackageManager;->getComponentEnabledSetting(Landroid/content/ComponentName;)I
+    invoke-direct {v3, p1, v4}, Landroid/content/ComponentName;-><init>(Landroid/content/Context;Ljava/lang/Class;)V
 
+    .line 67
     .line 68
     .line 69
+    invoke-virtual {v1, v3}, Landroid/content/pm/PackageManager;->getComponentEnabledSetting(Landroid/content/ComponentName;)I
+
     .line 70
+    .line 71
+    .line 72
     move-result p1
 
-    .line 71
+    .line 73
     const/4 v1, 0x2
 
-    .line 72
-    if-ne p1, v1, :cond_0
-
-    .line 73
     .line 74
-    const-string p1, "#FF0000"
+    if-ne p1, v1, :cond_0
 
     .line 75
     .line 76
-    invoke-static {p1}, Landroid/graphics/Color;->parseColor(Ljava/lang/String;)I
+    const-string p1, "#FF0000"
 
     .line 77
     .line 78
+    invoke-static {p1}, Landroid/graphics/Color;->parseColor(Ljava/lang/String;)I
+
     .line 79
+    .line 80
+    .line 81
     move-result p1
 
-    .line 80
+    .line 82
     invoke-virtual {v0, v2, p1}, Landroid/widget/RemoteViews;->setTextColor(II)V
 
-    .line 81
-    .line 82
     .line 83
+    .line 84
+    .line 85
     goto :goto_0
 
-    .line 84
+    .line 86
     :cond_0
     const-string p1, "#00FF00"
 
-    .line 85
-    .line 86
-    invoke-static {p1}, Landroid/graphics/Color;->parseColor(Ljava/lang/String;)I
-
     .line 87
     .line 88
+    invoke-static {p1}, Landroid/graphics/Color;->parseColor(Ljava/lang/String;)I
+
     .line 89
+    .line 90
+    .line 91
     move-result p1
 
-    .line 90
+    .line 92
     invoke-virtual {v0, v2, p1}, Landroid/widget/RemoteViews;->setTextColor(II)V
 
-    .line 91
-    .line 92
     .line 93
+    .line 94
+    .line 95
     :goto_0
     invoke-virtual {p2, p3, v0}, Landroid/appwidget/AppWidgetManager;->updateAppWidget([ILandroid/widget/RemoteViews;)V
 
-    .line 94
-    .line 95
     .line 96
+    .line 97
+    .line 98
     return-void
 .end method

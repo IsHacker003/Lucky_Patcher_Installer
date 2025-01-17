@@ -40,7 +40,7 @@
 
     .line 2
     .line 3
-    sput-object p1, Lʾˉ/ᐧᐧ;->ʽﹶ:Ljava/lang/String;
+    sput-object p1, Lʾˉ/ᴵᴵ;->ʽﹶ:Ljava/lang/String;
 
     .line 4
     .line 5

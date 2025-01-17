@@ -2996,7 +2996,7 @@
     move-result-object v0
 
     .line 301
-    sget-object v1, Lʾˉ/ᐧᐧ;->ˆⁱ:Ljava/util/ArrayList;
+    sget-object v1, Lʾˉ/ᴵᴵ;->ˆⁱ:Ljava/util/ArrayList;
 
     .line 302
     .line 303
@@ -3012,7 +3012,7 @@
 
     .line 308
     .line 309
-    sget-object v1, Lʾˉ/ᐧᐧ;->ˆⁱ:Ljava/util/ArrayList;
+    sget-object v1, Lʾˉ/ᴵᴵ;->ˆⁱ:Ljava/util/ArrayList;
 
     .line 310
     .line 311
@@ -3083,7 +3083,7 @@
     move-object v4, v0
 
     .line 341
-    sget-boolean v0, Lʾˉ/ᐧᐧ;->ʼʿ:Z
+    sget-boolean v0, Lʾˉ/ᴵᴵ;->ʼʿ:Z
 
     .line 342
     .line 343
@@ -3099,7 +3099,7 @@
     move-result-object v0
 
     .line 349
-    sget-object v1, Lʾˉ/ᐧᐧ;->ʼˆ:Ljava/lang/String;
+    sget-object v1, Lʾˉ/ᴵᴵ;->ʼˆ:Ljava/lang/String;
 
     .line 350
     .line 351

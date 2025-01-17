@@ -4,13 +4,11 @@
 
 
 # direct methods
-.method public static bridge synthetic ʻ(Landroid/view/ViewPropertyAnimator;Landroid/animation/ValueAnimator$AnimatorUpdateListener;)Landroid/view/ViewPropertyAnimator;
+.method public static bridge synthetic ʻ(Landroid/view/ViewParent;Landroid/view/View;II[I)V
     .locals 0
 
     .line 1
-    invoke-virtual {p0, p1}, Landroid/view/ViewPropertyAnimator;->setUpdateListener(Landroid/animation/ValueAnimator$AnimatorUpdateListener;)Landroid/view/ViewPropertyAnimator;
+    invoke-interface {p0, p1, p2, p3, p4}, Landroid/view/ViewParent;->onNestedPreScroll(Landroid/view/View;II[I)V
 
-    move-result-object p0
-
-    return-object p0
+    return-void
 .end method

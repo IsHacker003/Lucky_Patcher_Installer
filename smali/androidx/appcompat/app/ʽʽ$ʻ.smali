@@ -1,5 +1,5 @@
 .class Landroidx/appcompat/app/ʽʽ$ʻ;
-.super Lʼʼ/ʽˏ;
+.super Lʼʼ/ʽי;
 .source "SourceFile"
 
 
@@ -27,7 +27,7 @@
 
     .line 2
     .line 3
-    invoke-direct {p0}, Lʼʼ/ʽˏ;-><init>()V
+    invoke-direct {p0}, Lʼʼ/ʽי;-><init>()V
 
     .line 4
     .line 5

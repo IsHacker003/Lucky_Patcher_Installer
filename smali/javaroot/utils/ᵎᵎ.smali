@@ -426,7 +426,7 @@
 
     .line 162
     :try_start_3
-    sget-object v0, Lʾˉ/ᐧᐧ;->ʿᴵ:Ljava/lang/Boolean;
+    sget-object v0, Lʾˉ/ᴵᴵ;->ʿᴵ:Ljava/lang/Boolean;
 
     .line 163
     .line 164

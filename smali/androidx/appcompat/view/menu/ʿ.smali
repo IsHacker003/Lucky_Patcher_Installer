@@ -479,7 +479,7 @@
 
     .line 21
     .line 22
-    invoke-static {p1, v1}, Lʼʼ/ʼⁱ;->ʿ(Landroid/view/ViewConfiguration;Landroid/content/Context;)Z
+    invoke-static {p1, v1}, Lʼʼ/ʼﹶ;->ʿ(Landroid/view/ViewConfiguration;Landroid/content/Context;)Z
 
     .line 23
     .line 24

@@ -3,12 +3,12 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lʿʿ/ʻˊ;
+.implements Lʿʿ/ʻˏ;
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/google/android/material/appbar/AppBarLayout$BaseBehavior;->ᵢᵢ(Landroidx/coordinatorlayout/widget/CoordinatorLayout;Lcom/google/android/material/appbar/AppBarLayout;Lʿʿ/ﹳﹳ$ʻ;Z)V
+    value = Lcom/google/android/material/appbar/AppBarLayout$BaseBehavior;->ᵢᵢ(Landroidx/coordinatorlayout/widget/CoordinatorLayout;Lcom/google/android/material/appbar/AppBarLayout;Lʿʿ/ʻʼ$ʻ;Z)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -52,7 +52,7 @@
 
 
 # virtual methods
-.method public ʻ(Landroid/view/View;Lʿʿ/ʻˊ$ʻ;)Z
+.method public ʻ(Landroid/view/View;Lʿʿ/ʻˏ$ʻ;)Z
     .locals 0
 
     .line 1

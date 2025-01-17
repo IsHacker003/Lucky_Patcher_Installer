@@ -50,7 +50,7 @@
 
     .line 2
     .line 3
-    invoke-virtual {v0}, Lcom/xposed/XSupport;->ˆ()V
+    invoke-virtual {v0}, Lcom/xposed/XSupport;->ˈ()V
 
     .line 4
     .line 5
@@ -90,7 +90,7 @@
 
     .line 22
     .line 23
-    invoke-static {}, Lru/aaaaacax/installer/PkgName;->getPkgName()Ljava/lang/String;
+    invoke-static {}, Lru/aaaaacay/installer/PkgName;->getPkgName()Ljava/lang/String;
 
     .line 24
     .line 25

@@ -72,7 +72,7 @@
 
     .line 20
     .line 21
-    sget-object p1, Lʾˉ/ᐧᐧ;->ʼˏ:Ljava/lang/String;
+    sget-object p1, Lʾˉ/ᴵᴵ;->ʼˏ:Ljava/lang/String;
 
     .line 22
     .line 23
@@ -96,7 +96,7 @@
 
     .line 32
     .line 33
-    invoke-static {p1}, Lʾˉ/ᐧᐧ;->ˉˎ(Ljava/lang/Object;)V
+    invoke-static {p1}, Lʾˉ/ᴵᴵ;->ˉˎ(Ljava/lang/Object;)V
 
     .line 34
     .line 35

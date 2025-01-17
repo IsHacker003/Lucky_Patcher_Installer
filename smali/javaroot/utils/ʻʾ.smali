@@ -319,7 +319,7 @@
     move-result-object v8
 
     .line 116
-    invoke-static {v8}, Lʾˉ/ᐧᐧ;->ˉˎ(Ljava/lang/Object;)V
+    invoke-static {v8}, Lʾˉ/ᴵᴵ;->ˉˎ(Ljava/lang/Object;)V
 
     .line 117
     .line 118
@@ -412,7 +412,7 @@
     move-result-object v12
 
     .line 164
-    invoke-static {v12}, Lʾˉ/ᐧᐧ;->ˉˎ(Ljava/lang/Object;)V
+    invoke-static {v12}, Lʾˉ/ᴵᴵ;->ˉˎ(Ljava/lang/Object;)V
     :try_end_4
     .catchall {:try_start_4 .. :try_end_4} :catchall_1
 
@@ -473,7 +473,7 @@
     move-result-object v8
 
     .line 191
-    invoke-static {v8}, Lʾˉ/ᐧᐧ;->ˉˎ(Ljava/lang/Object;)V
+    invoke-static {v8}, Lʾˉ/ᴵᴵ;->ˉˎ(Ljava/lang/Object;)V
 
     .line 192
     .line 193
@@ -566,7 +566,7 @@
     move-result-object v12
 
     .line 239
-    invoke-static {v12}, Lʾˉ/ᐧᐧ;->ˉˎ(Ljava/lang/Object;)V
+    invoke-static {v12}, Lʾˉ/ᴵᴵ;->ˉˎ(Ljava/lang/Object;)V
     :try_end_6
     .catchall {:try_start_6 .. :try_end_6} :catchall_2
 
@@ -698,7 +698,7 @@
     .line 292
     .line 293
     .line 294
-    sget v8, Lʾˉ/ᐧᐧ;->ʾᐧ:I
+    sget v8, Lʾˉ/ᴵᴵ;->ʾᐧ:I
 
     .line 295
     .line 296
@@ -821,7 +821,7 @@
     .line 358
     .line 359
     .line 360
-    sget v15, Lʾˉ/ᐧᐧ;->ʾᐧ:I
+    sget v15, Lʾˉ/ᴵᴵ;->ʾᐧ:I
     :try_end_9
     .catch Ljava/lang/Exception; {:try_start_9 .. :try_end_9} :catch_1
 
@@ -1211,7 +1211,7 @@
 
     .line 548
     .line 549
-    sget v7, Lʾˉ/ᐧᐧ;->ʾᐧ:I
+    sget v7, Lʾˉ/ᴵᴵ;->ʾᐧ:I
 
     .line 550
     .line 551
@@ -2041,7 +2041,7 @@
     .line 980
     .line 981
     :cond_12
-    sget-object v7, Lʾˉ/ᐧᐧ;->ʼٴ:Ljava/lang/String;
+    sget-object v7, Lʾˉ/ᴵᴵ;->ʼٴ:Ljava/lang/String;
 
     .line 982
     .line 983
@@ -2424,7 +2424,7 @@
 
     .line 1173
     .line 1174
-    sget v3, Lʾˉ/ᐧᐧ;->ʾᐧ:I
+    sget v3, Lʾˉ/ᴵᴵ;->ʾᐧ:I
 
     .line 1175
     .line 1176
@@ -2893,7 +2893,7 @@
 
     .line 1410
     .line 1411
-    sget v7, Lʾˉ/ᐧᐧ;->ʾᐧ:I
+    sget v7, Lʾˉ/ᴵᴵ;->ʾᐧ:I
 
     .line 1412
     .line 1413
@@ -2991,7 +2991,7 @@
     move-result-object v3
 
     .line 1460
-    invoke-static {v3}, Lʾˉ/ᐧᐧ;->ˉˎ(Ljava/lang/Object;)V
+    invoke-static {v3}, Lʾˉ/ᴵᴵ;->ˉˎ(Ljava/lang/Object;)V
     :try_end_10
     .catchall {:try_start_10 .. :try_end_10} :catchall_6
 
@@ -3257,7 +3257,7 @@
 
     .line 1576
     .line 1577
-    sget v6, Lʾˉ/ᐧᐧ;->ʾᐧ:I
+    sget v6, Lʾˉ/ᴵᴵ;->ʾᐧ:I
 
     .line 1578
     .line 1579
@@ -3355,7 +3355,7 @@
     move-result-object v6
 
     .line 1626
-    invoke-static {v6}, Lʾˉ/ᐧᐧ;->ˉˎ(Ljava/lang/Object;)V
+    invoke-static {v6}, Lʾˉ/ᴵᴵ;->ˉˎ(Ljava/lang/Object;)V
     :try_end_15
     .catchall {:try_start_15 .. :try_end_15} :catchall_7
 
@@ -3581,7 +3581,7 @@
 
     .line 1728
     .line 1729
-    sget v3, Lʾˉ/ᐧᐧ;->ʾᐧ:I
+    sget v3, Lʾˉ/ᴵᴵ;->ʾᐧ:I
 
     .line 1730
     .line 1731
@@ -3609,7 +3609,7 @@
     .line 1739
     .line 1740
     :goto_1f
-    sget v1, Lʾˉ/ᐧᐧ;->ʾᐧ:I
+    sget v1, Lʾˉ/ᴵᴵ;->ʾᐧ:I
 
     .line 1741
     .line 1742
@@ -3913,7 +3913,7 @@
 
     .line 62
     :cond_4
-    sget p1, Lʾˉ/ᐧᐧ;->ʾᐧ:I
+    sget p1, Lʾˉ/ᴵᴵ;->ʾᐧ:I
 
     .line 63
     .line 64

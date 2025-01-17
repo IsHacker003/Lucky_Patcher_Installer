@@ -1828,11 +1828,11 @@
     return v0
 .end method
 
-.method public bridge synthetic ˆ(IJ)Lʼʼ/ʽˋ;
+.method public bridge synthetic ˆ(IJ)Lʼʼ/ʽˏ;
     .locals 0
 
     .line 1
-    invoke-super {p0, p1, p2, p3}, Landroidx/appcompat/widget/ʻ;->ˆ(IJ)Lʼʼ/ʽˋ;
+    invoke-super {p0, p1, p2, p3}, Landroidx/appcompat/widget/ʻ;->ˆ(IJ)Lʼʼ/ʽˏ;
 
     .line 2
     .line 3

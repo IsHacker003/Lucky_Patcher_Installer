@@ -44,7 +44,7 @@
     .locals 3
 
     .line 1
-    sget-object v0, Lʾˉ/ᐧᐧ;->ʽᵎ:Lʾˊ/ـ;
+    sget-object v0, Lʾˉ/ᴵᴵ;->ʽᵎ:Lʾˊ/ـ;
 
     .line 2
     .line 3
@@ -64,11 +64,11 @@
 
     .line 10
     .line 11
-    sget-object v0, Lʾˉ/ᐧᐧ;->ʽᵎ:Lʾˊ/ـ;
+    sget-object v0, Lʾˉ/ᴵᴵ;->ʽᵎ:Lʾˊ/ـ;
 
     .line 12
     .line 13
-    const v1, 0x7f1103be
+    const v1, 0x7f1103c0
 
     .line 14
     .line 15
@@ -86,15 +86,15 @@
     .line 21
     .line 22
     .line 23
-    sget-object v0, Lʾˉ/ᐧᐧ;->ʽᵎ:Lʾˊ/ـ;
+    sget-object v0, Lʾˉ/ᴵᴵ;->ʽᵎ:Lʾˊ/ـ;
 
     .line 24
     .line 25
-    sget-object v1, Lʾˉ/ᐧᐧ;->ʼˎ:Lʾˉ/ᐧᐧ;
+    sget-object v1, Lʾˉ/ᴵᴵ;->ʼˎ:Lʾˉ/ᴵᴵ;
 
     .line 26
     .line 27
-    invoke-virtual {v1}, Lʾˉ/ᐧᐧ;->ˈˑ()Landroidx/fragment/app/ʿ;
+    invoke-virtual {v1}, Lʾˉ/ᴵᴵ;->ˈˑ()Landroidx/fragment/app/ʿ;
 
     .line 28
     .line 29

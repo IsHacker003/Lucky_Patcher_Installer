@@ -4,13 +4,11 @@
 
 
 # direct methods
-.method public static bridge synthetic ʻ(Landroid/view/WindowInsets$Builder;Landroid/graphics/Insets;)Landroid/view/WindowInsets$Builder;
-    .locals 0
+.method public static bridge synthetic ʻ()Ljava/lang/Class;
+    .locals 1
 
     .line 1
-    invoke-virtual {p0, p1}, Landroid/view/WindowInsets$Builder;->setStableInsets(Landroid/graphics/Insets;)Landroid/view/WindowInsets$Builder;
+    const-class v0, Landroid/view/WindowInsets;
 
-    move-result-object p0
-
-    return-object p0
+    return-object v0
 .end method

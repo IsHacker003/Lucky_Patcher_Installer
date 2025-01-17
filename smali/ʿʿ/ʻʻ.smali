@@ -4,13 +4,11 @@
 
 
 # direct methods
-.method public static bridge synthetic ʻ(Landroid/view/accessibility/AccessibilityNodeInfo;)Landroid/os/Bundle;
+.method public static bridge synthetic ʻ(Landroid/view/accessibility/AccessibilityNodeInfo;Ljava/lang/CharSequence;)V
     .locals 0
 
     .line 1
-    invoke-virtual {p0}, Landroid/view/accessibility/AccessibilityNodeInfo;->getExtras()Landroid/os/Bundle;
+    invoke-virtual {p0, p1}, Landroid/view/accessibility/AccessibilityNodeInfo;->setPaneTitle(Ljava/lang/CharSequence;)V
 
-    move-result-object p0
-
-    return-object p0
+    return-void
 .end method

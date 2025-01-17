@@ -855,7 +855,7 @@
     move-result-object v4
 
     .line 425
-    invoke-static {v4}, Lʾˉ/ᐧᐧ;->ˉˎ(Ljava/lang/Object;)V
+    invoke-static {v4}, Lʾˉ/ᴵᴵ;->ˉˎ(Ljava/lang/Object;)V
 
     .line 426
     .line 427
@@ -868,7 +868,7 @@
     move-result-object v4
 
     .line 432
-    invoke-static {v4}, Lʾˉ/ᐧᐧ;->ˉˎ(Ljava/lang/Object;)V
+    invoke-static {v4}, Lʾˉ/ᴵᴵ;->ˉˎ(Ljava/lang/Object;)V
 
     .line 433
     .line 434
@@ -889,7 +889,7 @@
     move-result-object v4
 
     .line 443
-    invoke-static {v4}, Lʾˉ/ᐧᐧ;->ˉˎ(Ljava/lang/Object;)V
+    invoke-static {v4}, Lʾˉ/ᴵᴵ;->ˉˎ(Ljava/lang/Object;)V
 
     .line 444
     .line 445

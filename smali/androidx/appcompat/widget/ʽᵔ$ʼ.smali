@@ -1,11 +1,11 @@
 .class Landroidx/appcompat/widget/ʽᵔ$ʼ;
-.super Lʼʼ/ʽˏ;
+.super Lʼʼ/ʽי;
 .source "SourceFile"
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Landroidx/appcompat/widget/ʽᵔ;->ᵔ(IJ)Lʼʼ/ʽˋ;
+    value = Landroidx/appcompat/widget/ʽᵔ;->ᵔ(IJ)Lʼʼ/ʽˏ;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -35,7 +35,7 @@
 
     .line 4
     .line 5
-    invoke-direct {p0}, Lʼʼ/ʽˏ;-><init>()V
+    invoke-direct {p0}, Lʼʼ/ʽי;-><init>()V
 
     .line 6
     .line 7

@@ -200,16 +200,16 @@
     return p1
 .end method
 
-.method public ˆ(Landroidx/coordinatorlayout/widget/CoordinatorLayout;Landroid/view/View;Lʼʼ/ʽٴ;)Lʼʼ/ʽٴ;
+.method public ˆ(Landroidx/coordinatorlayout/widget/CoordinatorLayout;Landroid/view/View;Lʼʼ/ʽᴵ;)Lʼʼ/ʽᴵ;
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
             "Landroidx/coordinatorlayout/widget/CoordinatorLayout;",
             "TV;",
-            "L\u02bc\u02bc/\u02bd\u0674;",
+            "L\u02bc\u02bc/\u02bd\u1d35;",
             ")",
-            "L\u02bc\u02bc/\u02bd\u0674;"
+            "L\u02bc\u02bc/\u02bd\u1d35;"
         }
     .end annotation
 

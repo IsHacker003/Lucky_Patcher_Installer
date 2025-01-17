@@ -46,7 +46,7 @@
 
 
 # virtual methods
-.method public ʻ(Landroid/view/View;Lʼʼ/ʽٴ;)Lʼʼ/ʽٴ;
+.method public ʻ(Landroid/view/View;Lʼʼ/ʽᴵ;)Lʼʼ/ʽᴵ;
     .locals 3
 
     .line 1
@@ -67,7 +67,7 @@
     .line 8
     .line 9
     .line 10
-    invoke-interface {v0, p1, p2, v1}, Lcom/google/android/material/internal/ᵢ$ʽ;->ʻ(Landroid/view/View;Lʼʼ/ʽٴ;Lcom/google/android/material/internal/ᵢ$ʾ;)Lʼʼ/ʽٴ;
+    invoke-interface {v0, p1, p2, v1}, Lcom/google/android/material/internal/ᵢ$ʽ;->ʻ(Landroid/view/View;Lʼʼ/ʽᴵ;Lcom/google/android/material/internal/ᵢ$ʾ;)Lʼʼ/ʽᴵ;
 
     .line 11
     .line 12

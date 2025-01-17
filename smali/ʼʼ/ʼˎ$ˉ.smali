@@ -48,11 +48,11 @@
     return-void
 .end method
 
-.method static ʼ(Landroid/view/View;Lʼʼ/ʽٴ;Landroid/graphics/Rect;)Lʼʼ/ʽٴ;
+.method static ʼ(Landroid/view/View;Lʼʼ/ʽᴵ;Landroid/graphics/Rect;)Lʼʼ/ʽᴵ;
     .locals 1
 
     .line 1
-    invoke-virtual {p1}, Lʼʼ/ʽٴ;->ᵎ()Landroid/view/WindowInsets;
+    invoke-virtual {p1}, Lʼʼ/ʽᴵ;->ᵎ()Landroid/view/WindowInsets;
 
     .line 2
     .line 3
@@ -72,7 +72,7 @@
     move-result-object p1
 
     .line 11
-    invoke-static {p1, p0}, Lʼʼ/ʽٴ;->ᵢ(Landroid/view/WindowInsets;Landroid/view/View;)Lʼʼ/ʽٴ;
+    invoke-static {p1, p0}, Lʼʼ/ʽᴵ;->ᵢ(Landroid/view/WindowInsets;Landroid/view/View;)Lʼʼ/ʽᴵ;
 
     .line 12
     .line 13
@@ -92,11 +92,11 @@
     return-object p1
 .end method
 
-.method public static ʽ(Landroid/view/View;)Lʼʼ/ʽٴ;
+.method public static ʽ(Landroid/view/View;)Lʼʼ/ʽᴵ;
     .locals 0
 
     .line 1
-    invoke-static {p0}, Lʼʼ/ʽٴ$ʻ;->ʻ(Landroid/view/View;)Lʼʼ/ʽٴ;
+    invoke-static {p0}, Lʼʼ/ʽᴵ$ʻ;->ʻ(Landroid/view/View;)Lʼʼ/ʽᴵ;
 
     .line 2
     .line 3

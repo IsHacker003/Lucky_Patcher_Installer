@@ -53,7 +53,7 @@
     .line 4
     .line 5
     .line 6
-    sget-object p2, Lʾˉ/ᐧᐧ;->ʻﹶ:Ljava/lang/String;
+    sget-object p2, Lʾˉ/ᴵᴵ;->ʻﹶ:Ljava/lang/String;
 
     .line 7
     .line 8

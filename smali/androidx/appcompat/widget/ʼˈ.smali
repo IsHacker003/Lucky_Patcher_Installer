@@ -79,7 +79,7 @@
 .method public abstract ᵎ()I
 .end method
 
-.method public abstract ᵔ(IJ)Lʼʼ/ʽˋ;
+.method public abstract ᵔ(IJ)Lʼʼ/ʽˏ;
 .end method
 
 .method public abstract ᵢ()V

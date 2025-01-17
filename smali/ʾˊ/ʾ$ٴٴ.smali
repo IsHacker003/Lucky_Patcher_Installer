@@ -55,7 +55,7 @@
     .locals 2
 
     .line 1
-    const p1, 0x7f1104cb
+    const p1, 0x7f1104cf
 
     .line 2
     .line 3
@@ -68,7 +68,7 @@
     move-result-object p1
 
     .line 8
-    const p2, 0x7f110408
+    const p2, 0x7f11040a
 
     .line 9
     .line 10

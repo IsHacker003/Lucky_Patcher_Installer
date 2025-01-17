@@ -44,7 +44,7 @@
     .locals 2
 
     .line 1
-    sget-object v0, Lʾˉ/ᐧᐧ;->ʻﹶ:Ljava/lang/String;
+    sget-object v0, Lʾˉ/ᴵᴵ;->ʻﹶ:Ljava/lang/String;
 
     .line 2
     .line 3
@@ -59,7 +59,7 @@
     const/4 v1, 0x1
 
     .line 8
-    invoke-static {v0, v1}, Lʾˉ/ᐧᐧ;->ˎי(Lʾˉ/ˎ;Z)V
+    invoke-static {v0, v1}, Lʾˉ/ᴵᴵ;->ˎי(Lʾˉ/ˎ;Z)V
 
     .line 9
     .line 10

@@ -37,11 +37,11 @@
 
 
 # virtual methods
-.method public ˈ(Landroid/view/View;Lʿʿ/ﹳﹳ;)V
+.method public ˈ(Landroid/view/View;Lʿʿ/ʻʼ;)V
     .locals 0
 
     .line 1
-    invoke-super {p0, p1, p2}, Lcom/google/android/material/textfield/TextInputLayout$ʿ;->ˈ(Landroid/view/View;Lʿʿ/ﹳﹳ;)V
+    invoke-super {p0, p1, p2}, Lcom/google/android/material/textfield/TextInputLayout$ʿ;->ˈ(Landroid/view/View;Lʿʿ/ʻʼ;)V
 
     .line 2
     .line 3
@@ -86,13 +86,13 @@
     move-result-object p1
 
     .line 24
-    invoke-virtual {p2, p1}, Lʿʿ/ﹳﹳ;->ʻʾ(Ljava/lang/CharSequence;)V
+    invoke-virtual {p2, p1}, Lʿʿ/ʻʼ;->ʻʾ(Ljava/lang/CharSequence;)V
 
     .line 25
     .line 26
     .line 27
     :cond_0
-    invoke-virtual {p2}, Lʿʿ/ﹳﹳ;->ˋˋ()Z
+    invoke-virtual {p2}, Lʿʿ/ʻʼ;->ˋˋ()Z
 
     .line 28
     .line 29
@@ -107,7 +107,7 @@
     const/4 p1, 0x0
 
     .line 34
-    invoke-virtual {p2, p1}, Lʿʿ/ﹳﹳ;->ʻי(Ljava/lang/CharSequence;)V
+    invoke-virtual {p2, p1}, Lʿʿ/ʻʼ;->ʻי(Ljava/lang/CharSequence;)V
 
     .line 35
     .line 36

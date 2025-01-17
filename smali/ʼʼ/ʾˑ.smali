@@ -4,13 +4,13 @@
 
 
 # direct methods
-.method public static bridge synthetic ʻ(Landroid/view/WindowInsets;)Landroid/view/DisplayCutout;
+.method public static bridge synthetic ʻ(Landroid/view/WindowInsets;)Z
     .locals 0
 
     .line 1
-    invoke-virtual {p0}, Landroid/view/WindowInsets;->getDisplayCutout()Landroid/view/DisplayCutout;
+    invoke-virtual {p0}, Landroid/view/WindowInsets;->isConsumed()Z
 
-    move-result-object p0
+    move-result p0
 
-    return-object p0
+    return p0
 .end method

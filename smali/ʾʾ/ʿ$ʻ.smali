@@ -1,139 +1,84 @@
-.class final Lʾʾ/ʿ$ʻ;
-.super Ljava/lang/Object;
+.class Lʾʾ/ʿ$ʻ;
+.super Landroid/view/inputmethod/InputConnectionWrapper;
 .source "SourceFile"
-
-# interfaces
-.implements Lʾʾ/ʿ$ʽ;
 
 
 # annotations
-.annotation system Ldalvik/annotation/EnclosingClass;
-    value = Lʾʾ/ʿ;
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Lʾʾ/ʿ;->ʻ(Landroid/view/inputmethod/InputConnection;Landroid/view/inputmethod/EditorInfo;Lʾʾ/ʿ$ʽ;)Landroid/view/inputmethod/InputConnection;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x1a
-    name = "\u02bb"
+    accessFlags = 0x0
+    name = null
 .end annotation
 
 
 # instance fields
-.field final ʻ:Landroid/view/inputmethod/InputContentInfo;
+.field final synthetic ʻ:Lʾʾ/ʿ$ʽ;
 
 
 # direct methods
-.method constructor <init>(Landroid/net/Uri;Landroid/content/ClipDescription;Landroid/net/Uri;)V
-    .locals 1
-
-    .line 3
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    .line 4
-    new-instance v0, Landroid/view/inputmethod/InputContentInfo;
-
-    invoke-direct {v0, p1, p2, p3}, Landroid/view/inputmethod/InputContentInfo;-><init>(Landroid/net/Uri;Landroid/content/ClipDescription;Landroid/net/Uri;)V
-
-    iput-object v0, p0, Lʾʾ/ʿ$ʻ;->ʻ:Landroid/view/inputmethod/InputContentInfo;
-
-    return-void
-.end method
-
-.method constructor <init>(Ljava/lang/Object;)V
+.method constructor <init>(Landroid/view/inputmethod/InputConnection;ZLʾʾ/ʿ$ʽ;)V
     .locals 0
 
     .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    iput-object p3, p0, Lʾʾ/ʿ$ʻ;->ʻ:Lʾʾ/ʿ$ʽ;
 
     .line 2
-    check-cast p1, Landroid/view/inputmethod/InputContentInfo;
+    .line 3
+    invoke-direct {p0, p1, p2}, Landroid/view/inputmethod/InputConnectionWrapper;-><init>(Landroid/view/inputmethod/InputConnection;Z)V
 
-    iput-object p1, p0, Lʾʾ/ʿ$ʻ;->ʻ:Landroid/view/inputmethod/InputContentInfo;
-
+    .line 4
+    .line 5
+    .line 6
     return-void
 .end method
 
 
 # virtual methods
-.method public ʻ()V
-    .locals 1
+.method public commitContent(Landroid/view/inputmethod/InputContentInfo;ILandroid/os/Bundle;)Z
+    .locals 2
 
     .line 1
-    iget-object v0, p0, Lʾʾ/ʿ$ʻ;->ʻ:Landroid/view/inputmethod/InputContentInfo;
+    iget-object v0, p0, Lʾʾ/ʿ$ʻ;->ʻ:Lʾʾ/ʿ$ʽ;
 
     .line 2
     .line 3
-    invoke-virtual {v0}, Landroid/view/inputmethod/InputContentInfo;->requestPermission()V
+    invoke-static {p1}, Lʾʾ/ˆ;->ˆ(Ljava/lang/Object;)Lʾʾ/ˆ;
 
     .line 4
     .line 5
     .line 6
-    return-void
-.end method
-
-.method public ʼ()Landroid/net/Uri;
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, Lʾʾ/ʿ$ʻ;->ʻ:Landroid/view/inputmethod/InputContentInfo;
-
-    .line 2
-    .line 3
-    invoke-virtual {v0}, Landroid/view/inputmethod/InputContentInfo;->getLinkUri()Landroid/net/Uri;
-
-    .line 4
-    .line 5
-    .line 6
-    move-result-object v0
+    move-result-object v1
 
     .line 7
-    return-object v0
-.end method
+    invoke-interface {v0, v1, p2, p3}, Lʾʾ/ʿ$ʽ;->ʻ(Lʾʾ/ˆ;ILandroid/os/Bundle;)Z
 
-.method public ʽ()Landroid/content/ClipDescription;
-    .locals 1
+    .line 8
+    .line 9
+    .line 10
+    move-result v0
 
-    .line 1
-    iget-object v0, p0, Lʾʾ/ʿ$ʻ;->ʻ:Landroid/view/inputmethod/InputContentInfo;
+    .line 11
+    if-eqz v0, :cond_0
 
-    .line 2
-    .line 3
-    invoke-virtual {v0}, Landroid/view/inputmethod/InputContentInfo;->getDescription()Landroid/content/ClipDescription;
+    .line 12
+    .line 13
+    const/4 p1, 0x1
 
-    .line 4
-    .line 5
-    .line 6
-    move-result-object v0
+    .line 14
+    return p1
 
-    .line 7
-    return-object v0
-.end method
+    .line 15
+    :cond_0
+    invoke-super {p0, p1, p2, p3}, Landroid/view/inputmethod/InputConnectionWrapper;->commitContent(Landroid/view/inputmethod/InputContentInfo;ILandroid/os/Bundle;)Z
 
-.method public ʾ()Ljava/lang/Object;
-    .locals 1
+    .line 16
+    .line 17
+    .line 18
+    move-result p1
 
-    .line 1
-    iget-object v0, p0, Lʾʾ/ʿ$ʻ;->ʻ:Landroid/view/inputmethod/InputContentInfo;
-
-    .line 2
-    .line 3
-    return-object v0
-.end method
-
-.method public ʿ()Landroid/net/Uri;
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, Lʾʾ/ʿ$ʻ;->ʻ:Landroid/view/inputmethod/InputContentInfo;
-
-    .line 2
-    .line 3
-    invoke-virtual {v0}, Landroid/view/inputmethod/InputContentInfo;->getContentUri()Landroid/net/Uri;
-
-    .line 4
-    .line 5
-    .line 6
-    move-result-object v0
-
-    .line 7
-    return-object v0
+    .line 19
+    return p1
 .end method

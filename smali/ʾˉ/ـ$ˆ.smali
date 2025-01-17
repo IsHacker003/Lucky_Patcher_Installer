@@ -57,7 +57,7 @@
 
     .line 7
     :pswitch_0
-    invoke-static {}, Lʾˉ/ᐧᐧ;->ˈˏ()Landroid/content/SharedPreferences;
+    invoke-static {}, Lʾˉ/ᴵᴵ;->ˈˏ()Landroid/content/SharedPreferences;
 
     .line 8
     .line 9
@@ -93,7 +93,7 @@
 
     .line 24
     :pswitch_1
-    invoke-static {}, Lʾˉ/ᐧᐧ;->ˈˏ()Landroid/content/SharedPreferences;
+    invoke-static {}, Lʾˉ/ᴵᴵ;->ˈˏ()Landroid/content/SharedPreferences;
 
     .line 25
     .line 26

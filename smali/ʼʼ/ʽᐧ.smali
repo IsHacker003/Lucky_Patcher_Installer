@@ -4,11 +4,11 @@
 
 
 # direct methods
-.method public static bridge synthetic ʻ(Landroid/view/WindowInsets;IIII)Landroid/view/WindowInsets;
+.method public static bridge synthetic ʻ(Ljava/lang/ReflectiveOperationException;)Ljava/lang/String;
     .locals 0
 
     .line 1
-    invoke-virtual {p0, p1, p2, p3, p4}, Landroid/view/WindowInsets;->replaceSystemWindowInsets(IIII)Landroid/view/WindowInsets;
+    invoke-virtual {p0}, Ljava/lang/ReflectiveOperationException;->getMessage()Ljava/lang/String;
 
     move-result-object p0
 

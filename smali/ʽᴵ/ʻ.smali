@@ -4,7 +4,7 @@
 
 # interfaces
 .implements Lʽᵔ/ᵢ;
-.implements Lﹶ/ᴵᴵ;
+.implements Lﹶ/ʻʻ;
 
 
 # annotations

@@ -12,7 +12,7 @@
 
 
 # direct methods
-.method static ʻ(Landroid/view/View;)Lʾʾ/ʾ$ʽ;
+.method static ʻ(Landroid/view/View;)Lʾʾ/ʿ$ʽ;
     .locals 1
 
     .line 1

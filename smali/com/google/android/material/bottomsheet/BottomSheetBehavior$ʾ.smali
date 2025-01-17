@@ -46,7 +46,7 @@
 
 
 # virtual methods
-.method public ʻ(Landroid/view/View;Lʼʼ/ʽٴ;Lcom/google/android/material/internal/ᵢ$ʾ;)Lʼʼ/ʽٴ;
+.method public ʻ(Landroid/view/View;Lʼʼ/ʽᴵ;Lcom/google/android/material/internal/ᵢ$ʾ;)Lʼʼ/ʽᴵ;
     .locals 5
 
     .line 1
@@ -54,7 +54,7 @@
 
     .line 2
     .line 3
-    invoke-virtual {p2}, Lʼʼ/ʽٴ;->ˊ()I
+    invoke-virtual {p2}, Lʼʼ/ʽᴵ;->ˊ()I
 
     .line 4
     .line 5
@@ -119,7 +119,7 @@
 
     .line 35
     .line 36
-    invoke-virtual {p2}, Lʼʼ/ʽٴ;->ˆ()I
+    invoke-virtual {p2}, Lʼʼ/ʽᴵ;->ˆ()I
 
     .line 37
     .line 38
@@ -185,7 +185,7 @@
     .line 66
     .line 67
     :goto_0
-    invoke-virtual {p2}, Lʼʼ/ʽٴ;->ˈ()I
+    invoke-virtual {p2}, Lʼʼ/ʽᴵ;->ˈ()I
 
     .line 68
     .line 69
@@ -230,7 +230,7 @@
     .line 86
     .line 87
     :goto_1
-    invoke-virtual {p2}, Lʼʼ/ʽٴ;->ˉ()I
+    invoke-virtual {p2}, Lʼʼ/ʽᴵ;->ˉ()I
 
     .line 88
     .line 89
@@ -268,7 +268,7 @@
 
     .line 105
     .line 106
-    invoke-virtual {p2}, Lʼʼ/ʽٴ;->ʿ()Lﹳ/ˈ;
+    invoke-virtual {p2}, Lʼʼ/ʽᴵ;->ʿ()Lﹳ/ˈ;
 
     .line 107
     .line 108

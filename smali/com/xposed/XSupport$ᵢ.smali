@@ -38,7 +38,7 @@
 
 # virtual methods
 .method protected beforeHookedMethod(Lde/robv/android/xposed/XC_MethodHook$MethodHookParam;)V
-    .locals 1
+    .locals 2
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/Throwable;
@@ -46,40 +46,53 @@
     .end annotation
 
     .line 1
-    iget-object v0, p0, Lcom/xposed/XSupport$ᵢ;->ʻ:Lcom/xposed/XSupport;
+    sget-object v0, Ljava/lang/System;->out:Ljava/io/PrintStream;
 
     .line 2
     .line 3
-    invoke-virtual {v0}, Lcom/xposed/XSupport;->ˆ()V
+    const-string v1, "engineVerify"
 
     .line 4
     .line 5
-    .line 6
-    sget-boolean v0, Lcom/xposed/XSupport;->ᵎ:Z
+    invoke-virtual {v0, v1}, Ljava/io/PrintStream;->println(Ljava/lang/String;)V
 
+    .line 6
     .line 7
     .line 8
-    if-eqz v0, :cond_0
+    iget-object v0, p0, Lcom/xposed/XSupport$ᵢ;->ʻ:Lcom/xposed/XSupport;
 
     .line 9
     .line 10
-    sget-boolean v0, Lcom/xposed/XSupport;->ـ:Z
+    invoke-virtual {v0}, Lcom/xposed/XSupport;->ˈ()V
 
     .line 11
     .line 12
+    .line 13
+    sget-boolean v0, Lcom/xposed/XSupport;->ᵎ:Z
+
+    .line 14
+    .line 15
     if-eqz v0, :cond_0
 
-    .line 13
-    .line 14
-    sget-object v0, Ljava/lang/Boolean;->TRUE:Ljava/lang/Boolean;
-
-    .line 15
     .line 16
-    invoke-virtual {p1, v0}, Lde/robv/android/xposed/XC_MethodHook$MethodHookParam;->setResult(Ljava/lang/Object;)V
-
     .line 17
+    sget-boolean v0, Lcom/xposed/XSupport;->י:Z
+
     .line 18
     .line 19
+    if-eqz v0, :cond_0
+
+    .line 20
+    .line 21
+    sget-object v0, Ljava/lang/Boolean;->TRUE:Ljava/lang/Boolean;
+
+    .line 22
+    .line 23
+    invoke-virtual {p1, v0}, Lde/robv/android/xposed/XC_MethodHook$MethodHookParam;->setResult(Ljava/lang/Object;)V
+
+    .line 24
+    .line 25
+    .line 26
     :cond_0
     return-void
 .end method

@@ -6,13 +6,13 @@
 # instance fields
 .field private final ʻ:I
 
-.field private final ʼ:Lʿʿ/ﹳﹳ;
+.field private final ʼ:Lʿʿ/ʻʼ;
 
 .field private final ʽ:I
 
 
 # direct methods
-.method public constructor <init>(ILʿʿ/ﹳﹳ;I)V
+.method public constructor <init>(ILʿʿ/ʻʼ;I)V
     .locals 0
 
     .line 1
@@ -25,7 +25,7 @@
 
     .line 5
     .line 6
-    iput-object p2, p0, Lʿʿ/ʻ;->ʼ:Lʿʿ/ﹳﹳ;
+    iput-object p2, p0, Lʿʿ/ʻ;->ʼ:Lʿʿ/ʻʼ;
 
     .line 7
     .line 8
@@ -64,7 +64,7 @@
     .line 11
     .line 12
     .line 13
-    iget-object v0, p0, Lʿʿ/ʻ;->ʼ:Lʿʿ/ﹳﹳ;
+    iget-object v0, p0, Lʿʿ/ʻ;->ʼ:Lʿʿ/ʻʼ;
 
     .line 14
     .line 15
@@ -72,7 +72,7 @@
 
     .line 16
     .line 17
-    invoke-virtual {v0, v1, p1}, Lʿʿ/ﹳﹳ;->ᵔᵔ(ILandroid/os/Bundle;)Z
+    invoke-virtual {v0, v1, p1}, Lʿʿ/ʻʼ;->ᵔᵔ(ILandroid/os/Bundle;)Z
 
     .line 18
     .line 19

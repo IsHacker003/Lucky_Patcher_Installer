@@ -4,8 +4,11 @@
 
 
 # virtual methods
-.method public abstract ʻ()Landroid/graphics/drawable/Drawable;
+.method public abstract setTint(I)V
 .end method
 
-.method public abstract ʼ(Landroid/graphics/drawable/Drawable;)V
+.method public abstract setTintList(Landroid/content/res/ColorStateList;)V
+.end method
+
+.method public abstract setTintMode(Landroid/graphics/PorterDuff$Mode;)V
 .end method

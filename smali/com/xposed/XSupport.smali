@@ -133,7 +133,7 @@
 
 # virtual methods
 .method public handleLoadPackage(Lde/robv/android/xposed/callbacks/XC_LoadPackage$LoadPackageParam;)V
-    .locals 28
+    .locals 29
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/lang/Throwable;
@@ -155,7 +155,7 @@
     const/4 v11, 0x0
 
     .line 7
-    invoke-static {}, Lru/aaaaacax/installer/PkgName;->getPkgName()Ljava/lang/String;
+    invoke-static {}, Lru/aaaaacay/installer/PkgName;->getPkgName()Ljava/lang/String;
 
     .line 8
     .line 9
@@ -195,11 +195,11 @@
 
     .line 26
     .line 27
-    new-instance v3, Lcom/xposed/XSupport$ﹶ;
+    new-instance v3, Lcom/xposed/XSupport$ﾞ;
 
     .line 28
     .line 29
-    invoke-direct {v3, v8}, Lcom/xposed/XSupport$ﹶ;-><init>(Lcom/xposed/XSupport;)V
+    invoke-direct {v3, v8}, Lcom/xposed/XSupport$ﾞ;-><init>(Lcom/xposed/XSupport;)V
 
     .line 30
     .line 31
@@ -222,11 +222,11 @@
     .line 40
     .line 41
     :cond_0
-    new-instance v1, Lcom/xposed/XSupport$ﾞ;
+    new-instance v1, Lcom/xposed/XSupport$ﾞﾞ;
 
     .line 42
     .line 43
-    invoke-direct {v1, v8}, Lcom/xposed/XSupport$ﾞ;-><init>(Lcom/xposed/XSupport;)V
+    invoke-direct {v1, v8}, Lcom/xposed/XSupport$ﾞﾞ;-><init>(Lcom/xposed/XSupport;)V
 
     .line 44
     .line 45
@@ -235,31 +235,31 @@
 
     .line 47
     .line 48
-    const/4 v3, 0x0
+    const/4 v12, 0x0
 
     .line 49
-    invoke-static {v2, v3}, Lde/robv/android/xposed/XposedHelpers;->findClass(Ljava/lang/String;Ljava/lang/ClassLoader;)Ljava/lang/Class;
+    invoke-static {v2, v12}, Lde/robv/android/xposed/XposedHelpers;->findClass(Ljava/lang/String;Ljava/lang/ClassLoader;)Ljava/lang/Class;
 
     .line 50
     .line 51
     .line 52
-    move-result-object v4
+    move-result-object v3
 
     .line 53
-    const-string v5, "bindService"
+    const-string v4, "bindService"
 
     .line 54
     .line 55
-    invoke-static {v4, v5, v1}, Lde/robv/android/xposed/XposedBridge;->hookAllMethods(Ljava/lang/Class;Ljava/lang/String;Lde/robv/android/xposed/XC_MethodHook;)Ljava/util/Set;
+    invoke-static {v3, v4, v1}, Lde/robv/android/xposed/XposedBridge;->hookAllMethods(Ljava/lang/Class;Ljava/lang/String;Lde/robv/android/xposed/XC_MethodHook;)Ljava/util/Set;
 
     .line 56
     .line 57
     .line 58
-    iget-object v4, v9, Lde/robv/android/xposed/callbacks/XC_LoadPackage$LoadPackageParam;->classLoader:Ljava/lang/ClassLoader;
+    iget-object v3, v9, Lde/robv/android/xposed/callbacks/XC_LoadPackage$LoadPackageParam;->classLoader:Ljava/lang/ClassLoader;
 
     .line 59
     .line 60
-    invoke-static {v2, v4}, Lde/robv/android/xposed/XposedHelpers;->findClass(Ljava/lang/String;Ljava/lang/ClassLoader;)Ljava/lang/Class;
+    invoke-static {v2, v3}, Lde/robv/android/xposed/XposedHelpers;->findClass(Ljava/lang/String;Ljava/lang/ClassLoader;)Ljava/lang/Class;
 
     .line 61
     .line 62
@@ -267,1483 +267,1575 @@
     move-result-object v2
 
     .line 64
-    invoke-static {v2, v5, v1}, Lde/robv/android/xposed/XposedBridge;->hookAllMethods(Ljava/lang/Class;Ljava/lang/String;Lde/robv/android/xposed/XC_MethodHook;)Ljava/util/Set;
+    invoke-static {v2, v4, v1}, Lde/robv/android/xposed/XposedBridge;->hookAllMethods(Ljava/lang/Class;Ljava/lang/String;Lde/robv/android/xposed/XC_MethodHook;)Ljava/util/Set;
 
     .line 65
     .line 66
     .line 67
-    iget-object v1, v9, Lde/robv/android/xposed/callbacks/XC_LoadPackage$LoadPackageParam;->packageName:Ljava/lang/String;
+    sget v13, Landroid/os/Build$VERSION;->SDK_INT:I
 
     .line 68
     .line 69
-    const-string v2, "android"
+    const/16 v1, 0x1e
 
     .line 70
     .line 71
-    invoke-virtual {v2, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+    if-lt v13, v1, :cond_1
 
     .line 72
     .line 73
-    .line 74
-    move-result v1
+    iget-object v1, v9, Lde/robv/android/xposed/callbacks/XC_LoadPackage$LoadPackageParam;->processName:Ljava/lang/String;
 
+    .line 74
     .line 75
-    const-string v12, "getPreferredPackages"
+    const-string v2, "com.android.externalstorage"
 
     .line 76
     .line 77
-    const-string v13, "getInstalledPackages"
+    invoke-virtual {v1, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     .line 78
     .line 79
-    const-string v14, "getInstalledApplications"
-
     .line 80
+    move-result v1
+
     .line 81
-    const-string v15, "getApplicationInfo"
+    if-eqz v1, :cond_1
 
     .line 82
     .line 83
-    const-string v7, "getPackageInfo"
+    sget-object v14, Ljava/lang/Boolean;->FALSE:Ljava/lang/Boolean;
 
     .line 84
     .line 85
-    if-eqz v1, :cond_a
+    const-string v2, "com.android.externalstorage.ExternalStorageProvider"
 
     .line 86
     .line 87
-    iget-object v1, v9, Lde/robv/android/xposed/callbacks/XC_LoadPackage$LoadPackageParam;->processName:Ljava/lang/String;
+    const-string v3, "shouldBlockDirectoryFromTree"
 
     .line 88
     .line 89
-    invoke-virtual {v1, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+    const/4 v4, 0x3
 
     .line 90
+    const/4 v5, 0x0
+
     .line 91
+    const/4 v6, 0x0
+
     .line 92
-    move-result v1
+    move-object/from16 v1, p0
 
     .line 93
-    if-eqz v1, :cond_a
-
     .line 94
+    move-object v7, v14
+
     .line 95
-    sget v1, Landroid/os/Build$VERSION;->SDK_INT:I
+    invoke-virtual/range {v1 .. v7}, Lcom/xposed/XSupport;->ˆ(Ljava/lang/String;Ljava/lang/String;I[Ljava/lang/String;[Ljava/lang/String;Ljava/lang/Object;)V
 
     .line 96
     .line 97
-    const/16 v6, 0x1c
-
     .line 98
+    const-string v2, "com.android.externalstorage.ExternalStorageProvider"
+
     .line 99
-    if-lt v1, v6, :cond_1
-
     .line 100
+    const-string v3, "shouldBlockFromTree"
+
     .line 101
-    :try_start_0
-    const-string v1, "android.content.pm.PackageParser$SigningDetails"
-
     .line 102
-    .line 103
-    iget-object v2, v9, Lde/robv/android/xposed/callbacks/XC_LoadPackage$LoadPackageParam;->classLoader:Ljava/lang/ClassLoader;
+    invoke-virtual/range {v1 .. v7}, Lcom/xposed/XSupport;->ˆ(Ljava/lang/String;Ljava/lang/String;I[Ljava/lang/String;[Ljava/lang/String;Ljava/lang/Object;)V
 
+    .line 103
     .line 104
     .line 105
-    invoke-static {v1, v2}, Lde/robv/android/xposed/XposedHelpers;->findClass(Ljava/lang/String;Ljava/lang/ClassLoader;)Ljava/lang/Class;
+    const-string v2, "com.android.externalstorage.ExternalStorageProvider"
 
     .line 106
     .line 107
+    const-string v3, "shouldHideDocument"
+
     .line 108
+    .line 109
+    invoke-virtual/range {v1 .. v7}, Lcom/xposed/XSupport;->ˆ(Ljava/lang/String;Ljava/lang/String;I[Ljava/lang/String;[Ljava/lang/String;Ljava/lang/Object;)V
+
+    .line 110
+    .line 111
+    .line 112
+    :cond_1
+    iget-object v1, v9, Lde/robv/android/xposed/callbacks/XC_LoadPackage$LoadPackageParam;->packageName:Ljava/lang/String;
+
+    .line 113
+    .line 114
+    const-string v2, "android"
+
+    .line 115
+    .line 116
+    invoke-virtual {v2, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    .line 117
+    .line 118
+    .line 119
+    move-result v1
+
+    .line 120
+    const-string v14, "getPreferredPackages"
+
+    .line 121
+    .line 122
+    const-string v15, "getInstalledPackages"
+
+    .line 123
+    .line 124
+    const-string v7, "getInstalledApplications"
+
+    .line 125
+    .line 126
+    const-string v6, "getApplicationInfo"
+
+    .line 127
+    .line 128
+    const-string v5, "getPackageInfo"
+
+    .line 129
+    .line 130
+    if-eqz v1, :cond_b
+
+    .line 131
+    .line 132
+    iget-object v1, v9, Lde/robv/android/xposed/callbacks/XC_LoadPackage$LoadPackageParam;->processName:Ljava/lang/String;
+
+    .line 133
+    .line 134
+    invoke-virtual {v1, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    .line 135
+    .line 136
+    .line 137
+    move-result v1
+
+    .line 138
+    if-eqz v1, :cond_b
+
+    .line 139
+    .line 140
+    const/16 v4, 0x1c
+
+    .line 141
+    .line 142
+    if-lt v13, v4, :cond_2
+
+    .line 143
+    .line 144
+    :try_start_0
+    const-string v1, "android.content.pm.PackageParser$SigningDetails"
+
+    .line 145
+    .line 146
+    iget-object v2, v9, Lde/robv/android/xposed/callbacks/XC_LoadPackage$LoadPackageParam;->classLoader:Ljava/lang/ClassLoader;
+
+    .line 147
+    .line 148
+    invoke-static {v1, v2}, Lde/robv/android/xposed/XposedHelpers;->findClass(Ljava/lang/String;Ljava/lang/ClassLoader;)Ljava/lang/Class;
+
+    .line 149
+    .line 150
+    .line 151
     move-result-object v1
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 109
+    .line 152
     goto :goto_0
 
-    .line 110
+    .line 153
     :catchall_0
-    move-object v1, v3
+    move-object v1, v12
 
-    .line 111
+    .line 154
     :goto_0
     :try_start_1
     const-string v2, "android.content.pm.PackageParser.SigningDetails"
 
-    .line 112
-    .line 113
-    iget-object v4, v9, Lde/robv/android/xposed/callbacks/XC_LoadPackage$LoadPackageParam;->classLoader:Ljava/lang/ClassLoader;
+    .line 155
+    .line 156
+    iget-object v3, v9, Lde/robv/android/xposed/callbacks/XC_LoadPackage$LoadPackageParam;->classLoader:Ljava/lang/ClassLoader;
 
-    .line 114
-    .line 115
-    invoke-static {v2, v4}, Lde/robv/android/xposed/XposedHelpers;->findClass(Ljava/lang/String;Ljava/lang/ClassLoader;)Ljava/lang/Class;
+    .line 157
+    .line 158
+    invoke-static {v2, v3}, Lde/robv/android/xposed/XposedHelpers;->findClass(Ljava/lang/String;Ljava/lang/ClassLoader;)Ljava/lang/Class;
 
-    .line 116
-    .line 117
-    .line 118
+    .line 159
+    .line 160
+    .line 161
     move-result-object v2
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_1
 
-    .line 119
+    .line 162
     goto :goto_1
 
-    .line 120
+    .line 163
     :catchall_1
-    move-object v2, v3
+    move-object v2, v12
 
-    .line 121
+    .line 164
     :goto_1
     :try_start_2
-    const-string v4, "android.content.pm.SigningDetails"
+    const-string v3, "android.content.pm.SigningDetails"
 
-    .line 122
-    .line 123
-    iget-object v5, v9, Lde/robv/android/xposed/callbacks/XC_LoadPackage$LoadPackageParam;->classLoader:Ljava/lang/ClassLoader;
+    .line 165
+    .line 166
+    iget-object v13, v9, Lde/robv/android/xposed/callbacks/XC_LoadPackage$LoadPackageParam;->classLoader:Ljava/lang/ClassLoader;
 
-    .line 124
-    .line 125
-    invoke-static {v4, v5}, Lde/robv/android/xposed/XposedHelpers;->findClass(Ljava/lang/String;Ljava/lang/ClassLoader;)Ljava/lang/Class;
+    .line 167
+    .line 168
+    invoke-static {v3, v13}, Lde/robv/android/xposed/XposedHelpers;->findClass(Ljava/lang/String;Ljava/lang/ClassLoader;)Ljava/lang/Class;
 
-    .line 126
-    .line 127
-    .line 128
-    move-result-object v4
+    .line 169
+    .line 170
+    .line 171
+    move-result-object v3
     :try_end_2
     .catchall {:try_start_2 .. :try_end_2} :catchall_2
 
-    .line 129
+    .line 172
     goto :goto_2
 
-    .line 130
+    .line 173
     :catchall_2
-    move-object v4, v3
+    move-object v3, v12
 
-    .line 131
+    .line 174
     :goto_2
     :try_start_3
-    const-string v5, "android.content.pm.PackageParser"
+    const-string v13, "android.content.pm.PackageParser"
 
-    .line 132
-    .line 133
-    iget-object v3, v9, Lde/robv/android/xposed/callbacks/XC_LoadPackage$LoadPackageParam;->classLoader:Ljava/lang/ClassLoader;
+    .line 175
+    .line 176
+    iget-object v4, v9, Lde/robv/android/xposed/callbacks/XC_LoadPackage$LoadPackageParam;->classLoader:Ljava/lang/ClassLoader;
 
-    .line 134
-    .line 135
-    invoke-static {v5, v3}, Lde/robv/android/xposed/XposedHelpers;->findClass(Ljava/lang/String;Ljava/lang/ClassLoader;)Ljava/lang/Class;
+    .line 177
+    .line 178
+    invoke-static {v13, v4}, Lde/robv/android/xposed/XposedHelpers;->findClass(Ljava/lang/String;Ljava/lang/ClassLoader;)Ljava/lang/Class;
 
-    .line 136
-    .line 137
-    .line 138
-    move-result-object v3
+    .line 179
+    .line 180
+    .line 181
+    move-result-object v4
     :try_end_3
     .catchall {:try_start_3 .. :try_end_3} :catchall_3
 
-    .line 139
+    .line 182
     goto :goto_3
 
-    .line 140
+    .line 183
     :catchall_3
-    const/4 v3, 0x0
+    move-object v4, v12
 
-    .line 141
+    .line 184
     :goto_3
     :try_start_4
-    const-string v5, "com.android.server.pm.InstallPackageHelper"
+    const-string v13, "com.android.server.pm.InstallPackageHelper"
 
-    .line 142
-    .line 143
-    iget-object v6, v9, Lde/robv/android/xposed/callbacks/XC_LoadPackage$LoadPackageParam;->classLoader:Ljava/lang/ClassLoader;
+    .line 185
+    .line 186
+    iget-object v12, v9, Lde/robv/android/xposed/callbacks/XC_LoadPackage$LoadPackageParam;->classLoader:Ljava/lang/ClassLoader;
 
-    .line 144
-    .line 145
-    invoke-static {v5, v6}, Lde/robv/android/xposed/XposedHelpers;->findClass(Ljava/lang/String;Ljava/lang/ClassLoader;)Ljava/lang/Class;
+    .line 187
+    .line 188
+    invoke-static {v13, v12}, Lde/robv/android/xposed/XposedHelpers;->findClass(Ljava/lang/String;Ljava/lang/ClassLoader;)Ljava/lang/Class;
 
-    .line 146
-    .line 147
-    .line 148
-    move-result-object v5
+    .line 189
+    .line 190
+    .line 191
+    move-result-object v12
     :try_end_4
     .catchall {:try_start_4 .. :try_end_4} :catchall_4
 
-    .line 149
+    .line 192
     goto :goto_4
 
-    .line 150
+    .line 193
     :catchall_4
-    const/4 v5, 0x0
+    const/4 v12, 0x0
 
-    .line 151
+    .line 194
     :goto_4
     :try_start_5
-    const-string v6, "com.android.server.pm.PackageManagerServiceUtils"
+    const-string v13, "com.android.server.pm.PackageManagerServiceUtils"
 
-    .line 152
-    .line 153
+    .line 195
+    .line 196
     iget-object v0, v9, Lde/robv/android/xposed/callbacks/XC_LoadPackage$LoadPackageParam;->classLoader:Ljava/lang/ClassLoader;
 
-    .line 154
-    .line 155
-    invoke-static {v6, v0}, Lde/robv/android/xposed/XposedHelpers;->findClass(Ljava/lang/String;Ljava/lang/ClassLoader;)Ljava/lang/Class;
+    .line 197
+    .line 198
+    invoke-static {v13, v0}, Lde/robv/android/xposed/XposedHelpers;->findClass(Ljava/lang/String;Ljava/lang/ClassLoader;)Ljava/lang/Class;
 
-    .line 156
-    .line 157
-    .line 158
+    .line 199
+    .line 200
+    .line 201
     move-result-object v0
     :try_end_5
     .catchall {:try_start_5 .. :try_end_5} :catchall_5
 
-    .line 159
+    .line 202
     goto :goto_5
 
-    .line 160
+    .line 203
     :catchall_5
     const/4 v0, 0x0
 
-    .line 161
+    .line 204
     :goto_5
     :try_start_6
-    const-string v6, "com.android.server.pm.ScanPackageUtils"
+    const-string v13, "com.android.server.pm.ScanPackageUtils"
 
-    .line 162
-    .line 163
+    .line 205
+    .line 206
     iget-object v11, v9, Lde/robv/android/xposed/callbacks/XC_LoadPackage$LoadPackageParam;->classLoader:Ljava/lang/ClassLoader;
 
-    .line 164
-    .line 165
-    invoke-static {v6, v11}, Lde/robv/android/xposed/XposedHelpers;->findClass(Ljava/lang/String;Ljava/lang/ClassLoader;)Ljava/lang/Class;
+    .line 207
+    .line 208
+    invoke-static {v13, v11}, Lde/robv/android/xposed/XposedHelpers;->findClass(Ljava/lang/String;Ljava/lang/ClassLoader;)Ljava/lang/Class;
 
-    .line 166
-    .line 167
-    .line 168
-    move-result-object v6
+    .line 209
+    .line 210
+    .line 211
+    move-result-object v11
     :try_end_6
     .catchall {:try_start_6 .. :try_end_6} :catchall_6
 
-    .line 169
+    .line 212
     goto :goto_6
 
-    .line 170
+    .line 213
     :catchall_6
-    const/4 v6, 0x0
+    const/4 v11, 0x0
 
-    .line 171
+    .line 214
     :goto_6
     :try_start_7
-    const-string v11, "android.util.apk.ApkSignatureVerifier"
+    const-string v13, "android.util.apk.ApkSignatureVerifier"
 
-    .line 172
-    .line 173
+    .line 215
+    .line 216
     iget-object v10, v9, Lde/robv/android/xposed/callbacks/XC_LoadPackage$LoadPackageParam;->classLoader:Ljava/lang/ClassLoader;
 
-    .line 174
-    .line 175
-    invoke-static {v11, v10}, Lde/robv/android/xposed/XposedHelpers;->findClass(Ljava/lang/String;Ljava/lang/ClassLoader;)Ljava/lang/Class;
+    .line 217
+    .line 218
+    invoke-static {v13, v10}, Lde/robv/android/xposed/XposedHelpers;->findClass(Ljava/lang/String;Ljava/lang/ClassLoader;)Ljava/lang/Class;
 
-    .line 176
-    .line 177
-    .line 178
+    .line 219
+    .line 220
+    .line 221
     move-result-object v10
     :try_end_7
     .catchall {:try_start_7 .. :try_end_7} :catchall_7
 
-    .line 179
+    .line 222
     goto :goto_7
 
-    .line 180
+    .line 223
     :catchall_7
     const/4 v10, 0x0
 
-    .line 181
+    .line 224
     :goto_7
     :try_start_8
-    const-string v11, "com.android.apksig.ApkVerifier"
+    const-string v13, "com.android.apksig.ApkVerifier"
     :try_end_8
     .catchall {:try_start_8 .. :try_end_8} :catchall_9
 
-    .line 182
-    .line 183
+    .line 225
+    .line 226
     move-object/from16 v18, v0
 
-    .line 184
-    .line 185
+    .line 227
+    .line 228
     :try_start_9
     iget-object v0, v9, Lde/robv/android/xposed/callbacks/XC_LoadPackage$LoadPackageParam;->classLoader:Ljava/lang/ClassLoader;
 
-    .line 186
-    .line 187
-    invoke-static {v11, v0}, Lde/robv/android/xposed/XposedHelpers;->findClass(Ljava/lang/String;Ljava/lang/ClassLoader;)Ljava/lang/Class;
+    .line 229
+    .line 230
+    invoke-static {v13, v0}, Lde/robv/android/xposed/XposedHelpers;->findClass(Ljava/lang/String;Ljava/lang/ClassLoader;)Ljava/lang/Class;
 
-    .line 188
-    .line 189
-    .line 190
+    .line 231
+    .line 232
+    .line 233
     move-result-object v0
     :try_end_9
     .catchall {:try_start_9 .. :try_end_9} :catchall_8
 
-    .line 191
-    move-object/from16 v22, v0
+    .line 234
+    move-object/from16 v20, v0
 
-    .line 192
-    .line 193
-    move-object/from16 v20, v1
+    .line 235
+    .line 236
+    move-object v13, v1
 
-    .line 194
-    .line 195
-    move-object/from16 v19, v3
+    .line 237
+    move-object/from16 v17, v2
 
-    .line 196
-    .line 197
-    move-object v11, v4
+    .line 238
+    .line 239
+    move-object v0, v3
 
-    .line 198
-    move-object v0, v5
+    .line 240
+    move-object/from16 v19, v10
 
-    .line 199
-    move-object/from16 v16, v6
-
-    .line 200
-    .line 201
-    move-object/from16 v21, v10
-
-    .line 202
-    .line 203
+    .line 241
+    .line 242
     :goto_8
-    move-object v10, v2
+    move-object v10, v4
 
-    .line 204
+    .line 243
     goto :goto_b
 
-    .line 205
+    .line 244
     :catchall_8
     :goto_9
     nop
 
-    .line 206
+    .line 245
     goto :goto_a
 
-    .line 207
+    .line 246
     :catchall_9
     move-object/from16 v18, v0
 
-    .line 208
-    .line 209
+    .line 247
+    .line 248
     goto :goto_9
 
-    .line 210
+    .line 249
     :goto_a
-    move-object/from16 v20, v1
+    move-object v13, v1
 
-    .line 211
-    .line 212
-    move-object/from16 v19, v3
+    .line 250
+    move-object/from16 v17, v2
 
-    .line 213
-    .line 214
-    move-object v11, v4
+    .line 251
+    .line 252
+    move-object v0, v3
 
-    .line 215
-    move-object v0, v5
+    .line 253
+    move-object/from16 v19, v10
 
-    .line 216
-    move-object/from16 v16, v6
-
-    .line 217
-    .line 218
-    move-object/from16 v21, v10
-
-    .line 219
-    .line 220
-    const/16 v22, 0x0
-
-    .line 221
-    .line 222
-    goto :goto_8
-
-    .line 223
-    :cond_1
-    const/4 v0, 0x0
-
-    .line 224
-    const/4 v10, 0x0
-
-    .line 225
-    const/4 v11, 0x0
-
-    .line 226
-    const/16 v16, 0x0
-
-    .line 227
-    .line 228
-    const/16 v18, 0x0
-
-    .line 229
-    .line 230
-    const/16 v19, 0x0
-
-    .line 231
-    .line 232
+    .line 254
+    .line 255
     const/16 v20, 0x0
 
-    .line 233
-    .line 234
-    const/16 v21, 0x0
+    .line 256
+    .line 257
+    goto :goto_8
 
-    .line 235
-    .line 236
-    const/16 v22, 0x0
+    .line 258
+    :cond_2
+    const/4 v0, 0x0
 
-    .line 237
-    .line 238
+    .line 259
+    const/4 v10, 0x0
+
+    .line 260
+    const/4 v11, 0x0
+
+    .line 261
+    const/4 v12, 0x0
+
+    .line 262
+    const/4 v13, 0x0
+
+    .line 263
+    const/16 v17, 0x0
+
+    .line 264
+    .line 265
+    const/16 v18, 0x0
+
+    .line 266
+    .line 267
+    const/16 v19, 0x0
+
+    .line 268
+    .line 269
+    const/16 v20, 0x0
+
+    .line 270
+    .line 271
     :goto_b
     iget-object v1, v9, Lde/robv/android/xposed/callbacks/XC_LoadPackage$LoadPackageParam;->classLoader:Ljava/lang/ClassLoader;
 
-    .line 239
-    .line 240
+    .line 272
+    .line 273
     const-string v2, "com.android.server.pm.PackageManagerService"
 
-    .line 241
-    .line 242
-    invoke-static {v2, v1}, Lde/robv/android/xposed/XposedHelpers;->findClass(Ljava/lang/String;Ljava/lang/ClassLoader;)Ljava/lang/Class;
-
-    .line 243
-    .line 244
-    .line 245
-    move-result-object v6
-
-    .line 246
-    iget-object v1, v9, Lde/robv/android/xposed/callbacks/XC_LoadPackage$LoadPackageParam;->classLoader:Ljava/lang/ClassLoader;
-
-    .line 247
-    .line 248
-    invoke-static {v2, v1}, Lde/robv/android/xposed/XposedHelpers;->findClass(Ljava/lang/String;Ljava/lang/ClassLoader;)Ljava/lang/Class;
-
-    .line 249
-    .line 250
-    .line 251
-    move-result-object v1
-
-    .line 252
-    new-instance v2, Lcom/xposed/XSupport$ﾞﾞ;
-
-    .line 253
-    .line 254
-    invoke-direct {v2, v8}, Lcom/xposed/XSupport$ﾞﾞ;-><init>(Lcom/xposed/XSupport;)V
-
-    .line 255
-    .line 256
-    .line 257
-    invoke-static {v1, v2}, Lde/robv/android/xposed/XposedBridge;->hookAllConstructors(Ljava/lang/Class;Lde/robv/android/xposed/XC_MethodHook;)Ljava/util/Set;
-
-    .line 258
-    .line 259
-    .line 260
-    sget v5, Landroid/os/Build$VERSION;->SDK_INT:I
-
-    .line 261
-    .line 262
-    const/16 v4, 0x21
-
-    .line 263
-    .line 264
-    if-lt v5, v4, :cond_2
-
-    .line 265
-    .line 266
-    sget-object v23, Ljava/lang/Boolean;->TRUE:Ljava/lang/Boolean;
-
-    .line 267
-    .line 268
-    const-string v3, "checkDowngrade"
-
-    .line 269
-    .line 270
-    const/16 v24, 0x3
-
-    .line 271
-    .line 272
-    const/16 v25, 0x0
-
-    .line 273
     .line 274
-    const/16 v26, 0x0
-
     .line 275
-    .line 276
-    move-object/from16 v1, p0
+    invoke-static {v2, v1}, Lde/robv/android/xposed/XposedHelpers;->findClass(Ljava/lang/String;Ljava/lang/ClassLoader;)Ljava/lang/Class;
 
+    .line 276
     .line 277
     .line 278
-    move-object/from16 v2, v18
+    move-result-object v4
 
     .line 279
+    iget-object v1, v9, Lde/robv/android/xposed/callbacks/XC_LoadPackage$LoadPackageParam;->classLoader:Ljava/lang/ClassLoader;
+
     .line 280
-    move/from16 v4, v24
-
     .line 281
-    .line 282
-    move/from16 v27, v5
+    invoke-static {v2, v1}, Lde/robv/android/xposed/XposedHelpers;->findClass(Ljava/lang/String;Ljava/lang/ClassLoader;)Ljava/lang/Class;
 
+    .line 282
     .line 283
     .line 284
-    move-object/from16 v5, v25
+    move-result-object v1
 
     .line 285
+    new-instance v2, Lcom/xposed/XSupport$ᐧᐧ;
+
     .line 286
-    move-object/from16 v17, v6
-
     .line 287
-    .line 288
-    move-object/from16 v6, v26
+    invoke-direct {v2, v8}, Lcom/xposed/XSupport$ᐧᐧ;-><init>(Lcom/xposed/XSupport;)V
 
+    .line 288
     .line 289
     .line 290
-    move-object v9, v7
+    invoke-static {v1, v2}, Lde/robv/android/xposed/XposedBridge;->hookAllConstructors(Ljava/lang/Class;Lde/robv/android/xposed/XC_MethodHook;)Ljava/util/Set;
 
     .line 291
-    move-object/from16 v7, v23
-
     .line 292
     .line 293
-    invoke-virtual/range {v1 .. v7}, Lcom/xposed/XSupport;->ʿ(Ljava/lang/Class;Ljava/lang/String;I[Ljava/lang/String;[Ljava/lang/String;Ljava/lang/Object;)V
+    sget v3, Landroid/os/Build$VERSION;->SDK_INT:I
 
     .line 294
     .line 295
+    const/16 v2, 0x21
+
     .line 296
-    sget-object v7, Ljava/lang/Boolean;->FALSE:Ljava/lang/Boolean;
-
     .line 297
+    if-lt v3, v2, :cond_3
+
     .line 298
-    const-string v3, "verifySignatures"
-
     .line 299
-    .line 300
-    const/4 v4, 0x3
+    sget-object v21, Ljava/lang/Boolean;->TRUE:Ljava/lang/Boolean;
 
+    .line 300
     .line 301
-    const/4 v5, 0x0
+    const-string v22, "checkDowngrade"
 
     .line 302
-    const/4 v6, 0x0
-
     .line 303
-    invoke-virtual/range {v1 .. v7}, Lcom/xposed/XSupport;->ʿ(Ljava/lang/Class;Ljava/lang/String;I[Ljava/lang/String;[Ljava/lang/String;Ljava/lang/Object;)V
+    const/16 v23, 0x3
 
     .line 304
     .line 305
-    .line 306
-    const/4 v7, 0x0
+    const/16 v24, 0x0
 
+    .line 306
     .line 307
-    const-string v3, "assertMinSignatureSchemeIsValid"
+    const/16 v25, 0x0
 
     .line 308
     .line 309
-    move-object/from16 v2, v16
+    move-object/from16 v1, p0
 
     .line 310
     .line 311
-    invoke-virtual/range {v1 .. v7}, Lcom/xposed/XSupport;->ʿ(Ljava/lang/Class;Ljava/lang/String;I[Ljava/lang/String;[Ljava/lang/String;Ljava/lang/Object;)V
+    move-object/from16 v2, v18
 
     .line 312
     .line 313
+    move/from16 v26, v3
+
     .line 314
-    const-string v24, "preparePackageLI"
-
     .line 315
-    .line 316
-    const/4 v1, 0x1
+    move-object/from16 v3, v22
 
+    .line 316
     .line 317
-    new-array v5, v1, [Ljava/lang/String;
+    move-object/from16 v16, v4
 
     .line 318
     .line 319
-    const/4 v1, 0x0
+    move/from16 v4, v23
 
     .line 320
-    aput-object v24, v5, v1
-
     .line 321
+    move-object/from16 v27, v5
+
     .line 322
-    const-string v3, "doesSignatureMatchForPermissions"
-
     .line 323
+    move-object/from16 v5, v24
+
     .line 324
-    move-object/from16 v1, p0
-
     .line 325
-    .line 326
-    move-object v2, v0
+    move-object/from16 v28, v6
 
+    .line 326
     .line 327
-    move-object/from16 v7, v23
+    move-object/from16 v6, v25
 
     .line 328
     .line 329
-    invoke-virtual/range {v1 .. v7}, Lcom/xposed/XSupport;->ʿ(Ljava/lang/Class;Ljava/lang/String;I[Ljava/lang/String;[Ljava/lang/String;Ljava/lang/Object;)V
+    move-object v9, v7
 
     .line 330
+    move-object/from16 v7, v21
+
     .line 331
     .line 332
-    const-string v3, "checkCapability"
+    invoke-virtual/range {v1 .. v7}, Lcom/xposed/XSupport;->ʿ(Ljava/lang/Class;Ljava/lang/String;I[Ljava/lang/String;[Ljava/lang/String;Ljava/lang/Object;)V
 
     .line 333
     .line 334
-    const/4 v5, 0x0
-
     .line 335
-    move-object v2, v10
+    sget-object v7, Ljava/lang/Boolean;->FALSE:Ljava/lang/Boolean;
 
     .line 336
-    invoke-virtual/range {v1 .. v7}, Lcom/xposed/XSupport;->ʿ(Ljava/lang/Class;Ljava/lang/String;I[Ljava/lang/String;[Ljava/lang/String;Ljava/lang/Object;)V
-
     .line 337
+    const-string v3, "verifySignatures"
+
     .line 338
     .line 339
-    const-string v0, "installPackagesLI"
+    const/4 v4, 0x3
 
     .line 340
+    const/4 v5, 0x0
+
     .line 341
-    const/4 v1, 0x2
+    const/4 v6, 0x0
 
     .line 342
-    new-array v5, v1, [Ljava/lang/String;
+    invoke-virtual/range {v1 .. v7}, Lcom/xposed/XSupport;->ʿ(Ljava/lang/Class;Ljava/lang/String;I[Ljava/lang/String;[Ljava/lang/String;Ljava/lang/Object;)V
 
     .line 343
     .line 344
-    const/4 v1, 0x0
-
     .line 345
-    aput-object v0, v5, v1
+    const/4 v7, 0x0
 
     .line 346
-    .line 347
-    const/4 v2, 0x1
+    const-string v3, "assertMinSignatureSchemeIsValid"
 
+    .line 347
     .line 348
-    aput-object v24, v5, v2
+    move-object v2, v11
 
     .line 349
-    .line 350
-    new-array v6, v2, [Ljava/lang/String;
+    invoke-virtual/range {v1 .. v7}, Lcom/xposed/XSupport;->ʿ(Ljava/lang/Class;Ljava/lang/String;I[Ljava/lang/String;[Ljava/lang/String;Ljava/lang/Object;)V
 
+    .line 350
     .line 351
     .line 352
-    const-string v2, "reconcilePackages"
+    const-string v22, "preparePackageLI"
 
     .line 353
     .line 354
-    aput-object v2, v6, v1
+    const/4 v1, 0x1
 
     .line 355
-    .line 356
-    const-string v3, "checkCapability"
+    new-array v5, v1, [Ljava/lang/String;
 
+    .line 356
     .line 357
+    const/4 v1, 0x0
+
     .line 358
-    move-object/from16 v1, p0
+    aput-object v22, v5, v1
 
     .line 359
     .line 360
-    move-object v2, v11
+    const-string v3, "doesSignatureMatchForPermissions"
 
     .line 361
-    invoke-virtual/range {v1 .. v7}, Lcom/xposed/XSupport;->ʿ(Ljava/lang/Class;Ljava/lang/String;I[Ljava/lang/String;[Ljava/lang/String;Ljava/lang/Object;)V
-
     .line 362
+    move-object/from16 v1, p0
+
     .line 363
     .line 364
-    const/4 v1, 0x2
+    move-object v2, v12
 
     .line 365
-    new-array v5, v1, [Ljava/lang/String;
+    move-object/from16 v7, v21
 
     .line 366
     .line 367
-    const/4 v1, 0x0
+    invoke-virtual/range {v1 .. v7}, Lcom/xposed/XSupport;->ʿ(Ljava/lang/Class;Ljava/lang/String;I[Ljava/lang/String;[Ljava/lang/String;Ljava/lang/Object;)V
 
     .line 368
-    aput-object v0, v5, v1
-
     .line 369
     .line 370
-    const/4 v1, 0x1
-
-    .line 371
-    aput-object v24, v5, v1
-
-    .line 372
-    .line 373
-    const/4 v6, 0x0
-
-    .line 374
     const-string v3, "checkCapability"
 
-    .line 375
-    .line 376
-    move-object/from16 v1, p0
+    .line 371
+    .line 372
+    const/4 v5, 0x0
 
+    .line 373
+    move-object/from16 v2, v17
+
+    .line 374
+    .line 375
+    invoke-virtual/range {v1 .. v7}, Lcom/xposed/XSupport;->ʿ(Ljava/lang/Class;Ljava/lang/String;I[Ljava/lang/String;[Ljava/lang/String;Ljava/lang/Object;)V
+
+    .line 376
     .line 377
     .line 378
-    move-object/from16 v2, v19
+    const-string v12, "installPackagesLI"
 
     .line 379
     .line 380
-    invoke-virtual/range {v1 .. v7}, Lcom/xposed/XSupport;->ʿ(Ljava/lang/Class;Ljava/lang/String;I[Ljava/lang/String;[Ljava/lang/String;Ljava/lang/Object;)V
-
-    .line 381
-    .line 382
-    .line 383
     const/4 v1, 0x2
 
-    .line 384
+    .line 381
     new-array v5, v1, [Ljava/lang/String;
+
+    .line 382
+    .line 383
+    const/4 v1, 0x0
+
+    .line 384
+    aput-object v12, v5, v1
 
     .line 385
     .line 386
-    const/4 v1, 0x0
+    const/4 v2, 0x1
 
     .line 387
-    aput-object v0, v5, v1
+    aput-object v22, v5, v2
 
     .line 388
     .line 389
-    const/4 v0, 0x1
+    new-array v6, v2, [Ljava/lang/String;
 
     .line 390
-    aput-object v24, v5, v0
-
     .line 391
+    const-string v2, "reconcilePackages"
+
     .line 392
+    .line 393
+    aput-object v2, v6, v1
+
+    .line 394
+    .line 395
     const-string v3, "checkCapability"
 
-    .line 393
-    .line 394
+    .line 396
+    .line 397
     move-object/from16 v1, p0
 
-    .line 395
-    .line 396
-    move-object/from16 v2, v20
-
-    .line 397
     .line 398
+    .line 399
+    move-object v2, v0
+
+    .line 400
     invoke-virtual/range {v1 .. v7}, Lcom/xposed/XSupport;->ʿ(Ljava/lang/Class;Ljava/lang/String;I[Ljava/lang/String;[Ljava/lang/String;Ljava/lang/Object;)V
 
-    .line 399
-    .line 400
     .line 401
-    move/from16 v10, v27
-
     .line 402
     .line 403
-    :goto_c
-    const/16 v0, 0x1c
+    const/4 v0, 0x2
 
     .line 404
-    .line 405
-    goto :goto_d
+    new-array v5, v0, [Ljava/lang/String;
 
+    .line 405
     .line 406
-    :cond_2
-    move-object/from16 v17, v6
+    const/4 v0, 0x0
 
     .line 407
-    .line 408
-    move-object v9, v7
+    aput-object v12, v5, v0
 
+    .line 408
     .line 409
-    move v10, v5
+    const/4 v0, 0x1
 
     .line 410
-    goto :goto_c
+    aput-object v22, v5, v0
 
     .line 411
-    :goto_d
-    if-lt v10, v0, :cond_3
-
     .line 412
+    const/4 v6, 0x0
+
     .line 413
-    const/16 v0, 0x21
+    const-string v3, "checkCapability"
 
     .line 414
     .line 415
-    if-ge v10, v0, :cond_4
+    move-object v2, v10
 
     .line 416
-    .line 417
-    sget-object v11, Ljava/lang/Boolean;->TRUE:Ljava/lang/Boolean;
+    invoke-virtual/range {v1 .. v7}, Lcom/xposed/XSupport;->ʿ(Ljava/lang/Class;Ljava/lang/String;I[Ljava/lang/String;[Ljava/lang/String;Ljava/lang/Object;)V
 
+    .line 417
     .line 418
     .line 419
-    const-string v3, "checkCapability"
+    const/4 v0, 0x2
 
     .line 420
-    .line 421
-    const/4 v4, 0x3
+    new-array v5, v0, [Ljava/lang/String;
 
+    .line 421
     .line 422
-    const/4 v5, 0x0
+    const/4 v0, 0x0
 
     .line 423
-    const/4 v6, 0x0
+    aput-object v12, v5, v0
 
     .line 424
-    move-object/from16 v1, p0
-
     .line 425
+    const/4 v0, 0x1
+
     .line 426
-    move-object/from16 v2, v20
+    aput-object v22, v5, v0
 
     .line 427
     .line 428
-    move-object v7, v11
+    const-string v3, "checkCapability"
 
     .line 429
+    .line 430
+    move-object v2, v13
+
+    .line 431
     invoke-virtual/range {v1 .. v7}, Lcom/xposed/XSupport;->ʿ(Ljava/lang/Class;Ljava/lang/String;I[Ljava/lang/String;[Ljava/lang/String;Ljava/lang/Object;)V
 
-    .line 430
-    .line 431
     .line 432
-    const-string v3, "doesSignatureMatchForPermissions"
-
     .line 433
     .line 434
-    move-object/from16 v2, v17
+    move/from16 v10, v26
 
     .line 435
     .line 436
-    invoke-virtual/range {v1 .. v7}, Lcom/xposed/XSupport;->ʿ(Ljava/lang/Class;Ljava/lang/String;I[Ljava/lang/String;[Ljava/lang/String;Ljava/lang/Object;)V
+    :goto_c
+    const/16 v0, 0x1c
 
     .line 437
     .line 438
+    goto :goto_d
+
     .line 439
-    goto :goto_e
+    :cond_3
+    move-object/from16 v16, v4
 
     .line 440
-    :cond_3
-    const/16 v0, 0x21
-
     .line 441
+    move-object/from16 v27, v5
+
     .line 442
-    :cond_4
-    :goto_e
-    if-ge v10, v0, :cond_8
-
     .line 443
-    .line 444
-    const/16 v0, 0x1f
+    move-object/from16 v28, v6
 
+    .line 444
     .line 445
+    move-object v9, v7
+
     .line 446
-    if-lt v10, v0, :cond_5
+    move v10, v3
 
     .line 447
+    goto :goto_c
+
     .line 448
-    sget-object v7, Ljava/lang/Boolean;->FALSE:Ljava/lang/Boolean;
+    :goto_d
+    if-lt v10, v0, :cond_4
 
     .line 449
     .line 450
-    const-string v3, "verifySignatures"
+    const/16 v0, 0x21
 
     .line 451
     .line 452
-    const/4 v4, 0x3
+    if-ge v10, v0, :cond_5
 
     .line 453
-    const/4 v5, 0x0
-
     .line 454
-    const/4 v6, 0x0
+    sget-object v12, Ljava/lang/Boolean;->TRUE:Ljava/lang/Boolean;
 
     .line 455
-    move-object/from16 v1, p0
-
     .line 456
+    const-string v3, "checkCapability"
+
     .line 457
-    move-object/from16 v2, v18
-
     .line 458
-    .line 459
-    invoke-virtual/range {v1 .. v7}, Lcom/xposed/XSupport;->ʿ(Ljava/lang/Class;Ljava/lang/String;I[Ljava/lang/String;[Ljava/lang/String;Ljava/lang/Object;)V
-
-    .line 460
-    .line 461
-    .line 462
-    :cond_5
-    sget-object v0, Ljava/lang/Boolean;->TRUE:Ljava/lang/Boolean;
-
-    .line 463
-    .line 464
-    const-string v3, "verifySignaturesLP"
-
-    .line 465
-    .line 466
     const/4 v4, 0x3
 
-    .line 467
+    .line 459
     const/4 v5, 0x0
 
-    .line 468
+    .line 460
     const/4 v6, 0x0
 
-    .line 469
+    .line 461
     move-object/from16 v1, p0
 
+    .line 462
+    .line 463
+    move-object v2, v13
+
+    .line 464
+    move-object v7, v12
+
+    .line 465
+    invoke-virtual/range {v1 .. v7}, Lcom/xposed/XSupport;->ʿ(Ljava/lang/Class;Ljava/lang/String;I[Ljava/lang/String;[Ljava/lang/String;Ljava/lang/Object;)V
+
+    .line 466
+    .line 467
+    .line 468
+    const-string v3, "doesSignatureMatchForPermissions"
+
+    .line 469
     .line 470
-    .line 471
-    move-object/from16 v2, v17
-
-    .line 472
-    .line 473
-    move-object v7, v0
-
-    .line 474
-    invoke-virtual/range {v1 .. v7}, Lcom/xposed/XSupport;->ʿ(Ljava/lang/Class;Ljava/lang/String;I[Ljava/lang/String;[Ljava/lang/String;Ljava/lang/Object;)V
-
-    .line 475
-    .line 476
-    .line 477
-    const-string v3, "checkDowngrade"
-
-    .line 478
-    .line 479
-    invoke-virtual/range {v1 .. v7}, Lcom/xposed/XSupport;->ʿ(Ljava/lang/Class;Ljava/lang/String;I[Ljava/lang/String;[Ljava/lang/String;Ljava/lang/Object;)V
-
-    .line 480
-    .line 481
-    .line 482
-    const/4 v7, 0x0
-
-    .line 483
-    const-string v3, "assertMinSignatureSchemeIsValid"
-
-    .line 484
-    .line 485
     move-object/from16 v2, v16
 
-    .line 486
-    .line 487
+    .line 471
+    .line 472
     invoke-virtual/range {v1 .. v7}, Lcom/xposed/XSupport;->ʿ(Ljava/lang/Class;Ljava/lang/String;I[Ljava/lang/String;[Ljava/lang/String;Ljava/lang/Object;)V
 
+    .line 473
+    .line 474
+    .line 475
+    goto :goto_e
+
+    .line 476
+    :cond_4
+    const/16 v0, 0x21
+
+    .line 477
+    .line 478
+    :cond_5
+    :goto_e
+    if-ge v10, v0, :cond_9
+
+    .line 479
+    .line 480
+    const/16 v0, 0x1f
+
+    .line 481
+    .line 482
+    if-lt v10, v0, :cond_6
+
+    .line 483
+    .line 484
+    sget-object v7, Ljava/lang/Boolean;->FALSE:Ljava/lang/Boolean;
+
+    .line 485
+    .line 486
+    const-string v3, "verifySignatures"
+
+    .line 487
     .line 488
+    const/4 v4, 0x3
+
     .line 489
+    const/4 v5, 0x0
+
     .line 490
-    const/4 v0, 0x0
+    const/4 v6, 0x0
 
     .line 491
-    invoke-static {v0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+    move-object/from16 v1, p0
 
     .line 492
     .line 493
-    .line 494
-    move-result-object v7
+    move-object/from16 v2, v18
 
+    .line 494
     .line 495
-    const-string v3, "getMinimumSignatureSchemeVersionForTargetSdk"
+    invoke-virtual/range {v1 .. v7}, Lcom/xposed/XSupport;->ʿ(Ljava/lang/Class;Ljava/lang/String;I[Ljava/lang/String;[Ljava/lang/String;Ljava/lang/Object;)V
 
     .line 496
     .line 497
-    move-object/from16 v2, v21
-
     .line 498
-    .line 499
-    invoke-virtual/range {v1 .. v7}, Lcom/xposed/XSupport;->ʿ(Ljava/lang/Class;Ljava/lang/String;I[Ljava/lang/String;[Ljava/lang/String;Ljava/lang/Object;)V
+    :cond_6
+    sget-object v0, Ljava/lang/Boolean;->TRUE:Ljava/lang/Boolean;
 
+    .line 499
     .line 500
+    const-string v3, "verifySignaturesLP"
+
     .line 501
     .line 502
-    const/4 v0, 0x0
+    const/4 v4, 0x3
 
     .line 503
-    invoke-static {v0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+    const/4 v5, 0x0
 
     .line 504
-    .line 505
-    .line 506
-    move-result-object v7
+    const/4 v6, 0x0
 
+    .line 505
+    move-object/from16 v1, p0
+
+    .line 506
     .line 507
-    const-string v3, "getMinimumSignatureSchemeVersionForTargetSdk"
+    move-object/from16 v2, v16
 
     .line 508
     .line 509
-    move-object/from16 v2, v22
+    move-object v7, v0
 
     .line 510
-    .line 511
     invoke-virtual/range {v1 .. v7}, Lcom/xposed/XSupport;->ʿ(Ljava/lang/Class;Ljava/lang/String;I[Ljava/lang/String;[Ljava/lang/String;Ljava/lang/Object;)V
 
+    .line 511
     .line 512
     .line 513
-    .line 514
-    const/4 v0, 0x1
+    const-string v3, "checkDowngrade"
 
+    .line 514
     .line 515
-    new-array v6, v0, [Ljava/lang/String;
+    invoke-virtual/range {v1 .. v7}, Lcom/xposed/XSupport;->ʿ(Ljava/lang/Class;Ljava/lang/String;I[Ljava/lang/String;[Ljava/lang/String;Ljava/lang/Object;)V
 
     .line 516
     .line 517
-    const-string v0, "scanPackageLI"
-
     .line 518
+    const/4 v7, 0x0
+
     .line 519
-    const/4 v1, 0x0
+    const-string v3, "assertMinSignatureSchemeIsValid"
 
     .line 520
-    aput-object v0, v6, v1
-
     .line 521
+    move-object v2, v11
+
     .line 522
-    invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+    invoke-virtual/range {v1 .. v7}, Lcom/xposed/XSupport;->ʿ(Ljava/lang/Class;Ljava/lang/String;I[Ljava/lang/String;[Ljava/lang/String;Ljava/lang/Object;)V
 
     .line 523
     .line 524
     .line 525
-    move-result-object v7
+    const/4 v0, 0x0
 
     .line 526
-    const-string v3, "compareSignatures"
+    invoke-static {v0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     .line 527
     .line 528
-    move-object/from16 v1, p0
-
     .line 529
+    move-result-object v7
+
     .line 530
-    move-object/from16 v2, v18
+    const-string v3, "getMinimumSignatureSchemeVersionForTargetSdk"
 
     .line 531
     .line 532
-    invoke-virtual/range {v1 .. v7}, Lcom/xposed/XSupport;->ʿ(Ljava/lang/Class;Ljava/lang/String;I[Ljava/lang/String;[Ljava/lang/String;Ljava/lang/Object;)V
+    move-object/from16 v2, v19
 
     .line 533
     .line 534
-    .line 535
-    sget-boolean v0, Lʼˏ/ʼ;->ˉ:Z
+    invoke-virtual/range {v1 .. v7}, Lcom/xposed/XSupport;->ʿ(Ljava/lang/Class;Ljava/lang/String;I[Ljava/lang/String;[Ljava/lang/String;Ljava/lang/Object;)V
 
+    .line 535
     .line 536
     .line 537
-    if-eqz v0, :cond_6
+    const/4 v0, 0x0
 
     .line 538
-    .line 539
-    new-instance v0, Lcom/xposed/XSupport$ʻ;
+    invoke-static {v0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
+    .line 539
     .line 540
     .line 541
-    invoke-direct {v0, v8}, Lcom/xposed/XSupport$ʻ;-><init>(Lcom/xposed/XSupport;)V
+    move-result-object v7
 
     .line 542
+    const-string v3, "getMinimumSignatureSchemeVersionForTargetSdk"
+
     .line 543
     .line 544
-    const-string v1, "installPackageAsUser"
+    move-object/from16 v2, v20
 
     .line 545
     .line 546
-    move-object/from16 v2, v17
+    invoke-virtual/range {v1 .. v7}, Lcom/xposed/XSupport;->ʿ(Ljava/lang/Class;Ljava/lang/String;I[Ljava/lang/String;[Ljava/lang/String;Ljava/lang/Object;)V
 
     .line 547
     .line 548
-    invoke-static {v2, v1, v0}, Lde/robv/android/xposed/XposedBridge;->hookAllMethods(Ljava/lang/Class;Ljava/lang/String;Lde/robv/android/xposed/XC_MethodHook;)Ljava/util/Set;
-
     .line 549
-    .line 550
-    .line 551
-    goto :goto_f
+    const/4 v0, 0x1
 
+    .line 550
+    new-array v6, v0, [Ljava/lang/String;
+
+    .line 551
     .line 552
-    :cond_6
-    move-object/from16 v2, v17
+    const-string v0, "scanPackageLI"
 
     .line 553
     .line 554
-    sget-boolean v0, Lʼˏ/ʼ;->ʿ:Z
+    const/4 v1, 0x0
 
     .line 555
+    aput-object v0, v6, v1
+
     .line 556
-    if-eqz v0, :cond_7
-
     .line 557
-    .line 558
-    new-instance v0, Lcom/xposed/XSupport$ʼ;
+    invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
+    .line 558
     .line 559
     .line 560
-    invoke-direct {v0, v8}, Lcom/xposed/XSupport$ʼ;-><init>(Lcom/xposed/XSupport;)V
+    move-result-object v7
 
     .line 561
+    const-string v3, "compareSignatures"
+
     .line 562
     .line 563
-    const-string v1, "installPackageWithVerificationAndEncryption"
+    move-object/from16 v1, p0
 
     .line 564
     .line 565
-    invoke-static {v2, v1, v0}, Lde/robv/android/xposed/XposedBridge;->hookAllMethods(Ljava/lang/Class;Ljava/lang/String;Lde/robv/android/xposed/XC_MethodHook;)Ljava/util/Set;
+    move-object/from16 v2, v18
 
     .line 566
     .line 567
+    invoke-virtual/range {v1 .. v7}, Lcom/xposed/XSupport;->ʿ(Ljava/lang/Class;Ljava/lang/String;I[Ljava/lang/String;[Ljava/lang/String;Ljava/lang/Object;)V
+
     .line 568
-    goto :goto_f
-
     .line 569
-    :cond_7
-    new-instance v0, Lcom/xposed/XSupport$ʽ;
-
     .line 570
-    .line 571
-    invoke-direct {v0, v8}, Lcom/xposed/XSupport$ʽ;-><init>(Lcom/xposed/XSupport;)V
+    sget-boolean v0, Lʼˏ/ʼ;->ˉ:Z
 
+    .line 571
     .line 572
+    if-eqz v0, :cond_7
+
     .line 573
     .line 574
-    const-string v1, "installPackageWithVerification"
+    new-instance v0, Lcom/xposed/XSupport$ʻ;
 
     .line 575
     .line 576
-    invoke-static {v2, v1, v0}, Lde/robv/android/xposed/XposedBridge;->hookAllMethods(Ljava/lang/Class;Ljava/lang/String;Lde/robv/android/xposed/XC_MethodHook;)Ljava/util/Set;
+    invoke-direct {v0, v8}, Lcom/xposed/XSupport$ʻ;-><init>(Lcom/xposed/XSupport;)V
 
     .line 577
     .line 578
     .line 579
-    :goto_f
-    new-instance v0, Lcom/xposed/XSupport$ʾ;
+    const-string v1, "installPackageAsUser"
 
     .line 580
     .line 581
-    invoke-direct {v0, v8}, Lcom/xposed/XSupport$ʾ;-><init>(Lcom/xposed/XSupport;)V
+    move-object/from16 v2, v16
 
     .line 582
     .line 583
-    .line 584
-    const-string v1, "compareSignatures"
-
-    .line 585
-    .line 586
     invoke-static {v2, v1, v0}, Lde/robv/android/xposed/XposedBridge;->hookAllMethods(Ljava/lang/Class;Ljava/lang/String;Lde/robv/android/xposed/XC_MethodHook;)Ljava/util/Set;
 
+    .line 584
+    .line 585
+    .line 586
+    goto :goto_f
+
     .line 587
+    :cond_7
+    move-object/from16 v2, v16
+
     .line 588
     .line 589
-    goto :goto_10
+    sget-boolean v0, Lʼˏ/ʼ;->ʿ:Z
 
     .line 590
-    :cond_8
-    move-object/from16 v2, v17
-
     .line 591
+    if-eqz v0, :cond_8
+
     .line 592
-    :goto_10
-    const/16 v0, 0x16
-
     .line 593
+    new-instance v0, Lcom/xposed/XSupport$ʼ;
+
     .line 594
-    if-ge v10, v0, :cond_9
-
     .line 595
-    .line 596
-    :try_start_a
-    const-string v0, "installStage"
+    invoke-direct {v0, v8}, Lcom/xposed/XSupport$ʼ;-><init>(Lcom/xposed/XSupport;)V
 
+    .line 596
     .line 597
     .line 598
-    new-instance v1, Lcom/xposed/XSupport$ʿ;
+    const-string v1, "installPackageWithVerificationAndEncryption"
 
     .line 599
     .line 600
-    invoke-direct {v1, v8}, Lcom/xposed/XSupport$ʿ;-><init>(Lcom/xposed/XSupport;)V
+    invoke-static {v2, v1, v0}, Lde/robv/android/xposed/XposedBridge;->hookAllMethods(Ljava/lang/Class;Ljava/lang/String;Lde/robv/android/xposed/XC_MethodHook;)Ljava/util/Set;
 
     .line 601
     .line 602
     .line 603
-    invoke-static {v2, v0, v1}, Lde/robv/android/xposed/XposedBridge;->hookAllMethods(Ljava/lang/Class;Ljava/lang/String;Lde/robv/android/xposed/XC_MethodHook;)Ljava/util/Set;
-    :try_end_a
-    .catchall {:try_start_a .. :try_end_a} :catchall_a
+    goto :goto_f
 
     .line 604
+    :cond_8
+    new-instance v0, Lcom/xposed/XSupport$ʽ;
+
     .line 605
     .line 606
-    goto :goto_11
+    invoke-direct {v0, v8}, Lcom/xposed/XSupport$ʽ;-><init>(Lcom/xposed/XSupport;)V
 
     .line 607
-    :catchall_a
-    move-exception v0
-
     .line 608
-    invoke-virtual {v0}, Ljava/lang/Throwable;->printStackTrace()V
-
     .line 609
+    const-string v1, "installPackageWithVerification"
+
     .line 610
     .line 611
-    :cond_9
-    :goto_11
-    new-instance v0, Lcom/xposed/XSupport$ˆ;
+    invoke-static {v2, v1, v0}, Lde/robv/android/xposed/XposedBridge;->hookAllMethods(Ljava/lang/Class;Ljava/lang/String;Lde/robv/android/xposed/XC_MethodHook;)Ljava/util/Set;
 
     .line 612
     .line 613
-    invoke-direct {v0, v8}, Lcom/xposed/XSupport$ˆ;-><init>(Lcom/xposed/XSupport;)V
-
     .line 614
+    :goto_f
+    new-instance v0, Lcom/xposed/XSupport$ʾ;
+
     .line 615
     .line 616
-    invoke-static {v2, v9, v0}, Lde/robv/android/xposed/XposedBridge;->hookAllMethods(Ljava/lang/Class;Ljava/lang/String;Lde/robv/android/xposed/XC_MethodHook;)Ljava/util/Set;
+    invoke-direct {v0, v8}, Lcom/xposed/XSupport$ʾ;-><init>(Lcom/xposed/XSupport;)V
 
     .line 617
     .line 618
     .line 619
-    new-instance v0, Lcom/xposed/XSupport$ˈ;
+    const-string v1, "compareSignatures"
 
     .line 620
     .line 621
-    invoke-direct {v0, v8}, Lcom/xposed/XSupport$ˈ;-><init>(Lcom/xposed/XSupport;)V
+    invoke-static {v2, v1, v0}, Lde/robv/android/xposed/XposedBridge;->hookAllMethods(Ljava/lang/Class;Ljava/lang/String;Lde/robv/android/xposed/XC_MethodHook;)Ljava/util/Set;
 
     .line 622
     .line 623
     .line 624
-    invoke-static {v2, v15, v0}, Lde/robv/android/xposed/XposedBridge;->hookAllMethods(Ljava/lang/Class;Ljava/lang/String;Lde/robv/android/xposed/XC_MethodHook;)Ljava/util/Set;
+    goto :goto_10
 
     .line 625
+    :cond_9
+    move-object/from16 v2, v16
+
     .line 626
     .line 627
-    new-instance v0, Lcom/xposed/XSupport$ˉ;
+    :goto_10
+    const/16 v0, 0x16
 
     .line 628
     .line 629
-    invoke-direct {v0, v8}, Lcom/xposed/XSupport$ˉ;-><init>(Lcom/xposed/XSupport;)V
+    if-ge v10, v0, :cond_a
 
     .line 630
     .line 631
+    :try_start_a
+    const-string v0, "installStage"
+
     .line 632
-    const-string v1, "generatePackageInfo"
-
     .line 633
-    .line 634
-    invoke-static {v2, v1, v0}, Lde/robv/android/xposed/XposedBridge;->hookAllMethods(Ljava/lang/Class;Ljava/lang/String;Lde/robv/android/xposed/XC_MethodHook;)Ljava/util/Set;
+    new-instance v1, Lcom/xposed/XSupport$ʿ;
 
+    .line 634
     .line 635
+    invoke-direct {v1, v8}, Lcom/xposed/XSupport$ʿ;-><init>(Lcom/xposed/XSupport;)V
+
     .line 636
     .line 637
-    new-instance v0, Lcom/xposed/XSupport$ˊ;
-
     .line 638
-    .line 639
-    invoke-direct {v0, v8}, Lcom/xposed/XSupport$ˊ;-><init>(Lcom/xposed/XSupport;)V
+    invoke-static {v2, v0, v1}, Lde/robv/android/xposed/XposedBridge;->hookAllMethods(Ljava/lang/Class;Ljava/lang/String;Lde/robv/android/xposed/XC_MethodHook;)Ljava/util/Set;
+    :try_end_a
+    .catchall {:try_start_a .. :try_end_a} :catchall_a
 
+    .line 639
     .line 640
     .line 641
+    goto :goto_11
+
     .line 642
-    invoke-static {v2, v14, v0}, Lde/robv/android/xposed/XposedBridge;->hookAllMethods(Ljava/lang/Class;Ljava/lang/String;Lde/robv/android/xposed/XC_MethodHook;)Ljava/util/Set;
+    :catchall_a
+    move-exception v0
 
     .line 643
+    invoke-virtual {v0}, Ljava/lang/Throwable;->printStackTrace()V
+
     .line 644
     .line 645
-    new-instance v0, Lcom/xposed/XSupport$ˋ;
-
     .line 646
-    .line 647
-    invoke-direct {v0, v8}, Lcom/xposed/XSupport$ˋ;-><init>(Lcom/xposed/XSupport;)V
+    :cond_a
+    :goto_11
+    new-instance v0, Lcom/xposed/XSupport$ˆ;
 
+    .line 647
     .line 648
+    invoke-direct {v0, v8}, Lcom/xposed/XSupport$ˆ;-><init>(Lcom/xposed/XSupport;)V
+
     .line 649
     .line 650
-    invoke-static {v2, v13, v0}, Lde/robv/android/xposed/XposedBridge;->hookAllMethods(Ljava/lang/Class;Ljava/lang/String;Lde/robv/android/xposed/XC_MethodHook;)Ljava/util/Set;
-
     .line 651
+    move-object/from16 v1, v27
+
     .line 652
     .line 653
-    new-instance v0, Lcom/xposed/XSupport$ˏ;
+    invoke-static {v2, v1, v0}, Lde/robv/android/xposed/XposedBridge;->hookAllMethods(Ljava/lang/Class;Ljava/lang/String;Lde/robv/android/xposed/XC_MethodHook;)Ljava/util/Set;
 
     .line 654
     .line 655
-    invoke-direct {v0, v8}, Lcom/xposed/XSupport$ˏ;-><init>(Lcom/xposed/XSupport;)V
-
     .line 656
+    new-instance v0, Lcom/xposed/XSupport$ˈ;
+
     .line 657
     .line 658
-    invoke-static {v2, v12, v0}, Lde/robv/android/xposed/XposedBridge;->hookAllMethods(Ljava/lang/Class;Ljava/lang/String;Lde/robv/android/xposed/XC_MethodHook;)Ljava/util/Set;
+    invoke-direct {v0, v8}, Lcom/xposed/XSupport$ˈ;-><init>(Lcom/xposed/XSupport;)V
 
     .line 659
     .line 660
     .line 661
-    move-object/from16 v1, p1
+    move-object/from16 v3, v28
 
     .line 662
     .line 663
-    move-object v2, v9
+    invoke-static {v2, v3, v0}, Lde/robv/android/xposed/XposedBridge;->hookAllMethods(Ljava/lang/Class;Ljava/lang/String;Lde/robv/android/xposed/XC_MethodHook;)Ljava/util/Set;
 
     .line 664
-    goto :goto_12
-
     .line 665
-    :cond_a
-    move-object/from16 v1, p1
-
     .line 666
-    .line 667
-    move-object v2, v7
+    new-instance v0, Lcom/xposed/XSupport$ˉ;
 
+    .line 667
     .line 668
-    :goto_12
-    iget-object v0, v1, Lde/robv/android/xposed/callbacks/XC_LoadPackage$LoadPackageParam;->classLoader:Ljava/lang/ClassLoader;
+    invoke-direct {v0, v8}, Lcom/xposed/XSupport$ˉ;-><init>(Lcom/xposed/XSupport;)V
 
     .line 669
     .line 670
-    const-string v3, "android.app.ApplicationPackageManager"
-
     .line 671
-    .line 672
-    invoke-static {v3, v0}, Lde/robv/android/xposed/XposedHelpers;->findClass(Ljava/lang/String;Ljava/lang/ClassLoader;)Ljava/lang/Class;
+    const-string v4, "generatePackageInfo"
 
+    .line 672
     .line 673
+    invoke-static {v2, v4, v0}, Lde/robv/android/xposed/XposedBridge;->hookAllMethods(Ljava/lang/Class;Ljava/lang/String;Lde/robv/android/xposed/XC_MethodHook;)Ljava/util/Set;
+
     .line 674
     .line 675
-    move-result-object v0
-
     .line 676
-    new-instance v4, Lcom/xposed/XSupport$ˑ;
+    new-instance v0, Lcom/xposed/XSupport$ˊ;
 
     .line 677
     .line 678
-    invoke-direct {v4, v8}, Lcom/xposed/XSupport$ˑ;-><init>(Lcom/xposed/XSupport;)V
+    invoke-direct {v0, v8}, Lcom/xposed/XSupport$ˊ;-><init>(Lcom/xposed/XSupport;)V
 
     .line 679
     .line 680
     .line 681
-    invoke-static {v0, v4}, Lde/robv/android/xposed/XposedBridge;->hookAllConstructors(Ljava/lang/Class;Lde/robv/android/xposed/XC_MethodHook;)Ljava/util/Set;
+    invoke-static {v2, v9, v0}, Lde/robv/android/xposed/XposedBridge;->hookAllMethods(Ljava/lang/Class;Ljava/lang/String;Lde/robv/android/xposed/XC_MethodHook;)Ljava/util/Set;
 
     .line 682
     .line 683
     .line 684
-    iget-object v0, v1, Lde/robv/android/xposed/callbacks/XC_LoadPackage$LoadPackageParam;->classLoader:Ljava/lang/ClassLoader;
+    new-instance v0, Lcom/xposed/XSupport$ˋ;
 
     .line 685
     .line 686
-    invoke-static {v3, v0}, Lde/robv/android/xposed/XposedHelpers;->findClass(Ljava/lang/String;Ljava/lang/ClassLoader;)Ljava/lang/Class;
+    invoke-direct {v0, v8}, Lcom/xposed/XSupport$ˋ;-><init>(Lcom/xposed/XSupport;)V
 
     .line 687
     .line 688
     .line 689
-    move-result-object v0
+    invoke-static {v2, v15, v0}, Lde/robv/android/xposed/XposedBridge;->hookAllMethods(Ljava/lang/Class;Ljava/lang/String;Lde/robv/android/xposed/XC_MethodHook;)Ljava/util/Set;
 
     .line 690
-    new-instance v4, Lcom/xposed/XSupport$י;
-
     .line 691
     .line 692
-    invoke-direct {v4, v8}, Lcom/xposed/XSupport$י;-><init>(Lcom/xposed/XSupport;)V
+    new-instance v0, Lcom/xposed/XSupport$ˏ;
 
     .line 693
     .line 694
-    .line 695
-    invoke-static {v0, v2, v4}, Lde/robv/android/xposed/XposedBridge;->hookAllMethods(Ljava/lang/Class;Ljava/lang/String;Lde/robv/android/xposed/XC_MethodHook;)Ljava/util/Set;
+    invoke-direct {v0, v8}, Lcom/xposed/XSupport$ˏ;-><init>(Lcom/xposed/XSupport;)V
 
+    .line 695
     .line 696
     .line 697
-    .line 698
-    iget-object v0, v1, Lde/robv/android/xposed/callbacks/XC_LoadPackage$LoadPackageParam;->classLoader:Ljava/lang/ClassLoader;
+    invoke-static {v2, v14, v0}, Lde/robv/android/xposed/XposedBridge;->hookAllMethods(Ljava/lang/Class;Ljava/lang/String;Lde/robv/android/xposed/XC_MethodHook;)Ljava/util/Set;
 
+    .line 698
     .line 699
     .line 700
-    invoke-static {v3, v0}, Lde/robv/android/xposed/XposedHelpers;->findClass(Ljava/lang/String;Ljava/lang/ClassLoader;)Ljava/lang/Class;
+    move-object/from16 v2, p1
 
     .line 701
     .line 702
+    move-object v4, v9
+
     .line 703
-    move-result-object v0
+    goto :goto_12
 
     .line 704
-    new-instance v2, Lcom/xposed/XSupport$ـ;
+    :cond_b
+    move-object v1, v5
 
     .line 705
+    move-object v3, v6
+
     .line 706
-    invoke-direct {v2, v8}, Lcom/xposed/XSupport$ـ;-><init>(Lcom/xposed/XSupport;)V
+    move-object/from16 v2, p1
 
     .line 707
     .line 708
+    move-object v4, v7
+
     .line 709
-    invoke-static {v0, v15, v2}, Lde/robv/android/xposed/XposedBridge;->hookAllMethods(Ljava/lang/Class;Ljava/lang/String;Lde/robv/android/xposed/XC_MethodHook;)Ljava/util/Set;
+    :goto_12
+    iget-object v0, v2, Lde/robv/android/xposed/callbacks/XC_LoadPackage$LoadPackageParam;->classLoader:Ljava/lang/ClassLoader;
 
     .line 710
     .line 711
+    const-string v5, "android.app.ApplicationPackageManager"
+
     .line 712
-    iget-object v0, v1, Lde/robv/android/xposed/callbacks/XC_LoadPackage$LoadPackageParam;->classLoader:Ljava/lang/ClassLoader;
-
     .line 713
-    .line 714
-    invoke-static {v3, v0}, Lde/robv/android/xposed/XposedHelpers;->findClass(Ljava/lang/String;Ljava/lang/ClassLoader;)Ljava/lang/Class;
+    invoke-static {v5, v0}, Lde/robv/android/xposed/XposedHelpers;->findClass(Ljava/lang/String;Ljava/lang/ClassLoader;)Ljava/lang/Class;
 
+    .line 714
     .line 715
     .line 716
-    .line 717
     move-result-object v0
+
+    .line 717
+    new-instance v6, Lcom/xposed/XSupport$ˑ;
 
     .line 718
-    new-instance v2, Lcom/xposed/XSupport$ٴ;
-
     .line 719
-    .line 720
-    invoke-direct {v2, v8}, Lcom/xposed/XSupport$ٴ;-><init>(Lcom/xposed/XSupport;)V
+    invoke-direct {v6, v8}, Lcom/xposed/XSupport$ˑ;-><init>(Lcom/xposed/XSupport;)V
 
+    .line 720
     .line 721
     .line 722
-    .line 723
-    invoke-static {v0, v14, v2}, Lde/robv/android/xposed/XposedBridge;->hookAllMethods(Ljava/lang/Class;Ljava/lang/String;Lde/robv/android/xposed/XC_MethodHook;)Ljava/util/Set;
+    invoke-static {v0, v6}, Lde/robv/android/xposed/XposedBridge;->hookAllConstructors(Ljava/lang/Class;Lde/robv/android/xposed/XC_MethodHook;)Ljava/util/Set;
 
+    .line 723
     .line 724
     .line 725
+    iget-object v0, v2, Lde/robv/android/xposed/callbacks/XC_LoadPackage$LoadPackageParam;->classLoader:Ljava/lang/ClassLoader;
+
     .line 726
-    iget-object v0, v1, Lde/robv/android/xposed/callbacks/XC_LoadPackage$LoadPackageParam;->classLoader:Ljava/lang/ClassLoader;
-
     .line 727
-    .line 728
-    invoke-static {v3, v0}, Lde/robv/android/xposed/XposedHelpers;->findClass(Ljava/lang/String;Ljava/lang/ClassLoader;)Ljava/lang/Class;
+    invoke-static {v5, v0}, Lde/robv/android/xposed/XposedHelpers;->findClass(Ljava/lang/String;Ljava/lang/ClassLoader;)Ljava/lang/Class;
 
+    .line 728
     .line 729
     .line 730
-    .line 731
     move-result-object v0
+
+    .line 731
+    new-instance v6, Lcom/xposed/XSupport$י;
 
     .line 732
-    new-instance v2, Lcom/xposed/XSupport$ᐧ;
-
     .line 733
-    .line 734
-    invoke-direct {v2, v8}, Lcom/xposed/XSupport$ᐧ;-><init>(Lcom/xposed/XSupport;)V
+    invoke-direct {v6, v8}, Lcom/xposed/XSupport$י;-><init>(Lcom/xposed/XSupport;)V
 
+    .line 734
     .line 735
     .line 736
-    .line 737
-    invoke-static {v0, v13, v2}, Lde/robv/android/xposed/XposedBridge;->hookAllMethods(Ljava/lang/Class;Ljava/lang/String;Lde/robv/android/xposed/XC_MethodHook;)Ljava/util/Set;
+    invoke-static {v0, v1, v6}, Lde/robv/android/xposed/XposedBridge;->hookAllMethods(Ljava/lang/Class;Ljava/lang/String;Lde/robv/android/xposed/XC_MethodHook;)Ljava/util/Set;
 
+    .line 737
     .line 738
     .line 739
+    iget-object v0, v2, Lde/robv/android/xposed/callbacks/XC_LoadPackage$LoadPackageParam;->classLoader:Ljava/lang/ClassLoader;
+
     .line 740
-    iget-object v0, v1, Lde/robv/android/xposed/callbacks/XC_LoadPackage$LoadPackageParam;->classLoader:Ljava/lang/ClassLoader;
-
     .line 741
-    .line 742
-    invoke-static {v3, v0}, Lde/robv/android/xposed/XposedHelpers;->findClass(Ljava/lang/String;Ljava/lang/ClassLoader;)Ljava/lang/Class;
+    invoke-static {v5, v0}, Lde/robv/android/xposed/XposedHelpers;->findClass(Ljava/lang/String;Ljava/lang/ClassLoader;)Ljava/lang/Class;
 
+    .line 742
     .line 743
     .line 744
-    .line 745
     move-result-object v0
 
+    .line 745
+    new-instance v1, Lcom/xposed/XSupport$ـ;
+
     .line 746
-    new-instance v1, Lcom/xposed/XSupport$ᴵ;
-
     .line 747
-    .line 748
-    invoke-direct {v1, v8}, Lcom/xposed/XSupport$ᴵ;-><init>(Lcom/xposed/XSupport;)V
+    invoke-direct {v1, v8}, Lcom/xposed/XSupport$ـ;-><init>(Lcom/xposed/XSupport;)V
 
+    .line 748
     .line 749
     .line 750
-    .line 751
-    invoke-static {v0, v12, v1}, Lde/robv/android/xposed/XposedBridge;->hookAllMethods(Ljava/lang/Class;Ljava/lang/String;Lde/robv/android/xposed/XC_MethodHook;)Ljava/util/Set;
+    invoke-static {v0, v3, v1}, Lde/robv/android/xposed/XposedBridge;->hookAllMethods(Ljava/lang/Class;Ljava/lang/String;Lde/robv/android/xposed/XC_MethodHook;)Ljava/util/Set;
 
+    .line 751
     .line 752
     .line 753
+    iget-object v0, v2, Lde/robv/android/xposed/callbacks/XC_LoadPackage$LoadPackageParam;->classLoader:Ljava/lang/ClassLoader;
+
     .line 754
+    .line 755
+    invoke-static {v5, v0}, Lde/robv/android/xposed/XposedHelpers;->findClass(Ljava/lang/String;Ljava/lang/ClassLoader;)Ljava/lang/Class;
+
+    .line 756
+    .line 757
+    .line 758
+    move-result-object v0
+
+    .line 759
+    new-instance v1, Lcom/xposed/XSupport$ٴ;
+
+    .line 760
+    .line 761
+    invoke-direct {v1, v8}, Lcom/xposed/XSupport$ٴ;-><init>(Lcom/xposed/XSupport;)V
+
+    .line 762
+    .line 763
+    .line 764
+    invoke-static {v0, v4, v1}, Lde/robv/android/xposed/XposedBridge;->hookAllMethods(Ljava/lang/Class;Ljava/lang/String;Lde/robv/android/xposed/XC_MethodHook;)Ljava/util/Set;
+
+    .line 765
+    .line 766
+    .line 767
+    iget-object v0, v2, Lde/robv/android/xposed/callbacks/XC_LoadPackage$LoadPackageParam;->classLoader:Ljava/lang/ClassLoader;
+
+    .line 768
+    .line 769
+    invoke-static {v5, v0}, Lde/robv/android/xposed/XposedHelpers;->findClass(Ljava/lang/String;Ljava/lang/ClassLoader;)Ljava/lang/Class;
+
+    .line 770
+    .line 771
+    .line 772
+    move-result-object v0
+
+    .line 773
+    new-instance v1, Lcom/xposed/XSupport$ᐧ;
+
+    .line 774
+    .line 775
+    invoke-direct {v1, v8}, Lcom/xposed/XSupport$ᐧ;-><init>(Lcom/xposed/XSupport;)V
+
+    .line 776
+    .line 777
+    .line 778
+    invoke-static {v0, v15, v1}, Lde/robv/android/xposed/XposedBridge;->hookAllMethods(Ljava/lang/Class;Ljava/lang/String;Lde/robv/android/xposed/XC_MethodHook;)Ljava/util/Set;
+
+    .line 779
+    .line 780
+    .line 781
+    iget-object v0, v2, Lde/robv/android/xposed/callbacks/XC_LoadPackage$LoadPackageParam;->classLoader:Ljava/lang/ClassLoader;
+
+    .line 782
+    .line 783
+    invoke-static {v5, v0}, Lde/robv/android/xposed/XposedHelpers;->findClass(Ljava/lang/String;Ljava/lang/ClassLoader;)Ljava/lang/Class;
+
+    .line 784
+    .line 785
+    .line 786
+    move-result-object v0
+
+    .line 787
+    new-instance v1, Lcom/xposed/XSupport$ᴵ;
+
+    .line 788
+    .line 789
+    invoke-direct {v1, v8}, Lcom/xposed/XSupport$ᴵ;-><init>(Lcom/xposed/XSupport;)V
+
+    .line 790
+    .line 791
+    .line 792
+    invoke-static {v0, v14, v1}, Lde/robv/android/xposed/XposedBridge;->hookAllMethods(Ljava/lang/Class;Ljava/lang/String;Lde/robv/android/xposed/XC_MethodHook;)Ljava/util/Set;
+
+    .line 793
+    .line 794
+    .line 795
     return-void
 .end method
 
@@ -1862,11 +1954,11 @@
     move-result-object v3
 
     .line 48
-    new-instance v4, Lcom/xposed/XSupport$ᵔ;
+    new-instance v4, Lcom/xposed/XSupport$ᵢ;
 
     .line 49
     .line 50
-    invoke-direct {v4, p0}, Lcom/xposed/XSupport$ᵔ;-><init>(Lcom/xposed/XSupport;)V
+    invoke-direct {v4, p0}, Lcom/xposed/XSupport$ᵢ;-><init>(Lcom/xposed/XSupport;)V
 
     .line 51
     .line 52
@@ -1880,11 +1972,11 @@
     .line 56
     :catch_1
     :cond_1
-    new-instance v3, Lcom/xposed/XSupport$ᵢ;
+    new-instance v3, Lcom/xposed/XSupport$ⁱ;
 
     .line 57
     .line 58
-    invoke-direct {v3, p0}, Lcom/xposed/XSupport$ᵢ;-><init>(Lcom/xposed/XSupport;)V
+    invoke-direct {v3, p0}, Lcom/xposed/XSupport$ⁱ;-><init>(Lcom/xposed/XSupport;)V
 
     .line 59
     .line 60
@@ -1922,11 +2014,11 @@
     .line 76
     .line 77
     .line 78
-    new-instance v3, Lcom/xposed/XSupport$ⁱ;
+    new-instance v3, Lcom/xposed/XSupport$ﹳ;
 
     .line 79
     .line 80
-    invoke-direct {v3, p0}, Lcom/xposed/XSupport$ⁱ;-><init>(Lcom/xposed/XSupport;)V
+    invoke-direct {v3, p0}, Lcom/xposed/XSupport$ﹳ;-><init>(Lcom/xposed/XSupport;)V
 
     .line 81
     .line 82
@@ -1956,11 +2048,11 @@
     .line 94
     .line 95
     .line 96
-    new-instance v5, Lcom/xposed/XSupport$ﹳ;
+    new-instance v5, Lcom/xposed/XSupport$ﹶ;
 
     .line 97
     .line 98
-    invoke-direct {v5, p0}, Lcom/xposed/XSupport$ﹳ;-><init>(Lcom/xposed/XSupport;)V
+    invoke-direct {v5, p0}, Lcom/xposed/XSupport$ﹶ;-><init>(Lcom/xposed/XSupport;)V
 
     .line 99
     .line 100
@@ -2074,7 +2166,7 @@
 
     .line 34
     .line 35
-    invoke-static {}, Lru/aaaaacax/installer/PkgName;->getPkgName()Ljava/lang/String;
+    invoke-static {}, Lru/aaaaacay/installer/PkgName;->getPkgName()Ljava/lang/String;
 
     .line 36
     .line 37
@@ -2414,7 +2506,7 @@
 
     .line 34
     .line 35
-    invoke-static {}, Lru/aaaaacax/installer/PkgName;->getPkgName()Ljava/lang/String;
+    invoke-static {}, Lru/aaaaacay/installer/PkgName;->getPkgName()Ljava/lang/String;
 
     .line 36
     .line 37
@@ -3765,7 +3857,80 @@
     return-void
 .end method
 
-.method public ˆ()V
+.method public ˆ(Ljava/lang/String;Ljava/lang/String;I[Ljava/lang/String;[Ljava/lang/String;Ljava/lang/Object;)V
+    .locals 10
+
+    .line 1
+    :try_start_0
+    invoke-static {p1}, Ljava/lang/Class;->forName(Ljava/lang/String;)Ljava/lang/Class;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object v0
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    .line 5
+    goto :goto_0
+
+    .line 6
+    :catchall_0
+    const/4 v0, 0x0
+
+    .line 7
+    :goto_0
+    if-eqz v0, :cond_0
+
+    .line 8
+    .line 9
+    new-instance v9, Lcom/xposed/XSupport$ᵔ;
+
+    .line 10
+    .line 11
+    move-object v1, v9
+
+    .line 12
+    move-object v2, p0
+
+    .line 13
+    move-object v3, p1
+
+    .line 14
+    move-object v4, p2
+
+    .line 15
+    move v5, p3
+
+    .line 16
+    move-object v6, p5
+
+    .line 17
+    move-object v7, p4
+
+    .line 18
+    move-object/from16 v8, p6
+
+    .line 19
+    .line 20
+    invoke-direct/range {v1 .. v8}, Lcom/xposed/XSupport$ᵔ;-><init>(Lcom/xposed/XSupport;Ljava/lang/String;Ljava/lang/String;I[Ljava/lang/String;[Ljava/lang/String;Ljava/lang/Object;)V
+
+    .line 21
+    .line 22
+    .line 23
+    move-object v1, p2
+
+    .line 24
+    invoke-static {v0, p2, v9}, Lde/robv/android/xposed/XposedBridge;->hookAllMethods(Ljava/lang/Class;Ljava/lang/String;Lde/robv/android/xposed/XC_MethodHook;)Ljava/util/Set;
+
+    .line 25
+    .line 26
+    .line 27
+    :cond_0
+    return-void
+.end method
+
+.method public ˈ()V
     .locals 13
     .annotation build Landroid/annotation/SuppressLint;
         value = {
@@ -3854,7 +4019,7 @@
     .line 34
     .line 35
     .line 36
-    sget-object v10, Lʾˉ/ᐧᐧ;->ˈʼ:Ljava/lang/String;
+    sget-object v10, Lʾˉ/ᴵᴵ;->ˈʼ:Ljava/lang/String;
 
     .line 37
     .line 38
@@ -3911,7 +4076,7 @@
     .line 65
     .line 66
     .line 67
-    sget-object v10, Lʾˉ/ᐧᐧ;->ˈʼ:Ljava/lang/String;
+    sget-object v10, Lʾˉ/ᴵᴵ;->ˈʼ:Ljava/lang/String;
 
     .line 68
     .line 69
@@ -4018,7 +4183,7 @@
     .line 117
     .line 118
     .line 119
-    sget-object v10, Lʾˉ/ᐧᐧ;->ˈʼ:Ljava/lang/String;
+    sget-object v10, Lʾˉ/ᴵᴵ;->ˈʼ:Ljava/lang/String;
 
     .line 120
     .line 121
@@ -4087,7 +4252,7 @@
     .line 154
     .line 155
     .line 156
-    sget-object v12, Lʾˉ/ᐧᐧ;->ˈʼ:Ljava/lang/String;
+    sget-object v12, Lʾˉ/ᴵᴵ;->ˈʼ:Ljava/lang/String;
 
     .line 157
     .line 158
@@ -4305,7 +4470,7 @@
     .line 259
     .line 260
     .line 261
-    sget-object v6, Lʾˉ/ᐧᐧ;->ˈʼ:Ljava/lang/String;
+    sget-object v6, Lʾˉ/ᴵᴵ;->ˈʼ:Ljava/lang/String;
 
     .line 262
     .line 263

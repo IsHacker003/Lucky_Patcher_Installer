@@ -65,12 +65,12 @@
 
     .line 2
     .line 3
-    invoke-static {v0}, Lʾˉ/ᐧᐧ;->ˉˎ(Ljava/lang/Object;)V
+    invoke-static {v0}, Lʾˉ/ᴵᴵ;->ˉˎ(Ljava/lang/Object;)V
 
     .line 4
     .line 5
     .line 6
-    sget-object v0, Lʾˉ/ᐧᐧ;->ʼˎ:Lʾˉ/ᐧᐧ;
+    sget-object v0, Lʾˉ/ᴵᴵ;->ʼˎ:Lʾˉ/ᴵᴵ;
 
     .line 7
     .line 8
@@ -78,7 +78,7 @@
 
     .line 9
     .line 10
-    invoke-virtual {v0}, Lʾˉ/ᐧᐧ;->ˈˑ()Landroidx/fragment/app/ʿ;
+    invoke-virtual {v0}, Lʾˉ/ᴵᴵ;->ˈˑ()Landroidx/fragment/app/ʿ;
 
     .line 11
     .line 12
@@ -124,11 +124,11 @@
     .line 32
     .line 33
     .line 34
-    sget-object v0, Lʾˉ/ᐧᐧ;->ʼˎ:Lʾˉ/ᐧᐧ;
+    sget-object v0, Lʾˉ/ᴵᴵ;->ʼˎ:Lʾˉ/ᴵᴵ;
 
     .line 35
     .line 36
-    invoke-virtual {v0}, Lʾˉ/ᐧᐧ;->ˈˑ()Landroidx/fragment/app/ʿ;
+    invoke-virtual {v0}, Lʾˉ/ᴵᴵ;->ˈˑ()Landroidx/fragment/app/ʿ;
 
     .line 37
     .line 38
@@ -365,7 +365,7 @@
     .line 161
     .line 162
     :try_start_0
-    invoke-static {}, Lʾˉ/ᐧᐧ;->ˈᵎ()Landroid/content/pm/PackageManager;
+    invoke-static {}, Lʾˉ/ᴵᴵ;->ˈᵎ()Landroid/content/pm/PackageManager;
 
     .line 163
     .line 164
@@ -373,7 +373,7 @@
     move-result-object v1
 
     .line 166
-    sget-object v11, Lʾˉ/ᐧᐧ;->ʼᵎ:Lʾˉ/ᵎ;
+    sget-object v11, Lʾˉ/ᴵᴵ;->ʼᵎ:Lʾˉ/ᵎ;
 
     .line 167
     .line 168
@@ -480,11 +480,11 @@
 
     .line 210
     .line 211
-    sget-object v2, Lʾˉ/ᐧᐧ;->ʼˎ:Lʾˉ/ᐧᐧ;
+    sget-object v2, Lʾˉ/ᴵᴵ;->ʼˎ:Lʾˉ/ᴵᴵ;
 
     .line 212
     .line 213
-    invoke-virtual {v2}, Lʾˉ/ᐧᐧ;->ˈˑ()Landroidx/fragment/app/ʿ;
+    invoke-virtual {v2}, Lʾˉ/ᴵᴵ;->ˈˑ()Landroidx/fragment/app/ʿ;
 
     .line 214
     .line 215

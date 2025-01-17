@@ -4,11 +4,13 @@
 
 
 # direct methods
-.method public static bridge synthetic ʻ(Landroid/view/accessibility/AccessibilityNodeInfo;Ljava/lang/CharSequence;)V
+.method public static bridge synthetic ʻ(Landroid/view/accessibility/AccessibilityNodeInfo;)Z
     .locals 0
 
     .line 1
-    invoke-virtual {p0, p1}, Landroid/view/accessibility/AccessibilityNodeInfo;->setError(Ljava/lang/CharSequence;)V
+    invoke-virtual {p0}, Landroid/view/accessibility/AccessibilityNodeInfo;->isVisibleToUser()Z
 
-    return-void
+    move-result p0
+
+    return p0
 .end method

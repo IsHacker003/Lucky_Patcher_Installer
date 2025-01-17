@@ -390,11 +390,11 @@
 
     .line 153
     .line 154
-    sget-object p2, Lʾˉ/ᐧᐧ;->ʼᵎ:Lʾˉ/ᵎ;
+    sget-object p2, Lʾˉ/ᴵᴵ;->ʼᵎ:Lʾˉ/ᵎ;
 
     .line 155
     .line 156
-    invoke-static {p2, p1}, Lʾˉ/ᐧᐧ;->ˊᵢ(Lʾˉ/ᵎ;Lʼˑ/ʼ;)V
+    invoke-static {p2, p1}, Lʾˉ/ᴵᴵ;->ˊᵢ(Lʾˉ/ᵎ;Lʼˑ/ʼ;)V
 
     .line 157
     .line 158
@@ -403,11 +403,11 @@
 
     .line 160
     :cond_3
-    sget-object v0, Lʾˉ/ᐧᐧ;->ʼˎ:Lʾˉ/ᐧᐧ;
+    sget-object v0, Lʾˉ/ᴵᴵ;->ʼˎ:Lʾˉ/ᴵᴵ;
 
     .line 161
     .line 162
-    invoke-virtual {v0, p1, p2}, Lʾˉ/ᐧᐧ;->ˎʻ(Lʼˑ/ʼ;Z)V
+    invoke-virtual {v0, p1, p2}, Lʾˉ/ᴵᴵ;->ˎʻ(Lʼˑ/ʼ;Z)V
 
     .line 163
     .line 164
@@ -428,9 +428,9 @@
         0x7f11011e -> :sswitch_6
         0x7f110120 -> :sswitch_5
         0x7f110122 -> :sswitch_4
-        0x7f110471 -> :sswitch_3
-        0x7f110475 -> :sswitch_2
-        0x7f110477 -> :sswitch_1
-        0x7f11047e -> :sswitch_0
+        0x7f110475 -> :sswitch_3
+        0x7f110479 -> :sswitch_2
+        0x7f11047b -> :sswitch_1
+        0x7f110482 -> :sswitch_0
     .end sparse-switch
 .end method

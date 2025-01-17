@@ -58,7 +58,7 @@
     .line 4
     .line 5
     .line 6
-    invoke-static {v0}, Lʾˉ/ᐧᐧ;->ˋʻ(Ljava/lang/Runnable;)V
+    invoke-static {v0}, Lʾˉ/ᴵᴵ;->ˋʻ(Ljava/lang/Runnable;)V
 
     .line 7
     .line 8

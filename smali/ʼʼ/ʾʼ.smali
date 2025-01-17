@@ -8,7 +8,7 @@
     .locals 0
 
     .line 1
-    invoke-virtual {p0}, Landroid/view/WindowInsets;->getSystemWindowInsetRight()I
+    invoke-virtual {p0}, Landroid/view/WindowInsets;->getSystemWindowInsetLeft()I
 
     move-result p0
 

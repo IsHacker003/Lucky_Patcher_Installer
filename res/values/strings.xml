@@ -395,6 +395,8 @@ File path:"</string>
     <string name="delete_system_app_for_user">Uninstall system app for current user</string>
     <string name="delete_system_app_for_user_message">Do you really want to uninstall system app %s for current user?</string>
     <string name="describe_for_Proxy_gp">(mini version with license and inapp emulation only)</string>
+    <string name="dialog_android_art_update_remove">Do you really want to remove the updates for the apex module com.google.android.art?</string>
+    <string name="dialog_android_art_update_remove_no_update">No updates have been found for the apex module com.google.android.art.</string>
     <string name="dialog_end_orig_resign_app">%1$s was signed by a original signature successfully. Re-signed file is located %2$s.</string>
     <string name="dialog_end_resign_app">%1$s was signed by a test signature successfully. Re-signed file is located at %2$s.</string>
     <string name="dialog_system">This application is part of the Android operating system. Be very careful while performing any operations on it, because you can soft-brick your device. Do you have a backup? Are you sure you want to work with this application?</string>
@@ -1196,6 +1198,8 @@ If the device does not reboot automatically, do it manually..."</string>
     <string name="remodexerror">Dalvik cache of this app could not be found.</string>
     <string name="remove_all_saved_purchases">Remove all saved purchases</string>
     <string name="remove_all_saved_purchases_message">Do you really want to delete all saved purchases from Lucky Patcher?</string>
+    <string name="remove_android_art_update">Uninstall updates for the apex module com.google.android.art</string>
+    <string name="remove_android_art_update_description">This helps on modern versions of android when android patches via lsposed or regular system file patches do not work.</string>
     <string name="removefixes">"Remove All ODEX Files
 (/data/app and /system/app)"</string>
     <string name="reset_dialog_settings">Reset all dialog settings</string>

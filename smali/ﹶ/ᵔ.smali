@@ -4,13 +4,13 @@
 
 
 # direct methods
-.method public static bridge synthetic ʻ(Landroid/graphics/drawable/Icon;Landroid/graphics/PorterDuff$Mode;)Landroid/graphics/drawable/Icon;
+.method public static bridge synthetic ʻ(Landroid/graphics/drawable/Icon;)I
     .locals 0
 
     .line 1
-    invoke-virtual {p0, p1}, Landroid/graphics/drawable/Icon;->setTintMode(Landroid/graphics/PorterDuff$Mode;)Landroid/graphics/drawable/Icon;
+    invoke-virtual {p0}, Landroid/graphics/drawable/Icon;->getResId()I
 
-    move-result-object p0
+    move-result p0
 
-    return-object p0
+    return p0
 .end method

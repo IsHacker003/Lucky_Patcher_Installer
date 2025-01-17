@@ -4,11 +4,11 @@
 
 
 # direct methods
-.method public static bridge synthetic ʻ(Landroid/view/ViewConfiguration;)I
+.method public static bridge synthetic ʻ(Landroid/view/ViewConfiguration;)Z
     .locals 0
 
     .line 1
-    invoke-virtual {p0}, Landroid/view/ViewConfiguration;->getScaledHoverSlop()I
+    invoke-virtual {p0}, Landroid/view/ViewConfiguration;->shouldShowMenuShortcutsWhenKeyboardPresent()Z
 
     move-result p0
 

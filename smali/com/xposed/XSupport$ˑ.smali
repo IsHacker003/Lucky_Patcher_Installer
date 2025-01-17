@@ -83,7 +83,7 @@
 
     .line 17
     .line 18
-    invoke-virtual {v2}, Lcom/xposed/XSupport;->ˆ()V
+    invoke-virtual {v2}, Lcom/xposed/XSupport;->ˈ()V
 
     .line 19
     .line 20
@@ -132,7 +132,7 @@
     move-result-object v2
 
     .line 43
-    invoke-static {}, Lru/aaaaacax/installer/PkgName;->getPkgName()Ljava/lang/String;
+    invoke-static {}, Lru/aaaaacay/installer/PkgName;->getPkgName()Ljava/lang/String;
 
     .line 44
     .line 45

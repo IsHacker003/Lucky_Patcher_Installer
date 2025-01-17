@@ -90,7 +90,7 @@
 
     .line 2
     .line 3
-    sget-object v1, Lʾˉ/ᐧᐧ;->ʼﾞ:Lru/aaaaacax/installer/MainActivity;
+    sget-object v1, Lʾˉ/ᴵᴵ;->ʼﾞ:Lru/aaaaacay/installer/MainActivity;
 
     .line 4
     .line 5

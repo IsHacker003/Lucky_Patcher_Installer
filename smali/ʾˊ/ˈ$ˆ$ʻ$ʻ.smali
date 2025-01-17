@@ -87,7 +87,7 @@
 
     .line 21
     .line 22
-    sput-boolean v0, Lʾˉ/ᐧᐧ;->ʿˏ:Z
+    sput-boolean v0, Lʾˉ/ᴵᴵ;->ʿˏ:Z
 
     .line 23
     .line 24
@@ -95,7 +95,7 @@
 
     .line 25
     :cond_0
-    sget p1, Lʾˉ/ᐧᐧ;->ʾᐧ:I
+    sget p1, Lʾˉ/ᴵᴵ;->ʾᐧ:I
 
     .line 26
     .line 27
@@ -139,7 +139,7 @@
 
     .line 46
     .line 47
-    sput-boolean v0, Lʾˉ/ᐧᐧ;->ʿˏ:Z
+    sput-boolean v0, Lʾˉ/ᴵᴵ;->ʿˏ:Z
 
     .line 48
     .line 49
@@ -150,16 +150,16 @@
     const/4 p1, 0x0
 
     .line 51
-    sput-boolean p1, Lʾˉ/ᐧᐧ;->ʿˏ:Z
+    sput-boolean p1, Lʾˉ/ᴵᴵ;->ʿˏ:Z
 
     .line 52
     .line 53
     :goto_0
-    sput-boolean v0, Lʾˉ/ᐧᐧ;->ʿـ:Z
+    sput-boolean v0, Lʾˉ/ᴵᴵ;->ʿـ:Z
 
     .line 54
     .line 55
-    sget-object p1, Lʾˉ/ᐧᐧ;->ʼˎ:Lʾˉ/ᐧᐧ;
+    sget-object p1, Lʾˉ/ᴵᴵ;->ʼˎ:Lʾˉ/ᴵᴵ;
 
     .line 56
     .line 57
@@ -167,7 +167,7 @@
 
     .line 58
     .line 59
-    invoke-virtual {p1, p2}, Lʾˉ/ᐧᐧ;->ˆٴ(Ljava/lang/String;)V
+    invoke-virtual {p1, p2}, Lʾˉ/ᴵᴵ;->ˆٴ(Ljava/lang/String;)V
 
     .line 60
     .line 61

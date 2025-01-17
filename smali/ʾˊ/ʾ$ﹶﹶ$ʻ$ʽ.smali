@@ -104,7 +104,7 @@
     move-result-object p1
 
     .line 18
-    invoke-static {p1}, Lʾˉ/ᐧᐧ;->ˉˎ(Ljava/lang/Object;)V
+    invoke-static {p1}, Lʾˉ/ᴵᴵ;->ˉˎ(Ljava/lang/Object;)V
 
     .line 19
     .line 20
@@ -222,7 +222,7 @@
 
     .line 69
     .line 70
-    sput-boolean v0, Lʾˉ/ᐧᐧ;->ʿˑ:Z
+    sput-boolean v0, Lʾˉ/ᴵᴵ;->ʿˑ:Z
 
     .line 71
     .line 72
@@ -235,7 +235,7 @@
     .line 75
     .line 76
     .line 77
-    sput-boolean v0, Lʾˉ/ᐧᐧ;->ʿי:Z
+    sput-boolean v0, Lʾˉ/ᴵᴵ;->ʿי:Z
 
     .line 78
     .line 79
@@ -252,7 +252,7 @@
 
     .line 85
     :cond_4
-    sput-boolean v0, Lʾˉ/ᐧᐧ;->ʿˏ:Z
+    sput-boolean v0, Lʾˉ/ᴵᴵ;->ʿˏ:Z
 
     .line 86
     .line 87
@@ -281,7 +281,7 @@
 
     .line 98
     .line 99
-    sput-boolean p2, Lʾˉ/ᐧᐧ;->ʿˏ:Z
+    sput-boolean p2, Lʾˉ/ᴵᴵ;->ʿˏ:Z
 
     .line 100
     .line 101
@@ -289,7 +289,7 @@
 
     .line 102
     :cond_5
-    sget v3, Lʾˉ/ᐧᐧ;->ʾᐧ:I
+    sget v3, Lʾˉ/ᴵᴵ;->ʾᐧ:I
 
     .line 103
     .line 104
@@ -321,7 +321,7 @@
 
     .line 117
     .line 118
-    sget-boolean v3, Lʾˉ/ᐧᐧ;->ˉˈ:Z
+    sget-boolean v3, Lʾˉ/ᴵᴵ;->ˉˈ:Z
 
     .line 119
     .line 120
@@ -329,7 +329,7 @@
 
     .line 121
     .line 122
-    sget-boolean v3, Lʾˉ/ᐧᐧ;->ˉˋ:Z
+    sget-boolean v3, Lʾˉ/ᴵᴵ;->ˉˋ:Z
 
     .line 123
     .line 124
@@ -355,7 +355,7 @@
     .line 133
     .line 134
     :cond_7
-    sget-boolean v3, Lʾˉ/ᐧᐧ;->ˉˈ:Z
+    sget-boolean v3, Lʾˉ/ᴵᴵ;->ˉˈ:Z
 
     .line 135
     .line 136
@@ -389,7 +389,7 @@
 
     .line 150
     .line 151
-    sget-boolean p1, Lʾˉ/ᐧᐧ;->ˉˋ:Z
+    sget-boolean p1, Lʾˉ/ᴵᴵ;->ˉˋ:Z
 
     .line 152
     .line 153
@@ -411,7 +411,7 @@
     .line 161
     .line 162
     :cond_9
-    sput-boolean p2, Lʾˉ/ᐧᐧ;->ʿˏ:Z
+    sput-boolean p2, Lʾˉ/ᴵᴵ;->ʿˏ:Z
 
     .line 163
     .line 164
@@ -437,7 +437,7 @@
     .line 173
     .line 174
     .line 175
-    sput-boolean v0, Lʾˉ/ᐧᐧ;->ʿˏ:Z
+    sput-boolean v0, Lʾˉ/ᴵᴵ;->ʿˏ:Z
 
     .line 176
     .line 177

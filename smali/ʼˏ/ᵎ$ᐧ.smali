@@ -44,7 +44,7 @@
     .locals 2
 
     .line 1
-    sget-object v0, Lʾˉ/ᐧᐧ;->ʽᵎ:Lʾˊ/ـ;
+    sget-object v0, Lʾˉ/ᴵᴵ;->ʽᵎ:Lʾˊ/ـ;
 
     .line 2
     .line 3
@@ -64,11 +64,11 @@
 
     .line 10
     .line 11
-    sget-object v0, Lʾˉ/ᐧᐧ;->ʽᵎ:Lʾˊ/ـ;
+    sget-object v0, Lʾˉ/ᴵᴵ;->ʽᵎ:Lʾˊ/ـ;
 
     .line 12
     .line 13
-    const v1, 0x7f1103c4
+    const v1, 0x7f1103c6
 
     .line 14
     .line 15
@@ -86,7 +86,7 @@
     .line 21
     .line 22
     .line 23
-    sget-object v0, Lʾˉ/ᐧᐧ;->ʽᵎ:Lʾˊ/ـ;
+    sget-object v0, Lʾˉ/ᴵᴵ;->ʽᵎ:Lʾˊ/ـ;
 
     .line 24
     .line 25
@@ -98,7 +98,7 @@
     .line 27
     .line 28
     .line 29
-    sget-object v0, Lʾˉ/ᐧᐧ;->ʽᵎ:Lʾˊ/ـ;
+    sget-object v0, Lʾˉ/ᴵᴵ;->ʽᵎ:Lʾˊ/ـ;
 
     .line 30
     .line 31
@@ -110,7 +110,7 @@
     .line 33
     .line 34
     .line 35
-    sget-object v0, Lʾˉ/ᐧᐧ;->ʽᵎ:Lʾˊ/ـ;
+    sget-object v0, Lʾˉ/ᴵᴵ;->ʽᵎ:Lʾˊ/ـ;
 
     .line 36
     .line 37

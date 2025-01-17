@@ -44,16 +44,16 @@
     .locals 0
 
     .line 1
-    sget-object p1, Lʾˉ/ᐧᐧ;->ʼˎ:Lʾˉ/ᐧᐧ;
+    sget-object p1, Lʾˉ/ᴵᴵ;->ʼˎ:Lʾˉ/ᴵᴵ;
 
     .line 2
     .line 3
-    const p2, 0x7f110431
+    const p2, 0x7f110435
 
     .line 4
     .line 5
     .line 6
-    invoke-virtual {p1, p2}, Lʾˉ/ᐧᐧ;->ˊᵎ(I)V
+    invoke-virtual {p1, p2}, Lʾˉ/ᴵᴵ;->ˊᵎ(I)V
 
     .line 7
     .line 8

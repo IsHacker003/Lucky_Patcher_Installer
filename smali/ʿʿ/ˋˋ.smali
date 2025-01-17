@@ -4,13 +4,11 @@
 
 
 # direct methods
-.method public static bridge synthetic ʻ(Landroid/view/accessibility/AccessibilityNodeInfo$AccessibilityAction;)I
-    .locals 0
+.method public static bridge synthetic ʻ()Landroid/view/accessibility/AccessibilityNodeInfo$AccessibilityAction;
+    .locals 1
 
     .line 1
-    invoke-virtual {p0}, Landroid/view/accessibility/AccessibilityNodeInfo$AccessibilityAction;->getId()I
+    sget-object v0, Landroid/view/accessibility/AccessibilityNodeInfo$AccessibilityAction;->ACTION_PAGE_LEFT:Landroid/view/accessibility/AccessibilityNodeInfo$AccessibilityAction;
 
-    move-result p0
-
-    return p0
+    return-object v0
 .end method

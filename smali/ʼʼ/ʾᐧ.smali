@@ -4,13 +4,13 @@
 
 
 # direct methods
-.method public static bridge synthetic ʻ(Landroid/view/WindowInsets;)Landroid/graphics/Insets;
+.method public static bridge synthetic ʻ(Landroid/view/WindowInsets;)I
     .locals 0
 
     .line 1
-    invoke-virtual {p0}, Landroid/view/WindowInsets;->getMandatorySystemGestureInsets()Landroid/graphics/Insets;
+    invoke-virtual {p0}, Landroid/view/WindowInsets;->hashCode()I
 
-    move-result-object p0
+    move-result p0
 
-    return-object p0
+    return p0
 .end method

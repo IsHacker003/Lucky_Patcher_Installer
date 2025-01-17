@@ -40,7 +40,7 @@
 
 
 # virtual methods
-.method public ʻ(Landroid/view/View;Lʼʼ/ʽٴ;)Lʼʼ/ʽٴ;
+.method public ʻ(Landroid/view/View;Lʼʼ/ʽᴵ;)Lʼʼ/ʽᴵ;
     .locals 4
 
     .line 1
@@ -78,7 +78,7 @@
 
     .line 17
     .line 18
-    invoke-virtual {p2}, Lʼʼ/ʽٴ;->ˈ()I
+    invoke-virtual {p2}, Lʼʼ/ʽᴵ;->ˈ()I
 
     .line 19
     .line 20
@@ -86,7 +86,7 @@
     move-result v0
 
     .line 22
-    invoke-virtual {p2}, Lʼʼ/ʽٴ;->ˊ()I
+    invoke-virtual {p2}, Lʼʼ/ʽᴵ;->ˊ()I
 
     .line 23
     .line 24
@@ -94,7 +94,7 @@
     move-result v1
 
     .line 26
-    invoke-virtual {p2}, Lʼʼ/ʽٴ;->ˉ()I
+    invoke-virtual {p2}, Lʼʼ/ʽᴵ;->ˉ()I
 
     .line 27
     .line 28
@@ -102,7 +102,7 @@
     move-result v2
 
     .line 30
-    invoke-virtual {p2}, Lʼʼ/ʽٴ;->ˆ()I
+    invoke-virtual {p2}, Lʼʼ/ʽᴵ;->ˆ()I
 
     .line 31
     .line 32
@@ -119,7 +119,7 @@
 
     .line 38
     .line 39
-    invoke-virtual {p1, p2}, Lcom/google/android/material/internal/ˏ;->ʻ(Lʼʼ/ʽٴ;)V
+    invoke-virtual {p1, p2}, Lcom/google/android/material/internal/ˏ;->ʻ(Lʼʼ/ʽᴵ;)V
 
     .line 40
     .line 41
@@ -128,7 +128,7 @@
 
     .line 43
     .line 44
-    invoke-virtual {p2}, Lʼʼ/ʽٴ;->ˋ()Z
+    invoke-virtual {p2}, Lʼʼ/ʽᴵ;->ˋ()Z
 
     .line 45
     .line 46
@@ -182,7 +182,7 @@
     .line 66
     .line 67
     .line 68
-    invoke-virtual {p2}, Lʼʼ/ʽٴ;->ʽ()Lʼʼ/ʽٴ;
+    invoke-virtual {p2}, Lʼʼ/ʽᴵ;->ʽ()Lʼʼ/ʽᴵ;
 
     .line 69
     .line 70

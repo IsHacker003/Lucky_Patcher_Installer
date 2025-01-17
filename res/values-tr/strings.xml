@@ -33,7 +33,7 @@ Varsayılan: /data/dalvik-cache/*"</string>
     <string name="abc_shareactionprovider_share_with">Şununla paylaş:</string>
     <string name="abc_shareactionprovider_share_with_application">%s ile paylaş</string>
     <string name="abc_toolbar_collapse_description">Daralt</string>
-    <string name="about_thanks_for_this_translation">Türkçe çeviri için teşekkürler: ChelpuS, k7lest, Turkishmark, TurkishWold, Türk Dil Devrimi ve Ata.Türkoğlu iletişim: turkishwold@yandex.com</string>
+    <string name="about_thanks_for_this_translation">Türkçe çeviri için teşekkürler: ChelpuS, k7lest ve Turkishmark</string>
     <string name="about_working_dir">SD Kartdaki çalışma dizini:</string>
     <string name="aboutlp">Lucky Patcher genel bir yama aracıdır. Reklamları kaldırma, Google lisans doğrulaması(Otomatik ve El-ile), izinleri yönetme ve birçok amaca yönelik olarak uygulamaları modifiye eder.</string>
     <string name="aboutmenu">Hakkında</string>
@@ -161,7 +161,7 @@ Varsayılan: /data/dalvik-cache/*"</string>
     <string name="cleardata">Veriyi Temizle</string>
     <string name="clipboard_message">Metin panoya kopyalandı</string>
     <string name="clipboard_message_for_app_dilaog_app_additional_info">Ek bilgi panoya kopyalandı.</string>
-    <string name="clipboard_message_for_app_dilaog_app_info">Uygulama bilgisi panoya kopylaandı.</string>
+    <string name="clipboard_message_for_app_dilaog_app_info">Uygulama bilgisi panoya kopyalandı.</string>
     <string name="clipboard_message_for_app_dilaog_app_permissions">İzinler panoya kopyalandı.</string>
     <string name="cloneApplication">Uygulamayı klonla (Her zaman çalışmayabilir)</string>
     <string name="close">Kapat</string>
@@ -390,6 +390,8 @@ Dosya dizini:"</string>
     <string name="delete_system_app_for_user">Mevcut kullanıcı için sistem uygulamasını kaldır</string>
     <string name="delete_system_app_for_user_message">Mevcut kullanıcı için %s sistem uygulamasını gerçekten kaldırmak istiyor musunuz?</string>
     <string name="describe_for_Proxy_gp">(yalnızca lisanslı ve uygulama içi emülasyonlu mini sürüm)</string>
+    <string name="dialog_android_art_update_remove">Gerçekten apex modülü com.google.android.art güncellemelerini kaldırmak istiyor musunuz?</string>
+    <string name="dialog_android_art_update_remove_no_update">com.google.android.art apex modülü için herhangi bir güncelleme bulunamadı.</string>
     <string name="dialog_end_orig_resign_app">%1$sorijinal imza ile başarıyla imzalandı. İstifa dosyası bulunur%2$s.</string>
     <string name="dialog_end_resign_app">%1$s test imzası ile başarıyla imzalandı. Yeni dosya konumu %2$s.</string>
     <string name="dialog_system">Bu uygulama Sistemin bir parçası. Üzerinde oynamadan önce çok dikkatli olun. Cihazınızı soft-brick edebilir. Yedeğiniz var mı? Bu uygulamayı düzenlemek istediğinizden emin misiniz?</string>
@@ -1169,6 +1171,8 @@ Eğer cihaz otomatik olarak yeniden başlamaz ise, el ile yapın..."</string>
     <string name="remodexerror">Bu uygulamanın dalvik önbelleği bulunamadı</string>
     <string name="remove_all_saved_purchases">Kayıtlı tüm satın almaları kaldır</string>
     <string name="remove_all_saved_purchases_message">Kayıtlı tüm satın almalar kaldırılsın mı?</string>
+    <string name="remove_android_art_update">Apex modülü com.google.android.art için güncellemeleri kaldırın</string>
+    <string name="remove_android_art_update_description">"Bu, Lsposed veya normal sistem dosyası yamaları aracılığıyla android yamaları çalışmadığında android'in modern sürümlerinde yardımcı olur."</string>
     <string name="removefixes">"Tüm ODEX Dosyalarını Sil
 (/data/app ve /system/app)"</string>
     <string name="reset_dialog_settings">Tüm diyalog ayarlarını sıfırla</string>

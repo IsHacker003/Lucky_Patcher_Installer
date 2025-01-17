@@ -94,7 +94,7 @@
     move-result-object p2
 
     .line 30
-    invoke-static {p2}, Lʼʼ/ʼⁱ;->ʽ(Landroid/view/ViewConfiguration;)I
+    invoke-static {p2}, Lʼʼ/ʼﹶ;->ʽ(Landroid/view/ViewConfiguration;)I
 
     .line 31
     .line 32

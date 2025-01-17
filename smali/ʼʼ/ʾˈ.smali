@@ -4,11 +4,11 @@
 
 
 # direct methods
-.method public static bridge synthetic ʻ(Landroid/view/WindowInsets;)I
+.method public static bridge synthetic ʻ(Landroid/view/WindowInsets;)Z
     .locals 0
 
     .line 1
-    invoke-virtual {p0}, Landroid/view/WindowInsets;->getStableInsetLeft()I
+    invoke-virtual {p0}, Landroid/view/WindowInsets;->isRound()Z
 
     move-result p0
 

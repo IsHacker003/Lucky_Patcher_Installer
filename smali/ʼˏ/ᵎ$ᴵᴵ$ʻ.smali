@@ -45,7 +45,7 @@
 
     .line 1
     :try_start_0
-    sget-object v0, Lʾˉ/ᐧᐧ;->ʽˆ:Landroid/widget/ArrayAdapter;
+    sget-object v0, Lʾˉ/ᴵᴵ;->ʽˆ:Landroid/widget/ArrayAdapter;
 
     .line 2
     .line 3
@@ -65,12 +65,12 @@
     move-result-object v0
 
     .line 11
-    invoke-static {v0}, Lʾˉ/ᐧᐧ;->ˊˏ(Ljava/lang/Integer;)V
+    invoke-static {v0}, Lʾˉ/ᴵᴵ;->ˊˏ(Ljava/lang/Integer;)V
 
     .line 12
     .line 13
     .line 14
-    sget-object v0, Lʾˉ/ᐧᐧ;->ʽˆ:Landroid/widget/ArrayAdapter;
+    sget-object v0, Lʾˉ/ᴵᴵ;->ʽˆ:Landroid/widget/ArrayAdapter;
 
     .line 15
     .line 16

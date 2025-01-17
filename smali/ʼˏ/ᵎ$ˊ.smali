@@ -49,7 +49,7 @@
     .locals 1
 
     .line 1
-    sget-object v0, Lʾˉ/ᐧᐧ;->ʼﾞ:Lru/aaaaacax/installer/MainActivity;
+    sget-object v0, Lʾˉ/ᴵᴵ;->ʼﾞ:Lru/aaaaacay/installer/MainActivity;
 
     .line 2
     .line 3

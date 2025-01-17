@@ -53,7 +53,7 @@
     .line 4
     .line 5
     .line 6
-    const v1, 0x7f1104cb
+    const v1, 0x7f1104cf
 
     .line 7
     .line 8
@@ -66,7 +66,7 @@
     move-result-object v1
 
     .line 13
-    const v2, 0x7f110458
+    const v2, 0x7f11045c
 
     .line 14
     .line 15

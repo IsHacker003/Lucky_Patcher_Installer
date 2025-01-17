@@ -44,7 +44,7 @@
 
     .line 4
     .line 5
-    sget v0, Lʾˉ/ᐧᐧ;->ˈˏ:I
+    sget v0, Lʾˉ/ᴵᴵ;->ˈˏ:I
 
     .line 6
     .line 7
@@ -68,11 +68,11 @@
 
     .line 16
     .line 17
-    new-instance v1, Lʾˉ/ᐧᐧ$ˈʿ;
+    new-instance v1, Lʾˉ/ᴵᴵ$ˈˆ;
 
     .line 18
     .line 19
-    invoke-direct {v1}, Lʾˉ/ᐧᐧ$ˈʿ;-><init>()V
+    invoke-direct {v1}, Lʾˉ/ᴵᴵ$ˈˆ;-><init>()V
 
     .line 20
     .line 21
@@ -83,7 +83,7 @@
     .line 24
     .line 25
     :cond_0
-    sget v0, Lʾˉ/ᐧᐧ;->ˈˏ:I
+    sget v0, Lʾˉ/ᴵᴵ;->ˈˏ:I
 
     .line 26
     .line 27
@@ -110,11 +110,11 @@
 
     .line 37
     .line 38
-    new-instance v2, Lʾˉ/ᐧᐧ$ˈˋ;
+    new-instance v2, Lʾˉ/ᴵᴵ$ˈˎ;
 
     .line 39
     .line 40
-    invoke-direct {v2}, Lʾˉ/ᐧᐧ$ˈˋ;-><init>()V
+    invoke-direct {v2}, Lʾˉ/ᴵᴵ$ˈˎ;-><init>()V
 
     .line 41
     .line 42

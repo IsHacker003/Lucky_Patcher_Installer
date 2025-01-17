@@ -8,7 +8,7 @@
     .locals 0
 
     .line 1
-    invoke-virtual {p0}, Landroid/view/ViewConfiguration;->getScaledHorizontalScrollFactor()F
+    invoke-virtual {p0}, Landroid/view/ViewConfiguration;->getScaledVerticalScrollFactor()F
 
     move-result p0
 

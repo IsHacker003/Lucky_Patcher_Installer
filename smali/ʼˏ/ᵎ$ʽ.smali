@@ -64,7 +64,7 @@
 
 # virtual methods
 .method public run()V
-    .locals 4
+    .locals 5
 
     .line 1
     iget-object v0, p0, Lʼˏ/ᵎ$ʽ;->ʻ:Landroid/widget/LinearLayout;
@@ -88,10 +88,13 @@
 
     .line 11
     .line 12
-    invoke-static {v0, v1, v2, v3}, Lʼˏ/ᵎ;->ˉ(Landroid/widget/LinearLayout;Ljava/lang/Runnable;Ljava/util/Timer;Ljava/util/TimerTask;)V
+    const/4 v4, 0x0
 
     .line 13
+    invoke-static {v0, v1, v2, v3, v4}, Lʼˏ/ᵎ;->ˉ(Landroid/widget/LinearLayout;Ljava/lang/Runnable;Ljava/util/Timer;Ljava/util/TimerTask;Z)V
+
     .line 14
     .line 15
+    .line 16
     return-void
 .end method

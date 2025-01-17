@@ -378,6 +378,8 @@ Uložiť pôvodný podpis (bezpečná metóda)"</string>
     <string name="delete_system_app_for_user">Odinštalovať systémovú apku pre aktuálneho používateľa</string>
     <string name="delete_system_app_for_user_message">Naozaj chcete odinštalovať systémovú apku %s pre aktuálneho používateľa?</string>
     <string name="describe_for_Proxy_gp">(mini verzia s iba licenčnou a inapp emuláciou)</string>
+    <string name="dialog_android_art_update_remove">Naozaj chcete odstrániť aktualizácie pre modul apex com.google.android.art?</string>
+    <string name="dialog_android_art_update_remove_no_update">Pre modul apex com.google.android.art neboli nájdené žiadne aktualizácie.</string>
     <string name="dialog_end_orig_resign_app">Aplikácia %1$s bola úspešne podpísaná originálnym podpisom. Podpísaný súbor je uložený v %2$s.</string>
     <string name="dialog_end_resign_app">Aplikácia %1$s bola úspešne podpísaná testovacím podpisom. Znova podpísaný súbor je uložený v %2$s.</string>
     <string name="dialog_system">Táto aplikácia je súčasťou operačného systému Android. Buďte veľmi opatrný pri akýchkoľvek operáciách s ňou, mohli by ste poškodiť zariadenie. Máte zálohu? Ste si istý, že chcete pracovať s touto aplikáciou?</string>
@@ -1098,6 +1100,8 @@ Ak sa vaše zariadenie automaticky nereštartne, urobte ho manuálne..."</string
     <string name="remodexerror">Dalvik cache tejto aplikácie nebolo nájdené.</string>
     <string name="remove_all_saved_purchases">Odstrániť všetky uložené nákupy</string>
     <string name="remove_all_saved_purchases_message">Chcete vymazať všetky uložené nákupy z Lucky Patchera?</string>
+    <string name="remove_android_art_update">Odinštalovanie aktualizácií pre modul apex com.google.android.art</string>
+    <string name="remove_android_art_update_description">To pomáha v moderných verziách Androidu, keď nefungujú záplaty Androidu cez LSposed alebo bežné záplaty systémových súborov.</string>
     <string name="removefixes">Odstrániť všetky súbory ODEX (/data/app a /system/app)</string>
     <string name="reset_dialog_settings">Resetovať všetky nastavenia dialógových okien</string>
     <string name="restore_build">Zostava</string>

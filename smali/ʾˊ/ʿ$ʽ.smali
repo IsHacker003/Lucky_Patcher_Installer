@@ -45,7 +45,7 @@
 
     .line 1
     :try_start_0
-    sget-object v0, Lʾˉ/ᐧᐧ;->ʼᴵ:Lʾˉ/ᵔ;
+    sget-object v0, Lʾˉ/ᴵᴵ;->ʼᴵ:Lʾˉ/ᵔ;
 
     .line 2
     .line 3
@@ -74,7 +74,7 @@
     .line 14
     .line 15
     .line 16
-    sget-object p1, Lʾˉ/ᐧᐧ;->ʼᴵ:Lʾˉ/ᵔ;
+    sget-object p1, Lʾˉ/ᴵᴵ;->ʼᴵ:Lʾˉ/ᵔ;
 
     .line 17
     .line 18

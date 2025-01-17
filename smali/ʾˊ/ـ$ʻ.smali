@@ -44,7 +44,7 @@
     .locals 0
 
     .line 1
-    sget-boolean p1, Lʾˉ/ᐧᐧ;->ʽﾞ:Z
+    sget-boolean p1, Lʾˉ/ᴵᴵ;->ʽﾞ:Z
 
     .line 2
     .line 3

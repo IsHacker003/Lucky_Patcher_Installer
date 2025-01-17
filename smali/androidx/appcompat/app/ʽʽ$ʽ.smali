@@ -3,7 +3,7 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lʼʼ/ʽˑ;
+.implements Lʼʼ/ʽـ;
 
 
 # annotations

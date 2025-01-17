@@ -45,7 +45,7 @@
     .end annotation
 
     .line 1
-    sget-object p1, Lʾˉ/ᐧᐧ;->ʽˈ:Lʾˉ/ʽ;
+    sget-object p1, Lʾˉ/ᴵᴵ;->ʽˈ:Lʾˉ/ʽ;
 
     .line 2
     .line 3
@@ -88,7 +88,7 @@
     .line 19
     .line 20
     :goto_0
-    sget-object p1, Lʾˉ/ᐧᐧ;->ʽˈ:Lʾˉ/ʽ;
+    sget-object p1, Lʾˉ/ᴵᴵ;->ʽˈ:Lʾˉ/ʽ;
 
     .line 21
     .line 22

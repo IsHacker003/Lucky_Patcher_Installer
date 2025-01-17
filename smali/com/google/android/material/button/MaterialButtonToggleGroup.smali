@@ -2003,7 +2003,7 @@
     .line 2
     .line 3
     .line 4
-    invoke-static {p1}, Lʿʿ/ﹳﹳ;->ʼˉ(Landroid/view/accessibility/AccessibilityNodeInfo;)Lʿʿ/ﹳﹳ;
+    invoke-static {p1}, Lʿʿ/ʻʼ;->ʼˉ(Landroid/view/accessibility/AccessibilityNodeInfo;)Lʿʿ/ʻʼ;
 
     .line 5
     .line 6
@@ -2048,7 +2048,7 @@
     const/4 v3, 0x0
 
     .line 23
-    invoke-static {v2, v0, v3, v1}, Lʿʿ/ﹳﹳ$ʼ;->ʼ(IIZI)Lʿʿ/ﹳﹳ$ʼ;
+    invoke-static {v2, v0, v3, v1}, Lʿʿ/ʻʼ$ʼ;->ʼ(IIZI)Lʿʿ/ʻʼ$ʼ;
 
     .line 24
     .line 25
@@ -2056,7 +2056,7 @@
     move-result-object v0
 
     .line 27
-    invoke-virtual {p1, v0}, Lʿʿ/ﹳﹳ;->ʻˆ(Ljava/lang/Object;)V
+    invoke-virtual {p1, v0}, Lʿʿ/ʻʼ;->ʻˆ(Ljava/lang/Object;)V
 
     .line 28
     .line 29

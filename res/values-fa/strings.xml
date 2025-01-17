@@ -50,6 +50,7 @@
     <string name="android_patches_dialog_remove_patch_3">حذف پچ \"%1s\"</string>
     <string name="android_patches_dialog_remove_patches_1_and_2" formatted="false">حذف پچ های \"%1s\" و \"%2s\"</string>
     <string name="android_patches_dialog_use_magisk_module_for_patches">برای انجام پچ از ماژول Magisk استفاده کنید</string>
+    <string name="android_patches_dialog_use_magisk_module_zygisk_for_patches">استفاده از ماژول مجیسک - zygisk (توسط vova7878@4pda)</string>
     <string name="android_patches_for_bootlist">پچ اندروید روی حافظه پنهان dalvik</string>
     <string name="android_patches_for_bootlist_status">پچ های اندروید را در بوت دوباره انجام دهید</string>
     <string name="android_patches_xposed_need_message">لطفا از Xposed (lSPosed) برای انجام پچ فعلی استفاده کنید</string>
@@ -143,9 +144,9 @@
     <string name="change_icon_lp_descr">شما می توانید نماد لاکی پچر را تغییر دهید</string>
     <string name="change_lp_name">تغییر نام لاکی پچر</string>
     <string name="change_lp_name_descr">شما می توانید نام لاکی پچر را تغییر دهید تا پیدا کردن آن در صفحه اصلی گوشی شما آسان تر شود</string>
-    <string name="change_minimumSDK">تغییر نسخه minimum SDK</string>
-    <string name="change_sharedUserId">تغییر sharedUserId</string>
-    <string name="change_targetSDK">تغییر نسخه Target SDK</string>
+    <string name="change_minimumSDK">تغییر کمترین نسخه SDK</string>
+    <string name="change_sharedUserId">تغییر شناسه کاربری مشترک</string>
+    <string name="change_targetSDK">تغییر نسخه هدف SDK</string>
     <string name="change_version_code">تغییر کد نسخه (ساخت)</string>
     <string name="changelog">گزارش تغییرات لاکی پچر</string>
     <string name="character_counter_content_description">نویسه‌های واردشده %1$d از %2$d</string>
@@ -361,7 +362,7 @@
     <string name="date_creation_patch">تاریخ افزوده شدن پچ :</string>
     <string name="days_on_up">نمایش برنامه های جدید</string>
     <string name="days_on_up_descr">شما می توانید تعداد روزهای که برنامه ها را تازه نصب شده در نظر می گیرد و به بالای لیست برنامه ها حرکت می کنند را انتخاب کنید و برای غیرفعال کردن آن می توانید 0 را انتخاب کنید</string>
-    <string name="delboot">برای حذف از فهرست بوت ضربه بزنید</string>
+    <string name="delboot">برای حذف از فهرست بوت فشار دهید</string>
     <string name="delete_apex_update">به روز رسانی برای com.google.android.art حذف شده تا عملکرد پچ بازگردانده شود</string>
     <string name="delete_file">حذف فایل</string>
     <string name="delete_file_message">آیا می خواهید فایل %s را حذف کنید؟</string>
@@ -388,7 +389,7 @@
     <string name="dont_send_log_please_update_lp">لطفا برای ارسال گزارش لاکی پچر را به آخرین نسخه به روز رسانی کنید</string>
     <string name="dontusepatch">لغو</string>
     <string name="downgrade_version_googlepaly_in_system_partition">نسخه نصب شده فروشگاه گوگل پلی در پارتیشن سیستم جدید تر از نسخه در حال نصب است اکنون یک نسخه قدیمی تر از فروشگاه گوگل پلی در پارتیشن سیستم نصب خواهد شد پس از آن نصب فروشگاه گوگل پلی مود شده را تکرار کنید آیا با این کار موافق هستید؟</string>
-    <string name="download">بارگیری...</string>
+    <string name="download">در حال بارگذاری ...</string>
     <string name="download_progress_dialog_message_downloading">دانلود فایل</string>
     <string name="download_progress_dialog_message_prepare_downloading">آماده سازی دانلود ...</string>
     <string name="download_progress_dialog_message_resume_downloading">شروع دوباره دانلود فایل</string>
@@ -476,7 +477,10 @@
     <string name="generate_log_for_framework_fix_android_patches">ساخت گزارش برای framework.jar (برای رفع مشکلات «پچ های اندروید»)</string>
     <string name="generate_log_for_services.odex_fix_android_patches">ساخت گزارش برای services.jar (برای رفع مشکلات «پچ های اندروید»)</string>
     <string name="generate_log_result_message_conscrypt.jar">گزارش ساخته شده در /sdcard/conscrypt.oat.txt ذخیره شده فایل گزارش را در فضای ابری ذخیره کرده یا فشرده کنید و از طریق ایمیل lp.chelpus@gmail.com برای من ارسال کنید حجم فایل :</string>
+    <string name="generate_log_result_message_core_jar_zip">گزارش ساخته شده و در sdcard/boot.oat.txt.zip ذخیره شده فایل فشرده گزارش را از طریق ایمیل lp.chelpus@gmail.com برای من ارسال کنید اندازه فایل :</string>
     <string name="generate_log_result_message_core_oj.jar">گزارش ساخته شده در sdcard/core-oj.oat.txt ذخیره شده فایل گزارش را در فضای ابری ذخیره کرده یا فشرده کنید و از طریق ایمیل lp.chelpus@gmail.com برای من ارسال کنید حجم فایل :</string>
+    <string name="generate_log_result_message_framework_zip">گزارش ساخته شده و در sdcard/framework.txt.zip ذخیره شده فایل فشرده گزارش را از طریق ایمیل lp.chelpus@gmail.com برای من ارسال کنید اندازه فایل :</string>
+    <string name="generate_log_result_message_services_odex_zip">گزارش ساخته شده و در sdcard/services.odex.txt.zip ذخیره شده فایل فشرده گزارش را از طریق ایمیل lp.chelpus@gmail.com برای من ارسال کنید اندازه فایل :</string>
     <string name="go_to_file_path">برو به فایل</string>
     <string name="goodresult">لطفا برنامه را برای آزمایش اجرا کنید اگر برنامه درست کار نکرد آن را دوباره نصب کنید و برای پچ این نسخه تلاش نکنید</string>
     <string name="google_play_installer_clear_data_google_services">پاکسازی داده های برنامه خدمات گوگل پلی (برای جلوگیری از مشکل ورود به حساب گوگل در فروشگاه گوگل پلی)</string>
@@ -826,7 +830,8 @@
     <string name="message_signature_killer_for_apps_with_test_signature">برنامه مورد نظر دارای امضای آزمایشی است بنابراین گزینه \"%1$s\" غیرفعال است</string>
     <string name="message_test_patch_downgrade">آزمایش بازگردانی برنامه ها</string>
     <string name="message_test_patch_signatures">آزمایش امکان نصب یک برنامه با امضاهای مختلف</string>
-    <string name="message_test_patch_terget_sdk_30_installing">آزمایش امکان نصب یک برنامه بدون امضا نسخه .2. و target SDK = 30</string>
+    <string name="message_test_patch_signatures_shareduser">آزمایش نصب برنامه های دارای امضاهای مختلف و شناسه کاربری مشترک یکسان</string>
+    <string name="message_test_patch_terget_sdk_30_installing">آزمایش امکان نصب برنامه بدون امضای نسخه .2 و نسخه هدف SDK = 30</string>
     <string name="message_test_patch_unlocked">قابلیت انجام پچ باز است</string>
     <string name="message_test_pm_utility">در حال آزمایش ابزار پچ داده</string>
     <string name="message_test_pm_utility_fail">بررسی نقاط پچ امکان پذیر نیست زیرا ابزار پچ داده به درستی کار نمی کند</string>
@@ -914,7 +919,7 @@
     <string name="odex_all_system_app">ساخت فایل odex برای همه برنامه های سیستمی (فضای خالی بیشتر در حافظه داخلی)</string>
     <string name="odex_all_system_app_message">آیا می خواهید برای همه برنامه های سیستمی فایل odex بسازید؟</string>
     <string name="odexed_not_all_apps">خطا : فضای آزاد کافی در پوشه سیستم وجود ندارد چون بعضی از برنامه ها ODEX نشده اند</string>
-    <string name="ok">بله</string>
+    <string name="ok">تایید</string>
     <string name="on_top_apps_marker">جدید</string>
     <string name="open_to_GP">مشاهده در فروشگاه گوگل پلی</string>
     <string name="option_SELinux_permissive">تنظیمات لینوکس را به حالت قابل قبول تنظیم کنید</string>
@@ -1092,7 +1097,7 @@
     <string name="stat_boot_ads">تبلیغات گوگل</string>
     <string name="stat_boot_custom">پچ سفارشی</string>
     <string name="stat_boot_lvl">تایید لایسنس گوگل</string>
-    <string name="stat_launch_activity">اجرا فعالیت :</string>
+    <string name="stat_launch_activity">فعالیت اصلی :</string>
     <string name="statads">تبلیغات گوگل یافت شد</string>
     <string name="statappplace">محل برنامه :</string>
     <string name="statbilling">خرید درون برنامه ای یافت می شود</string>

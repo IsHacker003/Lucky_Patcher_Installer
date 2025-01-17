@@ -40,7 +40,7 @@
 
 
 # virtual methods
-.method public ʻ(Landroid/view/View;Lʼʼ/ʽٴ;)Lʼʼ/ʽٴ;
+.method public ʻ(Landroid/view/View;Lʼʼ/ʽᴵ;)Lʼʼ/ʽᴵ;
     .locals 0
 
     .line 1
@@ -48,7 +48,7 @@
 
     .line 2
     .line 3
-    invoke-virtual {p1, p2}, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->ٴٴ(Lʼʼ/ʽٴ;)Lʼʼ/ʽٴ;
+    invoke-virtual {p1, p2}, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->ٴٴ(Lʼʼ/ʽᴵ;)Lʼʼ/ʽᴵ;
 
     .line 4
     .line 5

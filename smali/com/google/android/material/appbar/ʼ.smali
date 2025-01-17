@@ -232,7 +232,7 @@
     .line 63
     .line 64
     .line 65
-    invoke-virtual {p1}, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->getLastWindowInsets()Lʼʼ/ʽٴ;
+    invoke-virtual {p1}, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->getLastWindowInsets()Lʼʼ/ʽᴵ;
 
     .line 66
     .line 67
@@ -272,7 +272,7 @@
 
     .line 84
     .line 85
-    invoke-virtual {v2}, Lʼʼ/ʽٴ;->ˈ()I
+    invoke-virtual {v2}, Lʼʼ/ʽᴵ;->ˈ()I
 
     .line 86
     .line 87
@@ -291,7 +291,7 @@
 
     .line 93
     .line 94
-    invoke-virtual {v2}, Lʼʼ/ʽٴ;->ˉ()I
+    invoke-virtual {v2}, Lʼʼ/ʽᴵ;->ˉ()I
 
     .line 95
     .line 96
@@ -609,7 +609,7 @@
 
     .line 34
     .line 35
-    invoke-virtual {p1}, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->getLastWindowInsets()Lʼʼ/ʽٴ;
+    invoke-virtual {p1}, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->getLastWindowInsets()Lʼʼ/ʽᴵ;
 
     .line 36
     .line 37
@@ -621,7 +621,7 @@
 
     .line 40
     .line 41
-    invoke-virtual {v3}, Lʼʼ/ʽٴ;->ˊ()I
+    invoke-virtual {v3}, Lʼʼ/ʽᴵ;->ˊ()I
 
     .line 42
     .line 43
@@ -629,7 +629,7 @@
     move-result v4
 
     .line 45
-    invoke-virtual {v3}, Lʼʼ/ʽٴ;->ˆ()I
+    invoke-virtual {v3}, Lʼʼ/ʽᴵ;->ˆ()I
 
     .line 46
     .line 47

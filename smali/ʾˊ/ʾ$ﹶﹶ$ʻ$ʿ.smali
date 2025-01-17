@@ -104,12 +104,12 @@
     move-result-object p1
 
     .line 18
-    invoke-static {p1}, Lʾˉ/ᐧᐧ;->ˉˎ(Ljava/lang/Object;)V
+    invoke-static {p1}, Lʾˉ/ᴵᴵ;->ˉˎ(Ljava/lang/Object;)V
 
     .line 19
     .line 20
     .line 21
-    sput-boolean p2, Lʾˉ/ᐧᐧ;->ʿי:Z
+    sput-boolean p2, Lʾˉ/ᴵᴵ;->ʿי:Z
 
     .line 22
     .line 23
@@ -120,11 +120,11 @@
 
     .line 25
     .line 26
-    sput-boolean p1, Lʾˉ/ᐧᐧ;->ʿˏ:Z
+    sput-boolean p1, Lʾˉ/ᴵᴵ;->ʿˏ:Z
 
     .line 27
     .line 28
-    sput-boolean p1, Lʾˉ/ᐧᐧ;->ʿˑ:Z
+    sput-boolean p1, Lʾˉ/ᴵᴵ;->ʿˑ:Z
 
     .line 29
     .line 30
@@ -155,7 +155,7 @@
     .line 43
     .line 44
     .line 45
-    sget-boolean p2, Lʾˉ/ᐧᐧ;->ˈﾞ:Z
+    sget-boolean p2, Lʾˉ/ᴵᴵ;->ˈﾞ:Z
 
     .line 46
     .line 47
@@ -205,7 +205,7 @@
     .line 67
     .line 68
     .line 69
-    sput-boolean p1, Lʾˉ/ᐧᐧ;->ʿי:Z
+    sput-boolean p1, Lʾˉ/ᴵᴵ;->ʿי:Z
 
     .line 70
     .line 71

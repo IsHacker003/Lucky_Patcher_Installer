@@ -55,7 +55,7 @@
     .locals 4
 
     .line 1
-    sget v0, Lʾˉ/ᐧᐧ;->ʾᐧ:I
+    sget v0, Lʾˉ/ᴵᴵ;->ʾᐧ:I
 
     .line 2
     .line 3

@@ -215,7 +215,7 @@
 
     .line 4
     .line 5
-    sget-object v0, Lʾˉ/ᐧᐧ;->ˈʽ:Ljava/util/ArrayList;
+    sget-object v0, Lʾˉ/ᴵᴵ;->ˈʽ:Ljava/util/ArrayList;
 
     .line 6
     .line 7
@@ -253,7 +253,7 @@
     .line 23
     .line 24
     .line 25
-    sget-object v0, Lʾˉ/ᐧᐧ;->ˈʽ:Ljava/util/ArrayList;
+    sget-object v0, Lʾˉ/ᴵᴵ;->ˈʽ:Ljava/util/ArrayList;
 
     .line 26
     .line 27

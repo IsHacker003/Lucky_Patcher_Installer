@@ -7,13 +7,13 @@ usesFramework:
   tag: null
 sdkInfo:
   minSdkVersion: 14
-  targetSdkVersion: 28
+  targetSdkVersion: 32
 packageInfo:
   forcedPackageId: 127
   renameManifestPackage: null
 versionInfo:
-  versionCode: 1923
-  versionName: 11.6.3
+  versionCode: 1924
+  versionName: 11.6.4
 sharedLibrary: false
 sparseResources: false
 compactEntries: false

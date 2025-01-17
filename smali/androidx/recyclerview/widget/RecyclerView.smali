@@ -746,14 +746,14 @@
     iput v2, v7, Landroidx/recyclerview/widget/RecyclerView;->ⁱⁱ:I
 
     .line 42
-    invoke-static {v1, v8}, Lʼʼ/ʼⁱ;->ʼ(Landroid/view/ViewConfiguration;Landroid/content/Context;)F
+    invoke-static {v1, v8}, Lʼʼ/ʼﹶ;->ʼ(Landroid/view/ViewConfiguration;Landroid/content/Context;)F
 
     move-result v2
 
     iput v2, v7, Landroidx/recyclerview/widget/RecyclerView;->ʻʼ:F
 
     .line 43
-    invoke-static {v1, v8}, Lʼʼ/ʼⁱ;->ʾ(Landroid/view/ViewConfiguration;Landroid/content/Context;)F
+    invoke-static {v1, v8}, Lʼʼ/ʼﹶ;->ʾ(Landroid/view/ViewConfiguration;Landroid/content/Context;)F
 
     move-result v2
 

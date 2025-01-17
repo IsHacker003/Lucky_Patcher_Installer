@@ -28,7 +28,7 @@
 .end method
 
 .method public constructor <init>(Landroid/content/Context;Z)V
-    .locals 3
+    .locals 4
 
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -108,16 +108,16 @@
     move-result-object p1
 
     .line 40
-    new-instance v2, Landroid/graphics/drawable/ColorDrawable;
+    new-instance v3, Landroid/graphics/drawable/ColorDrawable;
 
     .line 41
     .line 42
-    invoke-direct {v2, v1}, Landroid/graphics/drawable/ColorDrawable;-><init>(I)V
+    invoke-direct {v3, v1}, Landroid/graphics/drawable/ColorDrawable;-><init>(I)V
 
     .line 43
     .line 44
     .line 45
-    invoke-virtual {p1, v2}, Landroid/view/Window;->setBackgroundDrawable(Landroid/graphics/drawable/Drawable;)V
+    invoke-virtual {p1, v3}, Landroid/view/Window;->setBackgroundDrawable(Landroid/graphics/drawable/Drawable;)V
 
     .line 46
     .line 47
@@ -150,16 +150,16 @@
     move-result-object p1
 
     .line 62
-    new-instance v2, Lʾˉ/ᵢ$ʽ;
+    new-instance v3, Lʾˉ/ᵢ$ʽ;
 
     .line 63
     .line 64
-    invoke-direct {v2, p0}, Lʾˉ/ᵢ$ʽ;-><init>(Lʾˉ/ᵢ;)V
+    invoke-direct {v3, p0}, Lʾˉ/ᵢ$ʽ;-><init>(Lʾˉ/ᵢ;)V
 
     .line 65
     .line 66
     .line 67
-    invoke-virtual {p1, v2}, Landroid/view/ViewTreeObserver;->addOnGlobalLayoutListener(Landroid/view/ViewTreeObserver$OnGlobalLayoutListener;)V
+    invoke-virtual {p1, v3}, Landroid/view/ViewTreeObserver;->addOnGlobalLayoutListener(Landroid/view/ViewTreeObserver$OnGlobalLayoutListener;)V
 
     .line 68
     .line 69
@@ -168,12 +168,12 @@
 
     .line 71
     .line 72
-    const v2, 0x7f0c0094
+    const v3, 0x7f0c0094
 
     .line 73
     .line 74
     .line 75
-    invoke-virtual {p1, v2}, Landroid/app/Dialog;->setContentView(I)V
+    invoke-virtual {p1, v3}, Landroid/app/Dialog;->setContentView(I)V
 
     .line 76
     .line 77
@@ -191,12 +191,12 @@
 
     .line 84
     .line 85
-    const v2, 0x7f0901b3
+    const v3, 0x7f0901b3
 
     .line 86
     .line 87
     .line 88
-    invoke-virtual {p1, v2}, Landroid/app/Dialog;->findViewById(I)Landroid/view/View;
+    invoke-virtual {p1, v3}, Landroid/app/Dialog;->findViewById(I)Landroid/view/View;
 
     .line 89
     .line 90
@@ -227,7 +227,7 @@
 
     .line 104
     .line 105
-    sget p1, Lʾˉ/ᐧᐧ;->ʾᐧ:I
+    sget p1, Lʾˉ/ᴵᴵ;->ʾᐧ:I
 
     .line 106
     .line 107
@@ -281,7 +281,7 @@
     .line 131
     .line 132
     .line 133
-    invoke-static {p1, v0, v0, v0}, Lʼˏ/ᵎ;->ˉ(Landroid/widget/LinearLayout;Ljava/lang/Runnable;Ljava/util/Timer;Ljava/util/TimerTask;)V
+    invoke-static {p1, v0, v0, v0, v2}, Lʼˏ/ᵎ;->ˉ(Landroid/widget/LinearLayout;Ljava/lang/Runnable;Ljava/util/Timer;Ljava/util/TimerTask;Z)V
 
     .line 134
     .line 135

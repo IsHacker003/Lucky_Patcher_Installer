@@ -34,7 +34,7 @@
     .locals 1
 
     .line 1
-    invoke-static {p0}, Lʾˉ/ᐧᐧ;->ˉʼ(Landroid/content/Context;)V
+    invoke-static {p0}, Lʾˉ/ᴵᴵ;->ˉʼ(Landroid/content/Context;)V
 
     .line 2
     .line 3
@@ -156,7 +156,7 @@
 
     .line 15
     .line 16
-    invoke-static {p1}, Lʾˉ/ᐧᐧ;->ˉʼ(Landroid/content/Context;)V
+    invoke-static {p1}, Lʾˉ/ᴵᴵ;->ˉʼ(Landroid/content/Context;)V
 
     .line 17
     .line 18
@@ -242,7 +242,7 @@
     .line 58
     .line 59
     .line 60
-    sget-boolean p2, Lʾˉ/ᐧᐧ;->ʾʽ:Z
+    sget-boolean p2, Lʾˉ/ᴵᴵ;->ʾʽ:Z
 
     .line 61
     .line 62
@@ -290,7 +290,7 @@
     const/4 p2, 0x1
 
     .line 81
-    sput-boolean p2, Lʾˉ/ᐧᐧ;->ʿʾ:Z
+    sput-boolean p2, Lʾˉ/ᴵᴵ;->ʿʾ:Z
 
     .line 82
     .line 83

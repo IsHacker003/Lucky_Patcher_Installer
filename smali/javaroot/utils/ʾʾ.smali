@@ -254,7 +254,7 @@
     .line 115
     .line 116
     .line 117
-    sget-object v9, Lʾˉ/ᐧᐧ;->ʼٴ:Ljava/lang/String;
+    sget-object v9, Lʾˉ/ᴵᴵ;->ʼٴ:Ljava/lang/String;
 
     .line 118
     .line 119
@@ -686,7 +686,7 @@
     .line 338
     .line 339
     .line 340
-    sget-object v3, Lʾˉ/ᐧᐧ;->ʼٴ:Ljava/lang/String;
+    sget-object v3, Lʾˉ/ᴵᴵ;->ʼٴ:Ljava/lang/String;
 
     .line 341
     .line 342

@@ -415,11 +415,11 @@
 
     .line 163
     .line 164
-    sget-object p2, Lʾˉ/ᐧᐧ;->ʼᵎ:Lʾˉ/ᵎ;
+    sget-object p2, Lʾˉ/ᴵᴵ;->ʼᵎ:Lʾˉ/ᵎ;
 
     .line 165
     .line 166
-    invoke-static {p2, p1}, Lʾˉ/ᐧᐧ;->ˊᵢ(Lʾˉ/ᵎ;Lʼˑ/ʼ;)V
+    invoke-static {p2, p1}, Lʾˉ/ᴵᴵ;->ˊᵢ(Lʾˉ/ᵎ;Lʼˑ/ʼ;)V
 
     .line 167
     .line 168
@@ -428,11 +428,11 @@
 
     .line 170
     :cond_3
-    sget-object v0, Lʾˉ/ᐧᐧ;->ʼˎ:Lʾˉ/ᐧᐧ;
+    sget-object v0, Lʾˉ/ᴵᴵ;->ʼˎ:Lʾˉ/ᴵᴵ;
 
     .line 171
     .line 172
-    invoke-virtual {v0, p1, p2}, Lʾˉ/ᐧᐧ;->ˎʻ(Lʼˑ/ʼ;Z)V
+    invoke-virtual {v0, p1, p2}, Lʾˉ/ᴵᴵ;->ˎʻ(Lʼˑ/ʼ;Z)V
 
     .line 173
     .line 174

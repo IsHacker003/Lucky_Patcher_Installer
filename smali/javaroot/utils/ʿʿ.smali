@@ -848,7 +848,7 @@
     .line 422
     .line 423
     .line 424
-    sget v0, Lʾˉ/ᐧᐧ;->ʾᐧ:I
+    sget v0, Lʾˉ/ᴵᴵ;->ʾᐧ:I
 
     .line 425
     .line 426
@@ -1294,7 +1294,7 @@
 
     .line 647
     .line 648
-    sget v0, Lʾˉ/ᐧᐧ;->ʾᐧ:I
+    sget v0, Lʾˉ/ᴵᴵ;->ʾᐧ:I
 
     .line 649
     .line 650
@@ -2244,7 +2244,7 @@
 
     .line 25
     .line 26
-    sget v3, Lʾˉ/ᐧᐧ;->ʾᐧ:I
+    sget v3, Lʾˉ/ᴵᴵ;->ʾᐧ:I
 
     .line 27
     .line 28
@@ -3924,7 +3924,7 @@
     .locals 14
 
     .line 1
-    sget v0, Lʾˉ/ᐧᐧ;->ʾᐧ:I
+    sget v0, Lʾˉ/ᴵᴵ;->ʾᐧ:I
 
     .line 2
     .line 3
@@ -5382,7 +5382,7 @@
     .line 175
     .line 176
     .line 177
-    sget-object v3, Lʾˉ/ᐧᐧ;->ʼٴ:Ljava/lang/String;
+    sget-object v3, Lʾˉ/ᴵᴵ;->ʼٴ:Ljava/lang/String;
 
     .line 178
     .line 179

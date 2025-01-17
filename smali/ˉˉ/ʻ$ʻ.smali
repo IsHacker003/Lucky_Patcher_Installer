@@ -20,7 +20,7 @@
     value = {
         "Ljava/lang/Object;",
         "L\u02c9\u02c9/\u02bc$\u02bb<",
-        "L\u02bf\u02bf/\ufe73\ufe73;",
+        "L\u02bf\u02bf/\u02bb\u02bc;",
         ">;"
     }
 .end annotation
@@ -45,11 +45,11 @@
     .locals 0
 
     .line 1
-    check-cast p1, Lʿʿ/ﹳﹳ;
+    check-cast p1, Lʿʿ/ʻʼ;
 
     .line 2
     .line 3
-    invoke-virtual {p0, p1, p2}, Lˉˉ/ʻ$ʻ;->ʼ(Lʿʿ/ﹳﹳ;Landroid/graphics/Rect;)V
+    invoke-virtual {p0, p1, p2}, Lˉˉ/ʻ$ʻ;->ʼ(Lʿʿ/ʻʼ;Landroid/graphics/Rect;)V
 
     .line 4
     .line 5
@@ -57,11 +57,11 @@
     return-void
 .end method
 
-.method public ʼ(Lʿʿ/ﹳﹳ;Landroid/graphics/Rect;)V
+.method public ʼ(Lʿʿ/ʻʼ;Landroid/graphics/Rect;)V
     .locals 0
 
     .line 1
-    invoke-virtual {p1, p2}, Lʿʿ/ﹳﹳ;->ˑ(Landroid/graphics/Rect;)V
+    invoke-virtual {p1, p2}, Lʿʿ/ʻʼ;->ˑ(Landroid/graphics/Rect;)V
 
     .line 2
     .line 3

@@ -3,7 +3,7 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lʿʿ/ʻˊ;
+.implements Lʿʿ/ʻˏ;
 
 
 # annotations
@@ -64,7 +64,7 @@
 
 
 # virtual methods
-.method public ʻ(Landroid/view/View;Lʿʿ/ʻˊ$ʻ;)Z
+.method public ʻ(Landroid/view/View;Lʿʿ/ʻˏ$ʻ;)Z
     .locals 8
 
     .line 1

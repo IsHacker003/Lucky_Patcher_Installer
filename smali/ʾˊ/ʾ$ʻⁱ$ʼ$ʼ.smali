@@ -105,7 +105,7 @@
     move-result p5
 
     .line 20
-    const v1, 0x7f110340
+    const v1, 0x7f110342
 
     .line 21
     .line 22
@@ -234,7 +234,7 @@
 
     .line 81
     .line 82
-    const p1, 0x7f11033f
+    const p1, 0x7f110341
 
     .line 83
     .line 84
@@ -251,7 +251,7 @@
 
     .line 90
     :goto_1
-    const p1, 0x7f1104cb
+    const p1, 0x7f1104cf
 
     .line 91
     .line 92

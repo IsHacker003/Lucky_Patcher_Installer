@@ -61,7 +61,7 @@
     .locals 5
 
     .line 1
-    const v0, 0x7f11029b
+    const v0, 0x7f11029d
 
     .line 2
     .line 3
@@ -74,7 +74,7 @@
     move-result-object v0
 
     .line 8
-    const v1, 0x7f11033c
+    const v1, 0x7f11033e
 
     .line 9
     .line 10

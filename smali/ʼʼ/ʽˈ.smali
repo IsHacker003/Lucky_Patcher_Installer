@@ -4,11 +4,13 @@
 
 
 # direct methods
-.method public static bridge synthetic ʻ(Landroid/view/ViewParent;Landroid/view/View;II[I)V
+.method public static bridge synthetic ʻ(Landroid/view/ViewParent;Landroid/view/View;FF)Z
     .locals 0
 
     .line 1
-    invoke-interface {p0, p1, p2, p3, p4}, Landroid/view/ViewParent;->onNestedPreScroll(Landroid/view/View;II[I)V
+    invoke-interface {p0, p1, p2, p3}, Landroid/view/ViewParent;->onNestedPreFling(Landroid/view/View;FF)Z
 
-    return-void
+    move-result p0
+
+    return p0
 .end method

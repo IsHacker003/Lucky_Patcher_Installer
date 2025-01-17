@@ -4,11 +4,11 @@
 
 
 # direct methods
-.method public static bridge synthetic ʻ(Landroid/graphics/drawable/Icon;)Landroid/net/Uri;
+.method public static bridge synthetic ʻ(Landroid/graphics/drawable/Icon;)Ljava/lang/String;
     .locals 0
 
     .line 1
-    invoke-virtual {p0}, Landroid/graphics/drawable/Icon;->getUri()Landroid/net/Uri;
+    invoke-virtual {p0}, Landroid/graphics/drawable/Icon;->getResPackage()Ljava/lang/String;
 
     move-result-object p0
 

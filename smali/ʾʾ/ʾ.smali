@@ -6,181 +6,183 @@
 # annotations
 .annotation system Ldalvik/annotation/MemberClasses;
     value = {
-        Lʾʾ/ʾ$ʽ;
+        Lʾʾ/ʾ$ʻ;
     }
 .end annotation
 
 
+# static fields
+.field private static final ʻ:[Ljava/lang/String;
+
+
 # direct methods
-.method public static ʻ(Landroid/view/inputmethod/InputConnection;Landroid/view/inputmethod/EditorInfo;Lʾʾ/ʾ$ʽ;)Landroid/view/inputmethod/InputConnection;
-    .locals 3
-
-    .line 1
-    if-eqz p0, :cond_4
-
-    .line 2
-    .line 3
-    if-eqz p1, :cond_3
-
-    .line 4
-    .line 5
-    if-eqz p2, :cond_2
-
-    .line 6
-    .line 7
-    sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
-
-    .line 8
-    .line 9
-    const/16 v1, 0x19
-
-    .line 10
-    .line 11
-    const/4 v2, 0x0
-
-    .line 12
-    if-lt v0, v1, :cond_0
-
-    .line 13
-    .line 14
-    new-instance p1, Lʾʾ/ʾ$ʻ;
-
-    .line 15
-    .line 16
-    invoke-direct {p1, p0, v2, p2}, Lʾʾ/ʾ$ʻ;-><init>(Landroid/view/inputmethod/InputConnection;ZLʾʾ/ʾ$ʽ;)V
-
-    .line 17
-    .line 18
-    .line 19
-    return-object p1
-
-    .line 20
-    :cond_0
-    invoke-static {p1}, Lʾʾ/ʽ;->ʻ(Landroid/view/inputmethod/EditorInfo;)[Ljava/lang/String;
-
-    .line 21
-    .line 22
-    .line 23
-    move-result-object p1
-
-    .line 24
-    array-length p1, p1
-
-    .line 25
-    if-nez p1, :cond_1
-
-    .line 26
-    .line 27
-    return-object p0
-
-    .line 28
-    :cond_1
-    new-instance p1, Lʾʾ/ʾ$ʼ;
-
-    .line 29
-    .line 30
-    invoke-direct {p1, p0, v2, p2}, Lʾʾ/ʾ$ʼ;-><init>(Landroid/view/inputmethod/InputConnection;ZLʾʾ/ʾ$ʽ;)V
-
-    .line 31
-    .line 32
-    .line 33
-    return-object p1
-
-    .line 34
-    :cond_2
-    new-instance p0, Ljava/lang/IllegalArgumentException;
-
-    .line 35
-    .line 36
-    const-string p1, "onCommitContentListener must be non-null"
-
-    .line 37
-    .line 38
-    invoke-direct {p0, p1}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
-
-    .line 39
-    .line 40
-    .line 41
-    throw p0
-
-    .line 42
-    :cond_3
-    new-instance p0, Ljava/lang/IllegalArgumentException;
-
-    .line 43
-    .line 44
-    const-string p1, "editorInfo must be non-null"
-
-    .line 45
-    .line 46
-    invoke-direct {p0, p1}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
-
-    .line 47
-    .line 48
-    .line 49
-    throw p0
-
-    .line 50
-    :cond_4
-    new-instance p0, Ljava/lang/IllegalArgumentException;
-
-    .line 51
-    .line 52
-    const-string p1, "inputConnection must be non-null"
-
-    .line 53
-    .line 54
-    invoke-direct {p0, p1}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
-
-    .line 55
-    .line 56
-    .line 57
-    throw p0
-.end method
-
-.method static ʼ(Ljava/lang/String;Landroid/os/Bundle;Lʾʾ/ʾ$ʽ;)Z
-    .locals 7
+.method static constructor <clinit>()V
+    .locals 1
 
     .line 1
     const/4 v0, 0x0
 
     .line 2
-    if-nez p1, :cond_0
+    new-array v0, v0, [Ljava/lang/String;
 
     .line 3
     .line 4
-    return v0
+    sput-object v0, Lʾʾ/ʾ;->ʻ:[Ljava/lang/String;
 
     .line 5
-    :cond_0
-    const-string v1, "androidx.core.view.inputmethod.InputConnectionCompat.COMMIT_CONTENT"
+    .line 6
+    return-void
+.end method
+
+.method public static ʻ(Landroid/view/inputmethod/EditorInfo;)[Ljava/lang/String;
+    .locals 2
+
+    .line 1
+    sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
+
+    .line 2
+    .line 3
+    const/16 v1, 0x19
+
+    .line 4
+    .line 5
+    if-lt v0, v1, :cond_1
 
     .line 6
     .line 7
-    invoke-static {v1, p0}, Landroid/text/TextUtils;->equals(Ljava/lang/CharSequence;Ljava/lang/CharSequence;)Z
+    invoke-static {p0}, Lʾʾ/ʼ;->ʻ(Landroid/view/inputmethod/EditorInfo;)[Ljava/lang/String;
 
     .line 8
     .line 9
     .line 10
-    move-result v1
+    move-result-object p0
 
     .line 11
-    if-eqz v1, :cond_1
+    if-eqz p0, :cond_0
 
     .line 12
     .line 13
-    const/4 p0, 0x0
-
-    .line 14
     goto :goto_0
 
+    .line 14
+    :cond_0
+    sget-object p0, Lʾʾ/ʾ;->ʻ:[Ljava/lang/String;
+
     .line 15
+    .line 16
+    :goto_0
+    return-object p0
+
+    .line 17
     :cond_1
-    const-string v1, "android.support.v13.view.inputmethod.InputConnectionCompat.COMMIT_CONTENT"
+    iget-object v0, p0, Landroid/view/inputmethod/EditorInfo;->extras:Landroid/os/Bundle;
+
+    .line 18
+    .line 19
+    if-nez v0, :cond_2
+
+    .line 20
+    .line 21
+    sget-object p0, Lʾʾ/ʾ;->ʻ:[Ljava/lang/String;
+
+    .line 22
+    .line 23
+    return-object p0
+
+    .line 24
+    :cond_2
+    const-string v1, "androidx.core.view.inputmethod.EditorInfoCompat.CONTENT_MIME_TYPES"
+
+    .line 25
+    .line 26
+    invoke-virtual {v0, v1}, Landroid/os/Bundle;->getStringArray(Ljava/lang/String;)[Ljava/lang/String;
+
+    .line 27
+    .line 28
+    .line 29
+    move-result-object v0
+
+    .line 30
+    if-nez v0, :cond_3
+
+    .line 31
+    .line 32
+    iget-object p0, p0, Landroid/view/inputmethod/EditorInfo;->extras:Landroid/os/Bundle;
+
+    .line 33
+    .line 34
+    const-string v0, "android.support.v13.view.inputmethod.EditorInfoCompat.CONTENT_MIME_TYPES"
+
+    .line 35
+    .line 36
+    invoke-virtual {p0, v0}, Landroid/os/Bundle;->getStringArray(Ljava/lang/String;)[Ljava/lang/String;
+
+    .line 37
+    .line 38
+    .line 39
+    move-result-object v0
+
+    .line 40
+    :cond_3
+    if-eqz v0, :cond_4
+
+    .line 41
+    .line 42
+    goto :goto_1
+
+    .line 43
+    :cond_4
+    sget-object v0, Lʾʾ/ʾ;->ʻ:[Ljava/lang/String;
+
+    .line 44
+    .line 45
+    :goto_1
+    return-object v0
+.end method
+
+.method private static ʼ(Ljava/lang/CharSequence;II)Z
+    .locals 1
+
+    .line 1
+    if-eqz p2, :cond_1
+
+    .line 2
+    .line 3
+    const/4 v0, 0x1
+
+    .line 4
+    if-eq p2, v0, :cond_0
+
+    .line 5
+    .line 6
+    const/4 p0, 0x0
+
+    .line 7
+    return p0
+
+    .line 8
+    :cond_0
+    invoke-interface {p0, p1}, Ljava/lang/CharSequence;->charAt(I)C
+
+    .line 9
+    .line 10
+    .line 11
+    move-result p0
+
+    .line 12
+    invoke-static {p0}, Ljava/lang/Character;->isHighSurrogate(C)Z
+
+    .line 13
+    .line 14
+    .line 15
+    move-result p0
 
     .line 16
+    return p0
+
     .line 17
-    invoke-static {v1, p0}, Landroid/text/TextUtils;->equals(Ljava/lang/CharSequence;Ljava/lang/CharSequence;)Z
+    :cond_1
+    invoke-interface {p0, p1}, Ljava/lang/CharSequence;->charAt(I)C
 
     .line 18
     .line 19
@@ -188,263 +190,658 @@
     move-result p0
 
     .line 21
-    if-eqz p0, :cond_b
+    invoke-static {p0}, Ljava/lang/Character;->isLowSurrogate(C)Z
 
     .line 22
     .line 23
-    const/4 p0, 0x1
-
     .line 24
-    :goto_0
-    const/4 v1, 0x0
+    move-result p0
 
     .line 25
-    if-eqz p0, :cond_2
+    return p0
+.end method
 
-    .line 26
-    .line 27
-    :try_start_0
-    const-string v2, "android.support.v13.view.inputmethod.InputConnectionCompat.CONTENT_RESULT_RECEIVER"
+.method private static ʽ(I)Z
+    .locals 1
 
-    .line 28
-    .line 29
+    .line 1
+    and-int/lit16 p0, p0, 0xfff
+
+    .line 2
+    .line 3
+    const/16 v0, 0x81
+
+    .line 4
+    .line 5
+    if-eq p0, v0, :cond_1
+
+    .line 6
+    .line 7
+    const/16 v0, 0xe1
+
+    .line 8
+    .line 9
+    if-eq p0, v0, :cond_1
+
+    .line 10
+    .line 11
+    const/16 v0, 0x12
+
+    .line 12
+    .line 13
+    if-ne p0, v0, :cond_0
+
+    .line 14
+    .line 15
+    goto :goto_0
+
+    .line 16
+    :cond_0
+    const/4 p0, 0x0
+
+    .line 17
     goto :goto_1
 
-    .line 30
-    :catchall_0
-    move-exception p0
+    .line 18
+    :cond_1
+    :goto_0
+    const/4 p0, 0x1
 
+    .line 19
+    :goto_1
+    return p0
+.end method
+
+.method public static ʾ(Landroid/view/inputmethod/EditorInfo;[Ljava/lang/String;)V
+    .locals 2
+
+    .line 1
+    sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
+
+    .line 2
+    .line 3
+    const/16 v1, 0x19
+
+    .line 4
+    .line 5
+    if-lt v0, v1, :cond_0
+
+    .line 6
+    .line 7
+    invoke-static {p0, p1}, Lʾʾ/ʻ;->ʻ(Landroid/view/inputmethod/EditorInfo;[Ljava/lang/String;)V
+
+    .line 8
+    .line 9
+    .line 10
+    goto :goto_0
+
+    .line 11
+    :cond_0
+    iget-object v0, p0, Landroid/view/inputmethod/EditorInfo;->extras:Landroid/os/Bundle;
+
+    .line 12
+    .line 13
+    if-nez v0, :cond_1
+
+    .line 14
+    .line 15
+    new-instance v0, Landroid/os/Bundle;
+
+    .line 16
+    .line 17
+    invoke-direct {v0}, Landroid/os/Bundle;-><init>()V
+
+    .line 18
+    .line 19
+    .line 20
+    iput-object v0, p0, Landroid/view/inputmethod/EditorInfo;->extras:Landroid/os/Bundle;
+
+    .line 21
+    .line 22
+    :cond_1
+    iget-object v0, p0, Landroid/view/inputmethod/EditorInfo;->extras:Landroid/os/Bundle;
+
+    .line 23
+    .line 24
+    const-string v1, "androidx.core.view.inputmethod.EditorInfoCompat.CONTENT_MIME_TYPES"
+
+    .line 25
+    .line 26
+    invoke-virtual {v0, v1, p1}, Landroid/os/Bundle;->putStringArray(Ljava/lang/String;[Ljava/lang/String;)V
+
+    .line 27
+    .line 28
+    .line 29
+    iget-object p0, p0, Landroid/view/inputmethod/EditorInfo;->extras:Landroid/os/Bundle;
+
+    .line 30
     .line 31
-    move-object v2, v1
+    const-string v0, "android.support.v13.view.inputmethod.EditorInfoCompat.CONTENT_MIME_TYPES"
 
     .line 32
-    goto :goto_7
-
     .line 33
-    :cond_2
-    const-string v2, "androidx.core.view.inputmethod.InputConnectionCompat.CONTENT_RESULT_RECEIVER"
+    invoke-virtual {p0, v0, p1}, Landroid/os/Bundle;->putStringArray(Ljava/lang/String;[Ljava/lang/String;)V
 
     .line 34
     .line 35
+    .line 36
+    :goto_0
+    return-void
+.end method
+
+.method public static ʿ(Landroid/view/inputmethod/EditorInfo;Ljava/lang/CharSequence;I)V
+    .locals 5
+
+    .line 1
+    invoke-static {p1}, Lʽʽ/ˊ;->ʿ(Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 2
+    .line 3
+    .line 4
+    sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
+
+    .line 5
+    .line 6
+    const/16 v1, 0x1e
+
+    .line 7
+    .line 8
+    if-lt v0, v1, :cond_0
+
+    .line 9
+    .line 10
+    invoke-static {p0, p1, p2}, Lʾʾ/ʾ$ʻ;->ʻ(Landroid/view/inputmethod/EditorInfo;Ljava/lang/CharSequence;I)V
+
+    .line 11
+    .line 12
+    .line 13
+    return-void
+
+    .line 14
+    :cond_0
+    iget v0, p0, Landroid/view/inputmethod/EditorInfo;->initialSelStart:I
+
+    .line 15
+    .line 16
+    iget v1, p0, Landroid/view/inputmethod/EditorInfo;->initialSelEnd:I
+
+    .line 17
+    .line 18
+    if-le v0, v1, :cond_1
+
+    .line 19
+    .line 20
+    sub-int v2, v1, p2
+
+    .line 21
+    .line 22
+    goto :goto_0
+
+    .line 23
+    :cond_1
+    sub-int v2, v0, p2
+
+    .line 24
+    .line 25
+    :goto_0
+    if-le v0, v1, :cond_2
+
+    .line 26
+    .line 27
+    sub-int/2addr v0, p2
+
+    .line 28
+    goto :goto_1
+
+    .line 29
+    :cond_2
+    sub-int v0, v1, p2
+
+    .line 30
+    .line 31
     :goto_1
-    invoke-virtual {p1, v2}, Landroid/os/Bundle;->getParcelable(Ljava/lang/String;)Landroid/os/Parcelable;
+    invoke-interface {p1}, Ljava/lang/CharSequence;->length()I
+
+    .line 32
+    .line 33
+    .line 34
+    move-result v1
+
+    .line 35
+    const/4 v3, 0x0
 
     .line 36
-    .line 37
-    .line 38
-    move-result-object v2
+    const/4 v4, 0x0
 
+    .line 37
+    if-ltz p2, :cond_6
+
+    .line 38
     .line 39
-    check-cast v2, Landroid/os/ResultReceiver;
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+    if-ltz v2, :cond_6
 
     .line 40
     .line 41
-    if-eqz p0, :cond_3
+    if-le v0, v1, :cond_3
 
     .line 42
     .line 43
-    :try_start_1
-    const-string v3, "android.support.v13.view.inputmethod.InputConnectionCompat.CONTENT_URI"
-
-    .line 44
-    .line 45
     goto :goto_2
 
+    .line 44
+    :cond_3
+    iget p2, p0, Landroid/view/inputmethod/EditorInfo;->inputType:I
+
+    .line 45
     .line 46
-    :catchall_1
-    move-exception p0
+    invoke-static {p2}, Lʾʾ/ʾ;->ʽ(I)Z
 
     .line 47
-    goto :goto_7
-
     .line 48
-    :cond_3
-    const-string v3, "androidx.core.view.inputmethod.InputConnectionCompat.CONTENT_URI"
-
     .line 49
+    move-result p2
+
     .line 50
-    :goto_2
-    invoke-virtual {p1, v3}, Landroid/os/Bundle;->getParcelable(Ljava/lang/String;)Landroid/os/Parcelable;
+    if-eqz p2, :cond_4
 
     .line 51
     .line 52
+    invoke-static {p0, v3, v4, v4}, Lʾʾ/ʾ;->ˈ(Landroid/view/inputmethod/EditorInfo;Ljava/lang/CharSequence;II)V
+
     .line 53
-    move-result-object v3
-
     .line 54
-    check-cast v3, Landroid/net/Uri;
-
     .line 55
+    return-void
+
     .line 56
-    if-eqz p0, :cond_4
+    :cond_4
+    const/16 p2, 0x800
 
     .line 57
     .line 58
-    const-string v4, "android.support.v13.view.inputmethod.InputConnectionCompat.CONTENT_DESCRIPTION"
+    if-gt v1, p2, :cond_5
 
     .line 59
     .line 60
-    goto :goto_3
+    invoke-static {p0, p1, v2, v0}, Lʾʾ/ʾ;->ˈ(Landroid/view/inputmethod/EditorInfo;Ljava/lang/CharSequence;II)V
 
     .line 61
-    :cond_4
-    const-string v4, "androidx.core.view.inputmethod.InputConnectionCompat.CONTENT_DESCRIPTION"
-
     .line 62
     .line 63
-    :goto_3
-    invoke-virtual {p1, v4}, Landroid/os/Bundle;->getParcelable(Ljava/lang/String;)Landroid/os/Parcelable;
+    return-void
 
     .line 64
+    :cond_5
+    invoke-static {p0, p1, v2, v0}, Lʾʾ/ʾ;->ˉ(Landroid/view/inputmethod/EditorInfo;Ljava/lang/CharSequence;II)V
+
     .line 65
     .line 66
-    move-result-object v4
-
     .line 67
-    check-cast v4, Landroid/content/ClipDescription;
+    return-void
 
     .line 68
-    .line 69
-    if-eqz p0, :cond_5
+    :cond_6
+    :goto_2
+    invoke-static {p0, v3, v4, v4}, Lʾʾ/ʾ;->ˈ(Landroid/view/inputmethod/EditorInfo;Ljava/lang/CharSequence;II)V
 
+    .line 69
     .line 70
     .line 71
-    const-string v5, "android.support.v13.view.inputmethod.InputConnectionCompat.CONTENT_LINK_URI"
+    return-void
+.end method
 
+.method public static ˆ(Landroid/view/inputmethod/EditorInfo;Ljava/lang/CharSequence;)V
+    .locals 3
+
+    .line 1
+    sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
+
+    .line 2
+    .line 3
+    const/16 v1, 0x1e
+
+    .line 4
+    .line 5
+    const/4 v2, 0x0
+
+    .line 6
+    if-lt v0, v1, :cond_0
+
+    .line 7
+    .line 8
+    invoke-static {p0, p1, v2}, Lʾʾ/ʾ$ʻ;->ʻ(Landroid/view/inputmethod/EditorInfo;Ljava/lang/CharSequence;I)V
+
+    .line 9
+    .line 10
+    .line 11
+    goto :goto_0
+
+    .line 12
+    :cond_0
+    invoke-static {p0, p1, v2}, Lʾʾ/ʾ;->ʿ(Landroid/view/inputmethod/EditorInfo;Ljava/lang/CharSequence;I)V
+
+    .line 13
+    .line 14
+    .line 15
+    :goto_0
+    return-void
+.end method
+
+.method private static ˈ(Landroid/view/inputmethod/EditorInfo;Ljava/lang/CharSequence;II)V
+    .locals 2
+
+    .line 1
+    iget-object v0, p0, Landroid/view/inputmethod/EditorInfo;->extras:Landroid/os/Bundle;
+
+    .line 2
+    .line 3
+    if-nez v0, :cond_0
+
+    .line 4
+    .line 5
+    new-instance v0, Landroid/os/Bundle;
+
+    .line 6
+    .line 7
+    invoke-direct {v0}, Landroid/os/Bundle;-><init>()V
+
+    .line 8
+    .line 9
+    .line 10
+    iput-object v0, p0, Landroid/view/inputmethod/EditorInfo;->extras:Landroid/os/Bundle;
+
+    .line 11
+    .line 12
+    :cond_0
+    if-eqz p1, :cond_1
+
+    .line 13
+    .line 14
+    new-instance v0, Landroid/text/SpannableStringBuilder;
+
+    .line 15
+    .line 16
+    invoke-direct {v0, p1}, Landroid/text/SpannableStringBuilder;-><init>(Ljava/lang/CharSequence;)V
+
+    .line 17
+    .line 18
+    .line 19
+    goto :goto_0
+
+    .line 20
+    :cond_1
+    const/4 v0, 0x0
+
+    .line 21
+    :goto_0
+    iget-object p1, p0, Landroid/view/inputmethod/EditorInfo;->extras:Landroid/os/Bundle;
+
+    .line 22
+    .line 23
+    const-string v1, "androidx.core.view.inputmethod.EditorInfoCompat.CONTENT_SURROUNDING_TEXT"
+
+    .line 24
+    .line 25
+    invoke-virtual {p1, v1, v0}, Landroid/os/Bundle;->putCharSequence(Ljava/lang/String;Ljava/lang/CharSequence;)V
+
+    .line 26
+    .line 27
+    .line 28
+    iget-object p1, p0, Landroid/view/inputmethod/EditorInfo;->extras:Landroid/os/Bundle;
+
+    .line 29
+    .line 30
+    const-string v0, "androidx.core.view.inputmethod.EditorInfoCompat.CONTENT_SELECTION_HEAD"
+
+    .line 31
+    .line 32
+    invoke-virtual {p1, v0, p2}, Landroid/os/Bundle;->putInt(Ljava/lang/String;I)V
+
+    .line 33
+    .line 34
+    .line 35
+    iget-object p0, p0, Landroid/view/inputmethod/EditorInfo;->extras:Landroid/os/Bundle;
+
+    .line 36
+    .line 37
+    const-string p1, "androidx.core.view.inputmethod.EditorInfoCompat.CONTENT_SELECTION_END"
+
+    .line 38
+    .line 39
+    invoke-virtual {p0, p1, p3}, Landroid/os/Bundle;->putInt(Ljava/lang/String;I)V
+
+    .line 40
+    .line 41
+    .line 42
+    return-void
+.end method
+
+.method private static ˉ(Landroid/view/inputmethod/EditorInfo;Ljava/lang/CharSequence;II)V
+    .locals 10
+
+    .line 1
+    const/4 v0, 0x1
+
+    .line 2
+    sub-int v1, p3, p2
+
+    .line 3
+    .line 4
+    const/16 v2, 0x400
+
+    .line 5
+    .line 6
+    const/4 v3, 0x0
+
+    .line 7
+    if-le v1, v2, :cond_0
+
+    .line 8
+    .line 9
+    const/4 v2, 0x0
+
+    .line 10
+    goto :goto_0
+
+    .line 11
+    :cond_0
+    move v2, v1
+
+    .line 12
+    :goto_0
+    invoke-interface {p1}, Ljava/lang/CharSequence;->length()I
+
+    .line 13
+    .line 14
+    .line 15
+    move-result v4
+
+    .line 16
+    sub-int/2addr v4, p3
+
+    .line 17
+    rsub-int v5, v2, 0x800
+
+    .line 18
+    .line 19
+    const-wide v6, 0x3fe999999999999aL    # 0.8
+
+    .line 20
+    .line 21
+    .line 22
+    .line 23
+    .line 24
+    int-to-double v8, v5
+
+    .line 25
+    invoke-static {v8, v9}, Ljava/lang/Double;->isNaN(D)Z
+
+    .line 26
+    .line 27
+    .line 28
+    mul-double v8, v8, v6
+
+    .line 29
+    .line 30
+    double-to-int v6, v8
+
+    .line 31
+    invoke-static {p2, v6}, Ljava/lang/Math;->min(II)I
+
+    .line 32
+    .line 33
+    .line 34
+    move-result v6
+
+    .line 35
+    sub-int v6, v5, v6
+
+    .line 36
+    .line 37
+    invoke-static {v4, v6}, Ljava/lang/Math;->min(II)I
+
+    .line 38
+    .line 39
+    .line 40
+    move-result v4
+
+    .line 41
+    sub-int/2addr v5, v4
+
+    .line 42
+    invoke-static {p2, v5}, Ljava/lang/Math;->min(II)I
+
+    .line 43
+    .line 44
+    .line 45
+    move-result v5
+
+    .line 46
+    sub-int/2addr p2, v5
+
+    .line 47
+    invoke-static {p1, p2, v3}, Lʾʾ/ʾ;->ʼ(Ljava/lang/CharSequence;II)Z
+
+    .line 48
+    .line 49
+    .line 50
+    move-result v6
+
+    .line 51
+    if-eqz v6, :cond_1
+
+    .line 52
+    .line 53
+    add-int/2addr p2, v0
+
+    .line 54
+    sub-int/2addr v5, v0
+
+    .line 55
+    :cond_1
+    add-int v6, p3, v4
+
+    .line 56
+    .line 57
+    sub-int/2addr v6, v0
+
+    .line 58
+    invoke-static {p1, v6, v0}, Lʾʾ/ʾ;->ʼ(Ljava/lang/CharSequence;II)Z
+
+    .line 59
+    .line 60
+    .line 61
+    move-result v6
+
+    .line 62
+    if-eqz v6, :cond_2
+
+    .line 63
+    .line 64
+    sub-int/2addr v4, v0
+
+    .line 65
+    :cond_2
+    add-int v6, v5, v2
+
+    .line 66
+    .line 67
+    add-int/2addr v6, v4
+
+    .line 68
+    if-eq v2, v1, :cond_3
+
+    .line 69
+    .line 70
+    add-int v1, p2, v5
+
+    .line 71
     .line 72
+    invoke-interface {p1, p2, v1}, Ljava/lang/CharSequence;->subSequence(II)Ljava/lang/CharSequence;
+
     .line 73
-    goto :goto_4
-
     .line 74
-    :cond_5
-    const-string v5, "androidx.core.view.inputmethod.InputConnectionCompat.CONTENT_LINK_URI"
-
     .line 75
+    move-result-object p2
+
     .line 76
-    :goto_4
-    invoke-virtual {p1, v5}, Landroid/os/Bundle;->getParcelable(Ljava/lang/String;)Landroid/os/Parcelable;
+    add-int/2addr v4, p3
 
     .line 77
+    invoke-interface {p1, p3, v4}, Ljava/lang/CharSequence;->subSequence(II)Ljava/lang/CharSequence;
+
     .line 78
     .line 79
-    move-result-object v5
-
     .line 80
-    check-cast v5, Landroid/net/Uri;
+    move-result-object p1
 
     .line 81
+    const/4 p3, 0x2
+
     .line 82
-    if-eqz p0, :cond_6
+    new-array p3, p3, [Ljava/lang/CharSequence;
 
     .line 83
     .line 84
-    const-string v6, "android.support.v13.view.inputmethod.InputConnectionCompat.CONTENT_FLAGS"
+    aput-object p2, p3, v3
 
     .line 85
     .line 86
-    goto :goto_5
+    aput-object p1, p3, v0
 
     .line 87
-    :cond_6
-    const-string v6, "androidx.core.view.inputmethod.InputConnectionCompat.CONTENT_FLAGS"
-
     .line 88
-    .line 89
-    :goto_5
-    invoke-virtual {p1, v6}, Landroid/os/Bundle;->getInt(Ljava/lang/String;)I
+    invoke-static {p3}, Landroid/text/TextUtils;->concat([Ljava/lang/CharSequence;)Ljava/lang/CharSequence;
 
+    .line 89
     .line 90
     .line 91
+    move-result-object p1
+
     .line 92
-    move-result v6
+    goto :goto_1
 
     .line 93
-    if-eqz p0, :cond_7
+    :cond_3
+    add-int/2addr v6, p2
 
     .line 94
-    .line 95
-    const-string p0, "android.support.v13.view.inputmethod.InputConnectionCompat.CONTENT_OPTS"
+    invoke-interface {p1, p2, v6}, Ljava/lang/CharSequence;->subSequence(II)Ljava/lang/CharSequence;
 
+    .line 95
     .line 96
     .line 97
-    goto :goto_6
+    move-result-object p1
 
     .line 98
-    :cond_7
-    const-string p0, "androidx.core.view.inputmethod.InputConnectionCompat.CONTENT_OPTS"
+    :goto_1
+    add-int/2addr v2, v5
 
     .line 99
-    .line 100
-    :goto_6
-    invoke-virtual {p1, p0}, Landroid/os/Bundle;->getParcelable(Ljava/lang/String;)Landroid/os/Parcelable;
+    invoke-static {p0, p1, v5, v2}, Lʾʾ/ʾ;->ˈ(Landroid/view/inputmethod/EditorInfo;Ljava/lang/CharSequence;II)V
 
+    .line 100
     .line 101
     .line 102
-    .line 103
-    move-result-object p0
-
-    .line 104
-    check-cast p0, Landroid/os/Bundle;
-
-    .line 105
-    .line 106
-    if-eqz v3, :cond_8
-
-    .line 107
-    .line 108
-    if-eqz v4, :cond_8
-
-    .line 109
-    .line 110
-    new-instance p1, Lʾʾ/ʿ;
-
-    .line 111
-    .line 112
-    invoke-direct {p1, v3, v4, v5}, Lʾʾ/ʿ;-><init>(Landroid/net/Uri;Landroid/content/ClipDescription;Landroid/net/Uri;)V
-
-    .line 113
-    .line 114
-    .line 115
-    invoke-interface {p2, p1, v6, p0}, Lʾʾ/ʾ$ʽ;->ʻ(Lʾʾ/ʿ;ILandroid/os/Bundle;)Z
-
-    .line 116
-    .line 117
-    .line 118
-    move-result v0
-    :try_end_1
-    .catchall {:try_start_1 .. :try_end_1} :catchall_1
-
-    .line 119
-    :cond_8
-    if-eqz v2, :cond_9
-
-    .line 120
-    .line 121
-    invoke-virtual {v2, v0, v1}, Landroid/os/ResultReceiver;->send(ILandroid/os/Bundle;)V
-
-    .line 122
-    .line 123
-    .line 124
-    :cond_9
-    return v0
-
-    .line 125
-    :goto_7
-    if-eqz v2, :cond_a
-
-    .line 126
-    .line 127
-    invoke-virtual {v2, v0, v1}, Landroid/os/ResultReceiver;->send(ILandroid/os/Bundle;)V
-
-    .line 128
-    .line 129
-    .line 130
-    :cond_a
-    throw p0
-
-    .line 131
-    :cond_b
-    return v0
+    return-void
 .end method

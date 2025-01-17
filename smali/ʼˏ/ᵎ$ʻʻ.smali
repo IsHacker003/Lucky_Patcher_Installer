@@ -36,7 +36,7 @@
     .locals 3
 
     .line 1
-    invoke-static {}, Lʾˉ/ᐧᐧ;->ˈי()Landroid/content/Context;
+    invoke-static {}, Lʾˉ/ᴵᴵ;->ˈי()Landroid/content/Context;
 
     .line 2
     .line 3
@@ -44,7 +44,7 @@
     move-result-object v0
 
     .line 5
-    const v1, 0x7f110410
+    const v1, 0x7f110412
 
     .line 6
     .line 7

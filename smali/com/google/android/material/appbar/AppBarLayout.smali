@@ -35,7 +35,7 @@
 
 .field private ˈ:I
 
-.field private ˉ:Lʼʼ/ʽٴ;
+.field private ˉ:Lʼʼ/ʽᴵ;
 
 .field private ˊ:Ljava/util/List;
     .annotation system Ldalvik/annotation/Signature;
@@ -1486,7 +1486,7 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/google/android/material/appbar/AppBarLayout;->ˉ:Lʼʼ/ʽٴ;
+    iget-object v0, p0, Lcom/google/android/material/appbar/AppBarLayout;->ˉ:Lʼʼ/ʽᴵ;
 
     .line 2
     .line 3
@@ -1494,7 +1494,7 @@
 
     .line 4
     .line 5
-    invoke-virtual {v0}, Lʼʼ/ʽٴ;->ˊ()I
+    invoke-virtual {v0}, Lʼʼ/ʽᴵ;->ˊ()I
 
     .line 6
     .line 7

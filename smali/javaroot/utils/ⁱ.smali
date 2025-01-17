@@ -542,7 +542,7 @@
     .line 251
     :cond_8
     :goto_7
-    sput-object v8, Lʾˉ/ᐧᐧ;->ʼٴ:Ljava/lang/String;
+    sput-object v8, Lʾˉ/ᴵᴵ;->ʼٴ:Ljava/lang/String;
 
     .line 252
     .line 253
@@ -742,7 +742,7 @@
 
     .line 340
     .line 341
-    invoke-static {v0}, Lʾˉ/ᐧᐧ;->ˉˎ(Ljava/lang/Object;)V
+    invoke-static {v0}, Lʾˉ/ᴵᴵ;->ˉˎ(Ljava/lang/Object;)V
 
     .line 342
     .line 343
@@ -891,14 +891,14 @@
 
     .line 412
     .line 413
-    sput-object v1, Lʾˉ/ᐧᐧ;->ʾˑ:[Ljava/lang/String;
+    sput-object v1, Lʾˉ/ᴵᴵ;->ʾˑ:[Ljava/lang/String;
 
     .line 414
     .line 415
     const/4 v1, 0x1
 
     .line 416
-    sput-boolean v1, Lʾˉ/ᐧᐧ;->ʾـ:Z
+    sput-boolean v1, Lʾˉ/ᴵᴵ;->ʾـ:Z
 
     .line 417
     .line 418
@@ -969,7 +969,7 @@
     .line 450
     .line 451
     .line 452
-    sget-object v0, Lʾˉ/ᐧᐧ;->ˈʻ:Ljava/lang/String;
+    sget-object v0, Lʾˉ/ᴵᴵ;->ˈʻ:Ljava/lang/String;
 
     .line 453
     .line 454
@@ -1719,7 +1719,7 @@
     move-result-object v0
 
     .line 820
-    sget-object v1, Lʾˉ/ᐧᐧ;->ˈʼ:Ljava/lang/String;
+    sget-object v1, Lʾˉ/ᴵᴵ;->ˈʼ:Ljava/lang/String;
 
     .line 821
     .line 822

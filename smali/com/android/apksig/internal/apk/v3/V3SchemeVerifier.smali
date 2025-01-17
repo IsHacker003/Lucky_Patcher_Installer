@@ -988,7 +988,7 @@
     .line 452
     .line 453
     :try_start_5
-    sget v0, Lʾˉ/ᐧᐧ;->ʾᐧ:I
+    sget v0, Lʾˉ/ᴵᴵ;->ʾᐧ:I
 
     .line 454
     .line 455
@@ -2037,7 +2037,7 @@
 
     .line 11
     :cond_0
-    sget p2, Lʾˉ/ᐧᐧ;->ʾᐧ:I
+    sget p2, Lʾˉ/ᴵᴵ;->ʾᐧ:I
 
     const/16 v1, 0x1b
 

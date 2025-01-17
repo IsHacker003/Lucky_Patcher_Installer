@@ -424,7 +424,7 @@
     move-result-object v8
 
     .line 202
-    invoke-static {v8}, Lʾˉ/ᐧᐧ;->ˉˎ(Ljava/lang/Object;)V
+    invoke-static {v8}, Lʾˉ/ᴵᴵ;->ˉˎ(Ljava/lang/Object;)V
 
     .line 203
     .line 204
@@ -500,7 +500,7 @@
     move-result-object v8
 
     .line 239
-    invoke-static {v8}, Lʾˉ/ᐧᐧ;->ˉˎ(Ljava/lang/Object;)V
+    invoke-static {v8}, Lʾˉ/ᴵᴵ;->ˉˎ(Ljava/lang/Object;)V
 
     .line 240
     .line 241

@@ -15,7 +15,7 @@
 
 
 # direct methods
-.method public static ʻ(Landroid/view/View;)Lʼʼ/ʽٴ;
+.method public static ʻ(Landroid/view/View;)Lʼʼ/ʽᴵ;
     .locals 1
 
     .line 1
@@ -38,7 +38,7 @@
 
     .line 9
     :cond_0
-    invoke-static {v0}, Lʼʼ/ʽٴ;->ᵔ(Landroid/view/WindowInsets;)Lʼʼ/ʽٴ;
+    invoke-static {v0}, Lʼʼ/ʽᴵ;->ᵔ(Landroid/view/WindowInsets;)Lʼʼ/ʽᴵ;
 
     .line 10
     .line 11
@@ -46,7 +46,7 @@
     move-result-object v0
 
     .line 13
-    invoke-virtual {v0, v0}, Lʼʼ/ʽٴ;->ᐧ(Lʼʼ/ʽٴ;)V
+    invoke-virtual {v0, v0}, Lʼʼ/ʽᴵ;->ᐧ(Lʼʼ/ʽᴵ;)V
 
     .line 14
     .line 15
@@ -59,7 +59,7 @@
     move-result-object p0
 
     .line 20
-    invoke-virtual {v0, p0}, Lʼʼ/ʽٴ;->ʾ(Landroid/view/View;)V
+    invoke-virtual {v0, p0}, Lʼʼ/ʽᴵ;->ʾ(Landroid/view/View;)V
 
     .line 21
     .line 22

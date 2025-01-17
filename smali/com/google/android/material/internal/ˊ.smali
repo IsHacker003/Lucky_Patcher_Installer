@@ -712,11 +712,11 @@
     return p1
 .end method
 
-.method public ˏ(Lʼʼ/ʽٴ;)V
+.method public ˏ(Lʼʼ/ʽᴵ;)V
     .locals 4
 
     .line 1
-    invoke-virtual {p1}, Lʼʼ/ʽٴ;->ˊ()I
+    invoke-virtual {p1}, Lʼʼ/ʽᴵ;->ˊ()I
 
     .line 2
     .line 3
@@ -754,7 +754,7 @@
     move-result v1
 
     .line 20
-    invoke-virtual {p1}, Lʼʼ/ʽٴ;->ˆ()I
+    invoke-virtual {p1}, Lʼʼ/ʽᴵ;->ˆ()I
 
     .line 21
     .line 22
@@ -774,7 +774,7 @@
 
     .line 29
     .line 30
-    invoke-static {v0, p1}, Lʼʼ/ʼˎ;->ˉ(Landroid/view/View;Lʼʼ/ʽٴ;)Lʼʼ/ʽٴ;
+    invoke-static {v0, p1}, Lʼʼ/ʼˎ;->ˉ(Landroid/view/View;Lʼʼ/ʽᴵ;)Lʼʼ/ʽᴵ;
 
     .line 31
     .line 32

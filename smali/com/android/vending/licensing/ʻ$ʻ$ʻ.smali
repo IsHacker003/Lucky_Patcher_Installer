@@ -17,10 +17,6 @@
 .end annotation
 
 
-# static fields
-.field public static ʼ:Lcom/android/vending/licensing/ʻ;
-
-
 # instance fields
 .field private ʻ:Landroid/os/IBinder;
 
@@ -56,7 +52,7 @@
 .end method
 
 .method public ˑ(ILjava/lang/String;Ljava/lang/String;)V
-    .locals 4
+    .locals 2
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -97,84 +93,39 @@
     .line 17
     .line 18
     .line 19
-    iget-object v1, p0, Lcom/android/vending/licensing/ʻ$ʻ$ʻ;->ʻ:Landroid/os/IBinder;
+    iget-object p1, p0, Lcom/android/vending/licensing/ʻ$ʻ$ʻ;->ʻ:Landroid/os/IBinder;
 
     .line 20
     .line 21
-    const/4 v2, 0x0
+    const/4 p2, 0x0
 
     .line 22
-    const/4 v3, 0x1
+    const/4 p3, 0x1
 
     .line 23
-    invoke-interface {v1, v3, v0, v2, v3}, Landroid/os/IBinder;->transact(ILandroid/os/Parcel;Landroid/os/Parcel;I)Z
+    invoke-interface {p1, p3, v0, p2, p3}, Landroid/os/IBinder;->transact(ILandroid/os/Parcel;Landroid/os/Parcel;I)Z
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
     .line 24
     .line 25
     .line 26
-    move-result v1
-
-    .line 27
-    if-nez v1, :cond_0
-
-    .line 28
-    .line 29
-    invoke-static {}, Lcom/android/vending/licensing/ʻ$ʻ;->ﾞﾞ()Lcom/android/vending/licensing/ʻ;
-
-    .line 30
-    .line 31
-    .line 32
-    move-result-object v1
-
-    .line 33
-    if-eqz v1, :cond_0
-
-    .line 34
-    .line 35
-    invoke-static {}, Lcom/android/vending/licensing/ʻ$ʻ;->ﾞﾞ()Lcom/android/vending/licensing/ʻ;
-
-    .line 36
-    .line 37
-    .line 38
-    move-result-object v1
-
-    .line 39
-    invoke-interface {v1, p1, p2, p3}, Lcom/android/vending/licensing/ʻ;->ˑ(ILjava/lang/String;Ljava/lang/String;)V
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
-
-    .line 40
-    .line 41
-    .line 42
     invoke-virtual {v0}, Landroid/os/Parcel;->recycle()V
 
-    .line 43
-    .line 44
-    .line 45
+    .line 27
+    .line 28
+    .line 29
     return-void
 
-    .line 46
+    .line 30
     :catchall_0
     move-exception p1
 
-    .line 47
-    goto :goto_0
-
-    .line 48
-    :cond_0
+    .line 31
     invoke-virtual {v0}, Landroid/os/Parcel;->recycle()V
 
-    .line 49
-    .line 50
-    .line 51
-    return-void
-
-    .line 52
-    :goto_0
-    invoke-virtual {v0}, Landroid/os/Parcel;->recycle()V
-
-    .line 53
-    .line 54
-    .line 55
+    .line 32
+    .line 33
+    .line 34
     throw p1
 .end method

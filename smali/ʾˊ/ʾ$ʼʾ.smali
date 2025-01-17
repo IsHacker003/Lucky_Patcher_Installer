@@ -126,7 +126,7 @@
     .line 14
     .line 15
     :try_start_0
-    sget-object v10, Lʾˉ/ᐧᐧ;->ʼᵎ:Lʾˉ/ᵎ;
+    sget-object v10, Lʾˉ/ᴵᴵ;->ʼᵎ:Lʾˉ/ᵎ;
 
     .line 16
     .line 17
@@ -146,7 +146,7 @@
     move-result-object v10
 
     .line 25
-    sget-object v11, Lʾˉ/ᐧᐧ;->ʿˆ:Landroid/os/Handler;
+    sget-object v11, Lʾˉ/ᴵᴵ;->ʿˆ:Landroid/os/Handler;
 
     .line 26
     .line 27
@@ -164,7 +164,7 @@
     .line 33
     .line 34
     .line 35
-    sget-object v10, Lʾˉ/ᐧᐧ;->ʼᵎ:Lʾˉ/ᵎ;
+    sget-object v10, Lʾˉ/ᴵᴵ;->ʼᵎ:Lʾˉ/ᵎ;
 
     .line 36
     .line 37
@@ -273,7 +273,7 @@
     .line 88
     :cond_0
     :goto_0
-    sget-object v10, Lʾˉ/ᐧᐧ;->ʼᵎ:Lʾˉ/ᵎ;
+    sget-object v10, Lʾˉ/ᴵᴵ;->ʼᵎ:Lʾˉ/ᵎ;
 
     .line 89
     .line 90
@@ -301,7 +301,7 @@
     .line 99
     .line 100
     .line 101
-    const v14, 0x7f110190
+    const v14, 0x7f110192
 
     .line 102
     .line 103
@@ -362,7 +362,7 @@
     .line 131
     .line 132
     .line 133
-    const v14, 0x7f110184
+    const v14, 0x7f110186
 
     .line 134
     .line 135
@@ -411,7 +411,7 @@
     .line 158
     .line 159
     :goto_1
-    sget-object v10, Lʾˉ/ᐧᐧ;->ʼᵎ:Lʾˉ/ᵎ;
+    sget-object v10, Lʾˉ/ᴵᴵ;->ʼᵎ:Lʾˉ/ᵎ;
 
     .line 160
     .line 161
@@ -437,7 +437,7 @@
     .line 171
     .line 172
     .line 173
-    const v15, 0x7f110461
+    const v15, 0x7f110465
 
     .line 174
     .line 175
@@ -486,7 +486,7 @@
     .line 198
     .line 199
     :cond_2
-    sget-object v10, Lʾˉ/ᐧᐧ;->ʼᵎ:Lʾˉ/ᵎ;
+    sget-object v10, Lʾˉ/ᴵᴵ;->ʼᵎ:Lʾˉ/ᵎ;
 
     .line 200
     .line 201
@@ -512,7 +512,7 @@
     .line 211
     .line 212
     .line 213
-    const v16, 0x7f110464
+    const v16, 0x7f110468
 
     .line 214
     .line 215
@@ -561,7 +561,7 @@
     .line 238
     .line 239
     :cond_3
-    sget-object v3, Lʾˉ/ᐧᐧ;->ʼᵎ:Lʾˉ/ᵎ;
+    sget-object v3, Lʾˉ/ᴵᴵ;->ʼᵎ:Lʾˉ/ᵎ;
 
     .line 240
     .line 241
@@ -582,7 +582,7 @@
     .line 248
     .line 249
     .line 250
-    const v10, 0x7f11045d
+    const v10, 0x7f110461
 
     .line 251
     .line 252
@@ -631,7 +631,7 @@
     .line 275
     .line 276
     :cond_4
-    sget-object v3, Lʾˉ/ᐧᐧ;->ʼᵎ:Lʾˉ/ᵎ;
+    sget-object v3, Lʾˉ/ᴵᴵ;->ʼᵎ:Lʾˉ/ᵎ;
 
     .line 277
     .line 278
@@ -652,7 +652,7 @@
     .line 285
     .line 286
     .line 287
-    const v10, 0x7f11045f
+    const v10, 0x7f110463
 
     .line 288
     .line 289
@@ -706,7 +706,7 @@
     .line 315
     .line 316
     :cond_5
-    sget-object v2, Lʾˉ/ᐧᐧ;->ʼᵎ:Lʾˉ/ᵎ;
+    sget-object v2, Lʾˉ/ᴵᴵ;->ʼᵎ:Lʾˉ/ᵎ;
 
     .line 317
     .line 318
@@ -756,7 +756,7 @@
     .line 340
     .line 341
     .line 342
-    const v3, 0x7f11046a
+    const v3, 0x7f11046e
 
     .line 343
     .line 344
@@ -805,7 +805,7 @@
     .line 367
     .line 368
     :cond_6
-    sget-object v2, Lʾˉ/ᐧᐧ;->ʼᵎ:Lʾˉ/ᵎ;
+    sget-object v2, Lʾˉ/ᴵᴵ;->ʼᵎ:Lʾˉ/ᵎ;
 
     .line 369
     .line 370
@@ -826,7 +826,7 @@
     .line 377
     .line 378
     .line 379
-    const v3, 0x7f110465
+    const v3, 0x7f110469
 
     .line 380
     .line 381
@@ -887,7 +887,7 @@
     .line 409
     .line 410
     .line 411
-    const v3, 0x7f110468
+    const v3, 0x7f11046c
 
     .line 412
     .line 413
@@ -936,7 +936,7 @@
     .line 436
     .line 437
     :goto_2
-    sget-object v2, Lʾˉ/ᐧᐧ;->ʼᵎ:Lʾˉ/ᵎ;
+    sget-object v2, Lʾˉ/ᴵᴵ;->ʼᵎ:Lʾˉ/ᵎ;
 
     .line 438
     .line 439
@@ -969,7 +969,7 @@
     .line 452
     .line 453
     .line 454
-    const v3, 0x7f110463
+    const v3, 0x7f110467
 
     .line 455
     .line 456
@@ -1030,7 +1030,7 @@
     .line 484
     .line 485
     .line 486
-    const v3, 0x7f110466
+    const v3, 0x7f11046a
 
     .line 487
     .line 488
@@ -1079,7 +1079,7 @@
     .line 511
     .line 512
     :goto_3
-    sget-object v2, Lʾˉ/ᐧᐧ;->ʼᵎ:Lʾˉ/ᵎ;
+    sget-object v2, Lʾˉ/ᴵᴵ;->ʼᵎ:Lʾˉ/ᵎ;
 
     .line 513
     .line 514
@@ -1091,7 +1091,7 @@
 
     .line 517
     .line 518
-    const v2, 0x7f11046b
+    const v2, 0x7f11046f
 
     .line 519
     .line 520
@@ -1130,7 +1130,7 @@
 
     .line 538
     :cond_9
-    const v2, 0x7f110469
+    const v2, 0x7f11046d
 
     .line 539
     .line 540
@@ -1161,7 +1161,7 @@
     .line 553
     .line 554
     :goto_4
-    sget-object v2, Lʾˉ/ᐧᐧ;->ʼᵎ:Lʾˉ/ᵎ;
+    sget-object v2, Lʾˉ/ᴵᴵ;->ʼᵎ:Lʾˉ/ᵎ;
 
     .line 555
     .line 556
@@ -1187,7 +1187,7 @@
     .line 566
     .line 567
     .line 568
-    const v3, 0x7f1104b1
+    const v3, 0x7f1104b5
 
     .line 569
     .line 570
@@ -1231,7 +1231,7 @@
     .line 590
     .line 591
     :cond_a
-    sget-object v2, Lʾˉ/ᐧᐧ;->ʿˆ:Landroid/os/Handler;
+    sget-object v2, Lʾˉ/ᴵᴵ;->ʿˆ:Landroid/os/Handler;
 
     .line 592
     .line 593
@@ -1249,7 +1249,7 @@
     .line 599
     .line 600
     .line 601
-    invoke-static {}, Lʾˉ/ᐧᐧ;->ˈᵎ()Landroid/content/pm/PackageManager;
+    invoke-static {}, Lʾˉ/ᴵᴵ;->ˈᵎ()Landroid/content/pm/PackageManager;
 
     .line 602
     .line 603
@@ -1269,7 +1269,7 @@
     .line 609
     .line 610
     :try_start_3
-    sget-object v3, Lʾˉ/ᐧᐧ;->ʼᵎ:Lʾˉ/ᵎ;
+    sget-object v3, Lʾˉ/ᴵᴵ;->ʼᵎ:Lʾˉ/ᵎ;
 
     .line 611
     .line 612
@@ -1433,7 +1433,7 @@
     .line 683
     .line 684
     .line 685
-    const v15, 0x7f1103ed
+    const v15, 0x7f1103ef
 
     .line 686
     .line 687
@@ -1543,7 +1543,7 @@
     .line 735
     .line 736
     :cond_c
-    sget-object v2, Lʾˉ/ᐧᐧ;->ʿˆ:Landroid/os/Handler;
+    sget-object v2, Lʾˉ/ᴵᴵ;->ʿˆ:Landroid/os/Handler;
 
     .line 737
     .line 738
@@ -1570,7 +1570,7 @@
     .line 749
     .line 750
     .line 751
-    const v3, 0x7f1103bb
+    const v3, 0x7f1103bd
 
     .line 752
     .line 753
@@ -1640,7 +1640,7 @@
     .line 787
     .line 788
     .line 789
-    sget-object v3, Lʾˉ/ᐧᐧ;->ʼᵎ:Lʾˉ/ᵎ;
+    sget-object v3, Lʾˉ/ᴵᴵ;->ʼᵎ:Lʾˉ/ᵎ;
 
     .line 790
     .line 791
@@ -1692,7 +1692,7 @@
     .line 815
     .line 816
     .line 817
-    const v3, 0x7f11045c
+    const v3, 0x7f110460
 
     .line 818
     .line 819
@@ -1752,7 +1752,7 @@
     .line 846
     .line 847
     .line 848
-    invoke-static {}, Lʾˉ/ᐧᐧ;->ˈᵎ()Landroid/content/pm/PackageManager;
+    invoke-static {}, Lʾˉ/ᴵᴵ;->ˈᵎ()Landroid/content/pm/PackageManager;
 
     .line 849
     .line 850
@@ -1760,7 +1760,7 @@
     move-result-object v3
 
     .line 852
-    sget-object v10, Lʾˉ/ᐧᐧ;->ʼᵎ:Lʾˉ/ᵎ;
+    sget-object v10, Lʾˉ/ᴵᴵ;->ʼᵎ:Lʾˉ/ᵎ;
 
     .line 853
     .line 854
@@ -1855,7 +1855,7 @@
     .line 896
     .line 897
     .line 898
-    const v3, 0x7f11044f
+    const v3, 0x7f110453
 
     .line 899
     .line 900
@@ -1907,7 +1907,7 @@
     .line 924
     .line 925
     .line 926
-    const v2, 0x7f1104b2
+    const v2, 0x7f1104b6
 
     .line 927
     .line 928
@@ -1923,7 +1923,7 @@
 
     .line 933
     :try_start_9
-    invoke-static {}, Lʾˉ/ᐧᐧ;->ˈᵎ()Landroid/content/pm/PackageManager;
+    invoke-static {}, Lʾˉ/ᴵᴵ;->ˈᵎ()Landroid/content/pm/PackageManager;
 
     .line 934
     .line 935
@@ -1931,7 +1931,7 @@
     move-result-object v10
 
     .line 937
-    sget-object v14, Lʾˉ/ᐧᐧ;->ʼᵎ:Lʾˉ/ᵎ;
+    sget-object v14, Lʾˉ/ᴵᴵ;->ʼᵎ:Lʾˉ/ᵎ;
 
     .line 938
     .line 939
@@ -2179,7 +2179,7 @@
     .line 1057
     .line 1058
     .line 1059
-    const v10, 0x7f11045e
+    const v10, 0x7f110462
 
     .line 1060
     .line 1061
@@ -2242,7 +2242,7 @@
 
     .line 1090
     .line 1091
-    invoke-static {}, Lʾˉ/ᐧᐧ;->ˈᵎ()Landroid/content/pm/PackageManager;
+    invoke-static {}, Lʾˉ/ᴵᴵ;->ˈᵎ()Landroid/content/pm/PackageManager;
 
     .line 1092
     .line 1093
@@ -2250,7 +2250,7 @@
     move-result-object v3
 
     .line 1095
-    sget-object v2, Lʾˉ/ᐧᐧ;->ʼᵎ:Lʾˉ/ᵎ;
+    sget-object v2, Lʾˉ/ᴵᴵ;->ʼᵎ:Lʾˉ/ᵎ;
 
     .line 1096
     .line 1097
@@ -2333,7 +2333,7 @@
     .line 1136
     .line 1137
     .line 1138
-    const v3, 0x7f110462
+    const v3, 0x7f110466
 
     .line 1139
     .line 1140
@@ -2390,7 +2390,7 @@
     .line 1167
     .line 1168
     .line 1169
-    invoke-static {}, Lʾˉ/ᐧᐧ;->ˈᵎ()Landroid/content/pm/PackageManager;
+    invoke-static {}, Lʾˉ/ᴵᴵ;->ˈᵎ()Landroid/content/pm/PackageManager;
 
     .line 1170
     .line 1171
@@ -2398,7 +2398,7 @@
     move-result-object v3
 
     .line 1173
-    sget-object v14, Lʾˉ/ᐧᐧ;->ʼᵎ:Lʾˉ/ᵎ;
+    sget-object v14, Lʾˉ/ᴵᴵ;->ʼᵎ:Lʾˉ/ᵎ;
 
     .line 1174
     .line 1175
@@ -2475,7 +2475,7 @@
     .line 1212
     .line 1213
     .line 1214
-    const v3, 0x7f11046e
+    const v3, 0x7f110472
 
     .line 1215
     .line 1216
@@ -2523,7 +2523,7 @@
     .line 1238
     .line 1239
     .line 1240
-    sget-object v2, Lʾˉ/ᐧᐧ;->ʼᵎ:Lʾˉ/ᵎ;
+    sget-object v2, Lʾˉ/ᴵᴵ;->ʼᵎ:Lʾˉ/ᵎ;
 
     .line 1241
     .line 1242
@@ -2570,7 +2570,7 @@
     .line 1263
     .line 1264
     .line 1265
-    const v3, 0x7f110460
+    const v3, 0x7f110464
 
     .line 1266
     .line 1267
@@ -2632,7 +2632,7 @@
     .line 1297
     .line 1298
     .line 1299
-    invoke-static {}, Lʾˉ/ᐧᐧ;->ˈᵎ()Landroid/content/pm/PackageManager;
+    invoke-static {}, Lʾˉ/ᴵᴵ;->ˈᵎ()Landroid/content/pm/PackageManager;
 
     .line 1300
     .line 1301
@@ -2640,7 +2640,7 @@
     move-result-object v3
 
     .line 1303
-    sget-object v14, Lʾˉ/ᐧᐧ;->ʼᵎ:Lʾˉ/ᵎ;
+    sget-object v14, Lʾˉ/ᴵᴵ;->ʼᵎ:Lʾˉ/ᵎ;
 
     .line 1304
     .line 1305
@@ -2715,7 +2715,7 @@
     .line 1339
     .line 1340
     :try_start_c
-    invoke-static {}, Lʾˉ/ᐧᐧ;->ˈᵎ()Landroid/content/pm/PackageManager;
+    invoke-static {}, Lʾˉ/ᴵᴵ;->ˈᵎ()Landroid/content/pm/PackageManager;
 
     .line 1341
     .line 1342
@@ -2723,7 +2723,7 @@
     move-result-object v2
 
     .line 1344
-    sget-object v3, Lʾˉ/ᐧᐧ;->ʼᵎ:Lʾˉ/ᵎ;
+    sget-object v3, Lʾˉ/ᴵᴵ;->ʼᵎ:Lʾˉ/ᵎ;
 
     .line 1345
     .line 1346
@@ -2747,7 +2747,7 @@
     move-result v2
 
     .line 1356
-    invoke-static {}, Lʾˉ/ᐧᐧ;->ˈᵎ()Landroid/content/pm/PackageManager;
+    invoke-static {}, Lʾˉ/ᴵᴵ;->ˈᵎ()Landroid/content/pm/PackageManager;
 
     .line 1357
     .line 1358
@@ -2755,7 +2755,7 @@
     move-result-object v3
 
     .line 1360
-    sget-object v14, Lʾˉ/ᐧᐧ;->ʼᵎ:Lʾˉ/ᵎ;
+    sget-object v14, Lʾˉ/ᴵᴵ;->ʼᵎ:Lʾˉ/ᵎ;
 
     .line 1361
     .line 1362
@@ -2786,7 +2786,7 @@
 
     .line 1372
     .line 1373
-    invoke-static {}, Lʾˉ/ᐧᐧ;->ˈᵎ()Landroid/content/pm/PackageManager;
+    invoke-static {}, Lʾˉ/ᴵᴵ;->ˈᵎ()Landroid/content/pm/PackageManager;
 
     .line 1374
     .line 1375
@@ -2794,7 +2794,7 @@
     move-result-object v3
 
     .line 1377
-    sget-object v14, Lʾˉ/ᐧᐧ;->ʼᵎ:Lʾˉ/ᵎ;
+    sget-object v14, Lʾˉ/ᴵᴵ;->ʼᵎ:Lʾˉ/ᵎ;
 
     .line 1378
     .line 1379
@@ -2976,7 +2976,7 @@
     .line 1468
     .line 1469
     .line 1470
-    const v3, 0x7f11046d
+    const v3, 0x7f110471
 
     .line 1471
     .line 1472
@@ -3038,7 +3038,7 @@
     .line 1502
     .line 1503
     .line 1504
-    invoke-static {}, Lʾˉ/ᐧᐧ;->ˈᵎ()Landroid/content/pm/PackageManager;
+    invoke-static {}, Lʾˉ/ᴵᴵ;->ˈᵎ()Landroid/content/pm/PackageManager;
 
     .line 1505
     .line 1506
@@ -3046,7 +3046,7 @@
     move-result-object v3
 
     .line 1508
-    sget-object v14, Lʾˉ/ᐧᐧ;->ʼᵎ:Lʾˉ/ᵎ;
+    sget-object v14, Lʾˉ/ᴵᴵ;->ʼᵎ:Lʾˉ/ᵎ;
 
     .line 1509
     .line 1510
@@ -3118,7 +3118,7 @@
     .line 1542
     .line 1543
     .line 1544
-    invoke-static {}, Lʾˉ/ᐧᐧ;->ˈᵎ()Landroid/content/pm/PackageManager;
+    invoke-static {}, Lʾˉ/ᴵᴵ;->ˈᵎ()Landroid/content/pm/PackageManager;
 
     .line 1545
     .line 1546
@@ -3126,7 +3126,7 @@
     move-result-object v3
 
     .line 1548
-    invoke-static {}, Lʾˉ/ᐧᐧ;->ˈᵎ()Landroid/content/pm/PackageManager;
+    invoke-static {}, Lʾˉ/ᴵᴵ;->ˈᵎ()Landroid/content/pm/PackageManager;
 
     .line 1549
     .line 1550
@@ -3134,7 +3134,7 @@
     move-result-object v14
 
     .line 1552
-    sget-object v15, Lʾˉ/ᐧᐧ;->ʼᵎ:Lʾˉ/ᵎ;
+    sget-object v15, Lʾˉ/ᴵᴵ;->ʼᵎ:Lʾˉ/ᵎ;
 
     .line 1553
     .line 1554
@@ -3162,7 +3162,7 @@
 
     .line 1565
     .line 1566
-    invoke-static {}, Lʾˉ/ᐧᐧ;->ˈᵎ()Landroid/content/pm/PackageManager;
+    invoke-static {}, Lʾˉ/ᴵᴵ;->ˈᵎ()Landroid/content/pm/PackageManager;
 
     .line 1567
     .line 1568
@@ -3227,7 +3227,7 @@
     .line 1594
     .line 1595
     .line 1596
-    const v14, 0x7f1102a4
+    const v14, 0x7f1102a6
 
     .line 1597
     .line 1598
@@ -3303,7 +3303,7 @@
     .line 1631
     .line 1632
     :cond_f
-    const v2, 0x7f1104b2
+    const v2, 0x7f1104b6
 
     .line 1633
     .line 1634
@@ -3368,7 +3368,7 @@
     .line 1661
     .line 1662
     .line 1663
-    const v3, 0x7f1102a2
+    const v3, 0x7f1102a4
 
     .line 1664
     .line 1665
@@ -3447,7 +3447,7 @@
 
     .line 1705
     .line 1706
-    sget-object v15, Lʾˉ/ᐧᐧ;->ʼᵎ:Lʾˉ/ᵎ;
+    sget-object v15, Lʾˉ/ᴵᴵ;->ʼᵎ:Lʾˉ/ᵎ;
 
     .line 1707
     .line 1708
@@ -3500,7 +3500,7 @@
     move-result-object v2
 
     .line 1731
-    sget-object v3, Lʾˉ/ᐧᐧ;->ʼᵎ:Lʾˉ/ᵎ;
+    sget-object v3, Lʾˉ/ᴵᴵ;->ʼᵎ:Lʾˉ/ᵎ;
 
     .line 1732
     .line 1733
@@ -3516,12 +3516,12 @@
     move-result-object v3
 
     .line 1739
-    invoke-static {v3}, Lʾˉ/ᐧᐧ;->ˉˎ(Ljava/lang/Object;)V
+    invoke-static {v3}, Lʾˉ/ᴵᴵ;->ˉˎ(Ljava/lang/Object;)V
 
     .line 1740
     .line 1741
     .line 1742
-    sget-object v3, Lʾˉ/ᐧᐧ;->ʼᵎ:Lʾˉ/ᵎ;
+    sget-object v3, Lʾˉ/ᴵᴵ;->ʼᵎ:Lʾˉ/ᵎ;
 
     .line 1743
     .line 1744
@@ -3544,7 +3544,7 @@
     move-result-object v3
 
     .line 1753
-    invoke-static {v3}, Lʾˉ/ᐧᐧ;->ˉˎ(Ljava/lang/Object;)V
+    invoke-static {v3}, Lʾˉ/ᴵᴵ;->ˉˎ(Ljava/lang/Object;)V
 
     .line 1754
     .line 1755
@@ -3632,7 +3632,7 @@
 
     .line 1800
     .line 1801
-    invoke-static {}, Lʾˉ/ᐧᐧ;->ˈᵎ()Landroid/content/pm/PackageManager;
+    invoke-static {}, Lʾˉ/ᴵᴵ;->ˈᵎ()Landroid/content/pm/PackageManager;
 
     .line 1802
     .line 1803
@@ -3640,7 +3640,7 @@
     move-result-object v3
 
     .line 1805
-    sget-object v6, Lʾˉ/ᐧᐧ;->ʼᵎ:Lʾˉ/ᵎ;
+    sget-object v6, Lʾˉ/ᴵᴵ;->ʼᵎ:Lʾˉ/ᵎ;
 
     .line 1806
     .line 1807
@@ -3691,7 +3691,7 @@
     div-float/2addr v2, v3
 
     .line 1830
-    sget-object v3, Lʾˉ/ᐧᐧ;->ʼᵎ:Lʾˉ/ᵎ;
+    sget-object v3, Lʾˉ/ᴵᴵ;->ʼᵎ:Lʾˉ/ᵎ;
 
     .line 1831
     .line 1832
@@ -3711,7 +3711,7 @@
 
     .line 1839
     .line 1840
-    sget-object v3, Lʾˉ/ᐧᐧ;->ʼᵎ:Lʾˉ/ᵎ;
+    sget-object v3, Lʾˉ/ᴵᴵ;->ʼᵎ:Lʾˉ/ᵎ;
 
     .line 1841
     .line 1842
@@ -4024,7 +4024,7 @@
     .line 1980
     .line 1981
     :try_start_17
-    invoke-static {}, Lʾˉ/ᐧᐧ;->ˈᵎ()Landroid/content/pm/PackageManager;
+    invoke-static {}, Lʾˉ/ᴵᴵ;->ˈᵎ()Landroid/content/pm/PackageManager;
 
     .line 1982
     .line 1983
@@ -4032,7 +4032,7 @@
     move-result-object v2
 
     .line 1985
-    sget-object v6, Lʾˉ/ᐧᐧ;->ʼᵎ:Lʾˉ/ᵎ;
+    sget-object v6, Lʾˉ/ᴵᴵ;->ʼᵎ:Lʾˉ/ᵎ;
 
     .line 1986
     .line 1987
@@ -4185,7 +4185,7 @@
     :catch_b
     :goto_16
     :try_start_19
-    sget-boolean v2, Lʾˉ/ᐧᐧ;->ʽﾞ:Z
+    sget-boolean v2, Lʾˉ/ᴵᴵ;->ʽﾞ:Z
     :try_end_19
     .catch Ljava/lang/NullPointerException; {:try_start_19 .. :try_end_19} :catch_0
 
@@ -4279,7 +4279,7 @@
     .line 2101
     .line 2102
     .line 2103
-    sget-object v6, Lʾˉ/ᐧᐧ;->ʾʻ:Ljava/lang/String;
+    sget-object v6, Lʾˉ/ᴵᴵ;->ʾʻ:Ljava/lang/String;
 
     .line 2104
     .line 2105
@@ -4310,7 +4310,7 @@
     .line 2118
     .line 2119
     .line 2120
-    invoke-static {}, Lʾˉ/ᐧᐧ;->ˈᵎ()Landroid/content/pm/PackageManager;
+    invoke-static {}, Lʾˉ/ᴵᴵ;->ˈᵎ()Landroid/content/pm/PackageManager;
 
     .line 2121
     .line 2122
@@ -4318,7 +4318,7 @@
     move-result-object v6
 
     .line 2124
-    sget-object v7, Lʾˉ/ᐧᐧ;->ʼᵎ:Lʾˉ/ᵎ;
+    sget-object v7, Lʾˉ/ᴵᴵ;->ʼᵎ:Lʾˉ/ᵎ;
 
     .line 2125
     .line 2126
@@ -4405,7 +4405,7 @@
     move-result-object v2
 
     .line 2161
-    invoke-static {v2}, Lʾˉ/ᐧᐧ;->ˉˎ(Ljava/lang/Object;)V
+    invoke-static {v2}, Lʾˉ/ᴵᴵ;->ˉˎ(Ljava/lang/Object;)V
     :try_end_1e
     .catch Ljava/lang/Exception; {:try_start_1e .. :try_end_1e} :catch_c
     .catchall {:try_start_1e .. :try_end_1e} :catchall_3
@@ -4577,7 +4577,7 @@
     .line 2232
     .line 2233
     .line 2234
-    invoke-static {v2}, Lʾˉ/ᐧᐧ;->ˊⁱ(Ljava/lang/Runnable;)V
+    invoke-static {v2}, Lʾˉ/ᴵᴵ;->ˊⁱ(Ljava/lang/Runnable;)V
     :try_end_20
     .catch Ljava/lang/NullPointerException; {:try_start_20 .. :try_end_20} :catch_0
 

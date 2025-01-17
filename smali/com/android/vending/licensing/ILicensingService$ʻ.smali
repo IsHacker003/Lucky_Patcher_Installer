@@ -104,17 +104,6 @@
     return-object v0
 .end method
 
-.method public static ﾞﾞ()Lcom/android/vending/licensing/ILicensingService;
-    .locals 1
-
-    .line 1
-    sget-object v0, Lcom/android/vending/licensing/ILicensingService$ʻ$ʻ;->ʼ:Lcom/android/vending/licensing/ILicensingService;
-
-    .line 2
-    .line 3
-    return-object v0
-.end method
-
 
 # virtual methods
 .method public asBinder()Landroid/os/IBinder;
@@ -132,169 +121,159 @@
     .end annotation
 
     .line 1
-    const/4 v0, 0x1
+    const-string v0, "com.android.vending.licensing.ILicensingService"
 
     .line 2
-    const-string v1, "com.android.vending.licensing.ILicensingService"
-
     .line 3
+    const/4 v1, 0x1
+
     .line 4
-    if-eq p1, v0, :cond_3
+    if-lt p1, v1, :cond_0
 
     .line 5
     .line 6
-    const/4 v2, 0x2
+    const v2, 0xffffff
 
     .line 7
-    if-eq p1, v2, :cond_1
-
     .line 8
     .line 9
-    const v2, 0x5f4e5446
+    if-gt p1, v2, :cond_0
 
     .line 10
     .line 11
-    .line 12
-    if-eq p1, v2, :cond_0
+    invoke-virtual {p2, v0}, Landroid/os/Parcel;->enforceInterface(Ljava/lang/String;)V
 
+    .line 12
     .line 13
     .line 14
-    invoke-super {p0, p1, p2, p3, p4}, Landroid/os/Binder;->onTransact(ILandroid/os/Parcel;Landroid/os/Parcel;I)Z
+    :cond_0
+    const v2, 0x5f4e5446
 
     .line 15
     .line 16
     .line 17
-    move-result p1
+    if-eq p1, v2, :cond_3
 
     .line 18
-    return p1
-
     .line 19
-    :cond_0
-    invoke-virtual {p3, v1}, Landroid/os/Parcel;->writeString(Ljava/lang/String;)V
+    if-eq p1, v1, :cond_2
 
     .line 20
     .line 21
+    const/4 v0, 0x2
+
     .line 22
-    return v0
+    if-eq p1, v0, :cond_1
 
     .line 23
-    :cond_1
-    invoke-virtual {p2, v1}, Landroid/os/Parcel;->enforceInterface(Ljava/lang/String;)V
-
     .line 24
+    invoke-super {p0, p1, p2, p3, p4}, Landroid/os/Binder;->onTransact(ILandroid/os/Parcel;Landroid/os/Parcel;I)Z
+
     .line 25
     .line 26
+    .line 27
+    move-result p1
+
+    .line 28
+    return p1
+
+    .line 29
+    :cond_1
     invoke-virtual {p2}, Landroid/os/Parcel;->readString()Ljava/lang/String;
 
-    .line 27
-    .line 28
-    .line 29
-    move-result-object p1
-
     .line 30
-    invoke-virtual {p2}, Landroid/os/Parcel;->readStrongBinder()Landroid/os/IBinder;
-
     .line 31
     .line 32
+    move-result-object p1
+
     .line 33
-    move-result-object p3
+    invoke-virtual {p2}, Landroid/os/Parcel;->readStrongBinder()Landroid/os/IBinder;
 
     .line 34
-    invoke-static {p3}, Lcom/android/vending/licensing/ʼ$ʻ;->ﾞ(Landroid/os/IBinder;)Lcom/android/vending/licensing/ʼ;
-
     .line 35
     .line 36
-    .line 37
     move-result-object p3
 
-    .line 38
-    invoke-virtual {p2}, Landroid/os/Parcel;->readInt()I
+    .line 37
+    invoke-static {p3}, Lcom/android/vending/licensing/ʼ$ʻ;->ﾞ(Landroid/os/IBinder;)Lcom/android/vending/licensing/ʼ;
 
+    .line 38
     .line 39
     .line 40
+    move-result-object p3
+
     .line 41
-    move-result p4
-
-    .line 42
-    if-eqz p4, :cond_2
-
-    .line 43
-    .line 44
     sget-object p4, Landroid/os/Bundle;->CREATOR:Landroid/os/Parcelable$Creator;
 
+    .line 42
+    .line 43
+    invoke-static {p2, p4}, Lcom/android/vending/licensing/ILicensingService$ʼ;->ʻ(Landroid/os/Parcel;Landroid/os/Parcelable$Creator;)Ljava/lang/Object;
+
+    .line 44
     .line 45
     .line 46
-    invoke-interface {p4, p2}, Landroid/os/Parcelable$Creator;->createFromParcel(Landroid/os/Parcel;)Ljava/lang/Object;
-
-    .line 47
-    .line 48
-    .line 49
     move-result-object p2
 
-    .line 50
+    .line 47
     check-cast p2, Landroid/os/Bundle;
 
+    .line 48
+    .line 49
+    invoke-interface {p0, p1, p3, p2}, Lcom/android/vending/licensing/ILicensingService;->ˊ(Ljava/lang/String;Lcom/android/vending/licensing/ʼ;Landroid/os/Bundle;)V
+
+    .line 50
     .line 51
     .line 52
     goto :goto_0
 
     .line 53
     :cond_2
-    const/4 p2, 0x0
+    invoke-virtual {p2}, Landroid/os/Parcel;->readLong()J
 
     .line 54
-    :goto_0
-    invoke-interface {p0, p1, p3, p2}, Lcom/android/vending/licensing/ILicensingService;->ˊ(Ljava/lang/String;Lcom/android/vending/licensing/ʼ;Landroid/os/Bundle;)V
-
     .line 55
     .line 56
+    move-result-wide p3
+
     .line 57
-    return v0
+    invoke-virtual {p2}, Landroid/os/Parcel;->readString()Ljava/lang/String;
 
     .line 58
-    :cond_3
-    invoke-virtual {p2, v1}, Landroid/os/Parcel;->enforceInterface(Ljava/lang/String;)V
-
     .line 59
     .line 60
+    move-result-object p1
+
     .line 61
-    invoke-virtual {p2}, Landroid/os/Parcel;->readLong()J
+    invoke-virtual {p2}, Landroid/os/Parcel;->readStrongBinder()Landroid/os/IBinder;
 
     .line 62
     .line 63
     .line 64
-    move-result-wide p3
+    move-result-object p2
 
     .line 65
-    invoke-virtual {p2}, Landroid/os/Parcel;->readString()Ljava/lang/String;
+    invoke-static {p2}, Lcom/android/vending/licensing/ʻ$ʻ;->ﾞ(Landroid/os/IBinder;)Lcom/android/vending/licensing/ʻ;
 
     .line 66
     .line 67
     .line 68
-    move-result-object p1
+    move-result-object p2
 
     .line 69
-    invoke-virtual {p2}, Landroid/os/Parcel;->readStrongBinder()Landroid/os/IBinder;
+    invoke-interface {p0, p3, p4, p1, p2}, Lcom/android/vending/licensing/ILicensingService;->ʼ(JLjava/lang/String;Lcom/android/vending/licensing/ʻ;)V
 
     .line 70
     .line 71
     .line 72
-    move-result-object p2
+    :goto_0
+    return v1
 
     .line 73
-    invoke-static {p2}, Lcom/android/vending/licensing/ʻ$ʻ;->ﾞ(Landroid/os/IBinder;)Lcom/android/vending/licensing/ʻ;
+    :cond_3
+    invoke-virtual {p3, v0}, Landroid/os/Parcel;->writeString(Ljava/lang/String;)V
 
     .line 74
     .line 75
     .line 76
-    move-result-object p2
-
-    .line 77
-    invoke-interface {p0, p3, p4, p1, p2}, Lcom/android/vending/licensing/ILicensingService;->ʼ(JLjava/lang/String;Lcom/android/vending/licensing/ʻ;)V
-
-    .line 78
-    .line 79
-    .line 80
-    return v0
+    return v1
 .end method

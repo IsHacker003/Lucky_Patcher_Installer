@@ -53,7 +53,7 @@
     .end annotation
 
     .line 1
-    sget-object p1, Lʾˉ/ᐧᐧ;->ʽʿ:Landroid/widget/ArrayAdapter;
+    sget-object p1, Lʾˉ/ᴵᴵ;->ʽʿ:Landroid/widget/ArrayAdapter;
 
     .line 2
     .line 3
@@ -69,11 +69,11 @@
 
     .line 8
     .line 9
-    sget-object p2, Lʾˉ/ᐧᐧ;->ʼˎ:Lʾˉ/ᐧᐧ;
+    sget-object p2, Lʾˉ/ᴵᴵ;->ʼˎ:Lʾˉ/ᴵᴵ;
 
     .line 10
     .line 11
-    invoke-virtual {p2, p1}, Lʾˉ/ᐧᐧ;->ˊᴵ(Lʾˉ/ˎ;)V
+    invoke-virtual {p2, p1}, Lʾˉ/ᴵᴵ;->ˊᴵ(Lʾˉ/ˎ;)V
 
     .line 12
     .line 13

@@ -98,7 +98,7 @@
     move-result-object p2
 
     .line 24
-    invoke-static {p2}, Lʾˉ/ᐧᐧ;->ˉˎ(Ljava/lang/Object;)V
+    invoke-static {p2}, Lʾˉ/ᴵᴵ;->ˉˎ(Ljava/lang/Object;)V
 
     .line 25
     .line 26
@@ -155,7 +155,7 @@
     move-result-object v0
 
     .line 55
-    sget v1, Lʾˉ/ᐧᐧ;->ʾᐧ:I
+    sget v1, Lʾˉ/ᴵᴵ;->ʾᐧ:I
 
     .line 56
     .line 57
@@ -167,7 +167,7 @@
 
     .line 60
     .line 61
-    sget-object v0, Lʾˉ/ᐧᐧ;->ʼﾞ:Lru/aaaaacax/installer/MainActivity;
+    sget-object v0, Lʾˉ/ᴵᴵ;->ʼﾞ:Lru/aaaaacay/installer/MainActivity;
 
     .line 62
     .line 63
@@ -180,7 +180,7 @@
     .line 66
     .line 67
     .line 68
-    invoke-static {}, Lru/aaaaacax/installer/PkgName;->getPkgName()Ljava/lang/String;
+    invoke-static {}, Lru/aaaaacay/installer/PkgName;->getPkgName()Ljava/lang/String;
 
     .line 69
     .line 70
@@ -275,7 +275,7 @@
     .line 116
     .line 117
     .line 118
-    sget-object v0, Lʾˉ/ᐧᐧ;->ʼﾞ:Lru/aaaaacax/installer/MainActivity;
+    sget-object v0, Lʾˉ/ᴵᴵ;->ʼﾞ:Lru/aaaaacay/installer/MainActivity;
 
     .line 119
     .line 120
@@ -292,7 +292,7 @@
     .line 125
     .line 126
     .line 127
-    const v2, 0x7f11044b
+    const v2, 0x7f11044f
 
     .line 128
     .line 129

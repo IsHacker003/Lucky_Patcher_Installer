@@ -52,6 +52,7 @@ Domyślnie: /data/dalvik-cache/*"</string>
     <string name="android_patches_dialog_remove_patch_3">Usuń łatkę \"%1s\"</string>
     <string name="android_patches_dialog_remove_patches_1_and_2" formatted="false">Usuń łatki „%1s” i „%2s”</string>
     <string name="android_patches_dialog_use_magisk_module_for_patches">Użyj modułu Magisk, aby zastosować łatkę</string>
+    <string name="android_patches_dialog_use_magisk_module_zygisk_for_patches">Użyj modułu Magisk - Zygisk (autor: vova7878@4pda)</string>
     <string name="android_patches_for_bootlist">Łatka Androida do dalvik-cache</string>
     <string name="android_patches_for_bootlist_status">Zastosuj ponownie łatki do systemu poczas jego uruchomiania</string>
     <string name="android_patches_xposed_need_message">Proszę użyć Xposed (lSPosed) do zastosowania aktualnej łatki</string>
@@ -521,7 +522,13 @@ Zwolnij trochę miejsca na karcie SD lub sprawdź swoją instalację busyboxa."<
 (dla naprawy ''Łataj Androida'')"</string>
     <string name="generate_log_result_message_conscrypt.jar">"Dziennik utworzony i zapisany w: /sdcard/conscrypt.oat.txt. Zapisz ten plik w chmurze lub skompresuj do .zip. Następnie wyślij ten plik do mnie na email: lp.chelpus@gmail.com.
 Rozmiar pliku:"</string>
+    <string name="generate_log_result_message_core_jar_zip">"Dziennik utworzony i zapisany w /sdcard/boot.oat.txt.zip. Wyślij go do mnie na adres lp.chelpus@gmail.com.
+Rozmiar pliku:"</string>
     <string name="generate_log_result_message_core_oj.jar">"Dziennik utworzony i zapisany w: /sdcard/core-oj.oat.txt. Zapisz ten plik w chmurze lub skompresuj do .zip. Następnie wyślij ten plik do mnie na email: lp.chelpus@gmail.com.
+Rozmiar pliku:"</string>
+    <string name="generate_log_result_message_framework_zip">"Dziennik utworzony i zapisany w /sdcard/framework.txt.zip. Wyślij go do mnie na adres lp.chelpus@gmail.com.
+Rozmiar pliku:"</string>
+    <string name="generate_log_result_message_services_odex_zip">"Dziennik utworzony i zapisany w /sdcard/services.odex.txt.zip. Wyślij go do mnie na adres lp.chelpus@gmail.com.
 Rozmiar pliku:"</string>
     <string name="go_to_file_path">Idź do pliku</string>
     <string name="goodresult">"% powodzenia!
@@ -961,6 +968,7 @@ Ta funkcja bez niej nie działa!"</string>
     <string name="message_signature_killer_for_apps_with_test_signature">Aplikacja docelowa ma sygnaturę testową, więc opcja „%1$s” jest wyłączona.</string>
     <string name="message_test_patch_downgrade">Obniżanie wersji testowania aplikacji</string>
     <string name="message_test_patch_signatures">Testowanie możliwości instalacji aplikacji o różnych sygnaturach</string>
+    <string name="message_test_patch_signatures_shareduser">Testowanie instalacji aplikacji z różnymi podpisami i tym samym współdzielonym identyfikatorem użytkownika</string>
     <string name="message_test_patch_terget_sdk_30_installing">Testowanie możliwości instalacji aplikacji bez sygnatury ver.2 i targetSDK=30</string>
     <string name="message_test_patch_unlocked">Możliwość zastosowania łatki jest odblokowana.</string>
     <string name="message_test_pm_utility">Testowanie narzędzia „pm”</string>

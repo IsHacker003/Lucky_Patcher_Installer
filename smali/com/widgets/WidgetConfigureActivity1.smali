@@ -443,7 +443,7 @@
 
     .line 79
     .line 80
-    invoke-static {v0}, Lru/aaaaacax/installer/BinderActivity;->getBindes(Landroid/content/Context;)Ljava/util/ArrayList;
+    invoke-static {v0}, Lru/aaaaacay/installer/BinderActivity;->getBindes(Landroid/content/Context;)Ljava/util/ArrayList;
 
     .line 81
     .line 82
@@ -529,7 +529,7 @@
     .line 123
     .line 124
     .line 125
-    sput-object v0, Lʾˉ/ᐧᐧ;->ʾᵎ:Landroid/widget/ArrayAdapter;
+    sput-object v0, Lʾˉ/ᴵᴵ;->ʾᵎ:Landroid/widget/ArrayAdapter;
 
     .line 126
     .line 127

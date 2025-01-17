@@ -181,7 +181,7 @@
 
     .line 11
     .line 12
-    sget-object v0, Lʿʿ/ﹳﹳ$ʻ;->ﾞ:Lʿʿ/ﹳﹳ$ʻ;
+    sget-object v0, Lʿʿ/ʻʼ$ʻ;->ﾞ:Lʿʿ/ʻʼ$ʻ;
 
     .line 13
     .line 14
@@ -197,7 +197,7 @@
     const/4 v2, 0x0
 
     .line 20
-    invoke-static {p1, v0, v2, v1}, Lʼʼ/ʼˎ;->ʻـ(Landroid/view/View;Lʿʿ/ﹳﹳ$ʻ;Ljava/lang/CharSequence;Lʿʿ/ʻˊ;)V
+    invoke-static {p1, v0, v2, v1}, Lʼʼ/ʼˎ;->ʻـ(Landroid/view/View;Lʿʿ/ʻʼ$ʻ;Ljava/lang/CharSequence;Lʿʿ/ʻˏ;)V
 
     .line 21
     .line 22

@@ -100,7 +100,7 @@
     move-result-object p0
 
     .line 46
-    invoke-static {p0}, Lʾˉ/ᐧᐧ;->ˉˎ(Ljava/lang/Object;)V
+    invoke-static {p0}, Lʾˉ/ᴵᴵ;->ˉˎ(Ljava/lang/Object;)V
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 

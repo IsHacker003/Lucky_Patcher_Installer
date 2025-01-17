@@ -3556,7 +3556,7 @@
     move-result-object p1
 
     .line 13
-    invoke-static {p3, p1}, Lʾʾ/ʽ;->ˆ(Landroid/view/inputmethod/EditorInfo;Ljava/lang/CharSequence;)V
+    invoke-static {p3, p1}, Lʾʾ/ʾ;->ˆ(Landroid/view/inputmethod/EditorInfo;Ljava/lang/CharSequence;)V
 
     .line 14
     .line 15

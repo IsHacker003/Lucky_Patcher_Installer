@@ -37,11 +37,11 @@
 
 
 # virtual methods
-.method public ˈ(Landroid/view/View;Lʿʿ/ﹳﹳ;)V
+.method public ˈ(Landroid/view/View;Lʿʿ/ʻʼ;)V
     .locals 1
 
     .line 1
-    invoke-super {p0, p1, p2}, Landroidx/recyclerview/widget/ˏ;->ˈ(Landroid/view/View;Lʿʿ/ﹳﹳ;)V
+    invoke-super {p0, p1, p2}, Landroidx/recyclerview/widget/ˏ;->ˈ(Landroid/view/View;Lʿʿ/ʻʼ;)V
 
     .line 2
     .line 3
@@ -65,7 +65,7 @@
     const/4 v0, 0x0
 
     .line 13
-    invoke-static {p1, v0, v0}, Lʿʿ/ﹳﹳ$ʼ;->ʻ(IIZ)Lʿʿ/ﹳﹳ$ʼ;
+    invoke-static {p1, v0, v0}, Lʿʿ/ʻʼ$ʼ;->ʻ(IIZ)Lʿʿ/ʻʼ$ʼ;
 
     .line 14
     .line 15
@@ -73,7 +73,7 @@
     move-result-object p1
 
     .line 17
-    invoke-virtual {p2, p1}, Lʿʿ/ﹳﹳ;->ʻˆ(Ljava/lang/Object;)V
+    invoke-virtual {p2, p1}, Lʿʿ/ʻʼ;->ʻˆ(Ljava/lang/Object;)V
 
     .line 18
     .line 19

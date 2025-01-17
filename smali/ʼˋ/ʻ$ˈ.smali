@@ -107,7 +107,7 @@
     .line 40
     .line 41
     .line 42
-    sget-object v0, Lʾˉ/ᐧᐧ;->ʼˆ:Ljava/lang/String;
+    sget-object v0, Lʾˉ/ᴵᴵ;->ʼˆ:Ljava/lang/String;
 
     .line 43
     .line 44
@@ -137,7 +137,7 @@
     .line 56
     .line 57
     :cond_0
-    sget-object v0, Lʾˉ/ᐧᐧ;->ʼˈ:[B
+    sget-object v0, Lʾˉ/ᴵᴵ;->ʼˈ:[B
 
     .line 58
     .line 59

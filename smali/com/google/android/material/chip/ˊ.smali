@@ -3,7 +3,7 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lﹶ/ᴵᴵ;
+.implements Lﹶ/ʻʻ;
 .implements Landroid/graphics/drawable/Drawable$Callback;
 .implements Lcom/google/android/material/internal/ᐧ$ʼ;
 

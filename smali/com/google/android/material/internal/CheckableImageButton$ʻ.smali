@@ -66,11 +66,11 @@
     return-void
 .end method
 
-.method public ˈ(Landroid/view/View;Lʿʿ/ﹳﹳ;)V
+.method public ˈ(Landroid/view/View;Lʿʿ/ʻʼ;)V
     .locals 0
 
     .line 1
-    invoke-super {p0, p1, p2}, Lʼʼ/ʾ;->ˈ(Landroid/view/View;Lʿʿ/ﹳﹳ;)V
+    invoke-super {p0, p1, p2}, Lʼʼ/ʾ;->ˈ(Landroid/view/View;Lʿʿ/ʻʼ;)V
 
     .line 2
     .line 3
@@ -87,7 +87,7 @@
     move-result p1
 
     .line 10
-    invoke-virtual {p2, p1}, Lʿʿ/ﹳﹳ;->ʻʼ(Z)V
+    invoke-virtual {p2, p1}, Lʿʿ/ʻʼ;->ʻʼ(Z)V
 
     .line 11
     .line 12
@@ -104,7 +104,7 @@
     move-result p1
 
     .line 19
-    invoke-virtual {p2, p1}, Lʿʿ/ﹳﹳ;->ʻʽ(Z)V
+    invoke-virtual {p2, p1}, Lʿʿ/ʻʼ;->ʻʽ(Z)V
 
     .line 20
     .line 21

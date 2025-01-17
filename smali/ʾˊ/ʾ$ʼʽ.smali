@@ -105,12 +105,12 @@
 
     .line 21
     .line 22
-    const p5, 0x7f110471
+    const p5, 0x7f110475
 
     .line 23
     .line 24
     .line 25
-    const v0, 0x7f110475
+    const v0, 0x7f110479
 
     .line 26
     .line 27

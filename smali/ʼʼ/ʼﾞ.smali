@@ -4,11 +4,13 @@
 
 
 # direct methods
-.method public static bridge synthetic ʻ(Landroid/view/ViewParent;Landroid/view/View;)V
+.method public static bridge synthetic ʻ(Landroid/view/ViewGroup;)Z
     .locals 0
 
     .line 1
-    invoke-interface {p0, p1}, Landroid/view/ViewParent;->onStopNestedScroll(Landroid/view/View;)V
+    invoke-virtual {p0}, Landroid/view/ViewGroup;->isTransitionGroup()Z
 
-    return-void
+    move-result p0
+
+    return p0
 .end method

@@ -506,7 +506,7 @@
 
     .line 35
     .line 36
-    invoke-static {}, Lʾˉ/ᐧᐧ;->ˈᴵ()[Ljava/lang/String;
+    invoke-static {}, Lʾˉ/ᴵᴵ;->ˈᴵ()[Ljava/lang/String;
 
     .line 37
     .line 38
@@ -589,7 +589,7 @@
 
     .line 75
     .line 76
-    invoke-static {}, Lʾˉ/ᐧᐧ;->ˈᵎ()Landroid/content/pm/PackageManager;
+    invoke-static {}, Lʾˉ/ᴵᴵ;->ˈᵎ()Landroid/content/pm/PackageManager;
 
     .line 77
     .line 78
@@ -613,7 +613,7 @@
 
     .line 87
     .line 88
-    invoke-static {}, Lʾˉ/ᐧᐧ;->ˈᵎ()Landroid/content/pm/PackageManager;
+    invoke-static {}, Lʾˉ/ᴵᴵ;->ˈᵎ()Landroid/content/pm/PackageManager;
 
     .line 89
     .line 90
@@ -749,7 +749,7 @@
     .line 151
     .line 152
     .line 153
-    sput-object v0, Lʾˉ/ᐧᐧ;->ʽʿ:Landroid/widget/ArrayAdapter;
+    sput-object v0, Lʾˉ/ᴵᴵ;->ʽʿ:Landroid/widget/ArrayAdapter;
 
     .line 154
     .line 155
@@ -906,7 +906,7 @@
     .line 236
     .line 237
     .line 238
-    const v1, 0x7f1104e3
+    const v1, 0x7f1104e7
 
     .line 239
     .line 240

@@ -115,7 +115,7 @@
     .line 34
     .line 35
     .line 36
-    sget-object v3, Lʾˉ/ᐧᐧ;->ʼˎ:Lʾˉ/ᐧᐧ;
+    sget-object v3, Lʾˉ/ᴵᴵ;->ʼˎ:Lʾˉ/ᴵᴵ;
 
     .line 37
     .line 38
@@ -189,7 +189,7 @@
     .line 72
     .line 73
     .line 74
-    sget-object v0, Lʾˉ/ᐧᐧ;->ʼˎ:Lʾˉ/ᐧᐧ;
+    sget-object v0, Lʾˉ/ᴵᴵ;->ʼˎ:Lʾˉ/ᴵᴵ;
 
     .line 75
     .line 76
@@ -217,7 +217,7 @@
     .line 85
     .line 86
     .line 87
-    sget-object v1, Lʾˉ/ᐧᐧ;->ʼˎ:Lʾˉ/ᐧᐧ;
+    sget-object v1, Lʾˉ/ᴵᴵ;->ʼˎ:Lʾˉ/ᴵᴵ;
 
     .line 88
     .line 89

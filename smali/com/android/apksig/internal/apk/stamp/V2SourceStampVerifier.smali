@@ -385,7 +385,7 @@
     move-result-object v0
 
     .line 8
-    sget p0, Lʾˉ/ᐧᐧ;->ʾᐧ:I
+    sget p0, Lʾˉ/ᴵᴵ;->ʾᐧ:I
 
     const/16 v2, 0x1b
 

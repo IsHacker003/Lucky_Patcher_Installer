@@ -38,6 +38,9 @@
     </string-array>
     <string-array name="scope">
         <item>android</item>
+        <item>com.android.externalstorage</item>
+        <item>com.android.documentsui</item>
+        <item>com.google.android.documentsui</item>
     </string-array>
     <string-array name="size">
         <item>@string/viewsmall</item>

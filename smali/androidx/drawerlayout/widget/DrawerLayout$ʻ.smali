@@ -48,7 +48,7 @@
 
     .line 2
     .line 3
-    invoke-static {p2}, Lʼʼ/ʾʻ;->ʻ(Landroid/view/WindowInsets;)I
+    invoke-static {p2}, Lʼʼ/ʾʽ;->ʻ(Landroid/view/WindowInsets;)I
 
     .line 4
     .line 5
@@ -76,7 +76,7 @@
     .line 13
     .line 14
     .line 15
-    invoke-static {p2}, Lʼʼ/ʾˏ;->ʻ(Landroid/view/WindowInsets;)Landroid/view/WindowInsets;
+    invoke-static {p2}, Lʼʼ/ʾי;->ʻ(Landroid/view/WindowInsets;)Landroid/view/WindowInsets;
 
     .line 16
     .line 17

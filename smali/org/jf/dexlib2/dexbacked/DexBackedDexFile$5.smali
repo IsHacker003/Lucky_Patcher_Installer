@@ -97,7 +97,7 @@
     move-result-object p1
 
     .line 7
-    sget-boolean v0, Lʾˉ/ᐧᐧ;->ˆﹶ:Z
+    sget-boolean v0, Lʾˉ/ᴵᴵ;->ˆﹶ:Z
 
     const/4 v1, 0x1
 
@@ -121,7 +121,7 @@
     if-eqz v0, :cond_0
 
     .line 9
-    sput-boolean v1, Lʾˉ/ᐧᐧ;->ˆﾞ:Z
+    sput-boolean v1, Lʾˉ/ᴵᴵ;->ˆﾞ:Z
 
     .line 10
     sget-object p1, Lʼˏ/ᵎ;->ˏ:Ljava/lang/String;
@@ -130,7 +130,7 @@
 
     .line 11
     :cond_0
-    sget-object v0, Lʾˉ/ᐧᐧ;->ˆᵢ:Ljava/util/ArrayList;
+    sget-object v0, Lʾˉ/ᴵᴵ;->ˆᵢ:Ljava/util/ArrayList;
 
     invoke-virtual {v0}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
 
@@ -166,7 +166,7 @@
 
     .line 13
     :cond_2
-    sget-boolean v0, Lʾˉ/ᐧᐧ;->ˆﹳ:Z
+    sget-boolean v0, Lʾˉ/ᴵᴵ;->ˆﹳ:Z
 
     if-eqz v0, :cond_3
 
@@ -198,7 +198,7 @@
     if-ne v0, v1, :cond_3
 
     .line 15
-    invoke-static {}, Lru/aaaaacax/installer/PkgName;->getPkgName()Ljava/lang/String;
+    invoke-static {}, Lru/aaaaacay/installer/PkgName;->getPkgName()Ljava/lang/String;
 
     move-result-object p1
 

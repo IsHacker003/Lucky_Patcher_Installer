@@ -15,5 +15,5 @@
 
 
 # virtual methods
-.method public abstract ʻ(Landroid/view/View;Lʼʼ/ʽٴ;Lcom/google/android/material/internal/ᵢ$ʾ;)Lʼʼ/ʽٴ;
+.method public abstract ʻ(Landroid/view/View;Lʼʼ/ʽᴵ;Lcom/google/android/material/internal/ᵢ$ʾ;)Lʼʼ/ʽᴵ;
 .end method

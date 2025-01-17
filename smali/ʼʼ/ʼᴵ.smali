@@ -4,11 +4,11 @@
 
 
 # direct methods
-.method public static bridge synthetic ʻ(Landroid/view/ViewConfiguration;)Z
+.method public static bridge synthetic ʻ(Landroid/view/View;)Z
     .locals 0
 
     .line 1
-    invoke-virtual {p0}, Landroid/view/ViewConfiguration;->shouldShowMenuShortcutsWhenKeyboardPresent()Z
+    invoke-virtual {p0}, Landroid/view/View;->isAccessibilityHeading()Z
 
     move-result p0
 

@@ -3,7 +3,7 @@
 .source "SourceFile"
 
 # interfaces
-.implements Lﹶ/ᴵᴵ;
+.implements Lﹶ/ʻʻ;
 
 
 # instance fields

@@ -35,7 +35,7 @@
 
 .field private ˏ:Z
 
-.field private ˑ:Lʼʼ/ʽˋ;
+.field private ˑ:Lʼʼ/ʽˏ;
 
 .field private י:Landroidx/core/widget/ـ;
 
@@ -222,7 +222,7 @@
     .line 25
     .line 26
     :cond_0
-    iget-object v0, p0, Landroidx/appcompat/widget/ʼˎ;->ˑ:Lʼʼ/ʽˋ;
+    iget-object v0, p0, Landroidx/appcompat/widget/ʼˎ;->ˑ:Lʼʼ/ʽˏ;
 
     .line 27
     .line 28
@@ -230,7 +230,7 @@
 
     .line 29
     .line 30
-    invoke-virtual {v0}, Lʼʼ/ʽˋ;->ʼ()V
+    invoke-virtual {v0}, Lʼʼ/ʽˏ;->ʼ()V
 
     .line 31
     .line 32
@@ -238,7 +238,7 @@
     const/4 v0, 0x0
 
     .line 34
-    iput-object v0, p0, Landroidx/appcompat/widget/ʼˎ;->ˑ:Lʼʼ/ʽˋ;
+    iput-object v0, p0, Landroidx/appcompat/widget/ʼˎ;->ˑ:Lʼʼ/ʽˏ;
 
     .line 35
     .line 36

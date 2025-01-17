@@ -50,7 +50,7 @@
 
     .line 2
     .line 3
-    invoke-virtual {v0}, Lcom/xposed/XSupport;->ˆ()V
+    invoke-virtual {v0}, Lcom/xposed/XSupport;->ˈ()V
 
     .line 4
     .line 5
@@ -95,7 +95,7 @@
     move-result-object v0
 
     .line 26
-    const-string v1, "sha1withrsa"
+    const-string v1, "sha256withdsa"
 
     .line 27
     .line 28
@@ -175,7 +175,7 @@
     move-result-object v0
 
     .line 66
-    const-string v1, "sha256withdsa"
+    const-string v1, "sha1withrsa"
 
     .line 67
     .line 68

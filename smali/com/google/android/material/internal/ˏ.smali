@@ -476,7 +476,7 @@
     return-void
 .end method
 
-.method protected ʻ(Lʼʼ/ʽٴ;)V
+.method protected ʻ(Lʼʼ/ʽᴵ;)V
     .locals 0
 
     .line 1

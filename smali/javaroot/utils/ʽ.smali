@@ -114,7 +114,7 @@
 
     .line 48
     .line 49
-    sget v9, Lʾˉ/ᐧᐧ;->ʾᐧ:I
+    sget v9, Lʾˉ/ᴵᴵ;->ʾᐧ:I
 
     .line 50
     .line 51
@@ -387,7 +387,7 @@
 
     .line 179
     .line 180
-    sget v9, Lʾˉ/ᐧᐧ;->ʾᐧ:I
+    sget v9, Lʾˉ/ᴵᴵ;->ʾᐧ:I
 
     .line 181
     .line 182
@@ -709,7 +709,7 @@
 
     .line 337
     .line 338
-    sget v9, Lʾˉ/ᐧᐧ;->ʾᐧ:I
+    sget v9, Lʾˉ/ᴵᴵ;->ʾᐧ:I
 
     .line 339
     .line 340

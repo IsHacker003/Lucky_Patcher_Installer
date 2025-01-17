@@ -4,11 +4,11 @@
 
 
 # direct methods
-.method public static bridge synthetic ʻ(Ljava/lang/Object;)Landroid/view/accessibility/AccessibilityNodeInfo$CollectionItemInfo;
+.method public static bridge synthetic ʻ(Landroid/view/accessibility/AccessibilityNodeInfo;Landroid/view/View;I)V
     .locals 0
 
     .line 1
-    check-cast p0, Landroid/view/accessibility/AccessibilityNodeInfo$CollectionItemInfo;
+    invoke-virtual {p0, p1, p2}, Landroid/view/accessibility/AccessibilityNodeInfo;->addChild(Landroid/view/View;I)V
 
-    return-object p0
+    return-void
 .end method

@@ -1,5 +1,5 @@
 .class Lˉˉ/ʻ$ʽ;
-.super Lʿʿ/ʻʾ;
+.super Lʿʿ/ʻˈ;
 .source "SourceFile"
 
 
@@ -27,7 +27,7 @@
 
     .line 2
     .line 3
-    invoke-direct {p0}, Lʿʿ/ʻʾ;-><init>()V
+    invoke-direct {p0}, Lʿʿ/ʻˈ;-><init>()V
 
     .line 4
     .line 5
@@ -37,7 +37,7 @@
 
 
 # virtual methods
-.method public ʼ(I)Lʿʿ/ﹳﹳ;
+.method public ʼ(I)Lʿʿ/ʻʼ;
     .locals 1
 
     .line 1
@@ -45,7 +45,7 @@
 
     .line 2
     .line 3
-    invoke-virtual {v0, p1}, Lˉˉ/ʻ;->ــ(I)Lʿʿ/ﹳﹳ;
+    invoke-virtual {v0, p1}, Lˉˉ/ʻ;->ــ(I)Lʿʿ/ʻʼ;
 
     .line 4
     .line 5
@@ -53,7 +53,7 @@
     move-result-object p1
 
     .line 7
-    invoke-static {p1}, Lʿʿ/ﹳﹳ;->ˑˑ(Lʿʿ/ﹳﹳ;)Lʿʿ/ﹳﹳ;
+    invoke-static {p1}, Lʿʿ/ʻʼ;->ˑˑ(Lʿʿ/ʻʼ;)Lʿʿ/ʻʼ;
 
     .line 8
     .line 9
@@ -64,7 +64,7 @@
     return-object p1
 .end method
 
-.method public ʾ(I)Lʿʿ/ﹳﹳ;
+.method public ʾ(I)Lʿʿ/ʻʼ;
     .locals 1
 
     .line 1
@@ -111,7 +111,7 @@
 
     .line 19
     :cond_1
-    invoke-virtual {p0, p1}, Lˉˉ/ʻ$ʽ;->ʼ(I)Lʿʿ/ﹳﹳ;
+    invoke-virtual {p0, p1}, Lˉˉ/ʻ$ʽ;->ʼ(I)Lʿʿ/ʻʼ;
 
     .line 20
     .line 21

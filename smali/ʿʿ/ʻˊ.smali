@@ -1,23 +1,14 @@
-.class public interface abstract Lʿʿ/ʻˊ;
+.class public final synthetic Lʿʿ/ʻˊ;
 .super Ljava/lang/Object;
 .source "SourceFile"
 
 
-# annotations
-.annotation system Ldalvik/annotation/MemberClasses;
-    value = {
-        Lʿʿ/ʻˊ$ʾ;,
-        Lʿʿ/ʻˊ$ˆ;,
-        Lʿʿ/ʻˊ$ʿ;,
-        Lʿʿ/ʻˊ$ˉ;,
-        Lʿʿ/ʻˊ$ˈ;,
-        Lʿʿ/ʻˊ$ʽ;,
-        Lʿʿ/ʻˊ$ʼ;,
-        Lʿʿ/ʻˊ$ʻ;
-    }
-.end annotation
+# direct methods
+.method public static bridge synthetic ʻ(Landroid/view/accessibility/AccessibilityRecord;Landroid/view/View;I)V
+    .locals 0
 
+    .line 1
+    invoke-virtual {p0, p1, p2}, Landroid/view/accessibility/AccessibilityRecord;->setSource(Landroid/view/View;I)V
 
-# virtual methods
-.method public abstract ʻ(Landroid/view/View;Lʿʿ/ʻˊ$ʻ;)Z
+    return-void
 .end method

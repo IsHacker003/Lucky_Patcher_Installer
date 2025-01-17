@@ -4,13 +4,13 @@
 
 
 # direct methods
-.method public static bridge synthetic ʻ(Landroid/view/WindowInsets;)Landroid/view/WindowInsets;
+.method public static bridge synthetic ʻ(Landroid/view/WindowInsets;)I
     .locals 0
 
     .line 1
-    invoke-virtual {p0}, Landroid/view/WindowInsets;->consumeStableInsets()Landroid/view/WindowInsets;
+    invoke-virtual {p0}, Landroid/view/WindowInsets;->getSystemWindowInsetBottom()I
 
-    move-result-object p0
+    move-result p0
 
-    return-object p0
+    return p0
 .end method

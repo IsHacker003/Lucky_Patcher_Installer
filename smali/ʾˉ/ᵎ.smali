@@ -374,7 +374,7 @@
     move-result-object v0
 
     .line 109
-    invoke-static {}, Lʾˉ/ᐧᐧ;->ˈᵔ()Landroid/content/res/Resources;
+    invoke-static {}, Lʾˉ/ᴵᴵ;->ˈᵔ()Landroid/content/res/Resources;
 
     move-result-object v2
 
@@ -821,7 +821,7 @@
     iput v7, v1, Lʾˉ/ᵎ;->ﾞﾞ:I
 
     .line 145
-    invoke-static {}, Lʾˉ/ᐧᐧ;->ˈᵎ()Landroid/content/pm/PackageManager;
+    invoke-static {}, Lʾˉ/ᴵᴵ;->ˈᵎ()Landroid/content/pm/PackageManager;
 
     move-result-object v7
 
@@ -834,7 +834,7 @@
     invoke-static {}, Lʼˏ/ᵎ;->ᴵᴵ()V
 
     .line 147
-    invoke-static {}, Lʾˉ/ᐧᐧ;->ˈᵔ()Landroid/content/res/Resources;
+    invoke-static {}, Lʾˉ/ᴵᴵ;->ˈᵔ()Landroid/content/res/Resources;
 
     move-result-object v9
 
@@ -1002,7 +1002,7 @@
     if-eq v0, v6, :cond_14
 
     .line 170
-    invoke-static {}, Lʾˉ/ᐧᐧ;->ˈᵎ()Landroid/content/pm/PackageManager;
+    invoke-static {}, Lʾˉ/ᴵᴵ;->ˈᵎ()Landroid/content/pm/PackageManager;
 
     move-result-object v6
 
@@ -1173,7 +1173,7 @@
     iput-boolean v0, v1, Lʾˉ/ᵎ;->ˊ:Z
 
     .line 189
-    invoke-static {}, Lʾˉ/ᐧᐧ;->ˈᵔ()Landroid/content/res/Resources;
+    invoke-static {}, Lʾˉ/ᴵᴵ;->ˈᵔ()Landroid/content/res/Resources;
     :try_end_8
     .catch Ljava/lang/NullPointerException; {:try_start_8 .. :try_end_8} :catch_1
 
@@ -1204,7 +1204,7 @@
     if-nez v0, :cond_4
 
     .line 192
-    sget v0, Lʾˉ/ᐧᐧ;->ʾᐧ:I
+    sget v0, Lʾˉ/ᴵᴵ;->ʾᐧ:I
 
     const/16 v6, 0x11
 
@@ -1243,7 +1243,7 @@
 
     move-result-object v0
 
-    invoke-static {v0}, Lʾˉ/ᐧᐧ;->ˉˎ(Ljava/lang/Object;)V
+    invoke-static {v0}, Lʾˉ/ᴵᴵ;->ˉˎ(Ljava/lang/Object;)V
     :try_end_a
     .catch Ljava/lang/NullPointerException; {:try_start_a .. :try_end_a} :catch_1
 
@@ -1329,7 +1329,7 @@
 
     iget-object v6, v1, Lʾˉ/ᵎ;->ʻ:Ljava/lang/String;
 
-    invoke-static {}, Lʾˉ/ᐧᐧ;->ˈי()Landroid/content/Context;
+    invoke-static {}, Lʾˉ/ᴵᴵ;->ˈי()Landroid/content/Context;
 
     move-result-object v7
 
@@ -1360,7 +1360,7 @@
 
     iget-object v6, v1, Lʾˉ/ᵎ;->ʻ:Ljava/lang/String;
 
-    invoke-static {}, Lʾˉ/ᐧᐧ;->ˈי()Landroid/content/Context;
+    invoke-static {}, Lʾˉ/ᴵᴵ;->ˈי()Landroid/content/Context;
 
     move-result-object v7
 
@@ -1483,7 +1483,7 @@
 
     move-result-object v6
 
-    invoke-static {v6}, Lʾˉ/ᐧᐧ;->ˉˎ(Ljava/lang/Object;)V
+    invoke-static {v6}, Lʾˉ/ᴵᴵ;->ˉˎ(Ljava/lang/Object;)V
 
     .line 217
     invoke-virtual {v0}, Ljava/lang/Throwable;->printStackTrace()V
@@ -1527,7 +1527,7 @@
     :try_start_10
     iget-object v0, v1, Lʾˉ/ᵎ;->ʻ:Ljava/lang/String;
 
-    invoke-static {v0}, Lʾˉ/ᐧᐧ;->ˉˎ(Ljava/lang/Object;)V
+    invoke-static {v0}, Lʾˉ/ᴵᴵ;->ˉˎ(Ljava/lang/Object;)V
 
     .line 221
     new-instance v0, Landroid/content/pm/PackageManager$NameNotFoundException;
@@ -1543,7 +1543,7 @@
     invoke-virtual {v0}, Ljava/lang/Throwable;->printStackTrace()V
 
     .line 223
-    invoke-static {}, Lʾˉ/ᐧᐧ;->ˈᵔ()Landroid/content/res/Resources;
+    invoke-static {}, Lʾˉ/ᴵᴵ;->ˈᵔ()Landroid/content/res/Resources;
 
     if-eqz v13, :cond_11
 
@@ -1618,7 +1618,7 @@
 
     iget-object v0, v1, Lʾˉ/ᵎ;->ʻ:Ljava/lang/String;
 
-    invoke-static {}, Lʾˉ/ᐧᐧ;->ˈי()Landroid/content/Context;
+    invoke-static {}, Lʾˉ/ᴵᴵ;->ˈי()Landroid/content/Context;
 
     move-result-object v6
 
@@ -1649,7 +1649,7 @@
 
     iget-object v0, v1, Lʾˉ/ᵎ;->ʻ:Ljava/lang/String;
 
-    invoke-static {}, Lʾˉ/ᐧᐧ;->ˈי()Landroid/content/Context;
+    invoke-static {}, Lʾˉ/ᴵᴵ;->ˈי()Landroid/content/Context;
 
     move-result-object v6
 
@@ -1768,7 +1768,7 @@
 
     move-result-object v2
 
-    invoke-static {v2}, Lʾˉ/ᐧᐧ;->ˉˎ(Ljava/lang/Object;)V
+    invoke-static {v2}, Lʾˉ/ᴵᴵ;->ˉˎ(Ljava/lang/Object;)V
 
     .line 243
     invoke-virtual {v0}, Ljava/lang/Throwable;->printStackTrace()V
@@ -2168,7 +2168,7 @@
     move-result-object p1
 
     .line 176
-    invoke-static {p1}, Lʾˉ/ᐧᐧ;->ˉˎ(Ljava/lang/Object;)V
+    invoke-static {p1}, Lʾˉ/ᴵᴵ;->ˉˎ(Ljava/lang/Object;)V
 
     .line 177
     .line 178
@@ -2185,7 +2185,7 @@
     .locals 2
 
     .line 1
-    sget-object v0, Lʾˉ/ᐧᐧ;->ʼـ:Lʾˉ/ˋ;
+    sget-object v0, Lʾˉ/ᴵᴵ;->ʼـ:Lʾˉ/ˋ;
 
     .line 2
     .line 3
@@ -2197,7 +2197,7 @@
 
     .line 6
     .line 7
-    invoke-static {}, Lʾˉ/ᐧᐧ;->ˈי()Landroid/content/Context;
+    invoke-static {}, Lʾˉ/ᴵᴵ;->ˈי()Landroid/content/Context;
 
     .line 8
     .line 9
@@ -2210,12 +2210,12 @@
     .line 12
     .line 13
     .line 14
-    sput-object v0, Lʾˉ/ᐧᐧ;->ʼـ:Lʾˉ/ˋ;
+    sput-object v0, Lʾˉ/ᴵᴵ;->ʼـ:Lʾˉ/ˋ;
 
     .line 15
     .line 16
     :cond_0
-    sget-object v0, Lʾˉ/ᐧᐧ;->ʼـ:Lʾˉ/ˋ;
+    sget-object v0, Lʾˉ/ᴵᴵ;->ʼـ:Lʾˉ/ˋ;
 
     .line 17
     .line 18

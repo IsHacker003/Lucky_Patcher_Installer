@@ -55,7 +55,7 @@
     .locals 4
 
     .line 1
-    sget-object v0, Lʾˉ/ᐧᐧ;->ʽᵎ:Lʾˊ/ـ;
+    sget-object v0, Lʾˉ/ᴵᴵ;->ʽᵎ:Lʾˊ/ـ;
 
     .line 2
     .line 3
@@ -75,11 +75,11 @@
 
     .line 10
     .line 11
-    sget-object v0, Lʾˉ/ᐧᐧ;->ʽᵎ:Lʾˊ/ـ;
+    sget-object v0, Lʾˉ/ᴵᴵ;->ʽᵎ:Lʾˊ/ـ;
 
     .line 12
     .line 13
-    const v1, 0x7f1103c3
+    const v1, 0x7f1103c5
 
     .line 14
     .line 15
@@ -98,7 +98,7 @@
     .line 22
     .line 23
     :try_start_0
-    sget-object v0, Lʾˉ/ᐧᐧ;->ʽᵎ:Lʾˊ/ـ;
+    sget-object v0, Lʾˉ/ᴵᴵ;->ʽᵎ:Lʾˊ/ـ;
 
     .line 24
     .line 25
@@ -158,7 +158,7 @@
     .line 50
     .line 51
     :goto_0
-    sget-object v0, Lʾˉ/ᐧᐧ;->ʽᵎ:Lʾˊ/ـ;
+    sget-object v0, Lʾˉ/ᴵᴵ;->ʽᵎ:Lʾˊ/ـ;
 
     .line 52
     .line 53

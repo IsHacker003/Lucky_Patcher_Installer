@@ -29,11 +29,11 @@
 
 
 # virtual methods
-.method public ˈ(Landroid/view/View;Lʿʿ/ﹳﹳ;)V
+.method public ˈ(Landroid/view/View;Lʿʿ/ʻʼ;)V
     .locals 0
 
     .line 1
-    invoke-super {p0, p1, p2}, Lʼʼ/ʾ;->ˈ(Landroid/view/View;Lʿʿ/ﹳﹳ;)V
+    invoke-super {p0, p1, p2}, Lʼʼ/ʾ;->ˈ(Landroid/view/View;Lʿʿ/ʻʼ;)V
 
     .line 2
     .line 3
@@ -53,7 +53,7 @@
     const/4 p1, 0x0
 
     .line 11
-    invoke-virtual {p2, p1}, Lʿʿ/ﹳﹳ;->ʻᵎ(Landroid/view/View;)V
+    invoke-virtual {p2, p1}, Lʿʿ/ʻʼ;->ʻᵎ(Landroid/view/View;)V
 
     .line 12
     .line 13

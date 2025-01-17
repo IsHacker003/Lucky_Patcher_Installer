@@ -61,7 +61,7 @@
 
     .line 23
     .line 24
-    sput-object v7, Lʾˉ/ᐧᐧ;->ʼٴ:Ljava/lang/String;
+    sput-object v7, Lʾˉ/ᴵᴵ;->ʼٴ:Ljava/lang/String;
 
     .line 25
     .line 26
@@ -78,7 +78,7 @@
     .line 31
     .line 32
     .line 33
-    sget-object v9, Lʾˉ/ᐧᐧ;->ʼٴ:Ljava/lang/String;
+    sget-object v9, Lʾˉ/ᴵᴵ;->ʼٴ:Ljava/lang/String;
 
     .line 34
     .line 35
@@ -134,7 +134,7 @@
     .line 61
     .line 62
     .line 63
-    sget-object v10, Lʾˉ/ᐧᐧ;->ʼٴ:Ljava/lang/String;
+    sget-object v10, Lʾˉ/ᴵᴵ;->ʼٴ:Ljava/lang/String;
 
     .line 64
     .line 65
@@ -179,7 +179,7 @@
     .line 86
     .line 87
     .line 88
-    sget-object v10, Lʾˉ/ᐧᐧ;->ʼٴ:Ljava/lang/String;
+    sget-object v10, Lʾˉ/ᴵᴵ;->ʼٴ:Ljava/lang/String;
 
     .line 89
     .line 90
@@ -385,7 +385,7 @@
     .line 184
     :cond_3
     :goto_3
-    sget v7, Lʾˉ/ᐧᐧ;->ʾᐧ:I
+    sget v7, Lʾˉ/ᴵᴵ;->ʾᐧ:I
 
     .line 185
     .line 186

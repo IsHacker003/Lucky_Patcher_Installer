@@ -95,7 +95,7 @@
     .locals 0
 
     .line 1
-    invoke-virtual {p1}, Landroid/view/View;->getStateDescription()Ljava/lang/CharSequence;
+    invoke-static {p1}, Lʼʼ/ʼٴ;->ʻ(Landroid/view/View;)Ljava/lang/CharSequence;
 
     .line 2
     .line 3
@@ -110,7 +110,7 @@
     .locals 0
 
     .line 1
-    invoke-virtual {p1, p2}, Landroid/view/View;->setStateDescription(Ljava/lang/CharSequence;)V
+    invoke-static {p1, p2}, Lʼʼ/ʼᐧ;->ʻ(Landroid/view/View;Ljava/lang/CharSequence;)V
 
     .line 2
     .line 3

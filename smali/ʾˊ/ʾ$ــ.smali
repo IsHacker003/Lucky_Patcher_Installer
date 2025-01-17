@@ -220,7 +220,7 @@
 
     .line 72
     .line 73
-    sget-object p2, Lʾˉ/ᐧᐧ;->ʼˎ:Lʾˉ/ᐧᐧ;
+    sget-object p2, Lʾˉ/ᴵᴵ;->ʼˎ:Lʾˉ/ᴵᴵ;
 
     .line 74
     .line 75
@@ -228,7 +228,7 @@
 
     .line 76
     .line 77
-    invoke-virtual {p2, p1, v0}, Lʾˉ/ᐧᐧ;->ˎʻ(Lʼˑ/ʼ;Z)V
+    invoke-virtual {p2, p1, v0}, Lʾˉ/ᴵᴵ;->ˎʻ(Lʼˑ/ʼ;Z)V
 
     .line 78
     .line 79

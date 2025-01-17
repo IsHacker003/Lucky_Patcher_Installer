@@ -3177,7 +3177,7 @@
     return-void
 .end method
 
-.method public ʼᴵ(Landroidx/recyclerview/widget/RecyclerView$ⁱ;Landroidx/recyclerview/widget/RecyclerView$ᐧᐧ;Lʿʿ/ﹳﹳ;)V
+.method public ʼᴵ(Landroidx/recyclerview/widget/RecyclerView$ⁱ;Landroidx/recyclerview/widget/RecyclerView$ᐧᐧ;Lʿʿ/ʻʼ;)V
     .locals 3
 
     .line 1
@@ -3224,12 +3224,12 @@
 
     .line 20
     .line 21
-    invoke-virtual {p3, v0}, Lʿʿ/ﹳﹳ;->ʻ(I)V
+    invoke-virtual {p3, v0}, Lʿʿ/ʻʼ;->ʻ(I)V
 
     .line 22
     .line 23
     .line 24
-    invoke-virtual {p3, v2}, Lʿʿ/ﹳﹳ;->ʻⁱ(Z)V
+    invoke-virtual {p3, v2}, Lʿʿ/ʻʼ;->ʻⁱ(Z)V
 
     .line 25
     .line 26
@@ -3272,12 +3272,12 @@
 
     .line 44
     .line 45
-    invoke-virtual {p3, v0}, Lʿʿ/ﹳﹳ;->ʻ(I)V
+    invoke-virtual {p3, v0}, Lʿʿ/ʻʼ;->ʻ(I)V
 
     .line 46
     .line 47
     .line 48
-    invoke-virtual {p3, v2}, Lʿʿ/ﹳﹳ;->ʻⁱ(Z)V
+    invoke-virtual {p3, v2}, Lʿʿ/ʻʼ;->ʻⁱ(Z)V
 
     .line 49
     .line 50
@@ -3315,7 +3315,7 @@
     move-result p1
 
     .line 67
-    invoke-static {v0, v1, v2, p1}, Lʿʿ/ﹳﹳ$ʼ;->ʼ(IIZI)Lʿʿ/ﹳﹳ$ʼ;
+    invoke-static {v0, v1, v2, p1}, Lʿʿ/ʻʼ$ʼ;->ʼ(IIZI)Lʿʿ/ʻʼ$ʼ;
 
     .line 68
     .line 69
@@ -3323,7 +3323,7 @@
     move-result-object p1
 
     .line 71
-    invoke-virtual {p3, p1}, Lʿʿ/ﹳﹳ;->ʻˆ(Ljava/lang/Object;)V
+    invoke-virtual {p3, p1}, Lʿʿ/ʻʼ;->ʻˆ(Ljava/lang/Object;)V
 
     .line 72
     .line 73
@@ -3331,7 +3331,7 @@
     return-void
 .end method
 
-.method ʼᵎ(Lʿʿ/ﹳﹳ;)V
+.method ʼᵎ(Lʿʿ/ʻʼ;)V
     .locals 2
 
     .line 1
@@ -3347,7 +3347,7 @@
 
     .line 6
     .line 7
-    invoke-virtual {p0, v1, v0, p1}, Landroidx/recyclerview/widget/RecyclerView$ـ;->ʼᴵ(Landroidx/recyclerview/widget/RecyclerView$ⁱ;Landroidx/recyclerview/widget/RecyclerView$ᐧᐧ;Lʿʿ/ﹳﹳ;)V
+    invoke-virtual {p0, v1, v0, p1}, Landroidx/recyclerview/widget/RecyclerView$ـ;->ʼᴵ(Landroidx/recyclerview/widget/RecyclerView$ⁱ;Landroidx/recyclerview/widget/RecyclerView$ᐧᐧ;Lʿʿ/ʻʼ;)V
 
     .line 8
     .line 9
@@ -3355,7 +3355,7 @@
     return-void
 .end method
 
-.method ʼᵔ(Landroid/view/View;Lʿʿ/ﹳﹳ;)V
+.method ʼᵔ(Landroid/view/View;Lʿʿ/ʻʼ;)V
     .locals 2
 
     .line 1
@@ -3415,7 +3415,7 @@
 
     .line 28
     .line 29
-    invoke-virtual {p0, v1, v0, p1, p2}, Landroidx/recyclerview/widget/RecyclerView$ـ;->ʼᵢ(Landroidx/recyclerview/widget/RecyclerView$ⁱ;Landroidx/recyclerview/widget/RecyclerView$ᐧᐧ;Landroid/view/View;Lʿʿ/ﹳﹳ;)V
+    invoke-virtual {p0, v1, v0, p1, p2}, Landroidx/recyclerview/widget/RecyclerView$ـ;->ʼᵢ(Landroidx/recyclerview/widget/RecyclerView$ⁱ;Landroidx/recyclerview/widget/RecyclerView$ᐧᐧ;Landroid/view/View;Lʿʿ/ʻʼ;)V
 
     .line 30
     .line 31
@@ -3424,7 +3424,7 @@
     return-void
 .end method
 
-.method public ʼᵢ(Landroidx/recyclerview/widget/RecyclerView$ⁱ;Landroidx/recyclerview/widget/RecyclerView$ᐧᐧ;Landroid/view/View;Lʿʿ/ﹳﹳ;)V
+.method public ʼᵢ(Landroidx/recyclerview/widget/RecyclerView$ⁱ;Landroidx/recyclerview/widget/RecyclerView$ᐧᐧ;Landroid/view/View;Lʿʿ/ʻʼ;)V
     .locals 6
 
     .line 1
@@ -3505,7 +3505,7 @@
     const/4 v3, 0x1
 
     .line 32
-    invoke-static/range {v0 .. v5}, Lʿʿ/ﹳﹳ$ʽ;->ʻ(IIIIZZ)Lʿʿ/ﹳﹳ$ʽ;
+    invoke-static/range {v0 .. v5}, Lʿʿ/ʻʼ$ʽ;->ʻ(IIIIZZ)Lʿʿ/ʻʼ$ʽ;
 
     .line 33
     .line 34
@@ -3513,7 +3513,7 @@
     move-result-object p1
 
     .line 36
-    invoke-virtual {p4, p1}, Lʿʿ/ﹳﹳ;->ʻˈ(Ljava/lang/Object;)V
+    invoke-virtual {p4, p1}, Lʿʿ/ʻʼ;->ʻˈ(Ljava/lang/Object;)V
 
     .line 37
     .line 38

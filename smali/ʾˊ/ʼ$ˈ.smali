@@ -48,7 +48,7 @@
 
     .line 2
     .line 3
-    sget-object p1, Lʾˉ/ᐧᐧ;->ˈˉ:Ljava/lang/String;
+    sget-object p1, Lʾˉ/ᴵᴵ;->ˈˉ:Ljava/lang/String;
 
     .line 4
     .line 5
@@ -61,7 +61,7 @@
 
     .line 9
     :cond_0
-    sget-object p1, Lʾˉ/ᐧᐧ;->ˈˉ:Ljava/lang/String;
+    sget-object p1, Lʾˉ/ᴵᴵ;->ˈˉ:Ljava/lang/String;
 
     .line 10
     .line 11

@@ -139,7 +139,7 @@
 
     .line 46
     .line 47
-    sget-object p2, Lʾˉ/ᐧᐧ;->ʻﹶ:Ljava/lang/String;
+    sget-object p2, Lʾˉ/ᴵᴵ;->ʻﹶ:Ljava/lang/String;
 
     .line 48
     .line 49
@@ -159,7 +159,7 @@
 
     .line 56
     .line 57
-    invoke-static {p1, p5}, Lʾˉ/ᐧᐧ;->ˎי(Lʾˉ/ˎ;Z)V
+    invoke-static {p1, p5}, Lʾˉ/ᴵᴵ;->ˎי(Lʾˉ/ˎ;Z)V
 
     .line 58
     .line 59
@@ -168,7 +168,7 @@
 
     .line 61
     :cond_1
-    sget-object p2, Lʾˉ/ᐧᐧ;->ʼˎ:Lʾˉ/ᐧᐧ;
+    sget-object p2, Lʾˉ/ᴵᴵ;->ʼˎ:Lʾˉ/ᴵᴵ;
 
     .line 62
     .line 63
@@ -188,7 +188,7 @@
 
     .line 70
     .line 71
-    invoke-virtual {p2, p1}, Lʾˉ/ᐧᐧ;->ˊᴵ(Lʾˉ/ˎ;)V
+    invoke-virtual {p2, p1}, Lʾˉ/ᴵᴵ;->ˊᴵ(Lʾˉ/ˎ;)V
 
     .line 72
     .line 73

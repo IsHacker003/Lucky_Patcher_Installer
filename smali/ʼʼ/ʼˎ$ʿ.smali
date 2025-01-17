@@ -95,7 +95,7 @@
     .locals 0
 
     .line 1
-    invoke-static {p1}, Lʼʼ/ʼٴ;->ʻ(Landroid/view/View;)Z
+    invoke-static {p1}, Lʼʼ/ʼᴵ;->ʻ(Landroid/view/View;)Z
 
     .line 2
     .line 3
@@ -126,7 +126,7 @@
     move-result p2
 
     .line 5
-    invoke-static {p1, p2}, Lʼʼ/ʼᐧ;->ʻ(Landroid/view/View;Z)V
+    invoke-static {p1, p2}, Lʼʼ/ʼᵎ;->ʻ(Landroid/view/View;Z)V
 
     .line 6
     .line 7

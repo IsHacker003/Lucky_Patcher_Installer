@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="abc_action_bar_home_description">Navigate home</string>
+    <string name="abc_action_bar_up_description">Navigate up</string>
+    <string name="abc_action_menu_overflow_description">More options</string>
+    <string name="abc_action_mode_done">Done</string>
+    <string name="abc_activity_chooser_view_see_all">See all</string>
+    <string name="abc_activitychooserview_choose_application">Choose an app</string>
+    <string name="abc_capital_off">OFF</string>
+    <string name="abc_capital_on">ON</string>
+    <string name="abc_menu_alt_shortcut_label">Alt+</string>
+    <string name="abc_menu_ctrl_shortcut_label">Ctrl+</string>
+    <string name="abc_menu_delete_shortcut_label">delete</string>
+    <string name="abc_menu_enter_shortcut_label">enter</string>
+    <string name="abc_menu_function_shortcut_label">Function+</string>
+    <string name="abc_menu_meta_shortcut_label">Meta+</string>
+    <string name="abc_menu_shift_shortcut_label">Shift+</string>
+    <string name="abc_menu_space_shortcut_label">space</string>
+    <string name="abc_menu_sym_shortcut_label">Sym+</string>
+    <string name="abc_prepend_shortcut_label">Menu+</string>
+    <string name="abc_search_hint">Search…</string>
+    <string name="abc_searchview_description_clear">Clear query</string>
+    <string name="abc_searchview_description_query">Search query</string>
+    <string name="abc_searchview_description_search">Search</string>
+    <string name="abc_searchview_description_submit">Submit query</string>
+    <string name="abc_searchview_description_voice">Voice search</string>
+    <string name="abc_shareactionprovider_share_with">Share with</string>
+    <string name="abc_shareactionprovider_share_with_application">Share with %s</string>
+    <string name="abc_toolbar_collapse_description">Collapse</string>
+    <string name="help_custom_add_boot_tag">automatically adds this custom patch to \"%1$s\". Should be used in the patch of libraries (or in the patch of [CLASSES] without [ODEX] or without [PACKAGE])</string>
+    <string name="help_custom_all_lib_tag">pattern search/replace for all native libraries</string>
+    <string name="help_custom_apk_build_param">Applies this pattern only for apk with build=apk_build. You can apply pattern for build>=apk_build (Example: {\"apk_build\":\"206+\"}) or can apply for build&lt;=apk_build (Example: {\"apk_build\":\"206-\"}).</string>
+    <string name="help_custom_apk_build_param2">You can apply a patch pattern for the apk version interval, for this you need to specify two apk_builds with an upper and lower version boundary:</string>
+    <string name="help_custom_begin_tag">patch comments that are visible to the user pre-patch</string>
+    <string name="help_custom_begin_tag_detail">The start mark, all the text after it and up to the first field [CLASSES], [LIB], [END], etc. will be displayed at the beginning of the patch log for the user.</string>
+    <string name="help_custom_classes_name_param">Applies a patch to one specific classes file, without this option the patch will be applied to all classes*.dex files (for example: {\"classes_name\":\"classes2.dex\"}, {\"classes_name\":\"classes3.dex\"}, {\"classes_name\":\"classes.dex\"} ...).</string>
+    <string name="help_custom_classes_tag">pattern search/replace for classes.dex (see below)</string>
+    <string name="help_custom_classes_tag_detail">Here are the lines for the classes.dex patch. These can be search, original-replaced and other options described below.</string>
+    <string name="help_custom_component_tag">"Enable or disable components of Applications. Sometimes an application disables its activity and other components in order to limit its functionality, then this ability to enable it back can be useful. So you can include activities, services, providers and other components. The most important thing is to indicate their names in strict accordance with uppercase and lowercase letters.
+Example:"</string>
+    <string name="help_custom_deprecated_tag">Deprecated</string>
+    <string name="help_custom_end">Everything has been edited, save and drop the file into the \"CustomPatches\" directory located in the Lucky Patcher folder. This folder can be viewed in the \"About\" section at the very top. Then the program is highlighted in yellow, and you can apply this patch to it.</string>
+    <string name="help_custom_end_tag">patch comments that are visible to the user post-patch</string>
+    <string name="help_custom_execute_param">This is a SQLite query, compiled according to the usual rules (you can read it on the Internet).</string>
+    <string name="help_custom_file_in_apk_tag">pattern search/replace for file inside the apk file (this function only works when rebuilding the application with this custom patch)</string>
+    <string name="help_custom_general_text1">- The patch file must have the same name as the target APK (this is case sensitive).</string>
+    <string name="help_custom_general_text2">- If a custom patch file for the application already exists, you can simply add any text at the beginning of the file name and save it next to the existing one. In this case, when you select Custom patch in the application, Lucky Patcher will offer you a list of custom patches for the application to choose from.</string>
+    <string name="help_custom_general_text3" formatted="false">"- If you want to write a patch for a whole series of programs from one company at once, then at the end of the custom patch file name, you can use the identifier _%ALL%. For example, the patch name for all SVOX voices will look like this: com.svox.classic.langpack_%ALL%.txt.
+The _%ALL% replaces the part in the package name, which varies depending on the application of the given company. Do not use special characters/formatting in the patch file (single spaces only).
+If you still need to add your own prefix at the beginning, you can use %ALL%_ and _%ALL% (Example: chelpus.%ALL%_com.android._%ALL%.txt). When displaying custom patch names in the program itself, %ALL%_ is hidden for readability."</string>
+    <string name="help_custom_general_text4" formatted="false">- In the text of a custom patch, you can use %PACKAGE_NAME%, which will be substituted with the package name of the target application during the patch. This is useful in application group patches where the file path will change depending on the package name (Example: /data/data/%PACKAGE_NAME%/files/trial.txt).</string>
+    <string name="help_custom_general_text5">- To search for patterns of bytes use IDA Pro 6.1+. It can open dalvik-cache, odex, libraries and classes.dex.</string>
+    <string name="help_custom_general_text6">- If you want to patch dalvik-cache or odex, do not forget that the bytes of data in different firmware versions may vary. In early versions of android before the introduction of ART, you could patch dalvik cache or odex files, but there you need to take into account that the bytes of the opcodes do not always match the bytes in classes.dex, so when writing such a patch, you need to look at this place by opening the file in IDA Pro.</string>
+    <string name="help_custom_general_text7">- Starting with version 6.5.4+, Lucky Patcher has the ability to create files with the lpzip extension. These are zip archives that can contain custom patches and apk files. When opening those zip files in Lucky Patcher, custom patches will be imported, and apk files will be prompted to be installed on the system. (Example: installSomeAppsWithPatch.lpzip)</string>
+    <string name="help_custom_group_param">Marks patterns of the group (group number could be 1 or higher). You may be asking \"What does this mean?\". Well, what it means is that If at least one pattern from the group has succeeded, the user will be shown a dialog that the patch has completed successfully. This is useful when you try to make a universal patch for multiple versions of a particular application (for example, a patch for all versions of Google Play to disable automatic updates).</string>
+    <string name="help_custom_increment_decrement_param">"Adding and subtracting decimal numbers from the original byte...
+For example:"</string>
+    <string name="help_custom_increment_decrement_param_end">Or another example:</string>
+    <string name="help_custom_insert_param">"Is used in cases where it is necessary to replace the found original with a number of bytes different from the number of bytes of the original pattern. Most often this is needed in various text files. For example, when the xml file contains: \"lives=9\", but you need to replace it with \"lives=999\", in this case, insert will help, without changing the data after \"lives=9\".
+(Example: before the patch, the file contains: \"chelpa end\")"</string>
+    <string name="help_custom_insert_param_end">after the patch the file already contains: \"chelpaa end\"</string>
+    <string name="help_custom_integrate_inapp_lvl_emulation_tag">automatically builds in emulation of purchases and license verification when patching. Useful if the patch bypasses enhanced purchase or license verification. For example, sometimes it helps to fix the GooglePlayValidator method in IL2СPP and purchases begin to work with the Lucky Patcher.</string>
+    <string name="help_custom_lib_tag">pattern search/replace for named native libraries (see below)</string>
+    <string name="help_custom_lib_tags">This means that the lines for the patch of the library of this program will follow, \"name\" is the name of the library (if you put * instead of the name, then all application libraries will be patched).</string>
+    <string name="help_custom_libs_tags">Sometimes an application has several libraries for different processor architectures, then it is better to use [LIB-ARMEABI], [LIB-ARMEABI-V7A], [LIB-ARM64-V8A], [LIB-MIPS], [LIB-X86] or [LIB-X86_64] for the desired library so that patterns from another library are not applied to the current one.</string>
+    <string name="help_custom_method_name_patch_example1">replaces the code with \"replaced\" for all methods with the same name and returning void</string>
+    <string name="help_custom_method_name_patch_example2">replaces the code with \"replaced\" for a method that returns a boolean and is in a concrete class</string>
+    <string name="help_custom_method_name_patch_example3">Searches and replaces bytes in the code of a method with any differences from other methods</string>
+    <string name="help_custom_method_name_patch_param">It patches only the code of the selected method itself, excluding the rest of the application code. The \"method name\" field must be specified - this is the name of the method that will be patched. To cut off unnecessary methods, the class of its location \"class name\" is indicated, and if necessary, also \"parameter types\" and \"return type\", so as not to patch anything extra. Names and parameters are written in smali syntax. If you use the \"original\" and \"replaced\" templates after these parameters, then the search will take place inside the method. If only the \"replaced\" template is used, then the entire method code will be replaced with this template and zeros without searching, but in this case the size of the template must be less than or equal to the size of the method code.</string>
+    <string name="help_custom_name_param">"Usually indicates the object to which the patch will be applied. It can be just a file name, a file name with a path, and the like. In some cases, you can use '*' to patch all libraries, for example if the name of the library is unknown."</string>
+    <string name="help_custom_odex_patch_tag">"There are situations when you need to change an already patched application, for example, for which the license check has already been removed by an automatic patch, then this tag comes to the rescue. All \"original\"-\"replaced\" patterns after it will be applied to the odex file that other patches have already created. For example, this was required for the first time in Final Fantasy III, when people treated the game with Extreme License Check Removal Mode, but in order for the translation to be displayed in the correct encoding, additional patches in the odex file were required, which became possible to apply using this tag. If we use a simple [PACKAGE]-[CLASSES], [ODEX] or [CLASSES]-[ODEX], odex-file will be created with no change and only then patched. In this version of Lucky Patcher, this is no longer required, since there is an option \"%1$s\".
+Example:"</string>
+    <string name="help_custom_odex_tags">On older Androids, this tag could be used. Instead of the tag [CLASSES], you can use this one. Then the changes in classes.dex will be saved not in dalvik-cache, where they periodically disappear when the system updates the cache, but in a separate file with the odex extension next to the apk of the application, which will fix all the changes and leave the original dalvik-cache intact - this is just in case, if the application checks it. You can use [ODEX] after [CLASSES], then the changes will be made to the dalvik cache and automatically committed to odex. This is not necessary on modern firmware.</string>
+    <string name="help_custom_offset_param">In offset, we specify the offset from the beginning of the file in hexadecimal format, where the byte sequence specified in \"replaced\" or \"insert\" will be inserted.</string>
+    <string name="help_custom_original_param">This is a pattern mask used to find the offset where the patch will be applied.</string>
+    <string name="help_custom_original_param_end">In this example, the bytes make up the pattern mask, and (??, **) means any byte.</string>
+    <string name="help_custom_other_files_tag">pattern search/replace for any files in /data/data/Package_Target_APK/ or in /sdcard (see below)</string>
+    <string name="help_custom_package_tag">unpacks classes.dex and applies all the patches from the [CLASSES] to it. And generates, based on the modified classes.dex, odex-file.</string>
+    <string name="help_custom_package_tag_detail">This tag means that we will not patch dalvik-cache directly, but we will pull out classes.dex from target application, patch it (with patches that follow the identifiers [CLASSES] or [ODEX]), create an odex image with changes and put into application. This is the image that TitaniumBuckup needs, for example. It checks it and all check-sums inside it must be correct. It is advisable to always use this tag, because such a patch is the most correct, but if it causes any problems, you can do without it.</string>
+    <string name="help_custom_permission_tag">"Analog linux command \"chmod permissions file_name\" for files from the application data directory (e.g. give read-only rights after editing)
+Example:"</string>
+    <string name="help_custom_replace_from_file_param">This will follow an \"original\" statement, this is what the offset will replace with bytes from the file with the specified name (file must be saved near custom patch).</string>
+    <string name="help_custom_replace_from_file_param_end">This is done in order to avoid writing very long replacement patterns that are a chore to type into a text file.</string>
+    <string name="help_custom_replaced_param">This must follow \"original\" or \"offset\" parameter, which is what these bytes will be overwritten with, or written at the specified offset. Bytes in places marked with (?? or **) will remain untouched:</string>
+    <string name="help_custom_replaced_param_end">In this example, the bytes W0, W1, W2 were stored as R0, R1, R2 in the previously executed \"search\".</string>
+    <string name="help_custom_s0_s1_sq_param">"Sets smali variable to 0 (e.g. converts hex number to: 43->03,54->04...) or 1 (e.g. converts hex number to: 43->13,04->14...) respectively, SQ aligns hexadecimal digits (e.g. converts hex number to: 34->44, 51->11...).
+For example, there is a variable: const/4 v?,0x00. The question mark shows, that var's number is unknown (for example, after it has been changed in the newer version), but you are sure, that this var equals 0, and you want to set it to 1. In this case pattern will look like this:"</string>
+    <string name="help_custom_s0_s1_sq_param_end">And vice versa, to set variable to 0:</string>
+    <string name="help_custom_search_param">Looks for bytes in positions marked R[0, 1, 2, 3, ...], where number is the number of the cell where the byte is stored (cell numbers must go in order from 0 onwards and must not be repeated). For example:</string>
+    <string name="help_custom_search_param_end">means that the bytes at those positions will be stored in R0, R1, R2. Now that they are found and saved, you can use them in replacement patterns only by replacing R with W.</string>
+    <string name="help_custom_sqlite_tag">"Sometimes in the target application it is necessary to change something in the database to which it writes any events or data, then this identifier comes to help.
+Example:"</string>
+    <string name="help_custom_syntax_text_start">"So here's an example. I compiled it from a number of tags for clarity. In practice, you will need far fewer functions. In the body of the file, we write something like this (the separator is only a single space, otherwise it will give an error):"</string>
+    <string name="help_custom_title_detailed_description">Detailed description of tags and their parameters:</string>
+    <string name="help_custom_title_general">General information:</string>
+    <string name="help_custom_title_syntax">Syntax help:</string>
+    <string name="help_custom_use_option_rebuild_tag">turn on the \"%1$s\" option if the application is rebuilt with this patch.</string>
+    <string name="help_custom_warning_text">Do not remove jumps or make them unconditional! The Optimizer will crash and your patch will not work on ART! To avoid this, use conditional jumps. For example, if there is a need to jump, replace the jump with the if-eq v0,v0 (bytes: 32 00 ?? ??). If there is no need to jump in a particular place, you can insert a jump such as if-ne v0,v0 (bytes: 33 00 ?? ??); also feel free to use your own equivalent.</string>
+    <string name="installer_rootless_error2_install_failed_aborted">Installation was cancelled by the user or aborted</string>
+    <string name="installer_rootless_error2_install_failed_already_exists">This package is already installed</string>
+    <string name="installer_rootless_error2_install_failed_bad_dex_metadata">"Dex metadata file is invalid or there's no matching APK file for a dex metadata file"</string>
+    <string name="installer_rootless_error2_install_failed_bad_signature">"There's some problem with APK signature"</string>
+    <string name="installer_rootless_error2_install_failed_conflicting_provider">Package contains a content provider with the same authority as a provider already installed in the system</string>
+    <string name="installer_rootless_error2_install_failed_container_error">"Secure container mount point couldn't be accessed on external media"</string>
+    <string name="installer_rootless_error2_install_failed_cpu_abi_incompatible">"Package doesn't contain native code that is compatible with this device's CPU"</string>
+    <string name="installer_rootless_error2_install_failed_dexopt">Installation failed while optimizing and validating package dex files, either because there was not enough storage or the validation failed</string>
+    <string name="installer_rootless_error2_install_failed_duplicate_package">Package with the same name is already installed</string>
+    <string name="installer_rootless_error2_install_failed_duplicate_permission">Package is attempting to define a permission that is already defined by another installed package</string>
+    <string name="installer_rootless_error2_install_failed_instant_app_invalid">Unsupported operation with an instant app</string>
+    <string name="installer_rootless_error2_install_failed_insufficient_storage">"Device doesn't have enough space to install the app"</string>
+    <string name="installer_rootless_error2_install_failed_internal_error">Installation failed because of system issues</string>
+    <string name="installer_rootless_error2_install_failed_invalid_apk">APK file is not valid</string>
+    <string name="installer_rootless_error2_install_failed_invalid_install_location">"Package couldn't be installed in the specified location"</string>
+    <string name="installer_rootless_error2_install_failed_invalid_uri">Passed URI is not valid</string>
+    <string name="installer_rootless_error2_install_failed_media_unavailable">"Package couldn't be installed in the specified location because the media is not available"</string>
+    <string name="installer_rootless_error2_install_failed_missing_feature">Package requires a feature that is not supported by this device</string>
+    <string name="installer_rootless_error2_install_failed_missing_shared_library">App has requested a shared library that is not installed on the device</string>
+    <string name="installer_rootless_error2_install_failed_missing_split">"Package requires splits, but they weren't provided"</string>
+    <string name="installer_rootless_error2_install_failed_multipackage_inconsistency">One of the child package installer sessions does not match the parent session in respect to staged or rollback enabled parameters</string>
+    <string name="installer_rootless_error2_install_failed_newer_sdk">Device Android version is higher than required by the package</string>
+    <string name="installer_rootless_error2_install_failed_no_matching_abis">"Package doesn't contain native code that is compatible with this device's CPU"</string>
+    <string name="installer_rootless_error2_install_failed_no_shared_user">"Shared user requested by package doesn't exist"</string>
+    <string name="installer_rootless_error2_install_failed_older_sdk">Device Android version is lower than required by the package</string>
+    <string name="installer_rootless_error2_install_failed_other_staged_session_in_progress">"There's already a package installer session being committed for this package name"</string>
+    <string name="installer_rootless_error2_install_failed_package_changed">Package installation path unexpectedly changed</string>
+    <string name="installer_rootless_error2_install_failed_permission_model_downgrade">"New version of the package doesn't support runtime permissions but the currently installed version does"</string>
+    <string name="installer_rootless_error2_install_failed_replace_couldnt_delete">The system was unable to delete the previous version of this package</string>
+    <string name="installer_rootless_error2_install_failed_sandbox_version_downgrade">New version of the package requires a lower sandbox version than the currently installed version of this package</string>
+    <string name="installer_rootless_error2_install_failed_shared_user_incompatible">"App has requested an already existing shared user, but their signatures don't match"</string>
+    <string name="installer_rootless_error2_install_failed_test_only">Installed package is test-only and INSTALL_ALLOW_TEST flag was not supplied</string>
+    <string name="installer_rootless_error2_install_failed_uid_changed">Package was assigned a different UID than it previously held</string>
+    <string name="installer_rootless_error2_install_failed_update_incompatible">"App signature doesn't match the signature of an already installed app with the same package name"</string>
+    <string name="installer_rootless_error2_install_failed_user_restricted">This user is restricted from installing apps</string>
+    <string name="installer_rootless_error2_install_failed_verification_failure">Package has failed verification</string>
+    <string name="installer_rootless_error2_install_failed_verification_timeout">Package verification timed out</string>
+    <string name="installer_rootless_error2_install_failed_version_downgrade">A newer version of this package is already installed</string>
+    <string name="installer_rootless_error2_install_failed_wrong_installed_version">"Required version of an already installed package doesn't match the actual version of the installed package"</string>
+    <string name="installer_rootless_error2_install_parse_failed_bad_manifest">Unable to retrieve APK manifest</string>
+    <string name="installer_rootless_error2_install_parse_failed_bad_package_name">APK has bad or missing package name</string>
+    <string name="installer_rootless_error2_install_parse_failed_bad_shared_user_id">APK has bad shared user id</string>
+    <string name="installer_rootless_error2_install_parse_failed_certificate_encoding">Certificate encoding failed</string>
+    <string name="installer_rootless_error2_install_parse_failed_inconsistent_certificates">Inconsistent certificates found on the files in the APK</string>
+    <string name="installer_rootless_error2_install_parse_failed_manifest_empty">APK manifest is empty</string>
+    <string name="installer_rootless_error2_install_parse_failed_manifest_malformed">APK manifest is malformed</string>
+    <string name="installer_rootless_error2_install_parse_failed_no_certificates">"APK file doesn't contain any certificates"</string>
+    <string name="installer_rootless_error2_install_parse_failed_not_apk">Provided file is not an APK file</string>
+    <string name="installer_rootless_error2_install_parse_failed_unexpected_exception">APK parser encountered an unexpected exception</string>
+    <string name="installer_rootless_error2_unknown">Unknown error</string>
+    <string name="search_menu_title">Search</string>
+    <string name="status_bar_notification_info_overflow">999+</string>
+</resources>

@@ -1,0 +1,1202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="AppTools">Ilova haqida:</string>
+    <string name="P_not_found">"Xato: Dastur fayllari topilmadi!
+Ushbu muammoni hal qilish uchun dalvik-kesh joyini tekshiring!
+Birlamchi: /data/dalvik-cashe/*"</string>
+    <string name="PatchResult">Patch natijalari</string>
+    <string name="Yes">Ha</string>
+    <string name="abc_action_bar_home_description">Boshiga o‘tish</string>
+    <string name="abc_action_bar_up_description">Yopish</string>
+    <string name="abc_action_menu_overflow_description">Yana</string>
+    <string name="abc_action_mode_done">OK</string>
+    <string name="abc_activity_chooser_view_see_all">Hammasi</string>
+    <string name="abc_activitychooserview_choose_application">Ilovani tanlang</string>
+    <string name="abc_capital_off">YOQILMAGAN</string>
+    <string name="abc_capital_on">YONIQ</string>
+    <string name="abc_menu_alt_shortcut_label">Alt+</string>
+    <string name="abc_menu_ctrl_shortcut_label">Ctrl+</string>
+    <string name="abc_menu_delete_shortcut_label">Delete</string>
+    <string name="abc_menu_enter_shortcut_label">Enter</string>
+    <string name="abc_menu_function_shortcut_label">Fn+</string>
+    <string name="abc_menu_meta_shortcut_label">Meta+</string>
+    <string name="abc_menu_shift_shortcut_label">Shift+</string>
+    <string name="abc_menu_space_shortcut_label">Probel</string>
+    <string name="abc_menu_sym_shortcut_label">Sym+</string>
+    <string name="abc_prepend_shortcut_label">Menyu+</string>
+    <string name="abc_search_hint">Qidirish…</string>
+    <string name="abc_searchview_description_clear">So‘rovni o‘chirish</string>
+    <string name="abc_searchview_description_query">Qidiruv so‘rovi</string>
+    <string name="abc_searchview_description_search">Qidiruv</string>
+    <string name="abc_searchview_description_submit">So‘rov yaratish</string>
+    <string name="abc_searchview_description_voice">Ovozli qidiruv</string>
+    <string name="abc_shareactionprovider_share_with">Ulashish</string>
+    <string name="abc_shareactionprovider_share_with_application">%s orqali ulashish</string>
+    <string name="abc_toolbar_collapse_description">Yig‘ish</string>
+    <string name="about_thanks_for_this_translation">O‘zbekcha tarjima uchun Temur Yusupovga rahmat: Fikr-mulohaza, @asosida Telegram.</string>
+    <string name="about_working_dir">SD-kartadagi ishchi katalog:</string>
+    <string name="aboutlp">Lucky Patcher – bu universal patch qilish vositasi. U ilovalarni quyidagi yo‘llar bilan o‘zgartirish uchun mo‘ljallangan: Reklamalarni o‘chirish, Google litsenziyasini tekshirishni o‘chirish (avtomatik va qo‘lda), ruxsatlarni boshqarish va h.k.</string>
+    <string name="aboutmenu">Lucky Patcher haqida</string>
+    <string name="abouttitle">Lucky Patcher haqida ChelpuS</string>
+    <string name="activity_ads_descr">Ilova faoliyati reklama uchun ishlatiladi.</string>
+    <string name="activity_descr">Ilova faoliyati. Tavsif mavjud emas.</string>
+    <string name="additinfo">Qo‘shimcha ma’lumotlar:</string>
+    <string name="adsdescr">Google reklamalari bilan barcha ilovalarni ko‘rsatadi.</string>
+    <string name="adstitle">Reklamali ilovalar</string>
+    <string name="advanced_menu">Patchlar menyusi</string>
+    <string name="all_custom_patches_updated">Barcha maxsus patchlar yangilandi</string>
+    <string name="allchanges">Barcha o‘zgarishlar ODEX’da tuzatildi va ilova qayta o‘rnatilguncha davom etadi!</string>
+    <string name="android_patches_dialog_header1">Android uchun patchlar</string>
+    <string name="android_patches_dialog_header2">Patchlardan so‘ng dasturiy ta’minotni tiklash</string>
+    <string name="android_patches_dialog_remove_patch_3">\"%1s\" patchni olib tashlash</string>
+    <string name="android_patches_dialog_remove_patches_1_and_2" formatted="false">\"%1s\" va \"%2s\" patchlarini olib tashlash</string>
+    <string name="android_patches_dialog_use_magisk_module_for_patches">Patchni qo‘llash uchun Magisk modulidan foydalaning</string>
+    <string name="android_patches_for_bootlist">Dalvik-kesh uchun Android patch</string>
+    <string name="android_patches_for_bootlist_status">Yuklash paytida Android patchlarini qayta qo‘llang</string>
+    <string name="apk_create_option">Qayta tuzilgan APK’lar uchun fayl nomi</string>
+    <string name="apk_not_found_error">Xato: APK fayl topilmadi.</string>
+    <string name="apk_size">APK o‘lchami:</string>
+    <string name="apkdescr">Yangi APK fayllarni nomlash sxemasi.</string>
+    <string name="apklabel">Ilova yorlig‘i asosida</string>
+    <string name="apkpackage">Ilovaning paket nomi asosida</string>
+    <string name="app_dialog_no_root_app_control">Ilovani boshqarish</string>
+    <string name="app_disabler_widget_pkg_not_found">Ilova o‘chirildi</string>
+    <string name="app_info">Ilova haqida</string>
+    <string name="app_info_apk_is_splitted">Apk fayli bo‘linadi</string>
+    <string name="app_install_success">Ilova muvaffaqiyatli o‘rnatildi.</string>
+    <string name="app_name">Lucky Patcher</string>
+    <string name="app_not_found">Ilova topilmadi! Iltimos, ilovani o‘rnating va qaytadan urinib ko‘ring.</string>
+    <string name="app_not_found_adapter">Bu ilova o‘rnatilgan ilovalar ro‘yxatida topilmadi.</string>
+    <string name="apps_not_found">Hech narsa topilmadi.</string>
+    <string name="appwidget_text">NAMUNA</string>
+    <string name="back">Orqaga</string>
+    <string name="backbutton">Zaxira</string>
+    <string name="backup_data_empty">Ilova ma’lumotlari bo‘sh. Zaxiralash uchun hech narsa yo‘q.</string>
+    <string name="backup_data_error">Xato: Nimadir noto‘g‘ri bajarildi. Ehtimol, zaxira to‘liq emas.</string>
+    <string name="backup_data_success">Sozlamalar muvaffaqiyatli saqlandi.</string>
+    <string name="backup_delete_message">Haqiqatan ham ushbu zaxira nusxasini o‘chirishni xohlaysizmi</string>
+    <string name="backup_done">"Zaxira nusxalandi. Yo‘l:
+"</string>
+    <string name="backup_settings_delete_message">Haqiqatan ham zaxira ilovasi sozlamalarini o‘chirmoqchimisiz</string>
+    <string name="backup_settings_error_message">Ilova sozlamalarini tiklab bo‘lmadi, chunki u o‘rnatilmagan.</string>
+    <string name="backup_settings_restore_message">Haqiqatan ham zaxira ilovasi sozlamalarini tiklashni xohlaysizmi</string>
+    <string name="backups_not_found">Zaxira fayllari topilmadi:</string>
+    <string name="bad_root_detected">Root barqaror emas. Qayta urinib ko‘ring yoki rootni yangilang. Lucky Patcher sozlamalarida java-root usulini o‘zgartiring. Ba’zida yordam berishi mumkin.</string>
+    <string name="begin_changelog">O‘rnatilgan versiya:</string>
+    <string name="billing_buy">Bu narsani bepul olishga harakat qilishni xohlaysizmi?</string>
+    <string name="billing_hack2_auto_repeat_note">Avtomatik takrorlashni o‘chirish uchun siz ilovani tanlang va \"Vositalar qutisi->\"Tanlangan saqlangan xaridlarni olib tashlash\" ga o‘ting va elementni o‘chiring.</string>
+    <string name="billing_hack2_new">"- Eng yaxshi natijaga erishish uchun siz Android \"Imzolarni tekshirish holati har doim to‘g‘ri\" ga patch kiritishingiz kerak;
+- Buzishni o‘chirish uchun Lucky Patcherning pastki panelidagi \"Kalitlar\" ga o‘ting va \"Google billing emulyatsiyasini o‘chirish\" ni tanlang."</string>
+    <string name="billing_hack_menu">Google billing emulyatsiyasi</string>
+    <string name="billing_hack_menu_descr">\"InApp va LVL uchun qo‘llab-quvvatlash patchi\" ilovani va qo‘llaniladigan \"Android uchun patch\" ni maqsad qilib olishni talab qiladi. To‘g‘ri xarid ma’lumotlari va ilovadagi narx uchun Google Play uchun maxsus \"Support.InApp.LVL...\" patchidan foydalaning.</string>
+    <string name="billing_hack_menu_disable">Google billing emulyatsiyasini o‘chirish</string>
+    <string name="billing_hack_menu_enable">Google billing emulyatsiyasini yoqish</string>
+    <string name="billing_hack_option">Ilova javobini imzosiz yuboring (bu root bo‘lmagan foydalanuvchilar uchun ishlashi mumkin)</string>
+    <string name="billing_hack_option2">Qayta tiklash uchun xaridni saqlash</string>
+    <string name="billing_hack_warning_unity" formatted="false">Agar xarid muvaffaqiyatsiz bo‘lsa, ushbu xarid turini \"%1s\"->\"%2s\" da o‘zgartirishga harakat qiling.</string>
+    <string name="billing_proxy_server_for_support_patch_descr">Bu xizmat \"Ilovada qo‘llab-quvvatlash uchun patch va LVL emulyatsiyasi\" uchun kerak va u bilan birga ilovani qayta tuzadi.</string>
+    <string name="billing_proxy_server_for_support_patch_inapp">Ilova ichidagi xaridlarni taqlid qilish uchun proksi server</string>
+    <string name="bind_button">Yangi katalog qo‘shish!</string>
+    <string name="bind_delete">Ushbu katalogni o‘chirishni xohlaysizmi?</string>
+    <string name="bind_dialog_button">Bog‘lash katalogi</string>
+    <string name="bind_dialog_source">Ma’lumotlar bilan katalog:</string>
+    <string name="bind_dialog_target">Katalogni ma’lumotlar bilan o‘rnatish:</string>
+    <string name="bind_error">Bog‘lab bo‘lmadi! Qurilmada maʼlumotlar katalogini topib bo‘lmadi.</string>
+    <string name="bind_source">Ma’lumotlar bilan katalog:</string>
+    <string name="bind_target">Ma’lumotni o‘rnatish:</string>
+    <string name="binder_browser">Brauzer</string>
+    <string name="binder_browser_create_dir">Katalog yaratish</string>
+    <string name="binder_browser_current_dir">Joriy katalog:</string>
+    <string name="binder_browser_select">Joriy katalogni tanlash</string>
+    <string name="binder_delete">O‘chirish</string>
+    <string name="bootview">Yuklash ro‘yxati</string>
+    <string name="bottomsheet_action_expand_halfway">Yarmiga kengaytirish</string>
+    <string name="browse_to_file">Ko‘rish</string>
+    <string name="busybox_not_found">Diqqat: Busybox topilmadi. Lucky Patcher Busyboxsiz davom etolmaydi...</string>
+    <string name="button_add_to_boot_list">Yuklashga qo‘shish</string>
+    <string name="button_advanced_filter">Filtirlar</string>
+    <string name="button_all">Hammasi</string>
+    <string name="button_backup_apk_apps">Zaxira</string>
+    <string name="button_block_internet">Internetni bloklash</string>
+    <string name="button_disable_package">O‘chirish</string>
+    <string name="button_enable_package">Yoqish</string>
+    <string name="button_for_delete">O‘chirish</string>
+    <string name="button_for_uninstall_intsaller">O‘rnatuvchini olib tashlashni boshlash</string>
+    <string name="button_integrate_update_apps">Birlashtirish</string>
+    <string name="button_move_to_internal">"Bu joyga ko‘chirish
+ichki xotira"</string>
+    <string name="button_move_to_sdcard">SD-kartaga ko‘chirish</string>
+    <string name="button_resign_app">Qayta imzolash</string>
+    <string name="button_unblock_internet">Internetni blokdan chiqarish</string>
+    <string name="button_uninstall_apps">O‘chirish</string>
+    <string name="cancel">Bekor qilish</string>
+    <string name="change_icon_lp">Belgini o‘zgartirish</string>
+    <string name="change_icon_lp_descr">Siz ishga tushirishda Lucky Patcher uchun standart belgini o‘zgartirishingiz mumkin.</string>
+    <string name="changelog">O‘zgarishlar jurnali</string>
+    <string name="character_counter_content_description">%1$d/%2$d ta belgi kiritildi</string>
+    <string name="character_counter_overflowed_content_description">Harflar soni (%1$d) cheklovdan (%2$d) oshib ketdi</string>
+    <string name="checkbox_uninstall_and_instal_backup_cache">O‘rnatish uchun ma’lumotlar va kesh zaxira nusxalarini yarating.</string>
+    <string name="clear_text_end_icon_content_description">Matnni tozalash</string>
+    <string name="cleardalvik">Dalvik-keshni tozalash va qayta yuklash</string>
+    <string name="cleardata">Ma’lumotlarni tozalash</string>
+    <string name="clipboard_message_for_app_dilaog_app_additional_info">Qo‘shimcha ma’lumot vaqtinchalik xotiraga ko‘chirildi</string>
+    <string name="clipboard_message_for_app_dilaog_app_info">Ilova ma’lumoti vaqtinchalik xotiraga ko‘chirildi</string>
+    <string name="clipboard_message_for_app_dilaog_app_permissions">Ruxsatnomalar vaqtinchalik xotiraga ko‘chirildi</string>
+    <string name="cloneApplication">Klon ilova (hamma uchun ham ishlamaydi)</string>
+    <string name="close">Yopish</string>
+    <string name="collect_logs">Jurnallar yig‘ilmoqda...</string>
+    <string name="common_google_play_services_unknown_issue">%1$s ilovasini Google Play xizmatlariga ulab bo‘lmadi. Qaytadan urinib ko‘ring.</string>
+    <string name="context_automodeslvl">Avtomatik rejimlar</string>
+    <string name="context_backup_apk">Zaxira .apk fayli</string>
+    <string name="context_backup_apk_selected_apps">Tanlangan ilovalarni apk zaxiralash</string>
+    <string name="context_backup_data">Ilova sozlamalarini zaxiralash</string>
+    <string name="context_batch_operations">To‘plam operatsiyalari</string>
+    <string name="context_block_internet_selected_apps">"Tanlangan ilovalar uchun internetni bloklash
+Android 4+ da ishlamasligi mumkin"</string>
+    <string name="context_blockads">Qurilmadagi reklamalarni bloklash</string>
+    <string name="context_change_components_menu">Ilovaning tarkibiy qismlarini o‘zgartirish</string>
+    <string name="context_clearhosts">"Mahalliy 'hosts' faylini tozalash"</string>
+    <string name="context_crt_apk_permission">Ruxsatlar va faoliyatlari o‘zgartirilgan APK</string>
+    <string name="context_dependencies">Bog‘liqlarni olib tashlash</string>
+    <string name="context_dex_verification_kill_option">Butunlik tekshiruvi va imzo tekshiruvi o‘chiriladi</string>
+    <string name="context_dex_verification_kill_option_describe">Dex checksum va imzo tekshiruvini chetlab o‘tish uchun dasturga kod kiritiladi. Bu usul ilova hajmini ikki baravar oshiradi.</string>
+    <string name="context_dexopt_app">ODEX ushbu ilova</string>
+    <string name="context_disableActivity">Reklama faoliyatini o‘chirish</string>
+    <string name="context_disableComponents">"Tarkibiy qismlarni o‘chirish
+usul 'pm disable'
+(ilova tomonidan yoqilgan bo‘lishi mumkin)"</string>
+    <string name="context_disable_google_ads">Google reklamalar xizmatlarini o‘chirish</string>
+    <string name="context_disable_package">Paketni o‘chirish (muzlatish)</string>
+    <string name="context_disable_package_for_selected_apps">Tanlangan ilovalarni o‘chirib qo‘yish</string>
+    <string name="context_enable_google_ads">Google reklamalar xizmatlarini qayta yoqish</string>
+    <string name="context_enable_package">Paketni yoqish</string>
+    <string name="context_enable_package_for_selected_apps">Tanlangan ilovalarni yoqish</string>
+    <string name="context_hard_apk_permission">"Ruxsatlarni o‘zgartirish
+Asl imzoni saqlash.
+(beqaror usul)"</string>
+    <string name="context_hide_lp">Lucky Patcherni yashirish</string>
+    <string name="context_hide_lp_descr">Lucky Patcherni boshqa ilovalardan yashirishga harakat qiling. Tizimda yuk, faqat kerak bo‘lganda foydalaning.</string>
+    <string name="context_install">O‘rnatish</string>
+    <string name="context_install_as_system">Tizim ilovasi sifatida o‘rnatish</string>
+    <string name="context_integrate_dalvik">Dalvik kodi allaqachon o‘rnatilgan dasturga birlashtirish</string>
+    <string name="context_integrate_update_selected_apps">Tanlangan ilovalarni /system ga yangilanishni integratsiyalash</string>
+    <string name="context_menu_settings_show_last_added_custom_patches">Oxirgi qo‘shilgan maxsus patchlarni ko‘rsatish</string>
+    <string name="context_move_selected_apps_to_internal">Tanlangan ilovalarni ichki xotiraga o‘tkazish</string>
+    <string name="context_move_selected_apps_to_sdcard">Tanlangan ilovalarni SD kartaga ko‘chirish</string>
+    <string name="context_original_resign_app">\"%1s\" android patch uchun asl imzo bilan qayta imzolang.</string>
+    <string name="context_patch_framework">Ramka patch fayli</string>
+    <string name="context_purchases_sorter">Xaridlarni saralash</string>
+    <string name="context_rebuild">Qayta yig‘ish</string>
+    <string name="context_removeAds">Reklamalarni o‘chirish uchun patch</string>
+    <string name="context_remove_patch_boot">Qayta ishga tushirishda patchni olib tashlash</string>
+    <string name="context_remove_saved_purchaces">Tanlangan saqlangan xaridlarni olib tashlash</string>
+    <string name="context_resign_app">Sinov imzosi bilan qayta imzolang.</string>
+    <string name="context_restore_apk">.apk faylini qaytadan o‘rnatish</string>
+    <string name="context_restore_data">Ilova sozlamalarini tiklash</string>
+    <string name="context_safe_apk_permission">"Ruxsatlar va faoliyatlarni o‘zgartirish
+Qayta qurish va o‘rnatish"</string>
+    <string name="context_safe_sign_apk_permission">"Ruxsatlar va faoliyatlarni o‘zgartirish
+Asl imzoni saqlash (xavfsiz usul)"</string>
+    <string name="context_signature_verification_kill_option">Imzo tekshirish qotili</string>
+    <string name="context_signature_verification_kill_option_describe">Ilovaning imzosini tekshirishni aldashga harakat qiladigan dasturga kod kiritiladi. U asl ariza uchun qat’iy qo‘llanilishi kerak. Agar ilova allaqachon qayta tiklangan bo‘lsa, bu nafaqat yordam beradi, balki variant muvaffaqiyatli bajarilgan bo‘lsa ham zarar yetkazishi mumkin.</string>
+    <string name="context_support_patch">InApp va LVL emulyatsiyasini qo‘llab-quvvatlovchi patch</string>
+    <string name="context_tools">Vositalar</string>
+    <string name="context_trouble_enable_playprotect">“Play protect”ni yoqish</string>
+    <string name="context_trouble_run_playprotect_dialog">“Play protect” dialogini ishga tushirish</string>
+    <string name="context_unblock_internet_selected_apps">"Tanlangan ilovalar uchun internetni blokdan chiqarish
+Android 4+ da ishlamasligi mumkin"</string>
+    <string name="context_unblockads">Qurilmadagi reklamalarni blokdan chiqarish</string>
+    <string name="context_uninstall_if_installed">O‘chirish va o‘rnatish</string>
+    <string name="context_uninstall_selected_apps">Tanlangan foydalanuvchi ilovalarini olib tashlash</string>
+    <string name="contextads">Reklamalarni o‘chirish</string>
+    <string name="contextbackup">Zaxira</string>
+    <string name="contextblockfileads">APK dan havolalarni olib tashlash</string>
+    <string name="contextblockfileads_descr">AdsBlockList_user_edit.txt va AdsBlockList.txt fayllaridan andozalar yordamida http:// havolalarini o‘chiradi.</string>
+    <string name="contextboot">"Qayta yuklash uchun patch
+(Beqaror! Faqat kutubxonalarni patch qilish uchun)"</string>
+    <string name="contextbootads">Google reklamalarini olib tashlash</string>
+    <string name="contextbootcustom">Maxsus patch</string>
+    <string name="contextbootlvl">Litsenziya tekshiruvini o‘chirish</string>
+    <string name="contextcorepatch1">Imzolarni tekshirish holati har doim to‘g‘ri</string>
+    <string name="contextcorepatch1_descr">InApp, LVL va keygenlarni emulyatsiya qilish uchun zarur. Xaridlar va litsenziyalarni to‘g‘ri tekshirish uchun kerak.</string>
+    <string name="contextcorepatch2">.apk imzo tekshiruvini o‘chirish</string>
+    <string name="contextcorepatch2_descr">"Qayta imzo yaratmasdan ilovani o‘zgartirishga ruxsat beradi, shuning uchun ishlab chiqaruvchining imzosi o‘zgarishsiz qoladi. Boshqa foydalanuvchilar bu .apk'ni faqat Android Core'ga patch qo‘ygandan so‘ng o‘rnatishi mumkin (tarjima qilishda, himoyalangan ilovalarda grafikani o‘zgartirishda va h.k.)"</string>
+    <string name="contextcorepatch3">Paket menejerida imzoni tekshirishni o‘chirish</string>
+    <string name="contextcorepatch3_descr">Bir-birining ustiga har xil imzo qo‘yilgan ilovalarni o‘rnatish imkonini beradi.</string>
+    <string name="contextcorepatch3_descr_plus">"+
+O‘rnatilgan versiyadan eski versiyaga ega ilovalarni o‘rnatishga ruxsat beradi."</string>
+    <string name="contextcorepatch4">InApp va LVL emulyatsiyasini qo‘llab-quvvatlovchi patch</string>
+    <string name="contextcorepatch4_descr_xposed">Ilovalarni qo‘llab-quvvatlash patchisiz ishlash uchun emulyatsiya kerak.</string>
+    <string name="contextcorepatchrestore2_descr">"Android services.jar'dan barcha patchlarni o‘chirish"</string>
+    <string name="contextcorepatchrestore_descr">"Android core.jar'dan barcha patchlarni o‘chirish"</string>
+    <string name="contextcustompatch">Maxsus patch</string>
+    <string name="contextdeodex">"ODEX'ni o‘zgarishlar bilan o‘chirish
+(ilovani tiklash)"</string>
+    <string name="contextfulloffline">To‘liq oflayn qilish</string>
+    <string name="contextfulloffline_descr">Ilovani oflayn rejimda ishlashga urinishlar.</string>
+    <string name="contextignore">Litsenziyani tekshirishni olib tashlash</string>
+    <string name="contextlaunchapp">Ilovani ishga tushirish</string>
+    <string name="contextmultipatch">Bir nechta patch</string>
+    <string name="contextmultipatchrebuild">Bir nechta patch bilan apk</string>
+    <string name="contextodex">ODEX’dagi o‘zgarishlarni qo‘llash</string>
+    <string name="contextpatt1">Litsenziyani tasdiqlovchi modifikatsiyasi</string>
+    <string name="contextpatt1_descr">Agar u mavjud bo‘lsa, birinchi ishga tushganda internetga ulanishga ruxsat bering. Ushbu patchlar guruhi kichik o‘zgarishlar kiritadi.</string>
+    <string name="contextpatt2">Keshlangan litsenziyani tuzatish (Internetni tuzatish)</string>
+    <string name="contextpatt2_descr">Agar u mavjud bo‘lsa, ehtimol birinchi ishga tushganda internetga ulanishning hojati yo‘q.</string>
+    <string name="contextpatt3">Javob kodini tekshirishni tuzatish</string>
+    <string name="contextpatt3_descr">Litsenziyani tekshirish uchun mini-tuzatishlar.</string>
+    <string name="contextpatt4">Google javob kodini almashtirish</string>
+    <string name="contextpatt4_descr">Hali ham beqaror, lekin juda samarali. Agar u mavjud bo‘lsa, birinchi ishga tushganda internetga ulanishga ruxsat bering.</string>
+    <string name="contextpatt5">Litsenziyani yakuniy tekshirish</string>
+    <string name="contextpatt5_descr">Litsenziyani yakuniy tekshirish uchun namunalar. Agar bu ishlayotgan bo‘lsa, ilova internetga ulanmasdan ishlaydi.</string>
+    <string name="contextpatt6">Litsenziyani yakuniy tekshirish (teskari)</string>
+    <string name="contextpatt6_descr">Agar \"Litsenziyani yakuniy tekshirish\" muvaffaqiyatli bo‘lmasa, siz bu patchlarni sinab ko‘rishingiz mumkin.</string>
+    <string name="contextpattads3">Reklama qabul qiluvchini buzish</string>
+    <string name="contextpattads3_descr">Google reklamalarni olish mexanizmini buzishga harakat qiling.</string>
+    <string name="contextpattads4">Boshqa patchlar</string>
+    <string name="contextpattads4_descr">Reklamalarni olib tashlash uchun foydali bo‘lishi mumkin bo‘lgan boshqa patchlar.</string>
+    <string name="contextpattads6">Oflayn patch</string>
+    <string name="contextpattads6_descr">Reklama moduli uni oflayn deb hisoblasin.</string>
+    <string name="contextpattamazon">Avtomatik rejim (Amazon Market)</string>
+    <string name="contextpattamazon_descr">Amazon Marketidagi ilovalar uchun litsenziyani tekshirishni olib tashlash.</string>
+    <string name="contextpattdependencies_descr">Google Play bog‘liqliklari va boshqalar olib tashlanmoqda...</string>
+    <string name="contextpattlvl1">Avtomatik rejim</string>
+    <string name="contextpattlvl1_descr">Patchlarning minimal soni. Ko‘pgina ilovalar uchun oddiy himoya bilan mos keladi.</string>
+    <string name="contextpattlvl2">Avtomatik rejim (teskari)</string>
+    <string name="contextpattlvl2_descr">\"Avtomatik rejim\" dan bir nechta farqlar bor. Agar \"Avtomatik rejim\" muvaffaqiyatsiz bo‘lsa, bu sizga yordam berishi mumkin.</string>
+    <string name="contextpattlvl3">Boshqa patchlar (ekstremal rejim!)</string>
+    <string name="contextpattlvl3_descr">Qo‘shimcha patchlar (beqarorlikka olib kelishi mumkin). Boshqa namunalar muvaffaqiyatsiz bo‘lgan taqdirdagina murojaat qiling. Internet talab qiladi. \"Avtomatik rejim\" yoki \"Avtomatik rejim (teskari)\" bilan birgalikda ishlatishga harakat qiling.</string>
+    <string name="contextpattlvl4">Dalvik-keshga patchni qo‘llash</string>
+    <string name="contextpattlvl4_descr">Odatiy bo‘lib, barcha o‘zgarishlar odex faylga yoziladi. Agar tashqi SD -kartaga ilova qilingan bo‘lsa, bu usul to‘g‘ri ishlamaydi. Bunday vaziyatda \"Dalvik-keshga patchni qo‘llash\" yordam berishi mumkin. Siz ilovani faqat qayta o‘rnatish orqali tiklashingiz mumkin.</string>
+    <string name="contextpattlvl5">.apk faylini zaxiralash</string>
+    <string name="contextpattlvl5_descr">"Ilova paketi faylini SD-kartadagi Lucky Patcher jildiga nusxa ko‘chiradi. Siz ilovani nusxalangan APK'dan tiklashingiz mumkin."</string>
+    <string name="contextpattlvl6">Dalvik-keshni tozalash</string>
+    <string name="contextpattlvl6_descr">Odex-faylni yaratgandan so‘ng joyni tejash uchun ilovaning dalvik keshini o‘chirib tashlang. Agar ilova odex bilan yaxshi ishlamasa, siz ushbu ilovani qayta o‘rnatishingiz kerak.</string>
+    <string name="contextpattlvl_dex">Avtomatik rejim(dex)</string>
+    <string name="contextpattlvl_dex_descr">Patchlarning minimal soni. Faqat Google Play o‘rnatilgan bo‘lsa ishlaydi. Buzilgan dasturni birinchi boshlaganingizda, sizga internet kerak.</string>
+    <string name="contextpattsamsung">Avtomatik rejim (SamsungApps)</string>
+    <string name="contextpattsamsung_descr">SamsungApps’dan ilovalar uchun litsenziyani tekshirishni olib tashlash.</string>
+    <string name="contextreinstall">"Ilovani qayta o‘rnatish
+(barcha patchlarni olib tashlaydi)"</string>
+    <string name="contextrestore">Qayta tiklash</string>
+    <string name="contextselpatt">Tanlangan namunalar</string>
+    <string name="core_only_dalvik_cache_end">Agar qurilma muzlab qolsa yoki barcha patchlar ishlamasa, iltimos, qurilmani qo‘lda qayta yoqing.</string>
+    <string name="core_only_dalvik_cache_finished">"Dalvik-kesh uchun Android patch tugallandi.
+Natijalar:
+"</string>
+    <string name="core_option">faqat dalvik-keshni patch qilish.</string>
+    <string name="core_patch_apply">(patch qo‘llanildi)</string>
+    <string name="core_patch_nopatch">(patch qilinmagan)</string>
+    <string name="core_patch_nopatch_no_space1">"Core.jar'ning dalvik-keshi tuzatilgan, ammo dalvik-keshni yangilashda bunday turdagi patch yo‘qolishi mumkin. Tizimdagi ROM'da core.jar yaratish uchun joy etarli emas. Iltimos, taxminan 4 MB bo‘shating, dalvik-keshni tozalang va qayta urinib ko‘ring."</string>
+    <string name="core_result_checkbox">Dalvik-keshni har doim qayta yuklashda (faqat qayta ishga tushirilgandan so‘ng core.jar uchun patchlar olib tashlansa).</string>
+    <string name="corepatches">Android uchun patch</string>
+    <string name="corrupt_download">Yuklab olingan fayl buzilgan. Iltimos, SD-kartada bo‘sh joy etarli ekanligini tekshiring va keyinroq qayta urinib ko‘ring.</string>
+    <string name="create">Katalog yaratish</string>
+    <string name="create_clone_option1">Faqat AndroidManifest.xml ni o‘zgartiring</string>
+    <string name="create_clone_option1_descr">Bu barcha ilovalar uchun ishlamaydi. Agar klon o‘rnatilmagan bo‘lsa, asl nusxani olib tashlang. Agar bu usul ishlamasa, boshqa usulda klon yaratishga harakat qiling.</string>
+    <string name="create_clone_option2">AndroidManifest.xml, resurslar va classes.dex ni o‘zgartiring</string>
+    <string name="create_clone_option2_descr">Bu barcha ilovalar uchun ishlamaydi. Bu usul resurslar va classes.dex ni o‘zgartirishga harakat qiladi. Bunday klon asl nusxadan ko‘proq ajratilgan.</string>
+    <string name="create_dir_error">Xato: Katalog nomi bo‘sh.</string>
+    <string name="create_dir_error_2">Xato: katalog yaratilmagan.</string>
+    <string name="create_lic_done">Muvaffaqiyat! Litsenziya muvaffaqiyatli yaratildi. Ilovani oflayn rejimda sinab ko‘ring. Balki omadingiz kelar.</string>
+    <string name="create_perm_ok">Ilovani qayta yig‘ish</string>
+    <string name="createapk">O‘zgartirilgan APK fayl yaratish</string>
+    <string name="createapkads">Google reklamasiz APK</string>
+    <string name="createapkcustom">Maxsus patch qo‘llanilgan APK</string>
+    <string name="createapklvl">Litsenziya tekshiruvisiz APK</string>
+    <string name="createapksupport">InApp va LVL emulyatsiyasi uchun qayta qurilgan APK</string>
+    <string name="createdialog1">O‘zgartirishi</string>
+    <string name="createdialog1_clone">Kloni</string>
+    <string name="createdialog2">"yakunlandi.
+
+Fayl yo‘li:"</string>
+    <string name="createdialog3">Eslatma! Agar ilova patchdan keyin yaxshi ishlasa, u o‘zgartirilgan apk shaklida yaxshi ishlashiga kafolat yo‘q, ba’zi ilovalar o‘zgartirishdan himoyalangan. O‘zgartirishdan ko‘ra, siz patch tuzishda katta omadga ega bo‘lasiz.</string>
+    <string name="createdialog3_clone">Eslatma! Klonlangan ilovani o‘rnatishdan oldin ba’zi ilovalarni o‘chirish kerak. Klonlangan apk shaklida yaxshi ishlashiga kafolat yo‘q, ba’zi ilovalar o‘zgartirishdan himoyalangan.</string>
+    <string name="createdialog5">Fayl nomi:</string>
+    <string name="custom_descript">Maxsus patch tavsifi:</string>
+    <string name="custom_patch_log_add_custom_patch_to_boot_list">Qayta yuklashda patch qo‘shildi.</string>
+    <string name="custom_patch_log_block_internet_hosts">Internet xostlarni bloklash</string>
+    <string name="custom_patch_log_change_components">Komponentlarning o‘zgarishi</string>
+    <string name="custom_patch_log_change_preference_delete">Umumiy parametrni o‘chirish</string>
+    <string name="custom_patch_log_change_preference_insert">Umumiy imtiyozni kiritish</string>
+    <string name="custom_patch_log_change_preference_not_found_file">Fayl topilmadi</string>
+    <string name="custom_patch_log_change_preferences">Umumiy parametrlarni o‘zgartirish</string>
+    <string name="custom_patch_log_next_custom_patch">Keyingi maxsus patchni ishga tushiring</string>
+    <string name="custom_patch_log_offset">Novda</string>
+    <string name="custom_patch_log_or_patch_is_already_applied">yoki patch allaqachon qo‘llanildimi?!</string>
+    <string name="custom_patch_log_patch_all_files">Katalogdan fayllar uchun patch</string>
+    <string name="custom_patch_log_patch_done">Patch tayyor!</string>
+    <string name="custom_patch_log_patch_for">uchun patch</string>
+    <string name="custom_patch_log_patch_for_libraries">Kutubxonalar uchun patch</string>
+    <string name="custom_patch_log_patch_on_reboot_added">Qayta yuklashda patch qo‘shildi!</string>
+    <string name="custom_patch_log_pattern">Namuna</string>
+    <string name="custom_patch_log_pattern_not_found">Namuna topilmadi!</string>
+    <string name="custom_patch_log_search_bytes">Qidiruv bo‘yicha baytlar</string>
+    <string name="custom_patch_log_search_bytes_error">Baytlar topilmadi!</string>
+    <string name="custom_patch_log_skip_patch_for_build">Qurish uchun patchni o‘tkazib yuborish</string>
+    <string name="custom_patch_result_all_dont_patch">Maxsus patch dasturning ushbu versiyasi uchun yaroqsiz yoki allaqachon patch qilingan.</string>
+    <string name="custom_patch_result_not_all_patches_apply">Hamma namunalar almashtirilmaydi, lekin dastur ishlashi mumkin, uni sinab ko‘ring!</string>
+    <string name="custom_patch_warning">"Maxsus patch topilmadi. Bu root muammosi. SD-kartaga rootdan kirish imkoni yo‘q. Agar siz SuperSu'dan foydalansangiz, SuperSu'da \"nom maydonini ajratilishini o‘rnatish\" ni o‘chirib ko‘ring. Agar bu yordam bermasa, iltimos, SuperSu'ni yangilang va ikkilik faylni SuperSu'dan yangilang."</string>
+    <string name="custom_patches_update_not_found">Maxsus patchlar uchun yangilanishlar topilmadi.</string>
+    <string name="custom_sel_app">Tanlangan ilova:</string>
+    <string name="customdescr">Maxsus patch bilan barcha ilovalarni ko‘rsatadi.</string>
+    <string name="customtitle">Maxsus patchlangan ilovalar</string>
+    <string name="dalvik_cache_size">Dalvik-kesh hajmi:</string>
+    <string name="data_dir_size">Ma’lumotlar katalogi hajmi:</string>
+    <string name="date_creation_patch">Patch qo‘shilgan sana</string>
+    <string name="days_on_up">Avval yangi ilovalarni ko‘rsatish</string>
+    <string name="days_on_up_descr">Ilova yangi deb hisoblanishi mumkin bo‘lgan kunlarning maksimal sonini belgilang. Agar siz yaqinda o‘rnatilgan ilovalarning ro‘yxatning yuqori qismidagi harakatini o‘chirib qo‘ymoqchi bo‘lsangiz, 0 kunga sozlang.</string>
+    <string name="delboot">Yuklash ro‘yxatidan o‘chirish uchun bosing</string>
+    <string name="delete_file">Faylni o‘chirish</string>
+    <string name="delete_file_message">Haqiqatan ham %s faylini o‘chirishni xohlaysizmi?</string>
+    <string name="delete_system_app">Tizim ilovasini o‘chirish</string>
+    <string name="describe_for_Proxy_gp">(mini versiya litsenziyali va faqat ilova emulyatsiyasida)</string>
+    <string name="dialog_end_orig_resign_app">%1$s asl imzo bilan muvaffaqiyatli imzolandi. Ishdan chiqgan fayl %2$s da joylashgan.</string>
+    <string name="dialog_end_resign_app">%1$s sinov imzosi bilan muvaffaqiyatli imzolandi. Ishdan chiqgan fayl %2$s da joylashgan.</string>
+    <string name="dialog_system">Ushbu ilova Android operatsion tizimining bir qismidir. Har qanday operatsiyani bajarayotganda juda ehtiyot bo‘ling, chunki siz qurilmangizni g‘ishtlashingiz mumkin. Sizda zaxira nusxasi bormi? Haqiqatan ham ushbu ilova bilan ishlashni xohlaysizmi?</string>
+    <string name="dir_change">Katalogni o‘zgartirish</string>
+    <string name="dir_change_descr">"Lucky Patcher o‘z fayllarini saqlaydigan SD-kartadagi katalogni o‘zgartirish. Birlamchi yo‘l
+/mnt/sdcard/Android/data/[package_name_of_lucky_patcher]/files/LuckyPatcher"</string>
+    <string name="dirbinder">Katalog biriktiruvchisi</string>
+    <string name="dirr_chg">O‘zgartirilgan katalog:</string>
+    <string name="disable_autoupdate">Avtomatik yangilanishni o‘chirish</string>
+    <string name="disable_autoupdate_descr">Avtomatik yangilanishlarni o‘chirish uchun belgilang.</string>
+    <string name="disable_inapp_services_google">Google Play Marketiga InApp xizmatlari</string>
+    <string name="disable_inapp_services_google_descr">Agar bir nechta InApp xizmatlari yoqilgan bo‘lsa, ba’zi ilovalar ishdan chiqadi.</string>
+    <string name="disable_license_services_google">Google Play Marketiga litsenziya xizmati</string>
+    <string name="disable_license_services_google_descr">Agar bir nechta litsenziya xizmatlari yoqilgan bo‘lsa, ba’zi ilovalar ishdan chiqadi.</string>
+    <string name="disabled">o‘chirilgan</string>
+    <string name="disabled_package">Paket o‘chirilgan (muzlatilgan)</string>
+    <string name="dont_send_log_lp_modified">Lucky Patcher ilovasi o‘zgartirildi. Siz jurnalni yubora olmaysiz.</string>
+    <string name="dont_send_log_please_update_lp">Iltimos, Lucky Patcher jurnal yuborishi uchun oxirgi versiyasiga yangilang.</string>
+    <string name="dontusepatch">Bekor qilish</string>
+    <string name="download">Yuklanmoqda...</string>
+    <string name="download_progress_dialog_message_downloading">Faylni yuklab olish</string>
+    <string name="download_progress_dialog_message_prepare_downloading">Yuklab olish tayyorlanmoqda...</string>
+    <string name="download_progress_dialog_message_resume_downloading">Faylni yuklash davom etmoqda</string>
+    <string name="empty">bo‘sh</string>
+    <string name="empty_binders">Vidjet qo‘shish uchun kamida bitta bog‘lanishni yaratishingiz kerak.</string>
+    <string name="enabled">yoqilgan</string>
+    <string name="enabled_package">Paket yoqilgan.</string>
+    <string name="enter_name_dir">Katalog nomi:</string>
+    <string name="equals_version">Siz Lucky Patcherning so‘nggi versiyasidan foydalanyapsiz.</string>
+    <string name="error">Xato</string>
+    <string name="error2_backup_apk">APK faylini zaxiralash amalga oshmadi. classes.dex fayllari ilova ichida yo‘q.</string>
+    <string name="error_apk_to_system">Siz ushbu joydan ilovalarni o‘rnatolmaysiz, iltimos, uni SD-kartaga joylashtiring.</string>
+    <string name="error_app_installed_on_sdcard">Lucky Patcher ichki xotiraga o‘rnatilishi kerak. Aks holda, ba’zi xususiyatlari to‘g‘ri ishlamasligi mumkin.</string>
+    <string name="error_app_installed_on_sdcard_block">Lucky Patcher ichki xotiraga o‘rnatilishi kerak. Lucky Patcher tashqi SD-kartada bo‘lganida bu xususiyat ishlamaydi.</string>
+    <string name="error_backup_apk">APK faylini zaxiralash amalga oshirilmadi. Nusxalash uchun ruxsat yo‘q.</string>
+    <string name="error_classes_not_found">\".jar\" faylida patch uchun classes.dex mavjud emas. Ushbu \".jar\" fayli uchun \".odex\" faylini patch qilishga harakat qiling.</string>
+    <string name="error_collect_logs">Jurnal kollektorida xato yuz berdi. Jurnal yaratilmagan.</string>
+    <string name="error_create_join_custom_patch">"join_patch.txt faylini yaratib bo‘lmadi.
+Patch jildiga yozish uchun ruxsatlar bo‘lmasligi mumkin."</string>
+    <string name="error_create_oat">Patch qilingan classes.dex uchun .oat faylini yaratishda xato. Patch classes.dex da ba’zi xatolar yoki dasturiy ta’minot bilan bog‘liq ba’zi xatolarga yo‘l qo‘ydi. Lucky Patcher sozlamalarida java-root usulini o‘zgartirishga harakat qiling. Ba’zida yordam berishi mumkin.</string>
+    <string name="error_delete_join_custom_patch">"join_patch.txt faylini o‘chirib bo‘lmadi
+Faylni qo‘lda o‘chiring yoki jildni patch qiling."</string>
+    <string name="error_detect">Lucky Patcher majburiy yopilganga o‘xshaydi, xato haqida hisobot yubormoqchimisiz?</string>
+    <string name="error_expansion_copy_to_sdcard">Ilova o‘rnatilgan, lekin keshni /Android/obb jildiga nusxalashni iloji bo‘lmadi.</string>
+    <string name="error_get_classes_files_for_patch">Patch uchun classes.dex fayllari olinmadi.</string>
+    <string name="error_get_pkgInfo">Xato: Paket haqida ma’umot olinmadi.</string>
+    <string name="error_icon_content_description">Xato</string>
+    <string name="error_import_custom_patch">Lucky Patcher maxsus patchni import qila olmaydi. Zip arxiv buzilgan.</string>
+    <string name="error_installation">Ilovani o‘rnatib bo‘lmadi.</string>
+    <string name="error_launch">Ishga tushirib bo‘lmadi!</string>
+    <string name="error_message_for_share_app">Ilovani ulashish imkonsiz. Noma’lum xato. Lucky Patcher ishchi katalogini o‘zgartirishga harakat qiling.</string>
+    <string name="error_not_found_lic_data">Litsenziya olish uchun ma’lumot topilmadi.</string>
+    <string name="error_not_found_storage_lic">Litsenziya joylashuvi topilmadi.</string>
+    <string name="error_odex_app">Xato: odex yaratish jarayoni muvaffaqiyatsiz tugadi... Ehtimol, disk maydoni yetarli emas.</string>
+    <string name="error_odex_app_impossible">"Bu ilovada classes.dex mavjud emas. Dex'ni optimallashtirish mumkin emas."</string>
+    <string name="error_out_of_memory">Ushbu operatsiyani bajarish uchun xotira (RAM) yetarli emas. VM uyasi juda kichik.</string>
+    <string name="error_path">Noto‘g‘ri yo‘l!</string>
+    <string name="error_path_exists">Katalog allaqachon mavjud. Iltimos, yangi yo‘lni kiriting.</string>
+    <string name="error_read_folder">jildni o‘qib bo‘lmaydi!</string>
+    <string name="error_restore">Qayta tiklash amalga oshmadi.</string>
+    <string name="exit">Chiqish</string>
+    <string name="exposed_dropdown_menu_content_description">Pastga ochiluvchi menyuni ochish</string>
+    <string name="extpat1">Kabi ko‘rinadi</string>
+    <string name="extpat2">obyektlar litsenziya tekshiruviga ega:</string>
+    <string name="extpat3">"Ko‘rsatmalar:
+--------------
+- Iltimos, \"Zaxiralash\" tugmasini bosing;
+- Wi-Fi yoki mobil tarmoq orqali ma’lumotlarga kirishni yoqing va ilova uchun barcha ulanishlarga ruxsat bering;
+- Naqshni tanlang va \"Patch\" ni bosing;
+- \"Ishga tushirish\" ni bosing va litsenziya holatini tekshiring (agar kerak bo‘lsa, yangilang);
+- Agar bu naqsh yordam bermasa, \"Qayta tiklash\" tugmasini bosing va boshqa naqsh bilan qaytadan urinib ko‘ring.
+ Agar operatsiya muvaffaqiyatli bo‘lsa, o‘zgarishlarni tuzatishni bosing."</string>
+    <string name="extres1">"Patch tugallandi! Ilovaning litsenziya holatini ishga tushiring va tekshiring;
+- Agar bu namuna yordam bermasa, “Qayta tiklash”ni bosing va protsedurani boshqa namuna bilan takrorlang."</string>
+    <string name="extres2">"Bu namuna uchun teglar topilmadi.
+Allaqachon patch qilinganmi?
+\"Qayta tiklash\" ga teging, boshqa namunani tanlang va uni yana patch qiling."</string>
+    <string name="failed">muvaffaqiyatsiz</string>
+    <string name="fast_start">Tezkor ishga tushirish</string>
+    <string name="fast_start_descr">Lucky Patcher ma’lumotlar bazasidan belgilar yuklanishini o‘chirib qo‘yadi. Bu ilovalar ro‘yxatini kechiktiradi...</string>
+    <string name="file_not_deleted">Fayl o‘chirilmadi.</string>
+    <string name="file_not_found">"Ilovani SD-kartaga ko‘chirib bo‘lmadi!
+ Iltimos, SD-kartadan joy bo‘shating yoki busybox o‘rnatilishini tekshiring."</string>
+    <string name="filter">Filtr</string>
+    <string name="filter0">Yangi va yangilangan ilovalar</string>
+    <string name="filter1">LVL bilan ilovalar</string>
+    <string name="filter10">O‘chirilgan (muzlatilgan) ilovalar</string>
+    <string name="filter11">Maxsus patch bilan ilovalar</string>
+    <string name="filter12">O‘zgartirilgan bayroqli ilovalar</string>
+    <string name="filter13">Odex qilingan ilovalar</string>
+    <string name="filter2">Reklamali ilovalar</string>
+    <string name="filter4">InApp Google bilan ilovalar</string>
+    <string name="filter5">Qurilma xotirasidagi ilovalar</string>
+    <string name="filter6">SD-kartadagi ilovalar</string>
+    <string name="filter7">Tizim ilovalari</string>
+    <string name="filter8">Yangilanishlar bilan tizim ilovalari</string>
+    <string name="filter9">SEND_SMS va CALL_PHONE ruxsatiga ega ilovalar</string>
+    <string name="filterSplittedApps">Ilovalarni ajratish</string>
+    <string name="filterdescr">Ko‘rsatish uchun toifalarni tanlang.</string>
+    <string name="final_market_message">Google Play o‘rnatildi. Endi core.jar patch qilindi va qurilmangiz qayta yuklanadi. Davom etilsinmi?</string>
+    <string name="fixbutton">O‘zgarishlarni tuzatish</string>
+    <string name="fixeddescr">O‘zgartirilgan barcha ilovalarni ko‘rsatadi (sariq yulduz belgisi)</string>
+    <string name="fixedtitle">"ODEX'da tuzatishlar kiritilgan ilovalar"</string>
+    <string name="framework_file_patched">patch qilingan va bunday nomi o‘zgartirilgan</string>
+    <string name="framework_patch_not_result">Lucky Patcher tuzatish uchun bayt topa olmadi.</string>
+    <string name="generate_log_error_message">Jurnal yaratilmagan. Yaratish jarayonida xatolik yuz berdi.</string>
+    <string name="generate_log_for_conscrypt_jar_fix_android_patches">"conscrypt.jar uchun jurnal yaratish
+(\"Android uchun patch\" uchun tuzatish)"</string>
+    <string name="generate_log_for_core.jar_fix_android_patches">"core-libart.jar uchun jurnal yaratish
+(\"Android uchun patch\" uchun tuzatish)"</string>
+    <string name="generate_log_for_core_oj_jar_fix_android_patches">"core-oj.jar uchun jurnal yaratish
+(\"Android uchun patch\" uchun tuzatish)"</string>
+    <string name="generate_log_for_framework_fix_android_patches">"framework.jar uchun jurnal yaratish
+(\"Android uchun patch\" uchun tuzatish)"</string>
+    <string name="generate_log_for_services.odex_fix_android_patches">"services.jar uchun jurnal yaratish
+(\"Android uchun patch\" uchun tuzatish)"</string>
+    <string name="generate_log_result_message_conscrypt.jar">"Bu yerda /sdcard/conscrypt.oat.txt jurnali yaratilgan va saqlangan. Faylni bulutga saqlang yoki zip qilib siqing. Keyin menga pochta orqali yuboring lp.chelpus@gmail.com.
+Fayl hajmi:"</string>
+    <string name="generate_log_result_message_core_oj.jar">Bu yerda /sdcard/core-oj.oat.txt jurnali yaratilgan va saqlangan. Faylni bulutga saqlang yoki zip qilib siqing. Keyin menga pochta orqali yuboring lp.chelpus@gmail.com.Fayl hajmi:</string>
+    <string name="go_to_file_path">Faylga borish</string>
+    <string name="goodresult">"% Omad!
+Iltimos, sinov uchun ilovani ishga tushiring!
+
+Agar ilova noto‘g‘ri ishlayotgan bo‘lsa, iltimos, uni qayta o‘rnating va ushbu versiyasini tuzatishga urinmang."</string>
+    <string name="google_play_installer_clear_data_google_services">"Google Play'da google hisobiga kirish muammosini tuzatish uchun gooogle xizmatlari ma’lumotlarini tozalang."</string>
+    <string name="have_luck">"***********************
+
+Sizda bor"</string>
+    <string name="header_activities">Faoliyatlar:</string>
+    <string name="header_providers">Provayderlar:</string>
+    <string name="header_receivers">Qabul qiluvchilar:</string>
+    <string name="header_services">Xizmatlar:</string>
+    <string name="help">Yordam</string>
+    <string name="help_3dot">"Bu ajratilgan ilova. Zaxira nusxasini yaratishda 'apks' turidagi konteyner yaratiladi;"</string>
+    <string name="help_PS">P.S.: Lucky Patcher ilovaga patch qo‘llasa, uni yopadi. Bu yangi o‘zgarishlar davom etishi uchun zarur. Biroq, ba’zida siz qurilmaning o‘zini qayta ishga tushirishingiz yoki o‘zgarishlarni ko‘rish uchun ta’sirlangan ilovaning jarayoni yoki jarayonlarini o‘chirish uchun uchinchi tomon vositasidan foydalanishingiz kerak bo‘lishi mumkin.</string>
+    <string name="help_bootlist_describing">*%1$s - Yuklash paytida patch qilingan ilovalar ro‘yxati. Bu yerda faqat \".so\" kutubxonalarini tuzatishni talab qiladigan maxsus patchlar uchun foydalidir. Ularni yuklash ro‘yxatiga qo‘shish uchun maxsus patchlar tavsifida ko‘rsatiladi.</string>
+    <string name="help_common">Asosiy</string>
+    <string name="help_custom">Maxsus patch yaratish</string>
+    <string name="help_custom_add_boot_tag">joriy foydalanuvchi patchini \"%1$s\" ga avtomatik ravishda qo‘shadi. Patch kutubxonasida foydalanish kerak (yoki [ODEX] siz yoki [PACKAGE] siz patch [CLASSES] da)</string>
+    <string name="help_custom_add_file_in_apk_tag">"Lucky Patcher direktoridan apk arxiviga fayl qo‘shish:
+Misol:"</string>
+    <string name="help_custom_all_files_tag">"katalogdagi barcha fayllarni patch qiladi. \"dir\" - patch fayllari uchun katalog. \"template\" - fayllarni patch qilish uchun andoza (shablonda faqat \"*\" dan foydalanish mumkin).
+Misol:"</string>
+    <string name="help_custom_all_lib_tag">barcha mahalliy kutubxonalar uchun namuna qidirish/almashtirish</string>
+    <string name="help_custom_apk_build_param">Ushbu namunani faqat build=apk_build bilan apk uchun qo‘llang. Siz build>=apk_build uchun namunani qo‘llashingiz mumkin (Misol: {\"apk_build\":\"206+\"}) yoki kamroq yoki teng apk_build yaratish uchun ariza topshirishi mumkin (Misol: {\"apk_build\":\"206-\"}).</string>
+    <string name="help_custom_apk_build_param2">Agar siz ikkita apk_builds ni belgilasangiz, apk versiyasi oralig‘ida patch namunasini qo‘llashingiz mumkin:</string>
+    <string name="help_custom_begin_tag">foydalanuvchiga oldindan patch ko‘rinadigan patch sharhlari</string>
+    <string name="help_custom_begin_tag_detail">Boshlanish belgisi, undan keyingi barcha matn va birinchi maydongacha [CLASSES], [LIB], [END] va h.k. foydalanuvchi uchun patch jurnalining boshida ko‘rsatiladi.</string>
+    <string name="help_custom_block_hosts_tag">"sanab o‘tilgan internet xostlarini bloklaydi. \"host\" - bloklamoqchi bo‘lgan xost.
+Misol:"</string>
+    <string name="help_custom_classes_bez_package_tag">"Dalvik-kesh ilovalar patchlar. Shuni unutmangki, tizim vaqti-vaqti bilan dalvik-kesh ilovalarini yangilaydi va barcha o‘zgarishlar yo‘qoladi. Shuning uchun biz [Qo'shish-BOOT] ni qo‘shishimiz kerak. Dalvik-kesh uchun patch eskirgan, chunki u ishonchsiz. Lekin u ROM Vositalar qutisi uchun kerak, chunki u odex fayllar bilan yaxshi ishlamaydi.
+Misol:"</string>
+    <string name="help_custom_classes_name_param">Bitta maxsus sinf fayliga patchni qo‘llash (misol uchun: {\"classes_name\":\"classes2.dex\"}, {\"classes_name\":\"classes3.dex\"}, {\"classes_name\":\"classes.dex\"} ...).</string>
+    <string name="help_custom_classes_tag">classes.dex uchun namuna qidirish/almashtirish (pastga qarang)</string>
+    <string name="help_custom_classes_tag_detail">Bu yerda classes.dex patch uchun chiziqlar mavjud. Ular qidiruv, asl o‘rnini bosuvchi va quyida tavsiflangan boshqa variantlar bo‘lishi mumkin.</string>
+    <string name="help_custom_component_tag">"Ilovalar tarkibiy qismlarini yoqish yoki o‘chirish.
+Misol:"</string>
+    <string name="help_custom_copy_file_tag">"Lucky Patcher direktoridan faylni yangi fayl nomi bilan yo‘lga nusxalash:
+Misol:"</string>
+    <string name="help_custom_database_param">Qurilmadagi ma’lumotlar bazasiga yo‘l yoki siz faqat Lucky Patcher o‘zini qidirish fayli uchun ma’lumotlar bazasi nomida foydalanishingiz mumkin.</string>
+    <string name="help_custom_delete_file_in_apk_tag">"Apk arxividagi faylni o‘chirish:
+Misol:"</string>
+    <string name="help_custom_delete_folder_in_apk_tag">"APK arxividagi faylni o‘chirish:
+Misol:"</string>
+    <string name="help_custom_deprecated_tag">Eskirgan</string>
+    <string name="help_custom_end">Siz hamma narsani tahrirladingiz, faylni saqlang va Lucky Patcher papkasida joylashgan \"CustomPatches\" katalogiga tashlang. Ushbu jildni eng yuqori qismidagi \"Haqida\" bo‘limida ko‘rish mumkin. Keyin dastur sariq rangda ta’kidlanadi va siz unga ushbu patchni qo‘llashingiz mumkin.</string>
+    <string name="help_custom_end_tag">post-patch foydalanuvchiga ko‘rinadigan patch izohlari</string>
+    <string name="help_custom_execute_param">SQLite so‘rov.</string>
+    <string name="help_custom_file_in_apk_tag">apk faylidan fayl uchun namuna qidirish/almashtirish (bu patch faqat ushbu maxsus patch bilan apk ni qayta qurish uchun ishlaydi)</string>
+    <string name="help_custom_general_text1">- Patch fayli maqsadli APK bilan bir xil nomga ega bo‘lishi kerak (bu katta harf sezgir).</string>
+    <string name="help_custom_general_text2">- Agar fayl allaqachon mavjud bo‘lgan ilova uchun maxsus patch bo‘lsa, siz shunchaki fayl nomining boshiga istalgan matnni qo‘shishingiz va uni mavjudlar yaqinida saqlashingiz mumkin.</string>
+    <string name="help_custom_general_text3" formatted="false">- Agar siz bitta firmada bir qator dasturlarni bir marta yozmoqchi bo‘lsangiz, so‘ngra maxsus patch fayl nomi bilan tugaydi, siz _%ALL% dan foydalanishingiz mumkin, masalan, SVOX barcha ovozlar uchun patch nomi quyidagicha ko‘rinadi: com.svox.classic.langpack_%ALL%.txt. _%ALL% da paketning nomi qismi bilan almashtiriladi, bu firmaning qo‘llanilishiga qarab o‘zgaradi. Patch faylida maxsus belgilar/formatlashdan foydalanmang (faqat bitta bo‘shliqlar). Agar siz bitta firmaning bir nechta dasturlari uchun patch yaratishingiz va boshida prefiks qo‘shishingiz kerak bo‘lsa, siz %ALL%_ va _%ALL% dan foydalanishingiz mumkin. (Misol nomi: chelpus.%ALL%_com.android._%ALL%.txt).</string>
+    <string name="help_custom_general_text4" formatted="false">- Siz fayllarga yo‘l uchun %PACKAGE_NAME% tarkibini maxsus patch uchun foydalanishingiz mumkin, bu %PACKAGE_NAME% maqsadli ilovalarning paket nomi bilan almashtiriladi.</string>
+    <string name="help_custom_general_text5">- Bayt namunalarini qidirish uchun IDA Pro 6.1+ dan foydalaning. U dalvik-kesh, odex, kutubxonalar va classes.dex ni ochishi mumkin.</string>
+    <string name="help_custom_general_text6">- Agar siz dalvik-kesh yoki odex ni patch qilmoqchi bo‘lsangiz, turli xil dasturiy ta’minot versiyalarida ma’lumotlar baytlari farq qilishi mumkinligini unutmang. Shuni yodda tutingki, baytlardagi barcha classes.dex lar dalvik-kesh va odex bilan mos kelmaydi. Ushbu misolda siz IDA Pro da classes.dex va odex faylini ochganingizni ko‘rishingiz mumkin</string>
+    <string name="help_custom_general_text7">- Lucky Patcher ver.6.5.4+ da lpzip fayllarini yaratish qobiliyati qo‘shilgan. Bu zip arxivi bo‘lib, unda apk fayllari va maxsus patchlar bo‘lishi mumkin. Apk o‘rnatiladi. Maxsus patchlar avtomatik ravishda Lucky Patcherga import qilinadi. (Misol: installSomeAppsWithPatch.lpzip)</string>
+    <string name="help_custom_group_param">"Guruh namunalarini belgilaydi (guruh raqami 1 yoki undan yuqori bo‘lishi mumkin). Siz 'Nima degani bu?' ni so‘rashingiz mumkin. Bu shuni anglatadiki, agar guruhdan kamida bitta namuna muvaffaqiyatli bo‘lsa, muvaffaqiyatli patch qilingan xabar ko‘rsatiladi.Bu ma’lum bir ilovaning bir nechta versiyalari uchun universal patch yaratmoqchi bo‘lganingizda foydalidir (masalan, avtomatik yangilanishlarni o‘chirish uchun Google Play'ning barcha versiyalarini patch qilish)."</string>
+    <string name="help_custom_increment_decrement_param">"Asl baytdan o‘nlik sonlarni qo‘shish va ayirish ...
+Misol uchun:"</string>
+    <string name="help_custom_increment_decrement_param_end">Yoki bu erda bir misol:</string>
+    <string name="help_custom_insert_param">"Agar siz kiritmoqchi bo‘lsangiz, ma’lumotlar uzunligi asl namuna uzunligidan kattaroq yoki kichikroq bo‘ladi.
+(Misol)patch oldidagi fayl quyidagilarni o‘z ichiga oladi:\"chelpa end\""</string>
+    <string name="help_custom_insert_param_end">patchdan keyingi fayl quyidagilarni o‘z ichiga oladi:\"chelpaa end\"</string>
+    <string name="help_custom_lib_tag">nomli mahalliy kutubxonalar uchun namuna qidirish/almashtirish (pastga qarang)></string>
+    <string name="help_custom_lib_tags">Bu shuni anglatadiki, ushbu dastur kutubxonasining patchi uchun satrlar keladi, \"nom\" - kutubxonaning nomi (agar siz nom o‘rniga * qo‘ysangiz, barcha ilovalar kutubxonalari patch qilinadi).</string>
+    <string name="help_custom_libs_tags">/lib/armeabi/, /lib/armeabi-v7a/, /lib/arm64-v8a/, /lib/mips/, /lib/x86/, /lib/x86_64/ kutubxonalari uchun.</string>
+    <string name="help_custom_name_param">Odatda patch qo‘llaniladigan obyektni ko‘rsatadi. Bu faqat fayl nomi, yo‘li bo‘lgan fayl nomi va shunga o‘xshash bo‘lishi mumkin. Ba’zi hollarda siz barcha kutubxonalarni patch uchun \"*\" dan foydalanishingiz mumkin, masalan, kutubxona nomi noma’lum bo‘lsa.</string>
+    <string name="help_custom_odex_patch_tag">"Patch uchun foydalanish allaqachon odex yaratilgan. Masalan, Litsenziyani tekshirishni olib tashlash orqali ilova avtomatik rejim bilan patch qilingan, lekin siz Maxsus patch yordamida qo‘shimcha o‘zgarishlar qilishingiz kerak. Agar biz oddiy [PACKAGE]-[CLASSES], [ODEX] yoki [CLASSES]-[ODEX] dan foydalansak, odex fayl hech qanday o‘zgarishsiz yaratiladi va shundan keyingina patch qilinadi. Lucky Patcherning ushbu versiyasida bu endi talab qilinmaydi, chunki \"%1$s\" opsiyasi mavjud. 
+Misol:"</string>
+    <string name="help_custom_odex_tags">"Eski Android'larda bu tegdan foydalanish mumkin edi. [CLASSES] tegi o‘rniga siz undan foydalanishingiz mumkin. Keyin classes.dex dagi o‘zgarishlar dalvik-keshda emas, balki tizim keshni yangilaganda ular vaqti-vaqti bilan yo‘qoladi, lekin barcha o‘zgarishlarni tuzatadigan ilovaning apk yonidagi odex kengaytmali alohida faylda saqlanadi. va asl dalvik-keshni buzilmagan holda qoldiring - agar dastur uni tekshirsa, bu shunday bo‘ladi. Siz [ODEX] dan [CLASSES] dan keyin foydalanishingiz mumkin, keyin o‘zgartirishlar dalvik keshiga kiritiladi va avtomatik ravishda odex ga kiritiladi. Zamonaviy dasturiy ta’minotda bu shart emas."</string>
+    <string name="help_custom_offset_param">Ushbu ofset patchni qo‘llash uchun o‘n oltilik formatdagi boshlang‘ichga nisbatan.</string>
+    <string name="help_custom_original_param">Bu patch qo‘llaniladigan ofsetni topish uchun ishlatiladigan namuna niqobi.</string>
+    <string name="help_custom_original_param_end">Bu misolda baytlar namuna niqobini tashkil qiladi va (??, **) har qanday baytni bildiradi.</string>
+    <string name="help_custom_other_files_tag">/data/data/Package_Target_APK/ yoki /sdcard (pastga qarang) da nomlangan boshqa fayllar uchun namuna qidirish/almashtirish</string>
+    <string name="help_custom_package_tag">classes.dex ni ochadi va unga [CLASSES] dan barcha patchlarni qo‘llaydi. Va o‘zgartirilgan classes.dex, odex fayli asosida hosil qiladi.</string>
+    <string name="help_custom_package_tag_detail">"Bu teg biz dalvik-keshni to‘g‘ridan-to‘g‘ri tuzatmasligimizni anglatadi, lekin biz maqsadli ilovadan classes.dex ni olib tashlaymiz, ([CLASSES] yoki [ODEX] identifikatorlariga mos keladigan patch bilan) patch qilish, o‘zgarishlar bilan odex tasvirini yaratamiz va ilovaga qo‘yamiz. Bu, masalan, TitaniumBuckup ga kerak bo‘lgan rasm. uni tekshiradi va uning ichidagi barcha checksum to‘g‘ri bo'lishi kerak. Ushbu tegdan har doim foydalanish tavsiya etiladi, chunki bunday patch eng to‘g‘ri, ammo agar u biron bir muammoga olib keladigan bo‘lsa, u holda bu mumkin."</string>
+    <string name="help_custom_permission_tag">"Ilovaning ma’lumotlar yo‘riqnomasidagi fayllar uchun \"chmod permissions file_name\" analog linux buyrug‘i:
+Misol:"</string>
+    <string name="help_custom_rename_file_in_apk_tag">"Apk arxividagi fayl nomini qayta nomlash:
+Misol:"</string>
+    <string name="help_custom_replace_from_file_param">bu \"original\" bayonotiga amal qiladi, bu ofset fayldagi baytlar bilan yoziladi (fayl maxsus patch yaqinida saqlanishi kerak).</string>
+    <string name="help_custom_replace_from_file_param_end">Bu almashtirish uchun juda uzun andozalarni yozmaslik uchun amalga oshiriladi.</string>
+    <string name="help_custom_replaced_param">Bu \"original\" yoki \"offset\" dan keyin bo‘lishi kerak, bu baytlar ustiga yoziladi yoki belgilangan ofsetda yoziladi. (?? yoki **) bilan belgilangan joylardagi baytlar tegmasdan qoladi:</string>
+    <string name="help_custom_replaced_param_end">Ushbu misolda, W0, W1, W2 baytlari oldindan bajarilgan \"qidirish\" baytlarida saqlanadi</string>
+    <string name="help_custom_s0_s1_sq_param">"Smali o‘zgaruvchini mos ravishda 0 (hex sonini quyidagiga aylantiring: 43->03,54->04...) yoki 1 (hex sonini quyidagiga aylantiring: 43->13,04->14...) yoki o‘rnatadi, SQ hexga aylantiring 34->44, 51->11 ...
+Masalan, o‘zgaruvchi mavjud : const/4 v?,0x00 . Savol belgisi bu var raqami noma’lumligini (masalan, yangi versiyada o‘zgartirilgan) ko‘rsatadi, lekin bu var 0 ga teng ekanligiga ishonchingiz komil va siz uni 1 ga o‘rnatmoqchisiz. Bunday holda, namuna quyidagicha ko‘rinadi:"</string>
+    <string name="help_custom_s0_s1_sq_param_end">Va aksincha, o‘zgaruvchini 0 ga o‘rnatish uchun:</string>
+    <string name="help_custom_search_param">Qidiruv namunasini qidirish va baytlarni muayyan pozitsiyalarda saqlash imkonini beradi.</string>
+    <string name="help_custom_search_param_end">bu o‘sha pozitsiyalardagi baytlar R0, R1, R2 da saqlanadi degan ma’noni anglatadi. Endi ular topilgan va saqlangan, siz ularni almashtirish namunalarida faqat R ni W ga almashtirish orqali ishlatishingiz mumkin.</string>
+    <string name="help_custom_shared_preferences_tag">"Umumiy afzalliklar xml fayl muharriri (o‘zgaruvchilarni kiritish yoki olib tashlash):
+Misol:"</string>
+    <string name="help_custom_sqlite_tag">"Ba’zida maqsadli ilova ma’lumotlar bazasida biror narsani o‘zgartirishi kerak, keyin yordam berish uchun bu imkoniyat paydo bo‘ladi:
+Misol:"</string>
+    <string name="help_custom_syntax_text_start">Mana patch namunasi:</string>
+    <string name="help_custom_title_detailed_description">Teglarning batafsil tavsifi va ularning parametrlari:</string>
+    <string name="help_custom_title_general">Umumiy ma’lumot:</string>
+    <string name="help_custom_title_syntax">Sintaksis yordam:</string>
+    <string name="help_custom_warning_text">"Sakrashlarni olib tashlamang yoki ularni shartsiz qilmang! Optimizator ishdan chiqadi va sizning patch ART da ishlamaydi. Bunga yo‘l qo‘ymaslik uchun shartli sakrashlardan foydalaning. Misol uchun, agar sakrash zarurati bo'lsa, sakrashni if-q v0,v0 (baytlar: 32 00 ?? ??) bilan almashtiring. Agar ma’lum bir joyda sakrashning hojati bo‘lmasa, siz if-ne v0,v0 (baytlar: 33 00 ?? ??) kabi sakrashni kiritishingiz mumkin; o‘zingizning ekvivalentingizdan ham bemalol foydalaning."</string>
+    <string name="help_custom_warning_title">OGOHLANTIRISH:</string>
+    <string name="help_cyan_apps">Ushbu ilova ichida reklama topildi;</string>
+    <string name="help_describe_for_apply_changes_to_dalvik_cache">Birlamchi rejimda barcha o‘zgarishlar ODEX faylida qoladi. Dalvik-keshga nusxalash ODEX fayllari ilova uchun ishlamasa yordam berishi mumkin (masalan, ilova SD kartaga ko‘chirilganda). Biroq, uni qayta tiklash uchun ilovani qaytadan o‘rnatishingiz kerak.</string>
+    <string name="help_describe_for_backup_app">Keyinchalik tiklash uchun APK faylini zaxiralang. APK fayli zaxira jildiga saqlanadi.</string>
+    <string name="help_describe_for_backup_settings_app">Ilova ma’lumotlarini ichki xotiradan Lucky Patcher jildiga zaxiralaydi.</string>
+    <string name="help_describe_for_create_backup_before_patch">Lucky Patcherning ma’lumotlar jildida APK faylini SD kartaga nusxalash. Ilovani ushbu APK dan qaytadan o‘rnatishingiz (qayta tiklashingiz) mumkin.</string>
+    <string name="help_describe_for_create_mod_apk">Oldindan qo‘llanilgan patchlar bilan APK o‘rnatish paketini yaratadi. Shuni yodda tutish kerakki, qayta tiklangan ilova patch orqali patch qilingan ilova kabi ishlamasligi mumkin. Bu muammo mavjud, chunki ilova kod va imzodagi har qanday o‘zgarishlarni topish uchun o‘zini tekshirishi mumkin.</string>
+    <string name="help_describe_for_create_odex">Ilovaning o‘zgarmagan ODEX faylini yarating.</string>
+    <string name="help_describe_for_dex_verification_killer">Ba’zida ilova qayta tiklanganidan keyin ishga tushmaydi yoki noto‘g‘ri imzo yoki dex fayllari checksum haqida shikoyat qiladi yoki xaridlarni amalga oshirmaydi va hk. Bunday holda, ushbu funksiya yordam berishi mumkin. U ilova ichidagi imzoni tekshirish yoki dex fayllari checksum tekshiruvini aldashga harakat qiladigan kodni kiritadi. Ushbu parametr faqat asl ilovaga qo‘llanilishi kerak. Agar allaqachon patch qilinganiga qo‘llanilsa, u allaqachon muvaffaqiyatli amalga oshirilgan bo‘lsa ham, bu parametr buziladi. Usul natijasida ilova hajmi ikki barobar ortadi.</string>
+    <string name="help_describe_for_disable_components_pm_disable">Tanlangan ruxsatlar, xizmatlar, faoliyatlar va hk. olib tashlanadi. Bu qobiliyat Android ga o‘rnatilgan va shuning uchun zararli emas. Ishlashni to‘xtatishi mumkin bo‘lgan yagona narsa bu o‘zgartirilgan ilova bo‘lib, uni qaytadan ruxsatlarini yoqish orqali osongina tuzatish mumkin.</string>
+    <string name="help_describe_for_hard_apk_permission_disale">Ilova ruxsatlarini olib tashlaydi (packages.xml tizim faylini tahrirlaydi). Buni qilayotganda juda ehtiyot bo‘ling. Ba’zi qurilmalarda bu usul dumaloq qayta ishga tushirishga yoki boshqa kiruvchi oqibatlarga olib kelishi mumkin. Ruxsatlarni o‘chirishga urinishdan oldin tizimning zaxira nusxasini yarating.</string>
+    <string name="help_describe_for_lvl_auto_mode">Litsenziya tekshiruvini olib tashlashga urinish. Ilovaning maksimal barqarorligini ta’minlash uchun andozalarning kichik bir qismidan foydalanadi. Agar ushbu usul yordamida olingan foiz past bo‘lsa, patch qilingan ilovadan foydalanganda internet aloqasi mavjudligiga ishonch hosil qiling.</string>
+    <string name="help_describe_for_lvl_auto_mode_dex">Litsenziya tekshiruvini olib tashlashga urinish. Patchdan keyin ilovaning maksimal barqarorligini ta’minlaydi. Ammo buzilgan ilova birinchi ishga tushirishda ishlashi uchun sizga o‘rnatilgan Google Play va internet bo‘lishi kerak.</string>
+    <string name="help_describe_for_lvl_auto_mode_inverse">\"%1$s\" dan bir nechta farqlar mavjud. Agar \"%1$s\" ilovani muvaffaqiyatli patch qilmasa, bu yordam berishi mumkin.</string>
+    <string name="help_describe_for_lvl_other_patches_extreme_mode">Litsenziya tekshiruvini butunlay olib tashlashga urinishlar. Barcha andozalardan foydalanadi. Patch qilingan ilova beqaror bo‘lishi mumkin, odatda ilova oflayn bo‘lganda beqarorlik yuzaga keladi. Ilovani qayta-qayta ishga tushirish, ekran yo‘nalishini o‘zgartirish yoki o‘chirish yordam berishi mumkin.</string>
+    <string name="help_describe_for_lvl_remove">Maqsadli ilova ishlab chiquvchi imzosi bilan imzolanishi va boshqa tomonidan o‘zgartirilmasligi kerak. Patchlarning ijobiy ta’siri uchun sizga o‘rnatilgan Google Play (Google market) tegishli hisob qaydnomasi kiritilgan va maqsadli ilovani birinchi marta ishga tushirganingizda internet yoqilgan bo‘lishi lozim. Har doim litsenziya tekshiruvini \"%1$s\" yordamida olib tashlashga harakat qiling, agar yordam bermasa, \"%2$s\" ni sinab ko‘ring. Agar u jiddiy xatolarga olib kelsa, \"%3$s\" da faqat ba’zi andozalarni tanlashga urinib ko‘rishingiz mumkin.</string>
+    <string name="help_describe_for_lvl_sellect_patterns">Litsenziya tekshirishni olib tashlash uchun tanlangan andozalarni ilovaga qo‘llaydi.</string>
+    <string name="help_describe_for_move_to_system">Foydalanuvchi ilovasini tizim ilovasiga aylantiradi.</string>
+    <string name="help_describe_for_patch_on_reboot">Bu sozlama endi ahamiyatsiz, chunki Lucky Patcherning yangi versiyalarida barcha o‘zgarishlar ilovaning ODEX faylida saqlanadi, u qayta yuklashda o‘zgarmaydi. Ushbu sozlama faqat maxsus patch ilovaning \".so\" kutubxonalarini o‘zgartirsa foydali bo‘lishi mumkin, bu patch tavsifida ko‘rsatiladi.</string>
+    <string name="help_describe_for_remove_ad_activities">"Turli xil ilovalar faoliyatini qo‘lda o‘chirish. Ba’zi faoliyatlar ular nima qilayotgani haqida tavsifga ega. Agar ilova ishlashni to'xtatsa, faoliyatlarni qayta yoqish mumkin."</string>
+    <string name="help_describe_for_remove_ads">Reklamalarni olib tashlashga urinishlar. Lucky Patcher reklamalarni o‘z ichiga olgan ilovada reklama topmagan bo‘lsa ham, ushbu patchni ishlatib ko‘ring. Bu reklamalarni olib tashlashi mumkin.</string>
+    <string name="help_describe_for_remove_dalvik_cache_after_patch">ODEX faylini yaratgandan so‘ng, bo‘sh joyni tejash uchun ilovaning dalvik-keshi o‘chiriladi. Agar ilova ODEX bilan ishlamasa, ilovani qaytadan o‘rnatishingiz kerak.</string>
+    <string name="help_describe_for_remove_odex">O‘zgarishlarni o‘z ichiga olgan ODEX faylini olib tashlaydi. Shunday qilib, ilovani asl holatiga qaytarish.</string>
+    <string name="help_describe_for_remove_purchase_from_db">Google Billing emulyatsiya orqali saqlangan xaridlarni olib tashlash.</string>
+    <string name="help_describe_for_restore_app">Zaxira jildida APK faylidan ilovani tiklang.</string>
+    <string name="help_describe_for_restore_app_data">/data/data/application_package_name/ jildida ichki xotirada saqlangan ilova ma’lumotlarini tiklang.</string>
+    <string name="help_describe_for_safe_apk_permission_disale">APK ni o‘zgartirishlar bilan qayta qurish orqali tanlangan ruxsatlarni olib tashlaydi. Bu faqat tizim ilovalarida yoki Android uchun \"%1$s\" patch qo‘llanilsa, barcha ilovalarda ishlaydi.</string>
+    <string name="help_describe_for_safe_apk_permission_disale_rebuild_and_install">Xavfsiz usulga o‘xshab, bu usul yangi imzodan foydalanadi va asl imzoni saqlamaydi. Agar ilova imzoni tekshirsa, ushbu usul yordamida to‘g‘ri ishlamasligi mumkin.</string>
+    <string name="help_describe_for_share_this_app">Tanlangan ilovaning zaxira APK faylini yaratadi va uni har qanday ilova bilan baham ko‘radi.</string>
+    <string name="help_describe_for_signature_verification_killer">Ba’zan ilova qayta tiklanganidan keyin boshlamaydi yoki noto‘g‘ri imzo haqida shikoyat qiladi yoki xaridlarni amalga oshirmaydi va hk. Bunday holda, ushbu funksiya yordam berishi mumkin. U ilova ichidagi imzoni tekshirishni aldashga harakat qiladigan kodni kiritadi. Ushbu parametr faqat asl ilovaga qo‘llanilishi kerak. Agar allaqachon patch qilinganiga qo‘llanilsa, u allaqachon muvaffaqiyatli amalga oshirilgan bo‘lsa ham, bu parametr buziladi.</string>
+    <string name="help_describe_for_support_patch_inapp">"Ilovaga InApp emulyatsiyasi uchun qo‘shimchalarni qo'llab-quvvatlaydi. InApp emulyatsiyasini Toggles menyusida yoqish mumkin."</string>
+    <string name="help_for_inapp_non_root_method1">Ilova maqsadini \"%1$s\" bilan qayta kompilyatsiya qilish, asl ilovani o‘chirish (o‘chirilmagan kesh bilan jildning nomini o‘zgartirdi). Variantni qayta kompilyatsiya qilishda ilovani o‘rnating (agar mavjud bo‘lsa, jildni kesh bilan qayta nomlang). Usul ishlashi uchun Lucky Patcher kalitlarida \"%2$s\" yoqishingiz kerak. Sotib olishga harakat qilib ko‘rishingiz mumkin bo‘lgan hamma narsa. Kamdan kam ishlaydi, lekin mo‘jiza sodir bo‘dir bo‘ladi :)</string>
+    <string name="help_for_inapp_non_root_method1_note">"Ba’zan xaridni himoya qilish ilova imzosini tekshirishdan foydalanadi. Bunday holda, \"%1$s\" opsiyasidan foydalanish yordam berishi mumkin.
+"</string>
+    <string name="help_for_inapp_root_method1">"Birinchi Android (%1$s) patchini qo‘llang va o‘zgartirilgan market 3+ versiyasini o‘rnating. Shundan keyin, barcha xaridlaringiz Lucky Patcherga yo‘naltiriladi, agar u yoqilgan bo‘lsa \"%2$s\". Oddiy qonuniy xarid qilish rejimiga qaytish uchun \"%2$s\" kalitini o‘chirish kifoya. Ushbu usul Freedom ishi bilan bir xil va samaradorligi bo‘yicha undan kam emas, lekin o‘zgartirilgan Google Play'ni amalga oshiradi, bu sizga Google Play ishini buzmasdan xaridlarni amalga oshirish imkonini beradi.
+
+Buni qanday qilish kerak?
+- Lucky Patcherni o‘rnating :)
+- Lucky Patcher \"%3$s->%4$s\"ning pastki panelini tanlang, qo‘llash uchun (%1$s) yuqori elementini bosing. Qayta ishga tushirgandan so‘ng, ushbu dialogdagi birinchi patch 2/2 qo‘llanilishi bilan belgilanishi kerak. (Siz bu qadamni o‘tkazib yuborishingiz mumkin, lekin buni qilish yaxshiroqdir, chunki agar u ishlamasa, bundan keyin biror bir narsa qilish mantiqqa to‘g‘ri kelmaydi). Agar patch bajarilmasa, siz Xposed Lucky Patcher modulining birinchi variantidan foydalanib ko‘rishingiz mumkin;
+- Lucky Patcherni ishga tushiring, internetga ulanishni yoqing va pastki panelli \"%3$s->%5$s\" ni tanlang, to‘g‘ri versiyasini tanlang va o‘rnatishni bosing;
+- \"%3$s->%6$s\" da Google Play sinovini o‘tkazing.
+"</string>
+    <string name="help_for_inapp_root_method2">Birinchi Android (Imzo tekshirish har doim to‘g‘ri) patchini qo‘llang va \"%1$s\" kalitlari bilan ishlating. Shundan keyin, sizni barcha xaridlaringiz Lucky Patcherga yo‘naltiriladi.</string>
+    <string name="help_for_inapp_root_method2_disadvantages">"- proksi server yoqilmaguncha Google Play ishlamaydi;
+- xaridlar haqidagi asl ma’lumotni tekshirish orqali himoyalangan ilovalarda samarali emas;
+- agar siz proksi serverni o‘chirib qo‘ysangiz, saqlanayotgan xaridlarni kombinatsiyalashda noqulay bo‘ladi, chunki saqlangan xaridlarni ilovaga bera olmaydi.
+"</string>
+    <string name="help_for_inapp_root_method3">"Agar qurilmangizda Xposed bo‘lsa, Lucky Patcherning Xposed modulini yoqishingiz mumkin.
+Diqqat: agar siz o‘zgartirilgan Google Play'ni o‘rnatmagan bo‘lsangiz, Xposed \"%1$s\" moduliga to‘rtinchi variantni qo‘shing. Agar o‘zgartirilgan Google Play o‘rnatilmagan bo‘lsa, birinchi va to‘rtinchi variantni o‘z ichiga olgan holda, siz ilova ichidan xaridlarni amalga oshirishingiz mumkin. Beshinchi variant, siz Lucky Patcherni ilovadan yashirishga urinib ko‘rishingiz mumkin."</string>
+    <string name="help_for_inapp_root_method3_disadvantages">"- xaridlar haqidagi asl ma’lumotni tekshirish orqali himoyalangan ilovalarda samarali emas;
+- Lucky Patcherni yangilaganingizdan keyin Xposed'da xatolar bor, ba’zida Xposed modulining o‘zi o‘chirilgan, siz Xposed'dagi modulni o‘chirib qo‘yishingiz va qurilmani qayta ishga tushirish uchun orqaga qo‘shishingiz kerak.
+"</string>
+    <string name="help_for_inapp_root_method4">"\"%1$s\" maqsadli dasturiga qo‘llaniladi. Shundan so‘ng, barcha xaridlar Lucky Patcherga yo‘naltirilishi kerak. Usul ishlashi uchun siz Lucky Patcher kalitlarida \"%2$s\" ni yoqishingiz kerak.
+ Yoki biz \"%3$s\" (juda uzoq) patchini qo‘llaymiz va barcha xaridlar Lucky Patcherga to‘g‘ridan-to‘g‘ri proksi serversiz yo‘naltiriladi."</string>
+    <string name="help_for_inapp_root_method4_disadvantages">"- Bu hamma ilovalarda ham ishlamaydi, chunki ilova ichidagi xarid kodini patch kirmaydigan joyda yashirilishi mumkin.
+- xaridlar haqidagi asl ma’lumotni tekshirish orqali himoyalangan ilovalarda samarali emas.
+"</string>
+    <string name="help_green_apps">Ushbu ilova ro‘yxatdan o‘tish uchun yaxshi imkoniyatga ega;</string>
+    <string name="help_instruction_for_create_apk">"- Ilova/dasturiy taʼminot nomiga teging va \"%1$s\" ni tanlang;
+- APK ni o‘zgartirish uchun patchni tanlang;
+- O‘zgartirilgan o‘rnatish fayli Lucky Patcher jildida bo‘ladi (buni Haqida bo‘limida ko‘rishingiz mumkin);
+- Qayta tiklash APK fayli patch allaqachon o‘rnatilgan ilova bilan bir xil emasligini bilishingiz kerak. Ilovani oddiy patchdan farqli o‘laroq, o‘zgarishlarni sinab ko‘rish juda oson va shuning uchun to‘g‘ri ishlaydi, shuning uchun o‘rnatish muvaffaqiyatsiz bo‘lmaydi. Shuni yodda tutingki, o‘zgartirilgan ilovani qayta o‘rnatganingizdan va asl ilovani olib tashlaganingizdan so‘ng, barcha ilova ma’lumotlari yo‘qoladi."</string>
+    <string name="help_instruction_for_custom_patch">"- Ilova/dasturiy ta’minot nomiga teging va \"%1$s\" ni tanlang;
+- Ilovani internet bilan ishga tushiring va sinab ko‘ring;
+- Agar omadingiz kelsa, patch ishlaydi;
+- Ilovani asl holatiga qaytarish uchun \"%2$s\" yoki \"%3$s\" ni bosing."</string>
+    <string name="help_instruction_for_remove_ads">"- Ilova/dasturiy ta’minot nomiga teging va \"%1$s\" ni tanlang;
+- Keyin \"%2$s\" ni tanlang;
+- Ilovani internet bilan ishga tushiring va sinab ko‘ring;
+- Agar reklamalar hali ham mavjud bo‘lsa, \"%3$s\" ga teging, reklama faoliyatini toping va ularni o‘chiring;
+- Agar omadingiz kelsa, reklamalar yo‘qolishi kerak;
+- Ilovani asl holatiga qaytarish uchun \"%4$s\" yoki \"%5$s\" ni bosing."</string>
+    <string name="help_instruction_for_remove_lvl">"- Maqsad sifatida faqat ishlab chiquvchi tomonidan imzolangan original APK fayllaridan foydalaning;
+- Ilova/dasturiy ta’minot nomiga teging va \"%1$s\" ni tanlang;
+- \"%2$s\" ni tanlang va ilovani internetga kirish bilan sinab ko‘ring;
+ - Agar natija salbiy bo‘lsa, \"%3$s\" yoki \"%4$s\" ni tanlang;
+- Agar omadingiz kelsa, dasturingiz ro‘yxatga olinadi;
+- Ilovani asl holatiga qaytarish uchun \"%5$s\" yoki \"%6$s\" ni bosing."</string>
+    <string name="help_klever">Lucky Patcher ushbu ilovaga o‘zgartirishlar kiritdi;</string>
+    <string name="help_magenta_apps">Ushbu ilovalar yuklash ro‘yxatida*;</string>
+    <string name="help_orange_apps">Bu tizim ilovalari. Ular bilan har qanday operatsiyalarni bajarishda juda ehtiyot bo‘ling, chunki ularni tahrirlash ilova yoki operatsion tizimga qaytarilmas zarar yetkazishi mumkin.</string>
+    <string name="help_purple_apps">Ilova ichida Google xaridlarini o‘z ichiga olgan ilova;</string>
+    <string name="help_red_apps">Patch qilib bo‘lmaydigan ilovalar kodi topildi;</string>
+    <string name="help_root_warning">Lucky Patcher barcha xususiyatlari ishlashi uchun root ruxsatiga muhtoj. Root huquqisiz dastur cheklangan rejimda ishlaydi.</string>
+    <string name="help_star">"Bu shuni anglatadiki, ilovada 'odex' fayli topilgan. Zamonaviy Android uchun bu faqat tizim ilovalari uchun to‘g‘ri keladi."</string>
+    <string name="help_sub_describe_for_inapp_buy_dialog_auto_purchase">"Ushbu parametrni o‘z ichiga olgan holda, keyingi xarid qilishda, Lucky Patcher bilan dialogsiz amalga oshiriladi (xarid darhol sizni arizangizga hech qanday savolsiz kiradi). Arizadagi oltinni yig'ishda va hk., har safar sotib olishga rozi bo‘lganingizda bosmaslik kerak :) Lucky Patcher ro‘yxatidagi ilovani biroz bosib, \"%1$s\" ni tanlagandan so‘ng avtomatik xaridni o‘chirish mumkin, keyin ro‘yxatdagi keraksiz avtomatik xaridlarni olib tashlash mumkin."</string>
+    <string name="help_sub_describe_for_inapp_buy_dialog_save_purchase">mualliflar imzo ma’lumotlarini bexosdan tekshirmagan eski o‘yinlar va ilovalar uchun ildiz imtiyozlariga ega bo‘lmagan foydalanuvchilar uchun mantiqiy. Ushbu parametr yoqilganda, xarid haqidagi noto‘g‘ri ma’lumotlar bo‘sh imzo bilan ilovaga yuboriladi va bu xaridni to‘g‘ri deb topishi va ilovani faollashtirishi mumkin. Ildiz imtiyozlariga ega foydalanuvchilar ushbu parametrdan foydalanmasliklari yaxshiroqdir, ular yordamdan ko‘ra ko‘proq zarar yetkazishi mumkin.</string>
+    <string name="help_sub_title_for_inapp_disadvantages_method">Ushbu usulning kamchiliklari:</string>
+    <string name="help_sub_title_for_inapp_non_root">Root huquqlari bo‘lmagan foydalanuvchilar uchun:</string>
+    <string name="help_sub_title_for_inapp_non_root_method1">\#1 usul:</string>
+    <string name="help_sub_title_for_inapp_root">Root imtiyozlariga ega foydalanuvchilar uchun:</string>
+    <string name="help_sub_title_for_inapp_root_method1">\#1 usul (eng samarali va kerakli):</string>
+    <string name="help_sub_title_for_inapp_root_method2">\#2 usul:</string>
+    <string name="help_sub_title_for_inapp_root_method3">\#3 usul:</string>
+    <string name="help_sub_title_for_inapp_root_method4">\#4 usul:</string>
+    <string name="help_sub_title_for_purchase_window">Xarid oyna parametrlari:</string>
+    <string name="help_title1">Rangga asoslangan tavsif:</string>
+    <string name="help_title_for_context_menu">Kontekst menyusi:</string>
+    <string name="help_title_for_inapp">Lucky Patcher orqali xarid qilish imkoniyatlari:</string>
+    <string name="help_title_for_instructions">Ko‘rsatmalar:</string>
+    <string name="help_title_instruction_for_create_apk">O‘zgartirilgan APK yaratish uchun:</string>
+    <string name="help_title_instruction_for_custom_patch">Maxsus patch uchun:</string>
+    <string name="help_title_instruction_for_remove_ads">Reklamalarni olib tashlash uchun:</string>
+    <string name="help_title_instruction_for_remove_lvl">Litsenziya tekshiruvini olib tashlash uchun:</string>
+    <string name="help_yellow_apps">Ushbu ilova uchun Lucky Patcher katalogida maxsus patch topildi;</string>
+    <string name="hide_notify">Bildirishnomalarni yashirish</string>
+    <string name="hide_notify_descr">Lucky Patcher bildirishnomalarini yashiradi.</string>
+    <string name="hide_title_app">Sarlavhani yashirish</string>
+    <string name="hide_title_app_descr">Ilovalar ro‘yxatida Lucky Patcher nomini yashiradi. Faqat apparat menyusi tugmachasi bo‘lgan qurilmalarda ishlaydi.</string>
+    <string name="host_down">Serverga kirish mumkin emas. Keyinroq urinib ko‘ring.</string>
+    <string name="hosts_default">\"hosts\" fayli qayta tiklandi.</string>
+    <string name="hosts_not_found_changes">\"hosts\" faylidagi o‘zgarishlarni topib bo‘lmadi...</string>
+    <string name="hosts_updated">\"hosts\" fayli yangilandi...</string>
+    <string name="icon_content_description">Muloqot ikonkasi</string>
+    <string name="import_to_lucky_patcher">Lucky Patcherga import qilish</string>
+    <string name="inapp_emulation_auto_repeat">Joriy sozlamalar bilan xaridlarni avtomatik takrorlash</string>
+    <string name="info_about_permissions_optional">"Ixtiyoriy ruxsatnomalar:
+"</string>
+    <string name="info_about_permissions_optional_describe">Reklama va tahlil uchun ishlatiladi. Agar sizda ushbu ruxsatlardan birortasi haqida xavotirlaringiz bo‘lsa, siz bu ruxsatlarni rad etishingiz mumkin. Bu Lucky Patcher ishiga ta’sir qilmaydi.</string>
+    <string name="info_about_permissions_optional_perms">"ACCESS_COARSE_LOCATION
+READ_PHONE_STATE
+"</string>
+    <string name="info_about_permissions_required">"Kerakli ruxsatnomalar:
+"</string>
+    <string name="info_about_permissions_required_describe">"Fayllar bilan ishlash kerak. Busiz, Lucky Patcher ishlamaydi.
+"</string>
+    <string name="info_about_permissions_required_perms">"READ_EXTERNAL_STORAGE
+WRITE_EXTERNAL_STORAGE
+"</string>
+    <string name="information">Maʼlumot</string>
+    <string name="install">O‘rnatish</string>
+    <string name="install_as_user_app">"Google Play'ni foydalanuvchi ilovasi sifatida o‘rnatish."</string>
+    <string name="install_as_user_app_note">Talab qiladi: allaqachon \"Android uchun patch\" qo‘llanilgan va Google Play Market o‘rnatilgan.</string>
+    <string name="install_cloned_app">Klon o‘rnatish</string>
+    <string name="install_date">O‘rnatilgan sana:</string>
+    <string name="installer_error_aborted">Foydalanuvchi o‘rnatishni bekor qildi</string>
+    <string name="installer_error_bad_apks">Noto‘g‘ri APK fayllar tanlangan</string>
+    <string name="installer_error_bad_apks_file">Xato: base.apk fayli apks fayli ichida topilmadi.</string>
+    <string name="installer_error_blocked">O‘rnatish %s tomonidan bloklangan</string>
+    <string name="installer_error_blocked_device">qurilma</string>
+    <string name="installer_error_conflict">Ilovani o‘rnatib bo‘lmadi, chunki u xuddi shu paket nomi bilan o‘rnatilgan ilovaga zid</string>
+    <string name="installer_error_generic">O‘rnatib bo‘lmadi</string>
+    <string name="installer_error_generic_miui_warning">Agar sizda miui dasturiy ta’minoti bo‘lsa, \"Dasturchi sozlamalari\" bo‘limidagi \"MIUI optimallashtirishni yoqish\" ni o‘chirish muammoni hal qilishi mumkin.</string>
+    <string name="installer_error_incompatible">Ilova ushbu qurilmaga mos kelmaydi</string>
+    <string name="installer_error_lidl_rom">Sizning ROM rootsiz o‘rnatuvchi bilan mos emas. O‘rnatish faqat root o‘rnatuvchisi yordamida mumkin.</string>
+    <string name="installer_error_rootless">"Rootsiz o‘rnatish xatosi:
+
+ %s"</string>
+    <string name="installer_error_storage">Ilovani o‘rnatish uchun saqlash joyi yetarli emas</string>
+    <string name="installer_not_support_by_firmware">Sizni dasturiy ta’minotingiz ajratilgan apks fayllarini o‘rnatishni qo‘llab-quvvatlamaydi.</string>
+    <string name="installer_prepare">Ajratilgan ilovani o‘rnatishga tayyorlanmoqda.</string>
+    <string name="installer_slit_get_apk_from_apks">O‘rnatuvchi fayllarni apks arxividan oladi.</string>
+    <string name="installer_slit_install_in_progress">O‘rnatish jarayoni davom etmoqda.</string>
+    <string name="installer_slit_successfully_installed">%s ajratilgan ilovasi muvaffaqiyatli o‘rnatildi.</string>
+    <string name="installsupersu">SuperSU (ICS) o‘rnatish</string>
+    <string name="integrate_dalvik_code_dialog_good_message">Dalvik kodi tanlangan apk fayli bilan birlashtirilgan. Bu to‘g‘ri ishlamaydi, lekin siz sinab ko‘rishingiz kerak...</string>
+    <string name="integrate_dalvik_code_dialog_title">Integratsiya natijalari</string>
+    <string name="integrate_dalvik_code_message">Haqiqatan ham dalvik kodini apk faylidan birlashtirishni xohlaysizmi</string>
+    <string name="integrate_to_system">Haqiqatan ham ushbu ilova uchun yangilanishni /system ga qo‘shishni xohlaysizmi?</string>
+    <string name="integrate_updates_result">Integratsiyani yangilash natijasi</string>
+    <string name="integrate_updates_result_message">O‘zgarishlarni qo‘llash uchun siz qurilmani qayta yuklashingiz kerak.</string>
+    <string name="integrate_updates_result_message_not_finished">/data dan /system ga tizim ilovalar yangilanishlarini o‘tkazish bo‘yicha tugallanmagan operatsiya aniqlandi. Agar qurilma qayta yuklangan bo‘lsa, \"Ha\" tugmasini bosing, agar u qayta yoqilmagan bo‘lsa, \"Yo‘q\" ni bosing. Aks holda, /data dan yangilanishlarni olib tashlaganingizda, ilova ma’lumotlari tiklanadi. /data dan ilova yangilanishlarini olib tashlamoqchimisiz?</string>
+    <string name="integrate_updates_to_system">Yangilashni /system ga birlashtirish</string>
+    <string name="internet_not_found">Internetga ulanish talab qilinadi.</string>
+    <string name="is_an_invalid_number">Siz noto‘g‘ri raqam kiritdingiz...</string>
+    <string name="item_view_role_description">Tab : Varaq</string>
+    <string name="langdef">Birlamchi til</string>
+    <string name="langen">O‘zbek</string>
+    <string name="langmenu">Til</string>
+    <string name="launchbutton">Ishga tushirish</string>
+    <string name="licensing_hack_menu_disable">Google litsenziyasini tekshirish emulyatsiyasini o‘chirish</string>
+    <string name="licensing_hack_menu_enable">Google litsenziyasini tekshirish emulyatsiyasini yoqish</string>
+    <string name="line">"***********************
+"</string>
+    <string name="loadpkg">Paketlar yuklanmoqda</string>
+    <string name="lp_billing_hack_title">Ilovadagi xaridlarni buzish...</string>
+    <string name="lp_import_custom_patches">Lucky Patcher quyidagi maxsus patchlar va fayllarni import qildi:</string>
+    <string name="lvldescr">Litsenziyani tekshirish bilan barcha ilovalarni ko‘rsatadi.</string>
+    <string name="lvltitle">LVL bilan ilovalar</string>
+    <string name="magisk_module_warning">Agar sizda ushbu xususiyat bilan bog‘liq muammolar bo‘lsa, Magisk Manager sozlamalarida Magisk Core Only va MagiskHide rejimini o‘chiring va qurilmangizni qayta ishga tushiring.</string>
+    <string name="magisk_warning2">Agar ushbu xususiyat bilan bog‘liq muammolar bo‘lsa, magisk modul tanlovini yoqing.</string>
+    <string name="make_app_a_sys">Ilovani tizimga aylantirish</string>
+    <string name="make_app_to_system">Haqiqatan ham ushbu ilovani tizim ilovasiga aylantirishni xohlaysizmi?</string>
+    <string name="market_description_text">"Rasmiy Google Play Marketni LVL (Litsenziyalarni tekshirish kutubxonasi) buzilgan versiya bilan almashtirish uchun \"O‘rnatish\" tugmasini bosing. Agar Google Play Market qayta ishga tushirgandan so‘ng ishlamasa, uni yana o‘rnating.
+O‘zgartirilgan Google Play Market qanday ishlaydi:
+Diqqat! Siz pullik ilovalarni tekin yuklab ololmaysiz!
+1. Siz Google LVL himoyalangan ilovalarini buzmasdan ishlatishingiz mumkin.
+2. Litsenziyani tekshirish hatto oflayn rejimda ham muvaffaqiyatli bo‘ladi.
+3. Endi litsenziya patchlarini qo‘llashning hojati yo‘q.
+4. Proksi orqali billing va litsenziyani tekshirish bilan ishlamaydi.
+5. Endi siz 'Qaytarish' tugmasini bosganingizda, u sizni xaridingizni qaytaradi, biroq ilova o‘chirilmaydi, shuning uchun pulni qaytarishni talab qilishdan oldin ilovani zaxiralashingiz shart emas.
+6. Endi Google Play ilovada emulyatsiya uchun barcha xaridlarni Lucky Patcherga yo‘naltiradi."</string>
+    <string name="market_install">O‘zgartirilgan Google Play Market o‘rnatish</string>
+    <string name="market_version5">O‘zgartirilgan Google Play</string>
+    <string name="market_version6">Asl Google Play</string>
+    <string name="material_clock_toggle_content_description">Tushdan oldin yoki keyinligini tanlang</string>
+    <string name="material_hour_selection">Soatni tanlang</string>
+    <string name="material_hour_suffix">%1$s soat</string>
+    <string name="material_minute_selection">Daqiqalarni tanlash</string>
+    <string name="material_minute_suffix">%1$s daqiqa</string>
+    <string name="material_timepicker_am">AM</string>
+    <string name="material_timepicker_clock_mode_description">Vaqtni kiritish uchun soat rejimiga o‘ting.</string>
+    <string name="material_timepicker_hour">Soat</string>
+    <string name="material_timepicker_minute">Daqiqa</string>
+    <string name="material_timepicker_pm">PM</string>
+    <string name="material_timepicker_select_time">Vaqtni tanlang</string>
+    <string name="material_timepicker_text_input_mode_description">Vaqtni kiritish uchun matn kiritish rejimiga o‘ting.</string>
+    <string name="menu_close_application">Ilovani yopish</string>
+    <string name="menu_download_custom_patches">Maxsus patchlarni yuklab olish</string>
+    <string name="messageAndroidManifest">"AndroidManifest.xml'ni chiqarib bo‘lmaydi. Ehtimol, SD-kartada ilovani to‘liq nusxalash uchun bo‘sh joy yo‘qdir."</string>
+    <string name="messagePath">"Yo‘l topilmadi!
+Iltimos, to‘g‘ri yo‘lni kiriting."</string>
+    <string name="messageSD">"SD-kartani topib bo‘lmadi!
+Bu funksiya SD-kartasiz ishlamaydi!"</string>
+    <string name="message_about_corrupt_apk_file">Asl apk fayli buzilgan. Ilovani qayta tiklab bo‘lmaydi.</string>
+    <string name="message_about_patched_file">Buzilgan fayl</string>
+    <string name="message_allow_non_market_app">Iltimos, xavfsizlik sozlamalarida \"Noma’lum manbalardan ilovalarni o‘rnatishga ruxsat berish\" ni tekshiring.</string>
+    <string name="message_apply_android_patch_for_proxy_gp">Google Play uchun proksi server Android \"Imzolarni tekshirish holati har doim to‘g‘ri\" patchini ishlatishi kerak. Siz hozir Android patchini qo‘llamoqchimisiz?</string>
+    <string name="message_clear_all_dalvik_cache">Haqiqatan ham dalvik-keshni tozalashni xohlaysizmi?</string>
+    <string name="message_clear_data">Siz haqiqatan ham ilovaning barcha ma’lumotlarini tozalashni xohlaysizmi?</string>
+    <string name="message_delete_odex_file">Haqiqatan ham odex faylini o‘chirmoqchimisiz?</string>
+    <string name="message_delete_package_new">"O‘rnatish xato bilan yakunlandi. Ushbu APK'ni o‘rnatishdan oldin asl ilovani o‘chirib tashlang. Agar bu yordam bermasa, qurilmani qo‘lda qayta yoqing. Shuningdek, ilovani o‘chirib tashlashga harakat qiling."</string>
+    <string name="message_done_move_to_internal">Ichki xotiraga ko‘chirish tugadi:</string>
+    <string name="message_done_move_to_sdcard">SD-kartaga ko‘chirish tugadi:</string>
+    <string name="message_error_file_apk_for_install_corrupt">O‘rnatish uchun fayl buzilgan ...</string>
+    <string name="message_error_move_to_internal">"Ichki xotiraga ko‘chirish xato bilan tugadi (qayta urinib ko‘ring):
+"</string>
+    <string name="message_error_move_to_sdcard">"SD-kartaga ko‘chirish xato bilan tugadi (qayta urinib ko‘ring):
+"</string>
+    <string name="message_exit">Siz haqiqatan ham Lucky Patcherdan chiqishni xohlaysizmi?</string>
+    <string name="message_for_reboot_after_android_patches">Patch jarayoni tugadi. Yakuniy foydalanish uchun siz qurilmani qayta ishga tushirishingiz kerak. Qurilmangizni qayta ishga tushirishni xohlaysizmi?</string>
+    <string name="message_for_removed_patch_boot">Qayta ishga tushirishda patch o‘chirildi.</string>
+    <string name="message_for_uninstall_and_install">Haqiqatan ham %1$s ni o‘chirib tashlamoqchimisiz va tanlangan versiya ilovasini o‘rnatmoqchimisiz?</string>
+    <string name="message_installation_inapp_proxy">Agar siz \"Ilovada qo‘llab-quvvatlash uchun patch va LVL emulyatsiyasi\" dan xakerlik xaridlari uchun foydalansangiz, \"Ilovalarda xaridlar uchun proksi server\" xizmatini o‘rnatishingiz kerak. Ammo bu Lucky Patcherning ko‘rinmasligini buzadi. Ushbu xizmatni o‘rnatmoqchimisiz?</string>
+    <string name="message_installation_lp">Siz haqiqatan ham Lucky Patcher v.%1$s ni o‘rnatmoqchimisiz?</string>
+    <string name="message_lp_install_success_uninstall_intsaller">Lucky Patcher muvaffaqiyatli o‘rnatildi. Endi Lucky Patcher maxfiyligini oshirish uchun ilova o‘rnatuvchisini olib tashlashingiz kerak.</string>
+    <string name="message_old_app_version">Lucky Patcherning eski versiyasi topildi. Lucky Patcherning yashirilishini yaxshilash uchun siz ushbu versiyani olib tashlashingiz kerak. Ammo agar siz \"Ilovada qo‘llab-quvvatlash uchun patch va LVL emulyatsiyasi\" dan foydalansangiz, barcha ilovalarni qayta patch qilishingiz yoki Lucky Patcherning yangi versiyasida asl apkni qayta qurishingiz kerak. Bu eski versiyani olib tashlamoqchimisiz?</string>
+    <string name="message_reboot">Haqiqatan ham, qayta ishga tushirishni xohlaysizmi?</string>
+    <string name="message_remove_all_odex">Siz haqiqatan ham barcha odex fayllarini /system/app va /data/app dan o‘chirmoqchimisiz? Bu faqat classes.dex bo‘lgan ilovalarning odex fayllarini o‘chiradi.</string>
+    <string name="message_rescan_apps">Haqiqatan ham barcha o‘rnatilgan ilovalarni qayta skanerlashni xohlaysizmi?</string>
+    <string name="message_test_patch_downgrade">Ilovalar testini pasaytirish</string>
+    <string name="message_test_patch_signatures">Ilovani turli imzolar bilan o‘rnatish imkoniyatini sinab ko‘rish</string>
+    <string name="message_test_patch_terget_sdk_30_installing">Ver.2 va targetSDK=30 imzosiz ilovani o‘rnatish imkoniyatini sinab ko‘rish</string>
+    <string name="message_test_patch_unlocked">Patchni qo‘llash qobiliyati qulfdan chiqariladi.</string>
+    <string name="message_test_pm_utility">\"pm\" yordam dasturini sinab ko‘rish</string>
+    <string name="message_test_pm_utility_fail">\"pm\" yordam dasturi kutilganidek ishlamagani uchun patch nuqtalarini tekshirib bo‘lmadi.</string>
+    <string name="message_to_reboot_device">Qurilmangizni qayta yuklashni xohlaysizmi?</string>
+    <string name="message_warning_InApp_service_disable">Ilovada xizmatni o‘chirish ilovalarni rasmiy xarid qilish mexanizmini buzadi. Bu Google Play uchun original xizmat.</string>
+    <string name="message_warning_LVL_service_disable">Bu xizmatni o‘chirish rasmiy ravishda xarid qilingan ilovalarga litsenziya olish mexanizmini buzadi. Bu Google Play uchun original xizmat.</string>
+    <string name="mod_market_check">O‘zgartirilgan Google Play Market sinovi</string>
+    <string name="mod_market_check_failed">"Google Play o‘rnatilgan bo‘lishi mumkin, lekin u to‘g‘ri ishlamayapti. Sinov litsenziyasini tekshirish muvaffaqiyatsiz. Ehtimol siz core.jar patchini (\"Vositalar qutisi-> Android uchun patch\" da topish mumkin) qo‘llamadingiz yoki o‘zgartirilgan Google Play'ni (\"Vositalar qutisi-> O‘zgartirilgan Google Play Market o‘rnatish\" da qayta o‘rnatishingiz mumkin) tizim ilovasi sifatida o‘rnatmadingiz."</string>
+    <string name="mod_market_check_internet_off">Qurilmadagi internetni o‘chiring, keyin sinovni qayta urinib ko‘ring.</string>
+    <string name="mod_market_check_title">O‘zgartirilgan Google Play uchun sinov natijalari</string>
+    <string name="mod_market_check_true">"Google Play o'rnatilgan va to'g'ri ishlayapti. E’tibor bering, bu usul barcha ilovalar va o‘yinlar bilan ishlamaydi. Bu xato emas va tuzatib bo‘lmaydi."</string>
+    <string name="modifdescr">O‘zgartirilgan barcha ilovalarni ko‘rsatadi (yashil yonca belgisi).</string>
+    <string name="modiftitle">O‘zgartirilgan ilovalar</string>
+    <string name="move_data">Barcha ma’lumotlar muvaffaqiyatli uzatildi</string>
+    <string name="move_to_internal">Ichki xotiraga ko‘chirish</string>
+    <string name="move_to_internal_message">Haqiqatan ham ilovani ichki xotiraga o‘tkazmoqchimisiz?</string>
+    <string name="move_to_sdcard">/sdcard ga ko‘chirish</string>
+    <string name="move_to_sdcard_message">Haqiqatan ham ilovani SD-kartaga o‘tkazmoqchimisiz?</string>
+    <string name="move_to_sys">/system/priv-app ga ko‘chirish</string>
+    <string name="move_to_system">Haqiqatan ham bu ilovani /system/priv-app’ga ko‘chirishni xohlaysizmi?</string>
+    <string name="mtrl_badge_numberless_content_description">Yangi bildirishnoma</string>
+    <string name="mtrl_chip_close_icon_content_description">Olib tashlash: %1$s</string>
+    <string name="mtrl_exceed_max_badge_number_content_description">Yana %1$d dan ortiq bildirishnoma</string>
+    <string name="mtrl_picker_a11y_next_month">Keyingi oyga oʻzgartirish</string>
+    <string name="mtrl_picker_a11y_prev_month">Avvalgi oyga oʻzgartirish</string>
+    <string name="mtrl_picker_announce_current_selection">Joriy tanlov: %1$s</string>
+    <string name="mtrl_picker_confirm">@android:string/ok</string>
+    <string name="mtrl_picker_date_header_selected">%1$s</string>
+    <string name="mtrl_picker_date_header_title">Sanani tanlang</string>
+    <string name="mtrl_picker_date_header_unselected">Tanlangan sana</string>
+    <string name="mtrl_picker_day_of_week_column_header">Kunlar ustuni: %1$s</string>
+    <string name="mtrl_picker_invalid_format">Yaroqsiz format.</string>
+    <string name="mtrl_picker_invalid_format_example">Masalan: %1$s</string>
+    <string name="mtrl_picker_invalid_format_use">Ishlatish: %1$s</string>
+    <string name="mtrl_picker_invalid_range">Yaroqsiz oraliq.</string>
+    <string name="mtrl_picker_navigate_to_year_description">Yilga nazar solish: %1$s</string>
+    <string name="mtrl_picker_out_of_range">Chegaradan tashqari: %1$s</string>
+    <string name="mtrl_picker_range_header_only_end_selected">Boshlanish sanasi – %1$s</string>
+    <string name="mtrl_picker_range_header_only_start_selected">%1$s – Tugash sanasi</string>
+    <string name="mtrl_picker_range_header_selected">%1$s – %2$s</string>
+    <string name="mtrl_picker_range_header_title">Oraliqni tanlang</string>
+    <string name="mtrl_picker_range_header_unselected">Boshlanishi – Tugashi</string>
+    <string name="mtrl_picker_save">Saqlash</string>
+    <string name="mtrl_picker_text_input_date_hint">Sana</string>
+    <string name="mtrl_picker_text_input_date_range_end_hint">Tugash sanasi</string>
+    <string name="mtrl_picker_text_input_date_range_start_hint">Boshlanish sanasi</string>
+    <string name="mtrl_picker_text_input_day_abbr">k</string>
+    <string name="mtrl_picker_text_input_month_abbr">o</string>
+    <string name="mtrl_picker_text_input_year_abbr">y</string>
+    <string name="mtrl_picker_toggle_to_calendar_input_mode">Taqvim kiritish rejimiga oʻtish</string>
+    <string name="mtrl_picker_toggle_to_day_selection">Kunni tanlash uchun bosing</string>
+    <string name="mtrl_picker_toggle_to_text_input_mode">Matn kiritish rejimiga oʻtish</string>
+    <string name="mtrl_picker_toggle_to_year_selection">Yilni tanlash uchun bosing</string>
+    <string name="multipatch_next_step">Keyingi qadam</string>
+    <string name="navigation_drawer_close">Navigatsiya tortmasini yopish</string>
+    <string name="navigation_drawer_open">Navigatsiya panelini ochish</string>
+    <string name="need_select_custom_patch">Iltimos, bir yoki bir nechta maxsus patchni tanlang.</string>
+    <string name="new_method_lvl">Ilova uchun litsenziya yarating</string>
+    <string name="new_version">Lucky Patcherning yangi versiyasi mavjud!</string>
+    <string name="next_custom_patch">Keyingi maxsus patch uchun tavsif</string>
+    <string name="no">Yo‘q</string>
+    <string name="no_freespace_patch">"Bu xato emas. odex faylini yaratish uchun bo‘sh joy etarli emas edi. Dalvik-kesh patch qo‘llanildi, lekin agar siz uni qayta ishga tushirsangiz, patch saqlanib qolmasligi mumkin.
+Yechim: ilovani ichki xotiraga o‘tkazing yoki tizim sifatida yarating yoki ko‘proq joy bo‘shating yoki hamma narsani avvalgidek qoldiring va patchni muntazam ravishda qayta qo‘llang."</string>
+    <string name="no_icon">Ilova belgilarini o‘chirish</string>
+    <string name="no_icon_descr">Ro‘yxatdagi barcha ilova belgilarini o‘chirib tashlaydi. Bu past darajali qurilmalar uchun foydali bo‘lgan operatsion xarajatlarni kamaytiradi.</string>
+    <string name="no_root">"Rootga kirish imkoni bo‘lmadi! Davom etish uchun siz to‘liq root huquqiga ega bo‘lishingiz kerak...
+
+(iltimos, busybox yoki su'ni yangilang)!
+Iltimos, SuperSu (\"Muammolarni bartaraf etish-> SuperSU (ICS) o‘rnatish\") o‘rnating va u bilan ikkiliklarni yangilang."</string>
+    <string name="no_site">Yangilanish manbasini topib bo‘lmadi</string>
+    <string name="no_space">"Xato: ko‘rsatilgan jilddagi barcha ma’lumotlarni nusxalash uchun joy etarli emas. Iltimos, katalogni o‘zgartiring yoki bo‘sh joy bo‘shating. Agar siz SuperSu'dan foydalansangiz, SuperSu'da \"ismlar maydonini ajratish\" ni o‘chirib ko‘ring."</string>
+    <string name="no_space_in_data_all">"Xato: ichki xotirada yetarli joy emas. Iltimos, /data da ko‘proq joy bo‘shating va qaytadan urining. Agar siz SuperSu'dan foydalansangiz, SuperSu'dagi \"nom maydonini ajratishini o‘rnatish\" ni o‘chirib ko‘ring."</string>
+    <string name="no_space_in_system">"Xato: dasturni ko‘chirish uchun tizim bo‘limida bo‘sh joy yetarli emas. Iltimos, /system da joy bo‘shating va qaytadan urining. Agar siz SuperSu'dan foydalansangiz, SuperSu'dagi \"nom maydonini ajratishini o‘rnatish\" ni o‘chirib ko‘ring."</string>
+    <string name="no_space_in_system_all">"Xato: tizim bo‘limida bo‘sh joy yetarli emas. Iltimos, /system da ko‘proq joy bo‘shating va qaytadan urinib ko‘ring. Agar siz SuperSu'dan foydalansangiz, SuperSu'dagi \"nom maydonini ajratishini o‘rnatish\" ni o‘chirib ko‘ring."</string>
+    <string name="nofilter">Hech kim</string>
+    <string name="nonedescr">Hech narsa topilmagan barcha ilovalarni ko‘rsatadi.</string>
+    <string name="nonetitle">Hech narsa topilmadi</string>
+    <string name="not_detect">"SD-karta aniqlanmadi!
+Cheklangan funksionallik!"</string>
+    <string name="not_found_changelog">O‘zgarish jurnali faylini topib bo‘lmadi. Keyingi safar yangilaganingizda yuklab olinadi.</string>
+    <string name="not_supported_android_patch">qo‘llab-quvvatlanmaydi, \"shunday\" ishlaydi</string>
+    <string name="notify_android_patch_on_boot">Yuklashda Android patch</string>
+    <string name="notify_android_patch_on_boot_mes_core.jar">core.jar dan dalvik-keshga Android patch qo‘llang.</string>
+    <string name="notify_android_patch_on_boot_mes_services.jar">services.jar dan dalvik-keshga Android patch qo‘llang.</string>
+    <string name="notify_directory_binder">Katalogni bog‘lovchi</string>
+    <string name="notify_directory_binder_from">DAN</string>
+    <string name="notify_directory_binder_to">GA</string>
+    <string name="notify_patch_on_boot">Yuklashda patch</string>
+    <string name="notify_patched">patch qilindi!</string>
+    <string name="odex_all_system_app">"ODEX Barcha tizim ilovalari
+(Ichki xotirada ko‘proq bo‘sh joy)"</string>
+    <string name="odex_all_system_app_message">Haqiqatan ham barcha tizim ilovalarini ODEX qilishni xohlaysizmi?</string>
+    <string name="odexed_not_all_apps">Xato! Ehtimol, /system da bo‘sh joy yetarli emas. Ba’zi ilovalar ODEX qilinmagan.</string>
+    <string name="ok">Ok</string>
+    <string name="on_top_apps_marker">Yangi</string>
+    <string name="open_to_GP">Google Play uchun ochiq</string>
+    <string name="option_SELinux_permissive">SELinux ni ruxsat etilgan rejimga o‘rnatish</string>
+    <string name="option_SELinux_permissive_descr">Lucky Patcher funksiyalari bilan bog‘liq ba’zi muammolarni hal qildi, lekin u ba’zi dasturiy ta’minotni qayta ishga tushirishi mumkin.</string>
+    <string name="option_analytic">Analitik xizmat</string>
+    <string name="option_analytic_descr">Analitik xizmatni yoqish/o‘chirish (geolokatsiyadan foydalanadi).</string>
+    <string name="option_autoupdate_custom_patches">Maxsus patchlarni avtomatik yangilashni o‘chirib qo‘yish</string>
+    <string name="option_detailed_logs">Batafsil jurnallar</string>
+    <string name="option_detailed_logs_descr">Batafsil xato jurnalini yuborish uchun yoqilgan bo‘lishi kerak.</string>
+    <string name="option_installation_apk_install_on">Lucky Patcher orqali apk fayllarini o‘rnatish imkoniyatini yoqing (ba’zi dasturiy ta’minot dasturlarida ushbu parametr tashqi fayl menejeridan apk fayllar o‘rnatilishini bloklaydi)</string>
+    <string name="option_magisk_module">Magisk modulidan foydalaning</string>
+    <string name="option_remove_ads">LP dan reklamalarni olib tashlash</string>
+    <string name="option_remove_ads_descr">“Haqida” va “O‘zgarish jurnali”dan reklamalarni olib tashlash.</string>
+    <string name="option_test_patch">patch uchun testni ishga tushirish</string>
+    <string name="orientmenu">Yo‘nalish</string>
+    <string name="others">Boshqa</string>
+    <string name="package_name">Paket nomi</string>
+    <string name="password_toggle_content_description">Parol ochiq tursin</string>
+    <string name="patch_ok">Qo‘llash</string>
+    <string name="patch_progress_data_parse">Patch uchun ma’lumotlarni tahlil qilish...</string>
+    <string name="patch_progress_get_classes">APK faylidan fayllarni olish...</string>
+    <string name="patch_progress_strings_analisis">Qatorlar tahlil qilinmoqda...</string>
+    <string name="patch_step1">Ilova tayyorlanmoqda</string>
+    <string name="patch_step2">Patch qilinmoqda</string>
+    <string name="patch_step3">Natijalarni tahlil qilish</string>
+    <string name="patch_step4">O‘zgarishlar bilan .odex yaratish</string>
+    <string name="patch_step6">Patchdan keyin ixtiyoriy qadamlar</string>
+    <string name="patch_step7">Fayllarni apk fayliga qadoqlash ...</string>
+    <string name="patch_step8">%s uchun zip hizalamasini qo‘llash</string>
+    <string name="patch_step9">%s o‘rnatish ...</string>
+    <string name="patch_step_http">rootdan ma’lumot olish...</string>
+    <string name="patch_step_rebuild_dex">Dex faylini yangi qatorlar bilan qayta yig‘ish (uzoq kuting)</string>
+    <string name="patch_to_Android_At_once">Bir vaqtning o‘zida \"Imzolarni tekshirish holati har doim to‘g‘ri\" va \".apk imzo tekshiruvini o‘chirish\" yoki \"Paket menejerida imzoni tekshirishni o‘chirish\" dan foydalanish mumkin.</string>
+    <string name="patch_to_Android_only_dalvik_cahce_core_disable">Dasturiy ta’minot core.jar ni odex qilgan. \"faqat dalvik-kech patch\" o‘chirildi. Va boshqa patchlar tiklanadi.</string>
+    <string name="patch_to_Android_only_dalvik_cahce_services_disable">Dasturiy ta’minot services.jar ni odex qilgan. \"faqat dalvik-kech patch\" o‘chirildi. Va boshqa patchlar tiklanadi.</string>
+    <string name="patchbutton">Patch</string>
+    <string name="pattern1">Namuna patch N1 : Muvaffaqiyat.</string>
+    <string name="pattern1_f">Namuna patch N1 muvaffaqiyatsiz...</string>
+    <string name="pattern2">Namuna patch N2 : Muvaffaqiyat.</string>
+    <string name="pattern2_f">Namuna patch N2 muvaffaqiyatsiz...</string>
+    <string name="pattern3">Namuna patch N3 : Muvaffaqiyat.</string>
+    <string name="pattern3_f">Namuna patch N3 muvaffaqiyatsiz...</string>
+    <string name="pattern4">Namuna patch N4 : Muvaffaqiyat.</string>
+    <string name="pattern4_f">Namuna patch N4 muvaffaqiyatsiz...</string>
+    <string name="pattern5">Namuna patch N5 : Muvaffaqiyat.</string>
+    <string name="pattern5_f">Namuna patch N5 muvaffaqiyatsiz...</string>
+    <string name="pattern6">Namuna patch N6 : Muvaffaqiyat.</string>
+    <string name="pattern6_f">Namuna patch N6 muvaffaqiyatsiz...</string>
+    <string name="pattern7">Namuna patch N7 : Muvaffaqiyat.</string>
+    <string name="pattern7_f">Namuna patch N7 muvaffaqiyatsiz...</string>
+    <string name="pattern_dex_kill">Dex va imzolarni tekshirish qotili qo‘shildi.</string>
+    <string name="pattern_integrate_emulation">LVL va Inapp xaridlar emulyatsiyasi qo‘shildi.</string>
+    <string name="pattern_lic_kill">Litsenziyani tekshirish qotili qo‘shildi.</string>
+    <string name="pattern_signature_kill">Imzoni tekshirish qotili qo‘shildi.</string>
+    <string name="patternamazon">Amazon Market patchi muvaffaqiyatli bo‘ldi!</string>
+    <string name="patternamazon_f">Amazon Market patchi muvaffaqiyatsiz...</string>
+    <string name="patterndependencies">Google Play qaramliklari olib tashlandi.</string>
+    <string name="patternsamsung">SamsungApps patch muvaffaqiyatli bo‘ldi</string>
+    <string name="patternsamsung_f">SamsungApps patch mavaffaqiyatsiz...</string>
+    <string name="perm_ok">Qo‘llash va qayta yuklash</string>
+    <string name="permission">Ruxsatnomalarni o‘zgartirish</string>
+    <string name="permission_not_descr">Bu ruxsat uchun tavsif yo‘q</string>
+    <string name="permission_not_found">Ruxsatnomalar topilmadi</string>
+    <string name="permissions">Ruxsatnomalar</string>
+    <string name="play_protect_warning">Google ko‘pincha Lucky Patcherni virus sifatida belgilaydi, ammo unday emas. Bu eslatmani olib tashlash uchun Google Play’ni ishga tushiring va sozlamalarda “Play Protect”ni o‘chiring.</string>
+    <string name="play_protect_warning2">"Ko‘pgina veb-saytlar va sahifalarda Lucky Patcherni soxta ilovasini ulashadi. Shunday qilib, sizdan rasmiy veb-saytimizdan yuklab olish havolasini blogingizda yoki YouTube videolarida baham ko‘rishingizni so‘raymiz.
+Rasmiy yuklab olish havolasi: https://www.luckypatchers.com/download/"</string>
+    <string name="play_protect_warning_question_1">“Play protect” dialogini ishga tushirishni xohlaysizmi?</string>
+    <string name="poorresult">"% Omad! Patch bajarilmadi!
+LVL yoki patchning noma’lum versiyasi allaqachon qo‘llanilgan!"</string>
+    <string name="provide">Ta’minlash</string>
+    <string name="proxyGP">Google Play uchun proksi server</string>
+    <string name="proxyGP_descr">"Barcha ilova ichida va litsenziya so‘rovlarini Lucky Patcherga yo‘naltirish uchun proksi server. Google Play'ga ilova xizmatlari va Google billing emulyatsiyasini Lucky Patcherda yoqish kerak."</string>
+    <string name="proxyGP_install">Google Play Market proksi serverini o‘rnatish</string>
+    <string name="proxyGP_install_error">O‘rnatish uchun Google Play proksi fayllar topilmadi.</string>
+    <string name="proxyGP_install_question">Haqiqatan ham Google Play proksi serverni o‘rnatmoqchimisiz?</string>
+    <string name="proxyGP_widget_warning_1">Google Play proksi serverini ishga tushirish uchun Lucky Patcher uchun Xposed modulida \"Ilova uchun qo‘llab-quvvatlash patch va LVL emulyatsiya\" o‘chiq bo‘lishi kerak.</string>
+    <string name="proxyGP_widget_warning_2">Google Play proksi serveriga root kirish huquqi kerak va Lucky Patcher uchun Xposed modulida android \"Imzolarni tekshirish holati har doim to‘g‘ri\" ga patch qilish kerak.</string>
+    <string name="punkt1">- Lucky Patcher root ruxsatini talab qiladi!</string>
+    <string name="purchase_db_dialog_auto_buy">avtomatik takroriy xarid</string>
+    <string name="purchase_db_dialog_saved_purchase">saqlangan xarid</string>
+    <string name="purchase_id">Xarid identifikatori</string>
+    <string name="purchases_sorter_describe">Bu ba’zi Unity o‘yinlariga yordam berishi mumkin. Agar xarid muvaffaqiyatsiz bo‘lsa, uning turini boshqasiga o‘zgartiring va qayta urinib ko‘ring.</string>
+    <string name="purchases_sorter_last_time_try_purchase">Oxirgi xarid vaqti</string>
+    <string name="purchases_sorter_message_not_need_sorter">Hozircha saralashga hech narsa yo‘q. Xaridlarni saralash uchun siz ilovani ishga tushirishingiz va biron bir narsani bepul xarid qilishga harakat qilishingiz kerak va agar Lucky Patcher xaridlarni saralashda qiyinchiliklarga duch kelsa, ularni qo‘lda saralashingiz mumkin. Bu Unity o‘yinlari uchun kerak. Agar siz saralashda xarid turini o‘zgartirsangiz, unda bepul sotib olish uchun qo‘shimcha imkoniyat bor.</string>
+    <string name="purchases_sorter_not_defined_by_user">hali foydalanuvchi aniqlanmadi</string>
+    <string name="purchases_sorter_reset_button">Qayta o‘rnatish</string>
+    <string name="purchases_sorter_reset_warning_message">Barcha xarid yozuvlari o‘chiriladi. Xaridlar ro‘yxatini ko‘rsatish uchun maqsadli dasturni qayta ishga tushurishingiz kerak. Lucky Patcher keyinchalik ularni turini taxmin qilishga harakat qilishi uchun barcha xaridlar uchun ta’riflarni olib tashlamoqchimisiz?</string>
+    <string name="purchases_sorter_title">Har bir xarid uchun turini tanlang</string>
+    <string name="purchases_sorter_type_inapp_describe">bular odatda oltin, kristallar va boshqa sarf materiallar.</string>
+    <string name="purchases_sorter_type_inapp_purchase">ilovada</string>
+    <string name="purchases_sorter_type_subs_describe">bu odatda obunalar, qo‘shimcha darajalar, reklamalarni o‘chirish va shunga o‘xshashlar.</string>
+    <string name="purchases_sorter_type_subs_purchase">obuna</string>
+    <string name="reboot">Qayta yuklash</string>
+    <string name="reboot_message">"Qayts yuklash qayta ishlangan...
+Agar qurilma avtomatik ravishda qayta yoqilmasa, uni qo‘lda bajaring..."</string>
+    <string name="reboot_to_bootloader">Yuklovchi uchun qayta yoqing</string>
+    <string name="reboot_to_recovery">Qayta tiklash uchun qayta yoqing</string>
+    <string name="rebuild_info">Xulosani tiklash</string>
+    <string name="remodex">Dalvik-kesh tuzatish o‘chirildi!</string>
+    <string name="remodexerror">Bu ilovaning Dalvik-keshini topib bo‘lmadi.</string>
+    <string name="remove_all_saved_purchases">Barcha saqlangan xaridlarni olib tashlang</string>
+    <string name="remove_all_saved_purchases_message">Lucky Patcherdan saqlangan barcha xaridlarni o‘chirib tashlamoqchimisiz?</string>
+    <string name="removefixes">"Barcha ODEX fayllarni o‘chirib tashlang
+(/data/app va /system/app)"</string>
+    <string name="restore_build">Qurish</string>
+    <string name="restore_data_error">Xato: Nimadir noto‘g‘ri bajarildi. Ma’lumotlar to‘liq tiklanmagan bo‘lishi mumkin.</string>
+    <string name="restore_data_success">Sozlamalar muvaffaqiyatli tiklandi.</string>
+    <string name="restore_message">Haqiqatan ham o‘rnatishni xohlaysizmi</string>
+    <string name="restore_version">Versiya</string>
+    <string name="restorebutton">Qayta tiklash</string>
+    <string name="restored">tiklandi</string>
+    <string name="root_access_not_found">"Rootga kirish topilmadi. Lucky Patcherni qayta ishga tushiring yoki SuperSu'ni yangilang va ikkilik su faylini SuperSu'dan yangilang. Va SuperSu'da Lucky Patcherga berilgan rootni tekshiring."</string>
+    <string name="root_needed">Bu harakat uchun rootga kirish talab qilinadi...</string>
+    <string name="savebutton">Maxsus patch sifatida saqlang</string>
+    <string name="saved_object">/sdcard/LuckyPatcher ga maxsus patch sifatida saqlangan.</string>
+    <string name="search">Qidirish</string>
+    <string name="search_menu_title">Qidiruv</string>
+    <string name="select_filter">Ilovalar ro‘yxati uchun filtrni tanlang:</string>
+    <string name="select_market">"O‘rnatish uchun Google Play Market versiyasini tanlang:
+"</string>
+    <string name="send_logs">Menga jurnallaringizni yubormoqchimisiz?</string>
+    <string name="sendlog">Jurnalni yuborish</string>
+    <string name="set_default_to_install">"Birlamchi o‘rnatish joyini tanlang
+Androidda ishlamasligi mumkin >= 4"</string>
+    <string name="set_default_to_install_auto">Avtomatik joylashuvga o‘rnatish Android OT tomonidan belgilanadi</string>
+    <string name="set_default_to_install_internal_memory">Mobil qurilmaning ichki xotirasiga o‘rnatish</string>
+    <string name="set_default_to_install_sdcard">SD-karta kabi tashqi muhitga o‘rnatish</string>
+    <string name="set_switchers_def">Kalitlarni birlamchi holatiga qo‘ying</string>
+    <string name="setting_confirm_exit">Ilovadan chiqishni tasdiqlang</string>
+    <string name="setting_confirm_exit_descr">Agar siz orqaga bossangiz, Lucky Patcher chiqish uchun tasdiq so‘raydi.</string>
+    <string name="settings">Sozlanmalar</string>
+    <string name="settings_force_java_root_method">Java-root usulini majburiy o‘rnatish</string>
+    <string name="settings_force_java_root_method_app_process">app_process dan foydalanish</string>
+    <string name="settings_force_java_root_method_dalvikvm">dalvikvm dan foydalanish</string>
+    <string name="settings_force_java_root_method_description">Agar sizda root huquqini olish yoki patchlar bilan ishlashda muammolar bo‘lsa, boshqa usulni sinab ko‘rishingiz mumkin.</string>
+    <string name="settings_force_root">Majburiy root tekshiruvi</string>
+    <string name="settings_force_root_description">Agar sizda ekzotik root bo‘lsa, siz rootni rootga yoki rootsiz o‘rnatishga majbur qilishingiz mumkin.</string>
+    <string name="settings_force_root_off">Rootsiz rejimni majburan o‘rnatish</string>
+    <string name="settings_force_root_on">Root rejimini majburiy o‘rnatish</string>
+    <string name="settings_method_apks_installer_non_root_mode">Apks o‘rnatuvchisi uchun rootdan foydalanmang</string>
+    <string name="settings_method_apks_installer_root_mode">Apks o‘rnatuvchisi uchun rootdan foydalanish</string>
+    <string name="settings_mode_apks_installer">Apks o‘rnatuvchining ish rejimi</string>
+    <string name="settings_mode_apks_installer_description">Agar root rejimida o‘rnatish juda uzoq bo‘lsa, siz majburiy rootsiz rejimga o‘tishingiz mumkin.</string>
+    <string name="settings_root_auto">Rootga kirishni avtomatik aniqlash</string>
+    <string name="settings_show_folder_first">Avval jildlarni ko‘rsatish</string>
+    <string name="settings_show_only_used_files">Faqat Lucky Patcher tomonidan ishlatiladigan fayllarni ko‘rsatish</string>
+    <string name="settings_sort_order_of_files">Fayllar tartibini saralash</string>
+    <string name="settings_sort_order_of_files_name">Ism bo‘yicha</string>
+    <string name="settings_sort_order_of_files_time">Vaqt bo‘yicha (tepada yangi)</string>
+    <string name="share">Ulashish</string>
+    <string name="share_lucky_patcher">Lucky Patcherni ulashish</string>
+    <string name="share_message">Haqiqatan ham bu ilovani ulashishni xohlaysizmi?</string>
+    <string name="share_this_app">Ilovani ulashish</string>
+    <string name="site_pattern">AdsBlockList’dan qator - olib tashlandi.</string>
+    <string name="sortbyname">Ism bo‘yicha saralash</string>
+    <string name="sortbystatus">Holat bo‘yicha saralash</string>
+    <string name="sortbytime">O‘rnatilgan sana bo‘yicha saralash</string>
+    <string name="sortmenu">Saralash tartibi</string>
+    <string name="splitted_apk_attribute">bo‘lingan</string>
+    <string name="start_market_message">"O‘zgartirilgan Google Play'ni o‘rnatish Android uchun patchlardan foydalanishni talab qiladi. Sizning qurilmangiz qayta yuklanadi. Qayta ishga tushirilgandan so‘ng, Google Play'ni qayta o‘rnatib ko‘ring. Ba’zida bu dasturiy ta’minotga zarar yetkazishi mumkin. Android uchun patchlarni qo‘llaysizmi?"</string>
+    <string name="stat_boot_ads">Google reklamalar</string>
+    <string name="stat_boot_custom">Maxsus patch</string>
+    <string name="stat_boot_lvl">Google litsenziyasini tekshirish</string>
+    <string name="stat_launch_activity">Faoliyatni ishga tushirish:</string>
+    <string name="statads">Google reklamalari topildi.</string>
+    <string name="statappplace">Ilova yo‘li:</string>
+    <string name="statbilling">Ilova ichida xaridlar topildi.</string>
+    <string name="statbuild">Qurish:</string>
+    <string name="statcustom">Maxsus patch mavjud</string>
+    <string name="statdataplace">Ilovaning ma’lumotlar yo‘li:</string>
+    <string name="statfix">odex fayl topildi.</string>
+    <string name="statlvl">Litsenziya tekshiruvi topildi.</string>
+    <string name="statmodified">Ilova avval o‘zgartirilgan.</string>
+    <string name="statnotfix">odex fayl topilmadi.</string>
+    <string name="statnotfound">Patch qilish uchun hech narsa yo‘q.</string>
+    <string name="statnotmodified">O‘zgartirilmagan ilova</string>
+    <string name="statnotsys">Foydalanuvchi ilovalar.</string>
+    <string name="statnull">Patch qilish uchun hech narsa yo‘q</string>
+    <string name="statsys">Tizim ilovalar.</string>
+    <string name="status_bar_notification_info_overflow">999+</string>
+    <string name="statuserid">Foydalanuvchi identifikatori:</string>
+    <string name="statversion">Versiya:</string>
+    <string name="success">muvaffaqiyat</string>
+    <string name="support_patch_billing_rebuild_dex">Ilovada qo‘llab-quvvatlash uchun patch emulyatsiyasi (Dexni qayta yig‘ish)</string>
+    <string name="support_patch_billing_rebuild_dex_descr">Bu juda uzoq davom etadi. Ilovadagi xaridlarni emulyatsiya qilish uchun hisobni proksi serversiz Lucky Patcherga yo‘naltiring. Agar bu usul biron sababga ko‘ra ishlamasa, siz \"Ilovada qo‘llab-quvvatlash uchun patch emulyatsiyasi (proksi server)\" usulidan foydalanishingiz mumkin. Agar Android \"Imzolarni tekshirish holati har doim to‘g‘ri\" uchun patch qo‘llanilmasa, bu yordamchi patch yordam berishi mumkin.</string>
+    <string name="support_patch_billing_rebuild_dex_not_work">"Usul  \"Ilovada qo‘llab-quvvatlash uchun patch emulyatsiyasi (Dexni qayta yig‘ish) \" xatolar bilan yakunlandi. \"Ilovada qo‘llab-quvvatlash uchun patch emulyatsiyasi (proksi server)\" usulini ishlatib, ushbu ilova ichidagi bepul xaridlarni emulyatsiya qilish."</string>
+    <string name="support_patch_billing_rebuild_dex_warning">Ushbu qayta qurilgan ilova faqat ushbu qurilmaga o‘rnatilgan Lucky Patchter bilan ishlaydi. Agar siz ushbu ilovani boshqa qurilmaga o‘tkazsangiz, xaridlar emulyatsiya qilinmaydi. Ilovani qo‘llab-quvvatlovchi patch bilan boshqa qurilmaga o‘tkazish uchun \"Ilovada qo‘llab-quvvatlash uchun patch emulyatsiyasi (proksi server)\" usulidan foydalaning va \"Ilovada xaridlar emulyatsiyasi uchun proksi server\" ni boshqa qurilmaga o‘rnating yoki ushbu ilovani to‘g‘ridan-to‘g‘ri boshqa qurilmaga qayta tiklang.</string>
+    <string name="support_patch_billing_redirect_to_proxy">Ilovada qo‘llab-quvvatlash uchun patch emulyatsiyasi (proksi server)</string>
+    <string name="support_patch_billing_redirect_to_proxy_descr">Ilovada xaridlar emulyatsiyasi uchun proksi server yordamida hisobni Lucky Patcherga yo‘naltirish. Agar Android \"Imzolarni tekshirish holati har doim to‘g‘ri\" uchun patch qo‘llanilmasa, bu yordamchi patch yordam berishi mumkin.</string>
+    <string name="support_patch_billing_repatch_patched_app">Allaqachon patch qilingan ilovada patchi yangilang</string>
+    <string name="support_patch_billing_repatch_patched_app_descr">Agar siz Lucky Patcherning eski versiyasi uchun ilovani ushbu patch bilan qayta tiklagan bo‘lsangiz va hozir u ishlamasa, ushbu tanlov Lucky Patcherning yangi versiyasi uchun patchni yangilaydi.</string>
+    <string name="support_patch_header_additional">Qo‘shimcha patchlar</string>
+    <string name="support_patch_header_inapp">Bepul xaridlar emulyatsiyasi uchun patchlar</string>
+    <string name="support_patch_header_lvl_inapp">Litsenziya tekshiruvi va inapp xaridlar emulyatsiyasi uchun patchlar</string>
+    <string name="support_patch_header_options">Qo‘shimcha tanlovlar</string>
+    <string name="support_patch_lvl_and_inapp_descr">Litsenziyani tekshirish bo‘yicha barcha so‘rovlari va ilovadagi xaridlar Lucky Patcherga yo‘naltiradi.</string>
+    <string name="support_patch_lvl_inapp">LVL va Inapp emulyatsiyasi uchun qo‘llab-quvvatlovchi patch</string>
+    <string name="switcher_auto_backup">Barcha yangilangan yoki o‘rnatilgan ilovalarni avtomatik zaxiralash</string>
+    <string name="switcher_auto_backup_descr">APK faylni zaxira jildga nusxalash</string>
+    <string name="switcher_auto_backup_only_gp">"Avtomatik zaxiralash ilovalari Google Play'dan yangilangan yoki o‘rnatilgan"</string>
+    <string name="switcher_auto_backup_only_gp_descr">"Eslatma: Lucky Patcher barcha o‘zgartirilgan ilovalarni Google Play'dan o‘rnatilgan deb belgilaydi. Shuning uchun, bu ilovalar ham zaxira ro‘yxatida bo‘ladi."</string>
+    <string name="switcher_auto_integrate_update">Tizim ilovalari uchun yangilanishni /system ga avtomatik ravishda qo‘shish</string>
+    <string name="switcher_auto_integrate_update_descr">Ikkinchi yangilanish uchun qayta yuklash talab qilinadi</string>
+    <string name="switcher_auto_move_to_internal">Yangilangan va o‘rnatilgan ilovalarni avtomatik ravishda ichki xotiraga ko‘chirish</string>
+    <string name="switcher_auto_move_to_internal_descr">Ilovalarni tezroq va barqaror qiladi</string>
+    <string name="switcher_auto_move_to_sd">Yangilangan va o‘rnatilgan ilovalarni avtomatik ravishda SD-kartaga o‘tkazing</string>
+    <string name="switcher_auto_move_to_sd_descr">Vidjetlar va yuklash amallari bo‘lgan ilovalar uchun yomon</string>
+    <string name="switchers_service_not_found">Xizmat topilmadi</string>
+    <string name="sysdescr">Ogohlantirish! Iltimos o‘zgartirishdan oldin *ZAXIRA* qiling.</string>
+    <string name="system_app_change">O‘zgarishlarni qo‘llash uchun qayta ishga tushiring.</string>
+    <string name="systitle">Tizim ilovalarini ko‘rsatish</string>
+    <string name="test">test</string>
+    <string name="test_services_for_work_failed">Xizmat sinovi muvaffaqiyatsiz. Biror narsa to‘g‘ri ishlamayapti. Siz %1$s ilovasi va Lucky Patcher uchun barcha kerakli ruxsatnomalarni (fonda ishlash va h.k.) taqdim etishingiz kerak. %1$s uchun sozlamalar ochilsinmi?</string>
+    <string name="test_services_for_work_progress">Xatolarni topish uchun biz xizmatni sinovdan o‘tkazamiz.</string>
+    <string name="test_services_for_work_success">Xizmat sinovdan o‘tgan va to‘g‘ri ishlamoqda.</string>
+    <string name="text_size">Matn hajmi</string>
+    <string name="title_for_block_internet">Ushbu ilovalarda internetni bloklash:</string>
+    <string name="title_for_select_backup_apk_package">"APK'ni zaxiralash uchun ilovalarni tanlang:"</string>
+    <string name="title_for_select_disable_package">O‘chirish uchun ilovalarni tanlang:</string>
+    <string name="title_for_select_enable_package">Yoqish uchun ilovalarni tanlang:</string>
+    <string name="title_for_select_integrate_update_apps">/system ga yangilanishlarni qo‘shish uchun ilovalarni tanlang:</string>
+    <string name="title_for_select_move_to_internal">Ichki xotiraga ko‘chirish uchun ilovalarni tanlang:</string>
+    <string name="title_for_select_move_to_sdcard">SD-kartaga ko‘chirish uchun ilovalarni tanlang:</string>
+    <string name="title_for_select_uninstall">O‘chirish uchun ilovalarni tanlang:</string>
+    <string name="title_for_unblock_internet">Ushbu ilovalarda internetni blokdan chiqarish:</string>
+    <string name="title_installation_lp">Lucky Patcher o‘rnatuvchisi</string>
+    <string name="title_progress_installation_lp">Lucky Patcherni o‘rnatishga tayyorgarlik</string>
+    <string name="title_select_custom_patch">Maxsus patchlarni tanlang.</string>
+    <string name="title_upd">Xabar</string>
+    <string name="toolbar_adfree">Reklamalarni bloklash</string>
+    <string name="toolbar_backups">Zaxira nusxalar</string>
+    <string name="toolbar_options_menu">Tanlovlar menyusi</string>
+    <string name="toolbar_rebuild">Qayta qurish &amp; o‘rnatish</string>
+    <string name="toolbar_refresh_apps">Ilovalarni qayta skanerlash</string>
+    <string name="toolbar_switchers">Kalitlar</string>
+    <string name="toolbar_system_utils">Asboblar qutisi</string>
+    <string name="tools_menu_block_internet">Internetni bloklash</string>
+    <string name="tools_menu_unblock_internet">Internetni blokdan chiqarish</string>
+    <string name="troubleshooting_supersu_namespace_separation">"SuperSu \"nom maydon ajratishini o‘rnatish\" variantini o‘chiring
+(qayta ishga tushadi)"</string>
+    <string name="truble">Muammolarni bartaraf qilish</string>
+    <string name="uninstall">Haqiqatan ham %s ni o‘chirishni xohlaysizmi?</string>
+    <string name="uninstall_updates">Yangilanishlarni olib tashlash</string>
+    <string name="uninstall_updates_message">Haqiqatan ham %s tizim ilovasi uchun yangilanishlarni olib tashlashni xohlaysizmi?</string>
+    <string name="uninstallapp">Ilovani olib tashlash</string>
+    <string name="unknown_error">Noma’lum xato. Iltimos, qayta urinib ko‘ring.</string>
+    <string name="unused_odex_delete">Ishlatilmagan ODEX o‘chirildi!</string>
+    <string name="update">Yangilash</string>
+    <string name="update_custom_patches_message_1">Yangi maxsus patchlar serverda topiladi. Qo‘shilgan patchlar ro‘yxatini havolada ko‘rishingiz mumkin https://patch.chelpus.com/</string>
+    <string name="update_custom_patches_message_2">Ularni hozir yangilamoqchimisiz?</string>
+    <string name="update_found_title">Yangilanish topildi</string>
+    <string name="update_lp">Lucky Patcherni yangilash</string>
+    <string name="updatebusybox">Busyboxni yangilash</string>
+    <string name="usepatch">Qo‘llash</string>
+    <string name="vers">Lucky Patcher versiyasi</string>
+    <string name="vibration">Tebranishni yoqish</string>
+    <string name="vibration_descr">Ilovalar ro‘yxatida sezgir fikrlarni yoqish.</string>
+    <string name="viewlandscape">Manzara</string>
+    <string name="viewlarge">Katta shrift</string>
+    <string name="viewmedium">O‘rta shrift</string>
+    <string name="viewmenu">Ko‘rish</string>
+    <string name="viewportret">Portret</string>
+    <string name="viewsensor">Sensor</string>
+    <string name="viewsmall">Kichik shrift</string>
+    <string name="wait">Iltimos, kuting...</string>
+    <string name="warning">Ogohlantirish</string>
+    <string name="warning_china_devices_muiu">Xitoyning MIUI dasturiy ta’minoti ko‘pincha Lucky Patcherni orqa fonda ishlashini cheklaydi. Shu sababli, ilovada xarid emulyatsiyasi va boshqa funksiyalar ishlamaydi. Lucky Patcher sozlamalarini ochish uchun barcha mumkin bo‘lgan ruxsatlarni yoqish kerakmi?</string>
+    <string name="warning_for_get_apk">\"%1$s\" uchun to‘liq apk faylini olish mumkin emas, chunki u Google Android App Bundle yordamida bo‘linadi. Bu xususiyatni \"%1$s\" bilan ishlatib bo‘lmaydi.</string>
+    <string name="warning_for_no_free_space_on_device">"Sizning dasturiy ta’minotingiz Lucky Patcherni xato bilan to‘xtatdi: \"Qurilmada bo‘sh joy qolmadi\". Qurilmadagi bo‘sh joyni tekshirib ko‘ring. Agar siz SuperSu'dan foydalansangiz, SuperSu'da \"nom maydonini ajratilishini o‘rnatish\" ni o‘chirib ko‘ring."</string>
+    <string name="warning_for_no_free_space_on_device_to_patch">Qurilmada bo‘sh joy etarli emas. Ishni davom ettirish uchun ko‘proq joy bo‘shating.</string>
+    <string name="warning_for_out_of_memory_on_device">Sizning dasturiy ta’minotingiz Lucky Patcherni xato bilan to‘xtatdi: \"Xotiradan tashqarida\". Joriy operatsiya uchun xotira yetarli emas.</string>
+    <string name="warning_for_resources_error">Sizni dasturiy ta’minotingiz Lucky Patcherni xato bilan to‘xtatdi: \"InflateException\". Ehtimol, dasturiy ta’minot uslubi mavzusi xatolarni o‘z ichiga oladi yoki dasturiy ta’minot manbalari buzilgan. Mavzuni yorqin, qorong‘i yoki boshqa narsaga o‘zgartirishga harakat qiling. Jurnal yubormoqchimisiz?</string>
+    <string name="warning_for_unstall_apk_from_import_file">Arxivni import qilish apk faylini o‘z ichiga oladi. %1$s versiya %2$s qurish %3$s ni o‘rnatishni xohlaysizmi?</string>
+    <string name="warning_force_close_please_update_lp">Ko‘rinishidan, Lucky Patcher majburiy yopilgan. Iltimos, Lucky Patcherni so‘nggi versiyasiga yangilang.</string>
+    <string name="warning_inapp_emulation">"Sizning dasturiy ta’minotingiz sukut bo‘yicha ilovada billing emulyatsiyasini qo‘llab-quvvatlamaydi. Agar sizning dasturiy ta’minotingiz ilovani o‘chirish (muzlatish) ni qo‘llab-quvvatlasa, ilovalar menejeridan Google Play'ni o‘chirib ko‘ring va ilovada emulyatsiyasini qayta ishga tushiring."</string>
+    <string name="warning_install_new_mod_market">"O‘zgartirilgan Google Play'ning ushbu versiyasini tizim bo‘limiga o‘rnatib bo‘lmaydi. Uni foydalanuvchi ilovasi sifatida o‘rnating. Aks holda, siz Google hisobingizga ulana olmaysiz."</string>
+    <string name="warning_install_new_mod_market2">"Siz asl Google Play'ni tizim sifatida o‘rnatishingiz mumkin, keyin esa o‘zgartirilgan Google Play foydalanuvchisi sifatida. Agar sizda Google Play bilan bog‘liq muammolar bo‘lsa, uni \"%1s\" opsiyasi bilan foydalanuvchi ilovasi sifatida o‘rnatishga harakat qiling va unga barcha ruxsatlarni bering."</string>
+    <string name="warning_internal_data_folder_corrupt">Lucky Patcher ma’lumotlar jildida ma’lumotlarni yoza olmaydi yoki o‘qiy olmaydi. Ushbu muammoni hal qilish uchun Lucky Patcher ma’lumotlarini tozalang. Agar bu yordam bermasa. Lucky patcherni olib tashlang, uni o‘rnating va unga barcha zarur ruxsatlarni bering.</string>
+    <string name="warning_jex_optimised_firmware">Sizning dasturiy ta’minotingiz jex-optimallashtirishga ega. Dasturiy ta’minotni patch qilish mumkin emas. Dasturiy ta’minotni o‘zgartiring yoki Android 5+ ga yangilang.</string>
+    <string name="warning_message_browser_not_found">Qurilmadagi internet havolani ko‘rsatadigan brauzer topilmadi.</string>
+    <string name="warning_multipatch_not_select">Patchlarning hech biri tanlanmagan.</string>
+    <string name="warning_not_all_perms_granded">Lucky Patcher o‘z ishini davom ettira olmaydi, chunki unga barcha zarur ruxsatlar berilmagan.</string>
+    <string name="warning_shared_apks">"'apks' fayllarini o‘rnatish uchun sizga Lucky Patcher boshqa qurilmada o‘rnatilgan bo‘lishi kerak. Siz Lucky Patcherni boshqa qurilmaga '%s' yon menyusidan o‘tkazishingiz mumkin."</string>
+    <string name="warning_superSu_mount_name_space_separation">"Lucky Patcher SuperSu'ni skanerlaydi va \"nom maydon ajratishini o‘rnatish\" yoqilgan variantini aniqlaydi. Lucky Patcher normal ishlashi uchun uni o‘chirib qo‘yish kerak."</string>
+    <string name="warning_superSu_mount_name_space_separation_2">Lucky Patcherni o‘chirib qo‘yishni xohlaysizmi (qayta ishga tushadi)?</string>
+    <string name="warning_superSu_mount_name_space_separation_3">Bu muloqotni boshqa ko‘rsatma</string>
+    <string name="well_done">Muvaffaqiyatli yakunlandi.</string>
+    <string name="well_done_change_components">Ilovaning tarkibiy qismlari muvaffaqiyatli yangilandi.</string>
+    <string name="widget_app_disable_checkbox">agar yoqish kerak bo‘lsa, ilovani ishga tushiring</string>
+    <string name="xposed_module_option">Xposed modulini yoqish</string>
+    <string name="xposed_option_off">"Iltimos, bu opsiyani faollashtirish uchun Xposed'dagi Lucky Patcher modulini yoqing"</string>
+    <string name="xposed_settings">Xposed sozlamalar</string>
+</resources>

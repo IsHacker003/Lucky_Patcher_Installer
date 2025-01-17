@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="AppTools">معلومات التطبيق</string>
+    <string name="P_not_found">خطأ في التحقق من معلومات البرنامج</string>
+    <string name="PatchResult">نتيجة التصحيح</string>
+    <string name="Yes">نـعـم</string>
+    <string name="about_working_dir">مكان العمل على SD</string>
+    <string name="aboutlp">لوكي باتشر تطبيق يساعدك على تهيكر الألعاب والتطبيقات وآزالة عمليات الدفع وآزالة الإعلانات من التطبيقات، عند وجود روت فأن لوكي باتشر تُفتح فيه العديد من الميزات ش⇇┃⇉ للتواصل على تلجرام راسلنيTELEGRAM[@WWGTR]</string>
+    <string name="aboutmenu">حول التطبيق</string>
+    <string name="abouttitle">حـَول لوكي باتشر</string>
+    <string name="activity_ads_descr">يستخدم هذا النشاط للإعلان</string>
+    <string name="activity_descr">10 نشاط التطبيق. بدون وصف.</string>
+    <string name="additinfo">معلومات اضافية:</string>
+    <string name="adsdescr">رؤية التطبيقات التي فيها اعلانات خايسة</string>
+    <string name="adstitle">التطبيق بي اعلانات</string>
+    <string name="advanced_menu">قائمة الباتشات</string>
+    <string name="all_custom_patches_updated">تم تحديث جميع الباتشات المخصصة</string>
+    <string name="allchanges">تم تحديث جميع الباتشات للربط تم إصلاح التغييرات في ملف .odex ويتم حتى يتم إعادة تثبيت التطبيق.</string>
+    <string name="apk_not_found_error">خطأ: لم يتم العثور على ملف الـ apk.</string>
+    <string name="apk_size">حجم التطبيق</string>
+    <string name="apkdescr">نمط تسمية ملفات الـ apk الجديدة .</string>
+    <string name="app_dialog_no_root_app_control">إدارة هذا التطبيق</string>
+    <string name="app_name">لوڪي باتشر🇮🇶</string>
+    <string name="app_not_found">لم يتم العثور على التطبيق ! الرجاء تثبيت التطبيق والمحاولة مرة أخرى .</string>
+    <string name="back">رجوع</string>
+    <string name="backbutton">نسخ احتياطي</string>
+    <string name="backup_data_empty">بيانات التطبيق فارغة . لا يوجد شيء لنسخه احتياطياً .</string>
+    <string name="backups_not_found">لم يتم العثور على ملفات النسخ الاحتياطي في :</string>
+    <string name="billing_hack_menu">محاكاة الفواتير لـ Google</string>
+    <string name="billing_hack_menu_disable">تعطيل محاكاة فواتير Google</string>
+    <string name="billing_hack_menu_enable">تمكين محاكاة فواتير Google</string>
+    <string name="billing_hack_option">إرسال رد إلى التطبيق الغير موقّع ( هذا الاختيار قد يعمل مع المستخدمين الذين لا يملكون صلاحيات الروت على هواتفهم)</string>
+    <string name="billing_hack_option2">حفظ المشتريات لاسترجاعها لاحقاً</string>
+    <string name="binder_browser">متصفح</string>
+    <string name="binder_delete">حذف</string>
+    <string name="button_advanced_filter">فلتر بحث</string>
+    <string name="button_backup_apk_apps">نسخ أحتياطي</string>
+    <string name="button_for_delete">حذف</string>
+    <string name="cancel">الغاء</string>
+    <string name="change_icon_lp">تغيير الأيقونة</string>
+    <string name="changelog">معلومات التحديثات</string>
+    <string name="context_backup_apk">نسخ أحتياطي للتطبيق</string>
+    <string name="context_disable_google_ads">خيار أغلاق جميع اعلانات جوجل الخايسة</string>
+    <string name="context_enable_google_ads">ارجاع اعلانات جوجل الزفت</string>
+    <string name="context_removeAds">باتش حذف الأعلانات</string>
+    <string name="context_tools">الأدوات</string>
+    <string name="context_uninstall_if_installed">الغاء تثبيت القديم وتثبيت المهكر؟</string>
+    <string name="contextads">حذف الأعلانات</string>
+    <string name="contextblockfileads">حذف الروابط من التطبيق</string>
+    <string name="contextblockfileads_descr">حذف جميع الروابط داخل التطبيق HTTPS و HTTP</string>
+    <string name="contextbootads">أزالة أعلانات گوگل🤢</string>
+    <string name="contextfulloffline">فصل التطبيق نهائياً عن الأنترنت</string>
+    <string name="contextfulloffline_descr">هكر التطبيق وأفصل عنه النت نهائياً هذا الخيار مفيد للألعاب الي ماتحتاج نت بحيث يفصل النت عنها والأعلانات ما تطلع بعد نهائياً</string>
+    <string name="contextlaunchapp">تشغيل التطبيق</string>
+    <string name="contextpattads3_descr">محاولة الحصول على آلية لكسر إعلانات جوجل.</string>
+    <string name="contextpattads4">كـُـل الباتشات</string>
+    <string name="contextpattads4_descr">باتشات أخرى يمكن أن تكون مفيدة لإزالة الإعلانات .</string>
+    <string name="createapkads">ملف apk بدون إعلانات Google</string>
+    <string name="custom_descript">وصف الباتش</string>
+    <string name="custom_patches_update_not_found">ماكو باتشات جديده https://t.me/wwgtr</string>
+    <string name="delete_file_message">صدگ تريد تحذف التطبيق 1%s</string>
+    <string name="filter2">التطبيق بي اعلانات</string>
+    <string name="have_luck">"⑉⑉⑉⑉⑉⑉⑉⑉⑉⑉⑉⑉⑉⑉⑉⑉⑉⑉⑉⑉
+
+انت تملك"</string>
+    <string name="help_PS">✠┆𝐓𝐞𝐜𝐡𝐧𝐨 𝐂𝐚𝐬𝐭𝐥𝐞 ♜︎ ✠┆BY WWGTR ✠┆https://t.me/Ramez_1995 ✠┆https://t.me/SamkoTG ✠┆https://t.me/WWGTR ✠┆https://t.me/TechCsl ✠┆WE ARE THE BEST↯</string>
+    <string name="help_custom_general_text1">- يجب أن يحمل ملف الباتش نفس اسم ملف APK الهدف (هذا حساس لحالة الأحرف).</string>
+    <string name="help_custom_general_text2">- إذا كان الملف عبارة عن باتش مخصص للتطبيق موجود بالفعل ، يمكنك ببساطة إضافة اسم الملف في بداية أي نص وحفظه بجانب الملف الموجود</string>
+    <string name="help_custom_title_general">معلومات عامة:</string>
+    <string name="help_custom_warning_text">لا تقم بإزالة القفزات أو جعلها غير مشروطة! سوف يتعطل المحسن ولا يعمل الباتش الخاص بك على التحريك! لتجنب ذلك، استخدم القفزات الشرطية. على سبيل المثال، إذا كانت هناك حاجة للقفز، فاستبدل القفز باستخدام v0,v0 (bytes: 32 00 ?? ??). إذا لم تكن هناك حاجة للقفز في مكان معين، فيمكنك إدراج قفزة مثل v0,v0 (bytes: 33 00 ?? ??); لا تتردد أيضا في استخدام ما يعادلها.</string>
+    <string name="help_custom_warning_title">تحذير:</string>
+    <string name="help_describe_for_remove_ads">محاولات لإزالة الإعلانات. حاول استخدام هذا التصحيح حتى إذا لم يعثر Lucky Patcher على إعلانات في أحد التطبيقات التي تحتوي على إعلانات. قد تزيل تلك الإعلانات.</string>
+    <string name="help_instruction_for_create_apk">𝐓𝐞𝐜𝐡𝐧𝐨 𝐂𝐚𝐬𝐭𝐥𝐞 ♜︎ https://t.me/TechCsl https://t.me/SamkoTG https://t.me/Ramez_1995 https://t.me/wwgtr ⑉⑉⑉⑉⑉⑉⑉⑉⑉⑉⑉⑉⑉⑉⑉⑉ %1$s</string>
+    <string name="help_root_warning">لوكي باتشر بحاجة صلاحيات الروت لتعمل جميع المميزات. من دون وجود صلاحيات الروت, سوف يعمل التطبيق على الوضع المحدود من دون روت</string>
+    <string name="help_sub_describe_for_inapp_buy_dialog_save_purchase">مفيد للمستخدمين الذين ليس لديهم امتيازات الجذر ، للألعاب والتطبيقات القديمة ، حيث لا يتحقق المؤلفون عن غير قصد من بيانات التوقيع. يحفظ هذا الخيار عملية الشراء في قاعدة بيانات Lucky Patcher بحيث في المرة التالية التي يبدأ فيها التطبيق المخترق ، يقوم Lucky Patcher بإعلامه أن هذا الشراء يجب اعتباره تم شراؤه. هذا ضروري لأنواع مختلفة من الاشتراكات وأشياء أخرى. كيف تعرف ما الذي يجب تمكينه؟ تشتري ، على سبيل المثال ، الإصدار الكامل من التطبيق ، وتكون عملية الشراء ناجحة ، ولكن بعد إعادة تشغيل التطبيق ، تعتبر نفسها مرة أخرى إصدارًا غير مكتمل حتى تشتريها مرة أخرى. عند تشغيل هذا الخيار ، سيتم إرسال بيانات خاطئة حول الشراء إلى التطبيق بتوقيع فارغ وهناك فرصة أن يكون هذا الشراء صحيحًا وسيعتبر التطبيق نفسه قد تم شراؤه بعد إعادة التشغيل. من الأفضل للمستخدمين الذين لديهم امتيازات الجذر القيام بذلك لا تستخدم هذا الخيار ، لأنه يمكن أن يضر أكثر مما ينفع. تلجرامي https://t.me/wwgtr</string>
+    <string name="help_sub_title_for_inapp_disadvantages_method">عيوب هذه الطريقة:</string>
+    <string name="help_sub_title_for_inapp_non_root">الذين لا يملكون الروت :</string>
+    <string name="help_sub_title_for_inapp_root">لـ مستخدمين الروت حصراً</string>
+    <string name="help_sub_title_for_inapp_root_method1">1- الطريقة الأولى أكثر (فعالية)</string>
+    <string name="help_sub_title_for_purchase_window">خيارات نافذة الشراء:</string>
+    <string name="help_title1">تـفاصيل البـاتش المخصص :-</string>
+    <string name="help_title_for_context_menu">السياقات :</string>
+    <string name="help_title_for_inapp">خيار الشراء عبر لوكي باتشر</string>
+    <string name="help_title_for_instructions">تعليمات</string>
+    <string name="installer_rootless_error2_install_failed_aborted">Installation was cancelled by the user or aborted</string>
+    <string name="installer_rootless_error2_install_failed_already_exists">تم تثبيت هذه الحزمة بالفعل</string>
+    <string name="installer_rootless_error2_install_failed_bad_dex_metadata">"Dex metadata file is invalid or there's no matching APK file for a dex metadata file"</string>
+    <string name="installer_rootless_error2_install_failed_bad_signature">"There's some problem with APK signature"</string>
+    <string name="installer_rootless_error2_install_failed_conflicting_provider">Package contains a content provider with the same authority as a provider already installed in the system</string>
+    <string name="installer_rootless_error2_install_failed_container_error">"Secure container mount point couldn't be accessed on external media"</string>
+    <string name="installer_rootless_error2_install_failed_cpu_abi_incompatible">"Package doesn't contain native code that is compatible with this device's CPU"</string>
+    <string name="installer_rootless_error2_install_failed_dexopt">Installation failed while optimizing and validating package dex files, either because there was not enough storage or the validation failed</string>
+    <string name="installer_rootless_error2_install_failed_duplicate_package">تم بالفعل تثبيت الحزمة بنفس الاسم</string>
+    <string name="installer_rootless_error2_install_failed_duplicate_permission">Package is attempting to define a permission that is already defined by another installed package</string>
+    <string name="installer_rootless_error2_install_failed_instant_app_invalid">Unsupported operation with an instant app</string>
+    <string name="installer_rootless_error2_install_failed_insufficient_storage">لا يحتوي الجهاز على مساحة كافية لتثبيت التطبيق</string>
+    <string name="installer_rootless_error2_install_failed_internal_error">Installation failed because of system issues</string>
+    <string name="installer_rootless_error2_install_failed_invalid_apk">ملف التطبيق غير صالح</string>
+    <string name="installer_rootless_error2_install_failed_invalid_install_location">"Package couldn't be installed in the specified location"</string>
+    <string name="installer_rootless_error2_install_failed_invalid_uri">عنوان URL الذي تم اجتيازه غير صالح</string>
+    <string name="installer_rootless_error2_install_failed_media_unavailable">"Package couldn't be installed in the specified location because the media is not available"</string>
+    <string name="installer_rootless_error2_install_failed_missing_feature">Package requires a feature that is not supported by this device</string>
+    <string name="installer_rootless_error2_install_failed_missing_shared_library">App has requested a shared library that is not installed on the device</string>
+    <string name="installer_rootless_error2_install_failed_missing_split">"Package requires splits, but they weren't provided"</string>
+    <string name="installer_rootless_error2_install_failed_multipackage_inconsistency">One of the child package installer sessions does not match the parent session in respect to staged or rollback enabled parameters</string>
+    <string name="installer_rootless_error2_install_failed_newer_sdk">Device Android version is higher than required by the package</string>
+    <string name="installer_rootless_error2_install_failed_no_matching_abis">"Package doesn't contain native code that is compatible with this device's CPU"</string>
+    <string name="installer_rootless_error2_install_failed_no_shared_user">المستخدم المشترك المطلوب بواسطة الحزمة غير موجود</string>
+    <string name="installer_rootless_error2_install_failed_older_sdk">Device Android version is lower than required by the package</string>
+    <string name="installer_rootless_error2_install_failed_other_staged_session_in_progress">"There's already a package installer session being committed for this package name"</string>
+    <string name="installer_rootless_error2_install_failed_package_changed">Package installation path unexpectedly changed</string>
+    <string name="installer_rootless_error2_install_failed_permission_model_downgrade">النسخة الجديدة من الحزمة لا تدعم أذونات وقت التشغيل ولكن الإصدار المثبت حاليا يفعل</string>
+    <string name="installer_rootless_error2_install_failed_replace_couldnt_delete">The system was unable to delete the previous version of this package</string>
+    <string name="installer_rootless_error2_install_failed_sandbox_version_downgrade">النسخة الجديدة من الحزمة تتطلب إصدار صندوق رملي أقل من النسخة المثبتة حاليا من هذه الحزمة</string>
+    <string name="installer_rootless_error2_install_failed_shared_user_incompatible">طلب التطبيق مستخدم مشترك موجود بالفعل، ولكن توقيعاته لا تتطابق</string>
+    <string name="installer_rootless_error2_install_failed_test_only">Installed package is test-only and INSTALL_ALLOW_TEST flag was not supplied</string>
+    <string name="installer_rootless_error2_install_failed_uid_changed">Package was assigned a different UID than it previously held</string>
+    <string name="installer_rootless_error2_install_failed_update_incompatible">توقيع التطبيق لا يتطابق مع توقيع تطبيق مثبت بالفعل بنفس اسم الحزمة</string>
+    <string name="installer_rootless_error2_install_failed_user_restricted">This user is restricted from installing apps</string>
+    <string name="installer_rootless_error2_install_failed_verification_failure">Package has failed verification</string>
+    <string name="installer_rootless_error2_install_failed_verification_timeout">Package verification timed out</string>
+    <string name="installer_rootless_error2_install_failed_version_downgrade">نسخة أحدث من هذه الحزمة مثبتة بالفعل</string>
+    <string name="installer_rootless_error2_install_failed_wrong_installed_version">"Required version of an already installed package doesn't match the actual version of the installed package"</string>
+    <string name="installer_rootless_error2_install_parse_failed_bad_manifest">Unable to retrieve APK manifest</string>
+    <string name="installer_rootless_error2_install_parse_failed_bad_package_name">APK has bad or missing package name</string>
+    <string name="installer_rootless_error2_install_parse_failed_bad_shared_user_id">APK has bad shared user id</string>
+    <string name="installer_rootless_error2_install_parse_failed_certificate_encoding">Certificate encoding failed</string>
+    <string name="installer_rootless_error2_install_parse_failed_inconsistent_certificates">شهادات غير متسقة موجودة على الملفات في APK</string>
+    <string name="installer_rootless_error2_install_parse_failed_manifest_empty">APK manifest is empty</string>
+    <string name="installer_rootless_error2_install_parse_failed_manifest_malformed">APK manifest is malformed</string>
+    <string name="installer_rootless_error2_install_parse_failed_no_certificates">"APK file doesn't contain any certificates"</string>
+    <string name="installer_rootless_error2_install_parse_failed_not_apk">Provided file is not an APK file</string>
+    <string name="installer_rootless_error2_install_parse_failed_unexpected_exception">APK parser encountered an unexpected exception</string>
+    <string name="installer_rootless_error2_unknown">خطأ غير معروف</string>
+    <string name="langdef">┊اللغة الافتراضيـة┊</string>
+    <string name="langmenu">⚟اللهجة العراقية⚞</string>
+    <string name="line">"⑉⑉⑉⑉⑉⑉⑉⑉⑉⑉⑉⑉⑉⑉⑉⑉⑉⑉⑉⑉
+"</string>
+    <string name="menu_download_custom_patches">تنزيل حزمة باتشات</string>
+    <string name="message_for_uninstall_and_install">صدگ تريد تحذف %1$sوتنزل النسخه الي هكرتها انته</string>
+    <string name="message_rescan_apps">صدگ تريد تحدث قائمة التطبيقات؟</string>
+    <string name="message_reset_dialog_settings">صدگ تريد ترجع الأعدادات مثل ما جانت؟</string>
+    <string name="new_version">ᴛᴇʟᴇɢʀᴀᴍ :- @ ᴡᴡɢᴛʀ</string>
+    <string name="nofilter">ﻻ شيئ</string>
+    <string name="not_found_changelog">لم يتم العثور على ملف سجل التغييرات . سيتم تحميله عند التحديث في المرة القادمة .https://t.me/wwgtr</string>
+    <string name="ok">اوكــــي</string>
+    <string name="on_top_apps_marker">جديد♜︎</string>
+    <string name="option_remove_ads">إزالة الإعلانات من تطبيق لوكي باتشر</string>
+    <string name="option_remove_ads_descr">إزالة الإعلانات من \"حول\" و \"التغييرات\".</string>
+    <string name="others">الكُـل</string>
+    <string name="package_name">اسم الحزمة.</string>
+    <string name="patch_step7">تعديل الملفات الموجوده بالتطبيق</string>
+    <string name="patch_step8">فك ضغط حزم الملفات بهذا التطبيقـ %s</string>
+    <string name="permissions">صلاحيات التطبيق</string>
+    <string name="proxyGP_install_question">تريد تنزل بروكسي لمتجر بلي</string>
+    <string name="punkt1">تطبيق لوكي باتشر يحتاج روت</string>
+    <string name="reset_dialog_settings">أرجاع الأعدادات الأصلية</string>
+    <string name="restore_message">صدگ تريد تنزل التطبيق</string>
+    <string name="settings_method_apks_installer_non_root_mode">لا تستخدم الروت للمثبت Apks</string>
+    <string name="share_message">صدگ تريد مشاركة هذا التطبيق ؟</string>
+    <string name="share_this_app">مشاركة هذا التطبيق</string>
+    <string name="site_pattern">سلسلة من AdsBlockList - تمت إزالتها .</string>
+    <string name="stat_boot_ads">إعلانات جوجل</string>
+    <string name="stat_boot_custom">الباتشات</string>
+    <string name="statads">اكو إعلانات گوگل بهذا التطبيق.</string>
+    <string name="statbilling">لگيت عمليات شراء بالتطبيق</string>
+    <string name="statcustom">أكو باتش مخصص جاهز تريد تهكرة؟</string>
+    <string name="statnotfound">ماكو شي تهكره هنا.</string>
+    <string name="statnull">ماكو شي اهنا تسوي باتش اله</string>
+    <string name="text_size">حجم النــص</string>
+    <string name="toolbar_adfree">حظر الإعلانات</string>
+    <string name="toolbar_backups">النسخ الاحتياطية</string>
+    <string name="toolbar_refresh_apps">تحديث قائمة التطبيقات</string>
+    <string name="toolbar_switchers">خيارات</string>
+    <string name="uninstall">صدگ تريد تزيل %s؟</string>
+    <string name="update_custom_patches_message_1">تم العثور على باتشات مخصصة جديدة على الخادم. قائمة التصحيحات المضافة التي يمكنك مشاهدتها على الرابط https://patch.chelpus.com/ تلجرامي https://t.me/wwgtr</string>
+    <string name="vers">أصدار لوكي باتشر هو :-</string>
+    <string name="warning">ΞتـنـبـيـةΞ</string>
+</resources>

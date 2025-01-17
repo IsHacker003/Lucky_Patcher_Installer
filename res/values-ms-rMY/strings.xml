@@ -1,0 +1,1136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="AppTools">Maklumat Aplikasi</string>
+    <string name="P_not_found">"Ralat: Fail-fail program tidak ditemui!
+Sila semak lokasi dalvik-cache untuk menyelesaikan masalah ini!
+Lalai: /data/dalvik-cache/*"</string>
+    <string name="PatchResult">Hasil tampalan</string>
+    <string name="Yes">Ya</string>
+    <string name="about_thanks_for_this_translation">Terima kasih atas penterjemahan Bahasa Malaysia: 4zz, myroots, wan_mohammad, HarimauMalayaHM</string>
+    <string name="about_working_dir">Direktori utama pada Kad SD</string>
+    <string name="aboutlp">Lucky Patcher merupakan aplikasi penampal sejagat. Ia bertujuan untuk mengubah suai aplikasi dengan cara berikut: Padam iklan, Buang pengesahan lesen Google (automatik dan manual), Mengurus kebenaran, dan banyak lagi.</string>
+    <string name="aboutmenu">Tentang</string>
+    <string name="abouttitle">Tentang Lucky Patcher oleh ChelpuS</string>
+    <string name="activity_ads_descr">Aktiviti aplikasi yang digunakan untuk Pengiklanan.</string>
+    <string name="activity_descr">Aktiviti aplikasi. Tiada keterangan.</string>
+    <string name="additinfo">Maklumat tambahan.</string>
+    <string name="adsdescr">Tunjukkan semua aplikasi dengan Google Ads.</string>
+    <string name="adstitle">Aplikasi dengan iklan.</string>
+    <string name="advanced_menu">Menu-menu tampalan</string>
+    <string name="all_custom_patches_updated">Semua penampal bersesuaian telah dikemaskini</string>
+    <string name="allchanges">Semua pengubahan telah dibaiki dalam ODEX dan akan berterusan sehingga aplikasi tersebut dipasang kembali!</string>
+    <string name="android_patches_dialog_header1">Patches for Android</string>
+    <string name="android_patches_dialog_header2">Recovering firmware after patches</string>
+    <string name="android_patches_dialog_remove_patch_3">Remove patch \"%1s\"</string>
+    <string name="android_patches_dialog_remove_patches_1_and_2" formatted="false">Remove patches \"%1s\" and \"%2s\"</string>
+    <string name="android_patches_dialog_use_magisk_module_for_patches">Use the Magisk module to apply the patch</string>
+    <string name="android_patches_for_bootlist">Tampalan Android untuk dalvik-cache</string>
+    <string name="android_patches_for_bootlist_status">Menetapkan semula tampalan android pada memulakan semula</string>
+    <string name="android_patches_xposed_need_message">Please use Xposed(lSPosed) for apply current patch</string>
+    <string name="apk_create_option">Nama fail untuk APK-APK yang telah disusun semula</string>
+    <string name="apk_not_found_error">Ralat: Fail APK tidak ditemui.</string>
+    <string name="apk_size">Saiz APK:</string>
+    <string name="apkdescr">Skema penamaan untuk fail-fail APK terbaharu.</string>
+    <string name="apklabel">Berdasarkan kepada Label Aplikasi.</string>
+    <string name="apkpackage">Berdasarkan kepada Nama Pakej Aplikasi.</string>
+    <string name="app_dialog_no_root_app_control">Urus atur Aplikasi.</string>
+    <string name="app_disabler_widget_pkg_not_found">Aplikasi tidak dipasang</string>
+    <string name="app_info">Maklumat Apl</string>
+    <string name="app_info_apk_is_splitted">Apk file is split</string>
+    <string name="app_install_success">Aplikasi berjaya dipasang.</string>
+    <string name="app_name">Lucky Patcher</string>
+    <string name="app_not_found">Aplikasi tidak ditemui! Sila pasang semula aplikasi dan cuba lagi.`</string>
+    <string name="app_not_found_adapter">Aplikasi ini tidak dapat dijumpai dalam senarai aplikasi yang dipasang.</string>
+    <string name="apps_not_found">Tiada apa-apa yang ditemui.</string>
+    <string name="appwidget_text">CONTOH</string>
+    <string name="back">Kembali</string>
+    <string name="backbutton">Salinan</string>
+    <string name="backup_data_empty">Data aplikasi kosong. Tiada data untuk salinan.</string>
+    <string name="backup_data_error">Ralat: Ada sesuatu yang tidak kena. Nampaknya sandaran tidak siap.</string>
+    <string name="backup_data_success">Tetapan berjaya disimpan.</string>
+    <string name="backup_delete_message">Anda pasti untuk padam salinan ini?</string>
+    <string name="backup_done">"Penyalinan berjaya. Path:
+"</string>
+    <string name="backup_settings_delete_message">Do you really want to delete backup app settings</string>
+    <string name="backup_settings_error_message">Cannot restore application settings because it is not installed.</string>
+    <string name="backup_settings_restore_message">Do you really want restore backup app settings</string>
+    <string name="backups_not_found">Tiada fail salinan ditemui di:</string>
+    <string name="bad_root_detected">Root not stable. Try again or update your root. Try changing the java-root method in the settings of Lucky Patcher. It can help sometimes.</string>
+    <string name="begin_changelog">Versi terpasang:</string>
+    <string name="billing_buy">Anda mahu cuba dapatkan item ini secara percuma?</string>
+    <string name="billing_hack2_auto_repeat_note">Untuk mematikan autoulang, anda perlu pilih aplikasi dan pergi ke \"Alat\"->\"Buang pembelian yang telah disimpan\" dan buang item.</string>
+    <string name="billing_hack2_new">"- Untuk hasil yang terbaik, anda perlu buat satu patch ke Android \"Status Pengesahan Pengenalan sentiasa Betul\";
+- Untuk matikan godaman, pergi ke \"Suis\" pada panel bawah Lucky Patcher dan pilih \"Matikan Emulasi Bil Google\"."</string>
+    <string name="billing_hack_menu">Emulasi Bil Google</string>
+    <string name="billing_hack_menu_descr">Memerlukan \"Patch Sokongan untuk DalamAplikasi dan LVL\" untuk menyasarkan Aplikasi dan \"Patch ke Android\" yang diaplikasi. Guna patch ubahsuai \"Sokongan.DalamAplikasi.LVL...\" untuk Google Play untuk maklumat pembelian sebenar dan harga dalam aplikasi.</string>
+    <string name="billing_hack_menu_disable">Matikan Emulasi Bil Google</string>
+    <string name="billing_hack_menu_enable">Hidupkan Emulasi Bil Google</string>
+    <string name="billing_hack_option">Hantar balasan kpd aplikasi yang tidak dikenalpasti (ini mungkin berhasil untuk pengguna-pengguna tanpa-root)</string>
+    <string name="billing_hack_option2">Simpan pembelian untuk simpanan semula</string>
+    <string name="billing_hack_warning_unity" formatted="false">If the purchase fails, try changing the type of this purchase in \"%1s\"->\"%2s\".</string>
+    <string name="billing_proxy_server_for_support_patch_descr">This service is needed for \"Support patch for InApp and LVL emulation\" and rebuild the application with him.</string>
+    <string name="billing_proxy_server_for_support_patch_inapp">Proxy server for emulation of inapp purchases</string>
+    <string name="bind_button">Tambah Direktori Jilidan baru!</string>
+    <string name="bind_delete">Anda mahu buang direktori jilidan ini?</string>
+    <string name="bind_dialog_button">Jilid Direktori</string>
+    <string name="bind_dialog_source">Direktori dengan Data:</string>
+    <string name="bind_dialog_target">Tetapkan Direktori dengan data ke:</string>
+    <string name="bind_error">Penjilidan gagal! Direktori data tidak ditemui pada peranti.</string>
+    <string name="bind_source">Direktori dengan Data:</string>
+    <string name="bind_target">Tetapkan Data ke:</string>
+    <string name="binder_browser">Pelayar</string>
+    <string name="binder_browser_create_dir">Cipta direktori</string>
+    <string name="binder_browser_current_dir">Direktori semasa</string>
+    <string name="binder_browser_select">Pilih direktori semasa.</string>
+    <string name="binder_delete">Padam</string>
+    <string name="bootview">Senarai but</string>
+    <string name="browse_to_file">Browse</string>
+    <string name="busybox_not_found">Amaran: Busybox tidak ditemui. Lucky Patcher tidak boleh diteruskan tanpa Busybox...</string>
+    <string name="button_add_to_boot_list">Add to boot</string>
+    <string name="button_advanced_filter">Tapisan</string>
+    <string name="button_all">All</string>
+    <string name="button_backup_apk_apps">Backup</string>
+    <string name="button_block_internet">Menyekat Internet</string>
+    <string name="button_disable_package">Matikan</string>
+    <string name="button_enable_package">HIdupkan</string>
+    <string name="button_for_delete">Padam</string>
+    <string name="button_for_uninstall_intsaller">Start uninstalling the installer</string>
+    <string name="button_integrate_update_apps">Integrasi</string>
+    <string name="button_move_to_internal">"Pindah ke
+storan dalaman"</string>
+    <string name="button_move_to_sdcard">Pindahkan ke Kad SD</string>
+    <string name="button_resign_app">Re-sign</string>
+    <string name="button_unblock_internet">Membuka Sekatan Internet</string>
+    <string name="button_uninstall_apps">Menyahpasang</string>
+    <string name="cancel">Batal</string>
+    <string name="change_folder_checkbox">Move data to a new location</string>
+    <string name="change_folder_message_end">Data folder changed to %1$s.</string>
+    <string name="change_folder_message_end2">Data transfer was disabled because a folder inside the previous one was selected. Data folder changed to %1$s.</string>
+    <string name="change_icon_lp">Tukar Ikon</string>
+    <string name="change_icon_lp_descr">Anda boleh menukar ikon standard untuk Lucky Patcher pada pelancar anda.</string>
+    <string name="changelog">Rekod perubahan</string>
+    <string name="checkbox_uninstall_and_instal_backup_cache">Make data and cache backups for installation.</string>
+    <string name="cleardalvik">Bersihkan Dalvik-cache dan But Semula</string>
+    <string name="cleardata">Bersihkan Data</string>
+    <string name="clipboard_message_for_app_dilaog_app_additional_info">Info Tambahan disalin pada papanklip</string>
+    <string name="clipboard_message_for_app_dilaog_app_info">Info app disalin pada papanklip</string>
+    <string name="clipboard_message_for_app_dilaog_app_permissions">Keizinan disalin pada papanklip</string>
+    <string name="cloneApplication">Klon aplikasi (Tidak berfungsi untuk semua)</string>
+    <string name="close">Close</string>
+    <string name="collect_logs">Mengumpul log.</string>
+    <string name="context_automodeslvl">Mod Automatik</string>
+    <string name="context_backup_apk">Salin fail .apk</string>
+    <string name="context_backup_apk_selected_apps">Backup apk selected apps</string>
+    <string name="context_backup_data">Salin tetapan Aplikasi</string>
+    <string name="context_batch_operations">Operasi Berkelompok</string>
+    <string name="context_block_internet_selected_apps">"Menyekat Internet untuk aplikasi yang dipilih
+Mungkin tidak berfungsi pada Android 4+"</string>
+    <string name="context_blockads">Sekat Iklan dalam Peranti</string>
+    <string name="context_change_components_menu">Tukar Komponen Aplikasi</string>
+    <string name="context_clearhosts">Padam Fail hos Tempatan</string>
+    <string name="context_crt_apk_permission">APK dengan Keizinan dan Aktiviti yang diubah</string>
+    <string name="context_dependencies">Buang kebergantungan</string>
+    <string name="context_dex_verification_kill_option">Removes integrity check and signature verification</string>
+    <string name="context_dex_verification_kill_option_describe">Injects code into the application to bypass the dex checksum and signature verification. This method doubles the size of the application.</string>
+    <string name="context_dexopt_app">ODEX Apl Ini</string>
+    <string name="context_disableActivity">Matikan Aktiviti Iklan</string>
+    <string name="context_disableComponents">"Matikan kaedah
+ komponen
+'matikan pm'(mungkin diaktifkan oleh aplikasi)"</string>
+    <string name="context_disable_google_ads">Matikan perkhidmatan Iklan Google</string>
+    <string name="context_disable_package">Matikan Pakej (Dibekukan)</string>
+    <string name="context_disable_package_for_selected_apps">Matikan aplikasi yang dipilih</string>
+    <string name="context_enable_google_ads">Hidupkan semula perkhidmatan Iklan Google</string>
+    <string name="context_enable_package">Aktifkan pakej</string>
+    <string name="context_enable_package_for_selected_apps">Hidupkan aplikasi yang dipilih</string>
+    <string name="context_hard_apk_permission">"Tukar Keizinan
+ Simpan pengenalan asal.
+(kaedah tidak stabil)"</string>
+    <string name="context_hide_lp">Sembunyikan Lucky Patcher</string>
+    <string name="context_hide_lp_descr">Cuba sembunyikan Lucky Patcher dari aplikasi lain. Membebankan sistem, guna jika perlu saja.</string>
+    <string name="context_install">Pasang</string>
+    <string name="context_install_as_system">Pasang sebagai Aplikasi Sistem.</string>
+    <string name="context_integrate_dalvik">Integrasi kod dalvik ke aplikasi yang telah dipasang</string>
+    <string name="context_integrate_update_selected_apps">Sepadukan kemas kini ke aplikasi dipilih /sistem</string>
+    <string name="context_menu_settings_show_last_added_custom_patches">Show last added custom patches</string>
+    <string name="context_move_selected_apps_to_internal">Pindah aplikasi dipilih ke storan dalaman</string>
+    <string name="context_move_selected_apps_to_sdcard">Pindah aplikasi dipilih ke Kad SD</string>
+    <string name="context_original_resign_app">Re-sign with original signature for android patch \"%1s\".</string>
+    <string name="context_patch_framework">Tampalkan fail rangka kerja</string>
+    <string name="context_purchases_sorter">Purchases sorter</string>
+    <string name="context_rebuild">Bina semula.</string>
+    <string name="context_removeAds">Koyok untuk buang Iklan Google</string>
+    <string name="context_remove_patch_boot">Remove patch on reboot</string>
+    <string name="context_remove_saved_purchaces">Buang semua pembelian yang disimpan</string>
+    <string name="context_resign_app">Re-sign with test signature.</string>
+    <string name="context_restore_apk">Pasang semula fail .apk</string>
+    <string name="context_restore_data">Bawa semula tetapan Aplikasi</string>
+    <string name="context_safe_apk_permission">"Ubah Keizinan dan Aktiviti
+Bina Semula dan Pasang"</string>
+    <string name="context_safe_sign_apk_permission">"Tukar Keizinan dan Aktiviti
+Simpan Pengenalan asal (Kaedah Selamat)"</string>
+    <string name="context_signature_verification_kill_option">Signature verification killer</string>
+    <string name="context_signature_verification_kill_option_describe">"Injects code into the application that tries to trick the application's signature verification. It must be applied strictly for the original application. If the application has already been rebuilt, this will not only not help, but can also harm if the option has already been implemented successfully."</string>
+    <string name="context_support_patch">Koyok Sokongan untuk DalamAplikasi dan emulasi LVL</string>
+    <string name="context_tools">Alatan</string>
+    <string name="context_trouble_enable_playprotect">Enable \"Play protect\"</string>
+    <string name="context_trouble_run_playprotect_dialog">Run \"Play protect\" dialog</string>
+    <string name="context_unblock_internet_selected_apps">"Membuka Sekatan Internet untuk aplikasi yang dipilih
+Mungkin tidak berfungsi pada Android 4+"</string>
+    <string name="context_unblockads">Buka Sekatan Iklan dalam Peranti</string>
+    <string name="context_uninstall_if_installed">Nyahpasang dan pasang</string>
+    <string name="context_uninstall_selected_apps">Nyahpasang aplikasi pengguna dipilih</string>
+    <string name="contextads">Buang Iklan Google</string>
+    <string name="contextbackup">Salinan</string>
+    <string name="contextblockfileads">Buang pautan dari APK</string>
+    <string name="contextblockfileads_descr">Buang pautan http:// menggunakan templat dari fail AdsBlockList_user_edit.txt dan AdsBlockList.txt.</string>
+    <string name="contextboot">"Patch pada But semula
+(Tidak stabil! Hanya untuk patching libs)"</string>
+    <string name="contextbootads">Buang Iklan Google</string>
+    <string name="contextbootcustom">Koyok Terubahsuai</string>
+    <string name="contextbootlvl">Buang Pengesahan Lesen</string>
+    <string name="contextcorepatch1">Status Pengesahan Pengenalan sentiasa Betul</string>
+    <string name="contextcorepatch1_descr">Diperlukan untuk pelagakan DalamAplikasi, LVL dan penjana kunci. Diperlukan untuk pengesahan benar pembelian dan lesen.</string>
+    <string name="contextcorepatch2">Matikan Pengesahan Pengenalan .apk</string>
+    <string name="contextcorepatch2_descr">Membenarkan pengubahsuaian sesebuah aplikasi tanpa membuat pengenalan baharu, supaya pengenalan pembangun tidak disentuh. Pengguna lain boleh memasang .apk ini hanya selepas memasang patch ke Teras Android (berguna ketika menterjemah, mengubahsuai grafik, dsb. dalam aplikasi yang dilindungi)</string>
+    <string name="contextcorepatch3">Matikan pengesahan pengenalan di dalam pengurus pakej</string>
+    <string name="contextcorepatch3_descr">Membenarkan pemasangan aplikasi dengan pengenalan lain di atas satu sama lain.</string>
+    <string name="contextcorepatch3_descr_plus">"+
+Membenarkan pemasangan aplikasi dengan versi yang lebih lama daripada versi yang sudah dipasang."</string>
+    <string name="contextcorepatch4">Patch sokongan untuk DalamAplikasi dan emulasi LVL</string>
+    <string name="contextcorepatch4_descr_xposed">Diperlukan untuk pelagakan berfungsi tanpa Patch sokongan kepada Aplikasi.</string>
+    <string name="contextcorepatchrestore2_descr">Padam semua koyok dari Android services.jar</string>
+    <string name="contextcorepatchrestore_descr">Padam semua patch dari Android core.jar</string>
+    <string name="contextcustompatch">Koyok terubahsuai</string>
+    <string name="contextdeodex">"Padam ODEX dengan perubahan
+(restore aplikasi)"</string>
+    <string name="contextfulloffline">Jadikan tanpa talian sepenuhnya</string>
+    <string name="contextfulloffline_descr">Percubaan untuk menjadikan aplikasi berfungsi tanpa talian</string>
+    <string name="contextignore">Padam Pengesahan Lesen</string>
+    <string name="contextlaunchapp">Lancarkan aplikasi.</string>
+    <string name="contextmultipatch">Multi-patch</string>
+    <string name="contextmultipatchrebuild">Apk with Multi-patch</string>
+    <string name="contextodex">Gunakan perubahan dalam ODEX</string>
+    <string name="contextpatt1">Pengubahsuaian Pengesahan Lesen</string>
+    <string name="contextpatt1_descr">Jika ada, sila pasang internet ketika pelancaran pertama. Kumpulan patch ini akan lakukan sedikit perubahan.</string>
+    <string name="contextpatt2">Pembaikan Lesen Cache (Pembaikan Internet)</string>
+    <string name="contextpatt2_descr">Jika ada, mungkin tidak perlu sambungan internet ketika pelancaran pertama.</string>
+    <string name="contextpatt3">Pembaikan Pengesahan Kod Tindak balas</string>
+    <string name="contextpatt3_descr">Pembaikan kecil untuk Pengesahan Lesen.</string>
+    <string name="contextpatt4">Pertukaran Kod Tindakbalas Google</string>
+    <string name="contextpatt4_descr">Masih belum stabil tetapi sangat berkesan. Jika ada, benarkan sambungan internet pada pelancaran pertama.</string>
+    <string name="contextpatt5">Pengesahan Lesen Akhir</string>
+    <string name="contextpatt5_descr">Templat untuk pengesahan lesen akhir. Jika ini berfungsi, aplikasi akan bekerja tanpa sambungan internet.</string>
+    <string name="contextpatt6">Pengesahan Lesen Akhir (Songsang)</string>
+    <string name="contextpatt6_descr">Jika \"Pengesahan Lesen Akhir\" tidak berhasil, anda boleh cuba patch-patch ni.</string>
+    <string name="contextpattads3">Rosakkan iklan penerima</string>
+    <string name="contextpattads3_descr">Cuba untuk memecahkan mekanisme perolehan Iklan Google.</string>
+    <string name="contextpattads4">Koyok lain</string>
+    <string name="contextpattads4_descr">Lain-lain patch yang mana mungkin berguna untuk membuang iklan.</string>
+    <string name="contextpattads6">Koyok tanpa talian</string>
+    <string name="contextpattads6_descr">Buatkan modul iklan menyangka ia di luar talian.</string>
+    <string name="contextpattamazon">Mod Auto (Amazon Market)</string>
+    <string name="contextpattamazon_descr">Padam Pengesahan Lesen untuk aplikasi-aplikasi dari Amazon Market.</string>
+    <string name="contextpattdependencies_descr">Membuang kebergantungan Google Play dan lain-lain...</string>
+    <string name="contextpattlvl1">Mod Auto</string>
+    <string name="contextpattlvl1_descr">Bilangan minimum daripada penampal. Sesuai untuk kebanyakan aplikasi dengan perlindungan yang mudah.</string>
+    <string name="contextpattlvl2">Mod Auto (Songsang)</string>
+    <string name="contextpattlvl2_descr">Terdapat beberapa perbezaan dari \"Mod auto\". Ia mungkin membantu anda, sekiranya \"Mod auto\" tidak berhasil.</string>
+    <string name="contextpattlvl3">Lain-lain Patch (Mod Extreme)</string>
+    <string name="contextpattlvl3_descr">Patch tambahan (mungkin menyebabkan ketidakstabilan). Diaplikasikan hanya jika lain-lain pattern tidak berjaya. Memerlukan internet. Sila cuba bersama dengan \"Mod auto\" atau \"Mod auto (Songsang)\".</string>
+    <string name="contextpattlvl4">Gunakan koyok pada dalvik-cache</string>
+    <string name="contextpattlvl4_descr">Semua pengubahan ditulis secara tersedia untuk fail-odex. Tetapi kaedah ini tidak akan berfungsi dengan baik jika aplikasi telah dipindahkan ke kad SD luaran. Dalam situasi ini \"Menggunakan Tampalan untuk dalvik-cache\" mungkin boleh membantu. Anda boleh memulihkan semula aplikasi hanya dengan pemasangan semula.</string>
+    <string name="contextpattlvl5">Siagakan fail-apk</string>
+    <string name="contextpattlvl5_descr">Akan menyalin fail pakej aplikasi ke folder Lucky Patcher pada kad SD. Anda boleh memulihkan semula aplikasi dari salinan apk.</string>
+    <string name="contextpattlvl6">Padam dalvik-cache</string>
+    <string name="contextpattlvl6_descr">Padam cache dalvik aplikasi untuk menjimatkan ruang selepas menghasilkan fail-odex. Jika aplikasi tidak dapat beroperasi dengan baik dengan odex, anda perlu memasang semula aplikasi tersebut.</string>
+    <string name="contextpattlvl_dex">Auto Mode(dex)</string>
+    <string name="contextpattlvl_dex_descr">The minimum number of patches. Only works with google Play installed. When you first start a hacked program, you need the Internet.</string>
+    <string name="contextpattsamsung">Mod Auto (SamsungApps)</string>
+    <string name="contextpattsamsung_descr">Padam Pengesahan Lesen untuk aplikasi-aplikasi dari SamsungApps.</string>
+    <string name="contextreinstall">"Reinstalling Application
+(removes all patches)"</string>
+    <string name="contextrestore">Pulihkan semula</string>
+    <string name="contextselpatt">Pattern Terpilih</string>
+    <string name="core_only_dalvik_cache_end">Jika peranti membeku atau tidak semua tampalan berfungsi, sila mulakan semula peranti secara manual.</string>
+    <string name="core_only_dalvik_cache_finished">"Tampalan Android untuk dalvik-cache selesai.
+Keputusannya adalah:
+"</string>
+    <string name="core_option">hanya tampal dalvik-cache.</string>
+    <string name="core_patch_apply">(patch diaplikasikan)</string>
+    <string name="core_patch_nopatch">(tidak di-patch)</string>
+    <string name="core_patch_nopatch_no_space1">Dalvik cache daripada core.jar telah ditampalkan, tetapi tampalan jenis ini boleh hilang semasa mengemaskini dalvik-cache. Ruang tidak mencukupi di dalam Sistem ROM untuk mencipta core.odex. Sila bebaskan kira-kira 4MB, bersihkan dalvik-cache dan cuba lagi. Sila mulakan semula peranti untuk menetapkan tampalan ke dalvik-cache.</string>
+    <string name="core_result_checkbox">tampalan dalvik-cache sentiasa pada mulakan semula (hanya jika tampalan core.jar dikeluarkan selepas memulakan semula).</string>
+    <string name="corepatches">Patch ke Android</string>
+    <string name="corrupt_download">Fail yang dimuatturun rosak. Sila semak samada masih ada ruang kosong dalam Kad SD kemudian cuba lagi.</string>
+    <string name="create">Cipta direktori</string>
+    <string name="create_clone_option1">Ubahsuai hanya AndroidManifest.xml</string>
+    <string name="create_clone_option1_descr">Ia tidak berhasil untuk semua aplikasi. Jika klon tidak dipasang, anda perlu membuang yang asal punya. Jika kaedah ini tidak berhasil juga, cuba hasilkan satu klon dengan jalan yang lain.</string>
+    <string name="create_clone_option2">Ubahsuai AndroidManifest.xml, sumber dan classes.dex</string>
+    <string name="create_clone_option2_descr">ia tidak berhasil untuk semua aplikasi. Kaedah ini cuba mengubah sumber dan classes.dex. Seperti klon yang lebih terpencil daripada yang asal.</string>
+    <string name="create_dir_error">Ralat: Nama direktori adalah kosong.</string>
+    <string name="create_dir_error_2">Ralat: direktori tidak dicipta.</string>
+    <string name="create_lic_done">Berjaya! Lesennya telah berjaya dicipta. Cuba untuk menguji aplikasi semasa di luar talian. Mungkin anda akan bernasib baik.</string>
+    <string name="create_perm_ok">Membina Semula Aplikasi!</string>
+    <string name="createapk">Cipta Pengubahsuaian Fail APK</string>
+    <string name="createapkads">Apk tanpa Iklan Google</string>
+    <string name="createapkcustom">PenampalTersuai-digunakan .apk</string>
+    <string name="createapklvl">Apk tanpa Pengesahan Lesen</string>
+    <string name="createapksupport">Pembinaan semula apk untuk DalamApl dan emulasi LVL</string>
+    <string name="createdialog1">Pengubahsuaian daripada</string>
+    <string name="createdialog1_clone">Klon</string>
+    <string name="createdialog2">"lengkap.
+
+Laluan fail:"</string>
+    <string name="createdialog3">"
+
+Nota Bene! Jika aplikasi berfungsi dengan baik setelah ditampalkan, tiada jaminan bahawa ia akan meningkatkan kerja dalam bentuk apk yang-diubahsuai - beberapa aplikasi mungkin dilindungi daripada pengubahsuaian. Anda cenderung untuk menjadi lebih bernasib baik dengan menampal, berbanding dengan mengubahsuai."</string>
+    <string name="createdialog3_clone">Perhatian! Sesetengah aplikasi perlu dinyahpasang sebelum pemasangan aplikasi klon. Tiada jaminan ia akan beroperasi dengan baik dalam bentuk apk klon - sesetengah aplikasi juga dipelihara dari pengubahsuaian.</string>
+    <string name="createdialog5">Namafail:</string>
+    <string name="custom_descript">Keterangan Tampalan Tersuai:</string>
+    <string name="custom_patch_log_add_custom_patch_to_boot_list">Patch on Reboot added.</string>
+    <string name="custom_patch_log_block_internet_hosts">Blocking internet hosts</string>
+    <string name="custom_patch_log_change_components">Changing components</string>
+    <string name="custom_patch_log_change_preference_delete">Delete shared preference</string>
+    <string name="custom_patch_log_change_preference_insert">Insert shared preference</string>
+    <string name="custom_patch_log_change_preference_not_found_file">Not found file</string>
+    <string name="custom_patch_log_change_preferences">Changing shared preferences</string>
+    <string name="custom_patch_log_next_custom_patch">Run next custom patch</string>
+    <string name="custom_patch_log_offset">Offset</string>
+    <string name="custom_patch_log_or_patch_is_already_applied">or patch is already applied?!</string>
+    <string name="custom_patch_log_patch_all_files">Patch for files from directory</string>
+    <string name="custom_patch_log_patch_done">Patch done!</string>
+    <string name="custom_patch_log_patch_for">Patch for</string>
+    <string name="custom_patch_log_patch_for_libraries">Patch for libraries</string>
+    <string name="custom_patch_log_patch_on_reboot_added">Patch on Reboot added!</string>
+    <string name="custom_patch_log_pattern">Pattern</string>
+    <string name="custom_patch_log_pattern_not_found">Pattern not found!</string>
+    <string name="custom_patch_log_search_bytes">Bytes by search</string>
+    <string name="custom_patch_log_search_bytes_error">Bytes not found!</string>
+    <string name="custom_patch_log_skip_patch_for_build">Skip patch for build</string>
+    <string name="custom_patch_result_all_dont_patch">Custom Patch not valid for this Version of the Programm or already patched.</string>
+    <string name="custom_patch_result_not_all_patches_apply">Not all patterns are replaced, but the program can work, test it!</string>
+    <string name="custom_patch_warning">Patch Ubahsuai tidak ditemui. Ia bermasalah dengan root. Janga akses kad SD dari root. Jika anda guna SuperSu, cuba nyahaktif \"pemisahan ruangnama mount\" dalam SuperSu. Jika ia tidak membantu, sila kemaskini SuperSu dan kemaskini fail binary su dari SuperSu.</string>
+    <string name="custom_patches_update_not_found">Tiada kemaskini untuk penampal tersuai yang ditemui.</string>
+    <string name="custom_sel_app">Aplikasi dipilih:</string>
+    <string name="customdescr">Tunjukkan semua aplikasi dengan tampalan tersuai yang digunakan.</string>
+    <string name="customtitle">Penampalan-tersuai aplikasi</string>
+    <string name="dalvik_cache_size">Saiz dalvik-cache:</string>
+    <string name="data_dir_size">Saiz direktori data:</string>
+    <string name="date_creation_patch">Date of patch added</string>
+    <string name="days_on_up">Tunjukkan Aplikasi Terbaru Dahulu</string>
+    <string name="days_on_up_descr">Tetapkan bilangan hari maksimum bagi aplikasi lama yang masih boleh dianggap baru. Tetapkan kepada 0 hari jika anda mahu untuk melumpuhkan pergerakan aplikasi baru-baru ini dipasang untuk kebahagian atas.</string>
+    <string name="delboot">Tekan untuk memadam dari Senarai but</string>
+    <string name="delete_file">Padam fail</string>
+    <string name="delete_file_message">Adakah anda benar-benar mahu nemadamkan fail ini?</string>
+    <string name="delete_system_app">Delete system application</string>
+    <string name="delete_system_app_for_user">Uninstall system app for current user</string>
+    <string name="delete_system_app_for_user_message">Do you really want to uninstall system app %s for current user?</string>
+    <string name="describe_for_Proxy_gp">(mini version with license and inapp emulation only)</string>
+    <string name="dialog_end_orig_resign_app">%1$s was signed by a original signature successfully. Resigned file is located %2$s.</string>
+    <string name="dialog_end_resign_app">%1$s was signed by a test signature successfully. Resigned file is located %2$s.</string>
+    <string name="dialog_system">Aplikasi ini adalah sebahagian daripada sistem operasi Android. Berhati-hati ketika melaksanakan apa-apa operasi terhadapnya, kerana anda boleh merosakkan-peranti anda. Mempunyai sandaran? Adakah anda pasti mahu bekerja dengan aplikasi ini?</string>
+    <string name="dir_change">Menukar Direktori</string>
+    <string name="dir_change_descr">"Change the directory on the SD Card where Lucky Patcher will store its files. The default path is
+/mnt/sdcard/Android/data/[package_name_of_lucky_patcher]/files/LuckyPatcher"</string>
+    <string name="dirbinder">Direktori Pengikat</string>
+    <string name="dirr_chg">Direktori ditukarkan pada:</string>
+    <string name="disable_autoupdate">Lumpuhkan Kemaskini-automatik</string>
+    <string name="disable_autoupdate_descr">Periksa untuk melumpuhkan kemaskini automatik</string>
+    <string name="disable_inapp_services_google">Perkhidmatan DalamAplikasi ke Gedung Google Play</string>
+    <string name="disable_inapp_services_google_descr">Sesetengah aplikasi akan tertutup dengan sendiri jika terlalu banyak perkhidmatan DalamAplikasi diaktifkan.</string>
+    <string name="disable_license_services_google">Perkhidmatan Lesen ke Gedung Google Play</string>
+    <string name="disable_license_services_google_descr">Sesetengah aplikasi akan tertutup dengan sendiri jika terlalu banyak perkhidmatan lesen diaktifkan.</string>
+    <string name="disabled">disabled</string>
+    <string name="disabled_package">Melumpuhkan pakej (beku).</string>
+    <string name="dont_send_log_lp_modified">Your Lucky Patcher has been modified. You can not send a log.</string>
+    <string name="dont_send_log_please_update_lp">Please update Lucky Patcher to last version for send log.</string>
+    <string name="dontusepatch">Batal</string>
+    <string name="download">Memuatkan....</string>
+    <string name="download_progress_dialog_message_downloading">Download file</string>
+    <string name="download_progress_dialog_message_prepare_downloading">Preparing download...</string>
+    <string name="download_progress_dialog_message_resume_downloading">Resuming file download</string>
+    <string name="empty">kosong</string>
+    <string name="empty_binders">Anda mesti mencipta sekurang-kurangnya satu pengikat untuk menambah widget.</string>
+    <string name="enabled">enabled</string>
+    <string name="enabled_package">Mendayakan pakej.</string>
+    <string name="enter_name_dir">Nama direktori:</string>
+    <string name="equals_version">~ Lucky Patcher yang anda gunakan adalah versi terkini√√ ~</string>
+    <string name="error">Ralat</string>
+    <string name="error2_backup_apk">Failed to backup APK file. The classes.dex files are missing inside the application.</string>
+    <string name="error_apk_to_system">Anda tidak boleh memasang aplikasi dari tempat ini, sila letakkan ia pada kad SD.</string>
+    <string name="error_app_installed_on_sdcard">Lucky Patcher mestilah dipasang ke memori dalaman. Jika tidak, beberapa ciri-ciri mungkin tidak berfungsi dengan betul.</string>
+    <string name="error_app_installed_on_sdcard_block">Lucky Patcher mestilah dipasang ke memori dalaman. Ciri ini tidak berfungsi apabila Lucky Patcher berada di sd luaran.</string>
+    <string name="error_backup_apk">Gagal untuk membuat sandaran fail-apk. Tiada keizinan untuk menyalin.</string>
+    <string name="error_classes_not_found">Fail \".jar\" tidak mengandungi classes.dex untuk ditampalkan. Cuba tampalkan fail \".odex\" ini untuk \".jar\".</string>
+    <string name="error_collect_logs">Kesilapan dalam pengumpul log berlaku. Log tidak diciptakan.</string>
+    <string name="error_create_join_custom_patch">"Could not create the file join_patch.txt.
+There may not be permissions to write to the patch folder."</string>
+    <string name="error_create_oat">Error creating .oat file for patched classes.dex. Patch has made some errors in classes.dex or some problems with the firmware. Try changing the java-root method in the settings of Lucky Patcher. It can help sometimes.</string>
+    <string name="error_delete_join_custom_patch">"Could not delete the file join_patch.txt
+Delete the file manually or patch folder."</string>
+    <string name="error_detect">Nampaknya Lucky Patcher telah dipaksa tutup serta-merta, adakah anda mahu menghantar laporan kerosakan?</string>
+    <string name="error_expansion_copy_to_sdcard">Application is installed, but it was not possible to copy the cache to /Android/obb folder.</string>
+    <string name="error_get_classes_files_for_patch">Could not get the classes.dex files for the patch.</string>
+    <string name="error_get_pkgInfo">Ralat: tidak dapat maklumat pakej.</string>
+    <string name="error_import_custom_patch">Lucky Patcher can not import custom patch. Zip archive damaged.</string>
+    <string name="error_installation">Failed to install the application.</string>
+    <string name="error_launch">Tidak boleh dilancarkan!</string>
+    <string name="error_message_for_share_app">Aplikasi tidak dikongsi. Ralat tidak diketahui. Cuba tukar direktori yang berfungsi untuk Lucky Patcher.</string>
+    <string name="error_not_found_lic_data">Data untuk membuat lesen tidak ditemui.</string>
+    <string name="error_not_found_storage_lic">Lokasi lesen tidak ditemui.</string>
+    <string name="error_odex_app">Ralat: Proses mencipta odex gagal... Kemungkinan ruang cakera yang tidak mencukupi.</string>
+    <string name="error_odex_app_impossible">Aplikasi ini tidak mengandungi classes.dex. Pengoptimuman Dex adalah mustahil.</string>
+    <string name="error_out_of_memory">Memori (RAM) tidak cukup untuk menyelesaikan operasi ini. Heap VM terlalu kecil.</string>
+    <string name="error_path">Laluan salah!</string>
+    <string name="error_path_exists">Direktori telah wujud. Sila masukkan laluan baru.</string>
+    <string name="error_read_folder">"folder can't be read!"</string>
+    <string name="error_restore">Memulihkan semula gagal.</string>
+    <string name="exit">Exit</string>
+    <string name="extpat1">Nampak seperti</string>
+    <string name="extpat2">objek mempunyai pengesahan lesen:</string>
+    <string name="extpat3">"Arahan:
+--------------
+-Sila tekan butang \"Sandaran\" ;
+-Aktifkan capaian data melalui Wi-Fi atau Rangkaian Mudah Alih dan benarkan semua sambungan untuk aplikasi;
+-Pilih corak dan tekan \"Koyok\";
+-Tekan \"Lancarkan\" dan periksa status lesen (segar semula, jika perlu);
+-Jika corak ini tidak membantu, tekan \"Pulihkan semula\" dan cuba lagi dengan corak yang lain.
+ Jika operasi adalah berjaya tekan \"Betulkan Pengubahan\"."</string>
+    <string name="extres1">"Tampalan selesai! Lancarkan dan periksa status lesen aplikasi;
+-Jika corak ini tidak membantu, tekan \"Pulihkan semula\" dan ulangi prosedur dengan corak yang lain."</string>
+    <string name="extres2">"Tags tidak dijumpai untuk corak ini!
+Sudah bertampal?
+Tekan \"Pulihkan semula\", pilih corak yang lain dan tampalkannya sekali lagi."</string>
+    <string name="failed">gagal</string>
+    <string name="fast_start">Permulaan Pantas</string>
+    <string name="fast_start_descr">Lumpuhkan pemuat ikon daripada pangkalan data Lucky Patcher. Ini membuatkan senarai aplikasi yang lembab...</string>
+    <string name="file_not_deleted">Fail tidak dipadamkan.</string>
+    <string name="file_not_found">"Aplikasi tidak dapat disalin ke kad SD!
+ Sila bebaskan sedikit ruang pada kad SD atau periksa pemasangan busybox anda."</string>
+    <string name="filter">Carian</string>
+    <string name="filter0">Aplikasi Baru dan dikemaskini</string>
+    <string name="filter1">Aplikasi dengan LVL</string>
+    <string name="filter10">Aplikasi dilumpuhkan (beku)</string>
+    <string name="filter11">Aplikasi-aplikasi dengan patch ubahsuai</string>
+    <string name="filter12">Aplikasi-Aplikasi dengan tanda pengubahsuaian</string>
+    <string name="filter13">Aplikasi-Aplikasi yang telah di-Odex-kan</string>
+    <string name="filter2">Aplikasi dengan IKLAN</string>
+    <string name="filter4">Aplikasi dengan DalamApl Google</string>
+    <string name="filter5">Aplikasi pada memori peranti</string>
+    <string name="filter6">Aplikasi pada Kad SD</string>
+    <string name="filter7">Aplikasi Sistem</string>
+    <string name="filter8">Aplikasi Sistem dengan kemaskini</string>
+    <string name="filter9">Aplikasi dengan keizinan SEND_SMS dan CALL_PHONE</string>
+    <string name="filterSplittedApps">Split applications</string>
+    <string name="filterdescr">Pilih kategori untuk ditunjukkan.</string>
+    <string name="final_market_message">Google Play telah pun dipasang. Sekarang core.jar akan ditampalkan dan peranti akan mulakan semula. Teruskan?</string>
+    <string name="fixbutton">Menetapkan pengubahan</string>
+    <string name="fixeddescr">Tunjukkan semua aplikasi dengan pengubahan yang ditetapkan (Tanda bintang kuning).</string>
+    <string name="fixedtitle">Aplikasi dengan pembaikan dalam ODEX</string>
+    <string name="folder_message_error">New folder must be empty. Please select a different folder.</string>
+    <string name="framework_file_patched">ditampalkan dan dinamakan semula ke</string>
+    <string name="framework_patch_not_result">Lucky Patcher tidak menemui sebarang bytes untuk tampal.</string>
+    <string name="generate_log_error_message">Log tidak dihasilkan. Ketika dalam proses penghasilan, sebuah kesilapan telah berlaku.</string>
+    <string name="generate_log_for_conscrypt_jar_fix_android_patches">"Buat log untuk conscrypt.jar
+(fix untuk \"Patch to Android\")"</string>
+    <string name="generate_log_for_core.jar_fix_android_patches">"Hasilkan log untuk core-libart.jar
+(untuk penyelesaian \"Patch ke Android\")"</string>
+    <string name="generate_log_for_core_oj_jar_fix_android_patches">"Create log for core-oj.jar
+(for fix \"Patch to Android\")"</string>
+    <string name="generate_log_for_framework_fix_android_patches">"Create log for framework.jar
+(for fix \"Patch to Android\")"</string>
+    <string name="generate_log_for_services.odex_fix_android_patches">"Hasilkan log untuk services.jar
+(untuk penyelesaian \"Patch ke Android\")"</string>
+    <string name="generate_log_result_message_conscrypt.jar">"Log telah dibuat dan disimpan di sini /sdcard/conscrypt.oat.txt. Simpan fail ke cloud atau compress dalam bentuk zip. Kemudian hantarkan kepada saya melalui emel lp.chelpus@gmail.com.
+File size:"</string>
+    <string name="generate_log_result_message_core_oj.jar">"Log created and stored here /sdcard/core-oj.oat.txt. Save the file to the cloud or compress to zip. Then send it to me in the mail lp.chelpus@gmail.com.
+File size:"</string>
+    <string name="go_to_file_path">Pergi ke fail</string>
+    <string name="goodresult">"% Bertuah!
+Sila jalankan aplikasi untuk percubaan!
+
+Jika kerja-kerja aplikasi tidak betul, sila pasangkannya semula dan tidak mencuba untuk menampal versi ini daripadanya."</string>
+    <string name="google_play_installer_clear_data_google_services">Clear data of google services for fix the problem of logging into google account inside Google Play</string>
+    <string name="have_luck">"***********************
+
+Anda mempunyai"</string>
+    <string name="header_activities">Aktiviti:</string>
+    <string name="header_providers">Pembekal:</string>
+    <string name="header_receivers">Penerima:</string>
+    <string name="header_services">Perkhidmatan:</string>
+    <string name="help">Bantuan</string>
+    <string name="help_3dot">"This is a split application. When creating a backup, a container of the 'apks' type will be created;"</string>
+    <string name="help_PS">P.S.: Lucky Patcher closes an application when it applies a patch to it. This is necessary so that the new changes will persist. However, sometimes you may also need to restart the device itself or use a third-party tool to kill the process or processes of the affected application to see the changes.</string>
+    <string name="help_bootlist_describing">*%1$s - A list of applications that will be patched on boot. At this point, it is useful only for custom patches requiring the correction of .so libraries. It will be indicated in the description of those custom patches to add them to the Bootlist.</string>
+    <string name="help_common">Asas</string>
+    <string name="help_custom">Mewujudkan Tampalan Tersuai</string>
+    <string name="help_custom_add_boot_tag">automatically adds the current user patch to \"%1$s\". Should be used in the patch library (or in the patch [CLASSES] without [ODEX] or without [PACKAGE])</string>
+    <string name="help_custom_add_file_in_apk_tag">"Add file from Lucky Patcher dir to apk archive:
+Example:"</string>
+    <string name="help_custom_all_files_tag">"patches all files in the directory. \"dir\" - directory for patch files. \"template\" - template for files to patch (only \"*\" can be used in the template).
+Example:"</string>
+    <string name="help_custom_all_lib_tag">pattern search/replace for all native libraries</string>
+    <string name="help_custom_apk_build_param">Apply this pattern only for apk with build=apk_build. You can apply pattern for build>=apk_build (Example: {\"apk_build\":\"206+\"}) or can apply for build less or equal apk_build (Example: {\"apk_build\":\"206-\"}).</string>
+    <string name="help_custom_apk_build_param2">You can apply the patch pattern for the apk version interval if you specify two apk_builds:</string>
+    <string name="help_custom_begin_tag">patch comments that are visible to the user pre-patch</string>
+    <string name="help_custom_begin_tag_detail">The start mark, all the text after it and up to the first field [CLASSES], [LIB], [END], etc. will be displayed at the beginning of the patch log for the user.</string>
+    <string name="help_custom_block_hosts_tag">"blocks listed internet hosts. \"host\" - the host you want to block.
+Example:"</string>
+    <string name="help_custom_classes_bez_package_tag">"Patches dalvik-cache applications. Do not forget that the system periodically updates dalvik-cache applications and all the changes will disappear. Therefore, we must add [ADD-BOOT]. The patch for dalvik-cache is outdated, as it is unreliable. But it is needed for the ROM Toolbox, because it does not work well with odex-files.
+Example:"</string>
+    <string name="help_custom_classes_name_param">Apply a patch to one specific classes file (for example: {\"classes_name\":\"classes2.dex\"}, {\"classes_name\":\"classes3.dex\"}, {\"classes_name\":\"classes.dex\"} ...).</string>
+    <string name="help_custom_classes_tag">pattern search/replace for classes.dex (see below)</string>
+    <string name="help_custom_classes_tag_detail">Here are the lines for the classes.dex patch. They can be search, original-replaced and other options described below.</string>
+    <string name="help_custom_component_tag">"Enable or disable components of Applications.
+Example:"</string>
+    <string name="help_custom_copy_file_tag">"Copy file from Lucky Patcher dir to path with new file name:
+Example:"</string>
+    <string name="help_custom_database_param">Path to database on Device, or you can use only database name for Lucky Patcher self search file.</string>
+    <string name="help_custom_delete_file_in_apk_tag">"Delete file inside apk archive:
+Example:"</string>
+    <string name="help_custom_delete_folder_in_apk_tag">"Delete file inside apk archive:
+Example:"</string>
+    <string name="help_custom_deprecated_tag">Deprecated</string>
+    <string name="help_custom_end">You have edited everything, save and drop the file into the \"CustomPatches\" directory located in the Lucky Patcher folder. This folder can be viewed in the \"About\" section at the very top. Then the program is highlighted in yellow, and you can apply this patch to it.</string>
+    <string name="help_custom_end_tag">patch comments that are visible to the user post-patch</string>
+    <string name="help_custom_execute_param">SQLite query.</string>
+    <string name="help_custom_file_in_apk_tag">pattern search/replace for file from apk file (this patch working only for rebuild apk with this custom patch)</string>
+    <string name="help_custom_general_text1">- The patch file must have the same name as the target APK (this is case sensitive).</string>
+    <string name="help_custom_general_text2">- If the file is a custom patch for the application already exists, you can simply add at the beginning of the file name of any Text and save it as near the existing.</string>
+    <string name="help_custom_general_text3" formatted="false">- If you want to write a patch once a series of programs on a single firm, then the end the custom patch file name, you can use _%ALL%, for example the name of the patch for all the votes SVOX will look like this: com.svox.classic.langpack_%ALL%.txt. On the _%ALL% is replaced by the name part of the package, which varies depending on the application of the firm. Do not use special characters/formatting in the patch file (single spaces only). If you need to make a patch for several programs of one firm and add a prefix at the beginning, you can use %ALL%_ and _%ALL%. (Example name: chelpus.%ALL%_com.android._%ALL%.txt).</string>
+    <string name="help_custom_general_text4" formatted="false">- You can use to custom patch content %PACKAGE_NAME% for path to files, this %PACKAGE_NAME% replace to package name of target applications.</string>
+    <string name="help_custom_general_text5">- To search for patterns of bytes use IDA Pro 6.1+. It can open dalvik-cache, odex, libraries and classes.dex.</string>
+    <string name="help_custom_general_text6">- If you want to patch dalvik-cache or odex, do not forget that the bytes of data in different firmware versions may vary. And keep in mind that not all classes.dex in the bytes coincide with dalvik-cache and odex. In this example you can see, if you open classes.dex and odex-file in IDA Pro.</string>
+    <string name="help_custom_general_text7">"- In Lucky Patcher ver.6.5.4+ the ability to create lpzip files is added. It's a zip archive, which can contain apk files and custom patches. Apk will to be installed. Custom patches will be automatically imported into Lucky Patcher. (Example: installSomeAppsWithPatch.lpzip)"</string>
+    <string name="help_custom_group_param">"Marks patterns of the group (group number could be 1 or higher). You may be asking 'What does this mean?'. Well, what it means is that If at least one pattern from the group has succeeded, a successfully patched message will be shown. This is useful when you try to make a universal patch for multiple versions of a particular application (for example, patch all versions of Google Play to disable automatic updates)."</string>
+    <string name="help_custom_increment_decrement_param">"Adding and subtracting decimal numbers from the original byte ...
+For example:"</string>
+    <string name="help_custom_increment_decrement_param_end">"Or here's an example:"</string>
+    <string name="help_custom_insert_param">"If you want to insert the data length is greater or smaller than the length of the original pattern.
+(Example)file before patch contain:\"chelpa end\""</string>
+    <string name="help_custom_insert_param_end">file after patch contain:\"chelpaa end\"</string>
+    <string name="help_custom_lib_tag">pattern search/replace for named native libraries (see below)></string>
+    <string name="help_custom_lib_tags">This means that the lines for the patch of the library of this program will follow, \"name\" is the name of the library (if you put * instead of the name, then all application libraries will be patched).</string>
+    <string name="help_custom_libs_tags">For Libraries from /lib/armeabi/, /lib/armeabi-v7a/, /lib/arm64-v8a/, /lib/mips/, /lib/x86/, /lib/x86_64/.</string>
+    <string name="help_custom_name_param">"Usually indicates the object to which the patch will be applied. It can be just a file name, a file name with a path, and the like. In some cases, you can use '*' to patch all libraries, for example, if the name of the library is unknown."</string>
+    <string name="help_custom_odex_patch_tag">"Uses for the patch has already been created odex. For example, an application has been patched with the automatic mode by Remove License Verification, but you need to make additional changes by using a Custom Patch. If we use a simple [PACKAGE]-[CLASSES], [ODEX] or [CLASSES]-[ODEX], odex-file will be created with no change and only then patched. In this version of Lucky Patcher, this is no longer required, since there is an option \"%1$s\". 
+Example:"</string>
+    <string name="help_custom_odex_tags">On older Androids, this tag could be used. Instead of the tag [CLASSES], you can use this one. Then the changes in classes.dex will be saved not in dalvik-cache, where they periodically disappear when the system updates the cache, but in a separate file with the odex extension next to the apk of the application, which will fix all the changes and leave the original dalvik-cache intact - this is just in case, if the application checks it. You can use [ODEX] after [CLASSES], then the changes will be made to the dalvik cache and automatically committed to odex. This is not necessary on modern firmware.</string>
+    <string name="help_custom_offset_param">This offset is relative to the start in hexadecimal format for applying the patch.</string>
+    <string name="help_custom_original_param">This is a pattern mask used to find the offset where the patch will be applied.</string>
+    <string name="help_custom_original_param_end">In this example, bytes make up the pattern mask, and (??, **) means any byte.</string>
+    <string name="help_custom_other_files_tag">pattern search/replace for named other files in /data/data/Package_Target_APK/ or in /sdcard (see below)</string>
+    <string name="help_custom_package_tag">unpacks classes.dex and applies all the patches from the [CLASSES] to it. And generates, based on the modified classes.dex, odex-file.</string>
+    <string name="help_custom_package_tag_detail">This tag means that we will not patch dalvik-cache directly, but we will pull out classes.dex from target application, patch (with patches that follow the identifiers [CLASSES] or [ODEX]), create an odex image with changes and put to application. This is the image that TitaniumBuckup needs, for example. it checks it and all check-sums inside it must be correct. It is advisable to use this tag always, because such a patch is the most correct, but if it causes any problems, it is possible without it.</string>
+    <string name="help_custom_permission_tag">"Analog linux command \"chmod permissions file_name\" for files in data dir of Application:
+Example:"</string>
+    <string name="help_custom_rename_file_in_apk_tag">"Rename file inside apk archive:
+Example:"</string>
+    <string name="help_custom_replace_from_file_param">this will follow an \"original\" statement, this is what the offset will be overwritten with bytes from the file (file must saved near custom patch).</string>
+    <string name="help_custom_replace_from_file_param_end">This is done in order to avoid writing very long templates to replace.</string>
+    <string name="help_custom_replaced_param">This must follow \"original\" or \"offset\", this is what these bytes will be overwritten with, or written at the specified offset. Bytes in places marked with (?? or **) remain untouched:</string>
+    <string name="help_custom_replaced_param_end">In this example, bytes W0, W1, W2 are stored bytes from the previously executed \"search\"</string>
+    <string name="help_custom_s0_s1_sq_param">"Sets smali variable to 0 (convert hex number to: 43->03,54->04...) or 1 (convert hex number to: 43->13,04->14...) respectively or set, SQ convert hex 34->44, 51->11 ...
+For example, there is a variable : const/4 v?,0x00 . The question mark shows , that var's number is unknown (for example, it has been changed in the newer version), but you are sure, that this var equals 0, and you want to set it to 1. In this case pattern will look like:"</string>
+    <string name="help_custom_s0_s1_sq_param_end">And vice versa, to set variable to 0:</string>
+    <string name="help_custom_search_param">Search allows you to search for a pattern and store bytes at specific positions.</string>
+    <string name="help_custom_search_param_end">means that the bytes at those positions will be stored in R0, R1, R2. Now that they are found and saved, you can use them in replacement patterns only by replacing R with W.</string>
+    <string name="help_custom_shared_preferences_tag">"Shared preferences xml file editor (insert or remove variables):
+Example:"</string>
+    <string name="help_custom_sqlite_tag">"Sometimes the target application must change something in the database, then to help will come this possibility:
+Example:"</string>
+    <string name="help_custom_syntax_text_start">"Here's an example patch:"</string>
+    <string name="help_custom_title_detailed_description">Detailed description of tags and their parameters:</string>
+    <string name="help_custom_title_general">General information:</string>
+    <string name="help_custom_title_syntax">Syntax help:</string>
+    <string name="help_custom_warning_text">Do not remove jumps or make them unconditional! The Optimizer will crash and your patch will not work on ART! To avoid this, use conditional jumps. For example, if there is a need to jump, replace the jump with the if-eq v0,v0 (bytes: 32 00 ?? ??). If there is no need to jump in a particular place, you can insert a jump such as if-ne v0,v0 (bytes: 33 00 ?? ??); also feel free to use your own equivalent.</string>
+    <string name="help_custom_warning_title">WARNING:</string>
+    <string name="help_cyan_apps">Advertisements were found within this application;</string>
+    <string name="help_describe_for_apply_changes_to_dalvik_cache">In the default mode, all changes remain in the ODEX file. Copying to the dalvik-cache can help when ODEX files do not work for the application (for example, when an application is moved to an SD card). However, you will need to reinstall the application to restore it.</string>
+    <string name="help_describe_for_backup_app">Backup APK file to restore later. APK file is saved to backups folder.</string>
+    <string name="help_describe_for_backup_settings_app">Backs up application data from internal memory to the Lucky Patcher folder.</string>
+    <string name="help_describe_for_create_backup_before_patch">Copy APK file to SD card in the Data Folder of Lucky Patcher. You can reinstall (to restore) the application from this APK.</string>
+    <string name="help_describe_for_create_mod_apk">Creates an installation package APK with the preapplied patches. You should keep in mind, that rebuilt application may not work the same way as an application that has been patched through the patcher. This issue is present because an application can check itself to find any changes in the code and signature.</string>
+    <string name="help_describe_for_create_odex">Create an unchanged ODEX file of the application.</string>
+    <string name="help_describe_for_dex_verification_killer">Sometimes the application does not start after rebuilding, or it complains about an incorrect signature or dex files checksum, or does not make purchases, and the like. In this case, this function can help. It injects code that tries to trick the signature verification or dex files checksum verification inside the application. This option should only be applied to the original application. If applied to an already patched one, then this option will break even if it has already been successfully implemented. As a result of the method, the size of the application will double.</string>
+    <string name="help_describe_for_disable_components_pm_disable">Removes chosen permissions, services, activities, etc. This ability is built into Android, and therefore is not harmful. The only thing that can stop working is the modified application, which can easily be fixed by enabling back permissions.</string>
+    <string name="help_describe_for_hard_apk_permission_disale">Removes permissions of the application (edits system file packages.xml). Be very careful while doing this. On some devices, this method can lead to a circular reboot or other undesirable consequences. Make a backup of the system before you try to disable permissions.</string>
+    <string name="help_describe_for_lvl_auto_mode">Attempts to remove license check. Uses a small Part of the Templates to ensure maximum stability of the application. If the percentage gotten using this method is low, make sure that the internet connection is present while using the patched app.</string>
+    <string name="help_describe_for_lvl_auto_mode_dex">Attempts to remove license check. Ensures maximum stability of the application after the patch. But for the hacked application to work at the first start, you need installed Google Play and the Internet.</string>
+    <string name="help_describe_for_lvl_auto_mode_inverse">There are a few differences from \"%1$s\". It may help, if \"%1$s\" did not patch the application successfully.</string>
+    <string name="help_describe_for_lvl_other_patches_extreme_mode">Attempts to completely remove license check. Uses all Templates. The patched application may become unstable, usually instability occurs when the application is offline. Restarting the application over and over, changing or disabling screen orientation may help.</string>
+    <string name="help_describe_for_lvl_remove">The target application must be signed the developer signature, and not changed by someone else. For a positive effect of patches, you need an installed GooglePlay (Google market) with a valid account entered into it and the Internet turned on when you first start the target application. Always try to remove the license check first using \"%1$s\", if it does not help, try \"%2$s\". If it causes critical errors, you can try to select only some templates in \"%3$s\"</string>
+    <string name="help_describe_for_lvl_sellect_patterns">Applies chosen templates to the application to remove license verification.</string>
+    <string name="help_describe_for_move_to_system">Converts the user application to system application.</string>
+    <string name="help_describe_for_patch_on_reboot">This setting is not relevant anymore, because on new versions of Lucky Patcher, all of the changes are saved to an ODEX file of the application, which does not change on reboot. This setting can only be useful if a custom patch changes \".so\" libraries of the application, which will be indicated in the description of the patch.</string>
+    <string name="help_describe_for_remove_ad_activities">Disable different application activities manually. Some activities have a description of what they do. Activities can be enabled back if the application stops working.</string>
+    <string name="help_describe_for_remove_ads">Attempts to remove advertisements. Try using this patch even if Lucky Patcher has not found ads in an application that contains ads. It may remove those ads.</string>
+    <string name="help_describe_for_remove_dalvik_cache_after_patch">After creating the ODEX file, dalvik-cache of the application is deleted to save space. If the application does not work with ODEX, you will have to reinstall the application.</string>
+    <string name="help_describe_for_remove_odex">Removes ODEX file containing the changes. Thus, restoring the application to its original status.</string>
+    <string name="help_describe_for_remove_purchase_from_db">Remove purchases saved through Google Billing Emulation.</string>
+    <string name="help_describe_for_restore_app">Restore application from an APK file in backups folder.</string>
+    <string name="help_describe_for_restore_app_data">Restore application data stored in internal memory in the /data/data/application_package_name/ folder.</string>
+    <string name="help_describe_for_safe_apk_permission_disale">Removes chosen permissions by rebuilding the APK with changes. This method does not change the application signature. This only works on system applications, or on all apps if \"%1$s\" patch is applied to Android.</string>
+    <string name="help_describe_for_safe_apk_permission_disale_rebuild_and_install">Similar to safe method, except this method uses new signature and does not keep the original signature. The application may not work correct using this method if it checks the signature.</string>
+    <string name="help_describe_for_share_this_app">Creates a backup APK file of the selected application and shares it though any app.</string>
+    <string name="help_describe_for_signature_verification_killer">Sometimes the application does not start after rebuilding, or it complains about an incorrect signature, or does not make purchases, and the like. In this case, this function can help. It injects code that tries to trick the signature verification inside the application. This option should only be applied to the original application. If applied to an already patched one, then this option will break even if it has already been successfully implemented.</string>
+    <string name="help_describe_for_support_patch_inapp">Adds support for InApp emulation to the application. InApp emulation can be switched on in Toggles menu.</string>
+    <string name="help_for_inapp_non_root_method1">"Recompiling application-target with a \"%1$s\", delete the original application (renamed the folder with a cache that wasn't removed). Install the application in recompiling the variant (rename back the folder with a cache, if there was). For the method to work, you must enable \"%2$s\" in the Lucky Patcher switches. All you can try to buy. Rarely works, but miracles happen :)"</string>
+    <string name="help_for_inapp_non_root_method1_note">"Sometimes, purchase protection uses application signature verification. In this case, using the \"%1$s\" option can help.
+"</string>
+    <string name="help_for_inapp_root_method1">"Apply the first patch Android (%1$s) and install a modified market version 3+. After that, all your purchases will be redirected to the Lucky Patcher, If it is enabled option \"%2$s\". To return to normal legal shopping mode, enough to turn off the switch \"%2$s\". This method is identical to the work of Freedom and is not inferior to him in efficiency, but implemented a modification of Google Play, that allows you to make purchases without disrupting operation of Google Play.
+
+How to do it?
+- Install Lucky Patcher :)
+- Select the lower panel of the Lucky Patcher \"%3$s->%4$s\", select the top item (%1$s) tap to apply. After rebooting the first patch in this dialogue must be marked as 2/2 is applied. (You can skip this step, but it is better to do so, because, if it doesn't work, then from then on to do something does not make sense). If the patch apply failed, you can try using the first option module Xposed Lucky Patcher;
+- Launch Lucky Patcher, turn on the Internet connection and choose the lower panel \"%3$s->%5$s\", choose the correct version and click install;
+- Make Google Play test in \"%3$s->%6$s\".
+"</string>
+    <string name="help_for_inapp_root_method2">Apply the first patch Android (Signature verification is always true) and run by switches \"%1$s\". After that, all your purchases will be redirected to the Lucky Patcher.</string>
+    <string name="help_for_inapp_root_method2_disadvantages">"- doesn't work Google Play until the Proxy server is enabled;
+- is not effective in applications with protection by checking the original information about purchases;
+- it's inconvenient in a combination to the kept purchases, as can't give the kept purchases to the application, if you turn off Proxy server.
+"</string>
+    <string name="help_for_inapp_root_method3">"If you have Xposed on your device, you can to turn on the Xposed module of Lucky Patcher.
+Attention: include a fourth option in Xposed module \"%1$s\" you need only, if you have not installed a modified Google Play. If modified Google Play is not set, that having included the first and fourth option you can make in-app purchases. The fifth option, you can try to hide Lucky Patcher from the application, if it grumbles."</string>
+    <string name="help_for_inapp_root_method3_disadvantages">"- is not effective in applications with protection by checking the original information about purchases;
+- Xposed has bugs after updating the Lucky Patcher, sometimes Xposed module itself is switched off, you must disable the module in Xposed and include back together to restart the device.
+"</string>
+    <string name="help_for_inapp_root_method4">"Applied to the application target \"%1$s\". After that, all purchases must be redirected to the Lucky Patcher. For the method to work, you must enable \"%2$s\" in the Lucky Patcher switches.
+ Or we apply the patch \"%3$s\" (very long) and all purchases are redirected to Lucky Patcher directly without a proxy."</string>
+    <string name="help_for_inapp_root_method4_disadvantages">"- It is working not at all applications, since InApp purchase code can be hidden in a place inaccessible to the patch.
+- is not effective in applications with protection by checking the original information about purchases.
+"</string>
+    <string name="help_green_apps">This application has a good chance of becoming registered;</string>
+    <string name="help_instruction_for_create_apk">"- Tap the name of the application/Software and select \"%1$s\";
+- Select Patch for Modification of APK;
+- Modified installation file will be in folder of Lucky Patcher (you can see this in About);
+- You should know that a rebuild APK file is not the same as the patch is already installed application. Since the as opposed to simply patch the application is very easy to test yourself to changes, and thus work correctly so fail The install will not. And keep in mind, after reinstalling the modified application and removing the original application, all application data will be lost."</string>
+    <string name="help_instruction_for_custom_patch">"- Tap the name of the application/Software and select \"%1$s\";
+- Run and test application with Internet;
+- If you're lucky, patch worked;
+- To return the application to its original state, you need to tap \"%2$s\" or \"%3$s\"."</string>
+    <string name="help_instruction_for_remove_ads">"- Tap the name of the application/software and select \"%1$s\";
+- Then choose \"%2$s\";
+- Run and test application with Internet;
+- If ads are still present, tap \"%3$s\", find Ad activities and disable them;
+- If you're lucky, Ads should have disappeared;
+- To return the application to its original state, you need to tap \"%4$s\" or \"%5$s\"."</string>
+    <string name="help_instruction_for_remove_lvl">"- Use only original APK files signed by the developer as targets;
+- Tap the name of the application/software and select \"%1$s\";
+- Select \"%2$s\" and test the application with internet access;
+- If the result is negative, Select \"%3$s\" or \"%4$s\";
+- If you're lucky, your program will be registered;
+- To return the application to its original state, you will need to tap \"%5$s\" or \"%6$s\"."</string>
+    <string name="help_klever">Lucky Patcher has made changes to this application;</string>
+    <string name="help_magenta_apps">These applications are in the Bootlist*;</string>
+    <string name="help_orange_apps">These are system applications. Be very careful when performing any operations with them, as editing these could do irreversible damage to the application or operating system.</string>
+    <string name="help_purple_apps">Application that contains Google InApp purchases;</string>
+    <string name="help_red_apps">Applications code was found that could not be patched;</string>
+    <string name="help_root_warning">Lucky Patcher needs root access for all features to work. Without root rights, the program works in a limited mode.</string>
+    <string name="help_star">"This means that the application has an 'odex' file found. For modern Android, this is only true for system applications."</string>
+    <string name="help_sub_describe_for_inapp_buy_dialog_auto_purchase">At inclusion of this option upon the following purchase of the same, purchase will be made without dialogue Lucky Patcher about purchase (purchase immediately comes into your application without any questions). It`s necessary, when you collect the gold in the application, etc., not to press every time that you agree to buy :) Delete autopurchase can at long pressing on the application in the list of Lucky Patcher and selecting \"%1$s\" then remove unnecessary autopurchases in the list.</string>
+    <string name="help_sub_describe_for_inapp_buy_dialog_save_purchase">"it makes sense for users without root privileges, for older games and applications, where the authors do not inadvertently checked the signature data. When this option is on, false data about purchase will be sent to the application with a blank signature and there's a chance, that this purchase will find correct and activate the application. Users with root privileges better do not use this option, can do more harm than help."</string>
+    <string name="help_sub_title_for_inapp_disadvantages_method">Disadvantages of this method:</string>
+    <string name="help_sub_title_for_inapp_non_root">For users without root privileges:</string>
+    <string name="help_sub_title_for_inapp_non_root_method1">Method #1:</string>
+    <string name="help_sub_title_for_inapp_root">For users with root privileges:</string>
+    <string name="help_sub_title_for_inapp_root_method1">Method #1 (the most effective and desirable):</string>
+    <string name="help_sub_title_for_inapp_root_method2">Method #2:</string>
+    <string name="help_sub_title_for_inapp_root_method3">Method #3:</string>
+    <string name="help_sub_title_for_inapp_root_method4">Method #4:</string>
+    <string name="help_sub_title_for_purchase_window">Purchase window options:</string>
+    <string name="help_title1">Color Based Description:</string>
+    <string name="help_title_for_context_menu">Context Menu:</string>
+    <string name="help_title_for_inapp">Shopping options via Lucky Patcher:</string>
+    <string name="help_title_for_instructions">Instructions:</string>
+    <string name="help_title_instruction_for_create_apk">To Create Modified APK:</string>
+    <string name="help_title_instruction_for_custom_patch">To Custom Patch:</string>
+    <string name="help_title_instruction_for_remove_ads">To Remove Ads:</string>
+    <string name="help_title_instruction_for_remove_lvl">To Remove License Verification:</string>
+    <string name="help_yellow_apps">A custom patch was found for this application in the directory of Lucky Patcher;</string>
+    <string name="hide_notify">Sembunyikan Pemberitahuan</string>
+    <string name="hide_notify_descr">Menyembunyikan pemberitahuan Lucky Patcher</string>
+    <string name="hide_title_app">Sembunyikan Tajuk Aplikasi</string>
+    <string name="hide_title_app_descr">Menyembunyikan Tajuk Lucky Patcher dalam senarai aplikasi. Berfungsi hanya pada peranti dengan menu perkakasan.</string>
+    <string name="host_down">Pelayan tidak boleh dicapai. Cuba lagi nanti.</string>
+    <string name="hosts_default">Fail \"hosts\" dipulihkan.</string>
+    <string name="hosts_not_found_changes">Pengubahan dalam fail \"hosts\" tidak dapat ditemui...</string>
+    <string name="hosts_updated">Fail \"hosts\" dikemaskini...</string>
+    <string name="import_to_lucky_patcher">Import to Lucky Patcher</string>
+    <string name="inapp_emulation_auto_repeat">Pembelian automatik-mengulang dengan tetapan semasa</string>
+    <string name="info_about_permissions_optional">"Optional permissions:
+"</string>
+    <string name="info_about_permissions_optional_describe">Used for personification of advertising and for analytics. If you have concerns about any of these permissions, you can deny these permissions. This will not affect to work of the Lucky Patcher.</string>
+    <string name="info_about_permissions_optional_perms">"ACCESS_COARSE_LOCATION
+READ_PHONE_STATE
+"</string>
+    <string name="info_about_permissions_required">"Required permissions:
+"</string>
+    <string name="info_about_permissions_required_describe">"Need to work with files. Without it, Lucky Patcher will not work.
+"</string>
+    <string name="info_about_permissions_required_perms">"READ_EXTERNAL_STORAGE
+WRITE_EXTERNAL_STORAGE
+"</string>
+    <string name="information">Maklumat</string>
+    <string name="install">Pasang</string>
+    <string name="install_app_for_user">Install App for user</string>
+    <string name="install_app_for_user_message">Do you really want to install system app %s for current user?</string>
+    <string name="install_as_user_app">Memasang Google Play sebagai aplikasi pengguna.</string>
+    <string name="install_as_user_app_note">Memerlukan: sudah digunakan \"Tampalan untuk Android\" dan Gedung Play Google dipasang.</string>
+    <string name="install_cloned_app">Pasang klon</string>
+    <string name="install_date">Tarikh dipasang:</string>
+    <string name="installer_error_aborted">Installation was cancelled by user</string>
+    <string name="installer_error_bad_apks">Invalid APK files selected</string>
+    <string name="installer_error_bad_apks_file">Error: base.apk file not found inside apks file.</string>
+    <string name="installer_error_blocked">Installation was blocked by %s</string>
+    <string name="installer_error_blocked_device">device</string>
+    <string name="installer_error_conflict">Unable to install the app because it conflicts with an already installed app with same package name</string>
+    <string name="installer_error_generic">Installation failed</string>
+    <string name="installer_error_generic_miui_warning">If you have miui firmware, you can solve the problem turning off \"Turn on MIUI optimizations\" in the \"Developer Settings\" of the firmware.</string>
+    <string name="installer_error_incompatible">Application is incompatible with this device</string>
+    <string name="installer_error_lidl_rom">Your ROM is incompatible with rootless installer. Installation is possible only with the help of the root installer.</string>
+    <string name="installer_error_rootless">"Rootless installer error:
+
+ %s"</string>
+    <string name="installer_error_storage">Not enough storage space to install the app</string>
+    <string name="installer_not_support_by_firmware">Your firmware does not support installing split apks files.</string>
+    <string name="installer_prepare">Preparing to install a split application.</string>
+    <string name="installer_slit_get_apk_from_apks">Installer gets files from apks archive.</string>
+    <string name="installer_slit_install_in_progress">Installation process is in progress.</string>
+    <string name="installer_slit_successfully_installed">Split application %s successfully installed.</string>
+    <string name="installsupersu">Pasang SuperSU (ICS)</string>
+    <string name="integrate_dalvik_code_dialog_good_message">Kod dalvik diintegrasi dari fail apk terpilih. Ia tidak dapat beroperasi dengan baik tetapi anda patut menguji...</string>
+    <string name="integrate_dalvik_code_dialog_title">Keputusan Integrasi</string>
+    <string name="integrate_dalvik_code_message">Adakah anda benar-benar mahu mengintegrasikan kod dalvik dari fail apk kepada</string>
+    <string name="integrate_to_system">Adakah anda benar-benar mahu integrasikan kemaskini untuk aplikasi ini ke /sistem?</string>
+    <string name="integrate_updates_result">Keputusan untuk integrasi kemaskini</string>
+    <string name="integrate_updates_result_message">For the apply of changes, you need to reboot the device.</string>
+    <string name="integrate_updates_result_message_not_finished">An unfinished operation was detected to transfer system application updates from /data to /system. If the device has already rebooted, click the Yes button, if it has not rebooted, then No. Otherwise, your app data will be reset when you uninstall updates from /data. Do you want to remove app updates from /data?</string>
+    <string name="integrate_updates_to_system">Integrasikan kemaskini ke /sistem</string>
+    <string name="internet_not_found">Memerlukan sambungan internet.</string>
+    <string name="is_an_invalid_number">Anda telah memasukan nombor yang tidak sah...</string>
+    <string name="langdef">Bahasa Lalai</string>
+    <string name="langen">English</string>
+    <string name="langmenu">Bahasa</string>
+    <string name="launchbutton">Lancarkan</string>
+    <string name="licensing_hack_menu_disable">Lumpuhkan Emulasi pengesahan lesen Google</string>
+    <string name="licensing_hack_menu_enable">Dayakan Emulasi pengesahan lesen Google</string>
+    <string name="line">"***********************
+"</string>
+    <string name="loadpkg">Memuatkan pakej</string>
+    <string name="lp_billing_hack_title">Godam pembelian DalamApl...</string>
+    <string name="lp_import_custom_patches">Lucky Patcher imported the following custom patches and files:</string>
+    <string name="lvldescr">Tunjukkan semua aplikasi dengan Pengesahan Lesen.</string>
+    <string name="lvltitle">Aplikasi dengan LVL</string>
+    <string name="magisk_module_warning">If you have problems with this feature, you need to disable Magisk Сore Only mode and MagiskHide in the settings of Magisk Manager and reboot device.</string>
+    <string name="magisk_warning2">If you have problems with this feature, you must enable the magisk module option.</string>
+    <string name="make_app_a_sys">Convert application to system</string>
+    <string name="make_app_to_system">Do you really want to make this application a System App?</string>
+    <string name="market_description_text">"Tekan butang \"Pasang\" untuk menggantikan Gedung Play Google yang rasmi dengan versi LVL retak (Pengesahan Lesen Perpustakaan). Jika Gedung Play Google tidak bekerja selepas memulakan semula, pasangkannya semula.
+Bagaimana Gedung Play Google Modded berfungsi:
+Perhatian! Anda *TIDAK* boleh memuat turun aplikasi berbayar secara percuma!
+1. Anda boleh menggunakan aplikasi Google-LVL yang dilindungi tanpa keretakan.
+2. Pengesahan lesen yang berjaya semasa di luar talian.
+3. Tidak perlu untuk memohon lesen penampal lagi.
+4. Ia tidak akan berfungsi dengan Bil dan Pengesahan Lesen melalui Proksi.
+5. Sekarang apabila anda menekan butang 'Bayar balik', ia akan bayar balik pembelian anda, tetapi aplikasi itu tidak akan dipasang, jadi anda tidak perlu untuk membuat sandaran aplikasi sebelum meminta bayaran balik."</string>
+    <string name="market_install">Pasang Gedung Play Google Modded</string>
+    <string name="market_version5">Google Play Modded</string>
+    <string name="market_version6">Google Play Asal</string>
+    <string name="menu_close_application">Close application</string>
+    <string name="menu_download_custom_patches">Muat turun penampal tersuai</string>
+    <string name="messageAndroidManifest">Tidak boleh mengekstrak AndroidManifest.xml. Mungkin anda tidak mempunyai ruang yang cukup pada kad SD untuk menyalin keseluruhan aplikasi.</string>
+    <string name="messagePath">"Laluan tidak dijumpai!
+Sila masukkan laluan yang betul."</string>
+    <string name="messageSD">"Kad SD tidak dapat ditemui!
+Fungsi ini tidak boleh bekerja tanpa Kad SD!"</string>
+    <string name="message_about_corrupt_apk_file">The original apk file is corrupted. The application can not be rebuilt.</string>
+    <string name="message_about_patched_file">Corrupted file</string>
+    <string name="message_allow_non_market_app">Sila periksa \"Benarkan pemasangan aplikasi dari sumber yang tidak diketahui\" di dalam tetapan Keselamatan.</string>
+    <string name="message_apply_android_patch_for_proxy_gp">Pelayan proksi untuk Google Play perlu aplikasikan patch Android \"Status Pengesahan Tandatangan sentiasa Betul\". Anda mahu aplikasikan patch Android sekarang?</string>
+    <string name="message_clear_all_dalvik_cache">Adakah anda benar-benar mahu untuk bersihkan dalvik-cache?</string>
+    <string name="message_clear_data">Adakah anda benar-benar mahu membersihkan semua data daripada aplikasi?</string>
+    <string name="message_delete_odex_file">Adakah anda benar-benar mahu untuk memadam fail odex?</string>
+    <string name="message_delete_package_new">pemasangan selesai dengan ralat. Anda mestilah menyahpasang aplikasi yang asal sebelum memasang fail-apk ini. Jika ini tidak membantu, mulakan peranti secara manual. Juga, cuba menyahpasangkan aplikasi.</string>
+    <string name="message_done_move_to_internal">Memindahkan ke memori dalaman selesai:</string>
+    <string name="message_done_move_to_sdcard">Memindahkan ke Kad SD selesai:</string>
+    <string name="message_error_file_apk_for_install_corrupt">File for install is corrupt ...</string>
+    <string name="message_error_move_to_internal">"Memindahkan ke memori dalaman selesai dengan ralat (cuba lagi):
+"</string>
+    <string name="message_error_move_to_sdcard">"Memindahkan ke Kad SD selesai dengan ralat (cuba lagi):
+"</string>
+    <string name="message_exit">Adakah anda benar-benar mahu keluar dari Lucky Patcher?</string>
+    <string name="message_for_reboot_after_android_patches">The patching process is over. For final use, you must reboot the device. Do you want to restart your device?</string>
+    <string name="message_for_removed_patch_boot">Patch on reboot removed.</string>
+    <string name="message_for_uninstall_and_install">Do you really want to delete %1$s and install selected version application?</string>
+    <string name="message_installation_inapp_proxy">If you use \"Support patch for InApp and LVL emulation\" for hacking purchases, then you need to install a Proxy server for inapp purchases service. But it will break the invisibility of Lucky Patcher. Do you want to install this service?</string>
+    <string name="message_installation_lp">Do you really want to install the Lucky Patcher v.%1$s?</string>
+    <string name="message_lp_install_success_uninstall_intsaller">Lucky Patcher has been successfully installed. Now you need to remove the application installer to increase the stealth of the Lucky Patcher.</string>
+    <string name="message_old_app_version">An old version of Lucky Patcher has been found. To improve the hiding of the Lucky Patcher, you need to remove this version. But if you used the \"Support patch for InApp and LVL emulation\", you will have to re-patch all applications or rebuild the original apk in the new version of Lucky Patcher. Do you want to remove this old version?</string>
+    <string name="message_reboot">Adakah anda benar-benar mahu mulakan semula?</string>
+    <string name="message_remove_all_odex">Adakah anda benar-benar mahu membuang semua fail odex dari /sistem/app dan /data/app? Fail odex hanya akan dipadam oleh aplikasi yang mempunyai classes.dex.</string>
+    <string name="message_rescan_apps">Do you really want to rescan all installed apps?</string>
+    <string name="message_reset_dialog_settings">Do you really want to reset all dialog settings?</string>
+    <string name="message_reset_dialog_settings_done">All dialog settings are reset.</string>
+    <string name="message_test_patch_downgrade">Downgrading Applications Testing</string>
+    <string name="message_test_patch_signatures">Testing the possibility of installing an application with different signatures</string>
+    <string name="message_test_patch_terget_sdk_30_installing">Testing the possibility of installing an application without signature ver.2 and targetSDK=30</string>
+    <string name="message_test_patch_unlocked">The ability to apply the patch is unlocked.</string>
+    <string name="message_test_pm_utility">Testing \"pm\" utility</string>
+    <string name="message_test_pm_utility_fail">Unable to check the patch points because \"pm\" utility is not working properly.</string>
+    <string name="message_to_reboot_device">Do you want to reboot your device?</string>
+    <string name="message_warning_InApp_service_disable">Mematikan perkhidmatan DalamAplikasi akan merosakkan mekanisme pembelian sah aplikasi-aplikasi. Ia merupakan perkhidmatan asal ke Google Play.</string>
+    <string name="message_warning_LVL_service_disable">Mematikan perkhidmatan ini akan merosakkan mekanisme memperoleh lesen pembelian aplikasi secara sah. Ia merupakan perkhidmatan asal ke Google Play.</string>
+    <string name="mod_market_check">Menguji Gedung Play Google Modded</string>
+    <string name="mod_market_check_failed">Google Play mungkin dipasang tetapi tidak berfungsi dengan betul. Gagal periksa ujian lesen. Mungkin anda tidak menggunakan tampalan core.jar (boleh dijumpai dalam \"Peti alatan-> Tampalan untuk Android\") atau tidak menetapkan Google Play yang diubahsuai sebagai aplikasi sistem (anda boleh memasang semula dalam \"Peti alatan-> Pasang Gedung Play Google Modded\").</string>
+    <string name="mod_market_check_internet_off">Matikan internet pada peranti dan cuba uji sekali lagi.</string>
+    <string name="mod_market_check_title">Hasil ujian untuk Google Play yang diubahsuai</string>
+    <string name="mod_market_check_true">Google Play dipasang dan berfungsi dengan baik. Perhatikan bahawa kaedah ini tidak berfungsi dengan semua aplikasi dan permainan. Ini bukan kesilapan dan tidak boleh diperbaiki.</string>
+    <string name="modifdescr">Tunjukkan semua aplikasi yang diubahsuai (Tanda bunga hijau).</string>
+    <string name="modiftitle">Aplikasi diubahsuai</string>
+    <string name="move_data">Semua data telah berjaya dipindahkan ke</string>
+    <string name="move_to_internal">Pindah ke memori dalaman</string>
+    <string name="move_to_internal_message">Adakah anda benar-benar mahu memindahkan apl ke memori dalaman?</string>
+    <string name="move_to_sdcard">Pindah ke /kad sd</string>
+    <string name="move_to_sdcard_message">Adakah anda benar-benar mahu memindahkan apl ke Kad SD?</string>
+    <string name="move_to_sys">Pindah ke /sistem/app</string>
+    <string name="move_to_system">Do you really want to move this application to /system/priv-app?</string>
+    <string name="multipatch_next_step">Next step</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="need_select_custom_patch">Please select one or more custom patch.</string>
+    <string name="new_method_lvl">Buat lesen untuk aplikasi</string>
+    <string name="new_version">~ Lucky Patcher versi terbaru sudah tersedia√√ ~</string>
+    <string name="next_custom_patch">Description for next custom patch</string>
+    <string name="no">Tidak</string>
+    <string name="no_freespace_patch">"Ia bukan satu kesilapan. Tidak ada ruang bebas yang cukup untuk mencipta fail .odex. Tampalan dalvik-cache digunakan, tetapi jika anda memulakan semula, penampal mungkin boleh hilang.
+Penyelesaian: pindahkan aplikasi ke storan dalaman atau membuat sebagai sistem atau lebih banyak ruang bebas, atau tinggalkan segala-galanya, dan seperti melakukan semula tampalan secara teratur."</string>
+    <string name="no_icon">Membuang Ikon Aplikasi</string>
+    <string name="no_icon_descr">Buang semua ikon aplikasi dalam senarai. Ini akan mempercepatkan operasi yang berguna untuk peranti-rendah.</string>
+    <string name="no_root">"Kegagalan untuk mendapatkan akses root! Anda mestilah mempunyai akses root yang penuh untuk meneruskan...
+
+(sila kemaskini busybox atau su)!
+Sila pasang SuperSu (\"Penyelesaian masalah-> Pasang SuperSU (ICS)\") dan kemaskini binari SU dengannya."</string>
+    <string name="no_site">Sumber kemaskini tidak dapat ditemui!</string>
+    <string name="no_space">Ralat: ruang tidak cukup untuk menyalin semua data dalam folder yang dinyatakan. Sila tukar direktori atau bebaskan sedikit ruang.</string>
+    <string name="no_space_in_data_all">Ralat: tidak cukup ruang di dalam memori dalaman. Sila bebaskan lebih banyak ruang dalam /data cuba lagi kemudian.</string>
+    <string name="no_space_in_system">Ralat: tidak cukup ruang dalam Sistem sesekat untuk memindahkan aplikasi. Sila bebaskan sedikit ruang dalam /sistem dan cuba lagi kemudian.</string>
+    <string name="no_space_in_system_all">Ralat: tidak cukup ruang dalam Sistem sesekat. Sila bebaskan lebih banyak ruang dalam /sistem cuba lagi kemudian.</string>
+    <string name="nofilter">Tiada</string>
+    <string name="nonedescr">Menunjukkan semua aplikasi di mana tiada apa-apa yang ditemui.</string>
+    <string name="nonetitle">Tiada apa-apa ditemui</string>
+    <string name="not_detect">"Kad SD tidak dapat dikesan!
+Fungsi yang terhad!"</string>
+    <string name="not_found_changelog">Fail log pertukaran tidak ditemui. Ia akan dimuat turun ketika anda mengemaskini.</string>
+    <string name="not_supported_android_patch">tidak disokong, bekerja \"as is\"</string>
+    <string name="notify_android_patch_on_boot">Tampalan Android pada mulakan semula</string>
+    <string name="notify_android_patch_on_boot_mes_core.jar">Menetapkan tampalan Android untuk dalvik-cache dari core.jar.</string>
+    <string name="notify_android_patch_on_boot_mes_services.jar">Menetapkan tampalan Android untuk dalvik-cache dari services.jar.</string>
+    <string name="notify_directory_binder">Direktori Pengikat</string>
+    <string name="notify_directory_binder_from">DARI</string>
+    <string name="notify_directory_binder_to">KE</string>
+    <string name="notify_patch_on_boot">Tampalan pada Mulakan semula</string>
+    <string name="notify_patched">ditampalkan!</string>
+    <string name="odex_all_system_app">"ODEX Semua Sistem Aplikasi
+(Ruang bebas yang lebih untuk storan dalaman)"</string>
+    <string name="odex_all_system_app_message">Adakah anda benar-benar mahu ODEX semua aplikasi Sistem?</string>
+    <string name="odexed_not_all_apps">Ralat! Kemungkinan tidak cukup ruang yang tinggal dalam /sistem. Sesetengah aplikasi tidak diODEX.</string>
+    <string name="ok">OK...</string>
+    <string name="on_top_apps_marker">Terbaru</string>
+    <string name="open_to_GP">Open to Google Play</string>
+    <string name="option_SELinux_permissive">Set SELinux to Permissive mode</string>
+    <string name="option_SELinux_permissive_descr">Solves some problems with the functions of Lucky Patcher, but it can reboot of some firmware.</string>
+    <string name="option_analytic">Аnalytical service</string>
+    <string name="option_analytic_descr">Turn on/off analytical service (uses geolocation).</string>
+    <string name="option_autoupdate_custom_patches">Disable auto-update of custom patches</string>
+    <string name="option_detailed_logs">Detailed logs</string>
+    <string name="option_detailed_logs_descr">Must be enabled to send a detailed error log.</string>
+    <string name="option_installation_apk_install_on">Enable the ability to install apk files via Lucky Patcher (on some buggy firmware this option will block the installation of apk files from external file manager)</string>
+    <string name="option_magisk_module">Use the magisk module</string>
+    <string name="option_remove_ads">Remove Ads from LP</string>
+    <string name="option_remove_ads_descr">Remove ads from \"About\" and \"Changelog\".</string>
+    <string name="option_test_patch">run test for patch</string>
+    <string name="orientmenu">Orientasi</string>
+    <string name="others">Lain</string>
+    <string name="package_name">Nama pakej</string>
+    <string name="patch_ok">Menetapkan</string>
+    <string name="patch_progress_data_parse">Menghuraikan data untuk tampal...</string>
+    <string name="patch_progress_get_classes">Get files from apk file...</string>
+    <string name="patch_progress_strings_analisis">Analisis rentetan...</string>
+    <string name="patch_step1">Menyediakan aplikasi...</string>
+    <string name="patch_step2">Menampalkan...</string>
+    <string name="patch_step3">Menganalisis keputusan...</string>
+    <string name="patch_step4">Mencipta .odex dengan pengubahan...</string>
+    <string name="patch_step6">Langkah-langkah pilihan selepas menampal...</string>
+    <string name="patch_step7">Packing files into an apk file ...</string>
+    <string name="patch_step8">Apply zip alignment for %s</string>
+    <string name="patch_step9">%s installation ...</string>
+    <string name="patch_step_http">mendapatkan data dari root...</string>
+    <string name="patch_step_rebuild_dex">Reassembling a dex file with new strings (wait a long time)</string>
+    <string name="patch_to_Android_At_once">Sekaligus boleh menggunakan \"Status Pengesahan Tandatangan Sentiasa Benar\" dan \"Lumpuhkan Pengesahan Tandatangan .apk\" atau \"Melumpuhkan pengesahan tandatangan dalam pengurus pakej\".</string>
+    <string name="patch_to_Android_only_dalvik_cahce_core_disable">Perisian tegar telah meng-odex services.jar. \"hanya patch cache-dalvik\" akan dinyahaktifkan. Dan pilihan lain-lain patch akan di set semula.</string>
+    <string name="patch_to_Android_only_dalvik_cahce_services_disable">Perisian tegar telah meng-odex services.jar. \"hanya patch cache-dalvik\" akan dinyahaktifkan. Dan pilihan lain-lain patch akan di set semula.</string>
+    <string name="patchbutton">~Tampal~</string>
+    <string name="pattern1">Tampalan Corak N1 : Berjaya.</string>
+    <string name="pattern1_f">Tampalan Corak N1 Gagal...</string>
+    <string name="pattern2">Tampalan Corak N2 : Berjaya.</string>
+    <string name="pattern2_f">Tampalan Corak N2 Gagal...</string>
+    <string name="pattern3">Tampalan Corak N3 : Berjaya.</string>
+    <string name="pattern3_f">Tampalan Corak N3 Gagal...</string>
+    <string name="pattern4">Tampalan Corak N4 : Berjaya.</string>
+    <string name="pattern4_f">Tampalan Corak N4 Gagal...</string>
+    <string name="pattern5">Tampalan Corak N5 : Berjaya.</string>
+    <string name="pattern5_f">Tampalan Corak N5 Gagal...</string>
+    <string name="pattern6">Tampalan Corak N6 : Berjaya.</string>
+    <string name="pattern6_f">Tampalan Corak N6 Gagal...</string>
+    <string name="pattern7">Tampalan Corak N7 : Berjaya.</string>
+    <string name="pattern7_f">Tampalan Corak N7 Gagal...</string>
+    <string name="pattern_dex_kill">Dex and signature verification killer added.</string>
+    <string name="pattern_integrate_emulation">Emulation for LVL and Inapp purchases added.</string>
+    <string name="pattern_lic_kill">License verification killer added.</string>
+    <string name="pattern_signature_kill">Signature verification killer added.</string>
+    <string name="patternamazon">Tampalan Pasaran Amazon berjaya!</string>
+    <string name="patternamazon_f">Tampalan Pasaran Amazon gagal...</string>
+    <string name="patterndependencies">Kebergantungan Google Play dikeluarkan.</string>
+    <string name="patternsamsung">Tampalan SamsungApps berjaya!</string>
+    <string name="patternsamsung_f">Tampalan SamsungApps gagal...</string>
+    <string name="perm_ok">Tetapkan dan Mulakan semula</string>
+    <string name="permission">Mengubah Keizinan</string>
+    <string name="permission_not_descr">Tiada keterangan yang tersedia untuk keizinan ini</string>
+    <string name="permission_not_found">Keizinan tidak dapat ditemui!</string>
+    <string name="permissions">Keizinan</string>
+    <string name="play_protect_warning">"Google often defines Lucky Patcher as a virus but it's not. To remove this reminder, launch Google Play and in the settings disable \"Play Protect\"."</string>
+    <string name="play_protect_warning2">"Many websites and pages share fake Lucky Patcher app. So, we would like to request you to share our Official Website download link on your blog or YouTube videos.
+Official Download link: https://www.luckypatchers.com/download/"</string>
+    <string name="play_protect_warning_question_1">Do you want to run the \"Play protect\" dialog?</string>
+    <string name="poorresult">"% Bertuah! Gagal menampal!
+Versi tidak diketahui daripada LVL atau penampal telah digunakan."</string>
+    <string name="provide">Provide</string>
+    <string name="proxyGP">Pelayan proksi untuk Google Play</string>
+    <string name="proxyGP_descr">Pelayan proksi untuk menukar hala semua permintaan lesen dan dalamaplikasi ke Lucky Patcher. Perkhidmatan DalamAplikasi ke Google Play dan Emulasi Bil Google perlu diaktifkan dalam Lucky Patcher.</string>
+    <string name="proxyGP_install">Pasang Gedung Google Play Proksi</string>
+    <string name="proxyGP_install_error">Fail Google Play Proksi tidak ditemui untuk pemasangan.</string>
+    <string name="proxyGP_install_question">Adakah anda benar-benar mahu pasang Google Play Proksi?</string>
+    <string name="proxyGP_widget_warning_1">\"Patch sokongan untuk DalamAplikasi dan emulasi LVL\" mesti dimatikan dalam modul Xposed untuk membolehkan Lucky Patcher membuka Google Play Proksi.</string>
+    <string name="proxyGP_widget_warning_2">Google Play Proksi memerlukan akses root dan memerlukan patch ke android \"Status Pengesahan Tandatangan sentiasa Betul\" diaplikasikan atau diaktifkan dalam modul Xposed untuk Lucky Patcher.</string>
+    <string name="punkt1">- Lucky Patcher memerlukan akses root!</string>
+    <string name="purchase_db_dialog_auto_buy">auto-ulang pembelian</string>
+    <string name="purchase_db_dialog_saved_purchase">pembelian yang disimpan</string>
+    <string name="purchase_id">Purchase ID</string>
+    <string name="purchases_sorter_describe">This can help some Unity games. If the purchase fails, just change its type to another and try again.</string>
+    <string name="purchases_sorter_last_time_try_purchase">Time of last purchase</string>
+    <string name="purchases_sorter_message_not_need_sorter">There is nothing to sort yet. To sort purchases, you need to launch the application and try to buy something for free, and if Lucky Patcher has difficulties with sorting purchases, then you can sort them manually. This is needed for Unity games. If you change the type of purchase in the sorter, then there is an additional chance to buy for free.</string>
+    <string name="purchases_sorter_not_defined_by_user">not yet user defined</string>
+    <string name="purchases_sorter_reset_button">Reset</string>
+    <string name="purchases_sorter_reset_warning_message">All purchase records will be deleted. To display the purchases list, you need to restart the target program. Are you sure you want to remove the definitions for all purchases so that Lucky Patcher will try to guess their type later?</string>
+    <string name="purchases_sorter_title">Choose the type for each purchase</string>
+    <string name="purchases_sorter_type_inapp_describe">these are usually gold, crystals and other consumables.</string>
+    <string name="purchases_sorter_type_inapp_purchase">inapp</string>
+    <string name="purchases_sorter_type_subs_describe">these are usually subscriptions, additional levels, disable ads, and the like.</string>
+    <string name="purchases_sorter_type_subs_purchase">subscription</string>
+    <string name="reboot">Mulakan semula</string>
+    <string name="reboot_message">"Proses memulakan semula...
+Jika peranti tidak mulakan semula secara automatik, lakukannya secara manual..."</string>
+    <string name="reboot_to_bootloader">Reboot to bootloader</string>
+    <string name="reboot_to_recovery">Reboot to recovery</string>
+    <string name="rebuild_info">Ringkasan Binaan</string>
+    <string name="remodex">Penetapan Dalvik-cache dikeluarkan!</string>
+    <string name="remodexerror">Dalvik cache daripada aplikasi ini tidak dapat dijumpai.</string>
+    <string name="remove_all_saved_purchases">Buang semua pembelian yang disimpan</string>
+    <string name="remove_all_saved_purchases_message">Adakah anda benar-benar mahu padamkan semua pembelian yang telah disimpan dari Lucky Patcher?</string>
+    <string name="removefixes">"Buang Semua Fail ODEX
+(/data/app dan /system/app)"</string>
+    <string name="reset_dialog_settings">Reset all dialog settings</string>
+    <string name="restore_build">Binaan</string>
+    <string name="restore_data_error">Ralat: Sesuatu telah berlaku. Data yang dipulihkan mungkin tidak lengkap.</string>
+    <string name="restore_data_success">Tetapan telah berjaya dipulihkan</string>
+    <string name="restore_message">Adakah anda benar-benar mahu untuk memasang</string>
+    <string name="restore_version">Versi</string>
+    <string name="restorebutton">Pulihkan semula</string>
+    <string name="restored">dipulihkan</string>
+    <string name="root_access_not_found">Akses root tidak dapat ditemui. Cuba lancarkan Lucky Patcher sekali lagi atau cuba kemaskini SuperSu dan mengemaskini fail binari su dari SuperSu. Dan periksa dalam SuperSu kalau memberikan root kepada Lucky Patcher atau tidak.</string>
+    <string name="root_needed">Akses root diperlukan untuk tindakan ini...</string>
+    <string name="savebutton">Simpan sebagai Penampal Tersuai</string>
+    <string name="saved_object">disimpan ke /sdcard/LuckyPatcher/ sebagai penampal tersuai.</string>
+    <string name="search">Cari</string>
+    <string name="select_filter">Sila pilih penapis untuk senarai Aplikasi:</string>
+    <string name="select_market">"Sila pilih versi Gedung Play Google untuk memasang:
+"</string>
+    <string name="send_logs">Adakah anda mahu menghantarkan log anda kepada saya?</string>
+    <string name="sendlog">Hantar Log</string>
+    <string name="set_default_to_install">"Pilih Lokasi Memasang Lalai
+Mungkin tidak berfungsi pada Android >= 4"</string>
+    <string name="set_default_to_install_auto">Pemasangan ke lokasi automatik diputuskan oleh Android OS</string>
+    <string name="set_default_to_install_internal_memory">Pemasangan ke storan dalaman mudah alih</string>
+    <string name="set_default_to_install_sdcard">Pemasangan untuk media luaran seperti Kad SD</string>
+    <string name="set_switchers_def">Set suis-suis kepada asal</string>
+    <string name="setting_confirm_exit">Mengesah keluar dari aplikasi</string>
+    <string name="setting_confirm_exit_descr">Jika anda tekan butang kembali, LP akan menunjukkan pengesahan untuk keluar.</string>
+    <string name="settings">Tetapan</string>
+    <string name="settings_force_java_root_method">Force set java-root method</string>
+    <string name="settings_force_java_root_method_app_process">Using app_process</string>
+    <string name="settings_force_java_root_method_dalvikvm">Using dalvikvm</string>
+    <string name="settings_force_java_root_method_description">If you have problems getting root rights or working with patches, you can try another method.</string>
+    <string name="settings_force_root">Menetap paksa pemeriksaan root</string>
+    <string name="settings_force_root_description">Jika anda mempunyai root eksotik, anda boleh menetapkan root paksa untuk root atau tidak-root.</string>
+    <string name="settings_force_root_off">Menetap mod paksa tidak-root</string>
+    <string name="settings_force_root_on">Menetap mod paksa root</string>
+    <string name="settings_method_apks_installer_non_root_mode">"Don't use root for Apks installer"</string>
+    <string name="settings_method_apks_installer_root_mode">Using root for Apks installer</string>
+    <string name="settings_mode_apks_installer">Apks installer operating mode</string>
+    <string name="settings_mode_apks_installer_description">If the installation in root mode is very long, you can force switch to non-root mode.</string>
+    <string name="settings_root_auto">Mengesan akses root automatik</string>
+    <string name="settings_show_folder_first">Show folders first</string>
+    <string name="settings_show_only_used_files">Show only files used by Lucky Patcher</string>
+    <string name="settings_sort_order_of_files">Sort order of files</string>
+    <string name="settings_sort_order_of_files_name">by Name</string>
+    <string name="settings_sort_order_of_files_time">by Time (new on top)</string>
+    <string name="share">Kongsi</string>
+    <string name="share_lucky_patcher">Share Lucky Patcher</string>
+    <string name="share_message">Adakah anda benar-benar mahu berkongsi Apl ini?</string>
+    <string name="share_this_app">Kongsi Apl ini</string>
+    <string name="site_pattern">Rentetan dari AdsBlockList - dikeluarkan.</string>
+    <string name="sortbydate">Sort by Date</string>
+    <string name="sortbyname">Susun mengikut Nama</string>
+    <string name="sortbystatus">Susun mengikut Status</string>
+    <string name="sortbytime">Susun mengikut Tarikh Dipasang</string>
+    <string name="sortmenu">Jenis Susunan</string>
+    <string name="splitted_apk_attribute">splitted</string>
+    <string name="start_market_message">Installing a modded Google Play requires the use of patches to Android. Your device will be rebooted. After rebooting, try installing Google Play again. Sometimes this can damage the firmware. Do you want to apply patches for Android?</string>
+    <string name="stat_boot_ads">Iklan Google</string>
+    <string name="stat_boot_custom">Tampalan tersuai</string>
+    <string name="stat_boot_lvl">Pengesahan Lesen Google</string>
+    <string name="stat_launch_activity">Lancarkan Aktiviti:</string>
+    <string name="statads">Iklan Google ditemui.</string>
+    <string name="statappplace">Laluan aplikasi:</string>
+    <string name="statbilling">Pembelian dalam aplikasi ditemui.</string>
+    <string name="statbuild">Binaan:</string>
+    <string name="statcustom">Tampalan tersuai tersedia!</string>
+    <string name="statdataplace">Laluan data aplikasi:</string>
+    <string name="statfix">fail-odex ditemui.</string>
+    <string name="statlvl">Pengesahan Lesen ditemui.</string>
+    <string name="statmodified">Aplikasi telah diubahsuai sebelum ini</string>
+    <string name="statnotfix">fail-odex tidak dapat ditemui.</string>
+    <string name="statnotfound">Tiada apa yang perlu ditampalkan di sini.</string>
+    <string name="statnotmodified">Aplikasi yang tidak diubahsuai</string>
+    <string name="statnotsys">Aplikasi Pengguna.</string>
+    <string name="statnull">Tiada apa yang perlu ditampalkan di sini.</string>
+    <string name="statsys">Aplikasi Sistem.</string>
+    <string name="statuserid">ID Pengguna:</string>
+    <string name="statversion">Versi:</string>
+    <string name="success">berjaya</string>
+    <string name="support_patch_billing_rebuild_dex">Support patch for InApp emulation (Reassembly Dex)</string>
+    <string name="support_patch_billing_rebuild_dex_descr">It will last a very long time. Redirect billing to Lucky Patcher without proxy server for emulation of inapp purchases. If this method did not work for some reason, you can use method \"Support patch for InApp emulation (Proxy server)\". If patch to Android \"Signature Verification status always True\" is not applied, this support patch can help.</string>
+    <string name="support_patch_billing_rebuild_dex_not_work">"Method  Support patch for InApp emulation (Reassembly Dex) \" finished with errors. Use method \"Support patch for InApp emulation (Proxy server)\" to emulate free purchases inside this application."</string>
+    <string name="support_patch_billing_rebuild_dex_warning">This rebuilt application will only work with Lucky Patchter installed on this device. If you transfer this application to another device, purchases will not be emulated. To transfer the application to another device with a support patch, use the method \"Support patch for InApp emulation (Proxy server)\" and install the \"Proxy server for emulation of inapp purchases\" on another device, or rebuild this application directly on another device.</string>
+    <string name="support_patch_billing_redirect_to_proxy">Support patch for InApp emulation (Proxy server)</string>
+    <string name="support_patch_billing_redirect_to_proxy_descr">Redirect billing to Lucky Patcher using a proxy server for emulation of inapp purchases. If patch to Android \"Signature Verification status always True\" is not applied, this support patch can help.</string>
+    <string name="support_patch_billing_repatch_patched_app">Update patch in already patched application</string>
+    <string name="support_patch_billing_repatch_patched_app_descr">If you rebuilt the application with this patch for the old version of Lucky Patcher and now it does not work, this option will update the patch for the new version of Lucky Patcher.</string>
+    <string name="support_patch_header_additional">Additional patches</string>
+    <string name="support_patch_header_inapp">Patches for emulating free purchases</string>
+    <string name="support_patch_header_lvl_inapp">Patches for emulating license check and inapp purchases</string>
+    <string name="support_patch_header_options">Additional options</string>
+    <string name="support_patch_lvl_and_inapp_descr">Redirects all license verification requests and inapp purchases to Lucky Patcher.</string>
+    <string name="support_patch_lvl_inapp">Support patch for LVL and Inapp emulation</string>
+    <string name="switcher_auto_backup">Sandaran automatik semua aplikasi yang dikemas kini atau dipasang</string>
+    <string name="switcher_auto_backup_descr">Salin fail apk ke folder sandaran</string>
+    <string name="switcher_auto_backup_only_gp">Sandarkan automatik aplikasi yang dikemaskini dan dipasang dari Google Play</string>
+    <string name="switcher_auto_backup_only_gp_descr">Perhatian: Lucky Patcher menandakan semua aplikasi yang diubahsuai sebagai dipasang dari Google Play. Oleh itu, aplikasi ini juga akan berada dalam senarai sandaran.</string>
+    <string name="switcher_auto_integrate_update">Integrasikan kemaskini secara automatik ke /sistem untuk aplikasi sistem</string>
+    <string name="switcher_auto_integrate_update_descr">Mulakan semula diperlukan untuk kemaskini yang kedua</string>
+    <string name="switcher_auto_move_to_internal">Pindahkan aplikasi yang dikemaskini dan dipasang ke memori dalaman secara automatik</string>
+    <string name="switcher_auto_move_to_internal_descr">Membuatkan aplikasi yang pantas dan lebih stabil</string>
+    <string name="switcher_auto_move_to_sd">Pindahkan aplikasi yang dikemaskini dan dipasang ke Kad SD secara automatik</string>
+    <string name="switcher_auto_move_to_sd_descr">Aplikasi dengan widget-widget dan tindakan yang buruk pada permulaan</string>
+    <string name="switchers_service_not_found">Servis tidak ditemui</string>
+    <string name="sysdescr">Amaran! Sila buat *SANDARAN* sebelum mengubahsuai.</string>
+    <string name="system_app_change">Sila mulakan semula untuk menetapkan pengubahan.</string>
+    <string name="systitle">Tunjukkan aplikasi sistem</string>
+    <string name="test">uji</string>
+    <string name="test_services_for_work_failed">Service test failed. Something is not working properly. You must provide all the necessary permissions (work in the background, etc.) for the application %1$s and for Lucky Patcher. Open settings for %1$s?</string>
+    <string name="test_services_for_work_progress">We make a test for the service to find errors.</string>
+    <string name="test_services_for_work_success">Service tested and working correctly.</string>
+    <string name="text_size">Saiz Teks</string>
+    <string name="title_for_block_internet">Menyekat Internet dalam aplikasi ini:</string>
+    <string name="title_for_select_backup_apk_package">Select apps to backup apk:</string>
+    <string name="title_for_select_disable_package">Pilih aplikasi untuk dimatikan</string>
+    <string name="title_for_select_enable_package">Pilih aplikasi untuk dihidupkan</string>
+    <string name="title_for_select_integrate_update_apps">Pilih aplikasi untuk integrasikan kemaskini ke /sistem:</string>
+    <string name="title_for_select_move_to_internal">Pilih aplikasi untuk dipindahkan ke storan dalaman:</string>
+    <string name="title_for_select_move_to_sdcard">Pilih aplikasi untuk dipindahkan ke Kad SD:</string>
+    <string name="title_for_select_uninstall">Pilih aplikasi untuk dinyahpasangkan:</string>
+    <string name="title_for_unblock_internet">Membuka Sekatan Internet dalam aplikasi ini:</string>
+    <string name="title_installation_lp">Lucky Patcher installer</string>
+    <string name="title_progress_installation_lp">Preparing installation of Lucky Patcher</string>
+    <string name="title_select_custom_patch">Select custom patches.</string>
+    <string name="title_upd">Mesej</string>
+    <string name="toolbar_adfree">Sekat Iklan</string>
+    <string name="toolbar_backups">Sandaran-sandaran</string>
+    <string name="toolbar_options_menu">Options Menu</string>
+    <string name="toolbar_rebuild">Bina semula &amp; Pasang</string>
+    <string name="toolbar_refresh_apps">Rescan Apps</string>
+    <string name="toolbar_switchers">Suis-suis</string>
+    <string name="toolbar_system_utils">Peti alatan</string>
+    <string name="tools_menu_block_internet">Menyekat Internet</string>
+    <string name="tools_menu_unblock_internet">Membuka Sekatan Internet</string>
+    <string name="troubleshooting_supersu_namespace_separation">"Nyahaktif pilihan SuperSu \"pemisahan ruangnama mount\"
+(akan reboot)"</string>
+    <string name="truble">Penyelesaian masalah</string>
+    <string name="uninstall">Adakah anda benar-benar mahu membuang aplikasi ini?</string>
+    <string name="uninstall_updates">Uninstall updates</string>
+    <string name="uninstall_updates_message">Do you really want to remove updates for system app %s?</string>
+    <string name="uninstallapp">Menyahpasang Aplikasi</string>
+    <string name="uninstalled_package_for_user">Uninstalled app for user.</string>
+    <string name="unknown_error">Ralat tidak diketahui, sila cuba lagi.</string>
+    <string name="unused_odex_delete">ODEX yang tidak digunakan dibuang!</string>
+    <string name="update">Kemaskini</string>
+    <string name="update_custom_patches_message_1">New custom patches are found on the server. The list of added patches you can see on the link https://patch.chelpus.com/</string>
+    <string name="update_custom_patches_message_2">Do you want to update them now?</string>
+    <string name="update_found_title">Update found</string>
+    <string name="update_lp">Update Lucky Patсher</string>
+    <string name="update_site_not_found">Update site not found. Possibly blocked in the hosts file or blocked by another application. Or any technical problems with the host.</string>
+    <string name="updatebusybox">Kemaskini Busybox</string>
+    <string name="usepatch">Tetapkan</string>
+    <string name="vers">Lucky Patcher versi:</string>
+    <string name="vibration">Dayakan Getaran</string>
+    <string name="vibration_descr">Dayakan maklumbalas haptik untuk senarai aplikasi</string>
+    <string name="viewlandscape">Landskap</string>
+    <string name="viewlarge">Fon besar</string>
+    <string name="viewmedium">Fon sederhana</string>
+    <string name="viewmenu">Lihat</string>
+    <string name="viewportret">Potret</string>
+    <string name="viewsensor">Sensor</string>
+    <string name="viewsmall">Fon kecil</string>
+    <string name="wait">Sila tunggu...</string>
+    <string name="warning">Amaran</string>
+    <string name="warning_china_devices_muiu">Chinese MIUI firmware often limits the work of the Lucky Patcher in the background. Because of this, InApp purchase emulation and other functions do not work. Open the Lucky Patcher settings to enable all possible permissions for it?</string>
+    <string name="warning_for_get_apk">It is impossible to get the full apk file for \"%1$s\", as it is splitted using Google’s Android App Bundle. This feature cannot be used with \"%1$s\".</string>
+    <string name="warning_for_no_free_space_on_device">Perisian tegar anda memaksa Lucky Patcher berhenti beroperasi dengan ralat: \"Tiada ruang yang tinggal dalam peranti\". Cuba semak ruang kosong dalam peranti. Jika anda guna SuperSu, cuba nyahaktif \"pemisahan ruangnama mount\" dalam SuperSu.</string>
+    <string name="warning_for_no_free_space_on_device_to_patch">There is not enough free space on the device. To continue the work, free up more space.</string>
+    <string name="warning_for_out_of_memory_on_device">Perisian tegar anda telah menghentikan Lucky Patcher dengan ralat: \"Tiada Memori\". Memori tidak mencukupi untuk operasi semasa.</string>
+    <string name="warning_for_resources_error">Your firmware force stopped Lucky Patcher with error: \"InflateException\". Most likely the firmware style theme contains errors or resources of firmware is corrupted. Try changing the theme to light, dark, or whatever. Do you want to send a log?</string>
+    <string name="warning_for_unstall_apk_from_import_file">Import archive contain apk file. Do you want to install %1$s version %2$s build %3$s ?</string>
+    <string name="warning_force_close_please_update_lp">It appears that Lucky Patcher has force-closed. Please update Lucky Patcher to last version.</string>
+    <string name="warning_inapp_emulation">Perisian tegar anda tidak menyokong emulasi Bil DalamApl secara lalai. Jika perisian tegar anda menyokong melumpuhkan (pembekuan) untuk Aplikasi, cuba lumpuhkan Google Play dari pengurus Aplikasi dan cuba mulakan emulasi DalamApl sekali lagi.</string>
+    <string name="warning_install_new_mod_market">This version of modded GooglePlay cannot be installed in the system partition. Install it as a user application. Otherwise, you will not be able to connect to your google account.</string>
+    <string name="warning_install_new_mod_market2">You can install the original Google Play as system, and then as user modded Google Play. If you have problems with Google Play, try to install it as user app with the option \"%1s\" and give it all permissions.</string>
+    <string name="warning_internal_data_folder_corrupt">Lucky Patcher can not write or read data in data folder. To correct this problem, clear data for Lucky Patcher. If this does not help. Uninstall Lucky patcher, install it and give him all the necessary permissions.</string>
+    <string name="warning_jex_optimised_firmware">Perisian tegar anda mempunyai pengoptimuman-jex. Patch perisian tegar mustahil. Cuba tukar perisian tegar atau naiktaraf ke Android 5+.</string>
+    <string name="warning_message_browser_not_found">Browser on the device could not be found to display the internet link.</string>
+    <string name="warning_multipatch_not_select">None of the patches selected.</string>
+    <string name="warning_not_all_perms_granded">Lucky Patcher cannot continue his work, as not all the necessary permissions are granted to him.</string>
+    <string name="warning_shared_apks">"You need the Lucky Patcher installed on another device to be able to install 'apks' files. You can transfer the Lucky Patcher to another device from the side menu '%s'."</string>
+    <string name="warning_superSu_mount_name_space_separation">Lucky Patcher telah mengimbas dan menjumpai pilihan yang telah diaktifkan \"pemisahan ruangnama mount\". Anda perlu nyahaktif ia untuk Lucky Patcher beroperasi dengan normal.</string>
+    <string name="warning_superSu_mount_name_space_separation_2">Anda mahu Lucky Patcher nyahaktif dirinya sendiri (akan reboot)?</string>
+    <string name="warning_superSu_mount_name_space_separation_3">Jangan tunjuk dialog ini lagi</string>
+    <string name="well_done">Berjaya diselesaikan.</string>
+    <string name="well_done_change_components">Components of the application have been successfully updated.</string>
+    <string name="widget_app_disable_checkbox">jalankan aplikasi jika tekan aktif</string>
+    <string name="write_permission_not_found">No write permissions for selected location.</string>
+    <string name="xposed_module_option">Aktifkan modul Xposed</string>
+    <string name="xposed_option_off">Sila aktifkan modul Lucky Patcher dalam Xposed untuk mengaktifkan pilihan ini.</string>
+    <string name="xposed_settings">Tetapan Xposed</string>
+</resources>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="help_custom_general_text1">- Patch file သည် target application နာမည်နှင့် တူညီရပါမည်။ (၎င်းတွင်စာလုံးအကြီးအသေး သတိထားရမည်။)</string>
+    <string name="help_custom_general_text2">- အကယ်၍ file သည် ရှိပီးသား application ၏ custom patch ဖစ်နေပါက file ၏နာမည် အစတွင် မည်သည့် စာသားမဆို ဖြည့်စွက်ပီး နဂိုရှိသော file နားတွင် သိမ်းဆည်းနိုင်သည်။</string>
+    <string name="help_custom_title_general">အထွေထွေအချက်အလက်</string>
+    <string name="help_custom_warning_title">သတိပေးချက်</string>
+</resources>

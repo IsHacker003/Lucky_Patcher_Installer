@@ -1,0 +1,533 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="AppTools">Informacije o aplikaciji:</string>
+    <string name="P_not_found">"Napaka: Programske datoteke niso bile najdene!
+Poglej lokacijo dalvik-predpomnilnika za rešitev tega problema!
+Privzeta lokacija: /data/dalvik-cache/*"</string>
+    <string name="PatchResult">Rezultati urejanja</string>
+    <string name="Yes">Da</string>
+    <string name="abc_action_bar_home_description">Krmarjenje na začetek</string>
+    <string name="abc_action_bar_up_description">Pomik navzgor</string>
+    <string name="abc_action_menu_overflow_description">Več možnosti</string>
+    <string name="abc_action_mode_done">Končano</string>
+    <string name="abc_activity_chooser_view_see_all">Pokaži vse</string>
+    <string name="abc_activitychooserview_choose_application">Izbira aplikacije</string>
+    <string name="abc_capital_off">IZKLOP</string>
+    <string name="abc_capital_on">VKLOP</string>
+    <string name="abc_menu_alt_shortcut_label">Alt +</string>
+    <string name="abc_menu_ctrl_shortcut_label">Ctrl +</string>
+    <string name="abc_menu_delete_shortcut_label">delete</string>
+    <string name="abc_menu_enter_shortcut_label">enter</string>
+    <string name="abc_menu_function_shortcut_label">Fn +</string>
+    <string name="abc_menu_meta_shortcut_label">Meta +</string>
+    <string name="abc_menu_shift_shortcut_label">Shift +</string>
+    <string name="abc_menu_space_shortcut_label">preslednica</string>
+    <string name="abc_menu_sym_shortcut_label">Sym +</string>
+    <string name="abc_prepend_shortcut_label">Meni +</string>
+    <string name="abc_search_hint">Iskanje …</string>
+    <string name="abc_searchview_description_clear">Izbris poizvedbe</string>
+    <string name="abc_searchview_description_query">Iskalna poizvedba</string>
+    <string name="abc_searchview_description_search">Iskanje</string>
+    <string name="abc_searchview_description_submit">Pošiljanje poizvedbe</string>
+    <string name="abc_searchview_description_voice">Glasovno iskanje</string>
+    <string name="abc_shareactionprovider_share_with">Skupna raba z:</string>
+    <string name="abc_shareactionprovider_share_with_application">Skupna raba z drugimi prek aplikacije %s</string>
+    <string name="abc_toolbar_collapse_description">Strnitev</string>
+    <string name="about_working_dir">Delovna mapa na spominski kartici:</string>
+    <string name="aboutmenu">O aplikaciji</string>
+    <string name="abouttitle">O Lucky Patcherju, avtor ChelpuS</string>
+    <string name="activity_ads_descr">Ta dejavnost je namenjena oglaševanju.</string>
+    <string name="activity_descr">Dejavnost aplikacije. Brez opisa.</string>
+    <string name="additinfo">Dodatne informacije:</string>
+    <string name="adsdescr">Pokaži vse aplikacije z Google oglasi</string>
+    <string name="adstitle">Aplikacije z oglasi</string>
+    <string name="advanced_menu">Meni z obliži</string>
+    <string name="all_custom_patches_updated">Vse krparije po meri so bile posodobljene</string>
+    <string name="allchanges">Vse spremembe so bile shranjene v .odex datoteko, ostale bodo do odstranitve aplikacije.</string>
+    <string name="android_patches_for_bootlist">Android krparije za dalvik predpomnilnik</string>
+    <string name="apk_create_option">Ime za preurejene datoteke APK.</string>
+    <string name="apk_not_found_error">Napaka: datoteka aplikacije ni najdena.</string>
+    <string name="apk_size">Velikost paketa:</string>
+    <string name="apkdescr">Predloga preimenovanja za nove datoteke aplikacij.</string>
+    <string name="apklabel">Na podlagi imena aplikacije</string>
+    <string name="apkpackage">Na podlagi imena paketa aplikacije</string>
+    <string name="app_dialog_no_root_app_control">Upravljaj aplikacijo</string>
+    <string name="app_disabler_widget_pkg_not_found">Aplikacija je izbrisana</string>
+    <string name="app_info">Informacije o aplikaciji</string>
+    <string name="app_install_success">Aplikacija je bila uspešno nameščena.</string>
+    <string name="app_name">Lucky Patcher</string>
+    <string name="app_not_found">Aplikacija ni bila najdena! Namestite jo še enkrat in ponovno poskusite.</string>
+    <string name="app_not_found_adapter">Te aplikacije ni bilo mogoče najti na seznamu nameščenih aplikacij.</string>
+    <string name="apps_not_found">Nič ni bilo najdeno.</string>
+    <string name="appwidget_text">PRIMER</string>
+    <string name="back">Nazaj</string>
+    <string name="backbutton">Varnostna kopija</string>
+    <string name="backup_data_empty">Podatki aplikacije so prazni. Ničesar ni za varno kopiranje.</string>
+    <string name="backups_not_found">Nobenih varnostnih kopij ni bilo najdenih v:</string>
+    <string name="billing_hack_menu">Google emulacija obračuna</string>
+    <string name="billing_hack_menu_disable">Izklopi Google emulacijo obračuna</string>
+    <string name="billing_hack_menu_enable">Omogoči Google emulacijo obračuna</string>
+    <string name="billing_hack_option">Pošlji nepodpisano sporočilo aplikaciji (mogoče bo delovalo pri ne-rootanih uporabnikih)</string>
+    <string name="billing_hack_option2">Shrani nakup za obnovitev</string>
+    <string name="bind_delete">Želite odstraniti ta vezaj mape?</string>
+    <string name="bind_dialog_button">Naveži mapo</string>
+    <string name="bind_dialog_target">Montiraj mapo z podatki v:</string>
+    <string name="bind_error">Vezanje mape ni bilo uspešno! Mape podatkov ni bilo mogoče najti na tej napravi.</string>
+    <string name="bind_source">Imenik s podatki:</string>
+    <string name="bind_target">Montiraj podatke v:</string>
+    <string name="binder_browser">Brskalnik</string>
+    <string name="binder_browser_create_dir">Naredi imenik</string>
+    <string name="binder_browser_current_dir">Trenutni imenik:</string>
+    <string name="binder_browser_select">Izberi trenutni imenik</string>
+    <string name="binder_delete">Izbriši</string>
+    <string name="bootview">Seznam aplikacij zagona</string>
+    <string name="bottomsheet_action_expand_halfway">Razširjanje na pol višine</string>
+    <string name="browse_to_file">Prebrskaj</string>
+    <string name="busybox_not_found">Opozorilo: Busybox ni bil najden. Lucky Patcher ne more nadaljevati brez Busyboxa...</string>
+    <string name="button_advanced_filter">Filtri</string>
+    <string name="button_all">Vse</string>
+    <string name="button_backup_apk_apps">Varnostna kopija</string>
+    <string name="button_backup_settings_apps">Varnostna kopija</string>
+    <string name="button_block_internet">Blokiraj omrežje</string>
+    <string name="button_disable_package">Onemogoči</string>
+    <string name="button_enable_package">Omogoči</string>
+    <string name="button_for_delete">Izbriši</string>
+    <string name="button_integrate_update_apps">Vgradi</string>
+    <string name="button_move_to_internal">Premakni v notranji pomnilnik</string>
+    <string name="button_move_to_sdcard">Premakni na spominsko kartico</string>
+    <string name="button_resign_app">Znova podpiši</string>
+    <string name="button_start">Začni</string>
+    <string name="button_unblock_internet">Odblokiraj omrežje</string>
+    <string name="button_uninstall_apps">Odstrani</string>
+    <string name="cancel">Prekini</string>
+    <string name="certificate">Certifikat</string>
+    <string name="change_icon_lp">Spremeni ikono</string>
+    <string name="changelog">Dnevnik sprememb</string>
+    <string name="character_counter_content_description">Število vnesenih znakov je %1$d od %2$d</string>
+    <string name="character_counter_overflowed_content_description">Omejitev števila znakov je presegla %1$d od %2$d</string>
+    <string name="clear_text_end_icon_content_description">Izbris besedila</string>
+    <string name="close">Zapri</string>
+    <string name="collect_logs">Zbiranje podatkov...</string>
+    <string name="common_google_play_services_unknown_issue">Aplikacija %1$s ima težave s storitvami Google Play. Poskusite znova.</string>
+    <string name="context_automodeslvl">Auto načini</string>
+    <string name="context_backup_apk">Varnostno kopiraj datoteko aplikacije</string>
+    <string name="context_batch_operations">Skupinske operacije</string>
+    <string name="context_block_internet_selected_apps">Blokiraj omrežje za izbrane aplikacije Morda ne bo delovalo za Android 4+</string>
+    <string name="context_dependencies">Odstrani odvisnosti</string>
+    <string name="context_disable_google_ads">Izklopi storitve Google oglasov</string>
+    <string name="context_enable_google_ads">Omogoči storitve Google oglasov</string>
+    <string name="context_hide_lp">Skrij Lucky Patcher</string>
+    <string name="context_install">Namesti</string>
+    <string name="context_integrate_dalvik">Vgradi dalvik kodo v že inštalirano aplikacijo</string>
+    <string name="context_move_selected_apps_to_internal">Premakni izbrane aplikacije v notranji spomin</string>
+    <string name="context_move_selected_apps_to_sdcard">Premakni izbrane aplikacije na spominsko kartico</string>
+    <string name="context_purchases_sorter">Razvrščevalnik nakupov</string>
+    <string name="context_rebuild">Obnovi</string>
+    <string name="context_removeAds">Krparija za odstranitev oglasov</string>
+    <string name="context_remove_saved_purchaces">Odstrani izbrane shranjene nakupe</string>
+    <string name="context_restore_apk">Ponovno namesti .apk datoteko</string>
+    <string name="context_support_patch">Omogoči modifikacijo za emulacijo plačil in licenc</string>
+    <string name="context_tools">Orodja</string>
+    <string name="context_unblock_internet_selected_apps">Odblokiraj omrežje za izbrane aplikacije Morda ne bo delovalo za Android 4+</string>
+    <string name="context_uninstall_if_installed">Izbriši in namesti</string>
+    <string name="context_uninstall_selected_apps">Izbriši izbrane uporabnikove aplikacije</string>
+    <string name="contextads">Odstrani Google Ads</string>
+    <string name="contextbackup">Varnostna kopija</string>
+    <string name="contextblockfileads">Odstrani povezave iz paketa aplikacije</string>
+    <string name="contextblockfileads_descr">Odstrani http:// povezave z uporabo predlog iz AdsBlockList_user_edit.txt ter AdsBlockList.txt.</string>
+    <string name="contextboot">Krpaj pri ponovnem zagonu (Nestabilno! Samo za krpanje knjižnic)</string>
+    <string name="contextbootads">Odstrani Google Ads</string>
+    <string name="contextbootcustom">Krparija po meri</string>
+    <string name="contextbootlvl">Odstrani preverjanje licenc</string>
+    <string name="contextcorepatch1">Status preverjanja podpisa naj bo vedno pozitiven</string>
+    <string name="contextcorepatch1_descr">Podrebno za emulacijo plačil, preverjanja licenc ter generatorjev podpisov. Potrebno za pravilno potrdilo plačil in licenc.</string>
+    <string name="contextcorepatch2">Onemogoči preverjanje podpisa .apk datotek</string>
+    <string name="contextcorepatch2_descr">Dovoli modifikacijo aplikacije brez ustvarjanja novega podpisa, tako da bo razvijalcev podpis ostal nedotaknjen. Ostali bodo lahko namestili to aplikacijo samo po tem, ko so zakrpali Android (uporabno pri dodajanjem prevodov, spreminjanju grafik, ... Pri zavarovanih aplikacijah)</string>
+    <string name="contextcorepatch3">Onemogoči preverjanje podpisa v upravitelju paketov</string>
+    <string name="contextcorepatch3_descr">Dovoli namestitev posodobitev za aplikacije z drugim podpisom.</string>
+    <string name="contextcorepatch4">InApp in LVL emulacija</string>
+    <string name="contextcorepatchrestore2_descr">Odstrani vse spremembe iz Android services.jar</string>
+    <string name="contextcorepatchrestore_descr">Odstrani vse krparije iz Androidovega jedra</string>
+    <string name="contextcustompatch">Krparija po meri</string>
+    <string name="contextdeodex">Odstrani ODEX z spremembami (Obnovi aplikacijo)</string>
+    <string name="contextfulloffline">Naredi popolnoma brez povezave</string>
+    <string name="contextfulloffline_descr">Poskusi narediti aplikacijo delati brez povezave.</string>
+    <string name="contextignore">Odstrani preverjanje licenc</string>
+    <string name="contextlaunchapp">Zaženi aplikacijo</string>
+    <string name="contextmultipatch">Večkratna-krparija</string>
+    <string name="contextodex">Uporabi spremembe v ODEXu</string>
+    <string name="contextpatt1">Modifikacija preverjevalnika licenc</string>
+    <string name="contextpatt1_descr">Če obstaja, dovoli internetno povezavo v prvem zagonu. Ta skupina krparij naredi majhne spremembe.</string>
+    <string name="contextpatt2_descr">Če obstaja, najvernetneje ni potrebe za internetno povezavo pri prvem zagonu.</string>
+    <string name="contextpatt3_descr">Majhna popravila za preverjanje licenc.</string>
+    <string name="contextpatt4">Zamenjava Googlove odzivne kode</string>
+    <string name="contextpattads4">Ostale krparije</string>
+    <string name="contextpattads6">Krparija brez internetne povezave</string>
+    <string name="contextrestore">Obnovitev</string>
+    <string name="core_only_dalvik_cache_end">Če naprava zmrzne ali vse krparije ne delajo, prosimo ponovno zaženite napravo ročno.</string>
+    <string name="core_only_dalvik_cache_finished">Android krparija za dalvikov predpomnilnik je končala. Rezultati so:</string>
+    <string name="core_patch_apply">(krparija nameščena)</string>
+    <string name="core_patch_nopatch">(ni zakrpano)</string>
+    <string name="core_result_checkbox">Vedno krpaj dalvikov predpomnilnik na ponovnem zagonu (samo če se krparije za core.jar samodejno odstranijo na ponovnem zagonu).</string>
+    <string name="create">Ustvari imenik</string>
+    <string name="createdialog1">Sprememba od</string>
+    <string name="createdialog5">Ime datoteke:</string>
+    <string name="custom_patch_log_change_components">Zamenjaj komponente</string>
+    <string name="custom_patch_log_offset">Odmik</string>
+    <string name="custom_patch_log_patch_done">Krpanje končano!</string>
+    <string name="custom_patch_log_pattern">Vzorec</string>
+    <string name="custom_sel_app">Izbrana aplikacija:</string>
+    <string name="delete_file">Izbriši datoteko</string>
+    <string name="disable_autoupdate">Onemogoči samodejno posodobitev</string>
+    <string name="disabled">onemogočeno</string>
+    <string name="dontusepatch">Prekliči</string>
+    <string name="download">Nalaganje…</string>
+    <string name="download_progress_dialog_message_downloading">Prenesi datoteko</string>
+    <string name="download_progress_dialog_message_prepare_downloading">Priprava prenosa...</string>
+    <string name="empty">prazno</string>
+    <string name="enabled">omogočeno</string>
+    <string name="error">Napaka</string>
+    <string name="error_classes_not_found">Datoteka \".jar\" ne vsebuje classes.dex za krpanje. Poizkusite krpati \".odex\" datoteko za to \".jar\" datoteko.</string>
+    <string name="error_icon_content_description">Napaka</string>
+    <string name="error_message_for_share_app">Ni bilo možno deliti aplikacije. Neznana napaka. Poizkusite spremeniti delovno mapo Lucky Patcherja.</string>
+    <string name="error_odex_app_impossible">Ta aplikacija ne vsebuje classes.dex datoteke. Dex optimizacija ni mogoča.</string>
+    <string name="exit">Izhod</string>
+    <string name="exposed_dropdown_menu_content_description">Prikaz spustnega menija</string>
+    <string name="failed">spodletelo</string>
+    <string name="fast_start">Hitrejši zagon</string>
+    <string name="file_not_deleted">Datoteka ni bila izbrisana.</string>
+    <string name="filter">Filter</string>
+    <string name="filter7">Sistemske aplikacije</string>
+    <string name="framework_file_patched">krparije so preimenovane v</string>
+    <string name="framework_patch_not_result">Lucky Patcher ni našel bajtov, ki bi jih lahko zakrpal</string>
+    <string name="have_luck">"***********************
+
+Imaš"</string>
+    <string name="header_activities">Dejavnosti:</string>
+    <string name="header_providers">Ponudniki:</string>
+    <string name="header_receivers">Prejemniki:</string>
+    <string name="header_services">Storitve:</string>
+    <string name="help">Pomoč</string>
+    <string name="help_3dot">To je aplikacija z ločenimi apk datotekami. Pri ustvarjanju varnostne kopije takšne aplikacije bo ustvarjena datoteka s pripono \"apks\" (Lucky Patcher lahko namesti te datoteke)</string>
+    <string name="help_PS">P.S.: Lucky Patcher zapre aplikacijo, ko nanjo namesti krparijo. To je potrebno, da bodo nove spremembe vztrajale. Včasih pa boste morda morali znova zagnati samo napravo, uporabiti orodje drugega proizvajalca, da zaustavite proces ali procese prizadete aplikacije, ali počistiti podatke aplikacije, da vidite spremembe.</string>
+    <string name="help_bootlist_describing">*%1$s - seznam aplikacij, ki bodo zakrpane ob zagonu. Trenutno je funkcija zastarela, saj se vse spremembe, ki jih naredite z aplikacijami, shranijo v ODEX in ne gredo nikamor, zato se vam ni treba zavarovati z dodajanjem aplikacij na Bootlist. To bo morda potrebno samo v primeru, če krparija po meri spremeni knjižnice ».so« aplikacije. V opisu teh krparij po meri bo navedeno, da jih dodate na Bootlist.</string>
+    <string name="help_common">Osnovno</string>
+    <string name="help_custom_deprecated_tag">Zastarelo</string>
+    <string name="help_custom_increment_decrement_param_end">Ali drug primer:</string>
+    <string name="help_custom_rename_file_in_apk_tag">"Preimenuj datoteko v apk arhivu.
+Primer:"</string>
+    <string name="help_custom_title_general">Splošne informacije:</string>
+    <string name="help_custom_title_syntax">Sintaksna pomoč:</string>
+    <string name="help_custom_warning_title">OPOZORILO:</string>
+    <string name="help_cyan_apps">V tej aplikaciji so bili najdeni oglasi</string>
+    <string name="help_describe_for_apply_changes_to_dalvik_cache">V privzetem načinu vse spremembe ostanejo v datoteki ODEX. Kopiranje v dalvik-predpomnilnik lahko pomaga, ko datoteke ODEX ne delujejo za aplikacijo (na primer, ko se aplikacija premakne na kartico SD). Vendar pa boste morali znova namestiti aplikacijo, da jo obnovite.</string>
+    <string name="help_describe_for_backup_app">Kopija datoteke APK za poznejšo obnovitev. Datoteka APK je shranjena v mapo z varnostnimi kopijami.</string>
+    <string name="help_describe_for_backup_settings_app">Varnostno kopira podatke aplikacije iz notranjega pomnilnika v mapo Lucky Patcher.</string>
+    <string name="help_describe_for_create_backup_before_patch">Kopirajte datoteko APK na kartico SD v podatkovni mapi Lucky Patcher. Aplikacijo lahko znova namestite (za obnovitev) iz tega APK-ja.</string>
+    <string name="help_describe_for_create_mod_apk">Ustvari namestitveni paket APK z vnaprej uporabljenimi krparijami. Upoštevati morate, da ponovno zgrajena aplikacija morda ne bo delovala enako kot aplikacija, ki je bila zakrpana preko patcherja. To je lahko težava, ker lahko aplikacija sama preveri, da najde morebitne spremembe v kodi in podpisu.</string>
+    <string name="help_describe_for_create_odex">Ustvari nespremenjeno datoteko ODEX aplikacije.</string>
+    <string name="help_describe_for_dex_verification_killer">Včasih se aplikacija po ponovni gradnji ne zažene ali se pritožuje zaradi napačne kontrolne vsote podpisa ali datotek dex ali ne opravlja nakupov itd. V tem primeru lahko pomaga ta funkcija. Vstavi kodo, ki poskuša pretentati preverjanje podpisa ali preverjanje kontrolne vsote datotek dex znotraj aplikacije. To možnost je treba uporabiti samo za prvotno aplikacijo. Če jo uporabimo za že zakrpano, potem ta možnost ne bo delovala, tudi če je že bila uspešno implementirana. Zaradi te metode se bo velikost aplikacije podvojila.</string>
+    <string name="help_describe_for_disable_components_pm_disable">Odstrani izbrana dovoljenja, storitve, dejavnosti itd. Ta možnost je vgrajena v Android in zato ni škodljiva. Edina stvar, ki lahko preneha delovati, je spremenjena aplikacija, kar je mogoče enostavno popraviti s ponovnim omogočanjem dovoljenj. Upoštevajte, da ima aplikacija po uporabi te metode še vedno možnost, da vse znova vklopi med zagonom.</string>
+    <string name="help_describe_for_hard_apk_permission_disale">Odstrani dovoljenja aplikacije (ureja sistemsko datoteko packages.xml). Pri tem bodite zelo previdni. Na nekaterih napravah lahko ta metoda povzroči Bootloop ali druge neželene posledice. Preden poskusite onemogočiti dovoljenja, naredite varnostno kopijo sistema.</string>
+    <string name="help_describe_for_lvl_auto_mode">"Poskusi odstraniti preverjanja licenc. Uporablja samo osnovne predloge za večjo stabilnost aplikacije po krparijah. Primerno za večino aplikacij z nezahtevno zaščito.
+(Če je odstotek, pridobljen s to metodo, nizek, se prepričajte, da je internetna povezava vključena, medtem ko uporabljate zakrpano aplikacijo)"</string>
+    <string name="help_describe_for_lvl_auto_mode_dex">Poskusi odstraniti preverjanje licenc. Najbolj stabilna metoda. Po namestitvi krparije na aplikacijo, za njen prvi zagon, potrebujete nameščeno Trgovino Google Play in delujoč internet.</string>
+    <string name="help_describe_for_lvl_auto_mode_inverse">Enako kot \"%1$s\", vendar z nekaj spremembami, ki bi lahko pomagale v primerih, ko \"%1$s\" ni.</string>
+    <string name="help_describe_for_lvl_other_patches_extreme_mode">Poskusi popolnoma odstraniti preverjanja licenc. Uporablja vse predloge. Zakrpana aplikacija lahko postane nestabilna, običajno do nestabilnosti pride, ko je aplikacija brez povezave. Pomaga lahko vedno znova zagon aplikacije, spreminjanje ali onemogočanje orientacije zaslona. (če je dobljeni odstotek prenizek, mora biti ob zagonu aplikacije za pozitiven rezultat vključen internet).</string>
+    <string name="help_describe_for_lvl_remove">Ciljna aplikacija mora biti podpisana s podpisom razvijalca in je ne sme spremeniti nekdo drug. Za pozitiven učinek krparij potrebujete nameščen GooglePlay (Google market) z vpisanim veljavnim računom in vključen internet ob prvem zagonu ciljne aplikacije. Poskusite vedno najprej odstraniti preverjanje licenc z \"%1$s\", če ne deluje, poskusite z \"%2$s\". Če povzroča kritične napake, lahko poskusite izbrati samo nekatere vzorce v \"%3$s\"</string>
+    <string name="help_describe_for_lvl_sellect_patterns">Poskuša odstraniti preverjanje licenc z uporabo izbranih skupin krparij.</string>
+    <string name="help_describe_for_move_to_system">Pretvori uporabniško aplikacijo v sistemsko.</string>
+    <string name="help_describe_for_patch_on_reboot">Ta nastavitev je zastarela, ker se v novih različicah Lucky Patcherja vse spremembe shranijo v datoteko ODEX aplikacije, ki se ob ponovnem zagonu ne spremeni. Ta nastavitev je lahko uporabna le, če krparija po meri spremeni knjižnice ».so« aplikacije, kar bo navedeno v opisu krparije.</string>
+    <string name="help_describe_for_remove_ad_activities">Ročno onemogočite različne dejavnosti aplikacij. Nekatere dejavnosti imajo opis, kaj počnejo. Če aplikacija preneha delovati, je mogoče dejavnosti znova omogočiti.</string>
+    <string name="help_describe_for_remove_ads">Poskusi odstraniti oglase. Poskusite uporabiti ta popravek, tudi če Lucky Patcher ni našel oglasov v aplikaciji, ki vsebuje oglase. Lahko odstrani te oglase.</string>
+    <string name="help_describe_for_remove_dalvik_cache_after_patch">Po ustvaritvi datoteke ODEX se dalvik-predpomnilnik aplikacije izbriše, da prihrani prostor. Če aplikacija ne deluje z ODEX, jo boste morali znova namestiti.</string>
+    <string name="help_describe_for_remove_odex">Odstrani datoteko ODEX, ki vsebuje spremembe. To obnovi aplikacijo na njeno prvotno stanje.</string>
+    <string name="help_describe_for_remove_purchase_from_db">Odstranitev nakupov, shranjenih preko emulacije Googlovih plačil.</string>
+    <string name="help_describe_for_restore_app">Obnovitev aplikacije iz datoteke APK v mapi z varnostnimi kopijami.</string>
+    <string name="help_describe_for_restore_app_data">Obnovitev podatkov aplikacije, shranjenih v notranjem pomnilniku v mapi /data/data/ime_paketa_aplikacije/.</string>
+    <string name="help_describe_for_safe_apk_permission_disale">Odstrani izbrana dovoljenja tako, da znova zgradi APK s spremembami. Ta metoda ne spremeni podpisa aplikacije. To deluje samo na sistemskih aplikacijah ali na vseh aplikacijah, če je za Android uporabljena krparija \"%1$s\".</string>
+    <string name="help_describe_for_safe_apk_permission_disale_rebuild_and_install">Podobno varni metodi, le da ta metoda uporablja nov podpis in ne obdrži izvirnega podpisa. Aplikacija s to metodo morda ne bo delovala pravilno, če preverja podpis.</string>
+    <string name="help_describe_for_share_this_app">Ustvari kopijo datoteke APK izbrane aplikacije in jo da v skupno rabo prek katere koli aplikacije.</string>
+    <string name="help_describe_for_signature_verification_killer">Včasih se aplikacija ne zažene po ponovni gradnji ali se pritožuje zaradi napačnega podpisa ali ne opravlja nakupov itd. V tem primeru lahko ta funkcija pomaga. Vstavi kodo, ki poskuša pretentati preverjanje podpisa znotraj aplikacije. To možnost je treba uporabiti samo za prvotno aplikacijo. Če jo uporabimo za že zakrpano, potem ta možnost ne bo delovala, tudi če je že bila uspešno implementirana.</string>
+    <string name="help_describe_for_support_patch_inapp">Aplikaciji doda podporo za InApp emulacijo. InApp emulacijo lahko vklopite v meniju Preklopi.</string>
+    <string name="help_for_inapp_non_root_method1">"- Ponovno zgradite ciljno aplikacijo z \"%1$s\"
+- Izbrišite izvirno aplikacijo (preimenujte mapo predpomnilnika, da se ne izbriše).
+- Namestite ponovno zgrajeno različico aplikacije (preimenujte nazaj mapo predpomnilnika, če je obstajala). ).
+- Omogočite \"%2$s\" v stikalih Lucky Patcher.
+Vse, lahko poskusite, kupite. Redko deluje, a čudeži se dogajajo :)"</string>
+    <string name="help_for_inapp_non_root_method1_note">"Včasih zaščita nakupa uporablja preverjanje podpisa aplikacije. V tem primeru lahko pomaga uporaba možnosti \"%1$s\".
+"</string>
+    <string name="help_for_inapp_root_method1">"Uporabite prvo krparijo na Android (%1$s) in namestite modificirano trgovino različice 3+. Po tem bodo vsi vaši nakupi preusmerjeni v Lucky Patcher, če je omogočena možnost \"%2$s\". Če se želite vrniti v običajni \"legalni\" način nakupovanja, samo onemogočite možnost \"%2$s\". Ta metoda je enaka delu Freedom in ni slabša od nje v učinkovitosti, vendar se izvaja s spreminjanjem same Trgovine Google Play, ki vam omogoča nakupe brez motenj v delovanju same Trgovine Google Play.
+
+Kako to storiti? 
+- Namestite Lucky Patcher :)
+- Izberite spodnjo ploščo Lucky Patcherja \"%3$s->%4$s\", izberite zgornji element (%1$s) in tapnite za uporabo. Po vnovičnem zagonu mora biti prva krparija v tem pogovornem oknu označena kot uporabljena 2/2.
+- (Ta korak lahko preskočite, vendar je bolje, da to storite tako, ker če to ne deluje, potem ni nobenega Če krparije ni bilo mogoče uporabiti, lahko poskusite uporabiti prvo možnost Xposed modula Lucky Patcher;
+- Zaženite Lucky Patcher, vklopite internetno povezavo in izberite spodnjo ploščo \"%3$s->%5$s\" , izberite pravilno različico in pritisnite namestitev;
+- Izvedite preizkus Google Play v \"%3$s->%6$s\".
+"</string>
+    <string name="help_for_inapp_root_method2">Uporabite prvo krparijo na Android (Preverjanje podpisa je vedno True) in vklopite stikalo \"%1$s\". Po tem bodo vsi vaši nakupi preusmerjeni v Lucky Patcher.</string>
+    <string name="help_for_inapp_root_method2_disadvantages">"- Trgovina Google Play ne deluje, ko je proxy strežnik omogočen;
+- Ni učinkovit v aplikacijah z zaščito za preverjanje izvirnih podatkov o nakupih;
+- Nepriročen je v kombinaciji s shranjenimi nakupi, saj shranjenih nakupov ne more posredovati aplikacijo, če je proxy strežnik onemogočen.
+"</string>
+    <string name="help_for_inapp_root_method3">"Če imate na svoji napravi Xposed, lahko vklopite Xposed modul Lucky Patcher.
+Pozor: četrto možnost v Xposed modulu \"%1$s\" morate omogočiti samo, če nimate nameščene modificirane Trgovine Google Play. Če modificirana Trgovina Google Play ni nameščena, potem lahko z omogočanjem prve in četrte možnosti opravljate nakupe v aplikaciji. Peta možnost je, da poskusite skriti lucky patcher pred aplikacijo, če godrnja."</string>
+    <string name="help_for_inapp_root_method3_disadvantages">"- Ni učinkovit na aplikacijah z zaščito za preverjanje izvirnih informacij o nakupih;
+- Xposed sam je nestabilen pri posodabljanju lucky patcherja, včasih onemogoči svoj Xposed modul, morate ga onemogočiti v samem Xposedu in ga znova vklopiti ter znova zagnati napravo
+"</string>
+    <string name="help_for_inapp_root_method4">"Uporabi \"%1$s\" za ciljno aplikacijo. Po tem bi morali biti vsi nakupi preusmerjeni v Lucky Patcher. Da bo ta metoda delovala, morate omogočiti \"%2$s\" v stikalih Lucky Patcher. Ta metoda je uporabna, če želite kupovati prek emulacije samo v aplikacijah, ki jih zakrpate sami.
+Ali uporabite krparijo \"%3$s\" (zelo dolg) in vsi nakupi bodo preusmerjeni neposredno na Lucky Patcher brez proxyja."</string>
+    <string name="help_for_inapp_root_method4_disadvantages">"- Ne deluje na vseh aplikacijah, saj je InApp nakupna koda lahko skrita na mestu, ki ni dostopno popravku.
+- Ne deluje na aplikacijah z zaščito za preverjanje izvirnih informacij o nakupih.
+"</string>
+    <string name="help_green_apps">To so aplikacije, v katerih so bila najdena dovoljenja za preverjanje licenc</string>
+    <string name="help_instruction_for_create_apk">"- Tapnite ime aplikacije/programske opreme in izberite \"%1$s\";
+- Izberite krparijo za spreminjanje APK-ja;
+- Spremenjena namestitvena datoteka bo v mapi Lucky Patcher (lahko jo vidite v \"Vizitki\");
+ - Upoštevati morate, da ponovno zgrajena aplikacija morda ne bo delovala enako kot aplikacija, ki je bila zakrpana preko patcherja. To je lahko težava, ker lahko aplikacija sama preveri, da najde morebitne spremembe v kodi in podpisu. In ne pozabite, po ponovni namestitvi spremenjene aplikacije in odstranitvi prvotne aplikacije bodo vsi podatki aplikacije izgubljeni."</string>
+    <string name="help_instruction_for_custom_patch">"- Dotaknite se imena aplikacije/programske opreme, pojdite v meni krparij in izberite \"%1$s\";
+- Zaženite in preizkusite aplikacijo z internetom;
+- Če imate srečo, je krparija delovala;
+- Da vrnete aplikacijo v prvotno stanje tapnite \"%2$s\" ali \"%3$s\"."</string>
+    <string name="help_instruction_for_remove_ads">"- Tapnite ime aplikacije/programske opreme, pojdite v meni krparij in izberite \"%1$s\";
+- Nato izberite \"%2$s\";
+- Zaženi in preizkusi aplikacijo z internetom;
+- Če so oglasi še vedno prisotni, tapni \"%3$s\", poiščite dejavnosti oglasov in jih onemogočite;
+- Če imate srečo, bi morali oglasi izginiti;
+- Če želite vrniti aplikacijo v prvotno stanje, tapnite \"%4$s\" ali \"%5$s\"."</string>
+    <string name="help_instruction_for_remove_lvl">"- Uporabljajte samo originalne datoteke APK, ki jih je podpisal razvijalec;
+- Tapnite ime aplikacije/programske opreme in izberite \"%1$s\";
+- Izberite \"%2$s\" in preizkusite aplikacijo z dostopom do interneta;
+- Če je rezultat negativen, izberite \"%3$s\" ali \"%4$s\";
+- Če imate srečo, bo vaš program registriran;
+- Če želite vrniti aplikacijo v prvotno stanje, tapnite \"%5$s\" ali \"%6$s\"."</string>
+    <string name="help_klever">Lucky Patcher je spremenil to aplikacijo. Na primer, če je deteljica prižgana, zvezda pa ne, potem datoteka odex s spremembami ni bila ustvarjena, vendar so bili dalvik predpomnilnik aplikacije, njene knjižnice zakrpane ali pa so bila spremenjena aktivacija in dovoljenja</string>
+    <string name="help_magenta_apps">Te aplikacije so na zagonskem seznamu*</string>
+    <string name="help_orange_apps">To so sistemske aplikacije. Pri kakršnih koli posegih z njimi bodite zelo previdni, saj lahko njihovo urejanje povzroči nepopravljivo škodo aplikaciji ali operacijskemu sistemu (vedno naredite varnostne kopije z ustreznimi programi).</string>
+    <string name="help_purple_apps">Aplikacija, ki vsebuje Googlove InApp nakupe</string>
+    <string name="help_red_apps">V tej aplikaciji ni bilo najdenih neposrednih znakov ničesar, vendar je morda v njej preverjanje licenc ali oglaševanje. (najpogosteje se preverjanje licenc v takih aplikacijah zgodi, če je dvodelno: program + ključ aplikacije)</string>
+    <string name="help_root_warning">Lucky Patcher potrebuje korenski dostop za delovanje vseh funkcij. Brez korenskih pravic program deluje v omejenem načinu.</string>
+    <string name="help_star">To pomeni, da ima aplikacija najdeno datoteko \"odex\". Za sodobne Androide je datoteka odex prikazana samo za sistemske aplikacije.</string>
+    <string name="help_sub_describe_for_inapp_buy_dialog_auto_purchase">"Če je ta možnost omogočena, bo naslednjič, ko boste kupili isti izdelek, nakup opravljen brez pogovornega okna za nakup Lucky Patcher (nakup bo takoj prišel v aplikacijo brez vprašanj). Potrebno je, ko zbirate zlato v aplikaciji ipd., da ne pritisnete vsakič, ko se strinjate z nakupom :)
+Samodejni nakup lahko izbrišete tako, da dolgo pritisnete aplikacijo na seznamu lucky patcher in izberete \"%1$s\" nato odstranite nepotrebne samodejne nakupe s seznama."</string>
+    <string name="help_sub_describe_for_inapp_buy_dialog_save_purchase">"Uporabno za uporabnike brez korenskih pravic, za starejše igre in aplikacije, kjer avtorji nenamerno ne preverjajo podpisnih podatkov.
+Ta možnost shrani nakup v podatkovno bazo Lucky Patcherja, tako da jo Lucky Patcher ob naslednjem zagonu vdrte aplikacije obvesti da se ta nakup šteje za kupljenega. To je potrebno za različne vrste naročnin in druge stvari.
+Kako veste, kaj omogočiti? Kupite na primer polno različico aplikacije in je nakup uspešen, vendar se aplikacija po ponovnem zagonu ponovno šteje za nepopolno različico, dokler ne kupite znova. Ko je ta možnost vklopljena, bodo lažni podatki o nakupu poslani aplikaciji s praznim podpisom in obstaja možnost, da bo ta nakup pravilen in se bo aplikacija po ponovnem zagonu štela za kupljeno.
+
+Uporabniki s korenskimi pravicami raje ne uporabljajte te možnosti, saj lahko povzroči več škode kot koristi."</string>
+    <string name="help_sub_title_for_inapp_disadvantages_method">Slabosti te metode:</string>
+    <string name="help_sub_title_for_inapp_non_root">Za uporabnike brez korenskih pravic:</string>
+    <string name="help_sub_title_for_inapp_non_root_method1">Metoda #1:</string>
+    <string name="help_sub_title_for_inapp_root">Za uporabnike s korenskimi pravicami:</string>
+    <string name="help_sub_title_for_inapp_root_method1">Metoda #1 (najbolj učinkovita in priporočena):</string>
+    <string name="help_sub_title_for_inapp_root_method2">Metoda #2:</string>
+    <string name="help_sub_title_for_inapp_root_method3">Metoda #3:</string>
+    <string name="help_sub_title_for_inapp_root_method4">Metoda #4:</string>
+    <string name="help_sub_title_for_purchase_window">Nastavitve okna za nakup:</string>
+    <string name="help_title1">Barvni opis:</string>
+    <string name="help_title_for_context_menu">Kontekstni meni:</string>
+    <string name="help_title_for_inapp">Nastavitve nakupovanja prek Lucky Patcher:</string>
+    <string name="help_title_for_instructions">Navodila:</string>
+    <string name="help_title_instruction_for_create_apk">Da ustvarite modificirano datoteko APK:</string>
+    <string name="help_title_instruction_for_custom_patch">Da uporabite krparije po meri:</string>
+    <string name="help_title_instruction_for_remove_ads">Da odstranite oglase:</string>
+    <string name="help_title_instruction_for_remove_lvl">Da odstranite preverjanje licenc:</string>
+    <string name="help_yellow_apps">Za to aplikacijo je bila v Lucky Patcher najdena krparija po meri</string>
+    <string name="icon_content_description">Ikona pogovornega okna</string>
+    <string name="information">Info</string>
+    <string name="install">Namesti</string>
+    <string name="install_as_user_app">Namesti Google Play kot uporabniško aplikacijo.</string>
+    <string name="install_as_user_app_note">Predpogoj: Že uporabljeno \"Krpanje v Android\" in nameščeno Trgovino Google Play.</string>
+    <string name="install_cloned_app">Namesti klon</string>
+    <string name="install_date">Datum namestitve:</string>
+    <string name="installer_error_blocked_device">naprava</string>
+    <string name="installer_rootless_error2_install_failed_aborted">Namestitev je preklical uporabnik ali pa je bila prekinjena</string>
+    <string name="installer_rootless_error2_install_failed_already_exists">Ta paket je že nameščen</string>
+    <string name="installer_rootless_error2_install_failed_bad_dex_metadata">Datoteka z metapodatki Dex je neveljavna ali pa ni ustrezne datoteke APK za datoteko z metapodatki dex</string>
+    <string name="installer_rootless_error2_install_failed_bad_signature">Prišlo je do težav s podpisom APK</string>
+    <string name="installer_rootless_error2_install_failed_conflicting_provider">Paket vsebuje ponudnika vsebine z enakim pooblastilom kot ponudnik, ki je že nameščen v sistemu</string>
+    <string name="installer_rootless_error2_install_failed_container_error">Na zunanjem mediju ni bilo mogoče dostopati do varne točke namestitve</string>
+    <string name="installer_rootless_error2_install_failed_cpu_abi_incompatible">Paket ne vsebuje izvorne kode, ki bi bila združljiva s CPE te naprave</string>
+    <string name="installer_rootless_error2_install_failed_dexopt">Namestitev med optimiziranjem in preverjanjem datotek paketa dex ni uspela, ker ni bilo dovolj prostora za shranjevanje ali preverjanje ni uspelo</string>
+    <string name="installer_rootless_error2_install_failed_duplicate_package">Paket z enakim imenom je že nameščen</string>
+    <string name="installer_rootless_error2_install_failed_duplicate_permission">Paket poskuša definirati dovoljenje, ki je že definirano v drugem nameščenem paketu</string>
+    <string name="installer_rootless_error2_install_failed_instant_app_invalid">Nepodprta operacija s takojšnjo aplikacijo</string>
+    <string name="installer_rootless_error2_install_failed_insufficient_storage">Naprava nima dovolj prostora za namestitev aplikacije</string>
+    <string name="installer_rootless_error2_install_failed_internal_error">Namestitev je spodletela zaradi sistemskih težav</string>
+    <string name="installer_rootless_error2_install_failed_invalid_apk">Datoteka APK ni veljavna</string>
+    <string name="installer_rootless_error2_install_failed_invalid_install_location">Paketa ni bilo mogoče namestiti na navedeno lokacijo</string>
+    <string name="installer_rootless_error2_install_failed_invalid_uri">Podan URI ni veljaven</string>
+    <string name="installer_rootless_error2_install_failed_media_unavailable">Paketa ni bilo mogoče namestiti na navedeno lokacijo, ker medij ni na voljo</string>
+    <string name="installer_rootless_error2_install_failed_missing_feature">Paket zahteva funkcijo, ki je ta naprava ne podpira</string>
+    <string name="installer_rootless_error2_install_failed_missing_shared_library">Aplikacija je zahtevala deljeno knjižnico, ki ni nameščena na napravi</string>
+    <string name="installer_rootless_error2_install_failed_missing_split">Paket zahteva razdelitve, ki pa niso bile priložene</string>
+    <string name="installer_rootless_error2_install_failed_multipackage_inconsistency">Ena od sej namestitvenega programa podrejenega paketa se ne ujema z nadrejeno sejo glede postopnih ali povrnitvenih parametrov</string>
+    <string name="installer_rootless_error2_install_failed_newer_sdk">Različica Androida naprave je višja od zahtevane v paketu</string>
+    <string name="installer_rootless_error2_install_failed_no_matching_abis">Paket ne vsebuje izvorne kode, ki bi bila združljiva s CPE te naprave</string>
+    <string name="installer_rootless_error2_install_failed_no_shared_user">Deljen uporabnik, ki ga zahteva paket, ne obstaja</string>
+    <string name="installer_rootless_error2_install_failed_older_sdk">Različica Androida naprave je nižja od zahtevane v paketu</string>
+    <string name="installer_rootless_error2_install_failed_other_staged_session_in_progress">Za to ime paketa že poteka seja namestitvenega programa</string>
+    <string name="installer_rootless_error2_install_failed_package_changed">Pot namestitve paketa se je nepričakovano spremenila</string>
+    <string name="installer_rootless_error2_install_failed_permission_model_downgrade">Nova različica paketa ne podpira dovoljenj runtime, trenutno nameščena različica pa jih podpira</string>
+    <string name="installer_rootless_error2_install_failed_replace_couldnt_delete">Sistem ni mogel izbrisati prejšnje različice tega paketa</string>
+    <string name="installer_rootless_error2_install_failed_sandbox_version_downgrade">Nova različica paketa zahteva nižjo različico peskovnika od trenutno nameščene različice tega paketa</string>
+    <string name="installer_rootless_error2_install_failed_shared_user_incompatible">Aplikacija je zahtevala že obstoječega deljenega uporabnika, vendar se njegovi podpisi ne ujemajo</string>
+    <string name="installer_rootless_error2_install_failed_test_only">Nameščen paket je samo za preizkus in opcija INSTALL_ALLOW_TEST ni bila podana</string>
+    <string name="installer_rootless_error2_install_failed_uid_changed">Paketu je bil dodeljen drugačen UID od prejšnjega</string>
+    <string name="installer_rootless_error2_install_failed_update_incompatible">Podpis aplikacije se ne ujema s podpisom že nameščene aplikacije z enakim imenom paketa</string>
+    <string name="installer_rootless_error2_install_failed_user_restricted">Temu uporabniku namestitev aplikacij ni dovoljena</string>
+    <string name="installer_rootless_error2_install_failed_verification_failure">Preverjanje paketa je spodletelo</string>
+    <string name="installer_rootless_error2_install_failed_verification_timeout">Preverjanje paketa je poteklo</string>
+    <string name="installer_rootless_error2_install_failed_version_downgrade">Novejša različica tega paketa je že nameščena</string>
+    <string name="installer_rootless_error2_install_failed_wrong_installed_version">Zahtevana različica že nameščenega paketa se ne ujema z dejansko različico nameščenega paketa</string>
+    <string name="installer_rootless_error2_install_parse_failed_bad_manifest">Manifesta APK ni mogoče pridobiti</string>
+    <string name="installer_rootless_error2_install_parse_failed_bad_package_name">APK ima napačno ali mankajoče ime paketa</string>
+    <string name="installer_rootless_error2_install_parse_failed_bad_shared_user_id">APK ima napačni id deljenega uporabnika</string>
+    <string name="installer_rootless_error2_install_parse_failed_certificate_encoding">Kodiranje potrdila je spodletelo</string>
+    <string name="installer_rootless_error2_install_parse_failed_inconsistent_certificates">Na datotekah v APK-ju so bila najdena neskladna potrdila</string>
+    <string name="installer_rootless_error2_install_parse_failed_manifest_empty">Manifest APK je prazen</string>
+    <string name="installer_rootless_error2_install_parse_failed_manifest_malformed">Manifest APK je napačno oblikovan</string>
+    <string name="installer_rootless_error2_install_parse_failed_no_certificates">Datoteka APK ne vsebuje nobenih potrdil</string>
+    <string name="installer_rootless_error2_install_parse_failed_not_apk">Navedena datoteka ni datoteka APK</string>
+    <string name="installer_rootless_error2_install_parse_failed_unexpected_exception">Razčlenjevalnik APK je naletel na nepričakovano izjemo</string>
+    <string name="installer_rootless_error2_unknown">Neznana napaka</string>
+    <string name="installsupersu">Namesti SuperSU (ICS)</string>
+    <string name="integrate_dalvik_code_dialog_title">Rezultati integracije</string>
+    <string name="integrate_to_system">Res želite integrirati posodobitev za to aplikacijo na mesto /system?</string>
+    <string name="integrate_updates_result">Rezultat integriranja posodobitve</string>
+    <string name="integrate_updates_to_system">Integriraj posodobitev v /system</string>
+    <string name="internet_not_found">Potrebna je povezava z internetom.</string>
+    <string name="is_an_invalid_number">Vnesli ste neveljavno številko...</string>
+    <string name="item_view_role_description">Zavihek</string>
+    <string name="langdef">Privzeti jezik</string>
+    <string name="langen">Angleški</string>
+    <string name="langmenu">Jezik</string>
+    <string name="launchbutton">Zaženi</string>
+    <string name="line">"***********************
+"</string>
+    <string name="loadpkg">Nalaganje paketov</string>
+    <string name="material_clock_toggle_content_description">Izberite dopoldanski ali popoldanski čas.</string>
+    <string name="material_hour_selection">Izberite uro</string>
+    <string name="material_hour_suffix">%1$s</string>
+    <string name="material_minute_selection">Izberite minute</string>
+    <string name="material_minute_suffix">%1$s min</string>
+    <string name="material_timepicker_am">dop.</string>
+    <string name="material_timepicker_clock_mode_description">Preklopite na način ure, da vnesete čas.</string>
+    <string name="material_timepicker_hour">Ura</string>
+    <string name="material_timepicker_minute">Minuta</string>
+    <string name="material_timepicker_pm">pop.</string>
+    <string name="material_timepicker_select_time">Izberite uro</string>
+    <string name="material_timepicker_text_input_mode_description">Preklopite na način za vnašanje besedila, da vnesete čas.</string>
+    <string name="message_delete_package_new">Namestitev ni bila uspešna. Pred namestitvijo nove aplikacije morate odstraniti staro. Če to ne pomaga, ponovno zaženite napravo ročno.</string>
+    <string name="message_error_move_to_sdcard">"Premik na SD kartico končan z napako (poizkusi znova):
+"</string>
+    <string name="modiftitle">Spremenjene aplikacije</string>
+    <string name="mtrl_badge_numberless_content_description">Novo obvestilo</string>
+    <string name="mtrl_chip_close_icon_content_description">Odstranite %1$s</string>
+    <string name="mtrl_exceed_max_badge_number_content_description">Več kot toliko novih obvestil: %1$d</string>
+    <string name="mtrl_picker_a11y_next_month">Spremeni na naslednji mesec</string>
+    <string name="mtrl_picker_a11y_prev_month">Spremeni na prejšnji mesec</string>
+    <string name="mtrl_picker_announce_current_selection">Trenutna izbira: %1$s</string>
+    <string name="mtrl_picker_confirm">@android:string/ok</string>
+    <string name="mtrl_picker_date_header_selected">%1$s</string>
+    <string name="mtrl_picker_date_header_title">Izberite datum</string>
+    <string name="mtrl_picker_date_header_unselected">Izbrani datum</string>
+    <string name="mtrl_picker_day_of_week_column_header">Stolpec dni: %1$s</string>
+    <string name="mtrl_picker_invalid_format">Neveljavna oblika.</string>
+    <string name="mtrl_picker_invalid_format_example">Primer: %1$s</string>
+    <string name="mtrl_picker_invalid_format_use">Uporabite: %1$s</string>
+    <string name="mtrl_picker_invalid_range">Neveljaven razpon.</string>
+    <string name="mtrl_picker_navigate_to_year_description">Pomik na leto %1$s</string>
+    <string name="mtrl_picker_out_of_range">Zunaj razpona: %1$s</string>
+    <string name="mtrl_picker_range_header_only_end_selected">Začetni datum–%1$s</string>
+    <string name="mtrl_picker_range_header_only_start_selected">%1$s–končni datum</string>
+    <string name="mtrl_picker_range_header_selected">%1$s–%2$s</string>
+    <string name="mtrl_picker_range_header_title">Izberite obseg</string>
+    <string name="mtrl_picker_range_header_unselected">Začetni datum–končni datum</string>
+    <string name="mtrl_picker_save">Shrani</string>
+    <string name="mtrl_picker_text_input_date_hint">Datum</string>
+    <string name="mtrl_picker_text_input_date_range_end_hint">Končni datum</string>
+    <string name="mtrl_picker_text_input_date_range_start_hint">Začetni datum</string>
+    <string name="mtrl_picker_text_input_day_abbr">d</string>
+    <string name="mtrl_picker_text_input_month_abbr">m</string>
+    <string name="mtrl_picker_text_input_year_abbr">l</string>
+    <string name="mtrl_picker_toggle_to_calendar_input_mode">Preklop na način vnosa v koledar</string>
+    <string name="mtrl_picker_toggle_to_day_selection">Dotik za preklop na izbiro dneva</string>
+    <string name="mtrl_picker_toggle_to_text_input_mode">Preklop na način vnosa besedila</string>
+    <string name="mtrl_picker_toggle_to_year_selection">Dotik za preklop na izbiro leta</string>
+    <string name="no">Ne</string>
+    <string name="nofilter">Nič</string>
+    <string name="notify_android_patch_on_boot_mes_core.jar">Uporabi Android krparije za dalvikov predpomnilnik iz datoteke core.jar.</string>
+    <string name="notify_android_patch_on_boot_mes_services.jar">Uporabi Android krparije za dalvikov predpomnilnik iz datoteke services.jar.</string>
+    <string name="notify_directory_binder">Vezivo imenika</string>
+    <string name="notify_directory_binder_from">OD</string>
+    <string name="notify_directory_binder_to">ZA</string>
+    <string name="notify_patched">zakrpano!</string>
+    <string name="ok">Ok</string>
+    <string name="on_top_apps_marker">Novo</string>
+    <string name="orientmenu">Orientacija</string>
+    <string name="others">Drugo</string>
+    <string name="package_name">Ime paketa</string>
+    <string name="password_toggle_content_description">Prikaz gesla</string>
+    <string name="patch_ok">Uporabi</string>
+    <string name="patch_step1">Pripravljanje aplikacije</string>
+    <string name="patch_step2">Krpanje</string>
+    <string name="patchbutton">Krparija</string>
+    <string name="permission">Spremeni dovoljenja</string>
+    <string name="permissions">Dovoljenja</string>
+    <string name="provide">Zagotoviti</string>
+    <string name="proxyGP">Proxy strežnik za Google play</string>
+    <string name="purchase_db_dialog_auto_buy">auto-ponovi nakup</string>
+    <string name="purchase_id">ID nakupa</string>
+    <string name="purchases_sorter_reset_button">Ponastavitev</string>
+    <string name="purchases_sorter_type_inapp_purchase">inapp</string>
+    <string name="purchases_sorter_type_subs_purchase">naročnina</string>
+    <string name="reboot">Ponovni zagon</string>
+    <string name="restore_build">Zgradi</string>
+    <string name="restore_version">Različica</string>
+    <string name="restorebutton">Obnovitev</string>
+    <string name="restored">obnovljeno</string>
+    <string name="search">Išči</string>
+    <string name="search_menu_title">Iskanje</string>
+    <string name="sendlog">Pošlji dnevnik</string>
+    <string name="settings">Nastavitve</string>
+    <string name="share">Skupna raba</string>
+    <string name="signature">Podpis</string>
+    <string name="splitted_apk_attribute">razdeljeno</string>
+    <string name="stat_boot_ads">Google oglasi</string>
+    <string name="stat_launch_activity">Zaženi dejavnost:</string>
+    <string name="statbuild">Gradnja:</string>
+    <string name="statnotmodified">Nemodificirana aplikacija</string>
+    <string name="statsys">Sistemske aplikacije.</string>
+    <string name="status_bar_notification_info_overflow">999+</string>
+    <string name="statuserid">Uporabniški ID:</string>
+    <string name="statversion">Različica:</string>
+    <string name="subject">Subjekt</string>
+    <string name="success">uspeh</string>
+    <string name="support_patch_header_additional">Dodatne krparije</string>
+    <string name="test">test</string>
+    <string name="text_size">Velikost besedila</string>
+    <string name="title_upd">Sporočilo</string>
+    <string name="toolbar_backups">Varnostne kopije</string>
+    <string name="toolbar_options_menu">Meni za nastavitve</string>
+    <string name="toolbar_switchers">Stikala</string>
+    <string name="toolbar_system_utils">Škatla z orodji</string>
+    <string name="tools_menu_unblock_internet">Odblokiraj internet</string>
+    <string name="truble">Iskanje napak</string>
+    <string name="type">Tip</string>
+    <string name="update">Posodobitev</string>
+    <string name="update_found_title">Najdena posodobitev</string>
+    <string name="usepatch">Uporabi</string>
+    <string name="validity">Veljavnost</string>
+    <string name="version">Različica</string>
+    <string name="viewlandscape">Ležeče</string>
+    <string name="viewlarge">Velika pisava</string>
+    <string name="viewmedium">Srednja pisava</string>
+    <string name="viewmenu">Ogled</string>
+    <string name="viewportret">Portret</string>
+    <string name="viewsensor">Senzor</string>
+    <string name="viewsmall">Majhna pisava</string>
+    <string name="warning">Opozorilo</string>
+    <string name="xposed_settings">Xposed nastavitve</string>
+</resources>

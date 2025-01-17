@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="left" android:orientation="horizontal" android:padding="1.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <TextView android:textSize="22.0dip" android:textStyle="bold" android:textColor="#ff000000" android:gravity="center_vertical" android:id="@id/txtTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="5.0dip" android:layout_toLeftOf="@id/CheckBox1" android:layout_alignParentLeft="true" />
+        <TextView android:textSize="22.0dip" android:textStyle="italic" android:textColor="#ffffffff" android:id="@id/txtStatus" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="2.0dip" android:layout_toLeftOf="@id/CheckBox1" android:layout_below="@id/txtTitle" android:layout_alignParentLeft="true" />
+        <LinearLayout android:gravity="top" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <EditText android:textColor="#ffaaaaaa" android:id="@id/text_editor" android:focusable="true" android:focusableInTouchMode="true" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="10.0dip" android:layout_marginTop="0.0dip" android:layout_marginBottom="5.0dip" android:lines="1" android:layout_weight="0.5" android:inputType="text" android:backgroundTint="#aaaaaaff" />
+            <Button android:textSize="10.0dip" android:textStyle="normal" android:textColor="#ffffffff" android:gravity="center|top" android:layout_gravity="center_vertical" android:id="@id/button_max" android:background="@drawable/cbutton_up" android:focusable="false" android:visibility="gone" android:layout_width="46.0dip" android:layout_height="46.0dip" android:text="MAX" android:lines="1" android:drawablePadding="0.0dip" android:layout_weight="0.0" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <Button android:id="@id/button_browse" android:focusable="false" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:layout_marginBottom="5.0dip" android:text="Browse" android:layout_weight="0.5" style="@style/ButtonDarkStyle" />
+            <TextView android:textSize="15.0dip" android:textColor="#ffffffff" android:id="@id/file_name" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="" />
+        </LinearLayout>
+    </LinearLayout>
+    <CheckBox android:id="@id/CheckBox1" android:focusable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="0.0dip" android:layout_marginRight="0.0dip" android:checked="false" android:text="" android:layout_weight="0.0" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:buttonTint="@color/checkboxColor" />
+</LinearLayout>

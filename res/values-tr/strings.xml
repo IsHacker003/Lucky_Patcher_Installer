@@ -1,0 +1,1386 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="AppTools">Uygulama Bilgileri:</string>
+    <string name="P_not_found">"Hata: Program dosyaları bulunamadı!
+Sorunu çözmek için dalvik-cache dizinini kontrol edin!
+Varsayılan: /data/dalvik-cache/*"</string>
+    <string name="PatchResult">Yama sonuçları</string>
+    <string name="Yes">Evet</string>
+    <string name="abc_action_bar_home_description">Eve gidiş yolunu göster</string>
+    <string name="abc_action_bar_up_description">Yukarı git</string>
+    <string name="abc_action_menu_overflow_description">Diğer seçenekler</string>
+    <string name="abc_action_mode_done">Bitti</string>
+    <string name="abc_activity_chooser_view_see_all">Tümünü göster</string>
+    <string name="abc_activitychooserview_choose_application">Bir uygulama seçin</string>
+    <string name="abc_capital_off">KAPAT</string>
+    <string name="abc_capital_on">AÇ</string>
+    <string name="abc_menu_alt_shortcut_label">Alt+</string>
+    <string name="abc_menu_ctrl_shortcut_label">Ctrl+</string>
+    <string name="abc_menu_delete_shortcut_label">sil</string>
+    <string name="abc_menu_enter_shortcut_label">enter</string>
+    <string name="abc_menu_function_shortcut_label">Function+</string>
+    <string name="abc_menu_meta_shortcut_label">Meta+</string>
+    <string name="abc_menu_shift_shortcut_label">Üst Karakter+</string>
+    <string name="abc_menu_space_shortcut_label">boşluk</string>
+    <string name="abc_menu_sym_shortcut_label">Sym+</string>
+    <string name="abc_prepend_shortcut_label">Menü+</string>
+    <string name="abc_search_hint">Ara…</string>
+    <string name="abc_searchview_description_clear">Sorguyu temizle</string>
+    <string name="abc_searchview_description_query">Arama sorgusu</string>
+    <string name="abc_searchview_description_search">Ara</string>
+    <string name="abc_searchview_description_submit">Sorguyu gönder</string>
+    <string name="abc_searchview_description_voice">Sesli arama</string>
+    <string name="abc_shareactionprovider_share_with">Şununla paylaş:</string>
+    <string name="abc_shareactionprovider_share_with_application">%s ile paylaş</string>
+    <string name="abc_toolbar_collapse_description">Daralt</string>
+    <string name="about_thanks_for_this_translation">Türkçe çeviri için teşekkürler: ChelpuS, k7lest, Turkishmark, TurkishWold, Türk Dil Devrimi ve Ata.Türkoğlu iletişim: turkishwold@yandex.com</string>
+    <string name="about_working_dir">SD Kartdaki çalışma dizini:</string>
+    <string name="aboutlp">Lucky Patcher genel bir yama aracıdır. Reklamları kaldırma, Google lisans doğrulaması(Otomatik ve El-ile), izinleri yönetme ve birçok amaca yönelik olarak uygulamaları modifiye eder.</string>
+    <string name="aboutmenu">Hakkında</string>
+    <string name="abouttitle">Lucky Patcher Hakkında</string>
+    <string name="activity_ads_descr">Reklam amaçlı kullanılan Uygulama Aktivitesi</string>
+    <string name="activity_descr">Uygulama Aktivitesi. Açıklama Mevcut Değil.</string>
+    <string name="add_icon_to_desktop">Ana ekrana simge ekle</string>
+    <string name="additinfo">Ek bilgi:</string>
+    <string name="adsdescr">Google reklamları olan tüm uygulamaları gösterir.</string>
+    <string name="adstitle">Reklamlı uygulamalar</string>
+    <string name="advanced_menu">Yama Menüsü</string>
+    <string name="all_custom_patches_updated">Tüm özel yamalar güncellendi</string>
+    <string name="allchanges">"Tüm değişiklikler ODEX'e sabitlendi ve uygulama kaldırılana kadar kalıcı!"</string>
+    <string name="android_patches_dialog_header1">Android için Yamalar</string>
+    <string name="android_patches_dialog_header2">Yamalardan sonra donanım yazılımını kurtarma</string>
+    <string name="android_patches_dialog_remove_patch_3">\"%1s\" yamasını kaldır</string>
+    <string name="android_patches_dialog_remove_patches_1_and_2" formatted="false">\"%1s\" ve \"%2s\" yamalarını kaldır</string>
+    <string name="android_patches_dialog_use_magisk_module_for_patches">Yamayı uygulamak için Magisk modülünü kullanın</string>
+    <string name="android_patches_dialog_use_magisk_module_zygisk_for_patches">Magisk modülünü kullanın - Zygisk (vova7878@4pda tarafından)</string>
+    <string name="android_patches_for_bootlist">Dalvik bellek yaması</string>
+    <string name="android_patches_for_bootlist_status">Açılışta android yamalarını yeniden uygula</string>
+    <string name="android_patches_xposed_need_message">Geçerli yamayı uygulamak için lütfen Xposed(lSPosed) kullanın</string>
+    <string name="apk_create_option">"Yeniden Derlenen APK'lar için Dosya Adı"</string>
+    <string name="apk_not_found_error">Hata: APK dosyası bulunamadı.</string>
+    <string name="apk_size">APK boyutu:</string>
+    <string name="apkdescr">Yeni APK dosyaları için isimlendirme şablonu.</string>
+    <string name="apklabel">Uygulamanın etiketine göre</string>
+    <string name="apkpackage">Uygulamanın paket adına göre</string>
+    <string name="app_dialog_no_root_app_control">Uygulamayı yönet</string>
+    <string name="app_disabler_widget_pkg_not_found">Uygulama kaldırıldı</string>
+    <string name="app_info">Uygulama bilgisi</string>
+    <string name="app_info_apk_is_splitted">Apk dosyası bölünmüş</string>
+    <string name="app_install_success">Uygulama başarıyla yüklendi.</string>
+    <string name="app_name">Lucky Patcher</string>
+    <string name="app_not_found">Uygulama bulunamadı! Lütfen uygulamayı yükleyip tekrar deneyin.</string>
+    <string name="app_not_found_adapter">Bu uygulama yüklenmiş uygulamar listesinde bulunamadı.</string>
+    <string name="apps_not_found">Hiçbir şey bulunamadı.</string>
+    <string name="appwidget_text">ÖRNEK</string>
+    <string name="back">Geri</string>
+    <string name="backbutton">Yedekle</string>
+    <string name="backup_data_empty">Uygulama Verisi boş. Yedeklenecek bir şey yok.</string>
+    <string name="backup_data_error">Hata: Bazı şeyler ters gitti. Görünüşe göre yedek hatalı veya geçersiz.</string>
+    <string name="backup_data_success">Ayarlar kaydedildi.</string>
+    <string name="backup_delete_message">Yedeği gerçekten silmek istiyor muusn?</string>
+    <string name="backup_done">"Yedek başarılı. Yol:
+"</string>
+    <string name="backup_settings_delete_message">Uygulama yedekleme ayarlarını silmek istediğinizden emin misiniz</string>
+    <string name="backup_settings_error_message">Yüklü olmadığı için uygulama ayarları geri yüklenemiyor.</string>
+    <string name="backup_settings_restore_message">Yedekleme uygulamasının ayarlarını gerçekten geri yüklemek istiyor musunuz</string>
+    <string name="backups_not_found">Şu konumda yedek dosyaları bulunamadı:</string>
+    <string name="bad_root_detected">"Root stabil değil. Tekrar deneyin veya rootunuzu güncelleyin. Lucky Patcher ayarlarından java-root'u değiştirmeyi deneyin. Bazen yardımı dokunabilir."</string>
+    <string name="begin_changelog">Yüklenmiş uygulamanın versiyonu:</string>
+    <string name="billing_buy">Bu öğeyi ücretsiz olarak denemek ve almak ister misiniz?</string>
+    <string name="billing_hack2_auto_repeat_note">Otomatik tekrarlamayı devre dışı bırakmak için uygulamayı seçin ve \"Araçlar\" -> \"Seçili kayıtlı satın alımları kaldır\" seçeneğine gidin ve öğeleri silin.</string>
+    <string name="billing_hack2_new">"- En iyi sonuçlar için, Android'de \"İmza Doğrulama durumu her zaman Doğru\" olan bir yama kullanmalısınız;
+- Saldırıyı devre dışı bırakmak için Lucky Patcher'ın altındaki \"Anahtarlar\"a gidin ve \"Google Billing Emulation\"ı devre dışı bırakın."</string>
+    <string name="billing_hack_menu">Google Ödeme Emülasyonu</string>
+    <string name="billing_hack_menu_descr">Hedef uygulamaya \"Uygulama içi ve LVL Yardımcı yama\" ve \"Android Yamaları\" uygulanmış olması gerekir. Doğru satın alma ücreti ve bilgileri gösterilmesi için \"Uygulama içi LVL..\" yardımcı yamasını kullanın.</string>
+    <string name="billing_hack_menu_disable">Google Ödeme Emülasyonunu devre dışı bırak</string>
+    <string name="billing_hack_menu_enable">Google Ödeme Emülasyonunu etkinleştir</string>
+    <string name="billing_hack_option">Uygulamaya imzasız yanıt gönderin (rootsuz kullanıcılar için çalışabilir)</string>
+    <string name="billing_hack_option2">Satın almayı geri yüklemek için kaydet</string>
+    <string name="billing_hack_warning_unity" formatted="false">Satın alma başarısız olursa, bu satın alma türünü şuradan değiştirmeyi deneyin \"%1s\"->\"%2s\".</string>
+    <string name="billing_proxy_server_for_support_patch_descr">Bu hizmet \"Uygulama İçi ve LVL Emulasyonlarına yardımcı yama\" için gereklidir ve uygulamanın bununla birlikte yeniden oluşturulması gerekir.</string>
+    <string name="billing_proxy_server_for_support_patch_inapp">Uygulama içi satın almalarının emülasyonu için vekil sunucu</string>
+    <string name="bind_button">Yeni dizin bağlaması ekleyin.</string>
+    <string name="bind_delete">Dizin bağlacı kaldırılsın mı?</string>
+    <string name="bind_dialog_button">Dizin Bağla</string>
+    <string name="bind_dialog_source">Veri içeren dizin:</string>
+    <string name="bind_dialog_target">Veriye sahip dizini şuraya bağla:</string>
+    <string name="bind_error">Dizin bağlama başarısız! Cihazdaki veri dizini bulunamadı.</string>
+    <string name="bind_source">Veriye sahip Dizin:</string>
+    <string name="bind_target">Veriyi şuraya bağla:</string>
+    <string name="binder_browser">Tarayıcı</string>
+    <string name="binder_browser_create_dir">Dizin oluştur</string>
+    <string name="binder_browser_current_dir">Geçerli dizin:</string>
+    <string name="binder_browser_select">Şuanki dizini seç</string>
+    <string name="binder_delete">Sil</string>
+    <string name="bootview">Ön yükleme listesi</string>
+    <string name="bottomsheet_action_expand_halfway">Yarım genişlet</string>
+    <string name="browse_to_file">Gözat</string>
+    <string name="busybox_not_found">Uyarı: Busybox yüklü değil. Uygulama doğru çalışmayabilir</string>
+    <string name="button_add_to_boot_list">Başlangıca ekle</string>
+    <string name="button_advanced_filter">Filtreler</string>
+    <string name="button_all">Tümü</string>
+    <string name="button_backup_apk_apps">Yedekle</string>
+    <string name="button_backup_settings_apps">Yedekle</string>
+    <string name="button_block_internet">İnternet bağlantısını engelle</string>
+    <string name="button_disable_package">Devre dışı bırak</string>
+    <string name="button_enable_package">Etkinleştir</string>
+    <string name="button_for_delete">Sil</string>
+    <string name="button_for_uninstall_intsaller">Yükleyiciyi kaldırılmaya başla</string>
+    <string name="button_integrate_update_apps">Entegre et</string>
+    <string name="button_move_to_internal">Dahili depoya taşı</string>
+    <string name="button_move_to_sdcard">"SD Kart'a Taşı"</string>
+    <string name="button_remove_magisk_module">Magisk modülü kaldır</string>
+    <string name="button_remove_magisk_module_message_not_found">Magisk modülü bulunamadı.</string>
+    <string name="button_remove_magisk_module_message_warning">Android yamaları için magisk modülü kaldırılacaktır. Bu, orijinal üretici yazılımı dosyalarını geri yükleyecektir. Ardından cihaz yeniden başlatılacaktır. Katılıyor musun?</string>
+    <string name="button_resign_app">Yeniden imzala</string>
+    <string name="button_select_original_apk">"Orijinal apk'yı seçin"</string>
+    <string name="button_select_original_apk_with_signature">İmzalı apk seç</string>
+    <string name="button_start">Başlat</string>
+    <string name="button_unblock_internet">İnternet bağlantısını aç</string>
+    <string name="button_uninstall_apps">Kaldır</string>
+    <string name="cancel">İptal</string>
+    <string name="certificate">Sertifika</string>
+    <string name="change_compileSDK">Derleme SDK sürümünü değiştir</string>
+    <string name="change_folder_checkbox">Verileri yeni bir konuma taşıyın</string>
+    <string name="change_folder_message_end">Veri klasörü %1$s olarak değiştirildi.</string>
+    <string name="change_folder_message_end2">Bir öncekinin içindeki bir klasör seçildiğinden veri aktarımı devre dışı bırakıldı. Veri klasörü %1$s olarak değiştirildi.</string>
+    <string name="change_icon_lp">Simgeyi Değiştir</string>
+    <string name="change_icon_lp_descr">Buradan uygulamanın simgesini değiştirebilirsiniz</string>
+    <string name="change_lp_name">"Lucky Patcher'ın adını değiştirin"</string>
+    <string name="change_lp_name_descr">"Daha kolay bulmak için Lucky Patcher'in ismini buradan değiştirebilirsin"</string>
+    <string name="change_minimumSDK">Minimum SDK sürümünü değiştirin</string>
+    <string name="change_sharedUserId">"sharedUserId'yi değiştir"</string>
+    <string name="change_targetSDK">Hedef SDK sürümünü değiştirin</string>
+    <string name="change_version_code">Sürüm kodunu değiştir (build)</string>
+    <string name="changelog">Değişiklik Günlüğü</string>
+    <string name="character_counter_content_description">Girilen karakter: %1$d / %2$d</string>
+    <string name="character_counter_overflowed_content_description">Karakter sınırı aşıldı %1$d / %2$d</string>
+    <string name="checkbox_uninstall_and_instal_backup_cache">Kurulum için veri ve bellek yedekleri oluştur.</string>
+    <string name="clear_text_end_icon_content_description">Metni temizle</string>
+    <string name="cleardalvik">Dalvik belleğini temizle ve yeniden başlat</string>
+    <string name="cleardata">Veriyi Temizle</string>
+    <string name="clipboard_message">Metin panoya kopyalandı</string>
+    <string name="clipboard_message_for_app_dilaog_app_additional_info">Ek bilgi panoya kopyalandı.</string>
+    <string name="clipboard_message_for_app_dilaog_app_info">Uygulama bilgisi panoya kopylaandı.</string>
+    <string name="clipboard_message_for_app_dilaog_app_permissions">İzinler panoya kopyalandı.</string>
+    <string name="cloneApplication">Uygulamayı klonla (Her zaman çalışmayabilir)</string>
+    <string name="close">Kapat</string>
+    <string name="collect_logs">Günlükler toplanıyor...</string>
+    <string name="common_google_play_services_unknown_issue">%1$s, Google Play hizmetleriyle ilgili sorun yaşıyor. Lütfen tekrar deneyin.</string>
+    <string name="context_automodeslvl">Otomatik yöntemler</string>
+    <string name="context_backup_apk">.apk dosyasını yedekle</string>
+    <string name="context_backup_apk_selected_apps">"Seçilen uygulamaların apk'sını yedekle"</string>
+    <string name="context_backup_data">Uygulama ayarlarını yedekle</string>
+    <string name="context_backup_settings_selected_apps">Seçilen uygulamaların uygulama ayarlarını yedekle</string>
+    <string name="context_batch_operations">Çoklu işlemler</string>
+    <string name="context_block_internet_selected_apps">"Seçili uygulamaların internet bağlantısını kapat
+Android 4 ve üzerinde çalışmayabilir"</string>
+    <string name="context_blockads">Reklamları engelle</string>
+    <string name="context_change_components_menu">Uygulamanın bileşenlerini değiştir</string>
+    <string name="context_clearhosts">Yerel hosts dosyasını temizle</string>
+    <string name="context_crt_apk_permission">İzinleri ve faaliyetleri değiştirilmiş APK</string>
+    <string name="context_dependencies">Bağımlılıkları kaldır</string>
+    <string name="context_dex_verification_kill_option">Bütünlük kontrolünü ve imza doğrulamasını kaldırır</string>
+    <string name="context_dex_verification_kill_option_describe">Dex sağlama toplamını (Checksum) ve imza doğrulamasını atlamak (baypas) için uygulamaya kod yerleştirir. Bu yöntem, uygulamanın boyutunu iki katına çıkarır.</string>
+    <string name="context_dexopt_app">"Uygulamayı ODEX'le"</string>
+    <string name="context_disableActivity">Reklam faaliyetlerini kapat</string>
+    <string name="context_disableComponents">"Bileşenleri kapat
+'pm disable' yöntemi
+(uygulama tarafından açılabilir)"</string>
+    <string name="context_disable_google_ads">Google Reklam hizmetlerini kapat</string>
+    <string name="context_disable_package">Paketi devre dışı bırak</string>
+    <string name="context_disable_package_for_selected_apps">Seçili uygulamaları devre dışı bırak</string>
+    <string name="context_enable_google_ads">Google Reklam hizmetlerini aç</string>
+    <string name="context_enable_package">Paketi etkinleştir</string>
+    <string name="context_enable_package_for_selected_apps">Seçili uygulamaları etkinleştir</string>
+    <string name="context_files_observer">Uygulama için dosya gözlemleyici</string>
+    <string name="context_hard_apk_permission">"İzinleri değiştir
+Orijinal imzayı koru.
+(dengesiz yöntem)"</string>
+    <string name="context_hide_lp">"Lucky Patcher'ı Gizle"</string>
+    <string name="context_hide_lp_descr">"Lucky Patcher'ı diğer uygulamalardan gizlemeye çalış. Sistem yükünü arttırır, yalnızca gerektiğinde kullanın."</string>
+    <string name="context_install">Yükle</string>
+    <string name="context_install_as_system">Sistem uygulaması olarak yükle</string>
+    <string name="context_integrate_dalvik">Dalvik kodunu yüklenmiş uygulamaya entegre et</string>
+    <string name="context_integrate_update_selected_apps">Seçili uygulamaların güncellemelerini /system dizinine entegre et</string>
+    <string name="context_menu_settings_show_last_added_custom_patches">Son eklenen özel yamaları göster</string>
+    <string name="context_move_selected_apps_to_internal">Seçili uygulamaları dahili depoya taşı</string>
+    <string name="context_move_selected_apps_to_sdcard">"Seçili uygulamaları SD Kart'a taşı"</string>
+    <string name="context_original_resign_app">Android yaması \"%1s\" için orijinal imzayla yeniden imzalayın.</string>
+    <string name="context_patch_framework">Framework dosyalarını yamala</string>
+    <string name="context_purchases_sorter">Satın alma sınıflayıcı</string>
+    <string name="context_rebuild">Yeniden oluştur</string>
+    <string name="context_removeAds">Google Reklamlarını kaldırmak için Yama</string>
+    <string name="context_remove_patch_boot">Yeniden başlatıldığında yamayı kaldır</string>
+    <string name="context_remove_saved_purchaces">Seçili kaydedilmiş satın almaları kaldır</string>
+    <string name="context_resign_app">Test imzası ile tekrar imzala.</string>
+    <string name="context_restore_apk">Apk dosyasını yeniden yükle</string>
+    <string name="context_restore_data">Uygulama ayarlarını geri yükle</string>
+    <string name="context_result_backup_apks">Uygulamaların toplu yedeklemesinin sonuçları:</string>
+    <string name="context_result_backup_settings">Uygulama ayarlarının toplu yedeklemesinin sonuçları:</string>
+    <string name="context_safe_apk_permission">"İzinleri ve faaliyetleri değiştir
+Yeniden oluştur ve yükle"</string>
+    <string name="context_safe_sign_apk_permission">"İzinleri ve faaliyetleri değiştir
+Orijinal imzayı koru (güvenli yöntem)"</string>
+    <string name="context_signature_verification_kill_option">İmza doğrulama katili</string>
+    <string name="context_signature_verification_kill_option_describe">Uygulamaya, uygulamanın imza doğrulamasını kandırmaya çalışan kod ekler. Orijinal uygulama için kesinlikle uygulanmalıdır. Uygulama zaten yamalanmışsa, bu yalnızca yardımcı olmakla kalmaz, aynı zamanda yama zaten başarıyla uygulanmışsa zarar da verebilir.</string>
+    <string name="context_support_patch">Uygulama İçi ve LVL Emulasyonlarına yardımcı yama</string>
+    <string name="context_tools">Araçlar</string>
+    <string name="context_trouble_enable_playprotect">\"Play Protect\" i etkinleştir</string>
+    <string name="context_trouble_run_playprotect_dialog">Play protect iletişim kutusunu çalıştır.</string>
+    <string name="context_unblock_internet_selected_apps">"Seçili uygulamaların internet bağlantısını aç 
+Android 4 ve üzerinde çalışmayabilir"</string>
+    <string name="context_unblockads">Reklam engellemeyi kaldır</string>
+    <string name="context_uninstall_if_installed">Kaldır ve yükle</string>
+    <string name="context_uninstall_selected_apps">Seçili kullanıcı uygulamalarını kaldır</string>
+    <string name="context_use_apk_for_original_signature">"İmzayı kopyalamak için uygulama dosya'sı seçin"</string>
+    <string name="context_use_apk_for_original_signature_describe">Dosyanızı ondan bir imza ile imzalamak için başka bir uygulama dosyası seçebilirsiniz.</string>
+    <string name="context_use_installed_apk_for_original_signature">Yüklü uygulamadan imzayı kopyala</string>
+    <string name="context_use_installed_apk_for_original_signature_descr">"İmzayı kurulu uygulama'dan aynı paket adıyla kopyalayabilirsin."</string>
+    <string name="context_use_zip_crc_image">Orijinalinden değiştirilmiş bir APK arşivi taklit edin</string>
+    <string name="context_use_zip_crc_image_describe">Zip arşivini değiştirerek dosya denetimini atlamaya çalışır. Arşiv bundan sonra değiştirilirse, yöntem çalışmayabilir.</string>
+    <string name="contextads">Google Reklamlarını Kaldır</string>
+    <string name="contextbackup">Yedekle</string>
+    <string name="contextblockfileads">"APK'den bağlantıları kaldır"</string>
+    <string name="contextblockfileads_descr">AdsBlockList_user_edit.txt ve AdsBlockList.txt dosyalarındaki şablonları kullanarak http:// bağlantılarını kaldırır.</string>
+    <string name="contextboot">"Tekrar Başlatılırken Yamala
+(Dengesizdir! Sadece kütüphaneleri yamalamak için)"</string>
+    <string name="contextbootads">Google Reklamlarını Kaldır</string>
+    <string name="contextbootcustom">Özel Yama</string>
+    <string name="contextbootlvl">Lisans Doğrulamasını Kaldır</string>
+    <string name="contextcorepatch1">İmza Doğrulamasını her zaman onayla</string>
+    <string name="contextcorepatch1_descr">Uygulama içi, LVL ve keygenlerin emülasyonu için gerekli. Lisansların ve satın alımların doğru onaylanması için gerekmektedir.</string>
+    <string name="contextcorepatch2">.apk İmza Doğrulamasını Devre Dışı Bırak</string>
+    <string name="contextcorepatch2_descr">"İmzaları yeniden oluşturmadan uygulamanın düzenlenmesini sağlar, böylece geliştiricinin imzası sabit kalır. Diğer kullanıcılar bu .apk'yı sadece Android Çekirdeğine yama uyguladıktan sonra yükleyebilir (korumalı uygulamalarda çeviri, grafik değiştirme, vb. yaparken işe yarar)"</string>
+    <string name="contextcorepatch3">Paket yükleyicisinde imza doğrulamasını devre dışı bırak</string>
+    <string name="contextcorepatch3_descr">Farklı imzalara sahip uygulamaların üst üste yüklenmesine izin verir.</string>
+    <string name="contextcorepatch3_descr_plus">"+
+Uygulamaların kurulu sürümden eski bir sürüme kolayca döndürülmesini sağlar."</string>
+    <string name="contextcorepatch4">Uygulama İçi ve LVL Emulasyonlarına yardımcı yama</string>
+    <string name="contextcorepatch4_descr_xposed">Yardımcı yama olmadan emülasyonların çalışması gereklidir.</string>
+    <string name="contextcorepatchrestore2_descr">"Android services.jar'dan tüm yamaları kaldır"</string>
+    <string name="contextcorepatchrestore_descr">"Android core.jar'dan tüm yamaları kaldır"</string>
+    <string name="contextcustompatch">Özel yama</string>
+    <string name="contextdeodex">"Değişikliklerle birlikte ODEX'i kaldır
+(uygulamayı geri-yükle)"</string>
+    <string name="contextfulloffline">Tamamen çevrimdışı yap</string>
+    <string name="contextfulloffline_descr">Uygulamayı internetsiz çalışması için zorlar.</string>
+    <string name="contextignore">Lisans Doğrulamasını Kaldır</string>
+    <string name="contextlaunchapp">Uygulamayı Başlat</string>
+    <string name="contextmultipatch">Çoklu yama</string>
+    <string name="contextmultipatchrebuild">Apk ile Çoklu yama</string>
+    <string name="contextodex">"ODEX'deki değişiklikleri uygula"</string>
+    <string name="contextpatt1">Lisans Doğrulayıcısı Düzenlemesi</string>
+    <string name="contextpatt1_descr">Eğer varsa, ilk başlangıçta internet erişimine izin verin. Bu yamalar küçük değişiklikler yapar.</string>
+    <string name="contextpatt2">Önbellekli Lisans Yaması (İnternet Yaması)</string>
+    <string name="contextpatt2_descr">Eğer var ise, büyük ihtimalle ilk açılış için internete ihtiyaç olmayacaktır.</string>
+    <string name="contextpatt3">Yanıt Kodu Doğrulamasını Düzelt</string>
+    <string name="contextpatt3_descr">Lisans Kontolü için küçük yamalar.</string>
+    <string name="contextpatt4">Google Yanıt Kodunu değiştir</string>
+    <string name="contextpatt4_descr">Dengesiz fakat etkili (otomatik döndürme açıkken bazı hatalar meydana gelebilir). Eğer mevcutsa ilk açılışta internet bağlantısı sağlayın.</string>
+    <string name="contextpatt5">Sonuncu Lisans Doğrulaması</string>
+    <string name="contextpatt5_descr">Sonuncu lisans doğrulaması için şablon. Çalışırsa, uygulamayı internet gerekmeden kullanabilirsiniz.</string>
+    <string name="contextpatt6">Sonuncu Lisans Doğrulaması (Ters)</string>
+    <string name="contextpatt6_descr">Eğer \"Sonuncu Lisans Doğrulaması\" çalışmaz ise, bu yamayı deneyin.</string>
+    <string name="contextpattads3">Reklam alıcısını boz</string>
+    <string name="contextpattads3_descr">Google Reklam alma mekanizmasını bozmaya çalış.</string>
+    <string name="contextpattads4">Diğer yamalar</string>
+    <string name="contextpattads4_descr">Diğer yamalar reklamları kaldırmak için yararlı olabilir.</string>
+    <string name="contextpattads6">Çevrimdışı yama</string>
+    <string name="contextpattads6_descr">Reklam modülünün çevrimdışı olduğunu düşünmesini sağla.</string>
+    <string name="contextpattamazon">Otomatik Mod (Amazon Market)</string>
+    <string name="contextpattamazon_descr">Amazon Market uygulamaları için Lisans Doğrulamasını kaldır.</string>
+    <string name="contextpattdependencies_descr">Google Play ve diğer bağımlılıklar kaldırılıyor...</string>
+    <string name="contextpattlvl1">Otomatik Mod</string>
+    <string name="contextpattlvl1_descr">Küçük sayıda yamalar. Küçük koruması olan uygulamalara uygundur.</string>
+    <string name="contextpattlvl2">Otomatik Mod (Ters)</string>
+    <string name="contextpattlvl2_descr">\"Otomatik Mod!\"dan biraz farklıdır. \"Otomatik Mod\" işe yaramadığında yardımcı olabilir.</string>
+    <string name="contextpattlvl3">Diğer Yamalar (Ekstrem mod!)</string>
+    <string name="contextpattlvl3_descr">Dengesizlik yaratabilecek ek yamalar. Yalnızca diğer yamalar başarısız olduğunda uygulayın. İnternet gerektirir. \"Otomatik yöntem\" veya \"Otomatik yöntem (Ters)\" ile birlikte kullanmayı deneyin.</string>
+    <string name="contextpattlvl4">Yamayı dalvik-belleğe uygula</string>
+    <string name="contextpattlvl4_descr">"Varsayılan ayarda tüm değişiklikler odex-dosyasına kaydedilir. Fakat bu yöntem uygulama harici SD kart'a aktarıldığında düzgün çalışmaz. Bu durumda \"dalvik belleği yamala\" ayarı yardımcı olabilir. Uygulamayı sadece tekrar yüklemede eski haline getirebilirsiniz."</string>
+    <string name="contextpattlvl5">.apk dosyasını yedekle</string>
+    <string name="contextpattlvl5_descr">"Uygulama paketini (APK dosyasını) dahili depolamadaki Lucky Patcher klasörüne kopyalayacak. Uygulamayı kopyalanmış APK'den geri döndürebilirsiniz."</string>
+    <string name="contextpattlvl6">Dalvik-belleği temizle</string>
+    <string name="contextpattlvl6_descr">Uygulamaların dalvik belleğini siler ve odex dosyası oluşturulkduğunda daha az alan kaplar. Eğer uygulama odex ile iyi çalışmıyor ise, yeniden yüklemeniz gerekebilir.</string>
+    <string name="contextpattlvl_dex">Otomatik Mod(dex)</string>
+    <string name="contextpattlvl_dex_descr">"Minimum yama sayısı. Yalnızca Google Play yüklü olarak çalışır. Saldırıya uğramış bir programı ilk başlattığınızda İnternet'e ihtiyacınız vardır."</string>
+    <string name="contextpattsamsung">Otomatik mod (SamsungApps)</string>
+    <string name="contextpattsamsung_descr">SamsungApps için Lisans Doğrulamasını kaldır.</string>
+    <string name="contextreinstall">"Uygulama tekrar kuruluyor
+(tüm yamaları siler)"</string>
+    <string name="contextrestore">Geri yükle</string>
+    <string name="contextselpatt">Seçili Modeller</string>
+    <string name="core_only_dalvik_cache_end">Eğer cihaz donarsa veya tüm yamalar çalışmaz ise, lütfen cihazı yeniden başlatın.</string>
+    <string name="core_only_dalvik_cache_finished">"Dalvik-cache için Android yaması bitti.
+Sonuçlar:
+"</string>
+    <string name="core_option">sadece dalvik-belleği yamala</string>
+    <string name="core_patch_apply">(yamalandı)</string>
+    <string name="core_patch_nopatch">(yamalanmadı)</string>
+    <string name="core_patch_nopatch_no_space1">"core.jar'ın dalvik belleği yamalandı, fakat bu tip yamalar dalvik belleğini güncellerken yok olabilir. Sistem ROMunda core.odex oluşturmak için yeterli alan yok. Lütfen 4MB kadar alan açın, ve dalvik belleğini silip tekrar deneyin. Dalvik belleğine yamayı uygulamak için cihazı yeniden başlatın."</string>
+    <string name="core_result_checkbox">Dalvik-belleği her yeniden başlatıldığında yamalayın (yalnızca core.jar yamaları yeniden başlatıldıktan sonra kaldırılır).</string>
+    <string name="corepatches">"Android'i Yamala"</string>
+    <string name="corrupt_download">İndirilen dosya bozulmuş. Lütfen SD Kartınızda yeterli boş alan olduğundan emin olun ve tekrar deneyin.</string>
+    <string name="create">Yeni dizin oluştur</string>
+    <string name="create_clone_new_app_name">Uygulama adını değiştir</string>
+    <string name="create_clone_option1">Sadece AndroidManifest.xml düzenle</string>
+    <string name="create_clone_option1_descr">Tüm uygulamalar için çalışmayabilir. Eğer klon kurulu değilse, orijinali kaldırmalısınız. Bu yöntem işe yaramazsa, farklı bir yolla kopya oluşturmayı deneyin.</string>
+    <string name="create_clone_option2">"AndroidManifest.xml, resources/kaynak ve classes.dex'i düzenle"</string>
+    <string name="create_clone_option2_descr">"Tüm uygulamalar için çalışmayabilir. Bu yöntem, kaynakları ve classes.dex'i değiştirmeye yarar. Böyle bir kopya, orijinalden daha izole edilmiştir."</string>
+    <string name="create_dir_error">Hata: Dizin adı boş.</string>
+    <string name="create_dir_error_2">Hata: dizin oluşturulmadı.</string>
+    <string name="create_lic_done">Başarılı! Lisans başarıyla oluşturuldu. Uygulamayı internetsiz test edin. Belki şansınız yaver gider.</string>
+    <string name="create_perm_ok">Yeniden Oluştur</string>
+    <string name="createapk">Düzenlenmiş APK dosyası oluştur</string>
+    <string name="createapkads">Google Reklamsız APK</string>
+    <string name="createapkcustom">Özel Yamalı APK</string>
+    <string name="createapklvl">Lisans Doğrulaması olmayan APK</string>
+    <string name="createapksupport">Uygulama içi ve LVL emülasyon destekli APK</string>
+    <string name="createdialog1">Şunun düzenlenmişi</string>
+    <string name="createdialog1_clone">Klon</string>
+    <string name="createdialog2">"bitti.
+
+Dosya dizini:"</string>
+    <string name="createdialog3">"Dikkat! Uygulamanın yamadan sonra düzgün çalışması, düzenlenmiş apk formunda düzgün çalışacağı anlamına gelmeyebilir - bazı uygulamalar düzenlenmeye karşı korumalıdırlar. Yamalarkenki şansınız, düzenlenmiş apk'dan daha fazladır."</string>
+    <string name="createdialog3_clone">Dikkat! Bazı uygulamalar klonu yüklenmeden önce kaldırılmalıdırlar. Klonlanmış formunda düzgün çalışacağına dair hiçbir garanti yokdur - bazı uygulamalar düzenlemelere karşı korumalıdırlar.</string>
+    <string name="createdialog5">Dosya adı:</string>
+    <string name="custom_descript">Özel Yama Açıklaması:</string>
+    <string name="custom_name_for_lp">Kendi uygulama adınızı kullanın</string>
+    <string name="custom_patch_log_add_custom_patch_to_boot_list">Yeniden başlatıldığında yamalama eklendi.</string>
+    <string name="custom_patch_log_block_internet_hosts">İnternet sunucularını engelleme</string>
+    <string name="custom_patch_log_change_components">Bileşenleri değiştirme</string>
+    <string name="custom_patch_log_change_preference_delete">Paylaşılan tercihi sil</string>
+    <string name="custom_patch_log_change_preference_insert">Paylaşılan tercih yerleştir</string>
+    <string name="custom_patch_log_change_preference_not_found_file">Dosya bulunamadı</string>
+    <string name="custom_patch_log_change_preferences">Paylaşılan tercihler değiştiriliyor</string>
+    <string name="custom_patch_log_method_patch">Yöntem için yama</string>
+    <string name="custom_patch_log_method_patch_size_error">Kodu yapıştırmak için yeterli alan yok. Değiştirme şablonunun boyutunu azaltın.</string>
+    <string name="custom_patch_log_next_custom_patch">Sonraki özel yamayı çalıştır</string>
+    <string name="custom_patch_log_offset">Aralık</string>
+    <string name="custom_patch_log_or_patch_is_already_applied">yama zaten uygulanmış.</string>
+    <string name="custom_patch_log_patch_all_files">Dizindeki dosyalar için yamalar</string>
+    <string name="custom_patch_log_patch_done">Yama tamamlandı!</string>
+    <string name="custom_patch_log_patch_for">Şunun için yama</string>
+    <string name="custom_patch_log_patch_for_libraries">Kütüphaneler için yama</string>
+    <string name="custom_patch_log_patch_on_reboot_added">Yeniden başlatıldığında yamalama eklendi!</string>
+    <string name="custom_patch_log_pattern">Şablon</string>
+    <string name="custom_patch_log_pattern_not_found">Şablon bulunamadı!</string>
+    <string name="custom_patch_log_search_bytes">Bayt arama</string>
+    <string name="custom_patch_log_search_bytes_error">Bayt bulunamadı!</string>
+    <string name="custom_patch_log_skip_patch_for_build">Yapı için yamayı atla</string>
+    <string name="custom_patch_result_all_dont_patch">Özel Yama, bu Uygulamanın Sürümü için geçerli değil veya zaten yamalanmış.</string>
+    <string name="custom_patch_result_not_all_patches_apply">Tüm şablonlar değiştirilmedi, ancak program çalışabilir, test edin!</string>
+    <string name="custom_patch_warning">"Özel yama bulunamadı. Root sorunu. SD karta roottan erişme izni yok. SuperSu kullanıyorsanız, SuperSu'daki \"isimuzayı ayrımı\" ayarını devre dışı bırakın. İşe yaramazsa, SuperSu'yu güncelleyin ve SuperSu'dan gelen binary dosyasını güncelleyin."</string>
+    <string name="custom_patches_update_not_found">Özel yamalar için güncelleme bulunmadı.</string>
+    <string name="custom_sel_app">Seçilen uygulama:</string>
+    <string name="customdescr">Özel yaması uygulanmış olan uygulamaları gösterir.</string>
+    <string name="customtitle">Özel yamalı olanlar</string>
+    <string name="dalvik_cache_size">Dalvik-belleği boyutu:</string>
+    <string name="damadged_apk">"Okunabilir uygulama dosya'sı hasar görmüş."</string>
+    <string name="data_dir_size">Data dizini boyutu:</string>
+    <string name="date_creation_patch">Yama tarihi eklendi</string>
+    <string name="days_on_up">Yeni Uygulamaları Başta Göster</string>
+    <string name="days_on_up_descr">"Yüklenen uygulamaların yeni olarak gösterilmesi için maksimum gün sayısını ayarlayın. Eğer yeni uygulamaların liste başına gelmesini istemiyorsanız '0' yapın."</string>
+    <string name="delboot">Önyükleme listesinden silmek için dokunun</string>
+    <string name="delete_apex_update">"Yama işlevselliğini düzeltmek amacıyla com.google.android.art'ın güncellemesi kaldırıldı."</string>
+    <string name="delete_file">Dosyayı sil</string>
+    <string name="delete_file_message">%s dosyasını silmek istediğinizden emin misiniz?</string>
+    <string name="delete_system_app">"Sistem uygulama'sını sil"</string>
+    <string name="delete_system_app_for_user">Mevcut kullanıcı için sistem uygulamasını kaldır</string>
+    <string name="delete_system_app_for_user_message">Mevcut kullanıcı için %s sistem uygulamasını gerçekten kaldırmak istiyor musunuz?</string>
+    <string name="describe_for_Proxy_gp">(yalnızca lisanslı ve uygulama içi emülasyonlu mini sürüm)</string>
+    <string name="dialog_end_orig_resign_app">%1$sorijinal imza ile başarıyla imzalandı. İstifa dosyası bulunur%2$s.</string>
+    <string name="dialog_end_resign_app">%1$s test imzası ile başarıyla imzalandı. Yeni dosya konumu %2$s.</string>
+    <string name="dialog_system">Bu uygulama Sistemin bir parçası. Üzerinde oynamadan önce çok dikkatli olun. Cihazınızı soft-brick edebilir. Yedeğiniz var mı? Bu uygulamayı düzenlemek istediğinizden emin misiniz?</string>
+    <string name="dir_change">Dizin Değiştir</string>
+    <string name="dir_change_descr">"Lucky Patcher'ın dosyalarını depolayacağı dizini seçin. Varsayılan dizin 
+/mnt/sdcard/Android/data/[package_name_of_lucky_patcher]/files/LuckyPatcher"</string>
+    <string name="dirbinder">Dizin Bağlayıcı</string>
+    <string name="dirr_chg">Dizin değiştirildi:</string>
+    <string name="disable_autoupdate">Otomatik güncellemeleri kapat</string>
+    <string name="disable_autoupdate_descr">İnternetten otomatik güncelleme kontrolünü devre dışı bırakır.</string>
+    <string name="disable_inapp_services_google">Google Play Store için Uygulama içi Hizmetleri</string>
+    <string name="disable_inapp_services_google_descr">Bazı uygulamalar birden fazla Uygulama İçi hizmet aktif iken çökebilir.</string>
+    <string name="disable_license_services_google">Google Play Store için Lisans Hizmeti</string>
+    <string name="disable_license_services_google_descr">Bazı uygulamalar birden fazla lisans hizmetleri aktif iken çökebilir.</string>
+    <string name="disabled">devre dışı</string>
+    <string name="disabled_package">Paket devre dışı (dondurulmuş).</string>
+    <string name="dont_send_log_lp_modified">"Lucky Patcher'ınız yeniden derlenmiş. Günlük gönderemezsiniz."</string>
+    <string name="dont_send_log_please_update_lp">"Günlük göndermek için lütfen Lucky Patcher'i son sürüme yükseltin."</string>
+    <string name="dontusepatch">İptal</string>
+    <string name="downgrade_version_googlepaly_in_system_partition">"Sistem bölümünde yüklü olan Google Play sürümü, yüklenmekte olan sürümden daha yüksektir. Şimdi aşağıdaki Google Play sürümü sistem bölümüne yüklenecektir. Bundan sonra, modifiye Google Play'in kurulumunu tekrarlayın. Kabul ediyor musunuz?"</string>
+    <string name="download">Yükleniyor...</string>
+    <string name="download_progress_dialog_message_downloading">Dosyayı indir</string>
+    <string name="download_progress_dialog_message_prepare_downloading">İndirme hazırlanıyor...</string>
+    <string name="download_progress_dialog_message_resume_downloading">Dosya indirmesine devam ediliyor</string>
+    <string name="empty">boş</string>
+    <string name="empty_binders">Widget eklemek için en az bir bağlama oluşturmanız gerekir.</string>
+    <string name="enabled">etkin</string>
+    <string name="enabled_package">Paket etkinleştirildi.</string>
+    <string name="enter_manual_path">Dizini el ile gir</string>
+    <string name="enter_name_dir">Dizin adı:</string>
+    <string name="equals_version">"Lucky Patcher'ın son sürümünü kullanıyorsunuz."</string>
+    <string name="error">Hata</string>
+    <string name="error2_backup_apk">APK dosyası yedeklenemedi. Uygulamanın içindeki classes.dex dosyaları eksik.</string>
+    <string name="error_android_patches_lsposed_patch1">"İmzalarla çalışma mekanizması bozuk olduğundan \"1%1$s\" yama'sını kontrol etmek imkansız. Yama LSposed kullanılarak uygulandıysa LSposed, riru veya zygisk sürümünü değiştirmeniz gerekir."</string>
+    <string name="error_apk_to_system">Bu konumdan sistem uygulamaları yükleyemezsiniz, lütfen farklı bir dizine taşıyın.</string>
+    <string name="error_app_installed_on_sdcard">Lucky Patcher dahili hafızaya yüklü olmalıdır. Aksi takdirde, bazı özellikler düzgün çalışmayabilir.</string>
+    <string name="error_app_installed_on_sdcard_block">Lucky Patcher ana depolamada kurulu olmalıdır. Bu özellik Lucky Patcher harici depolamada kuruluyken çalışmaz.</string>
+    <string name="error_backup_apk">APK dosyası yedeklenemedi. Yedeklemek için gerekli izinlere sahip değil.</string>
+    <string name="error_classes_not_found">Bu \".jar\" dosyası yama için class.dex içermiyor. Bu \".jar\" dosyası için \".odex\" dosyasını yamalamayı deneyin.</string>
+    <string name="error_collect_logs">Günlük toplayıcısı hata ile karşılaştı. Günlük dosyası oluşturulmadı.</string>
+    <string name="error_create_join_custom_patch">"Dosya oluşturulamadı join_patch.txt.
+Yama klasörüne yazma hakkı bulunmuyor olabilir."</string>
+    <string name="error_create_oat">"Yamalı classes.dex için .oat dosyası oluşturulurken hata oluştu. Yama, classes.dex'te bazı hatalar veya ürün yazılımı ile ilgili bazı sorunlar yarattı. Sorunları çözmenin yolları:
+1.Magisk sürümünü düşürün veya yükseltin.
+2.Test için tüm Magisk modüllerini devre dışı bırakmayı deneyin.
+3.Lucky Patcher ayarlarında java-root yöntemini değiştirmeyi deneyin."</string>
+    <string name="error_delete_join_custom_patch">"Dosya silinemedi \"join_patch.txt\"
+Dosyayı veya yama klasörünü kendiniz silin."</string>
+    <string name="error_detect">Lucky Patcher zorla kapatıldı, hata raporu göndermek istermisiniz?</string>
+    <string name="error_expansion_copy_to_sdcard">Uygulama yüklendi ama önbelleği \"/Android/obb\" dizinine kopyalamak mümkün değil.</string>
+    <string name="error_file_not_found_in_original_apk" formatted="false">%1s dosyası orijinal %2s arşivi. Bu nedenle CRC dosyası değiştirilmedi.</string>
+    <string name="error_get_classes_files_for_patch">Yama için classes.dex dosyaları alınamadı.</string>
+    <string name="error_get_pkgInfo">Hata: Paket bilgisi alınamadı.</string>
+    <string name="error_icon_content_description">Hata</string>
+    <string name="error_import_custom_patch">Lucky Patcher özel yamayı aktaramıyor. Zip arşivi hasar almış olabilir.</string>
+    <string name="error_installation">Uygulama yüklenemedi.</string>
+    <string name="error_launch">Başlatma başarısız!</string>
+    <string name="error_message_for_share_app">"Uygulama Paylaşılamadı. Bilinmeyen bir hata. Lucky Patcher'ın çalışma dizinini değiştirmeyi deneyin."</string>
+    <string name="error_need_free_space_for_classes_intergate">Tüm ek kod dex dosyalarının boş alanına sığdırılamadı. Yamayı tekrarlayın ve küçük seçenekleri seçin. Veya bu yama ile yeniden oluşturun.</string>
+    <string name="error_not_found_lic_data">Lisans oluşturmak için veri bulunamadı.</string>
+    <string name="error_not_found_storage_lic">Lisans konumu bulunamadı.</string>
+    <string name="error_odex_app">Hata: Odex oluşturma işlemi başarısız... Büyük ihtimalle yeterli alan yok.</string>
+    <string name="error_odex_app_impossible">Bu uygulama classes.dex içermiyor. Dex optimizasyonu mümkün değildir.</string>
+    <string name="error_out_of_memory">İşlemi tamamlamak için yeterli bellek (RAM) yok. VM Heap çok küçük.</string>
+    <string name="error_path">Yanlış dizin!</string>
+    <string name="error_path_exists">Dizin zaten var. Yeni bir yol girin.</string>
+    <string name="error_read_folder">klasör okunamıyor</string>
+    <string name="error_restore">Geri yükleme başarısız.</string>
+    <string name="exit">Çık</string>
+    <string name="export_settings">Ayarları dışa aktar</string>
+    <string name="exposed_dropdown_menu_content_description">Açılır menüyü göster</string>
+    <string name="extpat1">Görünüşe göre</string>
+    <string name="extpat2">lisans doğrulaması olanlar:</string>
+    <string name="extpat3">"Talimatlar:
+--------------
+-Lütfen \"Yedekle\" tuşuna basın;
+-Veri erişimini Wi-Fi üzerinden veya mobil bağlantı üzerinden sağlayın ve uygulamanın tüm bağlantılarına izin verin;
+-Örneği seçin ve \"Yama Yap\" tuşuna basın;
+-\"Başlat\" tuşuna basın ve lisans durumunu kontrol edin (eğer gerekirse, yenileyin);
+-Eğer bu örnek size yardımcı olmazsa, \"Geri Yükle\" tuşuna basın ve başka bir örnek deneyin.
+ Eğer işlem başarılı olursa, \"Değişiklikleri Sabitle\" seçeneğine dokunun."</string>
+    <string name="extres1">"Yama tamamlandı! Uygulamayı açın ve lisans durumuna bakın;
+Eğer bu yama başarısız olduysa \"Geri yükle\" tuşuna basın ve farklı bir yama ile tekrar deneyin."</string>
+    <string name="extres2">"Bu desen için etiket bulunamadı.
+Zaten yamalı mı?
+\"Geri Yükle\"ye basıp, farklı bir desen seçin ve tekrar yamalayın."</string>
+    <string name="failed">başarısız</string>
+    <string name="failed_group">Tamamlanamadı:</string>
+    <string name="fast_start">Hızlı Başlangıç</string>
+    <string name="fast_start_descr">"Lucky Patcher'ın veritabanındaki ikonların yüklenmesini kapatır. Uygulama listesinde kasma meydana gelebilir..."</string>
+    <string name="file_not_deleted">Dosya silinemedi.</string>
+    <string name="file_not_found">"Uygulama SD karta kopyalanamadı!
+Lütfen SD kartınızda boş alan açın veya busybox kurulumunu kontrol edin."</string>
+    <string name="file_observer_describe">Bu, .dex, .so, .zip gibi dosyaları izlemek için bir hizmettir. Bu tür dosyalar göründüğünde, uygulamadan /sdcard/Download/application_package_name konumuna kopyalamaya çalışır. Bu, uygulamadan şifrelenmiş dosyaları almak için gereklidir. Başlangıçta, hizmeti ve uygulamanın kendisini başlatacaktır. Gerekli süreyi bekledikten sonra ilerleme iletişim kutusunu kesebilirsiniz, ardından kopyalanan dosyalarla ilgili bilgiler görüntülenecektir.</string>
+    <string name="filter">Filtre</string>
+    <string name="filter0">Yeni ve güncellenen Uygulamalar</string>
+    <string name="filter1">LVL olan uygulamalar</string>
+    <string name="filter10">Devre dışı bırakılmış (dondurulmuş) uygulamalar</string>
+    <string name="filter11">Özel yamaya sahip uygulamalar</string>
+    <string name="filter12">Değiştirilmiş uygulamalar</string>
+    <string name="filter13">Odexli Uygulamalar</string>
+    <string name="filter2">Reklamlı uygulamalar</string>
+    <string name="filter4">Uygulama içi satın almalı uygulamalar</string>
+    <string name="filter5">Dahili hafızadaki uygulamalar</string>
+    <string name="filter6">SD Kartdaki uygulamalar</string>
+    <string name="filter7">Sistem Uygulamaları</string>
+    <string name="filter8">Güncellenmiş Sistem Uygulamaları</string>
+    <string name="filter9">Mesaj gönderme ve çağrı yapma izni olan uygulamalar</string>
+    <string name="filterSplittedApps">Bölünmüş uygulamalar yani .apks uzantılı dosyalar</string>
+    <string name="filterdescr">Gösterilecek kategori seçin.</string>
+    <string name="final_market_message">Google Play yüklendi. Şimdi core.jar yamalanacak ve cihazınız yeniden başlatılacaktır. Devam et?</string>
+    <string name="fixbutton">Değişiklikleri sabilte</string>
+    <string name="fixeddescr">Değişikliklerin sabitlendiği uygulamaları gösterir (Sarı yıldızlılar).</string>
+    <string name="fixedtitle">"ODEX'te düzeltme içeren uygulamalar"</string>
+    <string name="folder_message_error">Yeni klasör boş olmalıdır. Lütfen farklı bir klasör seçin.</string>
+    <string name="framework_file_patched">yamalandı ve yeniden adlandırıldı:</string>
+    <string name="framework_patch_not_result">Lucky Patcher yamalayacak hiçbir bayt bulamadı.</string>
+    <string name="generate_log_error_message">Günlük oluşturulamadı. Oluşturma aşamasında bir hata oluştu.</string>
+    <string name="generate_log_for_conscrypt_jar_fix_android_patches">"Conscrypt.jar için kayıt oluştur
+(\"Android'e Yama\" düzeltmek için)"</string>
+    <string name="generate_log_for_core.jar_fix_android_patches">"Core-libart.jar için kayıt oluştur
+(\"Android'e Yama\" düzeltmek için)"</string>
+    <string name="generate_log_for_core_oj_jar_fix_android_patches">"core-oj.jar için günlük oluşturun
+(\"Android'e Yamalama\" yı düzeltmek için)"</string>
+    <string name="generate_log_for_framework_fix_android_patches">"framework.jar için günlük oluşturun
+('Android yaması'nı düzeltmek için)"</string>
+    <string name="generate_log_for_services.odex_fix_android_patches">"Services.jar için kayıt oluştur
+(\"Android'e Yama\" düzeltmek için)"</string>
+    <string name="generate_log_result_message_conscrypt.jar">"Günlük oluşturuldu ve /sdcard/conscrypt.oat.txt dosyasına kaydedildi. Dosyayı buluta kaydedin veya zip olarak sıkıştırın. Sonra bana mail gönderin lp.chelpus@gmail.com.
+Dosya boyutu:"</string>
+    <string name="generate_log_result_message_core_jar_zip">"Günlük oluşturuldu ve /sdcard/boot.oat.txt.zip içinde saklandı. Bana postayla gönderin lp.chelpus@gmail.com.
+Dosya boyutu:"</string>
+    <string name="generate_log_result_message_core_oj.jar">"Günlük oluşturuldu ve şu konuma kaydedildi: /sdcard/core-oj.oat.txt. Dosyayı buluta kaydedin ya da zip dosyasına sıkıştırın. Sonra lp.chelpus@gmail.com mail adresine gönderin.
+Dosya boyutu:"</string>
+    <string name="generate_log_result_message_framework_zip">"Günlük oluşturuldu ve /sdcard/framework.txt.zip içinde saklandı. Bana postayla gönderin lp.chelpus@gmail.com.
+Dosya boyutu:"</string>
+    <string name="generate_log_result_message_services_odex_zip">"Günlük oluşturuldu ve /sdcard/services.odex.txt.zip içinde saklandı. Bana postayla gönderin lp.chelpus@gmail.com.
+Dosya boyutu:"</string>
+    <string name="go_to_file_path">Dosyaya git</string>
+    <string name="goodresult">"% Şansınız var!
+Lütfen denemek için uygulamayı açın!
+
+Eğer uygulama düzgün çalışmaz ise, lütfen tekrar yükleyin ve başka yama uygulayın."</string>
+    <string name="google_play_installer_clear_data_google_services">"Google Play'de Google hesabına giriş yapma sorununu gidermek için Google hizmetlerinin verilerini temizleyin"</string>
+    <string name="hash_code">Hash kodu</string>
+    <string name="have_luck">"***********************
+
+"</string>
+    <string name="header_activities">Faaliyetler:</string>
+    <string name="header_providers">Sağlayıcılar:</string>
+    <string name="header_receivers">Alıcılar:</string>
+    <string name="header_services">Hizmetler:</string>
+    <string name="help">Yardım</string>
+    <string name="help_3dot">Bu, ayrılmış apk dosyalarına sahip bir uygulamadır. Böyle bir uygulamanın yedek kopyasını oluştururken \"apks\" uzantılı bir dosya oluşturulur (Lucky Patcher bu dosyaları yükleyebilir)</string>
+    <string name="help_PS">Not: Lucky Patcher, yama uyguladığında bir uygulamayı kapatır. Yeni değişikliklerin devam etmesi için bu gereklidir. Ancak, bazen değişiklikleri görmek için etkilenen uygulamanın sürecini veya işlemlerini sonlandırmak için cihazı yeniden başlatmanız veya üçüncü taraf bir araç kullanmanız gerekebilir.</string>
+    <string name="help_bootlist_describing">"*%1$s - Açılışta yama yapılacak uygulamaların listesi. Şu anda, işlev güncelliğini yitirmiştir, çünkü uygulamalarla yaptığınız tüm değişiklikler ODEX'e kaydedilir ve hiçbir yere gidemez, bu nedenle Bootlist'e uygulama ekleyerek kendinizi sigortalamanıza gerek yoktur. Bu, yalnızca özel bir yamanın uygulamanın \".so\" kitaplıklarını değiştirmesi durumunda gerekli olabilir. Önyükleme Listesine eklemek için bu özel yamaların açıklamasında belirtilecektir."</string>
+    <string name="help_common">Genel</string>
+    <string name="help_custom">Özel Yama Oluşturma</string>
+    <string name="help_custom_add_boot_tag">bu özel yamayı otomatik olarak \"%1$s\"ye ekler. Kitaplık yamasında (veya [SINIFLAR] yamasında [ODEX] veya [PACKAGE] olmadan) kullanılmalıdır.</string>
+    <string name="help_custom_add_file_in_apk_tag">"Apk arşivine Lucky Patcher dizininden bir dosya ekleyin.
+Örnek:"</string>
+    <string name="help_custom_all_files_tag">"Belirtilen dizindeki tüm dosyaları yamalar.
+\"dir\" - yama dosyaları için dizin.
+\"şablon\" - yama için dosya seçmek için bir şablon (yalnızca herhangi bir sayıda karakter anlamına gelen \"*\" kullanabilirsiniz. ).
+Örnek:"</string>
+    <string name="help_custom_all_lib_tag">tüm yerel kitaplıklar için desen arama/değiştirme</string>
+    <string name="help_custom_apk_build_param">Bu kalıbı yalnızca build=apk_build ile apk için uygular. build>=apk_build için kalıp uygulayabilirsiniz (Örnek: {\"apk_build\":\"206+\"}) veya build&lt;=apk_build için başvurabilirsiniz (Örnek: {\"apk_build\":\"206-\"}).</string>
+    <string name="help_custom_apk_build_param2">Apk sürüm aralığı için bir yama modeli uygulayabilirsiniz, bunun için üst ve alt sürüm sınırına sahip iki apk_build belirtmeniz gerekir:</string>
+    <string name="help_custom_begin_tag">kullanıcı yama öncesi tarafından görülebilen yama yorumları</string>
+    <string name="help_custom_begin_tag_detail">Başlangıç ​​işareti, ondan sonraki tüm metin ve ilk alana kadar [CLASSES], [LIB], [END], vb. Kullanıcı için yama günlüğünün başlangıcında görüntülenecektir.</string>
+    <string name="help_custom_block_hosts_tag">"Listelenen internet ana bilgisayarlarını engeller. \"ana bilgisayar\", engellemek istediğiniz ana bilgisayardır.
+Örnek:"</string>
+    <string name="help_custom_classes_bez_package_tag">"Dalvik önbellek uygulamalarını yamalar. Sistemin dalvik-cache uygulamalarını periyodik olarak güncellediğini ve tüm değişikliklerin kaybolacağını unutmayın. Bu nedenle, [ADD-BOOT] kullanmalıyız. Dalvik-cache yaması, güvenilmez olduğundan ve yalnızca eski aygıt yazılımında kullanıldığından güncelliğini yitirmiştir. Ancak odex dosyalarıyla iyi çalışmadığından ROM Araç Kutusu için gereklidir.
+Örnek:"</string>
+    <string name="help_custom_classes_name_param">Belirli bir sınıf dosyasına yama uygular, bu seçenek olmadan yama tüm sınıflara*.dex dosyalarına uygulanır (örneğin: {\"classes_name\":\"classes2.dex\"}, {\"classes_name\":\"classes3.dex\" }, {\"classes_name\":\"classes.dex\"} ...).</string>
+    <string name="help_custom_classes_tag">classes.dex için desen arama/değiştirme (aşağıya bakın)</string>
+    <string name="help_custom_classes_tag_detail">İşte classs.dex yaması için satırlar. Bunlar, arama, orijinalle değiştirilen ve aşağıda açıklanan diğer seçenekler olabilir.</string>
+    <string name="help_custom_component_tag">"Uygulamaların bileşenlerini etkinleştirin veya devre dışı bırakın. Bazen bir uygulama, işlevselliğini sınırlamak için etkinliğini ve diğer bileşenleri devre dışı bırakır, ardından bu özelliği yeniden etkinleştirme yeteneği yararlı olabilir. Böylece etkinlikleri, hizmetleri, sağlayıcıları ve diğer bileşenleri dahil edebilirsiniz. En önemli şey, adlarını büyük ve küçük harflere tam uygun olarak belirtmektir.
+Örnek:"</string>
+    <string name="help_custom_copy_file_tag">Lucky Patcher klasöründeki bir dosyayı, yeni bir dosya adıyla belirtilen klasöre kopyalar.Örnek:</string>
+    <string name="help_custom_database_param">Bu, cihazınızdaki ve muhtemelen diğer kullanıcıların cihazlarındaki veri tabanına giden yoldur. Ayrıca yalnızca dosyasının adını da belirtebilirsiniz, ardından Lucky Patcher onu kendi başına bulmaya çalışır.</string>
+    <string name="help_custom_delete_file_in_apk_tag">"APK arşivindeki dosyayı silin.
+Örnek:"</string>
+    <string name="help_custom_delete_folder_in_apk_tag">"APK arşivindeki klasörü silin.
+Örnek:"</string>
+    <string name="help_custom_deprecated_tag">Kullanımdan Kaldırıldı</string>
+    <string name="help_custom_end">Her şey düzenlendi, dosyayı kaydedin ve Lucky Patcher klasöründe bulunan \"CustomPatches\" dizinine bırakın. Bu klasör en üstteki \"Hakkında\" bölümünde görüntülenebilir. Ardından program sarı renkle vurgulanır ve bu yamayı programa uygulayabilirsiniz.</string>
+    <string name="help_custom_end_tag">yama sonrası kullanıcı tarafından görülebilen yama yorumları</string>
+    <string name="help_custom_execute_param">Bu, olağan kurallara göre derlenmiş bir SQLite sorgusudur (İnternette okuyabilirsiniz).</string>
+    <string name="help_custom_file_in_apk_tag">apk dosyası içindeki dosya için kalıp arama/değiştirme (bu işlev yalnızca uygulamayı bu özel yama ile yeniden oluştururken çalışır)</string>
+    <string name="help_custom_general_text1">- Düzeltme eki dosyası hedef APK ile aynı ada sahip olmalıdır. (Büyük, küçük harfe duyarlıdır.)</string>
+    <string name="help_custom_general_text2">- Özel yama dosyası hâlihazırda mevcutsa, dosya adının başına herhangi bir yazı ekleyebilir ve var olan dosyanın yakınına kaydedebilirsiniz.</string>
+    <string name="help_custom_general_text3" formatted="false">"- Eğer aynı anda seri haldeki programların tümüne tek seferde patch yapmak istiyorsanız, o zaman özel yamanın adının sonuna şu belirleyiciyi ekleyin _1%ALL%. Örnek olarak, patch adı tüm SVOX ifadeleri için şöyle görünmelidir: com.svox.classic.langpack_%ALL%.txt.
+The _%ALL% verilen bölümün paket adını değiştirir, bu da verilen bölümün uygulamasına bağlı olarak değişir. Özel karakterler/formatı patch dosyasında kullanmayın (tekli boşluklar sadece).
+lf kendinize ait prefiksi baştan eklemeniz gerekiyor, şunu kullanabilirsiniz %ALL%_ and _%ALL% (Örnek: chelpus.%ALL%_com.android._%ALL%.txt). Özel patchlerin adlarını programın kendisinde görüntülerken, %ALL%_ okunabilirlik için gizli olacaktır."</string>
+    <string name="help_custom_general_text4" formatted="false">- Özel bir yamanın metninde, yama sırasında hedef uygulamanın paket adıyla değiştirilecek olan %PACKAGE_NAME% kullanabilirsiniz. Bu, dosya yolunun paket adına bağlı olarak değişeceği uygulama grubu yamalarında kullanışlıdır (Örnek: /data/data/%PACKAGE_NAME%/files/trial.txt).</string>
+    <string name="help_custom_general_text5">"- Bayt şablonlarını aramak için IDA Pro 6.1 veya daha yüksek sürüm kullanın. Bunlar dalvik önbelleği, odex, kitaplıklar ve classes.dex'i açabilir."</string>
+    <string name="help_custom_general_text6">"- Dalvik-cache veya odex'e yama yapmak istiyorsanız, farklı ürün yazılımı sürümlerinde veri baytlarının değişebileceğini unutmayın. Android'in ART'ın tanıtılmasından önceki ilk sürümlerinde, dalvik önbelleğini veya odex dosyalarını yamalayabilirsiniz, ancak burada işlem kodlarının baytlarının her zaman classs.dex'teki baytlarla eşleşmediğini hesaba katmanız gerekir, bu nedenle böyle bir yazarken yama, dosyayı IDA Pro'da açarak bu yere bakmanız gerekir."</string>
+    <string name="help_custom_general_text7">"- 6.5.4+ sürümünden başlayarak, Lucky Patcher, lpzip uzantılı dosyalar oluşturma yeteneğine sahiptir. Bunlar, özel yamalar ve apk dosyaları içerebilen zip arşivleridir. Bu zip dosyalarını Lucky Patcher'da açarken, özel yamalar içe aktarılacak ve sisteme apk dosyalarının yüklenmesi istenecektir. (Örnek: installSomeAppsWithPatch.lpzip)"</string>
+    <string name="help_custom_group_param">"Grubun kalıplarını işaretler (grup numarası 1 veya daha yüksek olabilir). “Bu ne anlama geliyor?” diye soruyor olabilirsiniz. Bunun anlamı, gruptan en az bir desen başarılı olursa, kullanıcıya yamanın başarıyla tamamlandığı bir iletişim kutusu gösterilecektir. Bu, belirli bir uygulamanın birden çok sürümü için evrensel bir yama oluşturmaya çalıştığınızda kullanışlıdır (örneğin, Google Play'in tüm sürümleri için otomatik güncellemeleri devre dışı bırakan bir yama)."</string>
+    <string name="help_custom_increment_decrement_param">Orijinal bayttan ondalık sayıların eklenmesi ve çıkarılması...Örneğin:</string>
+    <string name="help_custom_increment_decrement_param_end">Veya başka bir örnek:</string>
+    <string name="help_custom_insert_param">"Bulunan orijinali, orijinal modelin bayt sayısından farklı bir bayt sayısıyla değiştirmenin gerekli olduğu durumlarda kullanılır. Çoğu zaman buna çeşitli metin dosyalarında ihtiyaç duyulur. Örneğin, xml dosyası şunları içeriyorsa: \"lives=9\", ancak bunu \"lives=999\" ile değiştirmeniz gerekiyorsa, bu durumda \"lives=9\" sonrasındaki verileri değiştirmeden eklemek yardımcı olacaktır.
+( Örnek: yamadan önce dosya şunları içerir: \"chelpa end\")"</string>
+    <string name="help_custom_insert_param_end">yamadan sonra dosya zaten şunları içeriyor: \"chelpaa end\"</string>
+    <string name="help_custom_integrate_inapp_lvl_emulation_tag">"Yama yaparken otomatik olarak satın alma ve lisans doğrulama emülasyonu oluşturur. Kullanışlıdır eğer yama gelişmiş satın alma veya lisans doğrulamasını atlarsa. Örneğin, bazen IL2СPP'deki GooglePlayValidator yöntemini düzeltmeye yardımcı olur ve satın alımlar Lucky Patcher ile çalışmaya başlar."</string>
+    <string name="help_custom_lib_tag">adlandırılmış yerel kitaplıklar için kalıp arama/değiştirme (aşağıya bakın)</string>
+    <string name="help_custom_lib_tags">Bu, bu programın kitaplığının düzeltme eki için satırların takip edeceği anlamına gelir, \"ad\" kitaplığın adıdır (ad yerine * koyarsanız, tüm uygulama kitaplıkları düzeltme ekiylenecektir).</string>
+    <string name="help_custom_libs_tags">Bazen bir uygulamanın farklı işlemci mimarileri için birkaç kitaplığı vardır, bu durumda [LIB-ARMEABI], [LIB-ARMEABI-V7A], [LIB-ARM64-V8A], [LIB-MIPS], [LIB-X86] kullanmak daha iyidir. veya istenen kitaplık için [LIB-X86_64], böylece başka bir kitaplıktan alınan desenler mevcut olana uygulanmaz.</string>
+    <string name="help_custom_method_name_patch_example1">aynı ada sahip tüm yöntemler için kodu \"değiştirildi\" ile değiştirir ve geçersiz kılar</string>
+    <string name="help_custom_method_name_patch_example2">bir boole döndüren ve somut bir sınıfta olan bir yöntem için kodu \"değiştirildi\" ile değiştirir</string>
+    <string name="help_custom_method_name_patch_example3">Bir yöntemin kodundaki baytları diğer yöntemlerden herhangi bir farkla arar ve değiştirir</string>
+    <string name="help_custom_method_name_patch_param">Uygulama kodunun geri kalanı hariç, yalnızca seçilen yöntemin kodunu yamalar. \"Metod adı\" alanı belirtilmelidir - bu, yamalanacak yöntemin adıdır. Gereksiz yöntemleri kesmek için, bulunduğu yerin sınıfı \"sınıf adı\" belirtilir ve gerekirse, fazladan hiçbir şeyi düzeltmemek için \"parametre türleri\" ve \"dönüş türü\" de belirtilir. Adlar ve parametreler smali sözdiziminde yazılır. Bu parametrelerden sonra \"orijinal\" ve \"değiştirilen\" şablonları kullanırsanız, arama yöntemin içinde gerçekleşir. Yalnızca \"değiştirilen\" şablon kullanılırsa, tüm yöntem kodu bu şablonla ve sıfırlarla değiştirilecektir, ancak bu durumda şablonun boyutu, yöntem kodunun boyutundan küçük veya ona eşit olmalıdır.</string>
+    <string name="help_custom_name_param">"Genellikle yamanın uygulanacağı nesneyi belirtir. Bu sadece bir dosya adı, yolu olan bir dosya adı ve benzeri olabilir. Bazı durumlarda, örneğin kitaplığın adı bilinmiyorsa, tüm kitaplıklara yama uygulamak için '*' kullanabilirsiniz."</string>
+    <string name="help_custom_odex_patch_tag">"Halihazırda yama uygulanmış bir uygulamayı değiştirmeniz gereken durumlar vardır, örneğin, otomatik yama tarafından lisans kontrolü zaten kaldırılmışsa, bu etiket kurtarmaya gelir. Bundan sonraki tüm \"orijinal\"-\"değiştirilen\" kalıplar, diğer yamaların halihazırda oluşturmuş olduğu odex dosyasına uygulanacaktır. Örneğin, Final Fantasy III'te ilk kez insanlar oyunu Extreme License Check Kaldırma Modu ile tedavi ettiğinde bu gerekliydi, ancak çevirinin doğru kodlamada görüntülenmesi için odex dosyasında ek yamalar gerekliydi. bu etiketi kullanarak uygulamak mümkün hale geldi. Basit bir [PACKAGE]-[CLASSES], [ODEX] veya [CLASSES]-[ODEX] kullanırsak, odex dosyası hiçbir değişiklik yapılmadan oluşturulur ve ancak o zaman yamalanır. Lucky Patcher'ın bu sürümünde, \"%1$s\" seçeneği olduğundan artık bu gerekli değildir.
+Örnek:"</string>
+    <string name="help_custom_odex_tags">"Eski Android'lerde bu etiket kullanılabilir. [CLASSES] etiketi yerine bunu kullanabilirsiniz. Daha sonra class.dex'teki değişiklikler, sistem önbelleği güncellediğinde periyodik olarak kayboldukları dalvik önbelleğine değil, tüm değişiklikleri düzeltecek ve orijinal dalvik önbelleğini bozulmadan bırakacak uygulamanın apk'sının yanındaki odex uzantılı ayrı bir dosyada kaydedilecektir - bu, uygulamanın kontrol etmesi durumunda her ihtimale karşı olur. [CLASSES] sonrasında [ODEX] kullanabilirsiniz, daha sonra değişiklikler dalvik önbelleğinde yapılır ve otomatik olarak odex'e taahhüt edilir. Bu, modern ürün yazılımında gerekli değildir."</string>
+    <string name="help_custom_offset_param">"Ofset'te, dosyanın başından itibaren ofseti \"değiştirilen\" veya \"insert\" ile belirtilen bayt dizisinin ekleneceği onaltılık biçimde belirtiriz."</string>
+    <string name="help_custom_original_param">Bu, düzeltme ekinin uygulanacağı uzaklığı bulmak için kullanılan bir desen maskesidir.</string>
+    <string name="help_custom_original_param_end">Bu örnekte, baytlar kalıp maskesini oluşturur ve (??, **) herhangi bir bayt anlamına gelir.</string>
+    <string name="help_custom_other_files_tag">/data/data/Package_Target_APK/ veya /sdcard içindeki herhangi bir dosya için kalıp arama/değiştirme (aşağıya bakın)</string>
+    <string name="help_custom_package_tag">"classes.dex'in paketini açar ve tüm yamaları [SINIFLAR]'dan ona uygular. Ve değiştirilmiş classes.dex, odex dosyasına dayalı olarak üretir."</string>
+    <string name="help_custom_package_tag_detail">"Bu etiket, dalvik-cache'i doğrudan yamalamayacağımız, ancak classs.dex'i hedef uygulamadan çıkaracağımız, yamalayacağımız ([CLASSES] veya [ODEX] tanımlayıcılarını izleyen yamalarla), değişikliklerle bir odex görüntüsü oluşturacağımız ve uygulamaya koymak. Örneğin, TitaniumBuckup'ın ihtiyaç duyduğu görüntü budur. Kontrol eder ve içindeki tüm sağlama toplamlarının doğru olması gerekir. Her zaman bu etiketi kullanmanız önerilir, çünkü böyle bir yama en doğrudur, ancak herhangi bir soruna neden olursa, onsuz da yapabilirsiniz."</string>
+    <string name="help_custom_permission_tag">"Uygulama veri dizinindeki dosyalar için analog linux komutu \"chmod izinleri dosya_adı\" (ör. düzenlemeden sonra salt okunur hakları verin)
+Örnek:"</string>
+    <string name="help_custom_rename_file_in_apk_tag">"APK arşivindeki dosyayı yeniden adlandırın.
+Örnek:"</string>
+    <string name="help_custom_replace_from_file_param">Bu, bir \"orijinal\" ifadeyi izleyecektir, bu, ofsetin, belirtilen ada sahip dosyadaki baytlarla değiştireceği şeydir (dosya, özel yamanın yanına kaydedilmelidir).</string>
+    <string name="help_custom_replace_from_file_param_end">Bu, bir metin dosyasına yazması angarya olan çok uzun değiştirme kalıpları yazmaktan kaçınmak için yapılır.</string>
+    <string name="help_custom_replaced_param">Bu, \"orijinal\" veya \"kaydırma\" parametresini izlemelidir; bu, bu baytların üzerine yazılacağı veya belirtilen ofsette yazılacağı şeydir. (?? veya **) ile işaretlenen yerlerdeki baytlara dokunulmaz:</string>
+    <string name="help_custom_replaced_param_end">Bu örnekte, W0, W1, W2 baytları, önceden yürütülen \"arama\"da R0, R1, R2 olarak depolanmıştır.</string>
+    <string name="help_custom_s0_s1_sq_param">"smali değişkenini sırasıyla 0 (örn. onaltılı sayıyı şuna dönüştürür: 43->03,54->04...) veya 1 (örn. onaltılık basamakları hizalar (ör. onaltılık sayıyı şuna dönüştürür: 34->44, 51->11...).
+Örneğin, bir değişken var: const/4 v?,0x00. Soru işareti, değişkenin sayısının bilinmediğini gösterir (örneğin, daha yeni sürümde değiştirildikten sonra), ancak bu değişkenin 0'a eşit olduğundan eminsiniz ve bunu 1 olarak ayarlamak istiyorsunuz. Bunun gibi:"</string>
+    <string name="help_custom_s0_s1_sq_param_end">"Ve tam tersi, değişkeni 0'a ayarlamak için:"</string>
+    <string name="help_custom_search_param">"R[0, 1, 2, 3, ...] ile işaretlenmiş konumlardaki baytları arar; burada sayı, baytın depolandığı hücrenin numarasıdır (hücre numaraları 0'dan itibaren sıralanmalı ve tekrarlanmamalıdır) . Örneğin:"</string>
+    <string name="help_custom_search_param_end">"bu konumlardaki baytların R0, R1, R2'de depolanacağı anlamına gelir. Artık bulunduklarına ve kaydedildiklerine göre, bunları yalnızca R'yi W ile değiştirerek değiştirme desenlerinde kullanabilirsiniz."</string>
+    <string name="help_custom_shared_preferences_tag">"Uygulama ayarlarının saklandığı xml dosyasını düzenler (değerleri silebilir, ekleyebilir ve değiştirebilirsiniz).
+Örnek:"</string>
+    <string name="help_custom_sqlite_tag">"Bazen hedef uygulamada, herhangi bir olayı veya veriyi yazdığı veritabanındaki bir şeyi değiştirmek gerekir, ardından bu tanımlayıcı yardıma gelir.
+Örnek:"</string>
+    <string name="help_custom_syntax_text_start">İşte bir örnek. Netlik için birkaç etiketten derledim. Uygulamada, çok daha az işleve ihtiyacınız olacak. Dosyanın gövdesine şöyle bir şey yazıyoruz (ayırıcı sadece tek boşluk, aksi takdirde hata verecektir):</string>
+    <string name="help_custom_title_detailed_description">Etiketlerin ve parametrelerinin ayrıntılı açıklaması:</string>
+    <string name="help_custom_title_general">Genel Bilgi:</string>
+    <string name="help_custom_title_syntax">Sözdizimi yardımı:</string>
+    <string name="help_custom_use_option_rebuild_tag">Uygulama bu yama ile yeniden oluşturulursa %1$s seçeneğini açın.</string>
+    <string name="help_custom_warning_text">"Atlayışları kaldırmayın veya koşulsuz yapmayın! Optimizer çökecek ve yamanız ART'de çalışmayacak! Bunu önlemek için koşullu atlamalar kullanın. Örneğin, atlamanız gerekiyorsa, atlamayı \"if-eq v0,v0 (bytes: 32 00 ?? ??)\" ile değiştirin. Belirli bir yerde atlamanıza gerek yoksa \"if-ne v0,v0 (bytes: 33 00 ?? ??)\" gibi bir atlama ekleyebilirsiniz. Syrıca kendi eşdeğerinizi kullanmaktan çekinmeyin."</string>
+    <string name="help_custom_warning_title">UYARI:</string>
+    <string name="help_cyan_apps">Bu uygulama içinde reklam tespit edildi:</string>
+    <string name="help_describe_for_apply_changes_to_dalvik_cache">Varsayılan modda, tüm değişiklikler ODEX dosyasında kalır. Dalvik önbelleğine kopyalamak, ODEX dosyaları uygulama için çalışmadığında yardımcı olabilir (örneğin, bir uygulama bir SD karta taşındığında). Ancak, geri yüklemek için uygulamayı yeniden yüklemeniz gerekecektir.</string>
+    <string name="help_describe_for_backup_app">Daha sonra geri yüklemek için APK dosyasını yedekleyin. APK dosyası yedekler klasörüne kaydedilir.</string>
+    <string name="help_describe_for_backup_settings_app">Uygulama verilerini dahili bellekten Lucky Patcher klasörüne yedekler.</string>
+    <string name="help_describe_for_create_backup_before_patch">"APK dosyasını Lucky Patcher'ın Veri Klasöründeki SD karta kopyalayın. Uygulamayı bu APK'den yeniden yükleyebilirsiniz (geri yüklemek için)"</string>
+    <string name="help_describe_for_create_mod_apk">Önceden uygulanmış yamalarla bir kurulum paketi APK oluşturur. Yeniden oluşturulmuş uygulamanın, yama aracı aracılığıyla yamalanmış bir uygulama ile aynı şekilde çalışmayabileceğini aklınızda bulundurmalısınız. Bu bir sorun olabilir çünkü bir uygulama, kod ve imzadaki herhangi bir değişikliği bulmak için kendini kontrol edebilir.</string>
+    <string name="help_describe_for_create_odex">Uygulamanın değiştirilmemiş bir ODEX dosyası oluşturun.</string>
+    <string name="help_describe_for_dex_verification_killer">Bazen uygulama yeniden oluşturma işleminden sonra başlamaz veya yanlış bir imza veya dex dosyaları sağlama toplamı hakkında şikayet eder veya satın alma işlemi yapmaz ve benzeri. Bu durumda, bu işlev yardımcı olabilir. Uygulama içinde imza doğrulamasını kandırmaya veya dosyaları sağlama toplamı doğrulamasını dex etmeye çalışan kod enjekte eder. Bu seçenek yalnızca özgün uygulamaya uygulanmalıdır. Zaten düzeltme eki uygulanmış bir seçeneğe uygulanırsa, bu seçenek zaten başarıyla uygulanmış olsa bile bozulur. Yöntemin bir sonucu olarak, uygulamanın boyutu iki katına çıkacaktır.</string>
+    <string name="help_describe_for_disable_components_pm_disable">"Seçilen izinleri, hizmetleri, etkinlikleri vb. kaldırır. Bu yetenek Android'de yerleşiktir ve bu nedenle zararlı değildir. Çalışmayı durdurabilecek tek şey, izinleri yeniden etkinleştirerek kolayca düzeltilebilen değiştirilmiş uygulamadır. Bu yöntemi kullandıktan sonra, uygulamanın başlatma sırasında her şeyi yeniden açma yeteneğine sahip olduğunu unutmayın."</string>
+    <string name="help_describe_for_hard_apk_permission_disale">Uygulamanın izinlerini kaldırır (sistem dosya paketlerini düzenler packages.xml). Bunu yaparken çok dikkatli olun. Bazı cihazlarda, bu yöntem döngüsel bir yeniden başlatmaya veya diğer istenmeyen sonuçlara yol açabilir. İzinleri devre dışı bırakmaya çalışmadan önce sistemin yedeğini yapın.</string>
+    <string name="help_describe_for_lvl_auto_mode">"Lisans kontrolünü kaldırma girişimleri. Yama uygulamasından sonra daha fazla uygulama kararlılığı için yalnızca temel şablonları kullanır. Gösterişsiz korumaya sahip çoğu uygulama için uygundur.
+(Bu yöntemle elde edilen yüzde düşükse, yamalı uygulamayı kullanırken internet bağlantısının açık olduğundan emin olun)"</string>
+    <string name="help_describe_for_lvl_auto_mode_dex">"Lisans kontrolünü kaldırma girişimleri. En kararlı yöntem. Yamayı uygulamaya uyguladıktan sonra, ilk çalıştırma için Google Play'in kurulu olması ve çalışan bir İnternet'e ihtiyacınız vardır."</string>
+    <string name="help_describe_for_lvl_auto_mode_inverse">\"%1$s\" ile birkaç fark var. \"%1$s\" uygulamaya başarılı bir şekilde yama uygulamadıysa yardımcı olabilir.</string>
+    <string name="help_describe_for_lvl_other_patches_extreme_mode">Lisans denetimini tamamen kaldırmayı deniyor. Tüm Şablonları kullanır. Düzeltme eki uygulanmış uygulama kararsız hale gelebilir, genellikle uygulama çevrimdışı olduğunda kararsızlık oluşur. Uygulamayı tekrar tekrar başlatmak, ekran yönünü değiştirmek veya devre dışı bırakma yardımcı olabilir.</string>
+    <string name="help_describe_for_lvl_remove">"Hedef uygulama, geliştirici imzası ile imzalanmalı ve başkası tarafından değiştirilmemelidir. Yamaların olumlu bir etkisi için, hedef uygulamayı ilk başlattığınızda, geçerli bir hesabın girildiği ve İnternet'in açık olduğu yüklü bir GooglePlay'e (Google market) ihtiyacınız var. Her zaman önce \"%1$s\" kullanarak lisans kontrolünü kaldırmaya çalışın, işe yaramazsa \"%2$s\" deneyin. Kritik hatalara neden oluyorsa, \"%3$s\" içinde yalnızca bazı kalıpları seçmeyi deneyebilirsiniz."</string>
+    <string name="help_describe_for_lvl_sellect_patterns">Seçilen yama gruplarını kullanarak lisans doğrulamasını kaldırmaya çalışır.</string>
+    <string name="help_describe_for_move_to_system">Kullanıcı uygulamasını sistem uygulamasına dönüştürür.</string>
+    <string name="help_describe_for_patch_on_reboot">"Lucky Patcher'ın yeni sürümlerinde, tüm değişiklikler uygulamanın bir ODEX dosyasına kaydedildiğinden, bu ayar eskidir ve yeniden başlatma sırasında değişmez. Bu ayar yalnızca, özel bir yama uygulamanın \".so\" kitaplıklarını değiştirirse yararlı olabilir; bu, yamanın açıklamasında belirtilecektir."</string>
+    <string name="help_describe_for_remove_ad_activities">Farklı uygulama etkinliklerini manuel olarak devre dışı bırakın. Bazı etkinliklerin ne yaptıklarına dair bir açıklaması vardır. Uygulama çalışmayı durdurursa etkinlikler tekrar etkinleştirilebilir.</string>
+    <string name="help_describe_for_remove_ads">Reklamları kaldırma girişimleri. Lucky Patcher, reklam içeren bir uygulamada reklam bulmasa bile bu yamayı kullanmayı deneyin. Bu reklamları kaldırabilir.</string>
+    <string name="help_describe_for_remove_dalvik_cache_after_patch">ODEX dosyasını oluşturduktan sonra, alandan kazanmak için uygulamanın dalvik-önbelleği silinir. Uygulama ODEX ile çalışmazsa, uygulamayı yeniden yüklemeniz gerekecektir.</string>
+    <string name="help_describe_for_remove_odex">Değişiklikleri içeren ODEX dosyasını kaldırır. Böylece, uygulamayı orijinal durumuna geri yükler.</string>
+    <string name="help_describe_for_remove_purchase_from_db">Google Ödeme Öykünmesi ile kaydedilen satın alma işlemlerini kaldırın.</string>
+    <string name="help_describe_for_restore_app">Uygulamayı yedekler klasöründeki bir APK dosyasından geri yükleyin.</string>
+    <string name="help_describe_for_restore_app_data">Dahili bellekte saklanan uygulama verilerini /data/data/application_package_name/ klasörüne geri yükleyin.</string>
+    <string name="help_describe_for_safe_apk_permission_disale">"APK'yı değişikliklerle yeniden oluşturarak seçilen izinleri kaldırır. Bu yöntem, uygulama imzasını değiştirmez. Bu yalnızca sistem uygulamalarında veya Android'e \"%1$s\" yaması uygulandıysa tüm uygulamalarda çalışır."</string>
+    <string name="help_describe_for_safe_apk_permission_disale_rebuild_and_install">Güvenli yönteme benzer, ancak bu yöntem yeni imza kullanır ve orijinal imzayı tutmaz. Uygulama, imzayı kontrol ederse bu yöntemi kullanarak düzgün çalışmayabilir.</string>
+    <string name="help_describe_for_share_this_app">Seçilen uygulamanın yedek APK dosyasını oluşturur ve herhangi bir uygulamada paylaşır.</string>
+    <string name="help_describe_for_signature_verification_killer">Bazen uygulama yeniden oluşturma işleminden sonra başlamaz veya yanlış bir imzadan şikayet eder veya satın alma işlemi yapmaz ve benzeri. Bu durumda, bu işlev yardımcı olabilir. Uygulama içindeki imza doğrulamasını kandırmaya çalışan kod enjekte eder. Bu seçenek yalnızca özgün uygulamaya uygulanmalıdır. Zaten düzeltme eki uygulanmış bir seçeneğe uygulanırsa, bu seçenek zaten başarıyla uygulanmış olsa bile bozulur.</string>
+    <string name="help_describe_for_support_patch_inapp">Uygulamaya InApp öykünmesi için destek ekler. InApp emülasyonu Geçişler menüsünde açılabilir.</string>
+    <string name="help_for_inapp_non_root_method1">"- Hedef uygulamayı \"%1$s\" ile yeniden oluşturun
+- Orijinal uygulamayı silin (önbellek klasörünü silinmemesi için yeniden adlandırın).
+- Uygulamanın yeniden oluşturulmuş sürümünü yükleyin (önbellek klasörünü yeniden adlandırın, varsa).
+- Lucky Patcher anahtarlarında \"%2$s\"yi etkinleştirin.
+Deneyebileceğiniz her şeyi satın alın. Nadiren işe yarar ama mucizeler olur :)"</string>
+    <string name="help_for_inapp_non_root_method1_note">"Bazen, satın alma koruması uygulama imzası doğrulamayı kullanır. Bu durumda, \"%1$s\" seçeneğinin kullanılması yardımcı olabilir.
+"</string>
+    <string name="help_for_inapp_root_method1">"İlk yama Android'i (%1$s) uygulayın ve değiştirilmiş bir market sürümü 3+ yükleyin. Bundan sonra, tüm satın alımlarınız, \"%2$s\" seçeneği etkinleştirilirse, Lucky Patcher'a yönlendirilecektir. Normal yasal alışveriş moduna dönmek için, \"%2$s\" anahtarını kapatmanız yeterli. Bu yöntem, Freedom'ın çalışmasına benzer ve verimlilik açısından ondan daha düşük değildir, ancak Google Play'in çalışmasını kesintiye uğratmadan satın alma işlemi yapmanıza olanak tanıyan bir Google Play'de bir değişiklik uyguladı.  N  nNasıl yapmalı?
+- Lucky Patcher'ı Kurun:)
+- Lucky Patcher'ın alt panelini seçin \"%3$s->%4$s\", en üstteki öğeyi seçin (%1$s) uygulamak için dokunun. Yeniden başlattıktan sonra, bu diyalogdaki ilk yama 2/2 uygulandı olarak işaretlenmelidir. (Bu adımı atlayabilirsiniz, ancak bunu yapmak daha iyidir, çünkü işe yaramazsa, o andan itibaren bir şeyler yapmak mantıklı gelmez). Yama uygulaması başarısız olursa, ilk seçenek modülü olan Xposed Lucky Patcher'ı kullanmayı deneyebilirsiniz;
+- Lucky Patcher'ı başlatın, İnternet bağlantısını açın ve \"%3$s->%5$s\" alt panelini seçin, doğru sürümü ve yüklemeyi tıklayın;
+- \"%3$s->%6$s\" konumunda Google Play testi yapın.
+"</string>
+    <string name="help_for_inapp_root_method2">"İlk Android yamasını uygulayın (İmza doğrulaması her zaman doğrudur) ve \"%1$s\" anahtarını açın. Bundan sonra, tüm satın alımlarınız Lucky Patcher'a yönlendirilecektir."</string>
+    <string name="help_for_inapp_root_method2_disadvantages">"- Google Play, proxy sunucusu etkinken çalışmaz;
+- Satın alma işlemleriyle ilgili orijinal bilgileri kontrol etmek için korumalı uygulamalarda etkili değildir;
+- Kaydedilmiş satın alma işlemleriyle birlikte sakıncalıdır, çünkü kayıtlı satın alma işlemlerini kullanıcıya veremez. proxy sunucusu devre dışıysa uygulama.
+"</string>
+    <string name="help_for_inapp_root_method3">"Cihazınızda Xposed varsa, Lucky Patcher'ın Xposed modülünü açabilirsiniz.
+Dikkat: Xposed \"%1$s\" modülündeki dördüncü seçeneği yalnızca değiştirilmiş bir Google Play'iniz yoksa etkinleştirmeniz gerekir Kurulmuş. Değiştirilen Google Play yüklü değilse birinci ve dördüncü seçenekleri etkinleştirerek uygulama içi satın alımlar yapabilirsiniz. Beşinci seçenek, şanslı yamayı homurdanırsa uygulamadan gizlemeye çalışmaktır."</string>
+    <string name="help_for_inapp_root_method3_disadvantages">"- Satın almalarla ilgili orijinal bilgileri kontrol etmek için korumalı uygulamalarda etkili değildir;
+- Lucky patcher'ı güncellerken Xposed'ın kendisi hatalıdır, bazen Xposed modülünü devre dışı bırakır, Xposed'in kendisinde devre dışı bırakmanız ve tekrar açıp yeniden başlatmanız gerekir cihaz
+"</string>
+    <string name="help_for_inapp_root_method4">"Hedef uygulamaya \"%1$s\" uygulayın. Bundan sonra, tüm satın alımlar Lucky Patcher'a yönlendirilmelidir. Bu yöntemin çalışması için Lucky Patcher anahtarlarında \"%2$s\"yi etkinleştirmeniz gerekir. Bu yöntem, yalnızca yama uyguladığınız uygulamalarda öykünme yoluyla satın almak istiyorsanız kullanışlıdır.
+Ya da \"%3$s\" yamasını (çok uzun) uygulayın ve tüm satın alma işlemleri proxy olmadan doğrudan Lucky Patcher'a yönlendirilecektir."</string>
+    <string name="help_for_inapp_root_method4_disadvantages">"- Uygulama içi satın alma kodu, yamanın erişemeyeceği bir yerde saklanabileceği için tüm uygulamalarda çalışmaz.
+- Satın almalarla ilgili orijinal bilgileri kontrol etmek için korumalı uygulamalarda etkili değildir.
+"</string>
+    <string name="help_green_apps">Bu uygulamanın lisanslı olma ihtimali yüksektir:</string>
+    <string name="help_instruction_for_create_apk">"- Uygulamanın/Yazılımın adına dokunun ve \"%1$s\" öğesini seçin;
+- APK Modifikasyonu için Yamayı seçin;
+- Değiştirilen yükleme dosyası Lucky Patcher klasöründe olacaktır (bunu Hakkında bölümünde görebilirsiniz);
+- Yeniden oluşturulmuş bir APK dosyasının, yama zaten yüklü olan uygulama ile aynı olmadığını bilmelisiniz. Basitçe yama yapmanın aksine, uygulama değişikliklere karşı kendinizi test etmek çok kolaydır ve bu nedenle doğru çalıştığı için başarısız olur. Ayrıca, değiştirilen uygulamayı yeniden yükledikten ve orijinal uygulamayı kaldırdıktan sonra tüm uygulama verilerinin kaybolacağını unutmayın."</string>
+    <string name="help_instruction_for_custom_patch">"- Uygulamanın/Yazılımın adına dokunun ve \"%1$s\" öğesini seçin;
+- Uygulamayı İnternet ile çalıştırın ve test edin;
+- Şanslıysanız, yama çalıştı;
+- Uygulamayı orijinal haline döndürmek için durum, \"%2$s\" veya \"%3$s\" ye dokunmanız gerekiyor."</string>
+    <string name="help_instruction_for_remove_ads">"- Uygulamanın/yazılımın adına dokunun ve \"%1$s\" öğesini seçin;
+- Ardından \"%2$s\" öğesini seçin;
+- Uygulamayı Internet ile çalıştır ve test edin;
+- Reklamlar hala mevcutsa, \"%3$s\" öğesine dokunun, Reklam etkinliklerini bulun ve devre dışı bırakın;
+- Şanslıysanız, Reklamlar kaybolmalıydı;
+- Uygulamayı özgün durumuna döndürmek için \"%4$s\" veya \"%5$s\" öğesine dokunmanız gerekir."</string>
+    <string name="help_instruction_for_remove_lvl">"- Hedef olarak yalnızca geliştirici tarafından imzalanmış orijinal APK dosyalarını kullanın;
+- Uygulamanın/yazılımın adına dokunun ve \"%1$s\" öğesini seçin;
+- \"%2$s\" öğesini seçin ve uygulamayı internet erişimiyle sınayın;
+- Sonuç negatifse, \"%3$s\" veya \"%4$s\" seçeneğini belirleyin;
+- Şanslıysanız, programınız kaydedilir;
+- Uygulamayı özgün durumuna döndürmek için \"%5$s\" veya \"%6$s\" öğesine dokunmanız gerekir."</string>
+    <string name="help_klever">Lucky Patcher bu uygulamada değişiklikler yaptı. Örneğin, yonca yanıyor ancak yıldız yanmıyorsa, o zaman değişiklikleri içeren odex dosyası oluşturulmadı, ancak uygulamanın dalvik önbelleği, kitaplıkları yamalandı veya etkinleştirme ve izinler değiştirildi</string>
+    <string name="help_magenta_apps">Bu uygulamalar Önyükleme Listesindedir*</string>
+    <string name="help_orange_apps">Bunlar sistem uygulamalarıdır. Bunları düzenlemek, uygulamaya veya işletim sistemine geri dönüşü olmayan zararlar verebileceğinden onlarla herhangi bir işlem yaparken çok dikkatli olun (her zaman uygun programlarla yedek kopyalar yapın).</string>
+    <string name="help_purple_apps">Uygulama İçi satın alımları içeren uygulama</string>
+    <string name="help_red_apps">Bu uygulamada herhangi bir doğrudan gösterge bulunamadı, ancak içinde bir lisans kontrolü veya reklam olabilir. (Çoğu zaman, bu tür uygulamalarda bir lisans kontrolü iki bölümden oluşursa gerçekleşir: program + uygulama anahtarı)</string>
+    <string name="help_root_warning">"Lucky Patcher'ın tüm özelliklerin çalışması için root erişimine ihtiyacı var. Root izinleri olmadan, program sınırlı modda çalışır."</string>
+    <string name="help_star">"Bu, uygulamanın bir \"odex\" dosyasına sahip olduğu anlamına gelir. Modern Android'ler için, odex dosyası yalnızca sistem uygulamaları için gösterilir."</string>
+    <string name="help_sub_describe_for_inapp_buy_dialog_auto_purchase">"Bu seçenek etkinleştirilirse, aynı öğeyi bir dahaki sefer satın aldığınızda, satın alma işlemi Lucky Patcher'ın satın alma iletişim kutusu olmadan yapılacaktır (satın alma, sorgusuz sualsiz hemen uygulamaya gelir). Almayı kabul ettiğiniz her seferde basmamak için uygulama vb. altınları topladığınızda gereklidir :)
+Uygulamanın üzerine şanslı yamacı listesinden uzun basarak ve \" seçerek otomatik satın alma işlemini silebilirsiniz. %1$s\", ardından listedeki gereksiz otomatik satın almaları kaldırır."</string>
+    <string name="help_sub_describe_for_inapp_buy_dialog_save_purchase">"Kök ayrıcalıkları olmayan kullanıcılar, yazarların yanlışlıkla imza verilerini kontrol etmediği eski oyunlar ve uygulamalar için kullanışlıdır.
+Bu seçenek, satın alma işlemini Lucky Patcher'ın veritabanına kaydeder, böylece saldırıya uğrayan uygulama bir sonraki başlatılışında Lucky Patcher onu bilgilendirir bu satın alımın satın alınmış sayılması gerektiğini. Bu, çeşitli abonelik türleri ve diğer şeyler için gereklidir.
+Neyi etkinleştireceğinizi nasıl bilirsiniz? Örneğin, uygulamanın tam sürümünü satın alırsınız ve satın alma işlemi başarılı olur, ancak uygulamayı yeniden başlattıktan sonra, siz tekrar satın alana kadar kendisini yine tamamlanmamış bir sürüm olarak kabul eder. Bu seçenek açık olduğunda, uygulamaya boş bir imza ile satın alma ile ilgili yanlış veriler gönderilecek ve bu satın alma işleminin doğru olma olasılığı vardır ve uygulama yeniden başlatıldıktan sonra kendisini satın alınmış olarak kabul edecektir.
+
+Kök ayrıcalıklarına sahip kullanıcılar daha iyi yapar yarardan çok zarar verebileceğinden bu seçeneği kullanmayın."</string>
+    <string name="help_sub_title_for_inapp_disadvantages_method">Bu yöntemin dezavantajları:</string>
+    <string name="help_sub_title_for_inapp_non_root">Root izinleri olmayan kullanıcılar için:</string>
+    <string name="help_sub_title_for_inapp_non_root_method1">Yöntem #1:</string>
+    <string name="help_sub_title_for_inapp_root">Root izinlerine sahip kullanıcılar için:</string>
+    <string name="help_sub_title_for_inapp_root_method1">1. Yöntem (en etkili ve önerilen):</string>
+    <string name="help_sub_title_for_inapp_root_method2">2. Yöntem:</string>
+    <string name="help_sub_title_for_inapp_root_method3">3. Yöntem:</string>
+    <string name="help_sub_title_for_inapp_root_method4">4. Yöntem:</string>
+    <string name="help_sub_title_for_purchase_window">Satın alma penceresi seçenekleri:</string>
+    <string name="help_title1">Renk Bazlı Açıklama:</string>
+    <string name="help_title_for_context_menu">Durum Menüsü:</string>
+    <string name="help_title_for_inapp">Lucky Patcher Üzerinden Alışveriş Seçenekleri:</string>
+    <string name="help_title_for_instructions">Talimatlar:</string>
+    <string name="help_title_instruction_for_create_apk">Değiştirilmiş APK oluşturmak için:</string>
+    <string name="help_title_instruction_for_custom_patch">Özel yamayı kullanmak için:</string>
+    <string name="help_title_instruction_for_remove_ads">Reklamları Kaldırmak İçin:</string>
+    <string name="help_title_instruction_for_remove_lvl">Lisans Doğrulamasını kaldırmak için:</string>
+    <string name="help_yellow_apps">Lucky Patcher dizininde bu uygulama için özel bir yama bulundu</string>
+    <string name="hide_notify">Bildirimleri Gizle</string>
+    <string name="hide_notify_descr">Lucky Patcher bildirimlerini gizler.</string>
+    <string name="hide_title_app">Başlığı Gizle</string>
+    <string name="hide_title_app_descr">"Lucky Patcher'ın başlığını uygulamalar listesinden kaldırır. Sadece donanımsal(hardware) menü tuşuna sahip olan cihazlarda çalışır."</string>
+    <string name="home">Başa dön</string>
+    <string name="host_down">Sunucu erişilebilir değil. Daha sonra tekrar deneyin.</string>
+    <string name="hosts_default">\"hosts\" dosyası geri yüklendi.</string>
+    <string name="hosts_not_found_changes">\"hosts\" dosyasında değişiklik bulunamadı...</string>
+    <string name="hosts_updated">\"hosts\" dosyası güncellendi...</string>
+    <string name="icon_content_description">İletişim kutusu simgesi</string>
+    <string name="import_settings">Ayarları içe aktar</string>
+    <string name="import_to_lucky_patcher">"Lucky Patcher'a aktar"</string>
+    <string name="inapp_emulation_auto_repeat">Satın-almaları şuanki ayarlar ile otomatik tekrarla</string>
+    <string name="info_about_deleted_magisk_module_after_change_firmware">Donanım yazılımınız değiştirildi. Android yamaları için magisk modülü bunun için uygun değildir ve bu nedenle kaldırılmıştır. Cihaz yeniden başlatıldı. Gerekirse Android yamalarını yeniden uygulayın.</string>
+    <string name="info_about_deleted_magisk_module_after_change_firmware_2">Donanım yazılımınız değiştirildi. Android yamaları için magisk modülü buna uygun olmadığı için kaldırılacaktır. Cihazın şu anda yeniden başlatılması gerekiyor.</string>
+    <string name="info_about_deleted_magisk_module_after_change_firmware_notify">Magisk modülü kaldırıldı.</string>
+    <string name="info_about_permissions_optional">"İsteğe bağlı izinler:
+"</string>
+    <string name="info_about_permissions_optional_describe">"Analitik ve reklamların kişiselleştirilmesi için kullanılır. Eğer bu izinlere dair endişeniz var ise, bu izinleri reddedebilirsiniz. Bu izinler Lucky Patcher'ın çalışmasını etkilemeyecektir."</string>
+    <string name="info_about_permissions_optional_perms">"ACCESS_COARSE_LOCATION
+READ_PHONE_STATE
+"</string>
+    <string name="info_about_permissions_required">"Gerekli izinler:
+"</string>
+    <string name="info_about_permissions_required_describe">"Dosyalarla çalışmak için gereklidir. Olmadığı takdirde Lucky Patcher çalışmayacaktır.
+"</string>
+    <string name="info_about_permissions_required_perms">"READ_EXTERNAL_STORAGE
+WRITE_EXTERNAL_STORAGE
+"</string>
+    <string name="information">Bilgiler</string>
+    <string name="install">Yükle</string>
+    <string name="install_app_for_user">Kullanıcı için Uygulamayı yükle</string>
+    <string name="install_app_for_user_message">Geçerli kullanıcı için %s sistem uygulamasını gerçekten yüklemek istiyor musunuz?</string>
+    <string name="install_as_user_app">"Google Play'i Normal Uygulama olarak kur."</string>
+    <string name="install_as_user_app_note">Gerekenler: \"Android Yamaları\" ve Google Play Store</string>
+    <string name="install_cloned_app">Klonu yükle</string>
+    <string name="install_date">Yükleme tarihi:</string>
+    <string name="installation_option">Yükleme için rastgele uygulama adı kullanın</string>
+    <string name="installed_from">Şuradan yüklendi</string>
+    <string name="installer_error_aborted">Yükleme kullanıcı tarafından iptal edildi</string>
+    <string name="installer_error_bad_apks">Geçersiz APK dosyaları seçildi</string>
+    <string name="installer_error_bad_apks_file">Hata: base.apk dosyası apks dosyasının içinde bulunamadı.</string>
+    <string name="installer_error_blocked">Yükleme %s tarafından engellendi</string>
+    <string name="installer_error_blocked_device">cihaz</string>
+    <string name="installer_error_conflict">Uygulama, aynı paket ismine sahip yüklü bir uygulama ile çakıştığından dolayı yüklenemedi</string>
+    <string name="installer_error_generic">Yükleme başarısız oldu</string>
+    <string name="installer_error_generic_miui_warning">Eğer miui yazılımınız varsa, sıkıntıyı yazılımın geliştirici ayarlarından \"MIUI iyileştirmelerini etkinleştir\" seçeneğini kapatarak çözebilirsiniz.</string>
+    <string name="installer_error_incompatible">Uygulama bu cihaz ile uyumlu değil</string>
+    <string name="installer_error_lidl_rom">Sisteminiz rootsuz yükleyici ile uyumsuzdur. Yükleme yalnızca rootlu yükleyici yardımı ile mümkündür.</string>
+    <string name="installer_error_rootless">"Rootsuz yükleyici hatası:
+
+ %s"</string>
+    <string name="installer_error_storage">Uygulamayı yüklemek için gerekli depolama alanı mevcut değil</string>
+    <string name="installer_not_support_by_firmware">Cihazınızdaki yazılım bölünmüş apks dosyalarının yüklenmesini desteklemiyor.</string>
+    <string name="installer_prepare">Bölünmüş uygulama yüklemeye hazırlanılıyor.</string>
+    <string name="installer_rootless_error2_install_failed_aborted">Yükleme kullanıcı tarafından iptal edildi veya durduruldu</string>
+    <string name="installer_rootless_error2_install_failed_already_exists">Bu paket zaten yüklü</string>
+    <string name="installer_rootless_error2_install_failed_bad_dex_metadata">Dex meta veri dosyası geçersiz veya dex meta veri dosyası için eşleşen bir APK dosyası yok</string>
+    <string name="installer_rootless_error2_install_failed_bad_signature">APK imzasıyla ilgili bir sorun var</string>
+    <string name="installer_rootless_error2_install_failed_conflicting_provider">Paket, sistemde zaten yüklü olan bir sağlayıcıyla aynı yetkiye sahip bir içerik sağlayıcısı içeriyor</string>
+    <string name="installer_rootless_error2_install_failed_container_error">Harici medyadan güvenli konteyner bağlama noktasına erişilemedi</string>
+    <string name="installer_rootless_error2_install_failed_cpu_abi_incompatible">"Paket, bu cihazın CPU'suyla uyumlu yerel kod içermiyor"</string>
+    <string name="installer_rootless_error2_install_failed_dexopt">Yeterli depolama alanı olmadığı veya doğrulama başarısız olduğu için paket dex dosyaları optimize edilirken ve doğrulanırken yükleme başarısız oldu</string>
+    <string name="installer_rootless_error2_install_failed_duplicate_package">Aynı ada sahip paket zaten yüklü</string>
+    <string name="installer_rootless_error2_install_failed_duplicate_permission">Paket, yüklü başka bir paket tarafından önceden tanımlanmış bir izin tanımlamaya çalışıyor</string>
+    <string name="installer_rootless_error2_install_failed_instant_app_invalid">Anında uygulama ile desteklenmeyen işlem</string>
+    <string name="installer_rootless_error2_install_failed_insufficient_storage">Cihazda uygulamayı yüklemek için yeterli alan yok</string>
+    <string name="installer_rootless_error2_install_failed_internal_error">Sistem sorunları nedeniyle yükleme başarısız oldu</string>
+    <string name="installer_rootless_error2_install_failed_invalid_apk">APK dosyası geçerli değil</string>
+    <string name="installer_rootless_error2_install_failed_invalid_install_location">Paket belirtilen konuma yüklenemedi</string>
+    <string name="installer_rootless_error2_install_failed_invalid_uri">Geçen URI geçerli değil</string>
+    <string name="installer_rootless_error2_install_failed_media_unavailable">Medya kullanılamadığı için paket belirtilen konuma yüklenemedi</string>
+    <string name="installer_rootless_error2_install_failed_missing_feature">Paket, bu cihaz tarafından desteklenmeyen bir özellik gerektiriyor</string>
+    <string name="installer_rootless_error2_install_failed_missing_shared_library">Uygulama, cihaza yüklenmemiş bir paylaşılan kitaplık istedi</string>
+    <string name="installer_rootless_error2_install_failed_missing_split">Paket bölme gerektirir, ancak bunlar sağlanmadı</string>
+    <string name="installer_rootless_error2_install_failed_multipackage_inconsistency">Alt paket yükleyici oturumlarından biri, aşamalı veya geri alma etkinleştirilmiş parametrelerle ilgili üst oturumla eşleşmiyor</string>
+    <string name="installer_rootless_error2_install_failed_newer_sdk">Cihazın Android sürümü paketin gerektirdiğinden daha yüksek</string>
+    <string name="installer_rootless_error2_install_failed_no_matching_abis">"Paket, bu cihazın CPU'suyla uyumlu yerel kod içermiyor"</string>
+    <string name="installer_rootless_error2_install_failed_no_shared_user">Paket tarafından istenen paylaşılan kullanıcı yok</string>
+    <string name="installer_rootless_error2_install_failed_older_sdk">Cihazın Android sürümü paketin gerektirdiğinden daha düşük</string>
+    <string name="installer_rootless_error2_install_failed_other_staged_session_in_progress">Bu paket adı için zaten bir paket yükleyici oturumu var</string>
+    <string name="installer_rootless_error2_install_failed_package_changed">Paket yükleme yolu beklenmedik şekilde değişti</string>
+    <string name="installer_rootless_error2_install_failed_permission_model_downgrade">Paketin yeni sürümü çalışma zamanı izinlerini desteklemiyor, ancak şu anda yüklü sürüm destekliyor</string>
+    <string name="installer_rootless_error2_install_failed_replace_couldnt_delete">Sistem bu paketin önceki sürümünü silemedi</string>
+    <string name="installer_rootless_error2_install_failed_sandbox_version_downgrade">Paketin yeni sürümü, bu paketin şu anda yüklü sürümünden daha düşük bir sandbox sürümü gerektiriyor</string>
+    <string name="installer_rootless_error2_install_failed_shared_user_incompatible">Uygulama zaten var olan bir paylaşılan kullanıcı istedi, ancak imzaları eşleşmiyor</string>
+    <string name="installer_rootless_error2_install_failed_test_only">Yüklü paket yalnızca test amaçlıdır ve INSTALL_ALLOW_TEST bayrağı sağlanmadı</string>
+    <string name="installer_rootless_error2_install_failed_uid_changed">Pakete daha önce tutulduğundan farklı bir UID verildi</string>
+    <string name="installer_rootless_error2_install_failed_update_incompatible">Uygulama imzası, aynı paket adı ile zaten yüklü bir uygulamanın imzası eşleşmiyor</string>
+    <string name="installer_rootless_error2_install_failed_user_restricted">Bu kullanıcının uygulama yüklemesi yasaklandı</string>
+    <string name="installer_rootless_error2_install_failed_verification_failure">Paket doğrulanamadı</string>
+    <string name="installer_rootless_error2_install_failed_verification_timeout">Paket doğrulaması zaman aşımına uğradı</string>
+    <string name="installer_rootless_error2_install_failed_version_downgrade">Bu paketin daha yeni bir sürümü zaten yüklü</string>
+    <string name="installer_rootless_error2_install_failed_wrong_installed_version">Önceden yüklenmiş bir paketin gerekli sürümü, yüklenen paketin gerçek sürümüyle eşleşmiyor</string>
+    <string name="installer_rootless_error2_install_parse_failed_bad_manifest">"APK manifest'i alınamıyor"</string>
+    <string name="installer_rootless_error2_install_parse_failed_bad_package_name">"APK'da kötü veya eksik paket adı var"</string>
+    <string name="installer_rootless_error2_install_parse_failed_bad_shared_user_id">APK kötü paylaşılan kullanıcı kimliğine sahip</string>
+    <string name="installer_rootless_error2_install_parse_failed_certificate_encoding">Sertifika kodlaması başarısız</string>
+    <string name="installer_rootless_error2_install_parse_failed_inconsistent_certificates">"APK'daki dosyalarda tutarsız sertifikalar bulundu"</string>
+    <string name="installer_rootless_error2_install_parse_failed_manifest_empty">"APK manifest'i boş"</string>
+    <string name="installer_rootless_error2_install_parse_failed_manifest_malformed">"APK manifest'i bozuk"</string>
+    <string name="installer_rootless_error2_install_parse_failed_no_certificates">APK dosyası sertifika içermiyor</string>
+    <string name="installer_rootless_error2_install_parse_failed_not_apk">Sağlanan dosya bir APK dosyası değil</string>
+    <string name="installer_rootless_error2_install_parse_failed_unexpected_exception">APK ayrıştırıcı beklenmedik bir istisna ile karşılaştı</string>
+    <string name="installer_rootless_error2_unknown">Bilinmeyen hata</string>
+    <string name="installer_slit_get_apk_from_apks">Yükleyici dosyaları apks arşivinden alıyor.</string>
+    <string name="installer_slit_install_in_progress">Yükleme işlemi devam etmekte.</string>
+    <string name="installer_slit_successfully_installed">Bölünmüş uygulama %s başarıyla yüklendi.</string>
+    <string name="installsupersu">"SuperSU'yu Yükle (ICS)"</string>
+    <string name="integrate_dalvik_code_dialog_good_message">Seçilen apk dosyasından entegre Dalvik kodu. Düzgün çalışmıyor, ama test etmelisiniz...</string>
+    <string name="integrate_dalvik_code_dialog_title">Entegrasyon sonuçları</string>
+    <string name="integrate_dalvik_code_message">Dalvik kodunu apk dosyasından entegre etmek istediğinizden emin misiniz</string>
+    <string name="integrate_to_system">"Bu uygulama için güncellemeleri /system'e entegre etmek istediğinizden emin misiniz?"</string>
+    <string name="integrate_updates_result">Güncelleme entegrasyonunun sonuçları</string>
+    <string name="integrate_updates_result_message">Değişikliklerin uygulanması için cihazı yeniden başlatmanız gerekir.</string>
+    <string name="integrate_updates_result_message_not_finished">"/data'dan /system'e sistem uygulaması güncellemelerini aktarmak için tamamlanmamış bir işlem algılandı. Cihaz zaten yeniden başlatıldıysa, \"Evet\" düğmesini, yeniden başlatılmadıysa \"Hayır\" düğmesini tıklayın. Aksi takdirde, /data'dan güncellemeleri kaldırdığınızda uygulama verileriniz sıfırlanır. /data'dan uygulama güncellemelerini kaldırmak istiyor musunuz?"</string>
+    <string name="integrate_updates_to_system">"Güncellemeleri /system'e entegre et"</string>
+    <string name="internet_not_found">İnternet bağlantısı gerekli.</string>
+    <string name="is_an_invalid_number">Geçersiz bir numara girdiniz...</string>
+    <string name="item_view_role_description">Sekme</string>
+    <string name="langdef">Varsayılan Dil</string>
+    <string name="langen">Türkçe</string>
+    <string name="langmenu">Dil</string>
+    <string name="launchbutton">Başlat</string>
+    <string name="licensing_hack_menu_disable">Google lisans doğrulaması Emülasyonunu devre dışı bırak</string>
+    <string name="licensing_hack_menu_enable">Google lisans doğrulaması Emülasyonunu etkinleştir</string>
+    <string name="line">"***********************
+"</string>
+    <string name="loadpkg">Paketler yükleniyor</string>
+    <string name="lp_backups_export_failed">Ayarları yedekleme işlemi başarısız. Tekrar deneyin.</string>
+    <string name="lp_backups_export_succes">"Ayarlar başarıyla yedeklendi. Yedek dosya'sı şurada bulunuyor"</string>
+    <string name="lp_backups_import_failed">Bilinmeyen bir dosya formatı seçildi. Ayarlarınızın yedeğinin bulunduğu başka bir dosya seçin.</string>
+    <string name="lp_backups_import_succes">Uygulama ayarları, yedekten başarıyla geri yüklendi.</string>
+    <string name="lp_billing_hack_title">Uygulama içi satın alma yamalanıyor...</string>
+    <string name="lp_import_custom_patches">Lucky Patcher şu özel yamaları ve dosyaları aktardı:</string>
+    <string name="lvldescr">Lisans Doğrulaması olan tüm uygulamaları gösterir.</string>
+    <string name="lvltitle">LVL olan uygulamalar</string>
+    <string name="magisk_module_apps_descr_deleted">"Sistem uygulaması silindi (boş bir klasörle değiştirildi). Silinirse, uygulama firmware'e geri dönecektir."</string>
+    <string name="magisk_module_apps_descr_not_installed">Uygulama sistem bölümüne bağlandı, ancak sistem tarafından yüklenmedi.</string>
+    <string name="magisk_module_apps_descr_not_mounted">Bazı nedenlerden dolayı, bu uygulamanın dosyaları sistem bölümüne bağlanmamıştır.</string>
+    <string name="magisk_module_warning">"Bu özellikle ilgili sorun yaşıyorsanız, Magisk Manager ayarlarında Magisk Yalnızca Magisk modunu ve MagiskHide'ı devre dışı bırakmanız ve cihazı yeniden başlatmanız gerekir."</string>
+    <string name="magisk_warning2">Bu özellikle ilgili sorun yaşıyorsanız, magisk modülü seçeneğini etkinleştirmelisiniz.</string>
+    <string name="make_app_a_sys">Uygulamayı sisteme dönüştür</string>
+    <string name="make_app_to_system">Bu uygulamayı gerçekten bir Sistem Uygulaması yapmak istiyor musunuz?</string>
+    <string name="manage_magisk_module_apps">uygulamalar için Magisk modülünü yönet</string>
+    <string name="market_description_text">"\"Yükle\" tuşuna basarak resmi Google Play'in yerine kırılmış LVL (Lisans Onaylama Kitaplığı) versiyonu yükleyin.Eğer yeniden başlattıktan sonra Google Play çalışmaz ise, tekrar yükleyin. 
+Modifiye edilmiş Google Play nasıl çalışır:
+Uyarı!Paralı uygulamaları bedavaya \"İNDIREMEZSİNİZ\"!
+1. Sadece GoogleLVL-korumalı uygulamaları kırmadan kullanabilirsiniz.
+2. Lisans doğrulaması çevrimdışı iken bile başarılı sonuçlanacaktır.
+3. Artık lisans yaması uygulamaya gerek yok.
+4. Sunucu aracılığıyla Faturalandırma ve Lisans Doğrulanması çalışmayacaktır.
+5. \"İade Et\" tuşuna bastığında,ödemeniz iade edilecektir, fakat uygulama silinmeyecektir,bu yüzden uygulamayı iade etmeden önce yedeklemenize gerek yoktur.
+6. Şimdi Google Play tüm ödemelerinizi otomatik olarak Lucky Patcher Uygulama içi emülasyonuna yönlendirecektir."</string>
+    <string name="market_install">"Modlu Google Play Store'u yükle"</string>
+    <string name="market_version5">Modlu Google Play</string>
+    <string name="market_version6">Orijinal Google Play</string>
+    <string name="material_clock_toggle_content_description">"ÖÖ veya ÖS'yi seçin"</string>
+    <string name="material_hour_selection">Saat seçin</string>
+    <string name="material_hour_suffix">Saat %1$s</string>
+    <string name="material_minute_selection">Dakikayı seçin</string>
+    <string name="material_minute_suffix">%1$s dakika</string>
+    <string name="material_timepicker_am">AM</string>
+    <string name="material_timepicker_clock_mode_description">Zaman girişi için saat moduna geçin.</string>
+    <string name="material_timepicker_hour">Saat</string>
+    <string name="material_timepicker_minute">Dakika</string>
+    <string name="material_timepicker_pm">PM</string>
+    <string name="material_timepicker_select_time">Zamanı seçin</string>
+    <string name="material_timepicker_text_input_mode_description">Zaman girişi için metin girişi moduna geçin.</string>
+    <string name="max_version">maksimum sürüm</string>
+    <string name="menu_close_application">Uygulamayı Kapat</string>
+    <string name="menu_download_custom_patches">Özel yamaları indir</string>
+    <string name="messageAndroidManifest">AndroidManisfet.xml çıkartılamıyor. SD kartınızda tüm uygulamayı kopyalayacak yer olmayabilir.</string>
+    <string name="messagePath">"Dizin bulunamadı!
+Lütfen doğru dizini girin."</string>
+    <string name="messageSD">"SD kart bulunamadı!
+Bu özellik bir SD kart olmadan çalışamaz!"</string>
+    <string name="message_about_corrupt_apk_file">Orijinal apk dosyası bozuk. Uygulama yeniden oluşturulamıyor.</string>
+    <string name="message_about_patched_file">Bozuk dosya</string>
+    <string name="message_allow_non_market_app">Lütfen Güvenlik ayarlarından \"Bilinmeyen Kaynaklar\"ı etkinleştirin.</string>
+    <string name="message_apply_android_patch_for_proxy_gp">Google Play için proxy sunucusu, Android yaması uygulamanız gerekir \"İmza doğrulamayı herzaman kabul et\". Şimdi bir Android yaması uygulamak ister misiniz?</string>
+    <string name="message_clear_all_dalvik_cache">Dalvik belleği temizlemek istediğinizden emin misiniz?</string>
+    <string name="message_clear_data">Uygulamanın bütün verilerini silmek istediğinizden emin misiniz?</string>
+    <string name="message_delete_odex_file">Odex dosyasını silmek istediğinize emin misiniz?</string>
+    <string name="message_delete_package_new">"Kurulum bir hata ile tamamlandı. Bu APK'yı yüklemeden önce orijinal uygulamayı kaldırmanız gerekir. Bu işe yaramazsa, cihazı manuel olarak yeniden başlatın. Ayrıca, uygulamayı kaldırmayı deneyin."</string>
+    <string name="message_done_move_to_internal">Dahili hafızaya taşıma bitti:</string>
+    <string name="message_done_move_to_sdcard">SD Karta taşıma bitti:</string>
+    <string name="message_error_file_apk_for_install_corrupt">Kurulum dosyası bozuk ...</string>
+    <string name="message_error_move_to_internal">"Dahili hafızaya taşırken hata oluştu (tekrar deneyin):
+"</string>
+    <string name="message_error_move_to_sdcard">"SD karta taşırken hata oluştu (tekrar deneyin):
+"</string>
+    <string name="message_exit">Lucky Patcher uygulamasından çıkılsın mı?</string>
+    <string name="message_file_selector">%s dosyasını seçmek istediğinizden emin misiniz?</string>
+    <string name="message_for_reboot_after_android_patches">Yamalama sona erdi. İşe yaraması için cihazı yeniden başlatmalısınız. Cihazınızı yeniden başlatmak istiyor musunuz?</string>
+    <string name="message_for_removed_patch_boot">Yeniden başlatıldığında yamalama kaldırıldı.</string>
+    <string name="message_for_uninstall_and_install">%1$s uygulamasını silip yerinde seçili sürümü kurmak istediğinizden emin misiniz?</string>
+    <string name="message_installation_inapp_proxy">"Satın almalarda \"Uygulama İçi ve LVL Emulasyonlarına yardımcı yama\" kullanıyorsanız, \"uygulama içi satın almalar için vekil sunucu\" hizmetini yüklemeniz gerekir. Lakin bu Lucky Patcher'ın görünmezliğini bozacaktır. Bu hizmeti yüklemek ister misiniz?"</string>
+    <string name="message_installation_lp">Lucky Patcher v.%1$s yüklemek istediğinizden emin misiniz?</string>
+    <string name="message_lp_install_success_uninstall_intsaller">"Lucky Patcher başarıyla kuruldu. Şimdi Lucky Patcher'ın gizliliğini artırmak için uygulama yükleyicisini kaldırmanız gerekiyor."</string>
+    <string name="message_magisk_module_apps_delete_folder">Magisk modülünden 1%1$s klasörünü silmek istediğinizden emin misiniz?</string>
+    <string name="message_magisk_module_apps_delete_folder_apps">Magisk modülünden %2$s uygulamasına ait olan %1$s klasörünü kaldırmak istediğinizden emin misiniz?</string>
+    <string name="message_manage_magisk_module_apps_empty">Magisk modülü boş. Şimdiye kadar, bu modül kullanılarak sistem bölümüne tek bir uygulama bile aktarılmadı.</string>
+    <string name="message_old_app_version">"Lucky Patcher'ın eski bir sürümü bulundu. Lucky Patcher'ın gizlenmesini geliştirmek için bu sürümü silmelisiniz. Yalnız uygulamalarınıza \"Uygulama İçi ve LVL Emulasyonlarına yardımcı yama\" uyguladıysanız yeniden yamalamanız gerekecek veya asıl apk dosyasını yeni Lucky Patcher sürümünden yeniden oluşturmanız gerekecek. Eski sürümün silinmesini istiyor musunuz?"</string>
+    <string name="message_reboot">Yeniden başlatmak istiyor musunuz?</string>
+    <string name="message_remove_all_odex">"/system/app ve /data/app'teki tüm odex dosyalarını silmek istediğinizden emin misiniz? Bu işlem yalnızca classes.dex bulunduran uygulamaların odex dosyalarını silecektir."</string>
+    <string name="message_rescan_apps">Yüklenen tüm uygulamaları yeniden taratmak istediğinize emin misiniz?</string>
+    <string name="message_reset_dialog_settings">Tüm diyalog ayarlarını gerçekten sıfırlamak istiyor musunuz?</string>
+    <string name="message_reset_dialog_settings_done">Tüm diyalog ayarları sıfırlanır.</string>
+    <string name="message_signature_killer_for_apps_with_test_signature">Hedef uygulamanın imzası orijinal değil, \"%1$s\" seçeneği devre dışı bırakıldı.</string>
+    <string name="message_test_patch_downgrade">Uygulamayı Eski Sürüme Düşürme Testi</string>
+    <string name="message_test_patch_signatures">Farklı imzalara sahip uygulamaların kurulma olasılığını test etme</string>
+    <string name="message_test_patch_signatures_shareduser">"Farklı imzalara ve aynı sharedUserId'ye sahip uygulamaların kurulumunun test edilmesi"</string>
+    <string name="message_test_patch_terget_sdk_30_installing">İmza olmadan bir uygulama yükleme olasılığını test etme ver.2 ve targetSDK=30</string>
+    <string name="message_test_patch_unlocked">Yamayı uygulama becerisinin kilidi açılmıştır.</string>
+    <string name="message_test_pm_utility">\"Pm\" yardımcı programı test ediliyor</string>
+    <string name="message_test_pm_utility_fail">Yama noktaları kontrol edilemiyor çünkü \"pm\" yardımcı programı düzgün çalışmıyor.</string>
+    <string name="message_to_reboot_device">Cihazınızı yeniden başlatmak istiyor musunuz?</string>
+    <string name="message_warning_InApp_service_disable">"Uygulama içi hizmetini devredışı bırakmak, resmi satın alımların uygulama mekanizmasını ihlal eder. Bu, Google Play'e sunulan orijinal bir hizmettir."</string>
+    <string name="message_warning_LVL_service_disable">"Bu hizmeti devre dışı bırakmak, resmi olarak satın alınan uygulamalar için lisans alma mekanizmasını ihlal eder. Bu, Google Play'in sunduğu orijinal bir hizmettir."</string>
+    <string name="mod_market_check">"Modlu Google Play Store'u test et"</string>
+    <string name="mod_market_check_failed">Google Play yüklü olabilir fakat düzgün çalışmıyor. Lisans doğrulaması başarısız oldu. core.jar yaması uygulamamış olabilirsiniz (Araçlar -> Androidi yamala) veya düzenlenmiş Google Play uygulamasını sistem uygulaması olarak kurmamış olabilirsiniz (Araçlar -> Düzenlenmiş Google Play Store yükle kısmından tekrar kurabilirsiniz).</string>
+    <string name="mod_market_check_internet_off">Cihazın internet erişimini kesin ve tekrar deneyin.</string>
+    <string name="mod_market_check_title">Modlu Google Play test sonuçları</string>
+    <string name="mod_market_check_true">Google Play kurulu ve düzgün şekilde çalışıyor. Bu yöntemin tüm uygulama ve oyunlarda çalışmadığını unutmayın. Bu bir hata değildir ve düzeltilemez.</string>
+    <string name="modifdescr">Değiştirilmiş olan tüm uygulamaları gösterir (Yeşil yoncalılar).</string>
+    <string name="modiftitle">Düzenlenmiş uygulamalar</string>
+    <string name="move_data">Bütün veriler başarıyla şuraya taşındı</string>
+    <string name="move_to_internal">Dahili hafızaya taşı</string>
+    <string name="move_to_internal_message">Uygulamayı dahili hafızaya taşımak istediğinize emin misiniz?</string>
+    <string name="move_to_sdcard">"/sdcard'a taşı"</string>
+    <string name="move_to_sdcard_message">Bu uygulamayı SD karta taşımak istediğinize emin misiniz?</string>
+    <string name="move_to_sys">"/system/app'e taşı"</string>
+    <string name="move_to_system">Bu uygulamayı gerçekten /system/priv-app dizinine taşımak istiyor musunuz?</string>
+    <string name="mtrl_badge_numberless_content_description">Yeni bildirim</string>
+    <string name="mtrl_chip_close_icon_content_description">%1$s içeriğini kaldır</string>
+    <string name="mtrl_exceed_max_badge_number_content_description">%1$d adetten fazla yeni bildirim</string>
+    <string name="mtrl_picker_a11y_next_month">Sonraki aya değiştir</string>
+    <string name="mtrl_picker_a11y_prev_month">Önceki aya değiştir</string>
+    <string name="mtrl_picker_announce_current_selection">Geçerli seçim: %1$s</string>
+    <string name="mtrl_picker_confirm">@android:string/ok</string>
+    <string name="mtrl_picker_date_header_selected">%1$s</string>
+    <string name="mtrl_picker_date_header_title">Tarih Seçin</string>
+    <string name="mtrl_picker_date_header_unselected">Seçilen tarih</string>
+    <string name="mtrl_picker_day_of_week_column_header">Gün sütunu: %1$s</string>
+    <string name="mtrl_picker_invalid_format">Geçersiz biçim.</string>
+    <string name="mtrl_picker_invalid_format_example">Örnek: %1$s</string>
+    <string name="mtrl_picker_invalid_format_use">Tarih biçimi: %1$s</string>
+    <string name="mtrl_picker_invalid_range">Geçersiz aralık.</string>
+    <string name="mtrl_picker_navigate_to_year_description">%1$s yılına git</string>
+    <string name="mtrl_picker_out_of_range">İzin verilen aralığın dışında: %1$s</string>
+    <string name="mtrl_picker_range_header_only_end_selected">Başlangıç tarihi – %1$s</string>
+    <string name="mtrl_picker_range_header_only_start_selected">%1$s – Bitiş tarihi</string>
+    <string name="mtrl_picker_range_header_selected">%1$s-%2$s</string>
+    <string name="mtrl_picker_range_header_title">Aralık Seçin</string>
+    <string name="mtrl_picker_range_header_unselected">Başlangıç tarihi - Bitiş tarihi</string>
+    <string name="mtrl_picker_save">Kaydet</string>
+    <string name="mtrl_picker_text_input_date_hint">Tarih</string>
+    <string name="mtrl_picker_text_input_date_range_end_hint">Bitiş tarihi</string>
+    <string name="mtrl_picker_text_input_date_range_start_hint">Başlangıç tarihi</string>
+    <string name="mtrl_picker_text_input_day_abbr">g</string>
+    <string name="mtrl_picker_text_input_month_abbr">a</string>
+    <string name="mtrl_picker_text_input_year_abbr">y</string>
+    <string name="mtrl_picker_toggle_to_calendar_input_mode">Takvim giriş moduna geç</string>
+    <string name="mtrl_picker_toggle_to_day_selection">Gün seçmeye geçmek için dokunun</string>
+    <string name="mtrl_picker_toggle_to_text_input_mode">Metin giriş moduna geç</string>
+    <string name="mtrl_picker_toggle_to_year_selection">Yıl seçmeye geçmek için dokunun</string>
+    <string name="multipatch_next_step">Sonraki adım</string>
+    <string name="navigation_drawer_close">Gezinme çekmecesini kapat</string>
+    <string name="navigation_drawer_open">Gezinme çekmecesini aç</string>
+    <string name="need_select_custom_patch">Bir veya daha fazla özel yama seçin.</string>
+    <string name="new_method_lvl">Bir uygulama için lisans oluştur</string>
+    <string name="new_version">"Lucky Patcher'ın yeni bir sürümü mevcut!"</string>
+    <string name="next_custom_patch">Sonraki özel yamanın açıklaması</string>
+    <string name="no">Hayır</string>
+    <string name="no_freespace_patch">"Bu bir hata değil. ODEX dosyası oluşturmak için yeterli alan yok. Dalvik bellek yaması uygulandı, cihazı yeniden başlattığınızda yama yok olabilir.
+Çözüm: Uygulamayı dahili depolamaya taşıyın, sistem uygulaması yapın, daha fazla alan açın veya her şeyi olduğu gibi bırakıp yamayı düzenli olarak tekrar uygulayın."</string>
+    <string name="no_icon">Uygulama Simgelerini Kaldır</string>
+    <string name="no_icon_descr">Listedeki tüm uygulama simgelerini kaldırır. Çalışma yükünü azaltır, eski cihazlar için yararlı.</string>
+    <string name="no_root">"Root erişimi alınamadı! Devam etmek için root erişimini sağlamanız gerekir...
+
+(lütfen busybox veya supersu'yu güncelleyin)!
+Lütfen SuperSu yükleyin (\"Sorun giderme-> SuperSu'yu yükle (ICS)\") ve SuperSu kodlarını güncelleyin."</string>
+    <string name="no_site">Güncellemelerin kaynağı bulunamadı</string>
+    <string name="no_space">Hata: seçilen klasörde verileri kopyalamak için yeterli alan yok. Lütfen konumu değiştirin veya alan açın. Eğer SuperSu kullanıyorsanız, \"isim uzayı ayrımı\" seçeneğini SuperSu içerisinde devre dışı bırakın.</string>
+    <string name="no_space_in_data_all">Hata: dahili depolama alanında yeterli yer yok. Lütfen /data içerisinde boş alan açın ve tekrar deneyin. Eğer SuperSu kullanıyorsanız, \"isim uzayı ayrımı\" seçeneğini SuperSu içerisinde devre dışı bırakın.</string>
+    <string name="no_space_in_system">Hata: Sistem bölümünde uygulamayı taşımak için yeterli hafıza yok. Lütfen /system içerisinde yeterli alanı açın ve tekrar deneyin. Eğer SuperSu kullanıyorsanız, \"isim uzayı ayrımı\" seçeneğini SuperSu içerisinde devre dışı bırakın.</string>
+    <string name="no_space_in_system_all">Hata: Sistem bölümünde yeterli alan yok. Lütfen /system bölümünde yeterli alanı açın ve tekrar deneyin. Eğer SuperSu kullanıyorsanız, \"isim uzayı ayrımı\" seçeneğini SuperSu içerisinde devre dışı bırakın.</string>
+    <string name="nofilter">Yok</string>
+    <string name="nonedescr">Hiçbir şey bulunamayan uygulamaları gösterir.</string>
+    <string name="nonetitle">Hiçbir şey bulunamayanlar</string>
+    <string name="not_detect">"SD kart bulunamadı!
+İşlevsellik kısıtlandı!"</string>
+    <string name="not_found_changelog">Değişiklikler dosyası bulunamadı. Bir sonraki güncellemede indirilecektir.</string>
+    <string name="not_supported_android_patch">desteklenmiyor, \"olduğu gibi\" çalışır</string>
+    <string name="notify_android_patch_on_boot">Android başlangıç yaması</string>
+    <string name="notify_android_patch_on_boot_mes_core.jar">"core.jar'daki android yamalarını dalvik belleğe uygula"</string>
+    <string name="notify_android_patch_on_boot_mes_services.jar">"services.jar'daki android yamalarını dalvik belleğe uygula"</string>
+    <string name="notify_directory_binder">Klasör Bağlayıcı</string>
+    <string name="notify_directory_binder_from">KAYNAK</string>
+    <string name="notify_directory_binder_to">HEDEF</string>
+    <string name="notify_patch_on_boot">Başlangıçta yamala</string>
+    <string name="notify_patched">yamalandı!</string>
+    <string name="odex_all_system_app">"Tüm Sistem Uygulamalarını ODEXle
+(Ana depolamada daha fazla boş alan)"</string>
+    <string name="odex_all_system_app_message">Tüm sistem uygulamalarını ODEXlemek istediğinizden emin misiniz?</string>
+    <string name="odexed_not_all_apps">"Hata! Büyük ihtimalle /system'de yeterince boş alan yok. Bazı uygulamalar ODEXlenmedi."</string>
+    <string name="ok">Tamam</string>
+    <string name="on_top_apps_marker">Yeni</string>
+    <string name="open_to_GP">Open to Google Play</string>
+    <string name="option_SELinux_permissive">"SELinux'u izinli moda ayarla"</string>
+    <string name="option_SELinux_permissive_descr">"Lucky Patcher'ın işlevleriyle ilgili bazı sorunları çözer, ama bazı yazılımlarda yeniden başlatabilir"</string>
+    <string name="option_analytic">Analitik hizmeti</string>
+    <string name="option_analytic_descr">Analitik hizmetini açın/kapayın (konumunuzu kullanır).</string>
+    <string name="option_autoupdate_custom_patches">Özel yamaların otomatik güncellenmesini kapat</string>
+    <string name="option_detailed_logs">Detaylı günlükler</string>
+    <string name="option_detailed_logs_descr">Detaylı hata raporu gönderilmesi için etkinleştirilmelidir.</string>
+    <string name="option_disable_removing_magisk_module_after_change_firmware">Cihaz üretici yazılımını değiştirirken magisk modülünü çıkarmayın</string>
+    <string name="option_disable_removing_magisk_module_after_change_firmware_descr">Firmware güncellemesi ve diğer değişikliklerden sonra, magisk modülünün içindeki dosyalar güncelliğini kaybedecek ve çeşitli hatalara neden olabilir. Bu nedenle Lucky Patcher, ürün yazılımının değiştiğini fark ettiğinde modülü kaldırmaya çalışır.</string>
+    <string name="option_force_turn_off_magisk">\"Magisk modülünü kullan\" seçeneğini zorla kapatın</string>
+    <string name="option_force_turn_off_magisk_descr">Magisk cihazınızda düzgün çalışmazsa, Lucky Patcher işlevlerinde varsayılan kullanımını iptal edebilirsiniz.</string>
+    <string name="option_installation_apk_install_on">Lucky Patcher aracılığıyla apk dosyalarını yükleme özelliğini etkinleştirin (bazı buggy ürün yazılımlarında bu seçenek apk dosyalarının harici dosya yöneticisinden yüklenmesini engeller)</string>
+    <string name="option_magisk_module">Magisk modülünü kullanın</string>
+    <string name="option_remove_ads">"LP'den Reklamları kaldır"</string>
+    <string name="option_remove_ads_descr">\"Hakkında\" ve \"Sürüm Günlüğü\" sayfalarından reklamları kaldır.</string>
+    <string name="option_test_patch">yama için test başlat</string>
+    <string name="orientmenu">Ekran yönü</string>
+    <string name="others">Diğer</string>
+    <string name="package_name">Paket adı</string>
+    <string name="password_toggle_content_description">Şifreyi göster</string>
+    <string name="patch_ok">Uygula</string>
+    <string name="patch_progress_data_parse">Yama için veriler inceleniyor...</string>
+    <string name="patch_progress_get_classes">Apk dosyasından gerekli dosyalar alınıyor...</string>
+    <string name="patch_progress_reinstall_app">Uygulama yeniden yükleniyor...</string>
+    <string name="patch_progress_strings_analisis">Dizeler analiz ediliyor...</string>
+    <string name="patch_step1">Uygulama hazırlanıyor</string>
+    <string name="patch_step2">Yamalanıyor</string>
+    <string name="patch_step3">Sonuçlar analiz ediliyor</string>
+    <string name="patch_step4">Düzenleme yapılmış .odex oluşturuluyor</string>
+    <string name="patch_step6">Yama sonrası isteğe bağlı adımlar</string>
+    <string name="patch_step7">Dosyalar bir apk dosyasına paketleniyor ...</string>
+    <string name="patch_step8">%s için zip sıralanması uygula</string>
+    <string name="patch_step9">%s yüklemesi ...</string>
+    <string name="patch_step_http">"root'dan veriler alınıyor..."</string>
+    <string name="patch_step_rebuild_dex">Dex dosyası yeni dizgelerle birleştiriliyor (uzun bir süre bekleyin)</string>
+    <string name="patch_to_Android_At_once">Bunları \"İmza doğrulması etkinleştir\" ve \"İmza doğrulamasını devre dışı bırak\" veya \"Paket yöneticisinin imza doğrulamasını devre dışı bırak\" kullanabilirsiniz.</string>
+    <string name="patch_to_Android_only_dalvik_cahce_core_disable">"Yazılımda odex'li core.jar var. \"sadece dalvik-bellekyaması\" devre dışı bırakılacak. Ve diğer yamaların seçimi sıfırlanacaktır."</string>
+    <string name="patch_to_Android_only_dalvik_cahce_services_disable">"Yazılımda odex'li services.jar var. \"sadece dalvik-bellek yaması\" devre dışı bırakılacak. Ve diğer yamaların seçimi sıfırlanacaktır."</string>
+    <string name="patchbutton">Yamala</string>
+    <string name="pattern1">Yama 1 - Başarılı...</string>
+    <string name="pattern1_f">Yama 1 - Başarısız...</string>
+    <string name="pattern2">Yama 2 - Başarılı...</string>
+    <string name="pattern2_f">Yama 2 - Başarısız...</string>
+    <string name="pattern3">Yama 3 - Başarılı...</string>
+    <string name="pattern3_f">Yama 3 - Başarısız...</string>
+    <string name="pattern4">Yama 4 - Başarılı...</string>
+    <string name="pattern4_f">Yama 4 - Başarısız...</string>
+    <string name="pattern5">Yama 5 - Başarılı...</string>
+    <string name="pattern5_f">Yama 5 - Başarısız...</string>
+    <string name="pattern6">Yama 6 - Başarılı...</string>
+    <string name="pattern6_f">Yama 6 - Başarısız...</string>
+    <string name="pattern7">Yama 7 - Başarılı...</string>
+    <string name="pattern7_f">Yama 7 - Başarısız...</string>
+    <string name="pattern_dex_kill">Dex ve imza doğrulama katili eklendi.</string>
+    <string name="pattern_integrate_emulation">LVL ve Inapp satın alımları için öykünme eklendi.</string>
+    <string name="pattern_lic_kill">Lisans doğrulama katili eklendi.</string>
+    <string name="pattern_signature_kill">İmza doğrulama katili eklendi.</string>
+    <string name="patternamazon">Amazon Market Yaması - Başarılı!</string>
+    <string name="patternamazon_f">Amazon Market Yaması - Başarısız...</string>
+    <string name="patterndependencies">Google Play bağımlılıkları kaldırıldı.</string>
+    <string name="patternsamsung">SamsungApps Yaması - Başarılı</string>
+    <string name="patternsamsung_f">SamsungApps Yaması - Başarısız...</string>
+    <string name="perm_ok">Uygula ve Yeniden başlat</string>
+    <string name="permission">İzinleri Değiştir</string>
+    <string name="permission_not_descr">Bu izin için açıklama yok</string>
+    <string name="permission_not_found">İzinler bulunamadı</string>
+    <string name="permissions">İzinler</string>
+    <string name="play_protect_warning">"Google genellikle Lucky Patcher'ı bir virüs olarak tanımlar ancak Lucky Patcher virüs değildir. Bu hatırlatıcıyı kaldırmak için Google Play'i açın ve ayarlardaki \"Play Protect\"i devre dışı bırakın."</string>
+    <string name="play_protect_warning2">"Birçok web sitesi ve sayfa sahte Lucky Patcher uygulaması paylaşıyor. Bu yüzden, blogunuzda veya YouTube videolarınızda Resmi İnternet sitesi indirme bağlantısını paylaşmanızı istiyoruz.
+Resmi İndirme bağlantısı: https://www.luckypatchers.com/download/"</string>
+    <string name="play_protect_warning_question_1">Play Protect iletişim kutusunu çalıştırmak istiyor musunuz?</string>
+    <string name="please_enter_new_name_lp">Lütfen yeni uygulama adını girin</string>
+    <string name="please_enter_path_to_open">Klasör dizini</string>
+    <string name="poorresult">"% Şans! Yama Başarısız!
+Bilinmeyen LVL sürümü veya yama zaten uygulanmış!"</string>
+    <string name="provide">Sağla</string>
+    <string name="proxyGP">Google Play için Proxy sunucusu</string>
+    <string name="proxyGP_descr">"Tüm Uygulama içi ve lisans taleplerini Lucky Patcher'a yönlendirmek için proxy sunucusu. Google Ödeme Emülasyonu ve Uygulama içi Hizmetleri'nin Lucky Patcher'da etkinleştirilmesi gereklidir."</string>
+    <string name="proxyGP_install">Proxy Google Play Store kur</string>
+    <string name="proxyGP_install_error">Proxy Google Play dosyası bulunamadı.</string>
+    <string name="proxyGP_install_question">Proxy Google Play yüklemek istediğinize emin misiniz?</string>
+    <string name="proxyGP_widget_warning_1">"Proxy Google Play'ı çalıştırmak için Lucky Patcher'ın Xposed modülünde \"Uygulama içi ve LVL emülasyon yardımcı yaması\" devre dışı bırakılması gerekir."</string>
+    <string name="proxyGP_widget_warning_2">"Proxy Google Play root yetkilerine ve android yamalama ihtiyacı duyar \"İmza doğrulamayı herzaman kobul et\" bu Lucky Patcher'ın Xposed modülünde yüklenebilir veya etkinleştirilebilir."</string>
+    <string name="public_key">Public key</string>
+    <string name="punkt1">- Lucky Patcher için root izni gerekli!</string>
+    <string name="purchase_db_dialog_auto_buy">satın almayı tekrarla</string>
+    <string name="purchase_db_dialog_saved_purchase">kayıtlı satın alma</string>
+    <string name="purchase_id">Satın alma kimliği</string>
+    <string name="purchases_sorter_describe">Bu, bazı Unity oyunlarına yardımcı olabilir. Satın alma başarısız olursa, türünü başka biriyle değiştirip tekrar deneyin.</string>
+    <string name="purchases_sorter_last_time_try_purchase">Son satın alma tarihi</string>
+    <string name="purchases_sorter_message_not_need_sorter">Henüz sıralayacak bir şey yok. Satın alımları sıralamak için, uygulamayı başlatmanız ve ücretsiz bir şeyler satın almaya çalışmanız gerekir. Lucky Patcher, satın alma işlemlerini sıralamakta güçlük çekiyorsa, bunları manuel olarak sıralayabilirsiniz. Bu, Unity oyunları için gereklidir. Ayıklayıcıdaki satın alma türünü değiştirirseniz, tekrardan ücretsiz olarak satın alma şansı oluşur.</string>
+    <string name="purchases_sorter_not_defined_by_user">henüz kullanıcı tanımlı değil</string>
+    <string name="purchases_sorter_reset_button">Sıfırla</string>
+    <string name="purchases_sorter_reset_warning_message">"Tüm satın alma kayıtları silinecektir. Satın alma listesini görüntülemek için hedef programı yeniden başlatmanız gerekir. Lucky Patcher'ın daha sonra türlerini tahmin etmeye çalışması için tüm satın alımların tanımlarını kaldırmak istediğinizden emin misiniz?"</string>
+    <string name="purchases_sorter_title">Her satın alma için türü seçin</string>
+    <string name="purchases_sorter_type_inapp_describe">bunlar genelde altın, kristaller ve diğer sarf malzemeleridir.</string>
+    <string name="purchases_sorter_type_inapp_purchase">uygulama içi</string>
+    <string name="purchases_sorter_type_subs_describe">bunlar genellikle abonelikler, ek seviyeler, reklam kapatma ve benzerleridir.</string>
+    <string name="purchases_sorter_type_subs_purchase">abonelik</string>
+    <string name="reboot">Yeniden başlat</string>
+    <string name="reboot_after_install_google_play_to_system_partition">Uygulama sistem bölümüne yüklendi. Tüm değişikliklerin etkili olması için yeniden başlatma gereklidir. Şimdi yeniden başlatmayı kabul ediyor musunuz?</string>
+    <string name="reboot_message">"Yeniden başlatılıyor...
+Eğer cihaz otomatik olarak yeniden başlamaz ise, el ile yapın..."</string>
+    <string name="reboot_to_bootloader">"Ön yükleme'de yeniden başlat"</string>
+    <string name="reboot_to_recovery">"Recovery'de yeniden başlat"</string>
+    <string name="rebuild_info">Yeniden Oluşturma Özeti</string>
+    <string name="remodex">Dalvik-cache yaması kaldırıldı!</string>
+    <string name="remodexerror">Bu uygulamanın dalvik önbelleği bulunamadı</string>
+    <string name="remove_all_saved_purchases">Kayıtlı tüm satın almaları kaldır</string>
+    <string name="remove_all_saved_purchases_message">Kayıtlı tüm satın almalar kaldırılsın mı?</string>
+    <string name="removefixes">"Tüm ODEX Dosyalarını Sil
+(/data/app ve /system/app)"</string>
+    <string name="reset_dialog_settings">Tüm diyalog ayarlarını sıfırla</string>
+    <string name="restore_build">Yapı</string>
+    <string name="restore_data_error">Hata: Bir şeyler ters gitti. Veri tamamen geri yüklenmemiş olabilir.</string>
+    <string name="restore_data_success">Ayarlar başarıyla geri yüklendi</string>
+    <string name="restore_message">Yüklemek istediğinize emin misiniz</string>
+    <string name="restore_version">Sürüm</string>
+    <string name="restorebutton">Geri yükle</string>
+    <string name="restored">geri yüklendi</string>
+    <string name="root_access_not_found">"Root erişimi bulunamadı. Lucky Patcher'ı tekrar açın veya SuperSu uygulamasını ve kaynaklarını güncellemeyi deneyin. SuperSu içerisinde Lucky Patcher'a root erişimini vermeyi unutmayın."</string>
+    <string name="root_needed">Bu eylemi gerçekleştirmek için Root gerekli...</string>
+    <string name="savebutton">Özel Yama olarak kaydet</string>
+    <string name="saved_object">/sdcard/LuckyPatcher/ dizinine özel yama olarak kaydedildi.</string>
+    <string name="scheme_versions">Şema versiyonları</string>
+    <string name="search">Ara</string>
+    <string name="search_menu_title">Ara</string>
+    <string name="select_filter">Uygulama listesi için Filtre seçin:</string>
+    <string name="select_market">"Lütfen yüklemek istediğiniz Google Play Store sürümünü seçin:
+"</string>
+    <string name="send_logs">Kayıt günlükleri gönderilsin mi?</string>
+    <string name="sendlog">Günlük gönder</string>
+    <string name="serial">Seri numarası</string>
+    <string name="set_default_to_install">"Varsayılan Yükleme Konumunu Seçin
+Android >= 4'de çalışmayabilir"</string>
+    <string name="set_default_to_install_auto">Sistem varsayılanı</string>
+    <string name="set_default_to_install_internal_memory">Dahili depolama (Telefon hafızası)</string>
+    <string name="set_default_to_install_sdcard">Harici depolama (Hafıza kartı)</string>
+    <string name="set_switchers_def">Düğmeleri sıfırla</string>
+    <string name="setting_confirm_exit">Uygulamadan çıkış onayı</string>
+    <string name="setting_confirm_exit_descr">Eğer geri tuşuna basarsanız, Lucky Patcher uygulamadan çıkmak için onay isteyecek.</string>
+    <string name="settings">Ayarlar</string>
+    <string name="settings_force_java_root_method">Java-rootlu</string>
+    <string name="settings_force_java_root_method_app_process">app_process kullanarak</string>
+    <string name="settings_force_java_root_method_dalvikvm">dalvikvm kullanarak</string>
+    <string name="settings_force_java_root_method_description">Root izinleri veya yamalar ile sorun yaşıyorsanız, farklı bir yöntem deneyebilirsiniz.</string>
+    <string name="settings_force_root">Root durumu</string>
+    <string name="settings_force_root_description">"Eğer egzotik root erişiminiz varsa, root'unuzu \"rootlu\" veya \"rootsuz\" olarak görünmesi için zorlayabilirsiniz."</string>
+    <string name="settings_force_root_off">Rootsuz</string>
+    <string name="settings_force_root_on">Rootlu</string>
+    <string name="settings_method_apk_installer_standart">Standart yükleyiciyi kullan</string>
+    <string name="settings_method_apk_installer_use_split_installer">Bölünmüş yükleyiciyi kullan</string>
+    <string name="settings_method_apks_installer_non_root_mode">Apks yükleyici için root izinleri kullanmayın</string>
+    <string name="settings_method_apks_installer_root_mode">Apks yükleyici için root izinleri kullanma</string>
+    <string name="settings_mode_apk_installer">apk dosyaları için bir yükleyici seçme</string>
+    <string name="settings_mode_apk_installer_description">Köklü değilseniz, yükleme hatalarının daha ayrıntılı bir açıklamasını almak için bölünmüş yükleyiciyi kullanabilirsiniz. Ancak tüm aygıt yazılımlarında çalışmaz ve yükleme başarısız olursa geçici dosyalarla boş alanı tüketebilir.</string>
+    <string name="settings_mode_apks_installer">Apks yükleyici çalışma modu</string>
+    <string name="settings_mode_apks_installer_description">Root modunda kurulum çok uzun sürüyorsa, rootsuz moda geçmeye zorlayabilirsiniz.</string>
+    <string name="settings_root_auto">Root erişimini otomatik olarak tespit et</string>
+    <string name="settings_show_folder_first">İlk klasörleri göster</string>
+    <string name="settings_show_only_used_files">Yalnızca Lucky Patcher tarafından kullanılan dosyaları göster</string>
+    <string name="settings_sort_order_of_files">Dosyaların sıralama düzeni</string>
+    <string name="settings_sort_order_of_files_name">İsme Göre</string>
+    <string name="settings_sort_order_of_files_time">Zamana Göre (üstte yenisi)</string>
+    <string name="share">Paylaş</string>
+    <string name="share_lucky_patcher">"Lucky Patcher'ı paylaş"</string>
+    <string name="share_message">Bu uygulamayı paylaşmak istediğinize emin misiniz?</string>
+    <string name="share_this_app">Bu uygulamayı paylaş</string>
+    <string name="signature">İmza</string>
+    <string name="signature_algorithm">İmza algoritması</string>
+    <string name="site_pattern">AdsBlockList dizeleri - kaldırıldı.</string>
+    <string name="sortbydate">Tarihe göre sırala</string>
+    <string name="sortbyname">İsmine göre</string>
+    <string name="sortbystatus">Duruma göre</string>
+    <string name="sortbytime">Yükleme tarihine göre</string>
+    <string name="sortmenu">Sıralama Düzeni</string>
+    <string name="splitted_apk_attribute">bölünmüş</string>
+    <string name="start_market_message">"Modlu bir Google Play'i yüklemek, Android için yamaların kullanılmasını gerektirir. Cihazınız yeniden başlatılacak. Yeniden başlattıktan sonra Google Play'i tekrar yüklemeyi deneyin. Bazen yazılımınıza zarar verebilir. Android için yamaları uygulamak istiyor musunuz?"</string>
+    <string name="stat_boot_ads">Google Reklamları</string>
+    <string name="stat_boot_custom">Özel yama</string>
+    <string name="stat_boot_lvl">Google Lisans Doğrulaması</string>
+    <string name="stat_launch_activity">Başlama Eylemi:</string>
+    <string name="statads">Google reklamları bulundu.</string>
+    <string name="statappplace">Uygulama konumu:</string>
+    <string name="statbilling">Uygulama içi satın alma bulundu.</string>
+    <string name="statbuild">Yapı:</string>
+    <string name="statcustom">Özel yama kullanılabilir</string>
+    <string name="statdataplace">Veri konumu:</string>
+    <string name="statfix">odex dosyası bulundu.</string>
+    <string name="statlvl">Lisans doğrulaması bulundu.</string>
+    <string name="statmodified">Uygulama önceden düzenlenmiş.</string>
+    <string name="statnotfix">odex dosyası bulunamadı</string>
+    <string name="statnotfound">Yamalanacak bir şey yok.</string>
+    <string name="statnotmodified">Değiştirilmemiş uygulama</string>
+    <string name="statnotsys">Kullanıcı Uygulamaları.</string>
+    <string name="statnull">Yamalanacak bir şey yok</string>
+    <string name="statsys">Sistem Uygulamaları.</string>
+    <string name="status_bar_notification_info_overflow">999+</string>
+    <string name="statuserid">Kullanıcı ID:</string>
+    <string name="statversion">Sürüm:</string>
+    <string name="subject">Konu</string>
+    <string name="success">başarılı</string>
+    <string name="support_patch_billing_rebuild_dex">Uygulama içi emülasyon için yardımcı yama (Dex Birleştirme)</string>
+    <string name="support_patch_billing_rebuild_dex_descr">"Çok uzun sürecek. Uygulama içi satın alımların emülasyonu için faturalandırmayı vekil sunucu olmadan Lucky Patcher'a yönlendirin. Bu yöntem herhangi bir nedenle işe yaramadıysa, \"Uygulama içi emülasyon için yardımcı yama (Vekil sunucu)\" yöntemini kullanabilirsiniz. Android \"İmza Doğrulamasını her zaman onayla\" yaması uygulanmazsa, bu destek yaması yardımcı olabilir."</string>
+    <string name="support_patch_billing_rebuild_dex_not_work">\"Uygulama içi emülasyon için destek düzeltme eki (Reassembly Dex)\" yöntemi hatalarla tamamlandı. Bu uygulama içindeki ücretsiz satın alımları taklit etmek için \"Uygulama İçi emülasyon için destek yaması (Proxy sunucusu)\" yöntemini kullanın.</string>
+    <string name="support_patch_billing_rebuild_dex_warning">Bu yeniden oluşturulmuş uygulama, yalnızca bu cihazda yüklü olan Lucky Patcher ile çalışır. Bu uygulamayı başka bir cihaza aktarırsanız, satın alma işlemleri taklit edilmeyecektir. Uygulamayı bir destek yamasıyla başka bir cihaza aktarmak için \"InApp öykünmesi için destek yaması (Proxy sunucusu)\" yöntemini kullanın ve \"Uygulama içi satın alma öykünmesi için Proxy sunucusu\"nu başka bir aygıta kurun veya bu uygulamayı doğrudan başka bir aygıtta yeniden oluşturun .</string>
+    <string name="support_patch_billing_redirect_to_proxy">Uygulama içi emülasyon için yardımcı yama (Vekil sunucu)</string>
+    <string name="support_patch_billing_redirect_to_proxy_descr">"Uygulama içi satın alımların emülasyonu için faturalandırmayı vekil sunucu kullanarak Lucky Patcher'a yönlendirin. Android \"İmza Doğrulamasını her zaman onayla\" yaması uygulanmazsa, bu destek yaması yardımcı olabilir."</string>
+    <string name="support_patch_billing_repatch_patched_app">Yamalanmış bir uygulama için güncelleme yaması</string>
+    <string name="support_patch_billing_repatch_patched_app_descr">"Lucky Patcher'ın eski sürümü için uygulamayı bu yamayla yeniden oluşturduysanız ve artık çalışmıyorsa, bu seçenek yamayı Lucky Patcher'ın yeni sürümüne uygun bir şekilde güncelleyecektir."</string>
+    <string name="support_patch_header_additional">Ek yamalar</string>
+    <string name="support_patch_header_inapp">Ücretsiz satın alma yamaları</string>
+    <string name="support_patch_header_lvl_inapp">Lisans kontrolü ve uygulama içi satın alımları taklit etmek için yamalar</string>
+    <string name="support_patch_header_options">Ek seçenekler</string>
+    <string name="support_patch_lvl_and_inapp_descr">"Tüm lisans doğrulama isteklerini ve uygulama içi satın alımları Lucky Patcher'a yönlendirir."</string>
+    <string name="support_patch_lvl_inapp">LVL ve Inapp emülasyonu için destek yaması</string>
+    <string name="switcher_auto_backup">Tüm güncellenmiş veya yüklenmiş uygulamaları otomatik yedekle</string>
+    <string name="switcher_auto_backup_descr">APK dosyasını yedek klasörüne kopyala</string>
+    <string name="switcher_auto_backup_only_gp">"Google Play'den yüklenmiş veya güncellenmiş uygulamaları otomatik yedekle"</string>
+    <string name="switcher_auto_backup_only_gp_descr">"Not: Lucky Patcher Google Play'den yüklenmiş olan tüm uygulamaları yamalandığında işaretler. Bu yüzden, bu uygulamalar yedek listesinde de gözükür."</string>
+    <string name="switcher_auto_integrate_update">"Güncellenmiş sistem uygulamalarını /system'e entegre et"</string>
+    <string name="switcher_auto_integrate_update_descr">İkinci güncelleme için yeniden başlatma gereklidir.</string>
+    <string name="switcher_auto_move_to_internal">Güncellenmiş ve yüklenmiş uygulamaları otomatik dahili belleğe taşı</string>
+    <string name="switcher_auto_move_to_internal_descr">Uygulamaları daha hızlı ve kararlı yapar</string>
+    <string name="switcher_auto_move_to_sd">"Güncellenmiş ve yüklenmiş uygulamaları otomatik olarak SD Kart'a taşı"</string>
+    <string name="switcher_auto_move_to_sd_descr">"Widget'ı veya başlangıçta eylemi olan uygulamalar için kötüdür"</string>
+    <string name="switchers_service_not_found">Hizmet bulunamadı</string>
+    <string name="sysdescr">Dikkat! Lütfen düzenlemeden önce bir *YEDEK* oluşturun.</string>
+    <string name="system_app_change">Değişiklikleri uygulamak için lütfen yeniden başlatın.</string>
+    <string name="systitle">Sistem uygulamaları</string>
+    <string name="test">test</string>
+    <string name="test_services_for_work_failed">Hizmet sınaması başarısız oldu. Bir şey düzgün çalışmıyor. Hem %1$s için hem de Lucky Patcher için gereken tüm izinleri (arkaplanda çalışma gibi) vermelisiniz. %1$s uygulama ayarları açılsın mı?</string>
+    <string name="test_services_for_work_progress">Sorunları bulmak için hizmet sınaması yapılıyor.</string>
+    <string name="test_services_for_work_success">Hizmet sınandı ve düzgün çalışıyor.</string>
+    <string name="text_size">Yazı Boyutu</string>
+    <string name="title_files_observer">Dosya gözlem hizmeti</string>
+    <string name="title_for_block_internet">İnternet bağlantısı engellenecek uygulamaları seçin:</string>
+    <string name="title_for_select_backup_apk_package">"APK'sı yedeklenecek uygulamaları seçin:"</string>
+    <string name="title_for_select_backup_settings_package">Uygulama ayarlarının yedekleneceği uygulamaları seçin:</string>
+    <string name="title_for_select_disable_package">Devre dışı bırakılacak uygulamaları seçin:</string>
+    <string name="title_for_select_enable_package">Etkinleştirilecek uygulamaları seçin:</string>
+    <string name="title_for_select_integrate_update_apps">"Güncellemeleri /system'e entegre etmek için uygulamaları seçin:"</string>
+    <string name="title_for_select_move_to_internal">Dahili hafızaya taşınacak uygulamaları seçin:</string>
+    <string name="title_for_select_move_to_sdcard">"SD Kart'a taşınacak uygulamaları seçin:"</string>
+    <string name="title_for_select_uninstall">Kaldırılacak uygulamaları seçin:</string>
+    <string name="title_for_unblock_internet">İnternet bağlantısı açılacak uygulamaları seçin:</string>
+    <string name="title_installation_lp">Lucky Patcher yükleyici</string>
+    <string name="title_progress_installation_lp">Lucky Patcher yüklemesi hazırlanıyor</string>
+    <string name="title_select_custom_patch">Özel yamaları seçin.</string>
+    <string name="title_upd">İleti</string>
+    <string name="toolbar_adfree">Reklam Engelle</string>
+    <string name="toolbar_backups">Yedekler</string>
+    <string name="toolbar_options_menu">Ayarlar Menüsü</string>
+    <string name="toolbar_rebuild">Oluştur ve Yükle</string>
+    <string name="toolbar_refresh_apps">Uygulamaları Tara</string>
+    <string name="toolbar_switchers">Düğmeler</string>
+    <string name="toolbar_system_utils">Araçlar</string>
+    <string name="tools_menu_block_internet">İnternet bağlantısını engelle</string>
+    <string name="tools_menu_unblock_internet">İnternet bağlantısını aç</string>
+    <string name="troubleshooting_supersu_namespace_separation">"SuperSu \"isim uzayı ayrımı\" seçeneğini devre dışı bırak\"
+(yeniden başlatılacak)"</string>
+    <string name="truble">Sorun giderme</string>
+    <string name="type">Tür</string>
+    <string name="uninstall">%s uygulamasını kaldırmak istediğinizden emin misiniz?</string>
+    <string name="uninstall_updates">Güncellemeleri kaldır</string>
+    <string name="uninstall_updates_message">sistem uygulaması için güncellemeleri gerçekten kaldırmak istiyor musunuz %s?</string>
+    <string name="uninstallapp">Kaldır</string>
+    <string name="uninstalled_package_for_user">Kullanıcı için kaldırılan uygulama.</string>
+    <string name="unknown">bilinmeyen</string>
+    <string name="unknown_error">Bilinmeyen hata. Lütfen tekrar deneyin.</string>
+    <string name="unused_odex_delete">"Kullanılmayan ODEX'ler kaldırıldı!"</string>
+    <string name="update">Güncelle</string>
+    <string name="update_custom_patches_message_1">Yeni özel yamalar bulundu. Eklenen yamaları şu adresten görüntüleyebilirsiniz: https://patch.chelpus.com/ </string>
+    <string name="update_custom_patches_message_2">Şimdi güncellemek istiyor musun?</string>
+    <string name="update_found_title">Güncelleme bulundu</string>
+    <string name="update_lp">"Lucky Patcher'ı güncelle"</string>
+    <string name="update_site_not_found">Güncelleme sitesi bulunamadı. Muhtemelen hosts dosyasında engellenmiş veya başka bir uygulama tarafından engellenmiş. Veya ana bilgisayarla ilgili herhangi bir teknik sorun.</string>
+    <string name="updatebusybox">"Busybox'u güncelle"</string>
+    <string name="use_split_installer_for_install_LP">Split apks installer(SAI) kullan. Eğer yükleyemezsen, bu kutucuğu deneyebilirsin.</string>
+    <string name="usepatch">Uygula</string>
+    <string name="validity">Geçerlilik</string>
+    <string name="vers">Lucky Patcher sürümü</string>
+    <string name="version">Versiyon</string>
+    <string name="vibration">Titreşimi Etkinleştir</string>
+    <string name="vibration_descr">Uygulama listesinde titreşimleri etkinleştir.</string>
+    <string name="viewlandscape">Yatay</string>
+    <string name="viewlarge">Büyük</string>
+    <string name="viewmedium">Normal</string>
+    <string name="viewmenu">Görünüm</string>
+    <string name="viewportret">Dikey</string>
+    <string name="viewsensor">Sensör</string>
+    <string name="viewsmall">Küçük</string>
+    <string name="wait">Lütfen bekleyin...</string>
+    <string name="warning">Uyarı</string>
+    <string name="warning_china_devices_muiu">"Çin yapımı MIUI yazılımı genellikle Lucky Patcher'ın arka planda çalışmasını sınırlar. Bundan dolayı uygulama içi satın alma emülasyonu ve diğer işlemler çalışmaz. Mümkün olan tüm izinleri vermek için Lucky Patcher ayarları açılsın mı?"</string>
+    <string name="warning_for_get_apk">"%1$s\" için tam apk dosyası alınması imkansız, çünkü Google'ın Android Uygulama Paketi ile bölünmüş. Bu özellik \"%1$s\" ile kullanılamaz."</string>
+    <string name="warning_for_no_free_space_on_device">"Cihaz yazılımınız Lucky Patcher'ı şu hata ile durdurdu: \"Cihazda yer kalmadı\". Cihazınızdaki boş alanı kontrol edin. Eğer SuperSu kullanıyorsanız, \"isim uzayı ayrımı\"nı devre dışı bırakmayı deneyin."</string>
+    <string name="warning_for_no_free_space_on_device_to_patch">Cihazda yeterli boş alan yok. İşleme devam etmek için daha fazla yer açın.</string>
+    <string name="warning_for_out_of_memory_on_device">"Yazılımınız Lucky Patcher'ı bir hata ile durdurdu: \"Yetersiz Bellek\". Geçerli işlem için yeterli hafıza yok."</string>
+    <string name="warning_for_resources_error">"Yazılım gücünüz Lucky Patcher'ı şu hatayla durdurdu: \"InflateException\". Büyük olasılıkla bellenim stili teması hatalar içeriyor veya bellenim kaynakları bozuk. Temayı açık, koyu veya herhangi bir şekilde değiştirmeyi deneyin. Bir günlük göndermek istiyor musunuz?"</string>
+    <string name="warning_for_unstall_apk_from_import_file">İçe aktarılacak arşiv apk dosyası içeriyor. %2$s sürümü ve %3$s yapısına sahip %1$s dosyasını yüklemek istiyor musunuz?</string>
+    <string name="warning_force_close_please_update_lp">"Görünüşe göre Lucky Patcher zorla kapatıldı. Lütfen Lucky Patcher'ı son sürüme güncelleyin."</string>
+    <string name="warning_inapp_emulation">"Varsayılan aygıt yazılımınız uygulama-içi ödeme emülasyonunu desteklemiyor. Eğer aygıt yazılımınız uygulamayı devre dışı bırakmayı (dondurmayı) destekliyor ise, Uygulama yöneticisinden Google Play'i devre dışı bırakmayı deneyin ve Uygulama içi emülasyonunu tekrar çalıştırmayı deneyin."</string>
+    <string name="warning_install_new_mod_market">Bu kırılmış GooglePlay sürümü sisteme entegre edilemiyor. Kullanıcı uygulaması olarak yükleyin. Aksi takdirde, Google hesabınıza bağlayamayacaksınız.</string>
+    <string name="warning_install_new_mod_market2">"Orijinal Google Play'i sistem olarak ve ardından Google Play'i kullanıcı tarafından modlanmış olarak yükleyebilirsiniz. Google Play ile sorun yaşıyorsanız, \"%1s\" seçeneğiyle kullanıcı uygulaması olarak yüklemeyi deneyin ve tüm izinleri verin."</string>
+    <string name="warning_internal_data_folder_corrupt">"Lucky Patcher veri klasöründe veri yazamıyor ya da okuyamıyor. Bu sorunu çözmek için, Lucky Patcher'ın verilerini silin. Eğer sorun çözülmez ise, Lucky Patcher'ı kaldırın ve tekrar yükleyip gerektirdiği izinleri verin."</string>
+    <string name="warning_jex_optimised_firmware">Yazılımın jex-optimizasyonu var. Yazılım yaması imkansız. Yazılımı değiştirin veya Android 5+ sürümüne geçin.</string>
+    <string name="warning_message_browser_not_found">İnternet bağlantısını açmak için kullanılacak tarayıcı uygulaması cihazınızda bulunamadı</string>
+    <string name="warning_multipatch_not_select">Yamaların hiçbiri seçilmedi.</string>
+    <string name="warning_not_all_perms_granded">Lucky Patcher gerekli izinler verilmediği olmadığı için çalışmaya devam edemiyor.</string>
+    <string name="warning_shared_apks">"'apks' dosyalarını yüklemek için diğer cihazınızda da Lucky Patcher'ın yüklü olması gereklidir. Lucky Patcher'ı farklı bir cihaza yan menüden farklı bir cihaza aktarabilirsiniz '%s'."</string>
+    <string name="warning_superSu_mount_name_space_separation">"Lucky Patcher, SuperSu'yu tarar ve etkinleştirilmiş \"isim uzayı ayrımı\" seçeneğini tespit eder. Lucky Patcher'ın normal çalışması işin devre dışı bırakmanız gerekir."</string>
+    <string name="warning_superSu_mount_name_space_separation_2">"Lucky Patcher'ın devre dışı bırakılmasını ister misiniz (yeniden başlatılacak)?"</string>
+    <string name="warning_superSu_mount_name_space_separation_3">Bu diyaloğu bir daha gösterme</string>
+    <string name="well_done">Başarıyla tamamlandı.</string>
+    <string name="well_done_change_components">Uygulamanın bileşenleri başarıyla güncellendi.</string>
+    <string name="well_done_group">Başarıyla tamamlandı:</string>
+    <string name="widget_app_disable_checkbox">"Etkinleştir'e basınca uygulamayı çalıştır."</string>
+    <string name="write_permission_not_found">Seçilen konum için yazma izni yok</string>
+    <string name="xposed_module_option">Xposed modülünü etkinleştir</string>
+    <string name="xposed_option_off">"Bu seçeneği açmak için lütfen Xposed'dan Lucky Patcher modülünü etkinleştirin"</string>
+    <string name="xposed_settings">Xposed ayarları</string>
+    <string name="сertificate_bytes">Sertifika baytları</string>
+    <string name="сertificate_information">Sertifika bilgisi</string>
+</resources>

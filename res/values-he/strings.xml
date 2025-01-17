@@ -1,0 +1,828 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="AppTools">פרטי אפליקציה:</string>
+    <string name="P_not_found">"שגיאה: קבצי אפליקציה לא נמצאו!
+בדוק את מיקום מטמון dalvik על-מנת לפתור בעיה זו!
+מיקום ברירת המחדל של קובץ זה הוא ב: /data/dalvik-cache/*"</string>
+    <string name="PatchResult">תוצאות תיקון</string>
+    <string name="Yes">כן</string>
+    <string name="about_working_dir">עובד ישרות על הכרטיס sd</string>
+    <string name="aboutlp">Lucky Patcher הוא כלי תיקון אוניברסלי שנועד לשנות יישומים. יש לו את היכולת להסיר מודעות, להסיר את אימות הרישיון של גוגל (אוטומטית וידנית), לנהל הרשאות אפליקציה ולעשות הרבה יותר.</string>
+    <string name="aboutmenu">אודות</string>
+    <string name="abouttitle">אודות Lucky Patcher שנוצר על ידי ChelpuS</string>
+    <string name="activity_ads_descr">פעילות זו משמשת לפרסום.</string>
+    <string name="activity_descr">פעילות האפליקציה. אין תיאור.</string>
+    <string name="additinfo">מידע נוסף:</string>
+    <string name="adsdescr">מציג את כל האפליקציות המכילים פרסומת גוגל.</string>
+    <string name="adstitle">אפליקציות עם פרסומות</string>
+    <string name="advanced_menu">תפריט תיקונים (טלאים)</string>
+    <string name="all_custom_patches_updated">כל התיקונים המותאמים אישית עודכנו</string>
+    <string name="allchanges">כל השינויים תוקנו בקובץ .odex ויימשכו עד להתקנה מחדש של היישום.</string>
+    <string name="android_patches_for_bootlist">תיקון אנדרואיד ל-dalvik-cache</string>
+    <string name="android_patches_for_bootlist_status">החל מחדש תיקוני אנדרואיד בעת ההפעלה</string>
+    <string name="apk_create_option">שם קובץ עבור חבילות APK שהורכבו מחדש</string>
+    <string name="apk_not_found_error">שגיאה: קובץ ה-APK לא נמצא.</string>
+    <string name="apk_size">גודל ה-APK:</string>
+    <string name="apkdescr">ערכת שמות לקבצי APK חדשים.</string>
+    <string name="apklabel">מבוסס על התווית של האפליקציה</string>
+    <string name="apkpackage">מבוסס על שם החבילה של האפליקציה</string>
+    <string name="app_dialog_no_root_app_control">ניהול אפליקציה</string>
+    <string name="app_disabler_widget_pkg_not_found">האפליקציה מוסרת</string>
+    <string name="app_info">מידע אפליקציה</string>
+    <string name="app_install_success">האפליקציה הותקנה בהצלחה.</string>
+    <string name="app_name">"לאקי פאטצ'ר"</string>
+    <string name="app_not_found">אפליקציה לא נמצאה, התקינו את האפליקציה ונסו שוב.</string>
+    <string name="app_not_found_adapter">לא ניתן למצוא את האפליקציה הזו ברשימת האפליקציות המותקנות.</string>
+    <string name="apps_not_found">אין תוצאות זמינות</string>
+    <string name="appwidget_text">דוגמה</string>
+    <string name="back">חזור</string>
+    <string name="backbutton">גיבוי</string>
+    <string name="backup_data_empty">נתוני האפליקציה ריקים, אין מה לגבות.</string>
+    <string name="backup_data_error">שגיאה: משהו השתבש. הגיבוי נראה לא שלם או פגום.</string>
+    <string name="backup_data_success">ההגדרות נשמרו.</string>
+    <string name="backup_delete_message">האם אתה באמת רוצה למחוק את הגיבוי?</string>
+    <string name="backup_done">"הגיבוי הצליח. נתיב:
+"</string>
+    <string name="backups_not_found">לא נמצאו קבצי גיבוי ב:</string>
+    <string name="begin_changelog">גרסת האפליקציה המותקנת היא:</string>
+    <string name="billing_buy">האם אתה רוצה לנסות ולקבל את הפריט הזה בחינם?</string>
+    <string name="billing_hack2_auto_repeat_note">כדי לבטל את החזרה האוטומטית, בחר את האפליקציה ועבור אל \"כלים\" -> \"הסר רכישות שנבחרו שמורות\" ומחק את הפריטים.</string>
+    <string name="billing_hack2_new">"- לקבלת התוצאות הטובות ביותר, עליך להשתמש בתיקון לאנדרואיד \"סטטוס אימות חתימה תמיד נכון\";
+- כדי לבטל את הפריצה, עבור אל \"מתגים\" בתחתית לאקי פאטצר והשבת את \"הדמיית חיוב של גוגל\"."</string>
+    <string name="billing_hack_menu">הדמיית חיוב של גוגל</string>
+    <string name="billing_hack_menu_descr">דורש \"תיקון תמיכה עבור InApp ו-LVL\" כדי למקד לאפליקציה והחלת \"תיקון ל-אנדרואיד\". השתמש בתיקון המותאם אישית \"Support.InApp.LVL...\" עבור גוגל פליי לקבלת מידע רכישה ומחיר נכונים בתוך האפליקציה.</string>
+    <string name="billing_hack_menu_disable">השבת אמולציית חיוב של גוגל</string>
+    <string name="billing_hack_menu_enable">אפשר הדמיית חיוב של גוגל</string>
+    <string name="billing_hack_option">שלח תגובה לאפליקציה הלא חתומה (הדבר עשוי לסייע עבור משתמשים ללא הרשאות root)</string>
+    <string name="billing_hack_option2">שימרו רכישה לשחזור</string>
+    <string name="bind_button">הוסף איגד ספרייה חדש.</string>
+    <string name="bind_delete">האם ברצונכם להסיר קישור ספרייה זו?</string>
+    <string name="bind_dialog_button">ספריית כריכה</string>
+    <string name="bind_dialog_source">ספרייה עם נתונים:</string>
+    <string name="bind_dialog_target">מקם ספרייה עם נתונים ב:</string>
+    <string name="bind_error">קישור נכשל! ספריית הנתונים לא נמצאו בהתקן.</string>
+    <string name="bind_source">ספרייה עם נתונים:</string>
+    <string name="bind_target">הציבו נתונים ב:</string>
+    <string name="binder_browser">סייר</string>
+    <string name="binder_browser_create_dir">צור ספרייה</string>
+    <string name="binder_browser_current_dir">ספרייה נוכחית:</string>
+    <string name="binder_browser_select">בחרו בספריה הנוכחית</string>
+    <string name="binder_delete">מחק</string>
+    <string name="bootview">רשימת אתחול</string>
+    <string name="browse_to_file">עיון</string>
+    <string name="busybox_not_found">אזהרה: Busybox לא נמצא. Lucky Patcher לא יוכל להמשיך לעבוד ללא Busybox ...</string>
+    <string name="button_advanced_filter">מסננים</string>
+    <string name="button_all">כל</string>
+    <string name="button_backup_apk_apps">גיבוי</string>
+    <string name="button_block_internet">לחסום את האינטרנט</string>
+    <string name="button_disable_package">בטל</string>
+    <string name="button_enable_package">אפשר</string>
+    <string name="button_for_delete">מחק</string>
+    <string name="button_integrate_update_apps">לשלב</string>
+    <string name="button_move_to_internal">"העבר אל
+אחסון פנימי"</string>
+    <string name="button_move_to_sdcard">העבר לכרטיס SD</string>
+    <string name="button_unblock_internet">בטל את חסימת האינטרנט</string>
+    <string name="button_uninstall_apps">הסרת התקנה</string>
+    <string name="cancel">ביטול</string>
+    <string name="change_icon_lp">שנה סמליל</string>
+    <string name="change_icon_lp_descr">כאן אתה יכול לשנות את הסמל של לאקי פאטצר</string>
+    <string name="changelog">יומן שינויים</string>
+    <string name="cleardalvik">נקה את המטמון של dalvik ואתחל מחדש</string>
+    <string name="cleardata">נקה נתונים</string>
+    <string name="clipboard_message_for_app_dilaog_app_additional_info">מידע נוסף הועתק ללוח</string>
+    <string name="clipboard_message_for_app_dilaog_app_info">מידע האפליקציה הועתק ללוח</string>
+    <string name="clipboard_message_for_app_dilaog_app_permissions">ההרשאות הועתקו ללוח</string>
+    <string name="cloneApplication">יישום שיבוט (לא תמיד עובד)</string>
+    <string name="collect_logs">אוסף יומנים...</string>
+    <string name="context_automodeslvl">מצבים אוטומטיים</string>
+    <string name="context_backup_apk">גיבוי קובץ apk</string>
+    <string name="context_backup_apk_selected_apps">אפליקציית גיבוי של אפליקציות נבחרות</string>
+    <string name="context_backup_data">הגדרות גיבוי אפליקציות</string>
+    <string name="context_batch_operations">פעולות אצווה</string>
+    <string name="context_block_internet_selected_apps">"חסום אינטרנט עבור אפליקציות נבחרות
+ייתכן שלא יפעל ב-Android 4"</string>
+    <string name="context_blockads">חסום מודעות במכשיר</string>
+    <string name="context_change_components_menu">שנה את רכיבי האפליקציה</string>
+    <string name="context_clearhosts">נקה את קובץ המארחים המקומי</string>
+    <string name="context_crt_apk_permission">APK עם הרשאות ופעילויות שהשתנו</string>
+    <string name="context_dependencies">הסרת יחסי תלות</string>
+    <string name="context_dexopt_app">ODEX אפליקציה זו</string>
+    <string name="context_disableActivity">השבת את פעילויות המודעות</string>
+    <string name="context_disableComponents">"השבת רכיבי
+'pm disable' method
+(עשוי להיות מופעל על ידי האפליקציה)"</string>
+    <string name="context_disable_google_ads">כיבוי שרותי פרסומות גוגל</string>
+    <string name="context_disable_package">השבת את החבילה (הקפא)</string>
+    <string name="context_disable_package_for_selected_apps">השבת את האפליקציות שנבחרו</string>
+    <string name="context_enable_google_ads">הפעל מחדש את שירותי פרסומות גוגל</string>
+    <string name="context_enable_package">אפשר חבילה (בטל הקפאה)</string>
+    <string name="context_enable_package_for_selected_apps">אפשר אפליקציות נבחרות</string>
+    <string name="context_hard_apk_permission">"שנה הרשאות
+שמור חתימה מקורית.
+(שיטה לא יציבה)"</string>
+    <string name="context_hide_lp">הסתר את Lucky Patcher</string>
+    <string name="context_hide_lp_descr">נסה להסתיר את לאקי פאטצר מאפליקציות אחרות. יגדיל את העומס על המערכת - השתמש רק במידת הצורך.</string>
+    <string name="context_install">התקן</string>
+    <string name="context_install_as_system">התקן כאפליקציית מערכת</string>
+    <string name="context_integrate_dalvik">שלב קוד dalvik לאפליקציה שכבר מותקנת</string>
+    <string name="context_integrate_update_selected_apps">שלב עדכונים של אפליקציות נבחרות אל /system</string>
+    <string name="context_move_selected_apps_to_internal">העברת אפליקציות נבחרות לאחסון פנימי</string>
+    <string name="context_move_selected_apps_to_sdcard">העברת אפליקציות נבחרות לכרטיס SD</string>
+    <string name="context_patch_framework">קובץ מסגרת תיקון</string>
+    <string name="context_rebuild">בנייה מחדש</string>
+    <string name="context_removeAds">תיקון (טלאי) להסרת פרסומות גוגל</string>
+    <string name="context_remove_saved_purchaces">הסירו רכישות שמורות שנבחרו</string>
+    <string name="context_restore_apk">התקינו מחדש את קובץ ה-apk</string>
+    <string name="context_restore_data">שחזר את הגדרות האפליקציה</string>
+    <string name="context_safe_apk_permission">"שנה הרשאות ופעילויות
+בנה מחדש והתקן"</string>
+    <string name="context_safe_sign_apk_permission">"שנה הרשאות ופעילויות
+שמור חתימה מקורית (שיטה בטוחה)"</string>
+    <string name="context_support_patch">תיקון (טלאי) תמיכה עבור InApp ו-LVL emulation</string>
+    <string name="context_tools">כלים</string>
+    <string name="context_unblock_internet_selected_apps">"בטל את חסימת האינטרנט עבור אפליקציות נבחרות
+ייתכן שלא יפעל ב-Android 4"</string>
+    <string name="context_unblockads">בטל את חסימת המודעות במכשיר</string>
+    <string name="context_uninstall_if_installed">הסרה והתקנה</string>
+    <string name="context_uninstall_selected_apps">הסרת התקנת אפליקציות משתמש שנבחרו</string>
+    <string name="contextads">הסרת פרסומות גוגל</string>
+    <string name="contextbackup">גיבוי</string>
+    <string name="contextblockfileads">הסרת קישורים מקובץ ההתקנה APK</string>
+    <string name="contextblockfileads_descr">הסרת קישורי http://באמצעות תבניות מקבצים AdsBlockList_user_edit.txt ו-AdsBlockList.txt.</string>
+    <string name="contextboot">"תיקון באתחול מחדש
+(לא יציב! מיועד רק עבור תיקון libs)"</string>
+    <string name="contextbootads">הסרת פרסומות גוגל</string>
+    <string name="contextbootcustom">תיקון (טלאי) מותאם אישית</string>
+    <string name="contextbootlvl">הסרת אימות רישיון</string>
+    <string name="contextcorepatch1">סטטוס אימות חתימה תמיד True</string>
+    <string name="contextcorepatch1_descr">הכרחי לחיקוי פעולת InApp ,LVL ו-keygens. דבר זה דרוש לאימות נכון של רכישות ורישיונות.</string>
+    <string name="contextcorepatch2">בטל אימות חתימת קובץ התקנה</string>
+    <string name="contextcorepatch2_descr">"מאפשר שינוי באפליקציה מבלי לחתום אותה שוב, כך שחתימת המפתחים נשארת ללא שינוי. משתמשים אחרים יכולים להתקין את קובץ ההתקנה הזה רק לאחר שהפעילו תיקון תוכנה ל-Android Core (שימושי בתרגומים, שינויי גרפיקות, וכו'. באפליקציות מוגנות)."</string>
+    <string name="contextcorepatch3">בטל אימות חתימות במנהל החבילות</string>
+    <string name="contextcorepatch3_descr">מאפשר התקנה של אפליקציות עם חתימות שונות אחת על השנייה.</string>
+    <string name="contextcorepatch3_descr_plus">"
+מאפשר התקנה של אפליקציות עם גרסא ישנה יותר מזו שכבר מותקנת."</string>
+    <string name="contextcorepatch4">תיקון (טלאי) תמיכה עבור InApp ו-LVL emulation</string>
+    <string name="contextcorepatch4_descr_xposed">דרוש בשביל שאמולציה תעבוד בלי תיקון (טלאי) תמיכה לאפליקציות.</string>
+    <string name="contextcorepatchrestore2_descr">הסר את כל התיקונים (טלאים) מ-services.jar של אנדרואיד</string>
+    <string name="contextcorepatchrestore_descr">הסר את כל התיקונים (טלאים) מ-core.jar של אנדרואיד</string>
+    <string name="contextcustompatch">תיקון מותאם</string>
+    <string name="contextdeodex">"הסר CODEX עם שינויים
+(אחזר את האפליקציה)"</string>
+    <string name="contextfulloffline">הפוך אפליקציה ללא מקוונת</string>
+    <string name="contextfulloffline_descr">מנסה למחוק את חיבור האפליקציה לאינטרנט.</string>
+    <string name="contextignore">הסר בדיקת רשיון</string>
+    <string name="contextlaunchapp">הפעל יישום</string>
+    <string name="contextodex">החל שינויי Dalvik-cache</string>
+    <string name="contextpatt1">תקן החלפת אימות רשיון</string>
+    <string name="contextpatt1_descr">אם זה נמצא, כאשר תפעיל בפעם הראשונה את התוכנה, הפעל את חיבור האינטרנט. קבוצת הטלאים יבצעו את השינויים האחרונים.</string>
+    <string name="contextpatt2">תיקון רשיון במטמון (תיקון אינטרנט)</string>
+    <string name="contextpatt2_descr">אם זה קיים, ככל הנראה שאין צורך בחיבור לאינטרנט בהפעלה הראשונית.</string>
+    <string name="contextpatt3">תקן אימות קוד תגובה</string>
+    <string name="contextpatt3_descr">תיקונים מזעריים עבור אימות רשיון.</string>
+    <string name="contextpatt4">החלף את קוד התגובה</string>
+    <string name="contextpatt4_descr">לא יציב, אבל יעיל מאוד (ייתכנו שגיאות כאשר \"הכיוון האוטומטי\" של המכשיר מופעל). אם הוא קיים, אפשר חיבור לאינטרנט בהפעלה הראשונה.</string>
+    <string name="contextpatt5">רישיון אימות סופי</string>
+    <string name="contextpatt5_descr">תבניות לגמר של אימות רישיון התיקונים. אם התיקון הזה עובד נכון, היישום אמור לעבוד ללא האינטרנט.</string>
+    <string name="contextpatt6">רישיון אימות סופי (הפוך)</string>
+    <string name="contextpatt6_descr">אם לא עוזר \"רישיון אימות סופי\", אתה יכול לנסות את התיקונים האלה.</string>
+    <string name="contextpattads3">הרס את הפרסום המקבל של Google!</string>
+    <string name="contextpattads3_descr">מנסה לשבור את מנגנון ההשגה של שירות הפרסומות של גוגל (Google Ads).</string>
+    <string name="contextpattads4">טלאים אחרים!</string>
+    <string name="contextpattads4_descr">טלאים נוספים שיכולים להיות יעילים בהסרת פרסומות</string>
+    <string name="contextpattads6">תיקון לא מקוון</string>
+    <string name="contextpattads6_descr">גורם ליחידת תפקוד הפרסומות לחשוב שהיא לא מחוברת לאינטרנט.</string>
+    <string name="contextpattamazon">מצב אוטומטי! (שוק אמזון)</string>
+    <string name="contextpattamazon_descr">הסר אימות רישיון ליישומים משוק אמזון.</string>
+    <string name="contextpattdependencies_descr">מסיר תלות בגוגל פליי ובשירותים אחרים…</string>
+    <string name="contextpattlvl1">מצב רכב!</string>
+    <string name="contextpattlvl1_descr">המספר המינימלי של תיקונים. מתאים לרוב היישומים עם הגנה פשוטה.</string>
+    <string name="contextpattlvl2">מצב אוטומטי!(הפוך)</string>
+    <string name="contextpattlvl2_descr">ישנם כמה הבדלים מ\"מצב אוטומטי!\". זה עשוי לעזור לך, אם לא יעזור \"מצב אוטומטי\".</string>
+    <string name="contextpattlvl3">תיקונים אחרים (מצב אקסטרים)!</string>
+    <string name="contextpattlvl3_descr">תיקונים נוספים שעלולים לגרום לאי יציבות. החל רק אם הדפוסים האחרים לא היו מוצלחים. דורש אינטרנט. נסה להשתמש יחד עם \"מצב אוטומטי\" או \"מצב אוטומטי (הפוך)\".</string>
+    <string name="contextpattlvl4">החל תיקון על dalvik-cache!</string>
+    <string name="contextpattlvl4_descr">במצב ברירת המחדל, כל השינויים נשארים קובץ odex. חלק מקובצי ה-odex אינם פועלים לאפליקציה (לדוגמה כאשר אפליקציה מועברת ל-externSD). אז החלת התיקון ל-dalvik-cache יכולה לעזור. אבל אתה יכול לשחזר את היישום, אם הוא רק התקן אותו מחדש.</string>
+    <string name="contextpattlvl5">גיבוי קובץ apk</string>
+    <string name="contextpattlvl5_descr">יעתיק את קובץ חבילת האפליקציה לתיקיה של לאקי פאטצר בכרטיס ה-SD. אתה יכול לשחזר את היישום מה-APK שהועתק.</string>
+    <string name="contextpattlvl6">מחק את dalvik-cache!</string>
+    <string name="contextpattlvl6_descr">מוחק מטמון dalvik של היישום כדי לחסוך במקום לאחר יצירת קובץ ה-odex. אם היישום לא עובד טוב עם odex, תצטרך להתקין מחדש את היישום הזה.</string>
+    <string name="contextpattsamsung">מצב אוטומטי (אפליקציות סמסונג)</string>
+    <string name="contextpattsamsung_descr">הסר אימות רישיון עבור אפליקציות מ-אפליקציות סמסונג.</string>
+    <string name="contextrestore">שחזר!</string>
+    <string name="contextselpatt">בחר תבניות</string>
+    <string name="core_only_dalvik_cache_end">אם המכשיר קופא או שכל התיקונים אינם פועלים, אנא הפעל מחדש את המכשיר באופן ידני.</string>
+    <string name="core_only_dalvik_cache_finished">"תיקון אנדרואיד עבור dalvik-cache הסתיים.
+התוצאות הן:
+"</string>
+    <string name="core_option">רק תיקון dalvik-cache.</string>
+    <string name="core_patch_apply">(תיקון מוחל)</string>
+    <string name="core_patch_nopatch">(לא תוקן)</string>
+    <string name="core_patch_nopatch_no_space1">Dalvik-cache של core.jar תוקן, אך סוג זה של Patch יכול להיעלם בעת עדכון ה-dalvik-cache. אין מספיק מקום ב-System ROM ליצירת core.odex. אנא פנה כ-4MB, נקה את dalvik-cache ונסה שוב. אנא הפעל מחדש את המכשיר כדי להחיל תיקון ל-dalvik-cache.</string>
+    <string name="core_result_checkbox">תיקון dalvik-cache תמיד באתחול מחדש (רק אם תיקונים ל-core.jar מוסרים לאחר אתחול מחדש).</string>
+    <string name="corepatches">תיקון לאנדרואיד</string>
+    <string name="corrupt_download">הקובץ שהורד הינו פגום. בדוק האם יש מספיק זכרון פנוי במכשיר ונסה שנית.</string>
+    <string name="create">צור ספרייה</string>
+    <string name="create_clone_option1">שנה רק את AndroidManifest.xml</string>
+    <string name="create_clone_option1_descr">לא עובד עבור כל היישומים. אם השיבוט אינו מותקן, עליך להסיר את המקור. אם שיטה זו לא עובדת, נסה ליצור שיבוט בדרך אחרת.</string>
+    <string name="create_clone_option2">שנה את AndroidManifest.xml, resources and classes.dex</string>
+    <string name="create_clone_option2_descr">זה לא עובד עבור כל היישומים. שיטה זו מנסה לשנות את המשאבים ואת classes.dex. שיטה זו יוצרת שיבוט מבודד יותר מהמקור.</string>
+    <string name="create_dir_error">שגיאה: שם הספרייה ריק.</string>
+    <string name="create_dir_error_2">שגיאה! נתיב קובץ לא נוצר.</string>
+    <string name="create_lic_done">הצליח! הרישיון נוצר בהצלחה. נסה לבדוק את האפליקציה במצב לא מקוון. אולי יתמזל מזלך.</string>
+    <string name="create_perm_ok">בניית אפליקציה מחדש!</string>
+    <string name="createapk">צור apk לאחר שינויים</string>
+    <string name="createapkads">קובץ ההתקנה ללא פרסומות גוגל</string>
+    <string name="createapkcustom">APK שהוחל על CustomPatch</string>
+    <string name="createapklvl">APK ללא אימות רישיון</string>
+    <string name="createapksupport">APK נבנה מחדש עבור אמולציית InApp ו-LVL</string>
+    <string name="createdialog1">בנה מחדש</string>
+    <string name="createdialog1_clone">שיבוט של</string>
+    <string name="createdialog2">"הסתיים.
+
+נתיב קובץ:"</string>
+    <string name="createdialog3">הערה! אם היישום עובד תקין לאחר התיקון, אין ערובה שהוא יעבוד בסדר בטופס ה-apk שונה - חלק מהאפליקציות מוגנות מפני שינויים. יהיה לך יותר מזל עם תיקון, מאשר עם שינוי.</string>
+    <string name="createdialog3_clone">הערה! מספר אפליקציות ידרשו למחוק את האפליקציה הקיימת ורק אז ניתן להתקין את ההעתק. אין שום התחייבות שזה יעבוד טוב בצורה החדשה, לחלק מהאפליקציות יש הגנה מפני שינויים.</string>
+    <string name="createdialog5">שם קובץ:</string>
+    <string name="custom_descript">תיאור של תיקון מותאם אישית:</string>
+    <string name="custom_patch_warning">תיקון מותאם אישית לא נמצא. זו בעיה בשורש. אין לך גישה לכרטיס SD מהשורש. אם אתה משתמש ב-SuperSu, נסה לבטל את \"הר הפרדת מרחב שמות\" ב-SuperSu. אם זה לא עוזר, אנא עדכן את SuperSu ועדכן את הקובץ הבינארי su מ-SuperSu.</string>
+    <string name="custom_patches_update_not_found">לא נמצאו עדכונים עבור תיקונים מותאמים אישית.</string>
+    <string name="custom_sel_app">יישום נבחר:</string>
+    <string name="customdescr">מציג את כל האפליקציות עם תיקון מותאם אישית.</string>
+    <string name="customtitle">אפליקציה עם תיקון מותאם אישית</string>
+    <string name="dalvik_cache_size">גודל מטמון Dalvik:</string>
+    <string name="data_dir_size">גודל ספריית נתונים:</string>
+    <string name="days_on_up">הצג אפליקציות חדשות תחילה</string>
+    <string name="days_on_up_descr">הגדר את מספר הימים המקסימלי שיישום יכול להיות בן כל עוד הוא נחשב חדש. הגדר ל-0 ימים אם ברצונך להשבית את התנועה של יישומים שהותקנו לאחרונה לראש הרשימה.</string>
+    <string name="delboot">לחץ כדי למחוק מרשימת האתחול</string>
+    <string name="delete_file">מחק קובץ</string>
+    <string name="delete_file_message">האם אתה באמת רוצה למחוק את הקובץ %s?</string>
+    <string name="dialog_system">אפליקציה זו היא חלק ממערכת ההפעלה אנדרואיד. היזהר מאוד בעת ביצוע פעולות כלשהן בו, מכיוון שאתה יכול לעצב את המכשיר שלך בצורה רכה. יש לך גיבוי? האם אתה בטוח שאתה רוצה לעבוד עם יישום זה?</string>
+    <string name="dir_change">העבר ספרייה</string>
+    <string name="dir_change_descr">"שנה את הספרייה בכרטיס ה-SD שבה Lucky Patcher יאחסן את הקבצים שלו. נתיב ברירת המחדל הוא
+/mnt/sdcard/Android/data/[package_name_of_lucky_patcher]/files/LuckyPatcher"</string>
+    <string name="dirbinder">קלסר ספריות</string>
+    <string name="dirr_chg">המדריך השתנה ל:</string>
+    <string name="disable_autoupdate">בטל עדכון אוטומטי</string>
+    <string name="disable_autoupdate_descr">סמן כדי להשבית עדכונים אוטומטיים.</string>
+    <string name="disable_inapp_services_google">שירותי InApp לחנות גוגל פליי</string>
+    <string name="disable_inapp_services_google_descr">חלק מהאפליקציות קורסות אם מספר שירותי InApp מופעלים.</string>
+    <string name="disable_license_services_google">שירות רישיון לחנות גוגל פליי</string>
+    <string name="disable_license_services_google_descr">חלק מהאפליקציות קורסות אם שירותי רישיונות מרובים מופעלים.</string>
+    <string name="disabled_package">חבילה מושבתת (קפואה).</string>
+    <string name="dontusepatch">ביטול</string>
+    <string name="download">טוען...</string>
+    <string name="empty">ריק</string>
+    <string name="empty_binders">"עליך ליצור איגד אחד לפחות כדי להוסיף ווידג'ט."</string>
+    <string name="enabled_package">חבילה מופעלת.</string>
+    <string name="enter_name_dir">שם הספריה:</string>
+    <string name="equals_version">"אתה משתמש בגרסה העדכנית ביותר של לאקי פאטצ'ר."</string>
+    <string name="error">שגיאה</string>
+    <string name="error_apk_to_system">אינך יכול להתקין יישומי מערכת ממיקום זה, אנא העבר אותם ל-sdcard.</string>
+    <string name="error_app_installed_on_sdcard">"יש להתקין את לאקי פאטצ'ר בזיכרון הפנימי. אחרת, ייתכן שחלק מהתכונות לא יפעלו כראוי."</string>
+    <string name="error_app_installed_on_sdcard_block">"יש להתקין את לאקי פאטצ'ר בזיכרון הפנימי. תכונה זו אינה פועלת כאשר לאקי פאטצ'ר נמצא בזיכרון חיצוני."</string>
+    <string name="error_backup_apk">גיבוי קובץ ה-apk נכשל. אין הרשאות להעתיק.</string>
+    <string name="error_classes_not_found">הקובץ \".jar\" אינו מכיל classes.dex עבור patch. נסה לתקן קובץ \".odex\" עבור קובץ \".jar\" זה.</string>
+    <string name="error_collect_logs">אירעה שגיאה באוסף היומנים. יומן לא נוצר.</string>
+    <string name="error_create_join_custom_patch">"לא ניתן ליצור את הקובץ join_patch.txt.
+ייתכן שאין הרשאות כתיבה לתיקיית התיקון."</string>
+    <string name="error_create_oat">"שגיאה ביצירת קובץ oat עבור classes.dex מתוקן. Patch עשה כמה שגיאות ב-classes.dex או כמה בעיות עם הקושחה. נסה לשנות את שיטת ה-java-root בהגדרות של לאקי פאטצ'ר. זה יכול לעזור לפעמים."</string>
+    <string name="error_delete_join_custom_patch">"לא ניתן למחוק את הקובץ join_patch.txt
+מחק את הקובץ או את כל תיקיית התיקון באופן ידני."</string>
+    <string name="error_detect">נראה כי Lucky Patcher נסגר בכוח, האם אתה רוצה לדווח לי על כך?</string>
+    <string name="error_get_pkgInfo">שגיאה: לא קיבלתי מידע על חבילה.</string>
+    <string name="error_launch">השקה בלתי אפשרית!</string>
+    <string name="error_message_for_share_app">"לא ניתן לשתף אפליקציה. שגיאה לא ידועה. נסה לשנות את ספריית העבודה עבור לאקי פאטצ'ר."</string>
+    <string name="error_not_found_lic_data">לא ניתן למצוא נתונים ליצירת רישיון.</string>
+    <string name="error_not_found_storage_lic">לא ניתן למצוא את מיקום הרישיון.</string>
+    <string name="error_odex_app">שגיאה: יצירת תהליך odex נכשל... כנראה לא נותר מספיק מקום בדיסק.</string>
+    <string name="error_odex_app_impossible">אפליקציה זו אינה מכילה classes.dex. אופטימיזציה של Dex אינה אפשרית.</string>
+    <string name="error_out_of_memory">אין מספיק זיכרון (ראם) להשלמת פעולה זו. ערימת ה-VM קטנה מדי.</string>
+    <string name="error_path">נתיב שגוי!</string>
+    <string name="error_path_exists">ספרייה כבר קיימת. נא להזין נתיב חדש.</string>
+    <string name="error_restore">השחזור נכשל.</string>
+    <string name="extpat1">נמצא</string>
+    <string name="extpat2">אובייקטים דומים לרשיון:</string>
+    <string name="extpat3">"הוראות:
+--------------
+- אנא הקש על כפתור \"גיבוי\";
+- אפשר גישה לנתונים דרך רשת וואי-פיי או סלולרית ואפשר את כל החיבורים ליישום;
+- בחר את הדפוס והקש על \"תיקון\";
+- הקש על \"הפעל\" ובדוק את סטטוס הרישיון (רענן, במידת הצורך);
+- אם הדפוס הזה לא עוזר, הקש על \"שחזר\" ונסה שוב עם דפוס אחר.
+- אם הפעולה הצליחה הקש על תקן שינויים."</string>
+    <string name="extres1">"התיקון הושלם! הפעל ובדוק את סטטוס הרישיון של האפליקציה;
+אם דפוס זה לא עוזר, הקש על \"שחזר\" וחזור על ההליך עם דפוס אחר."</string>
+    <string name="extres2">"לא ניתן למצוא תגים עבור דפוס זה.
+כבר תוקן?
+הקש על \"שחזר\", בחר דפוס אחר ותקן אותו שוב."</string>
+    <string name="failed">נכשל</string>
+    <string name="fast_start">הפעלה מהירה</string>
+    <string name="fast_start_descr">"משבית את טעינת האייקונים ממסד הנתונים של לאקי פאטצ'ר. זה הופך את רשימת היישומים לאיחור..."</string>
+    <string name="file_not_deleted">הקובץ לא נמחק.</string>
+    <string name="file_not_found">"לא ניתן היה להעתיק את האפליקציה לכרטיס ה-SD!
+אנא פנה מקום בכרטיס ה-SD או בדוק את התקנת ה-busybox שלך."</string>
+    <string name="filter">לְסַנֵן</string>
+    <string name="filter0">אפליקציות חדשות או מעודכנות</string>
+    <string name="filter1">אפליקציה עם LVL</string>
+    <string name="filter10">אפליקציות מושבתות (קפואות).</string>
+    <string name="filter11">אפליקציות עם תיקון מותאם אישית</string>
+    <string name="filter12">אפליקציות מסומנות כשונות</string>
+    <string name="filter13">אפליקציות Odexed</string>
+    <string name="filter2">אפליקציות עם מודעות</string>
+    <string name="filter4">אפליקציות עם InApp Google</string>
+    <string name="filter5">אפליקציות בזיכרון המכשיר</string>
+    <string name="filter6">יישומים בכרטיס SD</string>
+    <string name="filter7">יישומי מערכת</string>
+    <string name="filter8">אפליקציות מערכת עם עדכונים</string>
+    <string name="filter9">אפליקציות עם הרשאות שליחת סמס ו-ביצוע שיחות</string>
+    <string name="filterdescr">בחר קטגוריה כדי להציג יישומים.</string>
+    <string name="final_market_message">גוגל פליי הותקן. כעת core.jar יתוקן והמכשיר שלך יופעל מחדש. להמשיך?</string>
+    <string name="fixbutton">תקן שינויים</string>
+    <string name="fixeddescr">מציג את כל האפליקציות עם שינויים קבועים (כוכב צהוב).</string>
+    <string name="fixedtitle">Dalvik-Cache קבוע (ODEX)</string>
+    <string name="framework_file_patched">תוקן, שם שונה ל</string>
+    <string name="framework_patch_not_result">"לאקי פאטצ'ר לא מצא בתים לתיקון."</string>
+    <string name="generate_log_error_message">יומן לא נוצר. אירעה שגיאה בעת יצירת היומן.</string>
+    <string name="generate_log_for_conscrypt_jar_fix_android_patches">"צור יומן עבור conscrypt.jar
+(לתיקון \"תיקון ל-אנדרואיד\")"</string>
+    <string name="generate_log_for_core.jar_fix_android_patches">"צור יומן עבור core-libart.jar
+(לתיקון \"תיקון לאנדרואיד\")"</string>
+    <string name="generate_log_for_framework_fix_android_patches">"צור יומן עבור framework.jar
+(לתיקון \"תיקון ל-אנדרואיד\")"</string>
+    <string name="generate_log_for_services.odex_fix_android_patches">"צור יומן עבור services.jar
+(לתיקון \"תיקון ל-Android\")"</string>
+    <string name="generate_log_result_message_conscrypt.jar">"יומן נוצר ומאוחסן ב-/sdcard/conscrypt.oat.txt. שמור את הקובץ בענן או דחס ל-zip. לאחר מכן שלח לי אותו בדואר lp.chelpus@gmail.com.
+גודל הקובץ:"</string>
+    <string name="go_to_file_path">לך אל קובץ</string>
+    <string name="goodresult">"% מזל!
+אנא הפעל את היישום כדי לבדוק את התיקון!
+
+אם היישום פועל בצורה שגויה, אנא התקן אותו מחדש ואל תנסה לתקן את הגרסה הזו שלו."</string>
+    <string name="have_luck">"***********************
+
+יש לך"</string>
+    <string name="header_activities">אקטיבטים:</string>
+    <string name="header_providers">ספקים:</string>
+    <string name="header_receivers">מקלטים:</string>
+    <string name="header_services">שירותים:</string>
+    <string name="help">עֶזרָה</string>
+    <string name="help_3dot">"זוהי אפליקציה עם קבצי apk מופרדים. בעת יצירת עותק גיבוי של אפליקציה כזו, ייווצר קובץ עם הסיומת \"apks\" (לאקי פאטצ'ר יכול להתקין את הקבצים הללו)"</string>
+    <string name="help_bootlist_describing">* %1$s - רשימה של יישומים שיתוקנו בעת האתחול. כרגע, הפונקציה מיושנת, מכיוון שכל השינויים שאתה מבצע באפליקציות נשמרים ב-ODEX ואינם יכולים לעבור לשום מקום, לכן, אינך צריך לבטח את עצמך על ידי הוספת יישומים לרשימת האתחול. זה עשוי להיות נחוץ רק במקרה, אם תיקון מותאם אישית ישנה את ספריות \".so\" של היישום. זה יצוין בתיאור של אותם תיקונים מותאמים אישית כדי להוסיף אותם לרשימת האתחול.</string>
+    <string name="help_common">מְשׁוּתָף</string>
+    <string name="help_custom">צור תיקונים מותאמים אישית</string>
+    <string name="help_custom_add_boot_tag">מוסיף אוטומטית את התיקון המותאם אישית הזה ל-\"%1$s\". יש להשתמש בתיקון של ספריות (או בתיקון של [CLASSES] ללא [ODEX] או ללא [PACKAGE])</string>
+    <string name="help_custom_add_file_in_apk_tag">"הוסף קובץ מספריית Lucky Patcher לארכיון ה-apk.
+דוגמה:"</string>
+    <string name="help_custom_all_files_tag">"מתקן את כל הקבצים בספרייה שצוינה.
+\"dir\" - ספרייה לקבצי תיקון.
+\"תבנית\" - תבנית לבחירת קבצים לתיקון (ניתן להשתמש רק ב-\"*\", כלומר כל מספר של תווים כלשהם. ).
+דוגמה:"</string>
+    <string name="help_custom_all_lib_tag">חיפוש/החלפה של דפוסים עבור כל הספריות המקוריות</string>
+    <string name="help_custom_apk_build_param">מחיל דפוס זה רק עבור apk עם build=apk_build. אתה יכול להחיל דפוס עבור build>=apk_build (דוגמה: {\"apk_build\":\"206+\"}) או להגיש בקשה עבור build&lt;=apk_build (דוגמה: {\"apk_build\":\"206-\"}).</string>
+    <string name="help_custom_apk_build_param2">אתה יכול להחיל תבנית תיקון עבור מרווח גרסת ה-apk, לשם כך עליך לציין שני apk_builds עם גבול גרסה עליון ותחתון:</string>
+    <string name="help_custom_begin_tag">הערות תיקון שגלויות לתיקון מראש של המשתמש</string>
+    <string name="help_custom_begin_tag_detail">"סימן ההתחלה, כל הטקסט שאחריו ועד השדה הראשון [CLASSES], [LIB], [END] וכו' יוצגו בתחילת יומן התיקון עבור המשתמש."</string>
+    <string name="help_custom_block_hosts_tag">"חוסם מארחי אינטרנט ברשימה. \"מארח\" הוא המארח שברצונך לחסום.
+דוגמה:"</string>
+    <string name="help_custom_classes_bez_package_tag">"תיקון יישומי dalvik-cache. זכור שהמערכת מעדכנת מעת לעת יישומי dalvik-cache וכל השינויים ייעלמו. לכן, עלינו להשתמש ב-[ADD-BOOT]. התיקון עבור dalvik-cache מיושן, מכיוון שהוא לא אמין והיה בשימוש רק בקושחה ישנה יותר. אבל זה נחוץ עבור ארגז הכלים של ROM, מכיוון שהוא לא עובד טוב עם קבצי odex.
+דוגמה:"</string>
+    <string name="help_custom_classes_name_param">מחיל תיקון על קובץ מחלקות ספציפי אחד, ללא אפשרות זו התיקון יוחל על כל קבצי classes*.dex (לדוגמה: {\"classes_name\":\"classes2.dex\"}, {\"classes_name\":\"classes3.dex\" }, {\"classes_name\":\"classes.dex\"} ...).</string>
+    <string name="help_custom_classes_tag">חיפוש/החלפה של דפוסים עבור classes.dex (ראה להלן)</string>
+    <string name="help_custom_classes_tag_detail">להלן השורות לתיקון classes.dex. אלה יכולות להיות חיפוש, החלפת מקור ואפשרויות אחרות המתוארות להלן.</string>
+    <string name="help_custom_component_tag">"הפעל או השבת רכיבים של יישומים. לפעמים אפליקציה משביתה את הפעילות שלה ורכיבים אחרים על מנת להגביל את הפונקציונליות שלה, אז היכולת הזו להפעיל אותה בחזרה יכולה להיות שימושית. אז אתה יכול לכלול פעילויות, שירותים, ספקים ורכיבים אחרים. הדבר החשוב ביותר הוא לציין את שמותיהם בהתאם לאותיות גדולות וקטנות.
+דוגמה:"</string>
+    <string name="help_custom_copy_file_tag">"מעתיק קובץ מהתיקייה של לאקי פאטצר לתיקיה שצוינה עם שם קובץ חדש.
+דוגמה:"</string>
+    <string name="help_custom_database_param">"זהו הנתיב למסד הנתונים במכשיר שלך וככל הנראה במכשירים של משתמשים אחרים. אתה יכול גם לציין רק את שם הקובץ שלו, ואז לאקי פאטצ'ר ינסה למצוא אותו בעצמו."</string>
+    <string name="help_custom_delete_file_in_apk_tag">"מחק קובץ בתוך ארכיון apk.
+דוגמה:"</string>
+    <string name="help_custom_delete_folder_in_apk_tag">"מחק תיקייה בתוך ארכיון apk.
+דוגמה:"</string>
+    <string name="help_custom_deprecated_tag">הוצא משימוש</string>
+    <string name="help_custom_end">הכל נערך, שמור ושחרר את הקובץ לספריית \"CustomPatches\" שנמצאת בתיקיית לאקי פאטצר. ניתן לצפות בתיקייה זו בחלק \"אודות\" בחלק העליון. אז התוכנית מסומנת בצהוב, ואתה יכול להחיל עליה את התיקון הזה.</string>
+    <string name="help_custom_end_tag">הערות תיקון שגלויות למשתמש לאחר תיקון</string>
+    <string name="help_custom_execute_param">זוהי שאילתת SQLite, הידורית לפי הכללים הרגילים (ניתן לקרוא אותה באינטרנט).</string>
+    <string name="help_custom_file_in_apk_tag">חיפוש/החלפה של דפוסים לקובץ בתוך קובץ ה-apk (פונקציה זו פועלת רק כאשר בונים מחדש את האפליקציה עם תיקון מותאם אישית זה)</string>
+    <string name="help_custom_general_text1">- לקובץ התיקון חייב להיות שם זהה לשם APK היעד (זהו תלוי רישיות).</string>
+    <string name="help_custom_general_text2">- אם כבר קיים קובץ תיקון מותאם אישית עבור האפליקציה, אתה יכול פשוט להוסיף כל טקסט בתחילת שם הקובץ ולשמור אותו ליד הקיים. במקרה זה, כאשר תבחר \"תיקון מותאם אישית\" באפליקציה, Lucky Patcher יציע לך רשימה של תיקונים מותאמים אישית עבור האפליקציה לבחירתך.</string>
+    <string name="help_custom_general_text3" formatted="false">"- אם אתה רוצה לכתוב תיקון עבור סדרה שלמה של תוכניות מחברה אחת בבת אחת, אז בסוף שם קובץ התיקון המותאם אישית, אתה יכול להשתמש במזהה _%ALL%. לדוגמה, שם התיקון עבור כל קולות SVOX ייראה כך: com.svox.classic.langpack_%ALL%.txt.
+ ה _%ALL% מחליף את החלק בשם החבילה, אשר משתנה בהתאם ליישום של החברה הנתונה. אל תשתמש בתווים/עיצוב מיוחד בקובץ התיקון (רווחים בודדים בלבד).
+אם אתה עדיין צריך להוסיף קידומת משלך בהתחלה, אתה יכול להשתמש%ALL%_ ו _%ALL% (דוגמה: chelpus.%ALL%_com.android._%ALL%.txt). בעת הצגת שמות תיקון מותאמים אישית בתוכנית עצמה, %ALL%_ מוסתר לקריאות."</string>
+    <string name="help_custom_general_text4" formatted="false">- בטקסט של תיקון מותאם אישית, אתה יכול להשתמש ב-%PACKAGE_NAME%, שיוחלף בשם החבילה של יישום היעד במהלך התיקון. זה שימושי בתיקונים של קבוצת יישומים שבהם נתיב הקובץ ישתנה בהתאם לשם החבילה (דוגמה: /data/data/%PACKAGE_NAME%/files/trial.txt).</string>
+    <string name="help_custom_general_text5">- כדי לחפש תבניות של בתים השתמש ב-IDA Pro 6.1+. זה יכול לפתוח dalvik-cache, odex, libraries ו-classes.dex.</string>
+    <string name="help_custom_general_text6">- אם אתה רוצה לתקן את dalvik-cache או odex, אל תשכח שהבתים של הנתונים בגרסאות קושחה שונות עשויים להשתנות. בגרסאות מוקדמות של אנדרואיד לפני כניסת ART, אפשר היה לתקן קבצי מטמון dalvik או odex, אבל שם צריך לקחת בחשבון שהבתים של ה-opcodes לא תמיד תואמים לבייטים ב-classes.dex, אז כשכותבים כזה תיקון, אתה צריך להסתכל על המקום הזה על ידי פתיחת הקובץ ב-IDA Pro.</string>
+    <string name="help_custom_general_text7">החל מגרסה 6.5.4+, ל- Lucky Patcher יש את היכולת ליצור קבצים עם סיומת lpzip. אלו הם ארכיוני zip שיכולים להכיל תיקונים מותאמים אישית וקבצי apk. בעת פתיחת קבצי zip אלה ב- Lucky Patcher, תיקונים מותאמים אישית ייובאו, וקבצי apk יתבקשו להתקין על המערכת. (לדוגמה: installSomeAppsWithPatch.lpzip)</string>
+    <string name="help_custom_group_param">מסמן תבניות של הקבוצה (מספר הקבוצה יכול להיות 1 ומעלה). אולי אתה שואל \"מה זה אומר?\". ובכן, המשמעות היא שאם לפחות דפוס אחד מהקבוצה הצליח, יוצג למשתמש תיבת דו-שיח שהתיקון השלים בהצלחה. זה שימושי כאשר אתה מנסה ליצור תיקון אוניברסלי עבור גרסאות מרובות של יישום מסוים (לדוגמה, תיקון עבור כל הגרסאות של גוגל פליי כדי להשבית עדכונים אוטומטיים).</string>
+    <string name="help_custom_increment_decrement_param">"הוספה והפחתה של מספרים עשרוניים מהבייט המקורי...
+לדוגמה:"</string>
+    <string name="help_custom_increment_decrement_param_end">או דוגמה אחרת:</string>
+    <string name="help_custom_insert_param">"משמש במקרים בהם יש צורך להחליף את המקור שנמצא במספר בתים השונה ממספר בתים של התבנית המקורית. לרוב זה נחוץ בקבצי טקסט שונים. לדוגמה, כאשר קובץ ה-xml מכיל: \"lives=9\", אבל אתה צריך להחליף אותו ב-\"lives=999\", במקרה זה, insert יעזור, מבלי לשנות את הנתונים אחרי \"lives=9\".
+( דוגמה: לפני התיקון, הקובץ מכיל: \"chelpa end\")"</string>
+    <string name="help_custom_insert_param_end">לאחר התיקון הקובץ כבר מכיל: \"chelpaa end\"</string>
+    <string name="help_custom_integrate_inapp_lvl_emulation_tag">בונה באופן אוטומטי אמולציה של רכישות ואימות רישיון בעת ​​תיקון. שימושי אם התיקון עוקף רכישה משופרת או אימות רשיון. לדוגמה, לפעמים זה עוזר לתקן את שיטת GooglePlayValidator ב-IL2СPP ורכישות מתחילות לעבוד עם Lucky Patcher.</string>
+    <string name="help_custom_lib_tag">חיפוש/החלפה של דפוסים עבור ספריות מקוריות בשמות (ראה להלן)</string>
+    <string name="help_custom_lib_tags">זה אומר שהשורות עבור התיקון של הספרייה של תוכנית זו יבואו, \"שם\" הוא שם הספרייה (אם תכניס * במקום השם, אז כל ספריות האפליקציות יתוקנו).</string>
+    <string name="help_custom_libs_tags">לפעמים לאפליקציה יש מספר ספריות עבור ארכיטקטורות מעבדים שונות, אז עדיף להשתמש ב-[LIB-ARMEABI], [LIB-ARMEABI-V7A], [LIB-ARM64-V8A], [LIB-MIPS], [LIB-X86] או [LIB-X86_64] עבור הספרייה הרצויה כך שדפוסים מספרייה אחרת לא יוחלו על הנוכחית.</string>
+    <string name="help_custom_method_name_patch_example1">מחליף את הקוד ב-\"replaced\" עבור כל השיטות עם אותו שם ומחזיר ריק</string>
+    <string name="help_custom_method_name_patch_example2">מחליף את הקוד ב-\"replaced\" עבור מתודה שמחזירה בוליאן ונמצאת במחלקה קונקרטית</string>
+    <string name="help_custom_method_name_patch_example3">מחפש ומחליף בתים בקוד של שיטה עם הבדלים כלשהם משיטות אחרות</string>
+    <string name="help_custom_method_name_patch_param">מתקן רק את הקוד של השיטה שנבחרה עצמה, למעט שאר קוד היישום. יש לציין את השדה \"שם השיטה\" - זהו שם השיטה שתתוקן. כדי לחתוך שיטות מיותרות, מציינים את המחלקה של מיקומה \"שם המחלקה\", ובמידת הצורך גם \"סוגי פרמטרים\" ו\"סוג החזרה\", כדי לא לתקן שום דבר נוסף. שמות ופרמטרים נכתבים בתחביר smali. אם אתה משתמש בתבניות \"המקוריות\" וה\"מוחלפות\" אחרי הפרמטרים הללו, החיפוש יתבצע בתוך השיטה. אם נעשה שימוש רק בתבנית ה\"מוחלפת\", אז כל קוד השיטה יוחלף בתבנית זו ובאפסים ללא חיפוש, אך במקרה זה גודל התבנית חייב להיות קטן או שווה לגודל קוד השיטה.</string>
+    <string name="help_custom_name_param">"בדרך כלל מציין את האובייקט עליו יוחל התיקון. זה יכול להיות רק שם קובץ, שם קובץ עם נתיב וכדומה. במקרים מסוימים, אתה יכול להשתמש ב-'*' כדי לתקן את כל הספריות, למשל אם שם הספרייה אינו ידוע."</string>
+    <string name="help_custom_odex_patch_tag">"ישנם מצבים שבהם אתה צריך לשנות אפליקציה שכבר תוקנה, למשל, שבדיקת הרישיון עבורה כבר הוסרה על ידי תיקון אוטומטי, אז תגית זו באה לעזרה. כל הדפוסים ה\"מקוריים\"-\"הוחלפו\" לאחריו יוחלו על קובץ ה-odex שכבר יצרו תיקונים אחרים. לדוגמה, זה נדרש לראשונה ב-Final Fantasy III, כאשר אנשים טיפלו במשחק עם מצב הסרת רישיון בדיקה אקסטרה, אך כדי שהתרגום יוצג בקידוד הנכון, נדרשו תיקונים נוספים בקובץ ה-odex, אשר התאפשר להחיל באמצעות תג זה. אם נשתמש ב-[PACKAGE]-[CLASSES], [ODEX] או [CLASSES]-[ODEX], קובץ odex ייווצר ללא שינוי ורק לאחר מכן יתוקן. בגרסה זו של Lucky Patcher, זה כבר לא נדרש, מכיוון שקיימת אפשרות \"%1$s\".
+דוגמה:"</string>
+    <string name="help_custom_odex_tags">במכשירי אנדרואיד ישנים יותר, ניתן להשתמש בתג זה. במקום התג [CLASSES], אתה יכול להשתמש בתג הזה. לאחר מכן השינויים ב-classes.dex יישמרו לא ב-dalvik-cache, שם הם נעלמים מעת לעת כאשר המערכת מעדכנת את המטמון, אלא בקובץ נפרד עם סיומת odex לצד ה-apk של האפליקציה, שתתקן את כל השינויים. ולהשאיר את ה-dalvik-cache המקורי ללא פגע - זה רק למקרה, אם האפליקציה תבדוק את זה. אתה יכול להשתמש ב-[ODEX] אחרי [CLASSES], ואז השינויים יבוצעו במטמון dalvik ויתחייבו אוטומטית ל-odex. זה לא הכרחי בקושחה מודרנית.</string>
+    <string name="help_custom_offset_param">ב-offset, אנו מציינים את ההיסט מתחילת הקובץ בפורמט הקסדצימלי, כאשר רצף הבתים שצוין ב-\"replaced\" או \"insert\" יוכנס.</string>
+    <string name="help_custom_original_param">זוהי מסכת דפוס המשמשת למציאת ההיסט שבו התיקון יוחל.</string>
+    <string name="help_custom_original_param_end">בדוגמה זו, הבתים מרכיבים את מסכת הדפוס, ו-(??, **) פירושו כל בייט.</string>
+    <string name="help_custom_other_files_tag">חיפוש/החלפה של דפוסים עבור כל קבצים ב-/data/data/Package_Target_APK/ או ב-/sdcard (ראה להלן)</string>
+    <string name="help_custom_package_tag">מפרק את classes.dex ומחיל את כל התיקונים מה-[CLASSES] עליו. ומייצר, בהתבסס על classes.dex שונה, odex-file.</string>
+    <string name="help_custom_package_tag_detail">תג זה אומר שלא נתקן את dalvik-cache ישירות, אלא נשלוף את classes.dex מיישום היעד, נתקן אותו (עם תיקונים שעוקבים אחר המזהים [CLASSES] או [ODEX]), ניצור תמונת odex עם שינויים ו- להכניס ליישום. זו התמונה ש-TitaniumBuckup צריך, למשל. הוא בודק אותו וכל סכומי הבדיקה בתוכו חייבים להיות נכונים. רצוי להשתמש תמיד בתג הזה, כי תיקון כזה הוא הכי נכון, אבל אם הוא גורם לבעיות, אפשר להסתדר בלעדיו.</string>
+    <string name="help_custom_permission_tag">"פקודת לינוקס אנלוגית \"chmod permissions file_name\" עבור קבצים מספריית נתוני היישום (למשל, תן זכויות קריאה בלבד לאחר עריכה)
+דוגמה:"</string>
+    <string name="help_custom_rename_file_in_apk_tag">"שנה את שם הקובץ בתוך ארכיון apk.
+דוגמה:"</string>
+    <string name="help_custom_replace_from_file_param">זה יבוא בעקבות הצהרה \"מקורית\", זה מה שהאופסט יחליף בתים מהקובץ עם השם שצוין (יש לשמור את הקובץ ליד תיקון מותאם אישית).</string>
+    <string name="help_custom_replace_from_file_param_end">זה נעשה על מנת להימנע מכתיבת תבניות החלפה ארוכות מאוד שהן מטלה להקלדה בקובץ טקסט.</string>
+    <string name="help_custom_replaced_param">זה חייב לעקוב אחר פרמטר \"מקורי\" או \"היסט\", שזה מה שהבתים הללו יידרסו איתו, או ייכתבו בהיסט שצוין. בייטים במקומות המסומנים ב-(?? או **) לא ייפגעו:</string>
+    <string name="help_custom_replaced_param_end">בדוגמה זו, הבתים W0, W1, W2 אוחסנו כ-R0, R1, R2 ב\"חיפוש\" שבוצע קודם לכן.</string>
+    <string name="help_custom_s0_s1_sq_param">"מגדיר את משתנה סמלי ל-0 (לדוגמה, ממיר את מספר הקסדה ל: 43->03,54->04...) או 1 (לדוגמה, ממיר את המספר הקסדתי ל: 43->13,04->14...) בהתאמה, SQ מיישר ספרות הקסדצימליות (למשל ממיר את מספר הקסדצימלי ל: 34->44, 51->11...).
+לדוגמה, יש משתנה: const/4 v?,0x00. סימן השאלה מראה שהמספר של var אינו ידוע (לדוגמה, לאחר שהוא שונה בגרסה החדשה יותר), אבל אתה בטוח שה- var זה שווה 0, ואתה רוצה להגדיר אותו ל-1. במקרה זה הדפוס יהיה נראה כמו זה:"</string>
+    <string name="help_custom_s0_s1_sq_param_end">ולהיפך, כדי להגדיר משתנה ל- 0:</string>
+    <string name="help_custom_search_param">מחפש בתים במיקומים המסומנים R[0, 1, 2, 3, ...], כאשר מספר הוא מספר התא שבו מאוחסן הביט (מספרי תאים חייבים להיות בסדר מ-0 ואילך ואסור לחזור עליהם) . לדוגמה:</string>
+    <string name="help_custom_search_param_end">פירושו שהבתים בעמדות אלה יאוחסנו ב-R0, R1, R2. כעת, לאחר שהם נמצאו ונשמרו, אתה יכול להשתמש בהם בתבניות החלפה רק על ידי החלפת R ב-W.</string>
+    <string name="help_custom_shared_preferences_tag">"עורך את קובץ ה-XML המאחסן את הגדרות האפליקציה (תוכל למחוק, להוסיף ולשנות ערכים).
+דוגמה:"</string>
+    <string name="help_custom_sqlite_tag">"לפעמים באפליקציית היעד יש צורך לשנות משהו במסד הנתונים אליו הוא כותב אירועים או נתונים, ואז המזהה הזה בא לעזור.
+דוגמה:"</string>
+    <string name="help_custom_syntax_text_start">אז הנה דוגמה. ליקטתי אותו ממספר תגים לבהירות. בפועל, תזדקק להרבה פחות פונקציות. בגוף הקובץ תכתוב משהו כזה (המפריד הוא רק רווח בודד, אחרת הוא ייתן שגיאה):</string>
+    <string name="help_custom_title_detailed_description">תיאור מפורט של התגים והפרמטרים שלהם:</string>
+    <string name="help_custom_title_general">מידע כללי:</string>
+    <string name="help_custom_title_syntax">עזרה כללי תחביר:</string>
+    <string name="help_custom_use_option_rebuild_tag">מפעיל את \"%1$s\" אפשרות אם היישום נבנה מחדש עם תיקון זה.</string>
+    <string name="help_custom_warning_text">אין להסיר קפיצות או להפוך אותן ללא תנאי! כלי האופטימיזציה יקרוס והתיקון שלך לא יעבוד על ART! כדי להימנע מכך, השתמש בקפיצות מותנות. לדוגמה, אם יש צורך לקפוץ, החלף את הקפיצה ב-if-eq v0,v0 (בתים: 32 00 ?? ??). אם אין צורך לקפוץ במקום מסוים, ניתן להכניס קפיצה כגון if-ne v0,v0 (בתים: 33 00 ?? ??); אל תהסס להשתמש גם המקבילה שלך.</string>
+    <string name="help_custom_warning_title">אזהרה:</string>
+    <string name="help_cyan_apps">נמצאו פרסומות באפליקציה זו</string>
+    <string name="help_for_inapp_root_method1">"החל את התיקון הראשון לאנדרואיד (%1$s) והתקן גרסה שונה של גירסא 3+. לאחר מכן, כל הרכישות שלך יופנו ל- לאקי פאטצ'ר, אם האפשרות \"%2$s\" מופעלת. כדי לחזור למצב קניות \"חוקי\" רגיל, פשוט השבת את האפשרות \"%2$s\". שיטה זו זהה לעבודת Freedom ואינה נחותה ממנה ביעילות, אלא מיושמת על ידי שינוי גוגל פליי עצמו, המאפשר לבצע רכישות מבלי לשבש את פעולת גוגל פליי עצמה.
+
+איך עושים זאת?
+- התקן את לאקי פאטצ'ר :)
+- בחר את הלוח התחתון של לאקי פאטצ'ר \"%3$s->%4$s\", בחר את הפריט העליון (%1$s) והקש כדי להחיל. לאחר אתחול מחדש, התיקון הראשון בדיאלוג זה אמור להיות מסומן כ-2/2 מוחל.
+- (תוכל לדלג על שלב זה, אבל עדיף לעשות זאת כך, כי אם זה לא עובד, אז לא ניתן היה להחיל את התיקון, אתה יכול לנסות להשתמש באפשרות הראשונה של מודול Xposed לאקי פאטצ'ר) ;
+- הפעל את לאקי פאטצ'ר, הפעל את חיבור האינטרנט ובחר בחלונית התחתון \"%3$s->%5$s\" , בחר את הגרסה הנכונה ולחץ על התקן;
+- בצע בדיקה של גוגל פליי ב\"%3$s-->%6$s\".
+"</string>
+    <string name="help_for_inapp_root_method2">"החל את התיקון הראשון לאנדרואיד (אימות חתימה הוא תמיד נכון) והפעל את המתג \"%1$s\". לאחר מכן, כל הרכישות שלך יופנו ל- לאקי פאטצ'ר"</string>
+    <string name="help_for_inapp_root_method2_disadvantages">"- גוגל פליי לא פועל בזמן ששרת ה-פרוקסי מופעל;
+- אינו יעיל ביישומים עם הגנה לבדיקת המידע המקורי על רכישות;
+- זה לא נוח בשילוב עם רכישות שמורות, מכיוון שהוא לא יכול לתת רכישות שמורות ל- יישום אם שרת ה-פרוקסי מושבת.
+"</string>
+    <string name="help_for_inapp_root_method3">"אם יש לך Xposed במכשיר שלך, תוכל להפעיל את מודול ה-Xposed של לאקי פאצר.
+שים לב: עליך להפעיל את האפשרות הרביעית במודול Xposed \"%1$s\" רק אם לא מותקן לך גוגל פליי שונה. אם גוגל פליי שהשתנה לא מותקן, אז על ידי הפעלת האפשרויות הראשונה והרביעית, תוכל לבצע רכישות בתוך האפליקציה. האפשרות החמישית היא לנסות להסתיר את תיקון המזל מהאפליקציה אם הוא רוטן."</string>
+    <string name="help_for_inapp_root_method3_disadvantages">"אינו יעיל ביישומים עם הגנה לבדיקת מידע מקורי על רכישות;
+- Xposed עצמו הוא באגי בעת עדכון התיקון המזל, לפעמים הוא משבית את מודול ה-Xposed שלו, יש להשבית אותו ב-Xposed עצמו ולהפעיל אותו מחדש ולאתחל את מכשיר
+"</string>
+    <string name="help_for_inapp_root_method4">"החל \"%1$s\" על יישום היעד. לאחר מכן, יש להפנות את כל הרכישות ל-Lucky Patcher. כדי ששיטה זו תעבוד, עליך להפעיל את \"%2$s\" במתגי Lucky Patcher. שיטה זו שימושית אם אתה רוצה לקנות באמצעות אמולציה רק ​​ביישומים שאתה מתקן בעצמך.
+או החל את התיקון \"%3$s\" (ארוך מאוד) וכל הרכישות יופנו ישירות אל Lucky Patcher ללא פרוקסי."</string>
+    <string name="help_for_inapp_root_method4_disadvantages">"לא עובד על כל האפליקציות, מאחר וקוד הרכישה של InApp יכול להיות מוסתר במקום שאינו נגיש לתיקון.
+- אינו יעיל ביישומים עם הגנה לבדיקת המידע המקורי על רכישות.
+"</string>
+    <string name="help_green_apps">אלו יישומים שבהם נמצאות הרשאות אימות רישיון</string>
+    <string name="help_klever">"לאקי פאטצ'ר ביצע שינויים באפליקציה הזו. לדוגמה, אם התלתן מואר, אבל הכוכב לא, אז קובץ ה-odex עם השינויים לא נוצר, אבל מטמון ה-dalvik של האפליקציה, הספריות שלו, שונו, או ההפעלה וההרשאות שונו"</string>
+    <string name="help_magenta_apps">יישומים אלה נמצאים ברשימת האתחול*</string>
+    <string name="help_orange_apps">אלו יישומי מערכת. היזהר מאוד בעת ביצוע פעולות כלשהן איתם, שכן עריכה של אלה עלולה לגרום לנזק בלתי הפיך לאפליקציה או למערכת ההפעלה (הכן תמיד עותקי גיבוי עם תוכנות מתאימות).</string>
+    <string name="help_purple_apps">אפליקציה המכילה רכישות של גוגל InApp</string>
+    <string name="help_red_apps">לא נמצאה אינדיקציה ישירה לשום דבר באפליקציה הזו, אך ייתכן שיש בה בדיקת רישיון או פרסום. (לרוב, בדיקת רישיון ביישומים כאלה מתרחשת אם היא בשני חלקים: תוכנית + מפתח יישום)</string>
+    <string name="help_root_warning">"לאקי פאטצ'ר דורש גישת רוט בשביל לאפשר את כל תכונותיו. בלי זכויות רוט, התוכנה עובדת במצב מוגבל."</string>
+    <string name="help_star">המשמעות היא שלאפליקציה נמצא קובץ \"odex\". עבור מכשירי אנדרואיד מודרניים, קובץ ה-odex מוצג רק עבור יישומי מערכת.</string>
+    <string name="help_sub_title_for_inapp_disadvantages_method">החסרונות של שיטה זו:</string>
+    <string name="help_sub_title_for_inapp_non_root">למשתמשים ללא הרשאות שורש:</string>
+    <string name="help_sub_title_for_inapp_non_root_method1">Method #1:</string>
+    <string name="help_sub_title_for_inapp_root">למשתמשים עם פריבילגיות רוט:</string>
+    <string name="help_sub_title_for_inapp_root_method1">שיטה 1 (הכי אפקטיבית ומועדפת):</string>
+    <string name="help_sub_title_for_inapp_root_method2">שיטה 2:</string>
+    <string name="help_sub_title_for_inapp_root_method3">שיטה 3:</string>
+    <string name="help_sub_title_for_inapp_root_method4">Method #4:</string>
+    <string name="help_title1">הסבר על בסיס צבעים:</string>
+    <string name="help_title_for_inapp">"אפשרויות קנייה באמצעות לאקי פאטצ'ר."</string>
+    <string name="help_yellow_apps">"נמצא תיקון מותאם אישית עבור יישום זה בספרייה של לאקי פאטצ'ר"</string>
+    <string name="hide_notify">הסתר התראות</string>
+    <string name="hide_notify_descr">השתק התראות.</string>
+    <string name="hide_title_app">הסתר את הכותרת</string>
+    <string name="hide_title_app_descr">"מסתיר את הכותרת של לאקי פאטצ'ר ברשימת היישומים. עובד רק במכשירים עם כפתור תפריט חומרה."</string>
+    <string name="host_down">השרת אינו נגיש. נסה שוב מאוחר יותר.</string>
+    <string name="hosts_default">קובץ \"hosts\" שוחזר</string>
+    <string name="hosts_not_found_changes">שינויים בקובץ \"מארחים\" לא נמצאו...</string>
+    <string name="hosts_updated">קובץ \"hosts\" עודכן</string>
+    <string name="inapp_emulation_auto_repeat">חזור אוטומטי על רכישות עם ההגדרות הנוכחיות</string>
+    <string name="information">מידע</string>
+    <string name="install">התקנה</string>
+    <string name="install_as_user_app">התקן את גוגל פליי כאפליקציה משתמש.</string>
+    <string name="install_as_user_app_note">דורש: כבר הוחל \"תיקון לאנדרואיד\" והותקנה בחנות גוגל פליי.</string>
+    <string name="install_cloned_app">התקן שיכפול</string>
+    <string name="install_date">תאריך התקנה:</string>
+    <string name="installer_rootless_error2_install_failed_already_exists">החבילה הזאת כבר מותקנת</string>
+    <string name="installer_rootless_error2_unknown">שגיאה לא ידוע</string>
+    <string name="installsupersu">התקן SuperSU (ICS)</string>
+    <string name="integrate_dalvik_code_dialog_good_message">קוד Dalvik שולב בהצלחה מקובץ apk שנבחר. ייתכן שהוא לא יעבוד כראוי בגלל שהקוד המוזרק אינו תואם את המצב הנוכחי של היישום המותקן, אך עליך לבדוק אותו.</string>
+    <string name="integrate_dalvik_code_dialog_title">תוצאות האינטגרציה</string>
+    <string name="integrate_dalvik_code_message">האם אתה באמת רוצה לשלב קוד dalvik מקובץ apk ל</string>
+    <string name="integrate_to_system">האם אתה באמת רוצה לשלב עדכון עבור האפליקציה הזו אל /system?</string>
+    <string name="integrate_updates_result">תוצאה לעדכון אינטגרציה</string>
+    <string name="integrate_updates_to_system">שלב עדכון ל-/system</string>
+    <string name="internet_not_found">נדרש חיבור לאינטרנט.</string>
+    <string name="is_an_invalid_number">הזנת מספר לא חוקי...</string>
+    <string name="langdef">שפת ברירת מחדל</string>
+    <string name="langen">אנגלית</string>
+    <string name="langmenu">שפה</string>
+    <string name="launchbutton">הפעל</string>
+    <string name="licensing_hack_menu_disable">השבת אמולציית אימות רישיון של גוגל</string>
+    <string name="licensing_hack_menu_enable">אפשר חיקוי לאימות הרשיון של גוגל</string>
+    <string name="line">"***********************
+"</string>
+    <string name="loadpkg">טוען חבילות</string>
+    <string name="lp_billing_hack_title">פריצת רכישות InApp...</string>
+    <string name="lvldescr">מציג את כל האפליקציות עם אימות רישיון.</string>
+    <string name="lvltitle">אפליקציה עם LVL</string>
+    <string name="market_description_text">"לחץ על כפתור \"התקן\" כדי להחליף את חנות גוגל פליי הרשמית בגרסת LVL (ספריית אימות רישיון) סדוקה. אם חנות גוגל פליי לא עובדת לאחר אתחול מחדש, התקן אותה שוב.
+איך פועלת חנות גוגל פליי המחודשת:
+שים לב! אתה *לא יכול* להוריד אפליקציות בתשלום בחינם!
+1. אתה יכול להשתמש ביישומים המוגנים על ידי GoogleLVL מבלי שתצטרך לפצח אותם.
+2. אימות הרישיון יצליח גם במצב לא מקוון.
+3. אין צורך להחיל תיקוני רישיון יותר.
+4. זה לא יעבוד עם אימות חיוב ורישיון באמצעות פרוקסי.
+5. כעת, כאשר תלחץ על כפתור 'החזר', זה יחזיר לך את הרכישה, אך האפליקציה לא תוסר, לכן לא תצטרך לגבות את האפליקציה לפני בקשת החזר.
+6. כעת גוגל פליי תפנה את כל הרכישות ל-לאקי פאטצ'ר לצורך חיקוי InApp."</string>
+    <string name="market_install">התקן את חנות גוגל פליי מוד</string>
+    <string name="market_version5">גוגל פליי מוד</string>
+    <string name="market_version6">גוגל פליי מקורי</string>
+    <string name="menu_download_custom_patches">הורד תיקונים מותאמים אישית</string>
+    <string name="messageAndroidManifest">לא ניתן לחלץ את AndroidManifest.xml. אולי אין לך מספיק מקום פנוי בכרטיס ה-SD כדי להעתיק את היישום כולו.</string>
+    <string name="messagePath">"הנתיב לא נמצא!
+אנא הזן נתיב נכון."</string>
+    <string name="messageSD">"כרטיס SD לא נמצא!
+פונקציה זו לא יכולה לעבוד ללא כרטיס SD!"</string>
+    <string name="message_allow_non_market_app">אנא סמן את \"אפשר התקנה של יישומים ממקורות לא ידועים\" בתוך הגדרות האבטחה.</string>
+    <string name="message_apply_android_patch_for_proxy_gp">שרת פרוקסי עבור גוגל פליי זקוק לתיקון אנדרואיד \"סטטוס אימות חתימה תמיד נכון\". האם אתה רוצה להחיל תיקון אנדרואיד עכשיו?</string>
+    <string name="message_clear_all_dalvik_cache">האם אתה באמת רוצה לנקות את dalvik-cache?</string>
+    <string name="message_clear_data">האם אתה באמת רוצה לנקות את כל הנתונים של האפליקציה?</string>
+    <string name="message_delete_odex_file">האם אתה באמת רוצה למחוק קובץ odex?</string>
+    <string name="message_delete_package_new">ההתקנה הסתיימה עם שגיאה. עליך להסיר את ההתקנה של האפליקציה המקורית לפני התקנת APK זה. אם זה לא עוזר, הפעל מחדש את המכשיר באופן ידני. כמו כן, נסה להסיר את ההתקנה של האפליקציה.</string>
+    <string name="message_done_move_to_internal">המעבר לזיכרון הפנימי הסתיים:</string>
+    <string name="message_done_move_to_sdcard">המעבר לכרטיס SD הסתיים:</string>
+    <string name="message_error_move_to_internal">"המעבר לזיכרון הפנימי הסתיים עם שגיאה (נסה שוב):
+"</string>
+    <string name="message_error_move_to_sdcard">"המעבר לכרטיס SD הסתיים עם שגיאה (נסה שוב):
+"</string>
+    <string name="message_exit">"האם אתה באמת רוצה לצאת מ-לאקי פאטצ'ר?"</string>
+    <string name="message_reboot">האם אתה באמת רוצה לאתחל?</string>
+    <string name="message_remove_all_odex">האם אתה באמת רוצה להסיר את כל קבצי ה-odex מ-/system/app ו-/data/app? פעולה זו תמחק רק קובצי odex של יישומים שיש להם classes.dex.</string>
+    <string name="message_warning_InApp_service_disable">השבתת שירות InApp מפרה את מנגנון הרכישות הרשמיות לאפליקציות. זהו שירות מקורי ל-גוגל פליי.</string>
+    <string name="message_warning_LVL_service_disable">השבתת שירות זה מפרה את המנגנון לקבלת רישיון לאפליקציות שנרכשו באופן רשמי. זה שירות מקורי ל-גוגל פליי.</string>
+    <string name="mod_market_check">בדוק את חנות גוגל פליי מוד</string>
+    <string name="mod_market_check_failed">ייתכן ש-גוגל פליי מותקן אך אינו פועל כראוי. בדיקת הרישיון נכשלה. אולי לא החלת את התיקון core.jar (ניתן למצוא אותו ב\"ארגז כלים -> תיקון לאנדרואיד\") או הגדרת את גוגל פליי שהשתנה כאפליקציית מערכת (תוכל להתקין אותו מחדש ב \"ארגז כלים -> התקן חנות גוגל פליי מוד\").</string>
+    <string name="mod_market_check_internet_off">כבה את האינטרנט במכשיר ואז נסה את הבדיקה שוב.</string>
+    <string name="mod_market_check_title">תוצאות בדיקה עבור גוגל פליי שהשתנה</string>
+    <string name="mod_market_check_true">גוגל פליי מותקן ופועל כהלכה. שימו לב ששיטה זו אינה פועלת עם כל היישומים והמשחקים. זו לא שגיאה ולא ניתן לתקן אותה.</string>
+    <string name="modifdescr">מציג את כל האפליקציות ששונו (סימן תלתן ירוק).</string>
+    <string name="modiftitle">אפליקציות ששונו</string>
+    <string name="move_data">כל הנתונים הועברו בהצלחה אל</string>
+    <string name="move_to_internal">העבר לזיכרון פנימי</string>
+    <string name="move_to_internal_message">האם אתה באמת רוצה להעביר את האפליקציה לזיכרון הפנימי?</string>
+    <string name="move_to_sdcard">העבר אל /sdcard</string>
+    <string name="move_to_sdcard_message">האם אתה באמת רוצה להעביר את האפליקציה לכרטיס SD?</string>
+    <string name="move_to_sys">העבר אל /system/priv-app</string>
+    <string name="move_to_system">האם אתה באמת רוצה להעביר את היישום הזה אל /system/priv-app?</string>
+    <string name="need_select_custom_patch">אנא בחר תיקון מותאם אישית אחד או יותר.</string>
+    <string name="new_method_lvl">צור רישיון עבור אפליקציה</string>
+    <string name="new_version">"גרסה חדשה של לאקי פאטצ'ר זמינה!"</string>
+    <string name="next_custom_patch">תיאור עבור התיקון המותאם אישית הבא</string>
+    <string name="no">לא</string>
+    <string name="no_freespace_patch">"זו לא שגיאה. לא היה מספיק מקום פנוי ליצירת קובץ .odex. תיקון Dalvik-cache הוחל, אבל אם אתה מאתחל את המכשיר, התיקון עלול להיעלם.
+פתרון: העבר את האפליקציה לאחסון פנימי, הפוך אותה לאפליקציית מערכת, פנה יותר מקום או השאר הכל כמו שהוא והחל מחדש את התיקון באופן קבוע ."</string>
+    <string name="no_icon">הסר את סמלי האפליקציה</string>
+    <string name="no_icon_descr">מסיר את כל סמלי האפליקציות ברשימה. זה מפחית את התקורה התפעולית, וזה שימושי עבור מכשירים מתקדמים.</string>
+    <string name="no_root">"השגת גישת שורש נכשלה! חייבת להיות לך גישת שורש מלאה כדי להמשיך...
+
+(נא לעדכן busybox ו-SU)!
+אנא התקן את SuperSu (\"פתרון בעיות -> התקן את SuperSU (ICS)\") ועדכן באמצעותו קבצים בינאריים של SU."</string>
+    <string name="no_site">אתר עבור עידכונים לא נמצא!</string>
+    <string name="no_space">שגיאה: אין מספיק מקום להעתיק את כל הנתונים לספרייה שצוינה. אנא שנה את הספרייה או פנה מקום. אם אתה משתמש ב-SuperSu, נסה להשבית את \"הפרדת מרחב שמות\" ב-SuperSu.</string>
+    <string name="no_space_in_data_all">שגיאה: אין מספיק מקום בזיכרון הפנימי. אנא פנה מקום נוסף ב-/data ולאחר מכן נסה שוב. אם אתה משתמש ב-SuperSu, נסה לבטל את \"הר הפרדת מרחב שמות\" ב-SuperSu.</string>
+    <string name="no_space_in_system">שגיאה: אין מספיק מקום במחיצת המערכת כדי להעביר את היישום. אנא פנה מקום ב-/system ולאחר מכן נסה שוב. אם אתה משתמש ב-SuperSu, נסה לבטל את \"הר הפרדת מרחב שמות\" ב-SuperSu.</string>
+    <string name="no_space_in_system_all">שגיאה: אין מספיק מקום במחיצת המערכת. אנא פנה מקום נוסף ב-/system ולאחר מכן נסה שוב. אם אתה משתמש ב-SuperSu, נסה לבטל את \"הר הפרדת מרחב שמות\" ב-SuperSu.</string>
+    <string name="nofilter">ללא</string>
+    <string name="nonedescr">מציג את כל היישומים שבהם לא נמצא דבר.</string>
+    <string name="nonetitle">שום דבר לא נמצא</string>
+    <string name="not_detect">"כרטיס SD לא זוהה!
+פונקציונליות מוגבלת!"</string>
+    <string name="not_found_changelog">לא נמצא קובץ יומן שינויים. הוא ירד בפעם הבאה שתעדכן.</string>
+    <string name="not_supported_android_patch">לא נתמך, עובד \"כמו שהוא\"</string>
+    <string name="notify_android_patch_on_boot">תיקון אתחול אנדרואיד</string>
+    <string name="notify_android_patch_on_boot_mes_core.jar">החל תיקון אנדרואיד על dalvik-cache מ-core.jar.</string>
+    <string name="notify_android_patch_on_boot_mes_services.jar">החל תיקון אנדרואיד על dalvik-cache מ-services.jar.</string>
+    <string name="notify_directory_binder">קלסר ספריות</string>
+    <string name="notify_directory_binder_from">מ</string>
+    <string name="notify_directory_binder_to">אל</string>
+    <string name="notify_patch_on_boot">תיקון באתחול</string>
+    <string name="notify_patched">טלוא!</string>
+    <string name="odex_all_system_app">"ODEX כל אפליקציות המערכת
+(שטח פנוי נוסף באחסון פנימי)"</string>
+    <string name="odex_all_system_app_message">האם אתה באמת רוצה לבצע ODEX של כל אפליקציות המערכת?</string>
+    <string name="odexed_not_all_apps">שגיאה! כנראה שאין מספיק מקום פנוי ב-/system. חלק מהאפליקציות לא עברו ODEX.</string>
+    <string name="ok">בסדר</string>
+    <string name="on_top_apps_marker">חדש</string>
+    <string name="option_remove_ads">"הסרת פרסומות מלאקי פאטצ'ר"</string>
+    <string name="orientmenu">כיוון מסך</string>
+    <string name="others">אַחֵר</string>
+    <string name="package_name">שם חבילה</string>
+    <string name="patch_ok">החל</string>
+    <string name="patch_progress_data_parse">מנתח את הנתונים עבור התיקון...</string>
+    <string name="patch_progress_get_classes">מקבל קבצים מהאפליקציה...</string>
+    <string name="patch_progress_strings_analisis">מנתח מחרוזות...</string>
+    <string name="patch_step1">מכין יישום</string>
+    <string name="patch_step2">תיקון</string>
+    <string name="patch_step3">ניתוח תוצאות</string>
+    <string name="patch_step4">יצירת .odex עם שינויים</string>
+    <string name="patch_step6">שלבים אופציונליים לאחר התיקון</string>
+    <string name="patch_step_http">מקבל נתונים מהשורש...</string>
+    <string name="patch_to_Android_At_once">מכיוון שהקושחה שלך מנוהלת, אתה יכול להחיל בו-זמנית \"סטטוס אימות חתימה תמיד נכון\" ו-\"השבת אימות חתימת apk.\" או רק \"השבת אימות חתימה במנהל החבילות\".</string>
+    <string name="patch_to_Android_only_dalvik_cahce_core_disable">לקושחה יש core.jar odexed. \"תיקון רק dalvik-cache\" יהיה מושבת. ומבחר של תיקונים אחרים יאופס.</string>
+    <string name="patch_to_Android_only_dalvik_cahce_services_disable">לקושחה יש odexed services.jar. \"תיקון רק dalvik-cache\" יהיה מושבת. ומבחר של תיקונים אחרים יאופס.</string>
+    <string name="patchbutton">~טלאי~</string>
+    <string name="pattern1">תבנית טלאי מס 1 - הצליח...</string>
+    <string name="pattern1_f">תבנית טלאי מס 1 - נכשל...</string>
+    <string name="pattern2">תבנית טלאי מס 2 - הצליח...</string>
+    <string name="pattern2_f">תבנית טלאי מס 2 - נכשל...</string>
+    <string name="pattern3">תבנית טלאי מס 3 - הצליח...</string>
+    <string name="pattern3_f">תבנית טלאי מס 3 - נכשל...</string>
+    <string name="pattern4">תבנית טלאי מס 4 - הצליח...</string>
+    <string name="pattern4_f">תבנית טלאי מס 4 - נכשל...</string>
+    <string name="pattern5">תבנית טלאי מס 5 - הצליח...</string>
+    <string name="pattern5_f">תבנית טלאי מס 5 - נכשל...</string>
+    <string name="pattern6">תבנית טלאי מס 6 - הצליח...</string>
+    <string name="pattern6_f">תבנית טלאי מס 6 - נכשל...</string>
+    <string name="pattern7">תבנית טלאי מס 7 - הצליח...</string>
+    <string name="pattern7_f">תבנית טלאי מס 7 - נכשל...</string>
+    <string name="patternamazon">Amazon Market Patch - מוצלח...</string>
+    <string name="patternamazon_f">תיקון שוק אמזון - נכשל...</string>
+    <string name="patterndependencies">התלות ב-גוגל פליי הוסר.</string>
+    <string name="patternsamsung">תיקון אפליקציות סמסונג הצליח</string>
+    <string name="patternsamsung_f">תיקון אפליקציות סמסונג נכשל...</string>
+    <string name="perm_ok">החל (אתחול)</string>
+    <string name="permission">שנה הרשאות</string>
+    <string name="permission_not_descr">אין תיאור עבור הרשאה זו</string>
+    <string name="permission_not_found">הרשאות לא נמצאו!</string>
+    <string name="permissions">הרשאות</string>
+    <string name="poorresult">"% מזל! התיקון נכשל!
+גרסה לא ידועה של LVL או תיקון כבר הוחל!"</string>
+    <string name="proxyGP">שרת פרוקסי עבור גוגל פליי</string>
+    <string name="proxyGP_descr">"שרת פרוקסי להפניה מחדש של כל בקשות האפליקציה והרישיון ל- לאקי פאטצ'ר. יש להפעיל שירותי InApp ל-גוגל פליי ו-Google Billing Emulation ב- לאקי פאטצ'ר."</string>
+    <string name="proxyGP_install">התקן פרוקסי חנות גוגל פליי</string>
+    <string name="proxyGP_install_error">קובץ פרוקסי גוגל פליי לא נמצא להתקנה.</string>
+    <string name="proxyGP_install_question">האם אתה באמת רוצה להתקין פרוקסי גוגל פליי?</string>
+    <string name="proxyGP_widget_warning_1">"\"תיקון תמיכה עבור אמולציית InApp ו-LVL\" חייב להיות מושבת במודול Xposed עבור לאקי פאטצ'ר כדי להפעיל את פרוקסי גוגל פליי."</string>
+    <string name="proxyGP_widget_warning_2">פרוקסי גוגל פליי צריך גישת שורש וזקוק לתיקון לאנדרואיד \"סטטוס אימות חתימה תמיד True\" כדי להחיל או לאפשר במודול Xposed עבור לאקי פאטצר.</string>
+    <string name="punkt1">- התוכנה חייבת הרשאות רוט כדי לעבוד!</string>
+    <string name="purchase_db_dialog_auto_buy">רכישה חוזרת אוטומטית</string>
+    <string name="purchase_db_dialog_saved_purchase">רכישה נשמרה</string>
+    <string name="reboot">אתחול</string>
+    <string name="reboot_message">"אתחול מחדש עובד...
+אם המכשיר לא מאתחל אוטומטית, עשה זאת ידנית..."</string>
+    <string name="rebuild_info">סיכום בנייה מחדש</string>
+    <string name="remodex">תיקון Dalvik-cache הוסר!</string>
+    <string name="remodexerror">לא ניתן למצוא את המטמון של Dalvik של אפליקציה זו.</string>
+    <string name="remove_all_saved_purchases">הסר את כל הרכישות שנשמרו</string>
+    <string name="remove_all_saved_purchases_message">"האם אתה באמת רוצה למחוק את כל הרכישות שנשמרו מ-לאקי פאטצ'ר?"</string>
+    <string name="removefixes">"הסר את כל קובצי ODEX
+(/data/app ו-/system/app)"</string>
+    <string name="restore_build">לבנות</string>
+    <string name="restore_data_error">שגיאה: משהו השתבש. ייתכן שהנתונים לא שוחזרו לחלוטין.</string>
+    <string name="restore_data_success">ההגדרות שוחזרו בהצלחה.</string>
+    <string name="restore_message">האם אתה באמת רוצה להתקין</string>
+    <string name="restore_version">גרסה</string>
+    <string name="restorebutton">שחזור</string>
+    <string name="restored">משוחזר</string>
+    <string name="root_access_not_found">"לא ניתן למצוא גישת שורש. נסה להפעיל שוב את לאקי פאטצ'ר או נסה לעדכן את SuperSu ולעדכן קובץ su בינארי מ-SuperSu. בדוק גם אם SuperSu נתן גישת שורש ל- לאקי פאטצ'ר."</string>
+    <string name="root_needed">נדרשת גישת שורש לפעולה זו...</string>
+    <string name="savebutton">שמור אובייקט כטלאי מיוחד!</string>
+    <string name="saved_object">זה ישמר בתיקייה /sdcard/LuckyPatcher/כטלאי מיוחד.</string>
+    <string name="search">חיפוש</string>
+    <string name="select_filter">אנא בחר מסנן עבור רשימת האפליקציות:</string>
+    <string name="select_market">"אנא בחר גרסה של חנות גוגל פליי להתקנה:
+"</string>
+    <string name="send_logs">האם אתה רוצה לשלוח לי את היומנים שלך?</string>
+    <string name="sendlog">שלח Log</string>
+    <string name="set_default_to_install">"בחר מיקום ברירת מחדל להתקנה
+ייתכן שלא יפעל ב-Android >= 4"</string>
+    <string name="set_default_to_install_auto">התקנה למיקום אוטומטי שנקבע על ידי מערכת ההפעלה אנדרואיד</string>
+    <string name="set_default_to_install_internal_memory">התקנה לאחסון פנימי של נייד</string>
+    <string name="set_default_to_install_sdcard">התקנה למדיה חיצונית כמו כרטיס SD</string>
+    <string name="set_switchers_def">הגדר את המתגים לברירת המחדל</string>
+    <string name="setting_confirm_exit">אשר יציאה מהאפליקציה</string>
+    <string name="setting_confirm_exit_descr">"אם תלחץ חזרה, לאקי פאטצ'ר יבקש אישור ליציאה."</string>
+    <string name="settings">הגדרות</string>
+    <string name="settings_force_root">אלץ בדיקת root</string>
+    <string name="settings_force_root_description">אם יש לך שורש אקזוטי, אתה יכול לאלץ להגדיר שורש לשורש או לא לשורש.</string>
+    <string name="settings_force_root_off">הגדרה כפויה של מצב ללא שורש</string>
+    <string name="settings_force_root_on">כפה הגדרת מצב שורש</string>
+    <string name="settings_root_auto">זיהוי אוטומטי של גישת שורש</string>
+    <string name="share">שתף</string>
+    <string name="share_message">האם אתה באמת רוצה לשתף את האפליקציה הזו?</string>
+    <string name="share_this_app">שתף את האפליקציה הזו</string>
+    <string name="site_pattern">מחרוזת מ-AdsBlockList - הוסרה.</string>
+    <string name="sortbyname">מיין לפי סטטוס</string>
+    <string name="sortbystatus">סדר לפי סטטוס</string>
+    <string name="sortbytime">מיין לפי תאריך התקנה</string>
+    <string name="sortmenu">מיון</string>
+    <string name="stat_boot_ads">פרסומות גוגל</string>
+    <string name="stat_boot_custom">טלאי מיוחד</string>
+    <string name="stat_boot_lvl">אימות רשיון גוגל</string>
+    <string name="stat_launch_activity">הפעלת אקטיביטי:</string>
+    <string name="statads">נמצאו פרסומות גוגל!</string>
+    <string name="statappplace">הבקשה מוגשת:</string>
+    <string name="statbilling">נמצאו רכישות InApp.</string>
+    <string name="statbuild">לִבנוֹת:</string>
+    <string name="statcustom">נמצא טלאי מיוחד!</string>
+    <string name="statdataplace">הנתונים ממוקמים:</string>
+    <string name="statfix">תיקוני שינויים הוחלו בהצלחה!</string>
+    <string name="statlvl">אימות רשיון נמצא!</string>
+    <string name="statmodified">האפליקציה שונתה בעבר</string>
+    <string name="statnotfix">שינויים בתוכנה לא תוקנו!</string>
+    <string name="statnotfound">לא נמצא!</string>
+    <string name="statnotmodified">יישום ללא שינוי</string>
+    <string name="statnotsys">יישום משתמש!</string>
+    <string name="statnull">אין תוצאות עבור טלאים!</string>
+    <string name="statsys">יישום מערכת!</string>
+    <string name="statuserid">תעודת זהות של המשתמש:</string>
+    <string name="statversion">גירסה:</string>
+    <string name="success">הצליח</string>
+    <string name="switcher_auto_backup">גיבוי אוטומטי של כל האפליקציות המעודכנות או המותקנות</string>
+    <string name="switcher_auto_backup_descr">העתק קובץ APK לתיקיית הגיבוי</string>
+    <string name="switcher_auto_backup_only_gp">אפליקציות גיבוי אוטומטי עודכנו או הותקנו מ- גוגל פליי</string>
+    <string name="switcher_auto_backup_only_gp_descr">"הערה: לאקי פאטצ'ר מסמן את כל האפליקציות ששונו כמותקנות מ-גוגל פליי. לכן, יישומים אלה יהיו גם ברשימת הגיבוי."</string>
+    <string name="switcher_auto_integrate_update">שלב אוטומטית עדכון ל-/system עבור אפליקציות מערכת</string>
+    <string name="switcher_auto_integrate_update_descr">נדרש אתחול לעדכון שני</string>
+    <string name="switcher_auto_move_to_internal">מעביר אוטומטית אפליקציות מותקנות או מעודכנות לזיכרון החיצוני</string>
+    <string name="switcher_auto_move_to_internal_descr">הופך את האפליקציות למהירות ויציבות יותר</string>
+    <string name="switcher_auto_move_to_sd">העבר אוטומטית אפליקציות מעודכנות ומותקנות לכרטיס SD</string>
+    <string name="switcher_auto_move_to_sd_descr">"רע לאפליקציות עם ווידג'טים ופעולות באתחול"</string>
+    <string name="switchers_service_not_found">שירות לא נמצא</string>
+    <string name="sysdescr">היזהר מאוד בכל פעולה עבור יישומי מערכת. נא לבצע גיבוי לפני.</string>
+    <string name="system_app_change">אנא הפעל מחדש כדי להחיל שינויים.</string>
+    <string name="systitle">הצג יישומי מערכת</string>
+    <string name="test">בדיקה</string>
+    <string name="text_size">גודל טקסט</string>
+    <string name="title_for_block_internet">חסימת האינטרנט באפליקציות הבאות</string>
+    <string name="title_for_select_disable_package">בחר אפליקציות להשבתה:</string>
+    <string name="title_for_select_enable_package">בחר אפליקציות להפעלה:</string>
+    <string name="title_for_select_integrate_update_apps">בחר אפליקציות לשילוב עדכונים ל-/system:</string>
+    <string name="title_for_select_move_to_internal">בחר אפליקציות להעברה לאחסון פנימי:</string>
+    <string name="title_for_select_move_to_sdcard">בחר אפליקציות להעברה לכרטיס SD:</string>
+    <string name="title_for_select_uninstall">בחר אפליקציות להסרה:</string>
+    <string name="title_for_unblock_internet">בטל את חסימת האינטרנט באפליקציות הבאות:</string>
+    <string name="title_select_custom_patch">בחר תיקונים מותאמים אישית.</string>
+    <string name="title_upd">הודעה</string>
+    <string name="toolbar_adfree">חסום פרסומות</string>
+    <string name="toolbar_backups">גיבויים</string>
+    <string name="toolbar_rebuild">בנייה מחדש</string>
+    <string name="toolbar_switchers">מתגים</string>
+    <string name="toolbar_system_utils">ארגז כלים</string>
+    <string name="tools_menu_block_internet">חסום את האינטרנט</string>
+    <string name="tools_menu_unblock_internet">בטל את חסימת האינטרנט</string>
+    <string name="troubleshooting_supersu_namespace_separation">"השבת את אפשרות SuperSu \"mount space separation\"
+(יאתחל מחדש)"</string>
+    <string name="truble">פתרון בעיות</string>
+    <string name="uninstall">האם אתה באמת רוצה להסיר %s?</string>
+    <string name="uninstallapp">הסרת תוכנה</string>
+    <string name="unknown_error">שגיאה לא ידועה. בבקשה נסה שוב.</string>
+    <string name="unused_odex_delete">ODEX לא בשימוש הוסר!</string>
+    <string name="update">עדכן</string>
+    <string name="updatebusybox">עדכן את Busybox</string>
+    <string name="usepatch">אישור</string>
+    <string name="vers">גירסת Lucky Patcher.</string>
+    <string name="vibration">אפשר רטט</string>
+    <string name="vibration_descr">אפשר משוב הפטי ברשימת היישומים.</string>
+    <string name="viewlandscape">אופקי</string>
+    <string name="viewlarge">טקסט גדטל</string>
+    <string name="viewmedium">טקסט בינוני</string>
+    <string name="viewmenu">תצוגה</string>
+    <string name="viewportret">אנכי</string>
+    <string name="viewsensor">חיישנים</string>
+    <string name="viewsmall">טקסט קטן</string>
+    <string name="wait">אנא המתן</string>
+    <string name="warning">אזהרה</string>
+    <string name="warning_for_no_free_space_on_device">כוח הקושחה שלך עצר את לאקי פאטצר עם שגיאה: \"לא נותר מקום במכשיר\". נסה לבדוק מקום פנוי במכשיר. אם אתה משתמש ב-SuperSu, נסה להשבית את \"הפרדת מרחב שמות\" ב-SuperSu.</string>
+    <string name="warning_for_out_of_memory_on_device">כוח הקושחה שלך עצר את לאקי פאטצר עם שגיאה: \"חסר זיכרון\". אין מספיק זיכרון עבור הפעולה הנוכחית.</string>
+    <string name="warning_inapp_emulation">הקושחה שלך לא תומכת באמולציית חיוב InApp כברירת מחדל. אם הקושחה שלך תומכת בהשבתה (הקפאה) עבור אפליקציות, נסה להשבית את גוגל פליי ממנהל היישומים ונסה להפעיל שוב אמולציית InApp.</string>
+    <string name="warning_jex_optimised_firmware">לקושחה שלך יש אופטימיזציה של jex. תיקון קושחה אינו אפשרי. שנה את הקושחה או שדרג לאנדרואיד 5 .</string>
+    <string name="warning_superSu_mount_name_space_separation">לאקי פאטצר גילה שב-SuperSu מופעלת האפשרות \"mount space separation\". על מנת ש-לאקי פאטצר יעבוד כמו שצריך, יש לבטל את האפשרות הזו בהגדרות SuperSu.</string>
+    <string name="warning_superSu_mount_name_space_separation_2">האם אתה רוצה שלאקי פאטצר ישבית אותו (ויאתחל מחדש)?</string>
+    <string name="warning_superSu_mount_name_space_separation_3">אל תציג את תיבת הדו-שיח הזו שוב</string>
+    <string name="well_done">הושלם בהצלחה</string>
+    <string name="widget_app_disable_checkbox">הפעל את היישום אם הופך לזמין</string>
+    <string name="xposed_module_option">הפעל את מודול Xposed</string>
+    <string name="xposed_option_off">"אנא הפעל את מודול לאקי פאטצ'ר ב-Xposed כדי להפעיל אפשרות זו"</string>
+    <string name="xposed_settings">הגדרות Xposed</string>
+</resources>

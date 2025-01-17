@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textColor="@android:color/black" android:layout_gravity="center_vertical" android:id="@id/titleSort" android:background="#ff9f9f9f" android:paddingLeft="10.0dip" android:focusable="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="0.0dip" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip" android:text="Sortirovka" />
+    <RadioGroup android:id="@id/radioGroupSortBackups" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="0.0dip" android:layout_alignParentLeft="true">
+        <RadioButton android:id="@id/radioSortName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip" android:checked="true" android:text="@string/settings_force_java_root_method_dalvikvm" android:drawablePadding="8.0dip" />
+        <RadioButton android:id="@id/radioSortTime" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip" android:text="@string/settings_force_java_root_method_app_process" android:drawablePadding="8.0dip" />
+    </RadioGroup>
+</LinearLayout>

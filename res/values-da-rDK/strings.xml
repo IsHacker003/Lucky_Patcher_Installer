@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="AppTools">App info:</string>
+    <string name="P_not_found">"Fejl: Programfiler kunne ikke findes!
+Tjek dalvik-cache placeringen for at løse dette problem!
+Standard: /data/dalvik-cache/*"</string>
+    <string name="PatchResult">Patch resultater</string>
+    <string name="Yes">Ja</string>
+    <string name="about_working_dir">Arbejdesmappe på sdcard:</string>
+    <string name="aboutlp">Lucky Patcher er et universelt patch-værktøj, der er designet til at ændre applikationer. Den har mulighed for at fjerne annoncer, fjerne Google-licensbekræftelse (automatisk og manuelt), administrere apptilladelser og gøre meget mere.</string>
+    <string name="aboutmenu">Om</string>
+    <string name="help_custom_general_text1">"- Patch-filen skal have samme navn som målet af APK'en (dette skelner mellem store og små bogstaver)."</string>
+    <string name="help_custom_general_text2">- Hvis der allerede findes en tilpasset patch-fil til applikationen, kan du blot tilføje en tekst i begyndelsen af filnavnet og gemme den ved siden af den eksisterende. I dette tilfælde, når du vælger \"Custom patch\" i applikationen, vil Lucky Patcher tilbyde dig en liste over brugerdefinerede patches, som applikationen kan vælge imellem.</string>
+    <string name="help_custom_general_text3" formatted="false">"- Hvis du vil skrive en patch til en hel serie af programmer fra én virksomhed på én gang, så kan du i slutningen af navnet på den brugerdefinerede patch-fil bruge identifikatoren _%ALL%. For eksempel vil patchnavnet for alle SVOX-stemmer se sådan ud: com.svox.classic.langpack_%ALL%.txt.
+_%ALL% erstatter delen i pakkenavnet, som varierer afhængigt af det givne firmas anvendelse. Brug ikke specialtegn/formatering i patch-filen (kun enkelte mellemrum).
+Hvis du stadig skal tilføje dit eget præfiks i begyndelsen, kan du bruge %ALL%_ og _%ALL% (Eksempel: chelpus.%ALL%_com.android._%ALL%.txt). Når der vises brugerdefinerede patch-navne i selve programmet, er %ALL%_ skjult af hensyn til læsbarheden."</string>
+    <string name="help_custom_general_text4" formatted="false">- I teksten til en brugerdefineret patch kan du bruge %PACKAGE_NAME%, som vil blive erstattet med pakkenavnet på målapplikationen under patchen. Dette er nyttigt i programrettelser, hvor filstien ændres afhængigt af pakkenavnet (eksempel: /data/data/%PACKAGE_NAME%/filer/trial.txt).</string>
+    <string name="help_custom_general_text5">- Brug IDA Pro 6.1+ for at søge efter bytesmønstre. Det kan åbne dalvik-cache, odex, biblioteker og classes.dex.</string>
+    <string name="help_custom_title_general">Generel information:</string>
+    <string name="help_custom_warning_text">Undlad at fjerne hopper eller gøre dem ubetingede! Optimizeren vil gå ned, og din patch virker ikke på ART! For at undgå dette skal du bruge betingede hop. For eksempel, hvis der er behov for at hoppe, skal du erstatte hoppet med if-eq v0,v0 (bytes: 32 00 ?? ??). Hvis der ikke er behov for at hoppe et bestemt sted, kan du indsætte et spring såsom if-ne v0,v0 (bytes: 33 00 ?? ??); brug også gerne din egen tilsvarende.</string>
+    <string name="help_custom_warning_title">ADVARSEL:</string>
+</resources>

@@ -1,0 +1,1365 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="AppTools">App-Info:</string>
+    <string name="P_not_found">Fehler: App-Dateien wurden nicht gefunden! Überprüfe den Ort des Dalvik-Caches! Standardmäßig: /data/dalvik-cache/*</string>
+    <string name="PatchResult">Patch-Ergebnisse</string>
+    <string name="Yes">Ja</string>
+    <string name="abc_action_bar_home_description">Zur Startseite</string>
+    <string name="abc_action_bar_up_description">Nach oben</string>
+    <string name="abc_action_menu_overflow_description">Weitere Optionen</string>
+    <string name="abc_action_mode_done">Fertig</string>
+    <string name="abc_activity_chooser_view_see_all">Alle anzeigen</string>
+    <string name="abc_activitychooserview_choose_application">App auswählen</string>
+    <string name="abc_capital_off">AUS</string>
+    <string name="abc_capital_on">AN</string>
+    <string name="abc_menu_alt_shortcut_label">Alt +</string>
+    <string name="abc_menu_ctrl_shortcut_label">Strg +</string>
+    <string name="abc_menu_delete_shortcut_label">Löschen</string>
+    <string name="abc_menu_enter_shortcut_label">Eingabetaste</string>
+    <string name="abc_menu_function_shortcut_label">Funktionstaste +</string>
+    <string name="abc_menu_meta_shortcut_label">Meta-Taste +</string>
+    <string name="abc_menu_shift_shortcut_label">Umschalttaste +</string>
+    <string name="abc_menu_space_shortcut_label">Leertaste</string>
+    <string name="abc_menu_sym_shortcut_label">Sym-Taste +</string>
+    <string name="abc_prepend_shortcut_label">Menütaste +</string>
+    <string name="abc_search_hint">Suchen…</string>
+    <string name="abc_searchview_description_clear">Suchanfrage löschen</string>
+    <string name="abc_searchview_description_query">Suchanfrage</string>
+    <string name="abc_searchview_description_search">Suche</string>
+    <string name="abc_searchview_description_submit">Anfrage senden</string>
+    <string name="abc_searchview_description_voice">Sprachsuche</string>
+    <string name="abc_shareactionprovider_share_with">Teilen mit</string>
+    <string name="abc_shareactionprovider_share_with_application">Mit %s teilen</string>
+    <string name="abc_toolbar_collapse_description">Minimieren</string>
+    <string name="about_thanks_for_this_translation">Danke für die Deutsche Übersetzung durch: MysticEnforcer666 und Lupus</string>
+    <string name="about_working_dir">Arbeitsverzeichnis auf der SD-Karte:</string>
+    <string name="aboutlp">Lucky Patcher ist ein universelles Patch-Tool, das zum Ändern von Anwendungen entwickelt wurde. Es hat die Fähigkeit, Werbung zu entfernen, die Google-Lizenzüberprüfung (automatisch und manuell) zu entfernen, App-Berechtigungen zu verwalten und vieles mehr.</string>
+    <string name="aboutmenu">Über</string>
+    <string name="abouttitle">Über Lucky Patcher von ChelpuS</string>
+    <string name="activity_ads_descr">Diese Aktivität wird für Werbung verwendet.</string>
+    <string name="activity_descr">Aktivität der App. Keine Beschreibung.</string>
+    <string name="add_icon_to_desktop">Symbol zum Desktop hinzufügen</string>
+    <string name="additinfo">Zusätzliche Info:</string>
+    <string name="adsdescr">Alle Apps mit Google Werbung anzeigen</string>
+    <string name="adstitle">Apps mit Werbung</string>
+    <string name="advanced_menu">Menü mit Patches</string>
+    <string name="all_custom_patches_updated">Alle individuellen Patches wurden aktualisiert</string>
+    <string name="allchanges">Alle Änderungen wurden in der .odex-Datei behoben und bleiben bestehen, bis die Anwendung neu installiert wird.</string>
+    <string name="android_patches_dialog_header1">Patches für Android</string>
+    <string name="android_patches_dialog_header2">Wiederherstellung der Firmware nach Patches</string>
+    <string name="android_patches_dialog_remove_patch_3">Entferne Patch \"%1s\"</string>
+    <string name="android_patches_dialog_remove_patches_1_and_2" formatted="false">Entferne die Patches \"%1s\" und \"%2s\".</string>
+    <string name="android_patches_dialog_use_magisk_module_for_patches">Verwende das Magisk-Modul, um den Patch anzuwenden</string>
+    <string name="android_patches_for_bootlist">Android-Patch am Dalvik-Cache</string>
+    <string name="android_patches_for_bootlist_status">Android-Patches bei Neustart anwenden</string>
+    <string name="android_patches_xposed_need_message">Bitte verwende Xposed(lSPosed), um den aktuellen Patch anzuwenden</string>
+    <string name="apk_create_option">Dateiname für neu kompilierte APKs</string>
+    <string name="apk_not_found_error">Error: APK-Datei konnte nicht gefunden werden.</string>
+    <string name="apk_size">APK Größe:</string>
+    <string name="apkdescr">Namensschema für neue APK-Dateien.</string>
+    <string name="apklabel">Basierend auf dem Label der App</string>
+    <string name="apkpackage">Basierend auf dem Paketnamen der App</string>
+    <string name="app_dialog_no_root_app_control">App verwalten</string>
+    <string name="app_disabler_widget_pkg_not_found">App wurde deinstalliert</string>
+    <string name="app_info">App Info</string>
+    <string name="app_info_apk_is_splitted">Apk-Datei ist geteilt</string>
+    <string name="app_install_success">Die Anwendung wurde erfolgreich installiert.</string>
+    <string name="app_name">Lucky Patcher</string>
+    <string name="app_not_found">App wurde nicht gefunden! Bitte installiere die App und versuche es erneut.</string>
+    <string name="app_not_found_adapter">Diese App konnte nicht in der Liste der installierten Apps gefunden werden.</string>
+    <string name="apps_not_found">Nichts gefunden.</string>
+    <string name="appwidget_text">BEISPIEL</string>
+    <string name="back">Zurück</string>
+    <string name="backbutton">Sichern</string>
+    <string name="backup_data_empty">App-Daten sind leer. Es gibt nichts zu sichern.</string>
+    <string name="backup_data_error">Fehler: Etwas ist schief gelaufen. Das Backup scheint unvollständig oder beschädigt zu sein.</string>
+    <string name="backup_data_success">Einstellungen wurden gespeichert.</string>
+    <string name="backup_delete_message">Möchtest Du die Sicherung wirklich löschen?</string>
+    <string name="backup_done">"Sicherung erfolgreich. Pfad:
+"</string>
+    <string name="backup_settings_delete_message">Möchtest Du die Einstellungen der Backup-App wirklich löschen?</string>
+    <string name="backup_settings_error_message">Anwendungseinstellungen können nicht wiederhergestellt werden, da sie nicht installiert sind.</string>
+    <string name="backup_settings_restore_message">Möchtest Du wirklich die Einstellungen der Backup-App wiederherstellen?</string>
+    <string name="backups_not_found">Es wurden keine Sicherungen unter dem folgendem Pfad gefunden:</string>
+    <string name="bad_root_detected">Root nicht stabil. Versuche es erneut oder aktualisiere Root. Versuche die Java-Root-Methode in den Einstellungen von Lucky Patcher zu ändern. Es kann manchmal helfen.</string>
+    <string name="begin_changelog">Installierte App-Version ist:</string>
+    <string name="billing_buy">Möchtest Du versuchen, diesen Artikel kostenlos zu erhalten?</string>
+    <string name="billing_hack2_auto_repeat_note">Um die automatische Wiederholung zu deaktivieren, wähle die App aus und gehen Sie zu „Extras“ -> „Ausgewählte gespeicherte Einkäufe entfernen“ und lösche den Artikel.</string>
+    <string name="billing_hack2_new">"- Um die besten Ergebnisse zu erzielen, musst Du einen Patch für Android \"Signaturüberprüfungsstatus immer wahr\" verwenden;
+- Um den Hack zu deaktivieren, gehe zu den \"Schaltern\" unten in Lucky Patcher und deaktiviere \"Google Billing Emulation\"."</string>
+    <string name="billing_hack_menu">Google-Abrechnungsemulation</string>
+    <string name="billing_hack_menu_descr">Erfordert „Support-Patch für InApp und LVL“ für die Zielanwendung und angewendetes „Patch auf Android“. Verwende den benutzerdefinierten Patch \"Support.InApp.LVL...\" für Google Play, um korrekte Kaufinformationen und Preise in der Anwendung zu erhalten.</string>
+    <string name="billing_hack_menu_disable">Deaktivere Google-Abrechnungsemulation</string>
+    <string name="billing_hack_menu_enable">Aktiviere Google-Abrechnungsemulation</string>
+    <string name="billing_hack_option">Sende eine unsignierte Antwort (sollte ohne Root auch funktionieren)</string>
+    <string name="billing_hack_option2">Einkauf sichern (zur Wiederherstellung)</string>
+    <string name="billing_hack_warning_unity" formatted="false">Wenn der Kauf fehlschlägt, versuchen Sie, den Typ dieses Kaufs in \"%1s\" -> \"%2s\" zu ändern.</string>
+    <string name="billing_proxy_server_for_support_patch_descr">Dieser Dienst wird für \"Support-Patch für InApp- &amp; LVL-Emulation\" benötigt und die Anwendung wird zusammen mit ihm neu erstellt.</string>
+    <string name="billing_proxy_server_for_support_patch_inapp">Proxy-Server zur Emulation von InApp-Käufen</string>
+    <string name="bind_button">Neue Verzeichnisbindung hinzufügen.</string>
+    <string name="bind_delete">Möchtest du diese Verzeichnisverbindung entfernen?</string>
+    <string name="bind_dialog_button">Verzeichnis binden</string>
+    <string name="bind_dialog_source">Verzeichnis mit Daten:</string>
+    <string name="bind_dialog_target">Mounte das Datenverzeichnis nach:</string>
+    <string name="bind_error">Die Verzeichnisbindung ist fehlgeschlagen! Datenverzeichnis konnte auf dem Gerät nicht gefunden werden.</string>
+    <string name="bind_source">Datenverzeichnis:</string>
+    <string name="bind_target">Mounte Daten nach:</string>
+    <string name="binder_browser">Browser</string>
+    <string name="binder_browser_create_dir">Verzeichnis erstellen</string>
+    <string name="binder_browser_current_dir">Aktuelles Verzeichnis:</string>
+    <string name="binder_browser_select">Wähle aktuelles Verzeichnis</string>
+    <string name="binder_delete">Löschen</string>
+    <string name="bootview">Boot-Liste</string>
+    <string name="bottomsheet_action_expand_halfway">Zur Hälfte maximieren</string>
+    <string name="browse_to_file">Browse</string>
+    <string name="busybox_not_found">Warnung: Busybox wurde nicht gefunden. Lucky Patcher kann ohne Busybox nicht forgesetzt werden...</string>
+    <string name="button_add_to_boot_list">Füge zum Startvorgang hinzu</string>
+    <string name="button_advanced_filter">Filter</string>
+    <string name="button_all">Alle</string>
+    <string name="button_backup_apk_apps">Sicherung</string>
+    <string name="button_backup_settings_apps">Sicherung</string>
+    <string name="button_block_internet">Internet blockieren</string>
+    <string name="button_disable_package">Deaktivieren</string>
+    <string name="button_enable_package">Aktivieren</string>
+    <string name="button_for_delete">Löschen</string>
+    <string name="button_for_uninstall_intsaller">Starte die Deinstallation des Installationsprogramms</string>
+    <string name="button_integrate_update_apps">Integrieren</string>
+    <string name="button_move_to_internal">In den internen Speicher verschieben</string>
+    <string name="button_move_to_sdcard">Auf die SD-Karte verschieben</string>
+    <string name="button_remove_magisk_module">Magisk Modul entfernen</string>
+    <string name="button_remove_magisk_module_message_not_found">Magisk Modul nicht gefunden.</string>
+    <string name="button_remove_magisk_module_message_warning">Das Magisk Modul für Android Patches wird entfernt. Dadurch werden die ursprünglichen Firmware Dateien wiederhergestellt. Dann wird das Gerät neu gestartet. Bist Du einverstanden?</string>
+    <string name="button_resign_app">Neu signieren</string>
+    <string name="button_select_original_apk">Wähle die Original-Apk aus</string>
+    <string name="button_select_original_apk_with_signature">Apk mit Signatur auswählen</string>
+    <string name="button_start">Start</string>
+    <string name="button_unblock_internet">Internet freigeben</string>
+    <string name="button_uninstall_apps">Deinstallieren</string>
+    <string name="cancel">Abbrechen</string>
+    <string name="certificate">Zertifikat</string>
+    <string name="change_compileSDK">Kompilieren der SDK-Version ändern</string>
+    <string name="change_folder_checkbox">Verschiebe Daten an einen neuen Speicherort</string>
+    <string name="change_folder_message_end">Datenordner geändert in %1$s.</string>
+    <string name="change_folder_message_end2">Die Datenübertragung wurde deaktiviert, weil ein Ordner innerhalb des vorherigen ausgewählt wurde. Datenordner geändert in %1$s.</string>
+    <string name="change_icon_lp">Symbol ändern</string>
+    <string name="change_icon_lp_descr">Hier kannst Du das Symbol von Lucky Patcher ändern</string>
+    <string name="change_lp_name">Namen von Lucky Patcher ändern</string>
+    <string name="change_lp_name_descr">Hier kannst Du den Namen des Lucky Patchers ändern, damit er auf deinem Desktop leichter zu finden ist.</string>
+    <string name="change_minimumSDK">Mindest-SDK-Version ändern</string>
+    <string name="change_sharedUserId">SharedUserId ändern</string>
+    <string name="change_targetSDK">Ziel-SDK-Version ändern</string>
+    <string name="change_version_code">Versionscode ändern (Build)</string>
+    <string name="changelog">Changelog</string>
+    <string name="character_counter_content_description">Eingegebene Zeichen: %1$d von %2$d</string>
+    <string name="character_counter_overflowed_content_description">Zeichenbeschränkung überschritten: %1$d/%2$d</string>
+    <string name="checkbox_uninstall_and_instal_backup_cache">Mache ein Daten &amp; Cache Backup für die Installation</string>
+    <string name="clear_text_end_icon_content_description">Text löschen</string>
+    <string name="cleardalvik">Lösche den Dalvik-Cache und starte neu</string>
+    <string name="cleardata">Daten löschen</string>
+    <string name="clipboard_message">Text in die Zwischenablage kopiert</string>
+    <string name="clipboard_message_for_app_dilaog_app_additional_info">Zusätzliche Informationen in die Zwischenablage kopiert</string>
+    <string name="clipboard_message_for_app_dilaog_app_info">App Info in die Zwischenablage kopiert</string>
+    <string name="clipboard_message_for_app_dilaog_app_permissions">Berechtigungen in die Zwischenablage kopiert</string>
+    <string name="cloneApplication">Anwendung klonen (funktioniert nicht immer)</string>
+    <string name="close">Schließen</string>
+    <string name="collect_logs">Protokolle sammeln...</string>
+    <string name="common_google_play_services_unknown_issue">%1$s hat Probleme mit Google Play-Diensten. Bitte versuche es noch einmal.</string>
+    <string name="context_automodeslvl">Auto-Modi</string>
+    <string name="context_backup_apk">APK-Datei sichern</string>
+    <string name="context_backup_apk_selected_apps">APK von ausgewählten Apps sichern</string>
+    <string name="context_backup_data">Backup App Einstellungen</string>
+    <string name="context_backup_settings_selected_apps">Sichere die App-Einstellungen ausgewählter Apps</string>
+    <string name="context_batch_operations">Stapelverarbeitung</string>
+    <string name="context_block_internet_selected_apps">Internet für ausgewählte Apps blockieren Funktioniert möglicherweise unter Android 4.0 &amp; höher.</string>
+    <string name="context_blockads">Anzeigen auf dem Gerät blockieren</string>
+    <string name="context_change_components_menu">Ändere die Komponenten der App</string>
+    <string name="context_clearhosts">Lösche die lokale Datei „hosts“.</string>
+    <string name="context_crt_apk_permission">APK mit geänderten Berechtigungen und Aktivitäten</string>
+    <string name="context_dependencies">Abhängigkeiten entfernen</string>
+    <string name="context_dex_verification_kill_option">Entfernt die Integritätsprüfung und Signaturüberprüfung</string>
+    <string name="context_dex_verification_kill_option_describe">Fügt Code in die Anwendung ein, um die Dex-Prüfsumme und die Signaturüberprüfung zu umgehen. Diese Methode verdoppelt die Größe der Anwendung.</string>
+    <string name="context_dexopt_app">ODEX diese App</string>
+    <string name="context_disableActivity">Werbeaktivitäten deaktivieren</string>
+    <string name="context_disableComponents">"Komponenten abschalten
+'pm deaktivieren' Methode
+(könnte von der App aktiviert sein)"</string>
+    <string name="context_disable_google_ads">Google Werbe Dienste deaktivieren</string>
+    <string name="context_disable_package">Paket deaktivieren (einfrieren)</string>
+    <string name="context_disable_package_for_selected_apps">Deaktiviere ausgewählte Apps</string>
+    <string name="context_enable_google_ads">Google Werbedienste wieder aktivieren</string>
+    <string name="context_enable_package">Paket aktivieren (auftauen)</string>
+    <string name="context_enable_package_for_selected_apps">Aktiviere ausgewählte Apps</string>
+    <string name="context_files_observer">Datei-Beobachtungsdienst für die Anwendung</string>
+    <string name="context_hard_apk_permission">"Berechtigungen ändern
+Originalsignatur speichern.
+(instabile Methode)"</string>
+    <string name="context_hide_lp">Lucky Patcher verstecken</string>
+    <string name="context_hide_lp_descr">Versuche Lucky Patcher vor anderen Apps zu verstecken. Wird die Belastung des Systems erhöhen - nur bei Bedarf verwenden.</string>
+    <string name="context_install">Installieren</string>
+    <string name="context_install_as_system">Als System-App installieren</string>
+    <string name="context_integrate_dalvik">Integriere Dalvik Code in bereits installierte Apps</string>
+    <string name="context_integrate_update_selected_apps">Integriert Updates ausgewählter Apps in /system</string>
+    <string name="context_menu_settings_show_last_added_custom_patches">Neueste benutzerdefinierte Patches anzeigen</string>
+    <string name="context_move_selected_apps_to_internal">Ausgewählten Apps in den internen Speicher verschieben</string>
+    <string name="context_move_selected_apps_to_sdcard">Ausgewählte Apps auf die SD-Karte verschieben</string>
+    <string name="context_original_resign_app">"Neu signieren mit Original-Signatur für Android-Patch '%1s'."</string>
+    <string name="context_patch_framework">Framework-Datei patchen</string>
+    <string name="context_purchases_sorter">Kaufsortierer</string>
+    <string name="context_rebuild">Kompilieren</string>
+    <string name="context_removeAds">Patch, um Google-Anzeigen zu entfernen</string>
+    <string name="context_remove_patch_boot">Entferne den Patch aus der Bootliste</string>
+    <string name="context_remove_saved_purchaces">Ausgewählte gespeicherte Einkäufe entfernen</string>
+    <string name="context_resign_app">Neu signieren mit einer Testsignatur</string>
+    <string name="context_restore_apk">APK-Datei neuinstallieren</string>
+    <string name="context_restore_data">App-Einstellungen wiederherstellen</string>
+    <string name="context_result_backup_apks">Ergebnisse der Stapelsicherung von Anwendungen:</string>
+    <string name="context_result_backup_settings">Ergebnisse der Stapelsicherung der Anwendungseinstellungen:</string>
+    <string name="context_safe_apk_permission">"Berechtigungen und Aktivitäten ändern
+Neu erstellen und installieren"</string>
+    <string name="context_safe_sign_apk_permission">"Berechtigungen und Aktivitäten ändern
+Originalsignatur speichern (Sichere Methode)"</string>
+    <string name="context_signature_verification_kill_option">Signaturüberprüfungskiller</string>
+    <string name="context_signature_verification_kill_option_describe">Fügt Code in die Anwendung ein, der versucht, die Signaturüberprüfung der Anwendung auszutricksen. Es muss ausschließlich für die ursprüngliche Anwendung angewendet werden. Wenn die Anwendung bereits neu erstellt wurde, hilft dies nicht nur nicht, sondern kann auch schaden, wenn die Option bereits erfolgreich implementiert wurde.</string>
+    <string name="context_support_patch">Patch für InApp- und LVL-Emulation</string>
+    <string name="context_tools">Tools</string>
+    <string name="context_trouble_enable_playprotect">Aktiviere \"Play Protect\"</string>
+    <string name="context_trouble_run_playprotect_dialog">Starte den \"Play Protect\" Dialog</string>
+    <string name="context_unblock_internet_selected_apps">Internet für ausgewählte Anwendungen freigeben. Funktioniert möglicherweise nicht unterAndroid 4.0 &amp; höher.</string>
+    <string name="context_unblockads">Entsperre Anzeigen auf dem Gerät</string>
+    <string name="context_uninstall_if_installed">Deinstallieren und Installieren</string>
+    <string name="context_uninstall_selected_apps">Ausgewählte Benutzer-Apps deinstallieren</string>
+    <string name="context_use_apk_for_original_signature">Anwendungsdatei zum Kopieren der Signatur auswählen</string>
+    <string name="context_use_apk_for_original_signature_describe">Du kannst eine andere Anwendungsdatei auswählen, um deine Datei mit einer Signatur aus dieser Datei zu signieren.</string>
+    <string name="context_use_installed_apk_for_original_signature">Signatur aus der installierten Anwendung kopieren</string>
+    <string name="context_use_installed_apk_for_original_signature_descr">Du kannst die Signatur von einer bereits installierten Anwendung mit demselben Paketnamen kopieren.</string>
+    <string name="context_use_zip_crc_image">Fälsche ein modifiziertes APK-Archiv des Originals</string>
+    <string name="context_use_zip_crc_image_describe">Versucht, die Dateiprüfung zu umgehen, indem das Zip-Archiv geändert wird. Wenn das Archiv danach geändert wird, funktioniert die Methode möglicherweise nicht.</string>
+    <string name="contextads">Google-Anzeigen entfernen</string>
+    <string name="contextbackup">Sichern</string>
+    <string name="contextblockfileads">Entferne Links aus APK</string>
+    <string name="contextblockfileads_descr">Entfernt HTTP-Links mithilfe von Vorlagen aus den Dateien \"AdsBlockList_user_edit.txt\" und \"AdsBlockList.txt\".</string>
+    <string name="contextboot">Beim Neustarten patchen (Instabil! Nur für das Patchen von Bibliotheken verwenden)</string>
+    <string name="contextbootads">Google-Anzeigen entfernen</string>
+    <string name="contextbootcustom">Individueller Patch</string>
+    <string name="contextbootlvl">Lizenzüberprüfung entfernen</string>
+    <string name="contextcorepatch1">Signatur wird immer richtig eingestuft</string>
+    <string name="contextcorepatch1_descr">Notwendig zur Emulation von InApp, LVL und Keygens. Wird zur Verifikation der Einkäufe und Lizenzen verwendet.</string>
+    <string name="contextcorepatch2">APK-Signaturverifizierung deaktivieren</string>
+    <string name="contextcorepatch2_descr">Erlaubt die Modifikation einer App ohne eine neue Signatur zu erstellen, so bleibt die Signatur der Entwickler erhalten. Andere Benutzer können diese .apk nur installieren, wenn sie Android Core gepatcht haben (nützlich für Übersetzungen, Grafische Änderungen, usw. in geschützten Apps).</string>
+    <string name="contextcorepatch3">Signaturprüfung im Paket-Manager deaktivieren</string>
+    <string name="contextcorepatch3_descr">Erlaubt die Installation von Apps mit unterschiedlichen Signaturen übereinander</string>
+    <string name="contextcorepatch3_descr_plus">Erlaubt die Installation älterer Version der App als die bereits installierte Version</string>
+    <string name="contextcorepatch4">Support-Patch für InApp- und LVL-Emulation</string>
+    <string name="contextcorepatch4_descr_xposed">Dieser Patch wird benötigt, damit die Emulation ohne Support-Patches auf den jeweiligen Apps funktioniert.</string>
+    <string name="contextcorepatchrestore2_descr">Alle Patches aus der Android Services.jar werden entfernt</string>
+    <string name="contextcorepatchrestore_descr">Alle Patches aus der Android Core.jar werden entfernet</string>
+    <string name="contextcustompatch">Individueller Patch</string>
+    <string name="contextdeodex">Entferne ODEX-Datei (App wiederherstellen)</string>
+    <string name="contextfulloffline">Mache die App vollständig Offline</string>
+    <string name="contextfulloffline_descr">Versuche die App Offline funktionsfähig zu machen</string>
+    <string name="contextignore">Lizenzüberprüfung entfernen</string>
+    <string name="contextlaunchapp">App ausführen</string>
+    <string name="contextmultipatch">Multi-patch</string>
+    <string name="contextmultipatchrebuild">Apk mit Multi-patch</string>
+    <string name="contextodex">Änderungen in der ODEX-Datei übernehmen</string>
+    <string name="contextpatt1">Modifikation der Lizenzüberprüfung</string>
+    <string name="contextpatt1_descr">Falls eine Internetverbindung verfügbar ist, erlaube diese beim ersten Start. Diese Art von Patches macht nur wenig aus.</string>
+    <string name="contextpatt2">Zwischengespeicherte-Lizenz-Fix (Internet-Fix)</string>
+    <string name="contextpatt2_descr">Wenn dieser Patch vorhanden ist, wird viellicht keine Internetverbindung für den ersten Start benötigt.</string>
+    <string name="contextpatt3">Antwortcodeüberprüfung-Fix</string>
+    <string name="contextpatt3_descr">Mini-Fixes für die Lizenzüberprüfung.</string>
+    <string name="contextpatt4">Google-Antwortcode-Ersetzung</string>
+    <string name="contextpatt4_descr">Instabil, aber sehr effektiv (es kann zu Fehlern kommen, wenn die \"Auto-Orientierung\" des Geräts aktiviert ist.) Wenn vorhanden, Internetverbindung beim ersten Start zulassen.</string>
+    <string name="contextpatt5">Endgültige Lizenzüberprüfung</string>
+    <string name="contextpatt5_descr">Vorlagen für die endgültige Lizenzüberprüfung. Wenn dies funktioniert wird die Anwendung ohne Internetverbindung funktionieren.</string>
+    <string name="contextpatt6">Endgültige Lizenzüberprüfung (Umgekehrt)</string>
+    <string name="contextpatt6_descr">Falls \"Endgültige Lizenzüberprüfung\" nicht erfolgreich war, kannst du diese Patches versuchen.</string>
+    <string name="contextpattads3">Werbungempfänger stören</string>
+    <string name="contextpattads3_descr">Versuche den Empfangsmechanismus der Google-Anzeigen zu stören.</string>
+    <string name="contextpattads4">Andere Patches</string>
+    <string name="contextpattads4_descr">Andere Patches, die auch nützlich sein können um Werbung zu entfernen</string>
+    <string name="contextpattads6">Offline-Patch</string>
+    <string name="contextpattads6_descr">Täusche dem Anzeigemodul vor es sei offline.</string>
+    <string name="contextpattamazon">Automatisch (Amazon App-Shop)</string>
+    <string name="contextpattamazon_descr">Entfernt die Lizenzüberprüfung von Apps aus dem Amazon App-Shop.</string>
+    <string name="contextpattdependencies_descr">Entfernen von Google Play Abhängigkeiten u.ä.</string>
+    <string name="contextpattlvl1">Automatisch</string>
+    <string name="contextpattlvl1_descr">Die minimale Anzahl von Patches. Geeignet für die meisten Anwendungen mit einfachen Schutz.</string>
+    <string name="contextpattlvl2">Automatisch (Umgekehrt)</string>
+    <string name="contextpattlvl2_descr">Es gibt ein paar Unterschiede zu \"Automatisch\". Es kann dir helfen, wenn \"Automatisch\" nicht erfolgreich war.</string>
+    <string name="contextpattlvl3">Andere Patches (Extrem-Modus!)</string>
+    <string name="contextpattlvl3_descr">Zusätzliche Patches, die zu Instabilität führen können. Nur anwenden, wenn die anderen Muster nicht erfolgreich waren. Benötigt Internet. Versuchen es zusammen mit „Auto mode“ oder „Auto mode (Inversed)“ zu verwenden.</string>
+    <string name="contextpattlvl4">Dalvik-Cache patchen</string>
+    <string name="contextpattlvl4_descr">Standardmäßig werden alle Änderungen in die ODEX-Datei geschrieben. Aber diese Methode funktioniert nicht richtig, wenn die Anwendung auf die externe SD-Karte verschoben worden ist. In diesem Fall könnte \"Patch in die Dalvik-Cache hinzufügen\" helfen. Du kannst die Anwendung nur durch eine Neuinstallation wiederherstellen.</string>
+    <string name="contextpattlvl5">APK-Datei sichern</string>
+    <string name="contextpattlvl5_descr">Kopiert die App in den Ordner von Lucky Patcher auf der SD-Karte. Damit kannst du dann später die Anwendung mit der .apk wiederherstellen.</string>
+    <string name="contextpattlvl6">Dalvik-Cache leeren</string>
+    <string name="contextpattlvl6_descr">Dalvik-Cache der Anwendung löschen, um Speicher nach dem Erstellen der ODEX-Datei zu sparen. Wenn die Anwendung nicht gut mit ODEX funktioniert, musst Du die Anwendung erneut installieren.</string>
+    <string name="contextpattlvl_dex">Auto-Modus (Dex)</string>
+    <string name="contextpattlvl_dex_descr">Die Mindestanzahl von Patches. Funktioniert nur mit installiertem Google Play. Wenn Du ein gehacktes Programm zum ersten Mal startest, benötigst Du das Internet.</string>
+    <string name="contextpattsamsung">Automatisch (Samsung Apps)</string>
+    <string name="contextpattsamsung_descr">Entfernt die Lizenzüberprüfung aus Apps von Samsung Apps.</string>
+    <string name="contextreinstall">"Applikation neu installieren
+(entfernt alle Patches)"</string>
+    <string name="contextrestore">Wiederherstellen</string>
+    <string name="contextselpatt">Ausgewählte Muster</string>
+    <string name="core_only_dalvik_cache_end">Wenn das Gerät nicht reagiert oder alle Patches nicht funktionieren, starte dein Gerät manuell neu.</string>
+    <string name="core_only_dalvik_cache_finished">Android-Patch für Dalvik-Cache wurde beendet. Ergebnis:</string>
+    <string name="core_option">Nur Dalvik-Cache patchen.</string>
+    <string name="core_patch_apply">(Patch wurde angewandt)</string>
+    <string name="core_patch_nopatch">(Nicht gepatcht)</string>
+    <string name="core_patch_nopatch_no_space1">Dalvik-Cache der core.jar wurde gepatcht, aber diese Art von Patches kann bei der Aktualisierung des Dalvik-Caches verschwinden. Nicht genug Speicher im System-ROM zur Erstellung der Core.odex. Bitte gib 4MB an Speicher frei, leere die Dalvik-Cache &amp; versuche es erneut. Bitte starte dein Gerät neu, um den Patch auf den Dalvik-Cache anzuwenden.</string>
+    <string name="core_result_checkbox">Die Dalvik-Cache immer beim Neustarten patchen (Nur anwenden, falls Patches der core.jar nach dem Neustart verschwinden).</string>
+    <string name="corepatches">Android-Patch</string>
+    <string name="corrupt_download">Die heruntergeladene Datei ist beschädigt. Bitte überprüfe, dass genug freier Speicherplatz auf der SD-Karte frei ist &amp; versuche es später erneut.</string>
+    <string name="create">Verzeichnis erstellen</string>
+    <string name="create_clone_new_app_name">Anwendungsname ändern</string>
+    <string name="create_clone_option1">Nur AndroidManifest.xml modifizieren.</string>
+    <string name="create_clone_option1_descr">Es funktioniert nicht für alle Anwendungen. Wenn der Klon nicht installiert ist, musst Du das Original entfernen. Wenn diese Methode nicht funktioniert, versuche einen Klon auf andere Weise zu erstellen.</string>
+    <string name="create_clone_option2">Modifiziere AndroidManifest.xml, resources &amp; classes.dex</string>
+    <string name="create_clone_option2_descr">Es funktioniert nicht für alle Anwendungen. Diese Methode versucht, die Datei „resources“ und „classes.dex“ zu ändern. Diese Methode erstellt einen Klon, der stärker vom Original isoliert ist.</string>
+    <string name="create_dir_error">Fehler: Verzeichnisname ist leer.</string>
+    <string name="create_dir_error_2">Fehler: Verzeichnis nicht erstellt.</string>
+    <string name="create_lic_done">Erfolgreich! Die Lizenz wurde erstellt. Teste die Anwendung im Offline-Modus &amp; vielleicht hast du ja Glück.</string>
+    <string name="create_perm_ok">App aufbauen</string>
+    <string name="createapk">Modifizierte APK erstellen</string>
+    <string name="createapkads">APK ohne Google-Anzeigen</string>
+    <string name="createapkcustom">APK mit individuellem Patch</string>
+    <string name="createapklvl">APK ohne Lizenzüberprüfung</string>
+    <string name="createapksupport">APK mit InApp- &amp; LVL-Emulation</string>
+    <string name="createdialog1">Modifizierung von</string>
+    <string name="createdialog1_clone">Klon von</string>
+    <string name="createdialog2">"wurde beendet.
+
+Dateipfad:"</string>
+    <string name="createdialog3">Beachte ! Wenn die App nach dem Patch funktioniert, bedeutet das nicht automatisch, dass eine modifizierte App auch funktioniert. Manche Apps sind gegen Modifzierungen geschützt. Die Erfolgschance ist beim Patchen höher als beim Modifzieren.</string>
+    <string name="createdialog3_clone">Beachte! Manche Apps müssen deinstalliert werden um die geklonte App zu installieren. Es gibt keine Garantie dafür, dass die geklonte Apk funktioniert. Manche Apps sind gegen Modifikation geschützt.</string>
+    <string name="createdialog5">Dateiname:</string>
+    <string name="custom_descript">Beschreibung des individuellen Patches:</string>
+    <string name="custom_name_for_lp">Verwende deinen Namen für die Anwendung</string>
+    <string name="custom_patch_log_add_custom_patch_to_boot_list">Patch zur Bootliste hinzugefügt.</string>
+    <string name="custom_patch_log_block_internet_hosts">Internet Hosts blockieren</string>
+    <string name="custom_patch_log_change_components">Komponenten ändern</string>
+    <string name="custom_patch_log_change_preference_delete">Variable entfernt</string>
+    <string name="custom_patch_log_change_preference_insert">Variable eingefügt</string>
+    <string name="custom_patch_log_change_preference_not_found_file">Datei nicht gefunden</string>
+    <string name="custom_patch_log_change_preferences">Änderungen der Einstellungsdatei</string>
+    <string name="custom_patch_log_method_patch">Patch für Methode</string>
+    <string name="custom_patch_log_method_patch_size_error">Nicht genügend Platz zum Einfügen des Codes. Reduziere die Größe der Vorlage.</string>
+    <string name="custom_patch_log_next_custom_patch">Starte den nächsten Custom Patch</string>
+    <string name="custom_patch_log_offset">Ausgleichen</string>
+    <string name="custom_patch_log_or_patch_is_already_applied">oder Patch ist bereits angewendet.</string>
+    <string name="custom_patch_log_patch_all_files">Patch für Dateien aus dem Verzeichnis</string>
+    <string name="custom_patch_log_patch_done">Patch fertig!</string>
+    <string name="custom_patch_log_patch_for">Patch für</string>
+    <string name="custom_patch_log_patch_for_libraries">Patch für Bibliotheken</string>
+    <string name="custom_patch_log_patch_on_reboot_added">Patch zur Bootliste hinzugefügt!</string>
+    <string name="custom_patch_log_pattern">Muster</string>
+    <string name="custom_patch_log_pattern_not_found">Muster nicht gefunden</string>
+    <string name="custom_patch_log_search_bytes">Bytes durch Suche</string>
+    <string name="custom_patch_log_search_bytes_error">Bytes nicht gefunden</string>
+    <string name="custom_patch_log_skip_patch_for_build">Überspringe Patch für diese Version</string>
+    <string name="custom_patch_result_all_dont_patch">Benutzerdefinierter Patch ist für diese Version des Programms nicht gültig oder das Programm wurde bereits gepatcht.</string>
+    <string name="custom_patch_result_not_all_patches_apply">Nicht alle Muster wurden ersetzt, aber das Programm kann funktionieren, probier es aus!</string>
+    <string name="custom_patch_warning">Benutzerdefinierter Patch nicht gefunden. Es besteht ein Problem mit deinem Root. Vom root Verzeichnis aus konnte nicht auf die SD-Karte zugegriffen werden. Falls du SuperSu verwendest versuche die Option \"Namensbereichabtrennung mounten\" zu deaktivieren. Falls das nicht hilft update SuperSu &amp; die su Datei</string>
+    <string name="custom_patches_update_not_found">Keine Updates für die individuellen Patches verfügbar.</string>
+    <string name="custom_sel_app">Ausgewählte App:</string>
+    <string name="customdescr">Alle Anwendungen mit einem individuellen Patch anzeigen.</string>
+    <string name="customtitle">Apps mit individuellem Patch</string>
+    <string name="dalvik_cache_size">Größe des Dalvik-Cache:</string>
+    <string name="damadged_apk">Die Anwendungsdatei ist beschädigt und kann gelesen werden.</string>
+    <string name="data_dir_size">Datenverzeichnisgröße:</string>
+    <string name="date_creation_patch">Datum des hinzugefügten Patches</string>
+    <string name="days_on_up">Zeige neu installierte Apps zuerst</string>
+    <string name="days_on_up_descr">Lege die maximale Anzahl von Tagen fest, bis wann eine App als neu installiert gilt. Setze diesen auf 0 Tage, wenn Du diese Art von Einteilung deaktivieren möchtest.</string>
+    <string name="delboot">Drücke auf eine App, um sie von der Boot-Liste zu entfernen</string>
+    <string name="delete_apex_update">Das Update für com.google.android.art wurde entfernt, um die Patch-Funktionalität wiederherzustellen.</string>
+    <string name="delete_file">Datei löschen</string>
+    <string name="delete_file_message">Möchtest Du die Datei %s wirklich löschen?</string>
+    <string name="delete_system_app">Systemanwendung löschen</string>
+    <string name="delete_system_app_for_user">Deinstalliere die System-App für den aktuellen Benutzer</string>
+    <string name="delete_system_app_for_user_message">Möchtest Du die System-App %s für den aktuellen Benutzer wirklich deinstallieren?</string>
+    <string name="describe_for_Proxy_gp">(Mini Version nur mit Lizenz &amp; InApp Emulation)</string>
+    <string name="dialog_end_orig_resign_app">%1$s wurde erfolgreich mit einer Originalsignatur signiert. Die neu signierte Datei befindet sich %2$s.</string>
+    <string name="dialog_end_resign_app">%1$swurde erfolgreich mit einer Testsignatur signiert. Die neu signierte Datei befindet sich in %2$s.</string>
+    <string name="dialog_system">Diese Anwendung ist ein Teil des Android-Betriebssystems. Sei sehr vorsichtig bei jeder Änderung , da du einen Soft-Brick verursachen kannst. Hast Du bereits eine Sicherung gemacht? Bist Du sicher, dass du diese App bearbeiten möchtest?</string>
+    <string name="dir_change">Verzeichnis ändern</string>
+    <string name="dir_change_descr">"Ändere das Verzeichnis auf der SD-Karte, in dem Lucky Patcher seine Dateien speichert. Der Standardpfad lautet
+/mnt/sdcard/Android/data/[Paketname_von_lucky_patcher]/files/LuckyPatcher"</string>
+    <string name="dirbinder">Verzeichnisverbinder</string>
+    <string name="dirr_chg">Das Verzeichnis wurde folgendermaßen geändert:</string>
+    <string name="disable_autoupdate">Auto-Update deaktivieren</string>
+    <string name="disable_autoupdate_descr">Hiermit deaktivierst Du die automatischen Updates.</string>
+    <string name="disable_inapp_services_google">InApp-Dienste für den Google Play Store</string>
+    <string name="disable_inapp_services_google_descr">Einige Apps stürzen ab wenn mehrere InApp Dienste eingeschaltet sind.</string>
+    <string name="disable_license_services_google">Lizenz-Dienste für den Google Play Store</string>
+    <string name="disable_license_services_google_descr">Einige Apps stürzen ab, wenn mehrere Lizenzdienste aktiviert sind</string>
+    <string name="disabled">deaktiviert</string>
+    <string name="disabled_package">Deaktivierte App (Eingefroren).</string>
+    <string name="dont_send_log_lp_modified">Dein Lucky Patcher wurde modifiziert. Du kannst keine Logs senden</string>
+    <string name="dont_send_log_please_update_lp">Bitte aktualisiere Lucky Patcher auf die neueste Version, um das Protokoll zu senden.</string>
+    <string name="dontusepatch">Abbrechen</string>
+    <string name="downgrade_version_googlepaly_in_system_partition">Die auf der Systempartition installierte Version von Google Play ist höher als die installierte Version. Jetzt wird die untenstehende Google Play-Version in der Systempartition installiert. Wiederhole anschließend die Installation des modifizierten Google Play. Bist Du einverstanden?</string>
+    <string name="download">Lädt...</string>
+    <string name="download_progress_dialog_message_downloading">Downloade</string>
+    <string name="download_progress_dialog_message_prepare_downloading">Download vorbereiten ...</string>
+    <string name="download_progress_dialog_message_resume_downloading">Download wird fortgesetzt</string>
+    <string name="empty">leer</string>
+    <string name="empty_binders">Du musst mindestens eine Verknüfung erstellt haben, um ein Widget hinzufügen zu können.</string>
+    <string name="enabled">aktiviert</string>
+    <string name="enabled_package">Aktivierte App.</string>
+    <string name="enter_manual_path">Manueller Pfad</string>
+    <string name="enter_name_dir">Verzeichnisname:</string>
+    <string name="equals_version">Du benutzt die neueste Version von Lucky Patcher.</string>
+    <string name="error">Fehler</string>
+    <string name="error2_backup_apk">Fehler beim Sichern der APK-Datei. Die classes.dex Dateien fehlen in der Anwendung.</string>
+    <string name="error_android_patches_lsposed_patch1">Der Mechanismus zum Arbeiten mit Signaturen ist defekt, daher ist es unmöglich, den Patch „%1$s“ zu überprüfen. Wenn der Patch mit LSposed angewendet wird, musst Du die Version von LSposed, riru oder zygisk ändern.</string>
+    <string name="error_apk_to_system">Du kannst von diesem Speicherort keine Systemanwendungen installieren, verschiebesie bitte auf die SD-Karte.</string>
+    <string name="error_app_installed_on_sdcard">Lucky Patcher muss im internen Speicher installiert sein, da sonst einige Features nicht funktionieren.</string>
+    <string name="error_app_installed_on_sdcard_block">Lucky Patcher muss auf dem internen Speicher installiert werden. Diese Funktion funktioniert nicht, wenn Lucky Patcher auf einem externen Speicher installiert ist.</string>
+    <string name="error_backup_apk">Fehler beim sichern der APK Datei. Keine Kopierberechtigung</string>
+    <string name="error_classes_not_found">Die Datei \\.jar\\ einhält nicht die Classes.dex, welche gepatcht werden soll. Versuche die \\.odex\\-Datei für diese \\.jar\\-Datei zu patchen .</string>
+    <string name="error_collect_logs">Es ist ein Fehler beim Sammeln der Protokolle aufgetreten. Protokoll wurde nicht erstellt.</string>
+    <string name="error_create_join_custom_patch">"Die Datei join_patch.txt konnte nicht erstellt werden.
+Möglicherweise keine Berechtigung zum Schreiben in den Patch-Ordner."</string>
+    <string name="error_create_oat">"Fehler beim Erstellen der .oat-Datei für die gepatchte Datei „classes.dex“. Der Patch hat einige Fehler in der Datei „classes.dex“ oder Probleme mit der Firmware verursacht. Möglichkeiten zur Lösung von Problemen:
+1.Downgrade oder Upgrade der Magisk-Version.
+2.Versuchen Sie, alle Magisk-Module für den Test zu deaktivieren.
+3.Versuchen Sie, die Java-Root-Methode in den Einstellungen von Lucky Patcher zu ändern."</string>
+    <string name="error_delete_join_custom_patch">"Die Datei join_patch.txt konnte nicht gelöscht werden
+Lösche die Datei oder den gesamten Patch-Ordner manuell."</string>
+    <string name="error_detect">Es scheint, als sei Lucky Patcher abgestürzt. Möchtest Du einen Fehlerbericht an den Entwickler schicken?</string>
+    <string name="error_expansion_copy_to_sdcard">Die Anwendung ist installiert, es war jedoch nicht möglich, den Cache in den Ordner /Android/obb zu kopieren.</string>
+    <string name="error_file_not_found_in_original_apk" formatted="false">Die Datei %1s wurde im Originalarchiv %2s nicht gefunden. Aus diesem Grund wurde die CRC-Datei nicht geändert.</string>
+    <string name="error_get_classes_files_for_patch">Konnte die classes.dex Dateien für den Patch nicht finden</string>
+    <string name="error_get_pkgInfo">Fehler: Es konnten keine Paketinformation gefunden werden.</string>
+    <string name="error_icon_content_description">Fehler</string>
+    <string name="error_import_custom_patch">Lucky Patcher kann den benutzerdefinierten Patch nicht importieren. Das Zip-Archiv scheint beschädigt zu sein.</string>
+    <string name="error_installation">Installation der Anwendung fehlgeschlagen.</string>
+    <string name="error_launch">Starten nicht möglich!</string>
+    <string name="error_message_for_share_app">App konnte nicht geteilt werden. Unbekannter Fehler. Versuche, das Arbeitsverzeichnis für Lucky Patcher zu wechseln.</string>
+    <string name="error_need_free_space_for_classes_intergate">Es war nicht möglich, den gesamten zusätzlichen Code in den freien Speicherplatz der dex-Dateien einzufügen. Wiederhole den Patch und wähle die kleineren Optionen für den Patch aus. Oder verwende einen Rebuild mit diesem Patch.</string>
+    <string name="error_not_found_lic_data">Daten für die Lizenzerstelllung konnten nicht gefunden werden.</string>
+    <string name="error_not_found_storage_lic">Lizenz konnte nicht gefunden werden.</string>
+    <string name="error_odex_app">Fehler: Das Erstellen der ODEX-Datei ist fehlgeschlagen... Wahrscheinlich nicht genügend Speicherplatz vorhanden.</string>
+    <string name="error_odex_app_impossible">Diese App enthält keine classes.dex. Eine DEX-Optimierung ist unmöglich.</string>
+    <string name="error_out_of_memory">Zu wenig Arbeitsspeicher (RAM), um den Vorgang abzuschließen. Der VM-Heap ist zu klein.</string>
+    <string name="error_path">Falscher Pfad!</string>
+    <string name="error_path_exists">Verzeichnis existiert bereits. Bitte gebe einen neuen Pfad an.</string>
+    <string name="error_read_folder">Ordner kann nicht gelesen werden!</string>
+    <string name="error_restore">Wiederherstellung ist fehlgeschlagen.</string>
+    <string name="exit">Exit</string>
+    <string name="export_settings">Einstellungen exportieren</string>
+    <string name="exposed_dropdown_menu_content_description">Drop-down-Menü anzeigen</string>
+    <string name="extpat1">Es sieht so aus, als hätten</string>
+    <string name="extpat2">Objekte einer Lizenzüberprüfung:</string>
+    <string name="extpat3">"Anweisungen:
+--------------
+- Bitte tippe auf die Schaltfläche „Backup“;
+- Aktiviere den Datenzugriff über WLAN oder das Mobilfunknetz und lasse alle Verbindungen für die Anwendung zu;
+ --Wähle das Muster aus und tippe auf „Patch“;
+- Tippen auf „Starten“ und prüfe den Lizenzstatus (ggf. aktualisieren);
+- Wenn dieses Muster nicht hilft, tippe auf „Wiederherstellen“ und versuche es erneut mit einem anderen Muster.
+- Wenn der Vorgang erfolgreich war, tippe auf Änderungen beheben."</string>
+    <string name="extres1">"Patch abgeschlossen! Starte und überprüfe den Lizenzstatus der Anwendung;
+Wenn dieses Muster nicht hilft, tippe auf „Wiederherstellen“ und wiederhole den Vorgang mit einem anderen Muster."</string>
+    <string name="extres2">Es wurden keine Tags für das Muster gefunden. Bereits Gepatcht? Tippe \"Wiederherstellen\", wähle ein anderes Muster &amp; Patche es nochmal.</string>
+    <string name="failed">Fehlgeschlagen</string>
+    <string name="failed_group">Fehlgeschlagen für:</string>
+    <string name="fast_start">Schnellstart</string>
+    <string name="fast_start_descr">"Abschalten des Ladens der Symbole von Lucky Patcher's Datenbank. Dies lässt die App Liste laggen..."</string>
+    <string name="file_not_deleted">Die Datei wurde nicht gelöscht.</string>
+    <string name="file_not_found">"App konnte nicht auf die SD-Karte kopiert werden!
+Bitte gebe Speicherplatz auf der SD-Karte frei oder überprüfen deine Busybox-Installation."</string>
+    <string name="file_observer_describe">Dies ist ein Dienst zur Überwachung von Dateien wie .dex, .so, .zip. Wenn solche Dateien erscheinen, versucht es, von der Anwendung nach /sdcard/Download/application_package_name zu kopieren. Dies ist notwendig, um verschlüsselte Dateien von der Anwendung zu erhalten. Beim Start werden der Dienst und die Anwendung selbst gestartet. Nachdem Du die erforderliche Zeit gewartet hast, kannst Du den Fortschrittsdialog unterbrechen, dann werden Informationen zu den kopierten Dateien angezeigt.</string>
+    <string name="filter">Suchen</string>
+    <string name="filter0">Neue &amp; aktualisierte Apps</string>
+    <string name="filter1">Apps mit Lizenzüberprüfung</string>
+    <string name="filter10">Deaktivierte (Eingefrorene) Apps</string>
+    <string name="filter11">Apps mit individuellem Patch</string>
+    <string name="filter12">Als modifiziert gekennzeichnete Apps</string>
+    <string name="filter13">Apps mit ODEX-Datei</string>
+    <string name="filter2">Apps mit Werbung</string>
+    <string name="filter4">Apps mit InApp</string>
+    <string name="filter5">Apps auf internem Speicher</string>
+    <string name="filter6">Apps auf SD-Karte</string>
+    <string name="filter7">System-Apps</string>
+    <string name="filter8">System-Apps mit Updates</string>
+    <string name="filter9">Apps mit SEND_SMS &amp; CALL_PHONE Berechtigungen</string>
+    <string name="filterSplittedApps">Geteilte Anwendungen</string>
+    <string name="filterdescr">Wähle die anzuzeigenden Kategorien aus.</string>
+    <string name="final_market_message">Google Play wurde installiert. core.jar wird jetzt gepatcht &amp; dein Gerät startet neu. Fortfahren?</string>
+    <string name="fixbutton">Änderungen übernehmen</string>
+    <string name="fixeddescr">Alle veränderten Apps anzeigen (Gelber Stern)</string>
+    <string name="fixedtitle">Apps mit Änderungen in der ODEX</string>
+    <string name="folder_message_error">Neuer Ordner muss leer sein. Bitte wähle einen anderen Ordner aus.</string>
+    <string name="framework_file_patched">wurde gepatcht &amp; umbenannt zu</string>
+    <string name="framework_patch_not_result">Lucky Patcher hat nichts zum Patchen gefunden.</string>
+    <string name="generate_log_error_message">Protokoll wurde nicht erstellt. Beim Erstellen des Protokolls ist ein Fehler aufgetreten.</string>
+    <string name="generate_log_for_conscrypt_jar_fix_android_patches">Erstelle ein Log für die conscrypt.jar ( um \"Android Patch\" zu fixen\" )</string>
+    <string name="generate_log_for_core.jar_fix_android_patches">Erstelle ein Log für die core-libart.jar (um \"Android Patch\" zu fixen )</string>
+    <string name="generate_log_for_core_oj_jar_fix_android_patches">"Erstelle ein Protokoll für core-oj.jar
+ (für die Korrektur \"Patch to Android\")"</string>
+    <string name="generate_log_for_framework_fix_android_patches">"Protokoll für framework.jar erstellen
+(für Fix \"Android-Patch\")"</string>
+    <string name="generate_log_for_services.odex_fix_android_patches">Erstelle ein Log für die services.jar (um \"Android Patch\" zu fixen )</string>
+    <string name="generate_log_result_message_conscrypt.jar">"Protokoll erstellt und gespeichert in /sdcard/conscrypt.oat.txt. Speichere die Datei in der Cloud oder komprimiere sie als ZIP-Datei. Dann sende es mir per E-Mail an lp.chelpus@gmail.com.
+Dateigröße:"</string>
+    <string name="generate_log_result_message_core_oj.jar">"Protokoll erstellt und gespeichert in /sdcard/core-oj.oat.txt. Speichere die Datei in der Cloud oder komprimiere sie als ZIP-Datei. Dann sende es mir per E-Mail an lp.chelpus@gmail.com.
+Dateigröße:"</string>
+    <string name="go_to_file_path">Gehe zu Datei</string>
+    <string name="goodresult">"Viel Glück!Bitte führe die Anwendung aus, um den Patch zu testen!
+
+Wenn die Anwendung nicht richtig funktioniert, installiere sie bitte neu und versuche nicht, diese Version zu patchen."</string>
+    <string name="google_play_installer_clear_data_google_services">Lösche die Daten der Google-Dienste, um das Problem der Anmeldung bei einem Google-Konto in Google Play zu beheben</string>
+    <string name="hash_code">Hash-Code</string>
+    <string name="have_luck">"***********************
+
+ Du hast"</string>
+    <string name="header_activities">Aktivitäten:</string>
+    <string name="header_providers">Anbieter:</string>
+    <string name="header_receivers">Empfänger:</string>
+    <string name="header_services">Services:</string>
+    <string name="help">Hilfe</string>
+    <string name="help_3dot">Dies ist eine Anwendung mit getrennten APK-Dateien. Beim Erstellen einer Sicherungskopie einer solchen Anwendung wird eine Datei mit der Erweiterung \"apks\" erstellt (Lucky Patcher kann diese Dateien installieren).</string>
+    <string name="help_PS">P.S.: Lucky Patcher schließt eine Anwendung, wenn ein Patch darauf angewendet wird. Dies ist notwendig, damit die neuen Änderungen bestehen bleiben. Manchmal musst Du jedoch auch das Gerät selbst neu starten, ein Tool eines Drittanbieters verwenden, um den Prozess oder die Prozesse der betroffenen Anwendung zu beenden, oder Anwendungsdaten löschen, um die Änderungen anzuzeigen.</string>
+    <string name="help_bootlist_describing">*%1$s - Eine Liste von Anwendungen, die beim Booten gepatcht werden. Im Moment ist die Funktion veraltet, da alle Änderungen, die Du an Anwendungen vornimmst, in ODEX gespeichert werden und nirgendwo hingehen können, daher musst Du dich nicht versichern, indem Du Anwendungen zur Bootliste hinzufügst. Dies ist möglicherweise nur erforderlich, wenn ein benutzerdefinierter Patch die „.so“-Bibliotheken der Anwendung ändert. In der Beschreibung dieser benutzerdefinierten Patches wird angegeben, dass sie zur Bootliste hinzugefügt werden sollen.</string>
+    <string name="help_common">Allgemein</string>
+    <string name="help_custom">Erstellen eines individuellen Patches</string>
+    <string name="help_custom_add_boot_tag">fügt diesen benutzerdefinierten Patch automatisch zu \"%1$s\" hinzu. Sollte im Patch von Bibliotheken verwendet werden (oder im Patch von [CLASSES] ohne [ODEX] oder ohne [PACKAGE])</string>
+    <string name="help_custom_add_file_in_apk_tag">"Füge dem apk-Archiv eine Datei aus dem Lucky Patcher-Verzeichnis hinzu.
+Beispiel:"</string>
+    <string name="help_custom_all_files_tag">"Patcht alle Dateien im angegebenen Verzeichnis.
+\"dir\" - Verzeichnis für Patch-Dateien.
+\"template\" - eine Vorlage zum Auswählen von Dateien für einen Patch (Du kannst nur \"*\" verwenden, was eine beliebige Anzahl beliebiger Zeichen bedeutet. ).
+Beispiel:"</string>
+    <string name="help_custom_all_lib_tag">Mustersuche/-ersetzung für alle nativen Bibliotheken</string>
+    <string name="help_custom_apk_build_param">Wendet dieses Muster nur für apk mit build=apk_build an. Du kannst das Muster für build>=apk_build (Beispiel: {\"apk_build\":\"206+\"}) oder für build&lt;=apk_build (Beispiel: {\"apk_build\":\"206-\"}) anwenden.</string>
+    <string name="help_custom_apk_build_param2">Du kannst ein Patchmuster für das APK-Versionsintervall anwenden, dazu musst Du zwei apk_builds mit einer oberen und unteren Versionsgrenze angeben:</string>
+    <string name="help_custom_begin_tag">Patch-Kommentare, die für den Benutzer vor dem Patch sichtbar sind</string>
+    <string name="help_custom_begin_tag_detail">Die Startmarkierung, der gesamte Text danach und bis zum ersten Feld [CLASSES], [LIB], [END] usw. werden am Anfang des Patch-Protokolls für den Benutzer angezeigt.</string>
+    <string name="help_custom_block_hosts_tag">Blockiert aufgelistete Internet-Hosts. \"host\" ist der Host, den Du blockieren möchtest.Beispiel:</string>
+    <string name="help_custom_classes_bez_package_tag">"Patcht Dalvik-Cache-Anwendungen. Denke daran, dass das System Dalvik-Cache-Anwendungen regelmäßig aktualisiert und alle Änderungen verschwinden. Daher müssen wir [ADD-BOOT] verwenden. Der Patch für Dalvik-Cache ist veraltet, da er unzuverlässig ist und nur auf älterer Firmware verwendet wurde. Aber es wird für die ROM Toolbox benötigt, da es mit Odex-Dateien nicht gut funktioniert.
+Beispiel:"</string>
+    <string name="help_custom_classes_name_param">Wendet einen Patch auf eine bestimmte classes-Datei an, ohne diese Option wird der Patch auf alle classes*.dex-Dateien angewendet (zum Beispiel: {\"classes_name\":\"classes2.dex\"}, {\"classes_name\":\"classes3.dex\" }, {\"classes_name\":\"classes.dex\"} ...).</string>
+    <string name="help_custom_classes_tag">Muster suchen/ersetzen für classes.dex (siehe unten)</string>
+    <string name="help_custom_classes_tag_detail">Hier sind die Zeilen für den Classes.dex-Patch. Dies können Suchen, Original-Ersetzen und andere unten beschriebene Optionen sein.</string>
+    <string name="help_custom_component_tag">"Komponenten von Anwendungen aktivieren oder deaktivieren. Manchmal deaktiviert eine Anwendung ihre Aktivität und andere Komponenten, um ihre Funktionalität einzuschränken, dann kann diese Möglichkeit, sie wieder zu aktivieren, nützlich sein. So kannst Du Aktivitäten, Dienste, Anbieter und andere Komponenten einbeziehen. Am wichtigsten ist es, die Namen strikt nach Groß- und Kleinschreibung anzugeben.
+Beispiel:"</string>
+    <string name="help_custom_copy_file_tag">"Kopiert eine Datei aus dem Ordner von Lucky Patcher in den angegebenen Ordner mit einem neuen Dateinamen.
+Beispiel:"</string>
+    <string name="help_custom_database_param">Dies ist der Pfad zur Datenbank auf Ihrem Gerät und vermutlich auf den Geräten anderer Benutzer. Du kannst auch nur den Namen der Datei angeben, dann versucht Lucky Patcher, sie selbst zu finden.</string>
+    <string name="help_custom_delete_file_in_apk_tag">"Datei im APK-Archiv löschen.
+Beispiel:"</string>
+    <string name="help_custom_delete_folder_in_apk_tag">"Ordner im APK-Archiv löschen.
+Beispiel:"</string>
+    <string name="help_custom_deprecated_tag">Veraltet</string>
+    <string name="help_custom_end">Alles wurde bearbeitet, speichere die Datei und lege sie im Verzeichnis \"CustomPatches\" im Lucky Patcher-Ordner ab. Dieser Ordner kann ganz oben im Abschnitt \"Über\" angezeigt werden. Dann wird das Programm gelb markiert und Du kannst diesen Patch darauf anwenden.</string>
+    <string name="help_custom_end_tag">Patch-Kommentare, die für den Benutzer nach dem Patch sichtbar sind</string>
+    <string name="help_custom_execute_param">Dies ist eine SQLite-Abfrage, die nach den üblichen Regeln zusammengestellt wurde (Du kannst es im Internet nachlesen).</string>
+    <string name="help_custom_file_in_apk_tag">Muster suchen/ersetzen für Datei innerhalb der APK-Datei (diese Funktion funktioniert nur, wenn die Anwendung mit diesem benutzerdefinierten Patch neu erstellt wird)</string>
+    <string name="help_custom_general_text1">- Die Patch-Datei muss denselben Namen wie die Ziel-APK haben (dies unterscheidet zwischen Groß- und Kleinschreibung).</string>
+    <string name="help_custom_general_text2">- Wenn bereits eine benutzerdefinierte Patch-Datei für die Anwendung vorhanden ist, kannst Du einfach einen beliebigen Text am Anfang des Dateinamens hinzufügen und neben der vorhandenen speichern. Wenn Du in diesem Fall in der Anwendung „Benutzerdefinierter Patch“ auswählst, bietet dir Lucky Patcher eine Liste mit benutzerdefinierten Patches für die Anwendung zur Auswahl an.</string>
+    <string name="help_custom_general_text3" formatted="false">"- Wenn Du einen Patch für eine ganze Reihe von Programmen einer Firma auf einmal schreiben möchtest, kannst Du am Ende des benutzerdefinierten Patch-Dateinamens die Kennung _%ALL% verwenden. Der Patch-Name für alle SVOX-Stimmen sieht beispielsweise so aus: com.svox.classic.langpack_%ALL%.txt.
+Das _%ALL% ersetzt den Teil im Paketnamen, der je nach Anwendung der jeweiligen Firma variiert. Verwende keine Sonderzeichen/Formatierungen in der Patch-Datei (nur einzelne Leerzeichen).
+Wenn Du am Anfang noch dein eigenes Präfix hinzufügen musst, kannst Du %ALL%_ und _%ALL% verwenden (Beispiel: chelpus.%ALL%_com.android ._%ALL%.txt). Wenn benutzerdefinierte Patch-Namen im Programm selbst angezeigt werden, wird %ALL%_ zur besseren Lesbarkeit ausgeblendet."</string>
+    <string name="help_custom_general_text4" formatted="false">- Im Text eines benutzerdefinierten Patches kannst Du %PACKAGE_NAME% verwenden, das während des Patches durch den Paketnamen der Zielanwendung ersetzt wird. Dies ist bei Anwendungsgruppen-Patches nützlich, bei denen sich der Dateipfad je nach Paketname ändert (Beispiel: /data/data/%PACKAGE_NAME%/files/trial.txt).</string>
+    <string name="help_custom_general_text5">- Um nach Bytemustern zu suchen, verwende IDA Pro 6.1+. Es kann Dalvik-Cache, Odex, Bibliotheken und classes.dex öffnen.</string>
+    <string name="help_custom_general_text6">- Wenn Du Dalvik-Cache oder Odex patchen möchtest, vergesse nicht, dass die Datenbytes in verschiedenen Firmware-Versionen variieren können. In frühen Versionen von Android vor der Einführung von ART konntest Du Dalvik-Cache- oder Odex-Dateien patchen, aber dort musst Du berücksichtigen, dass die Bytes der Opcodes nicht immer mit den Bytes in der Classes.dex übereinstimmen, also beim Schreiben einer solchen patch, musst Du dir diese Stelle ansehen, indem Du die Datei in IDA Pro öffnen.</string>
+    <string name="help_custom_general_text7">- Ab Version 6.5.4+ kann Lucky Patcher Dateien mit der lpzip-Erweiterung erstellen. Dies sind ZIP-Archive, die benutzerdefinierte Patches und APK-Dateien enthalten können. Beim Öffnen dieser ZIP-Dateien in Lucky Patcher werden benutzerdefinierte Patches importiert und apk-Dateien werden aufgefordert, auf dem System installiert zu werden. (Beispiel: installSomeAppsWithPatch.lpzip)</string>
+    <string name="help_custom_group_param">Markiert Muster der Gruppe (Gruppennummer kann 1 oder höher sein). Sie fragen sich vielleicht \"Was bedeutet das?\". Nun, das bedeutet Folgendes: Wenn mindestens ein Muster aus der Gruppe erfolgreich war, wird dem Benutzer ein Dialogfeld angezeigt, dass der Patch erfolgreich abgeschlossen wurde. Dies ist nützlich, wenn Sie versuchen, einen universellen Patch für mehrere Versionen einer bestimmten Anwendung zu erstellen (z. B. einen Patch für alle Versionen von Google Play, um automatische Updates zu deaktivieren).</string>
+    <string name="help_custom_increment_decrement_param">"Addieren und Subtrahieren von Dezimalzahlen vom ursprünglichen Byte...
+Zum Beispiel:"</string>
+    <string name="help_custom_increment_decrement_param_end">Oder ein anderes Beispiel:</string>
+    <string name="help_custom_insert_param">"Wird verwendet, wenn es notwendig ist, das gefundene Original durch eine Anzahl von Bytes zu ersetzen, die sich von der Anzahl von Bytes des ursprünglichen Musters unterscheidet. Meistens wird dies in verschiedenen Textdateien benötigt. Wenn die XML-Datei zum Beispiel enthält: \"lives=9\", aber Du musst es durch \"lives=999\" ersetzen, hilft in diesem Fall einfügen, ohne die Daten nach \"lives=9\" zu ändern.
+( Beispiel: vor dem Patch enthält die Datei: \"chelpa end\")"</string>
+    <string name="help_custom_insert_param_end">nach dem Patch enthält die Datei bereits: \"chelpaa end\"</string>
+    <string name="help_custom_integrate_inapp_lvl_emulation_tag">baut beim Patchen automatisch eine Emulation von Käufen und eine Lizenzüberprüfung ein. Nützlich, wenn der Patch die erweiterte Kauf- oder Lizenzüberprüfung umgeht. Manchmal hilft es beispielsweise, die GooglePlayValidator-Methode in IL2СPP zu reparieren, und Einkäufe beginnen mit dem Lucky Patcher zu funktionieren.</string>
+    <string name="help_custom_lib_tag">Muster suchen/ersetzen für benannte native Bibliotheken (siehe unten)</string>
+    <string name="help_custom_lib_tags">Dies bedeutet, dass die Zeilen für den Patch der Bibliothek dieses Programms folgen. \"Name\" ist der Name der Bibliothek (wenn Du * anstelle des Namens eingibst, werden alle Anwendungsbibliotheken gepatcht).</string>
+    <string name="help_custom_libs_tags">Manchmal hat eine Anwendung mehrere Bibliotheken für verschiedene Prozessorarchitekturen, dann ist es besser, [LIB-ARMEABI], [LIB-ARMEABI-V7A], [LIB-ARM64-V8A], [LIB-MIPS], [LIB-X86] zu verwenden. oder [LIB-X86_64] für die gewünschte Bibliothek, damit Muster aus einer anderen Bibliothek nicht auf die aktuelle angewendet werden.</string>
+    <string name="help_custom_method_name_patch_example1">ersetzt den Code durch „replaced“ für alle Methoden mit demselben Namen und gibt void zurück</string>
+    <string name="help_custom_method_name_patch_example2">ersetzt den Code durch „replaced“ für eine Methode, die einen booleschen Wert zurückgibt und sich in einer konkreten Klasse befindet</string>
+    <string name="help_custom_method_name_patch_example3">Sucht und ersetzt Bytes im Code einer Methode mit allen Unterschieden zu anderen Methoden</string>
+    <string name="help_custom_method_name_patch_param">Es patcht nur den Code der ausgewählten Methode selbst und schließt den Rest des Anwendungscodes aus. Das Feld „Methodenname“ muss angegeben werden – dies ist der Name der Methode, die gepatcht wird. Um unnötige Methoden abzuschneiden, wird die Klasse an ihrem Standort „class name“ angegeben, ggf. auch „Parametertypen“ und „Rückgabetyp“, um nichts extra zu patchen. Namen und Parameter werden in Smali-Syntax geschrieben. Wenn Du nach diesen Parametern die Vorlagen „original“ und „replaced“ verwenden, erfolgt die Suche innerhalb der Methode. Wenn nur die „ersetzte“ Vorlage verwendet wird, wird der gesamte Methodencode ohne Suche durch diese Vorlage und Nullen ersetzt. In diesem Fall muss die Größe der Vorlage jedoch kleiner oder gleich der Größe des Methodencodes sein.</string>
+    <string name="help_custom_name_param">"Gibt normalerweise das Objekt an, auf das der Patch angewendet wird. Dies kann nur ein Dateiname, ein Dateiname mit Pfad und dergleichen sein. In einigen Fällen kannst Du '*' verwenden, um alle Bibliotheken zu patchen, beispielsweise wenn der Name der Bibliothek unbekannt ist."</string>
+    <string name="help_custom_odex_patch_tag">"Es gibt Situationen, in denen Du beispielsweise eine bereits gepatchte Anwendung ändern müssen, bei der die Lizenzprüfung bereits durch einen automatischen Patch entfernt wurde, dann hilft dieses Tag. Alle \"ursprünglichen\" - \"ersetzten\" Muster werden danach auf die Odex-Datei angewendet, die andere Patches bereits erstellt haben. Zum Beispiel war dies zum ersten Mal in Final Fantasy III erforderlich, als Leute das Spiel mit dem Extreme License Check Removal Mode behandelten, aber damit die Übersetzung in der richtigen Codierung angezeigt wurde, waren zusätzliche Patches in der Odex-Datei erforderlich. die sich mit diesem Tag bewerben konnten. Wenn wir ein einfaches [PAKET]-[CLASSES], [ODEX] oder [CLASSES]-[ODEX] verwenden, wird die Odex-Datei ohne Änderung erstellt und erst dann gepatcht. In dieser Version von Lucky Patcher ist dies nicht mehr erforderlich, da es eine Option \"%1$s\".
+Beispiel:"</string>
+    <string name="help_custom_odex_tags">Bei älteren Androiden könnte dieses Tag verwendet werden. Anstelle des Tags [CLASSES] könntest Du dieses verwenden. Dann werden die Änderungen in classes.dex nicht im Dalvik-Cache gespeichert, wo sie regelmäßig verschwinden, wenn das System den Cache aktualisiert, sondern in einer separaten Datei mit der Erweiterung odex neben der apk der Anwendung, die alle Änderungen behebt und Du lässt den ursprünglichen Dalvik-Cache intakt - ist dies nur für den Fall, wenn die Anwendung dies überprüft. Du kannst [ODEX] nach [CLASSES] verwenden. Anschließend werden die Änderungen am Dalvik-Cache vorgenommen und automatisch in den Odex übernommen. Dies ist bei moderner Firmware nicht erforderlich.</string>
+    <string name="help_custom_offset_param">Bei offset geben wir den Offset vom Anfang der Datei im Hexadezimalformat an, wo die bei „replaced“ oder „insert“ angegebene Bytefolge eingefügt wird.</string>
+    <string name="help_custom_original_param">Dies ist eine Mustermaske, mit der der Versatz ermittelt wird, auf den der Patch angewendet wird.</string>
+    <string name="help_custom_original_param_end">In diesem Beispiel bilden die Bytes die Mustermaske, und (??, **) bedeutet irgendein Byte.</string>
+    <string name="help_custom_other_files_tag">Muster suchen/ersetzen für beliebige Dateien in /data/data/Package_Target_APK/ oder in /sdcard (siehe unten)</string>
+    <string name="help_custom_package_tag">Entpackt classes.dex und wendet alle Patches aus den [CLASSES] darauf an. Und generiert basierend auf der modifizierten classes.dex eine Odex-Datei.</string>
+    <string name="help_custom_package_tag_detail">Dieses Tag bedeutet, dass wir dalvik-cache nicht direkt patchen, sondern die Datei „classes.dex“ aus der Zielanwendung herausziehen, sie patchen (mit Patches, die den Bezeichnern [CLASSES] oder [ODEX] folgen), ein Odex-Image mit Änderungen erstellen und in Anwendung bringen. Das ist zum Beispiel das Bild, das TitaniumBuckup braucht. Es überprüft es und alle darin enthaltenen Prüfsummen müssen korrekt sein. Es ist ratsam, diesen Tag immer zu verwenden, da ein solcher Patch am korrektesten ist, aber wenn er Probleme verursacht, können Sie darauf verzichten.</string>
+    <string name="help_custom_permission_tag">"Analoger Linux-Befehl \"chmod permissions file_name\" für Dateien aus dem Anwendungsdatenverzeichnis (z. B. nach Bearbeitung nur Leserechte erteilen)
+Beispiel:"</string>
+    <string name="help_custom_rename_file_in_apk_tag">"Datei im APK-Archiv umbenennen.
+Beispiel:"</string>
+    <string name="help_custom_replace_from_file_param">Dies folgt einer \"ursprünglichen\" Anweisung, die der Offset durch Bytes aus der Datei mit dem angegebenen Namen ersetzt (die Datei muss in der Nähe des benutzerdefinierten Patches gespeichert werden).</string>
+    <string name="help_custom_replace_from_file_param_end">Dies geschieht, um das Schreiben sehr langer Ersetzungsmuster zu vermeiden, deren Eingabe in eine Textdatei mühsam ist.</string>
+    <string name="help_custom_replaced_param">Dies muss dem \"Original\"- oder \"Offset\"-Parameter folgen, mit dem diese Bytes überschrieben oder am angegebenen Offset geschrieben werden. Bytes an Stellen, die mit (?? oder **) gekennzeichnet sind, bleiben unberührt:</string>
+    <string name="help_custom_replaced_param_end">In diesem Beispiel wurden die Bytes W0, W1, W2 als R0, R1, R2 in der zuvor ausgeführten \"Suche\" gespeichert.</string>
+    <string name="help_custom_s0_s1_sq_param">"Setzt smali Variable auf 0 (wandelt z. B. Hex-Zahl in: 43->03,54->04...) bzw. 1 (wandelt z. B. Hex-Zahl in: 43->13,04->14...) um, SQ richtet hexadezimale Ziffern aus (wandelt z. B. Hexadezimalzahlen um in: 34->44, 51->11...).
+Zum Beispiel gibt es eine Variable: const/4 v?,0x00. Das Fragezeichen zeigt an, dass die Nummer der var unbekannt ist (z. B. nachdem sie in der neueren Version geändert wurde), aber Du bist dir sicher, dass diese var gleich 0 ist, und Du möchtest sie auf 1 setzen. In diesem Fall wird das Muster sieht aus wie das:"</string>
+    <string name="help_custom_s0_s1_sq_param_end">Und umgekehrt, um die Variable auf 0 zu setzen:</string>
+    <string name="help_custom_search_param">Sucht nach Bytes an Positionen, die mit R[0, 1, 2, 3, ...] gekennzeichnet sind, wobei Zahl die Nummer der Zelle ist, in der das Byte gespeichert ist (Zellennummern müssen von 0 an beginnen und dürfen nicht wiederholt werden). Zum Beispiel:</string>
+    <string name="help_custom_search_param_end">Bedeutet, dass die Bytes an diesen Positionen in R0, R1, R2 gespeichert werden. Nachdem sie gefunden und gespeichert wurden, kannst Du sie nur in Ersetzungsmustern verwenden, indem Du R durch W ersetzt.</string>
+    <string name="help_custom_shared_preferences_tag">"Bearbeitet die XML-Datei, die Anwendungseinstellungen speichert (Du kannst Werte löschen, hinzufügen und ändern).
+Beispiel:"</string>
+    <string name="help_custom_sqlite_tag">"Manchmal ist es in der Zielanwendung notwendig, etwas in der Datenbank zu ändern, in die sie Ereignisse oder Daten schreibt, dann hilft diese Kennung.
+Beispiel:"</string>
+    <string name="help_custom_syntax_text_start">Also hier ist ein Beispiel. Ich habe es aus Gründen der Übersichtlichkeit aus einer Reihe von Tags zusammengestellt. In der Praxis benötigst Du wesentlich weniger Funktionen. In den Hauptteil der Datei schreiben wir so etwas (das Trennzeichen ist nur ein einzelnes Leerzeichen, sonst gibt es einen Fehler):</string>
+    <string name="help_custom_title_detailed_description">Detaillierte Beschreibung der Tags und ihrer Parameter:</string>
+    <string name="help_custom_title_general">Allgemeine Information:</string>
+    <string name="help_custom_title_syntax">Syntax-Hilfe:</string>
+    <string name="help_custom_use_option_rebuild_tag">Aktiviere die Option \"%1$s\", wenn die Anwendung mit diesem Patch neu erstellt wird.</string>
+    <string name="help_custom_warning_text">Sprünge nicht entfernen oder bedingungslos machen! Das Optimierungsprogramm stürzt ab und Dein Patch funktioniert nicht mit ART! Um dies zu vermeiden, verwende bedingte Sprünge. Wenn beispielsweise ein Sprung erforderlich ist, ersetze den Sprung durch das if-eq v0, v0 (Bytes: 32 00 ?? ??). Wenn an einer bestimmten Stelle nicht gesprungen werden muss, kannst Du einen Sprung einfügen, z. B. if-ne v0, v0 (Bytes: 33 00 ?? ??). Du kannst auch Dein eigenes Äquivalent verwenden.</string>
+    <string name="help_custom_warning_title">WARNUNG:</string>
+    <string name="help_cyan_apps">In dieser Anwendung wurden Anzeigen gefunden</string>
+    <string name="help_describe_for_apply_changes_to_dalvik_cache">Im Standardmodus bleiben alle Änderungen in der ODEX-Datei. Das Kopieren in den Dalvik-Cache kann hilfreich sein, wenn ODEX-Dateien für die Anwendung nicht funktionieren (z. B. wenn eine Anwendung auf eine SD-Karte verschoben wird). Du musst die Anwendung jedoch neu installieren, um sie wiederherzustellen.</string>
+    <string name="help_describe_for_backup_app">Sichere die APK-Datei, um sie später wiederherzustellen. Die APK-Datei wird im Sicherungsordner gespeichert.</string>
+    <string name="help_describe_for_backup_settings_app">Sichert Anwendungsdaten aus dem internen Speicher im Lucky Patcher-Ordner.</string>
+    <string name="help_describe_for_create_backup_before_patch">Kopiere die APK-Datei auf die SD-Karte im Datenordner von Lucky Patcher. Du kannst die Anwendung von dieser APK aus neu installieren (um sie wiederherzustellen).</string>
+    <string name="help_describe_for_create_mod_apk">Erstellt ein Installationspaket-APK mit den vorinstallierten Patches. Du solltest bedenken, dass eine neu erstellte Anwendung möglicherweise nicht auf die gleiche Weise funktioniert wie eine Anwendung, die über den Patcher gepatcht wurde. Dies kann ein Problem darstellen, da eine Anwendung sich selbst überprüfen kann, um Änderungen im Code und in der Signatur zu finden.</string>
+    <string name="help_describe_for_create_odex">Erstelle eine unveränderte ODEX-Datei der Anwendung.</string>
+    <string name="help_describe_for_dex_verification_killer">Manchmal startet die Anwendung nach dem Neuaufbau nicht, oder sie beschwert sich über eine falsche Signatur oder Prüfsumme der Dex-Dateien, oder tätigt keine Käufe usw. In diesem Fall kann diese Funktion helfen. Es fügt Code ein, der versucht, die Signaturüberprüfung oder die Prüfsummenüberprüfung von dex-Dateien in die Anwendung auszutricksen. Diese Option sollte nur auf die ursprüngliche Anwendung angewendet werden. Wenn sie auf eine bereits gepatchte Version angewendet wird, wird diese Option sogar brechen, wenn sie bereits erfolgreich implementiert wurde. Als Ergebnis dieser Methode verdoppelt sich die Größe der Anwendung.</string>
+    <string name="help_describe_for_disable_components_pm_disable">Entfernt ausgewählte Berechtigungen, Dienste, Aktivitäten usw. Diese Fähigkeit ist in Android integriert und daher nicht schädlich. Das einzige, was möglicherweise nicht mehr funktioniert, ist die geänderte Anwendung, die leicht durch erneutes Aktivieren der Berechtigungen behoben werden kann. Beachte, dass die Anwendung nach Verwendung dieser Methode immer noch die Möglichkeit hat, während des Starts alles wieder einzuschalten.</string>
+    <string name="help_describe_for_hard_apk_permission_disale">Entfernt die Berechtigungen der Anwendung (bearbeitet die Systemdatei packages.xml). Seien Sie dabei sehr vorsichtig. Auf einigen Geräten kann diese Methode zu einem Bootloop oder anderen unerwünschten Folgen führen. Erstelle eine Sicherungskopie des Systems, bevor Du versuchst, Berechtigungen zu deaktivieren.</string>
+    <string name="help_describe_for_lvl_auto_mode">"Versucht die Lizenzprüfung zu entfernen. Verwendet nur Kernvorlagen für mehr App-Stabilität nach dem Patchen. Geeignet für die meisten Anwendungen mit unprätentiösem Schutz.
+(Wenn der Prozentsatz, der mit dieser Methode erreicht wird, niedrig ist, stelle sicher, dass die Internetverbindung eingeschaltet ist, während Du die gepatchte App verwendest.)"</string>
+    <string name="help_describe_for_lvl_auto_mode_dex">Versucht, die Lizenzprüfung zu entfernen. Die stabilste Methode. Nachdem Du den Patch auf die Anwendung angewendet hast, musst Du für den ersten Start Google Play installiert und eine funktionierende Internetverbindung haben.</string>
+    <string name="help_describe_for_lvl_auto_mode_inverse">Dasselbe wie \"%1$s\", aber mit einigen Änderungen, die in Fällen helfen könnten, in denen \"%1$s\" dies nicht tat.</string>
+    <string name="help_describe_for_lvl_other_patches_extreme_mode">Versucht, die Lizenzprüfung vollständig zu entfernen. Verwendet alle Vorlagen. Die gepatchte Anwendung kann instabil werden, normalerweise tritt die Instabilität auf, wenn die Anwendung offline ist. Es kann hilfreich sein, die Anwendung immer wieder neu zu starten, die Bildschirmausrichtung zu ändern oder zu deaktivieren. (Wenn der erhaltene Prozentsatz zu niedrig ist, muss beim Starten der Anwendung das Internet für ein positives Ergebnis eingeschaltet sein).</string>
+    <string name="help_describe_for_lvl_remove">Die Zielanwendung muss mit der Entwicklersignatur signiert sein und darf nicht von jemand anderem geändert werden. Für eine positive Wirkung von Patches benötigst Du ein installiertes Google Play (Google Market) mit einem darin eingetragenen gültigen Konto und eingeschaltetem Internet, wenn Du die Zielanwendung zum ersten Mal startest. Versuche immer zuerst die Lizenzprüfung mit \"%1$s\" zu entfernen, wenn es nicht funktioniert, versuche es mit \"%2$s\". Wenn es kritische Fehler verursacht, kannst Du versuchen, nur einige Muster in „%3$s“ auszuwählen.</string>
+    <string name="help_describe_for_lvl_sellect_patterns">Versucht, die Lizenzüberprüfung mithilfe der ausgewählten Patchgruppen zu entfernen.</string>
+    <string name="help_describe_for_move_to_system">Konvertiert die Benutzeranwendung in eine Systemanwendung.</string>
+    <string name="help_describe_for_patch_on_reboot">Diese Einstellung ist veraltet, da bei neuen Versionen von Lucky Patcher alle Änderungen in einer ODEX-Datei der Anwendung gespeichert werden, die sich beim Neustart nicht ändert. Diese Einstellung kann nur dann sinnvoll sein, wenn ein benutzerdefinierter Patch „.so“-Bibliotheken der Anwendung ändert, was in der Beschreibung des Patches angegeben wird.</string>
+    <string name="help_describe_for_remove_ad_activities">Deaktiviere verschiedene Anwendungsaktivitäten manuell. Einige Aktivitäten beschreiben, was sie tun. Aktivitäten können wieder aktiviert werden, wenn die Anwendung nicht mehr funktioniert.</string>
+    <string name="help_describe_for_remove_ads">Versuche, Werbung zu entfernen. Versuche, diesen Patch zu verwenden, auch wenn Lucky Patcher keine Anzeigen in einer Anwendung gefunden hat, die Anzeigen enthält. Möglicherweise werden diese Anzeigen entfernt.</string>
+    <string name="help_describe_for_remove_dalvik_cache_after_patch">Nach dem Erstellen der ODEX-Datei wird der Dalvik-Cache der Anwendung aus Platzgründen gelöscht. Wenn die Anwendung nicht mit ODEX funktioniert, musst Du die Anwendung neu installieren.</string>
+    <string name="help_describe_for_remove_odex">Entfernt die ODEX-Datei mit den Änderungen. So wird die Anwendung in ihren ursprünglichen Zustand zurückversetzt.</string>
+    <string name="help_describe_for_remove_purchase_from_db">Entferne Einkäufe, die über Google Billing Emulation gespeichert wurden.</string>
+    <string name="help_describe_for_restore_app">Stelle die Anwendung aus einer APK-Datei im Sicherungsordner wieder her.</string>
+    <string name="help_describe_for_restore_app_data">Stelle die im internen Speicher im Ordner /data/data/application_package_name/ gespeicherten Anwendungsdaten wieder her.</string>
+    <string name="help_describe_for_safe_apk_permission_disale">Entfernt ausgewählte Berechtigungen, indem die APK mit Änderungen neu erstellt wird. Diese Methode ändert die Anwendungssignatur nicht. Dies funktioniert nur bei Systemanwendungen oder bei allen Apps, wenn der Patch \"%1$s\" auf Android angewendet wird.</string>
+    <string name="help_describe_for_safe_apk_permission_disale_rebuild_and_install">Ähnlich der sicheren Methode, außer dass diese Methode eine neue Signatur verwendet und die ursprüngliche Signatur nicht behält. Die Anwendung funktioniert mit dieser Methode möglicherweise nicht richtig, wenn sie die Signatur überprüft.</string>
+    <string name="help_describe_for_share_this_app">Erstellt eine Sicherungs-APK-Datei der ausgewählten Anwendung und teilt sie über eine beliebige App.</string>
+    <string name="help_describe_for_signature_verification_killer">Manchmal startet die Anwendung nach dem Neuaufbau nicht, oder sie beschwert sich über eine falsche Signatur, oder tätigt keine Käufe etc. In diesem Fall kann diese Funktion Abhilfe schaffen. Es fügt Code ein, der versucht, die Signaturüberprüfung in der Anwendung auszutricksen. Diese Option sollte nur auf die ursprüngliche Anwendung angewendet werden. Wenn sie auf eine bereits gepatchte Version angewendet wird, wird diese Option sogar brechen, wenn sie bereits erfolgreich implementiert wurde.</string>
+    <string name="help_describe_for_support_patch_inapp">Fügt der Anwendung Unterstützung für die InApp-Emulation hinzu. Die InApp-Emulation kann im Umschaltmenü aktiviert werden.</string>
+    <string name="help_for_inapp_non_root_method1">"- Erstelle die Zielanwendung mit einem \"%1$s\" neu
+- Lösche die ursprüngliche Anwendung (benenne den Cache-Ordner um, damit er nicht gelöscht wird).
+- Installiere die neu erstellte Version der Anwendung (benenne den Cache-Ordner wieder um, falls vorhanden ).
+- Aktiviere \"%2$s\" in den Lucky Patcher-Schaltern.
+Alles, was Du ausprobieren kannst, ist kaufen. Es funktioniert selten, aber Wunder geschehen :)"</string>
+    <string name="help_for_inapp_non_root_method1_note">"Manchmal verwendet der Kaufschutz die Überprüfung der Anwendungssignatur. In diesem Fall kann die Verwendung der Option \"%1$s\" hilfreich sein.
+"</string>
+    <string name="help_for_inapp_root_method1">"Wende den ersten Android-Patch (%1$s) an und installiere eine modifizierte Marktversion 3+. Danach werden alle Deine Einkäufe zum Lucky Patcher weitergeleitet, wenn die Option \"%2$s\" aktiviert ist. Um zum normalen \"legalen\" Einkaufsmodus zurückzukehren, deaktiviere einfach die Option \"%2$s\". Diese Methode ist identisch mit der Arbeit von Freedom und steht ihr in puncto Effizienz in nichts nach, wird jedoch durch die Modifikation von Google Play selbst implementiert, wodurch Du Einkäufe tätigen kannst, ohne den Betrieb von Google Play selbst zu stören.
+
+Wie geht das? 
+- Installiere Lucky Patcher :)
+- Wähle das untere Feld des Lucky Patcher \"%3$s->%4$s\", wähle das oberste Element (%1$s) und tippe darauf, um es anzuwenden. Nach einem Neustart sollte der erste Patch in diesem Dialog als 2/2 wird angewendet markiert sein.
+- (Du kannst diesen Schritt überspringen, aber es ist besser, es so zu machen, denn wenn dies nicht funktioniert, gibt es keinen Punkt, um weitere Schritte zu unternehmen) Wenn der Patch nicht angewendet werden konnte, kannst Du versuchen, die erste Option des Xposed Lucky Patcher-Moduls zu verwenden;
+- Starte Lucky Patcher, schalte die Internetverbindung ein und wähle das untere Bedienfeld \"%3$s->%5$s\" , wähle die richtige Version und klicke auf \"Installieren\".
+- Mache einen Google Play-Test unter \"%3$s->%6$s\".
+"</string>
+    <string name="help_for_inapp_root_method2">Wende den ersten Android-Patch an (Signaturüberprüfung ist immer wahr) und aktiviere den Schalter \"%1$s\". Danach werden alle Deine Einkäufe zum Lucky Patcher weitergeleitet.</string>
+    <string name="help_for_inapp_root_method2_disadvantages">"- Google Play funktioniert nicht, wenn der Proxy-Server aktiviert ist;
+- Ist in Anwendungen mit Schutz zum Überprüfen der ursprünglichen Informationen zu Einkäufen nicht wirksam;
+- Es ist unpraktisch in Kombination mit gespeicherten Einkäufen, da gespeicherte Einkäufe nicht an die Anwendung weitergegeben werden können, wenn der Proxy-Server deaktiviert ist.
+"</string>
+    <string name="help_for_inapp_root_method3">"Wenn Du Xposed auf deinem Gerät hast, kannst Du das Xposed-Modul von Lucky Patcher aktivieren.
+Achtung: Du musst die vierte Option im Xposed \"%1$s\"-Modul nur aktivieren, wenn Du kein modifiziertes Google Play installiert hast. Wenn das modifizierte Google Play nicht installiert ist, kannst Du durch Aktivieren der ersten und vierten Option In-App-Käufe tätigen. Die fünfte Möglichkeit besteht darin, zu versuchen, den Lucky Patcher vor der Anwendung zu verbergen, wenn er murrt."</string>
+    <string name="help_for_inapp_root_method3_disadvantages">"- Ist in Anwendungen mit Schutz zum Überprüfen von Originalinformationen über Einkäufe nicht effektiv;
+- Xposed selbst ist fehlerhaft, wenn der Lucky Patcher aktualisiert wird, manchmal deaktiviert es sein Xposed-Modul, Du musst es in Xposed selbst deaktivieren und wieder einschalten und das Gerät neu starten
+"</string>
+    <string name="help_for_inapp_root_method4">"Wende \"%1$s\" auf die Zielanwendung an. Danach sollten alle Einkäufe zum Lucky Patcher umgeleitet werden. Damit diese Methode funktioniert, musst Du \"%2$s\" in den Lucky Patcher-Schaltern aktivieren. Diese Methode ist nützlich, wenn Du nur in Anwendungen, die Du selbst patchst, durch Emulation kaufen möchtest.
+Oder wende den \"%3$s\"-Patch an (sehr lang), und alle Käufe werden ohne Proxy direkt an Lucky Patcher weitergeleitet."</string>
+    <string name="help_for_inapp_root_method4_disadvantages">"- Funktioniert nicht bei allen Anwendungen, da der InApp-Kaufcode an einer für den Patch unzugänglichen Stelle versteckt sein kann.
+- Ist bei Anwendungen mit Schutz zur Überprüfung der ursprünglichen Kaufinformationen nicht wirksam.
+"</string>
+    <string name="help_green_apps">Dies sind Anwendungen, in denen Lizenzüberprüfungsberechtigungen gefunden werden</string>
+    <string name="help_instruction_for_create_apk">"- Tippe auf den Namen der Anwendung/Software und wähle \"%1$s\" aus;
+- Wähle den Patch zum Modifizieren der APK aus;
+- Die modifizierte Installationsdatei befindet sich im Lucky Patcher-Ordner (Du kannst sie unter \"Über\" sehen);
+ - Du solltest bedenken, dass eine neu erstellte Anwendung möglicherweise nicht auf die gleiche Weise funktioniert wie eine Anwendung, die über den Patcher gepatcht wurde. Dies kann ein Problem darstellen, da eine Anwendung sich selbst überprüfen kann, um Änderungen im Code und in der Signatur zu finden. Und denke daran, dass nach der Neuinstallation der geänderten Anwendung und dem Entfernen der ursprünglichen Anwendung alle Anwendungsdaten verloren gehen."</string>
+    <string name="help_instruction_for_custom_patch">"- Tippe auf den Namen der Anwendung/Software, gehe zum Menü der Patches und wähle \"%1$s\" aus;
+- Führe die Anwendung aus und teste sie über das Internet;
+- Wenn Du Glück hast, hat der Patch funktioniert;
+- Um die Anwendung zurück in den ursprünglichen Zustand zu setzen, tippe auf \"%2$s“ oder \"%3$s“."</string>
+    <string name="help_instruction_for_remove_ads">"- Tippe auf den Namen der Anwendung/Software, gehe zum Menü der Patches und wähle \"%1$s\";
+- Wähle dann \"%2$s\";
+- Führe die Anwendung mit dem Internet aus und teste sie;
+- Wenn immer noch Werbung vorhanden ist, tippe auf \"%3$s\", finde Anzeigenaktivitäten und deaktiviere sie;
+- Wenn Du Glück habst, sollten Anzeigen verschwunden sein;
+- Um die Anwendung in ihren ursprünglichen Zustand zurückzusetzen, tippe auf \"%4$s\" oder \"%5$s\"."</string>
+    <string name="help_instruction_for_remove_lvl">"- Verwende nur vom Entwickler signierte Original-APK-Dateien;
+- Tippe auf den Namen der Anwendung/Software und wähle \"%1$s\" aus;
+- Wähle \"%2$s\" aus und teste die Anwendung mit Internetzugang;
+- Wenn das Ergebnis negativ ist, wähle \"%3$s\" oder \"%4$s\";
+- Wenn Du Glück hast, wird Dein Programm registriert;
+- Um die Anwendung in ihren ursprünglichen Zustand zurückzusetzen, tippe auf \"%5$s\" oder \"%6$s\"."</string>
+    <string name="help_klever">Lucky Patcher hat Änderungen an dieser Anwendung vorgenommen. Wenn zum Beispiel das Kleeblatt leuchtet, aber der Stern nicht, dann wurde die Odex-Datei mit Änderungen nicht erstellt, aber der Dalvik-Cache der Anwendung, ihre Bibliotheken wurden gepatcht oder die Aktivierung und Berechtigungen wurden geändert</string>
+    <string name="help_magenta_apps">Diese Anwendungen befinden sich in der Bootliste*</string>
+    <string name="help_orange_apps">Dies sind Systemanwendungen. Sei sehr vorsichtig, wenn Du damit arbeitest, da deren Bearbeitung die Anwendung oder das Betriebssystem irreversibel beschädigen kann (erstelle immer Sicherungskopien mit geeigneten Programmen).</string>
+    <string name="help_purple_apps">Anwendung, die Google InApp-Käufe enthält</string>
+    <string name="help_red_apps">In dieser Anwendung wurde kein direkter Hinweis auf irgendetwas gefunden, aber es kann eine Lizenzprüfung oder Werbung darin enthalten sein. (Meistens findet eine Lizenzprüfung in solchen Anwendungen statt, wenn sie aus zwei Teilen besteht: Programm + Anwendungsschlüssel)</string>
+    <string name="help_root_warning">Lucky Patchet braucht Zugriff auf Root Rechte damit alles funktioniert. Ohne Root Rechte funktioniert das Programm im eingeschränkten Modus.</string>
+    <string name="help_star">Das bedeutet, dass die Anwendung eine „odex“-Datei gefunden hat. Bei modernen Androids wird die odex-Datei nur für Systemanwendungen angezeigt.</string>
+    <string name="help_sub_describe_for_inapp_buy_dialog_auto_purchase">"Wenn diese Option aktiviert ist, wird der Kauf beim nächsten Kauf des gleichen Artikels ohne den Kaufdialog von Lucky Patcher getätigt (der Kauf kommt sofort ohne Fragen zur Anwendung). Es ist notwendig, wenn Du Gold in der Anwendung usw. sammelst, um nicht jedes Mal zu drücken, dass Du dem Kauf zustimmst :)
+Du kannst den automatischen Kauf löschen, indem Du lange auf die Anwendung in der Lucky-Patcher-Liste drückst und \"%1$s\" entferne dann unnötige automatische Käufe aus der Liste."</string>
+    <string name="help_sub_describe_for_inapp_buy_dialog_save_purchase">"Nützlich für Benutzer ohne Root-Rechte, für ältere Spiele und Anwendungen, bei denen die Autoren nicht versehentlich die Signaturdaten überprüfen.
+Diese Option speichert den Kauf in der Lucky Patcher-Datenbank, damit der Lucky Patcher beim nächsten Start der gehackten Anwendung benachrichtigt wird dass dieser Kauf als gekauft betrachtet werden sollte. Dies ist für verschiedene Arten von Abonnements und andere Dinge erforderlich.
+Woher weisst Du, was Du aktivieren musst? Du kaufst beispielsweise die Vollversion der Anwendung und der Kauf ist erfolgreich, aber nach dem Neustart der Anwendung betrachtet sie sich selbst wieder als unvollständige Version, bis Du sie erneut kaufst. Wenn diese Option aktiviert ist, werden falsche Daten über den Kauf mit einer leeren Signatur an die Anwendung gesendet und es besteht die Möglichkeit, dass dieser Kauf korrekt ist und die Anwendung sich nach dem Neustart als gekauft betrachtet.
+
+Benutzer mit Root-Rechten sollten dies besser nicht tun. Verwende diese Option nicht, da sie mehr schaden als nützen kann."</string>
+    <string name="help_sub_title_for_inapp_disadvantages_method">Nachteile dieser Methode:</string>
+    <string name="help_sub_title_for_inapp_non_root">Für Benutzer ohne Root-Rechte:</string>
+    <string name="help_sub_title_for_inapp_non_root_method1">Methode 1:</string>
+    <string name="help_sub_title_for_inapp_root">Fur Benutzer mit Root Rechte:</string>
+    <string name="help_sub_title_for_inapp_root_method1">Methode 1 (die effektivste und wünschenswerteste):</string>
+    <string name="help_sub_title_for_inapp_root_method2">Methode 2:</string>
+    <string name="help_sub_title_for_inapp_root_method3">Methode 3:</string>
+    <string name="help_sub_title_for_inapp_root_method4">Methode 4:</string>
+    <string name="help_sub_title_for_purchase_window">Kauffensteroptionen:</string>
+    <string name="help_title1">Erklärung der Farbskala:</string>
+    <string name="help_title_for_context_menu">Kontextmenü:</string>
+    <string name="help_title_for_inapp">Kaufoptionen über Lucky Patcher:</string>
+    <string name="help_title_for_instructions">Anweisungen:</string>
+    <string name="help_title_instruction_for_create_apk">So erstellst Du modifizierte APKs:</string>
+    <string name="help_title_instruction_for_custom_patch">So verwendest Du einen benutzerdefinierten Patch:</string>
+    <string name="help_title_instruction_for_remove_ads">So entfernst Du Anzeigen:</string>
+    <string name="help_title_instruction_for_remove_lvl">So entfernst Du die Lizenzüberprüfung:</string>
+    <string name="help_yellow_apps">Für diese Anwendung wurde ein benutzerdefinierter Patch im Verzeichnis von Lucky Patcher gefunden</string>
+    <string name="hide_notify">Verstecke Benachrichtigungen</string>
+    <string name="hide_notify_descr">Benachrichtigungen von Lucky Patcher verstecken.</string>
+    <string name="hide_title_app">Verstecke den Titel</string>
+    <string name="hide_title_app_descr">Der Titel von Lucky Patcher wird in der Anwendungsliste versteckt. Dies funktioniert nur auf Geräten mit einer Hardware-Menü-Taste.</string>
+    <string name="home">Home</string>
+    <string name="host_down">Der Server ist nicht erreichbar. Bitte versuche es später noch einmal.</string>
+    <string name="hosts_default">Hosts-Datei wurde wiederhergestellt.</string>
+    <string name="hosts_not_found_changes">Änderungen an der Hosts-Datei konnten nicht gefunden werden...</string>
+    <string name="hosts_updated">Hosts-Datei wurde aktualisiert...</string>
+    <string name="icon_content_description">Dialogfeldsymbol</string>
+    <string name="import_settings">Einstellungen importieren</string>
+    <string name="import_to_lucky_patcher">Importiere zu Lucky Patcher</string>
+    <string name="inapp_emulation_auto_repeat">Automatische Wiederholung von Käufen mit den aktuellen Einstellungen</string>
+    <string name="info_about_deleted_magisk_module_after_change_firmware">Deine Firmware wurde geändert. Das Magisk-Modul für Android-Patches ist dafür nicht geeignet und wurde daher entfernt. Gerät wurde neu gestartet. Wende Android-Patches erneut an, wenn Du sie benötigst.</string>
+    <string name="info_about_deleted_magisk_module_after_change_firmware_2">Deine Firmware wurde geändert. Das Magisk-Modul für Android-Patches ist dafür nicht geeignet, daher wird es entfernt. Das Gerät muss jetzt neu gestartet werden.</string>
+    <string name="info_about_deleted_magisk_module_after_change_firmware_notify">Das Magisk-Modul wurde entfernt.</string>
+    <string name="info_about_permissions_optional">"Optionale Berechtigungen:
+"</string>
+    <string name="info_about_permissions_optional_describe">Wird zur Personalisierung von Werbung und zur Analyse verwendet. Wenn Du Bedenken hinsichtlich einer dieser Berechtigungen hast, kannst Du diese Berechtigungen verweigern. Dies hat keine Auswirkungen auf die Arbeit von Lucky Patcher.</string>
+    <string name="info_about_permissions_optional_perms">"ACCESS_COARSE_LOCATION
+READ_PHONE_STATE
+"</string>
+    <string name="info_about_permissions_required">"Erforderliche Berechtigungen:
+"</string>
+    <string name="info_about_permissions_required_describe">"Muss mit Dateien arbeiten. Ohne das funktioniert Lucky Patcher nicht.
+"</string>
+    <string name="info_about_permissions_required_perms">"READ_EXTERNAL_STORAGE
+WRITE_EXTERNAL_STORAGE
+"</string>
+    <string name="information">Information</string>
+    <string name="install">Installieren</string>
+    <string name="install_app_for_user">Installieren Sie die App für den Benutzer</string>
+    <string name="install_app_for_user_message">Möchtest Du die System-App %s wirklich für den aktuellen Benutzer installieren?</string>
+    <string name="install_as_user_app">Google Play als Benutzer-App installieren.</string>
+    <string name="install_as_user_app_note">Benötigt ausgeführten \"Android-Patch\" &amp; installierten Google Play Store.</string>
+    <string name="install_cloned_app">Installiere Klon</string>
+    <string name="install_date">Installationsdatum:</string>
+    <string name="installation_option">Verwende einen zufälligen App-Namen für die Installation</string>
+    <string name="installed_from">Installiert von</string>
+    <string name="installer_error_aborted">Installation durch Benutzer abgebrochen</string>
+    <string name="installer_error_bad_apks">Ungültige APK-Dateien ausgewählt</string>
+    <string name="installer_error_bad_apks_file">Fehler: Die base.apk Datei wurde in der apk Datei nicht gefunden.</string>
+    <string name="installer_error_blocked">Die Installation durch %s blockiert</string>
+    <string name="installer_error_blocked_device">Gerät</string>
+    <string name="installer_error_conflict">Die App kann nicht installiert werden, da ein Konflikt mit einer bereits installierten App mit demselben Paketnamen besteht</string>
+    <string name="installer_error_generic">Installation fehlgeschlagen</string>
+    <string name="installer_error_generic_miui_warning">Wenn Du über eine MIUI-Firmware verfügst, kannst Du das Problem lösen, indem Du in den \"Entwicklereinstellungen\" der Firmware \"MIUI-Optimierungen aktivieren\" deaktivierst.</string>
+    <string name="installer_error_incompatible">Die Anwendung ist mit diesem Gerät nicht kompatibel</string>
+    <string name="installer_error_lidl_rom">Deine ROM ist nicht mit dem rootlosen Installationsprogramm kompatibel. Die Installation ist nur mit Hilfe des Root-Installers möglich.</string>
+    <string name="installer_error_rootless">"Rootloser Installationsfehler:
+
+ %s"</string>
+    <string name="installer_error_storage">Nicht genügend Speicherplatz, um die App zu installieren</string>
+    <string name="installer_not_support_by_firmware">Deine Firmware unterstützt die Installation von geteilten Apk-Dateien nicht.</string>
+    <string name="installer_prepare">Vorbereiten der Installation einer geteilten Anwendung.</string>
+    <string name="installer_rootless_error2_install_failed_aborted">Die Installation wurde vom Benutzer abgebrochen oder ist fehlgeschlagen</string>
+    <string name="installer_rootless_error2_install_failed_already_exists">Dieses Paket ist bereits installiert</string>
+    <string name="installer_rootless_error2_install_failed_bad_dex_metadata">Dex-Metadatendatei ist ungültig oder es gibt keine passende APK-Datei für eine Dex-Metadatendatei</string>
+    <string name="installer_rootless_error2_install_failed_bad_signature">Es gibt ein Problem mit der APK-Signatur</string>
+    <string name="installer_rootless_error2_install_failed_conflicting_provider">Paket enthält einen Inhaltsanbieter mit der gleichen Autorität wie ein Anbieter, der bereits im System installiert ist</string>
+    <string name="installer_rootless_error2_install_failed_container_error">Sicherer Container-Einhängepunkt konnte nicht auf externes Medium zugreifen</string>
+    <string name="installer_rootless_error2_install_failed_cpu_abi_incompatible">Paket enthält keinen nativen Code, der mit der CPU dieses Geräts kompatibel ist</string>
+    <string name="installer_rootless_error2_install_failed_dexopt">Installation während der Optimierung und Validierung der Dex-Dateien des Pakets fehlgeschlagen, weil nicht genügend Speicher vorhanden war oder die Validierung fehlgeschlagen ist</string>
+    <string name="installer_rootless_error2_install_failed_duplicate_package">Paket mit dem gleichen Namen ist bereits installiert</string>
+    <string name="installer_rootless_error2_install_failed_duplicate_permission">Paket versucht eine Berechtigung zu definieren, die bereits von einem anderen installierten Paket definiert wurde</string>
+    <string name="installer_rootless_error2_install_failed_instant_app_invalid">Nicht unterstützte Operation mit einer Instant-App</string>
+    <string name="installer_rootless_error2_install_failed_insufficient_storage">Gerät hat nicht genug Speicherplatz um die App zu installieren</string>
+    <string name="installer_rootless_error2_install_failed_internal_error">Installation wegen Systemproblemen fehlgeschlagen</string>
+    <string name="installer_rootless_error2_install_failed_invalid_apk">APK-Datei ist ungültig</string>
+    <string name="installer_rootless_error2_install_failed_invalid_install_location">Paket konnte nicht an dem angegebenen Ort installiert werden</string>
+    <string name="installer_rootless_error2_install_failed_invalid_uri">Übergebene URI ist ungültig</string>
+    <string name="installer_rootless_error2_install_failed_media_unavailable">Paket konnte nicht an dem angegebenen Ort installiert werden, da das Medium nicht verfügbar ist</string>
+    <string name="installer_rootless_error2_install_failed_missing_feature">Paket benötigt eine Funktion, die von diesem Gerät nicht unterstützt wird</string>
+    <string name="installer_rootless_error2_install_failed_missing_shared_library">App hat eine freigegebene Bibliothek angefordert, die nicht auf dem Gerät installiert ist</string>
+    <string name="installer_rootless_error2_install_failed_missing_split">Paket erfordert Splits, aber sie wurden nicht bereitgestellt</string>
+    <string name="installer_rootless_error2_install_failed_multipackage_inconsistency">Eine der untergeordneten Paketinstaller-Sitzungen stimmt nicht mit der übergeordneten Sitzung überein, wenn es um abgestufte oder Rollback-aktivierte Parameter geht</string>
+    <string name="installer_rootless_error2_install_failed_newer_sdk">Android-Version des Geräts ist höher als vom Paket benötigt</string>
+    <string name="installer_rootless_error2_install_failed_no_matching_abis">Paket enthält keinen nativen Code, der mit der CPU dieses Geräts kompatibel ist</string>
+    <string name="installer_rootless_error2_install_failed_no_shared_user">Vom Paket angeforderter Benutzer existiert nicht</string>
+    <string name="installer_rootless_error2_install_failed_older_sdk">Android-Version des Geräts ist niedriger als vom Paket benötigt</string>
+    <string name="installer_rootless_error2_install_failed_other_staged_session_in_progress">Es wird bereits eine Paketinstaller-Sitzung für diesen Paketnamen ausgeführt</string>
+    <string name="installer_rootless_error2_install_failed_package_changed">Paket-Installationspfad unerwartet geändert</string>
+    <string name="installer_rootless_error2_install_failed_permission_model_downgrade">Neue Version des Pakets unterstützt keine Laufzeitberechtigungen, aber die derzeit installierte Version schon</string>
+    <string name="installer_rootless_error2_install_failed_replace_couldnt_delete">Das System konnte die vorherige Version dieses Pakets nicht löschen</string>
+    <string name="installer_rootless_error2_install_failed_sandbox_version_downgrade">Neue Version des Pakets benötigt eine niedrigere Sandbox-Version als die derzeit installierte Version dieses Pakets</string>
+    <string name="installer_rootless_error2_install_failed_shared_user_incompatible">App hat einen bereits existierenden Benutzer angefordert, aber ihre Signaturen stimmen nicht überein</string>
+    <string name="installer_rootless_error2_install_failed_test_only">Installiertes Paket ist test-only und das INSTALL_ALLOW_TEST-Flag wurde nicht übergeben</string>
+    <string name="installer_rootless_error2_install_failed_uid_changed">Paket wurde eine andere UID als zuvor zugewiesen</string>
+    <string name="installer_rootless_error2_install_failed_update_incompatible">App-Signatur stimmt nicht mit der Signatur einer bereits installierten App mit dem gleichen Paketnamen überein</string>
+    <string name="installer_rootless_error2_install_failed_user_restricted">Dieser Benutzer darf keine Apps installieren</string>
+    <string name="installer_rootless_error2_install_failed_verification_failure">Paket konnte nicht verifiziert werden</string>
+    <string name="installer_rootless_error2_install_failed_verification_timeout">Zeitüberschreitung bei der Paket-Überprüfung</string>
+    <string name="installer_rootless_error2_install_failed_version_downgrade">Eine neuere Version dieses Pakets ist bereits installiert</string>
+    <string name="installer_rootless_error2_install_failed_wrong_installed_version">Die benötigte Version eines bereits installierten Pakets entspricht nicht der aktuellen Version des installierten Pakets</string>
+    <string name="installer_rootless_error2_install_parse_failed_bad_manifest">APK-Manifest konnte nicht abgerufen werden</string>
+    <string name="installer_rootless_error2_install_parse_failed_bad_package_name">APK hat einen falschen oder fehlenden Paketnamen</string>
+    <string name="installer_rootless_error2_install_parse_failed_bad_shared_user_id">APK hat eine falsche Benutzer-ID</string>
+    <string name="installer_rootless_error2_install_parse_failed_certificate_encoding">Zertifikat-Kodierung fehlgeschlagen</string>
+    <string name="installer_rootless_error2_install_parse_failed_inconsistent_certificates">Inkonsistente Zertifikate in den Dateien der APK gefunden</string>
+    <string name="installer_rootless_error2_install_parse_failed_manifest_empty">APK-Manifest ist leer</string>
+    <string name="installer_rootless_error2_install_parse_failed_manifest_malformed">APK-Manifest ist fehlerhaft</string>
+    <string name="installer_rootless_error2_install_parse_failed_no_certificates">APK-Datei enthält keine Zertifikate</string>
+    <string name="installer_rootless_error2_install_parse_failed_not_apk">Angegebene Datei ist keine APK-Datei</string>
+    <string name="installer_rootless_error2_install_parse_failed_unexpected_exception">APK-Parser hat eine unerwartete Ausnahme gefunden</string>
+    <string name="installer_rootless_error2_unknown">Unbekannter Fehler</string>
+    <string name="installer_slit_get_apk_from_apks">Installer ruft Dateien aus dem apk-Archiv ab.</string>
+    <string name="installer_slit_install_in_progress">Installationsvorgang wird ausgeführt.</string>
+    <string name="installer_slit_successfully_installed">Geteilte Anwendung %s erfolgreich installiert.</string>
+    <string name="installsupersu">Installiere SuperSU (ICS)</string>
+    <string name="integrate_dalvik_code_dialog_good_message">Dalvik-Code wurde erfolgreich aus der ausgewählten APK-Datei integriert. Es funktioniert möglicherweise nicht richtig, da der eingefügte Code nicht mit dem aktuellen Status der installierten Anwendung übereinstimmt, aber Du musst ihn testen.</string>
+    <string name="integrate_dalvik_code_dialog_title">Ergebnisse der Integration</string>
+    <string name="integrate_dalvik_code_message">Möchtest Du wirklich Dalvik-Code aus der APK-Datei integrieren</string>
+    <string name="integrate_to_system">Möchtest Du wirklich das Update nach /system integrieren?</string>
+    <string name="integrate_updates_result">Ergebnis für das integrierte Update</string>
+    <string name="integrate_updates_result_message">Um Änderungen zu übernehmen, musst Du das Gerät neu starten.</string>
+    <string name="integrate_updates_result_message_not_finished">Es wurde ein nicht abgeschlossener Vorgang erkannt, um Systemanwendungsaktualisierungen von /data nach /system zu übertragen. Wenn das Gerät bereits neu gestartet wurde, klicke auf die Schaltfläche \"Ja\", wenn es nicht neu gestartet wurde, dann auf \"Nein\". Andernfalls werden Deine App-Daten zurückgesetzt, wenn Du Updates von /data deinstallierst. Möchtest Du App-Updates aus /data entfernen?</string>
+    <string name="integrate_updates_to_system">Integriere das Update nach /system</string>
+    <string name="internet_not_found">Eine Internetverbindung ist notwendig.</string>
+    <string name="is_an_invalid_number">Du hast eine ungültige Nummer eingegeben...</string>
+    <string name="item_view_role_description">Tab</string>
+    <string name="langdef">Standardsprache</string>
+    <string name="langen">Englisch</string>
+    <string name="langmenu">Sprache</string>
+    <string name="launchbutton">Ausführen</string>
+    <string name="licensing_hack_menu_disable">Emulation der Google-Lizenzüberprüfung deaktivieren</string>
+    <string name="licensing_hack_menu_enable">Emulation der Google-Lizenzüberprüfung aktivieren</string>
+    <string name="line">"***********************
+"</string>
+    <string name="loadpkg">Pakete werden geladen</string>
+    <string name="lp_backups_export_failed">Die Einstellungen konnten nicht gesichert werden. Versuche es erneut.</string>
+    <string name="lp_backups_export_succes">Die Einstellungen wurden erfolgreich gesichert. Die Sicherungsdatei befindet sich hier</string>
+    <string name="lp_backups_import_failed">Es wurde ein unbekanntes Dateiformat ausgewählt. Wähle eine andere Datei mit einer Sicherungskopie deiner Einstellungen.</string>
+    <string name="lp_backups_import_succes">Anwendungseinstellungen wurden erfolgreich aus der Sicherung wiederhergestellt</string>
+    <string name="lp_billing_hack_title">InApp-Käufe-Hack...</string>
+    <string name="lp_import_custom_patches">Lucky Patrcher hat die folgenden benutzerdefinierten Patches &amp; Dateien importiert:</string>
+    <string name="lvldescr">Alle Apps mit Lizenzüberprüfung anzeiegn</string>
+    <string name="lvltitle">Apps mit LVL</string>
+    <string name="magisk_module_apps_descr_deleted">Systemanwendung gelöscht (durch einen leeren Ordner ersetzt). Beim Löschen kehrt die Anwendung zur Firmware zurück.</string>
+    <string name="magisk_module_apps_descr_not_installed">Die Anwendung wurde auf der Systempartition bereitgestellt, aber nicht vom System installiert.</string>
+    <string name="magisk_module_apps_descr_not_mounted">Aus irgendeinem Grund wurden die Dateien dieser Anwendung nicht auf der Systempartition bereitgestellt.</string>
+    <string name="magisk_module_warning">Wenn Du Probleme mit dieser Funktion hast, musst Du Magisk Core Only und MagiskHide in den Einstellungen von Magisk Manager deaktivieren und das Gerät neu starten.</string>
+    <string name="magisk_warning2">Wenn Du Probleme mit dieser Funktion haben solltest, musst Du die Option Magisk-Modul aktivieren.</string>
+    <string name="make_app_a_sys">Anwendung in System umwandeln</string>
+    <string name="make_app_to_system">Möchtest Du diese Anwendung wirklich zu einer System-App machen?</string>
+    <string name="manage_magisk_module_apps">Verwalten des Magisk-Moduls für Anwendungen</string>
+    <string name="market_description_text">"Drücke die Schaltfläche „Installieren“, um den offiziellen Google Play Store durch eine gecrackte LVL-Version (License Verification Library) zu ersetzen. Wenn der Google Play Store nach dem Neustart nicht funktioniert, installiere ihn erneut.
+So funktioniert der modifizierte Google Play Store:
+Achtung! Du *KANNst* kostenpflichtige Anwendungen NICHT kostenlos herunterladen!
+1. Du kannst durch GoogleLVL geschützte Anwendungen verwenden, ohne sie knacken zu müssen.
+2. Die Lizenzüberprüfung wird auch dann erfolgreich sein, wenn Du offline bist.
+3. Es müssen keine Lizenz-Patches mehr angewendet werden.
+4. Es funktioniert nicht mit Abrechnung und Lizenzüberprüfung über Proxy.
+5. Wenn Du jetzt auf die Schaltfläche \"Erstattung\" klickst, wird dein Kauf erstattet, aber die Anwendung wird nicht deinstalliert, daher müssen Sie die Anwendung nicht sichern, bevor Du eine Rückerstattung beantragst.
+6. Jetzt leitet Google Play alle Einkäufe an Lucky Patcher weiter, um InApp zu emulieren."</string>
+    <string name="market_install">Installiere modifizierten Google Play Store</string>
+    <string name="market_version5">Modifizierter Google Play Store</string>
+    <string name="market_version6">Originaler Google Play Store</string>
+    <string name="material_clock_toggle_content_description">Vormittags oder Nachmittags auswählen</string>
+    <string name="material_hour_selection">Stunde auswählen</string>
+    <string name="material_hour_suffix">%1$s Uhr</string>
+    <string name="material_minute_selection">Minuten auswählen</string>
+    <string name="material_minute_suffix">%1$s Minuten</string>
+    <string name="material_timepicker_am">AM</string>
+    <string name="material_timepicker_clock_mode_description">In den Uhrzeitmodus wechseln, um die Uhrzeit einzugeben.</string>
+    <string name="material_timepicker_hour">Stunde</string>
+    <string name="material_timepicker_minute">Minute</string>
+    <string name="material_timepicker_pm">PM</string>
+    <string name="material_timepicker_select_time">Uhrzeit auswählen</string>
+    <string name="material_timepicker_text_input_mode_description">In den Texteingabemodus wechseln, um die Uhrzeit einzugeben.</string>
+    <string name="max_version">maximale Version</string>
+    <string name="menu_close_application">Anwendung beenden</string>
+    <string name="menu_download_custom_patches">Individuelle Patches herunterladen</string>
+    <string name="messageAndroidManifest">AndroidManifest.xml kann nicht extrahiert werden. Möglicherweise hast Du nicht genügend freien Speicherplatz auf der SD-Karte, um die gesamte Anwendung zu kopieren.</string>
+    <string name="messagePath">"Pfad wurde nicht gefunden!
+Bitte gib einen richtigen Pfad ein."</string>
+    <string name="messageSD">"SD-Karte wurde nicht gefunden!
+ Diese Funktion funktioniert nicht ohne SD-Karte!"</string>
+    <string name="message_about_corrupt_apk_file">Die ursprüngliche apk-Datei ist beschädigt. Die App kann nicht neu erstellt werden.</string>
+    <string name="message_about_patched_file">Beschädigte Datei</string>
+    <string name="message_allow_non_market_app">Bitte aktiviere \"Unbekannte Quellen\" in deinen Einstellungen für \"Sicherheit\".</string>
+    <string name="message_apply_android_patch_for_proxy_gp">Für den Proxy-Server für Google Play muss der Android-Patch „Signaturüberprüfungsstatus immer wahr“ angewendet werden. Möchtest Du jetzt einen Android-Patch anwenden?</string>
+    <string name="message_clear_all_dalvik_cache">Möchtest Du wirklich den Dalvik-Cache leeren?</string>
+    <string name="message_clear_data">Möchtest Du wirklich alle App-Daten löschen?</string>
+    <string name="message_delete_odex_file">Möchtest Du wirklich die ODEX-Datei löschen?</string>
+    <string name="message_delete_package_new">Installation wurde mit einem Fehler beendet. Du musst die originale App deinstallieren bevor du diese APK installiieren kannst. Falls dies nicht hilft , starte dein Gerät neu, versuche auch die App zu deinstallieren.</string>
+    <string name="message_done_move_to_internal">Das Verschieben auf den internen Speicher wurde abgeschlossen:</string>
+    <string name="message_done_move_to_sdcard">Das Verschieben auf die SD-Karte wurde abgeschlossen:</string>
+    <string name="message_error_file_apk_for_install_corrupt">Die zu installierende Datei ist beschädigt ...</string>
+    <string name="message_error_move_to_internal">Beim Verschieben auf den internen Speicher ist ein Fehler aufgetreten. (Versuche es noch einmal)</string>
+    <string name="message_error_move_to_sdcard">Beim Verschieben auf die SD-Karte ist ein Fehler aufgetreten. (Versuche es nochmal)</string>
+    <string name="message_exit">Möchtest du wirklich Lucky Patcher beenden?</string>
+    <string name="message_file_selector">Bist Du sicher, dass Du die Datei %s auswählen möchtest?</string>
+    <string name="message_for_reboot_after_android_patches">Der Patch-Vorgang ist beendet. Für die endgültige Verwendung musst Du das Gerät neu starten. Möchtest Du dein Gerät neu starten?</string>
+    <string name="message_for_removed_patch_boot">Patch aus der Bootliste entfernt.</string>
+    <string name="message_for_uninstall_and_install">Möchtest Du wirklich %1$s löschen &amp; die ausgewählte Version der Anwendung installieren ?</string>
+    <string name="message_installation_inapp_proxy">Wenn Du „Support-Patch für InApp- und LVL-Emulation“ zum Hacken von Käufen verwendest, musst Du einen „Proxy-Server für InApp-Käufe“-Dienst installieren. Aber es wird die Unsichtbarkeit von Lucky Patcher brechen. Möchtest Du diesen Dienst installieren?</string>
+    <string name="message_installation_lp">Möchten Sie Lucky Patcher v%1$s wirklich installieren?</string>
+    <string name="message_lp_install_success_uninstall_intsaller">Lucky Patcher wurde erfolgreich installiert. Jetzt musst Du das Anwendungsinstallationsprogramm entfernen, um die Tarnung von Lucky Patcher zu erhöhen.</string>
+    <string name="message_magisk_module_apps_delete_folder">Bist Du sicher, dass Du den Ordner %1$s aus dem Magisk-Modul löschen möchten?</string>
+    <string name="message_magisk_module_apps_delete_folder_apps">Bist Du sicher, dass Du den Ordner %1$s, der zur Anwendung %2$s gehört, aus dem Magisk-Modul entfernen möchtest?</string>
+    <string name="message_manage_magisk_module_apps_empty">Das Magisk-Modul ist leer. Bisher wurde damit noch keine einzige Anwendung auf die Systempartition übertragen.</string>
+    <string name="message_old_app_version">Eine ältere Version von Lucky Patcher wurde gefunden. Um das Verstecken von Lucky Patcher zu verbessern, müssen Sie diese Version entfernen. Wenn Sie jedoch den \"Support-Patch für InApp- &amp; LVL-Emulation\" verwendet haben, müssen Sie alle Anwendungen erneut patchen oder die ursprüngliche apk in der neuen Version von Lucky Patcher neu erstellen. Möchten Sie die alte Version entfernen?</string>
+    <string name="message_reboot">Möchtest du wirklich neustarten?</string>
+    <string name="message_remove_all_odex">Möchtest du wirklich alle odex Dateien von /system/app &amp; /data/app löschen? Das wird nur die odex Dateien löschen die eine classes.dex besitzen.</string>
+    <string name="message_rescan_apps">Möchtest Du wirklich alle installierten Apps erneut scannen?</string>
+    <string name="message_reset_dialog_settings">Möchtest Du wirklich alle Dialogeinstellungen zurücksetzen?</string>
+    <string name="message_reset_dialog_settings_done">Alle Dialogeinstellungen werden zurückgesetzt.</string>
+    <string name="message_signature_killer_for_apps_with_test_signature">Die Zielanwendung hat eine Testsignatur, daher ist die Option \"%1$s\" deaktiviert.</string>
+    <string name="message_test_patch_downgrade">Downgrading von Applikationen testen</string>
+    <string name="message_test_patch_signatures">Testen der Möglichkeit, eine Anwendung mit unterschiedlichen Signaturen zu installieren</string>
+    <string name="message_test_patch_terget_sdk_30_installing">Testen der Möglichkeit, eine Anwendung ohne Signatur Ver.2 und targetSDK=30 zu installieren</string>
+    <string name="message_test_patch_unlocked">Die Möglichkeit, den Patch anzuwenden, ist freigeschaltet.</string>
+    <string name="message_test_pm_utility">Testen des Dienstprogramms \"pm\"</string>
+    <string name="message_test_pm_utility_fail">Die Patch-Punkte können nicht überprüft werden, da das Dienstprogramm \"pm\" nicht ordnungsgemäß funktioniert.</string>
+    <string name="message_to_reboot_device">Möchtest Du dein Gerät neu starten?</string>
+    <string name="message_warning_InApp_service_disable">Abschalten des InApp Dienst verletzt die Mechanismen für Offizielle Käufe in Apps. Es ist ein Originaler Dienst zu Google Play</string>
+    <string name="message_warning_LVL_service_disable">Abschalten des Dienstes führt zum Mechanismus zum erhalten von Offiziell gekauften Anwendungen. Es ist ein Original Service zu Google Play.</string>
+    <string name="mod_market_check">Teste den modifizierten Google Play Store</string>
+    <string name="mod_market_check_failed">Google Play ist möglicherweise installiert, funktioniert aber nicht richtig. Die Lizenzprüfung ist fehlgeschlagen. Möglicherweise hast Du den core.jar-Patch nicht angewendet (zu finden unter „Toolbox -> Patch to Android“) oder das modifizierte Google Play als Systemanwendung festgelegt (Du kannst es unter „Toolbox -> Install Modded Google Play“ erneut installieren\").</string>
+    <string name="mod_market_check_internet_off">Schalte das Internet auf deinem Gerät aus &amp; versuche es dann erneut.</string>
+    <string name="mod_market_check_title">Testergebnisse für den modifizierten Google Play</string>
+    <string name="mod_market_check_true">Google Play ist Installiert aber funktioniert nicht richtig. Merke das diese Methode nicht mit allen Anwendungen &amp; Spielen funktioniert. Das ist kein Fehler &amp; kann nicht behoben werden.</string>
+    <string name="modifdescr">Alle modifizierten Apps anzeigen (Grünes Kleeblatt)</string>
+    <string name="modiftitle">Modifizierte Apps</string>
+    <string name="move_data">Alle Daten wurden erfolgreich auf den folgenden Pfad verschoben:</string>
+    <string name="move_to_internal">Auf den internen Speicher verschieben</string>
+    <string name="move_to_internal_message">Möchtest du die App wirklich auf den internen Speicher verschieben ?</string>
+    <string name="move_to_sdcard">Nach /sdcard verschieben</string>
+    <string name="move_to_sdcard_message">Möchtest du die App wirklich auf die SD-Karte verschieben ?</string>
+    <string name="move_to_sys">Nach /system/app verschieben</string>
+    <string name="move_to_system">Möchtest Du diese Anwendung wirklich nach /system/priv-app verschieben?</string>
+    <string name="mtrl_badge_numberless_content_description">Neue Benachrichtigung</string>
+    <string name="mtrl_chip_close_icon_content_description">%1$s entfernen</string>
+    <string name="mtrl_exceed_max_badge_number_content_description">Mehr als %1$d neue Benachrichtigungen</string>
+    <string name="mtrl_picker_a11y_next_month">Zum nächsten Monat wechseln</string>
+    <string name="mtrl_picker_a11y_prev_month">Zum vorherigen Monat wechseln</string>
+    <string name="mtrl_picker_announce_current_selection">Aktuelle Auswahl: %1$s</string>
+    <string name="mtrl_picker_confirm">@android:string/ok</string>
+    <string name="mtrl_picker_date_header_selected">%1$s</string>
+    <string name="mtrl_picker_date_header_title">Datum auswählen</string>
+    <string name="mtrl_picker_date_header_unselected">Ausgewähltes Datum</string>
+    <string name="mtrl_picker_day_of_week_column_header">Spalte \"Wochentag\": %1$s</string>
+    <string name="mtrl_picker_invalid_format">Ungültiges Format.</string>
+    <string name="mtrl_picker_invalid_format_example">Beispiel: %1$s</string>
+    <string name="mtrl_picker_invalid_format_use">Format: %1$s</string>
+    <string name="mtrl_picker_invalid_range">Ungültiger Bereich.</string>
+    <string name="mtrl_picker_navigate_to_year_description">Zum Jahr %1$s wechseln</string>
+    <string name="mtrl_picker_out_of_range">Außerhalb des Bereichs: %1$s</string>
+    <string name="mtrl_picker_range_header_only_end_selected">Startdatum – %1$s</string>
+    <string name="mtrl_picker_range_header_only_start_selected">%1$s – Enddatum</string>
+    <string name="mtrl_picker_range_header_selected">%1$s – %2$s</string>
+    <string name="mtrl_picker_range_header_title">Zeitraum auswählen</string>
+    <string name="mtrl_picker_range_header_unselected">Startdatum – Enddatum</string>
+    <string name="mtrl_picker_save">Speichern</string>
+    <string name="mtrl_picker_text_input_date_hint">Datum</string>
+    <string name="mtrl_picker_text_input_date_range_end_hint">Enddatum</string>
+    <string name="mtrl_picker_text_input_date_range_start_hint">Startdatum</string>
+    <string name="mtrl_picker_text_input_day_abbr">T</string>
+    <string name="mtrl_picker_text_input_month_abbr">M</string>
+    <string name="mtrl_picker_text_input_year_abbr">J</string>
+    <string name="mtrl_picker_toggle_to_calendar_input_mode">In den Kalendereingabemodus wechseln</string>
+    <string name="mtrl_picker_toggle_to_day_selection">Tippen, um zur Tagesauswahl zu wechseln</string>
+    <string name="mtrl_picker_toggle_to_text_input_mode">In den Texteingabemodus wechseln</string>
+    <string name="mtrl_picker_toggle_to_year_selection">Tippen, um zur Jahresauswahl zu wechseln</string>
+    <string name="multipatch_next_step">Nächster Schritt</string>
+    <string name="navigation_drawer_close">Navigationsleiste schließen</string>
+    <string name="navigation_drawer_open">Navigationsleiste öffnen</string>
+    <string name="need_select_custom_patch">Bitte wähle einen oder mehrere individuelle Patches aus</string>
+    <string name="new_method_lvl">Erstellt eine Lizenz für eine Anwendung</string>
+    <string name="new_version">Eine neuere Version von Lucky Patcher ist verfügbar</string>
+    <string name="next_custom_patch">Beschreibung des nächsten individuellen Patches</string>
+    <string name="no">Nein</string>
+    <string name="no_freespace_patch">"Dies ist kein Fehler. Es war nicht genügend freier Speicherplatz vorhanden, um eine .odex-Datei zu erstellen. Dalvik-Cache-Patch wurde angewendet, aber wenn Du das Gerät neu startest, verschwindet der Patch möglicherweise.
+Lösung: Verschiebe die Anwendung in den internen Speicher, mache sie zu einer System-App, gebe mehr Speicherplatz frei oder lasse alles unverändert und wende den Patch regelmäßig erneut an."</string>
+    <string name="no_icon">Entferne App-Icons</string>
+    <string name="no_icon_descr">Entferne alle App-Icons in der Anwendungsliste. Dies ist nützlich für Geräte mit wenig RAM.</string>
+    <string name="no_root">"Fehler beim Erhalten des Root-Zugriffs! Du musst vollen Root-Zugriff haben, um fortzufahren...
+
+(Bitte update busybox und SU)!
+Bitte installiere SuperSu (\"Troubleshooting -> Install SuperSU (ICS)\") und aktualisiere die SU-Binärdateien darüber."</string>
+    <string name="no_site">Bezugsquelle für Updates konnte nicht gefunden werden.</string>
+    <string name="no_space">Fehler: Es ist nicht genügend Speicherplatz vorhanden, um alle Daten in das angegebene Verzeichnis zu kopieren. Bitte ändere das Verzeichnis oder gebe Speicherplatz frei. Wenn Du SuperSu verwendest, versuche die \"Mount-Namespace-Trennung\" in SuperSu zu deaktivieren.</string>
+    <string name="no_space_in_data_all">Fehler: Nicht genug Speicher im Internen Speicher. Bitte mache mehr Speicher in /data frei &amp; versuch es erneut. Falls du SuperSu verwendest deaktiviere die Option \"Namensbereichabtrennung mounten\".</string>
+    <string name="no_space_in_system">Fehler: Nicht genug Speicher auf der System-Partition zum Verschieben der Anwendung. Bitte mache Speicher in /system frei &amp; versuch es erneut. Falls du SuperSu verwendest deaktiviere die Option \"Namensbereichabtrennung mounten\".</string>
+    <string name="no_space_in_system_all">Nicht genug Speicher auf der System-Partition. Bitte mache auf /system mehr Speicher frei &amp; versuche es erneut. Falls du SuperSu verwendest deaktiviere die Option \"Namensbereichabtrennung mounten\".</string>
+    <string name="nofilter">Keinen</string>
+    <string name="nonedescr">Zeigt alle Apps bei denen nichts gefunden wurde an.</string>
+    <string name="nonetitle">Nichts gefunden</string>
+    <string name="not_detect">"SD-Karte nicht gefunden!
+Limitierte Funktionalität!"</string>
+    <string name="not_found_changelog">Changelog konnte nicht gefunden werden &amp; wird deswegen beim nächsten Update heruntergeladen.</string>
+    <string name="not_supported_android_patch">Nicht unterstützter Android-Patch</string>
+    <string name="notify_android_patch_on_boot">Android-Patch beim Booten</string>
+    <string name="notify_android_patch_on_boot_mes_core.jar">Android-Patch an Dalvik-Cache von core.jar anwenden.</string>
+    <string name="notify_android_patch_on_boot_mes_services.jar">Android-Patch an Dalvik-Cache von services.jar anwenden.</string>
+    <string name="notify_directory_binder">Verzeichnisverbinder</string>
+    <string name="notify_directory_binder_from">VON</string>
+    <string name="notify_directory_binder_to">ZU</string>
+    <string name="notify_patch_on_boot">Beim Start patchen</string>
+    <string name="notify_patched">wurde gepatcht!</string>
+    <string name="odex_all_system_app">"ODEX Alle System Apps
+(Mehr freier Interner Speicher)"</string>
+    <string name="odex_all_system_app_message">Möchtest du wirklich für jede System-App eine ODEX-Datei erstellen?</string>
+    <string name="odexed_not_all_apps">Fehler! Es ist möglicherweise nicht genug freier Speicherplatz in /system verfügbar. Manche Apps haben jetzt keine ODEX-Datei.</string>
+    <string name="ok">Ok</string>
+    <string name="on_top_apps_marker">Neu</string>
+    <string name="open_to_GP">In Google Play öffnen</string>
+    <string name="option_SELinux_permissive">Setze SELinux auf Permissive Mode</string>
+    <string name="option_SELinux_permissive_descr">Löst einige Probleme mit den Funktionen von Lucky Patcher, kann aber einige Firmwares neu starten.</string>
+    <string name="option_analytic">Analytischer Dienst</string>
+    <string name="option_analytic_descr">Analysedienst ein-/ausschalten (verwendet Geolokalisierung).</string>
+    <string name="option_autoupdate_custom_patches">Auto-Update für benutzerdefinierte Patches deaktivieren</string>
+    <string name="option_detailed_logs">Ausführliche Protokolle</string>
+    <string name="option_detailed_logs_descr">Muss aktiviert sein, um ein detailliertes Fehlerprotokoll zu senden.</string>
+    <string name="option_disable_removing_magisk_module_after_change_firmware">Entferne das Magisk-Modul nicht, wenn Du die Gerätefirmware änderst.</string>
+    <string name="option_disable_removing_magisk_module_after_change_firmware_descr">Nach dem Aktualisieren und anderen Änderungen an der Firmware sind die Dateien im Magisk-Modul veraltet und können verschiedene Fehler verursachen. Daher versucht Lucky Patcher, das Modul zu entfernen, wenn er bemerkt, dass sich die Firmware geändert hat.</string>
+    <string name="option_force_turn_off_magisk">Deaktiviere die Option „Magisk-Modul verwenden“ zwangsweise.</string>
+    <string name="option_force_turn_off_magisk_descr">Wenn Magisk auf deinem Gerät nicht ordnungsgemäß funktioniert, kannst Du die Standardnutzung in den Lucky Patcher-Funktionen abbrechen.</string>
+    <string name="option_installation_apk_install_on">Aktiviere die Möglichkeit, Apk-Dateien über Lucky Patcher zu installieren (bei einigen fehlerhaften Firmware-Versionen blockiert diese Option die Installation von Apk-Dateien vom externen Dateimanager).</string>
+    <string name="option_magisk_module">Verwende das Magisk-Modul</string>
+    <string name="option_remove_ads">Entferne die Werbung aus Lucky Patcher</string>
+    <string name="option_remove_ads_descr">Entferne die Werbung aus \"Über\" &amp; aus dem \"Änderungsprotokoll\"</string>
+    <string name="option_test_patch">Test für Patch ausführen</string>
+    <string name="orientmenu">Ausrichtung</string>
+    <string name="others">Andere</string>
+    <string name="package_name">Paketname</string>
+    <string name="password_toggle_content_description">Passwort anzeigen</string>
+    <string name="patch_ok">Anwenden</string>
+    <string name="patch_progress_data_parse">Parsing der Daten für den Patch...</string>
+    <string name="patch_progress_get_classes">Dateien aus der Anwendung abrufen...</string>
+    <string name="patch_progress_reinstall_app">Die Anwendung wird neu installiert...</string>
+    <string name="patch_progress_strings_analisis">Analysiere Zeichenketten...</string>
+    <string name="patch_step1">App wird vorbereitet...</string>
+    <string name="patch_step2">App wird gepatcht...</string>
+    <string name="patch_step3">Ergebnisse werden analysiert...</string>
+    <string name="patch_step4">Geänderte ODEX-Datei wird erstellt...</string>
+    <string name="patch_step6">Optionale Schritte nach dem Patchen...</string>
+    <string name="patch_step7">Packe die Dateien zu einer apk Datei ...</string>
+    <string name="patch_step8">Wende zipalign für %s an</string>
+    <string name="patch_step9">%s installation ...</string>
+    <string name="patch_step_http">Daten vom Root abrufen...</string>
+    <string name="patch_step_rebuild_dex">Zusammensetzen einer Dex-Datei mit neuen Zeichenfolgen (lange warten)</string>
+    <string name="patch_to_Android_At_once">Da deine Firmware deodexed ist, kannst Du gleichzeitig entweder „Signaturüberprüfungsstatus immer wahr“ und „APK-Signaturüberprüfung deaktivieren“ oder nur „Signaturüberprüfung im Paketmanager deaktivieren“ anwenden.</string>
+    <string name="patch_to_Android_only_dalvik_cahce_core_disable">Firmware hat eine odexierte core.jar. \"Patch nur Dalvik-Cache\" wird deaktiviert. Und die Auswahl anderer Patches wird zurückgesetzt.</string>
+    <string name="patch_to_Android_only_dalvik_cahce_services_disable">Die Firmware hat eine geodexte services.jar. \"Nur Dalvik-cache patchen\" wird deaktiviert werden &amp; andere Patches werden zurückgesetzt.</string>
+    <string name="patchbutton">Patch</string>
+    <string name="pattern1">Patchvorlage N1 : Erfolgreich.</string>
+    <string name="pattern1_f">Patchvorlage N1 Fehlgeschlagen...</string>
+    <string name="pattern2">Patchvorlage N2 : Erfolgreich.</string>
+    <string name="pattern2_f">Patchvorlage N2 Fehlgeschlagen...</string>
+    <string name="pattern3">Patchvorlage N3 : Erfolgreich.</string>
+    <string name="pattern3_f">Patchvorlage N3 Fehlgeschlagen...</string>
+    <string name="pattern4">Patchvorlage N4 : Erfolgreich.</string>
+    <string name="pattern4_f">Patchvorlage N4 Fehlgeschlagen...</string>
+    <string name="pattern5">Patchvorlage N5 : Erfolgreich.</string>
+    <string name="pattern5_f">Patchvorlage N5 Fehlgeschlagen...</string>
+    <string name="pattern6">Patchvorlage N6 : Erfolgreich.</string>
+    <string name="pattern6_f">Patchvorlage N6 Fehlgeschlagen...</string>
+    <string name="pattern7">Patchvorlage N7 : Erfolgreich.</string>
+    <string name="pattern7_f">Patchvorlage N7 Fehlgeschlagen...</string>
+    <string name="pattern_dex_kill">Dex und Signaturüberprüfungskiller hinzugefügt.</string>
+    <string name="pattern_integrate_emulation">Emulation für LVL- und InApp-Käufe hinzugefügt.</string>
+    <string name="pattern_lic_kill">Lizenzüberprüfungskiller hinzugefügt.</string>
+    <string name="pattern_signature_kill">Signaturüberprüfungskiller hinzugefügt.</string>
+    <string name="patternamazon">Patch für den Amazon App-Shop war erfolgreich!</string>
+    <string name="patternamazon_f">Patch für den Amazon App-Shop schlug fehl...</string>
+    <string name="patterndependencies">Abhängigkeiten zum Google Play Store wurden entfernt.</string>
+    <string name="patternsamsung">Patch für Samsung Apps war erfolgreich!</string>
+    <string name="patternsamsung_f">Patch für Samsung Apps schlug fehl...</string>
+    <string name="perm_ok">Anwenden &amp; neustarten</string>
+    <string name="permission">Berechtigungen ändern</string>
+    <string name="permission_not_descr">Keine Beschreibung für diese Berechtigung verfügbar</string>
+    <string name="permission_not_found">Keine Berechtigungen gefunden</string>
+    <string name="permissions">Berechtigungen</string>
+    <string name="play_protect_warning">Google Play Protect definiert Lucky Patcher oft als schädliche App, ist es aber nicht. Um diese Warnungen zu entfernen, gehe zu Play Store -> Play Protect -> Einstellungen und deaktiviere „Gerät auf Sicherheitsbedrohungen scannen“.</string>
+    <string name="play_protect_warning2">"Viele Websites teilen gefälschte Versionen von Lucky Patcher, bei denen es sich häufig um gängige Viren handelt. Ich möchte, dass Du den Download-Link unserer offiziellen Website in Deinem Blog oder Deinem YouTube-Videos teilst.
+Offizieller Download-Link: https://www.luckypatchers.com/download/"</string>
+    <string name="play_protect_warning_question_1">Möchtest Du den \"Play Protect\" Dialog ausführen?</string>
+    <string name="please_enter_new_name_lp">Bitte gib einen neuen Anwendungsnamen ein</string>
+    <string name="please_enter_path_to_open">Ordnerpfad eingeben</string>
+    <string name="poorresult">% Lu Glück! Patch schlug fehl! Unbekannte LVL-Version oder der Patch wurde schon angewendet!</string>
+    <string name="provide">Erteilen</string>
+    <string name="proxyGP">Proxy-Server für Google Play</string>
+    <string name="proxyGP_descr">Der Proxy-Server um alle InApp &amp; Lizenzüberprüfungen an Lucky Patcher weiterzuleiten. InApp Dienste für Google Play &amp; Google Lizenzüberprüfung müssen in Lucky Patcher aktiviert sein</string>
+    <string name="proxyGP_install">Installiiere den Proxy für den Google Play Store</string>
+    <string name="proxyGP_install_error">Proxy Datei für Google Play nicht gefunden oder nicht installiert</string>
+    <string name="proxyGP_install_question">Möchtest du wirklich den Proxy für Google Play installieren ?</string>
+    <string name="proxyGP_widget_warning_1">\"Support-Patch für InApp- und LVL-Emulation“ muss im Xposed-Modul für Lucky Patcher deaktiviert werden, um Proxy Google Play auszuführen.</string>
+    <string name="proxyGP_widget_warning_2">Der Proxy Google Play benötigt Root-Zugriff und einen Patch für Android, um \"Signaturüberprüfungsstatus immer True“ anzuwenden oder im Xposed-Modul für Lucky Patcher zu aktivieren.</string>
+    <string name="public_key">Öffentlicher Schlüssel</string>
+    <string name="punkt1">- Lucky Patcher benötigt Root-Rechte!</string>
+    <string name="purchase_db_dialog_auto_buy">Einkauf automatisch wiederholen</string>
+    <string name="purchase_db_dialog_saved_purchase">Einkauf gespeichert</string>
+    <string name="purchase_id">Kauf-ID</string>
+    <string name="purchases_sorter_describe">Dies kann einigen Unity-Spielen helfen. Wenn der Kauf fehlschlägt, ändere einfach den Typ in einen anderen und versuche es erneut.</string>
+    <string name="purchases_sorter_last_time_try_purchase">Zeitpunkt des letzten Kaufs</string>
+    <string name="purchases_sorter_message_not_need_sorter">Es gibt noch nichts zu sortieren. Um Einkäufe zu sortieren, musst Du die Anwendung starten und versuchen, etwas kostenlos zu kaufen. Wenn Lucky Patcher Probleme beim Sortieren von Einkäufen hat, kannst Du diese manuell sortieren. Dies wird für Unity-Spiele benötigt. Wenn Du die Art des Kaufs im Sortierer ändern, besteht eine zusätzliche Möglichkeit, kostenlos zu kaufen.</string>
+    <string name="purchases_sorter_not_defined_by_user">noch nicht benutzerdefiniert</string>
+    <string name="purchases_sorter_reset_button">Zurücksetzen</string>
+    <string name="purchases_sorter_reset_warning_message">Alle Kaufdatensätze werden gelöscht. Um die Einkaufsliste anzuzeigen, musst Du das Zielprogramm neu starten. Bist Du sicher, dass Du die Definitionen für alle Einkäufe entfernen möchten, damit Lucky Patcher später versucht, ihren Typ zu erraten?</string>
+    <string name="purchases_sorter_title">Wähle den Typ für jeden Einkauf</string>
+    <string name="purchases_sorter_type_inapp_describe">Dies sind normalerweise Gold, Kristalle und andere Verbrauchsmaterialien.</string>
+    <string name="purchases_sorter_type_inapp_purchase">Inapp</string>
+    <string name="purchases_sorter_type_subs_describe">Dies sind normalerweise Abonnements, zusätzliche Ebenen, Deaktivierungsanzeigen und dergleichen.</string>
+    <string name="purchases_sorter_type_subs_purchase">Abonnement</string>
+    <string name="reboot">Neustarten</string>
+    <string name="reboot_after_install_google_play_to_system_partition">Die Anwendung wurde in der Systempartition installiert. Damit alle Änderungen wirksam werden, ist ein Neustart erforderlich. Bist Du damit einverstanden, jetzt neu zu starten?</string>
+    <string name="reboot_message">"Neustarten wird durchgeführt..
+ Wenn das Gerät nicht Automatisch neustartet, starte es manuell neu..."</string>
+    <string name="reboot_to_bootloader">Neustart in den Bootloader</string>
+    <string name="reboot_to_recovery">Neustart in das Recovery</string>
+    <string name="rebuild_info">Erstellungsübersicht</string>
+    <string name="remodex">Dalvik-cache fix wurde entfernt!</string>
+    <string name="remodexerror">Der Dalvik-cache dieser App konnte nicht gefunden werden.</string>
+    <string name="remove_all_saved_purchases">Alle gesicherten Käufe entfernen</string>
+    <string name="remove_all_saved_purchases_message">Möchtest Du wirklich alle gesicherten Käufe von Lucky Patcher entfernen?</string>
+    <string name="removefixes">"Lösche Alle ODEX Dateien
+(/data/app &amp; /system/app)"</string>
+    <string name="reset_dialog_settings">Alle Dialogeinstellungen zurücksetzen</string>
+    <string name="restore_build">Build</string>
+    <string name="restore_data_error">Fehler: Ein Fehler ist aufgetreten. Daten wurden möglicherweise nicht vollständig wiederhergestellt.</string>
+    <string name="restore_data_success">App-Daten wurden erfolgreich wiederhergestellt.</string>
+    <string name="restore_message">Möchtest du die App wirklich installieren</string>
+    <string name="restore_version">Version</string>
+    <string name="restorebutton">Wiederherstellen</string>
+    <string name="restored">wiederhergestellt</string>
+    <string name="root_access_not_found">Root-Zugriff konnte nicht gefunden werden. Versuche Lucky Patcher erneut zu starten, oder versuche SuperSu zu aktualisieren, und aktualisiere die binäre SU-Datei von SuperSu. Überprüfe auch, ob SuperSu Lucky Patcher Root-Zugriff gewährt hat.</string>
+    <string name="root_needed">Du benötigst Root-Rechte um dies auszuführen...</string>
+    <string name="savebutton">Als individuellen Patch speichern</string>
+    <string name="saved_object">als individueller Patch unter /sdcard/LuckyPatcher/ gespeichert.</string>
+    <string name="scheme_versions">Schemaversionen</string>
+    <string name="search">Suchen</string>
+    <string name="search_menu_title">Suche</string>
+    <string name="select_filter">Bitte wähle Filter für die App-Liste aus:</string>
+    <string name="select_market">Bitte wähle eine Google Play Version aus, welche Du installieren möchtest:</string>
+    <string name="send_logs">Möchtest du mir deine Protokolle schicken?</string>
+    <string name="sendlog">Protokoll schicken</string>
+    <string name="serial">Seriennummer</string>
+    <string name="set_default_to_install">"Standardinstallationsort auswählen
+Funktioniert möglicherweise nicht auf Android >= 4"</string>
+    <string name="set_default_to_install_auto">Installationsort, welcher vom Android OS festgelegt wird</string>
+    <string name="set_default_to_install_internal_memory">Installation auf internen Speicher</string>
+    <string name="set_default_to_install_sdcard">Installation auf externem Medium z.B: SD-Karte</string>
+    <string name="set_switchers_def">Schalter zurücksetzen</string>
+    <string name="setting_confirm_exit">Verlassen der App bestätigen</string>
+    <string name="setting_confirm_exit_descr">Falls du die Zurück-Taste drückst, musst du bestätigen, ob du wirklich die App beenden möchtest.</string>
+    <string name="settings">Einstellungen</string>
+    <string name="settings_force_java_root_method">Festgelegte Java-Root-Methode erzwingen</string>
+    <string name="settings_force_java_root_method_app_process">app_process verwenden</string>
+    <string name="settings_force_java_root_method_dalvikvm">DalvikVM verwenden</string>
+    <string name="settings_force_java_root_method_description">Wenn Du Probleme hast, Root-Rechte zu erhalten oder mit Patches zu arbeiten, kannst Du eine andere Methode ausprobieren.</string>
+    <string name="settings_force_root">Erzwinge den Root-Check</string>
+    <string name="settings_force_root_description">Falls du ein ausergewöhnliches Root hast kannst du Erzwinge Root oder erzwinge kein Root einstellen</string>
+    <string name="settings_force_root_off">Nicht-Root-Modus erzwingen</string>
+    <string name="settings_force_root_on">Root-Modus erzwingen</string>
+    <string name="settings_method_apk_installer_standart">Verwende den Standard-Installer</string>
+    <string name="settings_method_apk_installer_use_split_installer">Verwende den Split-Installer</string>
+    <string name="settings_method_apks_installer_non_root_mode">Verwende Root nicht für das Apks-Installationsprogramm</string>
+    <string name="settings_method_apks_installer_root_mode">Verwenden von Root für das Apks-Installationsprogramm</string>
+    <string name="settings_mode_apk_installer">Wähle einen Installer für .apk-Dateien</string>
+    <string name="settings_mode_apk_installer_description">Wenn Du nicht gerootet bist, kannst Du das Split-Installationsprogramm verwenden, um eine detailliertere Beschreibung von Installationsfehlern zu erhalten. Aber es funktioniert nicht mit jeder Firmware, und wenn die Installation fehlschlägt, kann es freien Speicherplatz mit temporären Dateien verschlingen.</string>
+    <string name="settings_mode_apks_installer">Apks Installer Betriebsmodus</string>
+    <string name="settings_mode_apks_installer_description">Wenn die Installation im Root-Modus sehr lange dauert, kannst Du den Wechsel in den Nicht-Root-Modus erzwingen.</string>
+    <string name="settings_root_auto">Autoerkennung des Roots</string>
+    <string name="settings_show_folder_first">Ordner zuerst anzeigen</string>
+    <string name="settings_show_only_used_files">Nur von Lucky Patcher verwendete Dateien anzeigen</string>
+    <string name="settings_sort_order_of_files">Sortierreihenfolge der Dateien</string>
+    <string name="settings_sort_order_of_files_name">nach Name</string>
+    <string name="settings_sort_order_of_files_time">nach Zeit (neu oben)</string>
+    <string name="share">Teilen</string>
+    <string name="share_lucky_patcher">Teile Lucky Patcher</string>
+    <string name="share_message">Möchtest Du diese App wirklich teilen?</string>
+    <string name="share_this_app">Die App teilen</string>
+    <string name="signature">Signatur</string>
+    <string name="signature_algorithm">Signaturalgorithmus</string>
+    <string name="site_pattern">String aus AdsBlockList - wurde entfernt.</string>
+    <string name="sortbydate">Nach Datum sortieren</string>
+    <string name="sortbyname">Nach Namen sortieren</string>
+    <string name="sortbystatus">Nach Status sortieren</string>
+    <string name="sortbytime">Nach Installationsdatum sortieren</string>
+    <string name="sortmenu">Sortierreihenfolge</string>
+    <string name="splitted_apk_attribute">gespalten</string>
+    <string name="start_market_message">"Die Installation eines modifizierten Google Play erfordert die Verwendung von Patches für Android. Dein Gerät wird neu gestartet. Versuche nach dem Neustart erneut, Google Play zu installieren. Manchmal kann dies die Firmware beschädigen.
+
+Möchtest Du Patches für Android anwenden?"</string>
+    <string name="stat_boot_ads">Google-Anzeigen</string>
+    <string name="stat_boot_custom">Individueller Patch</string>
+    <string name="stat_boot_lvl">Google Lizenzüberprüfung</string>
+    <string name="stat_launch_activity">Autostart:</string>
+    <string name="statads">Google-Anzeigen wurden gefunden.</string>
+    <string name="statappplace">App-Pfad:</string>
+    <string name="statbilling">InApp-Käufe wurden gefunden.</string>
+    <string name="statbuild">Build:</string>
+    <string name="statcustom">Individueller Patch ist verfügbar</string>
+    <string name="statdataplace">Daten-Pfad der App:</string>
+    <string name="statfix">ODEX-Datei wurde gefunden.</string>
+    <string name="statlvl">Lizenzüberprüfung wurde gefunden.</string>
+    <string name="statmodified">Diese App wurde schon einmal modifiziert.</string>
+    <string name="statnotfix">ODEX-Datei konnte nicht gefunden werden.</string>
+    <string name="statnotfound">Es gibt nichts zu patchen.</string>
+    <string name="statnotmodified">Unmodifizierte App</string>
+    <string name="statnotsys">Benutzer-App.</string>
+    <string name="statnull">Es gibt nichts zu patchen</string>
+    <string name="statsys">System-App.</string>
+    <string name="status_bar_notification_info_overflow">999+</string>
+    <string name="statuserid">User ID:</string>
+    <string name="statversion">Version:</string>
+    <string name="subject">Subjekt</string>
+    <string name="success">Erfolgreich</string>
+    <string name="support_patch_billing_rebuild_dex">Support-Patch für InApp-Emulation (Dex Zusammenbau)</string>
+    <string name="support_patch_billing_rebuild_dex_descr">Es wird sehr lange dauern. Leite die Abrechnung ohne Proxyserver an Lucky Patcher um, um In-App-Käufe zu emulieren. Wenn diese Methode aus irgendeinem Grund nicht funktioniert hat, kannst Du die Methode \"Support-Patch für InApp-Emulation (Proxyserver)“ verwenden. Wenn der Patch für Android „Signaturüberprüfungsstatus immer True“ nicht angewendet wird, kann dieser Support-Patch helfen.</string>
+    <string name="support_patch_billing_rebuild_dex_not_work">Methode „Support-Patch für InApp-Emulation (Wiederzusammenbau Dex)“ mit Fehlern beendet. Verwende die Methode „Support-Patch für InApp-Emulation (Proxy-Server)“, um kostenlose Käufe innerhalb dieser Anwendung zu emulieren.</string>
+    <string name="support_patch_billing_rebuild_dex_warning">Diese neu erstellte Anwendung funktioniert nur, wenn Lucky Patcher auf diesem Gerät installiert ist. Wenn Du diese Anwendung auf ein anderes Gerät übertragen, werden Käufe nicht emuliert. Um die Anwendung mit einem Support-Patch auf ein anderes Gerät zu übertragen, verwende die Methode „Support-Patch für InApp-Emulation (Proxy-Server)“ und installiere den „Proxy-Server für die Emulation von InApp-Käufen“ auf einem anderen Gerät oder baue diese Anwendung direkt auf einem anderen Gerät neu auf.</string>
+    <string name="support_patch_billing_redirect_to_proxy">Support-Patch für InApp-Emulation (Proxy-Server)</string>
+    <string name="support_patch_billing_redirect_to_proxy_descr">Leite die Abrechnung über einen Proxy-Server an Lucky Patcher weiter, um In-App-Käufe zu emulieren. Wenn der Patch für Android \"Signaturüberprüfungsstatus immer wahr\" nicht angewendet wird, kann dieser Support-Patch Abhilfe schaffen.</string>
+    <string name="support_patch_billing_repatch_patched_app">Patch in bereits gepatchter Anwendung aktualisieren</string>
+    <string name="support_patch_billing_repatch_patched_app_descr">Wenn Du die Anwendung mit dem Patch für die alte Version von Lucky Patcher neu erstellt hast und es jetzt nicht mehr funktioniert, wird durch diese Option der Patch für die neue Version von Lucky Patcher aktualisiert.</string>
+    <string name="support_patch_header_additional">Zusätzliche Patches</string>
+    <string name="support_patch_header_inapp">Patches zum Emulieren von kostenlosen Einkäufen</string>
+    <string name="support_patch_header_lvl_inapp">Patches zum Emulieren von Lizenzprüfungen und InApp-Käufen</string>
+    <string name="support_patch_header_options">Zusätzliche Optionen</string>
+    <string name="support_patch_lvl_and_inapp_descr">Leitet alle Lizenzüberprüfungsanfragen und InApp-Käufe an Lucky Patcher weiter.</string>
+    <string name="support_patch_lvl_inapp">Support-Patch für LVL- und InApp Emulation</string>
+    <string name="switcher_auto_backup">Automatische Sicherung aller installierten &amp; aktualisierten Apps</string>
+    <string name="switcher_auto_backup_descr">Apk-Datei in den Ordner für Sicheungen kopieren</string>
+    <string name="switcher_auto_backup_only_gp">Alle Apps, welche aus dem Google Play Store installiert oder aktualisiert wurden, werden automatisch gesichert.</string>
+    <string name="switcher_auto_backup_only_gp_descr">Hinweis: Lucky Patcher markiert alle von Google Play installierten Anwendungen, die modifiziert wurden. Deswegen werden diese Anwendungen auch in der Backup Liste angezeigt.</string>
+    <string name="switcher_auto_integrate_update">Updates für System-Apps automatisch nach /system ingrieren</string>
+    <string name="switcher_auto_integrate_update_descr">Neustart ist für das zweite Update notwendig</string>
+    <string name="switcher_auto_move_to_internal">Installierte &amp; aktualisierte Apps automatisch in den internen Speicher verschieben</string>
+    <string name="switcher_auto_move_to_internal_descr">Dadurch werden die Apps schneller &amp; stabiler</string>
+    <string name="switcher_auto_move_to_sd">Installierte &amp; aktualisierte Apps automatisch auf die SD-Karte verschieben</string>
+    <string name="switcher_auto_move_to_sd_descr">Schlecht für Apps mit Widgets &amp; Autostart</string>
+    <string name="switchers_service_not_found">Dienst nicht gefunden</string>
+    <string name="sysdescr">Warnung! Bitte erstelle eine Sicherung, bevor du etwas modifizierst.</string>
+    <string name="system_app_change">Bitte neustarten, um Änderungen zu übernehmen.</string>
+    <string name="systitle">System-Apps anzeigen</string>
+    <string name="test">Test</string>
+    <string name="test_services_for_work_failed">Servicetest fehlgeschlagen. Etwas funktioniert nicht richtig. Du musst alle erforderlichen Berechtigungen (Arbeiten im Hintergrund usw.) für die Anwendung %1$s und für Lucky Patcher erteilen. Einstellungen für %1$söffnen?</string>
+    <string name="test_services_for_work_progress">Wir machen einen Test für den Dienst, um Fehler zu finden.</string>
+    <string name="test_services_for_work_success">Service getestet und funktioniert einwandfrei.</string>
+    <string name="text_size">Schriftgröße</string>
+    <string name="title_files_observer">Datei-Beobachtungsdienst</string>
+    <string name="title_for_block_internet">In den folgenden Apps soll Internet blockiert werden:</string>
+    <string name="title_for_select_backup_apk_package">Wähle die Apps aus, deren apks gesichert werden sollen</string>
+    <string name="title_for_select_backup_settings_package">Wähle Apps aus, um die App-Einstellungen zu sichern:</string>
+    <string name="title_for_select_disable_package">Wähle Apps zum deaktivieren aus</string>
+    <string name="title_for_select_enable_package">Wähle Apps zum aktivieren aus</string>
+    <string name="title_for_select_integrate_update_apps">Wähle die Apps aus, dessen Updates nach /system integriert werden sollen:</string>
+    <string name="title_for_select_move_to_internal">Wähle die Apps aus, die auf den internen Speicher verschoben werden sollen:</string>
+    <string name="title_for_select_move_to_sdcard">Wähle die Apps aus, die auf die SD-Karte verschoben werden sollen:</string>
+    <string name="title_for_select_uninstall">Wähle die Apps aus, die deinstalliert werden sollen:</string>
+    <string name="title_for_unblock_internet">In den folgenden Apps soll Internet freigegeben werden:</string>
+    <string name="title_installation_lp">Lucky Patcher Installer</string>
+    <string name="title_progress_installation_lp">Installation von Lucky Patcher vorbereiten</string>
+    <string name="title_select_custom_patch">Individuelle Patches wählen</string>
+    <string name="title_upd">Nachricht</string>
+    <string name="toolbar_adfree">Werbung blockieren</string>
+    <string name="toolbar_backups">Sicherungen</string>
+    <string name="toolbar_options_menu">Optionsmenü</string>
+    <string name="toolbar_rebuild">Kompilieren &amp; Installieren</string>
+    <string name="toolbar_refresh_apps">Apps erneut scannen</string>
+    <string name="toolbar_switchers">Schalter</string>
+    <string name="toolbar_system_utils">Toolbox</string>
+    <string name="tools_menu_block_internet">Internet blockieren</string>
+    <string name="tools_menu_unblock_internet">Internet freigeben</string>
+    <string name="troubleshooting_supersu_namespace_separation">"Deaktiviere die SuperSu-Option \"Namespace-Trennung bereitstellen\"
+(wird neu gestartet)"</string>
+    <string name="truble">Fehlerbehebung</string>
+    <string name="type">Typ</string>
+    <string name="uninstall">Möchtest Du %s wirklich entfernen?</string>
+    <string name="uninstall_updates">Updates deinstallieren</string>
+    <string name="uninstall_updates_message">Möchtest Du Updates für die System-App %s wirklich entfernen?</string>
+    <string name="uninstallapp">App deinstallieren</string>
+    <string name="uninstalled_package_for_user">App für Benutzer deinstalliert.</string>
+    <string name="unknown">Unbekannt</string>
+    <string name="unknown_error">Unbekannter Fehler. Bitte versuche es erneut.</string>
+    <string name="unused_odex_delete">Unbenutzte ODEX-Datei wurde entfernt!</string>
+    <string name="update">Aktualisieren</string>
+    <string name="update_custom_patches_message_1">Auf dem Server wurden neue benutzerdefinierte Patches gefunden. Du kannst die Liste der hinzugefügten Patches auf https://patch.chelpus.com/ sehen.</string>
+    <string name="update_custom_patches_message_2">Möchtest Du sie jetzt aktualisieren?</string>
+    <string name="update_found_title">Update gefunden</string>
+    <string name="update_lp">Lucky Patcher aktualisieren</string>
+    <string name="update_site_not_found">Update Seite nicht gefunden. Möglicherweise in der Hosts-Datei blockiert oder von einer anderen Anwendung blockiert. Oder technische Probleme mit dem Host.</string>
+    <string name="updatebusybox">Busybox aktualisieren</string>
+    <string name="use_split_installer_for_install_LP">Verwende den Split APKs-Installer. Wenn Du es nicht installieren kannst, kannst Du es mit diesem Kontrollkästchen versuchen.</string>
+    <string name="usepatch">Anwenden</string>
+    <string name="validity">Gültigkeit</string>
+    <string name="vers">Version von Lucky Patcher</string>
+    <string name="version">Version</string>
+    <string name="vibration">Vibration aktivieren</string>
+    <string name="vibration_descr">Aktiviere haptisches Feedback in der App-Liste.</string>
+    <string name="viewlandscape">Waagerecht</string>
+    <string name="viewlarge">Groß</string>
+    <string name="viewmedium">Mittel</string>
+    <string name="viewmenu">Aussehen</string>
+    <string name="viewportret">Senkrecht</string>
+    <string name="viewsensor">Lagesensor</string>
+    <string name="viewsmall">Klein</string>
+    <string name="wait">Bitte warten...</string>
+    <string name="warning">Warnung</string>
+    <string name="warning_china_devices_muiu">Die chinesische MIUI-Firmware beschränkt oft die Arbeit von Lucky Patcher im Hintergrund. Aus diesem Grund funktionieren die InApp-Kaufemulation &amp; andere Funktionen nicht. Öffnen Sie die Lucky Patcher Einstellungen, um alle möglichen Berechtigungen dafür zu aktivieren?</string>
+    <string name="warning_for_get_apk">Es ist unmöglich, die vollständige APK-Datei für \"%1$s\" zu erhalten, da sie mit dem Android App Bundle von Google aufgeteilt wird. Diese Funktion kann nicht mit \"%1$s\" verwendet werden.</string>
+    <string name="warning_for_no_free_space_on_device">Deine Firmware erzwingt das Stoppen von Lucky Patcher mit dem Fehler: „Kein Speicherplatz auf Gerät“. Überprüfe den freien Speicherplatz auf dem Gerät. Wenn Du SuperSu verwendest, versuche die „Mount-Namespace-Trennung“ in SuperSu zu deaktivieren.</string>
+    <string name="warning_for_no_free_space_on_device_to_patch">Nicht genügend Speicherplatz vorhanden. Um fortzufahren, geb mehr Speicherplatz frei.</string>
+    <string name="warning_for_out_of_memory_on_device">Deine Firmware hat Lucky Patcher mit der Meldung: \"Out of Memory\" angehalten. Nicht genügend Arbeitsspeicher für den aktuellen Prozess verfügbar.</string>
+    <string name="warning_for_resources_error">Deine Firmware hat Lucky Patcher mit dem Fehler \"InflateException\" gestoppt. Höchstwahrscheinlich enthält das Thema im Firmware-Stil Fehler oder die Ressourcen der Firmware sind beschädigt. Versuche das Thema in hell, dunkel oder was auch immer zu ändern. Möchtest Du ein Protokoll senden?</string>
+    <string name="warning_for_unstall_apk_from_import_file">Das Importarchiv enthält eine APK-Datei. Möchtest Du %1$s Version %2$s Build %3$s installieren?</string>
+    <string name="warning_force_close_please_update_lp">Es scheint, dass Lucky Patcher zwangsweise geschlossen wurde. Bitte aktualisiere Lucky Patcher auf die neueste Version.</string>
+    <string name="warning_inapp_emulation">Deine Firmware unterstützt standardmäßig die InApp-Emulation nicht. Wenn deine Firmware das deaktivieren (Einfrieren) von Apps unterstützt, versuche den Google Play Store einzufrieren &amp; versuche dann die InApp-Käufe-Emulation erneut.</string>
+    <string name="warning_install_new_mod_market">Diese modifizierte Version von GooglePlay kann nicht in der Systempartition installiert werden. Installiere es als Benutzeranwendung. Andernfalls kannst Du keine Verbindung zu Deinem Google-Konto herstellen.</string>
+    <string name="warning_install_new_mod_market2">Du kannst den originalen Google Play Store als System und dann als Benutzer den modifizierten Google Play Store installieren. Wenn Du Probleme mit Google Play haben solltest, versuche es als Benutzer-App mit der Option \"%1s\" zu installieren, und gib ihm alle Berechtigungen.</string>
+    <string name="warning_internal_data_folder_corrupt">Lucky Patcher kann keine Daten im Datenordner schreiben oder lesen. Um dieses Problem zu beheben, lösche Daten für Lucky Patcher. Wenn dies nicht hilft, installiere Lucky Patcher neu und gebe ihm alle erforderlichen Berechtigungen.</string>
+    <string name="warning_jex_optimised_firmware">Deine Firmware hat eine jex-Optimierung. Firmware-Patch ist nicht möglich. Ändere die Firmware oder aktualisiere auf Android 5+.</string>
+    <string name="warning_message_browser_not_found">Auf diesem Gerät konnte kein Browser zum Öffnen des Weblinks gefunden werden.</string>
+    <string name="warning_multipatch_not_select">Keine der Patches ausgewählt</string>
+    <string name="warning_not_all_perms_granded">Lucky Patcher kann seine Arbeit nicht fortsetzen, da ihm nicht alle erforderlichen Berechtigungen erteilt wurden.</string>
+    <string name="warning_shared_apks">"Du musst Lucky Patcher auf einem anderen Gerät installieren, um APK-Dateien installieren zu können. Du kannst Lucky Patcher über das Seitenmenü '%s' auf ein anderes Gerät übertragen."</string>
+    <string name="warning_superSu_mount_name_space_separation">Lucky Patcher entdeckte, dass bei SuperSu die Option \"Namespace-Trennung einhängen\" aktiviert ist. Damit Lucky Patcher ordnungsgemäß funktioniert, muss diese Option in den SuperSu-Einstellungen deaktiviert werden.</string>
+    <string name="warning_superSu_mount_name_space_separation_2">Möchtest Du, dass Lucky Patcher es deaktiviert (und neu startet)?</string>
+    <string name="warning_superSu_mount_name_space_separation_3">Diese Meldung nicht mehr anzeigen</string>
+    <string name="well_done">Erfolgreich abgeschlossen.</string>
+    <string name="well_done_change_components">Komponenten der Anwendung wurden erfolgreich aktualisiert.</string>
+    <string name="well_done_group">Erfolgreich abgeschlossen für:</string>
+    <string name="widget_app_disable_checkbox">Anwendung starten, wenn aktiviert</string>
+    <string name="write_permission_not_found">Keine Schreibberechtigungen für ausgewählten Ort.</string>
+    <string name="xposed_module_option">Xposed-Modul aktivieren</string>
+    <string name="xposed_option_off">Bitte aktivere das Modul von Lucky Patcher in Xposed, um diese Option zu nutzen.</string>
+    <string name="xposed_settings">Xposed-Einstellungen</string>
+    <string name="сertificate_bytes">Zertifikatbytes</string>
+    <string name="сertificate_information">Zertifikatsinformationen</string>
+</resources>

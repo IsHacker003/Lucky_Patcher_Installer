@@ -67,7 +67,7 @@
     .line 18
     .line 19
     .line 20
-    invoke-static {}, Lru/aaaaacay/installer/PkgName;->getPkgName()Ljava/lang/String;
+    invoke-static {}, Lru/aaaaacca/installer/PkgName;->getPkgName()Ljava/lang/String;
 
     .line 21
     .line 22
@@ -108,7 +108,7 @@
 
     .line 40
     .line 41
-    sget-object v1, Lʼˏ/ᵎ;->ˏ:Ljava/lang/String;
+    sget-object v1, Lʼˏ/ᵢ;->ˏ:Ljava/lang/String;
 
     .line 42
     .line 43

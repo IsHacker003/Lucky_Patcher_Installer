@@ -3,12 +3,12 @@
 .source "SourceFile"
 
 # interfaces
-.implements Landroid/view/View$OnClickListener;
+.implements Landroid/text/InputFilter;
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lʾˊ/ʽ;->ʼ()Landroid/app/Dialog;
+    value = Lʾˊ/ʽ;->ᵎᵎ(ZLjava/io/File;)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -17,186 +17,172 @@
 .end annotation
 
 
-# instance fields
-.field final synthetic ʼ:Lʾˊ/ʽ;
-
-
 # direct methods
-.method constructor <init>(Lʾˊ/ʽ;)V
+.method constructor <init>()V
     .locals 0
 
     .line 1
-    iput-object p1, p0, Lʾˊ/ʽ$ʻ;->ʼ:Lʾˊ/ʽ;
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
     .line 3
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
     .line 4
-    .line 5
-    .line 6
     return-void
 .end method
 
 
 # virtual methods
-.method public onClick(Landroid/view/View;)V
-    .locals 4
+.method public filter(Ljava/lang/CharSequence;IILandroid/text/Spanned;II)Ljava/lang/CharSequence;
+    .locals 3
 
     .line 1
-    const-string p1, "android.intent.action.VIEW"
+    :goto_0
+    if-ge p2, p3, :cond_1
 
     .line 2
     .line 3
-    :try_start_0
-    sget-object v0, Lʾˉ/ᴵᴵ;->ʼﾞ:Lru/aaaaacay/installer/MainActivity;
+    invoke-interface {p1, p2}, Ljava/lang/CharSequence;->charAt(I)C
 
     .line 4
     .line 5
-    if-eqz v0, :cond_0
-
     .line 6
+    move-result p5
+
     .line 7
-    new-instance v1, Landroid/content/Intent;
+    invoke-static {p5}, Ljava/lang/Character;->isDigit(C)Z
 
     .line 8
     .line 9
-    new-instance v2, Ljava/lang/StringBuilder;
-
     .line 10
+    move-result p5
+
     .line 11
-    invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
+    const-string p6, ""
 
     .line 12
     .line 13
+    const/4 v0, 0x0
+
     .line 14
-    const-string v3, "market://details?id="
+    const-string v1, "Invalid Input"
 
     .line 15
     .line 16
-    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    if-nez p5, :cond_0
 
     .line 17
     .line 18
-    .line 19
-    sget-object v3, Lʾˉ/ᴵᴵ;->ʼᵎ:Lʾˉ/ᵎ;
+    invoke-static {}, Lʾˉ/ʼʼ;->ˈי()Landroid/content/Context;
 
+    .line 19
     .line 20
     .line 21
-    iget-object v3, v3, Lʾˉ/ᵎ;->ʻ:Ljava/lang/String;
+    move-result-object p1
 
     .line 22
-    .line 23
-    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-static {p1, v1, v0}, Landroid/widget/Toast;->makeText(Landroid/content/Context;Ljava/lang/CharSequence;I)Landroid/widget/Toast;
 
+    .line 23
     .line 24
     .line 25
+    move-result-object p1
+
     .line 26
-    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-virtual {p1}, Landroid/widget/Toast;->show()V
 
     .line 27
     .line 28
     .line 29
-    move-result-object v2
+    return-object p6
 
     .line 30
-    invoke-static {v2}, Landroid/net/Uri;->parse(Ljava/lang/String;)Landroid/net/Uri;
+    :cond_0
+    :try_start_0
+    new-instance p5, Ljava/lang/StringBuilder;
 
     .line 31
     .line 32
+    invoke-direct {p5}, Ljava/lang/StringBuilder;-><init>()V
+
     .line 33
-    move-result-object v2
-
     .line 34
-    invoke-direct {v1, p1, v2}, Landroid/content/Intent;-><init>(Ljava/lang/String;Landroid/net/Uri;)V
-
     .line 35
+    invoke-virtual {p4}, Ljava/lang/Object;->toString()Ljava/lang/String;
+
     .line 36
     .line 37
-    invoke-virtual {v0, v1}, Landroid/content/Context;->startActivity(Landroid/content/Intent;)V
-    :try_end_0
-    .catch Landroid/content/ActivityNotFoundException; {:try_start_0 .. :try_end_0} :catch_0
-
     .line 38
+    move-result-object v2
+
     .line 39
+    invoke-virtual {p5, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
     .line 40
-    goto :goto_0
-
     .line 41
-    :catch_0
-    nop
-
     .line 42
-    sget-object v0, Lʾˉ/ᴵᴵ;->ʼﾞ:Lru/aaaaacay/installer/MainActivity;
+    invoke-interface {p1}, Ljava/lang/CharSequence;->toString()Ljava/lang/String;
 
     .line 43
     .line 44
-    if-eqz v0, :cond_0
-
     .line 45
+    move-result-object v2
+
     .line 46
-    new-instance v1, Landroid/content/Intent;
+    invoke-virtual {p5, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     .line 47
     .line 48
-    new-instance v2, Ljava/lang/StringBuilder;
-
     .line 49
-    .line 50
-    invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
+    invoke-virtual {p5}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
+    .line 50
     .line 51
     .line 52
+    move-result-object p5
+
     .line 53
-    const-string v3, "https://play.google.com/store/apps/details?id="
+    invoke-static {p5}, Ljava/lang/Integer;->valueOf(Ljava/lang/String;)Ljava/lang/Integer;
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
     .line 54
     .line 55
-    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
     .line 56
+    add-int/lit8 p2, p2, 0x1
+
     .line 57
     .line 58
-    sget-object v3, Lʾˉ/ᴵᴵ;->ʼᵎ:Lʾˉ/ᵎ;
+    goto :goto_0
 
     .line 59
-    .line 60
-    iget-object v3, v3, Lʾˉ/ᵎ;->ʻ:Ljava/lang/String;
+    :catchall_0
+    invoke-static {}, Lʾˉ/ʼʼ;->ˈי()Landroid/content/Context;
 
+    .line 60
     .line 61
     .line 62
-    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    move-result-object p1
 
     .line 63
+    invoke-static {p1, v1, v0}, Landroid/widget/Toast;->makeText(Landroid/content/Context;Ljava/lang/CharSequence;I)Landroid/widget/Toast;
+
     .line 64
     .line 65
-    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
     .line 66
+    move-result-object p1
+
     .line 67
+    invoke-virtual {p1}, Landroid/widget/Toast;->show()V
+
     .line 68
-    move-result-object v2
-
     .line 69
-    invoke-static {v2}, Landroid/net/Uri;->parse(Ljava/lang/String;)Landroid/net/Uri;
-
     .line 70
+    return-object p6
+
     .line 71
+    :cond_1
+    const/4 p1, 0x0
+
     .line 72
-    move-result-object v2
-
-    .line 73
-    invoke-direct {v1, p1, v2}, Landroid/content/Intent;-><init>(Ljava/lang/String;Landroid/net/Uri;)V
-
-    .line 74
-    .line 75
-    .line 76
-    invoke-virtual {v0, v1}, Landroid/content/Context;->startActivity(Landroid/content/Intent;)V
-
-    .line 77
-    .line 78
-    .line 79
-    :cond_0
-    :goto_0
-    return-void
+    return-object p1
 .end method

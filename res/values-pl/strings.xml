@@ -392,6 +392,8 @@ Oto rezultaty:
     <string name="delete_system_app_for_user">Odinstaluj aplikację systemową dla bieżącego użytkownika</string>
     <string name="delete_system_app_for_user_message">Czy na pewno chcesz odinstalować aplikację systemową %s dla bieżącego użytkownika?</string>
     <string name="describe_for_Proxy_gp">(wersja mini - tylko z emulacją licencji i zakupów w aplikacji)</string>
+    <string name="dialog_android_art_update_remove">Czy na pewno chcesz usunąć aktualizacje modułu Apex com.google.android.art?</string>
+    <string name="dialog_android_art_update_remove_no_update">Nie znaleziono żadnych aktualizacji dla modułu Apex com.google.android.art.</string>
     <string name="dialog_end_orig_resign_app">%1$s została pomyślnie podpisana oryginalnym podpisem. Podpisany na nowo plik znajduje się%2$s</string>
     <string name="dialog_end_resign_app">%1$s został pomyślnie podpisany testowym podpisem. Lokalizacja na nowo podpisanego pliku: %2$s.</string>
     <string name="dialog_system">Ta aplikacja jest częścią systemu. Zachowaj szczególną ostrożność przy dokonywaniu wszelkich operacji na niej, ponieważ możesz uceglić urządzenie. Posiadasz kopię zapasową? Czy na pewno chcesz dokonywać zmian w tej aplikacji?</string>
@@ -1063,7 +1065,9 @@ Ograniczona funkcjonalność!"</string>
 (Więcej wolnego miejsca w pamięci wewnętrznej)"</string>
     <string name="odex_all_system_app_message">Czy na pewno chcesz ODEXować wszystkie aplikacje systemowe?</string>
     <string name="odexed_not_all_apps">Nie wszystkie aplikacje zostały zodeksowane. Prawdopobnie przez brak wolnego miejsca na partycji systemowej.</string>
+    <string name="off">Wyłącz</string>
     <string name="ok">OK</string>
+    <string name="on">Włącz</string>
     <string name="on_top_apps_marker">Nowa</string>
     <string name="open_to_GP">Otwórz w Google Play</string>
     <string name="option_SELinux_permissive">Przestaw SELinuksa w tryb pobłażliwy</string>
@@ -1176,6 +1180,8 @@ Jeśli urządzenie nie zostanie uruchomione ponownie automatycznie, zrób to sam
     <string name="remodexerror">Nie znaleziono dalvik-cache dla tej aplikacji.</string>
     <string name="remove_all_saved_purchases">Usuń wszystkie zapisane zakupy</string>
     <string name="remove_all_saved_purchases_message">Czy na pewno chcesz usunąć wszystkie zapisane zakupy z Lucky Patchera?</string>
+    <string name="remove_android_art_update">Odinstaluj aktualizacje dla modułu Apex com.google.android.art</string>
+    <string name="remove_android_art_update_description">Jest to przydatne w przypadku nowoczesnych wersji Androida, gdy poprawki instalowane za pośrednictwem plików lsposed lub zwykłych plików systemowych nie działają.</string>
     <string name="removefixes">"Usuń wszystkie pliki ODEX
 (/data/app i /system/app)"</string>
     <string name="reset_dialog_settings">Resetuj wszystkie ustawienia okien dialogowych</string>

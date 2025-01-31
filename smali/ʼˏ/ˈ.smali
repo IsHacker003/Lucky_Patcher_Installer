@@ -4,13 +4,13 @@
 
 
 # direct methods
-.method public static bridge synthetic ʻ(Landroid/os/UserHandle;)Ljava/lang/String;
-    .locals 0
+.method public static bridge synthetic ʻ()Landroid/os/UserHandle;
+    .locals 1
 
     .line 1
-    invoke-virtual {p0}, Landroid/os/UserHandle;->toString()Ljava/lang/String;
+    invoke-static {}, Landroid/os/Process;->myUserHandle()Landroid/os/UserHandle;
 
-    move-result-object p0
+    move-result-object v0
 
-    return-object p0
+    return-object v0
 .end method

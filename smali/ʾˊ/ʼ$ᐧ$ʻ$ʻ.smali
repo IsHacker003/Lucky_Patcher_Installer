@@ -44,7 +44,7 @@
     .locals 3
 
     .line 1
-    sget-object v0, Lʾˉ/ᴵᴵ;->ʽˉ:Lʾˉ/ʽ;
+    sget-object v0, Lʾˉ/ʼʼ;->ʽˉ:Lʾˉ/ʽ;
 
     .line 2
     .line 3
@@ -72,20 +72,20 @@
 
     .line 14
     .line 15
-    sget-object v0, Lʾˉ/ᴵᴵ;->ʼᴵ:Lʾˉ/ᵔ;
+    sget-object v0, Lʾˉ/ʼʼ;->ʼᴵ:Lʾˉ/ﹳ;
 
     .line 16
     .line 17
-    sget-object v2, Lʾˉ/ᴵᴵ;->ʼᵎ:Lʾˉ/ᵎ;
+    sget-object v2, Lʾˉ/ʼʼ;->ʼᵎ:Lʾˉ/ᵎ;
 
     .line 18
     .line 19
-    invoke-virtual {v0, v2}, Lʾˉ/ᵔ;->ˊ(Lʾˉ/ᵎ;)V
+    invoke-virtual {v0, v2}, Lʾˉ/ﹳ;->ˎ(Lʾˉ/ᵎ;)V
 
     .line 20
     .line 21
     .line 22
-    invoke-static {}, Lʾˉ/ᴵᴵ;->ˈˏ()Landroid/content/SharedPreferences;
+    invoke-static {}, Lʾˉ/ʼʼ;->ˈˏ()Landroid/content/SharedPreferences;
 
     .line 23
     .line 24

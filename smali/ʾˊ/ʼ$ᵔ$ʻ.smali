@@ -55,7 +55,7 @@
     .locals 3
 
     .line 1
-    sget-object v0, Lʾˉ/ᴵᴵ;->ʽˈ:Lʾˉ/ʽ;
+    sget-object v0, Lʾˉ/ʼʼ;->ʽˈ:Lʾˉ/ʽ;
 
     .line 2
     .line 3
@@ -75,24 +75,24 @@
 
     .line 10
     .line 11
-    sget-object v1, Lʾˉ/ᴵᴵ;->ʼˎ:Lʾˉ/ᴵᴵ;
+    sget-object v1, Lʾˉ/ʼʼ;->ʼˎ:Lʾˉ/ʼʼ;
 
     .line 12
     .line 13
-    sget-object v2, Lʾˉ/ᴵᴵ;->ʼᵎ:Lʾˉ/ᵎ;
+    sget-object v2, Lʾˉ/ʼʼ;->ʼᵎ:Lʾˉ/ᵎ;
 
     .line 14
     .line 15
-    invoke-virtual {v1, v2, v0}, Lʾˉ/ᴵᴵ;->ˆﹶ(Lʾˉ/ᵎ;Lʾˉ/ᴵ;)V
+    invoke-virtual {v1, v2, v0}, Lʾˉ/ʼʼ;->ˆﹶ(Lʾˉ/ᵎ;Lʾˉ/ᴵ;)V
 
     .line 16
     .line 17
     .line 18
-    sget-object v0, Lʾˉ/ᴵᴵ;->ʼˎ:Lʾˉ/ᴵᴵ;
+    sget-object v0, Lʾˉ/ʼʼ;->ʼˎ:Lʾˉ/ʼʼ;
 
     .line 19
     .line 20
-    invoke-virtual {v0}, Lʾˉ/ᴵᴵ;->ˆˊ()V
+    invoke-virtual {v0}, Lʾˉ/ʼʼ;->ˆˊ()V
 
     .line 21
     .line 22
@@ -106,7 +106,7 @@
     .line 26
     .line 27
     .line 28
-    invoke-static {v0}, Lʾˉ/ᴵᴵ;->ˊⁱ(Ljava/lang/Runnable;)V
+    invoke-static {v0}, Lʾˉ/ʼʼ;->ˊⁱ(Ljava/lang/Runnable;)V
 
     .line 29
     .line 30

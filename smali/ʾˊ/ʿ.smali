@@ -1,10 +1,10 @@
 .class public Lʾˊ/ʿ;
-.super Landroidx/fragment/app/Fragment;
+.super Ljava/lang/Object;
 .source "SourceFile"
 
 
 # instance fields
-.field ʻˆ:Lcom/ui/EditTextFix;
+.field ʻ:Landroid/app/Dialog;
 
 
 # direct methods
@@ -12,7 +12,7 @@
     .locals 1
 
     .line 1
-    invoke-direct {p0}, Landroidx/fragment/app/Fragment;-><init>()V
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
     .line 3
@@ -20,7 +20,7 @@
     const/4 v0, 0x0
 
     .line 5
-    iput-object v0, p0, Lʾˊ/ʿ;->ʻˆ:Lcom/ui/EditTextFix;
+    iput-object v0, p0, Lʾˊ/ʿ;->ʻ:Landroid/app/Dialog;
 
     .line 6
     .line 7
@@ -29,250 +29,421 @@
 
 
 # virtual methods
-.method public ʻˏ(Landroid/os/Bundle;)V
-    .locals 0
-
-    .line 1
-    invoke-super {p0, p1}, Landroidx/fragment/app/Fragment;->ʻˏ(Landroid/os/Bundle;)V
-
-    .line 2
-    .line 3
-    .line 4
-    return-void
-.end method
-
-.method public ʻٴ(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
+.method public ʻ()V
     .locals 1
 
     .line 1
-    invoke-super {p0, p1, p2, p3}, Landroidx/fragment/app/Fragment;->ʻٴ(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
+    iget-object v0, p0, Lʾˊ/ʿ;->ʻ:Landroid/app/Dialog;
 
     .line 2
     .line 3
-    .line 4
-    const p3, 0x7f0c0053
+    if-eqz v0, :cond_0
 
+    .line 4
     .line 5
+    invoke-virtual {v0}, Landroid/app/Dialog;->dismiss()V
+
     .line 6
     .line 7
+    .line 8
     const/4 v0, 0x0
 
+    .line 9
+    iput-object v0, p0, Lʾˊ/ʿ;->ʻ:Landroid/app/Dialog;
+
+    .line 10
+    .line 11
+    :cond_0
+    return-void
+.end method
+
+.method public ʼ()Landroid/app/Dialog;
+    .locals 8
+
+    .line 1
+    const-string v0, "Integrate Dalvik Code Dialog create."
+
+    .line 2
+    .line 3
+    invoke-static {v0}, Lʾˉ/ʼʼ;->ˉˎ(Ljava/lang/Object;)V
+
+    .line 4
+    .line 5
+    .line 6
+    sget-object v0, Lʾˉ/ʼʼ;->ʼᵎ:Lʾˉ/ᵎ;
+
+    .line 7
     .line 8
-    invoke-virtual {p1, p3, p2, v0}, Landroid/view/LayoutInflater;->inflate(ILandroid/view/ViewGroup;Z)Landroid/view/View;
+    sget-object v1, Lʾˉ/ʼʼ;->ʼˎ:Lʾˉ/ʼʼ;
 
     .line 9
     .line 10
-    .line 11
-    move-result-object p1
+    if-eqz v1, :cond_0
 
+    .line 11
     .line 12
-    const p2, 0x7f0900ee
+    invoke-virtual {v1}, Lʾˉ/ʼʼ;->ˈˑ()Landroidx/fragment/app/ʿ;
 
     .line 13
     .line 14
     .line 15
-    invoke-virtual {p1, p2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
+    move-result-object v1
 
     .line 16
+    if-nez v1, :cond_1
+
     .line 17
     .line 18
-    move-result-object p2
+    :cond_0
+    invoke-virtual {p0}, Lʾˊ/ʿ;->ʻ()V
 
     .line 19
-    check-cast p2, Lcom/ui/EditTextFix;
-
     .line 20
     .line 21
-    iput-object p2, p0, Lʾˊ/ʿ;->ʻˆ:Lcom/ui/EditTextFix;
+    :cond_1
+    sget-object v1, Lʾˉ/ʼʼ;->ʼˎ:Lʾˉ/ʼʼ;
 
     .line 22
     .line 23
-    invoke-virtual {p2}, Landroid/view/View;->requestFocus()Z
+    invoke-virtual {v1}, Lʾˉ/ʼʼ;->ˈˑ()Landroidx/fragment/app/ʿ;
 
     .line 24
     .line 25
     .line 26
-    invoke-virtual {p0}, Landroidx/fragment/app/Fragment;->ˆ()Landroidx/fragment/app/ʿ;
+    move-result-object v1
 
     .line 27
+    const v2, 0x7f0c008f
+
     .line 28
     .line 29
-    move-result-object p2
-
     .line 30
-    const-string p3, "input_method"
+    const/4 v3, 0x0
 
     .line 31
-    .line 32
-    invoke-virtual {p2, p3}, Landroid/content/Context;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
+    invoke-static {v1, v2, v3}, Landroid/view/View;->inflate(Landroid/content/Context;ILandroid/view/ViewGroup;)Landroid/view/View;
 
+    .line 32
     .line 33
     .line 34
+    move-result-object v1
+
     .line 35
-    move-result-object p2
+    check-cast v1, Landroid/widget/LinearLayout;
 
     .line 36
-    check-cast p2, Landroid/view/inputmethod/InputMethodManager;
-
     .line 37
-    .line 38
-    if-eqz p2, :cond_0
+    const v2, 0x7f0901a9
 
+    .line 38
     .line 39
     .line 40
-    const/4 p3, 0x1
+    invoke-virtual {v1, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
     .line 41
-    invoke-virtual {p2, p3, p3}, Landroid/view/inputmethod/InputMethodManager;->toggleSoftInput(II)V
-
     .line 42
     .line 43
+    move-result-object v2
+
     .line 44
-    :cond_0
-    const p2, 0x7f090077
+    const v4, 0x7f0900d6
 
     .line 45
     .line 46
     .line 47
-    invoke-virtual {p1, p2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
+    invoke-virtual {v2, v4}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
     .line 48
     .line 49
     .line 50
-    move-result-object p2
+    move-result-object v2
 
     .line 51
-    check-cast p2, Landroid/widget/Button;
+    check-cast v2, Landroid/widget/LinearLayout;
 
     .line 52
     .line 53
-    new-instance p3, Lʾˊ/ʿ$ʻ;
+    const v4, 0x7f0901aa
 
     .line 54
     .line 55
-    invoke-direct {p3, p0}, Lʾˊ/ʿ$ʻ;-><init>(Lʾˊ/ʿ;)V
-
     .line 56
+    invoke-virtual {v2, v4}, Landroid/view/View;->findViewById(I)Landroid/view/View;
+
     .line 57
     .line 58
-    invoke-virtual {p2, p3}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
-
     .line 59
+    move-result-object v2
+
     .line 60
+    check-cast v2, Landroid/widget/TextView;
+
     .line 61
-    const p2, 0x7f090071
-
     .line 62
-    .line 63
-    .line 64
-    invoke-virtual {p1, p2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
+    const/4 v4, 0x1
 
+    .line 63
+    :try_start_0
+    new-instance v5, Lʼˑ/ʼ;
+
+    .line 64
     .line 65
+    invoke-direct {v5}, Lʼˑ/ʼ;-><init>()V
+
     .line 66
     .line 67
-    move-result-object p2
-
     .line 68
-    check-cast p2, Landroid/widget/Button;
+    iput-boolean v4, v5, Lʼˑ/ʼ;->ˊ:Z
 
     .line 69
     .line 70
-    new-instance p3, Lʾˊ/ʿ$ʼ;
+    const/4 v6, 0x0
 
     .line 71
-    .line 72
-    invoke-direct {p3, p0}, Lʾˊ/ʿ$ʼ;-><init>(Lʾˊ/ʿ;)V
+    iput-boolean v6, v5, Lʼˑ/ʼ;->ᵢᵢ:Z
 
+    .line 72
     .line 73
+    sget-object v6, Lʾˉ/ʼʼ;->ʼי:Ljava/lang/String;
+
     .line 74
     .line 75
-    invoke-virtual {p2, p3}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
+    invoke-static {v2, v6, v5}, Lʾˉ/ʼʼ;->ˊʼ(Landroid/widget/TextView;Ljava/lang/String;Lʼˑ/ʼ;)V
 
     .line 76
     .line 77
     .line 78
-    new-instance p2, Lʾˊ/ʿ$ʽ;
+    const v5, 0x7f1102ed
 
     .line 79
     .line 80
-    invoke-direct {p2, p0}, Lʾˊ/ʿ$ʽ;-><init>(Lʾˊ/ʿ;)V
-
     .line 81
+    invoke-static {v5}, Lʼˏ/ᵢ;->ˈי(I)Ljava/lang/String;
+
     .line 82
     .line 83
-    iget-object p3, p0, Lʾˊ/ʿ;->ʻˆ:Lcom/ui/EditTextFix;
-
     .line 84
+    move-result-object v5
+
     .line 85
-    invoke-virtual {p3, p2}, Landroid/widget/TextView;->addTextChangedListener(Landroid/text/TextWatcher;)V
+    const-string v6, "#00FF00"
 
     .line 86
     .line 87
+    const-string v7, ""
+
     .line 88
-    return-object p1
+    .line 89
+    invoke-static {v5, v6, v7}, Lʼˏ/ᵢ;->ʾʿ(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Landroid/text/SpannableString;
+
+    .line 90
+    .line 91
+    .line 92
+    move-result-object v5
+
+    .line 93
+    invoke-virtual {v2, v5}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
+
+    .line 94
+    .line 95
+    .line 96
+    sget-object v5, Lʾˉ/ʼʼ;->ʼˎ:Lʾˉ/ʼʼ;
+
+    .line 97
+    .line 98
+    invoke-virtual {v5}, Lʾˉ/ʼʼ;->ˈˑ()Landroidx/fragment/app/ʿ;
+
+    .line 99
+    .line 100
+    .line 101
+    move-result-object v5
+
+    .line 102
+    invoke-static {}, Lʾˉ/ʼʼ;->ˈᵢ()I
+
+    .line 103
+    .line 104
+    .line 105
+    move-result v6
+
+    .line 106
+    invoke-virtual {v2, v5, v6}, Landroid/widget/TextView;->setTextAppearance(Landroid/content/Context;I)V
+    :try_end_0
+    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
+
+    .line 107
+    .line 108
+    .line 109
+    goto :goto_0
+
+    .line 110
+    :catch_0
+    move-exception v2
+
+    .line 111
+    invoke-virtual {v2}, Ljava/lang/Throwable;->printStackTrace()V
+
+    .line 112
+    .line 113
+    .line 114
+    :goto_0
+    new-instance v2, Lʾˉ/ʼ;
+
+    .line 115
+    .line 116
+    sget-object v5, Lʾˉ/ʼʼ;->ʼˎ:Lʾˉ/ʼʼ;
+
+    .line 117
+    .line 118
+    invoke-virtual {v5}, Lʾˉ/ʼʼ;->ˈˑ()Landroidx/fragment/app/ʿ;
+
+    .line 119
+    .line 120
+    .line 121
+    move-result-object v5
+
+    .line 122
+    invoke-direct {v2, v5}, Lʾˉ/ʼ;-><init>(Landroid/content/Context;)V
+
+    .line 123
+    .line 124
+    .line 125
+    const v5, 0x7f080095
+
+    .line 126
+    .line 127
+    .line 128
+    invoke-virtual {v2, v5}, Lʾˉ/ʼ;->ᵔ(I)Lʾˉ/ʼ;
+
+    .line 129
+    .line 130
+    .line 131
+    const v5, 0x7f1102ee
+
+    .line 132
+    .line 133
+    .line 134
+    invoke-static {v5}, Lʼˏ/ᵢ;->ˈי(I)Ljava/lang/String;
+
+    .line 135
+    .line 136
+    .line 137
+    move-result-object v5
+
+    .line 138
+    invoke-virtual {v2, v5}, Lʾˉ/ʼ;->ˉˉ(Ljava/lang/String;)Lʾˉ/ʼ;
+
+    .line 139
+    .line 140
+    .line 141
+    invoke-virtual {v2, v4}, Lʾˉ/ʼ;->ˑ(Z)Lʾˉ/ʼ;
+
+    .line 142
+    .line 143
+    .line 144
+    move-result-object v2
+
+    .line 145
+    const v4, 0x7f1103ab
+
+    .line 146
+    .line 147
+    .line 148
+    invoke-static {v4}, Lʼˏ/ᵢ;->ˈי(I)Ljava/lang/String;
+
+    .line 149
+    .line 150
+    .line 151
+    move-result-object v4
+
+    .line 152
+    invoke-virtual {v2, v4, v3}, Lʾˉ/ʼ;->ʼʼ(Ljava/lang/String;Landroid/content/DialogInterface$OnClickListener;)Lʾˉ/ʼ;
+
+    .line 153
+    .line 154
+    .line 155
+    move-result-object v2
+
+    .line 156
+    new-instance v3, Lʾˊ/ʿ$ʻ;
+
+    .line 157
+    .line 158
+    invoke-direct {v3, p0, v0}, Lʾˊ/ʿ$ʻ;-><init>(Lʾˊ/ʿ;Lʾˉ/ᵎ;)V
+
+    .line 159
+    .line 160
+    .line 161
+    const v0, 0x7f1102fb
+
+    .line 162
+    .line 163
+    .line 164
+    invoke-virtual {v2, v0, v3}, Lʾˉ/ʼ;->ﾞ(ILandroid/content/DialogInterface$OnClickListener;)Lʾˉ/ʼ;
+
+    .line 165
+    .line 166
+    .line 167
+    move-result-object v0
+
+    .line 168
+    invoke-virtual {v0, v1}, Lʾˉ/ʼ;->ˈˈ(Landroid/view/View;)Lʾˉ/ʼ;
+
+    .line 169
+    .line 170
+    .line 171
+    move-result-object v0
+
+    .line 172
+    invoke-virtual {v0}, Lʾˉ/ʼ;->ʻ()Landroid/app/Dialog;
+
+    .line 173
+    .line 174
+    .line 175
+    move-result-object v0
+
+    .line 176
+    return-object v0
 .end method
 
-.method public ʻᐧ()V
-    .locals 3
+.method public ʽ()V
+    .locals 1
 
     .line 1
-    invoke-static {}, Lʾˉ/ᴵᴵ;->ˈי()Landroid/content/Context;
+    iget-object v0, p0, Lʾˊ/ʿ;->ʻ:Landroid/app/Dialog;
 
     .line 2
     .line 3
-    .line 4
-    move-result-object v0
+    if-nez v0, :cond_0
 
+    .line 4
     .line 5
-    const-string v1, "input_method"
+    invoke-virtual {p0}, Lʾˊ/ʿ;->ʼ()Landroid/app/Dialog;
 
     .line 6
     .line 7
-    invoke-virtual {v0, v1}, Landroid/content/Context;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
-
     .line 8
-    .line 9
-    .line 10
     move-result-object v0
 
+    .line 9
+    iput-object v0, p0, Lʾˊ/ʿ;->ʻ:Landroid/app/Dialog;
+
+    .line 10
     .line 11
-    check-cast v0, Landroid/view/inputmethod/InputMethodManager;
+    :cond_0
+    iget-object v0, p0, Lʾˊ/ʿ;->ʻ:Landroid/app/Dialog;
 
     .line 12
     .line 13
-    if-eqz v0, :cond_0
+    if-eqz v0, :cond_1
 
     .line 14
     .line 15
-    iget-object v1, p0, Lʾˊ/ʿ;->ʻˆ:Lcom/ui/EditTextFix;
+    invoke-virtual {v0}, Landroid/app/Dialog;->show()V
 
     .line 16
     .line 17
-    if-eqz v1, :cond_0
-
     .line 18
-    .line 19
-    invoke-virtual {v1}, Landroid/view/View;->getWindowToken()Landroid/os/IBinder;
-
-    .line 20
-    .line 21
-    .line 22
-    move-result-object v1
-
-    .line 23
-    const/4 v2, 0x0
-
-    .line 24
-    invoke-virtual {v0, v1, v2}, Landroid/view/inputmethod/InputMethodManager;->hideSoftInputFromWindow(Landroid/os/IBinder;I)Z
-
-    .line 25
-    .line 26
-    .line 27
-    :cond_0
-    invoke-super {p0}, Landroidx/fragment/app/Fragment;->ʻᐧ()V
-
-    .line 28
-    .line 29
-    .line 30
+    :cond_1
     return-void
 .end method

@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lʾˊ/ˑ;->ʿ(Ljava/lang/String;)V
+    value = Lʾˊ/ˑ;->ˉ(Ljava/lang/String;)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -44,22 +44,27 @@
     .locals 1
 
     .line 1
-    sget-object v0, Lʾˉ/ᴵᴵ;->ʼˎ:Lʾˉ/ᴵᴵ;
+    sget-object v0, Lʾˉ/ʼʼ;->ʼˎ:Lʾˉ/ʼʼ;
 
     .line 2
     .line 3
-    invoke-virtual {v0}, Landroidx/fragment/app/Fragment;->ˏ()Landroidx/fragment/app/ـ;
+    if-eqz v0, :cond_0
 
     .line 4
     .line 5
+    invoke-virtual {v0}, Landroidx/fragment/app/Fragment;->ˏ()Landroidx/fragment/app/ـ;
+
     .line 6
+    .line 7
+    .line 8
     move-result-object v0
 
-    .line 7
+    .line 9
     invoke-virtual {v0}, Landroidx/fragment/app/ـ;->ʻˉ()Z
 
-    .line 8
-    .line 9
     .line 10
+    .line 11
+    .line 12
+    :cond_0
     return-void
 .end method

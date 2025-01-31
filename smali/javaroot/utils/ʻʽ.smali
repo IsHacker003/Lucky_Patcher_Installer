@@ -25,7 +25,7 @@
     .line 4
     .line 5
     .line 6
-    invoke-static {v0}, Lʼˏ/ᵎ;->ˏᵢ(Ljava/lang/Object;)V
+    invoke-static {v0}, Lʼˏ/ᵢ;->ˑʿ(Ljava/lang/Object;)V
 
     .line 7
     .line 8
@@ -945,7 +945,7 @@
     :catch_2
     :cond_11
     :goto_9
-    invoke-static {}, Lʼˏ/ᵎ;->ʼˉ()V
+    invoke-static {}, Lʼˏ/ᵢ;->ʼˎ()V
 
     .line 441
     .line 442

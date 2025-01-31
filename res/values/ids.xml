@@ -208,6 +208,7 @@
     <item type="id" name="image_install" />
     <item type="id" name="imgIcon" />
     <item type="id" name="inapp" />
+    <item type="id" name="inappIcon" />
     <item type="id" name="increment_info_layout" />
     <item type="id" name="increment_text_progress" />
     <item type="id" name="info" />

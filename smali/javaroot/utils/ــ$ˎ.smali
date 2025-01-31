@@ -32,7 +32,7 @@
     .line 2
     .line 3
     .line 4
-    sget v0, Lʾˉ/ᴵᴵ;->ʾᐧ:I
+    sget v0, Lʾˉ/ʼʼ;->ʾᐧ:I
 
     .line 5
     .line 6
@@ -44,7 +44,7 @@
 
     .line 9
     .line 10
-    sget-boolean v0, Ljavaroot/utils/ــ;->ˑˎ:Z
+    sget-boolean v0, Ljavaroot/utils/ــ;->ˑˏ:Z
 
     .line 11
     .line 12

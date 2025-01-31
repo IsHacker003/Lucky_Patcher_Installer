@@ -821,7 +821,7 @@
 
     .line 365
     .line 366
-    sget v0, Lʾˉ/ᴵᴵ;->ʾᐧ:I
+    sget v0, Lʾˉ/ʼʼ;->ʾᐧ:I
 
     .line 367
     .line 368

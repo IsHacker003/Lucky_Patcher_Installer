@@ -25,7 +25,7 @@
     .line 4
     .line 5
     .line 6
-    invoke-static {p0}, Lʼˏ/ᵎ;->ˏᵢ(Ljava/lang/Object;)V
+    invoke-static {p0}, Lʼˏ/ᵢ;->ˑʿ(Ljava/lang/Object;)V
 
     .line 7
     .line 8
@@ -97,7 +97,7 @@
 
     .line 38
     .line 39
-    invoke-static {v4, v5}, Lʼˏ/ᵎ;->ᐧ(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v4, v5}, Lʼˏ/ᵢ;->ᵎ(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     .line 40
     .line 41
@@ -311,7 +311,7 @@
     .line 141
     .line 142
     :cond_3
-    invoke-static {}, Lʼˏ/ᵎ;->ʼˉ()V
+    invoke-static {}, Lʼˏ/ᵢ;->ʼˎ()V
 
     .line 143
     .line 144

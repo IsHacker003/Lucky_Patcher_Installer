@@ -483,7 +483,7 @@
 
     .line 31
     .line 32
-    new-instance p1, Lʼˏ/ᵎ;
+    new-instance p1, Lʼˏ/ᵢ;
 
     .line 33
     .line 34
@@ -491,7 +491,7 @@
 
     .line 35
     .line 36
-    invoke-direct {p1, p2}, Lʼˏ/ᵎ;-><init>(Ljava/lang/String;)V
+    invoke-direct {p1, p2}, Lʼˏ/ᵢ;-><init>(Ljava/lang/String;)V
 
     .line 37
     .line 38
@@ -500,7 +500,7 @@
 
     .line 40
     .line 41
-    invoke-virtual {p1, v0, v1}, Lʼˏ/ᵎ;->ˑᐧ(J)V
+    invoke-virtual {p1, v0, v1}, Lʼˏ/ᵢ;->יʼ(J)V
 
     .line 42
     .line 43

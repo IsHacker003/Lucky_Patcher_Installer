@@ -769,7 +769,7 @@
     move-result-object p1
 
     .line 21
-    sget-boolean v0, Lʾˉ/ᴵᴵ;->ˆﹶ:Z
+    sget-boolean v0, Lʾˉ/ʼʼ;->ˆﹶ:Z
 
     .line 22
     .line 23
@@ -812,11 +812,11 @@
 
     .line 41
     .line 42
-    sput-boolean v1, Lʾˉ/ᴵᴵ;->ˆﾞ:Z
+    sput-boolean v1, Lʾˉ/ʼʼ;->ˆﾞ:Z
 
     .line 43
     .line 44
-    sget-object p1, Lʼˏ/ᵎ;->ˏ:Ljava/lang/String;
+    sget-object p1, Lʼˏ/ᵢ;->ˏ:Ljava/lang/String;
 
     .line 45
     .line 46
@@ -824,7 +824,7 @@
 
     .line 47
     :cond_0
-    sget-object v0, Lʾˉ/ᴵᴵ;->ˆᵢ:Ljava/util/ArrayList;
+    sget-object v0, Lʾˉ/ʼʼ;->ˆᵢ:Ljava/util/ArrayList;
 
     .line 48
     .line 49
@@ -840,7 +840,7 @@
 
     .line 54
     .line 55
-    sget-object v0, Lʾˉ/ᴵᴵ;->ˆᵢ:Ljava/util/ArrayList;
+    sget-object v0, Lʾˉ/ʼʼ;->ˆᵢ:Ljava/util/ArrayList;
 
     .line 56
     .line 57

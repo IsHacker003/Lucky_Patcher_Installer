@@ -3,8 +3,18 @@
 .source "SourceFile"
 
 
+# static fields
+.field public static ʿ:Lʾˉ/ﹶ;
+
+
 # instance fields
-.field ʻ:Landroid/app/Dialog;
+.field ʻ:Ljava/lang/String;
+
+.field ʼ:Ljava/lang/String;
+
+.field ʽ:Landroidx/fragment/app/ـ;
+
+.field ʾ:Landroid/app/Dialog;
 
 
 # direct methods
@@ -17,14 +27,46 @@
     .line 2
     .line 3
     .line 4
-    const/4 v0, 0x0
+    const-string v0, ""
 
     .line 5
-    iput-object v0, p0, Lʾˊ/ˎ;->ʻ:Landroid/app/Dialog;
-
     .line 6
+    iput-object v0, p0, Lʾˊ/ˎ;->ʻ:Ljava/lang/String;
+
     .line 7
+    .line 8
+    iput-object v0, p0, Lʾˊ/ˎ;->ʼ:Ljava/lang/String;
+
+    .line 9
+    .line 10
+    const/4 v0, 0x0
+
+    .line 11
+    iput-object v0, p0, Lʾˊ/ˎ;->ʽ:Landroidx/fragment/app/ـ;
+
+    .line 12
+    .line 13
+    iput-object v0, p0, Lʾˊ/ˎ;->ʾ:Landroid/app/Dialog;
+
+    .line 14
+    .line 15
     return-void
+.end method
+
+.method public static ʼ()Lʾˊ/ˎ;
+    .locals 1
+
+    .line 1
+    new-instance v0, Lʾˊ/ˎ;
+
+    .line 2
+    .line 3
+    invoke-direct {v0}, Lʾˊ/ˎ;-><init>()V
+
+    .line 4
+    .line 5
+    .line 6
+    return-object v0
 .end method
 
 
@@ -33,7 +75,7 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lʾˊ/ˎ;->ʻ:Landroid/app/Dialog;
+    iget-object v0, p0, Lʾˊ/ˎ;->ʾ:Landroid/app/Dialog;
 
     .line 2
     .line 3
@@ -49,7 +91,7 @@
     const/4 v0, 0x0
 
     .line 9
-    iput-object v0, p0, Lʾˊ/ˎ;->ʻ:Landroid/app/Dialog;
+    iput-object v0, p0, Lʾˊ/ˎ;->ʾ:Landroid/app/Dialog;
 
     .line 10
     .line 11
@@ -57,182 +99,207 @@
     return-void
 .end method
 
-.method public ʼ()Landroid/app/Dialog;
+.method public ʽ()Landroid/app/Dialog;
     .locals 3
 
     .line 1
-    :try_start_0
-    const-string v0, "Menu Dialog create."
+    new-instance v0, Lʾˉ/ﹶ;
 
     .line 2
     .line 3
-    invoke-static {v0}, Lʾˉ/ᴵᴵ;->ˉˎ(Ljava/lang/Object;)V
+    sget-object v1, Lʾˉ/ʼʼ;->ʼˎ:Lʾˉ/ʼʼ;
 
     .line 4
     .line 5
-    .line 6
-    sget-object v0, Lʾˉ/ᴵᴵ;->ʼˎ:Lʾˉ/ᴵᴵ;
+    invoke-virtual {v1}, Lʾˉ/ʼʼ;->ˈˑ()Landroidx/fragment/app/ʿ;
 
+    .line 6
     .line 7
     .line 8
-    if-eqz v0, :cond_0
+    move-result-object v1
 
     .line 9
+    const/4 v2, 0x0
+
     .line 10
-    invoke-virtual {v0}, Lʾˉ/ᴵᴵ;->ˈˑ()Landroidx/fragment/app/ʿ;
+    invoke-direct {v0, v1, v2}, Lʾˉ/ﹶ;-><init>(Landroid/content/Context;Z)V
 
     .line 11
     .line 12
     .line 13
-    move-result-object v0
+    sput-object v0, Lʾˊ/ˎ;->ʿ:Lʾˉ/ﹶ;
 
     .line 14
-    if-nez v0, :cond_1
-
     .line 15
-    .line 16
-    goto :goto_0
+    iget-object v0, p0, Lʾˊ/ˎ;->ʼ:Ljava/lang/String;
 
+    .line 16
     .line 17
-    :catch_0
-    move-exception v0
+    const-string v1, ""
 
     .line 18
-    goto :goto_1
-
     .line 19
-    :cond_0
-    :goto_0
-    invoke-virtual {p0}, Lʾˊ/ˎ;->ʻ()V
+    invoke-virtual {v0, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     .line 20
     .line 21
     .line 22
-    :cond_1
-    new-instance v0, Lʾˉ/ʼ;
+    move-result v0
 
     .line 23
+    if-eqz v0, :cond_0
+
     .line 24
-    sget-object v1, Lʾˉ/ᴵᴵ;->ʼˎ:Lʾˉ/ᴵᴵ;
-
     .line 25
-    .line 26
-    invoke-virtual {v1}, Lʾˉ/ᴵᴵ;->ˈˑ()Landroidx/fragment/app/ʿ;
+    const v0, 0x7f1104d2
 
+    .line 26
     .line 27
     .line 28
+    invoke-static {v0}, Lʼˏ/ᵢ;->ˈי(I)Ljava/lang/String;
+
     .line 29
-    move-result-object v1
-
     .line 30
-    invoke-direct {v0, v1}, Lʾˉ/ʼ;-><init>(Landroid/content/Context;)V
-
     .line 31
+    move-result-object v0
+
     .line 32
+    iput-object v0, p0, Lʾˊ/ˎ;->ʼ:Ljava/lang/String;
+
     .line 33
-    new-instance v1, Lʾˊ/ˎ$ʻ;
-
     .line 34
-    .line 35
-    invoke-direct {v1, p0}, Lʾˊ/ˎ$ʻ;-><init>(Lʾˊ/ˎ;)V
+    :cond_0
+    sget-object v0, Lʾˊ/ˎ;->ʿ:Lʾˉ/ﹶ;
 
+    .line 35
     .line 36
+    iget-object v2, p0, Lʾˊ/ˎ;->ʼ:Ljava/lang/String;
+
     .line 37
     .line 38
-    const v2, 0x7f110435
+    invoke-virtual {v0, v2}, Lʾˉ/ﹶ;->י(Ljava/lang/String;)Lʾˉ/ﹶ;
 
     .line 39
     .line 40
     .line 41
-    invoke-virtual {v0, v2, v1}, Lʾˉ/ʼ;->ʽʽ(ILandroid/content/DialogInterface$OnClickListener;)Lʾˉ/ʼ;
+    iget-object v0, p0, Lʾˊ/ˎ;->ʻ:Ljava/lang/String;
 
     .line 42
     .line 43
-    .line 44
-    sget-object v1, Lʾˉ/ᴵᴵ;->ʽˆ:Landroid/widget/ArrayAdapter;
+    invoke-virtual {v0, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
+    .line 44
     .line 45
     .line 46
-    if-eqz v1, :cond_2
+    move-result v0
 
     .line 47
-    .line 48
-    const/4 v2, 0x1
+    if-eqz v0, :cond_1
 
+    .line 48
     .line 49
-    invoke-virtual {v1, v2}, Landroid/widget/ArrayAdapter;->setNotifyOnChange(Z)V
+    const v0, 0x7f1102ff
 
     .line 50
     .line 51
     .line 52
-    invoke-virtual {v0, v2}, Lʾˉ/ʼ;->ˎ(Z)Lʾˉ/ʼ;
+    invoke-static {v0}, Lʼˏ/ᵢ;->ˈי(I)Ljava/lang/String;
 
     .line 53
     .line 54
     .line 55
-    sget-object v1, Lʾˉ/ᴵᴵ;->ʽˆ:Landroid/widget/ArrayAdapter;
+    move-result-object v0
 
     .line 56
+    iput-object v0, p0, Lʾˊ/ˎ;->ʻ:Ljava/lang/String;
+
     .line 57
-    new-instance v2, Lʾˊ/ˎ$ʼ;
-
     .line 58
-    .line 59
-    invoke-direct {v2, p0}, Lʾˊ/ˎ$ʼ;-><init>(Lʾˊ/ˎ;)V
+    :cond_1
+    sget-object v0, Lʾˊ/ˎ;->ʿ:Lʾˉ/ﹶ;
 
+    .line 59
     .line 60
+    iget-object v1, p0, Lʾˊ/ˎ;->ʻ:Ljava/lang/String;
+
     .line 61
     .line 62
-    invoke-virtual {v0, v1, v2}, Lʾˉ/ʼ;->ˋ(Landroid/widget/ArrayAdapter;Landroid/widget/AdapterView$OnItemClickListener;)Lʾˉ/ʼ;
+    invoke-virtual {v0, v1}, Lʾˉ/ﹶ;->ˋ(Ljava/lang/String;)Lʾˉ/ﹶ;
 
     .line 63
     .line 64
     .line 65
-    :cond_2
-    new-instance v1, Lʾˊ/ˎ$ʽ;
+    sget-object v0, Lʾˊ/ˎ;->ʿ:Lʾˉ/ﹶ;
 
     .line 66
     .line 67
-    invoke-direct {v1, p0}, Lʾˊ/ˎ$ʽ;-><init>(Lʾˊ/ˎ;)V
+    const/4 v1, 0x1
 
     .line 68
+    invoke-virtual {v0, v1}, Lʾˉ/ﹶ;->ʿ(Z)Lʾˉ/ﹶ;
+
     .line 69
     .line 70
-    invoke-virtual {v0, v1}, Lʾˉ/ʼ;->ᐧᐧ(Landroid/content/DialogInterface$OnCancelListener;)Lʾˉ/ʼ;
-
     .line 71
+    sget-object v0, Lʾˊ/ˎ;->ʿ:Lʾˉ/ﹶ;
+
     .line 72
     .line 73
-    invoke-virtual {v0}, Lʾˉ/ʼ;->ʻ()Landroid/app/Dialog;
+    new-instance v1, Lʾˊ/ˎ$ʻ;
 
     .line 74
     .line 75
+    invoke-direct {v1, p0}, Lʾˊ/ˎ$ʻ;-><init>(Lʾˊ/ˎ;)V
+
     .line 76
-    move-result-object v0
-    :try_end_0
-    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
-
     .line 77
-    return-object v0
-
     .line 78
-    :goto_1
-    invoke-virtual {v0}, Ljava/lang/Throwable;->printStackTrace()V
+    invoke-virtual {v0, v1}, Lʾˉ/ﹶ;->ˎ(Landroid/content/DialogInterface$OnCancelListener;)Lʾˉ/ﹶ;
 
     .line 79
     .line 80
     .line 81
-    const/4 v0, 0x0
+    sget-object v0, Lʾˊ/ˎ;->ʿ:Lʾˉ/ﹶ;
 
     .line 82
+    .line 83
+    invoke-virtual {v0}, Lʾˉ/ﹶ;->ʻ()Landroid/app/Dialog;
+
+    .line 84
+    .line 85
+    .line 86
+    move-result-object v0
+
+    .line 87
     return-object v0
 .end method
 
-.method public ʽ()V
+.method public ʾ(Z)V
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lʾˊ/ˎ;->ʻ:Landroid/app/Dialog;
+    iget-object v0, p0, Lʾˊ/ˎ;->ʾ:Landroid/app/Dialog;
+
+    .line 2
+    .line 3
+    if-eqz v0, :cond_0
+
+    .line 4
+    .line 5
+    invoke-virtual {v0, p1}, Landroid/app/Dialog;->setCancelable(Z)V
+
+    .line 6
+    .line 7
+    .line 8
+    :cond_0
+    return-void
+.end method
+
+.method public ʿ(Ljava/lang/String;)V
+    .locals 1
+
+    .line 1
+    sget-object v0, Lʾˊ/ˎ;->ʿ:Lʾˉ/ﹶ;
 
     .line 2
     .line 3
@@ -240,7 +307,67 @@
 
     .line 4
     .line 5
-    invoke-virtual {p0}, Lʾˊ/ˎ;->ʼ()Landroid/app/Dialog;
+    invoke-virtual {p0}, Lʾˊ/ˎ;->ʽ()Landroid/app/Dialog;
+
+    .line 6
+    .line 7
+    .line 8
+    :cond_0
+    iput-object p1, p0, Lʾˊ/ˎ;->ʻ:Ljava/lang/String;
+
+    .line 9
+    .line 10
+    sget-object v0, Lʾˊ/ˎ;->ʿ:Lʾˉ/ﹶ;
+
+    .line 11
+    .line 12
+    invoke-virtual {v0, p1}, Lʾˉ/ﹶ;->ˋ(Ljava/lang/String;)Lʾˉ/ﹶ;
+
+    .line 13
+    .line 14
+    .line 15
+    sget-object p1, Lʾˉ/ʼʼ;->ʼˎ:Lʾˉ/ʼʼ;
+
+    .line 16
+    .line 17
+    invoke-virtual {p1}, Lʾˉ/ʼʼ;->ˈˑ()Landroidx/fragment/app/ʿ;
+
+    .line 18
+    .line 19
+    .line 20
+    move-result-object p1
+
+    .line 21
+    new-instance v0, Lʾˊ/ˎ$ʼ;
+
+    .line 22
+    .line 23
+    invoke-direct {v0, p0}, Lʾˊ/ˎ$ʼ;-><init>(Lʾˊ/ˎ;)V
+
+    .line 24
+    .line 25
+    .line 26
+    invoke-virtual {p1, v0}, Landroid/app/Activity;->runOnUiThread(Ljava/lang/Runnable;)V
+
+    .line 27
+    .line 28
+    .line 29
+    return-void
+.end method
+
+.method public ˆ()V
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lʾˊ/ˎ;->ʾ:Landroid/app/Dialog;
+
+    .line 2
+    .line 3
+    if-nez v0, :cond_0
+
+    .line 4
+    .line 5
+    invoke-virtual {p0}, Lʾˊ/ˎ;->ʽ()Landroid/app/Dialog;
 
     .line 6
     .line 7
@@ -248,12 +375,12 @@
     move-result-object v0
 
     .line 9
-    iput-object v0, p0, Lʾˊ/ˎ;->ʻ:Landroid/app/Dialog;
+    iput-object v0, p0, Lʾˊ/ˎ;->ʾ:Landroid/app/Dialog;
 
     .line 10
     .line 11
     :cond_0
-    iget-object v0, p0, Lʾˊ/ˎ;->ʻ:Landroid/app/Dialog;
+    iget-object v0, p0, Lʾˊ/ˎ;->ʾ:Landroid/app/Dialog;
 
     .line 12
     .line 13

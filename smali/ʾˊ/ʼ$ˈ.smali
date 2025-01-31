@@ -48,11 +48,11 @@
 
     .line 2
     .line 3
-    sget-object p1, Lʾˉ/ᴵᴵ;->ˈˉ:Ljava/lang/String;
+    sget-object p1, Lʾˉ/ʼʼ;->ˈˉ:Ljava/lang/String;
 
     .line 4
     .line 5
-    invoke-static {p1}, Lʼˏ/ᵎ;->ˑˆ(Ljava/lang/String;)V
+    invoke-static {p1}, Lʼˏ/ᵢ;->ˑٴ(Ljava/lang/String;)V
 
     .line 6
     .line 7
@@ -61,11 +61,11 @@
 
     .line 9
     :cond_0
-    sget-object p1, Lʾˉ/ᴵᴵ;->ˈˉ:Ljava/lang/String;
+    sget-object p1, Lʾˉ/ʼʼ;->ˈˉ:Ljava/lang/String;
 
     .line 10
     .line 11
-    invoke-static {p1}, Lʼˏ/ᵎ;->ˑʾ(Ljava/lang/String;)V
+    invoke-static {p1}, Lʼˏ/ᵢ;->ˑי(Ljava/lang/String;)V
 
     .line 12
     .line 13

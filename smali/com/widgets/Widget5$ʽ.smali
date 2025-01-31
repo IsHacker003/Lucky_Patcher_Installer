@@ -71,12 +71,12 @@
 
     .line 2
     .line 3
-    invoke-static {v0}, Lʼˏ/ᵎ;->ˊʾ(Ljava/lang/String;)V
+    invoke-static {v0}, Lʼˏ/ᵢ;->ˊˑ(Ljava/lang/String;)V
 
     .line 4
     .line 5
     .line 6
-    new-instance v1, Lʼˏ/ᵎ;
+    new-instance v1, Lʼˏ/ᵢ;
 
     .line 7
     .line 8
@@ -84,7 +84,7 @@
 
     .line 9
     .line 10
-    invoke-direct {v1, v2}, Lʼˏ/ᵎ;-><init>(Ljava/lang/String;)V
+    invoke-direct {v1, v2}, Lʼˏ/ᵢ;-><init>(Ljava/lang/String;)V
 
     .line 11
     .line 12
@@ -98,7 +98,7 @@
     .line 16
     .line 17
     .line 18
-    sget-object v3, Lʾˉ/ᴵᴵ;->ʾʻ:Ljava/lang/String;
+    sget-object v3, Lʾˉ/ʼʼ;->ʾʻ:Ljava/lang/String;
 
     .line 19
     .line 20
@@ -147,7 +147,7 @@
     .line 43
     .line 44
     .line 45
-    sget-object v4, Lʾˉ/ᴵᴵ;->ʼٴ:Ljava/lang/String;
+    sget-object v4, Lʾˉ/ʼʼ;->ʼٴ:Ljava/lang/String;
 
     .line 46
     .line 47
@@ -201,12 +201,12 @@
 
     .line 72
     .line 73
-    invoke-virtual {v1, v4}, Lʼˏ/ᵎ;->ˊˊ([Ljava/lang/String;)Ljava/lang/String;
+    invoke-virtual {v1, v4}, Lʼˏ/ᵢ;->ˎˎ([Ljava/lang/String;)Ljava/lang/String;
 
     .line 74
     .line 75
     .line 76
-    invoke-static {}, Lʾˉ/ᴵᴵ;->ˈᵎ()Landroid/content/pm/PackageManager;
+    invoke-static {}, Lʾˉ/ʼʼ;->ˈᵎ()Landroid/content/pm/PackageManager;
 
     .line 77
     .line 78
@@ -218,7 +218,7 @@
 
     .line 81
     .line 82
-    invoke-static {}, Lʾˉ/ᴵᴵ;->ˈי()Landroid/content/Context;
+    invoke-static {}, Lʾˉ/ʼʼ;->ˈי()Landroid/content/Context;
 
     .line 83
     .line 84
@@ -243,7 +243,7 @@
     .line 93
     .line 94
     .line 95
-    invoke-static {}, Lʾˉ/ᴵᴵ;->ˈᵎ()Landroid/content/pm/PackageManager;
+    invoke-static {}, Lʾˉ/ʼʼ;->ˈᵎ()Landroid/content/pm/PackageManager;
 
     .line 96
     .line 97
@@ -255,7 +255,7 @@
 
     .line 100
     .line 101
-    invoke-static {}, Lʾˉ/ᴵᴵ;->ˈי()Landroid/content/Context;
+    invoke-static {}, Lʾˉ/ʼʼ;->ˈי()Landroid/content/Context;
 
     .line 102
     .line 103
@@ -273,17 +273,17 @@
     .line 109
     .line 110
     .line 111
-    invoke-static {v3}, Lʼˏ/ᵎ;->ˊˈ(Z)V
+    invoke-static {v3}, Lʼˏ/ᵢ;->ˊٴ(Z)V
 
     .line 112
     .line 113
     .line 114
-    invoke-static {v3}, Lʼˏ/ᵎ;->ˊˋ(Z)V
+    invoke-static {v3}, Lʼˏ/ᵢ;->ˊᴵ(Z)V
 
     .line 115
     .line 116
     .line 117
-    invoke-static {v0}, Lʼˏ/ᵎ;->ˊʾ(Ljava/lang/String;)V
+    invoke-static {v0}, Lʼˏ/ᵢ;->ˊˑ(Ljava/lang/String;)V
 
     .line 118
     .line 119

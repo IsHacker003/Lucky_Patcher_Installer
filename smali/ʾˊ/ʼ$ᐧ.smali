@@ -71,7 +71,7 @@
     .line 4
     .line 5
     .line 6
-    invoke-static {p1}, Lʾˉ/ᴵᴵ;->ˋʻ(Ljava/lang/Runnable;)V
+    invoke-static {p1}, Lʾˉ/ʼʼ;->ˋʻ(Ljava/lang/Runnable;)V
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 

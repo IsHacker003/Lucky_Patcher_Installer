@@ -70,11 +70,11 @@
     move-result-object v0
 
     .line 20
-    check-cast v0, Lʼˏ/ᵎ$ʻʿ;
+    check-cast v0, Lʼˏ/ᵢ$ʻʿ;
 
     .line 21
     .line 22
-    iget-object v1, v0, Lʼˏ/ᵎ$ʻʿ;->ʻ:Ljava/lang/String;
+    iget-object v1, v0, Lʼˏ/ᵢ$ʻʿ;->ʻ:Ljava/lang/String;
 
     .line 23
     .line 24
@@ -132,7 +132,7 @@
     .line 50
     .line 51
     :cond_1
-    iget-object v0, v0, Lʼˏ/ᵎ$ʻʿ;->ʻ:Ljava/lang/String;
+    iget-object v0, v0, Lʼˏ/ᵢ$ʻʿ;->ʻ:Ljava/lang/String;
 
     .line 52
     .line 53

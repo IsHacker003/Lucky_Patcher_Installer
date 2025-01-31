@@ -3,12 +3,12 @@
 .source "SourceFile"
 
 # interfaces
-.implements Landroid/content/DialogInterface$OnClickListener;
+.implements Landroid/content/DialogInterface$OnCancelListener;
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lʾˊ/ˎ;->ʼ()Landroid/app/Dialog;
+    value = Lʾˊ/ˎ;->ʽ()Landroid/app/Dialog;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -40,23 +40,23 @@
 
 
 # virtual methods
-.method public onClick(Landroid/content/DialogInterface;I)V
+.method public onCancel(Landroid/content/DialogInterface;)V
     .locals 0
 
     .line 1
-    sget-object p1, Lʾˉ/ᴵᴵ;->ʼˎ:Lʾˉ/ᴵᴵ;
+    sget-boolean p1, Lʾˉ/ʼʼ;->ʽﾞ:Z
 
     .line 2
     .line 3
-    const p2, 0x7f110435
+    if-eqz p1, :cond_0
 
     .line 4
     .line 5
-    .line 6
-    invoke-virtual {p1, p2}, Lʾˉ/ᴵᴵ;->ˊᵎ(I)V
+    invoke-static {}, Lʼˏ/ᵢ;->ʼˏ()V
 
+    .line 6
     .line 7
     .line 8
-    .line 9
+    :cond_0
     return-void
 .end method

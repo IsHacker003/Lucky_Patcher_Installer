@@ -370,6 +370,8 @@
     <string name="delete_system_app_for_user">این برنامه سیستمی برای کاربر فعلی لغو نصب شود</string>
     <string name="delete_system_app_for_user_message">آیا می خواهید برنامه سیستمی %s را برای کاربر فعلی لغو نصب کنید؟</string>
     <string name="describe_for_Proxy_gp">(نسخه کوچک دارای لایسنس و شبیه سازی خرید درون برنامه ای)</string>
+    <string name="dialog_android_art_update_remove">آیا می‌خواهید به‌ روز رسانی‌ های ماژول apex com.google.android.art را حذف کنید؟</string>
+    <string name="dialog_android_art_update_remove_no_update">هیچ به روز رسانی برای ماژول apex com.google.android.art پیدا نشد</string>
     <string name="dialog_end_orig_resign_app">%1$s با امضای اصلی امضا شد فایل دوباره امضا شده در %2$s قرار دارد</string>
     <string name="dialog_end_resign_app">%1$sبا امضای آزمایشی با موفقیت امضا شد فایل دوباره امضا شده در %2$s قرار دارد</string>
     <string name="dialog_system">این برنامه بخشی از سیستم عامل اندروید است در هنگام انجام هر عملیاتی روی آن بسیار مراقب باشید چون ممکن است به سیستم عامل گوشی خود آسیب برسانید به همین دلیل بهتر است قبل از انجام هر کاری از سیستم عامل خود پشتیبان گیری کنید آیا می خواهید با این برنامه کار کنید؟</string>
@@ -919,7 +921,9 @@
     <string name="odex_all_system_app">ساخت فایل odex برای همه برنامه های سیستمی (فضای خالی بیشتر در حافظه داخلی)</string>
     <string name="odex_all_system_app_message">آیا می خواهید برای همه برنامه های سیستمی فایل odex بسازید؟</string>
     <string name="odexed_not_all_apps">خطا : فضای آزاد کافی در پوشه سیستم وجود ندارد چون بعضی از برنامه ها ODEX نشده اند</string>
+    <string name="off">خاموش</string>
     <string name="ok">تایید</string>
+    <string name="on">روشن</string>
     <string name="on_top_apps_marker">جدید</string>
     <string name="open_to_GP">مشاهده در فروشگاه گوگل پلی</string>
     <string name="option_SELinux_permissive">تنظیمات لینوکس را به حالت قابل قبول تنظیم کنید</string>
@@ -1029,6 +1033,8 @@
     <string name="remodexerror">حافظه پنهان dalvik این برنامه یافت نشد</string>
     <string name="remove_all_saved_purchases">همه خرید های ذخیره شده را حذف کنید</string>
     <string name="remove_all_saved_purchases_message">آیا می خواهید همه خرید های ذخیره شده در لاکی پچر را حذف کنید؟</string>
+    <string name="remove_android_art_update">حذف به‌ روز رسانی‌ های ماژول apex com.google.android.art</string>
+    <string name="remove_android_art_update_description">این کار به نسخه های جدید اندروید در هنگامی که پچ های اندروید از طریق پچ های فایل سیستمی lsposed یا معمولی کار نمی‌کنند کمک می کند</string>
     <string name="removefixes">حذف همه فایل‌ های ODEX از (برنامه های کاربر و سیستمی)</string>
     <string name="reset_dialog_settings">بازنشانی تنظیمات گفتگو</string>
     <string name="restore_build">کد ساخت</string>

@@ -172,6 +172,7 @@ internal storage"</string>
     <string name="close">Close</string>
     <string name="collect_logs">Collecting logs...</string>
     <string name="common_google_play_services_unknown_issue">%1$s is having trouble with Google Play services. Please try again.</string>
+    <string name="context_add_app_for_zygisk_purchaces">Enable purchase emulation (zygisk) for this app</string>
     <string name="context_automodeslvl">Auto modes</string>
     <string name="context_backup_apk">Backup .apk file</string>
     <string name="context_backup_apk_selected_apps">Backup apk of selected apps</string>
@@ -204,6 +205,7 @@ Save original signature.
 (unstable method)"</string>
     <string name="context_hide_lp">Hide Lucky Patcher</string>
     <string name="context_hide_lp_descr">Try to hide Lucky Patcher from other apps. Will increase the load on the system - use only if necessary.</string>
+    <string name="context_ignor_app_for_zygisk_purchaces">Disable purchase emulation (zygisk) for this app</string>
     <string name="context_install">Install</string>
     <string name="context_install_as_system">Install as a system app</string>
     <string name="context_integrate_dalvik">Integrate dalvik code to already installed application</string>
@@ -382,7 +384,7 @@ File path:"</string>
     <string name="customdescr">Shows all apps with a custom patch applied.</string>
     <string name="customtitle">Custom-patched apps</string>
     <string name="dalvik_cache_size">Dalvik-cache size:</string>
-    <string name="damadged_apk">The application file is damaged and can be read.</string>
+    <string name="damadged_apk">The application file is damaged and cannot be read.</string>
     <string name="data_dir_size">Data directory size:</string>
     <string name="date_creation_patch">Date of patch added</string>
     <string name="days_on_up">Show New Apps First</string>
@@ -1081,7 +1083,9 @@ Limited functionality!"</string>
 (More free space on internal storage)"</string>
     <string name="odex_all_system_app_message">Do you really want to ODEX all System apps?</string>
     <string name="odexed_not_all_apps">"Error! There is probably not enough free space in /system. Some apps weren't ODEXed."</string>
+    <string name="off">Off</string>
     <string name="ok">Ok</string>
+    <string name="on">On</string>
     <string name="on_top_apps_marker">New</string>
     <string name="open_to_GP">Open in Google Play</string>
     <string name="option_SELinux_permissive">Set SELinux to Permissive mode</string>

@@ -44,7 +44,7 @@
     .locals 4
 
     .line 1
-    invoke-static {}, Lʼˏ/ᵎ;->ˆᵎ()[Ljava/lang/String;
+    invoke-static {}, Lʼˏ/ᵢ;->ˆﾞ()[Ljava/lang/String;
 
     .line 2
     .line 3
@@ -91,7 +91,7 @@
     .line 22
     .line 23
     .line 24
-    sget-object v2, Lʾˉ/ᴵᴵ;->ˈʼ:Ljava/lang/String;
+    sget-object v2, Lʾˉ/ʼʼ;->ˈʼ:Ljava/lang/String;
 
     .line 25
     .line 26
@@ -108,7 +108,7 @@
     move-result-object v2
 
     .line 33
-    invoke-static {v2}, Lʼˏ/ᵎ;->ʼﹳ(Ljava/lang/String;)V
+    invoke-static {v2}, Lʼˏ/ᵢ;->ʽʻ(Ljava/lang/String;)V
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 

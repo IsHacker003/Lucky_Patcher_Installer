@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lʾˊ/ʽ$ʿ;->run()V
+    value = Lʾˊ/ʽ$ʿ;->onClick(Landroid/view/View;)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,13 +18,13 @@
 
 
 # instance fields
-.field final synthetic ʻ:Landroid/text/SpannableString;
+.field final synthetic ʻ:[Ljava/io/File;
 
 .field final synthetic ʼ:Lʾˊ/ʽ$ʿ;
 
 
 # direct methods
-.method constructor <init>(Lʾˊ/ʽ$ʿ;Landroid/text/SpannableString;)V
+.method constructor <init>(Lʾˊ/ʽ$ʿ;[Ljava/io/File;)V
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -37,7 +37,7 @@
 
     .line 2
     .line 3
-    iput-object p2, p0, Lʾˊ/ʽ$ʿ$ʻ;->ʻ:Landroid/text/SpannableString;
+    iput-object p2, p0, Lʾˊ/ʽ$ʿ$ʻ;->ʻ:[Ljava/io/File;
 
     .line 4
     .line 5
@@ -52,42 +52,58 @@
 
 # virtual methods
 .method public run()V
-    .locals 2
+    .locals 4
 
     .line 1
     iget-object v0, p0, Lʾˊ/ʽ$ʿ$ʻ;->ʼ:Lʾˊ/ʽ$ʿ;
 
     .line 2
     .line 3
-    iget-object v0, v0, Lʾˊ/ʽ$ʿ;->ʻ:Landroid/widget/TextView;
+    iget-object v1, v0, Lʾˊ/ʽ$ʿ;->ʼ:[Lʾˊ/ˉ;
 
     .line 4
     .line 5
-    iget-object v1, p0, Lʾˊ/ʽ$ʿ$ʻ;->ʻ:Landroid/text/SpannableString;
+    const/4 v2, 0x0
 
     .line 6
-    .line 7
-    invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
+    aget-object v1, v1, v2
 
+    .line 7
     .line 8
+    if-eqz v1, :cond_0
+
     .line 9
     .line 10
-    iget-object v0, p0, Lʾˊ/ʽ$ʿ$ʻ;->ʼ:Lʾˊ/ʽ$ʿ;
+    iget-object v3, p0, Lʾˊ/ʽ$ʿ$ʻ;->ʻ:[Ljava/io/File;
 
     .line 11
     .line 12
-    iget-object v0, v0, Lʾˊ/ʽ$ʿ;->ʼ:Landroid/widget/TextView;
+    aget-object v3, v3, v2
 
     .line 13
     .line 14
-    const-string v1, ""
+    iput-object v3, v1, Lʾˊ/ˉ;->ˎ:Ljava/io/File;
 
     .line 15
     .line 16
-    invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
+    :cond_0
+    iget-object v0, v0, Lʾˊ/ʽ$ʿ;->ʽ:[Landroid/widget/ArrayAdapter;
 
     .line 17
     .line 18
+    aget-object v0, v0, v2
+
     .line 19
+    .line 20
+    if-eqz v0, :cond_1
+
+    .line 21
+    .line 22
+    invoke-virtual {v0}, Landroid/widget/ArrayAdapter;->notifyDataSetChanged()V
+
+    .line 23
+    .line 24
+    .line 25
+    :cond_1
     return-void
 .end method

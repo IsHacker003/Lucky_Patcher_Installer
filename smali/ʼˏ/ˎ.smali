@@ -4,13 +4,13 @@
 
 
 # direct methods
-.method public static bridge synthetic ʻ(Landroid/app/NotificationManager;Ljava/lang/String;)Landroid/app/NotificationChannel;
+.method public static bridge synthetic ʻ(Ljava/nio/file/Path;)Z
     .locals 0
 
     .line 1
-    invoke-virtual {p0, p1}, Landroid/app/NotificationManager;->getNotificationChannel(Ljava/lang/String;)Landroid/app/NotificationChannel;
+    invoke-static {p0}, Ljava/nio/file/Files;->isSymbolicLink(Ljava/nio/file/Path;)Z
 
-    move-result-object p0
+    move-result p0
 
-    return-object p0
+    return p0
 .end method

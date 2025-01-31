@@ -45,7 +45,7 @@
 
     .line 1
     :try_start_0
-    invoke-static {}, Lʾˉ/ᴵᴵ;->ˈי()Landroid/content/Context;
+    invoke-static {}, Lʾˉ/ʼʼ;->ˈי()Landroid/content/Context;
 
     .line 2
     .line 3
@@ -93,7 +93,7 @@
 
     .line 24
     .line 25
-    invoke-static {v0}, Lʼˏ/ᵎ;->ˊʾ(Ljava/lang/String;)V
+    invoke-static {v0}, Lʼˏ/ᵢ;->ˊˑ(Ljava/lang/String;)V
     :try_end_0
     .catch Landroid/content/pm/PackageManager$NameNotFoundException; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -125,7 +125,7 @@
 
     .line 38
     .line 39
-    invoke-static {v0}, Lʼˏ/ᵎ;->ˏᵎ(Ljava/lang/String;)V
+    invoke-static {v0}, Lʼˏ/ᵢ;->ˑʽ(Ljava/lang/String;)V
 
     .line 40
     .line 41

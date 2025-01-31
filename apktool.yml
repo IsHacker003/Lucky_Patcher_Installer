@@ -1,5 +1,5 @@
 version: 2.11.0
-apkFileName: lp.apk
+apkFileName: LuckyPatchers.com_Official_Installer_11.6.7.apk
 isFrameworkApk: false
 usesFramework:
   ids:
@@ -7,13 +7,13 @@ usesFramework:
   tag: null
 sdkInfo:
   minSdkVersion: 14
-  targetSdkVersion: 32
+  targetSdkVersion: 28
 packageInfo:
   forcedPackageId: 127
   renameManifestPackage: null
 versionInfo:
-  versionCode: 1924
-  versionName: 11.6.4
+  versionCode: 1927
+  versionName: 11.6.7
 sharedLibrary: false
 sparseResources: false
 compactEntries: false
@@ -21,4 +21,5 @@ doNotCompress:
 - arsc
 - png
 - res/raw/pinapp
+- res/raw/pmpatchinapplp
 - res/raw/pmpatchlp

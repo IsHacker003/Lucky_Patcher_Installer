@@ -50,6 +50,7 @@
     <string name="android_patches_dialog_remove_patch_3">Entferne Patch \"%1s\"</string>
     <string name="android_patches_dialog_remove_patches_1_and_2" formatted="false">Entferne die Patches \"%1s\" und \"%2s\".</string>
     <string name="android_patches_dialog_use_magisk_module_for_patches">Verwende das Magisk-Modul, um den Patch anzuwenden</string>
+    <string name="android_patches_dialog_use_magisk_module_zygisk_for_patches">Verwende das Magisk-Modul - Zygisk (von vova7878@4pda)</string>
     <string name="android_patches_for_bootlist">Android-Patch am Dalvik-Cache</string>
     <string name="android_patches_for_bootlist_status">Android-Patches bei Neustart anwenden</string>
     <string name="android_patches_xposed_need_message">Bitte verwende Xposed(lSPosed), um den aktuellen Patch anzuwenden</string>
@@ -97,7 +98,7 @@
     <string name="billing_proxy_server_for_support_patch_descr">Dieser Dienst wird für \"Support-Patch für InApp- &amp; LVL-Emulation\" benötigt und die Anwendung wird zusammen mit ihm neu erstellt.</string>
     <string name="billing_proxy_server_for_support_patch_inapp">Proxy-Server zur Emulation von InApp-Käufen</string>
     <string name="bind_button">Neue Verzeichnisbindung hinzufügen.</string>
-    <string name="bind_delete">Möchtest du diese Verzeichnisverbindung entfernen?</string>
+    <string name="bind_delete">Möchtest Du diese Verzeichnisverbindung entfernen?</string>
     <string name="bind_dialog_button">Verzeichnis binden</string>
     <string name="bind_dialog_source">Verzeichnis mit Daten:</string>
     <string name="bind_dialog_target">Mounte das Datenverzeichnis nach:</string>
@@ -273,7 +274,7 @@ Originalsignatur speichern (Sichere Methode)"</string>
     <string name="contextpatt5">Endgültige Lizenzüberprüfung</string>
     <string name="contextpatt5_descr">Vorlagen für die endgültige Lizenzüberprüfung. Wenn dies funktioniert wird die Anwendung ohne Internetverbindung funktionieren.</string>
     <string name="contextpatt6">Endgültige Lizenzüberprüfung (Umgekehrt)</string>
-    <string name="contextpatt6_descr">Falls \"Endgültige Lizenzüberprüfung\" nicht erfolgreich war, kannst du diese Patches versuchen.</string>
+    <string name="contextpatt6_descr">Falls \"Endgültige Lizenzüberprüfung\" nicht erfolgreich war, kannst Du diese Patches versuchen.</string>
     <string name="contextpattads3">Werbungempfänger stören</string>
     <string name="contextpattads3_descr">Versuche den Empfangsmechanismus der Google-Anzeigen zu stören.</string>
     <string name="contextpattads4">Andere Patches</string>
@@ -292,7 +293,7 @@ Originalsignatur speichern (Sichere Methode)"</string>
     <string name="contextpattlvl4">Dalvik-Cache patchen</string>
     <string name="contextpattlvl4_descr">Standardmäßig werden alle Änderungen in die ODEX-Datei geschrieben. Aber diese Methode funktioniert nicht richtig, wenn die Anwendung auf die externe SD-Karte verschoben worden ist. In diesem Fall könnte \"Patch in die Dalvik-Cache hinzufügen\" helfen. Du kannst die Anwendung nur durch eine Neuinstallation wiederherstellen.</string>
     <string name="contextpattlvl5">APK-Datei sichern</string>
-    <string name="contextpattlvl5_descr">Kopiert die App in den Ordner von Lucky Patcher auf der SD-Karte. Damit kannst du dann später die Anwendung mit der .apk wiederherstellen.</string>
+    <string name="contextpattlvl5_descr">Kopiert die App in den Ordner von Lucky Patcher auf der SD-Karte. Damit kannst Du dann später die Anwendung mit der .apk wiederherstellen.</string>
     <string name="contextpattlvl6">Dalvik-Cache leeren</string>
     <string name="contextpattlvl6_descr">Dalvik-Cache der Anwendung löschen, um Speicher nach dem Erstellen der ODEX-Datei zu sparen. Wenn die Anwendung nicht gut mit ODEX funktioniert, musst Du die Anwendung erneut installieren.</string>
     <string name="contextpattlvl_dex">Auto-Modus (Dex)</string>
@@ -320,7 +321,7 @@ Originalsignatur speichern (Sichere Methode)"</string>
     <string name="create_clone_option2_descr">Es funktioniert nicht für alle Anwendungen. Diese Methode versucht, die Datei „resources“ und „classes.dex“ zu ändern. Diese Methode erstellt einen Klon, der stärker vom Original isoliert ist.</string>
     <string name="create_dir_error">Fehler: Verzeichnisname ist leer.</string>
     <string name="create_dir_error_2">Fehler: Verzeichnis nicht erstellt.</string>
-    <string name="create_lic_done">Erfolgreich! Die Lizenz wurde erstellt. Teste die Anwendung im Offline-Modus &amp; vielleicht hast du ja Glück.</string>
+    <string name="create_lic_done">Erfolgreich! Die Lizenz wurde erstellt. Teste die Anwendung im Offline-Modus &amp; vielleicht hast Du ja Glück.</string>
     <string name="create_perm_ok">App aufbauen</string>
     <string name="createapk">Modifizierte APK erstellen</string>
     <string name="createapkads">APK ohne Google-Anzeigen</string>
@@ -380,9 +381,11 @@ Dateipfad:"</string>
     <string name="delete_system_app_for_user">Deinstalliere die System-App für den aktuellen Benutzer</string>
     <string name="delete_system_app_for_user_message">Möchtest Du die System-App %s für den aktuellen Benutzer wirklich deinstallieren?</string>
     <string name="describe_for_Proxy_gp">(Mini Version nur mit Lizenz &amp; InApp Emulation)</string>
+    <string name="dialog_android_art_update_remove">Möchtest Du die Updates für das Apex-Modul com.google.android.art wirklich entfernen?</string>
+    <string name="dialog_android_art_update_remove_no_update">Für das Apex-Modul com.google.android.art wurden keine Updates gefunden.</string>
     <string name="dialog_end_orig_resign_app">%1$s wurde erfolgreich mit einer Originalsignatur signiert. Die neu signierte Datei befindet sich %2$s.</string>
     <string name="dialog_end_resign_app">%1$swurde erfolgreich mit einer Testsignatur signiert. Die neu signierte Datei befindet sich in %2$s.</string>
-    <string name="dialog_system">Diese Anwendung ist ein Teil des Android-Betriebssystems. Sei sehr vorsichtig bei jeder Änderung , da du einen Soft-Brick verursachen kannst. Hast Du bereits eine Sicherung gemacht? Bist Du sicher, dass du diese App bearbeiten möchtest?</string>
+    <string name="dialog_system">Diese Anwendung ist ein Teil des Android-Betriebssystems. Sei sehr vorsichtig bei jeder Änderung, da du einen Soft-Brick verursachen kannst. Hast du bereits eine Sicherung gemacht? Bist du sicher, dass du diese App bearbeiten möchtest?</string>
     <string name="dir_change">Verzeichnis ändern</string>
     <string name="dir_change_descr">"Ändere das Verzeichnis auf der SD-Karte, in dem Lucky Patcher seine Dateien speichert. Der Standardpfad lautet
 /mnt/sdcard/Android/data/[Paketname_von_lucky_patcher]/files/LuckyPatcher"</string>
@@ -505,7 +508,13 @@ Bitte gebe Speicherplatz auf der SD-Karte frei oder überprüfen deine Busybox-I
     <string name="generate_log_for_services.odex_fix_android_patches">Erstelle ein Log für die services.jar (um \"Android Patch\" zu fixen )</string>
     <string name="generate_log_result_message_conscrypt.jar">"Protokoll erstellt und gespeichert in /sdcard/conscrypt.oat.txt. Speichere die Datei in der Cloud oder komprimiere sie als ZIP-Datei. Dann sende es mir per E-Mail an lp.chelpus@gmail.com.
 Dateigröße:"</string>
+    <string name="generate_log_result_message_core_jar_zip">"Protokoll erstellt und in /sdcard/boot.oat.txt.zip gespeichert. Sende es mir per E-Mail an lp.chelpus@gmail.com.
+Dateigröße:"</string>
     <string name="generate_log_result_message_core_oj.jar">"Protokoll erstellt und gespeichert in /sdcard/core-oj.oat.txt. Speichere die Datei in der Cloud oder komprimiere sie als ZIP-Datei. Dann sende es mir per E-Mail an lp.chelpus@gmail.com.
+Dateigröße:"</string>
+    <string name="generate_log_result_message_framework_zip">"Protokoll erstellt und in /sdcard/framework.txt.zip gespeichert. Sende es mir per E-Mail an lp.chelpus@gmail.com.
+Dateigröße:"</string>
+    <string name="generate_log_result_message_services_odex_zip">"Protokoll erstellt und in /sdcard/services.odex.txt.zip gespeichert. Sende es mir per E-Mail an lp.chelpus@gmail.com.
 Dateigröße:"</string>
     <string name="go_to_file_path">Gehe zu Datei</string>
     <string name="goodresult">"Viel Glück!Bitte führe die Anwendung aus, um den Patch zu testen!
@@ -941,6 +950,7 @@ Bitte gib einen richtigen Pfad ein."</string>
     <string name="message_signature_killer_for_apps_with_test_signature">Die Zielanwendung hat eine Testsignatur, daher ist die Option \"%1$s\" deaktiviert.</string>
     <string name="message_test_patch_downgrade">Downgrading von Applikationen testen</string>
     <string name="message_test_patch_signatures">Testen der Möglichkeit, eine Anwendung mit unterschiedlichen Signaturen zu installieren</string>
+    <string name="message_test_patch_signatures_shareduser">Testen der Installation von Anwendungen mit unterschiedlichen Signaturen und derselben sharedUserId</string>
     <string name="message_test_patch_terget_sdk_30_installing">Testen der Möglichkeit, eine Anwendung ohne Signatur Ver.2 und targetSDK=30 zu installieren</string>
     <string name="message_test_patch_unlocked">Die Möglichkeit, den Patch anzuwenden, ist freigeschaltet.</string>
     <string name="message_test_pm_utility">Testen des Dienstprogramms \"pm\"</string>
@@ -1035,7 +1045,9 @@ Limitierte Funktionalität!"</string>
 (Mehr freier Interner Speicher)"</string>
     <string name="odex_all_system_app_message">Möchtest du wirklich für jede System-App eine ODEX-Datei erstellen?</string>
     <string name="odexed_not_all_apps">Fehler! Es ist möglicherweise nicht genug freier Speicherplatz in /system verfügbar. Manche Apps haben jetzt keine ODEX-Datei.</string>
+    <string name="off">Aus</string>
     <string name="ok">Ok</string>
+    <string name="on">An</string>
     <string name="on_top_apps_marker">Neu</string>
     <string name="open_to_GP">In Google Play öffnen</string>
     <string name="option_SELinux_permissive">Setze SELinux auf Permissive Mode</string>
@@ -1147,6 +1159,8 @@ Offizieller Download-Link: https://www.luckypatchers.com/download/"</string>
     <string name="remodexerror">Der Dalvik-cache dieser App konnte nicht gefunden werden.</string>
     <string name="remove_all_saved_purchases">Alle gesicherten Käufe entfernen</string>
     <string name="remove_all_saved_purchases_message">Möchtest Du wirklich alle gesicherten Käufe von Lucky Patcher entfernen?</string>
+    <string name="remove_android_art_update">Deinstalliere Updates für das Apex-Modul com.google.android.art</string>
+    <string name="remove_android_art_update_description">Dies hilft bei modernen Android-Versionen, wenn Android-Patches über bereitgestellte oder normale Systemdatei-Patches nicht funktionieren.</string>
     <string name="removefixes">"Lösche Alle ODEX Dateien
 (/data/app &amp; /system/app)"</string>
     <string name="reset_dialog_settings">Alle Dialogeinstellungen zurücksetzen</string>

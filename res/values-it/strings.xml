@@ -52,6 +52,7 @@ Normale: /data/dalvik-cache/*"</string>
     <string name="android_patches_dialog_remove_patch_3">Rimuovi patch \"%1s\"</string>
     <string name="android_patches_dialog_remove_patches_1_and_2" formatted="false">Rimuovi patch \"%1s\" e \"%2s\"</string>
     <string name="android_patches_dialog_use_magisk_module_for_patches">Usa il modulo Magisk per applicare la patch</string>
+    <string name="android_patches_dialog_use_magisk_module_zygisk_for_patches">Usa il modulo Magisk - Zygisk (di vova7878@4pda)</string>
     <string name="android_patches_for_bootlist">Patch android per la dalvik-cache</string>
     <string name="android_patches_for_bootlist_status">"Applica di nuovo patch per android all'avvio"</string>
     <string name="android_patches_xposed_need_message">Utilizzare Xposed(lSPosed) per applicare la patch corrente.</string>
@@ -390,6 +391,8 @@ Cartella del file:"</string>
     <string name="delete_system_app_for_user">"Disinstalla app di sistema per l'utente corrente"</string>
     <string name="delete_system_app_for_user_message">"Vuoi davvero disinstallare l'app di sistema %s per l'utente corrente?"</string>
     <string name="describe_for_Proxy_gp">"(versione mini con solo la licenza e l'emulazione inapp)"</string>
+    <string name="dialog_android_art_update_remove">Vuoi davvero rimuovere gli aggiornamenti per il modulo apex com.google.android.art?</string>
+    <string name="dialog_android_art_update_remove_no_update">Nessun aggiornamento trovato per il modulo apex com.google.android.art.</string>
     <string name="dialog_end_orig_resign_app">%1$s è stato firmato con successo da una firma originale. Il file rifirmato si trova %2$s</string>
     <string name="dialog_end_resign_app">"%1$sè stato firmato con successo da una firma di prova. Il file rifirmato si trova all'indirizzo %2$s"</string>
     <string name="dialog_system">Questa applicazione è parte del sistema operativo Android. Fai molta attenzione mentre esegui operazioni su di esso poiché potresti causare un soft-brick al tuo dispositivo. Hai un backup? Sei sicuro di voler lavorare con questa applicazione?</string>
@@ -519,7 +522,13 @@ Clicca su \"Ripristina\", seleziona un altro modello e fai di nuovo la patch."</
 (per fixare \"Patch per Android\")"</string>
     <string name="generate_log_result_message_conscrypt.jar">"Registro creato ed immagazzinato in /sdcard/conscrypt.oat.txt. Salva il file nel cloud o comprimilo in uno zip. Poi invialo all'indirizzo: lp.chelpus@gmail.com.
 Dimensione file:"</string>
+    <string name="generate_log_result_message_core_jar_zip">"Log creato e salvato in /sdcard/boot.oat.txt.zip. Inviamelo alla mail lp.chelpus@gmail.com.
+Dimensione del file:"</string>
     <string name="generate_log_result_message_core_oj.jar">"Registro creato e memorizzato in /sdcard/core-oj.oat.txt. Salvare il file nel cloud o comprimerlo in formato zip. Quindi inviarmelo via e-mail all'indirizzo lp.chelpus@gmail.com.´Dimensione del file:"</string>
+    <string name="generate_log_result_message_framework_zip">"Log creato e salvato in /sdcard/framework.txt.zip. Inviamelo alla mail lp.chelpus@gmail.com.
+Dimensione del file:"</string>
+    <string name="generate_log_result_message_services_odex_zip">"Log creato e salvato in sdcard/services.odex.txt.zip. Inviamelo alla mail lp.chelpus@gmail.com.
+Dimensione del file:"</string>
     <string name="go_to_file_path">Vai al file</string>
     <string name="goodresult">"% Luck!
 Se l'applicazione non funziona correttamente, reinstallatela e non cercate di applicare la patch a questa versione."</string>
@@ -956,6 +965,7 @@ Questa funzione non lavora senza scheda SD!"</string>
     <string name="message_signature_killer_for_apps_with_test_signature">"L'applicazione di destinazione ha una firma di prova, quindi l'opzione \"%1$s\" è disabilitata."</string>
     <string name="message_test_patch_downgrade">Testando il downgrade delle applicazioni</string>
     <string name="message_test_patch_signatures">Testando la possibilità di installare un applicazione con firme diverse</string>
+    <string name="message_test_patch_signatures_shareduser">"Testando l'installazione di applicazioni con diverse firme e stesso sharedUserId"</string>
     <string name="message_test_patch_terget_sdk_30_installing">Testando la possibilità di installare un applicazione senza firma ver.2 e targetSDK=30</string>
     <string name="message_test_patch_unlocked">La possibilità di applicare la patch è stata sbloccata.</string>
     <string name="message_test_pm_utility">Testando l utility \"pm\"</string>
@@ -1050,7 +1060,9 @@ Funzionalità limitate!"</string>
 (Più spazio libero sulla memoria interna)"</string>
     <string name="odex_all_system_app_message">Vuoi davvero rendere ODEX tutte le app di sitema?</string>
     <string name="odexed_not_all_apps">"Errore! Probabilmente non c'è spazio libero sufficiente in /system. Alcune app non sono state ODEXate."</string>
+    <string name="off">Off</string>
     <string name="ok">Ok</string>
+    <string name="on">On</string>
     <string name="on_top_apps_marker">Nuovo</string>
     <string name="open_to_GP">Apri in Google Play</string>
     <string name="option_SELinux_permissive">Imposta SELinux in modalità Permissiva</string>
@@ -1163,6 +1175,8 @@ Se il dispositivo non si riavvia automaticamente, fallo manualmente..."</string>
     <string name="remodexerror">La dalvik cache di quest app non può essere trovata.</string>
     <string name="remove_all_saved_purchases">Rimuovi tutti i pagamenti salvati</string>
     <string name="remove_all_saved_purchases_message">Vuoi davvero cancellare tutti i pagamenti salvati con Lucky Patcher?</string>
+    <string name="remove_android_art_update">Disinstalla gli aggiornamenti per il modulo apex com.google.android.art</string>
+    <string name="remove_android_art_update_description">Questo aiuta sulle versioni moderne di Android quando le patch per Android tramite LSPosed o le normali patch ai file di sistema non funzionano.</string>
     <string name="removefixes">"Rimuovi tutti i file ODEX
 (/data/app e /system/app)"</string>
     <string name="reset_dialog_settings">Reimposta tutte le impostazioni dei dialoghi</string>

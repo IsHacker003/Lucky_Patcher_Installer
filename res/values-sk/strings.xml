@@ -988,7 +988,9 @@ Prosím, nainštalujte SuperSu (\"Riešenie problémov -> Inštalácia SuperSU (
     <string name="odex_all_system_app">ODEX-ovať všetky systémové aplikácie (Viac voľného miesta na vnútornom úložisku)</string>
     <string name="odex_all_system_app_message">Chcete odexovať všetky systémové aplikácie?</string>
     <string name="odexed_not_all_apps">Chyba! Pravdepodobne nie je dostatok voľného miesta v /system. Niektoré aplikácie neboli odexované.</string>
+    <string name="off">Vyp.</string>
     <string name="ok">Ok</string>
+    <string name="on">Zap.</string>
     <string name="on_top_apps_marker">Nové</string>
     <string name="open_to_GP">Otvoriť v Obchode Play</string>
     <string name="option_SELinux_permissive">Prepnúť SELinux do Permissive módu</string>

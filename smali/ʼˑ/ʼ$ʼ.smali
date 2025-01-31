@@ -44,16 +44,16 @@
     .locals 2
 
     .line 1
-    sget-object v0, Lʾˉ/ᴵᴵ;->ʻﹶ:Ljava/lang/String;
+    sget-object v0, Lʾˉ/ʼʼ;->ʻﹶ:Ljava/lang/String;
 
     .line 2
     .line 3
-    const v0, 0x7f1104cf
+    const v0, 0x7f1104d3
 
     .line 4
     .line 5
     .line 6
-    invoke-static {v0}, Lʼˏ/ᵎ;->ˈˉ(I)Ljava/lang/String;
+    invoke-static {v0}, Lʼˏ/ᵢ;->ˈי(I)Ljava/lang/String;
 
     .line 7
     .line 8
@@ -61,12 +61,12 @@
     move-result-object v0
 
     .line 10
-    const v1, 0x7f110329
+    const v1, 0x7f11032b
 
     .line 11
     .line 12
     .line 13
-    invoke-static {v1}, Lʼˏ/ᵎ;->ˈˉ(I)Ljava/lang/String;
+    invoke-static {v1}, Lʼˏ/ᵢ;->ˈי(I)Ljava/lang/String;
 
     .line 14
     .line 15
@@ -74,7 +74,7 @@
     move-result-object v1
 
     .line 17
-    invoke-static {v0, v1}, Lʾˉ/ᴵᴵ;->ˋⁱ(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lʾˉ/ʼʼ;->ˋⁱ(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 18
     .line 19
@@ -83,7 +83,7 @@
 
     .line 21
     .line 22
-    sput-object v0, Lʾˉ/ᴵᴵ;->ʽﹶ:Ljava/lang/String;
+    sput-object v0, Lʾˉ/ʼʼ;->ʽﹶ:Ljava/lang/String;
 
     .line 23
     .line 24
@@ -99,12 +99,12 @@
     move-result-object v0
 
     .line 30
-    invoke-static {v0}, Lʾˉ/ᴵᴵ;->ˊˏ(Ljava/lang/Integer;)V
+    invoke-static {v0}, Lʾˉ/ʼʼ;->ˊˏ(Ljava/lang/Integer;)V
 
     .line 31
     .line 32
     .line 33
-    invoke-static {}, Lʾˉ/ᴵᴵ;->ˎﹶ()V
+    invoke-static {}, Lʾˉ/ʼʼ;->ˎﹶ()V
 
     .line 34
     .line 35

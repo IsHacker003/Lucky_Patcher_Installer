@@ -44,7 +44,7 @@
     .locals 0
 
     .line 1
-    const p1, 0x7f090193
+    const p1, 0x7f090194
 
     .line 2
     .line 3
@@ -56,7 +56,7 @@
     const/4 p1, 0x0
 
     .line 7
-    sput p1, Lʾˉ/ᴵᴵ;->ʿˎ:I
+    sput p1, Lʾˉ/ʼʼ;->ʿˎ:I
 
     .line 8
     .line 9
@@ -64,7 +64,7 @@
 
     .line 10
     :cond_0
-    sput p2, Lʾˉ/ᴵᴵ;->ʿˎ:I
+    sput p2, Lʾˉ/ʼʼ;->ʿˎ:I
 
     .line 11
     .line 12

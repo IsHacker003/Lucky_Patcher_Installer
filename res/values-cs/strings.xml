@@ -40,6 +40,7 @@ Výchozí umístění: /data/dalvik-cache/*"</string>
     <string name="abouttitle">O aplikaci Lucky Patcher od ChelpuS</string>
     <string name="activity_ads_descr">Tato činnost slouží k reklamě.</string>
     <string name="activity_descr">Aktivita aplikace. Bez popisu.</string>
+    <string name="add_icon_to_desktop">Přidat ikonu na plochu</string>
     <string name="additinfo">Dodatečné informace:</string>
     <string name="adsdescr">Zobrazí všechny aplikace s reklamami Google.</string>
     <string name="adstitle">Aplikace s reklamami</string>
@@ -105,7 +106,7 @@ Výchozí umístění: /data/dalvik-cache/*"</string>
     <string name="binder_browser_current_dir">Aktuální adresář:</string>
     <string name="binder_browser_select">Vybrat aktuální adresář</string>
     <string name="binder_delete">Smazat</string>
-    <string name="bootview">BootList</string>
+    <string name="bootview">Seznam po Spuštění</string>
     <string name="bottomsheet_action_expand_halfway">Rozbalit napůl</string>
     <string name="browse_to_file">Prohlížet</string>
     <string name="busybox_not_found">Varování: Busybox nenalezen. Lucky Patcher nemůže bez Busyboxu pokračovat…</string>
@@ -124,11 +125,22 @@ Výchozí umístění: /data/dalvik-cache/*"</string>
 Interní Paměť"</string>
     <string name="button_move_to_sdcard">Přesunout na SD kartu</string>
     <string name="button_resign_app">znovu podepsat</string>
+    <string name="button_select_original_apk">Vybrat původní apk</string>
+    <string name="button_select_original_apk_with_signature">Vybrat apk s podpisem</string>
     <string name="button_unblock_internet">Odblokovat internet</string>
     <string name="button_uninstall_apps">Odinstalovat</string>
     <string name="cancel">Zrušit</string>
+    <string name="certificate">Certifikát</string>
+    <string name="change_compileSDK">Změna verze SDK kompilace</string>
+    <string name="change_folder_checkbox">Přesunout data do nového umístění</string>
+    <string name="change_folder_message_end">Složka dat změněna do %1$s.</string>
     <string name="change_icon_lp">Změnit ikonu</string>
     <string name="change_icon_lp_descr">Zde můžete změnit ikonu Lucky Patcher</string>
+    <string name="change_lp_name">Změnit název pro Lucky Patcher</string>
+    <string name="change_minimumSDK">Změna minimální SDK verze</string>
+    <string name="change_sharedUserId">Změna sharedUserId</string>
+    <string name="change_targetSDK">Změna cílové verze SDK</string>
+    <string name="change_version_code">Změna kódu verze (sestavení)</string>
     <string name="changelog">Seznam změn</string>
     <string name="character_counter_content_description">Zadané znaky: %1$d z %2$d</string>
     <string name="character_counter_overflowed_content_description">Byl překročen povolený počet znaků (%1$d z %2$d)</string>
@@ -136,6 +148,7 @@ Interní Paměť"</string>
     <string name="clear_text_end_icon_content_description">Vymazat text</string>
     <string name="cleardalvik">Vymazat dalvik-cache a restartujte počítač</string>
     <string name="cleardata">Vymazat data</string>
+    <string name="clipboard_message">Text zkopírován do schránky</string>
     <string name="clipboard_message_for_app_dilaog_app_additional_info">Dodatečné info bylo zkopírováno do schránky</string>
     <string name="clipboard_message_for_app_dilaog_app_info">Info o aplikaci bylo zkopírováno do schránky</string>
     <string name="clipboard_message_for_app_dilaog_app_permissions">Práva byla zkopírována do schránky</string>
@@ -145,7 +158,9 @@ Interní Paměť"</string>
     <string name="common_google_play_services_unknown_issue">Aplikace %1$s má potíže se službami Google Play. Zkuste to prosím znovu.</string>
     <string name="context_automodeslvl">Automatické režimy</string>
     <string name="context_backup_apk">Zálohovat soubor .apk</string>
+    <string name="context_backup_apk_selected_apps">Zálohovat vybrané aplikace</string>
     <string name="context_backup_data">Zálohovat nastavení aplikace</string>
+    <string name="context_backup_settings_selected_apps">Zálohovat nastavení vybraných aplikací</string>
     <string name="context_batch_operations">Dávkové operace</string>
     <string name="context_block_internet_selected_apps">"Zablokovat internet pro vybrané aplikace
 Nemusí fungovat na Androidu 4+"</string>
@@ -176,6 +191,7 @@ Uložit původní podpis.
     <string name="context_install_as_system">Nainstalovat jako systémovou aplikaci</string>
     <string name="context_integrate_dalvik">Integrovat dalvik code do nainstalované aplikace</string>
     <string name="context_integrate_update_selected_apps">Integrovat aktualizace vybraných aplikací do /system</string>
+    <string name="context_menu_settings_show_last_added_custom_patches">Zobrazit vlastní poslední záplaty</string>
     <string name="context_move_selected_apps_to_internal">Přesunout vybrané aplikace do vnitřního úložiště</string>
     <string name="context_move_selected_apps_to_sdcard">Přesunout vybrané aplikace na SD kartu</string>
     <string name="context_original_resign_app">Znovu podepsat s originálním podpisem pro Android záplatu \"%1s\"</string>
@@ -183,10 +199,13 @@ Uložit původní podpis.
     <string name="context_purchases_sorter">Nákupní třídič</string>
     <string name="context_rebuild">Přestavět</string>
     <string name="context_removeAds">Záplatovat reklamy Google</string>
+    <string name="context_remove_patch_boot">Odstranit záplatu ze seznamu po spuštění</string>
     <string name="context_remove_saved_purchaces">Odstranit vybrané uložené platby</string>
     <string name="context_resign_app">Znovu podepsat testovacím podpisem.</string>
     <string name="context_restore_apk">Znovu nainstalovat soubor .apk</string>
     <string name="context_restore_data">Obnovit nastavení aplikace</string>
+    <string name="context_result_backup_apks">Výsledky dávkových záloh aplikací:</string>
+    <string name="context_result_backup_settings">Výsledky dávkových záloh nastavení aplikací:</string>
     <string name="context_safe_apk_permission">"Změnit oprávnění a aktivity
 Přestavit a nainstalovat"</string>
     <string name="context_safe_sign_apk_permission">"Změnit oprávnění a aktivity
@@ -202,6 +221,8 @@ Nemusí fungovat na Androidu 4+"</string>
     <string name="context_unblockads">Odblokovat reklamy v zařízení</string>
     <string name="context_uninstall_if_installed">Odinstalovat a nainstalovat</string>
     <string name="context_uninstall_selected_apps">Odinstalovat vybrané uživatelské aplikace</string>
+    <string name="context_use_apk_for_original_signature">Vybrat soubor aplikace pro kopírování podpisu</string>
+    <string name="context_use_installed_apk_for_original_signature">Kopírovat podpis z instalované aplikace</string>
     <string name="context_use_zip_crc_image_describe">Zkusí obejít kontrolu souborů pomocí upraveného zip archivu. Pokud je poté archiv upravený, tato metoda nemusí fungovat.</string>
     <string name="contextads">Odstranit reklamy Google</string>
     <string name="contextbackup">Zálohovat</string>
@@ -287,6 +308,7 @@ Výsledky:
     <string name="corepatches">Záplata do Androidu</string>
     <string name="corrupt_download">Stažený soubor je poškozený. Prosím, uvolněte místo v úložišti na sd kartě (4Mb) a zkuste to znovu.</string>
     <string name="create">Vytvořit adresář</string>
+    <string name="create_clone_new_app_name">Změna názvu aplikace</string>
     <string name="create_clone_option1">Upravit pouze AndroidManifest.xml</string>
     <string name="create_clone_option2">Upravit AndroidManifest.xml, zdroje a classes.dex</string>
     <string name="create_dir_error">Chyba: Název adresáře je prázdný.</string>
@@ -307,13 +329,23 @@ Cesta k souboru:"</string>
     <string name="createdialog3_clone">Pozor! Některé aplikace musí být před instalací naklonované aplikace nejprve odinstalovány. Nelze zaručit, že naklonovaný APK balíček bude fungovat – některé aplikace jsou chráněny proti úpravám.</string>
     <string name="createdialog5">Název souboru:</string>
     <string name="custom_descript">Popis vlastní záplaty:</string>
+    <string name="custom_name_for_lp">Použít váš název pro aplikaci</string>
+    <string name="custom_patch_log_add_custom_patch_to_boot_list">Záplata přidána do seznamu po spuštění.</string>
     <string name="custom_patch_log_block_internet_hosts">Blokování internetových hostitelů</string>
+    <string name="custom_patch_log_change_components">Změna součástí</string>
+    <string name="custom_patch_log_change_preference_delete">Proměnná odebrána</string>
+    <string name="custom_patch_log_change_preference_insert">Proměnná vložena</string>
+    <string name="custom_patch_log_change_preference_not_found_file">Soubor nenalezen</string>
+    <string name="custom_patch_log_change_preferences">Změny souboru nastavení</string>
+    <string name="custom_patch_log_method_patch">Záplata pro metodu</string>
     <string name="custom_patch_log_next_custom_patch">Spustit další vlastní záplatu</string>
     <string name="custom_patch_log_offset">Adresa paměti</string>
+    <string name="custom_patch_log_or_patch_is_already_applied">nebo záplata je úspěšně aplikována.</string>
     <string name="custom_patch_log_patch_all_files">Záplata pro soubory z adresáře.</string>
     <string name="custom_patch_log_patch_done">Záplata hotova!</string>
     <string name="custom_patch_log_patch_for">Záplata pro</string>
     <string name="custom_patch_log_patch_for_libraries">Záplata pro knihovny</string>
+    <string name="custom_patch_log_patch_on_reboot_added">Záplata přidána do seznamu po spuštění!</string>
     <string name="custom_patch_log_pattern">Vzor</string>
     <string name="custom_patch_log_pattern_not_found">Vzor nenalezen!</string>
     <string name="custom_patch_log_search_bytes">Byty podle vyhledávání</string>
@@ -326,13 +358,15 @@ Cesta k souboru:"</string>
     <string name="customdescr">Zobrazí všechny aplikace s vlastní záplatou.</string>
     <string name="customtitle">Aplikace s vlastní záplatou</string>
     <string name="dalvik_cache_size">Velikost dalvik-cache:</string>
+    <string name="damadged_apk">Soubor aplikace je poškozen a nelze jej přečíst.</string>
     <string name="data_dir_size">Velikost adresáře:</string>
     <string name="date_creation_patch">Datum přidání záplaty</string>
     <string name="days_on_up">Zobrazit nejdříve nové aplikace</string>
     <string name="days_on_up_descr">Nastavte maximální počet dní, po který bude aplikace považována za novou. Nastavíte-li hodnotu 0 dní, bude zakázán přesun nově nainstalovaných aplikací na začátek seznamu.</string>
-    <string name="delboot">Klikněte a smažte z BootListu</string>
+    <string name="delboot">Klikněte a smažte ze seznamu spuštění</string>
     <string name="delete_file">Smazat soubor</string>
     <string name="delete_file_message">Opravdu chcete smazat soubor %s?</string>
+    <string name="delete_system_app">Odstranit systémovou aplikaci</string>
     <string name="describe_for_Proxy_gp">(malá verze s pouze licenční a mikrotransakční simulací)</string>
     <string name="dialog_system">Tato aplikace je součástí operačního systému Android. Buďte velmi opatrní, může dojít k poškození (soft-brick) vašeho zařízení. Máte vytvořenu zálohu a jste si jisti, že chcete pracovat s touto aplikací?</string>
     <string name="dir_change">Změnit adresář</string>
@@ -358,6 +392,7 @@ Cesta k souboru:"</string>
     <string name="empty_binders">Musíte vytvořit alespoň jeden pořadač k vytvoření widgetu.</string>
     <string name="enabled">povolit</string>
     <string name="enabled_package">Zapnutý balíček.</string>
+    <string name="enter_manual_path">Ruční cesta</string>
     <string name="enter_name_dir">Název adresáře:</string>
     <string name="equals_version">Máte nainstalovánu poslední verzi Lucky Patcheru.</string>
     <string name="error">Chyba</string>
@@ -388,6 +423,7 @@ Cesta k souboru:"</string>
     <string name="error_read_folder">složka nemůže být přečtena!</string>
     <string name="error_restore">Obnovení bylo neúspěšné.</string>
     <string name="exit">Zavřít</string>
+    <string name="export_settings">Exportování nastavení</string>
     <string name="exposed_dropdown_menu_content_description">Zobrazit rozbalovací nabídku</string>
     <string name="extpat1">Vypadá to, že</string>
     <string name="extpat2">objektů má ověření licence:</string>
@@ -405,6 +441,7 @@ Pokud tento vzor(pattern) nepomůže, klepněte na „Obnovit“ a opakujte post
 Již záplatováno?
 Klepněte na „Obnovit“, vyberte jiný vzor a spusťte záplatování znovu."</string>
     <string name="failed">selhalo</string>
+    <string name="failed_group">Selhalo pro:</string>
     <string name="fast_start">Rychlejší start</string>
     <string name="fast_start_descr">Vypnutí načítání ikon z databáze aplikace Lucky Patcher. Seznam aplikací bude sestavován pomaleji.</string>
     <string name="file_not_deleted">Soubor nebyl smazán.</string>
@@ -447,6 +484,7 @@ Uvolněte prosím místo na SD kartě nebo zkontrolujte instalaci busyboxu."</st
 Spusťte aplikaci pro otestování záplaty!
 
 Pokud aplikace nepracuje správně, přeinstalujte ji a neaplikujte na ni znovu tuto záplatu."</string>
+    <string name="hash_code">Kód Hash</string>
     <string name="have_luck">"***********************
 
 Máte"</string>
@@ -598,11 +636,13 @@ Uživatelé s právy root by to měli udělat tuto možnost nevyužívejte, prot
     <string name="hide_notify_descr">Skrytí oznámení Lucky Patcheru v oznamovací liště.</string>
     <string name="hide_title_app">Skrýt název aplikace</string>
     <string name="hide_title_app_descr">Skrytí názvu „Lucky Patcher“ v seznamu aplikací. Funguje pouze na zařízeních s hardwarovým tlačítkem Menu.</string>
+    <string name="home">Doma</string>
     <string name="host_down">Server je nedostupný. Zkuste to za chvíli.</string>
     <string name="hosts_default">Soubor „hosts“ obnoven.</string>
     <string name="hosts_not_found_changes">Změny v „hosts“ souboru nenalezeny.</string>
     <string name="hosts_updated">Soubor „hosts“ aktualizován.</string>
     <string name="icon_content_description">Ikona dialogového okna</string>
+    <string name="import_settings">Importovat nastavení</string>
     <string name="import_to_lucky_patcher">Importovat do Lucky Patcheru</string>
     <string name="inapp_emulation_auto_repeat">Automaticky zopakovat nákupy se současným nastavením</string>
     <string name="info_about_permissions_optional">"Volitelná oprávnění:
@@ -620,10 +660,13 @@ WRITE_EXTERNAL_STORAGE
 "</string>
     <string name="information">Informace</string>
     <string name="install">Instalovat</string>
+    <string name="install_app_for_user">Instalovat aplikaci pro uživatele</string>
     <string name="install_as_user_app">Instalovat Google Play jako uživatelskou aplikaci</string>
     <string name="install_as_user_app_note">Vyžaduje aplikovanou „Záplatu do Androidu“ a nainstalovaný obchod Google Play.</string>
     <string name="install_cloned_app">Instalovat klon</string>
     <string name="install_date">Datum instalace:</string>
+    <string name="installation_option">Použít náhodný název aplikace pro instalaci</string>
+    <string name="installed_from">Instalováno z</string>
     <string name="installer_error_aborted">Instalace byla zrušena uživatelem</string>
     <string name="installer_error_bad_apks">Je zvolený neplatný APK soubor</string>
     <string name="installer_error_bad_apks_file">Chyba: base.apk soubor nebyl nalezen uvnitř apks souboru.</string>
@@ -654,6 +697,8 @@ WRITE_EXTERNAL_STORAGE
     <string name="line">"***********************
 "</string>
     <string name="loadpkg">Načítání záplat</string>
+    <string name="lp_backups_export_failed">Selhalo zálohování nastavení. Zkus znovu.</string>
+    <string name="lp_backups_import_succes">Nastavení aplikace bylo úspěšně obnoveno</string>
     <string name="lp_billing_hack_title">Mikrotransakční podvod...</string>
     <string name="lp_import_custom_patches">Importovány následující vlastní záplaty a soubory:</string>
     <string name="lvldescr">Zobrazí všechny aplikace s Ověřováním Licencí.</string>
@@ -673,6 +718,7 @@ WRITE_EXTERNAL_STORAGE
     <string name="material_timepicker_pm">PM</string>
     <string name="material_timepicker_select_time">Vyberte čas</string>
     <string name="material_timepicker_text_input_mode_description">Chcete-li zadat čas, přepněte na režim textu.</string>
+    <string name="max_version">maximální verze</string>
     <string name="menu_close_application">Zavřít aplikaci</string>
     <string name="menu_download_custom_patches">Stáhnout vlastní záplaty</string>
     <string name="messageAndroidManifest">AndroidManifest.xml nemohl být extrahován. Nejspíš nemáte dostatek místa na SD kartě pro zkopírování celé aplikace.</string>
@@ -688,12 +734,14 @@ Tato funkce nemůže bez SD karty fungovat!"</string>
     <string name="message_delete_odex_file">Opravdu chcete smazat odex soubor?</string>
     <string name="message_done_move_to_internal">Přesun do interního úložiště dokončen:</string>
     <string name="message_done_move_to_sdcard">Přesun na SD kartu dokončen:</string>
+    <string name="message_error_file_apk_for_install_corrupt">Instalovaný soubor je porušen ...</string>
     <string name="message_error_move_to_internal">"Přesun do interní paměti dokončen s chybou (zkuste to znovu):
 "</string>
     <string name="message_error_move_to_sdcard">"Přesun na SD kartu dokončen s chybou (zkuste to znovu):
 "</string>
     <string name="message_exit">Opravdu chcete ukončit Lucky Patcher?</string>
     <string name="message_file_selector">Jste si jisti, že chcete vybrat soubor %s?</string>
+    <string name="message_for_removed_patch_boot">Záplata odebrána ze seznamu po spuštění.</string>
     <string name="message_for_uninstall_and_install">Opravdu chcete vymazat %1$s a nainstalovat vybranou verzi aplikace?</string>
     <string name="message_installation_lp">Opravdu chcete nainstalovat Lucky Patcher v.1%1$s</string>
     <string name="message_reboot">Opravdu chcete restartovat zařízení?</string>
@@ -777,7 +825,9 @@ Funkce budou omezeny!"</string>
 (více místa v interním úložišti)"</string>
     <string name="odex_all_system_app_message">Opravdu chcete odexovat všechny systémové aplikace?</string>
     <string name="odexed_not_all_apps">Chyba! V adresáři /system je pravděpodobně nedostatek místa. Některé aplikace nebyly odexovány.</string>
+    <string name="off">Vypnuto</string>
     <string name="ok">Ok</string>
+    <string name="on">Zapnuto</string>
     <string name="on_top_apps_marker">Nové</string>
     <string name="open_to_GP">Otevřít v Google Play</string>
     <string name="option_SELinux_permissive">Nastavit SELinux do povoleného režimu</string>
@@ -795,6 +845,7 @@ Funkce budou omezeny!"</string>
     <string name="package_name">Název balíčku</string>
     <string name="password_toggle_content_description">Zobrazit heslo</string>
     <string name="patch_ok">Aplikovat</string>
+    <string name="patch_progress_reinstall_app">Probíhá přeinstalace aplikace...</string>
     <string name="patch_progress_strings_analisis">Analyzování řetězců…</string>
     <string name="patch_step1">Příprava aplikace…</string>
     <string name="patch_step2">Záplatování…</string>
@@ -834,6 +885,8 @@ Funkce budou omezeny!"</string>
     <string name="permission_not_found">Práva nenalezena!</string>
     <string name="permissions">Oprávnění</string>
     <string name="play_protect_warning_question_1">Chcete spustit \"Play protect\"?</string>
+    <string name="please_enter_new_name_lp">Prosím, zadejte nový název aplikace</string>
+    <string name="please_enter_path_to_open">Zadat cestu složky</string>
     <string name="poorresult">"% štěstí! Záplatování se nezdařilo.
 Již je aplikována neznámá verze LVL nebo jiné záplaty."</string>
     <string name="provide">Poskytnout</string>
@@ -842,6 +895,7 @@ Již je aplikována neznámá verze LVL nebo jiné záplaty."</string>
     <string name="proxyGP_install_error">Proxy Google Play - nenalezen instalační soubor</string>
     <string name="proxyGP_install_question">Opravdu chcete nainstalovat Proxy Google Play?</string>
     <string name="proxyGP_widget_warning_1">„Podpůrná záplata pro mikrotransakce a kontrolu licencí“ musí být zakázána v Xposed modulu Lucky Patcheru, aby bylo možné spustit proxy Google Play.</string>
+    <string name="public_key">Veřejný klíč</string>
     <string name="punkt1">– Lucky Patcher potřebuje root oprávnění!</string>
     <string name="purchase_db_dialog_auto_buy">Automaticky opakovat nákup</string>
     <string name="purchase_db_dialog_saved_purchase">uložený nákup</string>
@@ -863,6 +917,7 @@ Pokud se zařízení nerestartuje automaticky, udělejte to ručně."</string>
     <string name="remove_all_saved_purchases_message">Opravdu chcete smazat všechny uložené platby z Lucky Patcheru?</string>
     <string name="removefixes">"Odstranit všechny ODEX soubory
 (/data/app a /system/app)"</string>
+    <string name="reset_dialog_settings">Obnovit všechna nastavení dialogů</string>
     <string name="restore_build">Sestavení</string>
     <string name="restore_data_error">Chyba: během obnovy dat se vyskytla chyba. Data nemohou být kompletně obnovena.</string>
     <string name="restore_data_success">Nastavení aplikace kompletně obnoveno.</string>
@@ -873,6 +928,7 @@ Pokud se zařízení nerestartuje automaticky, udělejte to ručně."</string>
     <string name="root_needed">Jsou potřeba root práva...</string>
     <string name="savebutton">Uložit jako vlastní záplatu!</string>
     <string name="saved_object">byl zapsán do /sdcard/LuckyPatcher/ jako vlastní záplata.</string>
+    <string name="scheme_versions">Verze Schématu</string>
     <string name="search">Hledat</string>
     <string name="search_menu_title">Hledat</string>
     <string name="select_filter">Vyberte filtr pro seznam aplikací:</string>
@@ -880,6 +936,7 @@ Pokud se zařízení nerestartuje automaticky, udělejte to ručně."</string>
 "</string>
     <string name="send_logs">Chcete mi poslat zprávu?</string>
     <string name="sendlog">Poslat zprávu</string>
+    <string name="serial">Sériové číslo</string>
     <string name="set_default_to_install_auto">Instalace do umístění určeného systémem Android</string>
     <string name="set_default_to_install_internal_memory">Instalace do vnitřního úložiště</string>
     <string name="set_default_to_install_sdcard">Instalace do externího úložiště (např. SD karta)</string>
@@ -895,8 +952,11 @@ Pokud se zařízení nerestartuje automaticky, udělejte to ručně."</string>
     <string name="settings_force_root_description">Máte-li méně známý root, můžete nastavení root vynutit.</string>
     <string name="settings_force_root_off">Vynutit nepoužívání rootu</string>
     <string name="settings_force_root_on">Vynutit použití root režimu</string>
+    <string name="settings_method_apk_installer_standart">Použit standardní instalátor</string>
+    <string name="settings_method_apk_installer_use_split_installer">Použít rozdělený instalátor</string>
     <string name="settings_method_apks_installer_non_root_mode">Nepoužívejte root pro Apks instalátor</string>
     <string name="settings_method_apks_installer_root_mode">Použít root přístup pro Apks instalátor.</string>
+    <string name="settings_mode_apk_installer">Výběr instalačního souboru apk</string>
     <string name="settings_root_auto">Automaticky detekovat root přístup</string>
     <string name="settings_show_folder_first">Ukázat nejdříve složky</string>
     <string name="settings_show_only_used_files">Ukázat pouze soubory používané Lucky Patcherem</string>
@@ -907,7 +967,10 @@ Pokud se zařízení nerestartuje automaticky, udělejte to ručně."</string>
     <string name="share_lucky_patcher">Sdílet Lucky Patcher</string>
     <string name="share_message">Opravdu chcete sdílet tuto aplikaci?</string>
     <string name="share_this_app">Sdílet tuto aplikaci</string>
+    <string name="signature">Podpis</string>
+    <string name="signature_algorithm">Algoritmus podpisu</string>
     <string name="site_pattern">Řetězec z AdsBlockList - odstraněn.</string>
+    <string name="sortbydate">Seřadit dle Datumu</string>
     <string name="sortbyname">Seřadit dle názvu</string>
     <string name="sortbystatus">Seřadit dle stavu</string>
     <string name="sortbytime">Seřadit dle data instalace</string>
@@ -935,6 +998,7 @@ Pokud se zařízení nerestartuje automaticky, udělejte to ručně."</string>
     <string name="status_bar_notification_info_overflow">999+</string>
     <string name="statuserid">Uživatelské ID:</string>
     <string name="statversion">Verze:</string>
+    <string name="subject">Předmět</string>
     <string name="success">úspěch</string>
     <string name="support_patch_billing_rebuild_dex">Podpůrná záplata pro emulaci nákupů (Opětovné sestavení Dex)</string>
     <string name="support_patch_billing_rebuild_dex_descr">Bude to trvat velmi dlouho. Přesměruje fakturaci do Lucky Patcheru, bez proxy serveru na emulaci nákupu v aplikaci. Pokud tato metoda z nějakého důvodu nefungovala, můžete použít metodu \"Podpůrná záplata pro emulaci nákupů v aplikaci (Proxy server)\". Pokud se do systému Android neaplikuje \"Stav ověřování podpisů je vždy pravdivý\", tato podpůrná záplata může pomoci.</string>
@@ -967,6 +1031,7 @@ Pokud se zařízení nerestartuje automaticky, udělejte to ručně."</string>
     <string name="text_size">Velikost textu</string>
     <string name="title_for_block_internet">Vyberte aplikace pro zablokování internetu:</string>
     <string name="title_for_select_backup_apk_package">Vyberte aplikace pro zálohování apk:</string>
+    <string name="title_for_select_backup_settings_package">Vybrat aplikace pro zálohu nastavení:</string>
     <string name="title_for_select_disable_package">Zvolte aplikace k zakázání</string>
     <string name="title_for_select_enable_package">Zvolte aplikace k povolení</string>
     <string name="title_for_select_integrate_update_apps">Vyberte aplikace k integraci aktualizací do /system:</string>
@@ -988,8 +1053,12 @@ Pokud se zařízení nerestartuje automaticky, udělejte to ručně."</string>
     <string name="tools_menu_block_internet">Zablokovat internet</string>
     <string name="tools_menu_unblock_internet">Odblokovat internet</string>
     <string name="truble">Řešení problémů</string>
+    <string name="type">Typ</string>
     <string name="uninstall">Opravdu chcete odstranit %s?</string>
+    <string name="uninstall_updates">Odinstalovat aktualizace</string>
     <string name="uninstallapp">Odinstalovat aplikaci</string>
+    <string name="uninstalled_package_for_user">Odinstalovat aplikaci uživatele.</string>
+    <string name="unknown">neznámý</string>
     <string name="unknown_error">Neznámá chyba. Zkuste to, prosím, znovu.</string>
     <string name="unused_odex_delete">Nepoužitý ODEX odstraněn!</string>
     <string name="update">Aktualizovat</string>
@@ -998,7 +1067,9 @@ Pokud se zařízení nerestartuje automaticky, udělejte to ručně."</string>
     <string name="update_lp">Aktualizovat Lucky Patcher</string>
     <string name="updatebusybox">Aktualizovat Busybox</string>
     <string name="usepatch">Potvrdit</string>
+    <string name="validity">Platnost</string>
     <string name="vers">Lucky Patcher verze</string>
+    <string name="version">Verze</string>
     <string name="vibration">Povolit vibrace</string>
     <string name="vibration_descr">Zapnutí vibrační zpětné vazby v seznamu aplikací.</string>
     <string name="viewlandscape">Na šířku</string>
@@ -1013,10 +1084,15 @@ Pokud se zařízení nerestartuje automaticky, udělejte to ručně."</string>
     <string name="warning_for_no_free_space_on_device_to_patch">Na zařízení není dostatek volného místa. Pro pokračování v činnosti uvolněte více místa.</string>
     <string name="warning_for_out_of_memory_on_device">Firmware vašeho zařízení ukončil Lucky Patcher s chybou: „Nedostatek paměti“. Pro aktuální operaci není dostatek paměti.</string>
     <string name="warning_multipatch_not_select">Nebyla vybrána žádná záplata.</string>
+    <string name="warning_superSu_mount_name_space_separation_2">Chcete, aby to Lucky Patcher zakázal (a restartoval)?</string>
     <string name="warning_superSu_mount_name_space_separation_3">Znovu nezobrazovat</string>
     <string name="well_done">Úspešně dokončeno.</string>
     <string name="well_done_change_components">Komponenty aplikace byly úspěšně aktualizovány.</string>
+    <string name="well_done_group">Úspěšné dokončení pro:</string>
+    <string name="write_permission_not_found">Žádné oprávnění zápisu pro vybrané umístění.</string>
     <string name="xposed_module_option">Povolit Xposed modul</string>
     <string name="xposed_option_off">Pro aktivování této možnosti, zapněte prosím modul Lucky Patcheru v Xposed</string>
     <string name="xposed_settings">Nastavení Xposed</string>
+    <string name="сertificate_bytes">Byty certifikátu</string>
+    <string name="сertificate_information">Informace certifikátu</string>
 </resources>

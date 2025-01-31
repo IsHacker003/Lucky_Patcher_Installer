@@ -168,6 +168,7 @@ Lucky Patcher может работать неправильно."</string>
     <string name="close">Закрыть</string>
     <string name="collect_logs">Сбор информации о событиях...</string>
     <string name="common_google_play_services_unknown_issue">Приложению \"%1$s\" не удается подключиться к сервисам Google Play. Повторите попытку.</string>
+    <string name="context_add_app_for_zygisk_purchaces">Включить эмуляцию покупок (zygisk) для этого приложения</string>
     <string name="context_automodeslvl">Автоматические режимы</string>
     <string name="context_backup_apk">Резервная копия apk-файла</string>
     <string name="context_backup_apk_selected_apps">Рез. копия apk файлов приложений</string>
@@ -200,6 +201,7 @@ Lucky Patcher может работать неправильно."</string>
 Опасный метод."</string>
     <string name="context_hide_lp">Скрыть Lucky Patcher</string>
     <string name="context_hide_lp_descr">Попробовать скрыть Lucky Patcher от других приложений. Увеличит нагрузку на систему - использовать только если нужно.</string>
+    <string name="context_ignor_app_for_zygisk_purchaces">Отключить эмуляцию покупок (zygisk) для этого приложения</string>
     <string name="context_install">Установить</string>
     <string name="context_install_as_system">Установить как системное приложение</string>
     <string name="context_integrate_dalvik">Интегрировать dalvik код в уже установленное приложение</string>
@@ -1036,7 +1038,9 @@ WRITE_EXTERNAL_STORAGE
 (больше места во внутренней памяти)"</string>
     <string name="odex_all_system_app_message">Вы действительно хотите одексировать все системные приложения?</string>
     <string name="odexed_not_all_apps">Во время одексации произошла ошибка. Приложения одексированы не все. Самая вероятная причина произошедшего - это отсутствие свободного места в /system.</string>
+    <string name="off">Откл</string>
     <string name="ok">Ок</string>
+    <string name="on">Вкл</string>
     <string name="on_top_apps_marker">Новое</string>
     <string name="open_to_GP">Открыть в GooglePlay</string>
     <string name="option_SELinux_permissive">Установить SELinux в Permissive</string>

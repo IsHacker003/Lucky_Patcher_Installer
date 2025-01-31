@@ -4,11 +4,13 @@
 
 
 # direct methods
-.method public static bridge synthetic ʻ(Ljava/util/ArrayList;Ljava/util/Comparator;)V
+.method public static bridge synthetic ʻ(Landroid/content/pm/PackageManager;)Z
     .locals 0
 
     .line 1
-    invoke-virtual {p0, p1}, Ljava/util/ArrayList;->sort(Ljava/util/Comparator;)V
+    invoke-virtual {p0}, Landroid/content/pm/PackageManager;->canRequestPackageInstalls()Z
 
-    return-void
+    move-result p0
+
+    return p0
 .end method

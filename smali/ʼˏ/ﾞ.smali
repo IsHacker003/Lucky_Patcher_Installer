@@ -4,13 +4,13 @@
 
 
 # direct methods
-.method public static bridge synthetic ʻ(Landroid/content/pm/PackageInstaller$Session;Ljava/lang/String;JJ)Ljava/io/OutputStream;
+.method public static bridge synthetic ʻ(Landroid/content/pm/PackageInstaller;Landroid/content/pm/PackageInstaller$SessionParams;)I
     .locals 0
 
     .line 1
-    invoke-virtual/range {p0 .. p5}, Landroid/content/pm/PackageInstaller$Session;->openWrite(Ljava/lang/String;JJ)Ljava/io/OutputStream;
+    invoke-virtual {p0, p1}, Landroid/content/pm/PackageInstaller;->createSession(Landroid/content/pm/PackageInstaller$SessionParams;)I
 
-    move-result-object p0
+    move-result p0
 
-    return-object p0
+    return p0
 .end method

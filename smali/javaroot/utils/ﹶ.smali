@@ -29,7 +29,7 @@
     .line 6
     .line 7
     .line 8
-    invoke-static {v0}, Lʼˏ/ᵎ;->ˏᵢ(Ljava/lang/Object;)V
+    invoke-static {v0}, Lʼˏ/ᵢ;->ˑʿ(Ljava/lang/Object;)V
 
     .line 9
     .line 10
@@ -55,7 +55,7 @@
     .line 19
     .line 20
     .line 21
-    invoke-static {}, Lʼˏ/ᵎ;->ʼˉ()V
+    invoke-static {}, Lʼˏ/ᵢ;->ʼˎ()V
 
     .line 22
     .line 23

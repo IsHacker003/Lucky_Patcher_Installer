@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lʾˊ/ˑ;->ʽ()Landroid/app/Dialog;
+    value = Lʾˊ/ˑ;->ʾ()Landroid/app/Dialog;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -44,7 +44,7 @@
     .locals 0
 
     .line 1
-    sget-boolean p1, Lʾˉ/ᴵᴵ;->ʽﾞ:Z
+    sget-boolean p1, Lʾˉ/ʼʼ;->ʽﾞ:Z
 
     .line 2
     .line 3
@@ -52,7 +52,7 @@
 
     .line 4
     .line 5
-    invoke-static {}, Lʼˏ/ᵎ;->ʼˊ()V
+    invoke-static {}, Lʼˏ/ᵢ;->ʼˏ()V
 
     .line 6
     .line 7

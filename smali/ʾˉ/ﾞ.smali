@@ -1,16 +1,17 @@
-.class public final synthetic Lʾˉ/ﾞ;
-.super Ljava/lang/Object;
+.class public Lʾˉ/ﾞ;
+.super Ljava/lang/RuntimeException;
 .source "SourceFile"
 
 
 # direct methods
-.method public static bridge synthetic ʻ(Landroid/os/StatFs;)J
-    .locals 2
+.method public constructor <init>(Ljava/lang/String;)V
+    .locals 0
 
     .line 1
-    invoke-virtual {p0}, Landroid/os/StatFs;->getBlockSizeLong()J
+    invoke-direct {p0, p1}, Ljava/lang/RuntimeException;-><init>(Ljava/lang/String;)V
 
-    move-result-wide v0
-
-    return-wide v0
+    .line 2
+    .line 3
+    .line 4
+    return-void
 .end method

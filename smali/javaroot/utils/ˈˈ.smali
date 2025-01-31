@@ -25,7 +25,7 @@
     .line 4
     .line 5
     .line 6
-    invoke-static {v0}, Lʼˏ/ᵎ;->ˏᵢ(Ljava/lang/Object;)V
+    invoke-static {v0}, Lʼˏ/ᵢ;->ˑʿ(Ljava/lang/Object;)V
 
     .line 7
     .line 8
@@ -47,16 +47,16 @@
     .line 16
     .line 17
     :try_start_0
-    new-instance p0, Lʼˏ/ᵎ;
+    new-instance p0, Lʼˏ/ᵢ;
 
     .line 18
     .line 19
-    invoke-direct {p0}, Lʼˏ/ᵎ;-><init>()V
+    invoke-direct {p0}, Lʼˏ/ᵢ;-><init>()V
 
     .line 20
     .line 21
     .line 22
-    invoke-virtual {p0, v0}, Lʼˏ/ᵎ;->ʻﹶ(Ljava/io/File;)V
+    invoke-virtual {p0, v0}, Lʼˏ/ᵢ;->ʼʽ(Ljava/io/File;)V
 
     .line 23
     .line 24
@@ -100,7 +100,7 @@
     move-result-object p0
 
     .line 46
-    invoke-static {p0}, Lʾˉ/ᴵᴵ;->ˉˎ(Ljava/lang/Object;)V
+    invoke-static {p0}, Lʾˉ/ʼʼ;->ˉˎ(Ljava/lang/Object;)V
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
@@ -120,7 +120,7 @@
     .line 53
     .line 54
     :goto_0
-    invoke-static {}, Lʼˏ/ᵎ;->ʼˉ()V
+    invoke-static {}, Lʼˏ/ᵢ;->ʼˎ()V
 
     .line 55
     .line 56

@@ -56,33 +56,33 @@
     move-result-object v0
 
     .line 7
-    invoke-static {v0}, Lʾˉ/ᴵᴵ;->ˋᵎ(Ljava/lang/Integer;)V
+    invoke-static {v0}, Lʾˉ/ʼʼ;->ˋᵎ(Ljava/lang/Integer;)V
 
     .line 8
     .line 9
     .line 10
-    sget-object v0, Lʾˉ/ᴵᴵ;->ʽᴵ:Lʾˊ/י;
+    sget-object v0, Lʾˉ/ʼʼ;->ʽᴵ:Lʾˊ/ˏ;
 
     .line 11
     .line 12
     const/4 v1, 0x0
 
     .line 13
-    invoke-virtual {v0, v1}, Lʾˊ/י;->ʿ(Z)V
+    invoke-virtual {v0, v1}, Lʾˊ/ˏ;->ʿ(Z)V
 
     .line 14
     .line 15
     .line 16
-    sget-object v0, Lʾˉ/ᴵᴵ;->ʽᴵ:Lʾˊ/י;
+    sget-object v0, Lʾˉ/ʼʼ;->ʽᴵ:Lʾˊ/ˏ;
 
     .line 17
     .line 18
-    const v1, 0x7f1104ce
+    const v1, 0x7f1104d2
 
     .line 19
     .line 20
     .line 21
-    invoke-static {v1}, Lʼˏ/ᵎ;->ˈˉ(I)Ljava/lang/String;
+    invoke-static {v1}, Lʼˏ/ᵢ;->ˈי(I)Ljava/lang/String;
 
     .line 22
     .line 23
@@ -90,7 +90,7 @@
     move-result-object v1
 
     .line 25
-    invoke-virtual {v0, v1}, Lʾˊ/י;->ˆ(Ljava/lang/String;)V
+    invoke-virtual {v0, v1}, Lʾˊ/ˏ;->ˆ(Ljava/lang/String;)V
 
     .line 26
     .line 27

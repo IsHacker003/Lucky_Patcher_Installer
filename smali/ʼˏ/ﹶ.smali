@@ -4,13 +4,11 @@
 
 
 # direct methods
-.method public static bridge synthetic ʻ(Landroid/content/pm/PackageInstaller;I)Landroid/content/pm/PackageInstaller$Session;
+.method public static bridge synthetic ʻ(Landroid/content/pm/PackageInstaller$Session;)V
     .locals 0
 
     .line 1
-    invoke-virtual {p0, p1}, Landroid/content/pm/PackageInstaller;->openSession(I)Landroid/content/pm/PackageInstaller$Session;
+    invoke-virtual {p0}, Landroid/content/pm/PackageInstaller$Session;->close()V
 
-    move-result-object p0
-
-    return-object p0
+    return-void
 .end method

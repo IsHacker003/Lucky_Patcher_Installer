@@ -1545,6 +1545,11 @@
     .line 565
     .line 566
     .line 567
+    .line 568
+    .line 569
+    .line 570
+    .line 571
+    .line 572
     :array_3
     .array-data 4
         0x101011c

@@ -63,103 +63,160 @@
     move-result p0
 
     .line 22
-    if-eqz p0, :cond_0
+    const-string v1, " does not exist"
 
     .line 23
     .line 24
-    :try_start_0
-    invoke-static {v0}, Lcom/android/apksigner/ʻ;->ʻ(Ljava/io/File;)Ljava/nio/file/Path;
+    const-string v3, "file "
 
     .line 25
     .line 26
-    .line 27
-    move-result-object p0
+    if-eqz p0, :cond_1
 
+    .line 27
     .line 28
-    invoke-static {p0}, Lʾⁱ/ʻ;->ʻ(Ljava/nio/file/Path;)[B
+    invoke-virtual {v0}, Ljava/io/File;->isFile()Z
 
     .line 29
     .line 30
     .line 31
-    move-result-object p0
+    move-result p0
 
     .line 32
-    invoke-static {p0, p1}, Lʼˏ/ᵎ;->ˑᵔ([BLjava/io/File;)V
-    :try_end_0
-    .catch Ljava/io/IOException; {:try_start_0 .. :try_end_0} :catch_0
+    if-eqz p0, :cond_0
 
     .line 33
     .line 34
+    :try_start_0
+    invoke-static {v0}, Lcom/android/apksigner/ʻ;->ʻ(Ljava/io/File;)Ljava/nio/file/Path;
+
     .line 35
+    .line 36
+    .line 37
+    move-result-object p0
+
+    .line 38
+    invoke-static {p0}, Lʾⁱ/ʻ;->ʻ(Ljava/nio/file/Path;)[B
+
+    .line 39
+    .line 40
+    .line 41
+    move-result-object p0
+
+    .line 42
+    invoke-static {p0, p1}, Lʼˏ/ᵢ;->יʿ([BLjava/io/File;)V
+    :try_end_0
+    .catch Ljava/io/IOException; {:try_start_0 .. :try_end_0} :catch_0
+
+    .line 43
+    .line 44
+    .line 45
     return v2
 
-    .line 36
+    .line 46
     :catch_0
     move-exception p0
 
-    .line 37
-    new-instance p1, Ljava/lang/IllegalStateException;
-
-    .line 38
-    .line 39
-    invoke-direct {p1, p0}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/Throwable;)V
-
-    .line 40
-    .line 41
-    .line 42
-    throw p1
-
-    .line 43
-    :cond_0
-    new-instance p0, Ljava/lang/IllegalArgumentException;
-
-    .line 44
-    .line 45
-    new-instance p1, Ljava/lang/StringBuilder;
-
-    .line 46
     .line 47
-    invoke-direct {p1}, Ljava/lang/StringBuilder;-><init>()V
+    new-instance p1, Ljava/lang/IllegalStateException;
 
     .line 48
     .line 49
-    .line 50
-    const-string v1, "file "
+    invoke-direct {p1, p0}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/Throwable;)V
 
+    .line 50
     .line 51
     .line 52
-    invoke-virtual {p1, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    throw p1
 
     .line 53
+    :cond_0
+    new-instance p0, Ljava/lang/IllegalArgumentException;
+
     .line 54
     .line 55
-    invoke-virtual {p1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+    new-instance p1, Ljava/lang/StringBuilder;
 
     .line 56
     .line 57
-    .line 58
-    const-string v0, " does not exist"
+    invoke-direct {p1}, Ljava/lang/StringBuilder;-><init>()V
 
+    .line 58
     .line 59
     .line 60
-    invoke-virtual {p1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {p1, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     .line 61
     .line 62
     .line 63
-    invoke-virtual {p1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-virtual {p1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
     .line 64
     .line 65
     .line 66
-    move-result-object p1
+    invoke-virtual {p1, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     .line 67
-    invoke-direct {p0, p1}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
-
     .line 68
     .line 69
+    invoke-virtual {p1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
     .line 70
+    .line 71
+    .line 72
+    move-result-object p1
+
+    .line 73
+    invoke-direct {p0, p1}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
+
+    .line 74
+    .line 75
+    .line 76
+    throw p0
+
+    .line 77
+    :cond_1
+    new-instance p0, Ljava/lang/IllegalArgumentException;
+
+    .line 78
+    .line 79
+    new-instance p1, Ljava/lang/StringBuilder;
+
+    .line 80
+    .line 81
+    invoke-direct {p1}, Ljava/lang/StringBuilder;-><init>()V
+
+    .line 82
+    .line 83
+    .line 84
+    invoke-virtual {p1, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 85
+    .line 86
+    .line 87
+    invoke-virtual {p1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    .line 88
+    .line 89
+    .line 90
+    invoke-virtual {p1, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 91
+    .line 92
+    .line 93
+    invoke-virtual {p1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    .line 94
+    .line 95
+    .line 96
+    move-result-object p1
+
+    .line 97
+    invoke-direct {p0, p1}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
+
+    .line 98
+    .line 99
+    .line 100
     throw p0
 .end method
 

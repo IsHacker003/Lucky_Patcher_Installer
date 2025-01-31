@@ -38,7 +38,7 @@
 
 # virtual methods
 .method public ʼ(JLjava/lang/String;Lcom/android/vending/licensing/ʻ;)V
-    .locals 4
+    .locals 5
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Landroid/os/RemoteException;
@@ -88,377 +88,472 @@
 
     .line 21
     .line 22
-    iget v2, v2, Lcom/google/android/finsky/services/LicensingService;->ʿ:I
+    iget v3, v2, Lcom/google/android/finsky/services/LicensingService;->ʿ:I
 
     .line 23
     .line 24
-    const/16 v3, 0xff
+    const/16 v4, 0xff
 
     .line 25
     .line 26
-    if-eq v2, v3, :cond_0
+    if-eq v3, v4, :cond_0
 
     .line 27
     .line 28
-    if-nez v2, :cond_0
+    if-nez v3, :cond_0
 
     .line 29
     .line 30
-    const-string p1, "Transfer license from Google Play"
+    iget-object v3, v2, Lcom/google/android/finsky/services/LicensingService;->ˈ:Ljava/lang/String;
 
     .line 31
     .line 32
-    invoke-static {p1}, Lʾˉ/ᴵᴵ;->ˉˎ(Ljava/lang/Object;)V
+    if-eqz v3, :cond_0
 
     .line 33
     .line 34
+    iget-object v2, v2, Lcom/google/android/finsky/services/LicensingService;->ˆ:Ljava/lang/String;
+
     .line 35
-    iget-object p1, p0, Lcom/google/android/finsky/services/LicensingService$ʼ;->ʻ:Lcom/google/android/finsky/services/LicensingService;
-
     .line 36
+    if-eqz v2, :cond_0
+
     .line 37
-    iget p2, p1, Lcom/google/android/finsky/services/LicensingService;->ʿ:I
-
     .line 38
+    new-instance p1, Ljava/lang/StringBuilder;
+
     .line 39
-    iget-object p3, p1, Lcom/google/android/finsky/services/LicensingService;->ˈ:Ljava/lang/String;
-
     .line 40
-    .line 41
-    iget-object p1, p1, Lcom/google/android/finsky/services/LicensingService;->ˆ:Ljava/lang/String;
+    invoke-direct {p1}, Ljava/lang/StringBuilder;-><init>()V
 
+    .line 41
     .line 42
     .line 43
-    invoke-interface {p4, p2, p3, p1}, Lcom/android/vending/licensing/ʻ;->ˑ(ILjava/lang/String;Ljava/lang/String;)V
+    const-string p2, "Transfer license from Google Play: responceCode:"
 
     .line 44
     .line 45
-    .line 46
-    goto/16 :goto_0
+    invoke-virtual {p1, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    .line 46
     .line 47
     .line 48
-    :cond_0
-    new-instance v2, Ljava/lang/StringBuilder;
+    iget-object p2, p0, Lcom/google/android/finsky/services/LicensingService$ʼ;->ʻ:Lcom/google/android/finsky/services/LicensingService;
 
     .line 49
     .line 50
-    invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
+    iget p2, p2, Lcom/google/android/finsky/services/LicensingService;->ʿ:I
 
     .line 51
     .line 52
-    .line 53
-    const-string v3, "Package Name: "
+    invoke-virtual {p1, p2}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
+    .line 53
     .line 54
     .line 55
-    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    const-string p2, " signedData:"
 
     .line 56
     .line 57
-    .line 58
-    invoke-virtual {v2, p3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {p1, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    .line 58
     .line 59
     .line 60
-    .line 61
-    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    iget-object p2, p0, Lcom/google/android/finsky/services/LicensingService$ʼ;->ʻ:Lcom/google/android/finsky/services/LicensingService;
 
+    .line 61
     .line 62
+    iget-object p2, p2, Lcom/google/android/finsky/services/LicensingService;->ˈ:Ljava/lang/String;
+
     .line 63
     .line 64
-    move-result-object v2
+    invoke-virtual {p1, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     .line 65
-    invoke-static {v2}, Lʾˉ/ᴵᴵ;->ˉˎ(Ljava/lang/Object;)V
-
     .line 66
     .line 67
+    const-string p2, " signature:"
+
     .line 68
-    new-instance v2, Ljava/lang/StringBuilder;
-
     .line 69
-    .line 70
-    invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
+    invoke-virtual {p1, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    .line 70
     .line 71
     .line 72
+    iget-object p2, p0, Lcom/google/android/finsky/services/LicensingService$ʼ;->ʻ:Lcom/google/android/finsky/services/LicensingService;
+
     .line 73
-    const-string v3, "Version Code: "
-
     .line 74
-    .line 75
-    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    iget-object p2, p2, Lcom/google/android/finsky/services/LicensingService;->ˆ:Ljava/lang/String;
 
+    .line 75
     .line 76
+    invoke-virtual {p1, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
     .line 77
     .line 78
-    iget v3, v1, Landroid/content/pm/PackageInfo;->versionCode:I
-
     .line 79
-    .line 80
-    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    invoke-virtual {p1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
+    .line 80
     .line 81
     .line 82
+    move-result-object p1
+
     .line 83
-    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-static {p1}, Lʾˉ/ʼʼ;->ˉˎ(Ljava/lang/Object;)V
 
     .line 84
     .line 85
     .line 86
-    move-result-object v2
+    iget-object p1, p0, Lcom/google/android/finsky/services/LicensingService$ʼ;->ʻ:Lcom/google/android/finsky/services/LicensingService;
 
     .line 87
-    invoke-static {v2}, Lʾˉ/ᴵᴵ;->ˉˎ(Ljava/lang/Object;)V
-
     .line 88
+    iget p2, p1, Lcom/google/android/finsky/services/LicensingService;->ʿ:I
+
     .line 89
     .line 90
-    new-instance v2, Ljava/lang/StringBuilder;
+    iget-object p3, p1, Lcom/google/android/finsky/services/LicensingService;->ˈ:Ljava/lang/String;
 
     .line 91
     .line 92
-    invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
+    iget-object p1, p1, Lcom/google/android/finsky/services/LicensingService;->ˆ:Ljava/lang/String;
 
     .line 93
     .line 94
-    .line 95
-    const-string v3, "0|"
+    invoke-interface {p4, p2, p3, p1}, Lcom/android/vending/licensing/ʻ;->ˑ(ILjava/lang/String;Ljava/lang/String;)V
 
+    .line 95
     .line 96
     .line 97
-    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    goto/16 :goto_0
 
     .line 98
     .line 99
-    .line 100
-    invoke-virtual {v2, p1, p2}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
+    :cond_0
+    new-instance v2, Ljava/lang/StringBuilder;
 
+    .line 100
     .line 101
+    invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
+
     .line 102
     .line 103
-    invoke-virtual {v2, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
     .line 104
+    const-string v3, "Package Name: "
+
     .line 105
     .line 106
-    invoke-virtual {v2, p3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     .line 107
     .line 108
     .line 109
-    invoke-virtual {v2, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v2, p3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     .line 110
     .line 111
     .line 112
-    iget p1, v1, Landroid/content/pm/PackageInfo;->versionCode:I
+    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     .line 113
     .line 114
-    invoke-virtual {v2, p1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
-
     .line 115
-    .line 116
-    .line 117
-    const-string p1, "|ANlOHQOShF3uJUwv3Ql+fbsgEG9FD35Hag==|"
+    move-result-object v2
 
+    .line 116
+    invoke-static {v2}, Lʾˉ/ʼʼ;->ˉˎ(Ljava/lang/Object;)V
+
+    .line 117
     .line 118
     .line 119
-    invoke-virtual {v2, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    new-instance v2, Ljava/lang/StringBuilder;
 
     .line 120
     .line 121
-    .line 122
-    invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
+    invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
 
+    .line 122
     .line 123
     .line 124
-    .line 125
-    move-result-wide p1
+    const-string v3, "Version Code: "
 
+    .line 125
     .line 126
-    const-wide v0, 0x757b12c00L
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     .line 127
     .line 128
     .line 129
+    iget v3, v1, Landroid/content/pm/PackageInfo;->versionCode:I
+
     .line 130
     .line 131
-    add-long/2addr p1, v0
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
     .line 132
-    invoke-virtual {v2, p1, p2}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
-
     .line 133
     .line 134
-    .line 135
-    const-string p1, ":GR=10&VT="
+    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
+    .line 135
     .line 136
     .line 137
-    invoke-virtual {v2, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    move-result-object v2
 
     .line 138
+    invoke-static {v2}, Lʾˉ/ʼʼ;->ˉˎ(Ljava/lang/Object;)V
+
     .line 139
     .line 140
-    invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
-
     .line 141
+    new-instance v2, Ljava/lang/StringBuilder;
+
     .line 142
     .line 143
-    move-result-wide p1
+    invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
 
     .line 144
-    const-string p3, "31622400000"
-
     .line 145
     .line 146
-    invoke-static {p3}, Ljava/lang/Long;->valueOf(Ljava/lang/String;)Ljava/lang/Long;
+    const-string v3, "0|"
 
     .line 147
     .line 148
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
     .line 149
-    move-result-object p3
-
     .line 150
-    invoke-virtual {p3}, Ljava/lang/Long;->longValue()J
-
     .line 151
+    invoke-virtual {v2, p1, p2}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
+
     .line 152
     .line 153
-    move-result-wide v0
-
     .line 154
-    add-long/2addr p1, v0
+    invoke-virtual {v2, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     .line 155
-    invoke-static {p1, p2}, Ljava/lang/String;->valueOf(J)Ljava/lang/String;
-
     .line 156
     .line 157
+    invoke-virtual {v2, p3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
     .line 158
-    move-result-object p1
-
     .line 159
-    invoke-virtual {v2, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
     .line 160
+    invoke-virtual {v2, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
     .line 161
     .line 162
-    const-string p1, "&GT="
-
     .line 163
-    .line 164
-    invoke-virtual {v2, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    iget p1, v1, Landroid/content/pm/PackageInfo;->versionCode:I
 
+    .line 164
     .line 165
+    invoke-virtual {v2, p1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
     .line 166
     .line 167
-    invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
-
     .line 168
+    const-string p1, "|ANlOHQOShF3uJUwv3Ql+fbsgEG9FD35Hag==|"
+
     .line 169
     .line 170
-    move-result-wide p1
+    invoke-virtual {v2, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     .line 171
-    const-wide v0, 0xeaf625800L
-
     .line 172
     .line 173
+    invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
+
     .line 174
     .line 175
     .line 176
-    add-long/2addr p1, v0
+    move-result-wide p1
 
     .line 177
-    invoke-static {p1, p2}, Ljava/lang/String;->valueOf(J)Ljava/lang/String;
+    const-wide v0, 0x757b12c00L
 
     .line 178
     .line 179
     .line 180
-    move-result-object p1
-
     .line 181
-    invoke-virtual {v2, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
     .line 182
-    .line 183
-    .line 184
-    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    add-long/2addr p1, v0
 
+    .line 183
+    invoke-virtual {v2, p1, p2}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
+
+    .line 184
     .line 185
     .line 186
-    .line 187
-    move-result-object p1
+    const-string p1, ":GR=10&VT="
 
+    .line 187
     .line 188
-    invoke-static {p1}, Lʾˉ/ᴵᴵ;->ˉˎ(Ljava/lang/Object;)V
+    invoke-virtual {v2, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     .line 189
     .line 190
     .line 191
-    new-instance p2, Lʼˏ/ᵎ;
+    invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
 
     .line 192
     .line 193
-    const-string p3, "w"
-
     .line 194
+    move-result-wide p1
+
     .line 195
-    invoke-direct {p2, p3}, Lʼˏ/ᵎ;-><init>(Ljava/lang/String;)V
+    const-string p3, "31622400000"
 
     .line 196
     .line 197
-    .line 198
-    const-wide/16 v0, 0xfa0
+    invoke-static {p3}, Ljava/lang/Long;->valueOf(Ljava/lang/String;)Ljava/lang/Long;
 
+    .line 198
     .line 199
     .line 200
-    invoke-virtual {p2, v0, v1}, Lʼˏ/ᵎ;->ˑᐧ(J)V
+    move-result-object p3
 
     .line 201
+    invoke-virtual {p3}, Ljava/lang/Long;->longValue()J
+
     .line 202
     .line 203
-    invoke-static {p1}, Lʼˏ/ᵎ;->ˎᵎ(Ljava/lang/String;)Ljava/lang/String;
-
     .line 204
+    move-result-wide v0
+
     .line 205
+    add-long/2addr p1, v0
+
     .line 206
-    move-result-object p2
+    invoke-static {p1, p2}, Ljava/lang/String;->valueOf(J)Ljava/lang/String;
 
     .line 207
+    .line 208
+    .line 209
+    move-result-object p1
+
+    .line 210
+    invoke-virtual {v2, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 211
+    .line 212
+    .line 213
+    const-string p1, "&GT="
+
+    .line 214
+    .line 215
+    invoke-virtual {v2, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 216
+    .line 217
+    .line 218
+    invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
+
+    .line 219
+    .line 220
+    .line 221
+    move-result-wide p1
+
+    .line 222
+    const-wide v0, 0xeaf625800L
+
+    .line 223
+    .line 224
+    .line 225
+    .line 226
+    .line 227
+    add-long/2addr p1, v0
+
+    .line 228
+    invoke-static {p1, p2}, Ljava/lang/String;->valueOf(J)Ljava/lang/String;
+
+    .line 229
+    .line 230
+    .line 231
+    move-result-object p1
+
+    .line 232
+    invoke-virtual {v2, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 233
+    .line 234
+    .line 235
+    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    .line 236
+    .line 237
+    .line 238
+    move-result-object p1
+
+    .line 239
+    invoke-static {p1}, Lʾˉ/ʼʼ;->ˉˎ(Ljava/lang/Object;)V
+
+    .line 240
+    .line 241
+    .line 242
+    new-instance p2, Lʼˏ/ᵢ;
+
+    .line 243
+    .line 244
+    const-string p3, "w"
+
+    .line 245
+    .line 246
+    invoke-direct {p2, p3}, Lʼˏ/ᵢ;-><init>(Ljava/lang/String;)V
+
+    .line 247
+    .line 248
+    .line 249
+    const-wide/16 v0, 0xfa0
+
+    .line 250
+    .line 251
+    invoke-virtual {p2, v0, v1}, Lʼˏ/ᵢ;->יʼ(J)V
+
+    .line 252
+    .line 253
+    .line 254
+    invoke-static {p1}, Lʼˏ/ᵢ;->ˏʽ(Ljava/lang/String;)Ljava/lang/String;
+
+    .line 255
+    .line 256
+    .line 257
+    move-result-object p2
+
+    .line 258
     const/4 p3, 0x0
 
-    .line 208
+    .line 259
     invoke-interface {p4, p3, p1, p2}, Lcom/android/vending/licensing/ʻ;->ˑ(ILjava/lang/String;Ljava/lang/String;)V
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 209
-    .line 210
-    .line 211
+    .line 260
+    .line 261
+    .line 262
     goto :goto_0
 
-    .line 212
+    .line 263
     :catch_0
     const/16 p1, 0x102
 
-    .line 213
-    .line 214
+    .line 264
+    .line 265
     const/4 p2, 0x0
 
-    .line 215
+    .line 266
     :try_start_1
     invoke-interface {p4, p1, p2, p2}, Lcom/android/vending/licensing/ʻ;->ˑ(ILjava/lang/String;Ljava/lang/String;)V
     :try_end_1
     .catch Landroid/os/RemoteException; {:try_start_1 .. :try_end_1} :catch_1
 
-    .line 216
-    .line 217
-    .line 218
+    .line 267
+    .line 268
+    .line 269
     :catch_1
     :goto_0
     return-void
@@ -525,7 +620,7 @@
     move-result-object v3
 
     .line 29
-    invoke-static {v3}, Lʾˉ/ᴵᴵ;->ˉˎ(Ljava/lang/Object;)V
+    invoke-static {v3}, Lʾˉ/ʼʼ;->ˉˎ(Ljava/lang/Object;)V
 
     .line 30
     .line 31
@@ -561,18 +656,18 @@
     move-result-object v3
 
     .line 49
-    invoke-static {v3}, Lʾˉ/ᴵᴵ;->ˉˎ(Ljava/lang/Object;)V
+    invoke-static {v3}, Lʾˉ/ʼʼ;->ˉˎ(Ljava/lang/Object;)V
 
     .line 50
     .line 51
     .line 52
-    invoke-static {p3}, Lʼˏ/ᵎ;->ˏ(Landroid/os/Bundle;)V
+    invoke-static {p3}, Lʼˏ/ᵢ;->י(Landroid/os/Bundle;)V
 
     .line 53
     .line 54
     .line 55
     :try_start_0
-    new-instance p3, Lʼˏ/ᵎ;
+    new-instance p3, Lʼˏ/ᵢ;
 
     .line 56
     .line 57
@@ -580,7 +675,7 @@
 
     .line 58
     .line 59
-    invoke-direct {p3, v3}, Lʼˏ/ᵎ;-><init>(Ljava/lang/String;)V
+    invoke-direct {p3, v3}, Lʼˏ/ᵢ;-><init>(Ljava/lang/String;)V
 
     .line 60
     .line 61
@@ -589,7 +684,7 @@
 
     .line 63
     .line 64
-    invoke-virtual {p3, v3, v4}, Lʼˏ/ᵎ;->ˑᐧ(J)V
+    invoke-virtual {p3, v3, v4}, Lʼˏ/ᵢ;->יʼ(J)V
 
     .line 65
     .line 66
@@ -729,7 +824,7 @@
 
     .line 137
     .line 138
-    invoke-static {v5}, Lʼˏ/ᵎ;->ˆʾ(I)Ljava/lang/String;
+    invoke-static {v5}, Lʼˏ/ᵢ;->ˆˎ(I)Ljava/lang/String;
 
     .line 139
     .line 140
@@ -761,7 +856,7 @@
     .line 154
     .line 155
     .line 156
-    invoke-static {v7, v8, v5, v6}, Lʼˏ/ᵎ;->ˆʼ(JJ)J
+    invoke-static {v7, v8, v5, v6}, Lʼˏ/ᵢ;->ˆˊ(JJ)J
 
     .line 157
     .line 158
@@ -781,7 +876,7 @@
 
     .line 165
     .line 166
-    invoke-static {v7, v8, v5, v6}, Lʼˏ/ᵎ;->ˆʼ(JJ)J
+    invoke-static {v7, v8, v5, v6}, Lʼˏ/ᵢ;->ˆˊ(JJ)J
 
     .line 167
     .line 168
@@ -854,7 +949,7 @@
     .line 201
     .line 202
     .line 203
-    invoke-static {v7, v8, v5, v6}, Lʼˏ/ᵎ;->ˆʼ(JJ)J
+    invoke-static {v7, v8, v5, v6}, Lʼˏ/ᵢ;->ˆˊ(JJ)J
 
     .line 204
     .line 205
@@ -946,7 +1041,7 @@
     move-result-object p1
 
     .line 251
-    invoke-static {p1}, Lʼˏ/ᵎ;->ˎᵔ(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {p1}, Lʼˏ/ᵢ;->ˏʾ(Ljava/lang/String;)Ljava/lang/String;
 
     .line 252
     .line 253

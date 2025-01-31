@@ -90,7 +90,7 @@
 
     .line 22
     .line 23
-    invoke-static {}, Lru/aaaaacay/installer/PkgName;->getPkgName()Ljava/lang/String;
+    invoke-static {}, Lru/aaaaacca/installer/PkgName;->getPkgName()Ljava/lang/String;
 
     .line 24
     .line 25

@@ -67,7 +67,7 @@
     .line 18
     .line 19
     .line 20
-    sget-object v1, Lʾˉ/ᴵᴵ;->ʼˈ:[B
+    sget-object v1, Lʾˉ/ʼʼ;->ʼˈ:[B
 
     .line 21
     .line 22

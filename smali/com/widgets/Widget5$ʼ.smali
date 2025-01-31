@@ -75,7 +75,7 @@
     .line 3
     .line 4
     :try_start_0
-    new-instance v2, Lʼˏ/ᵎ;
+    new-instance v2, Lʼˏ/ᵢ;
 
     .line 5
     .line 6
@@ -83,7 +83,7 @@
 
     .line 7
     .line 8
-    invoke-direct {v2, v3}, Lʼˏ/ᵎ;-><init>(Ljava/lang/String;)V
+    invoke-direct {v2, v3}, Lʼˏ/ᵢ;-><init>(Ljava/lang/String;)V
 
     .line 9
     .line 10
@@ -97,7 +97,7 @@
     .line 14
     .line 15
     .line 16
-    sget-object v4, Lʾˉ/ᴵᴵ;->ʾʻ:Ljava/lang/String;
+    sget-object v4, Lʾˉ/ʼʼ;->ʾʻ:Ljava/lang/String;
 
     .line 17
     .line 18
@@ -142,7 +142,7 @@
     .line 39
     .line 40
     .line 41
-    sget-object v4, Lʾˉ/ᴵᴵ;->ʼٴ:Ljava/lang/String;
+    sget-object v4, Lʾˉ/ʼʼ;->ʼٴ:Ljava/lang/String;
 
     .line 42
     .line 43
@@ -193,17 +193,17 @@
 
     .line 67
     .line 68
-    invoke-virtual {v2, v3}, Lʼˏ/ᵎ;->ˊˊ([Ljava/lang/String;)Ljava/lang/String;
+    invoke-virtual {v2, v3}, Lʼˏ/ᵢ;->ˎˎ([Ljava/lang/String;)Ljava/lang/String;
 
     .line 69
     .line 70
     .line 71
-    invoke-static {v0}, Lʼˏ/ᵎ;->ˊˈ(Z)V
+    invoke-static {v0}, Lʼˏ/ᵢ;->ˊٴ(Z)V
 
     .line 72
     .line 73
     .line 74
-    invoke-static {v0}, Lʼˏ/ᵎ;->ˊˋ(Z)V
+    invoke-static {v0}, Lʼˏ/ᵢ;->ˊᴵ(Z)V
 
     .line 75
     .line 76
@@ -212,7 +212,7 @@
 
     .line 78
     .line 79
-    invoke-static {v0}, Lʼˏ/ᵎ;->ˊʾ(Ljava/lang/String;)V
+    invoke-static {v0}, Lʼˏ/ᵢ;->ˊˑ(Ljava/lang/String;)V
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 

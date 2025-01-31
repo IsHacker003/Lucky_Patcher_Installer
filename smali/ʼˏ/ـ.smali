@@ -4,11 +4,11 @@
 
 
 # direct methods
-.method public static bridge synthetic ʻ(Landroid/content/res/Configuration;Ljava/util/Locale;)V
+.method public static bridge synthetic ʻ(Landroid/app/NotificationManager;Landroid/app/NotificationChannel;)V
     .locals 0
 
     .line 1
-    invoke-virtual {p0, p1}, Landroid/content/res/Configuration;->setLocale(Ljava/util/Locale;)V
+    invoke-virtual {p0, p1}, Landroid/app/NotificationManager;->createNotificationChannel(Landroid/app/NotificationChannel;)V
 
     return-void
 .end method

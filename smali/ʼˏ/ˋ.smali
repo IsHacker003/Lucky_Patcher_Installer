@@ -4,13 +4,11 @@
 
 
 # direct methods
-.method public static bridge synthetic ʻ(Landroid/net/Uri;)Ljava/lang/String;
+.method public static bridge synthetic ʻ(Ljava/util/ArrayList;Ljava/util/Comparator;)V
     .locals 0
 
     .line 1
-    invoke-static {p0}, Landroid/provider/DocumentsContract;->getDocumentId(Landroid/net/Uri;)Ljava/lang/String;
+    invoke-virtual {p0, p1}, Ljava/util/ArrayList;->sort(Ljava/util/Comparator;)V
 
-    move-result-object p0
-
-    return-object p0
+    return-void
 .end method

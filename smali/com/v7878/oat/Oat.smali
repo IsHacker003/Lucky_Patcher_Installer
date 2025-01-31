@@ -285,7 +285,7 @@
 .end method
 
 .method public static getOatLocation(Ljava/lang/Class;)Ljava/lang/String;
-    .locals 4
+    .locals 5
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -324,20 +324,20 @@
     move-result-wide v0
 
     .line 15
-    const-wide/16 v2, 0x0
-
-    .line 16
-    .line 17
-    cmp-long p0, v0, v2
-
-    .line 18
-    .line 19
-    if-nez p0, :cond_0
-
-    .line 20
-    .line 21
     const/4 p0, 0x0
 
+    .line 16
+    const-wide/16 v2, 0x0
+
+    .line 17
+    .line 18
+    cmp-long v4, v0, v2
+
+    .line 19
+    .line 20
+    if-nez v4, :cond_0
+
+    .line 21
     .line 22
     return-object p0
 
@@ -351,43 +351,55 @@
     move-result-wide v0
 
     .line 27
-    sget p0, Lcom/v7878/oat/AndroidUnsafe;->ADDRESS_SIZE:I
+    cmp-long v4, v0, v2
 
     .line 28
     .line 29
-    int-to-long v2, p0
+    if-eqz v4, :cond_1
 
     .line 30
-    add-long/2addr v0, v2
-
     .line 31
-    new-instance p0, Lcom/v7878/oat/std_string;
+    sget p0, Lcom/v7878/oat/AndroidUnsafe;->ADDRESS_SIZE:I
 
     .line 32
     .line 33
-    invoke-direct {p0, v0, v1}, Lcom/v7878/oat/std_string;-><init>(J)V
+    int-to-long v2, p0
 
     .line 34
+    add-long/2addr v0, v2
+
     .line 35
+    new-instance p0, Lcom/v7878/oat/std_string;
+
     .line 36
-    new-instance v0, Ljava/lang/String;
-
     .line 37
-    .line 38
-    invoke-virtual {p0}, Lcom/v7878/oat/std_string;->data()[B
+    invoke-direct {p0, v0, v1}, Lcom/v7878/oat/std_string;-><init>(J)V
 
+    .line 38
     .line 39
     .line 40
-    .line 41
-    move-result-object p0
+    new-instance v0, Ljava/lang/String;
 
+    .line 41
     .line 42
-    invoke-direct {v0, p0}, Ljava/lang/String;-><init>([B)V
+    invoke-virtual {p0}, Lcom/v7878/oat/std_string;->data()[B
 
     .line 43
     .line 44
     .line 45
+    move-result-object p0
+
+    .line 46
+    invoke-direct {v0, p0}, Ljava/lang/String;-><init>([B)V
+
+    .line 47
+    .line 48
+    .line 49
     return-object v0
+
+    .line 50
+    :cond_1
+    return-object p0
 .end method
 
 .method private static synthetic lambda$static$0()Ljava/lang/reflect/Field;

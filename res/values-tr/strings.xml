@@ -33,7 +33,7 @@ Varsayılan: /data/dalvik-cache/*"</string>
     <string name="abc_shareactionprovider_share_with">Şununla paylaş:</string>
     <string name="abc_shareactionprovider_share_with_application">%s ile paylaş</string>
     <string name="abc_toolbar_collapse_description">Daralt</string>
-    <string name="about_thanks_for_this_translation">Türkçe çeviri için teşekkürler: ChelpuS, k7lest ve Turkishmark</string>
+    <string name="about_thanks_for_this_translation">Türkçe çeviri için teşekkürler: ChelpuS, TurkishMark, LuckyPatcher, KemalistRuh, International Turkish Language, YsCs Komitesi. Sorun ve görüşleriniz için: turkishmark.aloha522@silomails.com</string>
     <string name="about_working_dir">SD Kartdaki çalışma dizini:</string>
     <string name="aboutlp">Lucky Patcher genel bir yama aracıdır. Reklamları kaldırma, Google lisans doğrulaması(Otomatik ve El-ile), izinleri yönetme ve birçok amaca yönelik olarak uygulamaları modifiye eder.</string>
     <string name="aboutmenu">Hakkında</string>
@@ -1058,7 +1058,9 @@ Lütfen SuperSu yükleyin (\"Sorun giderme-> SuperSu'yu yükle (ICS)\") ve Super
 (Ana depolamada daha fazla boş alan)"</string>
     <string name="odex_all_system_app_message">Tüm sistem uygulamalarını ODEXlemek istediğinizden emin misiniz?</string>
     <string name="odexed_not_all_apps">"Hata! Büyük ihtimalle /system'de yeterince boş alan yok. Bazı uygulamalar ODEXlenmedi."</string>
+    <string name="off">Kapalı</string>
     <string name="ok">Tamam</string>
+    <string name="on">Açık</string>
     <string name="on_top_apps_marker">Yeni</string>
     <string name="open_to_GP">Open to Google Play</string>
     <string name="option_SELinux_permissive">"SELinux'u izinli moda ayarla"</string>

@@ -11,6 +11,7 @@
             <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0" />
             <CheckBox android:id="@id/CheckBoxSelect" android:focusable="true" android:visibility="gone" android:layout_width="35.0dip" android:layout_height="35.0dip" android:layout_marginTop="0.0dip" android:layout_marginRight="10.0dip" android:checked="false" android:text="" android:buttonTint="@color/checkboxColor" />
             <ImageView android:gravity="center" android:id="@id/splitIcon" android:layout_width="25.0dip" android:layout_height="25.0dip" android:layout_marginTop="1.0dip" android:layout_weight="0.0" />
+            <ImageView android:gravity="center" android:id="@id/inappIcon" android:visibility="visible" android:layout_width="22.0dip" android:layout_height="22.0dip" android:layout_marginTop="1.0dip" android:layout_marginRight="2.0dip" android:layout_weight="0.0" />
             <ImageView android:gravity="center" android:id="@id/odexIcon" android:layout_width="20.0dip" android:layout_height="20.0dip" android:layout_marginLeft="0.0dip" android:layout_marginTop="2.0dip" android:layout_marginRight="5.0dip" android:layout_marginBottom="3.0dip" android:layout_weight="0.0" />
             <ImageView android:gravity="center" android:id="@id/modifiedIcon" android:layout_width="20.0dip" android:layout_height="20.0dip" android:layout_marginLeft="0.0dip" android:layout_marginTop="2.0dip" android:layout_marginRight="4.0dip" android:layout_marginBottom="3.0dip" android:layout_weight="0.0" />
         </LinearLayout>

@@ -25,7 +25,7 @@
     .line 4
     .line 5
     .line 6
-    invoke-static {v0}, Lʼˏ/ᵎ;->ˏᵢ(Ljava/lang/Object;)V
+    invoke-static {v0}, Lʼˏ/ᵢ;->ˑʿ(Ljava/lang/Object;)V
 
     .line 7
     .line 8
@@ -69,7 +69,7 @@
     .line 26
     .line 27
     .line 28
-    new-instance p0, Lʼˏ/ᵎ;
+    new-instance p0, Lʼˏ/ᵢ;
 
     .line 29
     .line 30
@@ -77,12 +77,12 @@
 
     .line 31
     .line 32
-    invoke-direct {p0, v3}, Lʼˏ/ᵎ;-><init>(Ljava/lang/String;)V
+    invoke-direct {p0, v3}, Lʼˏ/ᵢ;-><init>(Ljava/lang/String;)V
 
     .line 33
     .line 34
     .line 35
-    invoke-virtual {p0, v0}, Lʼˏ/ᵎ;->ˎˈ(Ljava/io/File;)V
+    invoke-virtual {p0, v0}, Lʼˏ/ᵢ;->ˎᐧ(Ljava/io/File;)V
 
     .line 36
     .line 37
@@ -183,7 +183,7 @@
     move-result-object v1
 
     .line 89
-    invoke-static {v1, v2}, Lʼˏ/ᵎ;->ʻˊ(Ljava/io/InputStream;Ljava/io/File;)Z
+    invoke-static {v1, v2}, Lʼˏ/ᵢ;->ʻˎ(Ljava/io/InputStream;Ljava/io/File;)Z
 
     .line 90
     .line 91
@@ -204,7 +204,7 @@
     .line 98
     .line 99
     .line 100
-    invoke-static {}, Lʼˏ/ᵎ;->ʼˉ()V
+    invoke-static {}, Lʼˏ/ᵢ;->ʼˎ()V
 
     .line 101
     .line 102
@@ -270,30 +270,30 @@
 
     .line 129
     :cond_1
-    new-instance v0, Lʼˏ/ᵎ;
+    new-instance v0, Lʼˏ/ᵢ;
 
     .line 130
     .line 131
-    invoke-direct {v0, v3}, Lʼˏ/ᵎ;-><init>(Ljava/lang/String;)V
+    invoke-direct {v0, v3}, Lʼˏ/ᵢ;-><init>(Ljava/lang/String;)V
 
     .line 132
     .line 133
     .line 134
-    invoke-virtual {v0, v2}, Lʼˏ/ᵎ;->ˎˉ(Ljava/io/File;)V
+    invoke-virtual {v0, v2}, Lʼˏ/ᵢ;->ˎᴵ(Ljava/io/File;)V
 
     .line 135
     .line 136
     .line 137
-    new-instance v0, Lʼˏ/ᵎ;
+    new-instance v0, Lʼˏ/ᵢ;
 
     .line 138
     .line 139
-    invoke-direct {v0, v3}, Lʼˏ/ᵎ;-><init>(Ljava/lang/String;)V
+    invoke-direct {v0, v3}, Lʼˏ/ᵢ;-><init>(Ljava/lang/String;)V
 
     .line 140
     .line 141
     .line 142
-    invoke-virtual {v0, v2}, Lʼˏ/ᵎ;->ˎˈ(Ljava/io/File;)V
+    invoke-virtual {v0, v2}, Lʼˏ/ᵢ;->ˎᐧ(Ljava/io/File;)V
 
     .line 143
     .line 144
@@ -355,7 +355,7 @@
     .line 170
     .line 171
     :goto_3
-    invoke-static {}, Lʼˏ/ᵎ;->ʼˉ()V
+    invoke-static {}, Lʼˏ/ᵢ;->ʼˎ()V
 
     .line 172
     .line 173

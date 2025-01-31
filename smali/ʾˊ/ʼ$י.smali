@@ -70,7 +70,7 @@
     const/4 p2, 0x1
 
     .line 3
-    sget-object p4, Lʾˉ/ᴵᴵ;->ʽˈ:Lʾˉ/ʽ;
+    sget-object p4, Lʾˉ/ʼʼ;->ʽˈ:Lʾˉ/ʽ;
 
     .line 4
     .line 5
@@ -106,11 +106,11 @@
 
     .line 20
     .line 21
-    new-instance p4, Lʼˏ/ᵎ;
+    new-instance p4, Lʼˏ/ᵢ;
 
     .line 22
     .line 23
-    invoke-direct {p4, v1}, Lʼˏ/ᵎ;-><init>(Ljava/lang/String;)V
+    invoke-direct {p4, v1}, Lʼˏ/ᵢ;-><init>(Ljava/lang/String;)V
 
     .line 24
     .line 25
@@ -181,7 +181,7 @@
 
     .line 61
     .line 62
-    invoke-virtual {p4, v0}, Lʼˏ/ᵎ;->ˊˊ([Ljava/lang/String;)Ljava/lang/String;
+    invoke-virtual {p4, v0}, Lʼˏ/ᵢ;->ˎˎ([Ljava/lang/String;)Ljava/lang/String;
 
     .line 63
     .line 64
@@ -190,11 +190,11 @@
 
     .line 66
     :cond_0
-    new-instance p4, Lʼˏ/ᵎ;
+    new-instance p4, Lʼˏ/ᵢ;
 
     .line 67
     .line 68
-    invoke-direct {p4, v1}, Lʼˏ/ᵎ;-><init>(Ljava/lang/String;)V
+    invoke-direct {p4, v1}, Lʼˏ/ᵢ;-><init>(Ljava/lang/String;)V
 
     .line 69
     .line 70
@@ -265,13 +265,13 @@
 
     .line 106
     .line 107
-    invoke-virtual {p4, v0}, Lʼˏ/ᵎ;->ˊˊ([Ljava/lang/String;)Ljava/lang/String;
+    invoke-virtual {p4, v0}, Lʼˏ/ᵢ;->ˎˎ([Ljava/lang/String;)Ljava/lang/String;
 
     .line 108
     .line 109
     .line 110
     :goto_0
-    invoke-static {}, Lʾˉ/ᴵᴵ;->ˈᵎ()Landroid/content/pm/PackageManager;
+    invoke-static {}, Lʾˉ/ʼʼ;->ˈᵎ()Landroid/content/pm/PackageManager;
 
     .line 111
     .line 112
@@ -328,7 +328,7 @@
     .line 136
     .line 137
     :goto_1
-    sget-object p1, Lʾˉ/ᴵᴵ;->ʽˈ:Lʾˉ/ʽ;
+    sget-object p1, Lʾˉ/ʼʼ;->ʽˈ:Lʾˉ/ʽ;
 
     .line 138
     .line 139
@@ -345,20 +345,20 @@
 
     .line 145
     .line 146
-    sget-object p1, Lʾˉ/ᴵᴵ;->ʼᴵ:Lʾˉ/ᵔ;
+    sget-object p1, Lʾˉ/ʼʼ;->ʼᴵ:Lʾˉ/ﹳ;
 
     .line 147
     .line 148
-    sget-object p3, Lʾˉ/ᴵᴵ;->ʼᵎ:Lʾˉ/ᵎ;
+    sget-object p3, Lʾˉ/ʼʼ;->ʼᵎ:Lʾˉ/ᵎ;
 
     .line 149
     .line 150
-    invoke-virtual {p1, p3}, Lʾˉ/ᵔ;->ˊ(Lʾˉ/ᵎ;)V
+    invoke-virtual {p1, p3}, Lʾˉ/ﹳ;->ˎ(Lʾˉ/ᵎ;)V
 
     .line 151
     .line 152
     .line 153
-    invoke-static {}, Lʾˉ/ᴵᴵ;->ˈˏ()Landroid/content/SharedPreferences;
+    invoke-static {}, Lʾˉ/ʼʼ;->ˈˏ()Landroid/content/SharedPreferences;
 
     .line 154
     .line 155

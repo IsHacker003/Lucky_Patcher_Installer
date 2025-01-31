@@ -104,7 +104,7 @@
     move-result-object v2
 
     .line 26
-    invoke-static {v2}, Lʾˉ/ᴵᴵ;->ˉˎ(Ljava/lang/Object;)V
+    invoke-static {v2}, Lʾˉ/ʼʼ;->ˉˎ(Ljava/lang/Object;)V
 
     .line 27
     .line 28
@@ -137,7 +137,7 @@
     move-result-object v2
 
     .line 43
-    sget-boolean v3, Lʾˉ/ᴵᴵ;->ʽﾞ:Z
+    sget-boolean v3, Lʾˉ/ʼʼ;->ʽﾞ:Z
 
     .line 44
     .line 45
@@ -145,7 +145,7 @@
 
     .line 46
     .line 47
-    new-instance v3, Lʼˏ/ᵎ;
+    new-instance v3, Lʼˏ/ᵢ;
 
     .line 48
     .line 49
@@ -153,7 +153,7 @@
 
     .line 50
     .line 51
-    invoke-direct {v3, v4}, Lʼˏ/ᵎ;-><init>(Ljava/lang/String;)V
+    invoke-direct {v3, v4}, Lʼˏ/ᵢ;-><init>(Ljava/lang/String;)V
 
     .line 52
     .line 53
@@ -167,7 +167,7 @@
     .line 57
     .line 58
     .line 59
-    sget-object v5, Lʾˉ/ᴵᴵ;->ʾʻ:Ljava/lang/String;
+    sget-object v5, Lʾˉ/ʼʼ;->ʾʻ:Ljava/lang/String;
 
     .line 60
     .line 61
@@ -223,13 +223,13 @@
 
     .line 88
     .line 89
-    invoke-virtual {v3, v5}, Lʼˏ/ᵎ;->ˊˊ([Ljava/lang/String;)Ljava/lang/String;
+    invoke-virtual {v3, v5}, Lʼˏ/ᵢ;->ˎˎ([Ljava/lang/String;)Ljava/lang/String;
 
     .line 90
     .line 91
     .line 92
     :cond_0
-    sget-object v3, Lʾˉ/ᴵᴵ;->ˆᵎ:Ljava/lang/Boolean;
+    sget-object v3, Lʾˉ/ʼʼ;->ˆᵎ:Ljava/lang/Boolean;
 
     .line 93
     .line 94

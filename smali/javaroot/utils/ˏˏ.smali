@@ -42,7 +42,7 @@
     .line 4
     .line 5
     .line 6
-    invoke-static {v0}, Lʼˏ/ᵎ;->ˏᵢ(Ljava/lang/Object;)V
+    invoke-static {v0}, Lʼˏ/ᵢ;->ˑʿ(Ljava/lang/Object;)V
 
     .line 7
     .line 8
@@ -165,7 +165,7 @@
 
     .line 58
     .line 59
-    invoke-static {p0, v0}, Lʼˏ/ᵎ;->ˋʿ(Ljava/lang/String;Ljava/lang/String;)Z
+    invoke-static {p0, v0}, Lʼˏ/ᵢ;->ˋי(Ljava/lang/String;Ljava/lang/String;)Z
 
     .line 60
     .line 61
@@ -181,7 +181,7 @@
 
     .line 65
     :cond_2
-    invoke-static {}, Lʼˏ/ᵎ;->ʿٴ()Ljava/lang/String;
+    invoke-static {}, Lʼˏ/ᵢ;->ʿᵢ()Ljava/lang/String;
 
     .line 66
     .line 67
@@ -194,7 +194,7 @@
     .line 70
     .line 71
     :goto_3
-    sget p0, Lʾˉ/ᴵᴵ;->ʾᐧ:I
+    sget p0, Lʾˉ/ʼʼ;->ʾᐧ:I
 
     .line 72
     .line 73
@@ -236,7 +236,7 @@
 
     .line 92
     .line 93
-    invoke-static {p0, v0, v1}, Lʼˏ/ᵎ;->ʽʻ(Ljava/io/File;Ljava/io/File;Ljava/lang/String;)Z
+    invoke-static {p0, v0, v1}, Lʼˏ/ᵢ;->ʽʿ(Ljava/io/File;Ljava/io/File;Ljava/lang/String;)Z
     :try_end_2
     .catchall {:try_start_2 .. :try_end_2} :catchall_1
 
@@ -254,7 +254,7 @@
     .line 100
     :cond_3
     :goto_5
-    invoke-static {}, Lʼˏ/ᵎ;->ʼˉ()V
+    invoke-static {}, Lʼˏ/ᵢ;->ʼˎ()V
 
     .line 101
     .line 102

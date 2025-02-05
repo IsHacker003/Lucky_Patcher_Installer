@@ -3,7 +3,7 @@
 .source "SourceFile"
 
 # interfaces
-.implements Landroid/widget/ExpandableListView$OnChildClickListener;
+.implements Landroid/widget/ExpandableListView$OnGroupClickListener;
 
 
 # annotations
@@ -40,57 +40,133 @@
 
 
 # virtual methods
-.method public onChildClick(Landroid/widget/ExpandableListView;Landroid/view/View;IIJ)Z
+.method public onGroupClick(Landroid/widget/ExpandableListView;Landroid/view/View;IJ)Z
     .locals 0
 
     .line 1
-    sget-object p1, Lʾˉ/ᴵᴵ;->ˆʿ:Lʾˉ/ـ;
+    invoke-virtual {p1, p3}, Landroid/widget/AdapterView;->getItemAtPosition(I)Ljava/lang/Object;
 
     .line 2
     .line 3
-    invoke-virtual {p1, p3}, Lʾˉ/ـ;->ʾ(I)Lʾˉ/י;
-
     .line 4
+    move-result-object p2
+
     .line 5
+    invoke-static {p2}, Lʾˉ/ᴵᴵ;->ˉˎ(Ljava/lang/Object;)V
+
     .line 6
-    move-result-object p1
-
     .line 7
-    iget-object p1, p1, Lʾˉ/י;->ʽ:Ljava/util/List;
-
     .line 8
-    .line 9
-    invoke-interface {p1, p4}, Ljava/util/List;->get(I)Ljava/lang/Object;
+    invoke-static {p3}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
+    .line 9
     .line 10
     .line 11
+    move-result-object p2
+
     .line 12
-    move-result-object p1
+    invoke-static {p2}, Lʾˉ/ᴵᴵ;->ˉˎ(Ljava/lang/Object;)V
 
     .line 13
-    check-cast p1, Ljava/lang/Integer;
-
     .line 14
     .line 15
-    invoke-virtual {p1}, Ljava/lang/Integer;->intValue()I
+    sget-object p2, Lʾˉ/ᴵᴵ;->ʼᴵ:Lʾˉ/ᵔ;
 
     .line 16
     .line 17
+    invoke-virtual {p2, p3}, Lʾˉ/ᵔ;->ˆ(I)Lʾˉ/ᵎ;
+
     .line 18
-    move-result p1
-
     .line 19
-    iget-object p2, p0, Lʾˉ/ᴵᴵ$ʿᐧ;->ʻ:Lʾˉ/ᴵᴵ;
-
     .line 20
+    move-result-object p2
+
     .line 21
-    invoke-virtual {p2, p1}, Lʾˉ/ᴵᴵ;->ˊᵎ(I)V
+    sput-object p2, Lʾˉ/ᴵᴵ;->ʼᵎ:Lʾˉ/ᵎ;
 
     .line 22
     .line 23
-    .line 24
-    const/4 p1, 0x0
+    invoke-static {}, Lʾˉ/ᴵᴵ;->ˆᐧ()V
 
+    .line 24
     .line 25
+    .line 26
+    invoke-virtual {p1, p3}, Landroid/widget/ExpandableListView;->isGroupExpanded(I)Z
+
+    .line 27
+    .line 28
+    .line 29
+    move-result p2
+
+    .line 30
+    if-eqz p2, :cond_0
+
+    .line 31
+    .line 32
+    invoke-virtual {p1, p3}, Landroid/widget/ExpandableListView;->collapseGroup(I)Z
+
+    .line 33
+    .line 34
+    .line 35
+    goto :goto_0
+
+    .line 36
+    :cond_0
+    invoke-virtual {p1, p3}, Landroid/widget/ExpandableListView;->expandGroup(I)Z
+
+    .line 37
+    .line 38
+    .line 39
+    sget p2, Lʾˉ/ᴵᴵ;->ʾᐧ:I
+
+    .line 40
+    .line 41
+    const/4 p4, 0x7
+
+    .line 42
+    if-le p2, p4, :cond_1
+
+    .line 43
+    .line 44
+    invoke-virtual {p1, p3}, Landroid/widget/AbsListView;->smoothScrollToPosition(I)V
+
+    .line 45
+    .line 46
+    .line 47
+    goto :goto_0
+
+    .line 48
+    :cond_1
+    sget-object p1, Lʾˉ/ᴵᴵ;->ʼﹶ:Landroid/widget/ExpandableListView;
+
+    .line 49
+    .line 50
+    invoke-virtual {p1}, Landroid/view/View;->clearFocus()V
+
+    .line 51
+    .line 52
+    .line 53
+    sget-object p1, Lʾˉ/ᴵᴵ;->ʼﹶ:Landroid/widget/ExpandableListView;
+
+    .line 54
+    .line 55
+    new-instance p2, Lʾˉ/ᴵᴵ$ʿᐧ$ʻ;
+
+    .line 56
+    .line 57
+    invoke-direct {p2, p0, p3}, Lʾˉ/ᴵᴵ$ʿᐧ$ʻ;-><init>(Lʾˉ/ᴵᴵ$ʿᐧ;I)V
+
+    .line 58
+    .line 59
+    .line 60
+    invoke-virtual {p1, p2}, Landroid/view/View;->post(Ljava/lang/Runnable;)Z
+
+    .line 61
+    .line 62
+    .line 63
+    :goto_0
+    const/4 p1, 0x1
+
+    .line 64
     return p1
 .end method

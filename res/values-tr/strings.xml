@@ -167,6 +167,7 @@ Varsayılan: /data/dalvik-cache/*"</string>
     <string name="close">Kapat</string>
     <string name="collect_logs">Günlükler toplanıyor...</string>
     <string name="common_google_play_services_unknown_issue">%1$s, Google Play hizmetleriyle ilgili sorun yaşıyor. Lütfen tekrar deneyin.</string>
+    <string name="context_add_app_for_zygisk_purchaces">Bu uygulama için satın alma emülasyonunu (zygisk) etkinleştirin</string>
     <string name="context_automodeslvl">Otomatik yöntemler</string>
     <string name="context_backup_apk">.apk dosyasını yedekle</string>
     <string name="context_backup_apk_selected_apps">"Seçilen uygulamaların apk'sını yedekle"</string>
@@ -199,6 +200,7 @@ Orijinal imzayı koru.
 (dengesiz yöntem)"</string>
     <string name="context_hide_lp">"Lucky Patcher'ı Gizle"</string>
     <string name="context_hide_lp_descr">"Lucky Patcher'ı diğer uygulamalardan gizlemeye çalış. Sistem yükünü arttırır, yalnızca gerektiğinde kullanın."</string>
+    <string name="context_ignor_app_for_zygisk_purchaces">Bu uygulama için satın alma emülasyonunu (zygisk) devre dışı bırakın</string>
     <string name="context_install">Yükle</string>
     <string name="context_install_as_system">Sistem uygulaması olarak yükle</string>
     <string name="context_integrate_dalvik">Dalvik kodunu yüklenmiş uygulamaya entegre et</string>
@@ -377,7 +379,7 @@ Dosya dizini:"</string>
     <string name="customdescr">Özel yaması uygulanmış olan uygulamaları gösterir.</string>
     <string name="customtitle">Özel yamalı olanlar</string>
     <string name="dalvik_cache_size">Dalvik-belleği boyutu:</string>
-    <string name="damadged_apk">"Okunabilir uygulama dosya'sı hasar görmüş."</string>
+    <string name="damadged_apk">Uygulama dosyası hasar görmüş ve okunamıyor.</string>
     <string name="data_dir_size">Data dizini boyutu:</string>
     <string name="date_creation_patch">Yama tarihi eklendi</string>
     <string name="days_on_up">Yeni Uygulamaları Başta Göster</string>

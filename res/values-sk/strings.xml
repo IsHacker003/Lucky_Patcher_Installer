@@ -165,6 +165,7 @@ interné úložisko"</string>
     <string name="close">Zavrieť</string>
     <string name="collect_logs">Zhromaždovanie záznamov...</string>
     <string name="common_google_play_services_unknown_issue">Aplikácia %1$s má problémy so službami Google Play. Skúste to znova.</string>
+    <string name="context_add_app_for_zygisk_purchaces">Povoliť emuláciu nákupu (Zygisk) pre túto aplikáciu</string>
     <string name="context_automodeslvl">Automatické režimy</string>
     <string name="context_backup_apk">Zálohovať APK súbor</string>
     <string name="context_backup_apk_selected_apps">Zálohovať súbory APK vybraných aplikácií</string>
@@ -194,6 +195,7 @@ Uložiť pôvodný podpis.
 (nestabilná metóda)"</string>
     <string name="context_hide_lp">Skryť Lucky Patcher</string>
     <string name="context_hide_lp_descr">Pokúsiť sa skryť Lucky Patcher pred ostatnými aplikáciami. Zaťaží to systém – použiť iba ak je to nevyhnutné.</string>
+    <string name="context_ignor_app_for_zygisk_purchaces">Zakázať emuláciu nákupu (Zygisk) pre túto aplikáciu</string>
     <string name="context_install">Inštalovať</string>
     <string name="context_install_as_system">Inštalovať ako systémovú aplikáciu</string>
     <string name="context_integrate_dalvik">Integrovať Dalvik kód do nainštalovanej aplikácie</string>
@@ -365,7 +367,7 @@ Uložiť pôvodný podpis (bezpečná metóda)"</string>
     <string name="customdescr">Zobraziť všetky aplikácie s aplikovanou vlastnou záplatou.</string>
     <string name="customtitle">Aplikácie s vlastnou záplatou</string>
     <string name="dalvik_cache_size">Veľkosť Dalvik cache:</string>
-    <string name="damadged_apk">Súbor aplikácie je poškodený a je možné ho prečítať.</string>
+    <string name="damadged_apk">Súbor aplikácie je poškodený a nie je možné ho prečítať.</string>
     <string name="data_dir_size">Veľkosť adresára s údajmi:</string>
     <string name="date_creation_patch">Dátum záplaty pridaný</string>
     <string name="days_on_up">Dni umiestnenia navrchu</string>

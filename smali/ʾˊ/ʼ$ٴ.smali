@@ -64,7 +64,7 @@
     .end annotation
 
     .line 1
-    sget-object p1, Lʾˉ/ʼʼ;->ʽˉ:Lʾˉ/ʽ;
+    sget-object p1, Lʾˉ/ᴵᴵ;->ʽˉ:Lʾˉ/ʽ;
 
     .line 2
     .line 3

@@ -223,11 +223,11 @@
 
     .line 74
     .line 75
-    sget-object p3, Lʾˉ/ʼʼ;->ʼˎ:Lʾˉ/ʼʼ;
+    sget-object p3, Lʾˉ/ᴵᴵ;->ʼˎ:Lʾˉ/ᴵᴵ;
 
     .line 76
     .line 77
-    invoke-virtual {p3}, Lʾˉ/ʼʼ;->ˈˑ()Landroidx/fragment/app/ʿ;
+    invoke-virtual {p3}, Lʾˉ/ᴵᴵ;->ˈˑ()Landroidx/fragment/app/ʿ;
 
     .line 78
     .line 79
@@ -536,11 +536,11 @@
 
     .line 233
     .line 234
-    sget-object p2, Lʾˉ/ʼʼ;->ʼˎ:Lʾˉ/ʼʼ;
+    sget-object p2, Lʾˉ/ᴵᴵ;->ʼˎ:Lʾˉ/ᴵᴵ;
 
     .line 235
     .line 236
-    invoke-virtual {p2}, Lʾˉ/ʼʼ;->ˈˑ()Landroidx/fragment/app/ʿ;
+    invoke-virtual {p2}, Lʾˉ/ᴵᴵ;->ˈˑ()Landroidx/fragment/app/ʿ;
 
     .line 237
     .line 238

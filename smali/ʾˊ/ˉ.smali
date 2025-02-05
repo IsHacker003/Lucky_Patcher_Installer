@@ -330,7 +330,7 @@
 
     .line 45
     :try_start_0
-    invoke-static {}, Lʾˉ/ʼʼ;->ˈᵔ()Landroid/content/res/Resources;
+    invoke-static {}, Lʾˉ/ᴵᴵ;->ˈᵔ()Landroid/content/res/Resources;
 
     move-result-object p1
 
@@ -758,7 +758,7 @@
 
     .line 279
     :try_start_0
-    invoke-static {}, Lʾˉ/ʼʼ;->ˈᵔ()Landroid/content/res/Resources;
+    invoke-static {}, Lʾˉ/ᴵᴵ;->ˈᵔ()Landroid/content/res/Resources;
 
     move-result-object p1
 
@@ -849,7 +849,7 @@
 
     .line 65
     :try_start_0
-    invoke-static {}, Lʾˉ/ʼʼ;->ˈᵔ()Landroid/content/res/Resources;
+    invoke-static {}, Lʾˉ/ᴵᴵ;->ˈᵔ()Landroid/content/res/Resources;
 
     move-result-object p1
 

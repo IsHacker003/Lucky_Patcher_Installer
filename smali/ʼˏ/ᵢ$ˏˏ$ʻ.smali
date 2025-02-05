@@ -71,7 +71,7 @@
     .line 14
     .line 15
     .line 16
-    sget-object p2, Lʾˉ/ʼʼ;->ʼˎ:Lʾˉ/ʼʼ;
+    sget-object p2, Lʾˉ/ᴵᴵ;->ʼˎ:Lʾˉ/ᴵᴵ;
 
     .line 17
     .line 18
@@ -88,7 +88,7 @@
 
     .line 24
     .line 25
-    invoke-static {}, Lʾˉ/ʼʼ;->ˈי()Landroid/content/Context;
+    invoke-static {}, Lʾˉ/ᴵᴵ;->ˈי()Landroid/content/Context;
 
     .line 26
     .line 27
@@ -112,15 +112,15 @@
     .line 35
     .line 36
     .line 37
-    sput-object p2, Lʾˉ/ʼʼ;->ˉˑ:Lʾˉ/ˎ;
+    sput-object p2, Lʾˉ/ᴵᴵ;->ˉˑ:Lʾˉ/ˎ;
 
     .line 38
     .line 39
-    sget-object p2, Lʾˉ/ʼʼ;->ʼˎ:Lʾˉ/ʼʼ;
+    sget-object p2, Lʾˉ/ᴵᴵ;->ʼˎ:Lʾˉ/ᴵᴵ;
 
     .line 40
     .line 41
-    sget v0, Lʾˉ/ʼʼ;->ˉᵢ:I
+    sget v0, Lʾˉ/ᴵᴵ;->ˉᵢ:I
 
     .line 42
     .line 43

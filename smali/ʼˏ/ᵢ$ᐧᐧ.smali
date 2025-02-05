@@ -199,7 +199,7 @@
     .line 69
     :cond_0
     :goto_1
-    invoke-static {}, Lʾˉ/ʼʼ;->ˈᵎ()Landroid/content/pm/PackageManager;
+    invoke-static {}, Lʾˉ/ᴵᴵ;->ˈᵎ()Landroid/content/pm/PackageManager;
 
     .line 70
     .line 71
@@ -362,7 +362,7 @@
     .line 151
     .line 152
     :cond_2
-    invoke-static {}, Lʾˉ/ʼʼ;->ˈᵎ()Landroid/content/pm/PackageManager;
+    invoke-static {}, Lʾˉ/ᴵᴵ;->ˈᵎ()Landroid/content/pm/PackageManager;
 
     .line 153
     .line 154
@@ -494,7 +494,7 @@
     .line 217
     .line 218
     :cond_4
-    sget-object v0, Lʾˉ/ʼʼ;->ʼˎ:Lʾˉ/ʼʼ;
+    sget-object v0, Lʾˉ/ᴵᴵ;->ʼˎ:Lʾˉ/ᴵᴵ;
 
     .line 219
     .line 220
@@ -511,7 +511,7 @@
     .line 225
     .line 226
     .line 227
-    invoke-static {v0}, Lʾˉ/ʼʼ;->ˊⁱ(Ljava/lang/Runnable;)V
+    invoke-static {v0}, Lʾˉ/ᴵᴵ;->ˊⁱ(Ljava/lang/Runnable;)V
 
     .line 228
     .line 229

@@ -3,7 +3,7 @@
 .source "SourceFile"
 
 # interfaces
-.implements Landroid/content/DialogInterface$OnClickListener;
+.implements Ljava/lang/Runnable;
 
 
 # annotations
@@ -18,7 +18,7 @@
 
 
 # instance fields
-.field final synthetic ʼ:Lʾˉ/ᴵᴵ;
+.field final synthetic ʻ:Lʾˉ/ᴵᴵ;
 
 
 # direct methods
@@ -26,7 +26,7 @@
     .locals 0
 
     .line 1
-    iput-object p1, p0, Lʾˉ/ᴵᴵ$ʾᵢ;->ʼ:Lʾˉ/ᴵᴵ;
+    iput-object p1, p0, Lʾˉ/ᴵᴵ$ʾᵢ;->ʻ:Lʾˉ/ᴵᴵ;
 
     .line 2
     .line 3
@@ -40,23 +40,22 @@
 
 
 # virtual methods
-.method public onClick(Landroid/content/DialogInterface;I)V
-    .locals 0
+.method public run()V
+    .locals 1
 
     .line 1
-    new-instance p1, Lʾˉ/ᴵᴵ$ʾᵢ$ʻ;
+    sget-object v0, Lʾˉ/ᴵᴵ;->ʼᵎ:Lʾˉ/ᵎ;
 
     .line 2
     .line 3
-    invoke-direct {p1, p0}, Lʾˉ/ᴵᴵ$ʾᵢ$ʻ;-><init>(Lʾˉ/ᴵᴵ$ʾᵢ;)V
+    iget-object v0, v0, Lʾˉ/ᵎ;->ʻ:Ljava/lang/String;
 
     .line 4
     .line 5
-    .line 6
-    invoke-static {p1}, Lʾˉ/ᴵᴵ;->ˋʻ(Ljava/lang/Runnable;)V
+    invoke-static {v0}, Lʼˏ/ᵢ;->ˋـ(Ljava/lang/String;)V
 
+    .line 6
     .line 7
     .line 8
-    .line 9
     return-void
 .end method

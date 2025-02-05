@@ -44,65 +44,34 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lʾˉ/ᴵᴵ$ʾʽ$ʻ;->ʻ:Lʾˉ/ᴵᴵ$ʾʽ;
+    invoke-static {}, Lʼˏ/ᵢ;->ˈˈ()V
 
     .line 2
     .line 3
-    iget-object v0, v0, Lʾˉ/ᴵᴵ$ʾʽ;->ʼ:Ljava/lang/Integer;
-
     .line 4
-    .line 5
-    invoke-virtual {v0}, Ljava/lang/Integer;->intValue()I
+    invoke-static {}, Lʼˏ/ᵢ;->ˋˉ()V
 
+    .line 5
     .line 6
     .line 7
-    .line 8
-    move-result v0
+    new-instance v0, Lʾˉ/ᴵᴵ$ʾʽ$ʻ$ʻ;
 
+    .line 8
     .line 9
-    packed-switch v0, :pswitch_data_0
+    invoke-direct {v0, p0}, Lʾˉ/ᴵᴵ$ʾʽ$ʻ$ʻ;-><init>(Lʾˉ/ᴵᴵ$ʾʽ$ʻ;)V
 
     .line 10
     .line 11
     .line 12
-    :pswitch_0
-    goto :goto_0
+    invoke-static {v0}, Lʾˉ/ᴵᴵ;->ˊⁱ(Ljava/lang/Runnable;)V
 
     .line 13
-    :pswitch_1
-    invoke-static {}, Lʼˏ/ᵎ;->ˋʼ()V
-
     .line 14
     .line 15
+    invoke-static {}, Lʼˏ/ᵢ;->ˋˉ()V
+
     .line 16
-    goto :goto_0
-
     .line 17
-    :pswitch_2
-    invoke-static {}, Lʼˏ/ᵎ;->ˋʻ()V
-
     .line 18
-    .line 19
-    .line 20
-    goto :goto_0
-
-    .line 21
-    :pswitch_3
-    invoke-static {}, Lʼˏ/ᵎ;->ˊﾞ()V
-
-    .line 22
-    .line 23
-    .line 24
-    :goto_0
     return-void
-
-    .line 25
-    :pswitch_data_0
-    .packed-switch 0x7f110410
-        :pswitch_3
-        :pswitch_0
-        :pswitch_0
-        :pswitch_2
-        :pswitch_1
-    .end packed-switch
 .end method

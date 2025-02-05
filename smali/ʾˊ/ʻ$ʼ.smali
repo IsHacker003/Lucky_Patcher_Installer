@@ -44,7 +44,7 @@
     .locals 0
 
     .line 1
-    sget-object p1, Lʾˉ/ʼʼ;->ʼᴵ:Lʾˉ/ﹳ;
+    sget-object p1, Lʾˉ/ᴵᴵ;->ʼᴵ:Lʾˉ/ᵔ;
 
     .line 2
     .line 3
@@ -55,7 +55,7 @@
     const/4 p1, 0x1
 
     .line 6
-    invoke-static {p1}, Lʾˉ/ʼʼ;->ˋʼ(Z)V
+    invoke-static {p1}, Lʾˉ/ᴵᴵ;->ˋʼ(Z)V
 
     .line 7
     .line 8

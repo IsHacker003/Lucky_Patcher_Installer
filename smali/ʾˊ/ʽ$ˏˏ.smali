@@ -80,7 +80,7 @@
 
     .line 1
     :try_start_0
-    sget-object v0, Lʾˉ/ʼʼ;->ʿᴵ:Ljava/lang/Boolean;
+    sget-object v0, Lʾˉ/ᴵᴵ;->ʿᴵ:Ljava/lang/Boolean;
 
     .line 2
     .line 3
@@ -96,7 +96,7 @@
 
     .line 8
     .line 9
-    sget-object v0, Lʾˉ/ʼʼ;->ʽᵎ:Lʾˊ/ˑ;
+    sget-object v0, Lʾˉ/ᴵᴵ;->ʽᵎ:Lʾˊ/ˑ;
 
     .line 10
     .line 11
@@ -116,7 +116,7 @@
 
     .line 18
     .line 19
-    sget-object v0, Lʾˉ/ʼʼ;->ʽᵎ:Lʾˊ/ˑ;
+    sget-object v0, Lʾˉ/ᴵᴵ;->ʽᵎ:Lʾˊ/ˑ;
 
     .line 20
     .line 21
@@ -129,7 +129,7 @@
     .line 24
     .line 25
     .line 26
-    sget-object v0, Lʾˉ/ʼʼ;->ʽᵎ:Lʾˊ/ˑ;
+    sget-object v0, Lʾˉ/ᴵᴵ;->ʽᵎ:Lʾˊ/ˑ;
 
     .line 27
     .line 28
@@ -142,7 +142,7 @@
     .line 31
     .line 32
     .line 33
-    sget-object v0, Lʾˉ/ʼʼ;->ʽᵎ:Lʾˊ/ˑ;
+    sget-object v0, Lʾˉ/ᴵᴵ;->ʽᵎ:Lʾˊ/ˑ;
 
     .line 34
     .line 35
@@ -155,7 +155,7 @@
     .line 38
     .line 39
     .line 40
-    sget-object v0, Lʾˉ/ʼʼ;->ʽᵎ:Lʾˊ/ˑ;
+    sget-object v0, Lʾˉ/ᴵᴵ;->ʽᵎ:Lʾˊ/ˑ;
 
     .line 41
     .line 42
@@ -168,7 +168,7 @@
     .line 45
     .line 46
     .line 47
-    sget-object v0, Lʾˉ/ʼʼ;->ʽᵎ:Lʾˊ/ˑ;
+    sget-object v0, Lʾˉ/ᴵᴵ;->ʽᵎ:Lʾˊ/ˑ;
 
     .line 48
     .line 49
@@ -181,15 +181,15 @@
     .line 52
     .line 53
     .line 54
-    sget-object v0, Lʾˉ/ʼʼ;->ʽᵎ:Lʾˊ/ˑ;
+    sget-object v0, Lʾˉ/ᴵᴵ;->ʽᵎ:Lʾˊ/ˑ;
 
     .line 55
     .line 56
-    sget-object v1, Lʾˉ/ʼʼ;->ʼˎ:Lʾˉ/ʼʼ;
+    sget-object v1, Lʾˉ/ᴵᴵ;->ʼˎ:Lʾˉ/ᴵᴵ;
 
     .line 57
     .line 58
-    invoke-virtual {v1}, Lʾˉ/ʼʼ;->ˈˑ()Landroidx/fragment/app/ʿ;
+    invoke-virtual {v1}, Lʾˉ/ᴵᴵ;->ˈˑ()Landroidx/fragment/app/ʿ;
 
     .line 59
     .line 60
@@ -205,7 +205,7 @@
     .line 64
     .line 65
     .line 66
-    sget-object v0, Lʾˉ/ʼʼ;->ʽᵎ:Lʾˊ/ˑ;
+    sget-object v0, Lʾˉ/ᴵᴵ;->ʽᵎ:Lʾˊ/ˑ;
 
     .line 67
     .line 68
@@ -238,7 +238,7 @@
     .line 79
     .line 80
     .line 81
-    invoke-static {v0}, Lʾˉ/ʼʼ;->ˊⁱ(Ljava/lang/Runnable;)V
+    invoke-static {v0}, Lʾˉ/ᴵᴵ;->ˊⁱ(Ljava/lang/Runnable;)V
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 

@@ -3,12 +3,12 @@
 .source "SourceFile"
 
 # interfaces
-.implements Landroid/widget/CompoundButton$OnCheckedChangeListener;
+.implements Ljava/lang/Runnable;
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lʾˉ/ᴵᴵ;->ˎـ(Lʾˉ/ˎ;)V
+    value = Lʾˉ/ᴵᴵ;->ˉⁱ(IILandroid/content/Intent;)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -17,40 +17,54 @@
 .end annotation
 
 
-# instance fields
-.field final synthetic ʻ:Lʾˉ/ᴵᴵ;
-
-
 # direct methods
-.method constructor <init>(Lʾˉ/ᴵᴵ;)V
+.method constructor <init>()V
     .locals 0
 
     .line 1
-    iput-object p1, p0, Lʾˉ/ᴵᴵ$ٴٴ;->ʻ:Lʾˉ/ᴵᴵ;
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
     .line 3
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
     .line 4
-    .line 5
-    .line 6
     return-void
 .end method
 
 
 # virtual methods
-.method public onCheckedChanged(Landroid/widget/CompoundButton;Z)V
-    .locals 0
+.method public run()V
+    .locals 1
 
     .line 1
-    iget-object p1, p0, Lʾˉ/ᴵᴵ$ٴٴ;->ʻ:Lʾˉ/ᴵᴵ;
+    :try_start_0
+    sget-object v0, Lʾˉ/ᴵᴵ;->ʽˆ:Landroid/widget/ArrayAdapter;
 
     .line 2
     .line 3
-    iput-boolean p2, p1, Lʾˉ/ᴵᴵ;->ʻᵢ:Z
+    if-eqz v0, :cond_0
 
     .line 4
     .line 5
+    invoke-virtual {v0}, Landroid/widget/ArrayAdapter;->notifyDataSetChanged()V
+    :try_end_0
+    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
+
+    .line 6
+    .line 7
+    .line 8
+    goto :goto_0
+
+    .line 9
+    :catch_0
+    move-exception v0
+
+    .line 10
+    invoke-virtual {v0}, Ljava/lang/Throwable;->printStackTrace()V
+
+    .line 11
+    .line 12
+    .line 13
+    :cond_0
+    :goto_0
     return-void
 .end method

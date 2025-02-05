@@ -2184,12 +2184,12 @@
 .end method
 
 .method public static main([Ljava/lang/String;)V
-    .locals 47
+    .locals 49
 
     move-object/from16 v1, p0
 
     .line 1
-    const-string v2, "/inapp_zygisk_exclude"
+    const-string v2, "try patch "
 
     const-string v3, "core-libart.odex"
 
@@ -2215,17 +2215,19 @@
 
     const-string v15, ".oat"
 
-    const-string v14, "apex.oat"
+    const-string v14, "/packages"
 
     move-object/from16 v17, v15
 
-    const-string v15, "boot.oat"
+    const-string v15, "apex.oat"
 
-    const-string v18, "rm"
+    move-object/from16 v18, v2
 
-    move-object/from16 v19, v2
+    const-string v2, "boot.oat"
 
-    const-string v2, ""
+    move-object/from16 v19, v14
+
+    const-string v14, ""
 
     new-instance v24, Ljavaroot/utils/ــ$ʾ;
 
@@ -2248,7 +2250,7 @@
 
     invoke-direct {v4}, Ljava/lang/StringBuilder;-><init>()V
 
-    invoke-virtual {v4, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v4, v14}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
     :try_end_1
     .catch Ljava/lang/Exception; {:try_start_1 .. :try_end_1} :catch_3
 
@@ -2330,7 +2332,7 @@
 
     invoke-direct {v4}, Ljava/lang/StringBuilder;-><init>()V
 
-    invoke-virtual {v4, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v4, v14}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
     :try_end_6
     .catch Ljava/lang/Exception; {:try_start_6 .. :try_end_6} :catch_2
 
@@ -2354,7 +2356,7 @@
 
     invoke-direct {v4}, Ljava/lang/StringBuilder;-><init>()V
 
-    invoke-virtual {v4, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v4, v14}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     const/4 v5, 0x2
 
@@ -2376,7 +2378,7 @@
 
     invoke-direct {v4}, Ljava/lang/StringBuilder;-><init>()V
 
-    invoke-virtual {v4, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v4, v14}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     const/4 v5, 0x3
 
@@ -2510,7 +2512,7 @@
 
     move-result-wide v3
 
-    sput-wide v3, Lʾˉ/ʼʼ;->ʿᵎ:J
+    sput-wide v3, Lʾˉ/ᴵᴵ;->ʿᵎ:J
     :try_end_9
     .catchall {:try_start_9 .. :try_end_9} :catchall_1
 
@@ -2635,7 +2637,7 @@
     aget-object v5, v1, v3
 
     .line 29
-    invoke-virtual {v5, v15}, Ljava/lang/String;->contains(Ljava/lang/CharSequence;)Z
+    invoke-virtual {v5, v2}, Ljava/lang/String;->contains(Ljava/lang/CharSequence;)Z
 
     move-result v5
 
@@ -2644,7 +2646,7 @@
     aget-object v5, v1, v3
 
     .line 30
-    invoke-virtual {v5, v14}, Ljava/lang/String;->contains(Ljava/lang/CharSequence;)Z
+    invoke-virtual {v5, v15}, Ljava/lang/String;->contains(Ljava/lang/CharSequence;)Z
 
     move-result v5
 
@@ -2692,55 +2694,55 @@
 
     move-result v4
 
-    move-object/from16 v26, v2
+    move-object/from16 v26, v14
 
     if-nez v4, :cond_b
 
     const/4 v4, 0x1
 
-    aget-object v2, v1, v4
+    aget-object v14, v1, v4
 
     .line 35
-    invoke-virtual {v2, v6}, Ljava/lang/String;->contains(Ljava/lang/CharSequence;)Z
+    invoke-virtual {v14, v6}, Ljava/lang/String;->contains(Ljava/lang/CharSequence;)Z
 
-    move-result v2
+    move-result v14
 
-    if-nez v2, :cond_b
+    if-nez v14, :cond_b
 
-    aget-object v2, v1, v4
+    aget-object v14, v1, v4
 
     const-string v4, "boot-framework.oat"
 
     .line 36
-    invoke-virtual {v2, v4}, Ljava/lang/String;->contains(Ljava/lang/CharSequence;)Z
-
-    move-result v2
-
-    if-nez v2, :cond_b
-
-    const/4 v2, 0x1
-
-    aget-object v4, v1, v2
-
-    move-object/from16 v2, v25
-
-    .line 37
-    invoke-virtual {v4, v2}, Ljava/lang/String;->contains(Ljava/lang/CharSequence;)Z
+    invoke-virtual {v14, v4}, Ljava/lang/String;->contains(Ljava/lang/CharSequence;)Z
 
     move-result v4
 
-    move-object/from16 v25, v6
-
-    if-nez v4, :cond_a
+    if-nez v4, :cond_b
 
     const/4 v4, 0x1
 
-    aget-object v6, v1, v4
+    aget-object v14, v1, v4
 
-    move-object/from16 v4, v24
+    move-object/from16 v4, v25
+
+    .line 37
+    invoke-virtual {v14, v4}, Ljava/lang/String;->contains(Ljava/lang/CharSequence;)Z
+
+    move-result v14
+
+    move-object/from16 v25, v6
+
+    if-nez v14, :cond_a
+
+    const/4 v14, 0x1
+
+    aget-object v6, v1, v14
+
+    move-object/from16 v14, v24
 
     .line 38
-    invoke-virtual {v6, v4}, Ljava/lang/String;->contains(Ljava/lang/CharSequence;)Z
+    invoke-virtual {v6, v14}, Ljava/lang/String;->contains(Ljava/lang/CharSequence;)Z
 
     move-result v6
 
@@ -2749,171 +2751,173 @@
     goto :goto_9
 
     :cond_9
-    move-object/from16 v24, v2
+    move-object/from16 v24, v4
 
     goto/16 :goto_d
 
     :cond_a
-    move-object/from16 v4, v24
+    :goto_7
+    move-object/from16 v14, v24
 
     goto :goto_9
 
     :cond_b
-    :goto_7
-    move-object/from16 v4, v24
-
     :goto_8
-    move-object/from16 v2, v25
+    move-object/from16 v14, v24
+
+    move-object/from16 v4, v25
 
     move-object/from16 v25, v6
 
     goto :goto_9
 
     :cond_c
-    move-object/from16 v4, v24
+    move-object/from16 v4, v25
 
     move-object/from16 v5, v26
 
-    move-object/from16 v26, v2
+    move-object/from16 v25, v6
 
-    goto :goto_8
+    move-object/from16 v26, v14
+
+    goto :goto_7
 
     :cond_d
     move-object/from16 v5, v26
 
     move-object/from16 v3, v27
 
-    move-object/from16 v26, v2
-
     move-object/from16 v27, v4
 
-    goto :goto_7
+    move-object/from16 v26, v14
+
+    goto :goto_8
 
     :goto_9
     sget-boolean v6, Ljavaroot/utils/ــ;->ˑˎ:Z
 
     if-eqz v6, :cond_9
 
-    move-object/from16 v24, v2
+    move-object/from16 v24, v4
 
     const/4 v6, 0x1
 
     .line 39
-    aget-object v2, v1, v6
+    aget-object v4, v1, v6
 
-    invoke-virtual {v2, v9}, Ljava/lang/String;->contains(Ljava/lang/CharSequence;)Z
+    invoke-virtual {v4, v9}, Ljava/lang/String;->contains(Ljava/lang/CharSequence;)Z
 
-    move-result v2
+    move-result v4
 
-    if-nez v2, :cond_f
+    if-nez v4, :cond_f
 
-    aget-object v2, v1, v6
+    aget-object v4, v1, v6
 
     .line 40
-    invoke-virtual {v2, v7}, Ljava/lang/String;->contains(Ljava/lang/CharSequence;)Z
+    invoke-virtual {v4, v7}, Ljava/lang/String;->contains(Ljava/lang/CharSequence;)Z
 
-    move-result v2
+    move-result v4
 
-    if-nez v2, :cond_f
+    if-nez v4, :cond_f
 
-    aget-object v2, v1, v6
+    aget-object v4, v1, v6
 
-    invoke-virtual {v2, v10}, Ljava/lang/String;->contains(Ljava/lang/CharSequence;)Z
+    invoke-virtual {v4, v10}, Ljava/lang/String;->contains(Ljava/lang/CharSequence;)Z
 
-    move-result v2
+    move-result v4
 
-    if-nez v2, :cond_f
+    if-nez v4, :cond_f
 
-    aget-object v2, v1, v6
+    aget-object v4, v1, v6
 
     .line 41
-    invoke-virtual {v2, v8}, Ljava/lang/String;->contains(Ljava/lang/CharSequence;)Z
+    invoke-virtual {v4, v8}, Ljava/lang/String;->contains(Ljava/lang/CharSequence;)Z
 
-    move-result v2
+    move-result v4
 
-    if-nez v2, :cond_f
+    if-nez v4, :cond_f
 
-    aget-object v2, v1, v6
+    aget-object v4, v1, v6
 
     .line 42
-    invoke-virtual {v2, v15}, Ljava/lang/String;->contains(Ljava/lang/CharSequence;)Z
+    invoke-virtual {v4, v2}, Ljava/lang/String;->contains(Ljava/lang/CharSequence;)Z
 
-    move-result v2
+    move-result v4
 
-    if-nez v2, :cond_f
+    if-nez v4, :cond_f
 
-    aget-object v2, v1, v6
+    aget-object v4, v1, v6
 
-    invoke-virtual {v2, v13}, Ljava/lang/String;->contains(Ljava/lang/CharSequence;)Z
+    invoke-virtual {v4, v13}, Ljava/lang/String;->contains(Ljava/lang/CharSequence;)Z
 
-    move-result v2
+    move-result v4
 
-    if-nez v2, :cond_f
+    if-nez v4, :cond_f
 
-    aget-object v2, v1, v6
+    aget-object v4, v1, v6
 
-    invoke-virtual {v2, v12}, Ljava/lang/String;->contains(Ljava/lang/CharSequence;)Z
+    invoke-virtual {v4, v12}, Ljava/lang/String;->contains(Ljava/lang/CharSequence;)Z
 
-    move-result v2
+    move-result v4
 
-    if-nez v2, :cond_f
+    if-nez v4, :cond_f
 
-    aget-object v2, v1, v6
+    aget-object v4, v1, v6
 
-    invoke-virtual {v2, v11}, Ljava/lang/String;->contains(Ljava/lang/CharSequence;)Z
+    invoke-virtual {v4, v11}, Ljava/lang/String;->contains(Ljava/lang/CharSequence;)Z
 
-    move-result v2
+    move-result v4
 
-    if-nez v2, :cond_f
+    if-nez v4, :cond_f
 
-    aget-object v2, v1, v6
+    aget-object v4, v1, v6
 
     .line 43
-    invoke-virtual {v2, v14}, Ljava/lang/String;->contains(Ljava/lang/CharSequence;)Z
+    invoke-virtual {v4, v15}, Ljava/lang/String;->contains(Ljava/lang/CharSequence;)Z
 
-    move-result v2
+    move-result v4
 
-    if-nez v2, :cond_f
+    if-nez v4, :cond_f
 
-    aget-object v2, v1, v6
+    aget-object v4, v1, v6
 
-    invoke-virtual {v2, v4}, Ljava/lang/String;->contains(Ljava/lang/CharSequence;)Z
+    invoke-virtual {v4, v14}, Ljava/lang/String;->contains(Ljava/lang/CharSequence;)Z
 
-    move-result v2
+    move-result v4
 
-    if-eqz v2, :cond_e
+    if-eqz v4, :cond_e
 
     goto :goto_a
 
     :cond_e
-    const/4 v2, 0x0
-
     const/4 v4, 0x0
+
+    const/4 v6, 0x0
 
     goto :goto_b
 
     :cond_f
     :goto_a
-    const/4 v2, 0x1
-
     const/4 v4, 0x1
-
-    .line 44
-    :goto_b
-    sget-object v6, Ljava/lang/Boolean;->FALSE:Ljava/lang/Boolean;
-
-    sput-object v6, Lʾˉ/ʼʼ;->ʿᴵ:Ljava/lang/Boolean;
 
     const/4 v6, 0x1
 
+    .line 44
+    :goto_b
+    sget-object v7, Ljava/lang/Boolean;->FALSE:Ljava/lang/Boolean;
+
+    sput-object v7, Lʾˉ/ᴵᴵ;->ʿᴵ:Ljava/lang/Boolean;
+
+    const/4 v7, 0x1
+
     .line 45
-    sput-boolean v6, Ljavaroot/utils/ــ;->ˑי:Z
+    sput-boolean v7, Ljavaroot/utils/ــ;->ˑי:Z
 
     .line 46
     :try_start_b
-    new-instance v6, Ljavaroot/utils/ˈ;
+    new-instance v7, Ljavaroot/utils/ˈ;
 
-    invoke-direct {v6}, Ljavaroot/utils/ˈ;-><init>()V
+    invoke-direct {v7}, Ljavaroot/utils/ˈ;-><init>()V
     :try_end_b
     .catch Ljava/lang/Exception; {:try_start_b .. :try_end_b} :catch_5
 
@@ -2922,34 +2926,34 @@
     :catch_5
     move-exception v0
 
-    move-object v6, v0
+    move-object v7, v0
 
     .line 47
-    invoke-virtual {v6}, Ljava/lang/Throwable;->printStackTrace()V
+    invoke-virtual {v7}, Ljava/lang/Throwable;->printStackTrace()V
 
     :goto_c
-    const/4 v6, 0x1
+    const/4 v7, 0x1
 
     goto :goto_e
 
     :goto_d
-    const/4 v2, 0x0
-
     const/4 v4, 0x0
+
+    const/4 v6, 0x0
 
     goto :goto_c
 
     .line 48
     :goto_e
-    aget-object v7, v1, v6
+    aget-object v8, v1, v7
 
-    invoke-virtual {v7, v3}, Ljava/lang/String;->contains(Ljava/lang/CharSequence;)Z
+    invoke-virtual {v8, v3}, Ljava/lang/String;->contains(Ljava/lang/CharSequence;)Z
 
     move-result v3
 
     if-nez v3, :cond_11
 
-    aget-object v3, v1, v6
+    aget-object v3, v1, v7
 
     invoke-virtual {v3, v5}, Ljava/lang/String;->contains(Ljava/lang/CharSequence;)Z
 
@@ -2957,7 +2961,7 @@
 
     if-nez v3, :cond_11
 
-    aget-object v3, v1, v6
+    aget-object v3, v1, v7
 
     move-object/from16 v5, v24
 
@@ -2967,7 +2971,7 @@
 
     if-nez v3, :cond_11
 
-    aget-object v3, v1, v6
+    aget-object v3, v1, v7
 
     move-object/from16 v5, v25
 
@@ -2995,7 +2999,7 @@
     .line 49
     sget-object v3, Ljava/lang/Boolean;->FALSE:Ljava/lang/Boolean;
 
-    sput-object v3, Lʾˉ/ʼʼ;->ʿᴵ:Ljava/lang/Boolean;
+    sput-object v3, Lʾˉ/ᴵᴵ;->ʿᴵ:Ljava/lang/Boolean;
 
     const/4 v3, 0x1
 
@@ -3003,39 +3007,39 @@
     sput-boolean v3, Ljavaroot/utils/ــ;->ˑי:Z
 
     .line 51
-    new-instance v6, Ljavaroot/utils/ˈ;
+    new-instance v7, Ljavaroot/utils/ˈ;
 
-    invoke-direct {v6}, Ljavaroot/utils/ˈ;-><init>()V
-
-    const/4 v6, 0x1
+    invoke-direct {v7}, Ljavaroot/utils/ˈ;-><init>()V
 
     const/4 v7, 0x1
+
+    const/4 v8, 0x1
 
     goto :goto_11
 
     :goto_10
-    const/4 v6, 0x0
-
     const/4 v7, 0x0
+
+    const/4 v8, 0x0
 
     .line 52
     :goto_11
-    aget-object v8, v1, v3
+    aget-object v9, v1, v3
 
-    invoke-virtual {v8, v5}, Ljava/lang/String;->contains(Ljava/lang/CharSequence;)Z
+    invoke-virtual {v9, v5}, Ljava/lang/String;->contains(Ljava/lang/CharSequence;)Z
 
-    move-result v8
+    move-result v9
 
-    if-eqz v8, :cond_12
+    if-eqz v9, :cond_12
 
-    sget-boolean v8, Ljavaroot/utils/ــ;->ˑˎ:Z
+    sget-boolean v9, Ljavaroot/utils/ــ;->ˑˎ:Z
 
-    if-eqz v8, :cond_12
+    if-eqz v9, :cond_12
 
     .line 53
-    sget-object v7, Ljava/lang/Boolean;->FALSE:Ljava/lang/Boolean;
+    sget-object v8, Ljava/lang/Boolean;->FALSE:Ljava/lang/Boolean;
 
-    sput-object v7, Lʾˉ/ʼʼ;->ʿᴵ:Ljava/lang/Boolean;
+    sput-object v8, Lʾˉ/ᴵᴵ;->ʿᴵ:Ljava/lang/Boolean;
 
     .line 54
     sput-boolean v3, Ljavaroot/utils/ــ;->ˑי:Z
@@ -3045,7 +3049,7 @@
 
     invoke-direct {v3}, Ljavaroot/utils/ˈ;-><init>()V
 
-    const/4 v7, 0x1
+    const/4 v8, 0x1
 
     .line 56
     :cond_12
@@ -3058,72 +3062,72 @@
     .line 57
     aget-object v3, v1, v22
 
-    const-string v8, "_patch1"
+    const-string v9, "_patch1"
 
-    invoke-virtual {v3, v8}, Ljava/lang/String;->contains(Ljava/lang/CharSequence;)Z
+    invoke-virtual {v3, v9}, Ljava/lang/String;->contains(Ljava/lang/CharSequence;)Z
 
     move-result v3
 
     if-eqz v3, :cond_13
 
-    const/4 v2, 0x1
+    const/4 v4, 0x1
 
     .line 58
     :cond_13
     aget-object v3, v1, v22
 
-    const-string v8, "_patch2"
+    const-string v9, "_patch2"
 
-    invoke-virtual {v3, v8}, Ljava/lang/String;->contains(Ljava/lang/CharSequence;)Z
+    invoke-virtual {v3, v9}, Ljava/lang/String;->contains(Ljava/lang/CharSequence;)Z
 
     move-result v3
 
     if-eqz v3, :cond_14
 
-    const/4 v4, 0x1
+    const/4 v6, 0x1
 
     .line 59
     :cond_14
     aget-object v3, v1, v22
 
-    const-string v8, "_patch3"
+    const-string v9, "_patch3"
 
-    invoke-virtual {v3, v8}, Ljava/lang/String;->contains(Ljava/lang/CharSequence;)Z
+    invoke-virtual {v3, v9}, Ljava/lang/String;->contains(Ljava/lang/CharSequence;)Z
 
     move-result v3
 
     if-eqz v3, :cond_15
 
-    const/4 v6, 0x1
+    const/4 v7, 0x1
 
     .line 60
     :cond_15
     aget-object v3, v1, v22
 
-    const-string v8, "_patch4"
+    const-string v9, "_patch4"
 
-    invoke-virtual {v3, v8}, Ljava/lang/String;->contains(Ljava/lang/CharSequence;)Z
+    invoke-virtual {v3, v9}, Ljava/lang/String;->contains(Ljava/lang/CharSequence;)Z
 
     move-result v3
 
     if-eqz v3, :cond_16
 
-    const/4 v7, 0x1
+    const/4 v8, 0x1
 
     .line 61
     :cond_16
     aget-object v3, v1, v22
 
-    const-string v8, "_inAppPatch"
+    const-string v9, "_inAppPatch"
 
-    invoke-virtual {v3, v8}, Ljava/lang/String;->contains(Ljava/lang/CharSequence;)Z
+    invoke-virtual {v3, v9}, Ljava/lang/String;->contains(Ljava/lang/CharSequence;)Z
 
     move-result v3
 
     .line 62
-    new-instance v8, Ljavaroot/utils/ˈ;
+    new-instance v9, Ljavaroot/utils/ˈ;
 
-    invoke-direct {v8}, Ljavaroot/utils/ˈ;-><init>()V
+    invoke-direct {v9}, Ljavaroot/utils/ˈ;-><init>()V
 
     goto :goto_12
 
@@ -3132,220 +3136,282 @@
 
     .line 63
     :goto_12
-    sget-boolean v8, Ljavaroot/utils/ــ;->ˑˏ:Z
+    sget-boolean v9, Ljavaroot/utils/ــ;->ˑˏ:Z
 
-    if-eqz v8, :cond_1a
+    if-eqz v9, :cond_1a
 
     .line 64
-    aget-object v8, v1, v22
+    aget-object v9, v1, v22
 
-    const-string v9, "restoreCore"
+    const-string v10, "restoreCore"
 
-    invoke-virtual {v8, v9}, Ljava/lang/String;->contains(Ljava/lang/CharSequence;)Z
+    invoke-virtual {v9, v10}, Ljava/lang/String;->contains(Ljava/lang/CharSequence;)Z
 
-    move-result v8
+    move-result v9
 
-    if-eqz v8, :cond_18
-
-    const/4 v2, 0x1
+    if-eqz v9, :cond_18
 
     const/4 v4, 0x1
 
+    const/4 v6, 0x1
+
     .line 65
     :cond_18
-    aget-object v8, v1, v22
+    aget-object v9, v1, v22
 
-    const-string v9, "restoreServices"
+    const-string v10, "restoreServices"
 
-    invoke-virtual {v8, v9}, Ljava/lang/String;->contains(Ljava/lang/CharSequence;)Z
+    invoke-virtual {v9, v10}, Ljava/lang/String;->contains(Ljava/lang/CharSequence;)Z
 
-    move-result v8
+    move-result v9
 
-    if-eqz v8, :cond_19
-
-    const/4 v6, 0x1
+    if-eqz v9, :cond_19
 
     const/4 v7, 0x1
 
+    const/4 v8, 0x1
+
     .line 66
     :cond_19
-    new-instance v8, Ljavaroot/utils/ˉ;
+    new-instance v9, Ljavaroot/utils/ˉ;
 
-    invoke-direct {v8}, Ljavaroot/utils/ˉ;-><init>()V
+    invoke-direct {v9}, Ljavaroot/utils/ˉ;-><init>()V
 
     :cond_1a
-    move v12, v6
-
     move v13, v7
 
+    move v14, v8
+
     .line 67
-    sget-boolean v6, Ljavaroot/utils/ــ;->ʿ:Z
+    sget-boolean v7, Ljavaroot/utils/ــ;->ʿ:Z
 
-    const/4 v11, 0x0
+    const/4 v12, 0x0
 
-    if-eqz v6, :cond_23
-
-    .line 68
-    const-string v6, "/packages"
-
-    if-nez v2, :cond_1b
+    if-eqz v7, :cond_23
 
     if-nez v4, :cond_1b
 
-    if-nez v12, :cond_1b
+    if-nez v6, :cond_1b
 
-    if-eqz v13, :cond_1e
+    if-nez v13, :cond_1b
+
+    if-eqz v14, :cond_1c
+
+    :cond_1b
+    move-object/from16 v8, v26
+
+    goto :goto_15
+
+    .line 68
+    :cond_1c
+    :try_start_c
+    invoke-static {}, Lʼˏ/ᵢ;->ʿﹳ()Ljava/lang/String;
+
+    move-result-object v7
+    :try_end_c
+    .catchall {:try_start_c .. :try_end_c} :catchall_3
+
+    move-object/from16 v8, v26
 
     .line 69
-    :cond_1b
-    new-instance v7, Ljava/io/File;
+    :try_start_d
+    invoke-virtual {v7, v8}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
-    const/4 v8, 0x1
+    move-result v9
 
-    aget-object v9, v1, v8
+    if-nez v9, :cond_1d
 
-    invoke-direct {v7, v9}, Ljava/io/File;-><init>(Ljava/lang/String;)V
+    .line 70
+    new-instance v9, Ljava/io/File;
 
-    if-nez v12, :cond_1d
+    invoke-direct {v9, v7}, Ljava/io/File;-><init>(Ljava/lang/String;)V
 
-    if-eqz v13, :cond_1c
+    invoke-virtual {v9}, Ljava/io/File;->exists()Z
 
-    goto :goto_13
+    move-result v9
 
-    :cond_1c
-    const/4 v8, 0x0
+    if-eqz v9, :cond_1d
+
+    .line 71
+    new-instance v9, Lʼˏ/ᵢ;
+
+    invoke-direct {v9}, Lʼˏ/ᵢ;-><init>()V
+
+    new-instance v10, Ljava/io/File;
+
+    invoke-direct {v10, v7}, Ljava/io/File;-><init>(Ljava/lang/String;)V
+
+    invoke-virtual {v9, v10}, Lʼˏ/ᵢ;->ʼʽ(Ljava/io/File;)V
+    :try_end_d
+    .catchall {:try_start_d .. :try_end_d} :catchall_2
 
     goto :goto_14
 
-    :cond_1d
+    :catchall_2
     :goto_13
-    const/4 v8, 0x1
+    nop
 
+    :cond_1d
     :goto_14
-    sget-object v9, Ljavaroot/utils/ــ;->ˆ:Ljava/lang/String;
+    move-object/from16 v9, v19
 
-    invoke-static {v7, v2, v4, v8, v9}, Lʼˏ/ᵢ;->ʻⁱ(Ljava/io/File;ZZZLjava/lang/String;)V
+    goto/16 :goto_18
 
-    .line 70
-    new-instance v7, Ljava/io/File;
+    :catchall_3
+    move-object/from16 v8, v26
 
-    const/4 v8, 0x2
-
-    aget-object v9, v1, v8
-
-    invoke-direct {v7, v9}, Ljava/io/File;-><init>(Ljava/lang/String;)V
-
-    new-instance v8, Ljava/io/File;
-
-    invoke-static {}, Lʼˏ/ᵢ;->ʿﹳ()Ljava/lang/String;
-
-    move-result-object v9
-
-    invoke-direct {v8, v9}, Ljava/io/File;-><init>(Ljava/lang/String;)V
-
-    invoke-static {v7, v8}, Lʼˏ/ᵢ;->ʻˊ(Ljava/io/File;Ljava/io/File;)V
-
-    .line 71
-    new-instance v7, Ljava/io/File;
-
-    new-instance v8, Ljava/lang/StringBuilder;
-
-    invoke-direct {v8}, Ljava/lang/StringBuilder;-><init>()V
-
-    invoke-static {}, Lʼˏ/ᵢ;->ʿﹳ()Ljava/lang/String;
-
-    move-result-object v9
-
-    invoke-virtual {v8, v9}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    const-string v9, "/packages/android"
-
-    invoke-virtual {v8, v9}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v8}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v8
-
-    invoke-direct {v7, v8}, Ljava/io/File;-><init>(Ljava/lang/String;)V
-
-    invoke-virtual {v7}, Ljava/io/File;->delete()Z
+    goto :goto_13
 
     .line 72
+    :goto_15
     new-instance v7, Ljava/io/File;
 
-    new-instance v8, Ljava/lang/StringBuilder;
+    const/4 v9, 0x1
 
-    invoke-direct {v8}, Ljava/lang/StringBuilder;-><init>()V
+    aget-object v10, v1, v9
 
-    invoke-static {}, Lʼˏ/ᵢ;->ʿﹳ()Ljava/lang/String;
+    invoke-direct {v7, v10}, Ljava/io/File;-><init>(Ljava/lang/String;)V
 
-    move-result-object v9
+    if-nez v13, :cond_1f
 
-    invoke-virtual {v8, v9}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    if-eqz v14, :cond_1e
 
-    const-string v9, "/packages/com.android.externalstorage"
+    goto :goto_16
 
-    invoke-virtual {v8, v9}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    :cond_1e
+    const/4 v9, 0x0
 
-    invoke-virtual {v8}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    goto :goto_17
 
-    move-result-object v8
+    :cond_1f
+    :goto_16
+    const/4 v9, 0x1
 
-    invoke-direct {v7, v8}, Ljava/io/File;-><init>(Ljava/lang/String;)V
+    :goto_17
+    sget-object v10, Ljavaroot/utils/ــ;->ˆ:Ljava/lang/String;
 
-    invoke-virtual {v7}, Ljava/io/File;->delete()Z
+    invoke-static {v7, v4, v6, v9, v10}, Lʼˏ/ᵢ;->ʻⁱ(Ljava/io/File;ZZZLjava/lang/String;)V
 
     .line 73
     new-instance v7, Ljava/io/File;
 
-    new-instance v8, Ljava/lang/StringBuilder;
+    const/4 v9, 0x2
 
-    invoke-direct {v8}, Ljava/lang/StringBuilder;-><init>()V
+    aget-object v10, v1, v9
+
+    invoke-direct {v7, v10}, Ljava/io/File;-><init>(Ljava/lang/String;)V
+
+    new-instance v9, Ljava/io/File;
 
     invoke-static {}, Lʼˏ/ᵢ;->ʿﹳ()Ljava/lang/String;
 
-    move-result-object v9
+    move-result-object v10
 
-    invoke-virtual {v8, v9}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-direct {v9, v10}, Ljava/io/File;-><init>(Ljava/lang/String;)V
 
-    const-string v9, "/packages/com.android.documentsui"
-
-    invoke-virtual {v8, v9}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v8}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v8
-
-    invoke-direct {v7, v8}, Ljava/io/File;-><init>(Ljava/lang/String;)V
-
-    invoke-virtual {v7}, Ljava/io/File;->delete()Z
+    invoke-static {v7, v9}, Lʼˏ/ᵢ;->ʻˊ(Ljava/io/File;Ljava/io/File;)V
 
     .line 74
     new-instance v7, Ljava/io/File;
 
-    new-instance v8, Ljava/lang/StringBuilder;
+    new-instance v9, Ljava/lang/StringBuilder;
 
-    invoke-direct {v8}, Ljava/lang/StringBuilder;-><init>()V
+    invoke-direct {v9}, Ljava/lang/StringBuilder;-><init>()V
 
     invoke-static {}, Lʼˏ/ᵢ;->ʿﹳ()Ljava/lang/String;
 
+    move-result-object v10
+
+    invoke-virtual {v9, v10}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    const-string v10, "/packages/android"
+
+    invoke-virtual {v9, v10}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v9}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
     move-result-object v9
 
-    invoke-virtual {v8, v9}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    const-string v9, "/packages/com.google.android.documentsui"
-
-    invoke-virtual {v8, v9}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v8}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v8
-
-    invoke-direct {v7, v8}, Ljava/io/File;-><init>(Ljava/lang/String;)V
+    invoke-direct {v7, v9}, Ljava/io/File;-><init>(Ljava/lang/String;)V
 
     invoke-virtual {v7}, Ljava/io/File;->delete()Z
 
     .line 75
+    new-instance v7, Ljava/io/File;
+
+    new-instance v9, Ljava/lang/StringBuilder;
+
+    invoke-direct {v9}, Ljava/lang/StringBuilder;-><init>()V
+
+    invoke-static {}, Lʼˏ/ᵢ;->ʿﹳ()Ljava/lang/String;
+
+    move-result-object v10
+
+    invoke-virtual {v9, v10}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    const-string v10, "/packages/com.android.externalstorage"
+
+    invoke-virtual {v9, v10}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v9}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v9
+
+    invoke-direct {v7, v9}, Ljava/io/File;-><init>(Ljava/lang/String;)V
+
+    invoke-virtual {v7}, Ljava/io/File;->delete()Z
+
+    .line 76
+    new-instance v7, Ljava/io/File;
+
+    new-instance v9, Ljava/lang/StringBuilder;
+
+    invoke-direct {v9}, Ljava/lang/StringBuilder;-><init>()V
+
+    invoke-static {}, Lʼˏ/ᵢ;->ʿﹳ()Ljava/lang/String;
+
+    move-result-object v10
+
+    invoke-virtual {v9, v10}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    const-string v10, "/packages/com.android.documentsui"
+
+    invoke-virtual {v9, v10}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v9}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v9
+
+    invoke-direct {v7, v9}, Ljava/io/File;-><init>(Ljava/lang/String;)V
+
+    invoke-virtual {v7}, Ljava/io/File;->delete()Z
+
+    .line 77
+    new-instance v7, Ljava/io/File;
+
+    new-instance v9, Ljava/lang/StringBuilder;
+
+    invoke-direct {v9}, Ljava/lang/StringBuilder;-><init>()V
+
+    invoke-static {}, Lʼˏ/ᵢ;->ʿﹳ()Ljava/lang/String;
+
+    move-result-object v10
+
+    invoke-virtual {v9, v10}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    const-string v10, "/packages/com.google.android.documentsui"
+
+    invoke-virtual {v9, v10}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v9}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v9
+
+    invoke-direct {v7, v9}, Ljava/io/File;-><init>(Ljava/lang/String;)V
+
+    invoke-virtual {v7}, Ljava/io/File;->delete()Z
+
+    .line 78
     new-instance v28, Lʼˏ/ᵢ;
 
     invoke-direct/range {v28 .. v28}, Lʼˏ/ᵢ;-><init>()V
@@ -3356,11 +3422,13 @@
 
     invoke-static {}, Lʼˏ/ᵢ;->ʿﹳ()Ljava/lang/String;
 
-    move-result-object v8
+    move-result-object v9
 
-    invoke-virtual {v7, v8}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v7, v9}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v7, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    move-object/from16 v9, v19
+
+    invoke-virtual {v7, v9}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     invoke-virtual {v7}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
@@ -3378,21 +3446,21 @@
 
     invoke-virtual/range {v28 .. v34}, Lʼˏ/ᵢ;->ˏʼ(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
-    :cond_1e
+    :goto_18
     if-eqz v3, :cond_20
 
-    .line 76
+    .line 79
     new-instance v3, Ljava/io/File;
 
     const/4 v7, 0x1
 
-    aget-object v8, v1, v7
+    aget-object v10, v1, v7
 
     const-string v7, "PMPatchLP.zip"
 
-    const-string v9, "PMPatchInappLP.zip"
+    const-string v11, "PMPatchInappLP.zip"
 
-    invoke-virtual {v8, v7, v9}, Ljava/lang/String;->replace(Ljava/lang/CharSequence;Ljava/lang/CharSequence;)Ljava/lang/String;
+    invoke-virtual {v10, v7, v11}, Ljava/lang/String;->replace(Ljava/lang/CharSequence;Ljava/lang/CharSequence;)Ljava/lang/String;
 
     move-result-object v7
 
@@ -3402,20 +3470,20 @@
 
     invoke-static {v3, v7}, Lʼˏ/ᵢ;->ʻᵢ(Ljava/io/File;Ljava/lang/String;)V
 
-    .line 77
+    .line 80
     new-instance v3, Ljava/io/File;
 
     new-instance v7, Ljava/lang/StringBuilder;
 
     invoke-direct {v7}, Ljava/lang/StringBuilder;-><init>()V
 
-    sget-object v8, Lʾˉ/ʼʼ;->ʼٴ:Ljava/lang/String;
+    sget-object v10, Lʾˉ/ᴵᴵ;->ʼٴ:Ljava/lang/String;
 
-    invoke-virtual {v7, v8}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v7, v10}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    move-object/from16 v8, v19
+    const-string v10, "/inapp_zygisk_exclude/packages"
 
-    invoke-virtual {v7, v8}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v7, v10}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     invoke-virtual {v7}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
@@ -3423,188 +3491,37 @@
 
     invoke-direct {v3, v7}, Ljava/io/File;-><init>(Ljava/lang/String;)V
 
-    .line 78
-    new-instance v7, Ljava/io/File;
-
-    new-instance v9, Ljava/lang/StringBuilder;
-
-    invoke-direct {v9}, Ljava/lang/StringBuilder;-><init>()V
-
-    invoke-static {}, Lʼˏ/ᵢ;->ʿⁱ()Ljava/lang/String;
-
-    move-result-object v10
-
-    invoke-virtual {v9, v10}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v9, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v9}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v9
-
-    invoke-direct {v7, v9}, Ljava/io/File;-><init>(Ljava/lang/String;)V
-
-    .line 79
-    invoke-static {v7}, Lʼˏ/ᵢ;->ˑᴵ(Ljava/io/File;)V
-
-    .line 80
-    new-instance v7, Ljava/lang/StringBuilder;
-
-    invoke-direct {v7}, Ljava/lang/StringBuilder;-><init>()V
-
-    invoke-virtual {v3}, Ljava/io/File;->getAbsolutePath()Ljava/lang/String;
-
-    move-result-object v9
-
-    invoke-virtual {v7, v9}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v7, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v7}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v7
-
-    new-instance v9, Ljava/lang/StringBuilder;
-
-    invoke-direct {v9}, Ljava/lang/StringBuilder;-><init>()V
-
-    invoke-static {}, Lʼˏ/ᵢ;->ʿⁱ()Ljava/lang/String;
-
-    move-result-object v10
-
-    invoke-virtual {v9, v10}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v9, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v9}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v9
-
-    const/4 v10, 0x5
-
-    new-array v10, v10, [Ljava/lang/String;
-
-    const-string v19, "/system/bin/toybox"
-
-    const/16 v22, 0x0
-
-    aput-object v19, v10, v22
-
-    const-string v19, "ln"
-
-    const/16 v23, 0x1
-
-    aput-object v19, v10, v23
-
-    const-string v19, "-sf"
-
-    const/16 v21, 0x2
-
-    aput-object v19, v10, v21
-
-    const/16 v19, 0x3
-
-    aput-object v7, v10, v19
-
-    const/4 v7, 0x4
-
-    aput-object v9, v10, v7
-
-    invoke-static {v10}, Lʼˏ/ᵢ;->ˊˊ([Ljava/lang/String;)Ljava/lang/String;
-
     .line 81
     new-instance v7, Ljava/io/File;
 
-    new-instance v9, Ljava/lang/StringBuilder;
+    new-instance v10, Ljava/lang/StringBuilder;
 
-    invoke-direct {v9}, Ljava/lang/StringBuilder;-><init>()V
+    invoke-direct {v10}, Ljava/lang/StringBuilder;-><init>()V
 
     invoke-static {}, Lʼˏ/ᵢ;->ʿⁱ()Ljava/lang/String;
+
+    move-result-object v11
+
+    invoke-virtual {v10, v11}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v10, v9}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v10}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object v10
 
-    invoke-virtual {v9, v10}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v9, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v9}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v9
-
-    invoke-direct {v7, v9}, Ljava/io/File;-><init>(Ljava/lang/String;)V
-
-    invoke-virtual {v7}, Ljava/io/File;->exists()Z
-
-    move-result v7
-
-    if-nez v7, :cond_1f
+    invoke-direct {v7, v10}, Ljava/io/File;-><init>(Ljava/lang/String;)V
 
     .line 82
-    const-string v7, "alternative ln try use"
-
-    invoke-static {v7}, Lʾˉ/ʼʼ;->ˉˎ(Ljava/lang/Object;)V
+    invoke-static {v7}, Lʼˏ/ᵢ;->ˑᵢ(Ljava/io/File;)V
 
     .line 83
-    new-instance v7, Ljava/lang/StringBuilder;
-
-    invoke-direct {v7}, Ljava/lang/StringBuilder;-><init>()V
-
-    invoke-virtual {v3}, Ljava/io/File;->getAbsolutePath()Ljava/lang/String;
-
-    move-result-object v3
-
-    invoke-virtual {v7, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v7, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v7}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v3
-
-    new-instance v7, Ljava/lang/StringBuilder;
-
-    invoke-direct {v7}, Ljava/lang/StringBuilder;-><init>()V
-
-    invoke-static {}, Lʼˏ/ᵢ;->ʿⁱ()Ljava/lang/String;
-
-    move-result-object v9
-
-    invoke-virtual {v7, v9}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v7, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v7}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v6
-
-    const/4 v7, 0x4
-
-    new-array v9, v7, [Ljava/lang/String;
-
-    const-string v7, "ln"
-
-    const/4 v10, 0x0
-
-    aput-object v7, v9, v10
-
-    const-string v7, "-sf"
-
-    const/4 v10, 0x1
-
-    aput-object v7, v9, v10
-
-    const/4 v7, 0x2
-
-    aput-object v3, v9, v7
-
-    const/4 v3, 0x3
-
-    aput-object v6, v9, v3
-
-    invoke-static {v9}, Lʼˏ/ᵢ;->ˊˊ([Ljava/lang/String;)Ljava/lang/String;
+    invoke-virtual {v7}, Ljava/io/File;->mkdirs()Z
 
     .line 84
-    :cond_1f
+    invoke-static {v3, v7}, Lʼˏ/ᵢ;->ˑˊ(Ljava/io/File;Ljava/io/File;)V
+
+    .line 85
     new-instance v28, Lʼˏ/ᵢ;
 
     invoke-direct/range {v28 .. v28}, Lʼˏ/ᵢ;-><init>()V
@@ -3613,11 +3530,13 @@
 
     invoke-direct {v3}, Ljava/lang/StringBuilder;-><init>()V
 
-    sget-object v6, Lʾˉ/ʼʼ;->ʼٴ:Ljava/lang/String;
+    invoke-static {}, Lʼˏ/ᵢ;->ʿⁱ()Ljava/lang/String;
 
-    invoke-virtual {v3, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    move-result-object v7
 
-    invoke-virtual {v3, v8}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v3, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v3, v9}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     invoke-virtual {v3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
@@ -3625,41 +3544,33 @@
 
     const-string v33, "0777"
 
-    const-string v34, ""
+    const-string v34, "u:object_r:system_file:s0"
 
-    const-string v30, ""
+    const-string v30, "0"
 
-    const-string v31, ""
+    const-string v31, "0"
 
     const-string v32, "0777"
 
     invoke-virtual/range {v28 .. v34}, Lʼˏ/ᵢ;->ˏʼ(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
-    :catchall_2
-    move-object/from16 v6, v26
+    goto :goto_19
 
-    goto :goto_15
-
-    .line 85
+    .line 86
     :cond_20
-    :try_start_c
+    :try_start_e
     invoke-static {}, Lʼˏ/ᵢ;->ʿⁱ()Ljava/lang/String;
 
     move-result-object v3
-    :try_end_c
-    .catchall {:try_start_c .. :try_end_c} :catchall_2
 
-    move-object/from16 v6, v26
-
-    .line 86
-    :try_start_d
-    invoke-virtual {v3, v6}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+    .line 87
+    invoke-virtual {v3, v8}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v7
 
     if-nez v7, :cond_21
 
-    .line 87
+    .line 88
     new-instance v7, Ljava/io/File;
 
     invoke-direct {v7, v3}, Ljava/io/File;-><init>(Ljava/lang/String;)V
@@ -3670,35 +3581,35 @@
 
     if-eqz v7, :cond_21
 
-    .line 88
+    .line 89
     new-instance v7, Lʼˏ/ᵢ;
 
     invoke-direct {v7}, Lʼˏ/ᵢ;-><init>()V
 
-    new-instance v8, Ljava/io/File;
+    new-instance v9, Ljava/io/File;
 
-    invoke-direct {v8, v3}, Ljava/io/File;-><init>(Ljava/lang/String;)V
+    invoke-direct {v9, v3}, Ljava/io/File;-><init>(Ljava/lang/String;)V
 
-    invoke-virtual {v7, v8}, Lʼˏ/ᵢ;->ʼʽ(Ljava/io/File;)V
-    :try_end_d
-    .catchall {:try_start_d .. :try_end_d} :catchall_3
+    invoke-virtual {v7, v9}, Lʼˏ/ᵢ;->ʼʽ(Ljava/io/File;)V
+    :try_end_e
+    .catchall {:try_start_e .. :try_end_e} :catchall_4
 
-    .line 89
-    :catchall_3
+    .line 90
+    :catchall_4
     :cond_21
-    :goto_15
-    :try_start_e
+    :goto_19
+    :try_start_f
     invoke-static {}, Lʼˏ/ᵢ;->ʿﹶ()Ljava/lang/String;
 
     move-result-object v3
 
-    invoke-virtual {v3, v6}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+    invoke-virtual {v3, v8}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v3
 
     if-nez v3, :cond_22
 
-    .line 90
+    .line 91
     new-instance v3, Ljava/io/File;
 
     invoke-static {}, Lʼˏ/ᵢ;->ʿﹶ()Ljava/lang/String;
@@ -3707,87 +3618,87 @@
 
     invoke-direct {v3, v7}, Ljava/io/File;-><init>(Ljava/lang/String;)V
 
-    .line 91
+    .line 92
     invoke-virtual {v3}, Ljava/io/File;->getAbsolutePath()Ljava/lang/String;
 
     move-result-object v3
 
     const/4 v7, 0x0
 
-    invoke-static {v3, v11, v7}, Landroid/database/sqlite/SQLiteDatabase;->openDatabase(Ljava/lang/String;Landroid/database/sqlite/SQLiteDatabase$CursorFactory;I)Landroid/database/sqlite/SQLiteDatabase;
+    invoke-static {v3, v12, v7}, Landroid/database/sqlite/SQLiteDatabase;->openDatabase(Ljava/lang/String;Landroid/database/sqlite/SQLiteDatabase$CursorFactory;I)Landroid/database/sqlite/SQLiteDatabase;
 
     move-result-object v3
 
-    .line 92
+    .line 93
     const-string v7, "UPDATE settings SET value=1 WHERE key=\'zygisk\'"
 
     invoke-virtual {v3, v7}, Landroid/database/sqlite/SQLiteDatabase;->execSQL(Ljava/lang/String;)V
 
-    .line 93
+    .line 94
     invoke-virtual {v3}, Landroid/database/sqlite/SQLiteDatabase;->close()V
-    :try_end_e
-    .catchall {:try_start_e .. :try_end_e} :catchall_4
+    :try_end_f
+    .catchall {:try_start_f .. :try_end_f} :catchall_5
 
-    goto :goto_16
+    goto :goto_1a
 
-    :catchall_4
+    :catchall_5
     move-exception v0
 
     move-object v3, v0
 
-    .line 94
+    .line 95
     invoke-virtual {v3}, Ljava/lang/Throwable;->printStackTrace()V
 
-    .line 95
+    .line 96
     :cond_22
-    :goto_16
-    :try_start_f
+    :goto_1a
+    :try_start_10
     new-instance v3, Lʼˏ/ᵢ;
 
     invoke-direct {v3}, Lʼˏ/ᵢ;-><init>()V
 
     new-instance v7, Ljava/io/File;
 
-    const/4 v8, 0x2
+    const/4 v9, 0x2
 
-    aget-object v9, v1, v8
+    aget-object v10, v1, v9
 
-    invoke-direct {v7, v9}, Ljava/io/File;-><init>(Ljava/lang/String;)V
+    invoke-direct {v7, v10}, Ljava/io/File;-><init>(Ljava/lang/String;)V
 
     invoke-virtual {v3, v7}, Lʼˏ/ᵢ;->ʼʽ(Ljava/io/File;)V
-    :try_end_f
-    .catch Ljava/io/IOException; {:try_start_f .. :try_end_f} :catch_6
+    :try_end_10
+    .catch Ljava/io/IOException; {:try_start_10 .. :try_end_10} :catch_6
 
-    goto :goto_17
+    goto :goto_1b
 
     :catch_6
     move-exception v0
 
     move-object v3, v0
 
-    .line 96
+    .line 97
     invoke-virtual {v3}, Ljava/lang/Throwable;->printStackTrace()V
 
-    .line 97
-    :goto_17
+    .line 98
+    :goto_1b
     invoke-static {}, Lʼˏ/ᵢ;->ʼˎ()V
 
-    goto :goto_18
+    goto :goto_1c
 
     :cond_23
-    move-object/from16 v6, v26
+    move-object/from16 v8, v26
 
-    .line 98
-    :goto_18
+    .line 99
+    :goto_1c
     new-instance v3, Ljavaroot/utils/ˆ;
 
     sget-boolean v7, Ljavaroot/utils/ــ;->ˑˏ:Z
 
-    const/4 v8, 0x1
+    const/4 v9, 0x1
 
-    const/4 v9, 0x0
+    const/4 v10, 0x0
 
-    invoke-direct {v3, v9, v8, v9, v7}, Ljavaroot/utils/ˆ;-><init>(ZZZZ)V
+    invoke-direct {v3, v10, v9, v10, v7}, Ljavaroot/utils/ˆ;-><init>(ZZZZ)V
 
     invoke-virtual {v3}, Ljavaroot/utils/ˆ;->ʻ()[Lʼـ/ᵢ;
 
@@ -3795,7 +3706,7 @@
 
     sput-object v3, Ljavaroot/utils/ــ;->ˑˊ:[Lʼـ/ᵢ;
 
-    .line 99
+    .line 100
     sget-boolean v3, Ljavaroot/utils/ــ;->ˑˏ:Z
 
     if-nez v3, :cond_24
@@ -3804,7 +3715,7 @@
 
     if-nez v3, :cond_24
 
-    aget-object v3, v1, v9
+    aget-object v3, v1, v10
 
     const-string v7, "all"
 
@@ -3814,42 +3725,42 @@
 
     if-eqz v3, :cond_ae
 
-    .line 100
+    .line 101
     :cond_24
     new-instance v3, Ljava/util/ArrayList;
 
     invoke-direct {v3}, Ljava/util/ArrayList;-><init>()V
 
-    .line 101
+    .line 102
     invoke-virtual {v3}, Ljava/util/ArrayList;->clear()V
 
-    .line 102
+    .line 103
     const-string v7, "FRAMEWORK REBUILD FOR FILE FROM SDCARD (1-2 patch)"
 
-    invoke-static {v7}, Lʾˉ/ʼʼ;->ˉˎ(Ljava/lang/Object;)V
+    invoke-static {v7}, Lʾˉ/ᴵᴵ;->ˉˎ(Ljava/lang/Object;)V
 
-    .line 103
+    .line 104
     sget-boolean v7, Ljavaroot/utils/ــ;->ˑˎ:Z
 
-    const-string v10, "add files finish"
+    const-string v11, "add files finish"
 
-    const-string v9, "add files"
+    const-string v10, "add files"
 
-    const-string v8, ".odex"
+    const-string v9, ".odex"
 
-    const-string v11, ".jar"
+    const-string v12, ".jar"
 
     if-eqz v7, :cond_47
 
-    .line 104
+    .line 105
     new-instance v7, Lʼˑ/ʼ;
 
     invoke-direct {v7}, Lʼˑ/ʼ;-><init>()V
 
-    move-object/from16 v26, v6
+    move-object/from16 v26, v8
 
-    .line 105
-    new-instance v6, Ljava/io/File;
+    .line 106
+    new-instance v8, Ljava/io/File;
 
     move-object/from16 v25, v5
 
@@ -3857,49 +3768,49 @@
 
     aget-object v5, v1, v23
 
-    invoke-direct {v6, v5}, Ljava/io/File;-><init>(Ljava/lang/String;)V
+    invoke-direct {v8, v5}, Ljava/io/File;-><init>(Ljava/lang/String;)V
 
-    .line 106
-    invoke-virtual {v6}, Ljava/io/File;->getName()Ljava/lang/String;
+    .line 107
+    invoke-virtual {v8}, Ljava/io/File;->getName()Ljava/lang/String;
 
     move-result-object v5
 
-    invoke-virtual {v5, v11}, Ljava/lang/String;->endsWith(Ljava/lang/String;)Z
+    invoke-virtual {v5, v12}, Ljava/lang/String;->endsWith(Ljava/lang/String;)Z
 
     move-result v5
 
     if-eqz v5, :cond_25
 
-    .line 107
+    .line 108
     new-instance v5, Ljava/lang/StringBuilder;
 
     invoke-direct {v5}, Ljava/lang/StringBuilder;-><init>()V
 
-    move-object/from16 v24, v14
+    move-object/from16 v24, v15
 
-    const-string v14, "try patch "
+    move-object/from16 v15, v18
 
-    invoke-virtual {v5, v14}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v5, v15}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    aget-object v14, v1, v23
+    aget-object v15, v1, v23
 
-    invoke-virtual {v5, v14}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v5, v15}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     invoke-virtual {v5}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object v5
 
-    invoke-static {v5}, Lʾˉ/ʼʼ;->ˉˎ(Ljava/lang/Object;)V
+    invoke-static {v5}, Lʾˉ/ᴵᴵ;->ˉˎ(Ljava/lang/Object;)V
 
-    .line 108
-    invoke-static {v6}, Lʼˏ/ᵢ;->ˆˆ(Ljava/io/File;)Z
+    .line 109
+    invoke-static {v8}, Lʼˏ/ᵢ;->ˆˆ(Ljava/io/File;)Z
 
     move-result v5
 
     if-eqz v5, :cond_26
 
-    .line 109
-    invoke-static {v6}, Lʼˏ/ᵢ;->ʾˑ(Ljava/io/File;)Ljava/io/File;
+    .line 110
+    invoke-static {v8}, Lʼˏ/ᵢ;->ʾˑ(Ljava/io/File;)Ljava/io/File;
 
     move-result-object v5
 
@@ -3907,1328 +3818,1328 @@
 
     move-result-object v5
 
-    invoke-static {v6, v5}, Ljavaroot/utils/ــ;->ˏ(Ljava/io/File;Ljava/lang/String;)Ljava/util/ArrayList;
+    invoke-static {v8, v5}, Ljavaroot/utils/ــ;->ˏ(Ljava/io/File;Ljava/lang/String;)Ljava/util/ArrayList;
 
     move-result-object v5
 
-    .line 110
+    .line 111
     invoke-virtual {v5}, Ljava/util/ArrayList;->size()I
 
-    move-result v14
+    move-result v15
 
-    new-array v14, v14, [Ljava/io/File;
+    new-array v15, v15, [Ljava/io/File;
 
-    iput-object v14, v7, Lʼˑ/ʼ;->ـ:[Ljava/io/File;
-
-    .line 111
-    invoke-virtual {v5, v14}, Ljava/util/ArrayList;->toArray([Ljava/lang/Object;)[Ljava/lang/Object;
+    iput-object v15, v7, Lʼˑ/ʼ;->ـ:[Ljava/io/File;
 
     .line 112
+    invoke-virtual {v5, v15}, Ljava/util/ArrayList;->toArray([Ljava/lang/Object;)[Ljava/lang/Object;
+
+    .line 113
     new-instance v5, Ljava/lang/StringBuilder;
 
     invoke-direct {v5}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string v14, "add files for patch "
+    const-string v15, "add files for patch "
 
-    invoke-virtual {v5, v14}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v5, v15}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v6}, Ljava/io/File;->getAbsolutePath()Ljava/lang/String;
+    invoke-virtual {v8}, Ljava/io/File;->getAbsolutePath()Ljava/lang/String;
 
-    move-result-object v14
+    move-result-object v15
 
-    invoke-virtual {v5, v14}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v5, v15}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     invoke-virtual {v5}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object v5
 
-    invoke-static {v5}, Lʾˉ/ʼʼ;->ˉˎ(Ljava/lang/Object;)V
-
-    .line 113
-    invoke-virtual {v3, v6}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
-
-    goto :goto_19
-
-    :cond_25
-    move-object/from16 v24, v14
+    invoke-static {v5}, Lʾˉ/ᴵᴵ;->ˉˎ(Ljava/lang/Object;)V
 
     .line 114
+    invoke-virtual {v3, v8}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+
+    goto :goto_1d
+
+    :cond_25
+    move-object/from16 v24, v15
+
+    .line 115
     :cond_26
-    :goto_19
-    invoke-virtual {v6}, Ljava/io/File;->getName()Ljava/lang/String;
+    :goto_1d
+    invoke-virtual {v8}, Ljava/io/File;->getName()Ljava/lang/String;
 
     move-result-object v5
 
-    invoke-virtual {v5, v8}, Ljava/lang/String;->endsWith(Ljava/lang/String;)Z
+    invoke-virtual {v5, v9}, Ljava/lang/String;->endsWith(Ljava/lang/String;)Z
 
     move-result v5
 
     if-nez v5, :cond_28
 
-    invoke-virtual {v6}, Ljava/io/File;->getName()Ljava/lang/String;
+    invoke-virtual {v8}, Ljava/io/File;->getName()Ljava/lang/String;
 
     move-result-object v5
 
-    move-object/from16 v14, v17
+    move-object/from16 v15, v17
 
-    invoke-virtual {v5, v14}, Ljava/lang/String;->endsWith(Ljava/lang/String;)Z
+    invoke-virtual {v5, v15}, Ljava/lang/String;->endsWith(Ljava/lang/String;)Z
 
     move-result v5
 
     if-eqz v5, :cond_27
 
-    goto :goto_1a
+    goto :goto_1e
 
     :cond_27
-    move-object/from16 v34, v14
+    move-object/from16 v17, v2
 
-    move-object/from16 v17, v15
-
-    goto :goto_1b
-
-    :cond_28
-    move-object/from16 v14, v17
-
-    .line 115
-    :goto_1a
-    new-instance v5, Ljava/lang/StringBuilder;
-
-    invoke-direct {v5}, Ljava/lang/StringBuilder;-><init>()V
-
-    move-object/from16 v17, v15
-
-    const-string v15, "file "
-
-    invoke-virtual {v5, v15}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-object/from16 v34, v14
-
-    const/4 v15, 0x1
-
-    aget-object v14, v1, v15
-
-    invoke-virtual {v5, v14}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    const-string v14, " added for patch"
-
-    invoke-virtual {v5, v14}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v5}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v5
-
-    invoke-static {v5}, Lʾˉ/ʼʼ;->ˉˎ(Ljava/lang/Object;)V
-
-    .line 116
-    new-instance v5, Ljava/io/File;
-
-    aget-object v14, v1, v15
-
-    invoke-direct {v5, v14}, Ljava/io/File;-><init>(Ljava/lang/String;)V
-
-    invoke-virtual {v3, v5}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
-
-    .line 117
-    :goto_1b
-    new-instance v3, Ljava/lang/StringBuilder;
-
-    invoke-direct {v3}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string v5, "apply patch to "
-
-    invoke-virtual {v3, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v6}, Ljava/io/File;->getAbsolutePath()Ljava/lang/String;
-
-    move-result-object v5
-
-    invoke-virtual {v3, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v3
-
-    invoke-static {v3}, Lʾˉ/ʼʼ;->ˉˎ(Ljava/lang/Object;)V
-
-    .line 118
-    invoke-virtual {v6}, Ljava/io/File;->getName()Ljava/lang/String;
-
-    move-result-object v3
-
-    invoke-virtual {v3, v8}, Ljava/lang/String;->endsWith(Ljava/lang/String;)Z
-
-    move-result v3
-
-    if-eqz v3, :cond_30
-
-    if-nez v2, :cond_2a
-
-    if-eqz v4, :cond_29
-
-    goto :goto_1c
-
-    :cond_29
-    const/4 v3, 0x0
-
-    goto :goto_1d
-
-    .line 119
-    :cond_2a
-    :goto_1c
-    invoke-static {v6, v1, v2, v4}, Ljavaroot/utils/ــ;->ʾ(Ljava/io/File;[Ljava/lang/String;ZZ)Z
-
-    move-result v3
-
-    :goto_1d
-    if-nez v12, :cond_2b
-
-    if-eqz v13, :cond_31
-
-    .line 120
-    :cond_2b
-    invoke-static {v6}, Lʼˏ/ᵢ;->ˉᵎ(Ljava/io/File;)Z
-
-    move-result v5
-
-    if-nez v5, :cond_2c
-
-    .line 121
-    invoke-static {v6, v1, v12}, Ljavaroot/utils/ــ;->ʿ(Ljava/io/File;[Ljava/lang/String;Z)Z
-
-    move-result v3
-
-    goto :goto_1e
-
-    .line 122
-    :cond_2c
-    new-instance v5, Ljavaroot/utils/ــ$ʿ;
-
-    invoke-direct {v5, v6}, Ljavaroot/utils/ــ$ʿ;-><init>(Ljava/io/File;)V
-
-    invoke-static {v5, v1, v12}, Ljavaroot/utils/ــ;->ˊ(Ljava/util/ArrayList;[Ljava/lang/String;Z)V
-
-    .line 123
-    sget-boolean v5, Ljavaroot/utils/ــ;->ˑʾ:Z
-
-    if-nez v5, :cond_2d
-
-    if-nez v12, :cond_2e
-
-    :cond_2d
-    sget-boolean v5, Ljavaroot/utils/ــ;->ˑʿ:Z
-
-    if-nez v5, :cond_31
-
-    if-eqz v12, :cond_31
-
-    .line 124
-    :cond_2e
-    invoke-static {v6, v1, v12}, Ljavaroot/utils/ــ;->ʽ(Ljava/io/File;[Ljava/lang/String;Z)V
-
-    .line 125
-    sget-boolean v5, Ljavaroot/utils/ــ;->ˑʾ:Z
-
-    if-nez v5, :cond_2f
-
-    sget-boolean v5, Ljavaroot/utils/ــ;->ˑʿ:Z
-
-    if-eqz v5, :cond_31
-
-    :cond_2f
-    const/4 v3, 0x1
-
-    goto :goto_1e
-
-    :cond_30
-    const/4 v3, 0x0
-
-    .line 126
-    :cond_31
-    :goto_1e
-    invoke-virtual {v6}, Ljava/io/File;->getName()Ljava/lang/String;
-
-    move-result-object v5
-
-    invoke-virtual {v5, v11}, Ljava/lang/String;->endsWith(Ljava/lang/String;)Z
-
-    move-result v5
-
-    if-eqz v5, :cond_35
-
-    .line 127
-    new-instance v5, Ljava/util/ArrayList;
-
-    invoke-direct {v5}, Ljava/util/ArrayList;-><init>()V
-
-    .line 128
-    :try_start_10
-    new-instance v14, Ljavaroot/utils/ˊ;
-
-    const/16 v33, 0x1
-
-    move-object/from16 v28, v14
-
-    move/from16 v29, v2
-
-    move/from16 v30, v4
-
-    move/from16 v31, v12
-
-    move/from16 v32, v13
-
-    invoke-direct/range {v28 .. v33}, Ljavaroot/utils/ˊ;-><init>(ZZZZZ)V
-
-    .line 129
-    invoke-virtual {v14}, Ljavaroot/utils/ˊ;->ʻ()Lʼـ/ﾞﾞ;
-
-    move-result-object v14
-
-    const/4 v15, 0x0
-
-    invoke-virtual {v7, v14, v15}, Lʼˑ/ʼ;->ᵔ(Lʼـ/ﾞﾞ;Ljava/io/File;)V
-
-    .line 130
-    iget-object v14, v7, Lʼˑ/ʼ;->ᵢ:Ljava/lang/String;
-
-    invoke-static {v14}, Lʾˉ/ʼʼ;->ˉˎ(Ljava/lang/Object;)V
-
-    .line 131
-    iget-object v14, v7, Lʼˑ/ʼ;->ᵔ:Ljava/util/ArrayList;
-
-    invoke-virtual {v14}, Ljava/util/ArrayList;->size()I
-
-    move-result v14
-    :try_end_10
-    .catch Ljava/lang/Exception; {:try_start_10 .. :try_end_10} :catch_a
-
-    if-lez v14, :cond_34
-
-    const/4 v14, 0x0
-
-    .line 132
-    :try_start_11
-    invoke-virtual {v7, v14}, Lʼˑ/ʼ;->ˉ(Z)V
-
-    .line 133
-    iget-object v3, v7, Lʼˑ/ʼ;->ᵔ:Ljava/util/ArrayList;
-
-    invoke-virtual {v3}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
-
-    move-result-object v3
-
-    :goto_1f
-    invoke-interface {v3}, Ljava/util/Iterator;->hasNext()Z
-
-    move-result v14
-
-    if-eqz v14, :cond_32
-
-    invoke-interface {v3}, Ljava/util/Iterator;->next()Ljava/lang/Object;
-
-    move-result-object v14
-
-    check-cast v14, Ljava/io/File;
-
-    .line 134
-    sget-object v15, Ljava/lang/System;->out:Ljava/io/PrintStream;
-
-    invoke-virtual {v15, v9}, Ljava/io/PrintStream;->println(Ljava/lang/String;)V
-
-    .line 135
-    new-instance v15, Lʾˉ/ʻ;
-
-    move-object/from16 v28, v3
-
-    invoke-virtual {v14}, Ljava/io/File;->getAbsolutePath()Ljava/lang/String;
-
-    move-result-object v3
-    :try_end_11
-    .catch Ljava/lang/Exception; {:try_start_11 .. :try_end_11} :catch_8
-
-    move-object/from16 v29, v9
-
-    :try_start_12
-    new-instance v9, Ljava/lang/StringBuilder;
-
-    invoke-direct {v9}, Ljava/lang/StringBuilder;-><init>()V
-
-    invoke-static {v14}, Lʼˏ/ᵢ;->ʾˑ(Ljava/io/File;)Ljava/io/File;
-
-    move-result-object v14
-
-    invoke-virtual {v14}, Ljava/io/File;->getAbsolutePath()Ljava/lang/String;
-
-    move-result-object v14
-
-    invoke-virtual {v9, v14}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    const-string v14, "/"
-
-    invoke-virtual {v9, v14}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v9}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v9
-
-    invoke-direct {v15, v3, v9}, Lʾˉ/ʻ;-><init>(Ljava/lang/String;Ljava/lang/String;)V
-
-    invoke-virtual {v5, v15}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
-
-    move-object/from16 v3, v28
-
-    move-object/from16 v9, v29
+    move-object/from16 v34, v15
 
     goto :goto_1f
 
-    :catch_7
-    move-exception v0
+    :cond_28
+    move-object/from16 v15, v17
 
-    :goto_20
-    move-object v5, v0
-
-    const/4 v3, 0x1
-
-    goto :goto_24
-
-    :catch_8
-    move-exception v0
-
-    move-object/from16 v29, v9
-
-    goto :goto_20
-
-    :cond_32
-    move-object/from16 v29, v9
-
-    const/4 v3, 0x1
-
-    .line 136
-    aget-object v9, v1, v3
-
-    const-string v14, "-patched.jar"
-
-    invoke-virtual {v9, v11, v14}, Ljava/lang/String;->replace(Ljava/lang/CharSequence;Ljava/lang/CharSequence;)Ljava/lang/String;
-
-    move-result-object v9
-
-    .line 137
-    aget-object v14, v1, v3
-    :try_end_12
-    .catch Ljava/lang/Exception; {:try_start_12 .. :try_end_12} :catch_7
-
-    .line 138
-    :try_start_13
-    invoke-static {v14, v9, v5}, Lʼˏ/ᵢ;->ˈ(Ljava/lang/String;Ljava/lang/String;Ljava/util/ArrayList;)V
-
-    .line 139
-    new-instance v3, Ljava/io/File;
-
-    invoke-direct {v3, v9}, Ljava/io/File;-><init>(Ljava/lang/String;)V
-
-    invoke-static {v3}, Lʼˏ/ᵢ;->יˎ(Ljava/io/File;)Z
-
-    .line 140
-    sget-object v3, Ljava/lang/System;->out:Ljava/io/PrintStream;
-
-    invoke-virtual {v3, v10}, Ljava/io/PrintStream;->println(Ljava/lang/String;)V
-    :try_end_13
-    .catch Ljava/lang/Exception; {:try_start_13 .. :try_end_13} :catch_9
-
-    goto :goto_21
-
-    :catch_9
-    move-exception v0
-
-    move-object v3, v0
-
-    .line 141
-    :try_start_14
-    invoke-virtual {v3}, Ljava/lang/Throwable;->printStackTrace()V
-
-    .line 142
-    new-instance v3, Ljava/io/File;
-
-    invoke-direct {v3, v9}, Ljava/io/File;-><init>(Ljava/lang/String;)V
-
-    invoke-virtual {v3}, Ljava/io/File;->delete()Z
-
-    .line 143
-    :goto_21
-    iget-object v3, v7, Lʼˑ/ʼ;->ـ:[Ljava/io/File;
-
-    array-length v5, v3
-
-    const/4 v7, 0x0
-
-    :goto_22
-    if-ge v7, v5, :cond_33
-
-    aget-object v9, v3, v7
-
-    .line 144
-    invoke-virtual {v9}, Ljava/io/File;->delete()Z
-    :try_end_14
-    .catch Ljava/lang/Exception; {:try_start_14 .. :try_end_14} :catch_7
-
-    const/4 v9, 0x1
-
-    add-int/2addr v7, v9
-
-    goto :goto_22
-
-    :cond_33
-    const/4 v3, 0x1
-
-    goto :goto_23
-
-    :cond_34
-    move-object/from16 v29, v9
-
-    :goto_23
-    const/16 v5, 0x17
-
-    goto :goto_25
-
-    :catch_a
-    move-exception v0
-
-    move-object/from16 v29, v9
-
-    move-object v5, v0
-
-    .line 145
-    :goto_24
-    invoke-virtual {v5}, Ljava/lang/Throwable;->printStackTrace()V
-
-    goto :goto_23
-
-    .line 146
-    :goto_25
-    invoke-static {v5}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
-
-    move-result-object v7
-
-    invoke-static {v7}, Lʾˉ/ʼʼ;->ˊˏ(Ljava/lang/Integer;)V
-
-    goto :goto_26
-
-    :cond_35
-    move-object/from16 v29, v9
-
-    .line 147
-    :goto_26
-    invoke-virtual {v6}, Ljava/io/File;->getName()Ljava/lang/String;
-
-    move-result-object v5
-
-    move-object/from16 v7, v34
-
-    invoke-virtual {v5, v7}, Ljava/lang/String;->endsWith(Ljava/lang/String;)Z
-
-    move-result v5
-
-    if-eqz v5, :cond_43
-
-    .line 148
+    .line 116
+    :goto_1e
     new-instance v5, Ljava/lang/StringBuilder;
 
     invoke-direct {v5}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string v9, "standart patch to oat "
+    move-object/from16 v17, v2
 
-    invoke-virtual {v5, v9}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    const-string v2, "file "
 
-    invoke-virtual {v6}, Ljava/io/File;->getAbsolutePath()Ljava/lang/String;
+    invoke-virtual {v5, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    move-result-object v9
+    move-object/from16 v34, v15
 
-    invoke-virtual {v5, v9}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    const/4 v2, 0x1
+
+    aget-object v15, v1, v2
+
+    invoke-virtual {v5, v15}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    const-string v15, " added for patch"
+
+    invoke-virtual {v5, v15}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     invoke-virtual {v5}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object v5
 
-    invoke-static {v5}, Lʾˉ/ʼʼ;->ˉˎ(Ljava/lang/Object;)V
+    invoke-static {v5}, Lʾˉ/ᴵᴵ;->ˉˎ(Ljava/lang/Object;)V
 
-    if-nez v2, :cond_36
-
-    if-eqz v4, :cond_41
-
-    .line 149
-    :cond_36
-    new-instance v5, Ljavaroot/utils/ــ$ˆ;
-
-    invoke-direct {v5, v6}, Ljavaroot/utils/ــ$ˆ;-><init>(Ljava/io/File;)V
-
-    invoke-static {v5, v1, v2, v4}, Ljavaroot/utils/ــ;->ˈ(Ljava/util/ArrayList;[Ljava/lang/String;ZZ)I
-
-    .line 150
-    sget-boolean v5, Ljavaroot/utils/ــ;->ˑʾ:Z
-
-    if-nez v5, :cond_37
-
-    invoke-static {v1, v2}, Ljavaroot/utils/ــ;->ˉ([Ljava/lang/String;Z)Z
-
-    .line 151
-    :cond_37
-    sget-boolean v5, Ljavaroot/utils/ــ;->ˑʾ:Z
-
-    if-nez v5, :cond_38
-
-    sget-boolean v5, Ljavaroot/utils/ــ;->ˑʿ:Z
-
-    if-eqz v5, :cond_39
-
-    :cond_38
-    const/4 v3, 0x1
-
-    .line 152
-    :cond_39
-    sget v5, Lʾˉ/ʼʼ;->ʾᐧ:I
-
-    const/16 v9, 0x1c
-
-    if-lt v5, v9, :cond_3b
-
-    invoke-virtual {v6}, Ljava/io/File;->getName()Ljava/lang/String;
-
-    move-result-object v5
-
-    move-object/from16 v9, v17
-
-    invoke-virtual {v5, v9}, Ljava/lang/String;->contains(Ljava/lang/CharSequence;)Z
-
-    move-result v5
-
-    if-nez v5, :cond_3a
-
-    invoke-virtual {v6}, Ljava/io/File;->getName()Ljava/lang/String;
-
-    move-result-object v5
-
-    move-object/from16 v9, v24
-
-    invoke-virtual {v5, v9}, Ljava/lang/String;->contains(Ljava/lang/CharSequence;)Z
-
-    move-result v5
-
-    if-eqz v5, :cond_3b
-
-    :cond_3a
-    const/4 v5, 0x1
-
-    .line 153
-    invoke-static {v6, v1, v5}, Ljavaroot/utils/ــ;->ˋ(Ljava/io/File;[Ljava/lang/String;Z)Z
-
-    move-result v9
-
-    if-eqz v9, :cond_3b
-
-    const/4 v3, 0x1
-
-    :cond_3b
-    if-eqz v2, :cond_3c
-
-    .line 154
-    sget-boolean v5, Ljavaroot/utils/ــ;->ˑʾ:Z
-
-    if-eqz v5, :cond_3d
-
-    :cond_3c
-    if-eqz v4, :cond_41
-
-    sget-boolean v5, Ljavaroot/utils/ــ;->ˑʿ:Z
-
-    if-nez v5, :cond_41
-
-    .line 155
-    :cond_3d
-    sget-boolean v5, Ljavaroot/utils/ــ;->ˑʾ:Z
-
-    if-eqz v5, :cond_3e
-
-    const/4 v2, 0x0
-
-    .line 156
-    :cond_3e
-    sget-boolean v5, Ljavaroot/utils/ــ;->ˑʿ:Z
-
-    if-eqz v5, :cond_3f
-
-    const/4 v4, 0x0
-
-    .line 157
-    :cond_3f
-    new-instance v5, Ljava/lang/StringBuilder;
-
-    invoke-direct {v5}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string v9, "alternative patch to oat "
-
-    invoke-virtual {v5, v9}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v6}, Ljava/io/File;->getAbsolutePath()Ljava/lang/String;
-
-    move-result-object v9
-
-    invoke-virtual {v5, v9}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v5}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v5
-
-    invoke-static {v5}, Lʾˉ/ʼʼ;->ˉˎ(Ljava/lang/Object;)V
-
-    .line 158
-    new-instance v5, Ljavaroot/utils/ــ$ˈ;
-
-    invoke-direct {v5, v6}, Ljavaroot/utils/ــ$ˈ;-><init>(Ljava/io/File;)V
-
-    invoke-static {v5, v1, v2, v4}, Ljavaroot/utils/ــ;->ʼ(Ljava/util/ArrayList;[Ljava/lang/String;ZZ)I
-
-    .line 159
-    sget-boolean v5, Ljavaroot/utils/ــ;->ˑʾ:Z
-
-    if-nez v5, :cond_40
-
-    sget-boolean v5, Ljavaroot/utils/ــ;->ˑʿ:Z
-
-    if-eqz v5, :cond_41
-
-    :cond_40
-    const/4 v3, 0x1
-
-    :cond_41
-    if-nez v12, :cond_42
-
-    if-eqz v13, :cond_43
-
-    .line 160
-    :cond_42
-    invoke-virtual {v6}, Ljava/io/File;->getName()Ljava/lang/String;
-
-    move-result-object v5
-
-    move-object/from16 v9, v25
-
-    invoke-virtual {v5, v9}, Ljava/lang/String;->contains(Ljava/lang/CharSequence;)Z
-
-    move-result v5
-
-    if-eqz v5, :cond_43
-
-    const/4 v5, 0x1
-
-    .line 161
-    invoke-static {v6, v1, v5}, Ljavaroot/utils/ــ;->ˋ(Ljava/io/File;[Ljava/lang/String;Z)Z
-
-    move-result v3
-
-    :goto_27
-    const/4 v9, 0x0
-
-    goto :goto_28
-
-    :cond_43
-    const/4 v5, 0x1
-
-    goto :goto_27
-
-    .line 162
-    :goto_28
-    sput-boolean v9, Ljavaroot/utils/ــ;->ˈ:Z
-
-    if-nez v3, :cond_44
-
-    .line 163
-    sput-boolean v5, Ljavaroot/utils/ــ;->ˈ:Z
-
-    :cond_44
-    const/4 v5, 0x0
-
-    .line 164
-    sput-object v5, Ljavaroot/utils/ــ;->ˑˋ:Ljava/io/File;
-
-    if-eqz v3, :cond_48
-
-    .line 165
-    invoke-virtual {v6}, Ljava/io/File;->toString()Ljava/lang/String;
-
-    move-result-object v3
-
-    invoke-virtual {v3, v8}, Ljava/lang/String;->endsWith(Ljava/lang/String;)Z
-
-    move-result v3
-
-    if-eqz v3, :cond_45
-
-    .line 166
-    invoke-static {v6, v5}, Lʼˏ/ᵢ;->ʽʾ(Ljava/io/File;Ljava/lang/String;)V
-
-    .line 167
-    :cond_45
-    invoke-virtual {v6}, Ljava/io/File;->getAbsolutePath()Ljava/lang/String;
-
-    move-result-object v3
-
-    .line 168
+    .line 117
     new-instance v5, Ljava/io/File;
 
-    const-string v9, "-patched.oat"
+    aget-object v15, v1, v2
 
-    .line 169
-    invoke-virtual {v3, v7, v9}, Ljava/lang/String;->replace(Ljava/lang/CharSequence;Ljava/lang/CharSequence;)Ljava/lang/String;
+    invoke-direct {v5, v15}, Ljava/io/File;-><init>(Ljava/lang/String;)V
 
-    move-result-object v3
+    invoke-virtual {v3, v5}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
-    const-string v7, "-patched.odex"
-
-    .line 170
-    invoke-virtual {v3, v8, v7}, Ljava/lang/String;->replace(Ljava/lang/CharSequence;Ljava/lang/CharSequence;)Ljava/lang/String;
-
-    move-result-object v3
-
-    const-string v7, "-patched.jar"
-
-    .line 171
-    invoke-virtual {v3, v11, v7}, Ljava/lang/String;->replace(Ljava/lang/CharSequence;Ljava/lang/CharSequence;)Ljava/lang/String;
-
-    move-result-object v3
-
-    invoke-direct {v5, v3}, Ljava/io/File;-><init>(Ljava/lang/String;)V
-
-    .line 172
-    invoke-virtual {v6}, Ljava/io/File;->getName()Ljava/lang/String;
-
-    move-result-object v3
-
-    invoke-virtual {v3, v11}, Ljava/lang/String;->endsWith(Ljava/lang/String;)Z
-
-    move-result v3
-
-    if-nez v3, :cond_46
-
-    .line 173
-    invoke-virtual {v6, v5}, Ljava/io/File;->renameTo(Ljava/io/File;)Z
-
-    .line 174
-    :cond_46
-    invoke-virtual {v5}, Ljava/io/File;->exists()Z
-
-    move-result v3
-
-    if-eqz v3, :cond_48
-
-    .line 175
-    sput-object v5, Ljavaroot/utils/ــ;->ˑˋ:Ljava/io/File;
-
-    goto :goto_29
-
-    :cond_47
-    move-object/from16 v26, v6
-
-    move-object/from16 v29, v9
-
-    .line 176
-    :cond_48
-    :goto_29
-    const-string v3, "RW"
-
-    const-string v5, "backup"
-
-    const-string v14, "0.0"
-
-    const-string v15, "0:0"
-
-    const-string v17, "chown"
-
-    const-string v24, "0644"
-
-    const-string v9, "/data/app/"
-
-    const-string v6, "LuckyPatcher: odex not equal lenght patched! Not enougth space in /system/!"
-
-    const-string v25, "chmod"
-
-    if-nez v2, :cond_4a
-
-    if-eqz v4, :cond_49
-
-    goto :goto_2a
-
-    :cond_49
-    move-object/from16 v38, v3
-
-    move-object/from16 v28, v8
-
-    move/from16 v31, v12
-
-    move/from16 v20, v13
-
-    move-object/from16 v37, v14
-
-    move-object/from16 v39, v27
-
-    move-object/from16 v12, v29
-
-    move-object v14, v6
-
-    move-object v13, v11
-
-    move-object v11, v5
-
-    goto/16 :goto_64
-
-    .line 177
-    :cond_4a
-    :goto_2a
-    sget-boolean v7, Ljavaroot/utils/ــ;->ˑˎ:Z
-
-    if-nez v7, :cond_49
-
-    .line 178
-    sget-boolean v7, Ljavaroot/utils/ــ;->ʽ:Z
-
-    if-nez v7, :cond_4b
-
-    .line 179
-    new-instance v7, Lʼـ/ʽʽ;
-
-    invoke-direct {v7}, Lʼـ/ʽʽ;-><init>()V
-
-    move-object/from16 v28, v8
-
-    const/4 v8, 0x1
-
-    .line 180
-    iput-boolean v8, v7, Lʼـ/ʽʽ;->ʿ:Z
-
-    .line 181
-    iput-boolean v8, v7, Lʼـ/ʽʽ;->ˈ:Z
-
-    .line 182
-    iput-boolean v8, v7, Lʼـ/ʽʽ;->ˋ:Z
-
-    .line 183
-    sget-boolean v8, Ljavaroot/utils/ــ;->ʾ:Z
-
-    iput-boolean v8, v7, Lʼـ/ʽʽ;->ﾞ:Z
-
-    .line 184
-    invoke-static {v7}, Lʼˏ/ᵢ;->ʿʻ(Lʼـ/ʽʽ;)Ljava/util/ArrayList;
-
-    move-result-object v7
-
-    goto :goto_2b
-
-    :cond_4b
-    move-object/from16 v28, v8
-
-    .line 185
-    new-instance v7, Lʼـ/ʽʽ;
-
-    invoke-direct {v7}, Lʼـ/ʽʽ;-><init>()V
-
-    const/4 v8, 0x1
-
-    .line 186
-    iput-boolean v8, v7, Lʼـ/ʽʽ;->ˆ:Z
-
-    .line 187
-    iput-boolean v8, v7, Lʼـ/ʽʽ;->ˉ:Z
-
-    .line 188
-    iput-boolean v8, v7, Lʼـ/ʽʽ;->ˎ:Z
-
-    .line 189
-    invoke-static {v7}, Lʼˏ/ᵢ;->ʿʻ(Lʼـ/ʽʽ;)Ljava/util/ArrayList;
-
-    move-result-object v7
-
-    .line 190
-    :goto_2b
-    invoke-virtual {v7}, Ljava/util/ArrayList;->size()I
-
-    move-result v8
-
-    if-lez v8, :cond_5f
-
-    .line 191
-    invoke-virtual {v7}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
-
-    move-result-object v8
-
-    :goto_2c
-    invoke-interface {v8}, Ljava/util/Iterator;->hasNext()Z
-
-    move-result v20
-
-    if-eqz v20, :cond_4d
-
-    invoke-interface {v8}, Ljava/util/Iterator;->next()Ljava/lang/Object;
-
-    move-result-object v20
-
-    check-cast v20, Ljava/io/File;
-
-    .line 192
-    :try_start_15
-    invoke-virtual/range {v20 .. v20}, Ljava/io/File;->getAbsolutePath()Ljava/lang/String;
-
-    move-result-object v20
-    :try_end_15
-    .catchall {:try_start_15 .. :try_end_15} :catchall_8
-
-    move-object/from16 v30, v8
-
-    :try_start_16
-    invoke-static/range {v20 .. v20}, Lʼˏ/ᵢ;->ˈʽ(Ljava/lang/String;)Ljava/lang/String;
-
-    move-result-object v8
-    :try_end_16
-    .catchall {:try_start_16 .. :try_end_16} :catchall_7
-
-    move-object/from16 v36, v5
-
-    move-object/from16 v5, v26
-
-    .line 193
-    :try_start_17
-    invoke-virtual {v8, v5}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result v8
-
-    if-nez v8, :cond_4c
-
-    .line 194
-    sget-boolean v8, Ljavaroot/utils/ــ;->ʾ:Z
-    :try_end_17
-    .catchall {:try_start_17 .. :try_end_17} :catchall_6
-
-    if-nez v8, :cond_4c
-
-    move-object/from16 v8, v27
-
-    :try_start_18
-    invoke-static {v8, v3}, Lʼˏ/ᵢ;->ˋי(Ljava/lang/String;Ljava/lang/String;)Z
-    :try_end_18
-    .catchall {:try_start_18 .. :try_end_18} :catchall_5
-
-    goto :goto_31
-
-    :catchall_5
-    move-exception v0
-
-    :goto_2d
-    move-object/from16 v20, v0
-
-    goto :goto_30
-
-    :cond_4c
-    move-object/from16 v8, v27
-
-    goto :goto_31
-
-    :catchall_6
-    move-exception v0
-
-    :goto_2e
-    move-object/from16 v8, v27
-
-    goto :goto_2d
-
-    :catchall_7
-    move-exception v0
-
-    move-object/from16 v36, v5
-
-    :goto_2f
-    move-object/from16 v5, v26
-
-    goto :goto_2e
-
-    :catchall_8
-    move-exception v0
-
-    move-object/from16 v36, v5
-
-    move-object/from16 v30, v8
-
-    goto :goto_2f
-
-    .line 195
-    :goto_30
-    invoke-virtual/range {v20 .. v20}, Ljava/lang/Throwable;->printStackTrace()V
-
-    :goto_31
-    move-object/from16 v26, v5
-
-    move-object/from16 v27, v8
-
-    move-object/from16 v8, v30
-
-    move-object/from16 v5, v36
-
-    goto :goto_2c
-
-    :cond_4d
-    move-object/from16 v36, v5
-
-    move-object/from16 v8, v27
-
-    .line 196
-    sget-object v5, Ljava/lang/System;->out:Ljava/io/PrintStream;
-
-    move-object/from16 v27, v6
-
-    const-string v6, "check cache"
-
-    invoke-virtual {v5, v6}, Ljava/io/PrintStream;->println(Ljava/lang/String;)V
-
-    .line 197
-    invoke-virtual {v7}, Ljava/util/ArrayList;->size()I
-
-    move-result v6
-
-    if-lez v6, :cond_50
-
-    sget v6, Lʾˉ/ʼʼ;->ʾᐧ:I
-
-    move-object/from16 v37, v14
-
-    const/16 v14, 0x18
-
-    if-lt v6, v14, :cond_51
-
-    .line 198
-    sget-boolean v6, Ljavaroot/utils/ــ;->ʾ:Z
-
-    if-nez v6, :cond_4e
-
-    .line 199
-    invoke-static {v8, v3}, Lʼˏ/ᵢ;->ˋי(Ljava/lang/String;Ljava/lang/String;)Z
-
-    .line 200
-    :cond_4e
-    const-string v6, "found cache android 7"
-
-    invoke-virtual {v5, v6}, Ljava/io/PrintStream;->println(Ljava/lang/String;)V
-
-    if-eqz v4, :cond_4f
-
-    .line 201
-    invoke-static {v1, v4}, Ljavaroot/utils/ــ;->ˉ([Ljava/lang/String;Z)Z
-
-    move-result v6
-
-    sput-boolean v6, Ljavaroot/utils/ــ;->ˑʾ:Z
-
-    .line 202
-    :cond_4f
-    invoke-static {v7, v1, v2, v4}, Ljavaroot/utils/ــ;->ˈ(Ljava/util/ArrayList;[Ljava/lang/String;ZZ)I
-
-    move-result v6
-
-    .line 203
-    sget-boolean v14, Ljavaroot/utils/ــ;->ˑʾ:Z
-
-    if-nez v14, :cond_52
-
-    .line 204
-    invoke-static {v1, v2}, Ljavaroot/utils/ــ;->ˉ([Ljava/lang/String;Z)Z
-
-    move-result v14
-
-    sput-boolean v14, Ljavaroot/utils/ــ;->ˑʾ:Z
-
-    goto :goto_32
-
-    :cond_50
-    move-object/from16 v37, v14
-
-    :cond_51
-    const/4 v6, 0x0
-
-    .line 205
-    :cond_52
-    :goto_32
-    invoke-virtual {v7}, Ljava/util/ArrayList;->size()I
-
-    move-result v14
-
-    if-lez v14, :cond_59
-
-    sget v14, Lʾˉ/ʼʼ;->ʾᐧ:I
-
-    move/from16 v20, v6
-
-    const/16 v6, 0x15
-
-    if-lt v14, v6, :cond_5a
-
-    const/16 v6, 0x17
-
-    if-gt v14, v6, :cond_5a
-
-    .line 206
-    const-string v6, "found cache"
-
-    invoke-virtual {v5, v6}, Ljava/io/PrintStream;->println(Ljava/lang/String;)V
-
-    if-eqz v4, :cond_53
-
-    .line 207
-    invoke-static {v1, v4}, Ljavaroot/utils/ــ;->ˉ([Ljava/lang/String;Z)Z
-
-    .line 208
-    :cond_53
-    invoke-static {v7, v1, v2, v4}, Ljavaroot/utils/ــ;->ˈ(Ljava/util/ArrayList;[Ljava/lang/String;ZZ)I
-
-    move-result v6
-
-    .line 209
-    sget-boolean v5, Ljavaroot/utils/ــ;->ˑʾ:Z
-
-    if-nez v5, :cond_54
-
-    .line 210
-    invoke-static {v1, v2}, Ljavaroot/utils/ــ;->ˉ([Ljava/lang/String;Z)Z
-
-    move-result v5
-
-    sput-boolean v5, Ljavaroot/utils/ــ;->ˑʾ:Z
-
-    :cond_54
-    if-eqz v2, :cond_55
-
-    .line 211
-    sget-boolean v5, Ljavaroot/utils/ــ;->ˑʾ:Z
-
-    if-eqz v5, :cond_56
-
-    :cond_55
-    if-eqz v4, :cond_5b
-
-    sget-boolean v5, Ljavaroot/utils/ــ;->ˑʿ:Z
-
-    if-nez v5, :cond_5b
-
-    .line 212
-    :cond_56
-    sget-boolean v5, Ljavaroot/utils/ــ;->ˑʾ:Z
-
-    if-eqz v5, :cond_57
-
-    const/4 v2, 0x0
-
-    .line 213
-    :cond_57
-    sget-boolean v5, Ljavaroot/utils/ــ;->ˑʿ:Z
-
-    if-eqz v5, :cond_58
-
-    const/4 v4, 0x0
-
-    .line 214
-    :cond_58
-    invoke-static {v7, v1, v2, v4}, Ljavaroot/utils/ــ;->ʼ(Ljava/util/ArrayList;[Ljava/lang/String;ZZ)I
-
-    move-result v6
-
-    goto :goto_33
-
-    :cond_59
-    move/from16 v20, v6
-
-    :cond_5a
-    move/from16 v6, v20
-
-    .line 215
-    :cond_5b
-    :goto_33
-    const-string v2, "test for reboot"
-
-    invoke-static {v2}, Lʾˉ/ʼʼ;->ˉˎ(Ljava/lang/Object;)V
-
-    .line 216
-    sget-boolean v2, Ljavaroot/utils/ــ;->ˑʽ:Z
-
-    if-nez v2, :cond_5c
-
-    sget-boolean v2, Ljavaroot/utils/ــ;->ˑʾ:Z
-
-    if-nez v2, :cond_5c
-
-    sget-boolean v2, Ljavaroot/utils/ــ;->ˑʿ:Z
-
-    if-nez v2, :cond_5c
-
-    sget-boolean v2, Ljavaroot/utils/ــ;->ˑˆ:Z
-
-    if-eqz v2, :cond_5e
-
-    .line 217
-    :cond_5c
+    .line 118
+    :goto_1f
     new-instance v2, Ljava/lang/StringBuilder;
 
     invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string v4, "count files:"
+    const-string v3, "apply patch to "
 
-    invoke-virtual {v2, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v2, v6}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    invoke-virtual {v8}, Ljava/io/File;->getAbsolutePath()Ljava/lang/String;
 
-    const-string v4, " "
+    move-result-object v3
 
-    invoke-virtual {v2, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v7}, Ljava/util/ArrayList;->size()I
-
-    move-result v4
-
-    invoke-virtual {v2, v4}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object v2
 
-    invoke-static {v2}, Lʾˉ/ʼʼ;->ˉˎ(Ljava/lang/Object;)V
+    invoke-static {v2}, Lʾˉ/ᴵᴵ;->ˉˎ(Ljava/lang/Object;)V
 
-    .line 218
-    invoke-virtual {v7}, Ljava/util/ArrayList;->size()I
+    .line 119
+    invoke-virtual {v8}, Ljava/io/File;->getName()Ljava/lang/String;
+
+    move-result-object v2
+
+    invoke-virtual {v2, v9}, Ljava/lang/String;->endsWith(Ljava/lang/String;)Z
 
     move-result v2
 
-    if-ne v6, v2, :cond_5e
+    if-eqz v2, :cond_30
+
+    if-nez v4, :cond_2a
+
+    if-eqz v6, :cond_29
+
+    goto :goto_20
+
+    :cond_29
+    const/4 v2, 0x0
+
+    goto :goto_21
+
+    .line 120
+    :cond_2a
+    :goto_20
+    invoke-static {v8, v1, v4, v6}, Ljavaroot/utils/ــ;->ʾ(Ljava/io/File;[Ljava/lang/String;ZZ)Z
+
+    move-result v2
+
+    :goto_21
+    if-nez v13, :cond_2b
+
+    if-eqz v14, :cond_31
+
+    .line 121
+    :cond_2b
+    invoke-static {v8}, Lʼˏ/ᵢ;->ˉᵎ(Ljava/io/File;)Z
+
+    move-result v3
+
+    if-nez v3, :cond_2c
+
+    .line 122
+    invoke-static {v8, v1, v13}, Ljavaroot/utils/ــ;->ʿ(Ljava/io/File;[Ljava/lang/String;Z)Z
+
+    move-result v2
+
+    goto :goto_22
+
+    .line 123
+    :cond_2c
+    new-instance v3, Ljavaroot/utils/ــ$ʿ;
+
+    invoke-direct {v3, v8}, Ljavaroot/utils/ــ$ʿ;-><init>(Ljava/io/File;)V
+
+    invoke-static {v3, v1, v13}, Ljavaroot/utils/ــ;->ˊ(Ljava/util/ArrayList;[Ljava/lang/String;Z)V
+
+    .line 124
+    sget-boolean v3, Ljavaroot/utils/ــ;->ˑʾ:Z
+
+    if-nez v3, :cond_2d
+
+    if-nez v13, :cond_2e
+
+    :cond_2d
+    sget-boolean v3, Ljavaroot/utils/ــ;->ˑʿ:Z
+
+    if-nez v3, :cond_31
+
+    if-eqz v13, :cond_31
+
+    .line 125
+    :cond_2e
+    invoke-static {v8, v1, v13}, Ljavaroot/utils/ــ;->ʽ(Ljava/io/File;[Ljava/lang/String;Z)V
+
+    .line 126
+    sget-boolean v3, Ljavaroot/utils/ــ;->ˑʾ:Z
+
+    if-nez v3, :cond_2f
+
+    sget-boolean v3, Ljavaroot/utils/ــ;->ˑʿ:Z
+
+    if-eqz v3, :cond_31
+
+    :cond_2f
+    const/4 v2, 0x1
+
+    goto :goto_22
+
+    :cond_30
+    const/4 v2, 0x0
+
+    .line 127
+    :cond_31
+    :goto_22
+    invoke-virtual {v8}, Ljava/io/File;->getName()Ljava/lang/String;
+
+    move-result-object v3
+
+    invoke-virtual {v3, v12}, Ljava/lang/String;->endsWith(Ljava/lang/String;)Z
+
+    move-result v3
+
+    if-eqz v3, :cond_35
+
+    .line 128
+    new-instance v3, Ljava/util/ArrayList;
+
+    invoke-direct {v3}, Ljava/util/ArrayList;-><init>()V
+
+    .line 129
+    :try_start_11
+    new-instance v5, Ljavaroot/utils/ˊ;
+
+    const/16 v33, 0x1
+
+    move-object/from16 v28, v5
+
+    move/from16 v29, v4
+
+    move/from16 v30, v6
+
+    move/from16 v31, v13
+
+    move/from16 v32, v14
+
+    invoke-direct/range {v28 .. v33}, Ljavaroot/utils/ˊ;-><init>(ZZZZZ)V
+
+    .line 130
+    invoke-virtual {v5}, Ljavaroot/utils/ˊ;->ʻ()Lʼـ/ﾞﾞ;
+
+    move-result-object v5
+
+    const/4 v15, 0x0
+
+    invoke-virtual {v7, v5, v15}, Lʼˑ/ʼ;->ᵔ(Lʼـ/ﾞﾞ;Ljava/io/File;)V
+
+    .line 131
+    iget-object v5, v7, Lʼˑ/ʼ;->ᵢ:Ljava/lang/String;
+
+    invoke-static {v5}, Lʾˉ/ᴵᴵ;->ˉˎ(Ljava/lang/Object;)V
+
+    .line 132
+    iget-object v5, v7, Lʼˑ/ʼ;->ᵔ:Ljava/util/ArrayList;
+
+    invoke-virtual {v5}, Ljava/util/ArrayList;->size()I
+
+    move-result v5
+    :try_end_11
+    .catch Ljava/lang/Exception; {:try_start_11 .. :try_end_11} :catch_a
+
+    if-lez v5, :cond_34
+
+    const/4 v5, 0x0
+
+    .line 133
+    :try_start_12
+    invoke-virtual {v7, v5}, Lʼˑ/ʼ;->ˉ(Z)V
+
+    .line 134
+    iget-object v2, v7, Lʼˑ/ʼ;->ᵔ:Ljava/util/ArrayList;
+
+    invoke-virtual {v2}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
+
+    move-result-object v2
+
+    :goto_23
+    invoke-interface {v2}, Ljava/util/Iterator;->hasNext()Z
+
+    move-result v5
+
+    if-eqz v5, :cond_32
+
+    invoke-interface {v2}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+
+    move-result-object v5
+
+    check-cast v5, Ljava/io/File;
+
+    .line 135
+    sget-object v15, Ljava/lang/System;->out:Ljava/io/PrintStream;
+
+    invoke-virtual {v15, v10}, Ljava/io/PrintStream;->println(Ljava/lang/String;)V
+
+    .line 136
+    new-instance v15, Lʾˉ/ʻ;
+
+    move-object/from16 v28, v2
+
+    invoke-virtual {v5}, Ljava/io/File;->getAbsolutePath()Ljava/lang/String;
+
+    move-result-object v2
+    :try_end_12
+    .catch Ljava/lang/Exception; {:try_start_12 .. :try_end_12} :catch_8
+
+    move-object/from16 v29, v10
+
+    :try_start_13
+    new-instance v10, Ljava/lang/StringBuilder;
+
+    invoke-direct {v10}, Ljava/lang/StringBuilder;-><init>()V
+
+    invoke-static {v5}, Lʼˏ/ᵢ;->ʾˑ(Ljava/io/File;)Ljava/io/File;
+
+    move-result-object v5
+
+    invoke-virtual {v5}, Ljava/io/File;->getAbsolutePath()Ljava/lang/String;
+
+    move-result-object v5
+
+    invoke-virtual {v10, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    const-string v5, "/"
+
+    invoke-virtual {v10, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v10}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v5
+
+    invoke-direct {v15, v2, v5}, Lʾˉ/ʻ;-><init>(Ljava/lang/String;Ljava/lang/String;)V
+
+    invoke-virtual {v3, v15}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+
+    move-object/from16 v2, v28
+
+    move-object/from16 v10, v29
+
+    goto :goto_23
+
+    :catch_7
+    move-exception v0
+
+    :goto_24
+    move-object v3, v0
+
+    const/4 v2, 0x1
+
+    goto :goto_28
+
+    :catch_8
+    move-exception v0
+
+    move-object/from16 v29, v10
+
+    goto :goto_24
+
+    :cond_32
+    move-object/from16 v29, v10
+
+    const/4 v2, 0x1
+
+    .line 137
+    aget-object v5, v1, v2
+
+    const-string v10, "-patched.jar"
+
+    invoke-virtual {v5, v12, v10}, Ljava/lang/String;->replace(Ljava/lang/CharSequence;Ljava/lang/CharSequence;)Ljava/lang/String;
+
+    move-result-object v5
+
+    .line 138
+    aget-object v10, v1, v2
+    :try_end_13
+    .catch Ljava/lang/Exception; {:try_start_13 .. :try_end_13} :catch_7
+
+    .line 139
+    :try_start_14
+    invoke-static {v10, v5, v3}, Lʼˏ/ᵢ;->ˈ(Ljava/lang/String;Ljava/lang/String;Ljava/util/ArrayList;)V
+
+    .line 140
+    new-instance v2, Ljava/io/File;
+
+    invoke-direct {v2, v5}, Ljava/io/File;-><init>(Ljava/lang/String;)V
+
+    invoke-static {v2}, Lʼˏ/ᵢ;->יـ(Ljava/io/File;)Z
+
+    .line 141
+    sget-object v2, Ljava/lang/System;->out:Ljava/io/PrintStream;
+
+    invoke-virtual {v2, v11}, Ljava/io/PrintStream;->println(Ljava/lang/String;)V
+    :try_end_14
+    .catch Ljava/lang/Exception; {:try_start_14 .. :try_end_14} :catch_9
+
+    goto :goto_25
+
+    :catch_9
+    move-exception v0
+
+    move-object v2, v0
+
+    .line 142
+    :try_start_15
+    invoke-virtual {v2}, Ljava/lang/Throwable;->printStackTrace()V
+
+    .line 143
+    new-instance v2, Ljava/io/File;
+
+    invoke-direct {v2, v5}, Ljava/io/File;-><init>(Ljava/lang/String;)V
+
+    invoke-virtual {v2}, Ljava/io/File;->delete()Z
+
+    .line 144
+    :goto_25
+    iget-object v2, v7, Lʼˑ/ʼ;->ـ:[Ljava/io/File;
+
+    array-length v3, v2
+
+    const/4 v5, 0x0
+
+    :goto_26
+    if-ge v5, v3, :cond_33
+
+    aget-object v7, v2, v5
+
+    .line 145
+    invoke-virtual {v7}, Ljava/io/File;->delete()Z
+    :try_end_15
+    .catch Ljava/lang/Exception; {:try_start_15 .. :try_end_15} :catch_7
+
+    const/4 v7, 0x1
+
+    add-int/2addr v5, v7
+
+    goto :goto_26
+
+    :cond_33
+    const/4 v2, 0x1
+
+    goto :goto_27
+
+    :cond_34
+    move-object/from16 v29, v10
+
+    :goto_27
+    const/16 v3, 0x17
+
+    goto :goto_29
+
+    :catch_a
+    move-exception v0
+
+    move-object/from16 v29, v10
+
+    move-object v3, v0
+
+    .line 146
+    :goto_28
+    invoke-virtual {v3}, Ljava/lang/Throwable;->printStackTrace()V
+
+    goto :goto_27
+
+    .line 147
+    :goto_29
+    invoke-static {v3}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v5
+
+    invoke-static {v5}, Lʾˉ/ᴵᴵ;->ˊˏ(Ljava/lang/Integer;)V
+
+    goto :goto_2a
+
+    :cond_35
+    move-object/from16 v29, v10
+
+    .line 148
+    :goto_2a
+    invoke-virtual {v8}, Ljava/io/File;->getName()Ljava/lang/String;
+
+    move-result-object v3
+
+    move-object/from16 v5, v34
+
+    invoke-virtual {v3, v5}, Ljava/lang/String;->endsWith(Ljava/lang/String;)Z
+
+    move-result v3
+
+    if-eqz v3, :cond_43
+
+    .line 149
+    new-instance v3, Ljava/lang/StringBuilder;
+
+    invoke-direct {v3}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v7, "standart patch to oat "
+
+    invoke-virtual {v3, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v8}, Ljava/io/File;->getAbsolutePath()Ljava/lang/String;
+
+    move-result-object v7
+
+    invoke-virtual {v3, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v3
+
+    invoke-static {v3}, Lʾˉ/ᴵᴵ;->ˉˎ(Ljava/lang/Object;)V
+
+    if-nez v4, :cond_36
+
+    if-eqz v6, :cond_41
+
+    .line 150
+    :cond_36
+    new-instance v3, Ljavaroot/utils/ــ$ˆ;
+
+    invoke-direct {v3, v8}, Ljavaroot/utils/ــ$ˆ;-><init>(Ljava/io/File;)V
+
+    invoke-static {v3, v1, v4, v6}, Ljavaroot/utils/ــ;->ˈ(Ljava/util/ArrayList;[Ljava/lang/String;ZZ)I
+
+    .line 151
+    sget-boolean v3, Ljavaroot/utils/ــ;->ˑʾ:Z
+
+    if-nez v3, :cond_37
+
+    invoke-static {v1, v4}, Ljavaroot/utils/ــ;->ˉ([Ljava/lang/String;Z)Z
+
+    .line 152
+    :cond_37
+    sget-boolean v3, Ljavaroot/utils/ــ;->ˑʾ:Z
+
+    if-nez v3, :cond_38
+
+    sget-boolean v3, Ljavaroot/utils/ــ;->ˑʿ:Z
+
+    if-eqz v3, :cond_39
+
+    :cond_38
+    const/4 v2, 0x1
+
+    .line 153
+    :cond_39
+    sget v3, Lʾˉ/ᴵᴵ;->ʾᐧ:I
+
+    const/16 v7, 0x1c
+
+    if-lt v3, v7, :cond_3b
+
+    invoke-virtual {v8}, Ljava/io/File;->getName()Ljava/lang/String;
+
+    move-result-object v3
+
+    move-object/from16 v7, v17
+
+    invoke-virtual {v3, v7}, Ljava/lang/String;->contains(Ljava/lang/CharSequence;)Z
+
+    move-result v3
+
+    if-nez v3, :cond_3a
+
+    invoke-virtual {v8}, Ljava/io/File;->getName()Ljava/lang/String;
+
+    move-result-object v3
+
+    move-object/from16 v7, v24
+
+    invoke-virtual {v3, v7}, Ljava/lang/String;->contains(Ljava/lang/CharSequence;)Z
+
+    move-result v3
+
+    if-eqz v3, :cond_3b
+
+    :cond_3a
+    const/4 v3, 0x1
+
+    .line 154
+    invoke-static {v8, v1, v3}, Ljavaroot/utils/ــ;->ˋ(Ljava/io/File;[Ljava/lang/String;Z)Z
+
+    move-result v7
+
+    if-eqz v7, :cond_3b
+
+    const/4 v2, 0x1
+
+    :cond_3b
+    if-eqz v4, :cond_3c
+
+    .line 155
+    sget-boolean v3, Ljavaroot/utils/ــ;->ˑʾ:Z
+
+    if-eqz v3, :cond_3d
+
+    :cond_3c
+    if-eqz v6, :cond_41
+
+    sget-boolean v3, Ljavaroot/utils/ــ;->ˑʿ:Z
+
+    if-nez v3, :cond_41
+
+    .line 156
+    :cond_3d
+    sget-boolean v3, Ljavaroot/utils/ــ;->ˑʾ:Z
+
+    if-eqz v3, :cond_3e
+
+    const/4 v4, 0x0
+
+    .line 157
+    :cond_3e
+    sget-boolean v3, Ljavaroot/utils/ــ;->ˑʿ:Z
+
+    if-eqz v3, :cond_3f
+
+    const/4 v6, 0x0
+
+    .line 158
+    :cond_3f
+    new-instance v3, Ljava/lang/StringBuilder;
+
+    invoke-direct {v3}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v7, "alternative patch to oat "
+
+    invoke-virtual {v3, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v8}, Ljava/io/File;->getAbsolutePath()Ljava/lang/String;
+
+    move-result-object v7
+
+    invoke-virtual {v3, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v3
+
+    invoke-static {v3}, Lʾˉ/ᴵᴵ;->ˉˎ(Ljava/lang/Object;)V
+
+    .line 159
+    new-instance v3, Ljavaroot/utils/ــ$ˈ;
+
+    invoke-direct {v3, v8}, Ljavaroot/utils/ــ$ˈ;-><init>(Ljava/io/File;)V
+
+    invoke-static {v3, v1, v4, v6}, Ljavaroot/utils/ــ;->ʼ(Ljava/util/ArrayList;[Ljava/lang/String;ZZ)I
+
+    .line 160
+    sget-boolean v3, Ljavaroot/utils/ــ;->ˑʾ:Z
+
+    if-nez v3, :cond_40
+
+    sget-boolean v3, Ljavaroot/utils/ــ;->ˑʿ:Z
+
+    if-eqz v3, :cond_41
+
+    :cond_40
+    const/4 v2, 0x1
+
+    :cond_41
+    if-nez v13, :cond_42
+
+    if-eqz v14, :cond_43
+
+    .line 161
+    :cond_42
+    invoke-virtual {v8}, Ljava/io/File;->getName()Ljava/lang/String;
+
+    move-result-object v3
+
+    move-object/from16 v7, v25
+
+    invoke-virtual {v3, v7}, Ljava/lang/String;->contains(Ljava/lang/CharSequence;)Z
+
+    move-result v3
+
+    if-eqz v3, :cond_43
+
+    const/4 v3, 0x1
+
+    .line 162
+    invoke-static {v8, v1, v3}, Ljavaroot/utils/ــ;->ˋ(Ljava/io/File;[Ljava/lang/String;Z)Z
+
+    move-result v2
+
+    :goto_2b
+    const/4 v7, 0x0
+
+    goto :goto_2c
+
+    :cond_43
+    const/4 v3, 0x1
+
+    goto :goto_2b
+
+    .line 163
+    :goto_2c
+    sput-boolean v7, Ljavaroot/utils/ــ;->ˈ:Z
+
+    if-nez v2, :cond_44
+
+    .line 164
+    sput-boolean v3, Ljavaroot/utils/ــ;->ˈ:Z
+
+    :cond_44
+    const/4 v3, 0x0
+
+    .line 165
+    sput-object v3, Ljavaroot/utils/ــ;->ˑˋ:Ljava/io/File;
+
+    if-eqz v2, :cond_48
+
+    .line 166
+    invoke-virtual {v8}, Ljava/io/File;->toString()Ljava/lang/String;
+
+    move-result-object v2
+
+    invoke-virtual {v2, v9}, Ljava/lang/String;->endsWith(Ljava/lang/String;)Z
+
+    move-result v2
+
+    if-eqz v2, :cond_45
+
+    .line 167
+    invoke-static {v8, v3}, Lʼˏ/ᵢ;->ʽʾ(Ljava/io/File;Ljava/lang/String;)V
+
+    .line 168
+    :cond_45
+    invoke-virtual {v8}, Ljava/io/File;->getAbsolutePath()Ljava/lang/String;
+
+    move-result-object v2
+
+    .line 169
+    new-instance v3, Ljava/io/File;
+
+    const-string v7, "-patched.oat"
+
+    .line 170
+    invoke-virtual {v2, v5, v7}, Ljava/lang/String;->replace(Ljava/lang/CharSequence;Ljava/lang/CharSequence;)Ljava/lang/String;
+
+    move-result-object v2
+
+    const-string v5, "-patched.odex"
+
+    .line 171
+    invoke-virtual {v2, v9, v5}, Ljava/lang/String;->replace(Ljava/lang/CharSequence;Ljava/lang/CharSequence;)Ljava/lang/String;
+
+    move-result-object v2
+
+    const-string v5, "-patched.jar"
+
+    .line 172
+    invoke-virtual {v2, v12, v5}, Ljava/lang/String;->replace(Ljava/lang/CharSequence;Ljava/lang/CharSequence;)Ljava/lang/String;
+
+    move-result-object v2
+
+    invoke-direct {v3, v2}, Ljava/io/File;-><init>(Ljava/lang/String;)V
+
+    .line 173
+    invoke-virtual {v8}, Ljava/io/File;->getName()Ljava/lang/String;
+
+    move-result-object v2
+
+    invoke-virtual {v2, v12}, Ljava/lang/String;->endsWith(Ljava/lang/String;)Z
+
+    move-result v2
+
+    if-nez v2, :cond_46
+
+    .line 174
+    invoke-virtual {v8, v3}, Ljava/io/File;->renameTo(Ljava/io/File;)Z
+
+    .line 175
+    :cond_46
+    invoke-virtual {v3}, Ljava/io/File;->exists()Z
+
+    move-result v2
+
+    if-eqz v2, :cond_48
+
+    .line 176
+    sput-object v3, Ljavaroot/utils/ــ;->ˑˋ:Ljava/io/File;
+
+    goto :goto_2d
+
+    :cond_47
+    move-object/from16 v26, v8
+
+    move-object/from16 v29, v10
+
+    .line 177
+    :cond_48
+    :goto_2d
+    const-string v2, "rm"
+
+    const-string v3, "RW"
+
+    const-string v5, "backup"
+
+    const-string v15, "0.0"
+
+    const-string v17, "0:0"
+
+    const-string v24, "chown"
+
+    const-string v25, "0644"
+
+    const-string v10, "/data/app/"
+
+    const-string v7, "LuckyPatcher: odex not equal lenght patched! Not enougth space in /system/!"
+
+    const-string v28, "chmod"
+
+    if-nez v4, :cond_4a
+
+    if-eqz v6, :cond_49
+
+    goto :goto_2e
+
+    :cond_49
+    move-object/from16 v36, v2
+
+    move-object/from16 v39, v3
+
+    move-object/from16 v37, v9
+
+    move/from16 v31, v13
+
+    move/from16 v20, v14
+
+    move-object/from16 v40, v27
+
+    move-object/from16 v13, v29
+
+    move-object v9, v7
+
+    move-object v14, v12
+
+    move-object v12, v5
+
+    goto/16 :goto_67
+
+    .line 178
+    :cond_4a
+    :goto_2e
+    sget-boolean v8, Ljavaroot/utils/ــ;->ˑˎ:Z
+
+    if-nez v8, :cond_49
+
+    .line 179
+    sget-boolean v8, Ljavaroot/utils/ــ;->ʽ:Z
+
+    if-nez v8, :cond_4b
+
+    .line 180
+    new-instance v8, Lʼـ/ʽʽ;
+
+    invoke-direct {v8}, Lʼـ/ʽʽ;-><init>()V
+
+    move-object/from16 v36, v2
+
+    const/4 v2, 0x1
+
+    .line 181
+    iput-boolean v2, v8, Lʼـ/ʽʽ;->ʿ:Z
+
+    .line 182
+    iput-boolean v2, v8, Lʼـ/ʽʽ;->ˈ:Z
+
+    .line 183
+    iput-boolean v2, v8, Lʼـ/ʽʽ;->ˋ:Z
+
+    .line 184
+    sget-boolean v2, Ljavaroot/utils/ــ;->ʾ:Z
+
+    iput-boolean v2, v8, Lʼـ/ʽʽ;->ﾞ:Z
+
+    .line 185
+    invoke-static {v8}, Lʼˏ/ᵢ;->ʿʻ(Lʼـ/ʽʽ;)Ljava/util/ArrayList;
+
+    move-result-object v2
+
+    goto :goto_2f
+
+    :cond_4b
+    move-object/from16 v36, v2
+
+    .line 186
+    new-instance v2, Lʼـ/ʽʽ;
+
+    invoke-direct {v2}, Lʼـ/ʽʽ;-><init>()V
+
+    const/4 v8, 0x1
+
+    .line 187
+    iput-boolean v8, v2, Lʼـ/ʽʽ;->ˆ:Z
+
+    .line 188
+    iput-boolean v8, v2, Lʼـ/ʽʽ;->ˉ:Z
+
+    .line 189
+    iput-boolean v8, v2, Lʼـ/ʽʽ;->ˎ:Z
+
+    .line 190
+    invoke-static {v2}, Lʼˏ/ᵢ;->ʿʻ(Lʼـ/ʽʽ;)Ljava/util/ArrayList;
+
+    move-result-object v2
+
+    .line 191
+    :goto_2f
+    invoke-virtual {v2}, Ljava/util/ArrayList;->size()I
+
+    move-result v8
+
+    if-lez v8, :cond_5f
+
+    .line 192
+    invoke-virtual {v2}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
+
+    move-result-object v8
+
+    :goto_30
+    invoke-interface {v8}, Ljava/util/Iterator;->hasNext()Z
+
+    move-result v18
+
+    if-eqz v18, :cond_4d
+
+    invoke-interface {v8}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+
+    move-result-object v18
+
+    check-cast v18, Ljava/io/File;
+
+    .line 193
+    :try_start_16
+    invoke-virtual/range {v18 .. v18}, Ljava/io/File;->getAbsolutePath()Ljava/lang/String;
+
+    move-result-object v18
+    :try_end_16
+    .catchall {:try_start_16 .. :try_end_16} :catchall_9
+
+    move-object/from16 v20, v8
+
+    :try_start_17
+    invoke-static/range {v18 .. v18}, Lʼˏ/ᵢ;->ˈʽ(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v8
+    :try_end_17
+    .catchall {:try_start_17 .. :try_end_17} :catchall_8
+
+    move-object/from16 v37, v9
+
+    move-object/from16 v9, v26
+
+    .line 194
+    :try_start_18
+    invoke-virtual {v8, v9}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v8
+
+    if-nez v8, :cond_4c
+
+    .line 195
+    sget-boolean v8, Ljavaroot/utils/ــ;->ʾ:Z
+    :try_end_18
+    .catchall {:try_start_18 .. :try_end_18} :catchall_7
+
+    if-nez v8, :cond_4c
+
+    move-object/from16 v8, v27
+
+    :try_start_19
+    invoke-static {v8, v3}, Lʼˏ/ᵢ;->ˋי(Ljava/lang/String;Ljava/lang/String;)Z
+    :try_end_19
+    .catchall {:try_start_19 .. :try_end_19} :catchall_6
+
+    goto :goto_35
+
+    :catchall_6
+    move-exception v0
+
+    :goto_31
+    move-object/from16 v18, v0
+
+    goto :goto_34
+
+    :cond_4c
+    move-object/from16 v8, v27
+
+    goto :goto_35
+
+    :catchall_7
+    move-exception v0
+
+    :goto_32
+    move-object/from16 v8, v27
+
+    goto :goto_31
+
+    :catchall_8
+    move-exception v0
+
+    :goto_33
+    move-object/from16 v37, v9
+
+    move-object/from16 v9, v26
+
+    goto :goto_32
+
+    :catchall_9
+    move-exception v0
+
+    move-object/from16 v20, v8
+
+    goto :goto_33
+
+    .line 196
+    :goto_34
+    invoke-virtual/range {v18 .. v18}, Ljava/lang/Throwable;->printStackTrace()V
+
+    :goto_35
+    move-object/from16 v27, v8
+
+    move-object/from16 v26, v9
+
+    move-object/from16 v8, v20
+
+    move-object/from16 v9, v37
+
+    goto :goto_30
+
+    :cond_4d
+    move-object/from16 v37, v9
+
+    move-object/from16 v8, v27
+
+    .line 197
+    sget-object v9, Ljava/lang/System;->out:Ljava/io/PrintStream;
+
+    move-object/from16 v27, v5
+
+    const-string v5, "check cache"
+
+    invoke-virtual {v9, v5}, Ljava/io/PrintStream;->println(Ljava/lang/String;)V
+
+    .line 198
+    invoke-virtual {v2}, Ljava/util/ArrayList;->size()I
+
+    move-result v5
+
+    if-lez v5, :cond_50
+
+    sget v5, Lʾˉ/ᴵᴵ;->ʾᐧ:I
+
+    move-object/from16 v38, v7
+
+    const/16 v7, 0x18
+
+    if-lt v5, v7, :cond_51
+
+    .line 199
+    sget-boolean v5, Ljavaroot/utils/ــ;->ʾ:Z
+
+    if-nez v5, :cond_4e
+
+    .line 200
+    invoke-static {v8, v3}, Lʼˏ/ᵢ;->ˋי(Ljava/lang/String;Ljava/lang/String;)Z
+
+    .line 201
+    :cond_4e
+    const-string v5, "found cache android 7"
+
+    invoke-virtual {v9, v5}, Ljava/io/PrintStream;->println(Ljava/lang/String;)V
+
+    if-eqz v6, :cond_4f
+
+    .line 202
+    invoke-static {v1, v6}, Ljavaroot/utils/ــ;->ˉ([Ljava/lang/String;Z)Z
+
+    move-result v5
+
+    sput-boolean v5, Ljavaroot/utils/ــ;->ˑʾ:Z
+
+    .line 203
+    :cond_4f
+    invoke-static {v2, v1, v4, v6}, Ljavaroot/utils/ــ;->ˈ(Ljava/util/ArrayList;[Ljava/lang/String;ZZ)I
+
+    move-result v5
+
+    .line 204
+    sget-boolean v7, Ljavaroot/utils/ــ;->ˑʾ:Z
+
+    if-nez v7, :cond_52
+
+    .line 205
+    invoke-static {v1, v4}, Ljavaroot/utils/ــ;->ˉ([Ljava/lang/String;Z)Z
+
+    move-result v7
+
+    sput-boolean v7, Ljavaroot/utils/ــ;->ˑʾ:Z
+
+    goto :goto_36
+
+    :cond_50
+    move-object/from16 v38, v7
+
+    :cond_51
+    const/4 v5, 0x0
+
+    .line 206
+    :cond_52
+    :goto_36
+    invoke-virtual {v2}, Ljava/util/ArrayList;->size()I
+
+    move-result v7
+
+    if-lez v7, :cond_59
+
+    sget v7, Lʾˉ/ᴵᴵ;->ʾᐧ:I
+
+    move/from16 v18, v5
+
+    const/16 v5, 0x15
+
+    if-lt v7, v5, :cond_5a
+
+    const/16 v5, 0x17
+
+    if-gt v7, v5, :cond_5a
+
+    .line 207
+    const-string v5, "found cache"
+
+    invoke-virtual {v9, v5}, Ljava/io/PrintStream;->println(Ljava/lang/String;)V
+
+    if-eqz v6, :cond_53
+
+    .line 208
+    invoke-static {v1, v6}, Ljavaroot/utils/ــ;->ˉ([Ljava/lang/String;Z)Z
+
+    .line 209
+    :cond_53
+    invoke-static {v2, v1, v4, v6}, Ljavaroot/utils/ــ;->ˈ(Ljava/util/ArrayList;[Ljava/lang/String;ZZ)I
+
+    move-result v5
+
+    .line 210
+    sget-boolean v7, Ljavaroot/utils/ــ;->ˑʾ:Z
+
+    if-nez v7, :cond_54
+
+    .line 211
+    invoke-static {v1, v4}, Ljavaroot/utils/ــ;->ˉ([Ljava/lang/String;Z)Z
+
+    move-result v7
+
+    sput-boolean v7, Ljavaroot/utils/ــ;->ˑʾ:Z
+
+    :cond_54
+    if-eqz v4, :cond_55
+
+    .line 212
+    sget-boolean v7, Ljavaroot/utils/ــ;->ˑʾ:Z
+
+    if-eqz v7, :cond_56
+
+    :cond_55
+    if-eqz v6, :cond_5b
+
+    sget-boolean v7, Ljavaroot/utils/ــ;->ˑʿ:Z
+
+    if-nez v7, :cond_5b
+
+    .line 213
+    :cond_56
+    sget-boolean v5, Ljavaroot/utils/ــ;->ˑʾ:Z
+
+    if-eqz v5, :cond_57
+
+    const/4 v4, 0x0
+
+    .line 214
+    :cond_57
+    sget-boolean v5, Ljavaroot/utils/ــ;->ˑʿ:Z
+
+    if-eqz v5, :cond_58
+
+    const/4 v6, 0x0
+
+    .line 215
+    :cond_58
+    invoke-static {v2, v1, v4, v6}, Ljavaroot/utils/ــ;->ʼ(Ljava/util/ArrayList;[Ljava/lang/String;ZZ)I
+
+    move-result v5
+
+    goto :goto_37
+
+    :cond_59
+    move/from16 v18, v5
+
+    :cond_5a
+    move/from16 v5, v18
+
+    .line 216
+    :cond_5b
+    :goto_37
+    const-string v4, "test for reboot"
+
+    invoke-static {v4}, Lʾˉ/ᴵᴵ;->ˉˎ(Ljava/lang/Object;)V
+
+    .line 217
+    sget-boolean v4, Ljavaroot/utils/ــ;->ˑʽ:Z
+
+    if-nez v4, :cond_5c
+
+    sget-boolean v4, Ljavaroot/utils/ــ;->ˑʾ:Z
+
+    if-nez v4, :cond_5c
+
+    sget-boolean v4, Ljavaroot/utils/ــ;->ˑʿ:Z
+
+    if-nez v4, :cond_5c
+
+    sget-boolean v4, Ljavaroot/utils/ــ;->ˑˆ:Z
+
+    if-eqz v4, :cond_5e
+
+    .line 218
+    :cond_5c
+    new-instance v4, Ljava/lang/StringBuilder;
+
+    invoke-direct {v4}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v6, "count files:"
+
+    invoke-virtual {v4, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    const-string v6, " "
+
+    invoke-virtual {v4, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v2}, Ljava/util/ArrayList;->size()I
+
+    move-result v6
+
+    invoke-virtual {v4, v6}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v4}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v4
+
+    invoke-static {v4}, Lʾˉ/ᴵᴵ;->ˉˎ(Ljava/lang/Object;)V
 
     .line 219
-    const-string v2, "check for dalvik mode"
+    invoke-virtual {v2}, Ljava/util/ArrayList;->size()I
 
-    invoke-static {v2}, Lʾˉ/ʼʼ;->ˉˎ(Ljava/lang/Object;)V
+    move-result v2
+
+    if-ne v5, v2, :cond_5e
 
     .line 220
+    const-string v2, "check for dalvik mode"
+
+    invoke-static {v2}, Lʾˉ/ᴵᴵ;->ˉˎ(Ljava/lang/Object;)V
+
+    .line 221
     sget-boolean v2, Ljavaroot/utils/ــ;->ʽ:Z
 
     if-nez v2, :cond_5d
 
-    .line 221
+    .line 222
     new-instance v2, Lʼـ/ʽʽ;
 
     invoke-direct {v2}, Lʼـ/ʽʽ;-><init>()V
 
     const/4 v4, 0x1
 
-    .line 222
+    .line 223
     iput-boolean v4, v2, Lʼـ/ʽʽ;->ˆ:Z
 
-    .line 223
+    .line 224
     iput-boolean v4, v2, Lʼـ/ʽʽ;->ʽ:Z
 
-    .line 224
+    .line 225
     iput-boolean v4, v2, Lʼـ/ʽʽ;->ʾ:Z
 
-    .line 225
+    .line 226
     invoke-static {v2}, Lʼˏ/ᵢ;->ʿʻ(Lʼـ/ʽʽ;)Ljava/util/ArrayList;
 
     move-result-object v2
@@ -5237,7 +5148,7 @@
 
     move-result-object v2
 
-    :goto_34
+    :goto_38
     invoke-interface {v2}, Ljava/util/Iterator;->hasNext()Z
 
     move-result v4
@@ -5250,12 +5161,12 @@
 
     check-cast v4, Ljava/io/File;
 
-    .line 226
+    .line 227
     invoke-virtual {v4}, Ljava/io/File;->delete()Z
 
-    goto :goto_34
+    goto :goto_38
 
-    .line 227
+    .line 228
     :cond_5d
     sget-object v2, Ljava/lang/System;->out:Ljava/io/PrintStream;
 
@@ -5267,7 +5178,7 @@
 
     invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    sget-object v5, Lʾˉ/ʼʼ;->ʼٴ:Ljava/lang/String;
+    sget-object v5, Lʾˉ/ᴵᴵ;->ʼٴ:Ljava/lang/String;
 
     invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -5281,134 +5192,134 @@
 
     invoke-virtual {v2, v4}, Ljava/io/PrintStream;->println(Ljava/lang/String;)V
 
-    if-nez v12, :cond_5e
-
     if-nez v13, :cond_5e
 
-    .line 228
+    if-nez v14, :cond_5e
+
+    .line 229
     invoke-static {}, Lʼˏ/ᵢ;->ʼˎ()V
 
     :cond_5e
-    move-object/from16 v38, v3
+    move-object/from16 v39, v3
 
-    move-object/from16 v39, v8
+    move-object/from16 v40, v8
 
-    move/from16 v31, v12
+    move/from16 v31, v13
 
-    move/from16 v20, v13
+    move/from16 v20, v14
 
-    move-object/from16 v14, v27
+    move-object/from16 v13, v29
 
-    move-object/from16 v12, v29
+    move-object/from16 v9, v38
 
-    move-object v13, v11
+    move-object v14, v12
 
-    move-object/from16 v11, v36
+    move-object/from16 v12, v27
 
-    goto/16 :goto_64
+    goto/16 :goto_67
 
     :cond_5f
-    move-object/from16 v36, v5
+    move-object/from16 v38, v7
 
-    move-object/from16 v37, v14
+    move-object/from16 v37, v9
 
     move-object/from16 v8, v27
 
-    move-object/from16 v27, v6
-
-    .line 229
-    :try_start_19
-    sget-boolean v5, Ljavaroot/utils/ــ;->ʽ:Z
-    :try_end_19
-    .catch Ljava/lang/Exception; {:try_start_19 .. :try_end_19} :catch_28
-
-    if-nez v5, :cond_7e
+    move-object/from16 v27, v5
 
     .line 230
     :try_start_1a
-    new-instance v5, Ljava/util/ArrayList;
+    sget-boolean v2, Ljavaroot/utils/ــ;->ʽ:Z
+    :try_end_1a
+    .catch Ljava/lang/Exception; {:try_start_1a .. :try_end_1a} :catch_28
 
-    invoke-direct {v5}, Ljava/util/ArrayList;-><init>()V
+    if-nez v2, :cond_7e
 
     .line 231
-    new-instance v6, Ljava/io/File;
+    :try_start_1b
+    new-instance v2, Ljava/util/ArrayList;
+
+    invoke-direct {v2}, Ljava/util/ArrayList;-><init>()V
+
+    .line 232
+    new-instance v5, Ljava/io/File;
 
     const-string v7, "/system/framework/core.odex"
 
-    invoke-direct {v6, v7}, Ljava/io/File;-><init>(Ljava/lang/String;)V
+    invoke-direct {v5, v7}, Ljava/io/File;-><init>(Ljava/lang/String;)V
 
     new-instance v7, Ljava/io/File;
 
-    const-string v14, "/system/framework/core-libart.odex"
+    const-string v9, "/system/framework/core-libart.odex"
 
-    invoke-direct {v7, v14}, Ljava/io/File;-><init>(Ljava/lang/String;)V
+    invoke-direct {v7, v9}, Ljava/io/File;-><init>(Ljava/lang/String;)V
 
-    new-instance v14, Ljava/io/File;
-    :try_end_1a
-    .catch Ljava/lang/Exception; {:try_start_1a .. :try_end_1a} :catch_25
-
-    move-object/from16 v38, v3
-
-    :try_start_1b
-    const-string v3, "/system/framework/core-oj.odex"
-
-    invoke-direct {v14, v3}, Ljava/io/File;-><init>(Ljava/lang/String;)V
-
-    new-instance v3, Ljava/io/File;
+    new-instance v9, Ljava/io/File;
     :try_end_1b
-    .catch Ljava/lang/Exception; {:try_start_1b .. :try_end_1b} :catch_24
+    .catch Ljava/lang/Exception; {:try_start_1b .. :try_end_1b} :catch_25
 
-    move-object/from16 v39, v8
+    move-object/from16 v39, v3
 
     :try_start_1c
+    const-string v3, "/system/framework/core-oj.odex"
+
+    invoke-direct {v9, v3}, Ljava/io/File;-><init>(Ljava/lang/String;)V
+
+    new-instance v3, Ljava/io/File;
+    :try_end_1c
+    .catch Ljava/lang/Exception; {:try_start_1c .. :try_end_1c} :catch_24
+
+    move-object/from16 v40, v8
+
+    :try_start_1d
     const-string v8, "/system/framework/conscrypt.odex"
 
     invoke-direct {v3, v8}, Ljava/io/File;-><init>(Ljava/lang/String;)V
-    :try_end_1c
-    .catch Ljava/lang/Exception; {:try_start_1c .. :try_end_1c} :catch_23
+    :try_end_1d
+    .catch Ljava/lang/Exception; {:try_start_1d .. :try_end_1d} :catch_23
 
-    move/from16 v20, v13
+    move/from16 v20, v14
 
     const/4 v8, 0x4
 
-    :try_start_1d
-    new-array v13, v8, [Ljava/io/File;
+    :try_start_1e
+    new-array v14, v8, [Ljava/io/File;
 
     const/16 v22, 0x0
 
-    aput-object v6, v13, v22
+    aput-object v5, v14, v22
 
-    const/4 v6, 0x1
+    const/4 v5, 0x1
 
-    aput-object v7, v13, v6
+    aput-object v7, v14, v5
 
-    const/4 v6, 0x2
+    const/4 v5, 0x2
 
-    aput-object v14, v13, v6
+    aput-object v9, v14, v5
 
-    const/4 v6, 0x3
+    const/4 v5, 0x3
 
-    aput-object v3, v13, v6
-    :try_end_1d
-    .catch Ljava/lang/Exception; {:try_start_1d .. :try_end_1d} :catch_22
+    aput-object v3, v14, v5
+    :try_end_1e
+    .catch Ljava/lang/Exception; {:try_start_1e .. :try_end_1e} :catch_22
 
     const/4 v3, 0x0
 
-    :goto_35
+    :goto_39
     if-ge v3, v8, :cond_61
 
-    .line 232
-    :try_start_1e
-    aget-object v6, v13, v3
-
     .line 233
-    invoke-virtual {v6}, Ljava/io/File;->exists()Z
+    :try_start_1f
+    aget-object v5, v14, v3
+
+    .line 234
+    invoke-virtual {v5}, Ljava/io/File;->exists()Z
 
     move-result v7
 
     if-eqz v7, :cond_60
 
-    invoke-virtual {v6}, Ljava/io/File;->length()J
+    invoke-virtual {v5}, Ljava/io/File;->length()J
 
     move-result-wide v30
 
@@ -5418,207 +5329,206 @@
 
     if-lez v7, :cond_60
 
-    invoke-virtual {v5, v6}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
-    :try_end_1e
-    .catch Ljava/lang/Exception; {:try_start_1e .. :try_end_1e} :catch_b
+    invoke-virtual {v2, v5}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+    :try_end_1f
+    .catch Ljava/lang/Exception; {:try_start_1f .. :try_end_1f} :catch_b
 
     :cond_60
-    const/4 v6, 0x1
+    const/4 v5, 0x1
 
-    goto :goto_37
+    goto :goto_3a
 
     :catch_b
     move-exception v0
 
     move-object v3, v0
 
-    move-object v13, v11
+    move-object v14, v12
 
-    move/from16 v31, v12
+    move/from16 v31, v13
 
-    move-object/from16 v14, v27
+    move-object/from16 v12, v27
 
-    move-object/from16 v12, v29
+    move-object/from16 v13, v29
 
-    :goto_36
-    move-object/from16 v11, v36
+    move-object/from16 v9, v38
 
-    goto/16 :goto_63
+    goto/16 :goto_66
 
-    :goto_37
-    add-int/2addr v3, v6
+    :goto_3a
+    add-int/2addr v3, v5
 
-    goto :goto_35
+    goto :goto_39
 
-    .line 234
+    .line 235
     :cond_61
-    :try_start_1f
-    invoke-virtual {v5}, Ljava/util/ArrayList;->size()I
+    :try_start_20
+    invoke-virtual {v2}, Ljava/util/ArrayList;->size()I
 
     move-result v3
-    :try_end_1f
-    .catch Ljava/lang/Exception; {:try_start_1f .. :try_end_1f} :catch_21
+    :try_end_20
+    .catch Ljava/lang/Exception; {:try_start_20 .. :try_end_20} :catch_21
 
     if-nez v3, :cond_63
 
-    .line 235
-    :try_start_20
+    .line 236
+    :try_start_21
     new-instance v3, Ljava/lang/StringBuilder;
 
     invoke-direct {v3}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string v6, "Magisk module:"
+    const-string v5, "Magisk module:"
 
-    invoke-virtual {v3, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v3, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    sget-boolean v6, Ljavaroot/utils/ــ;->ʾ:Z
+    sget-boolean v5, Ljavaroot/utils/ــ;->ʾ:Z
 
-    invoke-virtual {v3, v6}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
+    invoke-virtual {v3, v5}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
 
     invoke-virtual {v3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object v3
 
-    invoke-static {v3}, Lʾˉ/ʼʼ;->ˉˎ(Ljava/lang/Object;)V
-    :try_end_20
-    .catch Ljava/lang/Exception; {:try_start_20 .. :try_end_20} :catch_b
+    invoke-static {v3}, Lʾˉ/ᴵᴵ;->ˉˎ(Ljava/lang/Object;)V
+    :try_end_21
+    .catch Ljava/lang/Exception; {:try_start_21 .. :try_end_21} :catch_b
 
-    .line 236
-    :try_start_21
+    .line 237
+    :try_start_22
     new-instance v3, Lʼـ/ʽʽ;
 
     invoke-direct {v3}, Lʼـ/ʽʽ;-><init>()V
 
-    const/4 v6, 0x1
-
-    .line 237
-    iput-boolean v6, v3, Lʼـ/ʽʽ;->ˊ:Z
+    const/4 v5, 0x1
 
     .line 238
-    iput-boolean v6, v3, Lʼـ/ʽʽ;->ˏ:Z
+    iput-boolean v5, v3, Lʼـ/ʽʽ;->ˊ:Z
 
     .line 239
+    iput-boolean v5, v3, Lʼـ/ʽʽ;->ˏ:Z
+
+    .line 240
     invoke-static {v3}, Lʼˏ/ᵢ;->ʿʻ(Lʼـ/ʽʽ;)Ljava/util/ArrayList;
 
     move-result-object v3
 
-    .line 240
+    .line 241
     invoke-virtual {v3}, Ljava/util/ArrayList;->size()I
 
-    move-result v6
+    move-result v5
 
-    new-array v7, v6, [Ljava/io/File;
+    new-array v7, v5, [Ljava/io/File;
 
-    .line 241
+    .line 242
     invoke-virtual {v3, v7}, Ljava/util/ArrayList;->toArray([Ljava/lang/Object;)[Ljava/lang/Object;
 
     const/4 v3, 0x0
 
-    :goto_38
-    if-ge v3, v6, :cond_63
-
-    .line 242
-    aget-object v8, v7, v3
+    :goto_3b
+    if-ge v3, v5, :cond_63
 
     .line 243
+    aget-object v8, v7, v3
+
+    .line 244
     invoke-virtual {v8}, Ljava/io/File;->exists()Z
 
-    move-result v13
+    move-result v9
 
-    if-eqz v13, :cond_62
+    if-eqz v9, :cond_62
 
     invoke-virtual {v8}, Ljava/io/File;->length()J
 
-    move-result-wide v13
+    move-result-wide v30
 
-    const-wide/16 v30, 0x0
+    const-wide/16 v32, 0x0
 
-    cmp-long v32, v13, v30
+    cmp-long v9, v30, v32
 
-    if-lez v32, :cond_62
+    if-lez v9, :cond_62
 
     invoke-static {v8}, Lʼˏ/ᵢ;->ˆˆ(Ljava/io/File;)Z
 
-    move-result v13
+    move-result v9
 
-    if-eqz v13, :cond_62
+    if-eqz v9, :cond_62
 
-    .line 244
-    invoke-virtual {v5, v8}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
-    :try_end_21
-    .catchall {:try_start_21 .. :try_end_21} :catchall_9
+    .line 245
+    invoke-virtual {v2, v8}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+    :try_end_22
+    .catchall {:try_start_22 .. :try_end_22} :catchall_a
 
     :cond_62
     const/4 v8, 0x1
 
-    goto :goto_39
+    goto :goto_3c
 
-    :catchall_9
+    :catchall_a
     move-exception v0
 
     move-object v3, v0
 
-    goto :goto_3a
+    goto :goto_3d
 
-    :goto_39
+    :goto_3c
     add-int/2addr v3, v8
 
-    goto :goto_38
-
-    .line 245
-    :goto_3a
-    :try_start_22
-    invoke-virtual {v3}, Ljava/lang/Throwable;->printStackTrace()V
-    :try_end_22
-    .catch Ljava/lang/Exception; {:try_start_22 .. :try_end_22} :catch_b
+    goto :goto_3b
 
     .line 246
-    :cond_63
+    :goto_3d
     :try_start_23
-    invoke-virtual {v5}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
+    invoke-virtual {v3}, Ljava/lang/Throwable;->printStackTrace()V
+    :try_end_23
+    .catch Ljava/lang/Exception; {:try_start_23 .. :try_end_23} :catch_b
+
+    .line 247
+    :cond_63
+    :try_start_24
+    invoke-virtual {v2}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
 
     move-result-object v3
 
-    const/4 v6, 0x0
+    const/4 v5, 0x0
 
-    :goto_3b
+    :goto_3e
     invoke-interface {v3}, Ljava/util/Iterator;->hasNext()Z
 
     move-result v7
-    :try_end_23
-    .catch Ljava/lang/Exception; {:try_start_23 .. :try_end_23} :catch_21
+    :try_end_24
+    .catch Ljava/lang/Exception; {:try_start_24 .. :try_end_24} :catch_21
 
     if-eqz v7, :cond_74
 
-    :try_start_24
+    :try_start_25
     invoke-interface {v3}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
     move-result-object v7
 
     check-cast v7, Ljava/io/File;
 
-    .line 247
+    .line 248
     new-instance v8, Ljava/lang/StringBuilder;
 
     invoke-direct {v8}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string v13, "try patch "
+    move-object/from16 v9, v18
 
-    invoke-virtual {v8, v13}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v8, v9}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     invoke-virtual {v7}, Ljava/io/File;->getAbsolutePath()Ljava/lang/String;
 
-    move-result-object v13
+    move-result-object v14
 
-    invoke-virtual {v8, v13}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v8, v14}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     invoke-virtual {v8}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object v8
 
-    invoke-static {v8}, Lʾˉ/ʼʼ;->ˉˎ(Ljava/lang/Object;)V
+    invoke-static {v8}, Lʾˉ/ᴵᴵ;->ˉˎ(Ljava/lang/Object;)V
 
-    .line 248
+    .line 249
     invoke-virtual {v7}, Ljava/io/File;->getAbsolutePath()Ljava/lang/String;
 
     move-result-object v8
@@ -5627,49 +5537,51 @@
 
     move-result-object v8
 
-    invoke-virtual {v8, v11}, Ljava/lang/String;->endsWith(Ljava/lang/String;)Z
+    invoke-virtual {v8, v12}, Ljava/lang/String;->endsWith(Ljava/lang/String;)Z
 
     move-result v8
-    :try_end_24
-    .catch Ljava/lang/Exception; {:try_start_24 .. :try_end_24} :catch_18
+    :try_end_25
+    .catch Ljava/lang/Exception; {:try_start_25 .. :try_end_25} :catch_18
 
     if-eqz v8, :cond_71
 
-    .line 249
-    :try_start_25
+    .line 250
+    :try_start_26
     new-instance v8, Lʼˑ/ʼ;
 
     invoke-direct {v8}, Lʼˑ/ʼ;-><init>()V
 
-    .line 250
-    const-string v13, "/data/app"
-
-    invoke-static {v7, v13}, Ljavaroot/utils/ــ;->ˏ(Ljava/io/File;Ljava/lang/String;)Ljava/util/ArrayList;
-
-    move-result-object v13
-
     .line 251
-    invoke-virtual {v13}, Ljava/util/ArrayList;->size()I
+    const-string v14, "/data/app"
 
-    move-result v14
+    invoke-static {v7, v14}, Ljavaroot/utils/ــ;->ˏ(Ljava/io/File;Ljava/lang/String;)Ljava/util/ArrayList;
 
-    new-array v14, v14, [Ljava/io/File;
+    move-result-object v14
 
-    iput-object v14, v8, Lʼˑ/ʼ;->ـ:[Ljava/io/File;
+    move-object/from16 v18, v3
 
     .line 252
-    invoke-virtual {v13, v14}, Ljava/util/ArrayList;->toArray([Ljava/lang/Object;)[Ljava/lang/Object;
+    invoke-virtual {v14}, Ljava/util/ArrayList;->size()I
+
+    move-result v3
+
+    new-array v3, v3, [Ljava/io/File;
+
+    iput-object v3, v8, Lʼˑ/ʼ;->ـ:[Ljava/io/File;
 
     .line 253
-    sget-boolean v14, Ljavaroot/utils/ــ;->ˑי:Z
-    :try_end_25
-    .catch Ljava/lang/Exception; {:try_start_25 .. :try_end_25} :catch_14
-
-    if-eqz v14, :cond_64
+    invoke-virtual {v14, v3}, Ljava/util/ArrayList;->toArray([Ljava/lang/Object;)[Ljava/lang/Object;
 
     .line 254
-    :try_start_26
-    new-instance v14, Ljavaroot/utils/ˊ;
+    sget-boolean v3, Ljavaroot/utils/ــ;->ˑי:Z
+    :try_end_26
+    .catch Ljava/lang/Exception; {:try_start_26 .. :try_end_26} :catch_14
+
+    if-eqz v3, :cond_64
+
+    .line 255
+    :try_start_27
+    new-instance v3, Ljavaroot/utils/ˊ;
 
     const/16 v34, 0x0
 
@@ -5677,79 +5589,79 @@
 
     const/16 v33, 0x0
 
-    move-object/from16 v30, v14
+    move-object/from16 v30, v3
 
-    move/from16 v31, v2
+    move/from16 v31, v4
 
-    move/from16 v32, v4
+    move/from16 v32, v6
 
     invoke-direct/range {v30 .. v35}, Ljavaroot/utils/ˊ;-><init>(ZZZZZ)V
-    :try_end_26
-    .catch Ljava/lang/Exception; {:try_start_26 .. :try_end_26} :catch_b
-
-    .line 255
-    :try_start_27
-    invoke-virtual {v14}, Ljavaroot/utils/ˊ;->ʻ()Lʼـ/ﾞﾞ;
-
-    move-result-object v14
     :try_end_27
-    .catchall {:try_start_27 .. :try_end_27} :catchall_b
+    .catch Ljava/lang/Exception; {:try_start_27 .. :try_end_27} :catch_b
 
-    move-object/from16 v40, v3
-
-    const/4 v3, 0x0
-
+    .line 256
     :try_start_28
-    invoke-virtual {v8, v14, v3}, Lʼˑ/ʼ;->ᵔ(Lʼـ/ﾞﾞ;Ljava/io/File;)V
+    invoke-virtual {v3}, Ljavaroot/utils/ˊ;->ʻ()Lʼـ/ﾞﾞ;
+
+    move-result-object v3
     :try_end_28
-    .catchall {:try_start_28 .. :try_end_28} :catchall_a
+    .catchall {:try_start_28 .. :try_end_28} :catchall_c
 
-    goto :goto_3e
+    move-object/from16 v41, v9
 
-    :catchall_a
-    move-exception v0
+    const/4 v9, 0x0
 
-    :goto_3c
-    move-object v3, v0
+    :try_start_29
+    invoke-virtual {v8, v3, v9}, Lʼˑ/ʼ;->ᵔ(Lʼـ/ﾞﾞ;Ljava/io/File;)V
+    :try_end_29
+    .catchall {:try_start_29 .. :try_end_29} :catchall_b
 
-    goto :goto_3d
+    goto :goto_41
 
     :catchall_b
     move-exception v0
 
-    move-object/from16 v40, v3
+    :goto_3f
+    move-object v3, v0
 
-    goto :goto_3c
+    goto :goto_40
 
-    .line 256
-    :goto_3d
-    :try_start_29
-    invoke-virtual {v3}, Ljava/lang/Throwable;->printStackTrace()V
+    :catchall_c
+    move-exception v0
 
-    .line 257
-    :goto_3e
-    iget-object v3, v8, Lʼˑ/ʼ;->ᵢ:Ljava/lang/String;
-
-    invoke-static {v3}, Lʾˉ/ʼʼ;->ˉˎ(Ljava/lang/Object;)V
-    :try_end_29
-    .catch Ljava/lang/Exception; {:try_start_29 .. :try_end_29} :catch_b
+    move-object/from16 v41, v9
 
     goto :goto_3f
 
-    :cond_64
-    move-object/from16 v40, v3
+    .line 257
+    :goto_40
+    :try_start_2a
+    invoke-virtual {v3}, Ljava/lang/Throwable;->printStackTrace()V
 
     .line 258
-    :goto_3f
-    :try_start_2a
-    sget-boolean v3, Ljavaroot/utils/ــ;->ˑˏ:Z
+    :goto_41
+    iget-object v3, v8, Lʼˑ/ʼ;->ᵢ:Ljava/lang/String;
+
+    invoke-static {v3}, Lʾˉ/ᴵᴵ;->ˉˎ(Ljava/lang/Object;)V
     :try_end_2a
-    .catch Ljava/lang/Exception; {:try_start_2a .. :try_end_2a} :catch_14
+    .catch Ljava/lang/Exception; {:try_start_2a .. :try_end_2a} :catch_b
+
+    goto :goto_42
+
+    :cond_64
+    move-object/from16 v41, v9
+
+    .line 259
+    :goto_42
+    :try_start_2b
+    sget-boolean v3, Ljavaroot/utils/ــ;->ˑˏ:Z
+    :try_end_2b
+    .catch Ljava/lang/Exception; {:try_start_2b .. :try_end_2b} :catch_14
 
     if-eqz v3, :cond_65
 
-    .line 259
-    :try_start_2b
+    .line 260
+    :try_start_2c
     new-instance v3, Ljavaroot/utils/ˎ;
 
     const/16 v34, 0x0
@@ -5760,166 +5672,166 @@
 
     move-object/from16 v30, v3
 
-    move/from16 v31, v2
+    move/from16 v31, v4
 
-    move/from16 v32, v4
+    move/from16 v32, v6
 
     invoke-direct/range {v30 .. v35}, Ljavaroot/utils/ˎ;-><init>(ZZZZZ)V
 
-    .line 260
+    .line 261
     invoke-virtual {v3}, Ljavaroot/utils/ˎ;->ʻ()Lʼـ/ﾞﾞ;
 
     move-result-object v3
 
-    const/4 v14, 0x0
+    const/4 v9, 0x0
 
-    invoke-virtual {v8, v3, v14}, Lʼˑ/ʼ;->ᵔ(Lʼـ/ﾞﾞ;Ljava/io/File;)V
-
-    .line 261
-    iget-object v3, v8, Lʼˑ/ʼ;->ᵢ:Ljava/lang/String;
-
-    invoke-static {v3}, Lʾˉ/ʼʼ;->ˉˎ(Ljava/lang/Object;)V
-    :try_end_2b
-    .catch Ljava/lang/Exception; {:try_start_2b .. :try_end_2b} :catch_b
+    invoke-virtual {v8, v3, v9}, Lʼˑ/ʼ;->ᵔ(Lʼـ/ﾞﾞ;Ljava/io/File;)V
 
     .line 262
+    iget-object v3, v8, Lʼˑ/ʼ;->ᵢ:Ljava/lang/String;
+
+    invoke-static {v3}, Lʾˉ/ᴵᴵ;->ˉˎ(Ljava/lang/Object;)V
+    :try_end_2c
+    .catch Ljava/lang/Exception; {:try_start_2c .. :try_end_2c} :catch_b
+
+    .line 263
     :cond_65
-    :try_start_2c
+    :try_start_2d
     iget-object v3, v8, Lʼˑ/ʼ;->ᵔ:Ljava/util/ArrayList;
 
     invoke-virtual {v3}, Ljava/util/ArrayList;->size()I
 
     move-result v3
-    :try_end_2c
-    .catch Ljava/lang/Exception; {:try_start_2c .. :try_end_2c} :catch_14
+    :try_end_2d
+    .catch Ljava/lang/Exception; {:try_start_2d .. :try_end_2d} :catch_14
 
     if-lez v3, :cond_66
 
     const/4 v3, 0x0
 
-    .line 263
-    :try_start_2d
+    .line 264
+    :try_start_2e
     invoke-virtual {v8, v3}, Lʼˑ/ʼ;->ˉ(Z)V
-    :try_end_2d
-    .catch Ljava/lang/Exception; {:try_start_2d .. :try_end_2d} :catch_b
+    :try_end_2e
+    .catch Ljava/lang/Exception; {:try_start_2e .. :try_end_2e} :catch_b
 
     const/4 v3, 0x1
 
-    const/4 v6, 0x1
+    const/4 v5, 0x1
 
-    goto :goto_40
+    goto :goto_43
 
     :cond_66
     const/4 v3, 0x0
 
-    .line 264
-    :goto_40
-    :try_start_2e
-    new-instance v14, Ljava/lang/StringBuilder;
+    .line 265
+    :goto_43
+    :try_start_2f
+    new-instance v9, Ljava/lang/StringBuilder;
 
-    invoke-direct {v14}, Ljava/lang/StringBuilder;-><init>()V
+    invoke-direct {v9}, Ljava/lang/StringBuilder;-><init>()V
 
-    move/from16 v30, v6
+    move/from16 v30, v5
 
-    const-string v6, "patch_result:"
+    const-string v5, "patch_result:"
 
-    invoke-virtual {v14, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v9, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v14, v3}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
+    invoke-virtual {v9, v3}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v14}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-virtual {v9}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    move-result-object v6
+    move-result-object v5
 
-    invoke-static {v6}, Lʾˉ/ʼʼ;->ˉˎ(Ljava/lang/Object;)V
+    invoke-static {v5}, Lʾˉ/ᴵᴵ;->ˉˎ(Ljava/lang/Object;)V
 
     if-eqz v3, :cond_70
 
-    .line 265
+    .line 266
     sget-object v3, Ljava/lang/System;->out:Ljava/io/PrintStream;
 
-    new-instance v6, Ljava/lang/StringBuilder;
+    new-instance v5, Ljava/lang/StringBuilder;
 
-    invoke-direct {v6}, Ljava/lang/StringBuilder;-><init>()V
+    invoke-direct {v5}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string v14, "start create new jar file for "
+    const-string v9, "start create new jar file for "
 
-    invoke-virtual {v6, v14}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v5, v9}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     invoke-virtual {v7}, Ljava/io/File;->getAbsolutePath()Ljava/lang/String;
 
-    move-result-object v14
+    move-result-object v9
 
-    invoke-virtual {v6, v14}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v5, v9}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual {v6}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-virtual {v5}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    move-result-object v6
+    move-result-object v5
 
-    invoke-virtual {v3, v6}, Ljava/io/PrintStream;->println(Ljava/lang/String;)V
-
-    .line 266
-    sget-boolean v6, Ljavaroot/utils/ــ;->ʾ:Z
-    :try_end_2e
-    .catch Ljava/lang/Exception; {:try_start_2e .. :try_end_2e} :catch_14
-
-    if-eqz v6, :cond_69
+    invoke-virtual {v3, v5}, Ljava/io/PrintStream;->println(Ljava/lang/String;)V
 
     .line 267
-    :try_start_2f
-    new-instance v6, Ljava/lang/StringBuilder;
-
-    invoke-direct {v6}, Ljava/lang/StringBuilder;-><init>()V
-
-    invoke-static {}, Lʼˏ/ᵢ;->ʿᵔ()Ljava/lang/String;
-
-    move-result-object v14
-
-    invoke-virtual {v6, v14}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v7}, Ljava/io/File;->getAbsolutePath()Ljava/lang/String;
-
-    move-result-object v14
-
-    invoke-virtual {v6, v14}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v6}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v6
+    sget-boolean v5, Ljavaroot/utils/ــ;->ʾ:Z
     :try_end_2f
-    .catch Ljava/lang/Exception; {:try_start_2f .. :try_end_2f} :catch_10
+    .catch Ljava/lang/Exception; {:try_start_2f .. :try_end_2f} :catch_14
+
+    if-eqz v5, :cond_69
 
     .line 268
     :try_start_30
-    new-instance v14, Ljava/io/File;
+    new-instance v5, Ljava/lang/StringBuilder;
 
-    invoke-direct {v14, v6}, Ljava/io/File;-><init>(Ljava/lang/String;)V
+    invoke-direct {v5}, Ljava/lang/StringBuilder;-><init>()V
 
-    invoke-virtual {v14}, Ljava/io/File;->delete()Z
+    invoke-static {}, Lʼˏ/ᵢ;->ʿᵔ()Ljava/lang/String;
+
+    move-result-object v9
+
+    invoke-virtual {v5, v9}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v7}, Ljava/io/File;->getAbsolutePath()Ljava/lang/String;
+
+    move-result-object v9
+
+    invoke-virtual {v5, v9}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v5}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v5
+    :try_end_30
+    .catch Ljava/lang/Exception; {:try_start_30 .. :try_end_30} :catch_10
 
     .line 269
-    new-instance v14, Ljava/util/ArrayList;
+    :try_start_31
+    new-instance v9, Ljava/io/File;
 
-    invoke-direct {v14}, Ljava/util/ArrayList;-><init>()V
-    :try_end_30
-    .catch Ljava/lang/Exception; {:try_start_30 .. :try_end_30} :catch_d
+    invoke-direct {v9, v5}, Ljava/io/File;-><init>(Ljava/lang/String;)V
 
-    move/from16 v31, v12
-
-    move-object/from16 v12, v29
+    invoke-virtual {v9}, Ljava/io/File;->delete()Z
 
     .line 270
-    :try_start_31
-    invoke-virtual {v3, v12}, Ljava/io/PrintStream;->println(Ljava/lang/String;)V
+    new-instance v9, Ljava/util/ArrayList;
+
+    invoke-direct {v9}, Ljava/util/ArrayList;-><init>()V
+    :try_end_31
+    .catch Ljava/lang/Exception; {:try_start_31 .. :try_end_31} :catch_d
+
+    move/from16 v31, v13
+
+    move-object/from16 v13, v29
 
     .line 271
+    :try_start_32
+    invoke-virtual {v3, v13}, Ljava/io/PrintStream;->println(Ljava/lang/String;)V
+
+    .line 272
     iget-object v3, v8, Lʼˑ/ʼ;->ᵔ:Ljava/util/ArrayList;
 
     invoke-virtual {v3}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
 
     move-result-object v3
 
-    :goto_41
+    :goto_44
     invoke-interface {v3}, Ljava/util/Iterator;->hasNext()Z
 
     move-result v8
@@ -5934,53 +5846,53 @@
 
     move-object/from16 v29, v3
 
-    .line 272
+    .line 273
     new-instance v3, Lʾˉ/ʻ;
 
     invoke-virtual {v8}, Ljava/io/File;->getAbsolutePath()Ljava/lang/String;
 
     move-result-object v8
 
-    invoke-direct {v3, v8, v9}, Lʾˉ/ʻ;-><init>(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-direct {v3, v8, v10}, Lʾˉ/ʻ;-><init>(Ljava/lang/String;Ljava/lang/String;)V
 
-    invoke-virtual {v14, v3}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+    invoke-virtual {v9, v3}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     move-object/from16 v3, v29
 
-    goto :goto_41
+    goto :goto_44
 
     :catch_c
     move-exception v0
 
-    :goto_42
+    :goto_45
     move-object v3, v0
 
-    goto :goto_44
+    goto :goto_47
 
-    .line 273
+    .line 274
     :cond_67
     invoke-virtual {v7}, Ljava/io/File;->getAbsolutePath()Ljava/lang/String;
 
     move-result-object v3
 
-    invoke-static {v3, v6, v14}, Lʼˏ/ᵢ;->ˈ(Ljava/lang/String;Ljava/lang/String;Ljava/util/ArrayList;)V
-
-    .line 274
-    new-instance v3, Ljava/io/File;
-
-    invoke-direct {v3, v6}, Ljava/io/File;-><init>(Ljava/lang/String;)V
-
-    invoke-static {v3}, Lʼˏ/ᵢ;->יˎ(Ljava/io/File;)Z
+    invoke-static {v3, v5, v9}, Lʼˏ/ᵢ;->ˈ(Ljava/lang/String;Ljava/lang/String;Ljava/util/ArrayList;)V
 
     .line 275
-    invoke-static {}, Lʼˏ/ᵢ;->ʻᵎ()V
+    new-instance v3, Ljava/io/File;
+
+    invoke-direct {v3, v5}, Ljava/io/File;-><init>(Ljava/lang/String;)V
+
+    invoke-static {v3}, Lʼˏ/ᵢ;->יـ(Ljava/io/File;)Z
 
     .line 276
-    invoke-virtual {v13}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
+    invoke-static {}, Lʼˏ/ᵢ;->ʻᵎ()V
+
+    .line 277
+    invoke-virtual {v14}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
 
     move-result-object v3
 
-    :goto_43
+    :goto_46
     invoke-interface {v3}, Ljava/util/Iterator;->hasNext()Z
 
     move-result v8
@@ -5993,209 +5905,210 @@
 
     check-cast v8, Ljava/io/File;
 
-    .line 277
+    .line 278
     invoke-virtual {v8}, Ljava/io/File;->delete()Z
 
-    goto :goto_43
+    goto :goto_46
 
-    .line 278
+    .line 279
     :cond_68
     sget-object v3, Ljava/lang/System;->out:Ljava/io/PrintStream;
 
-    invoke-virtual {v3, v10}, Ljava/io/PrintStream;->println(Ljava/lang/String;)V
+    invoke-virtual {v3, v11}, Ljava/io/PrintStream;->println(Ljava/lang/String;)V
 
     const/4 v3, 0x3
-
-    .line 279
-    new-array v8, v3, [Ljava/lang/String;
-
-    const/4 v13, 0x0
-
-    aput-object v25, v8, v13
-
-    const/4 v14, 0x1
-
-    aput-object v24, v8, v14
-
-    const/16 v21, 0x2
-
-    aput-object v6, v8, v21
-
-    invoke-static {v8}, Lʼˏ/ᵢ;->ˎʿ([Ljava/lang/String;)V
 
     .line 280
     new-array v8, v3, [Ljava/lang/String;
 
-    aput-object v17, v8, v13
+    const/4 v9, 0x0
 
-    aput-object v15, v8, v14
+    aput-object v28, v8, v9
 
-    aput-object v6, v8, v21
+    const/4 v14, 0x1
+
+    aput-object v25, v8, v14
+
+    const/16 v21, 0x2
+
+    aput-object v5, v8, v21
 
     invoke-static {v8}, Lʼˏ/ᵢ;->ˎʿ([Ljava/lang/String;)V
 
     .line 281
     new-array v8, v3, [Ljava/lang/String;
 
-    aput-object v25, v8, v13
+    aput-object v24, v8, v9
 
-    aput-object v37, v8, v14
+    aput-object v17, v8, v14
 
-    aput-object v6, v8, v21
+    aput-object v5, v8, v21
 
     invoke-static {v8}, Lʼˏ/ᵢ;->ˎʿ([Ljava/lang/String;)V
-    :try_end_31
-    .catch Ljava/lang/Exception; {:try_start_31 .. :try_end_31} :catch_c
 
-    move-object/from16 v14, v27
+    .line 282
+    new-array v8, v3, [Ljava/lang/String;
 
-    goto :goto_45
+    aput-object v28, v8, v9
+
+    aput-object v15, v8, v14
+
+    aput-object v5, v8, v21
+
+    invoke-static {v8}, Lʼˏ/ᵢ;->ˎʿ([Ljava/lang/String;)V
+    :try_end_32
+    .catch Ljava/lang/Exception; {:try_start_32 .. :try_end_32} :catch_c
+
+    move-object/from16 v9, v38
+
+    goto :goto_48
 
     :catch_d
     move-exception v0
 
-    move/from16 v31, v12
+    move/from16 v31, v13
 
-    move-object/from16 v12, v29
+    move-object/from16 v13, v29
 
-    goto :goto_42
-
-    .line 282
-    :goto_44
-    :try_start_32
-    invoke-virtual {v3}, Ljava/lang/Throwable;->printStackTrace()V
+    goto :goto_45
 
     .line 283
-    sget-object v3, Ljava/lang/System;->out:Ljava/io/PrintStream;
-    :try_end_32
-    .catch Ljava/lang/Exception; {:try_start_32 .. :try_end_32} :catch_f
-
-    move-object/from16 v14, v27
-
+    :goto_47
     :try_start_33
-    invoke-virtual {v3, v14}, Ljava/io/PrintStream;->println(Ljava/lang/String;)V
+    invoke-virtual {v3}, Ljava/lang/Throwable;->printStackTrace()V
 
     .line 284
+    sget-object v3, Ljava/lang/System;->out:Ljava/io/PrintStream;
+    :try_end_33
+    .catch Ljava/lang/Exception; {:try_start_33 .. :try_end_33} :catch_f
+
+    move-object/from16 v9, v38
+
+    :try_start_34
+    invoke-virtual {v3, v9}, Ljava/io/PrintStream;->println(Ljava/lang/String;)V
+
+    .line 285
     new-instance v3, Ljava/io/File;
 
-    invoke-direct {v3, v6}, Ljava/io/File;-><init>(Ljava/lang/String;)V
+    invoke-direct {v3, v5}, Ljava/io/File;-><init>(Ljava/lang/String;)V
 
     invoke-virtual {v3}, Ljava/io/File;->delete()Z
-    :try_end_33
-    .catch Ljava/lang/Exception; {:try_start_33 .. :try_end_33} :catch_e
+    :try_end_34
+    .catch Ljava/lang/Exception; {:try_start_34 .. :try_end_34} :catch_e
 
-    :goto_45
-    move/from16 v32, v2
+    :goto_48
+    move/from16 v32, v4
 
-    :goto_46
-    move-object/from16 v29, v5
+    :goto_49
+    move-object/from16 v29, v12
 
-    move-object/from16 v27, v11
+    move-object/from16 v12, v27
 
-    move-object/from16 v11, v36
+    move-object/from16 v27, v2
 
-    goto/16 :goto_51
+    goto/16 :goto_55
 
     :catch_e
     move-exception v0
 
-    :goto_47
+    :goto_4a
     move-object v3, v0
 
-    move-object v13, v11
+    move-object v14, v12
 
-    goto/16 :goto_36
+    move-object/from16 v12, v27
+
+    goto/16 :goto_66
 
     :catch_f
     move-exception v0
 
-    move-object/from16 v14, v27
+    :goto_4b
+    move-object/from16 v9, v38
 
-    goto :goto_47
+    goto :goto_4a
 
     :catch_10
     move-exception v0
 
-    move/from16 v31, v12
+    move/from16 v31, v13
 
-    move-object/from16 v14, v27
+    move-object/from16 v13, v29
 
-    move-object/from16 v12, v29
-
-    goto :goto_47
+    goto :goto_4b
 
     :cond_69
-    move/from16 v31, v12
+    move/from16 v31, v13
 
-    move-object/from16 v14, v27
+    move-object/from16 v13, v29
 
-    move-object/from16 v12, v29
-
-    .line 285
-    :try_start_34
-    invoke-virtual {v7}, Ljava/io/File;->getAbsolutePath()Ljava/lang/String;
-
-    move-result-object v6
-    :try_end_34
-    .catch Ljava/lang/Exception; {:try_start_34 .. :try_end_34} :catch_13
-
-    move-object/from16 v27, v11
-
-    move-object/from16 v11, v36
-
-    :try_start_35
-    invoke-static {v6, v11}, Lʼˏ/ᵢ;->ᵎ(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
-
-    move-result-object v6
-
-    move-object/from16 v29, v5
+    move-object/from16 v9, v38
 
     .line 286
+    :try_start_35
     invoke-virtual {v7}, Ljava/io/File;->getAbsolutePath()Ljava/lang/String;
 
     move-result-object v5
+    :try_end_35
+    .catch Ljava/lang/Exception; {:try_start_35 .. :try_end_35} :catch_13
 
-    move/from16 v32, v2
+    move-object/from16 v29, v12
+
+    move-object/from16 v12, v27
+
+    :try_start_36
+    invoke-static {v5, v12}, Lʼˏ/ᵢ;->ᵎ(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v5
+
+    move-object/from16 v27, v2
+
+    .line 287
+    invoke-virtual {v7}, Ljava/io/File;->getAbsolutePath()Ljava/lang/String;
+
+    move-result-object v2
+
+    move/from16 v32, v4
 
     const/4 v1, 0x1
 
-    const/4 v2, 0x0
-
-    .line 287
-    invoke-static {v5, v6, v1, v2}, Lʼˏ/ᵢ;->ʻˏ(Ljava/lang/String;Ljava/lang/String;ZZ)Z
-
-    move-result v5
-
-    if-eqz v5, :cond_6e
+    const/4 v4, 0x0
 
     .line 288
+    invoke-static {v2, v5, v1, v4}, Lʼˏ/ᵢ;->ʻˏ(Ljava/lang/String;Ljava/lang/String;ZZ)Z
+
+    move-result v2
+
+    if-eqz v2, :cond_6e
+
+    .line 289
     const-string v1, "good space"
 
     invoke-virtual {v3, v1}, Ljava/io/PrintStream;->println(Ljava/lang/String;)V
 
-    .line 289
+    .line 290
     new-instance v1, Ljava/io/File;
 
-    invoke-direct {v1, v6}, Ljava/io/File;-><init>(Ljava/lang/String;)V
+    invoke-direct {v1, v5}, Ljava/io/File;-><init>(Ljava/lang/String;)V
 
     invoke-virtual {v1}, Ljava/io/File;->delete()Z
 
-    .line 290
+    .line 291
     new-instance v1, Ljava/util/ArrayList;
 
     invoke-direct {v1}, Ljava/util/ArrayList;-><init>()V
 
-    .line 291
-    invoke-virtual {v3, v12}, Ljava/io/PrintStream;->println(Ljava/lang/String;)V
-
     .line 292
+    invoke-virtual {v3, v13}, Ljava/io/PrintStream;->println(Ljava/lang/String;)V
+
+    .line 293
     iget-object v2, v8, Lʼˑ/ʼ;->ᵔ:Ljava/util/ArrayList;
 
     invoke-virtual {v2}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
 
     move-result-object v2
 
-    :goto_48
+    :goto_4c
     invoke-interface {v2}, Ljava/util/Iterator;->hasNext()Z
 
     move-result v3
@@ -6208,139 +6121,139 @@
 
     check-cast v3, Ljava/io/File;
 
-    .line 293
-    new-instance v5, Lʾˉ/ʻ;
+    .line 294
+    new-instance v4, Lʾˉ/ʻ;
 
     invoke-virtual {v3}, Ljava/io/File;->getAbsolutePath()Ljava/lang/String;
 
     move-result-object v3
 
-    invoke-direct {v5, v3, v9}, Lʾˉ/ʻ;-><init>(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-direct {v4, v3, v10}, Lʾˉ/ʻ;-><init>(Ljava/lang/String;Ljava/lang/String;)V
 
-    invoke-virtual {v1, v5}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+    invoke-virtual {v1, v4}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
-    goto :goto_48
+    goto :goto_4c
 
     :catch_11
     move-exception v0
 
-    :goto_49
+    :goto_4d
     move-object/from16 v1, p0
 
-    :goto_4a
+    :goto_4e
     move-object v3, v0
 
-    :goto_4b
-    move-object/from16 v13, v27
+    :goto_4f
+    move-object/from16 v14, v29
 
-    goto/16 :goto_63
+    goto/16 :goto_66
 
-    .line 294
+    .line 295
     :cond_6a
     invoke-virtual {v7}, Ljava/io/File;->getAbsolutePath()Ljava/lang/String;
 
     move-result-object v2
 
-    invoke-static {v2, v11}, Lʼˏ/ᵢ;->ᵎ(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v2, v12}, Lʼˏ/ᵢ;->ᵎ(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v2
 
-    .line 295
+    .line 296
     new-instance v3, Ljava/lang/StringBuilder;
 
     invoke-direct {v3}, Ljava/lang/StringBuilder;-><init>()V
 
-    invoke-virtual {v3, v9}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v3, v10}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     invoke-virtual {v7}, Ljava/io/File;->getName()Ljava/lang/String;
 
-    move-result-object v5
+    move-result-object v4
 
-    invoke-virtual {v3, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     invoke-virtual {v3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object v3
-    :try_end_35
-    .catch Ljava/lang/Exception; {:try_start_35 .. :try_end_35} :catch_11
-
-    .line 296
-    :try_start_36
-    invoke-virtual {v7}, Ljava/io/File;->getAbsolutePath()Ljava/lang/String;
-
-    move-result-object v5
-
-    invoke-static {v5, v3, v1}, Lʼˏ/ᵢ;->ˈ(Ljava/lang/String;Ljava/lang/String;Ljava/util/ArrayList;)V
+    :try_end_36
+    .catch Ljava/lang/Exception; {:try_start_36 .. :try_end_36} :catch_11
 
     .line 297
+    :try_start_37
+    invoke-virtual {v7}, Ljava/io/File;->getAbsolutePath()Ljava/lang/String;
+
+    move-result-object v4
+
+    invoke-static {v4, v3, v1}, Lʼˏ/ᵢ;->ˈ(Ljava/lang/String;Ljava/lang/String;Ljava/util/ArrayList;)V
+
+    .line 298
     new-instance v1, Ljava/io/File;
 
     invoke-direct {v1, v3}, Ljava/io/File;-><init>(Ljava/lang/String;)V
 
-    invoke-static {v1}, Lʼˏ/ᵢ;->יˎ(Ljava/io/File;)Z
+    invoke-static {v1}, Lʼˏ/ᵢ;->יـ(Ljava/io/File;)Z
 
     const/4 v1, 0x1
 
-    const/4 v5, 0x0
-
-    .line 298
-    invoke-static {v3, v2, v1, v5}, Lʼˏ/ᵢ;->ʻˏ(Ljava/lang/String;Ljava/lang/String;ZZ)Z
-
-    move-result v6
-
-    if-nez v6, :cond_6c
+    const/4 v4, 0x0
 
     .line 299
+    invoke-static {v3, v2, v1, v4}, Lʼˏ/ᵢ;->ʻˏ(Ljava/lang/String;Ljava/lang/String;ZZ)Z
+
+    move-result v5
+
+    if-nez v5, :cond_6c
+
+    .line 300
     new-instance v1, Ljava/io/File;
 
     invoke-direct {v1, v2}, Ljava/io/File;-><init>(Ljava/lang/String;)V
 
     invoke-virtual {v1}, Ljava/io/File;->delete()Z
 
-    .line 300
+    .line 301
     new-instance v1, Ljava/io/File;
 
     invoke-direct {v1, v3}, Ljava/io/File;-><init>(Ljava/lang/String;)V
 
     invoke-virtual {v1}, Ljava/io/File;->delete()Z
 
-    .line 301
-    invoke-virtual {v13}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
+    .line 302
+    invoke-virtual {v14}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
 
     move-result-object v1
 
-    :goto_4c
+    :goto_50
     invoke-interface {v1}, Ljava/util/Iterator;->hasNext()Z
 
-    move-result v5
+    move-result v4
 
-    if-eqz v5, :cond_6b
+    if-eqz v4, :cond_6b
 
     invoke-interface {v1}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
-    move-result-object v5
+    move-result-object v4
 
-    check-cast v5, Ljava/io/File;
+    check-cast v4, Ljava/io/File;
 
-    .line 302
-    invoke-virtual {v5}, Ljava/io/File;->delete()Z
+    .line 303
+    invoke-virtual {v4}, Ljava/io/File;->delete()Z
 
-    goto :goto_4c
+    goto :goto_50
 
     :catch_12
     move-exception v0
 
     move-object v1, v0
 
-    goto :goto_4e
+    goto :goto_52
 
-    .line 303
+    .line 304
     :cond_6b
     sget-object v1, Ljava/lang/System;->out:Ljava/io/PrintStream;
 
-    invoke-virtual {v1, v14}, Ljava/io/PrintStream;->println(Ljava/lang/String;)V
+    invoke-virtual {v1, v9}, Ljava/io/PrintStream;->println(Ljava/lang/String;)V
 
-    .line 304
+    .line 305
     :cond_6c
     new-instance v1, Ljava/io/File;
 
@@ -6348,12 +6261,12 @@
 
     invoke-virtual {v1}, Ljava/io/File;->delete()Z
 
-    .line 305
-    invoke-virtual {v13}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
+    .line 306
+    invoke-virtual {v14}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
 
     move-result-object v1
 
-    :goto_4d
+    :goto_51
     invoke-interface {v1}, Ljava/util/Iterator;->hasNext()Z
 
     move-result v3
@@ -6366,42 +6279,31 @@
 
     check-cast v3, Ljava/io/File;
 
-    .line 306
+    .line 307
     invoke-virtual {v3}, Ljava/io/File;->delete()Z
 
-    goto :goto_4d
+    goto :goto_51
 
-    .line 307
+    .line 308
     :cond_6d
     sget-object v1, Ljava/lang/System;->out:Ljava/io/PrintStream;
 
-    invoke-virtual {v1, v10}, Ljava/io/PrintStream;->println(Ljava/lang/String;)V
+    invoke-virtual {v1, v11}, Ljava/io/PrintStream;->println(Ljava/lang/String;)V
 
     const/4 v1, 0x3
-
-    .line 308
-    new-array v3, v1, [Ljava/lang/String;
-
-    const/4 v5, 0x0
-
-    aput-object v25, v3, v5
-
-    const/4 v6, 0x1
-
-    aput-object v24, v3, v6
-
-    const/4 v8, 0x2
-
-    aput-object v2, v3, v8
-
-    invoke-static {v3}, Lʼˏ/ᵢ;->ˎʿ([Ljava/lang/String;)V
 
     .line 309
     new-array v3, v1, [Ljava/lang/String;
 
-    aput-object v17, v3, v5
+    const/4 v4, 0x0
 
-    aput-object v15, v3, v6
+    aput-object v28, v3, v4
+
+    const/4 v5, 0x1
+
+    aput-object v25, v3, v5
+
+    const/4 v8, 0x2
 
     aput-object v2, v3, v8
 
@@ -6410,51 +6312,62 @@
     .line 310
     new-array v3, v1, [Ljava/lang/String;
 
-    aput-object v25, v3, v5
+    aput-object v24, v3, v4
 
-    aput-object v37, v3, v6
+    aput-object v17, v3, v5
 
     aput-object v2, v3, v8
 
     invoke-static {v3}, Lʼˏ/ᵢ;->ˎʿ([Ljava/lang/String;)V
-    :try_end_36
-    .catch Ljava/lang/Exception; {:try_start_36 .. :try_end_36} :catch_12
-
-    goto :goto_51
 
     .line 311
-    :goto_4e
-    :try_start_37
-    invoke-virtual {v1}, Ljava/lang/Throwable;->printStackTrace()V
+    new-array v3, v1, [Ljava/lang/String;
+
+    aput-object v28, v3, v4
+
+    aput-object v15, v3, v5
+
+    aput-object v2, v3, v8
+
+    invoke-static {v3}, Lʼˏ/ᵢ;->ˎʿ([Ljava/lang/String;)V
+    :try_end_37
+    .catch Ljava/lang/Exception; {:try_start_37 .. :try_end_37} :catch_12
+
+    goto :goto_55
 
     .line 312
-    sget-object v1, Ljava/lang/System;->out:Ljava/io/PrintStream;
-
-    invoke-virtual {v1, v14}, Ljava/io/PrintStream;->println(Ljava/lang/String;)V
+    :goto_52
+    :try_start_38
+    invoke-virtual {v1}, Ljava/lang/Throwable;->printStackTrace()V
 
     .line 313
+    sget-object v1, Ljava/lang/System;->out:Ljava/io/PrintStream;
+
+    invoke-virtual {v1, v9}, Ljava/io/PrintStream;->println(Ljava/lang/String;)V
+
+    .line 314
     new-instance v1, Ljava/io/File;
 
     invoke-direct {v1, v2}, Ljava/io/File;-><init>(Ljava/lang/String;)V
 
     invoke-virtual {v1}, Ljava/io/File;->delete()Z
 
-    goto :goto_51
+    goto :goto_55
 
-    .line 314
+    .line 315
     :cond_6e
     new-instance v1, Ljava/io/File;
 
-    invoke-direct {v1, v6}, Ljava/io/File;-><init>(Ljava/lang/String;)V
+    invoke-direct {v1, v5}, Ljava/io/File;-><init>(Ljava/lang/String;)V
 
     invoke-virtual {v1}, Ljava/io/File;->delete()Z
 
-    .line 315
-    invoke-virtual {v13}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
+    .line 316
+    invoke-virtual {v14}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
 
     move-result-object v1
 
-    :goto_4f
+    :goto_53
     invoke-interface {v1}, Ljava/util/Iterator;->hasNext()Z
 
     move-result v2
@@ -6467,78 +6380,80 @@
 
     check-cast v2, Ljava/io/File;
 
-    .line 316
+    .line 317
     invoke-virtual {v2}, Ljava/io/File;->delete()Z
 
-    goto :goto_4f
+    goto :goto_53
 
-    .line 317
+    .line 318
     :cond_6f
     sget-object v1, Ljava/lang/System;->out:Ljava/io/PrintStream;
 
-    invoke-virtual {v1, v14}, Ljava/io/PrintStream;->println(Ljava/lang/String;)V
-    :try_end_37
-    .catch Ljava/lang/Exception; {:try_start_37 .. :try_end_37} :catch_11
+    invoke-virtual {v1, v9}, Ljava/io/PrintStream;->println(Ljava/lang/String;)V
+    :try_end_38
+    .catch Ljava/lang/Exception; {:try_start_38 .. :try_end_38} :catch_11
 
-    goto :goto_51
+    goto :goto_55
 
     :catch_13
     move-exception v0
 
-    :goto_50
-    move-object/from16 v27, v11
+    :goto_54
+    move-object/from16 v29, v12
 
-    move-object/from16 v11, v36
+    move-object/from16 v12, v27
 
-    goto/16 :goto_49
+    goto/16 :goto_4d
 
     :catch_14
     move-exception v0
 
-    move/from16 v31, v12
+    move/from16 v31, v13
 
-    move-object/from16 v14, v27
+    move-object/from16 v13, v29
 
-    move-object/from16 v12, v29
+    move-object/from16 v9, v38
 
-    goto :goto_50
+    goto :goto_54
 
     :cond_70
-    move/from16 v32, v2
+    move/from16 v32, v4
 
-    move/from16 v31, v12
+    move/from16 v31, v13
 
-    move-object/from16 v14, v27
+    move-object/from16 v13, v29
 
-    move-object/from16 v12, v29
+    move-object/from16 v9, v38
 
-    goto/16 :goto_46
+    goto/16 :goto_49
 
-    :goto_51
-    move/from16 v6, v30
+    :goto_55
+    move/from16 v5, v30
 
-    goto :goto_52
+    goto :goto_56
 
     :cond_71
-    move/from16 v32, v2
+    move-object/from16 v18, v3
 
-    move-object/from16 v40, v3
+    move/from16 v32, v4
 
-    move/from16 v31, v12
+    move-object/from16 v41, v9
 
-    move-object/from16 v14, v27
+    move/from16 v31, v13
 
-    move-object/from16 v12, v29
+    move-object/from16 v13, v29
 
-    move-object/from16 v29, v5
+    move-object/from16 v9, v38
 
-    move-object/from16 v27, v11
+    move-object/from16 v29, v12
 
-    move-object/from16 v11, v36
+    move-object/from16 v12, v27
 
-    .line 318
-    :goto_52
-    :try_start_38
+    move-object/from16 v27, v2
+
+    .line 319
+    :goto_56
+    :try_start_39
     invoke-virtual {v7}, Ljava/io/File;->getAbsolutePath()Ljava/lang/String;
 
     move-result-object v1
@@ -6546,148 +6461,148 @@
     invoke-virtual {v1}, Ljava/lang/String;->toLowerCase()Ljava/lang/String;
 
     move-result-object v1
-    :try_end_38
-    .catch Ljava/lang/Exception; {:try_start_38 .. :try_end_38} :catch_17
+    :try_end_39
+    .catch Ljava/lang/Exception; {:try_start_39 .. :try_end_39} :catch_17
 
-    move-object/from16 v2, v28
+    move-object/from16 v2, v37
 
-    :try_start_39
+    :try_start_3a
     invoke-virtual {v1, v2}, Ljava/lang/String;->endsWith(Ljava/lang/String;)Z
 
     move-result v1
-    :try_end_39
-    .catch Ljava/lang/Exception; {:try_start_39 .. :try_end_39} :catch_16
+    :try_end_3a
+    .catch Ljava/lang/Exception; {:try_start_3a .. :try_end_3a} :catch_16
 
     if-eqz v1, :cond_72
 
     move-object/from16 v1, p0
 
-    move/from16 v3, v32
-
-    .line 319
-    :try_start_3a
-    invoke-static {v7, v1, v3, v4}, Ljavaroot/utils/ــ;->ʾ(Ljava/io/File;[Ljava/lang/String;ZZ)Z
-
-    move-result v5
-
-    if-eqz v5, :cond_73
+    move/from16 v4, v32
 
     .line 320
+    :try_start_3b
+    invoke-static {v7, v1, v4, v6}, Ljavaroot/utils/ــ;->ʾ(Ljava/io/File;[Ljava/lang/String;ZZ)Z
+
+    move-result v3
+
+    if-eqz v3, :cond_73
+
+    .line 321
     invoke-virtual {v7}, Ljava/io/File;->getAbsolutePath()Ljava/lang/String;
 
-    move-result-object v5
+    move-result-object v3
 
     const-string v8, "jar"
 
-    invoke-static {v5, v8}, Lʼˏ/ᵢ;->ᵎ(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v3, v8}, Lʼˏ/ᵢ;->ᵎ(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
-    move-result-object v5
+    move-result-object v3
 
-    invoke-static {v7, v5}, Lʼˏ/ᵢ;->ʽʾ(Ljava/io/File;Ljava/lang/String;)V
-    :try_end_3a
-    .catch Ljava/lang/Exception; {:try_start_3a .. :try_end_3a} :catch_15
+    invoke-static {v7, v3}, Lʼˏ/ᵢ;->ʽʾ(Ljava/io/File;Ljava/lang/String;)V
+    :try_end_3b
+    .catch Ljava/lang/Exception; {:try_start_3b .. :try_end_3b} :catch_15
 
-    goto :goto_54
+    goto :goto_58
 
     :catch_15
     move-exception v0
 
-    :goto_53
+    :goto_57
     move-object v3, v0
 
-    move-object/from16 v28, v2
+    move-object/from16 v37, v2
 
-    goto/16 :goto_4b
+    goto/16 :goto_4f
 
     :cond_72
     move-object/from16 v1, p0
 
-    move/from16 v3, v32
+    move/from16 v4, v32
 
     :cond_73
-    :goto_54
-    move-object/from16 v28, v2
+    :goto_58
+    move-object/from16 v37, v2
 
-    move v2, v3
+    move-object/from16 v38, v9
 
-    move-object/from16 v36, v11
+    move-object/from16 v3, v18
 
-    move-object/from16 v11, v27
+    move-object/from16 v2, v27
 
-    move-object/from16 v5, v29
+    move-object/from16 v18, v41
 
-    move-object/from16 v3, v40
+    move-object/from16 v27, v12
 
-    move-object/from16 v29, v12
+    move-object/from16 v12, v29
 
-    move-object/from16 v27, v14
+    move-object/from16 v29, v13
 
-    move/from16 v12, v31
+    move/from16 v13, v31
 
-    goto/16 :goto_3b
+    goto/16 :goto_3e
 
     :catch_16
     move-exception v0
 
     move-object/from16 v1, p0
 
-    goto :goto_53
+    goto :goto_57
 
     :catch_17
     move-exception v0
 
     move-object/from16 v1, p0
 
-    move-object/from16 v2, v28
+    move-object/from16 v2, v37
 
-    goto/16 :goto_4a
+    goto/16 :goto_4e
 
     :catch_18
     move-exception v0
 
-    move/from16 v31, v12
+    move/from16 v31, v13
 
-    move-object/from16 v14, v27
+    move-object/from16 v13, v29
 
-    move-object/from16 v2, v28
+    move-object/from16 v2, v37
 
-    move-object/from16 v12, v29
+    move-object/from16 v9, v38
 
-    move-object/from16 v27, v11
+    move-object/from16 v29, v12
 
-    move-object/from16 v11, v36
+    move-object/from16 v12, v27
 
-    goto/16 :goto_4a
+    goto/16 :goto_4e
 
     :cond_74
-    move/from16 v31, v12
+    move/from16 v31, v13
 
-    move-object/from16 v14, v27
+    move-object/from16 v13, v29
 
-    move-object/from16 v2, v28
+    move-object/from16 v9, v38
 
-    move-object/from16 v12, v29
+    move-object/from16 v29, v12
 
-    move-object/from16 v29, v5
+    move-object/from16 v12, v27
 
-    move-object/from16 v27, v11
+    move-object/from16 v27, v2
 
-    move-object/from16 v11, v36
+    move-object/from16 v2, v37
 
-    if-eqz v6, :cond_7b
+    if-eqz v5, :cond_7b
 
-    .line 321
-    :try_start_3b
+    .line 322
+    :try_start_3c
     sget-boolean v3, Ljavaroot/utils/ــ;->ʾ:Z
 
     if-nez v3, :cond_7b
 
-    .line 322
-    invoke-virtual/range {v29 .. v29}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
+    .line 323
+    invoke-virtual/range {v27 .. v27}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
 
     move-result-object v3
 
-    :goto_55
+    :goto_59
     invoke-interface {v3}, Ljava/util/Iterator;->hasNext()Z
 
     move-result v4
@@ -6700,7 +6615,7 @@
 
     check-cast v4, Ljava/io/File;
 
-    .line 323
+    .line 324
     invoke-virtual {v4}, Ljava/io/File;->getAbsolutePath()Ljava/lang/String;
 
     move-result-object v5
@@ -6708,28 +6623,28 @@
     invoke-virtual {v5}, Ljava/lang/String;->toLowerCase()Ljava/lang/String;
 
     move-result-object v5
-    :try_end_3b
-    .catch Ljava/lang/Exception; {:try_start_3b .. :try_end_3b} :catch_1f
+    :try_end_3c
+    .catch Ljava/lang/Exception; {:try_start_3c .. :try_end_3c} :catch_1f
 
-    move-object/from16 v13, v27
+    move-object/from16 v14, v29
 
-    :try_start_3c
-    invoke-virtual {v5, v13}, Ljava/lang/String;->endsWith(Ljava/lang/String;)Z
+    :try_start_3d
+    invoke-virtual {v5, v14}, Ljava/lang/String;->endsWith(Ljava/lang/String;)Z
 
     move-result v5
 
     if-eqz v5, :cond_77
 
-    .line 324
+    .line 325
     invoke-virtual {v4}, Ljava/io/File;->getAbsolutePath()Ljava/lang/String;
 
     move-result-object v5
 
-    invoke-static {v5, v11}, Lʼˏ/ᵢ;->ᵎ(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v5, v12}, Lʼˏ/ᵢ;->ᵎ(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v5
 
-    .line 325
+    .line 326
     new-instance v6, Ljava/io/File;
 
     invoke-direct {v6, v5}, Ljava/io/File;-><init>(Ljava/lang/String;)V
@@ -6740,72 +6655,72 @@
 
     if-eqz v6, :cond_77
 
-    .line 326
+    .line 327
     invoke-virtual {v4}, Ljava/io/File;->getAbsolutePath()Ljava/lang/String;
 
     move-result-object v6
-    :try_end_3c
-    .catch Ljava/lang/Exception; {:try_start_3c .. :try_end_3c} :catch_19
+    :try_end_3d
+    .catch Ljava/lang/Exception; {:try_start_3d .. :try_end_3d} :catch_19
 
     const/4 v7, 0x2
 
-    :try_start_3d
+    :try_start_3e
     new-array v8, v7, [Ljava/lang/String;
 
     const/4 v7, 0x0
 
-    aput-object v18, v8, v7
+    aput-object v36, v8, v7
 
     const/4 v7, 0x1
 
     aput-object v6, v8, v7
-    :try_end_3d
-    .catch Ljava/lang/Exception; {:try_start_3d .. :try_end_3d} :catch_1e
+    :try_end_3e
+    .catch Ljava/lang/Exception; {:try_start_3e .. :try_end_3e} :catch_1e
 
-    :try_start_3e
+    :try_start_3f
     invoke-static {v8}, Lʼˏ/ᵢ;->ˎʿ([Ljava/lang/String;)V
 
-    .line 327
+    .line 328
     invoke-virtual {v4}, Ljava/io/File;->exists()Z
 
     move-result v6
 
     if-eqz v6, :cond_75
 
-    .line 328
+    .line 329
     invoke-virtual {v4}, Ljava/io/File;->delete()Z
 
-    goto :goto_57
+    goto :goto_5b
 
     :catch_19
     move-exception v0
 
-    :goto_56
+    :goto_5a
     move-object v3, v0
 
-    move-object/from16 v28, v2
+    move-object/from16 v37, v2
 
-    goto/16 :goto_63
+    goto/16 :goto_66
 
-    .line 329
+    .line 330
     :cond_75
-    :goto_57
+    :goto_5b
     invoke-virtual {v4}, Ljava/io/File;->getAbsolutePath()Ljava/lang/String;
 
     move-result-object v6
-    :try_end_3e
-    .catch Ljava/lang/Exception; {:try_start_3e .. :try_end_3e} :catch_19
+    :try_end_3f
+    .catch Ljava/lang/Exception; {:try_start_3f .. :try_end_3f} :catch_19
 
     const/4 v7, 0x3
 
-    :try_start_3f
+    :try_start_40
     new-array v8, v7, [Ljava/lang/String;
 
     const-string v7, "mv"
 
-    const/16 v22, 0x0
+    const/16 v18, 0x0
 
-    aput-object v7, v8, v22
+    aput-object v7, v8, v18
 
     const/4 v7, 0x1
 
@@ -6814,174 +6729,174 @@
     const/4 v7, 0x2
 
     aput-object v6, v8, v7
-    :try_end_3f
-    .catch Ljava/lang/Exception; {:try_start_3f .. :try_end_3f} :catch_1d
+    :try_end_40
+    .catch Ljava/lang/Exception; {:try_start_40 .. :try_end_40} :catch_1d
 
-    :try_start_40
+    :try_start_41
     invoke-static {v8}, Lʼˏ/ᵢ;->ˎʿ([Ljava/lang/String;)V
 
-    .line 330
+    .line 331
     invoke-virtual {v4}, Ljava/io/File;->exists()Z
 
     move-result v6
 
     if-nez v6, :cond_76
 
-    .line 331
+    .line 332
     new-instance v6, Ljava/io/File;
 
     invoke-direct {v6, v5}, Ljava/io/File;-><init>(Ljava/lang/String;)V
 
     invoke-virtual {v6, v4}, Ljava/io/File;->renameTo(Ljava/io/File;)Z
 
-    .line 332
+    .line 333
     :cond_76
     invoke-virtual {v4}, Ljava/io/File;->getAbsolutePath()Ljava/lang/String;
 
     move-result-object v5
-    :try_end_40
-    .catch Ljava/lang/Exception; {:try_start_40 .. :try_end_40} :catch_19
+    :try_end_41
+    .catch Ljava/lang/Exception; {:try_start_41 .. :try_end_41} :catch_19
 
     const/4 v6, 0x3
 
-    :try_start_41
+    :try_start_42
     new-array v7, v6, [Ljava/lang/String;
 
     const/4 v6, 0x0
+
+    aput-object v28, v7, v6
+
+    const/4 v6, 0x1
 
     aput-object v25, v7, v6
 
-    const/4 v6, 0x1
-
-    aput-object v24, v7, v6
-
     const/4 v6, 0x2
 
     aput-object v5, v7, v6
-    :try_end_41
-    .catch Ljava/lang/Exception; {:try_start_41 .. :try_end_41} :catch_1c
-
-    :try_start_42
-    invoke-static {v7}, Lʼˏ/ᵢ;->ˎʿ([Ljava/lang/String;)V
-
-    .line 333
-    invoke-virtual {v4}, Ljava/io/File;->getAbsolutePath()Ljava/lang/String;
-
-    move-result-object v5
     :try_end_42
-    .catch Ljava/lang/Exception; {:try_start_42 .. :try_end_42} :catch_19
-
-    const/4 v6, 0x3
+    .catch Ljava/lang/Exception; {:try_start_42 .. :try_end_42} :catch_1c
 
     :try_start_43
-    new-array v7, v6, [Ljava/lang/String;
-
-    const/4 v6, 0x0
-
-    aput-object v17, v7, v6
-
-    const/4 v6, 0x1
-
-    aput-object v15, v7, v6
-
-    const/4 v6, 0x2
-
-    aput-object v5, v7, v6
-    :try_end_43
-    .catch Ljava/lang/Exception; {:try_start_43 .. :try_end_43} :catch_1b
-
-    :try_start_44
     invoke-static {v7}, Lʼˏ/ᵢ;->ˎʿ([Ljava/lang/String;)V
 
     .line 334
     invoke-virtual {v4}, Ljava/io/File;->getAbsolutePath()Ljava/lang/String;
 
-    move-result-object v4
+    move-result-object v5
+    :try_end_43
+    .catch Ljava/lang/Exception; {:try_start_43 .. :try_end_43} :catch_19
+
+    const/4 v6, 0x3
+
+    :try_start_44
+    new-array v7, v6, [Ljava/lang/String;
+
+    const/4 v6, 0x0
+
+    aput-object v24, v7, v6
+
+    const/4 v6, 0x1
+
+    aput-object v17, v7, v6
+
+    const/4 v6, 0x2
+
+    aput-object v5, v7, v6
     :try_end_44
-    .catch Ljava/lang/Exception; {:try_start_44 .. :try_end_44} :catch_19
+    .catch Ljava/lang/Exception; {:try_start_44 .. :try_end_44} :catch_1b
+
+    :try_start_45
+    invoke-static {v7}, Lʼˏ/ᵢ;->ˎʿ([Ljava/lang/String;)V
+
+    .line 335
+    invoke-virtual {v4}, Ljava/io/File;->getAbsolutePath()Ljava/lang/String;
+
+    move-result-object v4
+    :try_end_45
+    .catch Ljava/lang/Exception; {:try_start_45 .. :try_end_45} :catch_19
 
     const/4 v5, 0x3
 
-    :try_start_45
+    :try_start_46
     new-array v6, v5, [Ljava/lang/String;
 
     const/4 v5, 0x0
 
-    aput-object v25, v6, v5
+    aput-object v28, v6, v5
 
     const/4 v5, 0x1
 
-    aput-object v37, v6, v5
+    aput-object v15, v6, v5
 
     const/4 v5, 0x2
 
     aput-object v4, v6, v5
-    :try_end_45
-    .catch Ljava/lang/Exception; {:try_start_45 .. :try_end_45} :catch_1a
+    :try_end_46
+    .catch Ljava/lang/Exception; {:try_start_46 .. :try_end_46} :catch_1a
 
-    :try_start_46
+    :try_start_47
     invoke-static {v6}, Lʼˏ/ᵢ;->ˎʿ([Ljava/lang/String;)V
 
-    goto :goto_58
+    goto :goto_5c
 
     :catch_1a
     move-exception v0
 
-    goto :goto_56
+    goto :goto_5a
 
     :catch_1b
     move-exception v0
 
-    goto :goto_56
+    goto :goto_5a
 
     :catch_1c
     move-exception v0
 
-    goto :goto_56
+    goto :goto_5a
 
     :catch_1d
     move-exception v0
 
-    goto :goto_56
+    goto :goto_5a
 
     :catch_1e
     move-exception v0
 
-    goto :goto_56
+    goto :goto_5a
 
     :cond_77
-    :goto_58
-    move-object/from16 v27, v13
+    :goto_5c
+    move-object/from16 v29, v14
 
-    goto/16 :goto_55
+    goto/16 :goto_59
 
     :catch_1f
     move-exception v0
 
-    move-object/from16 v13, v27
+    move-object/from16 v14, v29
 
-    goto :goto_56
+    goto :goto_5a
 
     :cond_78
-    move-object/from16 v13, v27
+    move-object/from16 v14, v29
 
-    .line 335
+    .line 336
     new-instance v3, Lʼـ/ʽʽ;
 
     invoke-direct {v3}, Lʼـ/ʽʽ;-><init>()V
 
     const/4 v4, 0x1
 
-    .line 336
+    .line 337
     iput-boolean v4, v3, Lʼـ/ʽʽ;->ˆ:Z
 
-    .line 337
+    .line 338
     iput-boolean v4, v3, Lʼـ/ʽʽ;->ʽ:Z
 
-    .line 338
+    .line 339
     iput-boolean v4, v3, Lʼـ/ʽʽ;->ʾ:Z
 
-    .line 339
+    .line 340
     invoke-static {v3}, Lʼˏ/ᵢ;->ʿʻ(Lʼـ/ʽʽ;)Ljava/util/ArrayList;
 
     move-result-object v3
@@ -6990,7 +6905,7 @@
 
     move-result-object v3
 
-    :goto_59
+    :goto_5d
     invoke-interface {v3}, Ljava/util/Iterator;->hasNext()Z
 
     move-result v4
@@ -7003,19 +6918,19 @@
 
     check-cast v4, Ljava/io/File;
 
-    .line 340
+    .line 341
     invoke-virtual {v4}, Ljava/io/File;->delete()Z
 
-    goto :goto_59
+    goto :goto_5d
 
-    .line 341
+    .line 342
     :cond_79
-    invoke-virtual/range {v29 .. v29}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
+    invoke-virtual/range {v27 .. v27}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
 
     move-result-object v3
 
     :cond_7a
-    :goto_5a
+    :goto_5e
     invoke-interface {v3}, Ljava/util/Iterator;->hasNext()Z
 
     move-result v4
@@ -7028,7 +6943,7 @@
 
     check-cast v4, Ljava/io/File;
 
-    .line 342
+    .line 343
     invoke-virtual {v4}, Ljava/io/File;->getAbsolutePath()Ljava/lang/String;
 
     move-result-object v4
@@ -7039,32 +6954,32 @@
 
     if-eqz v4, :cond_7a
 
-    .line 343
+    .line 344
     invoke-virtual {v4}, Ljava/io/File;->getAbsolutePath()Ljava/lang/String;
 
     move-result-object v5
-    :try_end_46
-    .catch Ljava/lang/Exception; {:try_start_46 .. :try_end_46} :catch_19
+    :try_end_47
+    .catch Ljava/lang/Exception; {:try_start_47 .. :try_end_47} :catch_19
 
     const/4 v6, 0x2
 
-    :try_start_47
+    :try_start_48
     new-array v7, v6, [Ljava/lang/String;
 
     const/4 v6, 0x0
 
-    aput-object v18, v7, v6
+    aput-object v36, v7, v6
 
     const/4 v6, 0x1
 
     aput-object v5, v7, v6
-    :try_end_47
-    .catch Ljava/lang/Exception; {:try_start_47 .. :try_end_47} :catch_20
+    :try_end_48
+    .catch Ljava/lang/Exception; {:try_start_48 .. :try_end_48} :catch_20
 
-    :try_start_48
+    :try_start_49
     invoke-static {v7}, Lʼˏ/ᵢ;->ˎʿ([Ljava/lang/String;)V
 
-    .line 344
+    .line 345
     invoke-virtual {v4}, Ljava/io/File;->exists()Z
 
     move-result v5
@@ -7073,17 +6988,17 @@
 
     invoke-virtual {v4}, Ljava/io/File;->delete()Z
 
-    goto :goto_5a
+    goto :goto_5e
 
     :catch_20
     move-exception v0
 
-    goto/16 :goto_56
+    goto/16 :goto_5a
 
     :cond_7b
-    move-object/from16 v13, v27
+    move-object/from16 v14, v29
 
-    .line 345
+    .line 346
     :cond_7c
     sget-object v3, Ljava/lang/System;->out:Ljava/io/PrintStream;
 
@@ -7095,166 +7010,165 @@
 
     if-nez v20, :cond_7d
 
-    .line 346
+    .line 347
     invoke-static {}, Lʼˏ/ᵢ;->ʼˎ()V
-    :try_end_48
-    .catch Ljava/lang/Exception; {:try_start_48 .. :try_end_48} :catch_19
+    :try_end_49
+    .catch Ljava/lang/Exception; {:try_start_49 .. :try_end_49} :catch_19
 
     :cond_7d
-    move-object/from16 v28, v2
+    move-object/from16 v37, v2
 
-    goto/16 :goto_64
+    goto/16 :goto_67
 
     :catch_21
     move-exception v0
 
-    move-object v13, v11
+    move-object v14, v12
 
-    move/from16 v31, v12
+    move/from16 v31, v13
 
-    move-object/from16 v14, v27
+    move-object/from16 v12, v27
 
-    move-object/from16 v2, v28
+    move-object/from16 v13, v29
 
-    move-object/from16 v12, v29
+    move-object/from16 v2, v37
 
-    :goto_5b
-    move-object/from16 v11, v36
+    move-object/from16 v9, v38
 
-    :goto_5c
+    :goto_5f
     move-object v3, v0
 
-    goto/16 :goto_63
+    goto/16 :goto_66
 
     :catch_22
     move-exception v0
 
-    move-object v13, v11
+    move-object v14, v12
 
-    move/from16 v31, v12
+    move/from16 v31, v13
 
-    move-object/from16 v14, v27
+    move-object/from16 v12, v27
 
-    move-object/from16 v2, v28
+    move-object/from16 v13, v29
 
-    move-object/from16 v12, v29
+    move-object/from16 v2, v37
 
-    move-object/from16 v11, v36
+    move-object/from16 v9, v38
 
-    goto/16 :goto_56
+    goto/16 :goto_5a
 
     :catch_23
     move-exception v0
 
-    :goto_5d
-    move/from16 v31, v12
+    :goto_60
+    move/from16 v31, v13
 
-    move/from16 v20, v13
+    move/from16 v20, v14
 
-    move-object/from16 v14, v27
+    move-object/from16 v13, v29
 
-    move-object/from16 v2, v28
+    move-object/from16 v2, v37
 
-    :goto_5e
-    move-object/from16 v12, v29
+    :goto_61
+    move-object/from16 v9, v38
 
-    move-object v13, v11
+    move-object v14, v12
 
-    goto :goto_5b
+    move-object/from16 v12, v27
+
+    goto :goto_5f
 
     :catch_24
     move-exception v0
 
-    :goto_5f
-    move-object/from16 v39, v8
+    :goto_62
+    move-object/from16 v40, v8
 
-    goto :goto_5d
+    goto :goto_60
 
     :catch_25
     move-exception v0
 
-    move-object/from16 v38, v3
+    move-object/from16 v39, v3
 
-    goto :goto_5f
+    goto :goto_62
 
     :cond_7e
-    move-object/from16 v38, v3
+    move-object/from16 v39, v3
 
-    move-object/from16 v39, v8
+    move-object/from16 v40, v8
 
-    move/from16 v31, v12
+    move/from16 v31, v13
 
-    move/from16 v20, v13
+    move/from16 v20, v14
 
-    move-object/from16 v14, v27
+    move-object/from16 v13, v29
 
-    move-object/from16 v12, v29
+    move-object/from16 v2, v37
 
-    move v3, v2
+    move-object/from16 v9, v38
 
-    move-object v13, v11
+    move-object v14, v12
 
-    move-object/from16 v2, v28
-
-    move-object/from16 v11, v36
-
-    .line 347
-    :try_start_49
-    new-instance v5, Lʼـ/ʽʽ;
-
-    invoke-direct {v5}, Lʼـ/ʽʽ;-><init>()V
-
-    const/4 v6, 0x1
+    move-object/from16 v12, v27
 
     .line 348
-    iput-boolean v6, v5, Lʼـ/ʽʽ;->ˊ:Z
+    :try_start_4a
+    new-instance v3, Lʼـ/ʽʽ;
+
+    invoke-direct {v3}, Lʼـ/ʽʽ;-><init>()V
+
+    const/4 v5, 0x1
 
     .line 349
-    iput-boolean v6, v5, Lʼـ/ʽʽ;->ˏ:Z
+    iput-boolean v5, v3, Lʼـ/ʽʽ;->ˊ:Z
 
     .line 350
-    invoke-static {v5}, Lʼˏ/ᵢ;->ʿʻ(Lʼـ/ʽʽ;)Ljava/util/ArrayList;
-
-    move-result-object v5
+    iput-boolean v5, v3, Lʼـ/ʽʽ;->ˏ:Z
 
     .line 351
-    invoke-virtual {v5}, Ljava/util/ArrayList;->size()I
+    invoke-static {v3}, Lʼˏ/ᵢ;->ʿʻ(Lʼـ/ʽʽ;)Ljava/util/ArrayList;
 
-    move-result v6
-
-    new-array v7, v6, [Ljava/io/File;
+    move-result-object v3
 
     .line 352
-    invoke-virtual {v5, v7}, Ljava/util/ArrayList;->toArray([Ljava/lang/Object;)[Ljava/lang/Object;
+    invoke-virtual {v3}, Ljava/util/ArrayList;->size()I
 
-    const/4 v5, 0x0
+    move-result v5
 
-    :goto_60
-    if-ge v5, v6, :cond_7d
+    new-array v7, v5, [Ljava/io/File;
 
     .line 353
-    aget-object v8, v7, v5
+    invoke-virtual {v3, v7}, Ljava/util/ArrayList;->toArray([Ljava/lang/Object;)[Ljava/lang/Object;
+
+    const/4 v3, 0x0
+
+    :goto_63
+    if-ge v3, v5, :cond_7d
 
     .line 354
+    aget-object v8, v7, v3
+
+    .line 355
     invoke-virtual {v8}, Ljava/io/File;->getAbsolutePath()Ljava/lang/String;
 
-    move-result-object v27
-    :try_end_49
-    .catch Ljava/lang/Exception; {:try_start_49 .. :try_end_49} :catch_27
+    move-result-object v18
+    :try_end_4a
+    .catch Ljava/lang/Exception; {:try_start_4a .. :try_end_4a} :catch_27
 
-    move-object/from16 v28, v2
+    move-object/from16 v37, v2
 
-    :try_start_4a
-    invoke-static/range {v27 .. v27}, Lʼˏ/ᵢ;->ʾᴵ(Ljava/lang/String;)Ljava/io/File;
+    :try_start_4b
+    invoke-static/range {v18 .. v18}, Lʼˏ/ᵢ;->ʾᴵ(Ljava/lang/String;)Ljava/io/File;
 
     move-result-object v2
 
-    .line 355
+    .line 356
     invoke-virtual {v8}, Ljava/io/File;->exists()Z
 
-    move-result v27
+    move-result v18
 
-    if-eqz v27, :cond_80
+    if-eqz v18, :cond_80
 
     invoke-virtual {v8}, Ljava/io/File;->length()J
 
@@ -7262,111 +7176,111 @@
 
     const-wide/16 v32, 0x0
 
-    cmp-long v27, v29, v32
+    cmp-long v18, v29, v32
 
-    if-lez v27, :cond_80
+    if-lez v18, :cond_80
 
     if-eqz v2, :cond_80
 
     invoke-virtual {v2}, Ljava/io/File;->exists()Z
 
-    move-result v27
+    move-result v18
 
-    if-eqz v27, :cond_80
+    if-eqz v18, :cond_80
 
-    .line 356
+    .line 357
     invoke-virtual {v2}, Ljava/io/File;->getAbsolutePath()Ljava/lang/String;
 
-    move-result-object v27
+    move-result-object v18
 
-    move/from16 v29, v6
+    move/from16 v27, v5
 
-    invoke-virtual/range {v27 .. v27}, Ljava/lang/String;->toLowerCase()Ljava/lang/String;
+    invoke-virtual/range {v18 .. v18}, Ljava/lang/String;->toLowerCase()Ljava/lang/String;
 
-    move-result-object v6
+    move-result-object v5
 
-    move-object/from16 v27, v7
+    move-object/from16 v18, v7
 
     const-string v7, ".dex"
 
-    invoke-virtual {v6, v7}, Ljava/lang/String;->endsWith(Ljava/lang/String;)Z
+    invoke-virtual {v5, v7}, Ljava/lang/String;->endsWith(Ljava/lang/String;)Z
 
-    move-result v6
+    move-result v5
 
-    if-eqz v6, :cond_7f
-
-    .line 357
-    invoke-static {v2, v1, v3, v4}, Ljavaroot/utils/ــ;->ʾ(Ljava/io/File;[Ljava/lang/String;ZZ)Z
-
-    move-result v6
-
-    if-eqz v6, :cond_7f
+    if-eqz v5, :cond_7f
 
     .line 358
+    invoke-static {v2, v1, v4, v6}, Ljavaroot/utils/ــ;->ʾ(Ljava/io/File;[Ljava/lang/String;ZZ)Z
+
+    move-result v5
+
+    if-eqz v5, :cond_7f
+
+    .line 359
     invoke-virtual {v8}, Ljava/io/File;->getAbsolutePath()Ljava/lang/String;
 
-    move-result-object v6
+    move-result-object v5
 
-    invoke-static {v2, v6}, Lʼˏ/ᵢ;->ʽʾ(Ljava/io/File;Ljava/lang/String;)V
-    :try_end_4a
-    .catch Ljava/lang/Exception; {:try_start_4a .. :try_end_4a} :catch_26
+    invoke-static {v2, v5}, Lʼˏ/ᵢ;->ʽʾ(Ljava/io/File;Ljava/lang/String;)V
+    :try_end_4b
+    .catch Ljava/lang/Exception; {:try_start_4b .. :try_end_4b} :catch_26
 
     :cond_7f
-    :goto_61
+    :goto_64
     const/4 v2, 0x1
 
-    goto :goto_62
+    goto :goto_65
 
     :catch_26
     move-exception v0
 
-    goto/16 :goto_5c
+    goto/16 :goto_5f
 
     :cond_80
-    move/from16 v29, v6
+    move/from16 v27, v5
 
-    move-object/from16 v27, v7
+    move-object/from16 v18, v7
 
-    goto :goto_61
+    goto :goto_64
 
-    :goto_62
-    add-int/2addr v5, v2
+    :goto_65
+    add-int/2addr v3, v2
 
-    move-object/from16 v7, v27
+    move-object/from16 v7, v18
 
-    move-object/from16 v2, v28
+    move/from16 v5, v27
 
-    move/from16 v6, v29
+    move-object/from16 v2, v37
 
-    goto :goto_60
+    goto :goto_63
 
     :catch_27
     move-exception v0
 
-    move-object/from16 v28, v2
+    move-object/from16 v37, v2
 
-    goto/16 :goto_5c
+    goto/16 :goto_5f
 
     :catch_28
     move-exception v0
 
-    move-object/from16 v38, v3
+    move-object/from16 v39, v3
 
-    move-object/from16 v39, v8
+    move-object/from16 v40, v8
 
-    move/from16 v31, v12
+    move/from16 v31, v13
 
-    move/from16 v20, v13
+    move/from16 v20, v14
 
-    move-object/from16 v14, v27
+    move-object/from16 v13, v29
 
-    goto/16 :goto_5e
-
-    .line 359
-    :goto_63
-    invoke-virtual {v3}, Ljava/lang/Throwable;->printStackTrace()V
+    goto/16 :goto_61
 
     .line 360
+    :goto_66
+    invoke-virtual {v3}, Ljava/lang/Throwable;->printStackTrace()V
+
+    .line 361
     sget-object v2, Ljava/lang/System;->out:Ljava/io/PrintStream;
 
     new-instance v4, Ljava/lang/StringBuilder;
@@ -7389,86 +7303,86 @@
 
     invoke-virtual {v2, v3}, Ljava/io/PrintStream;->println(Ljava/lang/String;)V
 
-    :goto_64
+    :goto_67
     if-nez v31, :cond_81
 
     if-eqz v20, :cond_ae
 
-    .line 361
+    .line 362
     :cond_81
     sget-boolean v2, Ljavaroot/utils/ــ;->ˑˎ:Z
 
     if-nez v2, :cond_ae
 
-    .line 362
+    .line 363
     sget-boolean v2, Ljavaroot/utils/ــ;->ʽ:Z
 
     if-nez v2, :cond_82
 
-    .line 363
+    .line 364
     new-instance v2, Lʼـ/ʽʽ;
 
     invoke-direct {v2}, Lʼـ/ʽʽ;-><init>()V
 
     const/4 v3, 0x1
 
-    .line 364
+    .line 365
     iput-boolean v3, v2, Lʼـ/ʽʽ;->ˑ:Z
 
-    .line 365
+    .line 366
     sget-boolean v4, Ljavaroot/utils/ــ;->ʾ:Z
 
     iput-boolean v4, v2, Lʼـ/ʽʽ;->ﾞ:Z
 
-    .line 366
+    .line 367
     invoke-static {v2}, Lʼˏ/ᵢ;->ʿʻ(Lʼـ/ʽʽ;)Ljava/util/ArrayList;
 
     move-result-object v2
 
-    goto :goto_65
+    goto :goto_68
 
     :cond_82
     const/4 v3, 0x1
 
-    .line 367
+    .line 368
     new-instance v2, Lʼـ/ʽʽ;
 
     invoke-direct {v2}, Lʼـ/ʽʽ;-><init>()V
 
-    .line 368
+    .line 369
     iput-boolean v3, v2, Lʼـ/ʽʽ;->י:Z
 
     const/4 v3, 0x0
 
-    .line 369
+    .line 370
     iput-boolean v3, v2, Lʼـ/ʽʽ;->ﾞ:Z
 
-    .line 370
+    .line 371
     invoke-static {v2}, Lʼˏ/ᵢ;->ʿʻ(Lʼـ/ʽʽ;)Ljava/util/ArrayList;
 
     move-result-object v2
 
-    .line 371
-    :goto_65
+    .line 372
+    :goto_68
     invoke-virtual {v2}, Ljava/util/ArrayList;->size()I
 
     move-result v3
 
     if-lez v3, :cond_92
 
-    .line 372
-    sget v3, Lʾˉ/ʼʼ;->ʾᐧ:I
+    .line 373
+    sget v3, Lʾˉ/ᴵᴵ;->ʾᐧ:I
 
     const/16 v4, 0x18
 
     if-lt v3, v4, :cond_8a
 
-    .line 373
+    .line 374
     invoke-virtual {v2}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
 
     move-result-object v3
 
-    :goto_66
+    :goto_69
     invoke-interface {v3}, Ljava/util/Iterator;->hasNext()Z
 
     move-result v4
@@ -7481,8 +7395,8 @@
 
     check-cast v4, Ljava/io/File;
 
-    .line 374
-    :try_start_4b
+    .line 375
+    :try_start_4c
     invoke-virtual {v4}, Ljava/io/File;->getAbsolutePath()Ljava/lang/String;
 
     move-result-object v4
@@ -7490,95 +7404,95 @@
     invoke-static {v4}, Lʼˏ/ᵢ;->ˈʽ(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v4
-    :try_end_4b
-    .catchall {:try_start_4b .. :try_end_4b} :catchall_e
+    :try_end_4c
+    .catchall {:try_start_4c .. :try_end_4c} :catchall_f
 
     move-object/from16 v5, v26
 
-    .line 375
-    :try_start_4c
+    .line 376
+    :try_start_4d
     invoke-virtual {v4, v5}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v4
 
     if-nez v4, :cond_83
 
-    .line 376
+    .line 377
     sget-boolean v4, Ljavaroot/utils/ــ;->ʾ:Z
-    :try_end_4c
-    .catchall {:try_start_4c .. :try_end_4c} :catchall_d
+    :try_end_4d
+    .catchall {:try_start_4d .. :try_end_4d} :catchall_e
 
     if-nez v4, :cond_83
 
-    move-object/from16 v6, v38
+    move-object/from16 v6, v39
 
-    move-object/from16 v4, v39
+    move-object/from16 v4, v40
 
-    .line 377
-    :try_start_4d
+    .line 378
+    :try_start_4e
     invoke-static {v4, v6}, Lʼˏ/ᵢ;->ˋי(Ljava/lang/String;Ljava/lang/String;)Z
-    :try_end_4d
-    .catchall {:try_start_4d .. :try_end_4d} :catchall_c
+    :try_end_4e
+    .catchall {:try_start_4e .. :try_end_4e} :catchall_d
 
-    goto :goto_6b
-
-    :catchall_c
-    move-exception v0
-
-    :goto_67
-    move-object v7, v0
-
-    goto :goto_69
-
-    :cond_83
-    move-object/from16 v6, v38
-
-    move-object/from16 v4, v39
-
-    goto :goto_6a
+    goto :goto_6e
 
     :catchall_d
     move-exception v0
 
-    :goto_68
-    move-object/from16 v6, v38
+    :goto_6a
+    move-object v7, v0
 
-    move-object/from16 v4, v39
+    goto :goto_6c
 
-    goto :goto_67
+    :cond_83
+    move-object/from16 v6, v39
+
+    move-object/from16 v4, v40
+
+    goto :goto_6d
 
     :catchall_e
     move-exception v0
 
+    :goto_6b
+    move-object/from16 v6, v39
+
+    move-object/from16 v4, v40
+
+    goto :goto_6a
+
+    :catchall_f
+    move-exception v0
+
     move-object/from16 v5, v26
 
-    goto :goto_68
+    goto :goto_6b
 
-    .line 378
-    :goto_69
+    .line 379
+    :goto_6c
     invoke-virtual {v7}, Ljava/lang/Throwable;->printStackTrace()V
 
-    :goto_6a
-    move-object/from16 v39, v4
+    :goto_6d
+    move-object/from16 v40, v4
 
     move-object/from16 v26, v5
 
-    move-object/from16 v38, v6
+    move-object/from16 v39, v6
 
-    goto :goto_66
+    goto :goto_69
 
     :cond_84
     move-object/from16 v5, v26
 
-    move-object/from16 v6, v38
+    move-object/from16 v6, v39
 
-    move-object/from16 v4, v39
+    move-object/from16 v4, v40
 
-    :goto_6b
+    :goto_6e
     if-eqz v31, :cond_87
 
-    .line 379
-    sget v3, Lʾˉ/ʼʼ;->ʾᐧ:I
+    .line 380
+    sget v3, Lʾˉ/ᴵᴵ;->ʾᐧ:I
 
     const/16 v7, 0x1c
 
@@ -7594,25 +7508,25 @@
 
     if-eqz v7, :cond_86
 
-    .line 380
+    .line 381
     invoke-static {v2, v1, v3}, Ljavaroot/utils/ــ;->ˊ(Ljava/util/ArrayList;[Ljava/lang/String;Z)V
 
-    goto :goto_6c
+    goto :goto_6f
 
     :cond_85
     move/from16 v3, v31
 
-    .line 381
+    .line 382
     :cond_86
     invoke-static {v2, v1, v3}, Ljavaroot/utils/ــ;->ˊ(Ljava/util/ArrayList;[Ljava/lang/String;Z)V
 
-    goto :goto_6c
+    goto :goto_6f
 
     :cond_87
     move/from16 v3, v31
 
-    .line 382
-    :goto_6c
+    .line 383
+    :goto_6f
     sget-boolean v7, Ljavaroot/utils/ــ;->ˑʾ:Z
 
     if-nez v7, :cond_88
@@ -7625,39 +7539,39 @@
 
     if-eqz v7, :cond_89
 
-    .line 383
+    .line 384
     :cond_88
     sget-boolean v7, Ljavaroot/utils/ــ;->ʽ:Z
 
     if-nez v7, :cond_89
 
-    .line 384
+    .line 385
     new-instance v7, Lʼـ/ʽʽ;
 
     invoke-direct {v7}, Lʼـ/ʽʽ;-><init>()V
 
     const/4 v8, 0x1
 
-    .line 385
+    .line 386
     iput-boolean v8, v7, Lʼـ/ʽʽ;->י:Z
 
-    .line 386
+    .line 387
     iput-boolean v8, v7, Lʼـ/ʽʽ;->ـ:Z
 
-    .line 387
+    .line 388
     iput-boolean v8, v7, Lʼـ/ʽʽ;->ٴ:Z
 
-    .line 388
+    .line 389
     invoke-static {v7}, Lʼˏ/ᵢ;->ʿʻ(Lʼـ/ʽʽ;)Ljava/util/ArrayList;
 
     move-result-object v7
 
-    .line 389
+    .line 390
     invoke-virtual {v7}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
 
     move-result-object v7
 
-    :goto_6d
+    :goto_70
     invoke-interface {v7}, Ljava/util/Iterator;->hasNext()Z
 
     move-result v8
@@ -7670,29 +7584,29 @@
 
     check-cast v8, Ljava/io/File;
 
-    .line 390
+    .line 391
     invoke-virtual {v8}, Ljava/io/File;->delete()Z
 
-    goto :goto_6d
+    goto :goto_70
 
-    .line 391
+    .line 392
     :cond_89
     invoke-static {}, Lʼˏ/ᵢ;->ʼˎ()V
 
-    goto :goto_6e
+    goto :goto_71
 
     :cond_8a
     move-object/from16 v5, v26
 
     move/from16 v3, v31
 
-    move-object/from16 v6, v38
+    move-object/from16 v6, v39
 
-    move-object/from16 v4, v39
+    move-object/from16 v4, v40
 
-    .line 392
-    :goto_6e
-    sget v7, Lʾˉ/ʼʼ;->ʾᐧ:I
+    .line 393
+    :goto_71
+    sget v7, Lʾˉ/ᴵᴵ;->ʾᐧ:I
 
     const/16 v8, 0x15
 
@@ -7702,13 +7616,13 @@
 
     if-gt v7, v8, :cond_ae
 
-    .line 393
+    .line 394
     invoke-virtual {v2}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
 
     move-result-object v7
 
     :cond_8b
-    :goto_6f
+    :goto_72
     invoke-interface {v7}, Ljava/util/Iterator;->hasNext()Z
 
     move-result v8
@@ -7721,8 +7635,8 @@
 
     check-cast v8, Ljava/io/File;
 
-    .line 394
-    :try_start_4e
+    .line 395
+    :try_start_4f
     invoke-virtual {v8}, Ljava/io/File;->getAbsolutePath()Ljava/lang/String;
 
     move-result-object v8
@@ -7731,41 +7645,41 @@
 
     move-result-object v8
 
-    .line 395
+    .line 396
     invoke-virtual {v8, v5}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v8
 
     if-nez v8, :cond_8b
 
-    .line 396
+    .line 397
     sget-boolean v8, Ljavaroot/utils/ــ;->ʾ:Z
 
     if-nez v8, :cond_8b
 
-    .line 397
+    .line 398
     invoke-static {v4, v6}, Lʼˏ/ᵢ;->ˋי(Ljava/lang/String;Ljava/lang/String;)Z
-    :try_end_4e
-    .catchall {:try_start_4e .. :try_end_4e} :catchall_f
+    :try_end_4f
+    .catchall {:try_start_4f .. :try_end_4f} :catchall_10
 
-    goto :goto_70
+    goto :goto_73
 
-    :catchall_f
+    :catchall_10
     move-exception v0
 
     move-object v8, v0
 
-    .line 398
+    .line 399
     invoke-virtual {v8}, Ljava/lang/Throwable;->printStackTrace()V
 
-    goto :goto_6f
-
-    .line 399
-    :cond_8c
-    :goto_70
-    invoke-static {v2, v1, v3}, Ljavaroot/utils/ــ;->ˊ(Ljava/util/ArrayList;[Ljava/lang/String;Z)V
+    goto :goto_72
 
     .line 400
+    :cond_8c
+    :goto_73
+    invoke-static {v2, v1, v3}, Ljavaroot/utils/ــ;->ˊ(Ljava/util/ArrayList;[Ljava/lang/String;Z)V
+
+    .line 401
     sget-boolean v4, Ljavaroot/utils/ــ;->ˑʾ:Z
 
     if-nez v4, :cond_8d
@@ -7779,13 +7693,13 @@
 
     if-eqz v3, :cond_8f
 
-    .line 401
+    .line 402
     :cond_8e
     invoke-virtual {v2}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
 
     move-result-object v2
 
-    :goto_71
+    :goto_74
     invoke-interface {v2}, Ljava/util/Iterator;->hasNext()Z
 
     move-result v4
@@ -7798,12 +7712,12 @@
 
     check-cast v4, Ljava/io/File;
 
-    .line 402
+    .line 403
     invoke-static {v4, v1, v3}, Ljavaroot/utils/ــ;->ʽ(Ljava/io/File;[Ljava/lang/String;Z)V
 
-    goto :goto_71
+    goto :goto_74
 
-    .line 403
+    .line 404
     :cond_8f
     sget-boolean v1, Ljavaroot/utils/ــ;->ˑʾ:Z
 
@@ -7817,39 +7731,39 @@
 
     if-eqz v1, :cond_91
 
-    .line 404
+    .line 405
     :cond_90
     sget-boolean v1, Ljavaroot/utils/ــ;->ʽ:Z
 
     if-nez v1, :cond_91
 
-    .line 405
+    .line 406
     new-instance v1, Lʼـ/ʽʽ;
 
     invoke-direct {v1}, Lʼـ/ʽʽ;-><init>()V
 
     const/4 v2, 0x1
 
-    .line 406
+    .line 407
     iput-boolean v2, v1, Lʼـ/ʽʽ;->י:Z
 
-    .line 407
+    .line 408
     iput-boolean v2, v1, Lʼـ/ʽʽ;->ـ:Z
 
-    .line 408
+    .line 409
     iput-boolean v2, v1, Lʼـ/ʽʽ;->ٴ:Z
 
-    .line 409
+    .line 410
     invoke-static {v1}, Lʼˏ/ᵢ;->ʿʻ(Lʼـ/ʽʽ;)Ljava/util/ArrayList;
 
     move-result-object v1
 
-    .line 410
+    .line 411
     invoke-virtual {v1}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
 
     move-result-object v1
 
-    :goto_72
+    :goto_75
     invoke-interface {v1}, Ljava/util/Iterator;->hasNext()Z
 
     move-result v2
@@ -7862,34 +7776,34 @@
 
     check-cast v2, Ljava/io/File;
 
-    .line 411
+    .line 412
     invoke-virtual {v2}, Ljava/io/File;->delete()Z
 
-    goto :goto_72
+    goto :goto_75
 
-    .line 412
+    .line 413
     :cond_91
     invoke-static {}, Lʼˏ/ᵢ;->ʼˎ()V
 
-    goto/16 :goto_8a
+    goto/16 :goto_8f
 
     :cond_92
     move/from16 v3, v31
 
     const/4 v8, 0x0
 
-    .line 413
-    :try_start_4f
+    .line 414
+    :try_start_50
     sget-boolean v2, Ljavaroot/utils/ــ;->ʽ:Z
 
     if-nez v2, :cond_ad
 
-    .line 414
+    .line 415
     new-instance v2, Ljava/util/ArrayList;
 
     invoke-direct {v2}, Ljava/util/ArrayList;-><init>()V
 
-    .line 415
+    .line 416
     new-instance v4, Ljava/io/File;
 
     const-string v5, "/system/framework/services.odex"
@@ -7904,10 +7818,10 @@
 
     aput-object v4, v6, v5
 
-    .line 416
+    .line 417
     aget-object v4, v6, v5
 
-    .line 417
+    .line 418
     invoke-virtual {v4}, Ljava/io/File;->exists()Z
 
     move-result v5
@@ -7918,33 +7832,33 @@
 
     move-result-wide v5
 
-    const-wide/16 v26, 0x0
+    const-wide/16 v18, 0x0
 
-    cmp-long v7, v5, v26
+    cmp-long v7, v5, v18
 
     if-lez v7, :cond_93
 
     invoke-virtual {v2, v4}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
-    goto :goto_73
+    goto :goto_76
 
     :catch_29
     move-exception v0
 
     move-object v1, v0
 
-    goto/16 :goto_89
+    goto/16 :goto_8e
 
-    .line 418
+    .line 419
     :cond_93
-    :goto_73
+    :goto_76
     invoke-virtual {v2}, Ljava/util/ArrayList;->size()I
 
     move-result v4
 
     if-nez v4, :cond_94
 
-    .line 419
+    .line 420
     new-instance v4, Ljava/io/File;
 
     const-string v5, "/system/framework/services.jar"
@@ -7959,10 +7873,10 @@
 
     aput-object v4, v6, v5
 
-    .line 420
+    .line 421
     aget-object v4, v6, v5
 
-    .line 421
+    .line 422
     invoke-virtual {v4}, Ljava/io/File;->exists()Z
 
     move-result v5
@@ -7973,9 +7887,9 @@
 
     move-result-wide v5
 
-    const-wide/16 v26, 0x0
+    const-wide/16 v18, 0x0
 
-    cmp-long v7, v5, v26
+    cmp-long v7, v5, v18
 
     if-lez v7, :cond_94
 
@@ -7987,7 +7901,7 @@
 
     invoke-virtual {v2, v4}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
-    .line 422
+    .line 423
     :cond_94
     invoke-virtual {v2}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
 
@@ -7995,7 +7909,7 @@
 
     const/4 v5, 0x0
 
-    :goto_74
+    :goto_77
     invoke-interface {v4}, Ljava/util/Iterator;->hasNext()Z
 
     move-result v6
@@ -8006,184 +7920,182 @@
 
     move-result-object v6
 
-    move-object v7, v6
-
-    check-cast v7, Ljava/io/File;
-
-    .line 423
-    invoke-virtual {v7}, Ljava/io/File;->getAbsolutePath()Ljava/lang/String;
-
-    move-result-object v6
-
-    invoke-virtual {v6}, Ljava/lang/String;->toLowerCase()Ljava/lang/String;
-
-    move-result-object v6
-
-    invoke-virtual {v6, v13}, Ljava/lang/String;->endsWith(Ljava/lang/String;)Z
-
-    move-result v6
-
-    if-eqz v6, :cond_a2
+    check-cast v6, Ljava/io/File;
 
     .line 424
-    new-instance v6, Lʼˑ/ʼ;
+    invoke-virtual {v6}, Ljava/io/File;->getAbsolutePath()Ljava/lang/String;
 
-    invoke-direct {v6}, Lʼˑ/ʼ;-><init>()V
+    move-result-object v7
+
+    invoke-virtual {v7}, Ljava/lang/String;->toLowerCase()Ljava/lang/String;
+
+    move-result-object v7
+
+    invoke-virtual {v7, v14}, Ljava/lang/String;->endsWith(Ljava/lang/String;)Z
+
+    move-result v7
+
+    if-eqz v7, :cond_a2
 
     .line 425
+    new-instance v7, Lʼˑ/ʼ;
+
+    invoke-direct {v7}, Lʼˑ/ʼ;-><init>()V
+
+    .line 426
     const-string v8, "/data/app"
 
-    invoke-static {v7, v8}, Ljavaroot/utils/ــ;->ˏ(Ljava/io/File;Ljava/lang/String;)Ljava/util/ArrayList;
+    invoke-static {v6, v8}, Ljavaroot/utils/ــ;->ˏ(Ljava/io/File;Ljava/lang/String;)Ljava/util/ArrayList;
 
     move-result-object v8
 
     move-object/from16 v16, v4
 
-    .line 426
+    .line 427
     invoke-virtual {v8}, Ljava/util/ArrayList;->size()I
 
     move-result v4
 
     new-array v4, v4, [Ljava/io/File;
 
-    iput-object v4, v6, Lʼˑ/ʼ;->ـ:[Ljava/io/File;
-
-    .line 427
-    invoke-virtual {v8, v4}, Ljava/util/ArrayList;->toArray([Ljava/lang/Object;)[Ljava/lang/Object;
+    iput-object v4, v7, Lʼˑ/ʼ;->ـ:[Ljava/io/File;
 
     .line 428
+    invoke-virtual {v8, v4}, Ljava/util/ArrayList;->toArray([Ljava/lang/Object;)[Ljava/lang/Object;
+
+    .line 429
     sget-boolean v4, Ljavaroot/utils/ــ;->ˑי:Z
 
     if-eqz v4, :cond_95
 
-    .line 429
+    .line 430
     new-instance v4, Ljavaroot/utils/ˊ;
 
-    const/16 v26, 0x0
+    const/16 v18, 0x0
 
-    const/16 v27, 0x1
+    const/16 v26, 0x1
 
-    const/16 v29, 0x0
+    const/16 v27, 0x0
 
-    move-object/from16 v41, v6
+    move-object/from16 v42, v7
 
-    move-object v6, v4
+    move-object v7, v4
 
-    move-object/from16 v30, v7
-
-    move/from16 v7, v29
-
-    move-object/from16 v42, v28
+    move-object/from16 v29, v8
 
     const/16 v19, 0x0
 
-    move-object/from16 v28, v8
+    move/from16 v8, v27
 
-    move/from16 v8, v26
+    move-object/from16 v44, v9
 
-    move-object/from16 v43, v9
+    move-object/from16 v43, v37
 
-    move v9, v3
+    move/from16 v9, v18
 
-    move-object/from16 v44, v10
+    move-object/from16 v45, v10
 
-    move/from16 v10, v20
+    move v10, v3
 
     move-object/from16 v46, v11
 
-    move-object/from16 v45, v13
+    move/from16 v11, v20
 
-    move-object/from16 v13, v19
+    move-object/from16 v48, v12
 
-    move/from16 v11, v27
+    move-object/from16 v47, v14
 
-    invoke-direct/range {v6 .. v11}, Ljavaroot/utils/ˊ;-><init>(ZZZZZ)V
+    move-object/from16 v14, v19
 
-    .line 430
+    move/from16 v12, v26
+
+    invoke-direct/range {v7 .. v12}, Ljavaroot/utils/ˊ;-><init>(ZZZZZ)V
+
+    .line 431
     invoke-virtual {v4}, Ljavaroot/utils/ˊ;->ʻ()Lʼـ/ﾞﾞ;
 
     move-result-object v4
 
-    move-object/from16 v11, v41
+    move-object/from16 v12, v42
 
-    invoke-virtual {v11, v4, v13}, Lʼˑ/ʼ;->ᵔ(Lʼـ/ﾞﾞ;Ljava/io/File;)V
+    invoke-virtual {v12, v4, v14}, Lʼˑ/ʼ;->ᵔ(Lʼـ/ﾞﾞ;Ljava/io/File;)V
 
-    .line 431
-    iget-object v4, v11, Lʼˑ/ʼ;->ᵢ:Ljava/lang/String;
+    .line 432
+    iget-object v4, v12, Lʼˑ/ʼ;->ᵢ:Ljava/lang/String;
 
-    invoke-static {v4}, Lʾˉ/ʼʼ;->ˉˎ(Ljava/lang/Object;)V
+    invoke-static {v4}, Lʾˉ/ᴵᴵ;->ˉˎ(Ljava/lang/Object;)V
 
-    goto :goto_75
+    goto :goto_78
 
     :cond_95
-    move-object/from16 v30, v7
+    move-object/from16 v29, v8
 
-    move-object/from16 v43, v9
+    move-object/from16 v44, v9
 
-    move-object/from16 v44, v10
+    move-object/from16 v45, v10
 
     move-object/from16 v46, v11
 
-    move-object/from16 v45, v13
+    move-object/from16 v48, v12
 
-    move-object/from16 v42, v28
+    move-object/from16 v47, v14
 
-    const/4 v13, 0x0
+    move-object/from16 v43, v37
 
-    move-object v11, v6
+    const/4 v14, 0x0
 
-    move-object/from16 v28, v8
+    move-object v12, v7
 
-    .line 432
-    :goto_75
+    .line 433
+    :goto_78
     sget-boolean v4, Ljavaroot/utils/ــ;->ˑˏ:Z
 
     if-eqz v4, :cond_96
 
-    .line 433
+    .line 434
     new-instance v4, Ljavaroot/utils/ˎ;
+
+    const/4 v9, 0x0
+
+    const/16 v18, 0x1
 
     const/4 v8, 0x0
 
-    const/16 v19, 0x1
+    move-object v7, v4
 
-    const/4 v7, 0x0
+    move v10, v3
 
-    move-object v6, v4
+    move/from16 v11, v20
 
-    move v9, v3
+    move-object/from16 v19, v2
 
-    move/from16 v10, v20
+    move-object v2, v12
 
-    move-object/from16 v26, v2
+    move/from16 v12, v18
 
-    move-object v2, v11
+    invoke-direct/range {v7 .. v12}, Ljavaroot/utils/ˎ;-><init>(ZZZZZ)V
 
-    move/from16 v11, v19
-
-    invoke-direct/range {v6 .. v11}, Ljavaroot/utils/ˎ;-><init>(ZZZZZ)V
-
-    .line 434
+    .line 435
     invoke-virtual {v4}, Ljavaroot/utils/ˎ;->ʻ()Lʼـ/ﾞﾞ;
 
     move-result-object v4
 
-    invoke-virtual {v2, v4, v13}, Lʼˑ/ʼ;->ᵔ(Lʼـ/ﾞﾞ;Ljava/io/File;)V
-
-    .line 435
-    iget-object v4, v2, Lʼˑ/ʼ;->ᵢ:Ljava/lang/String;
-
-    invoke-static {v4}, Lʾˉ/ʼʼ;->ˉˎ(Ljava/lang/Object;)V
-
-    goto :goto_76
-
-    :cond_96
-    move-object/from16 v26, v2
-
-    move-object v2, v11
+    invoke-virtual {v2, v4, v14}, Lʼˑ/ʼ;->ᵔ(Lʼـ/ﾞﾞ;Ljava/io/File;)V
 
     .line 436
-    :goto_76
+    iget-object v4, v2, Lʼˑ/ʼ;->ᵢ:Ljava/lang/String;
+
+    invoke-static {v4}, Lʾˉ/ᴵᴵ;->ˉˎ(Ljava/lang/Object;)V
+
+    goto :goto_79
+
+    :cond_96
+    move-object/from16 v19, v2
+
+    move-object v2, v12
+
+    .line 437
+    :goto_79
     iget-object v4, v2, Lʼˑ/ʼ;->ᵔ:Ljava/util/ArrayList;
 
     invoke-virtual {v4}, Ljava/util/ArrayList;->size()I
@@ -8194,361 +8106,372 @@
 
     const/4 v4, 0x0
 
-    .line 437
+    .line 438
     invoke-virtual {v2, v4}, Lʼˑ/ʼ;->ˉ(Z)V
 
     const/4 v4, 0x1
 
     const/4 v5, 0x1
 
-    goto :goto_77
+    goto :goto_7a
 
     :cond_97
     const/4 v4, 0x0
 
-    :goto_77
+    :goto_7a
     if-eqz v4, :cond_a1
 
-    .line 438
+    .line 439
     sget-object v4, Ljava/lang/System;->out:Ljava/io/PrintStream;
 
-    new-instance v6, Ljava/lang/StringBuilder;
+    new-instance v7, Ljava/lang/StringBuilder;
 
-    invoke-direct {v6}, Ljava/lang/StringBuilder;-><init>()V
+    invoke-direct {v7}, Ljava/lang/StringBuilder;-><init>()V
 
-    const-string v7, "start create new jar file for "
+    const-string v8, "start create new jar file for "
 
-    invoke-virtual {v6, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v7, v8}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    invoke-virtual/range {v30 .. v30}, Ljava/io/File;->getAbsolutePath()Ljava/lang/String;
+    invoke-virtual {v6}, Ljava/io/File;->getAbsolutePath()Ljava/lang/String;
+
+    move-result-object v8
+
+    invoke-virtual {v7, v8}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v7}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object v7
 
-    invoke-virtual {v6, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v6}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v6
-
-    invoke-virtual {v4, v6}, Ljava/io/PrintStream;->println(Ljava/lang/String;)V
-
-    .line 439
-    sget-boolean v6, Ljavaroot/utils/ــ;->ʾ:Z
-
-    if-eqz v6, :cond_9a
+    invoke-virtual {v4, v7}, Ljava/io/PrintStream;->println(Ljava/lang/String;)V
 
     .line 440
-    new-instance v6, Ljava/lang/StringBuilder;
+    sget-boolean v7, Ljavaroot/utils/ــ;->ʾ:Z
 
-    invoke-direct {v6}, Ljava/lang/StringBuilder;-><init>()V
+    if-eqz v7, :cond_9a
+
+    .line 441
+    new-instance v7, Ljava/lang/StringBuilder;
+
+    invoke-direct {v7}, Ljava/lang/StringBuilder;-><init>()V
 
     invoke-static {}, Lʼˏ/ᵢ;->ʿᵔ()Ljava/lang/String;
 
+    move-result-object v8
+
+    invoke-virtual {v7, v8}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v6}, Ljava/io/File;->getAbsolutePath()Ljava/lang/String;
+
+    move-result-object v8
+
+    invoke-virtual {v7, v8}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v7}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
     move-result-object v7
-
-    invoke-virtual {v6, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual/range {v30 .. v30}, Ljava/io/File;->getAbsolutePath()Ljava/lang/String;
-
-    move-result-object v7
-
-    invoke-virtual {v6, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v6}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v6
-    :try_end_4f
-    .catch Ljava/lang/Exception; {:try_start_4f .. :try_end_4f} :catch_29
-
-    .line 441
-    :try_start_50
-    new-instance v7, Ljava/io/File;
-
-    invoke-direct {v7, v6}, Ljava/io/File;-><init>(Ljava/lang/String;)V
-
-    invoke-virtual {v7}, Ljava/io/File;->delete()Z
+    :try_end_50
+    .catch Ljava/lang/Exception; {:try_start_50 .. :try_end_50} :catch_29
 
     .line 442
-    new-instance v7, Ljava/util/ArrayList;
+    :try_start_51
+    new-instance v8, Ljava/io/File;
 
-    invoke-direct {v7}, Ljava/util/ArrayList;-><init>()V
+    invoke-direct {v8, v7}, Ljava/io/File;-><init>(Ljava/lang/String;)V
+
+    invoke-virtual {v8}, Ljava/io/File;->delete()Z
 
     .line 443
-    invoke-virtual {v4, v12}, Ljava/io/PrintStream;->println(Ljava/lang/String;)V
+    new-instance v8, Ljava/util/ArrayList;
+
+    invoke-direct {v8}, Ljava/util/ArrayList;-><init>()V
 
     .line 444
+    invoke-virtual {v4, v13}, Ljava/io/PrintStream;->println(Ljava/lang/String;)V
+
+    .line 445
     iget-object v2, v2, Lʼˑ/ʼ;->ᵔ:Ljava/util/ArrayList;
 
     invoke-virtual {v2}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
 
     move-result-object v2
 
-    :goto_78
+    :goto_7b
     invoke-interface {v2}, Ljava/util/Iterator;->hasNext()Z
 
     move-result v4
-    :try_end_50
-    .catch Ljava/lang/Exception; {:try_start_50 .. :try_end_50} :catch_2e
+    :try_end_51
+    .catch Ljava/lang/Exception; {:try_start_51 .. :try_end_51} :catch_2e
 
     if-eqz v4, :cond_98
 
-    :try_start_51
+    :try_start_52
     invoke-interface {v2}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
     move-result-object v4
 
     check-cast v4, Ljava/io/File;
 
-    .line 445
-    new-instance v8, Lʾˉ/ʻ;
+    .line 446
+    new-instance v9, Lʾˉ/ʻ;
 
     invoke-virtual {v4}, Ljava/io/File;->getAbsolutePath()Ljava/lang/String;
 
     move-result-object v4
-    :try_end_51
-    .catch Ljava/lang/Exception; {:try_start_51 .. :try_end_51} :catch_2b
-
-    move-object/from16 v9, v43
-
-    :try_start_52
-    invoke-direct {v8, v4, v9}, Lʾˉ/ʻ;-><init>(Ljava/lang/String;Ljava/lang/String;)V
-
-    invoke-virtual {v7, v8}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
     :try_end_52
-    .catch Ljava/lang/Exception; {:try_start_52 .. :try_end_52} :catch_2a
+    .catch Ljava/lang/Exception; {:try_start_52 .. :try_end_52} :catch_2b
 
-    move-object/from16 v43, v9
+    move-object/from16 v10, v45
 
-    goto :goto_78
+    :try_start_53
+    invoke-direct {v9, v4, v10}, Lʾˉ/ʻ;-><init>(Ljava/lang/String;Ljava/lang/String;)V
+
+    invoke-virtual {v8, v9}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+    :try_end_53
+    .catch Ljava/lang/Exception; {:try_start_53 .. :try_end_53} :catch_2a
+
+    move-object/from16 v45, v10
+
+    goto :goto_7b
 
     :catch_2a
     move-exception v0
 
-    :goto_79
+    :goto_7c
     move-object v2, v0
 
-    move-object/from16 v7, v44
+    move-object/from16 v8, v46
 
-    goto :goto_7d
+    goto :goto_80
 
     :catch_2b
     move-exception v0
 
-    move-object/from16 v9, v43
+    move-object/from16 v10, v45
 
-    goto :goto_79
+    goto :goto_7c
 
     :cond_98
-    move-object/from16 v9, v43
-
-    .line 446
-    :try_start_53
-    invoke-virtual/range {v30 .. v30}, Ljava/io/File;->getAbsolutePath()Ljava/lang/String;
-
-    move-result-object v2
-
-    invoke-static {v2, v6, v7}, Lʼˏ/ᵢ;->ˈ(Ljava/lang/String;Ljava/lang/String;Ljava/util/ArrayList;)V
+    move-object/from16 v10, v45
 
     .line 447
-    new-instance v2, Ljava/io/File;
-
-    invoke-direct {v2, v6}, Ljava/io/File;-><init>(Ljava/lang/String;)V
-
-    invoke-static {v2}, Lʼˏ/ᵢ;->יˎ(Ljava/io/File;)Z
-
-    .line 448
-    invoke-static {}, Lʼˏ/ᵢ;->ʻᵎ()V
-
-    .line 449
-    invoke-virtual/range {v28 .. v28}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
+    :try_start_54
+    invoke-virtual {v6}, Ljava/io/File;->getAbsolutePath()Ljava/lang/String;
 
     move-result-object v2
 
-    :goto_7a
+    invoke-static {v2, v7, v8}, Lʼˏ/ᵢ;->ˈ(Ljava/lang/String;Ljava/lang/String;Ljava/util/ArrayList;)V
+
+    .line 448
+    new-instance v2, Ljava/io/File;
+
+    invoke-direct {v2, v7}, Ljava/io/File;-><init>(Ljava/lang/String;)V
+
+    invoke-static {v2}, Lʼˏ/ᵢ;->יـ(Ljava/io/File;)Z
+
+    .line 449
+    invoke-static {}, Lʼˏ/ᵢ;->ʻᵎ()V
+
+    .line 450
+    invoke-virtual/range {v29 .. v29}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
+
+    move-result-object v2
+
+    :goto_7d
     invoke-interface {v2}, Ljava/util/Iterator;->hasNext()Z
 
     move-result v4
-    :try_end_53
-    .catch Ljava/lang/Exception; {:try_start_53 .. :try_end_53} :catch_2d
+    :try_end_54
+    .catch Ljava/lang/Exception; {:try_start_54 .. :try_end_54} :catch_2d
 
     if-eqz v4, :cond_99
 
-    :try_start_54
+    :try_start_55
     invoke-interface {v2}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
     move-result-object v4
 
     check-cast v4, Ljava/io/File;
 
-    .line 450
-    invoke-virtual {v4}, Ljava/io/File;->delete()Z
-    :try_end_54
-    .catch Ljava/lang/Exception; {:try_start_54 .. :try_end_54} :catch_2a
-
-    goto :goto_7a
-
     .line 451
-    :cond_99
-    :try_start_55
-    sget-object v2, Ljava/lang/System;->out:Ljava/io/PrintStream;
+    invoke-virtual {v4}, Ljava/io/File;->delete()Z
     :try_end_55
-    .catch Ljava/lang/Exception; {:try_start_55 .. :try_end_55} :catch_2d
+    .catch Ljava/lang/Exception; {:try_start_55 .. :try_end_55} :catch_2a
 
-    move-object/from16 v7, v44
-
-    :try_start_56
-    invoke-virtual {v2, v7}, Ljava/io/PrintStream;->println(Ljava/lang/String;)V
-
-    const/4 v2, 0x3
+    goto :goto_7d
 
     .line 452
-    new-array v4, v2, [Ljava/lang/String;
+    :cond_99
+    :try_start_56
+    sget-object v2, Ljava/lang/System;->out:Ljava/io/PrintStream;
+    :try_end_56
+    .catch Ljava/lang/Exception; {:try_start_56 .. :try_end_56} :catch_2d
 
-    const/4 v8, 0x0
+    move-object/from16 v8, v46
 
-    aput-object v25, v4, v8
+    :try_start_57
+    invoke-virtual {v2, v8}, Ljava/io/PrintStream;->println(Ljava/lang/String;)V
 
-    const/4 v10, 0x1
-
-    aput-object v24, v4, v10
-
-    const/4 v11, 0x2
-
-    aput-object v6, v4, v11
-
-    invoke-static {v4}, Lʼˏ/ᵢ;->ˎʿ([Ljava/lang/String;)V
+    const/4 v2, 0x3
 
     .line 453
     new-array v4, v2, [Ljava/lang/String;
 
-    aput-object v17, v4, v8
+    const/4 v9, 0x0
 
-    aput-object v15, v4, v10
+    aput-object v28, v4, v9
 
-    aput-object v6, v4, v11
+    const/4 v11, 0x1
+
+    aput-object v25, v4, v11
+
+    const/4 v12, 0x2
+
+    aput-object v7, v4, v12
 
     invoke-static {v4}, Lʼˏ/ᵢ;->ˎʿ([Ljava/lang/String;)V
 
     .line 454
     new-array v4, v2, [Ljava/lang/String;
 
-    aput-object v25, v4, v8
+    aput-object v24, v4, v9
 
-    aput-object v37, v4, v10
+    aput-object v17, v4, v11
 
-    aput-object v6, v4, v11
+    aput-object v7, v4, v12
 
     invoke-static {v4}, Lʼˏ/ᵢ;->ˎʿ([Ljava/lang/String;)V
-    :try_end_56
-    .catch Ljava/lang/Exception; {:try_start_56 .. :try_end_56} :catch_2c
 
-    goto :goto_7e
+    .line 455
+    new-array v4, v2, [Ljava/lang/String;
+
+    aput-object v28, v4, v9
+
+    aput-object v15, v4, v11
+
+    aput-object v7, v4, v12
+
+    invoke-static {v4}, Lʼˏ/ᵢ;->ˎʿ([Ljava/lang/String;)V
+    :try_end_57
+    .catch Ljava/lang/Exception; {:try_start_57 .. :try_end_57} :catch_2c
+
+    move-object/from16 v9, v44
+
+    goto :goto_81
 
     :catch_2c
     move-exception v0
 
-    :goto_7b
+    :goto_7e
     move-object v2, v0
 
-    goto :goto_7d
+    goto :goto_80
 
     :catch_2d
     move-exception v0
 
-    :goto_7c
-    move-object/from16 v7, v44
+    :goto_7f
+    move-object/from16 v8, v46
 
-    goto :goto_7b
+    goto :goto_7e
 
     :catch_2e
     move-exception v0
 
-    move-object/from16 v9, v43
+    move-object/from16 v10, v45
 
-    goto :goto_7c
-
-    .line 455
-    :goto_7d
-    :try_start_57
-    invoke-virtual {v2}, Ljava/lang/Throwable;->printStackTrace()V
+    goto :goto_7f
 
     .line 456
-    sget-object v2, Ljava/lang/System;->out:Ljava/io/PrintStream;
-
-    invoke-virtual {v2, v14}, Ljava/io/PrintStream;->println(Ljava/lang/String;)V
+    :goto_80
+    :try_start_58
+    invoke-virtual {v2}, Ljava/lang/Throwable;->printStackTrace()V
 
     .line 457
+    sget-object v2, Ljava/lang/System;->out:Ljava/io/PrintStream;
+
+    move-object/from16 v9, v44
+
+    invoke-virtual {v2, v9}, Ljava/io/PrintStream;->println(Ljava/lang/String;)V
+
+    .line 458
     new-instance v2, Ljava/io/File;
 
-    invoke-direct {v2, v6}, Ljava/io/File;-><init>(Ljava/lang/String;)V
+    invoke-direct {v2, v7}, Ljava/io/File;-><init>(Ljava/lang/String;)V
 
     invoke-virtual {v2}, Ljava/io/File;->delete()Z
 
-    :goto_7e
-    move-object/from16 v8, v46
+    :goto_81
+    move/from16 v26, v5
 
-    goto/16 :goto_84
+    :goto_82
+    move-object/from16 v11, v48
+
+    goto/16 :goto_88
 
     :cond_9a
-    move-object/from16 v9, v43
+    move-object/from16 v9, v44
 
-    move-object/from16 v7, v44
-
-    .line 458
-    invoke-virtual/range {v30 .. v30}, Ljava/io/File;->getAbsolutePath()Ljava/lang/String;
-
-    move-result-object v6
+    move-object/from16 v10, v45
 
     move-object/from16 v8, v46
 
-    invoke-static {v6, v8}, Lʼˏ/ᵢ;->ᵎ(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
-
-    move-result-object v6
-
     .line 459
-    invoke-virtual/range {v30 .. v30}, Ljava/io/File;->getAbsolutePath()Ljava/lang/String;
+    invoke-virtual {v6}, Ljava/io/File;->getAbsolutePath()Ljava/lang/String;
 
-    move-result-object v10
+    move-result-object v7
 
-    const/4 v11, 0x1
+    move-object/from16 v11, v48
 
-    const/4 v13, 0x0
+    invoke-static {v7, v11}, Lʼˏ/ᵢ;->ᵎ(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v7
 
     .line 460
-    invoke-static {v10, v6, v11, v13}, Lʼˏ/ᵢ;->ʻˏ(Ljava/lang/String;Ljava/lang/String;ZZ)Z
+    invoke-virtual {v6}, Ljava/io/File;->getAbsolutePath()Ljava/lang/String;
 
-    move-result v10
+    move-result-object v12
 
-    if-eqz v10, :cond_9f
+    move/from16 v26, v5
+
+    const/4 v5, 0x0
+
+    const/4 v14, 0x1
 
     .line 461
-    const-string v10, "good space"
+    invoke-static {v12, v7, v14, v5}, Lʼˏ/ᵢ;->ʻˏ(Ljava/lang/String;Ljava/lang/String;ZZ)Z
 
-    invoke-virtual {v4, v10}, Ljava/io/PrintStream;->println(Ljava/lang/String;)V
+    move-result v12
+
+    if-eqz v12, :cond_9f
 
     .line 462
-    new-instance v10, Ljava/io/File;
+    const-string v5, "good space"
 
-    invoke-direct {v10, v6}, Ljava/io/File;-><init>(Ljava/lang/String;)V
-
-    invoke-virtual {v10}, Ljava/io/File;->delete()Z
+    invoke-virtual {v4, v5}, Ljava/io/PrintStream;->println(Ljava/lang/String;)V
 
     .line 463
-    new-instance v6, Ljava/util/ArrayList;
+    new-instance v5, Ljava/io/File;
 
-    invoke-direct {v6}, Ljava/util/ArrayList;-><init>()V
+    invoke-direct {v5, v7}, Ljava/io/File;-><init>(Ljava/lang/String;)V
+
+    invoke-virtual {v5}, Ljava/io/File;->delete()Z
 
     .line 464
-    invoke-virtual {v4, v12}, Ljava/io/PrintStream;->println(Ljava/lang/String;)V
+    new-instance v5, Ljava/util/ArrayList;
+
+    invoke-direct {v5}, Ljava/util/ArrayList;-><init>()V
 
     .line 465
+    invoke-virtual {v4, v13}, Ljava/io/PrintStream;->println(Ljava/lang/String;)V
+
+    .line 466
     iget-object v2, v2, Lʼˑ/ʼ;->ᵔ:Ljava/util/ArrayList;
 
     invoke-virtual {v2}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
 
     move-result-object v2
 
-    :goto_7f
+    :goto_83
     invoke-interface {v2}, Ljava/util/Iterator;->hasNext()Z
 
     move-result v4
@@ -8561,239 +8484,239 @@
 
     check-cast v4, Ljava/io/File;
 
-    .line 466
-    new-instance v10, Lʾˉ/ʻ;
+    .line 467
+    new-instance v7, Lʾˉ/ʻ;
 
     invoke-virtual {v4}, Ljava/io/File;->getAbsolutePath()Ljava/lang/String;
 
     move-result-object v4
 
-    invoke-direct {v10, v4, v9}, Lʾˉ/ʻ;-><init>(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-direct {v7, v4, v10}, Lʾˉ/ʻ;-><init>(Ljava/lang/String;Ljava/lang/String;)V
 
-    invoke-virtual {v6, v10}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+    invoke-virtual {v5, v7}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
-    goto :goto_7f
-
-    .line 467
-    :cond_9b
-    invoke-virtual/range {v30 .. v30}, Ljava/io/File;->getName()Ljava/lang/String;
-
-    move-result-object v2
-
-    invoke-static {v2, v8}, Lʼˏ/ᵢ;->ᵎ(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
-
-    move-result-object v2
+    goto :goto_83
 
     .line 468
+    :cond_9b
+    invoke-virtual {v6}, Ljava/io/File;->getName()Ljava/lang/String;
+
+    move-result-object v2
+
+    invoke-static {v2, v11}, Lʼˏ/ᵢ;->ᵎ(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v2
+
+    .line 469
     new-instance v4, Ljava/lang/StringBuilder;
 
     invoke-direct {v4}, Ljava/lang/StringBuilder;-><init>()V
 
-    invoke-virtual {v4, v9}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual/range {v30 .. v30}, Ljava/io/File;->getName()Ljava/lang/String;
-
-    move-result-object v10
-
     invoke-virtual {v4, v10}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v6}, Ljava/io/File;->getName()Ljava/lang/String;
+
+    move-result-object v7
+
+    invoke-virtual {v4, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     invoke-virtual {v4}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object v4
-    :try_end_57
-    .catch Ljava/lang/Exception; {:try_start_57 .. :try_end_57} :catch_29
-
-    .line 469
-    :try_start_58
-    invoke-virtual/range {v30 .. v30}, Ljava/io/File;->getAbsolutePath()Ljava/lang/String;
-
-    move-result-object v10
-
-    invoke-static {v10, v4, v6}, Lʼˏ/ᵢ;->ˈ(Ljava/lang/String;Ljava/lang/String;Ljava/util/ArrayList;)V
+    :try_end_58
+    .catch Ljava/lang/Exception; {:try_start_58 .. :try_end_58} :catch_29
 
     .line 470
-    new-instance v6, Ljava/io/File;
+    :try_start_59
+    invoke-virtual {v6}, Ljava/io/File;->getAbsolutePath()Ljava/lang/String;
 
-    invoke-direct {v6, v4}, Ljava/io/File;-><init>(Ljava/lang/String;)V
+    move-result-object v7
 
-    invoke-static {v6}, Lʼˏ/ᵢ;->יˎ(Ljava/io/File;)Z
-
-    const/4 v6, 0x1
-
-    const/4 v10, 0x0
+    invoke-static {v7, v4, v5}, Lʼˏ/ᵢ;->ˈ(Ljava/lang/String;Ljava/lang/String;Ljava/util/ArrayList;)V
 
     .line 471
-    invoke-static {v4, v2, v6, v10}, Lʼˏ/ᵢ;->ʻˏ(Ljava/lang/String;Ljava/lang/String;ZZ)Z
+    new-instance v5, Ljava/io/File;
 
-    move-result v11
+    invoke-direct {v5, v4}, Ljava/io/File;-><init>(Ljava/lang/String;)V
 
-    if-nez v11, :cond_9d
+    invoke-static {v5}, Lʼˏ/ᵢ;->יـ(Ljava/io/File;)Z
+
+    const/4 v5, 0x1
+
+    const/4 v7, 0x0
 
     .line 472
-    new-instance v6, Ljava/io/File;
+    invoke-static {v4, v2, v5, v7}, Lʼˏ/ᵢ;->ʻˏ(Ljava/lang/String;Ljava/lang/String;ZZ)Z
 
-    invoke-direct {v6, v2}, Ljava/io/File;-><init>(Ljava/lang/String;)V
+    move-result v12
 
-    invoke-virtual {v6}, Ljava/io/File;->delete()Z
+    if-nez v12, :cond_9d
 
     .line 473
-    new-instance v6, Ljava/io/File;
+    new-instance v5, Ljava/io/File;
 
-    invoke-direct {v6, v4}, Ljava/io/File;-><init>(Ljava/lang/String;)V
+    invoke-direct {v5, v2}, Ljava/io/File;-><init>(Ljava/lang/String;)V
 
-    invoke-virtual {v6}, Ljava/io/File;->delete()Z
+    invoke-virtual {v5}, Ljava/io/File;->delete()Z
 
     .line 474
-    invoke-virtual/range {v28 .. v28}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
+    new-instance v5, Ljava/io/File;
 
-    move-result-object v6
+    invoke-direct {v5, v4}, Ljava/io/File;-><init>(Ljava/lang/String;)V
 
-    :goto_80
-    invoke-interface {v6}, Ljava/util/Iterator;->hasNext()Z
-
-    move-result v10
-
-    if-eqz v10, :cond_9c
-
-    invoke-interface {v6}, Ljava/util/Iterator;->next()Ljava/lang/Object;
-
-    move-result-object v10
-
-    check-cast v10, Ljava/io/File;
+    invoke-virtual {v5}, Ljava/io/File;->delete()Z
 
     .line 475
-    invoke-virtual {v10}, Ljava/io/File;->delete()Z
+    invoke-virtual/range {v29 .. v29}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
 
-    goto :goto_80
+    move-result-object v5
+
+    :goto_84
+    invoke-interface {v5}, Ljava/util/Iterator;->hasNext()Z
+
+    move-result v7
+
+    if-eqz v7, :cond_9c
+
+    invoke-interface {v5}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+
+    move-result-object v7
+
+    check-cast v7, Ljava/io/File;
+
+    .line 476
+    invoke-virtual {v7}, Ljava/io/File;->delete()Z
+
+    goto :goto_84
 
     :catch_2f
     move-exception v0
 
     move-object v4, v0
 
-    goto :goto_82
-
-    .line 476
-    :cond_9c
-    sget-object v6, Ljava/lang/System;->out:Ljava/io/PrintStream;
-
-    invoke-virtual {v6, v14}, Ljava/io/PrintStream;->println(Ljava/lang/String;)V
+    goto :goto_86
 
     .line 477
-    :cond_9d
-    new-instance v6, Ljava/io/File;
+    :cond_9c
+    sget-object v5, Ljava/lang/System;->out:Ljava/io/PrintStream;
 
-    invoke-direct {v6, v4}, Ljava/io/File;-><init>(Ljava/lang/String;)V
-
-    invoke-virtual {v6}, Ljava/io/File;->delete()Z
+    invoke-virtual {v5, v9}, Ljava/io/PrintStream;->println(Ljava/lang/String;)V
 
     .line 478
-    invoke-virtual/range {v28 .. v28}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
+    :cond_9d
+    new-instance v5, Ljava/io/File;
+
+    invoke-direct {v5, v4}, Ljava/io/File;-><init>(Ljava/lang/String;)V
+
+    invoke-virtual {v5}, Ljava/io/File;->delete()Z
+
+    .line 479
+    invoke-virtual/range {v29 .. v29}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
 
     move-result-object v4
 
-    :goto_81
+    :goto_85
     invoke-interface {v4}, Ljava/util/Iterator;->hasNext()Z
 
-    move-result v6
+    move-result v5
 
-    if-eqz v6, :cond_9e
+    if-eqz v5, :cond_9e
 
     invoke-interface {v4}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
-    move-result-object v6
+    move-result-object v5
 
-    check-cast v6, Ljava/io/File;
-
-    .line 479
-    invoke-virtual {v6}, Ljava/io/File;->delete()Z
-
-    goto :goto_81
+    check-cast v5, Ljava/io/File;
 
     .line 480
+    invoke-virtual {v5}, Ljava/io/File;->delete()Z
+
+    goto :goto_85
+
+    .line 481
     :cond_9e
     sget-object v4, Ljava/lang/System;->out:Ljava/io/PrintStream;
 
-    invoke-virtual {v4, v7}, Ljava/io/PrintStream;->println(Ljava/lang/String;)V
+    invoke-virtual {v4, v8}, Ljava/io/PrintStream;->println(Ljava/lang/String;)V
 
     const/4 v4, 0x3
 
-    .line 481
-    new-array v6, v4, [Ljava/lang/String;
-
-    const/4 v10, 0x0
-
-    aput-object v25, v6, v10
-
-    const/4 v11, 0x1
-
-    aput-object v24, v6, v11
-
-    const/4 v13, 0x2
-
-    aput-object v2, v6, v13
-
-    invoke-static {v6}, Lʼˏ/ᵢ;->ˎʿ([Ljava/lang/String;)V
-
     .line 482
-    new-array v6, v4, [Ljava/lang/String;
+    new-array v5, v4, [Ljava/lang/String;
 
-    aput-object v17, v6, v10
+    const/4 v7, 0x0
 
-    aput-object v15, v6, v11
+    aput-object v28, v5, v7
 
-    aput-object v2, v6, v13
+    const/4 v12, 0x1
 
-    invoke-static {v6}, Lʼˏ/ᵢ;->ˎʿ([Ljava/lang/String;)V
+    aput-object v25, v5, v12
+
+    const/4 v14, 0x2
+
+    aput-object v2, v5, v14
+
+    invoke-static {v5}, Lʼˏ/ᵢ;->ˎʿ([Ljava/lang/String;)V
 
     .line 483
-    new-array v6, v4, [Ljava/lang/String;
+    new-array v5, v4, [Ljava/lang/String;
 
-    aput-object v25, v6, v10
+    aput-object v24, v5, v7
 
-    aput-object v37, v6, v11
+    aput-object v17, v5, v12
 
-    aput-object v2, v6, v13
+    aput-object v2, v5, v14
 
-    invoke-static {v6}, Lʼˏ/ᵢ;->ˎʿ([Ljava/lang/String;)V
-    :try_end_58
-    .catch Ljava/lang/Exception; {:try_start_58 .. :try_end_58} :catch_2f
-
-    goto :goto_84
+    invoke-static {v5}, Lʼˏ/ᵢ;->ˎʿ([Ljava/lang/String;)V
 
     .line 484
-    :goto_82
-    :try_start_59
-    invoke-virtual {v4}, Ljava/lang/Throwable;->printStackTrace()V
+    new-array v5, v4, [Ljava/lang/String;
+
+    aput-object v28, v5, v7
+
+    aput-object v15, v5, v12
+
+    aput-object v2, v5, v14
+
+    invoke-static {v5}, Lʼˏ/ᵢ;->ˎʿ([Ljava/lang/String;)V
+    :try_end_59
+    .catch Ljava/lang/Exception; {:try_start_59 .. :try_end_59} :catch_2f
+
+    goto :goto_88
 
     .line 485
-    sget-object v4, Ljava/lang/System;->out:Ljava/io/PrintStream;
-
-    invoke-virtual {v4, v14}, Ljava/io/PrintStream;->println(Ljava/lang/String;)V
+    :goto_86
+    :try_start_5a
+    invoke-virtual {v4}, Ljava/lang/Throwable;->printStackTrace()V
 
     .line 486
+    sget-object v4, Ljava/lang/System;->out:Ljava/io/PrintStream;
+
+    invoke-virtual {v4, v9}, Ljava/io/PrintStream;->println(Ljava/lang/String;)V
+
+    .line 487
     new-instance v4, Ljava/io/File;
 
     invoke-direct {v4, v2}, Ljava/io/File;-><init>(Ljava/lang/String;)V
 
     invoke-virtual {v4}, Ljava/io/File;->delete()Z
 
-    goto :goto_84
+    goto :goto_88
 
-    .line 487
+    .line 488
     :cond_9f
     new-instance v2, Ljava/io/File;
 
-    invoke-direct {v2, v6}, Ljava/io/File;-><init>(Ljava/lang/String;)V
+    invoke-direct {v2, v7}, Ljava/io/File;-><init>(Ljava/lang/String;)V
 
     invoke-virtual {v2}, Ljava/io/File;->delete()Z
 
-    .line 488
-    invoke-virtual/range {v28 .. v28}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
+    .line 489
+    invoke-virtual/range {v29 .. v29}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
 
     move-result-object v2
 
-    :goto_83
+    :goto_87
     invoke-interface {v2}, Ljava/util/Iterator;->hasNext()Z
 
     move-result v4
@@ -8806,44 +8729,51 @@
 
     check-cast v4, Ljava/io/File;
 
-    .line 489
+    .line 490
     invoke-virtual {v4}, Ljava/io/File;->delete()Z
 
-    goto :goto_83
+    goto :goto_87
 
-    .line 490
+    .line 491
     :cond_a0
     sget-object v2, Ljava/lang/System;->out:Ljava/io/PrintStream;
 
-    invoke-virtual {v2, v14}, Ljava/io/PrintStream;->println(Ljava/lang/String;)V
+    invoke-virtual {v2, v9}, Ljava/io/PrintStream;->println(Ljava/lang/String;)V
 
-    goto :goto_84
+    goto :goto_88
 
     :cond_a1
-    move-object/from16 v9, v43
+    move/from16 v26, v5
 
-    move-object/from16 v7, v44
+    move-object/from16 v9, v44
 
-    goto/16 :goto_7e
+    move-object/from16 v10, v45
+
+    move-object/from16 v8, v46
+
+    goto/16 :goto_82
+
+    :goto_88
+    move/from16 v5, v26
+
+    goto :goto_89
 
     :cond_a2
-    move-object/from16 v26, v2
+    move-object/from16 v19, v2
 
     move-object/from16 v16, v4
 
-    move-object/from16 v30, v7
-
-    move-object v7, v10
-
     move-object v8, v11
 
-    move-object/from16 v45, v13
+    move-object v11, v12
 
-    move-object/from16 v42, v28
+    move-object/from16 v47, v14
 
-    .line 491
-    :goto_84
-    invoke-virtual/range {v30 .. v30}, Ljava/io/File;->getAbsolutePath()Ljava/lang/String;
+    move-object/from16 v43, v37
+
+    .line 492
+    :goto_89
+    invoke-virtual {v6}, Ljava/io/File;->getAbsolutePath()Ljava/lang/String;
 
     move-result-object v2
 
@@ -8851,7 +8781,7 @@
 
     move-result-object v2
 
-    move-object/from16 v4, v42
+    move-object/from16 v4, v43
 
     invoke-virtual {v2, v4}, Ljava/lang/String;->endsWith(Ljava/lang/String;)Z
 
@@ -8859,60 +8789,58 @@
 
     if-eqz v2, :cond_a3
 
-    move-object/from16 v6, v30
-
-    .line 492
+    .line 493
     invoke-static {v6, v1, v3}, Ljavaroot/utils/ــ;->ʿ(Ljava/io/File;[Ljava/lang/String;Z)Z
 
     move-result v2
 
     if-eqz v2, :cond_a3
 
-    .line 493
+    .line 494
     invoke-virtual {v6}, Ljava/io/File;->getAbsolutePath()Ljava/lang/String;
 
     move-result-object v2
 
-    const-string v10, "jar"
+    const-string v7, "jar"
 
-    invoke-static {v2, v10}, Lʼˏ/ᵢ;->ᵎ(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v2, v7}, Lʼˏ/ᵢ;->ᵎ(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v2
 
     invoke-static {v6, v2}, Lʼˏ/ᵢ;->ʽʾ(Ljava/io/File;Ljava/lang/String;)V
 
     :cond_a3
-    move-object/from16 v28, v4
+    move-object/from16 v37, v4
 
-    move-object v10, v7
-
-    move-object v11, v8
+    move-object v12, v11
 
     move-object/from16 v4, v16
 
-    move-object/from16 v2, v26
+    move-object/from16 v2, v19
 
-    move-object/from16 v13, v45
+    move-object/from16 v14, v47
+
+    move-object v11, v8
 
     const/4 v8, 0x0
 
-    goto/16 :goto_74
+    goto/16 :goto_77
 
     :cond_a4
-    move-object/from16 v26, v2
+    move-object/from16 v19, v2
 
-    move-object v8, v11
+    move-object v11, v12
 
-    move-object/from16 v45, v13
+    move-object/from16 v47, v14
 
     if-eqz v5, :cond_ac
 
-    .line 494
-    invoke-virtual/range {v26 .. v26}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
+    .line 495
+    invoke-virtual/range {v19 .. v19}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
 
     move-result-object v1
 
-    :goto_85
+    :goto_8a
     invoke-interface {v1}, Ljava/util/Iterator;->hasNext()Z
 
     move-result v2
@@ -8925,7 +8853,7 @@
 
     check-cast v2, Ljava/io/File;
 
-    .line 495
+    .line 496
     invoke-virtual {v2}, Ljava/io/File;->getAbsolutePath()Ljava/lang/String;
 
     move-result-object v3
@@ -8934,7 +8862,7 @@
 
     move-result-object v3
 
-    move-object/from16 v4, v45
+    move-object/from16 v4, v47
 
     invoke-virtual {v3, v4}, Ljava/lang/String;->endsWith(Ljava/lang/String;)Z
 
@@ -8942,16 +8870,16 @@
 
     if-eqz v3, :cond_a7
 
-    .line 496
+    .line 497
     invoke-virtual {v2}, Ljava/io/File;->getAbsolutePath()Ljava/lang/String;
 
     move-result-object v3
 
-    invoke-static {v3, v8}, Lʼˏ/ᵢ;->ᵎ(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v3, v11}, Lʼˏ/ᵢ;->ᵎ(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v3
 
-    .line 497
+    .line 498
     new-instance v5, Ljava/io/File;
 
     invoke-direct {v5, v3}, Ljava/io/File;-><init>(Ljava/lang/String;)V
@@ -8962,7 +8890,7 @@
 
     if-eqz v5, :cond_a7
 
-    .line 498
+    .line 499
     invoke-virtual {v2}, Ljava/io/File;->getAbsolutePath()Ljava/lang/String;
 
     move-result-object v5
@@ -8973,7 +8901,7 @@
 
     const/4 v6, 0x0
 
-    aput-object v18, v7, v6
+    aput-object v36, v7, v6
 
     const/4 v6, 0x1
 
@@ -8981,17 +8909,17 @@
 
     invoke-static {v7}, Lʼˏ/ᵢ;->ˎʿ([Ljava/lang/String;)V
 
-    .line 499
+    .line 500
     invoke-virtual {v2}, Ljava/io/File;->exists()Z
 
     move-result v5
 
     if-eqz v5, :cond_a5
 
-    .line 500
+    .line 501
     invoke-virtual {v2}, Ljava/io/File;->delete()Z
 
-    .line 501
+    .line 502
     :cond_a5
     invoke-virtual {v2}, Ljava/io/File;->getAbsolutePath()Ljava/lang/String;
 
@@ -9003,9 +8931,9 @@
 
     const-string v6, "mv"
 
-    const/4 v9, 0x0
+    const/4 v8, 0x0
 
-    aput-object v6, v7, v9
+    aput-object v6, v7, v8
 
     const/4 v6, 0x1
 
@@ -9017,21 +8945,21 @@
 
     invoke-static {v7}, Lʼˏ/ᵢ;->ˎʿ([Ljava/lang/String;)V
 
-    .line 502
+    .line 503
     invoke-virtual {v2}, Ljava/io/File;->exists()Z
 
     move-result v5
 
     if-nez v5, :cond_a6
 
-    .line 503
+    .line 504
     new-instance v5, Ljava/io/File;
 
     invoke-direct {v5, v3}, Ljava/io/File;-><init>(Ljava/lang/String;)V
 
     invoke-virtual {v5, v2}, Ljava/io/File;->renameTo(Ljava/io/File;)Z
 
-    .line 504
+    .line 505
     :cond_a6
     invoke-virtual {v2}, Ljava/io/File;->getAbsolutePath()Ljava/lang/String;
 
@@ -9043,34 +8971,11 @@
 
     const/4 v5, 0x0
 
+    aput-object v28, v6, v5
+
+    const/4 v5, 0x1
+
     aput-object v25, v6, v5
-
-    const/4 v5, 0x1
-
-    aput-object v24, v6, v5
-
-    const/4 v5, 0x2
-
-    aput-object v3, v6, v5
-
-    invoke-static {v6}, Lʼˏ/ᵢ;->ˎʿ([Ljava/lang/String;)V
-
-    .line 505
-    invoke-virtual {v2}, Ljava/io/File;->getAbsolutePath()Ljava/lang/String;
-
-    move-result-object v3
-
-    const/4 v5, 0x3
-
-    new-array v6, v5, [Ljava/lang/String;
-
-    const/4 v5, 0x0
-
-    aput-object v17, v6, v5
-
-    const/4 v5, 0x1
-
-    aput-object v15, v6, v5
 
     const/4 v5, 0x2
 
@@ -9081,6 +8986,29 @@
     .line 506
     invoke-virtual {v2}, Ljava/io/File;->getAbsolutePath()Ljava/lang/String;
 
+    move-result-object v3
+
+    const/4 v5, 0x3
+
+    new-array v6, v5, [Ljava/lang/String;
+
+    const/4 v5, 0x0
+
+    aput-object v24, v6, v5
+
+    const/4 v5, 0x1
+
+    aput-object v17, v6, v5
+
+    const/4 v5, 0x2
+
+    aput-object v3, v6, v5
+
+    invoke-static {v6}, Lʼˏ/ᵢ;->ˎʿ([Ljava/lang/String;)V
+
+    .line 507
+    invoke-virtual {v2}, Ljava/io/File;->getAbsolutePath()Ljava/lang/String;
+
     move-result-object v2
 
     const/4 v3, 0x3
@@ -9089,11 +9017,11 @@
 
     const/4 v6, 0x0
 
-    aput-object v25, v5, v6
+    aput-object v28, v5, v6
 
     const/4 v6, 0x1
 
-    aput-object v37, v5, v6
+    aput-object v15, v5, v6
 
     const/4 v6, 0x2
 
@@ -9101,17 +9029,17 @@
 
     invoke-static {v5}, Lʼˏ/ᵢ;->ˎʿ([Ljava/lang/String;)V
 
-    goto :goto_86
+    goto :goto_8b
 
     :cond_a7
     const/4 v3, 0x3
 
-    :goto_86
-    move-object/from16 v45, v4
+    :goto_8b
+    move-object/from16 v47, v4
 
-    goto/16 :goto_85
+    goto/16 :goto_8a
 
-    .line 507
+    .line 508
     :cond_a8
     new-instance v1, Lʼـ/ʽʽ;
 
@@ -9119,16 +9047,16 @@
 
     const/4 v2, 0x1
 
-    .line 508
+    .line 509
     iput-boolean v2, v1, Lʼـ/ʽʽ;->י:Z
 
-    .line 509
+    .line 510
     iput-boolean v2, v1, Lʼـ/ʽʽ;->ـ:Z
 
-    .line 510
+    .line 511
     iput-boolean v2, v1, Lʼـ/ʽʽ;->ٴ:Z
 
-    .line 511
+    .line 512
     invoke-static {v1}, Lʼˏ/ᵢ;->ʿʻ(Lʼـ/ʽʽ;)Ljava/util/ArrayList;
 
     move-result-object v1
@@ -9137,7 +9065,7 @@
 
     move-result-object v1
 
-    :goto_87
+    :goto_8c
     invoke-interface {v1}, Ljava/util/Iterator;->hasNext()Z
 
     move-result v2
@@ -9150,19 +9078,19 @@
 
     check-cast v2, Ljava/io/File;
 
-    .line 512
+    .line 513
     invoke-virtual {v2}, Ljava/io/File;->delete()Z
 
-    goto :goto_87
+    goto :goto_8c
 
-    .line 513
+    .line 514
     :cond_a9
-    invoke-virtual/range {v26 .. v26}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
+    invoke-virtual/range {v19 .. v19}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
 
     move-result-object v1
 
     :cond_aa
-    :goto_88
+    :goto_8d
     invoke-interface {v1}, Ljava/util/Iterator;->hasNext()Z
 
     move-result v2
@@ -9175,7 +9103,7 @@
 
     check-cast v2, Ljava/io/File;
 
-    .line 514
+    .line 515
     invoke-virtual {v2}, Ljava/io/File;->getAbsolutePath()Ljava/lang/String;
 
     move-result-object v2
@@ -9186,7 +9114,7 @@
 
     if-eqz v2, :cond_ab
 
-    .line 515
+    .line 516
     invoke-virtual {v2}, Ljava/io/File;->getAbsolutePath()Ljava/lang/String;
 
     move-result-object v3
@@ -9197,7 +9125,7 @@
 
     const/4 v6, 0x0
 
-    aput-object v18, v5, v6
+    aput-object v36, v5, v6
 
     const/4 v6, 0x1
 
@@ -9205,7 +9133,7 @@
 
     invoke-static {v5}, Lʼˏ/ᵢ;->ˎʿ([Ljava/lang/String;)V
 
-    .line 516
+    .line 517
     invoke-virtual {v2}, Ljava/io/File;->exists()Z
 
     move-result v3
@@ -9214,14 +9142,14 @@
 
     invoke-virtual {v2}, Ljava/io/File;->delete()Z
 
-    goto :goto_88
+    goto :goto_8d
 
     :cond_ab
     const/4 v4, 0x2
 
-    goto :goto_88
+    goto :goto_8d
 
-    .line 517
+    .line 518
     :cond_ac
     sget-object v1, Ljava/lang/System;->out:Ljava/io/PrintStream;
 
@@ -9229,12 +9157,12 @@
 
     invoke-virtual {v1, v2}, Ljava/io/PrintStream;->println(Ljava/lang/String;)V
 
-    .line 518
+    .line 519
     invoke-static {}, Lʼˏ/ᵢ;->ʼˎ()V
 
-    goto :goto_8a
+    goto :goto_8f
 
-    .line 519
+    .line 520
     :cond_ad
     new-instance v2, Ljava/io/File;
 
@@ -9250,10 +9178,10 @@
 
     aput-object v2, v4, v5
 
-    .line 520
+    .line 521
     aget-object v2, v4, v5
 
-    .line 521
+    .line 522
     invoke-virtual {v2}, Ljava/io/File;->getAbsolutePath()Ljava/lang/String;
 
     move-result-object v4
@@ -9262,7 +9190,7 @@
 
     move-result-object v4
 
-    .line 522
+    .line 523
     invoke-virtual {v2}, Ljava/io/File;->exists()Z
 
     move-result v5
@@ -9287,7 +9215,7 @@
 
     if-eqz v5, :cond_ae
 
-    .line 523
+    .line 524
     invoke-virtual {v4}, Ljava/io/File;->getAbsolutePath()Ljava/lang/String;
 
     move-result-object v5
@@ -9304,29 +9232,29 @@
 
     if-eqz v5, :cond_ae
 
-    .line 524
+    .line 525
     invoke-static {v4, v1, v3}, Ljavaroot/utils/ــ;->ʿ(Ljava/io/File;[Ljava/lang/String;Z)Z
 
     move-result v1
 
     if-eqz v1, :cond_ae
 
-    .line 525
+    .line 526
     invoke-virtual {v2}, Ljava/io/File;->getAbsolutePath()Ljava/lang/String;
 
     move-result-object v1
 
     invoke-static {v4, v1}, Lʼˏ/ᵢ;->ʽʾ(Ljava/io/File;Ljava/lang/String;)V
-    :try_end_59
-    .catch Ljava/lang/Exception; {:try_start_59 .. :try_end_59} :catch_29
+    :try_end_5a
+    .catch Ljava/lang/Exception; {:try_start_5a .. :try_end_5a} :catch_29
 
-    goto :goto_8a
-
-    .line 526
-    :goto_89
-    invoke-virtual {v1}, Ljava/lang/Throwable;->printStackTrace()V
+    goto :goto_8f
 
     .line 527
+    :goto_8e
+    invoke-virtual {v1}, Ljava/lang/Throwable;->printStackTrace()V
+
+    .line 528
     sget-object v2, Ljava/lang/System;->out:Ljava/io/PrintStream;
 
     new-instance v3, Ljava/lang/StringBuilder;
@@ -9349,9 +9277,9 @@
 
     invoke-virtual {v2, v1}, Ljava/io/PrintStream;->println(Ljava/lang/String;)V
 
-    .line 528
+    .line 529
     :cond_ae
-    :goto_8a
+    :goto_8f
     invoke-static {}, Lʼˏ/ᵢ;->ʼˎ()V
 
     return-void
@@ -18041,7 +17969,7 @@
     move-result-object v5
 
     .line 46
-    invoke-static {v5}, Lʾˉ/ʼʼ;->ˉˎ(Ljava/lang/Object;)V
+    invoke-static {v5}, Lʾˉ/ᴵᴵ;->ˉˎ(Ljava/lang/Object;)V
 
     .line 47
     .line 48
@@ -18133,7 +18061,7 @@
     move-result-object v7
 
     .line 94
-    invoke-static {v7}, Lʾˉ/ʼʼ;->ˉˎ(Ljava/lang/Object;)V
+    invoke-static {v7}, Lʾˉ/ᴵᴵ;->ˉˎ(Ljava/lang/Object;)V
 
     .line 95
     .line 96
@@ -18207,7 +18135,7 @@
 
     .line 127
     .line 128
-    invoke-static {p1}, Lʾˉ/ʼʼ;->ˉˎ(Ljava/lang/Object;)V
+    invoke-static {p1}, Lʾˉ/ᴵᴵ;->ˉˎ(Ljava/lang/Object;)V
 
     .line 129
     .line 130
@@ -18471,7 +18399,7 @@
     .line 259
     .line 260
     .line 261
-    invoke-static {p2}, Lʼˏ/ᵢ;->יˎ(Ljava/io/File;)Z
+    invoke-static {p2}, Lʼˏ/ᵢ;->יـ(Ljava/io/File;)Z
 
     .line 262
     .line 263
@@ -18506,7 +18434,7 @@
     .line 276
     .line 277
     .line 278
-    invoke-static {v7}, Lʼˏ/ᵢ;->יˎ(Ljava/io/File;)Z
+    invoke-static {v7}, Lʼˏ/ᵢ;->יـ(Ljava/io/File;)Z
 
     .line 279
     .line 280
@@ -18770,7 +18698,7 @@
     move-result-object v2
 
     .line 416
-    invoke-static {v2}, Lʾˉ/ʼʼ;->ˉˎ(Ljava/lang/Object;)V
+    invoke-static {v2}, Lʾˉ/ᴵᴵ;->ˉˎ(Ljava/lang/Object;)V
 
     .line 417
     .line 418
@@ -18851,7 +18779,7 @@
     move-result-object v2
 
     .line 459
-    invoke-static {v2}, Lʾˉ/ʼʼ;->ˉˎ(Ljava/lang/Object;)V
+    invoke-static {v2}, Lʾˉ/ᴵᴵ;->ˉˎ(Ljava/lang/Object;)V
 
     .line 460
     .line 461
@@ -18942,7 +18870,7 @@
     move-result-object p2
 
     .line 508
-    invoke-static {p2}, Lʾˉ/ʼʼ;->ˉˎ(Ljava/lang/Object;)V
+    invoke-static {p2}, Lʾˉ/ᴵᴵ;->ˉˎ(Ljava/lang/Object;)V
 
     .line 509
     .line 510
@@ -23939,7 +23867,7 @@
 
     move-result-object v7
 
-    invoke-static {v7}, Lʾˉ/ʼʼ;->ˉˎ(Ljava/lang/Object;)V
+    invoke-static {v7}, Lʾˉ/ᴵᴵ;->ˉˎ(Ljava/lang/Object;)V
 
     .line 4
     new-instance v7, Lʼˏ/ᵢ;
@@ -24410,7 +24338,7 @@
 
     move-result-object v1
 
-    invoke-static {v1}, Lʾˉ/ʼʼ;->ˉˎ(Ljava/lang/Object;)V
+    invoke-static {v1}, Lʾˉ/ᴵᴵ;->ˉˎ(Ljava/lang/Object;)V
 
     .line 41
     invoke-virtual {v4, v8}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
@@ -25846,7 +25774,7 @@
 
     .line 179
     :cond_45
-    sget v0, Lʾˉ/ʼʼ;->ʾᐧ:I
+    sget v0, Lʾˉ/ᴵᴵ;->ʾᐧ:I
 
     const/16 v1, 0x1f
 
@@ -26169,7 +26097,7 @@
     move-result-object v10
 
     .line 100
-    invoke-static {v10}, Lʾˉ/ʼʼ;->ˉˎ(Ljava/lang/Object;)V
+    invoke-static {v10}, Lʾˉ/ᴵᴵ;->ˉˎ(Ljava/lang/Object;)V
 
     .line 101
     .line 102
@@ -26910,7 +26838,7 @@
     .line 438
     .line 439
     .line 440
-    sget v2, Lʾˉ/ʼʼ;->ʾᐧ:I
+    sget v2, Lʾˉ/ᴵᴵ;->ʾᐧ:I
 
     .line 441
     .line 442
@@ -27448,7 +27376,7 @@
     .line 686
     .line 687
     :cond_16
-    sget v0, Lʾˉ/ʼʼ;->ʾᐧ:I
+    sget v0, Lʾˉ/ᴵᴵ;->ʾᐧ:I
 
     .line 688
     .line 689

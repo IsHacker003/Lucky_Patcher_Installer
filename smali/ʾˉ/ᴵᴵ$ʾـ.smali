@@ -41,106 +41,57 @@
 
 # virtual methods
 .method public run()V
-    .locals 2
+    .locals 1
 
     .line 1
-    sget-object v0, Lʾˉ/ᴵᴵ;->ʽﹶ:Ljava/lang/String;
+    const/16 v0, 0xa
 
     .line 2
     .line 3
-    const-string v1, ""
+    invoke-static {v0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     .line 4
     .line 5
-    invoke-virtual {v0, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
     .line 6
+    move-result-object v0
+
     .line 7
+    invoke-static {v0}, Lʾˉ/ᴵᴵ;->ˊˏ(Ljava/lang/Integer;)V
+
     .line 8
-    move-result v0
-
     .line 9
-    if-eqz v0, :cond_0
-
     .line 10
+    iget-object v0, p0, Lʾˉ/ᴵᴵ$ʾـ;->ʻ:Lʾˉ/ᴵᴵ;
+
     .line 11
-    sget-object v0, Lʾˉ/ᴵᴵ;->ʼᵎ:Lʾˉ/ᵎ;
-
     .line 12
-    .line 13
-    iget-object v0, v0, Lʾˉ/ᵎ;->ʻ:Ljava/lang/String;
+    invoke-virtual {v0}, Lʾˉ/ᴵᴵ;->ˈﾞ()V
 
+    .line 13
     .line 14
     .line 15
-    invoke-static {v0}, Lʼˏ/ᵎ;->ʾʽ(Ljava/lang/String;)Ljava/util/ArrayList;
+    iget-object v0, p0, Lʾˉ/ᴵᴵ$ʾـ;->ʻ:Lʾˉ/ᴵᴵ;
 
     .line 16
     .line 17
+    invoke-virtual {v0}, Lʾˉ/ᴵᴵ;->ˆˊ()V
+
     .line 18
-    move-result-object v0
-
     .line 19
-    goto :goto_0
-
     .line 20
-    :cond_0
-    sget-object v0, Lʾˉ/ᴵᴵ;->ʽﹶ:Ljava/lang/String;
+    new-instance v0, Lʾˉ/ᴵᴵ$ʾـ$ʻ;
 
     .line 21
     .line 22
-    invoke-static {v0}, Lʼˏ/ᵎ;->ʽˋ(Ljava/lang/String;)Landroid/content/pm/ApplicationInfo;
+    invoke-direct {v0, p0}, Lʾˉ/ᴵᴵ$ʾـ$ʻ;-><init>(Lʾˉ/ᴵᴵ$ʾـ;)V
 
     .line 23
     .line 24
     .line 25
-    move-result-object v0
+    invoke-static {v0}, Lʾˉ/ᴵᴵ;->ˊⁱ(Ljava/lang/Runnable;)V
 
     .line 26
-    iget-object v0, v0, Landroid/content/pm/ApplicationInfo;->packageName:Ljava/lang/String;
-
     .line 27
     .line 28
-    invoke-static {v0}, Lʼˏ/ᵎ;->ʾʽ(Ljava/lang/String;)Ljava/util/ArrayList;
-
-    .line 29
-    .line 30
-    .line 31
-    move-result-object v0
-
-    .line 32
-    :goto_0
-    if-eqz v0, :cond_1
-
-    .line 33
-    .line 34
-    new-instance v1, Lʾˉ/ᴵᴵ$ʾـ$ʻ;
-
-    .line 35
-    .line 36
-    invoke-direct {v1, p0}, Lʾˉ/ᴵᴵ$ʾـ$ʻ;-><init>(Lʾˉ/ᴵᴵ$ʾـ;)V
-
-    .line 37
-    .line 38
-    .line 39
-    invoke-static {v0, v1}, Ljava/util/Collections;->sort(Ljava/util/List;Ljava/util/Comparator;)V
-
-    .line 40
-    .line 41
-    .line 42
-    new-instance v1, Lʾˉ/ᴵᴵ$ʾـ$ʼ;
-
-    .line 43
-    .line 44
-    invoke-direct {v1, p0, v0}, Lʾˉ/ᴵᴵ$ʾـ$ʼ;-><init>(Lʾˉ/ᴵᴵ$ʾـ;Ljava/util/ArrayList;)V
-
-    .line 45
-    .line 46
-    .line 47
-    invoke-static {v1}, Lʾˉ/ᴵᴵ;->ˊⁱ(Ljava/lang/Runnable;)V
-
-    .line 48
-    .line 49
-    .line 50
-    :cond_1
     return-void
 .end method

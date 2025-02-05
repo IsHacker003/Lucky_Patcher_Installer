@@ -101,7 +101,7 @@
     .line 37
     .line 38
     .line 39
-    sget-object v0, Lʾˉ/ʼʼ;->ʼٴ:Ljava/lang/String;
+    sget-object v0, Lʾˉ/ᴵᴵ;->ʼٴ:Ljava/lang/String;
 
     .line 40
     .line 41

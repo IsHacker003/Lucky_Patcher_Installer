@@ -643,7 +643,7 @@
     move-result-object p0
 
     .line 307
-    invoke-static {p0, v0}, Lʼˏ/ᵢ;->יʿ([BLjava/io/File;)V
+    invoke-static {p0, v0}, Lʼˏ/ᵢ;->יˉ([BLjava/io/File;)V
     :try_end_2
     .catch Ljava/io/IOException; {:try_start_2 .. :try_end_2} :catch_2
 

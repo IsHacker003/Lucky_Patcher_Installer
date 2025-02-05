@@ -381,16 +381,16 @@
 
     .line 158
     .line 159
-    invoke-static {p1}, Lʾˉ/ʼʼ;->ˉˎ(Ljava/lang/Object;)V
+    invoke-static {p1}, Lʾˉ/ᴵᴵ;->ˉˎ(Ljava/lang/Object;)V
 
     .line 160
     .line 161
     .line 162
-    sget-object p1, Lʾˉ/ʼʼ;->ʼˎ:Lʾˉ/ʼʼ;
+    sget-object p1, Lʾˉ/ᴵᴵ;->ʼˎ:Lʾˉ/ᴵᴵ;
 
     .line 163
     .line 164
-    invoke-virtual {p1, p2}, Lʾˉ/ʼʼ;->ˆٴ(Ljava/lang/String;)V
+    invoke-virtual {p1, p2}, Lʾˉ/ᴵᴵ;->ˆٴ(Ljava/lang/String;)V
 
     .line 165
     .line 166

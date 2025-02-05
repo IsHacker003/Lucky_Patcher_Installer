@@ -65,7 +65,7 @@
     .locals 8
 
     .line 1
-    invoke-static {}, Lʾˉ/ʼʼ;->ˈי()Landroid/content/Context;
+    invoke-static {}, Lʾˉ/ᴵᴵ;->ˈי()Landroid/content/Context;
 
     .line 2
     .line 3
@@ -147,7 +147,7 @@
     move-result-object v1
 
     .line 43
-    invoke-static {}, Lʾˉ/ʼʼ;->ˈᵢ()I
+    invoke-static {}, Lʾˉ/ᴵᴵ;->ˈᵢ()I
 
     .line 44
     .line 45
@@ -168,7 +168,7 @@
     move-result-object v1
 
     .line 54
-    invoke-static {}, Lʾˉ/ʼʼ;->ˈᵢ()I
+    invoke-static {}, Lʾˉ/ᴵᴵ;->ˈᵢ()I
 
     .line 55
     .line 56
@@ -181,7 +181,7 @@
     .line 59
     .line 60
     .line 61
-    invoke-static {}, Lʾˉ/ʼʼ;->ˈᵔ()Landroid/content/res/Resources;
+    invoke-static {}, Lʾˉ/ᴵᴵ;->ˈᵔ()Landroid/content/res/Resources;
 
     .line 62
     .line 63

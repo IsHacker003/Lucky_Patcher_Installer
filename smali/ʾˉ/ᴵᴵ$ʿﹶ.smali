@@ -3,12 +3,12 @@
 .source "SourceFile"
 
 # interfaces
-.implements Landroid/widget/CompoundButton$OnCheckedChangeListener;
+.implements Landroid/content/DialogInterface$OnClickListener;
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lʾˉ/ᴵᴵ;->ʿˋ()V
+    value = Lʾˉ/ᴵᴵ;->ʿˊ()V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,13 +18,13 @@
 
 
 # instance fields
-.field final synthetic ʻ:[Z
+.field final synthetic ʼ:Lcom/ui/EditTextFix;
 
-.field final synthetic ʼ:Lʾˉ/ᴵᴵ;
+.field final synthetic ʽ:Lʾˉ/ᴵᴵ;
 
 
 # direct methods
-.method constructor <init>(Lʾˉ/ᴵᴵ;[Z)V
+.method constructor <init>(Lʾˉ/ᴵᴵ;Lcom/ui/EditTextFix;)V
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -33,11 +33,11 @@
     .end annotation
 
     .line 1
-    iput-object p1, p0, Lʾˉ/ᴵᴵ$ʿﹶ;->ʼ:Lʾˉ/ᴵᴵ;
+    iput-object p1, p0, Lʾˉ/ᴵᴵ$ʿﹶ;->ʽ:Lʾˉ/ᴵᴵ;
 
     .line 2
     .line 3
-    iput-object p2, p0, Lʾˉ/ᴵᴵ$ʿﹶ;->ʻ:[Z
+    iput-object p2, p0, Lʾˉ/ᴵᴵ$ʿﹶ;->ʼ:Lcom/ui/EditTextFix;
 
     .line 4
     .line 5
@@ -51,40 +51,201 @@
 
 
 # virtual methods
-.method public onCheckedChanged(Landroid/widget/CompoundButton;Z)V
-    .locals 1
+.method public onClick(Landroid/content/DialogInterface;I)V
+    .locals 2
 
     .line 1
-    const/4 p1, 0x0
+    iget-object p1, p0, Lʾˉ/ᴵᴵ$ʿﹶ;->ʼ:Lcom/ui/EditTextFix;
 
     .line 2
-    if-nez p2, :cond_0
-
     .line 3
-    .line 4
-    iget-object p2, p0, Lʾˉ/ᴵᴵ$ʿﹶ;->ʻ:[Z
+    invoke-virtual {p1}, Landroidx/appcompat/widget/ˑ;->getText()Landroid/text/Editable;
 
+    .line 4
     .line 5
     .line 6
-    aput-boolean p1, p2, p1
+    move-result-object p1
 
     .line 7
-    .line 8
-    goto :goto_0
+    iget-object p2, p0, Lʾˉ/ᴵᴵ$ʿﹶ;->ʽ:Lʾˉ/ᴵᴵ;
 
+    .line 8
     .line 9
-    :cond_0
-    iget-object p2, p0, Lʾˉ/ᴵᴵ$ʿﹶ;->ʻ:[Z
+    invoke-static {p2, p1}, Lʾˉ/ᴵᴵ;->ʾᵔ(Lʾˉ/ᴵᴵ;Ljava/lang/Object;)Z
 
     .line 10
     .line 11
-    const/4 v0, 0x1
-
     .line 12
-    aput-boolean v0, p2, p1
+    move-result p2
 
     .line 13
+    if-eqz p2, :cond_0
+
     .line 14
-    :goto_0
+    .line 15
+    invoke-static {}, Lʾˉ/ᴵᴵ;->ˈˏ()Landroid/content/SharedPreferences;
+
+    .line 16
+    .line 17
+    .line 18
+    move-result-object p2
+
+    .line 19
+    invoke-interface {p2}, Landroid/content/SharedPreferences;->edit()Landroid/content/SharedPreferences$Editor;
+
+    .line 20
+    .line 21
+    .line 22
+    move-result-object p2
+
+    .line 23
+    invoke-virtual {p1}, Ljava/lang/Object;->toString()Ljava/lang/String;
+
+    .line 24
+    .line 25
+    .line 26
+    move-result-object v0
+
+    .line 27
+    invoke-static {v0}, Ljava/lang/Integer;->valueOf(Ljava/lang/String;)Ljava/lang/Integer;
+
+    .line 28
+    .line 29
+    .line 30
+    move-result-object v0
+
+    .line 31
+    invoke-virtual {v0}, Ljava/lang/Integer;->intValue()I
+
+    .line 32
+    .line 33
+    .line 34
+    move-result v0
+
+    .line 35
+    const-string v1, "days_on_up"
+
+    .line 36
+    .line 37
+    invoke-interface {p2, v1, v0}, Landroid/content/SharedPreferences$Editor;->putInt(Ljava/lang/String;I)Landroid/content/SharedPreferences$Editor;
+
+    .line 38
+    .line 39
+    .line 40
+    move-result-object p2
+
+    .line 41
+    invoke-interface {p2}, Landroid/content/SharedPreferences$Editor;->commit()Z
+
+    .line 42
+    .line 43
+    .line 44
+    invoke-static {}, Lʾˉ/ᴵᴵ;->ˈˏ()Landroid/content/SharedPreferences;
+
+    .line 45
+    .line 46
+    .line 47
+    move-result-object p2
+
+    .line 48
+    invoke-interface {p2}, Landroid/content/SharedPreferences;->edit()Landroid/content/SharedPreferences$Editor;
+
+    .line 49
+    .line 50
+    .line 51
+    move-result-object p2
+
+    .line 52
+    const-string v0, "settings_change"
+
+    .line 53
+    .line 54
+    const/4 v1, 0x1
+
+    .line 55
+    invoke-interface {p2, v0, v1}, Landroid/content/SharedPreferences$Editor;->putBoolean(Ljava/lang/String;Z)Landroid/content/SharedPreferences$Editor;
+
+    .line 56
+    .line 57
+    .line 58
+    move-result-object p2
+
+    .line 59
+    invoke-interface {p2}, Landroid/content/SharedPreferences$Editor;->commit()Z
+
+    .line 60
+    .line 61
+    .line 62
+    invoke-static {}, Lʾˉ/ᴵᴵ;->ˈˏ()Landroid/content/SharedPreferences;
+
+    .line 63
+    .line 64
+    .line 65
+    move-result-object p2
+
+    .line 66
+    invoke-interface {p2}, Landroid/content/SharedPreferences;->edit()Landroid/content/SharedPreferences$Editor;
+
+    .line 67
+    .line 68
+    .line 69
+    move-result-object p2
+
+    .line 70
+    const-string v0, "lang_change"
+
+    .line 71
+    .line 72
+    invoke-interface {p2, v0, v1}, Landroid/content/SharedPreferences$Editor;->putBoolean(Ljava/lang/String;Z)Landroid/content/SharedPreferences$Editor;
+
+    .line 73
+    .line 74
+    .line 75
+    move-result-object p2
+
+    .line 76
+    invoke-interface {p2}, Landroid/content/SharedPreferences$Editor;->commit()Z
+
+    .line 77
+    .line 78
+    .line 79
+    sput-boolean v1, Lʾˉ/ᴵᴵ;->ʼˊ:Z
+
+    .line 80
+    .line 81
+    invoke-virtual {p1}, Ljava/lang/Object;->toString()Ljava/lang/String;
+
+    .line 82
+    .line 83
+    .line 84
+    move-result-object p1
+
+    .line 85
+    invoke-static {p1}, Ljava/lang/Integer;->valueOf(Ljava/lang/String;)Ljava/lang/Integer;
+
+    .line 86
+    .line 87
+    .line 88
+    move-result-object p1
+
+    .line 89
+    invoke-virtual {p1}, Ljava/lang/Integer;->intValue()I
+
+    .line 90
+    .line 91
+    .line 92
+    move-result p1
+
+    .line 93
+    sput p1, Lʾˉ/ᴵᴵ;->ʾᴵ:I
+
+    .line 94
+    .line 95
+    invoke-static {v1}, Lʾˉ/ᴵᴵ;->ˋʼ(Z)V
+
+    .line 96
+    .line 97
+    .line 98
+    :cond_0
     return-void
 .end method

@@ -82,7 +82,7 @@
     move-result-object v0
 
     .line 18
-    invoke-static {}, Lʾˉ/ʼʼ;->ˈᵢ()I
+    invoke-static {}, Lʾˉ/ᴵᴵ;->ˈᵢ()I
 
     .line 19
     .line 20

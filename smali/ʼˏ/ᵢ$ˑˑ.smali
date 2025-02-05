@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lʼˏ/ᵢ;->ˑᐧ(Landroid/app/Activity;Ljava/lang/String;Ljava/lang/Integer;)V
+    value = Lʼˏ/ᵢ;->ˑᵔ(Landroid/app/Activity;Ljava/lang/String;Ljava/lang/Integer;)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -55,7 +55,7 @@
     .locals 4
 
     .line 1
-    sget v0, Lʾˉ/ʼʼ;->ʾᐧ:I
+    sget v0, Lʾˉ/ᴵᴵ;->ʾᐧ:I
 
     .line 2
     .line 3

@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lʾˉ/ᴵᴵ;->ˎʽ()V
+    value = Lʾˉ/ᴵᴵ;->ˆˏ()V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,188 +18,192 @@
 
 
 # instance fields
-.field final synthetic ʻ:Landroid/content/Intent;
-
-.field final synthetic ʼ:Lʾˉ/ᴵᴵ;
+.field final synthetic ʻ:Lʾˉ/ᴵᴵ;
 
 
 # direct methods
-.method constructor <init>(Lʾˉ/ᴵᴵ;Landroid/content/Intent;)V
+.method constructor <init>(Lʾˉ/ᴵᴵ;)V
     .locals 0
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "()V"
-        }
-    .end annotation
 
     .line 1
-    iput-object p1, p0, Lʾˉ/ᴵᴵ$ʾˆ;->ʼ:Lʾˉ/ᴵᴵ;
+    iput-object p1, p0, Lʾˉ/ᴵᴵ$ʾˆ;->ʻ:Lʾˉ/ᴵᴵ;
 
     .line 2
     .line 3
-    iput-object p2, p0, Lʾˉ/ᴵᴵ$ʾˆ;->ʻ:Landroid/content/Intent;
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 4
     .line 5
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
     .line 6
-    .line 7
-    .line 8
     return-void
 .end method
 
 
 # virtual methods
 .method public run()V
-    .locals 10
+    .locals 3
 
     .line 1
-    const v0, 0x7f1104cf
+    new-instance v0, Lʾˉ/ᴵᴵ$ʾˆ$ʻ;
 
     .line 2
     .line 3
-    .line 4
-    invoke-static {v0}, Lʼˏ/ᵎ;->ˈˉ(I)Ljava/lang/String;
+    invoke-direct {v0, p0}, Lʾˉ/ᴵᴵ$ʾˆ$ʻ;-><init>(Lʾˉ/ᴵᴵ$ʾˆ;)V
 
+    .line 4
     .line 5
     .line 6
+    invoke-static {v0}, Lʾˉ/ᴵᴵ;->ˊⁱ(Ljava/lang/Runnable;)V
+
     .line 7
-    move-result-object v1
-
     .line 8
-    new-instance v0, Ljava/lang/StringBuilder;
-
     .line 9
-    .line 10
-    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
+    :try_start_0
+    const-string v0, ""
 
+    .line 10
     .line 11
+    sput-object v0, Lʾˉ/ᴵᴵ;->ʼי:Ljava/lang/String;
+
     .line 12
     .line 13
-    const v2, 0x7f1103f2
+    const/4 v0, 0x4
 
     .line 14
+    new-array v0, v0, [Ljava/lang/String;
+
     .line 15
     .line 16
-    invoke-static {v2}, Lʼˏ/ᵎ;->ˈˉ(I)Ljava/lang/String;
+    const-string v1, "all"
 
     .line 17
     .line 18
+    const/4 v2, 0x0
+
     .line 19
-    move-result-object v2
+    aput-object v1, v0, v2
 
     .line 20
-    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
     .line 21
+    sget-object v1, Lʾˉ/ᴵᴵ;->ʽﹶ:Ljava/lang/String;
+
     .line 22
     .line 23
-    const-string v2, "\n"
+    const/4 v2, 0x1
 
     .line 24
+    aput-object v1, v0, v2
+
     .line 25
-    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
     .line 26
-    .line 27
-    .line 28
-    const v3, 0x7f1103f3
+    const/4 v2, 0x2
 
+    .line 27
+    aput-object v1, v0, v2
+
+    .line 28
     .line 29
+    const-string v1, "framework"
+
     .line 30
     .line 31
-    invoke-static {v3}, Lʼˏ/ᵎ;->ˈˉ(I)Ljava/lang/String;
+    const/4 v2, 0x3
 
     .line 32
+    aput-object v1, v0, v2
+
     .line 33
     .line 34
-    move-result-object v3
+    invoke-static {v0}, Ljavaroot/utils/ــ;->main([Ljava/lang/String;)V
 
     .line 35
-    invoke-virtual {v0, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
     .line 36
     .line 37
-    .line 38
-    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    sget-boolean v0, Ljavaroot/utils/ــ;->ˈ:Z
 
+    .line 38
     .line 39
+    if-eqz v0, :cond_0
+
     .line 40
     .line 41
-    const v2, 0x7f1103f4
+    const v0, 0x7f11029f
 
     .line 42
     .line 43
     .line 44
-    invoke-static {v2}, Lʼˏ/ᵎ;->ˈˉ(I)Ljava/lang/String;
+    invoke-static {v0}, Lʼˏ/ᵢ;->ˈי(I)Ljava/lang/String;
 
     .line 45
     .line 46
     .line 47
-    move-result-object v2
+    move-result-object v0
 
     .line 48
-    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    const v1, 0x7f1101df
 
     .line 49
     .line 50
     .line 51
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-static {v1}, Lʼˏ/ᵢ;->ˈי(I)Ljava/lang/String;
 
     .line 52
     .line 53
     .line 54
-    move-result-object v2
+    move-result-object v1
 
     .line 55
-    const v0, 0x7f1104e3
+    invoke-static {v0, v1}, Lʾˉ/ᴵᴵ;->ˋⁱ(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 56
     .line 57
     .line 58
-    invoke-static {v0}, Lʼˏ/ᵎ;->ˈˉ(I)Ljava/lang/String;
+    goto :goto_0
 
     .line 59
+    :catch_0
+    move-exception v0
+
     .line 60
+    goto :goto_1
+
     .line 61
-    move-result-object v3
+    :cond_0
+    :goto_0
+    sget-object v0, Lʾˉ/ᴵᴵ;->ʼי:Ljava/lang/String;
 
     .line 62
-    new-instance v4, Lʾˉ/ᴵᴵ$ʾˆ$ʻ;
-
     .line 63
-    .line 64
-    invoke-direct {v4, p0}, Lʾˉ/ᴵᴵ$ʾˆ$ʻ;-><init>(Lʾˉ/ᴵᴵ$ʾˆ;)V
+    invoke-static {v0}, Lʾˉ/ᴵᴵ;->ˉˎ(Ljava/lang/Object;)V
+    :try_end_0
+    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
+    .line 64
     .line 65
     .line 66
+    goto :goto_2
+
     .line 67
-    new-instance v6, Lʾˉ/ᴵᴵ$ʾˆ$ʼ;
+    :goto_1
+    invoke-virtual {v0}, Ljava/lang/Throwable;->printStackTrace()V
 
     .line 68
     .line 69
-    invoke-direct {v6, p0}, Lʾˉ/ᴵᴵ$ʾˆ$ʼ;-><init>(Lʾˉ/ᴵᴵ$ʾˆ;)V
-
     .line 70
+    :goto_2
+    new-instance v0, Lʾˉ/ᴵᴵ$ʾˆ$ʼ;
+
     .line 71
     .line 72
-    const/4 v8, 0x0
+    invoke-direct {v0, p0}, Lʾˉ/ᴵᴵ$ʾˆ$ʼ;-><init>(Lʾˉ/ᴵᴵ$ʾˆ;)V
 
     .line 73
-    const/4 v9, 0x1
-
     .line 74
-    const/4 v5, 0x0
-
     .line 75
-    const/4 v7, 0x0
+    invoke-static {v0}, Lʾˉ/ᴵᴵ;->ˊⁱ(Ljava/lang/Runnable;)V
 
     .line 76
-    invoke-static/range {v1 .. v9}, Lʼˏ/ᵎ;->ˏˆ(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Landroid/widget/CompoundButton$OnCheckedChangeListener;ZLandroid/content/DialogInterface$OnClickListener;Landroid/content/DialogInterface$OnClickListener;Landroid/content/DialogInterface$OnCancelListener;Z)V
-
     .line 77
     .line 78
-    .line 79
     return-void
 .end method

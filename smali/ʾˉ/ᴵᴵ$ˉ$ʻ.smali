@@ -3,12 +3,12 @@
 .source "SourceFile"
 
 # interfaces
-.implements Ljava/lang/Runnable;
+.implements Landroid/view/View$OnClickListener;
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lʾˉ/ᴵᴵ$ˉ;->run()V
+    value = Lʾˉ/ᴵᴵ$ˉ;->getView(ILandroid/view/View;Landroid/view/ViewGroup;)Landroid/view/View;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,138 +18,205 @@
 
 
 # instance fields
-.field final synthetic ʻ:Ljava/io/File;
-
 .field final synthetic ʼ:Lʾˉ/ᴵᴵ$ˉ;
 
 
 # direct methods
-.method constructor <init>(Lʾˉ/ᴵᴵ$ˉ;Ljava/io/File;)V
+.method constructor <init>(Lʾˉ/ᴵᴵ$ˉ;)V
     .locals 0
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "()V"
-        }
-    .end annotation
 
     .line 1
     iput-object p1, p0, Lʾˉ/ᴵᴵ$ˉ$ʻ;->ʼ:Lʾˉ/ᴵᴵ$ˉ;
 
     .line 2
     .line 3
-    iput-object p2, p0, Lʾˉ/ᴵᴵ$ˉ$ʻ;->ʻ:Ljava/io/File;
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 4
     .line 5
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
     .line 6
-    .line 7
-    .line 8
     return-void
 .end method
 
 
 # virtual methods
-.method public run()V
-    .locals 6
+.method public onClick(Landroid/view/View;)V
+    .locals 7
 
     .line 1
-    const v0, 0x7f11029d
+    invoke-virtual {p1}, Landroid/view/View;->getTag()Ljava/lang/Object;
 
     .line 2
     .line 3
     .line 4
-    invoke-static {v0}, Lʼˏ/ᵎ;->ˈˉ(I)Ljava/lang/String;
-
-    .line 5
-    .line 6
-    .line 7
     move-result-object v0
 
+    .line 5
+    check-cast v0, Lʼٴ/ʽ;
+
+    .line 6
+    .line 7
+    iget-object v0, v0, Lʼٴ/ʽ;->ʻ:Ljava/lang/String;
+
     .line 8
-    new-instance v1, Ljava/lang/StringBuilder;
-
     .line 9
-    .line 10
-    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
+    invoke-static {v0}, Lʾˉ/ᴵᴵ;->ˉˎ(Ljava/lang/Object;)V
 
+    .line 10
     .line 11
     .line 12
-    .line 13
-    const v2, 0x7f1101e4
+    new-instance v0, Lʼٴ/ʻ;
 
+    .line 13
     .line 14
+    invoke-static {}, Lʾˉ/ᴵᴵ;->ˈי()Landroid/content/Context;
+
     .line 15
     .line 16
-    invoke-static {v2}, Lʼˏ/ᵎ;->ˈˉ(I)Ljava/lang/String;
-
     .line 17
-    .line 18
-    .line 19
-    move-result-object v2
+    move-result-object v1
 
+    .line 18
+    sget-object v2, Lʾˉ/ᴵᴵ;->ʼᵎ:Lʾˉ/ᵎ;
+
+    .line 19
     .line 20
-    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    iget-object v2, v2, Lʾˉ/ᵎ;->ʻ:Ljava/lang/String;
 
     .line 21
     .line 22
-    .line 23
-    const-string v2, " "
+    invoke-direct {v0, v1, v2}, Lʼٴ/ʻ;-><init>(Landroid/content/Context;Ljava/lang/String;)V
 
+    .line 23
     .line 24
     .line 25
-    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {p1}, Landroid/view/View;->getTag()Ljava/lang/Object;
 
     .line 26
     .line 27
     .line 28
-    iget-object v2, p0, Lʾˉ/ᴵᴵ$ˉ$ʻ;->ʻ:Ljava/io/File;
+    move-result-object v1
 
     .line 29
-    .line 30
-    invoke-virtual {v2}, Ljava/io/File;->length()J
+    check-cast v1, Lʼٴ/ʽ;
 
+    .line 30
     .line 31
+    invoke-virtual {v0, v1}, Lʼٴ/ʻ;->ʻ(Lʼٴ/ʽ;)V
+
     .line 32
     .line 33
-    move-result-wide v2
-
     .line 34
-    const-wide/32 v4, 0x100000
+    iget-object v0, p0, Lʾˉ/ᴵᴵ$ˉ$ʻ;->ʼ:Lʾˉ/ᴵᴵ$ˉ;
 
     .line 35
     .line 36
-    .line 37
-    div-long/2addr v2, v4
+    iget-object v0, v0, Lʾˉ/ᴵᴵ$ˉ;->ʼ:Landroid/widget/ArrayAdapter;
 
+    .line 37
     .line 38
-    invoke-virtual {v1, v2, v3}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
+    invoke-virtual {p1}, Landroid/view/View;->getTag()Ljava/lang/Object;
 
     .line 39
     .line 40
     .line 41
-    const-string v2, " Mb"
+    move-result-object p1
 
     .line 42
-    .line 43
-    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    check-cast p1, Lʼٴ/ʽ;
 
+    .line 43
     .line 44
+    invoke-virtual {v0, p1}, Landroid/widget/ArrayAdapter;->remove(Ljava/lang/Object;)V
+
     .line 45
     .line 46
-    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
     .line 47
+    iget-object p1, p0, Lʾˉ/ᴵᴵ$ˉ$ʻ;->ʼ:Lʾˉ/ᴵᴵ$ˉ;
+
     .line 48
     .line 49
-    move-result-object v1
+    iget-object p1, p1, Lʾˉ/ᴵᴵ$ˉ;->ʼ:Landroid/widget/ArrayAdapter;
 
     .line 50
-    invoke-static {v0, v1}, Lʾˉ/ᴵᴵ;->ˋⁱ(Ljava/lang/String;Ljava/lang/String;)V
-
     .line 51
+    invoke-virtual {p1}, Landroid/widget/ArrayAdapter;->getCount()I
+
     .line 52
     .line 53
+    .line 54
+    move-result p1
+
+    .line 55
+    if-nez p1, :cond_0
+
+    .line 56
+    .line 57
+    iget-object p1, p0, Lʾˉ/ᴵᴵ$ˉ$ʻ;->ʼ:Lʾˉ/ᴵᴵ$ˉ;
+
+    .line 58
+    .line 59
+    iget-object p1, p1, Lʾˉ/ᴵᴵ$ˉ;->ʼ:Landroid/widget/ArrayAdapter;
+
+    .line 60
+    .line 61
+    new-instance v6, Lʼٴ/ʽ;
+
+    .line 62
+    .line 63
+    const v0, 0x7f110191
+
+    .line 64
+    .line 65
+    .line 66
+    invoke-static {v0}, Lʼˏ/ᵢ;->ˈי(I)Ljava/lang/String;
+
+    .line 67
+    .line 68
+    .line 69
+    move-result-object v1
+
+    .line 70
+    const/4 v4, 0x0
+
+    .line 71
+    const/4 v5, 0x0
+
+    .line 72
+    const-string v2, ""
+
+    .line 73
+    .line 74
+    const-string v3, ""
+
+    .line 75
+    .line 76
+    move-object v0, v6
+
+    .line 77
+    invoke-direct/range {v0 .. v5}, Lʼٴ/ʽ;-><init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;II)V
+
+    .line 78
+    .line 79
+    .line 80
+    invoke-virtual {p1, v6}, Landroid/widget/ArrayAdapter;->add(Ljava/lang/Object;)V
+
+    .line 81
+    .line 82
+    .line 83
+    :cond_0
+    iget-object p1, p0, Lʾˉ/ᴵᴵ$ˉ$ʻ;->ʼ:Lʾˉ/ᴵᴵ$ˉ;
+
+    .line 84
+    .line 85
+    iget-object p1, p1, Lʾˉ/ᴵᴵ$ˉ;->ʼ:Landroid/widget/ArrayAdapter;
+
+    .line 86
+    .line 87
+    invoke-virtual {p1}, Landroid/widget/ArrayAdapter;->notifyDataSetChanged()V
+
+    .line 88
+    .line 89
+    .line 90
     return-void
 .end method

@@ -88,7 +88,7 @@
 
     .line 9
     .line 10
-    invoke-static {}, Lʾˉ/ʼʼ;->ˈי()Landroid/content/Context;
+    invoke-static {}, Lʾˉ/ᴵᴵ;->ˈי()Landroid/content/Context;
 
     .line 11
     .line 12
@@ -207,7 +207,7 @@
     move-result-object v6
 
     .line 71
-    invoke-static {}, Lʾˉ/ʼʼ;->ˈᵢ()I
+    invoke-static {}, Lʾˉ/ᴵᴵ;->ˈᵢ()I
 
     .line 72
     .line 73
@@ -232,7 +232,7 @@
     move-result-object v6
 
     .line 84
-    invoke-static {}, Lʾˉ/ʼʼ;->ˈᵢ()I
+    invoke-static {}, Lʾˉ/ᴵᴵ;->ˈᵢ()I
 
     .line 85
     .line 86
@@ -257,7 +257,7 @@
     move-result-object v6
 
     .line 97
-    invoke-static {}, Lʾˉ/ʼʼ;->ˈᵢ()I
+    invoke-static {}, Lʾˉ/ᴵᴵ;->ˈᵢ()I
 
     .line 98
     .line 99
@@ -337,7 +337,7 @@
     move-result-object v6
 
     .line 137
-    invoke-static {}, Lʾˉ/ʼʼ;->ˈᵢ()I
+    invoke-static {}, Lʾˉ/ᴵᴵ;->ˈᵢ()I
 
     .line 138
     .line 139
@@ -772,7 +772,7 @@
 
     .line 362
     .line 363
-    sget-boolean v6, Lʾˉ/ʼʼ;->ˈᴵ:Z
+    sget-boolean v6, Lʾˉ/ᴵᴵ;->ˈᴵ:Z
 
     .line 364
     .line 365
@@ -780,7 +780,7 @@
 
     .line 366
     .line 367
-    sget-boolean v19, Lʾˉ/ʼʼ;->ˈᵎ:Z
+    sget-boolean v19, Lʾˉ/ᴵᴵ;->ˈᵎ:Z
 
     .line 368
     .line 369
@@ -801,7 +801,7 @@
     .line 375
     .line 376
     .line 377
-    sget-boolean v19, Lʾˉ/ʼʼ;->ʿי:Z
+    sget-boolean v19, Lʾˉ/ᴵᴵ;->ʿי:Z
 
     .line 378
     .line 379
@@ -867,7 +867,7 @@
 
     .line 410
     .line 411
-    sget v1, Lʾˉ/ʼʼ;->ʾᐧ:I
+    sget v1, Lʾˉ/ᴵᴵ;->ʾᐧ:I
 
     .line 412
     .line 413
@@ -963,7 +963,7 @@
 
     .line 459
     :cond_a
-    sget-boolean v1, Lʾˉ/ʼʼ;->ˈـ:Z
+    sget-boolean v1, Lʾˉ/ᴵᴵ;->ˈـ:Z
 
     .line 460
     .line 461
@@ -1141,7 +1141,7 @@
 
     .line 546
     .line 547
-    sget-boolean v6, Lʾˉ/ʼʼ;->ˈᵔ:Z
+    sget-boolean v6, Lʾˉ/ᴵᴵ;->ˈᵔ:Z
 
     .line 548
     .line 549
@@ -1154,7 +1154,7 @@
     .line 552
     .line 553
     .line 554
-    sget-boolean v6, Lʾˉ/ʼʼ;->ʿי:Z
+    sget-boolean v6, Lʾˉ/ᴵᴵ;->ʿי:Z
 
     .line 555
     .line 556
@@ -1188,7 +1188,7 @@
 
     .line 570
     :cond_f
-    sget-boolean v6, Lʾˉ/ʼʼ;->ˈـ:Z
+    sget-boolean v6, Lʾˉ/ᴵᴵ;->ˈـ:Z
 
     .line 571
     .line 572
@@ -1420,7 +1420,7 @@
 
     .line 686
     .line 687
-    sget v6, Lʾˉ/ʼʼ;->ʾᐧ:I
+    sget v6, Lʾˉ/ᴵᴵ;->ʾᐧ:I
 
     .line 688
     .line 689
@@ -1513,7 +1513,7 @@
     move-result-object v13
 
     .line 734
-    invoke-static {}, Lʾˉ/ʼʼ;->ˈᵢ()I
+    invoke-static {}, Lʾˉ/ᴵᴵ;->ˈᵢ()I
 
     .line 735
     .line 736
@@ -1594,7 +1594,7 @@
     .line 777
     .line 778
     .line 779
-    sget-boolean v6, Lʾˉ/ʼʼ;->ˈٴ:Z
+    sget-boolean v6, Lʾˉ/ᴵᴵ;->ˈٴ:Z
 
     .line 780
     .line 781
@@ -1602,7 +1602,7 @@
 
     .line 782
     .line 783
-    sget-boolean v6, Lʾˉ/ʼʼ;->ˈᵢ:Z
+    sget-boolean v6, Lʾˉ/ᴵᴵ;->ˈᵢ:Z
 
     .line 784
     .line 785
@@ -1614,7 +1614,7 @@
 
     .line 788
     :cond_16
-    sget-boolean v6, Lʾˉ/ʼʼ;->ˈـ:Z
+    sget-boolean v6, Lʾˉ/ᴵᴵ;->ˈـ:Z
 
     .line 789
     .line 790
@@ -1670,7 +1670,7 @@
     .line 813
     .line 814
     .line 815
-    sget-boolean v6, Lʾˉ/ʼʼ;->ˈⁱ:Z
+    sget-boolean v6, Lʾˉ/ᴵᴵ;->ˈⁱ:Z
 
     .line 816
     .line 817
@@ -1678,7 +1678,7 @@
 
     .line 818
     .line 819
-    sget-boolean v6, Lʾˉ/ʼʼ;->ʿי:Z
+    sget-boolean v6, Lʾˉ/ᴵᴵ;->ʿי:Z
 
     .line 820
     .line 821

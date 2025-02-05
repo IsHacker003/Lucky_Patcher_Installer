@@ -3,12 +3,12 @@
 .source "SourceFile"
 
 # interfaces
-.implements Ljava/lang/Runnable;
+.implements Landroid/content/DialogInterface$OnClickListener;
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lʾˉ/ᴵᴵ;->ˉˋ()V
+    value = Lʾˉ/ᴵᴵ;->ʿˎ()V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,112 +18,128 @@
 
 
 # instance fields
-.field final synthetic ʻ:Lʾˉ/ᴵᴵ;
+.field final synthetic ʼ:Lcom/ui/EditTextFix;
+
+.field final synthetic ʽ:Lʾˉ/ᴵᴵ;
 
 
 # direct methods
-.method constructor <init>(Lʾˉ/ᴵᴵ;)V
+.method constructor <init>(Lʾˉ/ᴵᴵ;Lcom/ui/EditTextFix;)V
     .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()V"
+        }
+    .end annotation
 
     .line 1
-    iput-object p1, p0, Lʾˉ/ᴵᴵ$ˆʿ;->ʻ:Lʾˉ/ᴵᴵ;
+    iput-object p1, p0, Lʾˉ/ᴵᴵ$ˆʿ;->ʽ:Lʾˉ/ᴵᴵ;
 
     .line 2
     .line 3
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    iput-object p2, p0, Lʾˉ/ᴵᴵ$ˆʿ;->ʼ:Lcom/ui/EditTextFix;
 
     .line 4
     .line 5
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
     .line 6
+    .line 7
+    .line 8
     return-void
 .end method
 
 
 # virtual methods
-.method public run()V
-    .locals 2
+.method public onClick(Landroid/content/DialogInterface;I)V
+    .locals 1
 
     .line 1
-    :try_start_0
-    sget-boolean v0, Lʾˉ/ᴵᴵ;->ʽﾞ:Z
+    iget-object p1, p0, Lʾˉ/ᴵᴵ$ˆʿ;->ʼ:Lcom/ui/EditTextFix;
 
     .line 2
     .line 3
-    if-eqz v0, :cond_0
+    invoke-virtual {p1}, Landroidx/appcompat/widget/ˑ;->getText()Landroid/text/Editable;
 
     .line 4
     .line 5
-    new-instance v0, Lʾˉ/ᴵᴵ$ˆʿ$ʻ;
-
     .line 6
+    move-result-object p1
+
     .line 7
-    invoke-direct {v0, p0}, Lʾˉ/ᴵᴵ$ˆʿ$ʻ;-><init>(Lʾˉ/ᴵᴵ$ˆʿ;)V
+    invoke-virtual {p1}, Ljava/lang/Object;->toString()Ljava/lang/String;
 
     .line 8
     .line 9
     .line 10
-    invoke-static {v0}, Lʾˉ/ᴵᴵ;->ˋʻ(Ljava/lang/Runnable;)V
+    move-result-object p2
 
     .line 11
+    const-string v0, ""
+
     .line 12
     .line 13
-    goto :goto_0
+    invoke-virtual {p2, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     .line 14
-    :cond_0
-    invoke-static {}, Lʾˉ/ᴵᴵ;->ˈᵎ()Landroid/content/pm/PackageManager;
-
     .line 15
     .line 16
+    move-result p2
+
     .line 17
-    move-result-object v0
+    if-nez p2, :cond_0
 
     .line 18
-    sget-object v1, Lʾˉ/ᴵᴵ;->ʼᵎ:Lʾˉ/ᵎ;
-
     .line 19
+    new-instance p2, Lʾˉ/ᴵᴵ$ˆʿ$ʻ;
+
     .line 20
-    iget-object v1, v1, Lʾˉ/ᵎ;->ʻ:Ljava/lang/String;
-
     .line 21
-    .line 22
-    invoke-virtual {v0, v1}, Landroid/content/pm/PackageManager;->getLaunchIntentForPackage(Ljava/lang/String;)Landroid/content/Intent;
+    invoke-direct {p2, p0, p1}, Lʾˉ/ᴵᴵ$ˆʿ$ʻ;-><init>(Lʾˉ/ᴵᴵ$ˆʿ;Landroid/text/Editable;)V
 
+    .line 22
     .line 23
     .line 24
+    invoke-static {p2}, Lʾˉ/ᴵᴵ;->ˋʻ(Ljava/lang/Runnable;)V
+
     .line 25
-    move-result-object v0
-
     .line 26
-    iget-object v1, p0, Lʾˉ/ᴵᴵ$ˆʿ;->ʻ:Lʾˉ/ᴵᴵ;
-
     .line 27
+    goto :goto_0
+
     .line 28
-    invoke-virtual {v1, v0}, Landroidx/fragment/app/Fragment;->ʾˎ(Landroid/content/Intent;)V
-    :try_end_0
-    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
+    :cond_0
+    const p1, 0x7f1104d3
 
     .line 29
     .line 30
     .line 31
-    goto :goto_0
+    invoke-static {p1}, Lʼˏ/ᵢ;->ˈי(I)Ljava/lang/String;
 
     .line 32
-    :catch_0
-    new-instance v0, Lʾˉ/ᴵᴵ$ˆʿ$ʼ;
-
     .line 33
     .line 34
-    invoke-direct {v0, p0}, Lʾˉ/ᴵᴵ$ˆʿ$ʼ;-><init>(Lʾˉ/ᴵᴵ$ˆʿ;)V
+    move-result-object p1
 
     .line 35
+    const p2, 0x7f1103f9
+
     .line 36
     .line 37
-    invoke-static {v0}, Lʾˉ/ᴵᴵ;->ˊⁱ(Ljava/lang/Runnable;)V
-
     .line 38
+    invoke-static {p2}, Lʼˏ/ᵢ;->ˈי(I)Ljava/lang/String;
+
     .line 39
     .line 40
+    .line 41
+    move-result-object p2
+
+    .line 42
+    invoke-static {p1, p2}, Lʾˉ/ᴵᴵ;->ˋⁱ(Ljava/lang/String;Ljava/lang/String;)V
+
+    .line 43
+    .line 44
+    .line 45
     :goto_0
     return-void
 .end method

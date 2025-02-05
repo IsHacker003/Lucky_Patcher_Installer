@@ -4346,7 +4346,7 @@
     move-result-object v11
 
     .line 88
-    invoke-static {v11}, Lʾˉ/ʼʼ;->ˉˎ(Ljava/lang/Object;)V
+    invoke-static {v11}, Lʾˉ/ᴵᴵ;->ˉˎ(Ljava/lang/Object;)V
 
     .line 89
     .line 90
@@ -6376,7 +6376,7 @@
     .line 41
     .line 42
     .line 43
-    sget v8, Lʾˉ/ʼʼ;->ʾᐧ:I
+    sget v8, Lʾˉ/ᴵᴵ;->ʾᐧ:I
 
     .line 44
     .line 45
@@ -6850,7 +6850,7 @@
 
     .line 274
     :cond_8
-    sget v13, Lʾˉ/ʼʼ;->ʾᐧ:I
+    sget v13, Lʾˉ/ᴵᴵ;->ʾᐧ:I
 
     .line 275
     .line 276

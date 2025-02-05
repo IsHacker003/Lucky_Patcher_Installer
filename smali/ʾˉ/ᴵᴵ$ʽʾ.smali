@@ -3,12 +3,12 @@
 .source "SourceFile"
 
 # interfaces
-.implements Landroid/content/DialogInterface$OnClickListener;
+.implements Ljava/lang/Runnable;
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lʾˉ/ᴵᴵ;->ʼˉ(I[Ljava/lang/String;[I)V
+    value = Lʾˉ/ᴵᴵ;->ʿٴ(Ljava/io/File;ZZLjava/lang/String;ZZ)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -17,46 +17,38 @@
 .end annotation
 
 
-# instance fields
-.field final synthetic ʼ:Lʾˉ/ᴵᴵ;
-
-
 # direct methods
-.method constructor <init>(Lʾˉ/ᴵᴵ;)V
+.method constructor <init>()V
     .locals 0
 
     .line 1
-    iput-object p1, p0, Lʾˉ/ᴵᴵ$ʽʾ;->ʼ:Lʾˉ/ᴵᴵ;
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
     .line 3
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
     .line 4
-    .line 5
-    .line 6
     return-void
 .end method
 
 
 # virtual methods
-.method public onClick(Landroid/content/DialogInterface;I)V
-    .locals 0
+.method public run()V
+    .locals 1
 
     .line 1
-    iget-object p1, p0, Lʾˉ/ᴵᴵ$ʽʾ;->ʼ:Lʾˉ/ᴵᴵ;
+    const/16 v0, 0x17
 
     .line 2
     .line 3
-    invoke-virtual {p1}, Lʾˉ/ᴵᴵ;->ˈˑ()Landroidx/fragment/app/ʿ;
+    invoke-static {v0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     .line 4
     .line 5
     .line 6
-    move-result-object p1
+    move-result-object v0
 
     .line 7
-    invoke-virtual {p1}, Landroid/app/Activity;->finish()V
+    invoke-static {v0}, Lʾˉ/ᴵᴵ;->ˊˏ(Ljava/lang/Integer;)V
 
     .line 8
     .line 9

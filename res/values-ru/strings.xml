@@ -52,7 +52,7 @@
     <string name="android_patches_dialog_remove_patch_3">Удалить патч \"%1s\"</string>
     <string name="android_patches_dialog_remove_patches_1_and_2" formatted="false">Удалить патчи \"%1s\" и \"%2s\"</string>
     <string name="android_patches_dialog_use_magisk_module_for_patches">Использовать Magisk модуль для применения патчей</string>
-    <string name="android_patches_dialog_use_magisk_module_zygisk_for_patches">Использовать Magisk модудь - Zygisk (от vova7878@4pda)</string>
+    <string name="android_patches_dialog_use_magisk_module_zygisk_for_patches">Использовать Magisk модуль - Zygisk (от vova7878@4pda)</string>
     <string name="android_patches_for_bootlist">Андроид патч для dalvik кэша</string>
     <string name="android_patches_for_bootlist_status">Применение при перезагрузке</string>
     <string name="android_patches_xposed_need_message">Используйте Xposed(lSPosed), чтобы применить этот патч</string>

@@ -53,7 +53,7 @@
     .end annotation
 
     .line 1
-    sget-object p1, Lʾˉ/ʼʼ;->ʼˎ:Lʾˉ/ʼʼ;
+    sget-object p1, Lʾˉ/ᴵᴵ;->ʼˎ:Lʾˉ/ᴵᴵ;
 
     .line 2
     .line 3
@@ -85,7 +85,7 @@
 
     .line 16
     .line 17
-    invoke-virtual {p1, p2}, Lʾˉ/ʼʼ;->ˊᵎ(I)V
+    invoke-virtual {p1, p2}, Lʾˉ/ᴵᴵ;->ˊᵎ(I)V
 
     .line 18
     .line 19

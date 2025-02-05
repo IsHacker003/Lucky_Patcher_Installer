@@ -70,7 +70,7 @@
     const/4 p2, 0x1
 
     .line 3
-    sget-object p4, Lʾˉ/ʼʼ;->ʽˈ:Lʾˉ/ʽ;
+    sget-object p4, Lʾˉ/ᴵᴵ;->ʽˈ:Lʾˉ/ʽ;
 
     .line 4
     .line 5
@@ -271,7 +271,7 @@
     .line 109
     .line 110
     :goto_0
-    invoke-static {}, Lʾˉ/ʼʼ;->ˈᵎ()Landroid/content/pm/PackageManager;
+    invoke-static {}, Lʾˉ/ᴵᴵ;->ˈᵎ()Landroid/content/pm/PackageManager;
 
     .line 111
     .line 112
@@ -328,7 +328,7 @@
     .line 136
     .line 137
     :goto_1
-    sget-object p1, Lʾˉ/ʼʼ;->ʽˈ:Lʾˉ/ʽ;
+    sget-object p1, Lʾˉ/ᴵᴵ;->ʽˈ:Lʾˉ/ʽ;
 
     .line 138
     .line 139
@@ -345,20 +345,20 @@
 
     .line 145
     .line 146
-    sget-object p1, Lʾˉ/ʼʼ;->ʼᴵ:Lʾˉ/ﹳ;
+    sget-object p1, Lʾˉ/ᴵᴵ;->ʼᴵ:Lʾˉ/ᵔ;
 
     .line 147
     .line 148
-    sget-object p3, Lʾˉ/ʼʼ;->ʼᵎ:Lʾˉ/ᵎ;
+    sget-object p3, Lʾˉ/ᴵᴵ;->ʼᵎ:Lʾˉ/ᵎ;
 
     .line 149
     .line 150
-    invoke-virtual {p1, p3}, Lʾˉ/ﹳ;->ˎ(Lʾˉ/ᵎ;)V
+    invoke-virtual {p1, p3}, Lʾˉ/ᵔ;->ˊ(Lʾˉ/ᵎ;)V
 
     .line 151
     .line 152
     .line 153
-    invoke-static {}, Lʾˉ/ʼʼ;->ˈˏ()Landroid/content/SharedPreferences;
+    invoke-static {}, Lʾˉ/ᴵᴵ;->ˈˏ()Landroid/content/SharedPreferences;
 
     .line 154
     .line 155

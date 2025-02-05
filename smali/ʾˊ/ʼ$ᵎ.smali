@@ -56,7 +56,7 @@
 
     .line 1
     :try_start_0
-    invoke-static {}, Lʾˉ/ʼʼ;->ˈᵎ()Landroid/content/pm/PackageManager;
+    invoke-static {}, Lʾˉ/ᴵᴵ;->ˈᵎ()Landroid/content/pm/PackageManager;
 
     .line 2
     .line 3
@@ -80,7 +80,7 @@
     move-result-object p2
 
     .line 13
-    sget-boolean v0, Lʾˉ/ʼʼ;->ʽﾞ:Z
+    sget-boolean v0, Lʾˉ/ᴵᴵ;->ʽﾞ:Z
 
     .line 14
     .line 15
@@ -115,7 +115,7 @@
 
     .line 31
     :cond_0
-    sget-object v0, Lʾˉ/ʼʼ;->ʼﾞ:Lru/aaaaacca/installer/MainActivity;
+    sget-object v0, Lʾˉ/ᴵᴵ;->ʼﾞ:Lru/aaaaaccc/installer/MainActivity;
 
     .line 32
     .line 33
@@ -134,11 +134,11 @@
 
     .line 39
     :catch_0
-    sget-object p2, Lʾˉ/ʼʼ;->ʼˎ:Lʾˉ/ʼʼ;
+    sget-object p2, Lʾˉ/ᴵᴵ;->ʼˎ:Lʾˉ/ᴵᴵ;
 
     .line 40
     .line 41
-    invoke-virtual {p2}, Lʾˉ/ʼʼ;->ˈˑ()Landroidx/fragment/app/ʿ;
+    invoke-virtual {p2}, Lʾˉ/ᴵᴵ;->ˈˑ()Landroidx/fragment/app/ʿ;
 
     .line 42
     .line 43
@@ -198,7 +198,7 @@
     .line 67
     .line 68
     :goto_1
-    sget-object p1, Lʾˉ/ʼʼ;->ʻﹶ:Ljava/lang/String;
+    sget-object p1, Lʾˉ/ᴵᴵ;->ʻﹶ:Ljava/lang/String;
 
     .line 69
     .line 70
@@ -214,7 +214,7 @@
     move-result-object p1
 
     .line 76
-    invoke-static {p1}, Lʾˉ/ʼʼ;->ˊˏ(Ljava/lang/Integer;)V
+    invoke-static {p1}, Lʾˉ/ᴵᴵ;->ˊˏ(Ljava/lang/Integer;)V
 
     .line 77
     .line 78

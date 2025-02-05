@@ -64,7 +64,7 @@
 
     .line 5
     .line 6
-    sget-object v1, Lʾˉ/ʼʼ;->ʼʽ:Ljava/lang/String;
+    sget-object v1, Lʾˉ/ᴵᴵ;->ʼʽ:Ljava/lang/String;
 
     .line 7
     .line 8
@@ -127,7 +127,7 @@
     move-result-object p2
 
     .line 38
-    invoke-static {}, Lʾˉ/ʼʼ;->ˈי()Landroid/content/Context;
+    invoke-static {}, Lʾˉ/ᴵᴵ;->ˈי()Landroid/content/Context;
 
     .line 39
     .line 40
@@ -178,12 +178,12 @@
     move-result-object v1
 
     .line 63
-    invoke-static {p2, v1}, Lʾˉ/ʼʼ;->ˋⁱ(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {p2, v1}, Lʾˉ/ᴵᴵ;->ˋⁱ(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 64
     .line 65
     .line 66
-    invoke-static {v4}, Lʾˉ/ʼʼ;->ˊˏ(Ljava/lang/Integer;)V
+    invoke-static {v4}, Lʾˉ/ᴵᴵ;->ˊˏ(Ljava/lang/Integer;)V
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
@@ -203,7 +203,7 @@
     .line 73
     :cond_0
     :try_start_1
-    invoke-static {}, Lʾˉ/ʼʼ;->ˈᵎ()Landroid/content/pm/PackageManager;
+    invoke-static {}, Lʾˉ/ᴵᴵ;->ˈᵎ()Landroid/content/pm/PackageManager;
 
     .line 74
     .line 75
@@ -227,7 +227,7 @@
     move-result-object p2
 
     .line 85
-    invoke-static {}, Lʾˉ/ʼʼ;->ˈᵎ()Landroid/content/pm/PackageManager;
+    invoke-static {}, Lʾˉ/ᴵᴵ;->ˈᵎ()Landroid/content/pm/PackageManager;
 
     .line 86
     .line 87
@@ -306,11 +306,11 @@
     .line 121
     .line 122
     :goto_0
-    sget-object p2, Lʾˉ/ʼʼ;->ʻﹶ:Ljava/lang/String;
+    sget-object p2, Lʾˉ/ᴵᴵ;->ʻﹶ:Ljava/lang/String;
 
     .line 123
     .line 124
-    invoke-static {v4}, Lʾˉ/ʼʼ;->ˊˏ(Ljava/lang/Integer;)V
+    invoke-static {v4}, Lʾˉ/ᴵᴵ;->ˊˏ(Ljava/lang/Integer;)V
     :try_end_2
     .catchall {:try_start_2 .. :try_end_2} :catchall_0
 
@@ -327,7 +327,7 @@
     .line 130
     .line 131
     :try_start_3
-    invoke-static {}, Lʾˉ/ʼʼ;->ˈᵎ()Landroid/content/pm/PackageManager;
+    invoke-static {}, Lʾˉ/ᴵᴵ;->ˈᵎ()Landroid/content/pm/PackageManager;
 
     .line 132
     .line 133
@@ -351,7 +351,7 @@
     move-result-object p2
 
     .line 143
-    invoke-static {}, Lʾˉ/ʼʼ;->ˈᵎ()Landroid/content/pm/PackageManager;
+    invoke-static {}, Lʾˉ/ᴵᴵ;->ˈᵎ()Landroid/content/pm/PackageManager;
 
     .line 144
     .line 145
@@ -428,11 +428,11 @@
     .line 179
     .line 180
     :goto_2
-    sget-object p1, Lʾˉ/ʼʼ;->ʻﹶ:Ljava/lang/String;
+    sget-object p1, Lʾˉ/ᴵᴵ;->ʻﹶ:Ljava/lang/String;
 
     .line 181
     .line 182
-    invoke-static {v4}, Lʾˉ/ʼʼ;->ˊˏ(Ljava/lang/Integer;)V
+    invoke-static {v4}, Lʾˉ/ᴵᴵ;->ˊˏ(Ljava/lang/Integer;)V
 
     .line 183
     .line 184
@@ -457,12 +457,12 @@
     move-result-object p2
 
     .line 194
-    invoke-static {p1, p2}, Lʾˉ/ʼʼ;->ˋⁱ(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {p1, p2}, Lʾˉ/ᴵᴵ;->ˋⁱ(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 195
     .line 196
     .line 197
-    invoke-static {v4}, Lʾˉ/ʼʼ;->ˊˏ(Ljava/lang/Integer;)V
+    invoke-static {v4}, Lʾˉ/ᴵᴵ;->ˊˏ(Ljava/lang/Integer;)V
 
     .line 198
     .line 199
@@ -472,7 +472,7 @@
 
     .line 201
     .line 202
-    invoke-static {}, Lʾˉ/ʼʼ;->ˈי()Landroid/content/Context;
+    invoke-static {}, Lʾˉ/ᴵᴵ;->ˈי()Landroid/content/Context;
 
     .line 203
     .line 204
@@ -504,7 +504,7 @@
     .line 5
     .line 6
     :try_start_0
-    invoke-static {}, Lʾˉ/ʼʼ;->ˈᵎ()Landroid/content/pm/PackageManager;
+    invoke-static {}, Lʾˉ/ᴵᴵ;->ˈᵎ()Landroid/content/pm/PackageManager;
 
     .line 7
     .line 8
@@ -532,7 +532,7 @@
     move-result-object v0
 
     .line 20
-    invoke-static {}, Lʾˉ/ʼʼ;->ˈᵎ()Landroid/content/pm/PackageManager;
+    invoke-static {}, Lʾˉ/ᴵᴵ;->ˈᵎ()Landroid/content/pm/PackageManager;
 
     .line 21
     .line 22
@@ -626,7 +626,7 @@
     .line 65
     :cond_0
     :goto_0
-    sget-object v0, Lʾˉ/ʼʼ;->ʻﹶ:Ljava/lang/String;
+    sget-object v0, Lʾˉ/ᴵᴵ;->ʻﹶ:Ljava/lang/String;
 
     .line 66
     .line 67
@@ -638,7 +638,7 @@
     move-result-object p1
 
     .line 71
-    invoke-static {p1}, Lʾˉ/ʼʼ;->ˊˏ(Ljava/lang/Integer;)V
+    invoke-static {p1}, Lʾˉ/ᴵᴵ;->ˊˏ(Ljava/lang/Integer;)V
 
     .line 72
     .line 73

@@ -127,12 +127,12 @@
     .line 43
     .line 44
     .line 45
-    const v3, 0x7f1100d3
+    const v3, 0x7f1100d6
 
     .line 46
     .line 47
     .line 48
-    invoke-static {v3}, Lʼˏ/ᵎ;->ˈˉ(I)Ljava/lang/String;
+    invoke-static {v3}, Lʼˏ/ᵢ;->ˈי(I)Ljava/lang/String;
 
     .line 49
     .line 50
@@ -170,7 +170,7 @@
 
     .line 67
     .line 68
-    invoke-static {v2, v4, v5}, Lʼˏ/ᵎ;->ʾʻ(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Landroid/text/SpannableString;
+    invoke-static {v2, v4, v5}, Lʼˏ/ᵢ;->ʾʿ(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Landroid/text/SpannableString;
 
     .line 69
     .line 70
@@ -225,7 +225,7 @@
     .line 94
     .line 95
     .line 96
-    const-string v7, "Backup Apk for "
+    const-string v7, "Backup App Settings for "
 
     .line 97
     .line 98
@@ -256,232 +256,223 @@
     .line 111
     .line 112
     .line 113
-    const/4 v6, 0x0
+    iget-object v6, p0, Lʾˉ/ᴵᴵ$ʼᴵ$ʻ;->ʻ:Lʾˉ/ᴵᴵ$ʼᴵ;
 
     .line 114
-    invoke-static {v2, v6}, Lʾˉ/ᴵᴵ;->ʿʼ(Lʾˉ/ᵎ;Z)Ljava/lang/String;
-
     .line 115
+    iget-object v6, v6, Lʾˉ/ᴵᴵ$ʼᴵ;->ʼ:Lʾˉ/ᴵᴵ;
+
     .line 116
     .line 117
-    move-result-object v6
+    const/4 v7, 0x0
 
     .line 118
-    new-instance v7, Ljava/io/File;
+    invoke-virtual {v6, v2, v7}, Lʾˉ/ᴵᴵ;->ʿʽ(Lʾˉ/ᵎ;Z)Z
 
     .line 119
     .line 120
-    invoke-direct {v7, v6}, Ljava/io/File;-><init>(Ljava/lang/String;)V
-
     .line 121
-    .line 122
-    .line 123
-    invoke-virtual {v7}, Ljava/io/File;->exists()Z
-
-    .line 124
-    .line 125
-    .line 126
     move-result v6
 
-    .line 127
+    .line 122
     const-string v7, " - "
 
-    .line 128
-    .line 129
+    .line 123
+    .line 124
     if-eqz v6, :cond_1
 
+    .line 125
+    .line 126
+    new-instance v6, Ljava/lang/StringBuilder;
+
+    .line 127
+    .line 128
+    invoke-direct {v6}, Ljava/lang/StringBuilder;-><init>()V
+
+    .line 129
     .line 130
     .line 131
-    new-instance v6, Ljava/lang/StringBuilder;
+    invoke-virtual {v6, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     .line 132
     .line 133
-    invoke-direct {v6}, Ljava/lang/StringBuilder;-><init>()V
-
     .line 134
+    iget-object v2, v2, Lʾˉ/ᵎ;->ʼ:Ljava/lang/String;
+
     .line 135
     .line 136
-    invoke-virtual {v6, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v6, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     .line 137
     .line 138
     .line 139
-    iget-object v2, v2, Lʾˉ/ᵎ;->ʼ:Ljava/lang/String;
+    invoke-virtual {v6, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     .line 140
     .line 141
-    invoke-virtual {v6, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
     .line 142
-    .line 143
-    .line 144
-    invoke-virtual {v6, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 145
-    .line 146
-    .line 147
     invoke-virtual {v6}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
+    .line 143
+    .line 144
+    .line 145
+    move-result-object v2
+
+    .line 146
+    invoke-static {v2, v4, v5}, Lʼˏ/ᵢ;->ʾʿ(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Landroid/text/SpannableString;
+
+    .line 147
     .line 148
     .line 149
-    .line 150
     move-result-object v2
+
+    .line 150
+    invoke-virtual {v1, v2}, Landroid/text/SpannableStringBuilder;->append(Ljava/lang/CharSequence;)Landroid/text/SpannableStringBuilder;
 
     .line 151
-    invoke-static {v2, v4, v5}, Lʼˏ/ᵎ;->ʾʻ(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Landroid/text/SpannableString;
-
     .line 152
     .line 153
+    const v2, 0x7f110478
+
     .line 154
-    move-result-object v2
-
     .line 155
-    invoke-virtual {v1, v2}, Landroid/text/SpannableStringBuilder;->append(Ljava/lang/CharSequence;)Landroid/text/SpannableStringBuilder;
-
     .line 156
+    invoke-static {v2}, Lʼˏ/ᵢ;->ˈי(I)Ljava/lang/String;
+
     .line 157
     .line 158
-    const v2, 0x7f110474
-
     .line 159
-    .line 160
-    .line 161
-    invoke-static {v2}, Lʼˏ/ᵎ;->ˈˉ(I)Ljava/lang/String;
-
-    .line 162
-    .line 163
-    .line 164
     move-result-object v2
 
-    .line 165
+    .line 160
     const-string v6, "#CC00FF00"
 
-    .line 166
-    .line 167
-    invoke-static {v2, v6, v5}, Lʼˏ/ᵎ;->ʾʻ(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Landroid/text/SpannableString;
+    .line 161
+    .line 162
+    invoke-static {v2, v6, v5}, Lʼˏ/ᵢ;->ʾʿ(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Landroid/text/SpannableString;
 
-    .line 168
-    .line 169
-    .line 170
+    .line 163
+    .line 164
+    .line 165
     move-result-object v2
 
-    .line 171
+    .line 166
     invoke-virtual {v1, v2}, Landroid/text/SpannableStringBuilder;->append(Ljava/lang/CharSequence;)Landroid/text/SpannableStringBuilder;
 
-    .line 172
-    .line 173
-    .line 174
+    .line 167
+    .line 168
+    .line 169
     goto :goto_0
 
-    .line 175
+    .line 170
     :cond_1
     new-instance v6, Ljava/lang/StringBuilder;
 
-    .line 176
-    .line 177
+    .line 171
+    .line 172
     invoke-direct {v6}, Ljava/lang/StringBuilder;-><init>()V
 
+    .line 173
+    .line 174
+    .line 175
+    invoke-virtual {v6, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 176
+    .line 177
     .line 178
+    iget-object v2, v2, Lʾˉ/ᵎ;->ʼ:Ljava/lang/String;
+
     .line 179
     .line 180
-    invoke-virtual {v6, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v6, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     .line 181
     .line 182
     .line 183
-    iget-object v2, v2, Lʾˉ/ᵎ;->ʼ:Ljava/lang/String;
+    invoke-virtual {v6, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     .line 184
     .line 185
-    invoke-virtual {v6, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
     .line 186
-    .line 187
-    .line 188
-    invoke-virtual {v6, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 189
-    .line 190
-    .line 191
     invoke-virtual {v6}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
+    .line 187
+    .line 188
+    .line 189
+    move-result-object v2
+
+    .line 190
+    invoke-static {v2, v4, v5}, Lʼˏ/ᵢ;->ʾʿ(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Landroid/text/SpannableString;
+
+    .line 191
     .line 192
     .line 193
-    .line 194
     move-result-object v2
+
+    .line 194
+    invoke-virtual {v1, v2}, Landroid/text/SpannableStringBuilder;->append(Ljava/lang/CharSequence;)Landroid/text/SpannableStringBuilder;
 
     .line 195
-    invoke-static {v2, v4, v5}, Lʼˏ/ᵎ;->ʾʻ(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Landroid/text/SpannableString;
-
     .line 196
     .line 197
+    const v2, 0x7f1101c2
+
     .line 198
-    move-result-object v2
-
     .line 199
-    invoke-virtual {v1, v2}, Landroid/text/SpannableStringBuilder;->append(Ljava/lang/CharSequence;)Landroid/text/SpannableStringBuilder;
-
     .line 200
+    invoke-static {v2}, Lʼˏ/ᵢ;->ˈי(I)Ljava/lang/String;
+
     .line 201
     .line 202
-    const v2, 0x7f1101c0
-
     .line 203
-    .line 204
-    .line 205
-    invoke-static {v2}, Lʼˏ/ᵎ;->ˈˉ(I)Ljava/lang/String;
-
-    .line 206
-    .line 207
-    .line 208
     move-result-object v2
 
-    .line 209
+    .line 204
     const-string v6, "#CCFF0000"
 
-    .line 210
-    .line 211
-    invoke-static {v2, v6, v5}, Lʼˏ/ᵎ;->ʾʻ(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Landroid/text/SpannableString;
+    .line 205
+    .line 206
+    invoke-static {v2, v6, v5}, Lʼˏ/ᵢ;->ʾʿ(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Landroid/text/SpannableString;
 
-    .line 212
-    .line 213
-    .line 214
+    .line 207
+    .line 208
+    .line 209
     move-result-object v2
 
-    .line 215
+    .line 210
     invoke-virtual {v1, v2}, Landroid/text/SpannableStringBuilder;->append(Ljava/lang/CharSequence;)Landroid/text/SpannableStringBuilder;
+
+    .line 211
+    .line 212
+    .line 213
+    goto/16 :goto_0
+
+    .line 214
+    .line 215
+    :cond_2
+    const v0, 0x7f11029f
 
     .line 216
     .line 217
     .line 218
-    goto/16 :goto_0
+    invoke-static {v0}, Lʼˏ/ᵢ;->ˈי(I)Ljava/lang/String;
 
     .line 219
     .line 220
-    :cond_2
-    const v0, 0x7f11029d
-
     .line 221
-    .line 222
-    .line 223
-    invoke-static {v0}, Lʼˏ/ᵎ;->ˈˉ(I)Ljava/lang/String;
-
-    .line 224
-    .line 225
-    .line 226
     move-result-object v0
 
-    .line 227
+    .line 222
     invoke-static {v0, v1}, Lʾˉ/ᴵᴵ;->ˋᵢ(Ljava/lang/String;Landroid/text/SpannableStringBuilder;)V
 
-    .line 228
-    .line 229
-    .line 230
+    .line 223
+    .line 224
+    .line 225
     invoke-static {}, Lʾˉ/ᴵᴵ;->ˊٴ()V
 
-    .line 231
-    .line 232
-    .line 233
+    .line 226
+    .line 227
+    .line 228
     :cond_3
     :goto_1
     return-void

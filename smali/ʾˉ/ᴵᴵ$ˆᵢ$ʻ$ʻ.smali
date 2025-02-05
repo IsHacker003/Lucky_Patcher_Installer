@@ -44,29 +44,32 @@
     .locals 2
 
     .line 1
-    const/16 v0, 0xb
+    :try_start_0
+    invoke-static {}, Lʾˉ/ᴵᴵ;->ˈˏ()Landroid/content/SharedPreferences;
 
     .line 2
     .line 3
-    invoke-static {v0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
-
     .line 4
-    .line 5
-    .line 6
     move-result-object v0
 
+    .line 5
+    invoke-interface {v0}, Landroid/content/SharedPreferences;->edit()Landroid/content/SharedPreferences$Editor;
+
+    .line 6
     .line 7
-    invoke-static {v0}, Lʾˉ/ᴵᴵ;->ˊˏ(Ljava/lang/Integer;)V
-
     .line 8
-    .line 9
-    .line 10
-    const v0, 0x7f1104cf
+    move-result-object v0
 
+    .line 9
+    sget-object v1, Lʾˉ/ᴵᴵ;->ʼᵎ:Lʾˉ/ᵎ;
+
+    .line 10
     .line 11
+    iget-object v1, v1, Lʾˉ/ᵎ;->ʻ:Ljava/lang/String;
+
     .line 12
     .line 13
-    invoke-static {v0}, Lʼˏ/ᵎ;->ˈˉ(I)Ljava/lang/String;
+    invoke-interface {v0, v1}, Landroid/content/SharedPreferences$Editor;->remove(Ljava/lang/String;)Landroid/content/SharedPreferences$Editor;
 
     .line 14
     .line 15
@@ -74,23 +77,39 @@
     move-result-object v0
 
     .line 17
-    const v1, 0x7f1104b7
+    invoke-interface {v0}, Landroid/content/SharedPreferences$Editor;->commit()Z
 
     .line 18
     .line 19
     .line 20
-    invoke-static {v1}, Lʼˏ/ᵎ;->ˈˉ(I)Ljava/lang/String;
+    sget-object v0, Lʾˉ/ᴵᴵ;->ʼᴵ:Lʾˉ/ᵔ;
 
     .line 21
     .line 22
-    .line 23
-    move-result-object v1
+    sget-object v1, Lʾˉ/ᴵᴵ;->ʼᵎ:Lʾˉ/ᵎ;
 
+    .line 23
     .line 24
-    invoke-static {v0, v1}, Lʾˉ/ᴵᴵ;->ˋⁱ(Ljava/lang/String;Ljava/lang/String;)V
+    iget-object v1, v1, Lʾˉ/ᵎ;->ʻ:Ljava/lang/String;
 
     .line 25
     .line 26
+    invoke-virtual {v0, v1}, Lʾˉ/ᵔ;->י(Ljava/lang/String;)V
+
     .line 27
+    .line 28
+    .line 29
+    sget-object v0, Lʾˉ/ᴵᴵ;->ʼᴵ:Lʾˉ/ᵔ;
+
+    .line 30
+    .line 31
+    invoke-virtual {v0}, Lʾˉ/ᵔ;->notifyDataSetChanged()V
+    :try_end_0
+    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
+
+    .line 32
+    .line 33
+    .line 34
+    :catch_0
     return-void
 .end method

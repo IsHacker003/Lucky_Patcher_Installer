@@ -81,7 +81,7 @@
     .line 11
     .line 12
     .line 13
-    sget-object v0, Lʾˉ/ʼʼ;->ʼᐧ:Ljava/lang/String;
+    sget-object v0, Lʾˉ/ᴵᴵ;->ʼᐧ:Ljava/lang/String;
 
     .line 14
     .line 15

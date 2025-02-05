@@ -71,7 +71,7 @@
     const/4 v1, 0x1
 
     .line 11
-    invoke-static {v1, v0}, Lʼˏ/ᵢ;->ˑˈ(ZLjava/lang/String;)Z
+    invoke-static {v1, v0}, Lʼˏ/ᵢ;->ˑˋ(ZLjava/lang/String;)Z
 
     .line 12
     .line 13
@@ -92,7 +92,7 @@
     .line 20
     .line 21
     .line 22
-    invoke-static {v0}, Lʾˉ/ʼʼ;->ˋʻ(Ljava/lang/Runnable;)V
+    invoke-static {v0}, Lʾˉ/ᴵᴵ;->ˋʻ(Ljava/lang/Runnable;)V
 
     .line 23
     .line 24

@@ -72,7 +72,7 @@
     .line 4
     .line 5
     :try_start_0
-    invoke-static {}, Lʾˉ/ʼʼ;->ˈᵎ()Landroid/content/pm/PackageManager;
+    invoke-static {}, Lʾˉ/ᴵᴵ;->ˈᵎ()Landroid/content/pm/PackageManager;
 
     .line 6
     .line 7
@@ -309,7 +309,7 @@
     move-result-object v8
 
     .line 123
-    invoke-static {v8}, Lʾˉ/ʼʼ;->ˉˎ(Ljava/lang/Object;)V
+    invoke-static {v8}, Lʾˉ/ᴵᴵ;->ˉˎ(Ljava/lang/Object;)V
 
     .line 124
     .line 125
@@ -353,7 +353,7 @@
     move-result-object v8
 
     .line 147
-    invoke-static {v8}, Lʾˉ/ʼʼ;->ˉˎ(Ljava/lang/Object;)V
+    invoke-static {v8}, Lʾˉ/ᴵᴵ;->ˉˎ(Ljava/lang/Object;)V
 
     .line 148
     .line 149
@@ -579,7 +579,7 @@
     move-result-object v2
 
     .line 240
-    invoke-static {v2}, Lʾˉ/ʼʼ;->ˉˎ(Ljava/lang/Object;)V
+    invoke-static {v2}, Lʾˉ/ᴵᴵ;->ˉˎ(Ljava/lang/Object;)V
 
     .line 241
     .line 242
@@ -694,7 +694,7 @@
 
     .line 290
     .line 291
-    invoke-static {}, Lʾˉ/ʼʼ;->ˈי()Landroid/content/Context;
+    invoke-static {}, Lʾˉ/ᴵᴵ;->ˈי()Landroid/content/Context;
 
     .line 292
     .line 293
@@ -750,7 +750,7 @@
     .line 319
     .line 320
     :cond_8
-    invoke-static {}, Lʾˉ/ʼʼ;->ˈי()Landroid/content/Context;
+    invoke-static {}, Lʾˉ/ᴵᴵ;->ˈי()Landroid/content/Context;
 
     .line 321
     .line 322
@@ -879,7 +879,7 @@
     .line 367
     .line 368
     .line 369
-    sget-object v3, Lʾˉ/ʼʼ;->ʼﾞ:Lru/aaaaacca/installer/MainActivity;
+    sget-object v3, Lʾˉ/ᴵᴵ;->ʼﾞ:Lru/aaaaaccc/installer/MainActivity;
 
     .line 370
     .line 371

@@ -44,156 +44,159 @@
     .locals 7
 
     .line 1
-    sget-object v0, Lʾˉ/ᴵᴵ;->ʿᵔ:Ljava/util/ArrayList;
+    const-string v0, ""
 
     .line 2
     .line 3
-    invoke-virtual {v0}, Ljava/util/ArrayList;->size()I
+    sget-object v1, Lʾˉ/ᴵᴵ;->ʿᵔ:Ljava/util/ArrayList;
 
     .line 4
     .line 5
+    invoke-virtual {v1}, Ljava/util/ArrayList;->size()I
+
     .line 6
-    move-result v0
-
     .line 7
-    if-nez v0, :cond_0
-
     .line 8
+    move-result v1
+
     .line 9
-    sget-object v0, Lʾˉ/ᴵᴵ;->ʼᴵ:Lʾˉ/ᵔ;
+    if-nez v1, :cond_0
 
     .line 10
     .line 11
-    if-eqz v0, :cond_7
+    sget-object v0, Lʾˉ/ᴵᴵ;->ʼᴵ:Lʾˉ/ᵔ;
 
     .line 12
     .line 13
-    new-instance v0, Lʾˉ/ᴵᴵ$ʼˋ$ʻ$ʻ;
+    if-eqz v0, :cond_7
 
     .line 14
     .line 15
-    invoke-direct {v0, p0}, Lʾˉ/ᴵᴵ$ʼˋ$ʻ$ʻ;-><init>(Lʾˉ/ᴵᴵ$ʼˋ$ʻ;)V
+    new-instance v0, Lʾˉ/ᴵᴵ$ʼˋ$ʻ$ʻ;
 
     .line 16
     .line 17
-    .line 18
-    invoke-static {v0}, Lʾˉ/ᴵᴵ;->ˊⁱ(Ljava/lang/Runnable;)V
+    invoke-direct {v0, p0}, Lʾˉ/ᴵᴵ$ʼˋ$ʻ$ʻ;-><init>(Lʾˉ/ᴵᴵ$ʼˋ$ʻ;)V
 
+    .line 18
     .line 19
     .line 20
-    .line 21
-    goto/16 :goto_4
+    invoke-static {v0}, Lʾˉ/ᴵᴵ;->ˊⁱ(Ljava/lang/Runnable;)V
 
+    .line 21
     .line 22
     .line 23
-    :cond_0
-    new-instance v0, Ljava/util/ArrayList;
+    goto/16 :goto_5
 
     .line 24
     .line 25
-    invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
+    :cond_0
+    new-instance v1, Ljava/util/ArrayList;
 
     .line 26
     .line 27
-    .line 28
-    sget-boolean v1, Lʾˉ/ᴵᴵ;->ʽﾞ:Z
+    invoke-direct {v1}, Ljava/util/ArrayList;-><init>()V
 
+    .line 28
     .line 29
     .line 30
-    if-eqz v1, :cond_1
+    sget-boolean v2, Lʾˉ/ᴵᴵ;->ʽﾞ:Z
 
     .line 31
     .line 32
-    const-string v1, "pm install -r -f -i com.android.vending "
+    if-eqz v2, :cond_1
 
     .line 33
     .line 34
-    goto :goto_0
+    const-string v2, "pm install -r -s -i com.android.vending "
 
     .line 35
-    :cond_1
-    const-string v1, "pm install -r -f "
-
     .line 36
+    goto :goto_0
+
     .line 37
-    :goto_0
-    new-instance v2, Ljava/util/ArrayList;
+    :cond_1
+    const-string v2, "pm install -r -s "
 
     .line 38
     .line 39
-    sget-object v3, Lʾˉ/ᴵᴵ;->ʿᵔ:Ljava/util/ArrayList;
+    :goto_0
+    new-instance v3, Ljava/util/ArrayList;
 
     .line 40
     .line 41
-    invoke-direct {v2, v3}, Ljava/util/ArrayList;-><init>(Ljava/util/Collection;)V
+    sget-object v4, Lʾˉ/ᴵᴵ;->ʿᵔ:Ljava/util/ArrayList;
 
     .line 42
     .line 43
-    .line 44
-    sget-object v3, Lʾˉ/ᴵᴵ;->ʿᵔ:Ljava/util/ArrayList;
+    invoke-direct {v3, v4}, Ljava/util/ArrayList;-><init>(Ljava/util/Collection;)V
 
+    .line 44
     .line 45
     .line 46
-    invoke-virtual {v3}, Ljava/util/ArrayList;->clear()V
+    sget-object v4, Lʾˉ/ᴵᴵ;->ʿᵔ:Ljava/util/ArrayList;
 
     .line 47
     .line 48
-    .line 49
-    invoke-virtual {v2}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
+    invoke-virtual {v4}, Ljava/util/ArrayList;->clear()V
 
+    .line 49
     .line 50
     .line 51
-    .line 52
-    move-result-object v2
+    :try_start_0
+    invoke-virtual {v3}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
 
+    .line 52
     .line 53
+    .line 54
+    move-result-object v3
+
+    .line 55
     :cond_2
     :goto_1
-    invoke-interface {v2}, Ljava/util/Iterator;->hasNext()Z
+    invoke-interface {v3}, Ljava/util/Iterator;->hasNext()Z
 
-    .line 54
-    .line 55
     .line 56
-    move-result v3
-
     .line 57
-    const-string v4, ""
-
     .line 58
+    move-result v4
+
     .line 59
-    if-eqz v3, :cond_4
+    if-eqz v4, :cond_4
 
     .line 60
     .line 61
-    invoke-interface {v2}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+    invoke-interface {v3}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
     .line 62
     .line 63
     .line 64
-    move-result-object v3
+    move-result-object v4
 
     .line 65
-    check-cast v3, Lʾˉ/ᵎ;
+    check-cast v4, Lʾˉ/ᵎ;
 
     .line 66
     .line 67
-    iget-object v5, v3, Lʾˉ/ᵎ;->ʻ:Ljava/lang/String;
+    iget-object v5, v4, Lʾˉ/ᵎ;->ʻ:Ljava/lang/String;
 
     .line 68
     .line 69
-    invoke-static {v5}, Lʼˏ/ᵎ;->ˉﹳ(Ljava/lang/String;)Z
+    invoke-static {v5}, Lʼˏ/ᵢ;->ˊʿ(Ljava/lang/String;)Z
 
     .line 70
     .line 71
     .line 72
     move-result v5
+    :try_end_0
+    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_2
 
     .line 73
     if-nez v5, :cond_3
 
     .line 74
     .line 75
-    :try_start_0
+    :try_start_1
     invoke-static {}, Lʾˉ/ᴵᴵ;->ˈᵎ()Landroid/content/pm/PackageManager;
 
     .line 76
@@ -202,7 +205,7 @@
     move-result-object v5
 
     .line 79
-    iget-object v3, v3, Lʾˉ/ᵎ;->ʻ:Ljava/lang/String;
+    iget-object v4, v4, Lʾˉ/ᵎ;->ʻ:Ljava/lang/String;
 
     .line 80
     .line 81
@@ -210,25 +213,25 @@
 
     .line 82
     .line 83
-    invoke-virtual {v5, v3, v6}, Landroid/content/pm/PackageManager;->getPackageInfo(Ljava/lang/String;I)Landroid/content/pm/PackageInfo;
+    invoke-virtual {v5, v4, v6}, Landroid/content/pm/PackageManager;->getPackageInfo(Ljava/lang/String;I)Landroid/content/pm/PackageInfo;
 
     .line 84
     .line 85
     .line 86
-    move-result-object v3
+    move-result-object v4
 
     .line 87
-    iget-object v3, v3, Landroid/content/pm/PackageInfo;->applicationInfo:Landroid/content/pm/ApplicationInfo;
+    iget-object v4, v4, Landroid/content/pm/PackageInfo;->applicationInfo:Landroid/content/pm/ApplicationInfo;
 
     .line 88
     .line 89
-    iget-object v3, v3, Landroid/content/pm/ApplicationInfo;->sourceDir:Ljava/lang/String;
-    :try_end_0
-    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_1
+    iget-object v4, v4, Landroid/content/pm/ApplicationInfo;->sourceDir:Ljava/lang/String;
+    :try_end_1
+    .catch Ljava/lang/Exception; {:try_start_1 .. :try_end_1} :catch_0
 
     .line 90
     .line 91
-    :try_start_1
+    :try_start_2
     new-instance v5, Ljava/lang/StringBuilder;
 
     .line 92
@@ -247,7 +250,7 @@
     .line 99
     .line 100
     .line 101
-    invoke-virtual {v5, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v5, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     .line 102
     .line 103
@@ -260,7 +263,7 @@
     move-result-object v5
 
     .line 108
-    invoke-static {v5}, Lʼˏ/ᵎ;->ˋᵔ(Ljava/lang/String;)V
+    invoke-static {v5}, Lʼˏ/ᵢ;->ˎʾ(Ljava/lang/String;)V
 
     .line 109
     .line 110
@@ -274,7 +277,7 @@
     .line 114
     .line 115
     .line 116
-    const-string v6, "Start move to internal "
+    const-string v6, "Start move to sdcard"
 
     .line 117
     .line 118
@@ -283,7 +286,7 @@
     .line 119
     .line 120
     .line 121
-    invoke-virtual {v5, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v5, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     .line 122
     .line 123
@@ -297,8 +300,8 @@
 
     .line 128
     invoke-static {v5}, Lʾˉ/ᴵᴵ;->ˉˎ(Ljava/lang/Object;)V
-    :try_end_1
-    .catch Ljava/lang/Exception; {:try_start_1 .. :try_end_1} :catch_0
+    :try_end_2
+    .catch Ljava/lang/Exception; {:try_start_2 .. :try_end_2} :catch_1
 
     .line 129
     .line 130
@@ -307,154 +310,161 @@
 
     .line 132
     :catch_0
-    nop
+    move-object v4, v0
 
     .line 133
-    goto :goto_2
+    :catch_1
+    :goto_2
+    :try_start_3
+    invoke-virtual {v4, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     .line 134
-    :catch_1
-    nop
-
     .line 135
-    move-object v3, v4
-
     .line 136
-    :goto_2
-    invoke-virtual {v3, v4}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+    move-result v5
 
     .line 137
+    if-nez v5, :cond_2
+
     .line 138
     .line 139
-    move-result v4
+    new-instance v5, Ljava/lang/StringBuilder;
 
     .line 140
-    if-nez v4, :cond_2
-
     .line 141
-    .line 142
-    new-instance v4, Ljava/lang/StringBuilder;
+    invoke-direct {v5}, Ljava/lang/StringBuilder;-><init>()V
 
+    .line 142
     .line 143
     .line 144
-    invoke-direct {v4}, Ljava/lang/StringBuilder;-><init>()V
+    invoke-virtual {v5, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     .line 145
     .line 146
     .line 147
-    invoke-virtual {v4, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v5, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     .line 148
     .line 149
     .line 150
-    invoke-virtual {v4, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v5}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     .line 151
     .line 152
     .line 153
-    invoke-virtual {v4}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    move-result-object v4
 
     .line 154
+    invoke-virtual {v1, v4}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+
     .line 155
     .line 156
-    move-result-object v3
-
     .line 157
-    invoke-virtual {v0, v3}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+    goto :goto_1
 
     .line 158
+    :catch_2
+    move-exception v2
+
     .line 159
+    goto :goto_3
+
     .line 160
-    goto :goto_1
+    :cond_3
+    new-instance v5, Lʾˉ/ᴵᴵ$ʼˋ$ʻ$ʼ;
 
     .line 161
-    :cond_3
-    new-instance v4, Lʾˉ/ᴵᴵ$ʼˋ$ʻ$ʼ;
-
     .line 162
-    .line 163
-    invoke-direct {v4, p0, v3}, Lʾˉ/ᴵᴵ$ʼˋ$ʻ$ʼ;-><init>(Lʾˉ/ᴵᴵ$ʼˋ$ʻ;Lʾˉ/ᵎ;)V
+    invoke-direct {v5, p0, v4}, Lʾˉ/ᴵᴵ$ʼˋ$ʻ$ʼ;-><init>(Lʾˉ/ᴵᴵ$ʼˋ$ʻ;Lʾˉ/ᵎ;)V
 
+    .line 163
     .line 164
     .line 165
-    .line 166
-    invoke-static {v4}, Lʾˉ/ᴵᴵ;->ˊⁱ(Ljava/lang/Runnable;)V
+    invoke-static {v5}, Lʾˉ/ᴵᴵ;->ˊⁱ(Ljava/lang/Runnable;)V
+    :try_end_3
+    .catch Ljava/lang/Exception; {:try_start_3 .. :try_end_3} :catch_2
 
+    .line 166
     .line 167
     .line 168
-    .line 169
     goto :goto_1
 
-    .line 170
-    :cond_4
-    invoke-virtual {v0}, Ljava/util/ArrayList;->size()I
+    .line 169
+    :goto_3
+    invoke-virtual {v2}, Ljava/lang/Throwable;->printStackTrace()V
 
+    .line 170
     .line 171
     .line 172
+    :cond_4
+    invoke-virtual {v1}, Ljava/util/ArrayList;->size()I
+
     .line 173
-    move-result v1
-
     .line 174
-    if-lez v1, :cond_6
-
     .line 175
+    move-result v2
+
     .line 176
-    invoke-virtual {v0}, Ljava/util/ArrayList;->size()I
+    if-lez v2, :cond_6
 
     .line 177
     .line 178
+    invoke-virtual {v1}, Ljava/util/ArrayList;->size()I
+
     .line 179
-    move-result v1
-
     .line 180
-    new-array v1, v1, [Ljava/lang/String;
-
     .line 181
+    move-result v2
+
     .line 182
-    invoke-virtual {v0, v1}, Ljava/util/ArrayList;->toArray([Ljava/lang/Object;)[Ljava/lang/Object;
+    new-array v2, v2, [Ljava/lang/String;
 
     .line 183
     .line 184
-    .line 185
-    sget-boolean v0, Lʾˉ/ᴵᴵ;->ʽﾞ:Z
+    invoke-virtual {v1, v2}, Ljava/util/ArrayList;->toArray([Ljava/lang/Object;)[Ljava/lang/Object;
 
+    .line 185
     .line 186
     .line 187
-    if-eqz v0, :cond_5
+    sget-boolean v1, Lʾˉ/ᴵᴵ;->ʽﾞ:Z
 
     .line 188
     .line 189
-    new-instance v0, Lʼˏ/ᵎ;
+    if-eqz v1, :cond_5
 
     .line 190
     .line 191
-    invoke-direct {v0, v4}, Lʼˏ/ᵎ;-><init>(Ljava/lang/String;)V
+    new-instance v1, Lʼˏ/ᵢ;
 
     .line 192
     .line 193
-    .line 194
-    invoke-virtual {v0, v1}, Lʼˏ/ᵎ;->ˊˊ([Ljava/lang/String;)Ljava/lang/String;
+    invoke-direct {v1, v0}, Lʼˏ/ᵢ;-><init>(Ljava/lang/String;)V
 
+    .line 194
     .line 195
     .line 196
+    invoke-virtual {v1, v2}, Lʼˏ/ᵢ;->ˎˎ([Ljava/lang/String;)Ljava/lang/String;
+
     .line 197
-    goto :goto_3
-
     .line 198
-    :cond_5
-    invoke-static {v1}, Lʼˏ/ᵎ;->ˉˉ([Ljava/lang/String;)Ljava/lang/String;
-
     .line 199
-    .line 200
-    .line 201
-    :cond_6
-    :goto_3
-    invoke-static {}, Lʾˉ/ᴵᴵ;->ˊٴ()V
+    goto :goto_4
 
+    .line 200
+    :cond_5
+    invoke-static {v2}, Lʼˏ/ᵢ;->ˋˋ([Ljava/lang/String;)Ljava/lang/String;
+
+    .line 201
     .line 202
     .line 203
-    .line 204
-    :cond_7
+    :cond_6
     :goto_4
+    invoke-static {}, Lʾˉ/ᴵᴵ;->ˊٴ()V
+
+    .line 204
+    .line 205
+    .line 206
+    :cond_7
+    :goto_5
     return-void
 .end method

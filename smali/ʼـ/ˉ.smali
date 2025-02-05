@@ -151,7 +151,7 @@
 
     .line 63
     .line 64
-    sget-boolean v0, Lʾˉ/ʼʼ;->ʽﾞ:Z
+    sget-boolean v0, Lʾˉ/ᴵᴵ;->ʽﾞ:Z
 
     .line 65
     .line 66
@@ -198,7 +198,7 @@
     .line 86
     .line 87
     .line 88
-    sget-object v7, Lʾˉ/ʼʼ;->ʼᐧ:Ljava/lang/String;
+    sget-object v7, Lʾˉ/ᴵᴵ;->ʼᐧ:Ljava/lang/String;
 
     .line 89
     .line 90
@@ -264,7 +264,7 @@
     .line 121
     .line 122
     .line 123
-    sget-object v7, Lʾˉ/ʼʼ;->ʼᐧ:Ljava/lang/String;
+    sget-object v7, Lʾˉ/ᴵᴵ;->ʼᐧ:Ljava/lang/String;
 
     .line 124
     .line 125
@@ -361,7 +361,7 @@
     move-result-object v5
 
     .line 174
-    invoke-static {v5}, Lʾˉ/ʼʼ;->ˉˎ(Ljava/lang/Object;)V
+    invoke-static {v5}, Lʾˉ/ᴵᴵ;->ˉˎ(Ljava/lang/Object;)V
 
     .line 175
     .line 176
@@ -510,7 +510,7 @@
 
     .line 235
     .line 236
-    invoke-static {v0}, Lʾˉ/ʼʼ;->ˉˎ(Ljava/lang/Object;)V
+    invoke-static {v0}, Lʾˉ/ᴵᴵ;->ˉˎ(Ljava/lang/Object;)V
 
     .line 237
     .line 238

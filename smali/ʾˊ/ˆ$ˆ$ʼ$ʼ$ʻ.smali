@@ -48,7 +48,7 @@
 
     .line 2
     .line 3
-    invoke-static {}, Lʾˉ/ʼʼ;->ˈי()Landroid/content/Context;
+    invoke-static {}, Lʾˉ/ᴵᴵ;->ˈי()Landroid/content/Context;
 
     .line 4
     .line 5
@@ -69,7 +69,7 @@
     .line 12
     .line 13
     .line 14
-    sget-object v4, Lʾˉ/ʼʼ;->ʼٴ:Ljava/lang/String;
+    sget-object v4, Lʾˉ/ᴵᴵ;->ʼٴ:Ljava/lang/String;
 
     .line 15
     .line 16
@@ -111,7 +111,7 @@
     const/4 v1, 0x1
 
     .line 36
-    invoke-static {v0, v1}, Lʾˉ/ʼʼ;->ˎי(Lʾˉ/ˎ;Z)V
+    invoke-static {v0, v1}, Lʾˉ/ᴵᴵ;->ˎי(Lʾˉ/ˎ;Z)V
 
     .line 37
     .line 38

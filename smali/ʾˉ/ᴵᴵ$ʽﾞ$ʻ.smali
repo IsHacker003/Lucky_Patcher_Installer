@@ -41,39 +41,200 @@
 
 # virtual methods
 .method public run()V
-    .locals 2
+    .locals 4
 
     .line 1
-    invoke-static {}, Lʾˉ/ᴵᴵ;->ˈי()Landroid/content/Context;
+    const-string v0, "/system"
 
     .line 2
     .line 3
-    .line 4
-    move-result-object v0
+    const-string v1, "rw"
 
+    .line 4
     .line 5
-    const-string v1, "BillingRestoreTransactions"
+    invoke-static {v0, v1}, Lʼˏ/ᵢ;->ˋי(Ljava/lang/String;Ljava/lang/String;)Z
 
     .line 6
     .line 7
-    invoke-virtual {v0, v1}, Landroid/content/Context;->deleteDatabase(Ljava/lang/String;)Z
-
     .line 8
+    new-instance v0, Lʼˏ/ᵢ;
+
     .line 9
     .line 10
-    new-instance v0, Lʾˉ/ᴵᴵ$ʽﾞ$ʻ$ʻ;
+    const-string v1, ""
 
     .line 11
     .line 12
-    invoke-direct {v0, p0}, Lʾˉ/ᴵᴵ$ʽﾞ$ʻ$ʻ;-><init>(Lʾˉ/ᴵᴵ$ʽﾞ$ʻ;)V
+    invoke-direct {v0, v1}, Lʼˏ/ᵢ;-><init>(Ljava/lang/String;)V
 
     .line 13
     .line 14
     .line 15
-    invoke-static {v0}, Lʾˉ/ᴵᴵ;->ˊⁱ(Ljava/lang/Runnable;)V
+    new-instance v1, Ljava/lang/StringBuilder;
 
     .line 16
     .line 17
+    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
+
     .line 18
+    .line 19
+    .line 20
+    sget-object v2, Lʾˉ/ᴵᴵ;->ʾʻ:Ljava/lang/String;
+
+    .line 21
+    .line 22
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 23
+    .line 24
+    .line 25
+    const-class v2, Ljavaroot/utils/ʻˆ;
+
+    .line 26
+    .line 27
+    invoke-virtual {v2}, Ljava/lang/Class;->getName()Ljava/lang/String;
+
+    .line 28
+    .line 29
+    .line 30
+    move-result-object v2
+
+    .line 31
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 32
+    .line 33
+    .line 34
+    const-string v2, " "
+
+    .line 35
+    .line 36
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 37
+    .line 38
+    .line 39
+    sget-object v2, Lʾˉ/ᴵᴵ;->ʼٴ:Ljava/lang/String;
+
+    .line 40
+    .line 41
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 42
+    .line 43
+    .line 44
+    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    .line 45
+    .line 46
+    .line 47
+    move-result-object v1
+
+    .line 48
+    const/4 v2, 0x1
+
+    .line 49
+    new-array v2, v2, [Ljava/lang/String;
+
+    .line 50
+    .line 51
+    const/4 v3, 0x0
+
+    .line 52
+    aput-object v1, v2, v3
+
+    .line 53
+    .line 54
+    invoke-virtual {v0, v2}, Lʼˏ/ᵢ;->ˎˎ([Ljava/lang/String;)Ljava/lang/String;
+
+    .line 55
+    .line 56
+    .line 57
+    move-result-object v0
+
+    .line 58
+    sput-object v0, Lʾˉ/ᴵᴵ;->ʼי:Ljava/lang/String;
+
+    .line 59
+    .line 60
+    const-string v1, "Not enought space!"
+
+    .line 61
+    .line 62
+    invoke-virtual {v0, v1}, Ljava/lang/String;->contains(Ljava/lang/CharSequence;)Z
+
+    .line 63
+    .line 64
+    .line 65
+    move-result v0
+
+    .line 66
+    if-nez v0, :cond_1
+
+    .line 67
+    .line 68
+    sget-object v0, Lʾˉ/ᴵᴵ;->ʼי:Ljava/lang/String;
+
+    .line 69
+    .line 70
+    const-string v1, "IO Exception!"
+
+    .line 71
+    .line 72
+    invoke-virtual {v0, v1}, Ljava/lang/String;->contains(Ljava/lang/CharSequence;)Z
+
+    .line 73
+    .line 74
+    .line 75
+    move-result v0
+
+    .line 76
+    if-eqz v0, :cond_0
+
+    .line 77
+    .line 78
+    goto :goto_0
+
+    .line 79
+    :cond_0
+    new-instance v0, Lʾˉ/ᴵᴵ$ʽﾞ$ʻ$ʼ;
+
+    .line 80
+    .line 81
+    invoke-direct {v0, p0}, Lʾˉ/ᴵᴵ$ʽﾞ$ʻ$ʼ;-><init>(Lʾˉ/ᴵᴵ$ʽﾞ$ʻ;)V
+
+    .line 82
+    .line 83
+    .line 84
+    invoke-static {v0}, Lʾˉ/ᴵᴵ;->ˊⁱ(Ljava/lang/Runnable;)V
+
+    .line 85
+    .line 86
+    .line 87
+    goto :goto_1
+
+    .line 88
+    :cond_1
+    :goto_0
+    new-instance v0, Lʾˉ/ᴵᴵ$ʽﾞ$ʻ$ʻ;
+
+    .line 89
+    .line 90
+    invoke-direct {v0, p0}, Lʾˉ/ᴵᴵ$ʽﾞ$ʻ$ʻ;-><init>(Lʾˉ/ᴵᴵ$ʽﾞ$ʻ;)V
+
+    .line 91
+    .line 92
+    .line 93
+    invoke-static {v0}, Lʾˉ/ᴵᴵ;->ˊⁱ(Ljava/lang/Runnable;)V
+
+    .line 94
+    .line 95
+    .line 96
+    :goto_1
+    invoke-static {}, Lʼˏ/ᵢ;->ˋˉ()V
+
+    .line 97
+    .line 98
+    .line 99
     return-void
 .end method

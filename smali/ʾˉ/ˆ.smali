@@ -294,7 +294,7 @@
 
     .line 110
     .line 111
-    invoke-static {}, Lʾˉ/ʼʼ;->ˈᵎ()Landroid/content/pm/PackageManager;
+    invoke-static {}, Lʾˉ/ᴵᴵ;->ˈᵎ()Landroid/content/pm/PackageManager;
 
     .line 112
     .line 113
@@ -342,7 +342,7 @@
 
     .line 132
     .line 133
-    invoke-static {}, Lʾˉ/ʼʼ;->ˈᵢ()I
+    invoke-static {}, Lʾˉ/ᴵᴵ;->ˈᵢ()I
 
     .line 134
     .line 135
@@ -363,7 +363,7 @@
 
     .line 143
     .line 144
-    invoke-static {}, Lʾˉ/ʼʼ;->ˈᵢ()I
+    invoke-static {}, Lʾˉ/ᴵᴵ;->ˈᵢ()I
 
     .line 145
     .line 146

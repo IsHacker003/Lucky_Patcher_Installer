@@ -86,7 +86,7 @@
 
     .line 19
     .line 20
-    invoke-static {v0}, Lʾˉ/ʼʼ;->ˉˎ(Ljava/lang/Object;)V
+    invoke-static {v0}, Lʾˉ/ᴵᴵ;->ˉˎ(Ljava/lang/Object;)V
 
     .line 21
     .line 22
@@ -96,7 +96,7 @@
     .line 24
     .line 25
     :cond_0
-    sget-object v1, Lʾˉ/ʼʼ;->ʾᵔ:Ljava/lang/String;
+    sget-object v1, Lʾˉ/ᴵᴵ;->ʾᵔ:Ljava/lang/String;
 
     .line 26
     .line 27
@@ -120,7 +120,7 @@
 
     .line 36
     .line 37
-    invoke-static {v1}, Lʾˉ/ʼʼ;->ˉˎ(Ljava/lang/Object;)V
+    invoke-static {v1}, Lʾˉ/ᴵᴵ;->ˉˎ(Ljava/lang/Object;)V
 
     .line 38
     .line 39
@@ -154,7 +154,7 @@
 
     .line 53
     :try_start_1
-    sget-object v3, Lʾˉ/ʼʼ;->ʼˎ:Lʾˉ/ʼʼ;
+    sget-object v3, Lʾˉ/ᴵᴵ;->ʼˎ:Lʾˉ/ᴵᴵ;
 
     .line 54
     .line 55
@@ -174,7 +174,7 @@
     move-result-object v3
 
     .line 63
-    invoke-static {v3}, Lʾˉ/ʼʼ;->ˊˏ(Ljava/lang/Integer;)V
+    invoke-static {v3}, Lʾˉ/ᴵᴵ;->ˊˏ(Ljava/lang/Integer;)V
 
     .line 64
     .line 65
@@ -199,7 +199,7 @@
     move-result-object v3
 
     .line 73
-    invoke-static {v3}, Lʾˉ/ʼʼ;->ˊˏ(Ljava/lang/Integer;)V
+    invoke-static {v3}, Lʾˉ/ᴵᴵ;->ˊˏ(Ljava/lang/Integer;)V
 
     .line 74
     .line 75
@@ -216,7 +216,7 @@
     move-result-object v3
 
     .line 82
-    invoke-static {v3}, Lʾˉ/ʼʼ;->ˊˏ(Ljava/lang/Integer;)V
+    invoke-static {v3}, Lʾˉ/ᴵᴵ;->ˊˏ(Ljava/lang/Integer;)V
     :try_end_1
     .catch Ljava/lang/Exception; {:try_start_1 .. :try_end_1} :catch_0
 
@@ -301,7 +301,7 @@
     .line 119
     .line 120
     :cond_2
-    sget-object v3, Lʾˉ/ʼʼ;->ʻﹶ:Ljava/lang/String;
+    sget-object v3, Lʾˉ/ᴵᴵ;->ʻﹶ:Ljava/lang/String;
 
     .line 121
     .line 122
@@ -349,7 +349,7 @@
     move-result-object v2
 
     .line 146
-    invoke-static {v3, v2}, Lʾˉ/ʼʼ;->ˋⁱ(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v3, v2}, Lʾˉ/ᴵᴵ;->ˋⁱ(Ljava/lang/String;Ljava/lang/String;)V
     :try_end_3
     .catch Ljava/lang/Exception; {:try_start_3 .. :try_end_3} :catch_0
 
@@ -425,7 +425,7 @@
     move-result-object v4
 
     .line 181
-    invoke-static {v4}, Lʾˉ/ʼʼ;->ˉˎ(Ljava/lang/Object;)V
+    invoke-static {v4}, Lʾˉ/ᴵᴵ;->ˉˎ(Ljava/lang/Object;)V
     :try_end_5
     .catch Ljava/lang/Exception; {:try_start_5 .. :try_end_5} :catch_2
 
@@ -454,7 +454,7 @@
     .line 191
     .line 192
     .line 193
-    sget-object v0, Lʾˉ/ʼʼ;->ʿʼ:Ljava/util/concurrent/Semaphore;
+    sget-object v0, Lʾˉ/ᴵᴵ;->ʿʼ:Ljava/util/concurrent/Semaphore;
 
     .line 194
     .line 195

@@ -61,7 +61,7 @@
     .locals 14
 
     .line 1
-    sget-boolean v0, Lʾˉ/ʼʼ;->ʽﾞ:Z
+    sget-boolean v0, Lʾˉ/ᴵᴵ;->ʽﾞ:Z
 
     .line 2
     .line 3

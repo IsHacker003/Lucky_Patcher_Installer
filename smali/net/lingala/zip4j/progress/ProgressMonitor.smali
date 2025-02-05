@@ -500,7 +500,7 @@
 
     .line 40
     .line 41
-    invoke-virtual {p1, v0, v1}, Lʼˏ/ᵢ;->יʼ(J)V
+    invoke-virtual {p1, v0, v1}, Lʼˏ/ᵢ;->יʿ(J)V
 
     .line 42
     .line 43

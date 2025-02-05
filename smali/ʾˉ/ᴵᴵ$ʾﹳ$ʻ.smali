@@ -41,48 +41,81 @@
 
 # virtual methods
 .method public run()V
-    .locals 2
+    .locals 3
 
     .line 1
-    invoke-static {}, Lʾˉ/ᴵᴵ;->ˈי()Landroid/content/Context;
+    sget-object v0, Lʾˉ/ᴵᴵ;->ʽˆ:Landroid/widget/ArrayAdapter;
 
     .line 2
     .line 3
+    invoke-virtual {v0}, Landroid/widget/ArrayAdapter;->notifyDataSetChanged()V
+
     .line 4
-    move-result-object v0
-
     .line 5
-    sget-object v1, Lʾˉ/ᴵᴵ;->ʼʽ:Ljava/lang/String;
-
     .line 6
-    .line 7
-    invoke-static {v0, v1, v1}, Lʼˏ/ᵎ;->ˏﹶ(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;)V
+    new-instance v0, Landroid/content/Intent;
 
+    .line 7
     .line 8
+    invoke-static {}, Lʾˉ/ᴵᴵ;->ˈי()Landroid/content/Context;
+
     .line 9
     .line 10
-    sget-object v0, Lʾˉ/ᴵᴵ;->ʼˎ:Lʾˉ/ᴵᴵ;
-
     .line 11
+    move-result-object v1
+
     .line 12
-    if-eqz v0, :cond_0
+    const-class v2, Lcom/widgets/Widget5;
 
     .line 13
     .line 14
-    new-instance v0, Lʾˉ/ᴵᴵ$ʾﹳ$ʻ$ʻ;
+    invoke-direct {v0, v1, v2}, Landroid/content/Intent;-><init>(Landroid/content/Context;Ljava/lang/Class;)V
 
     .line 15
     .line 16
-    invoke-direct {v0, p0}, Lʾˉ/ᴵᴵ$ʾﹳ$ʻ$ʻ;-><init>(Lʾˉ/ᴵᴵ$ʾﹳ$ʻ;)V
-
     .line 17
+    invoke-static {}, Lʾˉ/ᴵᴵ;->ˈי()Landroid/content/Context;
+
     .line 18
     .line 19
-    invoke-static {v0}, Lʾˉ/ᴵᴵ;->ˊⁱ(Ljava/lang/Runnable;)V
-
     .line 20
+    move-result-object v1
+
     .line 21
+    invoke-virtual {v1}, Landroid/content/Context;->getPackageName()Ljava/lang/String;
+
     .line 22
-    :cond_0
+    .line 23
+    .line 24
+    move-result-object v1
+
+    .line 25
+    invoke-virtual {v0, v1}, Landroid/content/Intent;->setPackage(Ljava/lang/String;)Landroid/content/Intent;
+
+    .line 26
+    .line 27
+    .line 28
+    sget-object v1, Lcom/widgets/Widget5;->ʽ:Ljava/lang/String;
+
+    .line 29
+    .line 30
+    invoke-virtual {v0, v1}, Landroid/content/Intent;->setAction(Ljava/lang/String;)Landroid/content/Intent;
+
+    .line 31
+    .line 32
+    .line 33
+    invoke-static {}, Lʾˉ/ᴵᴵ;->ˈי()Landroid/content/Context;
+
+    .line 34
+    .line 35
+    .line 36
+    move-result-object v1
+
+    .line 37
+    invoke-virtual {v1, v0}, Landroid/content/Context;->sendBroadcast(Landroid/content/Intent;)V
+
+    .line 38
+    .line 39
+    .line 40
     return-void
 .end method

@@ -60,7 +60,7 @@
     .line 7
     .line 8
     :try_start_0
-    invoke-static {}, Lʾˉ/ʼʼ;->ˈᵎ()Landroid/content/pm/PackageManager;
+    invoke-static {}, Lʾˉ/ᴵᴵ;->ˈᵎ()Landroid/content/pm/PackageManager;
 
     .line 9
     .line 10
@@ -68,7 +68,7 @@
     move-result-object v4
 
     .line 12
-    sget-object v5, Lʾˉ/ʼʼ;->ʼᵎ:Lʾˉ/ᵎ;
+    sget-object v5, Lʾˉ/ᴵᴵ;->ʼᵎ:Lʾˉ/ᵎ;
 
     .line 13
     .line 14
@@ -84,7 +84,7 @@
     move-result-object v4
 
     .line 20
-    sget-object v5, Lʾˉ/ʼʼ;->ʼᵎ:Lʾˉ/ᵎ;
+    sget-object v5, Lʾˉ/ᴵᴵ;->ʼᵎ:Lʾˉ/ᵎ;
 
     .line 21
     .line 22
@@ -100,7 +100,7 @@
 
     .line 27
     .line 28
-    invoke-static {v5}, Lʾˉ/ʼʼ;->ˉˎ(Ljava/lang/Object;)V
+    invoke-static {v5}, Lʾˉ/ᴵᴵ;->ˉˎ(Ljava/lang/Object;)V
 
     .line 29
     .line 30
@@ -126,7 +126,7 @@
 
     .line 38
     .line 39
-    invoke-static {v5}, Lʾˉ/ʼʼ;->ˉˎ(Ljava/lang/Object;)V
+    invoke-static {v5}, Lʾˉ/ᴵᴵ;->ˉˎ(Ljava/lang/Object;)V
 
     .line 40
     .line 41
@@ -153,7 +153,7 @@
     .line 51
     .line 52
     .line 53
-    invoke-static {}, Lʾˉ/ʼʼ;->ˈᵎ()Landroid/content/pm/PackageManager;
+    invoke-static {}, Lʾˉ/ᴵᴵ;->ˈᵎ()Landroid/content/pm/PackageManager;
 
     .line 54
     .line 55
@@ -214,7 +214,7 @@
 
     .line 82
     .line 83
-    sget-object v8, Lʾˉ/ʼʼ;->ʼᵎ:Lʾˉ/ᵎ;
+    sget-object v8, Lʾˉ/ᴵᴵ;->ʼᵎ:Lʾˉ/ᵎ;
 
     .line 84
     .line 85
@@ -283,7 +283,7 @@
 
     .line 118
     .line 119
-    sget-object v2, Lʾˉ/ʼʼ;->ʼᵎ:Lʾˉ/ᵎ;
+    sget-object v2, Lʾˉ/ᴵᴵ;->ʼᵎ:Lʾˉ/ᵎ;
 
     .line 120
     .line 121
@@ -338,7 +338,7 @@
     .line 146
     .line 147
     .line 148
-    sget-object v6, Lʾˉ/ʼʼ;->ʼᵎ:Lʾˉ/ᵎ;
+    sget-object v6, Lʾˉ/ᴵᴵ;->ʼᵎ:Lʾˉ/ᵎ;
 
     .line 149
     .line 150
@@ -364,7 +364,7 @@
     move-result-object v5
 
     .line 162
-    sget-object v6, Lʾˉ/ʼʼ;->ʼᵎ:Lʾˉ/ᵎ;
+    sget-object v6, Lʾˉ/ᴵᴵ;->ʼᵎ:Lʾˉ/ᵎ;
 
     .line 163
     .line 164
@@ -381,7 +381,7 @@
     .line 169
     .line 170
     .line 171
-    sget-object v8, Lʾˉ/ʼʼ;->ʼᵎ:Lʾˉ/ᵎ;
+    sget-object v8, Lʾˉ/ᴵᴵ;->ʼᵎ:Lʾˉ/ᵎ;
 
     .line 172
     .line 173
@@ -481,7 +481,7 @@
     move-result-object v1
 
     .line 221
-    invoke-static {v1, v0}, Lʾˉ/ʼʼ;->ˋⁱ(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v1, v0}, Lʾˉ/ᴵᴵ;->ˋⁱ(Ljava/lang/String;Ljava/lang/String;)V
     :try_end_0
     .catch Landroid/content/pm/PackageManager$NameNotFoundException; {:try_start_0 .. :try_end_0} :catch_0
 

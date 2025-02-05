@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lʾˉ/ᴵᴵ$ˆˎ;->onClick(Landroid/content/DialogInterface;I)V
+    value = Lʾˉ/ᴵᴵ$ˆˎ;->run()V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -41,218 +41,193 @@
 
 # virtual methods
 .method public run()V
-    .locals 6
+    .locals 10
 
     .line 1
-    const-string v0, ""
+    invoke-static {}, Lʾˉ/ᴵᴵ;->ˈˏ()Landroid/content/SharedPreferences;
 
     .line 2
     .line 3
-    :try_start_0
-    invoke-static {}, Lʾˉ/ᴵᴵ;->ˈᵎ()Landroid/content/pm/PackageManager;
-
     .line 4
-    .line 5
-    .line 6
-    move-result-object v1
+    move-result-object v0
 
+    .line 5
+    const-string v1, "vibration"
+
+    .line 6
     .line 7
-    iget-object v2, p0, Lʾˉ/ᴵᴵ$ˆˎ$ʻ;->ʻ:Lʾˉ/ᴵᴵ$ˆˎ;
+    const/4 v2, 0x0
 
     .line 8
-    .line 9
-    iget-object v2, v2, Lʾˉ/ᴵᴵ$ˆˎ;->ʼ:Lʾˉ/ᵎ;
+    invoke-interface {v0, v1, v2}, Landroid/content/SharedPreferences;->getBoolean(Ljava/lang/String;Z)Z
 
+    .line 9
     .line 10
     .line 11
-    iget-object v2, v2, Lʾˉ/ᵎ;->ʻ:Ljava/lang/String;
+    move-result v0
 
     .line 12
+    if-eqz v0, :cond_0
+
     .line 13
-    const/16 v3, 0x2000
-
     .line 14
-    .line 15
-    invoke-virtual {v1, v2, v3}, Landroid/content/pm/PackageManager;->getPackageInfo(Ljava/lang/String;I)Landroid/content/pm/PackageInfo;
+    iget-object v0, p0, Lʾˉ/ᴵᴵ$ˆˎ$ʻ;->ʻ:Lʾˉ/ᴵᴵ$ˆˎ;
 
+    .line 15
     .line 16
+    iget-object v0, v0, Lʾˉ/ᴵᴵ$ˆˎ;->ʻ:Lʾˉ/ᴵᴵ;
+
     .line 17
     .line 18
-    move-result-object v1
+    invoke-virtual {v0}, Lʾˉ/ᴵᴵ;->ˈˑ()Landroidx/fragment/app/ʿ;
 
     .line 19
-    iget-object v1, v1, Landroid/content/pm/PackageInfo;->applicationInfo:Landroid/content/pm/ApplicationInfo;
-
     .line 20
     .line 21
-    iget-object v0, v1, Landroid/content/pm/ApplicationInfo;->sourceDir:Ljava/lang/String;
+    move-result-object v0
 
     .line 22
+    const-string v1, "vibrator"
+
     .line 23
-    new-instance v1, Ljava/lang/StringBuilder;
-
     .line 24
-    .line 25
-    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
+    invoke-virtual {v0, v1}, Landroid/content/Context;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
 
+    .line 25
     .line 26
     .line 27
+    move-result-object v0
+
     .line 28
-    const-string v2, "Start move to sdcard"
+    check-cast v0, Landroid/os/Vibrator;
 
     .line 29
     .line 30
-    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    sput-object v0, Lʾˉ/ᴵᴵ;->ˆᐧ:Landroid/os/Vibrator;
 
     .line 31
     .line 32
-    .line 33
-    invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    const-wide/16 v1, 0x32
 
+    .line 33
     .line 34
+    invoke-virtual {v0, v1, v2}, Landroid/os/Vibrator;->vibrate(J)V
+
     .line 35
     .line 36
-    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
     .line 37
+    :cond_0
+    sget-object v0, Lʾˉ/ᴵᴵ;->ʼᵎ:Lʾˉ/ᵎ;
+
     .line 38
     .line 39
-    move-result-object v1
+    new-instance v7, Lʾˉ/ᴵᴵ$ˆˎ$ʻ$ʻ;
 
     .line 40
-    invoke-static {v1}, Lʾˉ/ᴵᴵ;->ˉˎ(Ljava/lang/Object;)V
-    :try_end_0
-    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
-
     .line 41
+    invoke-direct {v7, p0, v0}, Lʾˉ/ᴵᴵ$ˆˎ$ʻ$ʻ;-><init>(Lʾˉ/ᴵᴵ$ˆˎ$ʻ;Lʾˉ/ᵎ;)V
+
     .line 42
     .line 43
-    goto :goto_0
-
     .line 44
-    :catch_0
-    nop
+    invoke-static {}, Lʼˏ/ᵢ;->ˊᵔ()Z
 
     .line 45
-    :goto_0
-    sget-object v1, Lʾˉ/ᴵᴵ;->ʼᵎ:Lʾˉ/ᵎ;
-
     .line 46
     .line 47
-    iget-object v1, v1, Lʾˉ/ᵎ;->ʻ:Ljava/lang/String;
-
-    .line 48
-    .line 49
-    invoke-static {v1}, Lʼˏ/ᵎ;->ˉﹳ(Ljava/lang/String;)Z
-
-    .line 50
-    .line 51
-    .line 52
     move-result v1
 
+    .line 48
+    const v2, 0x7f110364
+
+    .line 49
+    .line 50
+    .line 51
+    if-eqz v1, :cond_1
+
+    .line 52
     .line 53
-    const/4 v2, 0x1
+    iget-object v1, v0, Lʾˉ/ᵎ;->ʼ:Ljava/lang/String;
 
     .line 54
-    const/4 v3, 0x0
-
     .line 55
-    const-string v4, "com.android.vending"
+    invoke-static {v2}, Lʼˏ/ᵢ;->ˈי(I)Ljava/lang/String;
 
     .line 56
     .line 57
-    if-nez v1, :cond_0
-
     .line 58
+    move-result-object v2
+
     .line 59
-    invoke-static {v0, v4, v3, v2}, Lʼˏ/ᵎ;->ˉʻ(Ljava/lang/String;Ljava/lang/String;ZZ)Ljava/lang/String;
+    const v0, 0x7f1103bb
 
     .line 60
     .line 61
     .line 62
-    move-result-object v0
+    invoke-static {v0}, Lʼˏ/ᵢ;->ˈי(I)Ljava/lang/String;
 
     .line 63
-    goto :goto_1
-
     .line 64
-    :cond_0
-    sget-object v1, Lʾˉ/ᴵᴵ;->ʼᵎ:Lʾˉ/ᵎ;
-
     .line 65
+    move-result-object v3
+
     .line 66
-    iget-object v1, v1, Lʾˉ/ᵎ;->ʻ:Ljava/lang/String;
+    new-instance v4, Lʾˉ/ᴵᴵ$ˆˎ$ʻ$ʼ;
 
     .line 67
     .line 68
-    invoke-static {v1}, Lʼˏ/ᵎ;->ˆﹶ(Ljava/lang/String;)Ljava/util/ArrayList;
+    invoke-direct {v4, p0}, Lʾˉ/ᴵᴵ$ˆˎ$ʻ$ʼ;-><init>(Lʾˉ/ᴵᴵ$ˆˎ$ʻ;)V
 
     .line 69
     .line 70
     .line 71
-    move-result-object v1
+    sget-boolean v5, Lʾˉ/ᴵᴵ;->ˉﾞ:Z
 
     .line 72
-    new-instance v5, Ljava/io/File;
-
     .line 73
+    const/4 v8, 0x0
+
     .line 74
-    invoke-direct {v5, v0}, Ljava/io/File;-><init>(Ljava/lang/String;)V
+    const/4 v9, 0x0
 
     .line 75
-    .line 76
-    .line 77
-    invoke-virtual {v1, v5}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+    move-object v6, v7
 
+    .line 76
+    invoke-static/range {v1 .. v9}, Lʼˏ/ᵢ;->ˏـ(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Landroid/widget/CompoundButton$OnCheckedChangeListener;ZLandroid/content/DialogInterface$OnClickListener;Landroid/content/DialogInterface$OnClickListener;Landroid/content/DialogInterface$OnCancelListener;Z)V
+
+    .line 77
     .line 78
     .line 79
+    goto :goto_0
+
     .line 80
-    const/4 v0, 0x0
+    :cond_1
+    iget-object v0, v0, Lʾˉ/ᵎ;->ʼ:Ljava/lang/String;
 
     .line 81
-    invoke-static {v0, v1, v4, v3, v2}, Lʼˏ/ᵎ;->ˉʼ(Ljava/io/File;Ljava/util/ArrayList;Ljava/lang/String;ZZ)Ljava/lang/String;
-
     .line 82
+    invoke-static {v2}, Lʼˏ/ᵢ;->ˈי(I)Ljava/lang/String;
+
     .line 83
     .line 84
-    move-result-object v0
-
     .line 85
-    :goto_1
-    sget-object v1, Lʾˉ/ᴵᴵ;->ʼᴵ:Lʾˉ/ᵔ;
+    move-result-object v1
 
     .line 86
+    const/4 v2, 0x0
+
     .line 87
-    iget-object v2, p0, Lʾˉ/ᴵᴵ$ˆˎ$ʻ;->ʻ:Lʾˉ/ᴵᴵ$ˆˎ;
+    invoke-static {v0, v1, v7, v7, v2}, Lʼˏ/ᵢ;->ˏי(Ljava/lang/String;Ljava/lang/String;Landroid/content/DialogInterface$OnClickListener;Landroid/content/DialogInterface$OnClickListener;Landroid/content/DialogInterface$OnCancelListener;)V
 
     .line 88
     .line 89
-    iget-object v2, v2, Lʾˉ/ᴵᴵ$ˆˎ;->ʼ:Lʾˉ/ᵎ;
-
     .line 90
-    .line 91
-    iget-object v2, v2, Lʾˉ/ᵎ;->ʻ:Ljava/lang/String;
+    :goto_0
+    invoke-static {}, Lʼˏ/ᵢ;->ʻʻ()V
 
+    .line 91
     .line 92
     .line 93
-    invoke-virtual {v1, v2}, Lʾˉ/ᵔ;->ـ(Ljava/lang/String;)V
-
-    .line 94
-    .line 95
-    .line 96
-    new-instance v1, Lʾˉ/ᴵᴵ$ˆˎ$ʻ$ʻ;
-
-    .line 97
-    .line 98
-    invoke-direct {v1, p0, v0}, Lʾˉ/ᴵᴵ$ˆˎ$ʻ$ʻ;-><init>(Lʾˉ/ᴵᴵ$ˆˎ$ʻ;Ljava/lang/String;)V
-
-    .line 99
-    .line 100
-    .line 101
-    invoke-static {v1}, Lʾˉ/ᴵᴵ;->ˊⁱ(Ljava/lang/Runnable;)V
-
-    .line 102
-    .line 103
-    .line 104
     return-void
 .end method

@@ -80,7 +80,7 @@
     move-result-object p3
 
     .line 18
-    invoke-static {p3}, Lʾˉ/ʼʼ;->ˉˎ(Ljava/lang/Object;)V
+    invoke-static {p3}, Lʾˉ/ᴵᴵ;->ˉˎ(Ljava/lang/Object;)V
 
     .line 19
     .line 20

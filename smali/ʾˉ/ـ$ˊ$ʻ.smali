@@ -56,12 +56,12 @@
     move-result-object v0
 
     .line 7
-    invoke-static {v0}, Lʾˉ/ʼʼ;->ˋᵎ(Ljava/lang/Integer;)V
+    invoke-static {v0}, Lʾˉ/ᴵᴵ;->ˋᵎ(Ljava/lang/Integer;)V
 
     .line 8
     .line 9
     .line 10
-    sget-object v0, Lʾˉ/ʼʼ;->ʽᴵ:Lʾˊ/ˏ;
+    sget-object v0, Lʾˉ/ᴵᴵ;->ʽᴵ:Lʾˊ/ˏ;
 
     .line 11
     .line 12
@@ -73,7 +73,7 @@
     .line 14
     .line 15
     .line 16
-    sget-object v0, Lʾˉ/ʼʼ;->ʽᴵ:Lʾˊ/ˏ;
+    sget-object v0, Lʾˉ/ᴵᴵ;->ʽᴵ:Lʾˊ/ˏ;
 
     .line 17
     .line 18

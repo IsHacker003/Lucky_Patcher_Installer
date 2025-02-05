@@ -185,7 +185,7 @@
 
     .line 37
     .line 38
-    invoke-static {}, Lʾˉ/ʼʼ;->ˈᵎ()Landroid/content/pm/PackageManager;
+    invoke-static {}, Lʾˉ/ᴵᴵ;->ˈᵎ()Landroid/content/pm/PackageManager;
 
     .line 39
     .line 40
@@ -249,7 +249,7 @@
 
     .line 66
     .line 67
-    invoke-static {}, Lʾˉ/ʼʼ;->ˈᵎ()Landroid/content/pm/PackageManager;
+    invoke-static {}, Lʾˉ/ᴵᴵ;->ˈᵎ()Landroid/content/pm/PackageManager;
 
     .line 68
     .line 69
@@ -333,7 +333,7 @@
     .line 105
     .line 106
     .line 107
-    invoke-static {v9}, Lʾˉ/ʼʼ;->ˊⁱ(Ljava/lang/Runnable;)V
+    invoke-static {v9}, Lʾˉ/ᴵᴵ;->ˊⁱ(Ljava/lang/Runnable;)V
     :try_end_1
     .catch Ljava/lang/OutOfMemoryError; {:try_start_1 .. :try_end_1} :catch_2
     .catch Ljava/lang/Exception; {:try_start_1 .. :try_end_1} :catch_1
@@ -383,7 +383,7 @@
 
     .line 125
     .line 126
-    invoke-static {}, Lʾˉ/ʼʼ;->ˈᵎ()Landroid/content/pm/PackageManager;
+    invoke-static {}, Lʾˉ/ᴵᴵ;->ˈᵎ()Landroid/content/pm/PackageManager;
 
     .line 127
     .line 128
@@ -419,7 +419,7 @@
     move-result-object v0
 
     .line 144
-    sget-object v10, Lʾˉ/ʼʼ;->ʿˆ:Landroid/os/Handler;
+    sget-object v10, Lʾˉ/ᴵᴵ;->ʿˆ:Landroid/os/Handler;
 
     .line 145
     .line 146
@@ -888,7 +888,7 @@
     .line 369
     .line 370
     :cond_b
-    sget-object v0, Lʾˉ/ʼʼ;->ʿˆ:Landroid/os/Handler;
+    sget-object v0, Lʾˉ/ᴵᴵ;->ʿˆ:Landroid/os/Handler;
 
     .line 371
     .line 372
@@ -1004,7 +1004,7 @@
 
     .line 425
     :try_start_6
-    invoke-static {}, Lʾˉ/ʼʼ;->ˈᵎ()Landroid/content/pm/PackageManager;
+    invoke-static {}, Lʾˉ/ᴵᴵ;->ˈᵎ()Landroid/content/pm/PackageManager;
 
     .line 426
     .line 427
@@ -1024,7 +1024,7 @@
     move-result-object v14
 
     .line 435
-    invoke-static {}, Lʾˉ/ʼʼ;->ˈᵎ()Landroid/content/pm/PackageManager;
+    invoke-static {}, Lʾˉ/ᴵᴵ;->ˈᵎ()Landroid/content/pm/PackageManager;
 
     .line 436
     .line 437
@@ -1160,7 +1160,7 @@
 
     .line 500
     :cond_d
-    sget-object v0, Lʾˉ/ʼʼ;->ʿˆ:Landroid/os/Handler;
+    sget-object v0, Lʾˉ/ᴵᴵ;->ʿˆ:Landroid/os/Handler;
 
     .line 501
     .line 502
@@ -1419,7 +1419,7 @@
     :cond_f
     :goto_d
     :try_start_a
-    sget v15, Lʾˉ/ʼʼ;->ʾᐧ:I
+    sget v15, Lʾˉ/ᴵᴵ;->ʾᐧ:I
 
     .line 631
     .line 632
@@ -1723,7 +1723,7 @@
     move-result-object v2
 
     .line 779
-    invoke-static {v2}, Lʼˏ/ᵢ;->ˑˋ([B)Ljava/lang/String;
+    invoke-static {v2}, Lʼˏ/ᵢ;->ˑי([B)Ljava/lang/String;
 
     .line 780
     .line 781
@@ -1873,7 +1873,7 @@
     move-result-object v0
 
     .line 850
-    invoke-static {v0}, Lʼˏ/ᵢ;->ˑˋ([B)Ljava/lang/String;
+    invoke-static {v0}, Lʼˏ/ᵢ;->ˑי([B)Ljava/lang/String;
 
     .line 851
     .line 852
@@ -2535,7 +2535,7 @@
     .line 1186
     .line 1187
     .line 1188
-    invoke-static {v0}, Lʾˉ/ʼʼ;->ˊⁱ(Ljava/lang/Runnable;)V
+    invoke-static {v0}, Lʾˉ/ᴵᴵ;->ˊⁱ(Ljava/lang/Runnable;)V
 
     .line 1189
     .line 1190
@@ -2627,7 +2627,7 @@
     .line 1229
     .line 1230
     .line 1231
-    invoke-static {v0}, Lʾˉ/ʼʼ;->ˊⁱ(Ljava/lang/Runnable;)V
+    invoke-static {v0}, Lʾˉ/ᴵᴵ;->ˊⁱ(Ljava/lang/Runnable;)V
     :try_end_10
     .catch Ljava/lang/NullPointerException; {:try_start_10 .. :try_end_10} :catch_0
 

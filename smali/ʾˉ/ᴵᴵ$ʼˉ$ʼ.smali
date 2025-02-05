@@ -3,7 +3,7 @@
 .source "SourceFile"
 
 # interfaces
-.implements Landroid/content/DialogInterface$OnClickListener;
+.implements Ljava/lang/Runnable;
 
 
 # annotations
@@ -18,7 +18,7 @@
 
 
 # instance fields
-.field final synthetic ʼ:Lʾˉ/ᴵᴵ$ʼˉ;
+.field final synthetic ʻ:Lʾˉ/ᴵᴵ$ʼˉ;
 
 
 # direct methods
@@ -26,7 +26,7 @@
     .locals 0
 
     .line 1
-    iput-object p1, p0, Lʾˉ/ᴵᴵ$ʼˉ$ʼ;->ʼ:Lʾˉ/ᴵᴵ$ʼˉ;
+    iput-object p1, p0, Lʾˉ/ᴵᴵ$ʼˉ$ʼ;->ʻ:Lʾˉ/ᴵᴵ$ʼˉ;
 
     .line 2
     .line 3
@@ -40,32 +40,26 @@
 
 
 # virtual methods
-.method public onClick(Landroid/content/DialogInterface;I)V
-    .locals 0
+.method public run()V
+    .locals 1
 
     .line 1
-    new-instance p1, Ljava/lang/Thread;
+    const/16 v0, 0xb
 
     .line 2
     .line 3
-    new-instance p2, Lʾˉ/ᴵᴵ$ʼˉ$ʼ$ʻ;
+    invoke-static {v0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     .line 4
     .line 5
-    invoke-direct {p2, p0}, Lʾˉ/ᴵᴵ$ʼˉ$ʼ$ʻ;-><init>(Lʾˉ/ᴵᴵ$ʼˉ$ʼ;)V
-
     .line 6
-    .line 7
-    .line 8
-    invoke-direct {p1, p2}, Ljava/lang/Thread;-><init>(Ljava/lang/Runnable;)V
+    move-result-object v0
 
+    .line 7
+    invoke-static {v0}, Lʾˉ/ᴵᴵ;->ˊˏ(Ljava/lang/Integer;)V
+
+    .line 8
     .line 9
     .line 10
-    .line 11
-    invoke-virtual {p1}, Ljava/lang/Thread;->start()V
-
-    .line 12
-    .line 13
-    .line 14
     return-void
 .end method

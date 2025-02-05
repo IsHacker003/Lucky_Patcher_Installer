@@ -86,7 +86,7 @@
     .locals 1
 
     .line 1
-    sget-object v0, Lʾˉ/ʼʼ;->ʻﹶ:Ljava/lang/String;
+    sget-object v0, Lʾˉ/ᴵᴵ;->ʻﹶ:Ljava/lang/String;
 
     .line 2
     .line 3
@@ -102,7 +102,7 @@
     move-result-object v0
 
     .line 9
-    invoke-static {v0}, Lʾˉ/ʼʼ;->ˋᵎ(Ljava/lang/Integer;)V
+    invoke-static {v0}, Lʾˉ/ᴵᴵ;->ˋᵎ(Ljava/lang/Integer;)V
 
     .line 10
     .line 11
@@ -114,15 +114,15 @@
     .locals 2
 
     .line 1
-    sget-object p1, Lʾˉ/ʼʼ;->ʾʿ:Lʾˉ/ˏ;
+    sget-object p1, Lʾˉ/ᴵᴵ;->ʾʿ:Lʾˉ/ˏ;
 
     .line 2
     .line 3
-    sget-object v0, Lʾˉ/ʼʼ;->ʼˎ:Lʾˉ/ʼʼ;
+    sget-object v0, Lʾˉ/ᴵᴵ;->ʼˎ:Lʾˉ/ᴵᴵ;
 
     .line 4
     .line 5
-    invoke-virtual {v0}, Lʾˉ/ʼʼ;->ˈˑ()Landroidx/fragment/app/ʿ;
+    invoke-virtual {v0}, Lʾˉ/ᴵᴵ;->ˈˑ()Landroidx/fragment/app/ʿ;
 
     .line 6
     .line 7
@@ -156,7 +156,7 @@
     .locals 4
 
     .line 1
-    sget-object v0, Lʾˉ/ʼʼ;->ʻﹶ:Ljava/lang/String;
+    sget-object v0, Lʾˉ/ᴵᴵ;->ʻﹶ:Ljava/lang/String;
 
     .line 2
     .line 3
@@ -172,7 +172,7 @@
     move-result-object v0
 
     .line 9
-    invoke-static {v0}, Lʾˉ/ʼʼ;->ˊˏ(Ljava/lang/Integer;)V
+    invoke-static {v0}, Lʾˉ/ᴵᴵ;->ˊˏ(Ljava/lang/Integer;)V
 
     .line 10
     .line 11
@@ -189,15 +189,15 @@
 
     .line 17
     .line 18
-    sget-object p1, Lʾˉ/ʼʼ;->ʾʿ:Lʾˉ/ˏ;
+    sget-object p1, Lʾˉ/ᴵᴵ;->ʾʿ:Lʾˉ/ˏ;
 
     .line 19
     .line 20
-    sget-object v0, Lʾˉ/ʼʼ;->ʼˎ:Lʾˉ/ʼʼ;
+    sget-object v0, Lʾˉ/ᴵᴵ;->ʼˎ:Lʾˉ/ᴵᴵ;
 
     .line 21
     .line 22
-    invoke-virtual {v0}, Lʾˉ/ʼʼ;->ˈˑ()Landroidx/fragment/app/ʿ;
+    invoke-virtual {v0}, Lʾˉ/ᴵᴵ;->ˈˑ()Landroidx/fragment/app/ʿ;
 
     .line 23
     .line 24
@@ -223,7 +223,7 @@
     .line 34
     .line 35
     .line 36
-    sget-object v2, Lʾˉ/ʼʼ;->ʽـ:Ljava/lang/String;
+    sget-object v2, Lʾˉ/ᴵᴵ;->ʽـ:Ljava/lang/String;
 
     .line 37
     .line 38
@@ -258,11 +258,11 @@
     .line 53
     .line 54
     .line 55
-    sget-object v3, Lʾˉ/ʼʼ;->ʼˎ:Lʾˉ/ʼʼ;
+    sget-object v3, Lʾˉ/ᴵᴵ;->ʼˎ:Lʾˉ/ᴵᴵ;
 
     .line 56
     .line 57
-    invoke-virtual {v3}, Lʾˉ/ʼʼ;->ˈˑ()Landroidx/fragment/app/ʿ;
+    invoke-virtual {v3}, Lʾˉ/ᴵᴵ;->ˈˑ()Landroidx/fragment/app/ʿ;
 
     .line 58
     .line 59
@@ -325,7 +325,7 @@
     move-result-object p1
 
     .line 89
-    invoke-static {p1}, Lʾˉ/ʼʼ;->ˋᵎ(Ljava/lang/Integer;)V
+    invoke-static {p1}, Lʾˉ/ᴵᴵ;->ˋᵎ(Ljava/lang/Integer;)V
 
     .line 90
     .line 91

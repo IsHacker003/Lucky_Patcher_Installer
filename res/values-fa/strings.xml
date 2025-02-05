@@ -163,6 +163,7 @@
     <string name="close">بستن</string>
     <string name="collect_logs">در حال جمع آوری و فشرده سازی گزارش ها ...</string>
     <string name="common_google_play_services_unknown_issue">‏%1$s برای استفاده از خدمات Google Play با مشکل روبرو است. لطفاً دوباره امتحان کنید.</string>
+    <string name="context_add_app_for_zygisk_purchaces">شبیه سازی خرید (zygisk) برای این برنامه فعال شود</string>
     <string name="context_automodeslvl">حالت های خودکار</string>
     <string name="context_backup_apk">پشتیبان گیری فایل APK</string>
     <string name="context_backup_apk_selected_apps">پشتیبان گیری از فایل apk برنامه های انتخاب شده</string>
@@ -190,6 +191,7 @@
     <string name="context_hard_apk_permission">تغییر مجوز ها و ذخیره امضای اصلی (روش ناپایدار)</string>
     <string name="context_hide_lp">مخفی کردن لاکی پچر</string>
     <string name="context_hide_lp_descr">سعی کنید لاکی پچر را از برنامه های دیگر پنهان کنید فقط در صورت نیاز از آن استفاده کنید</string>
+    <string name="context_ignor_app_for_zygisk_purchaces">شبیه سازی خرید (zygisk) برای این برنامه غیرفعال شود</string>
     <string name="context_install">نصب</string>
     <string name="context_install_as_system">نصب به عنوان یک برنامه سیستمی</string>
     <string name="context_integrate_dalvik">یکپارچه سازی کد dalvik با برنامه از قبل نصب شده</string>
@@ -357,7 +359,7 @@
     <string name="customdescr">همه برنامه های پچ سفارشی شده را نشان می دهد</string>
     <string name="customtitle">برنامه های پچ سفارشی شده</string>
     <string name="dalvik_cache_size">حجم حافظه پنهان دالویک :</string>
-    <string name="damadged_apk">فایل برنامه آسیب دیده و قابل خواندن است</string>
+    <string name="damadged_apk">فایل برنامه آسیب دیده و قابل خواندن نیست</string>
     <string name="data_dir_size">حجم پوشه داده :</string>
     <string name="date_creation_patch">تاریخ افزوده شدن پچ :</string>
     <string name="days_on_up">نمایش برنامه های جدید</string>

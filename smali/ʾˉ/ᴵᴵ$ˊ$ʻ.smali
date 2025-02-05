@@ -52,37 +52,37 @@
 
 # virtual methods
 .method public run()V
-    .locals 8
+    .locals 6
 
     .line 1
-    const v0, 0x7f11029d
+    const v0, 0x7f11029f
 
     .line 2
     .line 3
     .line 4
-    invoke-static {v0}, Lʼˏ/ᵎ;->ˈˉ(I)Ljava/lang/String;
+    invoke-static {v0}, Lʼˏ/ᵢ;->ˈי(I)Ljava/lang/String;
 
     .line 5
     .line 6
     .line 7
-    move-result-object v1
+    move-result-object v0
 
     .line 8
-    new-instance v0, Ljava/lang/StringBuilder;
+    new-instance v1, Ljava/lang/StringBuilder;
 
     .line 9
     .line 10
-    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
+    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
 
     .line 11
     .line 12
     .line 13
-    const v2, 0x7f1101e5
+    const v2, 0x7f1101e8
 
     .line 14
     .line 15
     .line 16
-    invoke-static {v2}, Lʼˏ/ᵎ;->ˈˉ(I)Ljava/lang/String;
+    invoke-static {v2}, Lʼˏ/ᵢ;->ˈי(I)Ljava/lang/String;
 
     .line 17
     .line 18
@@ -90,7 +90,7 @@
     move-result-object v2
 
     .line 20
-    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     .line 21
     .line 22
@@ -99,7 +99,7 @@
 
     .line 24
     .line 25
-    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     .line 26
     .line 27
@@ -124,7 +124,7 @@
     div-long/2addr v2, v4
 
     .line 38
-    invoke-virtual {v0, v2, v3}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
+    invoke-virtual {v1, v2, v3}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
 
     .line 39
     .line 40
@@ -133,64 +133,23 @@
 
     .line 42
     .line 43
-    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     .line 44
     .line 45
     .line 46
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     .line 47
     .line 48
     .line 49
-    move-result-object v2
+    move-result-object v1
 
     .line 50
-    const v0, 0x7f11044f
+    invoke-static {v0, v1}, Lʾˉ/ᴵᴵ;->ˋⁱ(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 51
     .line 52
     .line 53
-    invoke-static {v0}, Lʼˏ/ᵎ;->ˈˉ(I)Ljava/lang/String;
-
-    .line 54
-    .line 55
-    .line 56
-    move-result-object v3
-
-    .line 57
-    new-instance v4, Lʾˉ/ᴵᴵ$ˊ$ʻ$ʻ;
-
-    .line 58
-    .line 59
-    invoke-direct {v4, p0}, Lʾˉ/ᴵᴵ$ˊ$ʻ$ʻ;-><init>(Lʾˉ/ᴵᴵ$ˊ$ʻ;)V
-
-    .line 60
-    .line 61
-    .line 62
-    const v0, 0x7f1103a8
-
-    .line 63
-    .line 64
-    .line 65
-    invoke-static {v0}, Lʼˏ/ᵎ;->ˈˉ(I)Ljava/lang/String;
-
-    .line 66
-    .line 67
-    .line 68
-    move-result-object v5
-
-    .line 69
-    const/4 v6, 0x0
-
-    .line 70
-    const/4 v7, 0x0
-
-    .line 71
-    invoke-static/range {v1 .. v7}, Lʼˏ/ᵎ;->ˏʻ(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Landroid/content/DialogInterface$OnClickListener;Ljava/lang/String;Landroid/content/DialogInterface$OnClickListener;Landroid/content/DialogInterface$OnCancelListener;)V
-
-    .line 72
-    .line 73
-    .line 74
     return-void
 .end method

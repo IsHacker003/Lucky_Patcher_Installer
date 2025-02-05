@@ -4,13 +4,13 @@
 
 
 # direct methods
-.method public static bridge synthetic ʻ(Landroid/os/StatFs;)J
-    .locals 2
+.method public static bridge synthetic ʻ()Z
+    .locals 1
 
     .line 1
-    invoke-virtual {p0}, Landroid/os/StatFs;->getBlockCountLong()J
+    invoke-static {}, Landroid/os/Environment;->isExternalStorageManager()Z
 
-    move-result-wide v0
+    move-result v0
 
-    return-wide v0
+    return v0
 .end method

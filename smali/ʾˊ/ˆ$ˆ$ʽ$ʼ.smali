@@ -92,7 +92,7 @@
     .line 18
     .line 19
     :try_start_0
-    sget-object v0, Lʾˉ/ʼʼ;->ʻﹶ:Ljava/lang/String;
+    sget-object v0, Lʾˉ/ᴵᴵ;->ʻﹶ:Ljava/lang/String;
 
     .line 20
     .line 21
@@ -112,7 +112,7 @@
 
     .line 28
     .line 29
-    invoke-static {}, Lʾˉ/ʼʼ;->ˈᵎ()Landroid/content/pm/PackageManager;
+    invoke-static {}, Lʾˉ/ᴵᴵ;->ˈᵎ()Landroid/content/pm/PackageManager;
 
     .line 30
     .line 31
@@ -149,7 +149,7 @@
     .line 46
     .line 47
     .line 48
-    sget-object v3, Lʾˉ/ʼʼ;->ʼᐧ:Ljava/lang/String;
+    sget-object v3, Lʾˉ/ᴵᴵ;->ʼᐧ:Ljava/lang/String;
 
     .line 49
     .line 50
@@ -167,7 +167,7 @@
     .line 56
     .line 57
     .line 58
-    sget-object v3, Lʾˉ/ʼʼ;->ʻﹶ:Ljava/lang/String;
+    sget-object v3, Lʾˉ/ᴵᴵ;->ʻﹶ:Ljava/lang/String;
 
     .line 59
     .line 60
@@ -278,7 +278,7 @@
     .line 109
     .line 110
     .line 111
-    invoke-static {v0}, Lʾˉ/ʼʼ;->ˊⁱ(Ljava/lang/Runnable;)V
+    invoke-static {v0}, Lʾˉ/ᴵᴵ;->ˊⁱ(Ljava/lang/Runnable;)V
     :try_end_0
     .catch Landroid/content/pm/PackageManager$NameNotFoundException; {:try_start_0 .. :try_end_0} :catch_2
     .catch Lcom/android/apksig/apk/ApkFormatException; {:try_start_0 .. :try_end_0} :catch_1

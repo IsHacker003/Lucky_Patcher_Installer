@@ -36,18 +36,16 @@
     .locals 1
 
     .line 1
-    const/4 v0, 0x6
+    new-instance v0, Lʾˉ/ᴵᴵ$ʻᵔ$ʻ;
 
     .line 2
-    invoke-static {v0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
-
     .line 3
+    invoke-direct {v0, p0}, Lʾˉ/ᴵᴵ$ʻᵔ$ʻ;-><init>(Lʾˉ/ᴵᴵ$ʻᵔ;)V
+
     .line 4
     .line 5
-    move-result-object v0
-
     .line 6
-    invoke-static {v0}, Lʾˉ/ᴵᴵ;->ˊˏ(Ljava/lang/Integer;)V
+    invoke-static {v0}, Lʾˉ/ᴵᴵ;->ˊﹳ(Ljava/lang/Runnable;)V
 
     .line 7
     .line 8

@@ -44,7 +44,7 @@
     .locals 6
 
     .line 1
-    sget-boolean v0, Lʾˉ/ʼʼ;->ʻﾞ:Z
+    sget-boolean v0, Lʾˉ/ᴵᴵ;->ʻﾞ:Z
 
     .line 2
     .line 3
@@ -65,7 +65,7 @@
     .line 10
     .line 11
     .line 12
-    sget-object v2, Lʾˉ/ʼʼ;->ʼٴ:Ljava/lang/String;
+    sget-object v2, Lʾˉ/ᴵᴵ;->ʼٴ:Ljava/lang/String;
 
     .line 13
     .line 14
@@ -112,7 +112,7 @@
 
     .line 36
     .line 37
-    invoke-static {}, Lʾˉ/ʼʼ;->ˈי()Landroid/content/Context;
+    invoke-static {}, Lʾˉ/ᴵᴵ;->ˈי()Landroid/content/Context;
 
     .line 38
     .line 39
@@ -133,7 +133,7 @@
     .line 46
     .line 47
     .line 48
-    sget-object v5, Lʾˉ/ʼʼ;->ʼٴ:Ljava/lang/String;
+    sget-object v5, Lʾˉ/ᴵᴵ;->ʼٴ:Ljava/lang/String;
 
     .line 49
     .line 50
@@ -168,7 +168,7 @@
     .line 65
     .line 66
     .line 67
-    sget-object v1, Lʾˉ/ʼʼ;->ʼˎ:Lʾˉ/ʼʼ;
+    sget-object v1, Lʾˉ/ᴵᴵ;->ʼˎ:Lʾˉ/ᴵᴵ;
 
     .line 68
     .line 69
@@ -176,11 +176,11 @@
 
     .line 70
     .line 71
-    sget-boolean v2, Lʾˉ/ʼʼ;->ˉﾞ:Z
+    sget-boolean v2, Lʾˉ/ᴵᴵ;->ˉﾞ:Z
 
     .line 72
     .line 73
-    invoke-virtual {v1, v0, v2}, Lʾˉ/ʼʼ;->ˉˆ(Lʾˉ/ˎ;Z)V
+    invoke-virtual {v1, v0, v2}, Lʾˉ/ᴵᴵ;->ˉˆ(Lʾˉ/ˎ;Z)V
 
     .line 74
     .line 75
@@ -198,7 +198,7 @@
     .line 80
     .line 81
     .line 82
-    invoke-static {v0}, Lʾˉ/ʼʼ;->ˊⁱ(Ljava/lang/Runnable;)V
+    invoke-static {v0}, Lʾˉ/ᴵᴵ;->ˊⁱ(Ljava/lang/Runnable;)V
 
     .line 83
     .line 84
@@ -216,7 +216,7 @@
     .line 89
     .line 90
     .line 91
-    invoke-static {v0}, Lʾˉ/ʼʼ;->ˋʻ(Ljava/lang/Runnable;)V
+    invoke-static {v0}, Lʾˉ/ᴵᴵ;->ˋʻ(Ljava/lang/Runnable;)V
 
     .line 92
     .line 93

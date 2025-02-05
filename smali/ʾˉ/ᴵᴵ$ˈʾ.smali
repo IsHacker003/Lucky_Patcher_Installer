@@ -47,56 +47,22 @@
 
 # virtual methods
 .method public run()V
-    .locals 2
+    .locals 1
 
     .line 1
-    sget-boolean v0, Lʾˉ/ᴵᴵ;->ʽﾞ:Z
+    new-instance v0, Lʾˉ/ᴵᴵ$ˈʾ$ʻ;
 
     .line 2
     .line 3
-    if-eqz v0, :cond_0
+    invoke-direct {v0, p0}, Lʾˉ/ᴵᴵ$ˈʾ$ʻ;-><init>(Lʾˉ/ᴵᴵ$ˈʾ;)V
 
     .line 4
     .line 5
-    invoke-static {}, Lʾˉ/ᴵᴵ;->ʿˉ()V
-
     .line 6
+    invoke-static {v0}, Lʾˉ/ᴵᴵ;->ˊⁱ(Ljava/lang/Runnable;)V
+
     .line 7
     .line 8
-    invoke-static {}, Lʼˏ/ᵎ;->ˊᴵ()V
-
     .line 9
-    .line 10
-    .line 11
-    iget-object v0, p0, Lʾˉ/ᴵᴵ$ˈʾ;->ʼ:Lʾˉ/ᴵᴵ;
-
-    .line 12
-    .line 13
-    invoke-virtual {v0}, Lʾˉ/ᴵᴵ;->ˉˊ()V
-
-    .line 14
-    .line 15
-    .line 16
-    iget-object v0, p0, Lʾˉ/ᴵᴵ$ˈʾ;->ʼ:Lʾˉ/ᴵᴵ;
-
-    .line 17
-    .line 18
-    invoke-virtual {v0}, Lʾˉ/ᴵᴵ;->ˊʿ()V
-
-    .line 19
-    .line 20
-    .line 21
-    :cond_0
-    const/4 v0, 0x0
-
-    .line 22
-    const/4 v1, 0x1
-
-    .line 23
-    invoke-static {v1, v0, v1}, Lʼˏ/ᵎ;->ˊᐧ(ZZZ)V
-
-    .line 24
-    .line 25
-    .line 26
     return-void
 .end method

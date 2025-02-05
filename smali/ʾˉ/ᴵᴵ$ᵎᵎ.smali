@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lʾˉ/ᴵᴵ;->ˉⁱ(IILandroid/content/Intent;)V
+    value = Lʾˉ/ᴵᴵ;->ˎי(Lʾˉ/ˎ;Z)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -17,16 +17,29 @@
 .end annotation
 
 
+# instance fields
+.field final synthetic ʼ:Z
+
+
 # direct methods
-.method constructor <init>()V
+.method constructor <init>(Z)V
     .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()V"
+        }
+    .end annotation
 
     .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    iput-boolean p1, p0, Lʾˉ/ᴵᴵ$ᵎᵎ;->ʼ:Z
 
     .line 2
     .line 3
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
     .line 4
+    .line 5
+    .line 6
     return-void
 .end method
 
@@ -36,48 +49,19 @@
     .locals 0
 
     .line 1
-    :try_start_0
-    sget-object p1, Lʾˉ/ᴵᴵ;->ˉˑ:Lʾˉ/ˎ;
+    new-instance p1, Lʾˉ/ᴵᴵ$ᵎᵎ$ʻ;
 
     .line 2
     .line 3
-    iget-object p1, p1, Lʾˉ/ˎ;->ʻ:Ljava/lang/String;
+    invoke-direct {p1, p0}, Lʾˉ/ᴵᴵ$ᵎᵎ$ʻ;-><init>(Lʾˉ/ᴵᴵ$ᵎᵎ;)V
 
     .line 4
     .line 5
-    invoke-static {p1}, Lʼˏ/ᵎ;->ˏᵎ(Ljava/lang/String;)V
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
-
     .line 6
+    invoke-static {p1}, Lʾˉ/ᴵᴵ;->ˋʻ(Ljava/lang/Runnable;)V
+
     .line 7
     .line 8
-    goto :goto_0
-
     .line 9
-    :catchall_0
-    move-exception p1
-
-    .line 10
-    invoke-virtual {p1}, Ljava/lang/Throwable;->printStackTrace()V
-
-    .line 11
-    .line 12
-    .line 13
-    new-instance p1, Lʾˉ/ᴵᴵ$ᵎᵎ$ʻ;
-
-    .line 14
-    .line 15
-    invoke-direct {p1, p0}, Lʾˉ/ᴵᴵ$ᵎᵎ$ʻ;-><init>(Lʾˉ/ᴵᴵ$ᵎᵎ;)V
-
-    .line 16
-    .line 17
-    .line 18
-    invoke-static {p1}, Lʾˉ/ᴵᴵ;->ˊⁱ(Ljava/lang/Runnable;)V
-
-    .line 19
-    .line 20
-    .line 21
-    :goto_0
     return-void
 .end method

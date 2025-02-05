@@ -311,11 +311,11 @@
 
     .line 122
     .line 123
-    sget-object p2, Lʾˉ/ʼʼ;->ʼᵎ:Lʾˉ/ᵎ;
+    sget-object p2, Lʾˉ/ᴵᴵ;->ʼᵎ:Lʾˉ/ᵎ;
 
     .line 124
     .line 125
-    invoke-static {p2, p1}, Lʾˉ/ʼʼ;->ˊᵢ(Lʾˉ/ᵎ;Lʼˑ/ʼ;)V
+    invoke-static {p2, p1}, Lʾˉ/ᴵᴵ;->ˊᵢ(Lʾˉ/ᵎ;Lʼˑ/ʼ;)V
 
     .line 126
     .line 127

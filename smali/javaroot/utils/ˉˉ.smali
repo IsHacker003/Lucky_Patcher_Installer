@@ -274,7 +274,7 @@
 
     .line 122
     .line 123
-    sget p0, Lʾˉ/ʼʼ;->ʾᐧ:I
+    sget p0, Lʾˉ/ᴵᴵ;->ʾᐧ:I
 
     .line 124
     .line 125
@@ -359,7 +359,7 @@
 
     .line 168
     .line 169
-    sput-object p0, Lʾˉ/ʼʼ;->ʿᴵ:Ljava/lang/Boolean;
+    sput-object p0, Lʾˉ/ᴵᴵ;->ʿᴵ:Ljava/lang/Boolean;
 
     .line 170
     .line 171
@@ -384,7 +384,7 @@
 
     .line 179
     .line 180
-    sput-object p0, Lʾˉ/ʼʼ;->ʿᴵ:Ljava/lang/Boolean;
+    sput-object p0, Lʾˉ/ᴵᴵ;->ʿᴵ:Ljava/lang/Boolean;
 
     .line 181
     .line 182

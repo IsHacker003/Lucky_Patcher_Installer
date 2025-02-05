@@ -70,7 +70,7 @@
 
     .line 18
     .line 19
-    invoke-static {p1}, Lʾˉ/ʼʼ;->ˉʼ(Landroid/content/Context;)V
+    invoke-static {p1}, Lʾˉ/ᴵᴵ;->ˉʼ(Landroid/content/Context;)V
 
     .line 20
     .line 21
@@ -190,7 +190,7 @@
 
     .line 82
     .line 83
-    invoke-static {}, Lʾˉ/ʼʼ;->ˈᵎ()Landroid/content/pm/PackageManager;
+    invoke-static {}, Lʾˉ/ᴵᴵ;->ˈᵎ()Landroid/content/pm/PackageManager;
 
     .line 84
     .line 85
@@ -202,7 +202,7 @@
 
     .line 88
     .line 89
-    invoke-static {}, Lʾˉ/ʼʼ;->ˈי()Landroid/content/Context;
+    invoke-static {}, Lʾˉ/ᴵᴵ;->ˈי()Landroid/content/Context;
 
     .line 90
     .line 91
@@ -241,7 +241,7 @@
 
     .line 109
     :cond_0
-    invoke-static {}, Lʾˉ/ʼʼ;->ˈᵎ()Landroid/content/pm/PackageManager;
+    invoke-static {}, Lʾˉ/ᴵᴵ;->ˈᵎ()Landroid/content/pm/PackageManager;
 
     .line 110
     .line 111
@@ -253,7 +253,7 @@
 
     .line 114
     .line 115
-    invoke-static {}, Lʾˉ/ʼʼ;->ˈי()Landroid/content/Context;
+    invoke-static {}, Lʾˉ/ᴵᴵ;->ˈי()Landroid/content/Context;
 
     .line 116
     .line 117
@@ -275,7 +275,7 @@
 
     .line 126
     .line 127
-    invoke-static {}, Lʾˉ/ʼʼ;->ˈי()Landroid/content/Context;
+    invoke-static {}, Lʾˉ/ᴵᴵ;->ˈי()Landroid/content/Context;
 
     .line 128
     .line 129
@@ -288,7 +288,7 @@
     .line 132
     .line 133
     .line 134
-    invoke-static {}, Lʾˉ/ʼʼ;->ˈי()Landroid/content/Context;
+    invoke-static {}, Lʾˉ/ᴵᴵ;->ˈי()Landroid/content/Context;
 
     .line 135
     .line 136
@@ -318,7 +318,7 @@
     .line 148
     .line 149
     .line 150
-    invoke-static {}, Lʾˉ/ʼʼ;->ˈי()Landroid/content/Context;
+    invoke-static {}, Lʾˉ/ᴵᴵ;->ˈי()Landroid/content/Context;
 
     .line 151
     .line 152
@@ -367,7 +367,7 @@
     .line 173
     .line 174
     :try_start_0
-    sput-boolean v2, Lʾˉ/ʼʼ;->ʿʽ:Z
+    sput-boolean v2, Lʾˉ/ᴵᴵ;->ʿʽ:Z
 
     .line 175
     .line 176

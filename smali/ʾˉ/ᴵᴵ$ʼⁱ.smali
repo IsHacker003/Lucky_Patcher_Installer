@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lʾˉ/ᴵᴵ;->ˉʽ(Ljava/io/File;Z)V
+    value = Lʾˉ/ᴵᴵ;->ˊʽ(Z)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -17,865 +17,398 @@
 .end annotation
 
 
-# instance fields
-.field final synthetic ʻ:Ljava/io/File;
-
-.field final synthetic ʼ:Z
-
-.field final synthetic ʽ:Lʾˉ/ᴵᴵ;
-
-
 # direct methods
-.method constructor <init>(Lʾˉ/ᴵᴵ;Ljava/io/File;Z)V
+.method constructor <init>()V
     .locals 0
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "()V"
-        }
-    .end annotation
 
     .line 1
-    iput-object p1, p0, Lʾˉ/ᴵᴵ$ʼⁱ;->ʽ:Lʾˉ/ᴵᴵ;
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
     .line 3
-    iput-object p2, p0, Lʾˉ/ᴵᴵ$ʼⁱ;->ʻ:Ljava/io/File;
-
     .line 4
-    .line 5
-    iput-boolean p3, p0, Lʾˉ/ᴵᴵ$ʼⁱ;->ʼ:Z
-
-    .line 6
-    .line 7
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    .line 8
-    .line 9
-    .line 10
     return-void
 .end method
 
 
 # virtual methods
 .method public run()V
-    .locals 12
+    .locals 9
 
     .line 1
     const/4 v0, 0x1
 
     .line 2
-    const-string v1, "/tmp/"
+    const/4 v1, 0x0
 
     .line 3
+    :try_start_0
+    new-instance v2, Landroid/content/Intent;
+
     .line 4
-    const-string v2, ""
-
     .line 5
-    .line 6
-    const v3, 0x7f110196
+    const-string v3, "com.google.android.gms.settings.VERIFY_APPS_SETTINGS"
 
+    .line 6
     .line 7
+    invoke-direct {v2, v3}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
+
     .line 8
     .line 9
-    :try_start_0
-    const-string v4, "5"
-
     .line 10
-    .line 11
-    invoke-static {v4}, Lʾˉ/ᴵᴵ;->ˉˎ(Ljava/lang/Object;)V
+    invoke-static {}, Lʾˉ/ᴵᴵ;->ˈי()Landroid/content/Context;
 
+    .line 11
     .line 12
     .line 13
+    move-result-object v3
+
     .line 14
-    new-instance v4, Lnet/lingala/zip4j/core/ZipFile;
+    invoke-virtual {v3}, Landroid/content/Context;->getPackageManager()Landroid/content/pm/PackageManager;
 
     .line 15
     .line 16
-    iget-object v5, p0, Lʾˉ/ᴵᴵ$ʼⁱ;->ʻ:Ljava/io/File;
-
     .line 17
+    move-result-object v3
+
     .line 18
-    invoke-direct {v4, v5}, Lnet/lingala/zip4j/core/ZipFile;-><init>(Ljava/io/File;)V
-    :try_end_0
-    .catch Lnet/lingala/zip4j/exception/ZipException; {:try_start_0 .. :try_end_0} :catch_1
-    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
+    const v4, 0x10200
 
     .line 19
     .line 20
     .line 21
-    :try_start_1
-    new-instance v5, Lʼˏ/ᵎ;
+    invoke-virtual {v3, v2, v4}, Landroid/content/pm/PackageManager;->queryIntentActivities(Landroid/content/Intent;I)Ljava/util/List;
 
     .line 22
     .line 23
-    invoke-direct {v5, v2}, Lʼˏ/ᵎ;-><init>(Ljava/lang/String;)V
-
     .line 24
+    move-result-object v2
+
     .line 25
+    if-eqz v2, :cond_2
+
     .line 26
-    new-instance v6, Ljava/io/File;
-
     .line 27
-    .line 28
-    new-instance v7, Ljava/lang/StringBuilder;
+    invoke-interface {v2}, Ljava/util/List;->size()I
 
+    .line 28
     .line 29
     .line 30
-    invoke-direct {v7}, Ljava/lang/StringBuilder;-><init>()V
+    move-result v3
 
     .line 31
+    if-lez v3, :cond_2
+
     .line 32
     .line 33
-    sget-object v8, Lʾˉ/ᴵᴵ;->ʼᐧ:Ljava/lang/String;
+    invoke-interface {v2}, Ljava/util/List;->iterator()Ljava/util/Iterator;
 
     .line 34
     .line 35
-    invoke-virtual {v7, v8}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
     .line 36
-    .line 37
-    .line 38
-    invoke-virtual {v7, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    move-result-object v3
 
+    .line 37
+    :goto_0
+    invoke-interface {v3}, Ljava/util/Iterator;->hasNext()Z
+
+    .line 38
     .line 39
     .line 40
+    move-result v4
+
     .line 41
-    invoke-virtual {v7}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    if-eqz v4, :cond_2
 
     .line 42
     .line 43
+    invoke-interface {v3}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+
     .line 44
-    move-result-object v7
-
     .line 45
-    invoke-direct {v6, v7}, Ljava/io/File;-><init>(Ljava/lang/String;)V
-
     .line 46
-    .line 47
-    .line 48
-    invoke-virtual {v5, v6}, Lʼˏ/ᵎ;->ʻﹶ(Ljava/io/File;)V
-    :try_end_1
-    .catch Ljava/io/IOException; {:try_start_1 .. :try_end_1} :catch_2
-    .catch Lnet/lingala/zip4j/exception/ZipException; {:try_start_1 .. :try_end_1} :catch_1
-    .catch Ljava/lang/Exception; {:try_start_1 .. :try_end_1} :catch_0
+    move-result-object v4
 
+    .line 47
+    check-cast v4, Landroid/content/pm/ResolveInfo;
+
+    .line 48
     .line 49
+    invoke-static {}, Lʾˉ/ᴵᴵ;->ˈי()Landroid/content/Context;
+
     .line 50
     .line 51
-    goto :goto_0
-
     .line 52
-    :catch_0
-    move-exception v0
+    move-result-object v5
 
     .line 53
-    goto/16 :goto_4
+    invoke-virtual {v5}, Landroid/content/Context;->getPackageManager()Landroid/content/pm/PackageManager;
 
     .line 54
     .line 55
-    :catch_1
-    move-exception v0
-
     .line 56
-    goto/16 :goto_5
+    move-result-object v5
 
     .line 57
-    .line 58
-    :catch_2
-    move-exception v5
+    new-instance v6, Landroid/content/ComponentName;
 
+    .line 58
     .line 59
-    :try_start_2
-    invoke-virtual {v5}, Ljava/lang/Throwable;->printStackTrace()V
+    invoke-interface {v2, v1}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     .line 60
     .line 61
     .line 62
-    :goto_0
-    new-instance v5, Ljava/lang/StringBuilder;
+    move-result-object v7
 
     .line 63
-    .line 64
-    invoke-direct {v5}, Ljava/lang/StringBuilder;-><init>()V
+    check-cast v7, Landroid/content/pm/ResolveInfo;
 
+    .line 64
     .line 65
+    iget-object v7, v7, Landroid/content/pm/ResolveInfo;->activityInfo:Landroid/content/pm/ActivityInfo;
+
     .line 66
     .line 67
-    sget-object v6, Lʾˉ/ᴵᴵ;->ʼᐧ:Ljava/lang/String;
+    iget-object v7, v7, Landroid/content/pm/ActivityInfo;->packageName:Ljava/lang/String;
 
     .line 68
     .line 69
-    invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-interface {v2, v1}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     .line 70
     .line 71
     .line 72
-    invoke-virtual {v5, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    move-result-object v8
 
     .line 73
+    check-cast v8, Landroid/content/pm/ResolveInfo;
+
     .line 74
     .line 75
-    invoke-virtual {v5}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    iget-object v8, v8, Landroid/content/pm/ResolveInfo;->activityInfo:Landroid/content/pm/ActivityInfo;
 
     .line 76
     .line 77
-    .line 78
-    move-result-object v1
+    iget-object v8, v8, Landroid/content/pm/ActivityInfo;->name:Ljava/lang/String;
 
+    .line 78
     .line 79
-    invoke-virtual {v4, v1}, Lnet/lingala/zip4j/core/ZipFile;->extractAll(Ljava/lang/String;)V
+    invoke-direct {v6, v7, v8}, Landroid/content/ComponentName;-><init>(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 80
     .line 81
     .line 82
-    new-instance v4, Ljava/io/File;
+    invoke-virtual {v5, v6}, Landroid/content/pm/PackageManager;->getComponentEnabledSetting(Landroid/content/ComponentName;)I
 
     .line 83
     .line 84
-    invoke-direct {v4, v1}, Ljava/io/File;-><init>(Ljava/lang/String;)V
-
     .line 85
-    .line 86
-    .line 87
-    invoke-virtual {v4}, Ljava/io/File;->exists()Z
+    move-result v5
+    :try_end_0
+    .catch Ljava/lang/SecurityException; {:try_start_0 .. :try_end_0} :catch_0
 
+    .line 86
+    const-string v6, "/"
+
+    .line 87
     .line 88
+    const-string v7, ""
+
     .line 89
     .line 90
-    move-result v4
+    if-eq v5, v0, :cond_1
 
     .line 91
-    if-eqz v4, :cond_4
-
     .line 92
-    .line 93
-    new-instance v4, Ljava/io/File;
+    if-nez v5, :cond_0
 
+    .line 93
     .line 94
+    goto :goto_1
+
     .line 95
-    invoke-direct {v4, v1}, Ljava/io/File;-><init>(Ljava/lang/String;)V
+    :cond_0
+    :try_start_1
+    new-instance v5, Lʼˏ/ᵢ;
 
     .line 96
     .line 97
-    .line 98
-    invoke-virtual {v4}, Ljava/io/File;->listFiles()[Ljava/io/File;
+    invoke-direct {v5, v7}, Lʼˏ/ᵢ;-><init>(Ljava/lang/String;)V
 
+    .line 98
     .line 99
     .line 100
-    .line 101
-    move-result-object v1
+    new-instance v7, Ljava/lang/StringBuilder;
 
+    .line 101
     .line 102
-    if-eqz v1, :cond_4
+    invoke-direct {v7}, Ljava/lang/StringBuilder;-><init>()V
 
     .line 103
     .line 104
-    array-length v4, v1
-
     .line 105
-    if-lez v4, :cond_4
+    const-string v8, "pm enable "
 
     .line 106
     .line 107
-    new-instance v4, Ljava/util/ArrayList;
+    invoke-virtual {v7, v8}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     .line 108
     .line 109
-    invoke-direct {v4}, Ljava/util/ArrayList;-><init>()V
-
     .line 110
+    iget-object v8, v4, Landroid/content/pm/ResolveInfo;->activityInfo:Landroid/content/pm/ActivityInfo;
+
     .line 111
     .line 112
-    array-length v5, v1
+    iget-object v8, v8, Landroid/content/pm/ActivityInfo;->packageName:Ljava/lang/String;
 
     .line 113
-    const/4 v6, 0x0
-
     .line 114
-    const/4 v7, 0x0
+    invoke-virtual {v7, v8}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     .line 115
-    :goto_1
-    if-ge v7, v5, :cond_2
-
     .line 116
     .line 117
-    aget-object v8, v1, v7
+    invoke-virtual {v7, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     .line 118
     .line 119
-    invoke-virtual {v8}, Ljava/io/File;->getName()Ljava/lang/String;
-
     .line 120
+    iget-object v4, v4, Landroid/content/pm/ResolveInfo;->activityInfo:Landroid/content/pm/ActivityInfo;
+
     .line 121
     .line 122
-    move-result-object v9
+    iget-object v4, v4, Landroid/content/pm/ActivityInfo;->name:Ljava/lang/String;
 
     .line 123
-    invoke-static {v9}, Lʼˏ/ᵎ;->ʾـ(Ljava/lang/String;)Ljava/lang/String;
-
     .line 124
+    invoke-virtual {v7, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
     .line 125
     .line 126
-    move-result-object v9
-
     .line 127
-    invoke-virtual {v9}, Ljava/lang/String;->toLowerCase()Ljava/lang/String;
+    invoke-virtual {v7}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     .line 128
     .line 129
     .line 130
-    move-result-object v9
+    move-result-object v4
 
     .line 131
-    const-string v10, "apk"
+    new-array v6, v0, [Ljava/lang/String;
 
     .line 132
     .line 133
-    invoke-virtual {v9, v10}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+    aput-object v4, v6, v1
 
     .line 134
     .line 135
+    invoke-virtual {v5, v6}, Lʼˏ/ᵢ;->ˎˎ([Ljava/lang/String;)Ljava/lang/String;
+
     .line 136
-    move-result v9
-
     .line 137
-    if-nez v9, :cond_0
-
     .line 138
+    goto :goto_0
+
     .line 139
-    new-instance v9, Ljava/io/File;
+    :cond_1
+    :goto_1
+    new-instance v5, Lʼˏ/ᵢ;
 
     .line 140
     .line 141
-    new-instance v10, Ljava/lang/StringBuilder;
+    invoke-direct {v5, v7}, Lʼˏ/ᵢ;-><init>(Ljava/lang/String;)V
 
     .line 142
     .line 143
-    invoke-direct {v10}, Ljava/lang/StringBuilder;-><init>()V
-
     .line 144
+    new-instance v7, Ljava/lang/StringBuilder;
+
     .line 145
     .line 146
-    sget-object v11, Lʾˉ/ᴵᴵ;->ʼᐧ:Ljava/lang/String;
+    invoke-direct {v7}, Ljava/lang/StringBuilder;-><init>()V
 
     .line 147
     .line 148
-    invoke-virtual {v10, v11}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
     .line 149
+    const-string v8, "pm disable "
+
     .line 150
     .line 151
-    const-string v11, "/CustomPatches/"
+    invoke-virtual {v7, v8}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     .line 152
     .line 153
-    invoke-virtual {v10, v11}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
     .line 154
+    iget-object v8, v4, Landroid/content/pm/ResolveInfo;->activityInfo:Landroid/content/pm/ActivityInfo;
+
     .line 155
     .line 156
-    invoke-virtual {v8}, Ljava/io/File;->getName()Ljava/lang/String;
+    iget-object v8, v8, Landroid/content/pm/ActivityInfo;->packageName:Ljava/lang/String;
 
     .line 157
     .line 158
+    invoke-virtual {v7, v8}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
     .line 159
-    move-result-object v11
-
     .line 160
-    invoke-virtual {v10, v11}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
     .line 161
+    invoke-virtual {v7, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
     .line 162
     .line 163
-    invoke-virtual {v10}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
     .line 164
+    iget-object v4, v4, Landroid/content/pm/ResolveInfo;->activityInfo:Landroid/content/pm/ActivityInfo;
+
     .line 165
     .line 166
-    move-result-object v10
+    iget-object v4, v4, Landroid/content/pm/ActivityInfo;->name:Ljava/lang/String;
 
     .line 167
-    invoke-direct {v9, v10}, Ljava/io/File;-><init>(Ljava/lang/String;)V
-
     .line 168
+    invoke-virtual {v7, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
     .line 169
     .line 170
-    invoke-virtual {v8, v9}, Ljava/io/File;->renameTo(Ljava/io/File;)Z
-
     .line 171
+    invoke-virtual {v7}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
     .line 172
     .line 173
-    invoke-virtual {v8}, Ljava/io/File;->getName()Ljava/lang/String;
-
     .line 174
-    .line 175
-    .line 176
-    move-result-object v8
+    move-result-object v4
 
+    .line 175
+    new-array v6, v0, [Ljava/lang/String;
+
+    .line 176
     .line 177
-    invoke-virtual {v4, v8}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+    aput-object v4, v6, v1
 
     .line 178
     .line 179
+    invoke-virtual {v5, v6}, Lʼˏ/ᵢ;->ˎˎ([Ljava/lang/String;)Ljava/lang/String;
+    :try_end_1
+    .catch Ljava/lang/SecurityException; {:try_start_1 .. :try_end_1} :catch_0
+
     .line 180
-    goto :goto_2
-
     .line 181
-    :cond_0
-    invoke-virtual {v8}, Ljava/io/File;->getAbsolutePath()Ljava/lang/String;
-
     .line 182
+    goto/16 :goto_0
+
     .line 183
     .line 184
-    move-result-object v9
+    :catch_0
+    const-string v0, "Security exception occurred"
 
     .line 185
-    invoke-static {v9, v0}, Lʼˏ/ᵎ;->ʽˏ(Ljava/lang/String;I)Landroid/content/pm/PackageInfo;
-
     .line 186
+    invoke-static {v0}, Lʾˉ/ᴵᴵ;->ˉˎ(Ljava/lang/Object;)V
+
     .line 187
     .line 188
-    move-result-object v9
-
     .line 189
-    invoke-virtual {v8}, Ljava/io/File;->getAbsolutePath()Ljava/lang/String;
-
-    .line 190
-    .line 191
-    .line 192
-    move-result-object v10
-
-    .line 193
-    invoke-static {v10}, Lʼˏ/ᵎ;->ʽˎ(Ljava/lang/String;)Ljava/lang/String;
-
-    .line 194
-    .line 195
-    .line 196
-    move-result-object v10
-
-    .line 197
-    if-eqz v10, :cond_1
-
-    .line 198
-    .line 199
-    if-eqz v9, :cond_1
-
-    .line 200
-    .line 201
-    sget-object v11, Lʾˉ/ᴵᴵ;->ʻﹶ:Ljava/lang/String;
-
-    .line 202
-    .line 203
-    new-instance v11, Lʾˉ/ᴵᴵ$ʼⁱ$ʻ;
-
-    .line 204
-    .line 205
-    invoke-direct {v11, p0, v10, v9, v8}, Lʾˉ/ᴵᴵ$ʼⁱ$ʻ;-><init>(Lʾˉ/ᴵᴵ$ʼⁱ;Ljava/lang/String;Landroid/content/pm/PackageInfo;Ljava/io/File;)V
-
-    .line 206
-    .line 207
-    .line 208
-    invoke-static {v11}, Lʾˉ/ᴵᴵ;->ˊⁱ(Ljava/lang/Runnable;)V
-
-    .line 209
-    .line 210
-    .line 211
-    :cond_1
-    :goto_2
-    add-int/2addr v7, v0
-
-    .line 212
-    goto :goto_1
-
-    .line 213
     :cond_2
-    invoke-virtual {v4}, Ljava/util/ArrayList;->size()I
-
-    .line 214
-    .line 215
-    .line 216
-    move-result v1
-
-    .line 217
-    if-lez v1, :cond_4
-
-    .line 218
-    .line 219
-    invoke-virtual {v4}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
-
-    .line 220
-    .line 221
-    .line 222
-    move-result-object v1
-    :try_end_2
-    .catch Lnet/lingala/zip4j/exception/ZipException; {:try_start_2 .. :try_end_2} :catch_1
-    .catch Ljava/lang/Exception; {:try_start_2 .. :try_end_2} :catch_0
-
-    .line 223
-    const-string v4, "\n"
-
-    .line 224
-    .line 225
-    move-object v5, v4
-
-    .line 226
-    :goto_3
-    :try_start_3
-    invoke-interface {v1}, Ljava/util/Iterator;->hasNext()Z
-
-    .line 227
-    .line 228
-    .line 229
-    move-result v7
-
-    .line 230
-    if-eqz v7, :cond_3
-
-    .line 231
-    .line 232
-    invoke-interface {v1}, Ljava/util/Iterator;->next()Ljava/lang/Object;
-
-    .line 233
-    .line 234
-    .line 235
-    move-result-object v7
-
-    .line 236
-    check-cast v7, Ljava/lang/String;
-
-    .line 237
-    .line 238
-    new-instance v8, Ljava/lang/StringBuilder;
-
-    .line 239
-    .line 240
-    invoke-direct {v8}, Ljava/lang/StringBuilder;-><init>()V
-
-    .line 241
-    .line 242
-    .line 243
-    invoke-virtual {v8, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 244
-    .line 245
-    .line 246
-    invoke-virtual {v8, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 247
-    .line 248
-    .line 249
-    invoke-virtual {v8, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 250
-    .line 251
-    .line 252
-    invoke-virtual {v8}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    .line 253
-    .line 254
-    .line 255
-    move-result-object v5
-
-    .line 256
-    goto :goto_3
-
-    .line 257
-    :cond_3
-    const v1, 0x7f1104e4
-
-    .line 258
-    .line 259
-    .line 260
-    invoke-static {v1}, Lʼˏ/ᵎ;->ˈˉ(I)Ljava/lang/String;
-
-    .line 261
-    .line 262
-    .line 263
-    move-result-object v1
-
-    .line 264
-    new-instance v4, Ljava/lang/StringBuilder;
-
-    .line 265
-    .line 266
-    invoke-direct {v4}, Ljava/lang/StringBuilder;-><init>()V
-
-    .line 267
-    .line 268
-    .line 269
-    const v7, 0x7f110303
-
-    .line 270
-    .line 271
-    .line 272
-    invoke-static {v7}, Lʼˏ/ᵎ;->ˈˉ(I)Ljava/lang/String;
-
-    .line 273
-    .line 274
-    .line 275
-    move-result-object v7
-
-    .line 276
-    invoke-virtual {v4, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 277
-    .line 278
-    .line 279
-    invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 280
-    .line 281
-    .line 282
-    invoke-virtual {v4}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    .line 283
-    .line 284
-    .line 285
-    move-result-object v4
-
-    .line 286
-    invoke-static {v1, v4}, Lʾˉ/ᴵᴵ;->ˋⁱ(Ljava/lang/String;Ljava/lang/String;)V
-
-    .line 287
-    .line 288
-    .line 289
-    sput-boolean v0, Lʾˉ/ᴵᴵ;->ʼﹳ:Z
-
-    .line 290
-    .line 291
-    invoke-static {v6}, Lʾˉ/ᴵᴵ;->ˊˈ(Z)V
-    :try_end_3
-    .catch Lnet/lingala/zip4j/exception/ZipException; {:try_start_3 .. :try_end_3} :catch_1
-    .catch Ljava/lang/Exception; {:try_start_3 .. :try_end_3} :catch_0
-
-    .line 292
-    .line 293
-    .line 294
-    goto :goto_6
-
-    .line 295
-    :goto_4
-    invoke-virtual {v0}, Ljava/lang/Throwable;->printStackTrace()V
-
-    .line 296
-    .line 297
-    .line 298
-    invoke-static {v3}, Lʼˏ/ᵎ;->ˈˉ(I)Ljava/lang/String;
-
-    .line 299
-    .line 300
-    .line 301
-    move-result-object v0
-
-    .line 302
-    const v1, 0x7f1104b7
-
-    .line 303
-    .line 304
-    .line 305
-    invoke-static {v1}, Lʼˏ/ᵎ;->ˈˉ(I)Ljava/lang/String;
-
-    .line 306
-    .line 307
-    .line 308
-    move-result-object v1
-
-    .line 309
-    invoke-static {v0, v1}, Lʾˉ/ᴵᴵ;->ˋⁱ(Ljava/lang/String;Ljava/lang/String;)V
-
-    .line 310
-    .line 311
-    .line 312
-    goto :goto_6
-
-    .line 313
-    :goto_5
-    invoke-virtual {v0}, Ljava/lang/Throwable;->printStackTrace()V
-
-    .line 314
-    .line 315
-    .line 316
-    invoke-static {v3}, Lʼˏ/ᵎ;->ˈˉ(I)Ljava/lang/String;
-
-    .line 317
-    .line 318
-    .line 319
-    move-result-object v0
-
-    .line 320
-    const v1, 0x7f1101a8
-
-    .line 321
-    .line 322
-    .line 323
-    invoke-static {v1}, Lʼˏ/ᵎ;->ˈˉ(I)Ljava/lang/String;
-
-    .line 324
-    .line 325
-    .line 326
-    move-result-object v1
-
-    .line 327
-    invoke-static {v0, v1}, Lʾˉ/ᴵᴵ;->ˋⁱ(Ljava/lang/String;Ljava/lang/String;)V
-
-    .line 328
-    .line 329
-    .line 330
-    :cond_4
-    :goto_6
-    iget-boolean v0, p0, Lʾˉ/ᴵᴵ$ʼⁱ;->ʼ:Z
-
-    .line 331
-    .line 332
-    if-eqz v0, :cond_5
-
-    .line 333
-    .line 334
-    iget-object v0, p0, Lʾˉ/ᴵᴵ$ʼⁱ;->ʻ:Ljava/io/File;
-
-    .line 335
-    .line 336
-    invoke-virtual {v0}, Ljava/io/File;->delete()Z
-
-    .line 337
-    .line 338
-    .line 339
-    :cond_5
-    sput-object v2, Lʾˉ/ᴵᴵ;->ʽﹶ:Ljava/lang/String;
-
-    .line 340
-    .line 341
-    new-instance v0, Ljava/io/File;
-
-    .line 342
-    .line 343
-    new-instance v1, Ljava/lang/StringBuilder;
-
-    .line 344
-    .line 345
-    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
-
-    .line 346
-    .line 347
-    .line 348
-    sget-object v3, Lʾˉ/ᴵᴵ;->ʼᐧ:Ljava/lang/String;
-
-    .line 349
-    .line 350
-    invoke-virtual {v1, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 351
-    .line 352
-    .line 353
-    const-string v3, "/tmp2/"
-
-    .line 354
-    .line 355
-    invoke-virtual {v1, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 356
-    .line 357
-    .line 358
-    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    .line 359
-    .line 360
-    .line 361
-    move-result-object v1
-
-    .line 362
-    invoke-direct {v0, v1}, Ljava/io/File;-><init>(Ljava/lang/String;)V
-
-    .line 363
-    .line 364
-    .line 365
-    invoke-virtual {v0}, Ljava/io/File;->exists()Z
-
-    .line 366
-    .line 367
-    .line 368
-    move-result v0
-
-    .line 369
-    if-eqz v0, :cond_6
-
-    .line 370
-    .line 371
-    :try_start_4
-    new-instance v0, Lʼˏ/ᵎ;
-
-    .line 372
-    .line 373
-    invoke-direct {v0, v2}, Lʼˏ/ᵎ;-><init>(Ljava/lang/String;)V
-
-    .line 374
-    .line 375
-    .line 376
-    new-instance v1, Ljava/io/File;
-
-    .line 377
-    .line 378
-    new-instance v2, Ljava/lang/StringBuilder;
-
-    .line 379
-    .line 380
-    invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
-
-    .line 381
-    .line 382
-    .line 383
-    sget-object v3, Lʾˉ/ᴵᴵ;->ʼᐧ:Ljava/lang/String;
-
-    .line 384
-    .line 385
-    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 386
-    .line 387
-    .line 388
-    const-string v3, "/tmp2"
-
-    .line 389
-    .line 390
-    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 391
-    .line 392
-    .line 393
-    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    .line 394
-    .line 395
-    .line 396
-    move-result-object v2
-
-    .line 397
-    invoke-direct {v1, v2}, Ljava/io/File;-><init>(Ljava/lang/String;)V
-
-    .line 398
-    .line 399
-    .line 400
-    invoke-virtual {v0, v1}, Lʼˏ/ᵎ;->ʻﹶ(Ljava/io/File;)V
-    :try_end_4
-    .catch Ljava/io/IOException; {:try_start_4 .. :try_end_4} :catch_3
-
-    .line 401
-    .line 402
-    .line 403
-    goto :goto_7
-
-    .line 404
-    :catch_3
-    move-exception v0
-
-    .line 405
-    invoke-virtual {v0}, Ljava/lang/Throwable;->printStackTrace()V
-
-    .line 406
-    .line 407
-    .line 408
-    :cond_6
-    :goto_7
     return-void
 .end method

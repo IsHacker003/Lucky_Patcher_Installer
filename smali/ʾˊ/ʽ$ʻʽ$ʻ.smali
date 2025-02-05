@@ -44,7 +44,7 @@
     .locals 1
 
     .line 1
-    invoke-static {}, Lʾˉ/ʼʼ;->ˈˏ()Landroid/content/SharedPreferences;
+    invoke-static {}, Lʾˉ/ᴵᴵ;->ˈˏ()Landroid/content/SharedPreferences;
 
     .line 2
     .line 3
@@ -77,7 +77,7 @@
     .line 16
     .line 17
     .line 18
-    sput-boolean p2, Lʾˉ/ʼʼ;->ˈˎ:Z
+    sput-boolean p2, Lʾˉ/ᴵᴵ;->ˈˎ:Z
 
     .line 19
     .line 20

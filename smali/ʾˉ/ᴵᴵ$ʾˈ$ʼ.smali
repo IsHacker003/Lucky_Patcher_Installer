@@ -44,10 +44,43 @@
     .locals 0
 
     .line 1
-    invoke-static {}, Lʼˏ/ᵎ;->ˊﾞ()V
+    :try_start_0
+    sget-object p1, Lʾˉ/ᴵᴵ;->ʼﾞ:Lru/aaaaaccc/installer/MainActivity;
 
     .line 2
     .line 3
+    if-eqz p1, :cond_0
+
     .line 4
+    .line 5
+    iget-object p2, p0, Lʾˉ/ᴵᴵ$ʾˈ$ʼ;->ʼ:Lʾˉ/ᴵᴵ$ʾˈ;
+
+    .line 6
+    .line 7
+    iget-object p2, p2, Lʾˉ/ᴵᴵ$ʾˈ;->ʻ:Landroid/content/Intent;
+
+    .line 8
+    .line 9
+    invoke-virtual {p1, p2}, Landroid/content/Context;->startActivity(Landroid/content/Intent;)V
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    .line 10
+    .line 11
+    .line 12
+    goto :goto_0
+
+    .line 13
+    :catchall_0
+    move-exception p1
+
+    .line 14
+    invoke-virtual {p1}, Ljava/lang/Throwable;->printStackTrace()V
+
+    .line 15
+    .line 16
+    .line 17
+    :cond_0
+    :goto_0
     return-void
 .end method

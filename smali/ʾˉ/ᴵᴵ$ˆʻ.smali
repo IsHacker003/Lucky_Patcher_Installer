@@ -3,7 +3,7 @@
 .source "SourceFile"
 
 # interfaces
-.implements Ljava/lang/Runnable;
+.implements Landroid/content/DialogInterface$OnClickListener;
 
 
 # annotations
@@ -18,116 +18,67 @@
 
 
 # instance fields
-.field final synthetic ʻ:Landroid/content/Intent;
-
 .field final synthetic ʼ:Lʾˉ/ᴵᴵ;
 
 
 # direct methods
-.method constructor <init>(Lʾˉ/ᴵᴵ;Landroid/content/Intent;)V
+.method constructor <init>(Lʾˉ/ᴵᴵ;)V
     .locals 0
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "()V"
-        }
-    .end annotation
 
     .line 1
     iput-object p1, p0, Lʾˉ/ᴵᴵ$ˆʻ;->ʼ:Lʾˉ/ᴵᴵ;
 
     .line 2
     .line 3
-    iput-object p2, p0, Lʾˉ/ᴵᴵ$ˆʻ;->ʻ:Landroid/content/Intent;
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 4
     .line 5
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
     .line 6
-    .line 7
-    .line 8
     return-void
 .end method
 
 
 # virtual methods
-.method public run()V
-    .locals 10
+.method public onClick(Landroid/content/DialogInterface;I)V
+    .locals 1
 
     .line 1
-    const v0, 0x7f1104cf
+    invoke-static {}, Lʾˉ/ᴵᴵ;->ˈˏ()Landroid/content/SharedPreferences;
 
     .line 2
     .line 3
     .line 4
-    invoke-static {v0}, Lʼˏ/ᵎ;->ˈˉ(I)Ljava/lang/String;
+    move-result-object p1
 
     .line 5
+    invoke-interface {p1}, Landroid/content/SharedPreferences;->edit()Landroid/content/SharedPreferences$Editor;
+
     .line 6
     .line 7
-    move-result-object v1
-
     .line 8
-    const v0, 0x7f1104d0
+    move-result-object p1
 
     .line 9
+    const-string p2, "dont_show_old_package_warning"
+
     .line 10
     .line 11
-    invoke-static {v0}, Lʼˏ/ᵎ;->ˈˉ(I)Ljava/lang/String;
+    const/4 v0, 0x1
 
     .line 12
+    invoke-interface {p1, p2, v0}, Landroid/content/SharedPreferences$Editor;->putBoolean(Ljava/lang/String;Z)Landroid/content/SharedPreferences$Editor;
+
     .line 13
     .line 14
-    move-result-object v2
-
     .line 15
-    const v0, 0x7f1104e3
+    move-result-object p1
 
     .line 16
+    invoke-interface {p1}, Landroid/content/SharedPreferences$Editor;->commit()Z
+
     .line 17
     .line 18
-    invoke-static {v0}, Lʼˏ/ᵎ;->ˈˉ(I)Ljava/lang/String;
-
     .line 19
-    .line 20
-    .line 21
-    move-result-object v3
-
-    .line 22
-    new-instance v4, Lʾˉ/ᴵᴵ$ˆʻ$ʻ;
-
-    .line 23
-    .line 24
-    invoke-direct {v4, p0}, Lʾˉ/ᴵᴵ$ˆʻ$ʻ;-><init>(Lʾˉ/ᴵᴵ$ˆʻ;)V
-
-    .line 25
-    .line 26
-    .line 27
-    new-instance v6, Lʾˉ/ᴵᴵ$ˆʻ$ʼ;
-
-    .line 28
-    .line 29
-    invoke-direct {v6, p0}, Lʾˉ/ᴵᴵ$ˆʻ$ʼ;-><init>(Lʾˉ/ᴵᴵ$ˆʻ;)V
-
-    .line 30
-    .line 31
-    .line 32
-    const/4 v8, 0x0
-
-    .line 33
-    const/4 v9, 0x1
-
-    .line 34
-    const/4 v5, 0x0
-
-    .line 35
-    const/4 v7, 0x0
-
-    .line 36
-    invoke-static/range {v1 .. v9}, Lʼˏ/ᵎ;->ˏˆ(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Landroid/widget/CompoundButton$OnCheckedChangeListener;ZLandroid/content/DialogInterface$OnClickListener;Landroid/content/DialogInterface$OnClickListener;Landroid/content/DialogInterface$OnCancelListener;Z)V
-
-    .line 37
-    .line 38
-    .line 39
     return-void
 .end method

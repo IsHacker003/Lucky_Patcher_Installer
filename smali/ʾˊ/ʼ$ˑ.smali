@@ -66,7 +66,7 @@
 
     .line 12
     :goto_0
-    sget-object v1, Lʾˉ/ʼʼ;->ʽˈ:Lʾˉ/ʽ;
+    sget-object v1, Lʾˉ/ᴵᴵ;->ʽˈ:Lʾˉ/ʽ;
 
     .line 13
     .line 14
@@ -86,7 +86,7 @@
 
     .line 21
     .line 22
-    sget-object v1, Lʾˉ/ʼʼ;->ʽˈ:Lʾˉ/ʽ;
+    sget-object v1, Lʾˉ/ᴵᴵ;->ʽˈ:Lʾˉ/ʽ;
 
     .line 23
     .line 24
@@ -197,7 +197,7 @@
     move-result-object v3
 
     .line 78
-    invoke-static {v3}, Lʾˉ/ʼʼ;->ˉˎ(Ljava/lang/Object;)V
+    invoke-static {v3}, Lʾˉ/ᴵᴵ;->ˉˎ(Ljava/lang/Object;)V
 
     .line 79
     .line 80
@@ -303,7 +303,7 @@
     move-result-object v3
 
     .line 133
-    invoke-static {v3}, Lʾˉ/ʼʼ;->ˉˎ(Ljava/lang/Object;)V
+    invoke-static {v3}, Lʾˉ/ᴵᴵ;->ˉˎ(Ljava/lang/Object;)V
 
     .line 134
     .line 135
@@ -393,7 +393,7 @@
     move-result-object v1
 
     .line 180
-    invoke-static {v1}, Lʾˉ/ʼʼ;->ˉˎ(Ljava/lang/Object;)V
+    invoke-static {v1}, Lʾˉ/ᴵᴵ;->ˉˎ(Ljava/lang/Object;)V
 
     .line 181
     .line 182
@@ -436,7 +436,7 @@
 
     .line 200
     .line 201
-    sget-object p1, Lʾˉ/ʼʼ;->ʽﹶ:Ljava/lang/String;
+    sget-object p1, Lʾˉ/ᴵᴵ;->ʽﹶ:Ljava/lang/String;
 
     .line 202
     .line 203
@@ -460,7 +460,7 @@
 
     .line 211
     .line 212
-    sget-object p2, Lʾˉ/ʼʼ;->ʽﹶ:Ljava/lang/String;
+    sget-object p2, Lʾˉ/ᴵᴵ;->ʽﹶ:Ljava/lang/String;
 
     .line 213
     .line 214
@@ -474,11 +474,11 @@
     .line 218
     .line 219
     :goto_1
-    sget-object p1, Lʾˉ/ʼʼ;->ʼᵎ:Lʾˉ/ᵎ;
+    sget-object p1, Lʾˉ/ᴵᴵ;->ʼᵎ:Lʾˉ/ᵎ;
 
     .line 220
     .line 221
-    invoke-static {p1, v0}, Lʾˉ/ʼʼ;->ˊᵢ(Lʾˉ/ᵎ;Lʼˑ/ʼ;)V
+    invoke-static {p1, v0}, Lʾˉ/ᴵᴵ;->ˊᵢ(Lʾˉ/ᵎ;Lʼˑ/ʼ;)V
 
     .line 222
     .line 223

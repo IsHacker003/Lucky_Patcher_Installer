@@ -18,49 +18,39 @@
 
 
 # instance fields
-.field final synthetic ʻ:Ljava/io/File;
-
-.field final synthetic ʼ:Lʾˉ/ᴵᴵ$ˈ;
+.field final synthetic ʻ:Lʾˉ/ᴵᴵ$ˈ;
 
 
 # direct methods
-.method constructor <init>(Lʾˉ/ᴵᴵ$ˈ;Ljava/io/File;)V
+.method constructor <init>(Lʾˉ/ᴵᴵ$ˈ;)V
     .locals 0
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "()V"
-        }
-    .end annotation
 
     .line 1
-    iput-object p1, p0, Lʾˉ/ᴵᴵ$ˈ$ʻ;->ʼ:Lʾˉ/ᴵᴵ$ˈ;
+    iput-object p1, p0, Lʾˉ/ᴵᴵ$ˈ$ʻ;->ʻ:Lʾˉ/ᴵᴵ$ˈ;
 
     .line 2
     .line 3
-    iput-object p2, p0, Lʾˉ/ᴵᴵ$ˈ$ʻ;->ʻ:Ljava/io/File;
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 4
     .line 5
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
     .line 6
-    .line 7
-    .line 8
     return-void
 .end method
 
 
 # virtual methods
 .method public run()V
-    .locals 6
+    .locals 2
 
     .line 1
-    const v0, 0x7f11029d
+    const v0, 0x7f1104d3
 
     .line 2
     .line 3
     .line 4
-    invoke-static {v0}, Lʼˏ/ᵎ;->ˈˉ(I)Ljava/lang/String;
+    :try_start_0
+    invoke-static {v0}, Lʼˏ/ᵢ;->ˈי(I)Ljava/lang/String;
 
     .line 5
     .line 6
@@ -68,88 +58,26 @@
     move-result-object v0
 
     .line 8
-    new-instance v1, Ljava/lang/StringBuilder;
+    const v1, 0x7f1104bb
 
     .line 9
     .line 10
-    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
-
     .line 11
+    invoke-static {v1}, Lʼˏ/ᵢ;->ˈי(I)Ljava/lang/String;
+
     .line 12
     .line 13
-    const v2, 0x7f1101e6
-
     .line 14
-    .line 15
-    .line 16
-    invoke-static {v2}, Lʼˏ/ᵎ;->ˈˉ(I)Ljava/lang/String;
-
-    .line 17
-    .line 18
-    .line 19
-    move-result-object v2
-
-    .line 20
-    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 21
-    .line 22
-    .line 23
-    const-string v2, " "
-
-    .line 24
-    .line 25
-    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 26
-    .line 27
-    .line 28
-    iget-object v2, p0, Lʾˉ/ᴵᴵ$ˈ$ʻ;->ʻ:Ljava/io/File;
-
-    .line 29
-    .line 30
-    invoke-virtual {v2}, Ljava/io/File;->length()J
-
-    .line 31
-    .line 32
-    .line 33
-    move-result-wide v2
-
-    .line 34
-    const-wide/32 v4, 0x100000
-
-    .line 35
-    .line 36
-    .line 37
-    div-long/2addr v2, v4
-
-    .line 38
-    invoke-virtual {v1, v2, v3}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
-
-    .line 39
-    .line 40
-    .line 41
-    const-string v2, " Mb"
-
-    .line 42
-    .line 43
-    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 44
-    .line 45
-    .line 46
-    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    .line 47
-    .line 48
-    .line 49
     move-result-object v1
 
-    .line 50
+    .line 15
     invoke-static {v0, v1}, Lʾˉ/ᴵᴵ;->ˋⁱ(Ljava/lang/String;Ljava/lang/String;)V
+    :try_end_0
+    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 51
-    .line 52
-    .line 53
+    .line 16
+    .line 17
+    .line 18
+    :catch_0
     return-void
 .end method

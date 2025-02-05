@@ -56,7 +56,7 @@
 
     .line 1
     :try_start_0
-    invoke-static {}, Lʾˉ/ʼʼ;->ˈי()Landroid/content/Context;
+    invoke-static {}, Lʾˉ/ᴵᴵ;->ˈי()Landroid/content/Context;
 
     .line 2
     .line 3
@@ -97,7 +97,7 @@
     .line 20
     .line 21
     .line 22
-    invoke-static {}, Lʾˉ/ʼʼ;->ˈי()Landroid/content/Context;
+    invoke-static {}, Lʾˉ/ᴵᴵ;->ˈי()Landroid/content/Context;
 
     .line 23
     .line 24

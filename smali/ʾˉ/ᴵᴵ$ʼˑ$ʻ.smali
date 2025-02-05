@@ -41,7 +41,7 @@
 
 # virtual methods
 .method public run()V
-    .locals 6
+    .locals 5
 
     .line 1
     sget-object v0, Lʾˉ/ᴵᴵ;->ʿᵔ:Ljava/util/ArrayList;
@@ -134,173 +134,137 @@
     move-result v2
 
     .line 47
-    const-string v3, ""
+    if-eqz v2, :cond_1
 
     .line 48
     .line 49
-    if-eqz v2, :cond_1
+    invoke-interface {v1}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
     .line 50
     .line 51
-    invoke-interface {v1}, Ljava/util/Iterator;->next()Ljava/lang/Object;
-
     .line 52
-    .line 53
-    .line 54
     move-result-object v2
 
-    .line 55
+    .line 53
     check-cast v2, Lʾˉ/ᵎ;
+
+    .line 54
+    .line 55
+    new-instance v3, Ljava/lang/StringBuilder;
 
     .line 56
     .line 57
-    new-instance v4, Ljava/lang/StringBuilder;
+    invoke-direct {v3}, Ljava/lang/StringBuilder;-><init>()V
 
     .line 58
     .line 59
-    invoke-direct {v4}, Ljava/lang/StringBuilder;-><init>()V
-
     .line 60
+    const-string v4, "pm enable "
+
     .line 61
     .line 62
-    const-string v5, "Uninstall"
+    invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     .line 63
     .line 64
-    invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
     .line 65
+    iget-object v2, v2, Lʾˉ/ᵎ;->ʻ:Ljava/lang/String;
+
     .line 66
     .line 67
-    invoke-virtual {v4, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v3, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     .line 68
     .line 69
     .line 70
-    invoke-virtual {v4}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-virtual {v3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     .line 71
     .line 72
     .line 73
-    move-result-object v3
+    move-result-object v2
 
     .line 74
-    invoke-static {v3}, Lʾˉ/ᴵᴵ;->ˉˎ(Ljava/lang/Object;)V
+    invoke-virtual {v0, v2}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     .line 75
     .line 76
     .line 77
-    new-instance v3, Ljava/lang/StringBuilder;
+    goto :goto_0
 
     .line 78
-    .line 79
-    invoke-direct {v3}, Ljava/lang/StringBuilder;-><init>()V
+    :cond_1
+    invoke-virtual {v0}, Ljava/util/ArrayList;->size()I
 
+    .line 79
     .line 80
     .line 81
+    move-result v1
+
     .line 82
-    const-string v4, "pm uninstall "
+    if-lez v1, :cond_3
 
     .line 83
     .line 84
-    invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v0}, Ljava/util/ArrayList;->size()I
 
     .line 85
     .line 86
     .line 87
-    iget-object v2, v2, Lʾˉ/ᵎ;->ʻ:Ljava/lang/String;
-
-    .line 88
-    .line 89
-    invoke-virtual {v3, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 90
-    .line 91
-    .line 92
-    invoke-virtual {v3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    .line 93
-    .line 94
-    .line 95
-    move-result-object v2
-
-    .line 96
-    invoke-virtual {v0, v2}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
-
-    .line 97
-    .line 98
-    .line 99
-    goto :goto_0
-
-    .line 100
-    :cond_1
-    invoke-virtual {v0}, Ljava/util/ArrayList;->size()I
-
-    .line 101
-    .line 102
-    .line 103
     move-result v1
 
+    .line 88
+    new-array v1, v1, [Ljava/lang/String;
+
+    .line 89
+    .line 90
+    invoke-virtual {v0, v1}, Ljava/util/ArrayList;->toArray([Ljava/lang/Object;)[Ljava/lang/Object;
+
+    .line 91
+    .line 92
+    .line 93
+    sget-boolean v0, Lʾˉ/ᴵᴵ;->ʽﾞ:Z
+
+    .line 94
+    .line 95
+    if-eqz v0, :cond_2
+
+    .line 96
+    .line 97
+    new-instance v0, Lʼˏ/ᵢ;
+
+    .line 98
+    .line 99
+    const-string v2, ""
+
+    .line 100
+    .line 101
+    invoke-direct {v0, v2}, Lʼˏ/ᵢ;-><init>(Ljava/lang/String;)V
+
+    .line 102
+    .line 103
     .line 104
-    if-lez v1, :cond_3
+    invoke-virtual {v0, v1}, Lʼˏ/ᵢ;->ˎˎ([Ljava/lang/String;)Ljava/lang/String;
 
     .line 105
     .line 106
-    invoke-virtual {v0}, Ljava/util/ArrayList;->size()I
-
     .line 107
-    .line 108
-    .line 109
-    move-result v1
-
-    .line 110
-    new-array v1, v1, [Ljava/lang/String;
-
-    .line 111
-    .line 112
-    invoke-virtual {v0, v1}, Ljava/util/ArrayList;->toArray([Ljava/lang/Object;)[Ljava/lang/Object;
-
-    .line 113
-    .line 114
-    .line 115
-    sget-boolean v0, Lʾˉ/ᴵᴵ;->ʽﾞ:Z
-
-    .line 116
-    .line 117
-    if-eqz v0, :cond_2
-
-    .line 118
-    .line 119
-    new-instance v0, Lʼˏ/ᵎ;
-
-    .line 120
-    .line 121
-    invoke-direct {v0, v3}, Lʼˏ/ᵎ;-><init>(Ljava/lang/String;)V
-
-    .line 122
-    .line 123
-    .line 124
-    invoke-virtual {v0, v1}, Lʼˏ/ᵎ;->ˊˊ([Ljava/lang/String;)Ljava/lang/String;
-
-    .line 125
-    .line 126
-    .line 127
     goto :goto_1
 
-    .line 128
+    .line 108
     :cond_2
-    invoke-static {v1}, Lʼˏ/ᵎ;->ˉˉ([Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v1}, Lʼˏ/ᵢ;->ˋˋ([Ljava/lang/String;)Ljava/lang/String;
 
-    .line 129
-    .line 130
-    .line 131
+    .line 109
+    .line 110
+    .line 111
     :cond_3
     :goto_1
     invoke-static {}, Lʾˉ/ᴵᴵ;->ˊٴ()V
 
-    .line 132
-    .line 133
-    .line 134
+    .line 112
+    .line 113
+    .line 114
     :cond_4
     :goto_2
     return-void

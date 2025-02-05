@@ -41,25 +41,48 @@
 
 # virtual methods
 .method public run()V
-    .locals 1
+    .locals 4
 
     .line 1
-    const/16 v0, 0xb
+    new-instance v0, Lʾˉ/ᴵᴵ$ˈʽ;
 
     .line 2
     .line 3
-    invoke-static {v0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+    iget-object v1, p0, Lʾˉ/ᴵᴵ$ˆﾞ$ʻ;->ʻ:Lʾˉ/ᴵᴵ$ˆﾞ;
 
     .line 4
     .line 5
-    .line 6
-    move-result-object v0
+    iget-object v1, v1, Lʾˉ/ᴵᴵ$ˆﾞ;->ʼ:Lʾˉ/ᴵᴵ;
 
+    .line 6
     .line 7
-    invoke-static {v0}, Lʾˉ/ᴵᴵ;->ˋᵎ(Ljava/lang/Integer;)V
+    invoke-direct {v0, v1}, Lʾˉ/ᴵᴵ$ˈʽ;-><init>(Lʾˉ/ᴵᴵ;)V
 
     .line 8
     .line 9
     .line 10
+    const/4 v1, 0x1
+
+    .line 11
+    new-array v1, v1, [Ljava/lang/String;
+
+    .line 12
+    .line 13
+    const-string v2, ""
+
+    .line 14
+    .line 15
+    const/4 v3, 0x0
+
+    .line 16
+    aput-object v2, v1, v3
+
+    .line 17
+    .line 18
+    invoke-virtual {v0, v1}, Landroid/os/AsyncTask;->execute([Ljava/lang/Object;)Landroid/os/AsyncTask;
+
+    .line 19
+    .line 20
+    .line 21
     return-void
 .end method

@@ -163,7 +163,7 @@
     .line 60
     .line 61
     .line 62
-    const-string v5, "Unblock Internet"
+    const-string v5, "Block Internet"
 
     .line 63
     .line 64
@@ -199,7 +199,7 @@
     .line 80
     .line 81
     .line 82
-    const-string v4, "pm grant "
+    const-string v4, "pm revoke "
 
     .line 83
     .line 84
@@ -280,16 +280,16 @@
 
     .line 123
     .line 124
-    new-instance v0, Lʼˏ/ᵎ;
+    new-instance v0, Lʼˏ/ᵢ;
 
     .line 125
     .line 126
-    invoke-direct {v0, v3}, Lʼˏ/ᵎ;-><init>(Ljava/lang/String;)V
+    invoke-direct {v0, v3}, Lʼˏ/ᵢ;-><init>(Ljava/lang/String;)V
 
     .line 127
     .line 128
     .line 129
-    invoke-virtual {v0, v1}, Lʼˏ/ᵎ;->ˊˊ([Ljava/lang/String;)Ljava/lang/String;
+    invoke-virtual {v0, v1}, Lʼˏ/ᵢ;->ˎˎ([Ljava/lang/String;)Ljava/lang/String;
 
     .line 130
     .line 131
@@ -298,7 +298,7 @@
 
     .line 133
     :cond_2
-    invoke-static {v1}, Lʼˏ/ᵎ;->ˉˉ([Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v1}, Lʼˏ/ᵢ;->ˋˋ([Ljava/lang/String;)Ljava/lang/String;
 
     .line 134
     .line 135

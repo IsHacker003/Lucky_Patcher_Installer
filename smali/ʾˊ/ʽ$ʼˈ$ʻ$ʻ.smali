@@ -59,7 +59,7 @@
 
     .line 2
     .line 3
-    sget-object v1, Lʾˉ/ʼʼ;->ʼﾞ:Lru/aaaaacca/installer/MainActivity;
+    sget-object v1, Lʾˉ/ᴵᴵ;->ʼﾞ:Lru/aaaaaccc/installer/MainActivity;
 
     .line 4
     .line 5

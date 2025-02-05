@@ -289,7 +289,7 @@
 
     .line 52
     :cond_1
-    invoke-static {}, Lʾˉ/ʼʼ;->ˈᵎ()Landroid/content/pm/PackageManager;
+    invoke-static {}, Lʾˉ/ᴵᴵ;->ˈᵎ()Landroid/content/pm/PackageManager;
 
     move-result-object v0
 
@@ -404,7 +404,7 @@
     if-eqz p3, :cond_3
 
     .line 63
-    invoke-static {}, Lʾˉ/ʼʼ;->ˈᵔ()Landroid/content/res/Resources;
+    invoke-static {}, Lʾˉ/ᴵᴵ;->ˈᵔ()Landroid/content/res/Resources;
 
     move-result-object p2
 

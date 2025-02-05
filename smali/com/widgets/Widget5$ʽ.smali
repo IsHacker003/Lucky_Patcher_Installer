@@ -98,7 +98,7 @@
     .line 16
     .line 17
     .line 18
-    sget-object v3, Lʾˉ/ʼʼ;->ʾʻ:Ljava/lang/String;
+    sget-object v3, Lʾˉ/ᴵᴵ;->ʾʻ:Ljava/lang/String;
 
     .line 19
     .line 20
@@ -147,7 +147,7 @@
     .line 43
     .line 44
     .line 45
-    sget-object v4, Lʾˉ/ʼʼ;->ʼٴ:Ljava/lang/String;
+    sget-object v4, Lʾˉ/ᴵᴵ;->ʼٴ:Ljava/lang/String;
 
     .line 46
     .line 47
@@ -206,7 +206,7 @@
     .line 74
     .line 75
     .line 76
-    invoke-static {}, Lʾˉ/ʼʼ;->ˈᵎ()Landroid/content/pm/PackageManager;
+    invoke-static {}, Lʾˉ/ᴵᴵ;->ˈᵎ()Landroid/content/pm/PackageManager;
 
     .line 77
     .line 78
@@ -218,7 +218,7 @@
 
     .line 81
     .line 82
-    invoke-static {}, Lʾˉ/ʼʼ;->ˈי()Landroid/content/Context;
+    invoke-static {}, Lʾˉ/ᴵᴵ;->ˈי()Landroid/content/Context;
 
     .line 83
     .line 84
@@ -243,7 +243,7 @@
     .line 93
     .line 94
     .line 95
-    invoke-static {}, Lʾˉ/ʼʼ;->ˈᵎ()Landroid/content/pm/PackageManager;
+    invoke-static {}, Lʾˉ/ᴵᴵ;->ˈᵎ()Landroid/content/pm/PackageManager;
 
     .line 96
     .line 97
@@ -255,7 +255,7 @@
 
     .line 100
     .line 101
-    invoke-static {}, Lʾˉ/ʼʼ;->ˈי()Landroid/content/Context;
+    invoke-static {}, Lʾˉ/ᴵᴵ;->ˈי()Landroid/content/Context;
 
     .line 102
     .line 103

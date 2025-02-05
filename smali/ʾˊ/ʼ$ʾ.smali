@@ -91,7 +91,7 @@
     .line 22
     .line 23
     .line 24
-    sget-object v2, Lʾˉ/ʼʼ;->ˈʼ:Ljava/lang/String;
+    sget-object v2, Lʾˉ/ᴵᴵ;->ˈʼ:Ljava/lang/String;
 
     .line 25
     .line 26

@@ -159,7 +159,7 @@
     .line 58
     .line 59
     .line 60
-    const-string v4, "pm enable "
+    const-string v4, "pm disable "
 
     .line 61
     .line 62
@@ -231,7 +231,7 @@
 
     .line 96
     .line 97
-    new-instance v0, Lʼˏ/ᵎ;
+    new-instance v0, Lʼˏ/ᵢ;
 
     .line 98
     .line 99
@@ -239,12 +239,12 @@
 
     .line 100
     .line 101
-    invoke-direct {v0, v2}, Lʼˏ/ᵎ;-><init>(Ljava/lang/String;)V
+    invoke-direct {v0, v2}, Lʼˏ/ᵢ;-><init>(Ljava/lang/String;)V
 
     .line 102
     .line 103
     .line 104
-    invoke-virtual {v0, v1}, Lʼˏ/ᵎ;->ˊˊ([Ljava/lang/String;)Ljava/lang/String;
+    invoke-virtual {v0, v1}, Lʼˏ/ᵢ;->ˎˎ([Ljava/lang/String;)Ljava/lang/String;
 
     .line 105
     .line 106
@@ -253,7 +253,7 @@
 
     .line 108
     :cond_2
-    invoke-static {v1}, Lʼˏ/ᵎ;->ˉˉ([Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v1}, Lʼˏ/ᵢ;->ˋˋ([Ljava/lang/String;)Ljava/lang/String;
 
     .line 109
     .line 110

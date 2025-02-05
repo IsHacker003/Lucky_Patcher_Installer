@@ -68,7 +68,7 @@
     move-result-object p1
 
     .line 13
-    sput-object p1, Lʾˉ/ʼʼ;->ʽﹶ:Ljava/lang/String;
+    sput-object p1, Lʾˉ/ᴵᴵ;->ʽﹶ:Ljava/lang/String;
 
     .line 14
     .line 15
@@ -88,7 +88,7 @@
 
     .line 22
     .line 23
-    sget-object v0, Lʾˉ/ʼʼ;->ʽﹶ:Ljava/lang/String;
+    sget-object v0, Lʾˉ/ᴵᴵ;->ʽﹶ:Ljava/lang/String;
 
     .line 24
     .line 25
@@ -109,11 +109,11 @@
 
     .line 33
     .line 34
-    sget-object p1, Lʾˉ/ʼʼ;->ʼˎ:Lʾˉ/ʼʼ;
+    sget-object p1, Lʾˉ/ᴵᴵ;->ʼˎ:Lʾˉ/ᴵᴵ;
 
     .line 35
     .line 36
-    invoke-virtual {p1}, Lʾˉ/ʼʼ;->ˈˑ()Landroidx/fragment/app/ʿ;
+    invoke-virtual {p1}, Lʾˉ/ᴵᴵ;->ˈˑ()Landroidx/fragment/app/ʿ;
 
     .line 37
     .line 38
@@ -156,7 +156,7 @@
 
     .line 58
     :cond_0
-    sget-object p1, Lʾˉ/ʼʼ;->ʼˎ:Lʾˉ/ʼʼ;
+    sget-object p1, Lʾˉ/ᴵᴵ;->ʼˎ:Lʾˉ/ᴵᴵ;
 
     .line 59
     .line 60
@@ -164,7 +164,7 @@
 
     .line 61
     .line 62
-    invoke-virtual {p1}, Lʾˉ/ʼʼ;->ˋٴ()V
+    invoke-virtual {p1}, Lʾˉ/ᴵᴵ;->ˋٴ()V
 
     .line 63
     .line 64

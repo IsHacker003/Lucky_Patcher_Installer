@@ -41,31 +41,22 @@
 
 # virtual methods
 .method public onClick(Landroid/view/View;)V
-    .locals 1
+    .locals 0
 
     .line 1
-    new-instance p1, Ljava/lang/Thread;
+    new-instance p1, Lʾˉ/ᴵᴵ$ʼٴ$ʻ;
 
     .line 2
     .line 3
-    new-instance v0, Lʾˉ/ᴵᴵ$ʼٴ$ʻ;
+    invoke-direct {p1, p0}, Lʾˉ/ᴵᴵ$ʼٴ$ʻ;-><init>(Lʾˉ/ᴵᴵ$ʼٴ;)V
 
     .line 4
     .line 5
-    invoke-direct {v0, p0}, Lʾˉ/ᴵᴵ$ʼٴ$ʻ;-><init>(Lʾˉ/ᴵᴵ$ʼٴ;)V
-
     .line 6
+    invoke-static {p1}, Lʾˉ/ᴵᴵ;->ˋʻ(Ljava/lang/Runnable;)V
+
     .line 7
     .line 8
-    invoke-direct {p1, v0}, Ljava/lang/Thread;-><init>(Ljava/lang/Runnable;)V
-
     .line 9
-    .line 10
-    .line 11
-    invoke-virtual {p1}, Ljava/lang/Thread;->start()V
-
-    .line 12
-    .line 13
-    .line 14
     return-void
 .end method

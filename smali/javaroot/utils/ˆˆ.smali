@@ -3310,7 +3310,7 @@
     :goto_6
     sget-object v28, Ljava/lang/Boolean;->FALSE:Ljava/lang/Boolean;
 
-    sput-object v28, Lʾˉ/ʼʼ;->ʿᴵ:Ljava/lang/Boolean;
+    sput-object v28, Lʾˉ/ᴵᴵ;->ʿᴵ:Ljava/lang/Boolean;
 
     const/16 v22, 0x0
 
@@ -3379,7 +3379,7 @@
     .line 19
     sget-object v3, Ljava/lang/Boolean;->FALSE:Ljava/lang/Boolean;
 
-    sput-object v3, Lʾˉ/ʼʼ;->ʿᴵ:Ljava/lang/Boolean;
+    sput-object v3, Lʾˉ/ᴵᴵ;->ʿᴵ:Ljava/lang/Boolean;
 
     const/16 v22, 0x0
 
@@ -4149,7 +4149,7 @@
 
     if-lez v8, :cond_18
 
-    sget v8, Lʾˉ/ʼʼ;->ʾᐧ:I
+    sget v8, Lʾˉ/ᴵᴵ;->ʾᐧ:I
 
     const/16 v14, 0x18
 
@@ -4180,7 +4180,7 @@
 
     if-lez v8, :cond_5c
 
-    sget v8, Lʾˉ/ʼʼ;->ʾᐧ:I
+    sget v8, Lʾˉ/ᴵᴵ;->ʾᐧ:I
 
     const/16 v14, 0x15
 
@@ -6480,7 +6480,7 @@
 
     invoke-virtual {v5, v8}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    sget-object v8, Lʾˉ/ʼʼ;->ʼٴ:Ljava/lang/String;
+    sget-object v8, Lʾˉ/ᴵᴵ;->ʼٴ:Ljava/lang/String;
 
     invoke-virtual {v5, v8}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -7118,13 +7118,13 @@
 
     if-eqz v4, :cond_6d
 
-    sget v4, Lʾˉ/ʼʼ;->ʾᐧ:I
+    sget v4, Lʾˉ/ᴵᴵ;->ʾᐧ:I
 
     const/16 v10, 0x14
 
     if-ge v4, v10, :cond_6d
 
-    sget-object v4, Lʾˉ/ʼʼ;->ʼˏ:Ljava/lang/String;
+    sget-object v4, Lʾˉ/ᴵᴵ;->ʼˏ:Ljava/lang/String;
 
     const-string v10, "ART"
 
@@ -13346,7 +13346,7 @@
 
     if-nez v7, :cond_12b
 
-    sget v7, Lʾˉ/ʼʼ;->ʾᐧ:I
+    sget v7, Lʾˉ/ᴵᴵ;->ʾᐧ:I
 
     const/16 v11, 0x18
 
@@ -13641,7 +13641,7 @@
     if-eqz v2, :cond_128
 
     .line 682
-    sget v3, Lʾˉ/ʼʼ;->ʾᐧ:I
+    sget v3, Lʾˉ/ᴵᴵ;->ʾᐧ:I
 
     const/16 v4, 0x1c
 
@@ -13807,7 +13807,7 @@
 
     if-nez v3, :cond_18f
 
-    sget v3, Lʾˉ/ʼʼ;->ʾᐧ:I
+    sget v3, Lʾˉ/ᴵᴵ;->ʾᐧ:I
 
     move-object/from16 v29, v7
 
@@ -20923,7 +20923,7 @@
 
     invoke-direct {v6}, Ljava/lang/StringBuilder;-><init>()V
 
-    sget-object v11, Lʾˉ/ʼʼ;->ʼٴ:Ljava/lang/String;
+    sget-object v11, Lʾˉ/ᴵᴵ;->ʼٴ:Ljava/lang/String;
 
     invoke-virtual {v6, v11}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -25956,7 +25956,7 @@
 
     .line 1514
     .line 1515
-    sget v0, Lʾˉ/ʼʼ;->ʾᐧ:I
+    sget v0, Lʾˉ/ᴵᴵ;->ʾᐧ:I
 
     .line 1516
     .line 1517
@@ -25990,7 +25990,7 @@
     .line 1531
     .line 1532
     .line 1533
-    sget-object v2, Lʾˉ/ʼʼ;->ʼٴ:Ljava/lang/String;
+    sget-object v2, Lʾˉ/ᴵᴵ;->ʼٴ:Ljava/lang/String;
 
     .line 1534
     .line 1535

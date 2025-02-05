@@ -32,7 +32,7 @@
     .line 2
     .line 3
     .line 4
-    sget v0, Lʾˉ/ʼʼ;->ʾᐧ:I
+    sget v0, Lʾˉ/ᴵᴵ;->ʾᐧ:I
 
     .line 5
     .line 6

@@ -161,7 +161,7 @@
     move-result-object v0
 
     .line 59
-    invoke-static {v0}, Lʾˉ/ʼʼ;->ˉˎ(Ljava/lang/Object;)V
+    invoke-static {v0}, Lʾˉ/ᴵᴵ;->ˉˎ(Ljava/lang/Object;)V
 
     .line 60
     .line 61
@@ -388,7 +388,7 @@
     .line 156
     .line 157
     .line 158
-    sget-object v12, Lʾˉ/ʼʼ;->ʾʻ:Ljava/lang/String;
+    sget-object v12, Lʾˉ/ᴵᴵ;->ʾʻ:Ljava/lang/String;
 
     .line 159
     .line 160
@@ -437,7 +437,7 @@
     .line 183
     .line 184
     .line 185
-    sget-object v12, Lʾˉ/ʼʼ;->ʼٴ:Ljava/lang/String;
+    sget-object v12, Lʾˉ/ᴵᴵ;->ʼٴ:Ljava/lang/String;
 
     .line 186
     .line 187
@@ -665,7 +665,7 @@
     .line 287
     .line 288
     .line 289
-    invoke-static {v0}, Lʾˉ/ʼʼ;->ˋʻ(Ljava/lang/Runnable;)V
+    invoke-static {v0}, Lʾˉ/ᴵᴵ;->ˋʻ(Ljava/lang/Runnable;)V
 
     .line 290
     .line 291

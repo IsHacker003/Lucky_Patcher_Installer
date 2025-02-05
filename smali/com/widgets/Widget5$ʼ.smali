@@ -97,7 +97,7 @@
     .line 14
     .line 15
     .line 16
-    sget-object v4, Lʾˉ/ʼʼ;->ʾʻ:Ljava/lang/String;
+    sget-object v4, Lʾˉ/ᴵᴵ;->ʾʻ:Ljava/lang/String;
 
     .line 17
     .line 18
@@ -142,7 +142,7 @@
     .line 39
     .line 40
     .line 41
-    sget-object v4, Lʾˉ/ʼʼ;->ʼٴ:Ljava/lang/String;
+    sget-object v4, Lʾˉ/ᴵᴵ;->ʼٴ:Ljava/lang/String;
 
     .line 42
     .line 43

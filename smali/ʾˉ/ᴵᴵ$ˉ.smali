@@ -1,14 +1,11 @@
 .class Lʾˉ/ᴵᴵ$ˉ;
-.super Ljava/lang/Object;
+.super Landroid/widget/ArrayAdapter;
 .source "SourceFile"
-
-# interfaces
-.implements Ljava/lang/Runnable;
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lʾˉ/ᴵᴵ;->ˈʾ()V
+    value = Lʾˉ/ᴵᴵ;->ʿﹳ()V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -16,342 +13,476 @@
     name = null
 .end annotation
 
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Landroid/widget/ArrayAdapter<",
+        "L\u02bc\u0674/\u02bd;",
+        ">;"
+    }
+.end annotation
+
 
 # instance fields
-.field final synthetic ʻ:Lʾˉ/ᴵᴵ;
+.field ʼ:Landroid/widget/ArrayAdapter;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Landroid/widget/ArrayAdapter<",
+            "L\u02bc\u0674/\u02bd;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field final synthetic ʽ:Lʾˉ/ᴵᴵ;
 
 
 # direct methods
-.method constructor <init>(Lʾˉ/ᴵᴵ;)V
+.method constructor <init>(Lʾˉ/ᴵᴵ;Landroid/content/Context;ILjava/util/List;)V
     .locals 0
 
     .line 1
-    iput-object p1, p0, Lʾˉ/ᴵᴵ$ˉ;->ʻ:Lʾˉ/ᴵᴵ;
+    iput-object p1, p0, Lʾˉ/ᴵᴵ$ˉ;->ʽ:Lʾˉ/ᴵᴵ;
 
     .line 2
     .line 3
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    invoke-direct {p0, p2, p3, p4}, Landroid/widget/ArrayAdapter;-><init>(Landroid/content/Context;ILjava/util/List;)V
 
     .line 4
     .line 5
     .line 6
+    iput-object p0, p0, Lʾˉ/ᴵᴵ$ˉ;->ʼ:Landroid/widget/ArrayAdapter;
+
+    .line 7
+    .line 8
     return-void
 .end method
 
 
 # virtual methods
-.method public run()V
+.method public getView(ILandroid/view/View;Landroid/view/ViewGroup;)Landroid/view/View;
     .locals 6
 
     .line 1
-    new-instance v0, Lʼـ/ʽʽ;
+    invoke-interface {p0, p1}, Landroid/widget/Adapter;->getItem(I)Ljava/lang/Object;
 
     .line 2
     .line 3
-    invoke-direct {v0}, Lʼـ/ʽʽ;-><init>()V
-
     .line 4
-    .line 5
-    .line 6
-    const/4 v1, 0x1
+    move-result-object p1
 
+    .line 5
+    check-cast p1, Lʼٴ/ʽ;
+
+    .line 6
     .line 7
-    iput-boolean v1, v0, Lʼـ/ʽʽ;->ˈ:Z
+    if-nez p2, :cond_0
 
     .line 8
     .line 9
-    iput-boolean v1, v0, Lʼـ/ʽʽ;->ˉ:Z
+    invoke-static {}, Lʾˉ/ᴵᴵ;->ˈי()Landroid/content/Context;
 
     .line 10
     .line 11
-    invoke-static {v0}, Lʼˏ/ᵎ;->ʾᵢ(Lʼـ/ʽʽ;)Ljava/util/ArrayList;
-
     .line 12
-    .line 13
-    .line 14
-    move-result-object v0
+    move-result-object p2
 
+    .line 13
+    const-string v0, "layout_inflater"
+
+    .line 14
     .line 15
-    invoke-virtual {v0}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
+    invoke-virtual {p2, v0}, Landroid/content/Context;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
 
     .line 16
     .line 17
     .line 18
-    move-result-object v0
+    move-result-object p2
 
     .line 19
-    const-string v2, ""
+    check-cast p2, Landroid/view/LayoutInflater;
 
     .line 20
     .line 21
-    :cond_0
-    :goto_0
-    invoke-interface {v0}, Ljava/util/Iterator;->hasNext()Z
+    const v0, 0x7f0c0095
 
     .line 22
     .line 23
     .line 24
-    move-result v3
+    const/4 v1, 0x0
 
     .line 25
-    if-eqz v3, :cond_1
+    invoke-virtual {p2, v0, p3, v1}, Landroid/view/LayoutInflater;->inflate(ILandroid/view/ViewGroup;Z)Landroid/view/View;
 
     .line 26
     .line 27
-    invoke-interface {v0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
-
     .line 28
+    move-result-object p2
+
     .line 29
+    :cond_0
+    const p3, 0x7f0900ba
+
     .line 30
-    move-result-object v3
-
     .line 31
-    check-cast v3, Ljava/io/File;
-
     .line 32
-    .line 33
-    invoke-virtual {v3}, Ljava/io/File;->getAbsolutePath()Ljava/lang/String;
+    invoke-virtual {p2, p3}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
+    .line 33
     .line 34
     .line 35
+    move-result-object p3
+
     .line 36
-    move-result-object v4
+    check-cast p3, Landroid/widget/TextView;
 
     .line 37
-    invoke-static {v4}, Lʼˏ/ᵎ;->ʼˈ(Ljava/lang/String;)Z
-
     .line 38
+    const v0, 0x7f090079
+
     .line 39
     .line 40
-    move-result v4
-
     .line 41
-    if-eqz v4, :cond_0
+    invoke-virtual {p2, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
     .line 42
     .line 43
-    invoke-virtual {v3}, Ljava/io/File;->getAbsolutePath()Ljava/lang/String;
-
     .line 44
-    .line 45
-    .line 46
-    move-result-object v2
+    move-result-object v0
 
+    .line 45
+    check-cast v0, Landroid/widget/Button;
+
+    .line 46
     .line 47
-    goto :goto_0
+    iget-object v1, p1, Lʼٴ/ʽ;->ʻ:Ljava/lang/String;
 
     .line 48
-    :cond_1
-    :try_start_0
-    invoke-static {v2}, Lʾˉ/ᴵᴵ;->ˉˎ(Ljava/lang/Object;)V
-
     .line 49
+    const v2, 0x7f110191
+
     .line 50
     .line 51
-    new-instance v0, Lʼˏ/ᵎ;
-
     .line 52
-    .line 53
-    const-string v3, "1"
+    invoke-static {v2}, Lʼˏ/ᵢ;->ˈי(I)Ljava/lang/String;
 
+    .line 53
     .line 54
     .line 55
-    invoke-direct {v0, v3}, Lʼˏ/ᵎ;-><init>(Ljava/lang/String;)V
+    move-result-object v2
 
     .line 56
+    invoke-virtual {v1, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
     .line 57
     .line 58
-    new-instance v3, Ljava/lang/String;
-
     .line 59
+    move-result v1
+
     .line 60
-    new-instance v4, Ljava/lang/StringBuilder;
+    const-string v2, ""
 
     .line 61
     .line 62
-    invoke-direct {v4}, Ljava/lang/StringBuilder;-><init>()V
+    if-eqz v1, :cond_1
 
     .line 63
     .line 64
+    iget-object v1, p1, Lʼٴ/ʽ;->ʼ:Ljava/lang/String;
+
     .line 65
-    const-string v5, "oatdump --oat-file="
-
     .line 66
-    .line 67
-    invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v1, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
+    .line 67
     .line 68
     .line 69
+    move-result v1
+
     .line 70
-    invoke-virtual {v4, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    if-eqz v1, :cond_1
 
     .line 71
     .line 72
+    iget-object v1, p1, Lʼٴ/ʽ;->ʽ:Ljava/lang/String;
+
     .line 73
-    const-string v2, " --output=/sdcard/conscrypt.oat.txt"
-
     .line 74
-    .line 75
-    invoke-virtual {v4, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v1, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
+    .line 75
     .line 76
     .line 77
+    move-result v1
+
     .line 78
-    invoke-virtual {v4}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    if-eqz v1, :cond_1
 
     .line 79
     .line 80
-    .line 81
-    move-result-object v2
+    const/16 v1, 0x8
 
+    .line 81
     .line 82
-    invoke-virtual {v2}, Ljava/lang/String;->getBytes()[B
+    invoke-virtual {v0, v1}, Landroid/view/View;->setVisibility(I)V
 
     .line 83
     .line 84
     .line 85
-    move-result-object v2
+    goto :goto_0
 
     .line 86
-    const-string v4, "ISO-8859-1"
+    :cond_1
+    invoke-virtual {v0, p1}, Landroid/view/View;->setTag(Ljava/lang/Object;)V
 
     .line 87
     .line 88
-    invoke-direct {v3, v2, v4}, Ljava/lang/String;-><init>([BLjava/lang/String;)V
-
     .line 89
+    new-instance v1, Lʾˉ/ᴵᴵ$ˉ$ʻ;
+
     .line 90
     .line 91
-    new-array v1, v1, [Ljava/lang/String;
+    invoke-direct {v1, p0}, Lʾˉ/ᴵᴵ$ˉ$ʻ;-><init>(Lʾˉ/ᴵᴵ$ˉ;)V
 
     .line 92
     .line 93
-    const/4 v2, 0x0
-
     .line 94
-    aput-object v3, v1, v2
+    invoke-virtual {v0, v1}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     .line 95
     .line 96
-    invoke-virtual {v0, v1}, Lʼˏ/ᵎ;->ˊˊ([Ljava/lang/String;)Ljava/lang/String;
-    :try_end_0
-    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
-
     .line 97
+    :goto_0
+    invoke-virtual {p0}, Landroid/widget/ArrayAdapter;->getContext()Landroid/content/Context;
+
     .line 98
     .line 99
-    goto :goto_1
-
     .line 100
-    :catch_0
-    move-exception v0
+    move-result-object v0
 
     .line 101
-    invoke-virtual {v0}, Ljava/lang/Throwable;->printStackTrace()V
+    invoke-static {}, Lʾˉ/ᴵᴵ;->ˈᵢ()I
 
     .line 102
     .line 103
     .line 104
-    :goto_1
-    new-instance v0, Ljava/io/File;
+    move-result v1
 
     .line 105
-    .line 106
-    const-string v1, "/sdcard/conscrypt.oat.txt"
+    invoke-virtual {p3, v0, v1}, Landroid/widget/TextView;->setTextAppearance(Landroid/content/Context;I)V
 
+    .line 106
     .line 107
     .line 108
-    invoke-direct {v0, v1}, Ljava/io/File;-><init>(Ljava/lang/String;)V
+    invoke-static {}, Lʾˉ/ᴵᴵ;->ˈᵔ()Landroid/content/res/Resources;
 
     .line 109
     .line 110
     .line 111
-    invoke-virtual {v0}, Ljava/io/File;->exists()Z
+    move-result-object v0
 
     .line 112
+    invoke-virtual {v0}, Landroid/content/res/Resources;->getDisplayMetrics()Landroid/util/DisplayMetrics;
+
     .line 113
     .line 114
-    move-result v1
-
     .line 115
-    if-eqz v1, :cond_2
+    move-result-object v0
 
     .line 116
-    .line 117
-    invoke-virtual {v0}, Ljava/io/File;->length()J
+    iget v0, v0, Landroid/util/DisplayMetrics;->density:F
 
+    .line 117
     .line 118
+    const/high16 v1, 0x40a00000    # 5.0f
+
     .line 119
     .line 120
-    move-result-wide v1
+    mul-float v0, v0, v1
 
     .line 121
-    const-wide/16 v3, 0x0
-
     .line 122
-    .line 123
-    cmp-long v5, v1, v3
+    const/high16 v1, 0x3f000000    # 0.5f
 
+    .line 123
     .line 124
+    add-float/2addr v0, v1
+
     .line 125
-    if-lez v5, :cond_2
+    float-to-int v0, v0
 
     .line 126
-    .line 127
-    new-instance v1, Lʾˉ/ᴵᴵ$ˉ$ʻ;
+    invoke-virtual {p3, v0}, Landroid/widget/TextView;->setCompoundDrawablePadding(I)V
 
+    .line 127
     .line 128
     .line 129
-    invoke-direct {v1, p0, v0}, Lʾˉ/ᴵᴵ$ˉ$ʻ;-><init>(Lʾˉ/ᴵᴵ$ˉ;Ljava/io/File;)V
+    const/4 v0, -0x1
 
     .line 130
+    invoke-virtual {p3, v0}, Landroid/widget/TextView;->setTextColor(I)V
+
     .line 131
     .line 132
-    invoke-static {v1}, Lʾˉ/ᴵᴵ;->ˊⁱ(Ljava/lang/Runnable;)V
-
     .line 133
+    iget-object v0, p1, Lʼٴ/ʽ;->ʻ:Ljava/lang/String;
+
     .line 134
     .line 135
-    goto :goto_2
+    invoke-virtual {p3, v0}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
     .line 136
-    :cond_2
-    const v1, 0x7f1104cf
-
     .line 137
     .line 138
-    .line 139
-    invoke-static {v1}, Lʼˏ/ᵎ;->ˈˉ(I)Ljava/lang/String;
+    iget v0, p1, Lʼٴ/ʽ;->ʾ:I
 
+    .line 139
     .line 140
+    const-string v1, "#AAAAAA"
+
     .line 141
     .line 142
-    move-result-object v1
+    const-string v3, "\n"
 
     .line 143
-    const v2, 0x7f1101de
-
     .line 144
+    const/4 v4, 0x1
+
     .line 145
+    if-eq v0, v4, :cond_2
+
     .line 146
-    invoke-static {v2}, Lʼˏ/ᵎ;->ˈˉ(I)Ljava/lang/String;
-
     .line 147
-    .line 148
-    .line 149
-    move-result-object v2
+    const/4 v5, 0x2
 
+    .line 148
+    if-ne v0, v5, :cond_3
+
+    .line 149
     .line 150
-    invoke-static {v1, v2}, Lʾˉ/ᴵᴵ;->ˋⁱ(Ljava/lang/String;Ljava/lang/String;)V
+    :cond_2
+    new-instance v0, Ljava/lang/StringBuilder;
 
     .line 151
     .line 152
-    .line 153
-    invoke-virtual {v0}, Ljava/io/File;->delete()Z
+    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
 
+    .line 153
     .line 154
     .line 155
+    invoke-virtual {v0, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
     .line 156
-    :goto_2
-    return-void
+    .line 157
+    .line 158
+    const v5, 0x7f110407
+
+    .line 159
+    .line 160
+    .line 161
+    invoke-static {v5}, Lʼˏ/ᵢ;->ˈי(I)Ljava/lang/String;
+
+    .line 162
+    .line 163
+    .line 164
+    move-result-object v5
+
+    .line 165
+    invoke-virtual {v0, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 166
+    .line 167
+    .line 168
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    .line 169
+    .line 170
+    .line 171
+    move-result-object v0
+
+    .line 172
+    invoke-static {v0, v1, v2}, Lʼˏ/ᵢ;->ʾʿ(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Landroid/text/SpannableString;
+
+    .line 173
+    .line 174
+    .line 175
+    move-result-object v0
+
+    .line 176
+    invoke-virtual {p3, v0}, Landroid/widget/TextView;->append(Ljava/lang/CharSequence;)V
+
+    .line 177
+    .line 178
+    .line 179
+    :cond_3
+    iget p1, p1, Lʼٴ/ʽ;->ʿ:I
+
+    .line 180
+    .line 181
+    if-ne p1, v4, :cond_4
+
+    .line 182
+    .line 183
+    new-instance p1, Ljava/lang/StringBuilder;
+
+    .line 184
+    .line 185
+    invoke-direct {p1}, Ljava/lang/StringBuilder;-><init>()V
+
+    .line 186
+    .line 187
+    .line 188
+    invoke-virtual {p1, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 189
+    .line 190
+    .line 191
+    const v0, 0x7f110406
+
+    .line 192
+    .line 193
+    .line 194
+    invoke-static {v0}, Lʼˏ/ᵢ;->ˈי(I)Ljava/lang/String;
+
+    .line 195
+    .line 196
+    .line 197
+    move-result-object v0
+
+    .line 198
+    invoke-virtual {p1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 199
+    .line 200
+    .line 201
+    invoke-virtual {p1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    .line 202
+    .line 203
+    .line 204
+    move-result-object p1
+
+    .line 205
+    invoke-static {p1, v1, v2}, Lʼˏ/ᵢ;->ʾʿ(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Landroid/text/SpannableString;
+
+    .line 206
+    .line 207
+    .line 208
+    move-result-object p1
+
+    .line 209
+    invoke-virtual {p3, p1}, Landroid/widget/TextView;->append(Ljava/lang/CharSequence;)V
+
+    .line 210
+    .line 211
+    .line 212
+    :cond_4
+    const/4 p1, 0x0
+
+    .line 213
+    invoke-virtual {p3, p1, v4}, Landroid/widget/TextView;->setTypeface(Landroid/graphics/Typeface;I)V
+
+    .line 214
+    .line 215
+    .line 216
+    return-object p2
 .end method

@@ -113,7 +113,7 @@
 
     .line 48
     .line 49
-    sget v3, Lʾˉ/ʼʼ;->ʾᐧ:I
+    sget v3, Lʾˉ/ᴵᴵ;->ʾᐧ:I
 
     .line 50
     .line 51
@@ -960,7 +960,7 @@
 
     .line 446
     .line 447
-    sget v4, Lʾˉ/ʼʼ;->ʾᐧ:I
+    sget v4, Lʾˉ/ᴵᴵ;->ʾᐧ:I
 
     .line 448
     .line 449

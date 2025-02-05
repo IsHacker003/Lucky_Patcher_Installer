@@ -261,14 +261,14 @@
 
     .line 103
     .line 104
-    sget-object p1, Lʾˉ/ʼʼ;->ʼˎ:Lʾˉ/ʼʼ;
+    sget-object p1, Lʾˉ/ᴵᴵ;->ʼˎ:Lʾˉ/ᴵᴵ;
 
     .line 105
     .line 106
     const/4 p2, 0x1
 
     .line 107
-    invoke-virtual {p1, p2, v5}, Lʾˉ/ʼʼ;->ˎʿ(ZLjava/lang/String;)Z
+    invoke-virtual {p1, p2, v5}, Lʾˉ/ᴵᴵ;->ˎʿ(ZLjava/lang/String;)Z
 
     .line 108
     .line 109
@@ -365,7 +365,7 @@
     move-result-object p2
 
     .line 157
-    invoke-static {p1, p2}, Lʾˉ/ʼʼ;->ˋⁱ(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {p1, p2}, Lʾˉ/ᴵᴵ;->ˋⁱ(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 158
     .line 159
@@ -390,7 +390,7 @@
     move-result-object p2
 
     .line 169
-    invoke-static {p1, p2}, Lʾˉ/ʼʼ;->ˋⁱ(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {p1, p2}, Lʾˉ/ᴵᴵ;->ˋⁱ(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 170
     .line 171
@@ -415,7 +415,7 @@
     move-result-object p2
 
     .line 181
-    invoke-static {p1, p2}, Lʾˉ/ʼʼ;->ˋⁱ(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {p1, p2}, Lʾˉ/ᴵᴵ;->ˋⁱ(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 182
     .line 183

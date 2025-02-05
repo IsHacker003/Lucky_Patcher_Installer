@@ -3,12 +3,12 @@
 .source "SourceFile"
 
 # interfaces
-.implements Ljava/util/Comparator;
+.implements Ljava/lang/Runnable;
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lʾˉ/ᴵᴵ;->ʿˆ()V
+    value = Lʾˉ/ᴵᴵ;->ʿʼ(Lʾˉ/ᵎ;Z)Ljava/lang/String;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -16,77 +16,56 @@
     name = null
 .end annotation
 
-.annotation system Ldalvik/annotation/Signature;
-    value = {
-        "Ljava/lang/Object;",
-        "Ljava/util/Comparator<",
-        "L\u02be\u02c9/\u02ce;",
-        ">;"
-    }
-.end annotation
-
-
-# instance fields
-.field final synthetic ʻ:Lʾˉ/ᴵᴵ;
-
 
 # direct methods
-.method constructor <init>(Lʾˉ/ᴵᴵ;)V
+.method constructor <init>()V
     .locals 0
 
     .line 1
-    iput-object p1, p0, Lʾˉ/ᴵᴵ$ˉˉ;->ʻ:Lʾˉ/ᴵᴵ;
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
     .line 3
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
     .line 4
-    .line 5
-    .line 6
     return-void
 .end method
 
 
 # virtual methods
-.method public bridge synthetic compare(Ljava/lang/Object;Ljava/lang/Object;)I
-    .locals 0
+.method public run()V
+    .locals 2
 
     .line 1
-    check-cast p1, Lʾˉ/ˎ;
+    const v0, 0x7f1104d3
 
     .line 2
     .line 3
-    check-cast p2, Lʾˉ/ˎ;
-
     .line 4
-    .line 5
-    invoke-virtual {p0, p1, p2}, Lʾˉ/ᴵᴵ$ˉˉ;->ʻ(Lʾˉ/ˎ;Lʾˉ/ˎ;)I
+    invoke-static {v0}, Lʼˏ/ᵢ;->ˈי(I)Ljava/lang/String;
 
+    .line 5
     .line 6
     .line 7
+    move-result-object v0
+
     .line 8
-    move-result p1
+    const v1, 0x7f1101ad
 
     .line 9
-    return p1
-.end method
+    .line 10
+    .line 11
+    invoke-static {v1}, Lʼˏ/ᵢ;->ˈי(I)Ljava/lang/String;
 
-.method public ʻ(Lʾˉ/ˎ;Lʾˉ/ˎ;)I
-    .locals 3
+    .line 12
+    .line 13
+    .line 14
+    move-result-object v1
 
-    .line 1
-    iget-wide v0, p2, Lʾˉ/ˎ;->ˋ:J
+    .line 15
+    invoke-static {v0, v1}, Lʾˉ/ᴵᴵ;->ˋⁱ(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 2
-    .line 3
-    iget-wide p1, p1, Lʾˉ/ˎ;->ˋ:J
-
-    .line 4
-    .line 5
-    cmp-long v2, v0, p1
-
-    .line 6
-    .line 7
-    return v2
+    .line 16
+    .line 17
+    .line 18
+    return-void
 .end method

@@ -45,7 +45,7 @@
 
     .line 1
     :try_start_0
-    sget-object v0, Lʾˉ/ʼʼ;->ʼᴵ:Lʾˉ/ﹳ;
+    sget-object v0, Lʾˉ/ᴵᴵ;->ʼᴵ:Lʾˉ/ᵔ;
 
     .line 2
     .line 3
@@ -53,7 +53,7 @@
 
     .line 4
     .line 5
-    invoke-virtual {v0}, Lʾˉ/ﹳ;->ʿ()Landroid/widget/Filter;
+    invoke-virtual {v0}, Lʾˉ/ᵔ;->ʾ()Landroid/widget/Filter;
 
     .line 6
     .line 7
@@ -74,11 +74,11 @@
     .line 14
     .line 15
     .line 16
-    sget-object p1, Lʾˉ/ʼʼ;->ʼᴵ:Lʾˉ/ﹳ;
+    sget-object p1, Lʾˉ/ᴵᴵ;->ʼᴵ:Lʾˉ/ᵔ;
 
     .line 17
     .line 18
-    invoke-virtual {p1}, Lʾˉ/ﹳ;->notifyDataSetChanged()V
+    invoke-virtual {p1}, Lʾˉ/ᵔ;->notifyDataSetChanged()V
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 

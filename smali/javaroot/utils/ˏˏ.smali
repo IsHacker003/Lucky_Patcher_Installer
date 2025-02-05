@@ -194,7 +194,7 @@
     .line 70
     .line 71
     :goto_3
-    sget p0, Lʾˉ/ʼʼ;->ʾᐧ:I
+    sget p0, Lʾˉ/ᴵᴵ;->ʾᐧ:I
 
     .line 72
     .line 73

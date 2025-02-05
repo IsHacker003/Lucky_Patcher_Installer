@@ -56,7 +56,7 @@
 
     .line 1
     :try_start_0
-    invoke-static {}, Lʾˉ/ʼʼ;->ˈᵎ()Landroid/content/pm/PackageManager;
+    invoke-static {}, Lʾˉ/ᴵᴵ;->ˈᵎ()Landroid/content/pm/PackageManager;
 
     .line 2
     .line 3
@@ -80,7 +80,7 @@
     move-result-object p1
 
     .line 13
-    sget-boolean p2, Lʾˉ/ʼʼ;->ʽﾞ:Z
+    sget-boolean p2, Lʾˉ/ᴵᴵ;->ʽﾞ:Z
 
     .line 14
     .line 15
@@ -115,7 +115,7 @@
 
     .line 31
     :cond_0
-    sget-object p2, Lʾˉ/ʼʼ;->ʼﾞ:Lru/aaaaacca/installer/MainActivity;
+    sget-object p2, Lʾˉ/ᴵᴵ;->ʼﾞ:Lru/aaaaaccc/installer/MainActivity;
 
     .line 32
     .line 33
@@ -134,7 +134,7 @@
 
     .line 39
     :catch_0
-    invoke-static {}, Lʾˉ/ʼʼ;->ˈי()Landroid/content/Context;
+    invoke-static {}, Lʾˉ/ᴵᴵ;->ˈי()Landroid/content/Context;
 
     .line 40
     .line 41

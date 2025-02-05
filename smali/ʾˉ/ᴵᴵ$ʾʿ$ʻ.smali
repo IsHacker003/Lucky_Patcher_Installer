@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lʾˉ/ᴵᴵ$ʾʿ;->run()V
+    value = Lʾˉ/ᴵᴵ$ʾʿ;->onClick(Landroid/content/DialogInterface;I)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -41,59 +41,68 @@
 
 # virtual methods
 .method public run()V
-    .locals 2
+    .locals 1
 
     .line 1
-    const/16 v0, 0xb
+    iget-object v0, p0, Lʾˉ/ᴵᴵ$ʾʿ$ʻ;->ʻ:Lʾˉ/ᴵᴵ$ʾʿ;
 
     .line 2
     .line 3
-    invoke-static {v0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+    iget-object v0, v0, Lʾˉ/ᴵᴵ$ʾʿ;->ʼ:Ljava/lang/Integer;
 
     .line 4
     .line 5
+    invoke-virtual {v0}, Ljava/lang/Integer;->intValue()I
+
     .line 6
-    move-result-object v0
-
     .line 7
-    invoke-static {v0}, Lʾˉ/ᴵᴵ;->ˋᵎ(Ljava/lang/Integer;)V
-
     .line 8
-    .line 9
-    .line 10
-    sget-object v0, Lʾˉ/ᴵᴵ;->ʽᴵ:Lʾˊ/י;
+    move-result v0
 
+    .line 9
+    packed-switch v0, :pswitch_data_0
+
+    .line 10
     .line 11
     .line 12
-    const/4 v1, 0x0
+    :pswitch_0
+    goto :goto_0
 
     .line 13
-    invoke-virtual {v0, v1}, Lʾˊ/י;->ʿ(Z)V
+    :pswitch_1
+    invoke-static {}, Lʼˏ/ᵢ;->ˋˎ()V
 
     .line 14
     .line 15
     .line 16
-    sget-object v0, Lʾˉ/ᴵᴵ;->ʽᴵ:Lʾˊ/י;
+    goto :goto_0
 
     .line 17
-    .line 18
-    const v1, 0x7f1104ce
+    :pswitch_2
+    invoke-static {}, Lʼˏ/ᵢ;->ˋˊ()V
 
+    .line 18
     .line 19
     .line 20
+    goto :goto_0
+
     .line 21
-    invoke-static {v1}, Lʼˏ/ᵎ;->ˈˉ(I)Ljava/lang/String;
+    :pswitch_3
+    invoke-static {}, Lʼˏ/ᵢ;->ˋˉ()V
 
     .line 22
     .line 23
     .line 24
-    move-result-object v1
+    :goto_0
+    return-void
 
     .line 25
-    invoke-virtual {v0, v1}, Lʾˊ/י;->ˆ(Ljava/lang/String;)V
-
-    .line 26
-    .line 27
-    .line 28
-    return-void
+    :pswitch_data_0
+    .packed-switch 0x7f110414
+        :pswitch_3
+        :pswitch_0
+        :pswitch_0
+        :pswitch_2
+        :pswitch_1
+    .end packed-switch
 .end method

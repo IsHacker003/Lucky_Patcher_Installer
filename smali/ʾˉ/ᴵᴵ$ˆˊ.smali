@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lʾˉ/ᴵᴵ;->ˉˏ()V
+    value = Lʾˉ/ᴵᴵ;->ˉˋ()V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -44,46 +44,50 @@
     .locals 2
 
     .line 1
-    invoke-static {}, Lʼˏ/ᵎ;->ˉᵢ()Z
+    :try_start_0
+    sget-boolean v0, Lʾˉ/ᴵᴵ;->ʽﾞ:Z
 
     .line 2
     .line 3
-    .line 4
-    move-result v0
+    if-eqz v0, :cond_0
 
+    .line 4
     .line 5
-    sput-boolean v0, Lʾˉ/ᴵᴵ;->ˉﾞ:Z
+    new-instance v0, Lʾˉ/ᴵᴵ$ˆˊ$ʻ;
 
     .line 6
     .line 7
-    new-instance v0, Ljava/lang/StringBuilder;
+    invoke-direct {v0, p0}, Lʾˉ/ᴵᴵ$ˆˊ$ʻ;-><init>(Lʾˉ/ᴵᴵ$ˆˊ;)V
 
     .line 8
     .line 9
-    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
-
     .line 10
+    invoke-static {v0}, Lʾˉ/ᴵᴵ;->ˋʻ(Ljava/lang/Runnable;)V
+
     .line 11
     .line 12
-    const-string v1, "useMagiskModule:"
-
     .line 13
+    goto :goto_0
+
     .line 14
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    :cond_0
+    invoke-static {}, Lʾˉ/ᴵᴵ;->ˈᵎ()Landroid/content/pm/PackageManager;
 
     .line 15
     .line 16
     .line 17
-    sget-boolean v1, Lʾˉ/ᴵᴵ;->ˉﾞ:Z
+    move-result-object v0
 
     .line 18
-    .line 19
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
+    sget-object v1, Lʾˉ/ᴵᴵ;->ʼᵎ:Lʾˉ/ᵎ;
 
+    .line 19
     .line 20
+    iget-object v1, v1, Lʾˉ/ᵎ;->ʻ:Ljava/lang/String;
+
     .line 21
     .line 22
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-virtual {v0, v1}, Landroid/content/pm/PackageManager;->getLaunchIntentForPackage(Ljava/lang/String;)Landroid/content/Intent;
 
     .line 23
     .line 24
@@ -91,24 +95,35 @@
     move-result-object v0
 
     .line 26
-    invoke-static {v0}, Lʾˉ/ᴵᴵ;->ˉˎ(Ljava/lang/Object;)V
+    iget-object v1, p0, Lʾˉ/ᴵᴵ$ˆˊ;->ʻ:Lʾˉ/ᴵᴵ;
 
     .line 27
     .line 28
-    .line 29
-    new-instance v0, Lʾˉ/ᴵᴵ$ˆˊ$ʻ;
+    invoke-virtual {v1, v0}, Landroidx/fragment/app/Fragment;->ʾˎ(Landroid/content/Intent;)V
+    :try_end_0
+    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
+    .line 29
     .line 30
     .line 31
-    invoke-direct {v0, p0}, Lʾˉ/ᴵᴵ$ˆˊ$ʻ;-><init>(Lʾˉ/ᴵᴵ$ˆˊ;)V
+    goto :goto_0
 
     .line 32
+    :catch_0
+    new-instance v0, Lʾˉ/ᴵᴵ$ˆˊ$ʼ;
+
     .line 33
     .line 34
-    invoke-static {v0}, Lʾˉ/ᴵᴵ;->ˊⁱ(Ljava/lang/Runnable;)V
+    invoke-direct {v0, p0}, Lʾˉ/ᴵᴵ$ˆˊ$ʼ;-><init>(Lʾˉ/ᴵᴵ$ˆˊ;)V
 
     .line 35
     .line 36
     .line 37
+    invoke-static {v0}, Lʾˉ/ᴵᴵ;->ˊⁱ(Ljava/lang/Runnable;)V
+
+    .line 38
+    .line 39
+    .line 40
+    :goto_0
     return-void
 .end method

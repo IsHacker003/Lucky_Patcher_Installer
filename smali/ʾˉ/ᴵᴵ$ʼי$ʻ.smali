@@ -163,7 +163,7 @@
     .line 60
     .line 61
     .line 62
-    const-string v5, "Block Internet"
+    const-string v5, "Uninstall"
 
     .line 63
     .line 64
@@ -199,7 +199,7 @@
     .line 80
     .line 81
     .line 82
-    const-string v4, "pm revoke "
+    const-string v4, "pm uninstall "
 
     .line 83
     .line 84
@@ -217,99 +217,90 @@
     .line 90
     .line 91
     .line 92
-    const-string v2, "/android.permission.INTERNET"
+    invoke-virtual {v3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     .line 93
     .line 94
-    invoke-virtual {v3, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
     .line 95
-    .line 96
-    .line 97
-    invoke-virtual {v3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    .line 98
-    .line 99
-    .line 100
     move-result-object v2
 
-    .line 101
+    .line 96
     invoke-virtual {v0, v2}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
-    .line 102
-    .line 103
-    .line 104
+    .line 97
+    .line 98
+    .line 99
     goto :goto_0
 
-    .line 105
+    .line 100
     :cond_1
     invoke-virtual {v0}, Ljava/util/ArrayList;->size()I
 
-    .line 106
-    .line 107
-    .line 108
+    .line 101
+    .line 102
+    .line 103
     move-result v1
 
-    .line 109
+    .line 104
     if-lez v1, :cond_3
 
-    .line 110
-    .line 111
+    .line 105
+    .line 106
     invoke-virtual {v0}, Ljava/util/ArrayList;->size()I
 
-    .line 112
-    .line 113
-    .line 114
+    .line 107
+    .line 108
+    .line 109
     move-result v1
 
-    .line 115
+    .line 110
     new-array v1, v1, [Ljava/lang/String;
+
+    .line 111
+    .line 112
+    invoke-virtual {v0, v1}, Ljava/util/ArrayList;->toArray([Ljava/lang/Object;)[Ljava/lang/Object;
+
+    .line 113
+    .line 114
+    .line 115
+    sget-boolean v0, Lʾˉ/ᴵᴵ;->ʽﾞ:Z
 
     .line 116
     .line 117
-    invoke-virtual {v0, v1}, Ljava/util/ArrayList;->toArray([Ljava/lang/Object;)[Ljava/lang/Object;
+    if-eqz v0, :cond_2
 
     .line 118
     .line 119
+    new-instance v0, Lʼˏ/ᵢ;
+
     .line 120
-    sget-boolean v0, Lʾˉ/ᴵᴵ;->ʽﾞ:Z
-
     .line 121
-    .line 122
-    if-eqz v0, :cond_2
+    invoke-direct {v0, v3}, Lʼˏ/ᵢ;-><init>(Ljava/lang/String;)V
 
+    .line 122
     .line 123
     .line 124
-    new-instance v0, Lʼˏ/ᵎ;
+    invoke-virtual {v0, v1}, Lʼˏ/ᵢ;->ˎˎ([Ljava/lang/String;)Ljava/lang/String;
 
     .line 125
     .line 126
-    invoke-direct {v0, v3}, Lʼˏ/ᵎ;-><init>(Ljava/lang/String;)V
-
     .line 127
-    .line 128
-    .line 129
-    invoke-virtual {v0, v1}, Lʼˏ/ᵎ;->ˊˊ([Ljava/lang/String;)Ljava/lang/String;
-
-    .line 130
-    .line 131
-    .line 132
     goto :goto_1
 
-    .line 133
+    .line 128
     :cond_2
-    invoke-static {v1}, Lʼˏ/ᵎ;->ˉˉ([Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v1}, Lʼˏ/ᵢ;->ˋˋ([Ljava/lang/String;)Ljava/lang/String;
 
-    .line 134
-    .line 135
-    .line 136
+    .line 129
+    .line 130
+    .line 131
     :cond_3
     :goto_1
     invoke-static {}, Lʾˉ/ᴵᴵ;->ˊٴ()V
 
-    .line 137
-    .line 138
-    .line 139
+    .line 132
+    .line 133
+    .line 134
     :cond_4
     :goto_2
     return-void

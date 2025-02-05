@@ -50,7 +50,7 @@
     const/4 v1, 0x1
 
     .line 3
-    sget-boolean v2, Lʾˉ/ʼʼ;->ʿˑ:Z
+    sget-boolean v2, Lʾˉ/ᴵᴵ;->ʿˑ:Z
 
     .line 4
     .line 5
@@ -171,14 +171,14 @@
     move-result-object v10
 
     .line 65
-    invoke-static {v2, v10}, Lʾˉ/ʼʼ;->ˋⁱ(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v2, v10}, Lʾˉ/ᴵᴵ;->ˋⁱ(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 66
     .line 67
     .line 68
     :cond_1
     :goto_0
-    sget-boolean v2, Lʾˉ/ʼʼ;->ʿי:Z
+    sget-boolean v2, Lʾˉ/ᴵᴵ;->ʿי:Z
 
     .line 69
     .line 70
@@ -190,12 +190,12 @@
     move-result-object v2
 
     .line 74
-    invoke-static {v2}, Lʾˉ/ʼʼ;->ˉˎ(Ljava/lang/Object;)V
+    invoke-static {v2}, Lʾˉ/ᴵᴵ;->ˉˎ(Ljava/lang/Object;)V
 
     .line 75
     .line 76
     .line 77
-    sget-boolean v2, Lʾˉ/ʼʼ;->ʿי:Z
+    sget-boolean v2, Lʾˉ/ᴵᴵ;->ʿי:Z
 
     .line 78
     .line 79
@@ -285,7 +285,7 @@
     move-result-object v1
 
     .line 122
-    invoke-static {v0, v1}, Lʾˉ/ʼʼ;->ˋⁱ(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lʾˉ/ᴵᴵ;->ˋⁱ(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 123
     .line 124

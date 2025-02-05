@@ -3,7 +3,7 @@
 .source "SourceFile"
 
 # interfaces
-.implements Landroid/widget/CompoundButton$OnCheckedChangeListener;
+.implements Ljava/lang/Runnable;
 
 
 # annotations
@@ -40,86 +40,58 @@
 
 
 # virtual methods
-.method public onCheckedChanged(Landroid/widget/CompoundButton;Z)V
-    .locals 1
+.method public run()V
+    .locals 3
 
     .line 1
-    const-string p1, "warning_new_support_patch_dex"
+    iget-object v0, p0, Lʾˉ/ᴵᴵ$ʾˎ$ʻ$ʻ;->ʻ:Lʾˉ/ᴵᴵ$ʾˎ$ʻ;
 
     .line 2
     .line 3
-    if-eqz p2, :cond_0
+    iget-object v0, v0, Lʾˉ/ᴵᴵ$ʾˎ$ʻ;->ʻ:Lʾˉ/ᴵᴵ$ʾˎ;
 
     .line 4
     .line 5
-    invoke-static {}, Lʾˉ/ᴵᴵ;->ˈˏ()Landroid/content/SharedPreferences;
+    iget-object v0, v0, Lʾˉ/ᴵᴵ$ʾˎ;->ʽ:Lʾˉ/ᴵᴵ;
 
     .line 6
     .line 7
+    invoke-virtual {v0}, Lʾˉ/ᴵᴵ;->ˈˑ()Landroidx/fragment/app/ʿ;
+
     .line 8
-    move-result-object p2
-
     .line 9
-    invoke-interface {p2}, Landroid/content/SharedPreferences;->edit()Landroid/content/SharedPreferences$Editor;
-
     .line 10
+    move-result-object v0
+
     .line 11
+    const v1, 0x7f11041a
+
     .line 12
-    move-result-object p2
-
     .line 13
-    const/4 v0, 0x0
-
     .line 14
-    invoke-interface {p2, p1, v0}, Landroid/content/SharedPreferences$Editor;->putBoolean(Ljava/lang/String;Z)Landroid/content/SharedPreferences$Editor;
+    invoke-static {v1}, Lʼˏ/ᵢ;->ˈי(I)Ljava/lang/String;
 
     .line 15
     .line 16
     .line 17
-    move-result-object p1
+    move-result-object v1
 
     .line 18
-    invoke-interface {p1}, Landroid/content/SharedPreferences$Editor;->commit()Z
+    const/4 v2, 0x1
 
     .line 19
+    invoke-static {v0, v1, v2}, Landroid/widget/Toast;->makeText(Landroid/content/Context;Ljava/lang/CharSequence;I)Landroid/widget/Toast;
+
     .line 20
     .line 21
-    goto :goto_0
-
     .line 22
-    :cond_0
-    invoke-static {}, Lʾˉ/ᴵᴵ;->ˈˏ()Landroid/content/SharedPreferences;
+    move-result-object v0
 
     .line 23
+    invoke-virtual {v0}, Landroid/widget/Toast;->show()V
+
     .line 24
     .line 25
-    move-result-object p2
-
     .line 26
-    invoke-interface {p2}, Landroid/content/SharedPreferences;->edit()Landroid/content/SharedPreferences$Editor;
-
-    .line 27
-    .line 28
-    .line 29
-    move-result-object p2
-
-    .line 30
-    const/4 v0, 0x1
-
-    .line 31
-    invoke-interface {p2, p1, v0}, Landroid/content/SharedPreferences$Editor;->putBoolean(Ljava/lang/String;Z)Landroid/content/SharedPreferences$Editor;
-
-    .line 32
-    .line 33
-    .line 34
-    move-result-object p1
-
-    .line 35
-    invoke-interface {p1}, Landroid/content/SharedPreferences$Editor;->commit()Z
-
-    .line 36
-    .line 37
-    .line 38
-    :goto_0
     return-void
 .end method

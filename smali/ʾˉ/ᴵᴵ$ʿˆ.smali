@@ -3,7 +3,7 @@
 .source "SourceFile"
 
 # interfaces
-.implements Ljava/lang/Runnable;
+.implements Landroid/content/DialogInterface$OnClickListener;
 
 
 # annotations
@@ -18,7 +18,7 @@
 
 
 # instance fields
-.field final synthetic ʻ:Lʾˉ/ᴵᴵ;
+.field final synthetic ʼ:Lʾˉ/ᴵᴵ;
 
 
 # direct methods
@@ -26,7 +26,7 @@
     .locals 0
 
     .line 1
-    iput-object p1, p0, Lʾˉ/ᴵᴵ$ʿˆ;->ʻ:Lʾˉ/ᴵᴵ;
+    iput-object p1, p0, Lʾˉ/ᴵᴵ$ʿˆ;->ʼ:Lʾˉ/ᴵᴵ;
 
     .line 2
     .line 3
@@ -40,107 +40,23 @@
 
 
 # virtual methods
-.method public run()V
-    .locals 3
+.method public onClick(Landroid/content/DialogInterface;I)V
+    .locals 0
 
     .line 1
-    sget-object v0, Lʾˉ/ᴵᴵ;->ʽﹶ:Ljava/lang/String;
+    new-instance p1, Lʾˉ/ᴵᴵ$ʿˆ$ʻ;
 
     .line 2
     .line 3
-    invoke-static {v0}, Lʼˏ/ᵎ;->ˉʾ(Ljava/lang/String;)Z
+    invoke-direct {p1, p0}, Lʾˉ/ᴵᴵ$ʿˆ$ʻ;-><init>(Lʾˉ/ᴵᴵ$ʿˆ;)V
 
     .line 4
     .line 5
     .line 6
-    move-result v0
+    invoke-static {p1}, Lʾˉ/ᴵᴵ;->ˋʻ(Ljava/lang/Runnable;)V
 
     .line 7
-    if-eqz v0, :cond_0
-
     .line 8
     .line 9
-    new-instance v0, Ljava/io/File;
-
-    .line 10
-    .line 11
-    sget-object v1, Lʾˉ/ᴵᴵ;->ʽﹶ:Ljava/lang/String;
-
-    .line 12
-    .line 13
-    invoke-direct {v0, v1}, Ljava/io/File;-><init>(Ljava/lang/String;)V
-
-    .line 14
-    .line 15
-    .line 16
-    invoke-static {v0}, Lʼˏ/ᵎ;->ʽᵎ(Ljava/io/File;)Ljava/io/File;
-
-    .line 17
-    .line 18
-    .line 19
-    move-result-object v0
-
-    .line 20
-    if-nez v0, :cond_0
-
-    .line 21
-    .line 22
-    sget-object v0, Lʾˉ/ᴵᴵ;->ʼˎ:Lʾˉ/ᴵᴵ;
-
-    .line 23
-    .line 24
-    invoke-virtual {v0}, Lʾˉ/ᴵᴵ;->ˈˑ()Landroidx/fragment/app/ʿ;
-
-    .line 25
-    .line 26
-    .line 27
-    move-result-object v0
-
-    .line 28
-    const v1, 0x7f1104cf
-
-    .line 29
-    .line 30
-    .line 31
-    invoke-static {v1}, Lʼˏ/ᵎ;->ˈˉ(I)Ljava/lang/String;
-
-    .line 32
-    .line 33
-    .line 34
-    move-result-object v1
-
-    .line 35
-    const v2, 0x7f1102a9
-
-    .line 36
-    .line 37
-    .line 38
-    invoke-static {v2}, Lʼˏ/ᵎ;->ˈˉ(I)Ljava/lang/String;
-
-    .line 39
-    .line 40
-    .line 41
-    move-result-object v2
-
-    .line 42
-    invoke-static {v0, v1, v2}, Lʼˏ/ᵎ;->ˏˉ(Landroid/app/Activity;Ljava/lang/String;Ljava/lang/String;)V
-
-    .line 43
-    .line 44
-    .line 45
-    goto :goto_0
-
-    .line 46
-    :cond_0
-    iget-object v0, p0, Lʾˉ/ᴵᴵ$ʿˆ;->ʻ:Lʾˉ/ᴵᴵ;
-
-    .line 47
-    .line 48
-    invoke-virtual {v0}, Lʾˉ/ᴵᴵ;->ˆˎ()V
-
-    .line 49
-    .line 50
-    .line 51
-    :goto_0
     return-void
 .end method

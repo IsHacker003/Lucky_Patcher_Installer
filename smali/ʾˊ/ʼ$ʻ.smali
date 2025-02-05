@@ -55,7 +55,7 @@
     .locals 0
 
     .line 1
-    sget-object p1, Lʾˉ/ʼʼ;->ʻﹶ:Ljava/lang/String;
+    sget-object p1, Lʾˉ/ᴵᴵ;->ʻﹶ:Ljava/lang/String;
 
     .line 2
     .line 3
@@ -68,7 +68,7 @@
     .line 6
     .line 7
     .line 8
-    invoke-static {p1}, Lʾˉ/ʼʼ;->ˋʻ(Ljava/lang/Runnable;)V
+    invoke-static {p1}, Lʾˉ/ᴵᴵ;->ˋʻ(Ljava/lang/Runnable;)V
 
     .line 9
     .line 10

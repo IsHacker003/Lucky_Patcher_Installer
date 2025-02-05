@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lʾˉ/ᴵᴵ$ʻˈ;->run()V
+    value = Lʾˉ/ᴵᴵ$ʻˈ;->onClick(Landroid/content/DialogInterface;I)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,404 +18,502 @@
 
 
 # instance fields
-.field final synthetic ʻ:Lʾˉ/ᴵᴵ$ʻˈ;
+.field final synthetic ʻ:Ljava/lang/String;
+
+.field final synthetic ʼ:Lʾˉ/ᴵᴵ$ʻˈ;
 
 
 # direct methods
-.method constructor <init>(Lʾˉ/ᴵᴵ$ʻˈ;)V
+.method constructor <init>(Lʾˉ/ᴵᴵ$ʻˈ;Ljava/lang/String;)V
     .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()V"
+        }
+    .end annotation
 
     .line 1
-    iput-object p1, p0, Lʾˉ/ᴵᴵ$ʻˈ$ʻ;->ʻ:Lʾˉ/ᴵᴵ$ʻˈ;
+    iput-object p1, p0, Lʾˉ/ᴵᴵ$ʻˈ$ʻ;->ʼ:Lʾˉ/ᴵᴵ$ʻˈ;
 
     .line 2
     .line 3
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    iput-object p2, p0, Lʾˉ/ᴵᴵ$ʻˈ$ʻ;->ʻ:Ljava/lang/String;
 
     .line 4
     .line 5
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
     .line 6
+    .line 7
+    .line 8
     return-void
 .end method
 
 
 # virtual methods
 .method public run()V
-    .locals 4
+    .locals 6
 
     .line 1
-    new-instance v0, Ljava/lang/StringBuilder;
+    const/4 v0, 0x0
 
     .line 2
+    const/4 v1, 0x1
+
     .line 3
-    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
+    const-string v2, ""
 
     .line 4
     .line 5
-    .line 6
-    const-string v1, "useMagiskModule "
+    invoke-static {}, Lʼˏ/ᵢ;->ʿᵢ()Ljava/lang/String;
 
+    .line 6
     .line 7
     .line 8
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    :try_start_0
+    invoke-static {}, Lʾˉ/ᴵᴵ;->ˈᵎ()Landroid/content/pm/PackageManager;
 
     .line 9
     .line 10
     .line 11
-    sget-boolean v1, Lʾˉ/ᴵᴵ;->ˉﾞ:Z
+    move-result-object v3
 
     .line 12
-    .line 13
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
+    iget-object v4, p0, Lʾˉ/ᴵᴵ$ʻˈ$ʻ;->ʻ:Ljava/lang/String;
 
+    .line 13
     .line 14
+    const/16 v5, 0x2000
+
     .line 15
     .line 16
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-virtual {v3, v4, v5}, Landroid/content/pm/PackageManager;->getPackageInfo(Ljava/lang/String;I)Landroid/content/pm/PackageInfo;
 
     .line 17
     .line 18
     .line 19
-    move-result-object v0
+    move-result-object v3
 
     .line 20
-    invoke-static {v0}, Lʾˉ/ᴵᴵ;->ˉˎ(Ljava/lang/Object;)V
+    iget-object v3, v3, Landroid/content/pm/PackageInfo;->applicationInfo:Landroid/content/pm/ApplicationInfo;
 
     .line 21
     .line 22
+    iget-object v3, v3, Landroid/content/pm/ApplicationInfo;->sourceDir:Ljava/lang/String;
+
     .line 23
-    new-instance v0, Ljava/lang/StringBuilder;
-
     .line 24
-    .line 25
-    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
+    iget-object v4, p0, Lʾˉ/ᴵᴵ$ʻˈ$ʻ;->ʼ:Lʾˉ/ᴵᴵ$ʻˈ;
 
+    .line 25
     .line 26
+    iget-object v4, v4, Lʾˉ/ᴵᴵ$ʻˈ;->ʽ:Lʾˉ/ᴵᴵ;
+
     .line 27
     .line 28
-    sget-object v1, Lʾˉ/ᴵᴵ;->ʾʻ:Ljava/lang/String;
+    const-string v5, "empty"
 
     .line 29
     .line 30
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    iput-object v5, v4, Lʾˉ/ᴵᴵ;->ʻⁱ:Ljava/lang/String;
 
     .line 31
     .line 32
+    iget-object v5, p0, Lʾˉ/ᴵᴵ$ʻˈ$ʻ;->ʻ:Ljava/lang/String;
+
     .line 33
-    const-class v1, Ljavaroot/utils/יי;
-
     .line 34
-    .line 35
-    invoke-virtual {v1}, Ljava/lang/Class;->getName()Ljava/lang/String;
+    invoke-static {v5}, Lʼˏ/ᵢ;->ʾˊ(Ljava/lang/String;)Ljava/lang/String;
 
+    .line 35
     .line 36
     .line 37
+    move-result-object v5
+
     .line 38
-    move-result-object v1
+    iput-object v5, v4, Lʾˉ/ᴵᴵ;->ʻⁱ:Ljava/lang/String;
 
     .line 39
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
     .line 40
+    iget-object v4, p0, Lʾˉ/ᴵᴵ$ʻˈ$ʻ;->ʼ:Lʾˉ/ᴵᴵ$ʻˈ;
+
     .line 41
     .line 42
-    const-string v1, " "
+    iget-object v4, v4, Lʾˉ/ᴵᴵ$ʻˈ;->ʼ:Lʾˉ/ˎ;
 
     .line 43
     .line 44
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    iget-object v4, v4, Lʾˉ/ˎ;->ˆ:Ljava/io/File;
 
     .line 45
     .line 46
-    .line 47
-    iget-object v2, p0, Lʾˉ/ᴵᴵ$ʻˈ$ʻ;->ʻ:Lʾˉ/ᴵᴵ$ʻˈ;
+    invoke-virtual {v4}, Ljava/io/File;->getAbsoluteFile()Ljava/io/File;
 
+    .line 47
     .line 48
     .line 49
-    iget-object v2, v2, Lʾˉ/ᴵᴵ$ʻˈ;->ʻ:Ljava/lang/String;
+    move-result-object v4
 
     .line 50
-    .line 51
-    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v4}, Ljava/io/File;->toString()Ljava/lang/String;
 
+    .line 51
     .line 52
     .line 53
+    move-result-object v4
+
     .line 54
-    const-string v2, " \'"
+    invoke-virtual {v4}, Ljava/lang/String;->trim()Ljava/lang/String;
 
     .line 55
     .line 56
-    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
     .line 57
-    .line 58
-    .line 59
-    iget-object v2, p0, Lʾˉ/ᴵᴵ$ʻˈ$ʻ;->ʻ:Lʾˉ/ᴵᴵ$ʻˈ;
+    move-result-object v4
 
+    .line 58
+    invoke-virtual {v3, v4}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    .line 59
     .line 60
     .line 61
-    iget-object v2, v2, Lʾˉ/ᴵᴵ$ʻˈ;->ʼ:Lʾˉ/ˎ;
+    move-result v4
 
     .line 62
+    if-eqz v4, :cond_0
+
     .line 63
-    iget-object v2, v2, Lʾˉ/ˎ;->ˆ:Ljava/io/File;
-
     .line 64
-    .line 65
-    invoke-virtual {v2}, Ljava/io/File;->getAbsolutePath()Ljava/lang/String;
+    new-instance v3, Lʾˉ/ᴵᴵ$ʻˈ$ʻ$ʻ;
 
+    .line 65
     .line 66
+    invoke-direct {v3, p0}, Lʾˉ/ᴵᴵ$ʻˈ$ʻ$ʻ;-><init>(Lʾˉ/ᴵᴵ$ʻˈ$ʻ;)V
+
     .line 67
     .line 68
-    move-result-object v2
-
     .line 69
-    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-static {v3}, Lʾˉ/ᴵᴵ;->ˊⁱ(Ljava/lang/Runnable;)V
 
     .line 70
     .line 71
     .line 72
-    const-string v2, "\' "
+    return-void
 
     .line 73
-    .line 74
-    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    :cond_0
+    const-string v4, "/system/"
 
+    .line 74
     .line 75
+    invoke-virtual {v3, v4}, Ljava/lang/String;->startsWith(Ljava/lang/String;)Z
+
     .line 76
     .line 77
-    iget-object v2, p0, Lʾˉ/ᴵᴵ$ʻˈ$ʻ;->ʻ:Lʾˉ/ᴵᴵ$ʻˈ;
-
     .line 78
+    move-result v3
+
     .line 79
-    iget-object v2, v2, Lʾˉ/ᴵᴵ$ʻˈ;->ʽ:Lʾˉ/ᴵᴵ;
+    if-nez v3, :cond_1
 
     .line 80
     .line 81
-    iget-object v2, v2, Lʾˉ/ᴵᴵ;->ʻⁱ:Ljava/lang/String;
+    new-instance v3, Lʼˏ/ᵢ;
 
     .line 82
     .line 83
-    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-direct {v3, v2}, Lʼˏ/ᵢ;-><init>(Ljava/lang/String;)V
 
     .line 84
     .line 85
     .line 86
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    new-instance v4, Ljava/lang/StringBuilder;
 
     .line 87
     .line 88
-    .line 89
-    sget-object v2, Lʾˉ/ᴵᴵ;->ʼٴ:Ljava/lang/String;
+    invoke-direct {v4}, Ljava/lang/StringBuilder;-><init>()V
 
+    .line 89
     .line 90
     .line 91
-    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    const-string v5, "pm clear "
 
     .line 92
     .line 93
-    .line 94
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    .line 94
     .line 95
     .line 96
+    iget-object v5, p0, Lʾˉ/ᴵᴵ$ʻˈ$ʻ;->ʻ:Ljava/lang/String;
+
     .line 97
-    sget-object v2, Landroid/os/Build;->CPU_ABI:Ljava/lang/String;
-
     .line 98
-    .line 99
-    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    .line 99
     .line 100
     .line 101
-    .line 102
-    const-string v2, " armeabi "
+    invoke-virtual {v4}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
+    .line 102
     .line 103
     .line 104
-    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    move-result-object v4
 
     .line 105
+    new-array v5, v1, [Ljava/lang/String;
+
     .line 106
     .line 107
-    sget-object v2, Lʾˉ/ᴵᴵ;->ˊʻ:Ljava/lang/String;
+    aput-object v4, v5, v0
 
     .line 108
     .line 109
-    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v3, v5}, Lʼˏ/ᵢ;->ˎˎ([Ljava/lang/String;)Ljava/lang/String;
 
     .line 110
     .line 111
     .line 112
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    new-instance v3, Lʼˏ/ᵢ;
 
     .line 113
     .line 114
-    .line 115
-    sget-object v2, Lʾˉ/ᴵᴵ;->ˊʼ:Ljava/lang/String;
+    invoke-direct {v3, v2}, Lʼˏ/ᵢ;-><init>(Ljava/lang/String;)V
 
+    .line 115
     .line 116
     .line 117
-    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    new-instance v4, Ljava/lang/StringBuilder;
 
     .line 118
     .line 119
-    .line 120
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-direct {v4}, Ljava/lang/StringBuilder;-><init>()V
 
+    .line 120
     .line 121
     .line 122
+    const-string v5, "pm uninstall "
+
     .line 123
-    sget-boolean v1, Lʾˉ/ᴵᴵ;->ˉﾞ:Z
-
     .line 124
-    .line 125
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
+    invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    .line 125
     .line 126
     .line 127
+    iget-object v5, p0, Lʾˉ/ᴵᴵ$ʻˈ$ʻ;->ʻ:Ljava/lang/String;
+
     .line 128
-    const-string v1, "\n"
-
     .line 129
-    .line 130
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    .line 130
     .line 131
     .line 132
-    .line 133
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-virtual {v4}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
+    .line 133
     .line 134
     .line 135
+    move-result-object v4
+
     .line 136
-    move-result-object v0
+    new-array v5, v1, [Ljava/lang/String;
 
     .line 137
-    iget-object v1, p0, Lʾˉ/ᴵᴵ$ʻˈ$ʻ;->ʻ:Lʾˉ/ᴵᴵ$ʻˈ;
-
     .line 138
+    aput-object v4, v5, v0
+
     .line 139
-    iget-object v1, v1, Lʾˉ/ᴵᴵ$ʻˈ;->ʼ:Lʾˉ/ˎ;
-
     .line 140
-    .line 141
-    iget-object v1, v1, Lʾˉ/ˎ;->ˆ:Ljava/io/File;
+    invoke-virtual {v3, v5}, Lʼˏ/ᵢ;->ˎˎ([Ljava/lang/String;)Ljava/lang/String;
 
+    .line 141
     .line 142
     .line 143
-    invoke-virtual {v1}, Ljava/io/File;->exists()Z
+    new-instance v3, Lʼˏ/ᵢ;
 
     .line 144
     .line 145
-    .line 146
-    move-result v1
+    const-string v4, "w"
 
+    .line 146
     .line 147
-    if-eqz v1, :cond_0
+    invoke-direct {v3, v4}, Lʼˏ/ᵢ;-><init>(Ljava/lang/String;)V
 
     .line 148
     .line 149
-    const/4 v1, 0x0
-
     .line 150
-    invoke-static {v1}, Lʾˉ/ᴵᴵ;->ˎˆ(Z)Z
+    const-wide/16 v4, 0x1770
 
     .line 151
     .line 152
+    invoke-virtual {v3, v4, v5}, Lʼˏ/ᵢ;->יʿ(J)V
+    :try_end_0
+    .catch Landroid/content/pm/PackageManager$NameNotFoundException; {:try_start_0 .. :try_end_0} :catch_0
+
     .line 153
-    move-result v1
-
     .line 154
-    if-eqz v1, :cond_0
-
     .line 155
-    .line 156
-    invoke-static {v0}, Lʾˉ/ᴵᴵ;->ˉˎ(Ljava/lang/Object;)V
+    :catch_0
+    :cond_1
+    iget-object v3, p0, Lʾˉ/ᴵᴵ$ʻˈ$ʻ;->ʻ:Ljava/lang/String;
 
+    .line 156
     .line 157
+    invoke-static {v3, v1}, Lʼˏ/ᵢ;->ˆʼ(Ljava/lang/String;Z)Ljava/util/ArrayList;
+
     .line 158
     .line 159
-    iget-object v1, p0, Lʾˉ/ᴵᴵ$ʻˈ$ʻ;->ʻ:Lʾˉ/ᴵᴵ$ʻˈ;
-
     .line 160
+    move-result-object v3
+
     .line 161
-    iget-object v1, v1, Lʾˉ/ᴵᴵ$ʻˈ;->ʻ:Ljava/lang/String;
+    invoke-static {v3}, Lʼˏ/ᵢ;->ᵔᵔ(Ljava/util/ArrayList;)Ljava/lang/String;
 
     .line 162
     .line 163
-    new-instance v2, Ljava/lang/Thread;
-
     .line 164
+    move-result-object v3
+
     .line 165
-    new-instance v3, Lʾˉ/ᴵᴵ$ʻˈ$ʻ$ʻ;
+    sput-object v3, Lʾˉ/ᴵᴵ;->ˊʻ:Ljava/lang/String;
 
     .line 166
     .line 167
-    invoke-direct {v3, p0, v1, v0}, Lʾˉ/ᴵᴵ$ʻˈ$ʻ$ʻ;-><init>(Lʾˉ/ᴵᴵ$ʻˈ$ʻ;Ljava/lang/String;Ljava/lang/String;)V
+    new-instance v3, Ljava/lang/StringBuilder;
 
     .line 168
     .line 169
-    .line 170
-    invoke-direct {v2, v3}, Ljava/lang/Thread;-><init>(Ljava/lang/Runnable;)V
+    invoke-direct {v3}, Ljava/lang/StringBuilder;-><init>()V
 
+    .line 170
     .line 171
     .line 172
+    const-string v4, "sys:"
+
     .line 173
-    const/16 v0, 0xa
-
     .line 174
-    .line 175
-    invoke-virtual {v2, v0}, Ljava/lang/Thread;->setPriority(I)V
+    invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    .line 175
     .line 176
     .line 177
-    .line 178
-    invoke-virtual {v2}, Ljava/lang/Thread;->start()V
+    sget-object v4, Lʾˉ/ᴵᴵ;->ˊʻ:Ljava/lang/String;
 
+    .line 178
     .line 179
+    invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
     .line 180
     .line 181
-    goto :goto_0
-
     .line 182
-    :cond_0
-    invoke-static {}, Lʾˊ/ʾ;->ᵔ()V
+    invoke-virtual {v3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     .line 183
     .line 184
     .line 185
-    const v0, 0x7f1104cf
+    move-result-object v3
 
     .line 186
+    invoke-static {v3}, Lʾˉ/ᴵᴵ;->ˉˎ(Ljava/lang/Object;)V
+
     .line 187
     .line 188
-    invoke-static {v0}, Lʼˏ/ᵎ;->ˈˉ(I)Ljava/lang/String;
-
     .line 189
+    iget-object v3, p0, Lʾˉ/ᴵᴵ$ʻˈ$ʻ;->ʻ:Ljava/lang/String;
+
     .line 190
     .line 191
-    move-result-object v0
+    new-array v1, v1, [Ljava/lang/String;
 
     .line 192
-    const v1, 0x7f110037
-
     .line 193
+    aput-object v3, v1, v0
+
     .line 194
     .line 195
-    invoke-static {v1}, Lʼˏ/ᵎ;->ˈˉ(I)Ljava/lang/String;
+    const-class v0, Ljavaroot/utils/ᵔᵔ;
 
     .line 196
     .line 197
+    invoke-static {v0, v1}, Lʼˏ/ᵢ;->ˎʽ(Ljava/lang/Class;[Ljava/lang/String;)Ljava/lang/String;
+
     .line 198
-    move-result-object v1
-
     .line 199
-    invoke-static {v0, v1}, Lʾˉ/ᴵᴵ;->ˋⁱ(Ljava/lang/String;Ljava/lang/String;)V
-
     .line 200
+    move-result-object v0
+
     .line 201
+    const-string v1, "\n"
+
     .line 202
-    :goto_0
+    .line 203
+    invoke-virtual {v0, v1, v2}, Ljava/lang/String;->replaceAll(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+
+    .line 204
+    .line 205
+    .line 206
+    move-result-object v0
+
+    .line 207
+    sput-object v0, Lʾˉ/ᴵᴵ;->ˊʼ:Ljava/lang/String;
+
+    .line 208
+    .line 209
+    new-instance v0, Ljava/lang/StringBuilder;
+
+    .line 210
+    .line 211
+    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
+
+    .line 212
+    .line 213
+    .line 214
+    const-string v1, "magisk:"
+
+    .line 215
+    .line 216
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 217
+    .line 218
+    .line 219
+    sget-object v1, Lʾˉ/ᴵᴵ;->ˊʼ:Ljava/lang/String;
+
+    .line 220
+    .line 221
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 222
+    .line 223
+    .line 224
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    .line 225
+    .line 226
+    .line 227
+    move-result-object v0
+
+    .line 228
+    invoke-static {v0}, Lʾˉ/ᴵᴵ;->ˉˎ(Ljava/lang/Object;)V
+
+    .line 229
+    .line 230
+    .line 231
+    new-instance v0, Lʾˉ/ᴵᴵ$ʻˈ$ʻ$ʼ;
+
+    .line 232
+    .line 233
+    invoke-direct {v0, p0}, Lʾˉ/ᴵᴵ$ʻˈ$ʻ$ʼ;-><init>(Lʾˉ/ᴵᴵ$ʻˈ$ʻ;)V
+
+    .line 234
+    .line 235
+    .line 236
+    invoke-static {v0}, Lʾˉ/ᴵᴵ;->ˊⁱ(Ljava/lang/Runnable;)V
+
+    .line 237
+    .line 238
+    .line 239
     return-void
 .end method

@@ -18,518 +18,388 @@
 
 
 # instance fields
-.field final synthetic ʻ:Ljava/lang/String;
-
-.field final synthetic ʼ:Lʾˉ/ᴵᴵ$ʻʾ;
+.field final synthetic ʻ:Lʾˉ/ᴵᴵ$ʻʾ;
 
 
 # direct methods
-.method constructor <init>(Lʾˉ/ᴵᴵ$ʻʾ;Ljava/lang/String;)V
+.method constructor <init>(Lʾˉ/ᴵᴵ$ʻʾ;)V
     .locals 0
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "()V"
-        }
-    .end annotation
 
     .line 1
-    iput-object p1, p0, Lʾˉ/ᴵᴵ$ʻʾ$ʻ;->ʼ:Lʾˉ/ᴵᴵ$ʻʾ;
+    iput-object p1, p0, Lʾˉ/ᴵᴵ$ʻʾ$ʻ;->ʻ:Lʾˉ/ᴵᴵ$ʻʾ;
 
     .line 2
     .line 3
-    iput-object p2, p0, Lʾˉ/ᴵᴵ$ʻʾ$ʻ;->ʻ:Ljava/lang/String;
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 4
     .line 5
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
     .line 6
-    .line 7
-    .line 8
     return-void
 .end method
 
 
 # virtual methods
 .method public run()V
-    .locals 8
+    .locals 7
 
     .line 1
-    const/4 v0, 0x0
+    sget-object v0, Lʾˉ/ᴵᴵ;->ʼᵎ:Lʾˉ/ᵎ;
 
     .line 2
+    .line 3
     const/4 v1, 0x1
 
-    .line 3
+    .line 4
     const-string v2, ""
 
-    .line 4
     .line 5
-    invoke-static {}, Lʼˏ/ᵎ;->ʿٴ()Ljava/lang/String;
-
     .line 6
+    if-eqz v0, :cond_0
+
     .line 7
     .line 8
-    :try_start_0
-    invoke-static {}, Lʾˉ/ᴵᴵ;->ˈᵎ()Landroid/content/pm/PackageManager;
+    sget-object v0, Lʾˉ/ᴵᴵ;->ʽﹶ:Ljava/lang/String;
 
     .line 9
     .line 10
+    invoke-virtual {v0, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
     .line 11
-    move-result-object v3
-
     .line 12
-    iget-object v4, p0, Lʾˉ/ᴵᴵ$ʻʾ$ʻ;->ʻ:Ljava/lang/String;
-
     .line 13
+    move-result v0
+
     .line 14
-    const/16 v5, 0x2000
+    if-eqz v0, :cond_0
 
     .line 15
     .line 16
-    invoke-virtual {v3, v4, v5}, Landroid/content/pm/PackageManager;->getPackageInfo(Ljava/lang/String;I)Landroid/content/pm/PackageInfo;
+    sget-object v0, Lʾˉ/ᴵᴵ;->ʼᵎ:Lʾˉ/ᵎ;
 
     .line 17
     .line 18
+    invoke-static {v0, v1}, Lʾˉ/ᴵᴵ;->ʿʼ(Lʾˉ/ᵎ;Z)Ljava/lang/String;
+
     .line 19
-    move-result-object v3
-
     .line 20
-    iget-object v3, v3, Landroid/content/pm/PackageInfo;->applicationInfo:Landroid/content/pm/ApplicationInfo;
-
     .line 21
+    move-result-object v0
+
     .line 22
-    iget-object v3, v3, Landroid/content/pm/ApplicationInfo;->sourceDir:Ljava/lang/String;
+    goto :goto_0
 
     .line 23
+    :cond_0
+    sget-object v0, Lʾˉ/ᴵᴵ;->ʽﹶ:Ljava/lang/String;
+
     .line 24
-    iget-object v4, p0, Lʾˉ/ᴵᴵ$ʻʾ$ʻ;->ʼ:Lʾˉ/ᴵᴵ$ʻʾ;
-
     .line 25
+    :goto_0
+    new-instance v3, Ljava/lang/StringBuilder;
+
     .line 26
-    iget-object v4, v4, Lʾˉ/ᴵᴵ$ʻʾ;->ʽ:Lʾˉ/ᴵᴵ;
-
     .line 27
-    .line 28
-    const-string v6, "empty"
+    invoke-direct {v3}, Ljava/lang/StringBuilder;-><init>()V
 
+    .line 28
     .line 29
     .line 30
-    iput-object v6, v4, Lʾˉ/ᴵᴵ;->ʻⁱ:Ljava/lang/String;
+    const-string v4, "path_to_file:"
 
     .line 31
     .line 32
-    invoke-static {}, Lʾˉ/ᴵᴵ;->ˈᵎ()Landroid/content/pm/PackageManager;
+    invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     .line 33
     .line 34
     .line 35
-    move-result-object v6
+    invoke-virtual {v3, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     .line 36
-    iget-object v7, p0, Lʾˉ/ᴵᴵ$ʻʾ$ʻ;->ʻ:Ljava/lang/String;
-
     .line 37
     .line 38
-    invoke-virtual {v6, v7, v5}, Landroid/content/pm/PackageManager;->getPackageInfo(Ljava/lang/String;I)Landroid/content/pm/PackageInfo;
+    invoke-virtual {v3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     .line 39
     .line 40
     .line 41
-    move-result-object v5
+    move-result-object v3
 
     .line 42
-    iget-object v5, v5, Landroid/content/pm/PackageInfo;->applicationInfo:Landroid/content/pm/ApplicationInfo;
+    invoke-static {v3}, Lʾˉ/ᴵᴵ;->ˉˎ(Ljava/lang/Object;)V
 
     .line 43
     .line 44
-    iget-object v5, v5, Landroid/content/pm/ApplicationInfo;->dataDir:Ljava/lang/String;
-
     .line 45
+    new-instance v3, Landroid/content/Intent;
+
     .line 46
-    iput-object v5, v4, Lʾˉ/ᴵᴵ;->ʻⁱ:Ljava/lang/String;
-
     .line 47
+    const-string v4, "android.intent.action.SEND"
+
     .line 48
-    iget-object v4, p0, Lʾˉ/ᴵᴵ$ʻʾ$ʻ;->ʼ:Lʾˉ/ᴵᴵ$ʻʾ;
-
     .line 49
-    .line 50
-    iget-object v4, v4, Lʾˉ/ᴵᴵ$ʻʾ;->ʼ:Lʾˉ/ˎ;
+    invoke-direct {v3, v4}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
 
+    .line 50
     .line 51
     .line 52
-    iget-object v4, v4, Lʾˉ/ˎ;->ˆ:Ljava/io/File;
+    new-instance v4, Ljava/lang/StringBuilder;
 
     .line 53
     .line 54
-    invoke-virtual {v4}, Ljava/io/File;->getAbsoluteFile()Ljava/io/File;
+    invoke-direct {v4}, Ljava/lang/StringBuilder;-><init>()V
 
     .line 55
     .line 56
     .line 57
-    move-result-object v4
+    const-string v5, "file://"
 
     .line 58
-    invoke-virtual {v4}, Ljava/io/File;->toString()Ljava/lang/String;
-
     .line 59
+    invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
     .line 60
     .line 61
-    move-result-object v4
-
     .line 62
-    invoke-virtual {v4}, Ljava/lang/String;->trim()Ljava/lang/String;
+    invoke-virtual {v4, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     .line 63
     .line 64
     .line 65
-    move-result-object v4
+    invoke-virtual {v4}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     .line 66
-    invoke-virtual {v3, v4}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
     .line 67
     .line 68
+    move-result-object v4
+
     .line 69
-    move-result v4
+    invoke-static {v4}, Landroid/net/Uri;->parse(Ljava/lang/String;)Landroid/net/Uri;
 
     .line 70
-    if-eqz v4, :cond_0
-
     .line 71
     .line 72
-    new-instance v3, Lʾˉ/ᴵᴵ$ʻʾ$ʻ$ʻ;
+    move-result-object v4
 
     .line 73
-    .line 74
-    invoke-direct {v3, p0}, Lʾˉ/ᴵᴵ$ʻʾ$ʻ$ʻ;-><init>(Lʾˉ/ᴵᴵ$ʻʾ$ʻ;)V
+    sget v5, Lʾˉ/ᴵᴵ;->ʾᐧ:I
 
+    .line 74
     .line 75
+    const/16 v6, 0x18
+
     .line 76
     .line 77
-    invoke-static {v3}, Lʾˉ/ᴵᴵ;->ˊⁱ(Ljava/lang/Runnable;)V
+    if-lt v5, v6, :cond_1
 
     .line 78
     .line 79
-    .line 80
-    return-void
+    sget-object v4, Lʾˉ/ᴵᴵ;->ʼﾞ:Lru/aaaaaccc/installer/MainActivity;
 
+    .line 80
     .line 81
-    :cond_0
-    const-string v4, "/system/"
+    new-instance v5, Ljava/lang/StringBuilder;
 
     .line 82
     .line 83
-    invoke-virtual {v3, v4}, Ljava/lang/String;->startsWith(Ljava/lang/String;)Z
+    invoke-direct {v5}, Ljava/lang/StringBuilder;-><init>()V
 
     .line 84
     .line 85
     .line 86
-    move-result v3
+    invoke-static {}, Lru/aaaaaccc/installer/PkgName;->getPkgName()Ljava/lang/String;
 
     .line 87
-    if-nez v3, :cond_1
-
     .line 88
     .line 89
-    new-instance v3, Lʼˏ/ᵎ;
+    move-result-object v6
 
     .line 90
-    .line 91
-    invoke-direct {v3, v2}, Lʼˏ/ᵎ;-><init>(Ljava/lang/String;)V
+    invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    .line 91
     .line 92
     .line 93
+    const-string v6, ".provider"
+
     .line 94
-    new-instance v4, Ljava/lang/StringBuilder;
-
     .line 95
-    .line 96
-    invoke-direct {v4}, Ljava/lang/StringBuilder;-><init>()V
+    invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    .line 96
     .line 97
     .line 98
-    .line 99
-    const-string v5, "pm clear "
+    invoke-virtual {v5}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
+    .line 99
     .line 100
     .line 101
-    invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    move-result-object v5
 
     .line 102
+    new-instance v6, Ljava/io/File;
+
     .line 103
     .line 104
-    iget-object v5, p0, Lʾˉ/ᴵᴵ$ʻʾ$ʻ;->ʻ:Ljava/lang/String;
+    invoke-direct {v6, v0}, Ljava/io/File;-><init>(Ljava/lang/String;)V
 
     .line 105
     .line 106
-    invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
     .line 107
+    invoke-static {v4, v5, v6}, Landroidx/core/content/FileProvider;->ʿ(Landroid/content/Context;Ljava/lang/String;Ljava/io/File;)Landroid/net/Uri;
+
     .line 108
     .line 109
-    invoke-virtual {v4}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
     .line 110
-    .line 111
-    .line 112
     move-result-object v4
 
+    .line 111
+    :cond_1
+    const-string v0, "*/*"
+
+    .line 112
     .line 113
-    new-array v5, v1, [Ljava/lang/String;
+    invoke-virtual {v3, v0}, Landroid/content/Intent;->setType(Ljava/lang/String;)Landroid/content/Intent;
 
     .line 114
     .line 115
-    aput-object v4, v5, v0
-
     .line 116
-    .line 117
-    invoke-virtual {v3, v5}, Lʼˏ/ᵎ;->ˊˊ([Ljava/lang/String;)Ljava/lang/String;
+    const-string v0, "android.intent.extra.STREAM"
 
+    .line 117
     .line 118
+    invoke-virtual {v3, v0, v4}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Landroid/os/Parcelable;)Landroid/content/Intent;
+
     .line 119
     .line 120
-    new-instance v3, Lʼˏ/ᵎ;
-
     .line 121
-    .line 122
-    invoke-direct {v3, v2}, Lʼˏ/ᵎ;-><init>(Ljava/lang/String;)V
+    sget-object v0, Lʾˉ/ᴵᴵ;->ʼᵎ:Lʾˉ/ᵎ;
 
+    .line 122
     .line 123
+    if-nez v0, :cond_2
+
     .line 124
     .line 125
-    new-instance v4, Ljava/lang/StringBuilder;
+    new-instance v0, Ljava/io/File;
 
     .line 126
     .line 127
-    invoke-direct {v4}, Ljava/lang/StringBuilder;-><init>()V
+    sget-object v4, Lʾˉ/ᴵᴵ;->ʽﹶ:Ljava/lang/String;
 
     .line 128
     .line 129
-    .line 130
-    const-string v5, "pm uninstall "
+    invoke-direct {v0, v4}, Ljava/io/File;-><init>(Ljava/lang/String;)V
 
+    .line 130
     .line 131
     .line 132
-    invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v0}, Ljava/io/File;->getName()Ljava/lang/String;
 
     .line 133
     .line 134
     .line 135
-    iget-object v5, p0, Lʾˉ/ᴵᴵ$ʻʾ$ʻ;->ʻ:Ljava/lang/String;
+    move-result-object v0
 
     .line 136
+    goto :goto_1
+
     .line 137
-    invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    :cond_2
+    iget-object v0, v0, Lʾˉ/ᵎ;->ʼ:Ljava/lang/String;
 
     .line 138
     .line 139
-    .line 140
-    invoke-virtual {v4}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    :goto_1
+    const/high16 v4, 0x20000
 
+    .line 140
     .line 141
+    invoke-virtual {v3, v4}, Landroid/content/Intent;->setFlags(I)Landroid/content/Intent;
+
     .line 142
     .line 143
-    move-result-object v4
-
     .line 144
-    new-array v5, v1, [Ljava/lang/String;
+    invoke-virtual {v3, v1}, Landroid/content/Intent;->addFlags(I)Landroid/content/Intent;
 
     .line 145
     .line 146
-    aput-object v4, v5, v0
-
     .line 147
-    .line 148
-    invoke-virtual {v3, v5}, Lʼˏ/ᵎ;->ˊˊ([Ljava/lang/String;)Ljava/lang/String;
+    iget-object v1, p0, Lʾˉ/ᴵᴵ$ʻʾ$ʻ;->ʻ:Lʾˉ/ᴵᴵ$ʻʾ;
 
+    .line 148
     .line 149
+    iget-object v1, v1, Lʾˉ/ᴵᴵ$ʻʾ;->ʼ:Lʾˉ/ᴵᴵ;
+
     .line 150
     .line 151
-    new-instance v3, Lʼˏ/ᵎ;
+    new-instance v4, Ljava/lang/StringBuilder;
 
     .line 152
     .line 153
-    const-string v4, "w"
+    invoke-direct {v4}, Ljava/lang/StringBuilder;-><init>()V
 
     .line 154
     .line 155
-    invoke-direct {v3, v4}, Lʼˏ/ᵎ;-><init>(Ljava/lang/String;)V
-
     .line 156
+    const v5, 0x7f110453
+
     .line 157
     .line 158
-    const-wide/16 v4, 0x1770
-
     .line 159
-    .line 160
-    invoke-virtual {v3, v4, v5}, Lʼˏ/ᵎ;->ˑᐧ(J)V
-    :try_end_0
-    .catch Landroid/content/pm/PackageManager$NameNotFoundException; {:try_start_0 .. :try_end_0} :catch_0
+    invoke-static {v5}, Lʼˏ/ᵢ;->ˈי(I)Ljava/lang/String;
 
+    .line 160
     .line 161
     .line 162
+    move-result-object v5
+
     .line 163
-    :catch_0
-    :cond_1
-    iget-object v3, p0, Lʾˉ/ᴵᴵ$ʻʾ$ʻ;->ʻ:Ljava/lang/String;
+    invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     .line 164
     .line 165
-    invoke-static {v3, v1}, Lʼˏ/ᵎ;->ʿᵢ(Ljava/lang/String;Z)Ljava/util/ArrayList;
-
     .line 166
+    const-string v5, " "
+
     .line 167
     .line 168
-    move-result-object v3
+    invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     .line 169
-    invoke-static {v3}, Lʼˏ/ᵎ;->ˎˎ(Ljava/util/ArrayList;)Ljava/lang/String;
-
     .line 170
     .line 171
+    invoke-virtual {v4, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
     .line 172
-    move-result-object v3
-
     .line 173
-    sput-object v3, Lʾˉ/ᴵᴵ;->ˊʻ:Ljava/lang/String;
-
     .line 174
-    .line 175
-    new-instance v3, Ljava/lang/StringBuilder;
+    invoke-virtual {v4}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
+    .line 175
     .line 176
     .line 177
-    invoke-direct {v3}, Ljava/lang/StringBuilder;-><init>()V
+    move-result-object v0
 
     .line 178
+    invoke-static {v3, v0}, Landroid/content/Intent;->createChooser(Landroid/content/Intent;Ljava/lang/CharSequence;)Landroid/content/Intent;
+
     .line 179
     .line 180
-    const-string v4, "sys:"
-
     .line 181
+    move-result-object v0
+
     .line 182
-    invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v1, v0}, Landroidx/fragment/app/Fragment;->ʾˎ(Landroid/content/Intent;)V
 
     .line 183
     .line 184
     .line 185
-    sget-object v4, Lʾˉ/ᴵᴵ;->ˊʻ:Ljava/lang/String;
+    sput-object v2, Lʾˉ/ᴵᴵ;->ʽﹶ:Ljava/lang/String;
 
     .line 186
     .line 187
-    invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 188
-    .line 189
-    .line 190
-    invoke-virtual {v3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    .line 191
-    .line 192
-    .line 193
-    move-result-object v3
-
-    .line 194
-    invoke-static {v3}, Lʾˉ/ᴵᴵ;->ˉˎ(Ljava/lang/Object;)V
-
-    .line 195
-    .line 196
-    .line 197
-    iget-object v3, p0, Lʾˉ/ᴵᴵ$ʻʾ$ʻ;->ʻ:Ljava/lang/String;
-
-    .line 198
-    .line 199
-    new-array v1, v1, [Ljava/lang/String;
-
-    .line 200
-    .line 201
-    aput-object v3, v1, v0
-
-    .line 202
-    .line 203
-    const-class v0, Ljavaroot/utils/ᵔᵔ;
-
-    .line 204
-    .line 205
-    invoke-static {v0, v1}, Lʼˏ/ᵎ;->ˋᵎ(Ljava/lang/Class;[Ljava/lang/String;)Ljava/lang/String;
-
-    .line 206
-    .line 207
-    .line 208
-    move-result-object v0
-
-    .line 209
-    const-string v1, "\n"
-
-    .line 210
-    .line 211
-    invoke-virtual {v0, v1, v2}, Ljava/lang/String;->replaceAll(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
-
-    .line 212
-    .line 213
-    .line 214
-    move-result-object v0
-
-    .line 215
-    sput-object v0, Lʾˉ/ᴵᴵ;->ˊʼ:Ljava/lang/String;
-
-    .line 216
-    .line 217
-    new-instance v0, Ljava/lang/StringBuilder;
-
-    .line 218
-    .line 219
-    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
-
-    .line 220
-    .line 221
-    .line 222
-    const-string v1, "magisk:"
-
-    .line 223
-    .line 224
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 225
-    .line 226
-    .line 227
-    sget-object v1, Lʾˉ/ᴵᴵ;->ˊʼ:Ljava/lang/String;
-
-    .line 228
-    .line 229
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 230
-    .line 231
-    .line 232
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    .line 233
-    .line 234
-    .line 235
-    move-result-object v0
-
-    .line 236
-    invoke-static {v0}, Lʾˉ/ᴵᴵ;->ˉˎ(Ljava/lang/Object;)V
-
-    .line 237
-    .line 238
-    .line 239
-    new-instance v0, Lʾˉ/ᴵᴵ$ʻʾ$ʻ$ʼ;
-
-    .line 240
-    .line 241
-    invoke-direct {v0, p0}, Lʾˉ/ᴵᴵ$ʻʾ$ʻ$ʼ;-><init>(Lʾˉ/ᴵᴵ$ʻʾ$ʻ;)V
-
-    .line 242
-    .line 243
-    .line 244
-    invoke-static {v0}, Lʾˉ/ᴵᴵ;->ˊⁱ(Ljava/lang/Runnable;)V
-
-    .line 245
-    .line 246
-    .line 247
     return-void
 .end method

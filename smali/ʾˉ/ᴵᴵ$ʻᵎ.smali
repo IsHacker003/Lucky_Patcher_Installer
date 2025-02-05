@@ -18,11 +18,11 @@
 
 
 # instance fields
-.field final synthetic ʻ:Ljava/lang/String;
+.field final synthetic ʻ:Lʾˉ/ᵎ;
 
 
 # direct methods
-.method constructor <init>(Ljava/lang/String;)V
+.method constructor <init>(Lʾˉ/ᵎ;)V
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -31,7 +31,7 @@
     .end annotation
 
     .line 1
-    iput-object p1, p0, Lʾˉ/ᴵᴵ$ʻᵎ;->ʻ:Ljava/lang/String;
+    iput-object p1, p0, Lʾˉ/ᴵᴵ$ʻᵎ;->ʻ:Lʾˉ/ᵎ;
 
     .line 2
     .line 3
@@ -66,39 +66,84 @@
     .line 8
     .line 9
     .line 10
-    const v0, 0x7f1102ef
+    sget-object v0, Lʾˉ/ᴵᴵ;->ʼﾞ:Lru/aaaaaccc/installer/MainActivity;
 
     .line 11
     .line 12
-    .line 13
-    invoke-static {v0}, Lʼˏ/ᵎ;->ˈˉ(I)Ljava/lang/String;
+    iget-object v1, p0, Lʾˉ/ᴵᴵ$ʻᵎ;->ʻ:Lʾˉ/ᵎ;
 
+    .line 13
     .line 14
+    iget-object v1, v1, Lʾˉ/ᵎ;->ʼ:Ljava/lang/String;
+
     .line 15
     .line 16
-    move-result-object v0
+    new-instance v2, Ljava/lang/StringBuilder;
 
     .line 17
-    iget-object v1, p0, Lʾˉ/ᴵᴵ$ʻᵎ;->ʻ:Ljava/lang/String;
-
     .line 18
-    .line 19
-    new-instance v2, Lʾˉ/ᴵᴵ$ʻᵎ$ʻ;
+    invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
 
+    .line 19
     .line 20
     .line 21
-    invoke-direct {v2, p0}, Lʾˉ/ᴵᴵ$ʻᵎ$ʻ;-><init>(Lʾˉ/ᴵᴵ$ʻᵎ;)V
+    const v3, 0x7f1102f1
 
     .line 22
     .line 23
     .line 24
-    const/4 v3, 0x0
+    invoke-static {v3}, Lʼˏ/ᵢ;->ˈי(I)Ljava/lang/String;
 
     .line 25
-    invoke-static {v0, v1, v2, v3, v3}, Lʼˏ/ᵎ;->ˏʾ(Ljava/lang/String;Ljava/lang/String;Landroid/content/DialogInterface$OnClickListener;Landroid/content/DialogInterface$OnClickListener;Landroid/content/DialogInterface$OnCancelListener;)V
-
     .line 26
     .line 27
+    move-result-object v3
+
     .line 28
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 29
+    .line 30
+    .line 31
+    const-string v3, ": "
+
+    .line 32
+    .line 33
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 34
+    .line 35
+    .line 36
+    const v3, 0x7f1104e8
+
+    .line 37
+    .line 38
+    .line 39
+    invoke-static {v3}, Lʼˏ/ᵢ;->ˈי(I)Ljava/lang/String;
+
+    .line 40
+    .line 41
+    .line 42
+    move-result-object v3
+
+    .line 43
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 44
+    .line 45
+    .line 46
+    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    .line 47
+    .line 48
+    .line 49
+    move-result-object v2
+
+    .line 50
+    invoke-static {v0, v1, v2}, Lʼˏ/ᵢ;->ˏᴵ(Landroid/app/Activity;Ljava/lang/String;Ljava/lang/String;)V
+
+    .line 51
+    .line 52
+    .line 53
     return-void
 .end method

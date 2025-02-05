@@ -17,7 +17,7 @@
     value = {
         "Landroid/os/AsyncTask<",
         "Ljava/lang/String;",
-        "Ljava/lang/Void;",
+        "Ljava/lang/Integer;",
         "Ljava/lang/Boolean;",
         ">;"
     }
@@ -25,9 +25,15 @@
 
 
 # instance fields
-.field ʻ:Z
+.field ʻ:I
 
-.field final synthetic ʼ:Lʾˉ/ᴵᴵ;
+.field ʼ:Z
+
+.field ʽ:Z
+
+.field ʾ:Z
+
+.field final synthetic ʿ:Lʾˉ/ᴵᴵ;
 
 
 # direct methods
@@ -35,7 +41,7 @@
     .locals 0
 
     .line 1
-    iput-object p1, p0, Lʾˉ/ᴵᴵ$ˈʼ;->ʼ:Lʾˉ/ᴵᴵ;
+    iput-object p1, p0, Lʾˉ/ᴵᴵ$ˈʼ;->ʿ:Lʾˉ/ᴵᴵ;
 
     .line 2
     .line 3
@@ -47,10 +53,22 @@
     const/4 p1, 0x0
 
     .line 7
-    iput-boolean p1, p0, Lʾˉ/ᴵᴵ$ˈʼ;->ʻ:Z
+    iput p1, p0, Lʾˉ/ᴵᴵ$ˈʼ;->ʻ:I
 
     .line 8
     .line 9
+    iput-boolean p1, p0, Lʾˉ/ᴵᴵ$ˈʼ;->ʼ:Z
+
+    .line 10
+    .line 11
+    iput-boolean p1, p0, Lʾˉ/ᴵᴵ$ˈʼ;->ʽ:Z
+
+    .line 12
+    .line 13
+    iput-boolean p1, p0, Lʾˉ/ᴵᴵ$ˈʼ;->ʾ:Z
+
+    .line 14
+    .line 15
     return-void
 .end method
 
@@ -91,620 +109,1097 @@
     return-void
 .end method
 
-.method protected varargs ʻ([Ljava/lang/String;)Ljava/lang/Boolean;
-    .locals 5
+.method protected onPreExecute()V
+    .locals 1
 
     .line 1
-    const/4 p1, 0x1
+    invoke-super {p0}, Landroid/os/AsyncTask;->onPreExecute()V
 
     .line 2
-    const-string v0, "LuckyPatcher: download changelog."
-
     .line 3
     .line 4
-    invoke-static {v0}, Lʾˉ/ᴵᴵ;->ˉˎ(Ljava/lang/Object;)V
+    const/16 v0, 0x17
 
     .line 5
     .line 6
-    .line 7
-    iget-object v0, p0, Lʾˉ/ᴵᴵ$ˈʼ;->ʼ:Lʾˉ/ᴵᴵ;
+    invoke-static {v0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
+    .line 7
     .line 8
     .line 9
-    const/4 v1, 0x0
+    move-result-object v0
 
     .line 10
-    iput v1, v0, Lʾˉ/ᴵᴵ;->ʻˉ:I
+    invoke-static {v0}, Lʾˉ/ᴵᴵ;->ˋᵎ(Ljava/lang/Integer;)V
 
     .line 11
     .line 12
-    const-string v2, "LuckyPatcherInstaller.apk"
-
     .line 13
+    return-void
+.end method
+
+.method protected bridge synthetic onProgressUpdate([Ljava/lang/Object;)V
+    .locals 0
+
+    .line 1
+    check-cast p1, [Ljava/lang/Integer;
+
+    .line 2
+    .line 3
+    invoke-virtual {p0, p1}, Lʾˉ/ᴵᴵ$ˈʼ;->ʽ([Ljava/lang/Integer;)V
+
+    .line 4
+    .line 5
+    .line 6
+    return-void
+.end method
+
+.method protected varargs ʻ([Ljava/lang/String;)Ljava/lang/Boolean;
+    .locals 11
+
+    .line 1
+    const/4 p1, 0x0
+
+    .line 2
+    const/4 v0, 0x1
+
+    .line 3
+    const-string v1, "LuckyPatcherInstaller.apk"
+
+    .line 4
+    .line 5
+    const/4 v2, 0x0
+
+    .line 6
+    :try_start_0
+    new-array v3, v0, [Ljava/lang/String;
+
+    .line 7
+    .line 8
+    aput-object v1, v3, p1
+
+    .line 9
+    .line 10
+    invoke-static {v3}, Lʼˏ/ᵢ;->ˆٴ([Ljava/lang/String;)Lʼˏ/ʽ;
+
+    .line 11
+    .line 12
+    .line 13
+    move-result-object v2
+
     .line 14
-    iput-object v2, v0, Lʾˉ/ᴵᴵ;->ʻˋ:Ljava/lang/String;
+    if-eqz v2, :cond_0
 
     .line 15
     .line 16
-    const-string v2, "Lucky Patcher"
+    iput-boolean p1, p0, Lʾˉ/ᴵᴵ$ˈʼ;->ʾ:Z
 
     .line 17
     .line 18
-    iput-object v2, v0, Lʾˉ/ᴵᴵ;->ʻˎ:Ljava/lang/String;
+    invoke-virtual {v2}, Lʼˏ/ʽ;->ˏ()I
 
     .line 19
     .line 20
-    new-instance v2, Ljava/lang/StringBuilder;
-
     .line 21
+    move-result v3
+
     .line 22
-    invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
+    iput v3, p0, Lʾˉ/ᴵᴵ$ˈʼ;->ʻ:I
 
     .line 23
     .line 24
+    const-string v4, "%s bytes found, %s Mb"
+
     .line 25
-    const-string v3, "package:"
-
     .line 26
-    .line 27
-    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-static {v3}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
+    .line 27
     .line 28
     .line 29
+    move-result-object v3
+
     .line 30
-    sget-object v3, Lʾˉ/ᴵᴵ;->ʽᵢ:Ljava/lang/String;
+    iget v5, p0, Lʾˉ/ᴵᴵ$ˈʼ;->ʻ:I
 
     .line 31
     .line 32
-    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    int-to-float v5, v5
 
     .line 33
+    const/high16 v6, 0x49800000    # 1048576.0f
+
     .line 34
     .line 35
-    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    div-float/2addr v5, v6
 
     .line 36
+    invoke-static {v5}, Ljava/lang/Float;->valueOf(F)Ljava/lang/Float;
+
     .line 37
     .line 38
-    move-result-object v2
-
     .line 39
-    iput-object v2, v0, Lʾˉ/ᴵᴵ;->ʻˏ:Ljava/lang/String;
+    move-result-object v5
 
     .line 40
+    const/4 v6, 0x2
+
     .line 41
-    new-instance v0, Ljava/lang/StringBuilder;
+    new-array v6, v6, [Ljava/lang/Object;
 
     .line 42
     .line 43
-    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
+    aput-object v3, v6, p1
 
     .line 44
     .line 45
+    aput-object v5, v6, v0
+
     .line 46
-    sget-object v2, Lʾˉ/ᴵᴵ;->ʼᐧ:Ljava/lang/String;
-
     .line 47
-    .line 48
-    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-static {v4, v6}, Ljava/lang/String;->format(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
 
+    .line 48
     .line 49
     .line 50
+    move-result-object v3
+
     .line 51
-    const-string v2, "/Download/"
+    invoke-static {v3}, Lʾˉ/ᴵᴵ;->ˉˎ(Ljava/lang/Object;)V
 
     .line 52
     .line 53
-    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
     .line 54
+    goto :goto_1
+
     .line 55
+    :catch_0
+    move-exception v3
+
     .line 56
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    goto :goto_0
 
     .line 57
+    :cond_0
+    iput p1, p0, Lʾˉ/ᴵᴵ$ˈʼ;->ʻ:I
+
     .line 58
     .line 59
-    move-result-object v0
+    iput-boolean v0, p0, Lʾˉ/ᴵᴵ$ˈʼ;->ʾ:Z
+    :try_end_0
+    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
     .line 60
-    new-instance v2, Ljava/io/File;
-
     .line 61
+    goto :goto_1
+
     .line 62
-    invoke-direct {v2, v0}, Ljava/io/File;-><init>(Ljava/lang/String;)V
+    :goto_0
+    invoke-virtual {v3}, Ljava/lang/Throwable;->printStackTrace()V
 
     .line 63
     .line 64
     .line 65
-    new-instance v0, Ljava/io/File;
+    if-eqz v2, :cond_1
 
     .line 66
     .line 67
-    iget-object v3, p0, Lʾˉ/ᴵᴵ$ˈʼ;->ʼ:Lʾˉ/ᴵᴵ;
+    invoke-virtual {v2}, Lʼˏ/ʽ;->ٴ()Lʼˏ/ʽ;
 
     .line 68
     .line 69
-    iget-object v3, v3, Lʾˉ/ᴵᴵ;->ʻˋ:Ljava/lang/String;
-
     .line 70
-    .line 71
-    invoke-direct {v0, v2, v3}, Ljava/io/File;-><init>(Ljava/io/File;Ljava/lang/String;)V
+    :cond_1
+    :goto_1
+    if-eqz v2, :cond_2
 
+    .line 71
     .line 72
+    invoke-virtual {v2}, Lʼˏ/ʽ;->ٴ()Lʼˏ/ʽ;
+
     .line 73
     .line 74
-    invoke-virtual {v0}, Ljava/io/File;->exists()Z
-
     .line 75
+    :cond_2
+    iget v3, p0, Lʾˉ/ᴵᴵ$ˈʼ;->ʻ:I
+
     .line 76
     .line 77
-    move-result v2
+    if-eqz v3, :cond_8
 
     .line 78
-    if-eqz v2, :cond_0
-
     .line 79
-    .line 80
-    invoke-virtual {v0}, Ljava/io/File;->delete()Z
+    sget-object v3, Lʾˉ/ᴵᴵ;->ʽᵎ:Lʾˊ/ˑ;
 
+    .line 80
     .line 81
+    if-eqz v3, :cond_3
+
     .line 82
     .line 83
-    :cond_0
-    const/4 v0, 0x0
+    invoke-virtual {v3}, Lʾˊ/ˑ;->ʼ()Z
 
     .line 84
-    :try_start_0
-    new-array v2, p1, [Ljava/lang/String;
-
     .line 85
     .line 86
-    const-string v3, "Version.vers"
+    move-result v3
 
     .line 87
+    if-eqz v3, :cond_3
+
     .line 88
-    aput-object v3, v2, v1
-
     .line 89
-    .line 90
-    invoke-static {v2}, Lʼˏ/ᵎ;->ˆˋ([Ljava/lang/String;)Lʼˏ/ʽ;
+    sget-object v3, Lʾˉ/ᴵᴵ;->ʽᵎ:Lʾˊ/ˑ;
 
+    .line 90
     .line 91
+    iget v4, p0, Lʾˉ/ᴵᴵ$ˈʼ;->ʻ:I
+
     .line 92
     .line 93
-    move-result-object v2
-    :try_end_0
-    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_2
+    div-int/lit16 v4, v4, 0x400
 
     .line 94
-    if-eqz v2, :cond_1
-
     .line 95
-    .line 96
-    :try_start_1
-    iput-boolean v1, p0, Lʾˉ/ᴵᴵ$ˈʼ;->ʻ:Z
+    invoke-virtual {v3, v4}, Lʾˊ/ˑ;->ˈ(I)V
 
+    .line 96
     .line 97
     .line 98
-    new-instance v3, Ljava/io/ByteArrayOutputStream;
+    :cond_3
+    :try_start_1
+    new-instance v3, Lʼˏ/ʿ;
 
     .line 99
     .line 100
-    invoke-direct {v3}, Ljava/io/ByteArrayOutputStream;-><init>()V
+    invoke-direct {v3, v1}, Lʼˏ/ʿ;-><init>(Ljava/lang/String;)V
 
     .line 101
     .line 102
     .line 103
-    invoke-virtual {v2, v3}, Lʼˏ/ʽ;->ʻʻ(Ljava/io/OutputStream;)Lʼˏ/ʽ;
+    invoke-virtual {v3}, Lʼˏ/ʿ;->ʻ()V
+    :try_end_1
+    .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
     .line 104
     .line 105
     .line 106
-    invoke-virtual {v3}, Ljava/io/ByteArrayOutputStream;->toString()Ljava/lang/String;
+    goto :goto_2
 
     .line 107
+    :catchall_0
+    move-exception v1
+
     .line 108
+    invoke-virtual {v1}, Ljava/lang/Throwable;->printStackTrace()V
+
     .line 109
-    move-result-object v3
-
     .line 110
-    iget-object v4, p0, Lʾˉ/ᴵᴵ$ˈʼ;->ʼ:Lʾˉ/ᴵᴵ;
-
     .line 111
-    .line 112
-    invoke-static {v3}, Ljava/lang/Integer;->parseInt(Ljava/lang/String;)I
+    if-eqz v2, :cond_4
 
+    .line 112
     .line 113
+    invoke-virtual {v2}, Lʼˏ/ʽ;->ٴ()Lʼˏ/ʽ;
+
     .line 114
     .line 115
-    move-result v3
-
     .line 116
-    iput v3, v4, Lʾˉ/ᴵᴵ;->ʻˉ:I
+    :cond_4
+    :goto_2
+    iget-object v1, p0, Lʾˉ/ᴵᴵ$ˈʼ;->ʿ:Lʾˉ/ᴵᴵ;
 
     .line 117
     .line 118
-    invoke-virtual {v2}, Lʼˏ/ʽ;->ٴ()Lʼˏ/ʽ;
+    iget-object v1, v1, Lʾˉ/ᴵᴵ;->ʻˏ:Ljava/lang/String;
 
     .line 119
     .line 120
+    invoke-static {v1}, Landroid/net/Uri;->parse(Ljava/lang/String;)Landroid/net/Uri;
+
     .line 121
-    goto :goto_0
-
     .line 122
-    :catch_0
-    move-exception v0
-
     .line 123
-    goto/16 :goto_5
+    move-result-object v1
 
     .line 124
+    new-instance v2, Landroid/content/Intent;
+
     .line 125
-    :cond_1
-    iget-object v3, p0, Lʾˉ/ᴵᴵ$ˈʼ;->ʼ:Lʾˉ/ᴵᴵ;
-
     .line 126
+    const-string v3, "android.intent.action.VIEW"
+
     .line 127
-    iput v1, v3, Lʾˉ/ᴵᴵ;->ʻˉ:I
-
     .line 128
-    .line 129
-    iput-boolean p1, p0, Lʾˉ/ᴵᴵ$ˈʼ;->ʻ:Z
+    invoke-direct {v2, v3, v1}, Landroid/content/Intent;-><init>(Ljava/lang/String;Landroid/net/Uri;)V
 
+    .line 129
     .line 130
     .line 131
-    :goto_0
-    if-eqz v2, :cond_2
+    new-instance v1, Ljava/io/File;
 
     .line 132
     .line 133
-    invoke-virtual {v2}, Lʼˏ/ʽ;->ٴ()Lʼˏ/ʽ;
-    :try_end_1
-    .catch Ljava/lang/Exception; {:try_start_1 .. :try_end_1} :catch_0
+    new-instance v2, Ljava/lang/StringBuilder;
 
     .line 134
     .line 135
-    .line 136
-    :cond_2
-    iget-object v2, p0, Lʾˉ/ᴵᴵ$ˈʼ;->ʼ:Lʾˉ/ᴵᴵ;
+    invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
 
+    .line 136
     .line 137
     .line 138
-    iget v2, v2, Lʾˉ/ᴵᴵ;->ʻˉ:I
+    sget-object v3, Lʾˉ/ᴵᴵ;->ʼᐧ:Ljava/lang/String;
 
     .line 139
     .line 140
-    invoke-static {}, Lʾˉ/ᴵᴵ;->ˈˏ()Landroid/content/SharedPreferences;
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     .line 141
     .line 142
     .line 143
-    move-result-object v3
+    const-string v3, "/Download/LuckyPatcherInstaller.apk"
 
     .line 144
-    const-string v4, "http_versionCode"
-
     .line 145
-    .line 146
-    invoke-interface {v3, v4, v1}, Landroid/content/SharedPreferences;->getInt(Ljava/lang/String;I)I
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    .line 146
     .line 147
     .line 148
+    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
     .line 149
-    move-result v3
-
     .line 150
-    if-lt v2, v3, :cond_3
-
     .line 151
+    move-result-object v2
+
     .line 152
-    invoke-static {}, Lʾˉ/ᴵᴵ;->ˈˏ()Landroid/content/SharedPreferences;
+    invoke-direct {v1, v2}, Ljava/io/File;-><init>(Ljava/lang/String;)V
 
     .line 153
     .line 154
     .line 155
-    move-result-object v2
+    invoke-virtual {v1}, Ljava/io/File;->exists()Z
 
     .line 156
-    invoke-interface {v2}, Landroid/content/SharedPreferences;->edit()Landroid/content/SharedPreferences$Editor;
-
     .line 157
     .line 158
+    move-result v1
+
     .line 159
-    move-result-object v2
+    if-eqz v1, :cond_9
 
     .line 160
-    iget-object v3, p0, Lʾˉ/ᴵᴵ$ˈʼ;->ʼ:Lʾˉ/ᴵᴵ;
-
     .line 161
+    new-instance v1, Ljava/io/File;
+
     .line 162
-    iget v3, v3, Lʾˉ/ᴵᴵ;->ʻˉ:I
-
     .line 163
-    .line 164
-    invoke-interface {v2, v4, v3}, Landroid/content/SharedPreferences$Editor;->putInt(Ljava/lang/String;I)Landroid/content/SharedPreferences$Editor;
+    new-instance v2, Ljava/lang/StringBuilder;
 
+    .line 164
     .line 165
+    invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
+
     .line 166
     .line 167
-    move-result-object v2
-
     .line 168
-    invoke-interface {v2}, Landroid/content/SharedPreferences$Editor;->commit()Z
+    sget-object v4, Lʾˉ/ᴵᴵ;->ʼᐧ:Ljava/lang/String;
 
     .line 169
     .line 170
-    .line 171
-    :cond_3
-    iget-object v2, p0, Lʾˉ/ᴵᴵ$ˈʼ;->ʼ:Lʾˉ/ᴵᴵ;
+    invoke-virtual {v2, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    .line 171
     .line 172
     .line 173
-    iget v2, v2, Lʾˉ/ᴵᴵ;->ʻˉ:I
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     .line 174
     .line 175
-    sget v3, Lʾˉ/ᴵᴵ;->ʾˆ:I
-
     .line 176
-    .line 177
-    if-le v2, v3, :cond_7
+    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
+    .line 177
     .line 178
     .line 179
-    :try_start_2
-    new-array v2, p1, [Ljava/lang/String;
+    move-result-object v2
 
     .line 180
-    .line 181
-    const-string v3, "Changelogs.vers"
+    invoke-direct {v1, v2}, Ljava/io/File;-><init>(Ljava/lang/String;)V
 
+    .line 181
     .line 182
     .line 183
-    aput-object v3, v2, v1
+    invoke-virtual {v1}, Ljava/io/File;->length()J
 
     .line 184
     .line 185
-    invoke-static {v2}, Lʼˏ/ᵎ;->ˆˋ([Ljava/lang/String;)Lʼˏ/ʽ;
-
     .line 186
-    .line 187
-    .line 188
-    move-result-object v0
+    move-result-wide v1
 
+    .line 187
+    iget v4, p0, Lʾˉ/ᴵᴵ$ˈʼ;->ʻ:I
+
+    .line 188
     .line 189
-    if-eqz v0, :cond_5
+    int-to-long v4, v4
 
     .line 190
+    cmp-long v6, v1, v4
+
     .line 191
-    iput-boolean v1, p0, Lʾˉ/ᴵᴵ$ˈʼ;->ʻ:Z
-
     .line 192
+    if-nez v6, :cond_7
+
     .line 193
-    new-instance v1, Ljava/io/ByteArrayOutputStream;
-
     .line 194
-    .line 195
-    invoke-direct {v1}, Ljava/io/ByteArrayOutputStream;-><init>()V
+    invoke-static {}, Lʾˉ/ᴵᴵ;->ˈˏ()Landroid/content/SharedPreferences;
 
+    .line 195
     .line 196
     .line 197
+    move-result-object v1
+
     .line 198
-    invoke-virtual {v0, v1}, Lʼˏ/ʽ;->ʻʻ(Ljava/io/OutputStream;)Lʼˏ/ʽ;
+    const-string v2, "first_show_option_install_apk"
 
     .line 199
     .line 200
-    .line 201
-    iget-object v2, p0, Lʾˉ/ᴵᴵ$ˈʼ;->ʼ:Lʾˉ/ᴵᴵ;
+    invoke-interface {v1, v2, p1}, Landroid/content/SharedPreferences;->getBoolean(Ljava/lang/String;Z)Z
 
+    .line 201
     .line 202
     .line 203
-    invoke-virtual {v1}, Ljava/io/ByteArrayOutputStream;->toString()Ljava/lang/String;
-
-    .line 204
-    .line 205
-    .line 206
-    move-result-object v1
-
-    .line 207
-    iput-object v1, v2, Lʾˉ/ᴵᴵ;->ʻˑ:Ljava/lang/String;
-
-    .line 208
-    .line 209
-    iget-object v1, p0, Lʾˉ/ᴵᴵ$ˈʼ;->ʼ:Lʾˉ/ᴵᴵ;
-
-    .line 210
-    .line 211
-    iget-object v1, v1, Lʾˉ/ᴵᴵ;->ʻˑ:Ljava/lang/String;
-
-    .line 212
-    .line 213
-    if-eqz v1, :cond_4
-
-    .line 214
-    .line 215
-    invoke-virtual {v1}, Ljava/lang/String;->length()I
-
-    .line 216
-    .line 217
-    .line 218
     move-result v1
 
+    .line 204
+    const-string v2, ""
+
+    .line 205
+    .line 206
+    if-eqz v1, :cond_6
+
+    .line 207
+    .line 208
+    invoke-static {}, Lʾˉ/ᴵᴵ;->ˈˏ()Landroid/content/SharedPreferences;
+
+    .line 209
+    .line 210
+    .line 211
+    move-result-object v1
+
+    .line 212
+    const-string v4, "first_show_option_use_random_name"
+
+    .line 213
+    .line 214
+    invoke-interface {v1, v4, p1}, Landroid/content/SharedPreferences;->getBoolean(Ljava/lang/String;Z)Z
+
+    .line 215
+    .line 216
+    .line 217
+    move-result v1
+
+    .line 218
+    if-nez v1, :cond_5
+
     .line 219
-    const/16 v2, 0x14
-
     .line 220
+    goto/16 :goto_7
+
     .line 221
-    if-le v1, v2, :cond_4
-
     .line 222
-    .line 223
-    new-instance v1, Ljava/io/File;
+    :cond_5
+    :try_start_2
+    invoke-static {}, Lʾˉ/ᴵᴵ;->ˈᵎ()Landroid/content/pm/PackageManager;
 
+    .line 223
     .line 224
     .line 225
-    new-instance v2, Ljava/lang/StringBuilder;
+    move-result-object v1
 
     .line 226
-    .line 227
-    invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
+    invoke-static {}, Lru/aaaaaccc/installer/PkgName;->getPkgName()Ljava/lang/String;
 
+    .line 227
     .line 228
     .line 229
+    move-result-object v4
+
     .line 230
-    sget-object v3, Lʾˉ/ᴵᴵ;->ʼᐧ:Ljava/lang/String;
+    const/16 v5, 0x2080
 
     .line 231
     .line 232
-    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v1, v4, v5}, Landroid/content/pm/PackageManager;->getPackageInfo(Ljava/lang/String;I)Landroid/content/pm/PackageInfo;
 
     .line 233
     .line 234
     .line 235
-    const-string v3, "/Changes/changelog.txt"
+    move-result-object v1
 
     .line 236
-    .line 237
-    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    iget-object v1, v1, Landroid/content/pm/PackageInfo;->applicationInfo:Landroid/content/pm/ApplicationInfo;
 
+    .line 237
     .line 238
+    iget-object v1, v1, Landroid/content/pm/ApplicationInfo;->metaData:Landroid/os/Bundle;
+
     .line 239
     .line 240
-    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    const-string v4, "android.support"
 
     .line 241
     .line 242
+    invoke-virtual {v1, v4}, Landroid/os/Bundle;->getString(Ljava/lang/String;)Ljava/lang/String;
+
     .line 243
-    move-result-object v2
-
     .line 244
-    invoke-direct {v1, v2}, Ljava/io/File;-><init>(Ljava/lang/String;)V
-
     .line 245
+    move-result-object v1
+
     .line 246
+    const-string v4, "apk"
+
     .line 247
-    iget-object v2, p0, Lʾˉ/ᴵᴵ$ˈʼ;->ʼ:Lʾˉ/ᴵᴵ;
-
     .line 248
-    .line 249
-    iget-object v2, v2, Lʾˉ/ᴵᴵ;->ʻˑ:Ljava/lang/String;
+    invoke-virtual {v1, v4}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
+    .line 249
     .line 250
     .line 251
-    invoke-static {v1, v2}, Lʼˏ/ᵎ;->ˎʼ(Ljava/io/File;Ljava/lang/String;)Z
+    move-result v4
+    :try_end_2
+    .catch Landroid/content/pm/PackageManager$NameNotFoundException; {:try_start_2 .. :try_end_2} :catch_2
+    .catchall {:try_start_2 .. :try_end_2} :catchall_2
 
     .line 252
+    :try_start_3
+    new-instance v5, Ljava/lang/StringBuilder;
+
     .line 253
     .line 254
-    goto :goto_1
+    invoke-direct {v5}, Ljava/lang/StringBuilder;-><init>()V
 
     .line 255
-    :catch_1
-    move-exception v1
-
     .line 256
-    goto :goto_3
-
     .line 257
-    :cond_4
-    :goto_1
-    invoke-virtual {v0}, Lʼˏ/ʽ;->ٴ()Lʼˏ/ʽ;
+    const-string v6, "option apk installer:"
 
     .line 258
     .line 259
+    invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
     .line 260
-    goto :goto_2
-
     .line 261
-    :cond_5
-    iput-boolean p1, p0, Lʾˉ/ᴵᴵ$ˈʼ;->ʻ:Z
-
     .line 262
-    .line 263
-    :goto_2
-    if-eqz v0, :cond_7
+    invoke-virtual {v5, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    .line 263
     .line 264
     .line 265
-    invoke-virtual {v0}, Lʼˏ/ʽ;->ٴ()Lʼˏ/ʽ;
-    :try_end_2
-    .catch Ljava/lang/Exception; {:try_start_2 .. :try_end_2} :catch_1
+    invoke-virtual {v5}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     .line 266
     .line 267
     .line 268
-    goto :goto_4
+    move-result-object v1
 
     .line 269
-    :goto_3
-    invoke-virtual {v1}, Ljava/lang/Throwable;->printStackTrace()V
+    invoke-static {v1}, Lʾˉ/ᴵᴵ;->ˉˎ(Ljava/lang/Object;)V
+    :try_end_3
+    .catch Landroid/content/pm/PackageManager$NameNotFoundException; {:try_start_3 .. :try_end_3} :catch_1
+    .catchall {:try_start_3 .. :try_end_3} :catchall_1
 
     .line 270
     .line 271
     .line 272
-    if-eqz v0, :cond_6
+    :goto_3
+    move v6, v4
 
     .line 273
+    goto :goto_6
+
     .line 274
-    invoke-virtual {v0}, Lʼˏ/ʽ;->ٴ()Lʼˏ/ʽ;
+    :catchall_1
+    move-exception v1
 
     .line 275
+    goto :goto_4
+
     .line 276
+    :catch_1
+    move-exception v1
+
     .line 277
-    :cond_6
-    iput-boolean p1, p0, Lʾˉ/ᴵᴵ$ˈʼ;->ʻ:Z
+    goto :goto_5
 
     .line 278
+    :catchall_2
+    move-exception v1
+
     .line 279
-    :cond_7
-    :goto_4
-    sget-object p1, Ljava/lang/Boolean;->TRUE:Ljava/lang/Boolean;
+    const/4 v4, 0x0
 
     .line 280
-    .line 281
-    return-object p1
+    goto :goto_4
 
-    .line 282
+    .line 281
     :catch_2
     move-exception v1
 
+    .line 282
+    const/4 v4, 0x0
+
     .line 283
-    move-object v2, v0
+    goto :goto_5
 
     .line 284
-    move-object v0, v1
+    :goto_4
+    invoke-virtual {v1}, Ljava/lang/Throwable;->printStackTrace()V
 
     .line 285
-    :goto_5
-    invoke-virtual {v0}, Ljava/lang/Throwable;->printStackTrace()V
-
     .line 286
     .line 287
+    goto :goto_3
+
     .line 288
-    if-eqz v2, :cond_8
+    :goto_5
+    invoke-virtual {v1}, Ljava/lang/Throwable;->printStackTrace()V
 
     .line 289
     .line 290
-    invoke-virtual {v2}, Lʼˏ/ʽ;->ٴ()Lʼˏ/ʽ;
-
     .line 291
-    .line 292
-    .line 293
-    :cond_8
-    iput-boolean p1, p0, Lʾˉ/ᴵᴵ$ˈʼ;->ʻ:Z
+    goto :goto_3
 
+    .line 292
+    :goto_6
+    invoke-static {}, Lʾˉ/ᴵᴵ;->ˈי()Landroid/content/Context;
+
+    .line 293
     .line 294
     .line 295
-    sget-object p1, Ljava/lang/Boolean;->TRUE:Ljava/lang/Boolean;
+    move-result-object v1
 
     .line 296
+    invoke-virtual {v1}, Landroid/content/Context;->getApplicationInfo()Landroid/content/pm/ApplicationInfo;
+
     .line 297
+    .line 298
+    .line 299
+    move-result-object v1
+
+    .line 300
+    invoke-static {}, Lʾˉ/ᴵᴵ;->ˈᵎ()Landroid/content/pm/PackageManager;
+
+    .line 301
+    .line 302
+    .line 303
+    move-result-object v4
+
+    .line 304
+    invoke-virtual {v1, v4}, Landroid/content/pm/PackageItemInfo;->loadLabel(Landroid/content/pm/PackageManager;)Ljava/lang/CharSequence;
+
+    .line 305
+    .line 306
+    .line 307
+    move-result-object v1
+
+    .line 308
+    invoke-interface {v1}, Ljava/lang/CharSequence;->toString()Ljava/lang/String;
+
+    .line 309
+    .line 310
+    .line 311
+    move-result-object v1
+
+    .line 312
+    const-string v4, "L"
+
+    .line 313
+    .line 314
+    invoke-virtual {v1, v4}, Ljava/lang/String;->startsWith(Ljava/lang/String;)Z
+
+    .line 315
+    .line 316
+    .line 317
+    move-result v1
+
+    .line 318
+    xor-int/lit8 v7, v1, 0x1
+
+    .line 319
+    .line 320
+    new-instance v5, Ljava/io/File;
+
+    .line 321
+    .line 322
+    new-instance v1, Ljava/lang/StringBuilder;
+
+    .line 323
+    .line 324
+    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
+
+    .line 325
+    .line 326
+    .line 327
+    sget-object v4, Lʾˉ/ᴵᴵ;->ʼᐧ:Ljava/lang/String;
+
+    .line 328
+    .line 329
+    invoke-virtual {v1, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 330
+    .line 331
+    .line 332
+    invoke-virtual {v1, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 333
+    .line 334
+    .line 335
+    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    .line 336
+    .line 337
+    .line 338
+    move-result-object v1
+
+    .line 339
+    invoke-direct {v5, v1}, Ljava/io/File;-><init>(Ljava/lang/String;)V
+
+    .line 340
+    .line 341
+    .line 342
+    const/4 v9, 0x0
+
+    .line 343
+    const/4 v10, 0x1
+
+    .line 344
+    const-string v8, ""
+
+    .line 345
+    .line 346
+    invoke-static/range {v5 .. v10}, Lʾˉ/ᴵᴵ;->ʿٴ(Ljava/io/File;ZZLjava/lang/String;ZZ)V
+
+    .line 347
+    .line 348
+    .line 349
+    iget-object v1, p0, Lʾˉ/ᴵᴵ$ˈʼ;->ʿ:Lʾˉ/ᴵᴵ;
+
+    .line 350
+    .line 351
+    iget v1, v1, Lʾˉ/ᴵᴵ;->ʻˉ:I
+
+    .line 352
+    .line 353
+    const/16 v3, 0x3e7
+
+    .line 354
+    .line 355
+    if-ne v1, v3, :cond_9
+
+    .line 356
+    .line 357
+    invoke-static {}, Lʾˉ/ᴵᴵ;->ˈˏ()Landroid/content/SharedPreferences;
+
+    .line 358
+    .line 359
+    .line 360
+    move-result-object v1
+
+    .line 361
+    invoke-interface {v1}, Landroid/content/SharedPreferences;->edit()Landroid/content/SharedPreferences$Editor;
+
+    .line 362
+    .line 363
+    .line 364
+    move-result-object v1
+
+    .line 365
+    const-string v3, "999"
+
+    .line 366
+    .line 367
+    invoke-interface {v1, v3, v0}, Landroid/content/SharedPreferences$Editor;->putBoolean(Ljava/lang/String;Z)Landroid/content/SharedPreferences$Editor;
+
+    .line 368
+    .line 369
+    .line 370
+    invoke-interface {v1}, Landroid/content/SharedPreferences$Editor;->commit()Z
+
+    .line 371
+    .line 372
+    .line 373
+    new-instance v1, Lʼˏ/ᵢ;
+
+    .line 374
+    .line 375
+    invoke-direct {v1, v2}, Lʼˏ/ᵢ;-><init>(Ljava/lang/String;)V
+
+    .line 376
+    .line 377
+    .line 378
+    new-instance v2, Ljava/lang/StringBuilder;
+
+    .line 379
+    .line 380
+    invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
+
+    .line 381
+    .line 382
+    .line 383
+    const-string v3, "pm uninstall -k "
+
+    .line 384
+    .line 385
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 386
+    .line 387
+    .line 388
+    sget-object v3, Lʾˉ/ᴵᴵ;->ʽᵢ:Ljava/lang/String;
+
+    .line 389
+    .line 390
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 391
+    .line 392
+    .line 393
+    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    .line 394
+    .line 395
+    .line 396
+    move-result-object v2
+
+    .line 397
+    new-array v0, v0, [Ljava/lang/String;
+
+    .line 398
+    .line 399
+    aput-object v2, v0, p1
+
+    .line 400
+    .line 401
+    invoke-virtual {v1, v0}, Lʼˏ/ᵢ;->ˎˎ([Ljava/lang/String;)Ljava/lang/String;
+
+    .line 402
+    .line 403
+    .line 404
+    sget-object p1, Lʾˉ/ᴵᴵ;->ʽᵢ:Ljava/lang/String;
+
+    .line 405
+    .line 406
+    invoke-static {p1}, Lʼˏ/ᵢ;->ˊˑ(Ljava/lang/String;)V
+
+    .line 407
+    .line 408
+    .line 409
+    goto :goto_b
+
+    .line 410
+    :cond_6
+    :goto_7
+    :try_start_4
+    new-instance v1, Ljava/io/File;
+
+    .line 411
+    .line 412
+    new-instance v4, Ljava/lang/StringBuilder;
+
+    .line 413
+    .line 414
+    invoke-direct {v4}, Ljava/lang/StringBuilder;-><init>()V
+
+    .line 415
+    .line 416
+    .line 417
+    sget-object v5, Lʾˉ/ᴵᴵ;->ʼᐧ:Ljava/lang/String;
+
+    .line 418
+    .line 419
+    invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 420
+    .line 421
+    .line 422
+    invoke-virtual {v4, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 423
+    .line 424
+    .line 425
+    invoke-virtual {v4}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    .line 426
+    .line 427
+    .line 428
+    move-result-object v3
+
+    .line 429
+    invoke-direct {v1, v3}, Ljava/io/File;-><init>(Ljava/lang/String;)V
+
+    .line 430
+    .line 431
+    .line 432
+    invoke-static {v1}, Lʼˏ/ᵢ;->ˈᵔ(Ljava/io/File;)Ljava/lang/String;
+
+    .line 433
+    .line 434
+    .line 435
+    move-result-object v2
+    :try_end_4
+    .catch Lcom/android/apksig/apk/ApkFormatException; {:try_start_4 .. :try_end_4} :catch_4
+    .catch Ljava/io/IOException; {:try_start_4 .. :try_end_4} :catch_3
+
+    .line 436
+    goto :goto_a
+
+    .line 437
+    :catch_3
+    move-exception v1
+
+    .line 438
+    goto :goto_8
+
+    .line 439
+    :catch_4
+    move-exception v1
+
+    .line 440
+    goto :goto_9
+
+    .line 441
+    :goto_8
+    invoke-virtual {v1}, Ljava/lang/Throwable;->printStackTrace()V
+
+    .line 442
+    .line 443
+    .line 444
+    goto :goto_a
+
+    .line 445
+    :goto_9
+    invoke-virtual {v1}, Ljava/lang/Throwable;->printStackTrace()V
+
+    .line 446
+    .line 447
+    .line 448
+    :goto_a
+    new-array v0, v0, [Z
+
+    .line 449
+    .line 450
+    aput-boolean p1, v0, p1
+
+    .line 451
+    .line 452
+    new-instance p1, Lʾˉ/ᴵᴵ$ˈʼ$ʻ;
+
+    .line 453
+    .line 454
+    invoke-direct {p1, p0, v2, v0}, Lʾˉ/ᴵᴵ$ˈʼ$ʻ;-><init>(Lʾˉ/ᴵᴵ$ˈʼ;Ljava/lang/String;[Z)V
+
+    .line 455
+    .line 456
+    .line 457
+    invoke-static {p1}, Lʾˉ/ᴵᴵ;->ˊⁱ(Ljava/lang/Runnable;)V
+
+    .line 458
+    .line 459
+    .line 460
+    goto :goto_b
+
+    .line 461
+    :cond_7
+    new-instance p1, Ljava/io/File;
+
+    .line 462
+    .line 463
+    new-instance v1, Ljava/lang/StringBuilder;
+
+    .line 464
+    .line 465
+    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
+
+    .line 466
+    .line 467
+    .line 468
+    sget-object v2, Lʾˉ/ᴵᴵ;->ʼᐧ:Ljava/lang/String;
+
+    .line 469
+    .line 470
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 471
+    .line 472
+    .line 473
+    const-string v2, "/Download/"
+
+    .line 474
+    .line 475
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 476
+    .line 477
+    .line 478
+    iget-object v2, p0, Lʾˉ/ᴵᴵ$ˈʼ;->ʿ:Lʾˉ/ᴵᴵ;
+
+    .line 479
+    .line 480
+    iget-object v2, v2, Lʾˉ/ᴵᴵ;->ʻˋ:Ljava/lang/String;
+
+    .line 481
+    .line 482
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 483
+    .line 484
+    .line 485
+    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    .line 486
+    .line 487
+    .line 488
+    move-result-object v1
+
+    .line 489
+    invoke-direct {p1, v1}, Ljava/io/File;-><init>(Ljava/lang/String;)V
+
+    .line 490
+    .line 491
+    .line 492
+    invoke-virtual {p1}, Ljava/io/File;->delete()Z
+
+    .line 493
+    .line 494
+    .line 495
+    iput-boolean v0, p0, Lʾˉ/ᴵᴵ$ˈʼ;->ʼ:Z
+
+    .line 496
+    .line 497
+    goto :goto_b
+
+    .line 498
+    :cond_8
+    iput-boolean v0, p0, Lʾˉ/ᴵᴵ$ˈʼ;->ʽ:Z
+
+    .line 499
+    .line 500
+    :cond_9
+    :goto_b
+    sget-object p1, Ljava/lang/Boolean;->TRUE:Ljava/lang/Boolean;
+
+    .line 501
+    .line 502
     return-object p1
 .end method
 
 .method protected ʼ(Ljava/lang/Boolean;)V
-    .locals 7
+    .locals 2
 
     .line 1
     invoke-super {p0, p1}, Landroid/os/AsyncTask;->onPostExecute(Ljava/lang/Object;)V
@@ -712,209 +1207,138 @@
     .line 2
     .line 3
     .line 4
-    new-instance v4, Lʾˉ/ᴵᴵ$ˈʼ$ʻ;
+    const/16 p1, 0x17
 
     .line 5
     .line 6
-    invoke-direct {v4, p0}, Lʾˉ/ᴵᴵ$ˈʼ$ʻ;-><init>(Lʾˉ/ᴵᴵ$ˈʼ;)V
+    invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     .line 7
     .line 8
     .line 9
-    sget-boolean p1, Lʾˉ/ᴵᴵ;->ˆˏ:Z
-
-    .line 10
-    .line 11
-    if-nez p1, :cond_1
-
-    .line 12
-    .line 13
-    const/4 p1, 0x1
-
-    .line 14
-    sput-boolean p1, Lʾˉ/ᴵᴵ;->ˆˏ:Z
-
-    .line 15
-    .line 16
-    invoke-static {}, Lʾˉ/ᴵᴵ;->ˈˏ()Landroid/content/SharedPreferences;
-
-    .line 17
-    .line 18
-    .line 19
     move-result-object p1
 
+    .line 10
+    invoke-static {p1}, Lʾˉ/ᴵᴵ;->ˊˏ(Ljava/lang/Integer;)V
+
+    .line 11
+    .line 12
+    .line 13
+    iget-boolean p1, p0, Lʾˉ/ᴵᴵ$ˈʼ;->ʼ:Z
+
+    .line 14
+    .line 15
+    const v0, 0x7f1104d3
+
+    .line 16
+    .line 17
+    .line 18
+    if-eqz p1, :cond_0
+
+    .line 19
     .line 20
-    const-string v0, "remove_ads"
+    invoke-static {v0}, Lʼˏ/ᵢ;->ˈי(I)Ljava/lang/String;
 
     .line 21
     .line 22
-    const/4 v1, 0x0
-
     .line 23
-    invoke-interface {p1, v0, v1}, Landroid/content/SharedPreferences;->getBoolean(Ljava/lang/String;Z)Z
+    move-result-object p1
 
     .line 24
+    const v1, 0x7f110135
+
     .line 25
     .line 26
-    move-result p1
-
     .line 27
-    if-eqz p1, :cond_0
+    invoke-static {v1}, Lʼˏ/ᵢ;->ˈי(I)Ljava/lang/String;
 
     .line 28
     .line 29
-    new-instance p1, Ljava/lang/StringBuilder;
-
     .line 30
+    move-result-object v1
+
     .line 31
-    invoke-direct {p1}, Ljava/lang/StringBuilder;-><init>()V
+    invoke-static {p1, v1}, Lʾˉ/ᴵᴵ;->ˋⁱ(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 32
     .line 33
     .line 34
-    const v0, 0x7f11038b
+    :cond_0
+    iget-boolean p1, p0, Lʾˉ/ᴵᴵ$ˈʼ;->ʽ:Z
 
     .line 35
     .line 36
-    .line 37
-    invoke-static {v0}, Lʼˏ/ᵎ;->ˈˉ(I)Ljava/lang/String;
+    if-eqz p1, :cond_1
 
+    .line 37
     .line 38
+    invoke-static {v0}, Lʼˏ/ᵢ;->ˈי(I)Ljava/lang/String;
+
     .line 39
     .line 40
-    move-result-object v0
-
     .line 41
-    invoke-virtual {p1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    move-result-object p1
 
     .line 42
+    const v0, 0x7f11028e
+
     .line 43
     .line 44
-    const-string v0, "\n\n"
-
     .line 45
-    .line 46
-    invoke-virtual {p1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-static {v0}, Lʼˏ/ᵢ;->ˈי(I)Ljava/lang/String;
 
+    .line 46
     .line 47
     .line 48
+    move-result-object v0
+
     .line 49
-    const v0, 0x7f110053
+    invoke-static {p1, v0}, Lʾˉ/ᴵᴵ;->ˋⁱ(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 50
     .line 51
     .line 52
-    invoke-static {v0}, Lʼˏ/ᵎ;->ˈˉ(I)Ljava/lang/String;
-
-    .line 53
-    .line 54
-    .line 55
-    move-result-object v0
-
-    .line 56
-    invoke-virtual {p1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 57
-    .line 58
-    .line 59
-    const-string v0, " "
-
-    .line 60
-    .line 61
-    invoke-virtual {p1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 62
-    .line 63
-    .line 64
-    sget-object v0, Lʾˉ/ᴵᴵ;->ʽـ:Ljava/lang/String;
-
-    .line 65
-    .line 66
-    invoke-virtual {p1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 67
-    .line 68
-    .line 69
-    const-string v0, "\n\nChangeLog:\n\n"
-
-    .line 70
-    .line 71
-    invoke-virtual {p1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 72
-    .line 73
-    .line 74
-    iget-object v0, p0, Lʾˉ/ᴵᴵ$ˈʼ;->ʼ:Lʾˉ/ᴵᴵ;
-
-    .line 75
-    .line 76
-    iget-object v0, v0, Lʾˉ/ᴵᴵ;->ʻˑ:Ljava/lang/String;
-
-    .line 77
-    .line 78
-    invoke-virtual {p1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 79
-    .line 80
-    .line 81
-    invoke-virtual {p1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    .line 82
-    .line 83
-    .line 84
-    move-result-object v1
-
-    .line 85
-    const p1, 0x7f1104b9
-
-    .line 86
-    .line 87
-    .line 88
-    invoke-static {p1}, Lʼˏ/ᵎ;->ˈˉ(I)Ljava/lang/String;
-
-    .line 89
-    .line 90
-    .line 91
-    move-result-object v2
-
-    .line 92
-    const/4 v5, 0x0
-
-    .line 93
-    const/4 v6, 0x0
-
-    .line 94
-    const-string v0, ""
-
-    .line 95
-    .line 96
-    move-object v3, v4
-
-    .line 97
-    invoke-static/range {v0 .. v6}, Lʼˏ/ᵎ;->ˎﾞ(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Landroid/content/DialogInterface$OnClickListener;Landroid/content/DialogInterface$OnClickListener;Landroid/content/DialogInterface$OnCancelListener;Z)V
-
-    .line 98
-    .line 99
-    .line 100
-    goto :goto_0
-
-    .line 101
-    :cond_0
-    new-instance p1, Lʾˉ/ᴵᴵ$ˈʼ$ʼ;
-
-    .line 102
-    .line 103
-    invoke-direct {p1, p0, v4}, Lʾˉ/ᴵᴵ$ˈʼ$ʼ;-><init>(Lʾˉ/ᴵᴵ$ˈʼ;Landroid/content/DialogInterface$OnClickListener;)V
-
-    .line 104
-    .line 105
-    .line 106
-    invoke-static {p1}, Lʾˉ/ᴵᴵ;->ˊⁱ(Ljava/lang/Runnable;)V
-
-    .line 107
-    .line 108
-    .line 109
     :cond_1
-    :goto_0
+    return-void
+.end method
+
+.method protected varargs ʽ([Ljava/lang/Integer;)V
+    .locals 2
+
+    .line 1
+    invoke-super {p0, p1}, Landroid/os/AsyncTask;->onProgressUpdate([Ljava/lang/Object;)V
+
+    .line 2
+    .line 3
+    .line 4
+    sget-object v0, Lʾˉ/ᴵᴵ;->ʽᵎ:Lʾˊ/ˑ;
+
+    .line 5
+    .line 6
+    if-eqz v0, :cond_0
+
+    .line 7
+    .line 8
+    const/4 v1, 0x0
+
+    .line 9
+    aget-object p1, p1, v1
+
+    .line 10
+    .line 11
+    invoke-virtual {p1}, Ljava/lang/Integer;->intValue()I
+
+    .line 12
+    .line 13
+    .line 14
+    move-result p1
+
+    .line 15
+    invoke-virtual {v0, p1}, Lʾˊ/ˑ;->ˊ(I)V
+
+    .line 16
+    .line 17
+    .line 18
+    :cond_0
     return-void
 .end method

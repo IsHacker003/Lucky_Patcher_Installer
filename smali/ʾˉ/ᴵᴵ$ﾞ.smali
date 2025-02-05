@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lʾˉ/ᴵᴵ;->ˈʻ(Ljava/util/ArrayList;)V
+    value = Lʾˉ/ᴵᴵ;->ˊˆ()V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,56 +18,153 @@
 
 
 # instance fields
-.field final synthetic ʻ:Ljava/util/ArrayList;
-
-.field final synthetic ʼ:Lʾˉ/ᴵᴵ;
+.field final synthetic ʻ:Lʾˉ/ᴵᴵ;
 
 
 # direct methods
-.method constructor <init>(Lʾˉ/ᴵᴵ;Ljava/util/ArrayList;)V
+.method constructor <init>(Lʾˉ/ᴵᴵ;)V
     .locals 0
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "()V"
-        }
-    .end annotation
 
     .line 1
-    iput-object p1, p0, Lʾˉ/ᴵᴵ$ﾞ;->ʼ:Lʾˉ/ᴵᴵ;
+    iput-object p1, p0, Lʾˉ/ᴵᴵ$ﾞ;->ʻ:Lʾˉ/ᴵᴵ;
 
     .line 2
     .line 3
-    iput-object p2, p0, Lʾˉ/ᴵᴵ$ﾞ;->ʻ:Ljava/util/ArrayList;
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 4
     .line 5
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
     .line 6
-    .line 7
-    .line 8
     return-void
 .end method
 
 
 # virtual methods
 .method public run()V
-    .locals 1
+    .locals 9
 
     .line 1
-    new-instance v0, Lʾˉ/ᴵᴵ$ﾞ$ʻ;
+    :try_start_0
+    invoke-static {}, Lʾˉ/ᴵᴵ;->ˈᴵ()[Ljava/lang/String;
 
     .line 2
     .line 3
-    invoke-direct {v0, p0}, Lʾˉ/ᴵᴵ$ﾞ$ʻ;-><init>(Lʾˉ/ᴵᴵ$ﾞ;)V
-
     .line 4
+    move-result-object v0
+
     .line 5
+    const/4 v1, 0x0
+
     .line 6
-    invoke-static {v0}, Lʾˉ/ᴵᴵ;->ˋʻ(Ljava/lang/Runnable;)V
+    if-eqz v0, :cond_1
 
     .line 7
     .line 8
+    sget-object v2, Lʾˉ/ᴵᴵ;->ʼـ:Lʾˉ/ˋ;
+
     .line 9
+    .line 10
+    if-nez v2, :cond_0
+
+    .line 11
+    .line 12
+    new-instance v2, Lʾˉ/ˋ;
+
+    .line 13
+    .line 14
+    invoke-static {}, Lʾˉ/ᴵᴵ;->ˈי()Landroid/content/Context;
+
+    .line 15
+    .line 16
+    .line 17
+    move-result-object v3
+
+    .line 18
+    invoke-direct {v2, v3}, Lʾˉ/ˋ;-><init>(Landroid/content/Context;)V
+
+    .line 19
+    .line 20
+    .line 21
+    sput-object v2, Lʾˉ/ᴵᴵ;->ʼـ:Lʾˉ/ˋ;
+
+    .line 22
+    .line 23
+    goto :goto_0
+
+    .line 24
+    :catchall_0
+    move-exception v0
+
+    .line 25
+    goto :goto_2
+
+    .line 26
+    :cond_0
+    :goto_0
+    array-length v2, v0
+
+    .line 27
+    const/4 v3, 0x0
+
+    .line 28
+    :goto_1
+    if-ge v3, v2, :cond_1
+
+    .line 29
+    .line 30
+    aget-object v4, v0, v3
+
+    .line 31
+    .line 32
+    sget-object v5, Lʾˉ/ᴵᴵ;->ʼـ:Lʾˉ/ˋ;
+
+    .line 33
+    .line 34
+    new-instance v6, Lʾˉ/ᵎ;
+
+    .line 35
+    .line 36
+    sget v7, Lʾˉ/ᴵᴵ;->ʾᴵ:I
+
+    .line 37
+    .line 38
+    const/4 v8, 0x1
+
+    .line 39
+    invoke-direct {v6, v4, v7, v8}, Lʾˉ/ᵎ;-><init>(Ljava/lang/String;IZ)V
+
+    .line 40
+    .line 41
+    .line 42
+    invoke-virtual {v5, v6}, Lʾˉ/ˋ;->ʽ(Lʾˉ/ᵎ;)V
+
+    .line 43
+    .line 44
+    .line 45
+    add-int/lit8 v3, v3, 0x1
+
+    .line 46
+    .line 47
+    goto :goto_1
+
+    .line 48
+    :cond_1
+    invoke-static {v1}, Lʾˉ/ᴵᴵ;->ˋʼ(Z)V
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    .line 49
+    .line 50
+    .line 51
+    goto :goto_3
+
+    .line 52
+    :goto_2
+    invoke-virtual {v0}, Ljava/lang/Throwable;->printStackTrace()V
+
+    .line 53
+    .line 54
+    .line 55
+    :goto_3
     return-void
 .end method

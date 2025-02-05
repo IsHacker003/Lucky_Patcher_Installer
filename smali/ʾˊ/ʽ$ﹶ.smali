@@ -115,15 +115,15 @@
 
     .line 6
     .line 7
-    sput-object p1, Lʾˉ/ʼʼ;->ʼᵢ:Ljava/io/File;
+    sput-object p1, Lʾˉ/ᴵᴵ;->ʼᵢ:Ljava/io/File;
 
     .line 8
     .line 9
-    sget-object p1, Lʾˉ/ʼʼ;->ʼˎ:Lʾˉ/ʼʼ;
+    sget-object p1, Lʾˉ/ᴵᴵ;->ʼˎ:Lʾˉ/ᴵᴵ;
 
     .line 10
     .line 11
-    sget-object p2, Lʾˉ/ʼʼ;->ʼᵎ:Lʾˉ/ᵎ;
+    sget-object p2, Lʾˉ/ᴵᴵ;->ʼᵎ:Lʾˉ/ᵎ;
 
     .line 12
     .line 13
@@ -131,7 +131,7 @@
 
     .line 14
     .line 15
-    invoke-virtual {p1, p2, v0}, Lʾˉ/ʼʼ;->ʿˈ(Lʾˉ/ᵎ;Ljava/lang/String;)V
+    invoke-virtual {p1, p2, v0}, Lʾˉ/ᴵᴵ;->ʿˈ(Lʾˉ/ᵎ;Ljava/lang/String;)V
 
     .line 16
     .line 17
@@ -308,11 +308,11 @@
 
     .line 98
     .line 99
-    sget-object p2, Lʾˉ/ʼʼ;->ʼᵎ:Lʾˉ/ᵎ;
+    sget-object p2, Lʾˉ/ᴵᴵ;->ʼᵎ:Lʾˉ/ᵎ;
 
     .line 100
     .line 101
-    invoke-static {p2, p1}, Lʾˉ/ʼʼ;->ˊᵢ(Lʾˉ/ᵎ;Lʼˑ/ʼ;)V
+    invoke-static {p2, p1}, Lʾˉ/ᴵᴵ;->ˊᵢ(Lʾˉ/ᵎ;Lʼˑ/ʼ;)V
 
     .line 102
     .line 103
@@ -325,11 +325,11 @@
 
     .line 106
     .line 107
-    sget-object v0, Lʾˉ/ʼʼ;->ʼˎ:Lʾˉ/ʼʼ;
+    sget-object v0, Lʾˉ/ᴵᴵ;->ʼˎ:Lʾˉ/ᴵᴵ;
 
     .line 108
     .line 109
-    invoke-virtual {v0, p1, p2}, Lʾˉ/ʼʼ;->ˎʻ(Lʼˑ/ʼ;Z)V
+    invoke-virtual {v0, p1, p2}, Lʾˉ/ᴵᴵ;->ˎʻ(Lʼˑ/ʼ;Z)V
 
     .line 110
     .line 111

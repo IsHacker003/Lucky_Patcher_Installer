@@ -36,66 +36,60 @@
     .locals 2
 
     .line 1
-    const v0, 0x7f1104cf
+    sget-object v0, Lʾˉ/ᴵᴵ;->ʽᵎ:Lʾˊ/ˑ;
 
     .line 2
     .line 3
-    .line 4
-    invoke-static {v0}, Lʼˏ/ᵎ;->ˈˉ(I)Ljava/lang/String;
+    if-eqz v0, :cond_0
 
+    .line 4
     .line 5
+    invoke-virtual {v0}, Lʾˊ/ˑ;->ʼ()Z
+
     .line 6
     .line 7
-    move-result-object v0
-
     .line 8
-    const v1, 0x7f1101c5
+    move-result v0
 
     .line 9
+    if-eqz v0, :cond_0
+
     .line 10
     .line 11
-    invoke-static {v1}, Lʼˏ/ᵎ;->ˈˉ(I)Ljava/lang/String;
+    sget-object v0, Lʾˉ/ᴵᴵ;->ʽᵎ:Lʾˊ/ˑ;
 
     .line 12
     .line 13
+    const v1, 0x7f1103cd
+
     .line 14
-    move-result-object v1
-
     .line 15
-    invoke-static {v0, v1}, Lʾˉ/ᴵᴵ;->ˋⁱ(Ljava/lang/String;Ljava/lang/String;)V
-
     .line 16
+    invoke-static {v1}, Lʼˏ/ᵢ;->ˈי(I)Ljava/lang/String;
+
     .line 17
     .line 18
-    const-string v0, ""
-
     .line 19
+    move-result-object v1
+
     .line 20
-    sput-object v0, Lʾˉ/ᴵᴵ;->ʽﹶ:Ljava/lang/String;
+    invoke-virtual {v0, v1}, Lʾˊ/ˑ;->ˉ(Ljava/lang/String;)V
 
     .line 21
     .line 22
-    const/16 v0, 0x17
-
     .line 23
+    sget-object v0, Lʾˉ/ᴵᴵ;->ʽᵎ:Lʾˊ/ˑ;
+
     .line 24
-    invoke-static {v0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
-
     .line 25
+    const/4 v1, 0x7
+
     .line 26
+    invoke-virtual {v0, v1}, Lʾˊ/ˑ;->ˊ(I)V
+
     .line 27
-    move-result-object v0
-
     .line 28
-    invoke-static {v0}, Lʾˉ/ᴵᴵ;->ˊˏ(Ljava/lang/Integer;)V
-
     .line 29
-    .line 30
-    .line 31
-    invoke-static {}, Lʾˉ/ᴵᴵ;->ˎﹶ()V
-
-    .line 32
-    .line 33
-    .line 34
+    :cond_0
     return-void
 .end method

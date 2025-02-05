@@ -41,69 +41,53 @@
 
 # virtual methods
 .method public run()V
-    .locals 2
+    .locals 3
 
     .line 1
     iget-object v0, p0, Lʾˉ/ᴵᴵ$ˆﾞ$ʼ;->ʻ:Lʾˉ/ᴵᴵ$ˆﾞ;
 
     .line 2
     .line 3
-    iget-boolean v0, v0, Lʾˉ/ᴵᴵ$ˆﾞ;->ʼ:Z
+    iget-object v0, v0, Lʾˉ/ᴵᴵ$ˆﾞ;->ʼ:Lʾˉ/ᴵᴵ;
 
     .line 4
     .line 5
-    if-nez v0, :cond_0
+    invoke-virtual {v0}, Lʾˉ/ᴵᴵ;->ˈˑ()Landroidx/fragment/app/ʿ;
 
     .line 6
     .line 7
-    const v0, 0x7f11029d
-
     .line 8
-    .line 9
-    .line 10
-    invoke-static {v0}, Lʼˏ/ᵎ;->ˈˉ(I)Ljava/lang/String;
-
-    .line 11
-    .line 12
-    .line 13
     move-result-object v0
 
-    .line 14
-    const v1, 0x7f110164
+    .line 9
+    const v1, 0x7f110394
 
+    .line 10
+    .line 11
+    .line 12
+    invoke-static {v1}, Lʼˏ/ᵢ;->ˈי(I)Ljava/lang/String;
+
+    .line 13
+    .line 14
     .line 15
+    move-result-object v1
+
     .line 16
+    const/4 v2, 0x0
+
     .line 17
-    invoke-static {v1}, Lʼˏ/ᵎ;->ˈˉ(I)Ljava/lang/String;
+    invoke-static {v0, v1, v2}, Landroid/widget/Toast;->makeText(Landroid/content/Context;Ljava/lang/CharSequence;I)Landroid/widget/Toast;
 
     .line 18
     .line 19
     .line 20
-    move-result-object v1
+    move-result-object v0
 
     .line 21
-    invoke-static {v0, v1}, Lʾˉ/ᴵᴵ;->ˋⁱ(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-virtual {v0}, Landroid/widget/Toast;->show()V
 
     .line 22
     .line 23
     .line 24
-    :cond_0
-    const/16 v0, 0xb
-
-    .line 25
-    .line 26
-    invoke-static {v0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
-
-    .line 27
-    .line 28
-    .line 29
-    move-result-object v0
-
-    .line 30
-    invoke-static {v0}, Lʾˉ/ᴵᴵ;->ˊˏ(Ljava/lang/Integer;)V
-
-    .line 31
-    .line 32
-    .line 33
     return-void
 .end method

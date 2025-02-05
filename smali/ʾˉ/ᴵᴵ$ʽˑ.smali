@@ -1,11 +1,14 @@
 .class Lʾˉ/ᴵᴵ$ʽˑ;
-.super Ljava/util/ArrayList;
+.super Ljava/lang/Object;
 .source "SourceFile"
+
+# interfaces
+.implements Ljava/lang/Runnable;
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lʾˉ/ᴵᴵ;->ˋˏ(Lru/aaaaacay/installer/MainActivity;)V
+    value = Lʾˉ/ᴵᴵ;->ˊᵔ()V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -13,487 +16,481 @@
     name = null
 .end annotation
 
-.annotation system Ldalvik/annotation/Signature;
-    value = {
-        "Ljava/util/ArrayList<",
-        "Ljava/lang/Integer;",
-        ">;"
-    }
-.end annotation
+
+# instance fields
+.field final synthetic ʻ:Landroid/content/pm/PackageInfo;
+
+.field final synthetic ʼ:[Z
+
+.field final synthetic ʽ:[Ljava/lang/String;
+
+.field final synthetic ʾ:[Ljava/lang/Boolean;
+
+.field final synthetic ʿ:Lʾˉ/ᴵᴵ;
 
 
 # direct methods
-.method constructor <init>()V
-    .locals 2
+.method constructor <init>(Lʾˉ/ᴵᴵ;Landroid/content/pm/PackageInfo;[Z[Ljava/lang/String;[Ljava/lang/Boolean;)V
+    .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()V"
+        }
+    .end annotation
 
     .line 1
-    invoke-direct {p0}, Ljava/util/ArrayList;-><init>()V
+    iput-object p1, p0, Lʾˉ/ᴵᴵ$ʽˑ;->ʿ:Lʾˉ/ᴵᴵ;
 
     .line 2
     .line 3
-    .line 4
-    const v0, 0x7f1104aa
+    iput-object p2, p0, Lʾˉ/ᴵᴵ$ʽˑ;->ʻ:Landroid/content/pm/PackageInfo;
 
+    .line 4
     .line 5
+    iput-object p3, p0, Lʾˉ/ᴵᴵ$ʽˑ;->ʼ:[Z
+
     .line 6
     .line 7
-    invoke-static {v0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+    iput-object p4, p0, Lʾˉ/ᴵᴵ$ʽˑ;->ʽ:[Ljava/lang/String;
 
     .line 8
     .line 9
-    .line 10
-    move-result-object v0
+    iput-object p5, p0, Lʾˉ/ᴵᴵ$ʽˑ;->ʾ:[Ljava/lang/Boolean;
 
+    .line 10
     .line 11
-    invoke-virtual {p0, v0}, Ljava/util/AbstractCollection;->add(Ljava/lang/Object;)Z
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 12
     .line 13
     .line 14
-    const v0, 0x7f1104ab
+    return-void
+.end method
 
+
+# virtual methods
+.method public run()V
+    .locals 7
+
+    .line 1
+    const/4 v0, 0x0
+
+    .line 2
+    const/4 v1, 0x1
+
+    .line 3
+    :try_start_0
+    sget-object v2, Lʾˉ/ᴵᴵ;->ʼﾞ:Lru/aaaaaccc/installer/MainActivity;
+
+    .line 4
+    .line 5
+    if-eqz v2, :cond_1
+
+    .line 6
+    .line 7
+    invoke-virtual {v2}, Landroid/app/Activity;->isFinishing()Z
+
+    .line 8
+    .line 9
+    .line 10
+    move-result v2
+
+    .line 11
+    if-nez v2, :cond_1
+
+    .line 12
+    .line 13
+    new-instance v2, Lʾˉ/ʼ;
+
+    .line 14
     .line 15
+    sget-object v3, Lʾˉ/ᴵᴵ;->ʼˎ:Lʾˉ/ᴵᴵ;
+
     .line 16
     .line 17
-    invoke-static {v0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+    invoke-virtual {v3}, Lʾˉ/ᴵᴵ;->ˈˑ()Landroidx/fragment/app/ʿ;
 
     .line 18
     .line 19
     .line 20
-    move-result-object v0
+    move-result-object v3
 
     .line 21
-    invoke-virtual {p0, v0}, Ljava/util/AbstractCollection;->add(Ljava/lang/Object;)Z
+    invoke-direct {v2, v3}, Lʾˉ/ʼ;-><init>(Landroid/content/Context;)V
 
     .line 22
     .line 23
     .line 24
-    const v0, 0x7f1104a6
+    const v3, 0x7f1104a5
 
     .line 25
     .line 26
     .line 27
-    invoke-static {v0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+    invoke-static {v3}, Lʼˏ/ᵢ;->ˈי(I)Ljava/lang/String;
 
     .line 28
     .line 29
     .line 30
-    move-result-object v0
+    move-result-object v3
 
     .line 31
-    invoke-virtual {p0, v0}, Ljava/util/AbstractCollection;->add(Ljava/lang/Object;)Z
+    invoke-virtual {v2, v3}, Lʾˉ/ʼ;->ˉˉ(Ljava/lang/String;)Lʾˉ/ʼ;
 
     .line 32
     .line 33
     .line 34
-    const v0, 0x7f1104a8
+    move-result-object v3
 
     .line 35
+    new-instance v4, Ljava/lang/StringBuilder;
+
     .line 36
     .line 37
-    invoke-static {v0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+    invoke-direct {v4}, Ljava/lang/StringBuilder;-><init>()V
 
     .line 38
     .line 39
     .line 40
-    move-result-object v0
+    const-string v5, ""
 
     .line 41
-    invoke-virtual {p0, v0}, Ljava/util/AbstractCollection;->add(Ljava/lang/Object;)Z
-
     .line 42
+    invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
     .line 43
     .line 44
-    const/4 v0, 0x0
-
     .line 45
-    invoke-static {v0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+    iget-object v5, p0, Lʾˉ/ᴵᴵ$ʽˑ;->ʻ:Landroid/content/pm/PackageInfo;
 
     .line 46
     .line 47
-    .line 48
-    move-result-object v0
+    iget-object v5, v5, Landroid/content/pm/PackageInfo;->versionName:Ljava/lang/String;
 
+    .line 48
     .line 49
-    invoke-virtual {p0, v0}, Ljava/util/AbstractCollection;->add(Ljava/lang/Object;)Z
+    invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     .line 50
     .line 51
     .line 52
-    const v1, 0x7f110438
+    invoke-virtual {v4}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     .line 53
     .line 54
     .line 55
-    invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+    move-result-object v4
 
     .line 56
+    new-array v5, v1, [Ljava/lang/String;
+
     .line 57
     .line 58
-    move-result-object v1
+    aput-object v4, v5, v0
 
     .line 59
-    invoke-virtual {p0, v1}, Ljava/util/AbstractCollection;->add(Ljava/lang/Object;)Z
-
     .line 60
+    const v4, 0x7f110341
+
     .line 61
     .line 62
-    invoke-static {}, Lcom/xposed/XposedUtils;->isXposedEnabled()Z
-
     .line 63
+    invoke-static {v4, v5}, Lʼˏ/ᵢ;->ˈٴ(I[Ljava/lang/String;)Ljava/lang/String;
+
     .line 64
     .line 65
-    move-result v1
-
     .line 66
-    if-eqz v1, :cond_0
+    move-result-object v4
 
     .line 67
-    .line 68
-    const v1, 0x7f1104eb
+    invoke-virtual {v3, v4}, Lʾˉ/ʼ;->ⁱ(Ljava/lang/String;)Lʾˉ/ʼ;
 
+    .line 68
     .line 69
     .line 70
+    move-result-object v3
+
     .line 71
-    invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+    const v4, 0x7f0800a2
 
     .line 72
     .line 73
     .line 74
-    move-result-object v1
+    invoke-virtual {v3, v4}, Lʾˉ/ʼ;->ᵔ(I)Lʾˉ/ʼ;
 
     .line 75
-    invoke-virtual {p0, v1}, Ljava/util/AbstractCollection;->add(Ljava/lang/Object;)Z
-
     .line 76
     .line 77
+    move-result-object v3
+
     .line 78
-    :cond_0
-    sget-boolean v1, Lʾˉ/ᴵᴵ;->ʽﾞ:Z
+    const v4, 0x7f110003
 
     .line 79
     .line 80
-    if-eqz v1, :cond_1
-
     .line 81
-    .line 82
-    const v1, 0x7f11030d
+    invoke-static {v4}, Lʼˏ/ᵢ;->ˈי(I)Ljava/lang/String;
 
+    .line 82
     .line 83
     .line 84
+    move-result-object v4
+
     .line 85
-    invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+    new-instance v5, Lʾˉ/ᴵᴵ$ʽˑ$ʽ;
 
     .line 86
     .line 87
+    invoke-direct {v5, p0}, Lʾˉ/ᴵᴵ$ʽˑ$ʽ;-><init>(Lʾˉ/ᴵᴵ$ʽˑ;)V
+
     .line 88
-    move-result-object v1
-
     .line 89
-    invoke-virtual {p0, v1}, Ljava/util/AbstractCollection;->add(Ljava/lang/Object;)Z
-
     .line 90
+    invoke-virtual {v3, v4, v5}, Lʾˉ/ʼ;->ʼʼ(Ljava/lang/String;Landroid/content/DialogInterface$OnClickListener;)Lʾˉ/ʼ;
+
     .line 91
     .line 92
-    :cond_1
-    invoke-virtual {p0, v0}, Ljava/util/AbstractCollection;->add(Ljava/lang/Object;)Z
-
     .line 93
-    .line 94
-    .line 95
-    const v1, 0x7f110328
+    move-result-object v3
 
+    .line 94
+    const v4, 0x7f11038f
+
+    .line 95
     .line 96
     .line 97
-    .line 98
-    invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+    invoke-static {v4}, Lʼˏ/ᵢ;->ˈי(I)Ljava/lang/String;
 
+    .line 98
     .line 99
     .line 100
+    move-result-object v4
+
     .line 101
-    move-result-object v1
+    new-instance v5, Lʾˉ/ᴵᴵ$ʽˑ$ʼ;
 
     .line 102
-    invoke-virtual {p0, v1}, Ljava/util/AbstractCollection;->add(Ljava/lang/Object;)Z
-
     .line 103
+    invoke-direct {v5, p0}, Lʾˉ/ᴵᴵ$ʽˑ$ʼ;-><init>(Lʾˉ/ᴵᴵ$ʽˑ;)V
+
     .line 104
     .line 105
-    const v1, 0x7f1104bd
-
     .line 106
+    invoke-virtual {v3, v4, v5}, Lʾˉ/ʼ;->ﹶ(Ljava/lang/String;Landroid/content/DialogInterface$OnClickListener;)Lʾˉ/ʼ;
+
     .line 107
     .line 108
-    invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
-
     .line 109
-    .line 110
-    .line 111
-    move-result-object v1
+    move-result-object v3
 
+    .line 110
+    new-instance v4, Lʾˉ/ᴵᴵ$ʽˑ$ʻ;
+
+    .line 111
     .line 112
-    invoke-virtual {p0, v1}, Ljava/util/AbstractCollection;->add(Ljava/lang/Object;)Z
+    invoke-direct {v4, p0}, Lʾˉ/ᴵᴵ$ʽˑ$ʻ;-><init>(Lʾˉ/ᴵᴵ$ʽˑ;)V
 
     .line 113
     .line 114
     .line 115
-    invoke-virtual {p0, v0}, Ljava/util/AbstractCollection;->add(Ljava/lang/Object;)Z
+    invoke-virtual {v3, v4}, Lʾˉ/ʼ;->ᐧᐧ(Landroid/content/DialogInterface$OnCancelListener;)Lʾˉ/ʼ;
 
     .line 116
     .line 117
     .line 118
-    const v1, 0x7f1100c6
+    invoke-virtual {v2}, Lʾˉ/ʼ;->ˈ()Landroid/widget/CheckBox;
 
     .line 119
     .line 120
     .line 121
-    invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+    move-result-object v3
 
     .line 122
+    invoke-virtual {v2}, Lʾˉ/ʼ;->ˆ()Landroid/widget/EditText;
+
     .line 123
     .line 124
-    move-result-object v1
-
     .line 125
-    invoke-virtual {p0, v1}, Ljava/util/AbstractCollection;->add(Ljava/lang/Object;)Z
+    move-result-object v4
 
     .line 126
+    const v5, 0x7f1102a7
+
     .line 127
     .line 128
-    const v1, 0x7f1104a9
-
     .line 129
+    invoke-static {v5}, Lʼˏ/ᵢ;->ˈי(I)Ljava/lang/String;
+
     .line 130
     .line 131
-    invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
-
     .line 132
-    .line 133
-    .line 134
-    move-result-object v1
+    move-result-object v5
 
+    .line 133
+    new-instance v6, Lʾˉ/ᴵᴵ$ʽˑ$ʿ;
+
+    .line 134
     .line 135
-    invoke-virtual {p0, v1}, Ljava/util/AbstractCollection;->add(Ljava/lang/Object;)Z
+    invoke-direct {v6, p0, v3, v4}, Lʾˉ/ᴵᴵ$ʽˑ$ʿ;-><init>(Lʾˉ/ᴵᴵ$ʽˑ;Landroid/widget/CheckBox;Landroid/widget/EditText;)V
 
     .line 136
     .line 137
     .line 138
-    invoke-virtual {p0, v0}, Ljava/util/AbstractCollection;->add(Ljava/lang/Object;)Z
+    invoke-virtual {v2, v5, v6, v1}, Lʾˉ/ʼ;->י(Ljava/lang/String;Landroid/widget/CompoundButton$OnCheckedChangeListener;Z)Lʾˉ/ʼ;
 
     .line 139
     .line 140
     .line 141
-    sget-boolean v0, Lʾˉ/ᴵᴵ;->ʽﾞ:Z
+    move-result-object v1
 
     .line 142
-    .line 143
-    if-eqz v0, :cond_2
+    const v3, 0x7f1103ba
 
+    .line 143
     .line 144
     .line 145
-    const v0, 0x7f1104af
+    invoke-static {v3}, Lʼˏ/ᵢ;->ˈי(I)Ljava/lang/String;
 
     .line 146
     .line 147
     .line 148
-    invoke-static {v0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+    move-result-object v3
 
     .line 149
+    new-instance v4, Lʾˉ/ᴵᴵ$ʽˑ$ʾ;
+
     .line 150
     .line 151
-    move-result-object v0
+    invoke-direct {v4, p0}, Lʾˉ/ᴵᴵ$ʽˑ$ʾ;-><init>(Lʾˉ/ᴵᴵ$ʽˑ;)V
 
     .line 152
-    invoke-virtual {p0, v0}, Ljava/util/AbstractCollection;->add(Ljava/lang/Object;)Z
-
     .line 153
     .line 154
-    .line 155
-    :cond_2
-    const v0, 0x7f110450
+    invoke-virtual {v1, v3, v4, v0}, Lʾˉ/ʼ;->ـ(Ljava/lang/String;Landroid/widget/CompoundButton$OnCheckedChangeListener;Z)Lʾˉ/ʼ;
 
+    .line 155
     .line 156
     .line 157
-    .line 158
-    invoke-static {v0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+    sget v1, Lʾˉ/ᴵᴵ;->ʾᐧ:I
 
+    .line 158
     .line 159
+    const/16 v3, 0x1a
+
     .line 160
     .line 161
-    move-result-object v0
+    if-lt v1, v3, :cond_0
 
     .line 162
-    invoke-virtual {p0, v0}, Ljava/util/AbstractCollection;->add(Ljava/lang/Object;)Z
-
     .line 163
+    const v1, 0x7f1104c4
+
     .line 164
     .line 165
-    invoke-static {}, Lʾˉ/ᴵᴵ;->ˈי()Landroid/content/Context;
-
     .line 166
+    invoke-static {v1}, Lʼˏ/ᵢ;->ˈי(I)Ljava/lang/String;
+
     .line 167
     .line 168
-    move-result-object v0
-
     .line 169
-    invoke-virtual {v0}, Landroid/content/Context;->getApplicationInfo()Landroid/content/pm/ApplicationInfo;
-
-    .line 170
-    .line 171
-    .line 172
-    move-result-object v0
-
-    .line 173
-    invoke-static {}, Lʾˉ/ᴵᴵ;->ˈᵎ()Landroid/content/pm/PackageManager;
-
-    .line 174
-    .line 175
-    .line 176
     move-result-object v1
 
-    .line 177
-    invoke-virtual {v0, v1}, Landroid/content/pm/PackageItemInfo;->loadLabel(Landroid/content/pm/PackageManager;)Ljava/lang/CharSequence;
+    .line 170
+    new-instance v3, Lʾˉ/ᴵᴵ$ʽˑ$ˆ;
 
+    .line 171
+    .line 172
+    invoke-direct {v3, p0}, Lʾˉ/ᴵᴵ$ʽˑ$ˆ;-><init>(Lʾˉ/ᴵᴵ$ʽˑ;)V
+
+    .line 173
+    .line 174
+    .line 175
+    invoke-virtual {v2, v1, v3, v0}, Lʾˉ/ʼ;->ٴ(Ljava/lang/String;Landroid/widget/CompoundButton$OnCheckedChangeListener;Z)Lʾˉ/ʼ;
+
+    .line 176
+    .line 177
     .line 178
+    goto :goto_0
+
     .line 179
+    :catch_0
+    move-exception v0
+
     .line 180
-    move-result-object v0
+    goto :goto_1
 
     .line 181
-    invoke-interface {v0}, Ljava/lang/CharSequence;->toString()Ljava/lang/String;
+    :cond_0
+    :goto_0
+    invoke-virtual {v2}, Lʾˉ/ʼ;->ʽ()Landroid/widget/CheckBox;
 
     .line 182
     .line 183
     .line 184
-    move-result-object v0
+    move-result-object v1
 
     .line 185
-    const-string v1, "L"
+    const v3, 0x7f11014c
 
     .line 186
     .line 187
-    invoke-virtual {v0, v1}, Ljava/lang/String;->startsWith(Ljava/lang/String;)Z
-
     .line 188
+    invoke-static {v3}, Lʼˏ/ᵢ;->ˈי(I)Ljava/lang/String;
+
     .line 189
     .line 190
-    move-result v0
-
     .line 191
-    if-nez v0, :cond_3
+    move-result-object v3
 
     .line 192
-    .line 193
-    invoke-static {}, Lʾˉ/ᴵᴵ;->ˈי()Landroid/content/Context;
+    new-instance v4, Lʾˉ/ᴵᴵ$ʽˑ$ˈ;
 
+    .line 193
     .line 194
+    invoke-direct {v4, p0, v1}, Lʾˉ/ᴵᴵ$ʽˑ$ˈ;-><init>(Lʾˉ/ᴵᴵ$ʽˑ;Landroid/widget/CheckBox;)V
+
     .line 195
     .line 196
-    move-result-object v0
-
     .line 197
-    invoke-static {v0}, Lᵢ/ᵢ;->ʻ(Landroid/content/Context;)Z
+    invoke-virtual {v2, v3, v0, v4}, Lʾˉ/ʼ;->ʾʾ(Ljava/lang/String;ZLandroid/text/TextWatcher;)Lʾˉ/ʼ;
 
     .line 198
     .line 199
     .line 200
-    move-result v0
+    invoke-virtual {v2}, Lʾˉ/ʼ;->ʻ()Landroid/app/Dialog;
 
     .line 201
-    if-eqz v0, :cond_3
-
     .line 202
     .line 203
-    const v0, 0x7f110026
-
-    .line 204
-    .line 205
-    .line 206
-    invoke-static {v0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
-
-    .line 207
-    .line 208
-    .line 209
     move-result-object v0
 
+    .line 204
+    invoke-static {v0}, Lʼˏ/ᵢ;->ˏˆ(Landroid/app/Dialog;)V
+
+    .line 205
+    .line 206
+    .line 207
+    const v1, 0x102000b
+
+    .line 208
+    .line 209
     .line 210
-    invoke-virtual {p0, v0}, Ljava/util/AbstractCollection;->add(Ljava/lang/Object;)Z
+    invoke-virtual {v0, v1}, Landroid/app/Dialog;->findViewById(I)Landroid/view/View;
+    :try_end_0
+    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
     .line 211
     .line 212
     .line 213
-    :cond_3
-    const v0, 0x7f110291
+    goto :goto_2
 
     .line 214
+    :goto_1
+    invoke-virtual {v0}, Ljava/lang/Throwable;->printStackTrace()V
+
     .line 215
     .line 216
-    invoke-static {v0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
-
     .line 217
-    .line 218
-    .line 219
-    move-result-object v0
-
-    .line 220
-    invoke-virtual {p0, v0}, Ljava/util/AbstractCollection;->add(Ljava/lang/Object;)Z
-
-    .line 221
-    .line 222
-    .line 223
-    const v0, 0x7f1101b7
-
-    .line 224
-    .line 225
-    .line 226
-    invoke-static {v0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
-
-    .line 227
-    .line 228
-    .line 229
-    move-result-object v0
-
-    .line 230
-    invoke-virtual {p0, v0}, Ljava/util/AbstractCollection;->add(Ljava/lang/Object;)Z
-
-    .line 231
-    .line 232
-    .line 233
-    const v0, 0x7f1101f2
-
-    .line 234
-    .line 235
-    .line 236
-    invoke-static {v0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
-
-    .line 237
-    .line 238
-    .line 239
-    move-result-object v0
-
-    .line 240
-    invoke-virtual {p0, v0}, Ljava/util/AbstractCollection;->add(Ljava/lang/Object;)Z
-
-    .line 241
-    .line 242
-    .line 243
-    const v0, 0x7f110022
-
-    .line 244
-    .line 245
-    .line 246
-    invoke-static {v0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
-
-    .line 247
-    .line 248
-    .line 249
-    move-result-object v0
-
-    .line 250
-    invoke-virtual {p0, v0}, Ljava/util/AbstractCollection;->add(Ljava/lang/Object;)Z
-
-    .line 251
-    .line 252
-    .line 253
+    :cond_1
+    :goto_2
     return-void
 .end method

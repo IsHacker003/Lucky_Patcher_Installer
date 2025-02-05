@@ -125,7 +125,7 @@
 
     .line 35
     .line 36
-    invoke-static {p1}, Lʾˉ/ʼʼ;->ˊⁱ(Ljava/lang/Runnable;)V
+    invoke-static {p1}, Lʾˉ/ᴵᴵ;->ˊⁱ(Ljava/lang/Runnable;)V
 
     .line 37
     .line 38
@@ -160,7 +160,7 @@
 
     .line 53
     :cond_4
-    sget-object p1, Lʾˉ/ʼʼ;->ʻﹶ:Ljava/lang/String;
+    sget-object p1, Lʾˉ/ᴵᴵ;->ʻﹶ:Ljava/lang/String;
 
     .line 54
     .line 55

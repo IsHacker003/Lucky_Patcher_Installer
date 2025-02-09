@@ -93,7 +93,7 @@
 
     .line 25
     .line 26
-    sget-object v1, Lʾˉ/ᴵᴵ;->ˈˑ:Lʼـ/ᴵ;
+    sget-object v1, Lʾˉ/ᴵᴵ;->ˈי:Lʼـ/ᴵ;
 
     .line 27
     .line 28

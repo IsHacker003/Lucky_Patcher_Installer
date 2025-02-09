@@ -33,7 +33,7 @@
     .line 8
     .line 9
     .line 10
-    invoke-static {v2}, Lʼˏ/ᵢ;->ˑʿ(Ljava/lang/Object;)V
+    invoke-static {v2}, Lʼˏ/ᵢ;->ˑˎ(Ljava/lang/Object;)V
 
     .line 11
     .line 12
@@ -179,7 +179,7 @@
     .line 73
     .line 74
     .line 75
-    invoke-virtual {v2, v12}, Lʼˏ/ᵢ;->ʼʽ(Ljava/io/File;)V
+    invoke-virtual {v2, v12}, Lʼˏ/ᵢ;->ʼʾ(Ljava/io/File;)V
 
     .line 76
     .line 77
@@ -296,7 +296,7 @@
     .line 130
     .line 131
     .line 132
-    invoke-virtual {v2, v12}, Lʼˏ/ᵢ;->ʼʽ(Ljava/io/File;)V
+    invoke-virtual {v2, v12}, Lʼˏ/ᵢ;->ʼʾ(Ljava/io/File;)V
 
     .line 133
     .line 134
@@ -410,7 +410,7 @@
     .line 186
     .line 187
     .line 188
-    invoke-virtual {v2, v9}, Lʼˏ/ᵢ;->ʼʽ(Ljava/io/File;)V
+    invoke-virtual {v2, v9}, Lʼˏ/ᵢ;->ʼʾ(Ljava/io/File;)V
 
     .line 189
     .line 190
@@ -506,7 +506,7 @@
     .line 235
     :cond_9
     :goto_6
-    invoke-static {}, Lʼˏ/ᵢ;->ʼˎ()V
+    invoke-static {}, Lʼˏ/ᵢ;->ʼˑ()V
 
     .line 236
     .line 237

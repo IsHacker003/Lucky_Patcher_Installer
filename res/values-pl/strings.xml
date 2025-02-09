@@ -168,6 +168,7 @@ Pamięć wewnętrzna"</string>
     <string name="close">Zamknij</string>
     <string name="collect_logs">Zbieranie dzienników...</string>
     <string name="common_google_play_services_unknown_issue">%1$s ma problem z dostępem do Usług Google Play. Spróbuj jeszcze raz.</string>
+    <string name="context_add_app_for_zygisk_purchaces">Włącz emulację zakupu (zygisk) dla tej aplikacji</string>
     <string name="context_automodeslvl">Tryby automatyczne</string>
     <string name="context_backup_apk">Utwórz kopię pliku .apk</string>
     <string name="context_backup_apk_selected_apps">Kopia zapasowa apk wybranych aplikacji</string>
@@ -200,6 +201,7 @@ Zachowaj oryginalny podpis.
 (niestabilna metoda)"</string>
     <string name="context_hide_lp">Ukryj Lucky Patchera</string>
     <string name="context_hide_lp_descr">Spróbuj ukryć Lucky Patchera przed innymi aplikacjami. Obciąża system - używaj tylko w ostateczności.</string>
+    <string name="context_ignor_app_for_zygisk_purchaces">Wyłącz emulację zakupu (zygisk) dla tej aplikacji</string>
     <string name="context_install">Zainstaluj</string>
     <string name="context_install_as_system">Zainstaluj jako aplikację systemową</string>
     <string name="context_integrate_dalvik">Zintegruj kod dalvik do aktualnie zainstalowanej aplikacji</string>
@@ -379,7 +381,7 @@ Oto rezultaty:
     <string name="customdescr">Pokazuj aplikacje z zastosowanymi niestandardowymi łatkami.</string>
     <string name="customtitle">Aplikacje z zastosowanymi niestandardowymi łatkami</string>
     <string name="dalvik_cache_size">Wielkość dalvik-cache:</string>
-    <string name="damadged_apk">Plik aplikacji jest uszkodzony i można go odczytać.</string>
+    <string name="damadged_apk">Plik aplikacji jest uszkodzony i nie można go odczytać.</string>
     <string name="data_dir_size">Wielkość folderu z danymi:</string>
     <string name="date_creation_patch">Data utworzenia łatki</string>
     <string name="days_on_up">Pokaż najpierw nowe aplikacje</string>

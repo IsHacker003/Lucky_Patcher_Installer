@@ -44,7 +44,7 @@
     .locals 0
 
     .line 1
-    sput-boolean p2, Lʾˉ/ᴵᴵ;->ˉﾞ:Z
+    sput-boolean p2, Lʾˉ/ᴵᴵ;->ˊʻ:Z
 
     .line 2
     .line 3

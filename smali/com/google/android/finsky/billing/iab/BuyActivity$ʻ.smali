@@ -89,7 +89,7 @@
 
     .line 12
     .line 13
-    invoke-static {v1}, Lʼˏ/ᵢ;->ˏʽ(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v1}, Lʼˏ/ᵢ;->ˏˊ(Ljava/lang/String;)Ljava/lang/String;
 
     .line 14
     .line 15

@@ -48,7 +48,7 @@
 
     .line 2
     .line 3
-    const p2, 0x7f110439
+    const p2, 0x7f11043b
 
     .line 4
     .line 5

@@ -523,7 +523,7 @@
     .line 32
     .line 33
     .line 34
-    invoke-static {}, Lʾˉ/ᴵᴵ;->ˈᵎ()Landroid/content/pm/PackageManager;
+    invoke-static {}, Lru/aaaaaccd/installer/PkgName;->getPkgName()Ljava/lang/String;
 
     .line 35
     .line 36
@@ -531,308 +531,325 @@
     move-result-object v3
 
     .line 38
-    const/4 v4, 0x0
+    const-string v4, ""
 
     .line 39
-    invoke-virtual {v3, p1, v4}, Landroid/content/pm/PackageManager;->queryIntentServices(Landroid/content/Intent;I)Ljava/util/List;
-
     .line 40
+    invoke-virtual {p1, v3, v4}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
+
     .line 41
     .line 42
-    move-result-object v3
-
     .line 43
-    invoke-interface {v3}, Ljava/util/List;->isEmpty()Z
+    invoke-static {}, Lʾˉ/ᴵᴵ;->ˈᵎ()Landroid/content/pm/PackageManager;
 
     .line 44
     .line 45
     .line 46
-    move-result v3
+    move-result-object v3
 
     .line 47
-    const-string v5, "w"
+    const/4 v4, 0x0
 
     .line 48
-    .line 49
-    if-eqz v3, :cond_0
+    invoke-virtual {v3, p1, v4}, Landroid/content/pm/PackageManager;->queryIntentServices(Landroid/content/Intent;I)Ljava/util/List;
 
+    .line 49
     .line 50
     .line 51
-    new-instance v3, Lʼˏ/ᵢ;
+    move-result-object v3
 
     .line 52
-    .line 53
-    invoke-direct {v3, v5}, Lʼˏ/ᵢ;-><init>(Ljava/lang/String;)V
+    invoke-interface {v3}, Ljava/util/List;->isEmpty()Z
 
+    .line 53
     .line 54
     .line 55
+    move-result v3
+
     .line 56
-    const-wide/16 v6, 0x7d0
+    const-string v5, "w"
 
     .line 57
     .line 58
-    invoke-virtual {v3, v6, v7}, Lʼˏ/ᵢ;->יʿ(J)V
+    if-eqz v3, :cond_0
 
     .line 59
     .line 60
-    .line 61
-    :cond_0
-    invoke-static {}, Lʾˉ/ᴵᴵ;->ˈᵎ()Landroid/content/pm/PackageManager;
+    new-instance v3, Lʼˏ/ᵢ;
 
+    .line 61
     .line 62
+    invoke-direct {v3, v5}, Lʼˏ/ᵢ;-><init>(Ljava/lang/String;)V
+
     .line 63
     .line 64
-    move-result-object v3
-
     .line 65
-    invoke-virtual {v3, p1, v4}, Landroid/content/pm/PackageManager;->queryIntentServices(Landroid/content/Intent;I)Ljava/util/List;
+    const-wide/16 v6, 0x7d0
 
     .line 66
     .line 67
+    invoke-virtual {v3, v6, v7}, Lʼˏ/ᵢ;->יˎ(J)V
+
     .line 68
-    move-result-object v3
-
     .line 69
-    invoke-interface {v3}, Ljava/util/List;->isEmpty()Z
-
     .line 70
-    .line 71
-    .line 72
-    move-result v3
-
-    .line 73
-    if-nez v3, :cond_3
-
-    .line 74
-    .line 75
+    :cond_0
     invoke-static {}, Lʾˉ/ᴵᴵ;->ˈᵎ()Landroid/content/pm/PackageManager;
 
-    .line 76
-    .line 77
-    .line 78
+    .line 71
+    .line 72
+    .line 73
     move-result-object v3
 
-    .line 79
+    .line 74
     invoke-virtual {v3, p1, v4}, Landroid/content/pm/PackageManager;->queryIntentServices(Landroid/content/Intent;I)Ljava/util/List;
 
+    .line 75
+    .line 76
+    .line 77
+    move-result-object v3
+
+    .line 78
+    invoke-interface {v3}, Ljava/util/List;->isEmpty()Z
+
+    .line 79
     .line 80
     .line 81
+    move-result v3
+
     .line 82
-    move-result-object p1
+    if-nez v3, :cond_3
 
     .line 83
-    invoke-interface {p1}, Ljava/util/List;->iterator()Ljava/util/Iterator;
-
     .line 84
+    invoke-static {}, Lʾˉ/ᴵᴵ;->ˈᵎ()Landroid/content/pm/PackageManager;
+
     .line 85
     .line 86
+    .line 87
+    move-result-object v3
+
+    .line 88
+    invoke-virtual {v3, p1, v4}, Landroid/content/pm/PackageManager;->queryIntentServices(Landroid/content/Intent;I)Ljava/util/List;
+
+    .line 89
+    .line 90
+    .line 91
     move-result-object p1
 
-    .line 87
+    .line 92
+    invoke-interface {p1}, Ljava/util/List;->iterator()Ljava/util/Iterator;
+
+    .line 93
+    .line 94
+    .line 95
+    move-result-object p1
+
+    .line 96
     :cond_1
     :goto_0
     invoke-interface {p1}, Ljava/util/Iterator;->hasNext()Z
 
-    .line 88
-    .line 89
-    .line 90
-    move-result v3
-
-    .line 91
-    if-eqz v3, :cond_4
-
-    .line 92
-    .line 93
-    invoke-interface {p1}, Ljava/util/Iterator;->next()Ljava/lang/Object;
-
-    .line 94
-    .line 95
-    .line 96
-    move-result-object v3
-
     .line 97
-    check-cast v3, Landroid/content/pm/ResolveInfo;
-
     .line 98
     .line 99
-    iget-object v6, v3, Landroid/content/pm/ResolveInfo;->serviceInfo:Landroid/content/pm/ServiceInfo;
+    move-result v3
 
     .line 100
+    if-eqz v3, :cond_4
+
     .line 101
-    iget-object v6, v6, Landroid/content/pm/ServiceInfo;->packageName:Ljava/lang/String;
-
     .line 102
-    .line 103
-    if-eqz v6, :cond_1
+    invoke-interface {p1}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
+    .line 103
     .line 104
     .line 105
-    invoke-virtual {v6, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+    move-result-object v3
 
     .line 106
+    check-cast v3, Landroid/content/pm/ResolveInfo;
+
     .line 107
     .line 108
-    move-result v6
+    iget-object v6, v3, Landroid/content/pm/ResolveInfo;->serviceInfo:Landroid/content/pm/ServiceInfo;
 
     .line 109
+    .line 110
+    iget-object v6, v6, Landroid/content/pm/ServiceInfo;->packageName:Ljava/lang/String;
+
+    .line 111
+    .line 112
     if-eqz v6, :cond_1
 
-    .line 110
-    .line 111
-    iget-object v3, v3, Landroid/content/pm/ResolveInfo;->serviceInfo:Landroid/content/pm/ServiceInfo;
-
-    .line 112
     .line 113
-    iget-object v6, v3, Landroid/content/pm/ServiceInfo;->packageName:Ljava/lang/String;
-
     .line 114
-    .line 115
-    iget-object v3, v3, Landroid/content/pm/ServiceInfo;->name:Ljava/lang/String;
+    invoke-virtual {v6, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
+    .line 115
     .line 116
     .line 117
-    new-instance v7, Landroid/content/ComponentName;
+    move-result v6
 
     .line 118
-    .line 119
-    invoke-direct {v7, v6, v3}, Landroid/content/ComponentName;-><init>(Ljava/lang/String;Ljava/lang/String;)V
+    if-eqz v6, :cond_1
 
+    .line 119
     .line 120
+    iget-object v3, v3, Landroid/content/pm/ResolveInfo;->serviceInfo:Landroid/content/pm/ServiceInfo;
+
     .line 121
     .line 122
-    new-instance v3, Landroid/content/Intent;
+    iget-object v6, v3, Landroid/content/pm/ServiceInfo;->packageName:Ljava/lang/String;
 
     .line 123
     .line 124
-    invoke-direct {v3}, Landroid/content/Intent;-><init>()V
+    iget-object v3, v3, Landroid/content/pm/ServiceInfo;->name:Ljava/lang/String;
 
     .line 125
     .line 126
-    .line 127
-    invoke-virtual {v3, v7}, Landroid/content/Intent;->setComponent(Landroid/content/ComponentName;)Landroid/content/Intent;
+    new-instance v7, Landroid/content/ComponentName;
 
+    .line 127
     .line 128
+    invoke-direct {v7, v6, v3}, Landroid/content/ComponentName;-><init>(Ljava/lang/String;Ljava/lang/String;)V
+
     .line 129
     .line 130
-    invoke-virtual {v3, v1, v2}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
-
     .line 131
+    new-instance v3, Landroid/content/Intent;
+
     .line 132
     .line 133
-    invoke-static {}, Lʾˉ/ᴵᴵ;->ˈי()Landroid/content/Context;
+    invoke-direct {v3}, Landroid/content/Intent;-><init>()V
 
     .line 134
     .line 135
     .line 136
-    move-result-object v6
+    invoke-virtual {v3, v7}, Landroid/content/Intent;->setComponent(Landroid/content/ComponentName;)Landroid/content/Intent;
 
     .line 137
-    sget-object v7, Lcom/google/android/finsky/billing/iab/InAppBillingService;->ˋ:Landroid/content/ServiceConnection;
-
     .line 138
     .line 139
-    const/4 v8, 0x1
+    invoke-virtual {v3, v1, v2}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
 
     .line 140
-    invoke-virtual {v6, v3, v7, v8}, Landroid/content/Context;->bindService(Landroid/content/Intent;Landroid/content/ServiceConnection;I)Z
-
     .line 141
     .line 142
+    invoke-static {}, Lʾˉ/ᴵᴵ;->ˈי()Landroid/content/Context;
+
     .line 143
-    move-result v3
-
     .line 144
-    if-eqz v3, :cond_1
-
     .line 145
+    move-result-object v6
+
     .line 146
-    const/4 v3, 0x0
+    sget-object v7, Lcom/google/android/finsky/billing/iab/InAppBillingService;->ˋ:Landroid/content/ServiceConnection;
 
     .line 147
-    :cond_2
-    iget-boolean v6, p0, Lcom/google/android/finsky/billing/iab/InAppBillingService;->ʽ:Z
-
     .line 148
+    const/4 v8, 0x1
+
     .line 149
-    if-nez v6, :cond_1
+    invoke-virtual {v6, v3, v7, v8}, Landroid/content/Context;->bindService(Landroid/content/Intent;Landroid/content/ServiceConnection;I)Z
 
     .line 150
     .line 151
-    iget-boolean v6, p0, Lcom/google/android/finsky/billing/iab/InAppBillingService;->ʾ:Z
-
     .line 152
+    move-result v3
+
     .line 153
-    if-nez v6, :cond_1
+    if-eqz v3, :cond_1
 
     .line 154
     .line 155
-    new-instance v6, Lʼˏ/ᵢ;
+    const/4 v3, 0x0
 
     .line 156
-    .line 157
-    invoke-direct {v6, v5}, Lʼˏ/ᵢ;-><init>(Ljava/lang/String;)V
+    :cond_2
+    iget-boolean v6, p0, Lcom/google/android/finsky/billing/iab/InAppBillingService;->ʽ:Z
 
+    .line 157
     .line 158
+    if-nez v6, :cond_1
+
     .line 159
     .line 160
-    const-wide/16 v9, 0x1f4
+    iget-boolean v6, p0, Lcom/google/android/finsky/billing/iab/InAppBillingService;->ʾ:Z
 
     .line 161
     .line 162
-    invoke-virtual {v6, v9, v10}, Lʼˏ/ᵢ;->יʿ(J)V
+    if-nez v6, :cond_1
 
     .line 163
     .line 164
-    .line 165
-    add-int/2addr v3, v8
+    new-instance v6, Lʼˏ/ᵢ;
 
+    .line 165
     .line 166
-    const/16 v6, 0x1e
+    invoke-direct {v6, v5}, Lʼˏ/ᵢ;-><init>(Ljava/lang/String;)V
 
     .line 167
     .line 168
-    if-ne v3, v6, :cond_2
-
     .line 169
-    .line 170
-    goto :goto_0
+    const-wide/16 v9, 0x1f4
 
+    .line 170
     .line 171
-    :cond_3
-    const-string p1, "Billing service unavailable on device."
+    invoke-virtual {v6, v9, v10}, Lʼˏ/ᵢ;->יˎ(J)V
 
     .line 172
     .line 173
-    invoke-static {p1}, Lʾˉ/ᴵᴵ;->ˉˎ(Ljava/lang/Object;)V
-
     .line 174
-    .line 175
-    .line 176
-    :cond_4
-    return-void
+    add-int/2addr v3, v8
 
+    .line 175
+    const/16 v6, 0x1e
+
+    .line 176
     .line 177
-    :cond_5
-    new-instance p1, Ljava/lang/IllegalStateException;
+    if-ne v3, v6, :cond_2
 
     .line 178
     .line 179
-    const-string v0, "IAB helper is already set up."
+    goto :goto_0
 
     .line 180
-    .line 181
-    invoke-direct {p1, v0}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
+    :cond_3
+    const-string p1, "Billing service unavailable on device."
 
+    .line 181
     .line 182
+    invoke-static {p1}, Lʾˉ/ᴵᴵ;->ˉˎ(Ljava/lang/Object;)V
+
     .line 183
     .line 184
+    .line 185
+    :cond_4
+    return-void
+
+    .line 186
+    :cond_5
+    new-instance p1, Ljava/lang/IllegalStateException;
+
+    .line 187
+    .line 188
+    const-string v0, "IAB helper is already set up."
+
+    .line 189
+    .line 190
+    invoke-direct {p1, v0}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
+
+    .line 191
+    .line 192
+    .line 193
     goto :goto_2
 
-    .line 185
+    .line 194
     :goto_1
     throw p1
 
-    .line 186
+    .line 195
     :goto_2
     goto :goto_1
 .end method
@@ -1044,7 +1061,7 @@
 
     .line 93
     .line 94
-    invoke-static {v4}, Lʼˏ/ᵢ;->ˊٴ(Z)V
+    invoke-static {v4}, Lʼˏ/ᵢ;->ˊⁱ(Z)V
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 

@@ -398,7 +398,7 @@
 
     .line 169
     .line 170
-    invoke-static {v9}, Lʼˏ/ᵢ;->ˑʽ(Ljava/lang/String;)V
+    invoke-static {v9}, Lʼˏ/ᵢ;->ˑˊ(Ljava/lang/String;)V
 
     .line 171
     .line 172
@@ -517,7 +517,7 @@
     .line 231
     .line 232
     .line 233
-    invoke-static {v1}, Lʼˏ/ᵢ;->ˈי(I)Ljava/lang/String;
+    invoke-static {v1}, Lʼˏ/ᵢ;->ˈᐧ(I)Ljava/lang/String;
 
     .line 234
     .line 235

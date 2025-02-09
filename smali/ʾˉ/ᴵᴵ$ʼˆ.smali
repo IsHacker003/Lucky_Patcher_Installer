@@ -119,7 +119,7 @@
 
     .line 33
     .line 34
-    sget-object v0, Lʾˉ/ᴵᴵ;->ˊˈ:Lʾˊ/ʼ;
+    sget-object v0, Lʾˉ/ᴵᴵ;->ˊˉ:Lʾˊ/ʼ;
 
     .line 35
     .line 36
@@ -147,7 +147,7 @@
 
     .line 47
     .line 48
-    sget-object v0, Lʾˉ/ᴵᴵ;->ˊˈ:Lʾˊ/ʼ;
+    sget-object v0, Lʾˉ/ᴵᴵ;->ˊˉ:Lʾˊ/ʼ;
 
     .line 49
     .line 50
@@ -175,7 +175,7 @@
     .line 58
     :cond_0
     :goto_0
-    sput-object v2, Lʾˉ/ᴵᴵ;->ˊˈ:Lʾˊ/ʼ;
+    sput-object v2, Lʾˉ/ᴵᴵ;->ˊˉ:Lʾˊ/ʼ;
 
     .line 59
     .line 60
@@ -204,7 +204,7 @@
 
     .line 71
     :cond_2
-    sget-object v0, Lʾˉ/ᴵᴵ;->ˊʿ:Lʾˊ/ˋ;
+    sget-object v0, Lʾˉ/ᴵᴵ;->ˊˆ:Lʾˊ/ˋ;
 
     .line 72
     .line 73
@@ -217,7 +217,7 @@
     .line 76
     .line 77
     .line 78
-    sput-object v2, Lʾˉ/ᴵᴵ;->ˊʿ:Lʾˊ/ˋ;
+    sput-object v2, Lʾˉ/ᴵᴵ;->ˊˆ:Lʾˊ/ˋ;
 
     .line 79
     .line 80
@@ -225,7 +225,7 @@
 
     .line 81
     :cond_3
-    sget-object v0, Lʾˉ/ᴵᴵ;->ˊˆ:Lʾˊ/ˆ;
+    sget-object v0, Lʾˉ/ᴵᴵ;->ˊˈ:Lʾˊ/ˆ;
 
     .line 82
     .line 83
@@ -238,7 +238,7 @@
     .line 86
     .line 87
     .line 88
-    sput-object v2, Lʾˉ/ᴵᴵ;->ˊˆ:Lʾˊ/ˆ;
+    sput-object v2, Lʾˉ/ᴵᴵ;->ˊˈ:Lʾˊ/ˆ;
 
     .line 89
     .line 90
@@ -288,7 +288,7 @@
 
     .line 111
     :cond_6
-    sget-object v0, Lʾˉ/ᴵᴵ;->ˊʾ:Lʾˊ/ˊ;
+    sget-object v0, Lʾˉ/ᴵᴵ;->ˊʿ:Lʾˊ/ˊ;
 
     .line 112
     .line 113
@@ -301,7 +301,7 @@
     .line 116
     .line 117
     .line 118
-    sput-object v2, Lʾˉ/ᴵᴵ;->ˊʾ:Lʾˊ/ˊ;
+    sput-object v2, Lʾˉ/ᴵᴵ;->ˊʿ:Lʾˊ/ˊ;
 
     .line 119
     .line 120

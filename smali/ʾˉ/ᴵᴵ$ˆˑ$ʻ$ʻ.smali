@@ -145,12 +145,12 @@
     .line 44
     .line 45
     :cond_1
-    const v0, 0x7f110198
+    const v0, 0x7f11019a
 
     .line 46
     .line 47
     .line 48
-    invoke-static {v0}, Lʼˏ/ᵢ;->ˈי(I)Ljava/lang/String;
+    invoke-static {v0}, Lʼˏ/ᵢ;->ˈᐧ(I)Ljava/lang/String;
 
     .line 49
     .line 50
@@ -167,12 +167,12 @@
     .line 55
     .line 56
     .line 57
-    const v2, 0x7f110339
+    const v2, 0x7f11033b
 
     .line 58
     .line 59
     .line 60
-    invoke-static {v2}, Lʼˏ/ᵢ;->ˈי(I)Ljava/lang/String;
+    invoke-static {v2}, Lʼˏ/ᵢ;->ˈᐧ(I)Ljava/lang/String;
 
     .line 61
     .line 62
@@ -236,12 +236,12 @@
     .line 91
     .line 92
     .line 93
-    const v2, 0x7f110336
+    const v2, 0x7f110338
 
     .line 94
     .line 95
     .line 96
-    invoke-static {v2}, Lʼˏ/ᵢ;->ˈי(I)Ljava/lang/String;
+    invoke-static {v2}, Lʼˏ/ᵢ;->ˈᐧ(I)Ljava/lang/String;
 
     .line 97
     .line 98
@@ -303,7 +303,7 @@
 
     .line 128
     .line 129
-    invoke-virtual {v0, v1, v2}, Lʼˏ/ᵢ;->יʿ(J)V
+    invoke-virtual {v0, v1, v2}, Lʼˏ/ᵢ;->יˎ(J)V
 
     .line 130
     .line 131

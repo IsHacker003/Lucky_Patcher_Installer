@@ -104,7 +104,7 @@
 
     .line 30
     .line 31
-    invoke-virtual {v2, v5, v6}, Lʼˏ/ᵢ;->יʿ(J)V
+    invoke-virtual {v2, v5, v6}, Lʼˏ/ᵢ;->יˎ(J)V
 
     .line 32
     .line 33
@@ -199,14 +199,14 @@
     .line 81
     .line 82
     .line 83
-    sget-object v1, Lru/aaaaaccc/installer/App;->MainActivity:Landroid/app/Activity;
+    sget-object v1, Lru/aaaaaccd/installer/App;->MainActivity:Landroid/app/Activity;
 
     .line 84
     .line 85
     const/4 v2, 0x0
 
     .line 86
-    invoke-static {v1, v0, v2}, Lʼˏ/ᵢ;->ˑᵔ(Landroid/app/Activity;Ljava/lang/String;Ljava/lang/Integer;)V
+    invoke-static {v1, v0, v2}, Lʼˏ/ᵢ;->יʻ(Landroid/app/Activity;Ljava/lang/String;Ljava/lang/Integer;)V
     :try_end_0
     .catch Landroid/content/pm/PackageManager$NameNotFoundException; {:try_start_0 .. :try_end_0} :catch_0
 

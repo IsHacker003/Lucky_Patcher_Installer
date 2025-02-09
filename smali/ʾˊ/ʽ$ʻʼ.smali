@@ -44,7 +44,7 @@
 
     .line 4
     .line 5
-    sget v0, Lʾˉ/ᴵᴵ;->ˈˏ:I
+    sget v0, Lʾˉ/ᴵᴵ;->ˈˑ:I
 
     .line 6
     .line 7
@@ -83,7 +83,7 @@
     .line 24
     .line 25
     :cond_0
-    sget v0, Lʾˉ/ᴵᴵ;->ˈˏ:I
+    sget v0, Lʾˉ/ᴵᴵ;->ˈˑ:I
 
     .line 26
     .line 27

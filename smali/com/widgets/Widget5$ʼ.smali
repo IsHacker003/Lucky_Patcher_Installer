@@ -106,7 +106,7 @@
     .line 19
     .line 20
     .line 21
-    const-class v4, Ljavaroot/utils/ʻˋ;
+    const-class v4, Ljavaroot/utils/ʻˎ;
 
     .line 22
     .line 23
@@ -198,12 +198,12 @@
     .line 69
     .line 70
     .line 71
-    invoke-static {v0}, Lʼˏ/ᵢ;->ˊٴ(Z)V
+    invoke-static {v0}, Lʼˏ/ᵢ;->ˊⁱ(Z)V
 
     .line 72
     .line 73
     .line 74
-    invoke-static {v0}, Lʼˏ/ᵢ;->ˊᴵ(Z)V
+    invoke-static {v0}, Lʼˏ/ᵢ;->ˊﹶ(Z)V
 
     .line 75
     .line 76
@@ -212,7 +212,7 @@
 
     .line 78
     .line 79
-    invoke-static {v0}, Lʼˏ/ᵢ;->ˊˑ(Ljava/lang/String;)V
+    invoke-static {v0}, Lʼˏ/ᵢ;->ˊᵎ(Ljava/lang/String;)V
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 

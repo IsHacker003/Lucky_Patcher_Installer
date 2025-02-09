@@ -70,7 +70,7 @@
 
     .line 13
     :pswitch_1
-    invoke-static {}, Lʼˏ/ᵢ;->ˋˎ()V
+    invoke-static {}, Lʼˏ/ᵢ;->ˋᐧ()V
 
     .line 14
     .line 15
@@ -79,7 +79,7 @@
 
     .line 17
     :pswitch_2
-    invoke-static {}, Lʼˏ/ᵢ;->ˋˊ()V
+    invoke-static {}, Lʼˏ/ᵢ;->ˋٴ()V
 
     .line 18
     .line 19
@@ -88,7 +88,7 @@
 
     .line 21
     :pswitch_3
-    invoke-static {}, Lʼˏ/ᵢ;->ˋˉ()V
+    invoke-static {}, Lʼˏ/ᵢ;->ˋـ()V
 
     .line 22
     .line 23
@@ -98,7 +98,7 @@
 
     .line 25
     :pswitch_data_0
-    .packed-switch 0x7f110414
+    .packed-switch 0x7f110416
         :pswitch_3
         :pswitch_0
         :pswitch_0

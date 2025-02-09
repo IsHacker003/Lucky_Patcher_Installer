@@ -44,13 +44,13 @@
     .locals 2
 
     .line 1
-    const v0, 0x7f1104d3
+    const v0, 0x7f1104d5
 
     .line 2
     .line 3
     .line 4
     :try_start_0
-    invoke-static {v0}, Lʼˏ/ᵢ;->ˈי(I)Ljava/lang/String;
+    invoke-static {v0}, Lʼˏ/ᵢ;->ˈᐧ(I)Ljava/lang/String;
 
     .line 5
     .line 6
@@ -58,12 +58,12 @@
     move-result-object v0
 
     .line 8
-    const v1, 0x7f1104bb
+    const v1, 0x7f1104bd
 
     .line 9
     .line 10
     .line 11
-    invoke-static {v1}, Lʼˏ/ᵢ;->ˈי(I)Ljava/lang/String;
+    invoke-static {v1}, Lʼˏ/ᵢ;->ˈᐧ(I)Ljava/lang/String;
 
     .line 12
     .line 13

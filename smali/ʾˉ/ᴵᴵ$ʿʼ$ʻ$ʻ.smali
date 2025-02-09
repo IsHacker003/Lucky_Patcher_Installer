@@ -56,7 +56,7 @@
 
     .line 6
     .line 7
-    invoke-static {v0, v1, v1}, Lʼˏ/ᵢ;->ˑˎ(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1, v1}, Lʼˏ/ᵢ;->ˑᴵ(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;)V
 
     .line 8
     .line 9

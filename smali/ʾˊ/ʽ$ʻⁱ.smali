@@ -67,11 +67,11 @@
 
     .line 8
     .line 9
-    const-class v2, Ljavaroot/utils/ˎˎ;
+    const-class v2, Ljavaroot/utils/ˑˑ;
 
     .line 10
     .line 11
-    invoke-static {v2, v1}, Lʼˏ/ᵢ;->ˎʽ(Ljava/lang/Class;[Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v2, v1}, Lʼˏ/ᵢ;->ˎˊ(Ljava/lang/Class;[Ljava/lang/String;)Ljava/lang/String;
 
     .line 12
     .line 13
@@ -217,7 +217,7 @@
     .line 85
     .line 86
     .line 87
-    invoke-static {v2}, Lʼˏ/ᵢ;->ʾˑ(Ljava/io/File;)Ljava/io/File;
+    invoke-static {v2}, Lʼˏ/ᵢ;->ʾـ(Ljava/io/File;)Ljava/io/File;
 
     .line 88
     .line 89
@@ -561,7 +561,7 @@
     move-result-object v7
 
     .line 256
-    invoke-static {v7}, Lʼˏ/ᵢ;->ʿᵎ(Ljava/io/File;)Ljava/lang/String;
+    invoke-static {v7}, Lʼˏ/ᵢ;->ʿⁱ(Ljava/io/File;)Ljava/lang/String;
 
     .line 257
     .line 258
@@ -581,7 +581,7 @@
     move-result-object v7
 
     .line 266
-    invoke-static {v7}, Lʼˏ/ᵢ;->ˈᵔ(Ljava/io/File;)Ljava/lang/String;
+    invoke-static {v7}, Lʼˏ/ᵢ;->ˈﹶ(Ljava/io/File;)Ljava/lang/String;
 
     .line 267
     .line 268
@@ -601,7 +601,7 @@
     move-result-object v6
 
     .line 276
-    invoke-static {v6}, Lʼˏ/ᵢ;->ˈᵎ(Ljava/io/File;)I
+    invoke-static {v6}, Lʼˏ/ᵢ;->ˈﹳ(Ljava/io/File;)I
 
     .line 277
     .line 278

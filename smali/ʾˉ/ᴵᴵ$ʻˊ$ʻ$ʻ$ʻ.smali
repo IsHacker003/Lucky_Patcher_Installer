@@ -68,12 +68,12 @@
     move-result-object v1
 
     .line 13
-    const v2, 0x7f1104d3
+    const v2, 0x7f1104d5
 
     .line 14
     .line 15
     .line 16
-    invoke-static {v2}, Lʼˏ/ᵢ;->ˈי(I)Ljava/lang/String;
+    invoke-static {v2}, Lʼˏ/ᵢ;->ˈᐧ(I)Ljava/lang/String;
 
     .line 17
     .line 18
@@ -81,12 +81,12 @@
     move-result-object v2
 
     .line 20
-    const v3, 0x7f110397
+    const v3, 0x7f110399
 
     .line 21
     .line 22
     .line 23
-    invoke-static {v3}, Lʼˏ/ᵢ;->ˈי(I)Ljava/lang/String;
+    invoke-static {v3}, Lʼˏ/ᵢ;->ˈᐧ(I)Ljava/lang/String;
 
     .line 24
     .line 25

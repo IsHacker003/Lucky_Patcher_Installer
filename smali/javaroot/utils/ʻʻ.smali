@@ -25,7 +25,7 @@
     .line 4
     .line 5
     .line 6
-    invoke-static {v0}, Lʼˏ/ᵢ;->ˑʿ(Ljava/lang/Object;)V
+    invoke-static {v0}, Lʼˏ/ᵢ;->ˑˎ(Ljava/lang/Object;)V
 
     .line 7
     .line 8
@@ -75,7 +75,7 @@
     .line 30
     .line 31
     .line 32
-    invoke-virtual {p0, v0}, Lʼˏ/ᵢ;->ˎᐧ(Ljava/io/File;)V
+    invoke-virtual {p0, v0}, Lʼˏ/ᵢ;->ˎﹳ(Ljava/io/File;)V
 
     .line 33
     .line 34
@@ -118,7 +118,7 @@
     .line 53
     .line 54
     .line 55
-    invoke-static {}, Lʼˏ/ᵢ;->ʼˎ()V
+    invoke-static {}, Lʼˏ/ᵢ;->ʼˑ()V
 
     .line 56
     .line 57
@@ -154,7 +154,7 @@
     .line 72
     .line 73
     :try_start_0
-    invoke-static {v0, v1}, Lʼˏ/ᵢ;->ʻˋ(Ljava/io/File;Ljava/io/File;)V
+    invoke-static {v0, v1}, Lʼˏ/ᵢ;->ʻˊ(Ljava/io/File;Ljava/io/File;)V
     :try_end_0
     .catch Ljava/lang/IllegalArgumentException; {:try_start_0 .. :try_end_0} :catch_1
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
@@ -262,7 +262,7 @@
     .line 122
     .line 123
     .line 124
-    invoke-virtual {p0, v1}, Lʼˏ/ᵢ;->ˎᴵ(Ljava/io/File;)V
+    invoke-virtual {p0, v1}, Lʼˏ/ᵢ;->ˎﹶ(Ljava/io/File;)V
 
     .line 125
     .line 126
@@ -276,7 +276,7 @@
     .line 130
     .line 131
     .line 132
-    invoke-virtual {p0, v1}, Lʼˏ/ᵢ;->ˎᐧ(Ljava/io/File;)V
+    invoke-virtual {p0, v1}, Lʼˏ/ᵢ;->ˎﹳ(Ljava/io/File;)V
 
     .line 133
     .line 134
@@ -317,7 +317,7 @@
     .line 152
     .line 153
     :goto_1
-    invoke-static {}, Lʼˏ/ᵢ;->ʼˎ()V
+    invoke-static {}, Lʼˏ/ᵢ;->ʼˑ()V
 
     .line 154
     .line 155

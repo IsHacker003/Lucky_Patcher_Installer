@@ -64,7 +64,7 @@
 
     .line 4
     .line 5
-    invoke-static {v0}, Lʼˏ/ᵢ;->ˈʿ(Ljava/lang/String;)Ljava/util/ArrayList;
+    invoke-static {v0}, Lʼˏ/ᵢ;->ˈˊ(Ljava/lang/String;)Ljava/util/ArrayList;
 
     .line 6
     .line 7
@@ -132,7 +132,7 @@
     const/4 v3, 0x0
 
     .line 39
-    invoke-static {v3, v0, v1, v2, v2}, Lʼˏ/ᵢ;->ˉˊ(Ljava/io/File;Ljava/util/ArrayList;Ljava/lang/String;ZZ)Ljava/lang/String;
+    invoke-static {v3, v0, v1, v2, v2}, Lʼˏ/ᵢ;->ˉˑ(Ljava/io/File;Ljava/util/ArrayList;Ljava/lang/String;ZZ)Ljava/lang/String;
 
     .line 40
     .line 41

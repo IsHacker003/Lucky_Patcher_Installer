@@ -428,9 +428,9 @@
         0x7f110120 -> :sswitch_6
         0x7f110122 -> :sswitch_5
         0x7f110124 -> :sswitch_4
-        0x7f110479 -> :sswitch_3
-        0x7f11047d -> :sswitch_2
-        0x7f11047f -> :sswitch_1
-        0x7f110486 -> :sswitch_0
+        0x7f11047b -> :sswitch_3
+        0x7f11047f -> :sswitch_2
+        0x7f110481 -> :sswitch_1
+        0x7f110488 -> :sswitch_0
     .end sparse-switch
 .end method

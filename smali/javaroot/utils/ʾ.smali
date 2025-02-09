@@ -29,7 +29,7 @@
     const/4 v3, 0x0
 
     .line 2
-    invoke-static {v3}, Lʼˏ/ᵢ;->ˑʿ(Ljava/lang/Object;)V
+    invoke-static {v3}, Lʼˏ/ᵢ;->ˑˎ(Ljava/lang/Object;)V
 
     .line 3
     .line 4
@@ -151,7 +151,7 @@
 
     .line 62
     .line 63
-    invoke-virtual {v13, v0, v4, v14}, Lʼˏ/ᵢ;->ʼᵎ(Ljava/util/ArrayList;Ljava/io/File;Ljava/lang/String;)V
+    invoke-virtual {v13, v0, v4, v14}, Lʼˏ/ᵢ;->ʼᵢ(Ljava/util/ArrayList;Ljava/io/File;Ljava/lang/String;)V
 
     .line 64
     .line 65
@@ -1612,7 +1612,7 @@
     .line 740
     .line 741
     :cond_d
-    invoke-static {}, Lʼˏ/ᵢ;->ʼˎ()V
+    invoke-static {}, Lʼˏ/ᵢ;->ʼˑ()V
 
     .line 742
     .line 743

@@ -92,7 +92,7 @@
 
     .line 21
     .line 22
-    invoke-static {p1}, Lʼˏ/ᵢ;->ʾˑ(Ljava/io/File;)Ljava/io/File;
+    invoke-static {p1}, Lʼˏ/ᵢ;->ʾـ(Ljava/io/File;)Ljava/io/File;
 
     .line 23
     .line 24

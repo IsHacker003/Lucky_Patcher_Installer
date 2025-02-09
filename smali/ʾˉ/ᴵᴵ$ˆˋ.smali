@@ -97,7 +97,7 @@
 
     .line 26
     .line 27
-    invoke-static {v0}, Lʼˏ/ᵢ;->ˊˑ(Ljava/lang/String;)V
+    invoke-static {v0}, Lʼˏ/ᵢ;->ˊᵎ(Ljava/lang/String;)V
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 

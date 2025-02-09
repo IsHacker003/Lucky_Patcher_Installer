@@ -17,7 +17,7 @@
 # static fields
 .field public static final common_google_play_services_unknown_issue:I = 0x7f1100a6
 
-.field public static final status_bar_notification_info_overflow:I = 0x7f110474
+.field public static final status_bar_notification_info_overflow:I = 0x7f110476
 
 
 # direct methods

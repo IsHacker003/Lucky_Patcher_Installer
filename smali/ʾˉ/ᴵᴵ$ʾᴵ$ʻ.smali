@@ -45,7 +45,7 @@
 
     .line 1
     :try_start_0
-    sget-object v0, Lʾˉ/ᴵᴵ;->ʼﾞ:Lru/aaaaaccc/installer/MainActivity;
+    sget-object v0, Lʾˉ/ᴵᴵ;->ʼﾞ:Lru/aaaaaccd/installer/MainActivity;
 
     .line 2
     .line 3

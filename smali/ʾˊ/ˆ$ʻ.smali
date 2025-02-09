@@ -479,7 +479,7 @@
 
     .line 201
     .line 202
-    invoke-static {}, Lʼˏ/ᵢ;->ˋʻ()V
+    invoke-static {}, Lʼˏ/ᵢ;->ˋˈ()V
 
     .line 203
     .line 204

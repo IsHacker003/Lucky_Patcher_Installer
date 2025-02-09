@@ -284,7 +284,7 @@
 
     .line 110
     .line 111
-    invoke-static {v9}, Lʼˏ/ᵢ;->ˆٴ([Ljava/lang/String;)Lʼˏ/ʽ;
+    invoke-static {v9}, Lʼˏ/ᵢ;->ˆᵎ([Ljava/lang/String;)Lʼˏ/ʽ;
 
     .line 112
     .line 113

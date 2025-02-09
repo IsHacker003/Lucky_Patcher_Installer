@@ -52,7 +52,7 @@
 
     .line 4
     .line 5
-    invoke-static {v0, v1}, Lʼˏ/ᵢ;->ˋי(Ljava/lang/String;Ljava/lang/String;)Z
+    invoke-static {v0, v1}, Lʼˏ/ᵢ;->ˋᵔ(Ljava/lang/String;Ljava/lang/String;)Z
 
     .line 6
     .line 7
@@ -88,7 +88,7 @@
     .line 23
     .line 24
     .line 25
-    const-class v2, Ljavaroot/utils/ʻˆ;
+    const-class v2, Ljavaroot/utils/ʻˈ;
 
     .line 26
     .line 27
@@ -231,7 +231,7 @@
     .line 95
     .line 96
     :goto_1
-    invoke-static {}, Lʼˏ/ᵢ;->ˋˉ()V
+    invoke-static {}, Lʼˏ/ᵢ;->ˋـ()V
 
     .line 97
     .line 98

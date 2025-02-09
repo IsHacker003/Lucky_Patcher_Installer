@@ -52,6 +52,7 @@
     <string name="android_patches_dialog_remove_patch_3">移除破解“%1s”</string>
     <string name="android_patches_dialog_remove_patches_1_and_2" formatted="false">移除破解“%1s”与“%2s”</string>
     <string name="android_patches_dialog_use_magisk_module_for_patches">使用 Magisk 模块应用破解</string>
+    <string name="android_patches_dialog_use_magisk_module_zygisk_for_patches">使用 Magisk 模块 - Zygisk（由 vova7878@4pda 提供）</string>
     <string name="android_patches_for_bootlist">破解Android虚拟机缓存dalvik-cache</string>
     <string name="android_patches_for_bootlist_status">重启后重新应用Android核心破解</string>
     <string name="android_patches_xposed_need_message">请使用 Xposed（或 LSPosed）应用该破解</string>
@@ -166,6 +167,7 @@
     <string name="close">关闭</string>
     <string name="collect_logs">正在收集日志...</string>
     <string name="common_google_play_services_unknown_issue">%1$s无法访问 Google Play 服务，请重试。</string>
+    <string name="context_add_app_for_zygisk_purchaces">启用此应用的模拟购买（zygisk）</string>
     <string name="context_automodeslvl">自动模式</string>
     <string name="context_backup_apk">备份 APK 文件</string>
     <string name="context_backup_apk_selected_apps">备份选定应用 APK</string>
@@ -198,6 +200,7 @@ Android 4.x 的设备可能无法使用"</string>
 （不稳定模式）"</string>
     <string name="context_hide_lp">隐藏幸运破解器</string>
     <string name="context_hide_lp_descr">尝试向其他应用隐藏幸运破解器。会消耗系统资源，请仅在需要时使用。</string>
+    <string name="context_ignor_app_for_zygisk_purchaces">禁用此应用的模拟购买（zygisk）</string>
     <string name="context_install">安装</string>
     <string name="context_install_as_system">安装为系统应用</string>
     <string name="context_integrate_dalvik">将虚拟机代码整合到已安装的应用中</string>
@@ -376,7 +379,7 @@ Android 4 或以上的设备可能无法使用"</string>
     <string name="customdescr">显示全部包含自定义破解的应用</string>
     <string name="customtitle">包含自定义破解的应用</string>
     <string name="dalvik_cache_size">虚拟机缓存dalvik-cache大小：</string>
-    <string name="damadged_apk">应用程序文件已损坏，可以读取。</string>
+    <string name="damadged_apk">应用程序文件已损坏，无法读取。</string>
     <string name="data_dir_size">数据目录大小：</string>
     <string name="date_creation_patch">自定义破解创建日期</string>
     <string name="days_on_up">置顶最近安装的应用</string>
@@ -389,6 +392,8 @@ Android 4 或以上的设备可能无法使用"</string>
     <string name="delete_system_app_for_user">为当前用户卸载这个系统应用</string>
     <string name="delete_system_app_for_user_message">您要为当前用户卸载系统应用“%s”吗？</string>
     <string name="describe_for_Proxy_gp">（仅带有授权验证与内购模拟功能的迷你版本）</string>
+    <string name="dialog_android_art_update_remove">确定要移除 apex 模块 com.google.android.art 的更新吗？</string>
+    <string name="dialog_android_art_update_remove_no_update">未找到 apex 模块 com.google.android.art 的更新。</string>
     <string name="dialog_end_orig_resign_app">已成功使用原始签名为 %1$s 签名。已签名的文件位于 %2$s。</string>
     <string name="dialog_end_resign_app">%1$s 已成功使用测试签名。已签名的文件位于 %2$s。</string>
     <string name="dialog_system">此为Android系统应用。对其执行任何操作时，请务必谨慎，因为这可能使您的设备无法启动。您是否进行过备份？是否对此应用程序进行破解？</string>
@@ -519,7 +524,13 @@ Android 4 或以上的设备可能无法使用"</string>
 （以便后续修复“Android 核心破解”应用失败）"</string>
     <string name="generate_log_result_message_conscrypt.jar">"日志创建成功并保存到 /sdcard/conscrypt.oat.txt。请将文件上传到网盘或压缩为 zip，然后发送到 lp.chelpus@gmail.com。
 文件大小："</string>
+    <string name="generate_log_result_message_core_jar_zip">"日志创建并存储在 /sdcard/boot.oat.txt.zip 中。通过邮件 lp.chelpus@gmail.com 发送给我。
+文件大小："</string>
     <string name="generate_log_result_message_core_oj.jar">"日志创建成功并保存到 /sdcard/core-oj.oat.txt。请将其上传到网盘，或压缩为 ZIP 文件，并通过邮件发送到lp.chelpus@gmail.com。
+文件大小："</string>
+    <string name="generate_log_result_message_framework_zip">"日志创建并存储在 /sdcard/framework.txt.zip 中。通过邮件 lp.chelpus@gmail.com 发送给我。
+文件大小："</string>
+    <string name="generate_log_result_message_services_odex_zip">"日志创建并存储在 /sdcard/services.odex.txt.zip 中。通过邮件 lp.chelpus@gmail.com 发送给我。
 文件大小："</string>
     <string name="go_to_file_path">转到文件</string>
     <string name="goodresult">"% 的运气！
@@ -1045,7 +1056,9 @@ Google Play 商店修改版说明：
 （需要占用更多内部存储空间）"</string>
     <string name="odex_all_system_app_message">是否 ODEX 化所有系统应用？</string>
     <string name="odexed_not_all_apps">/system 分区可能空间不足，部分系统应用未被 ODEX 化。</string>
+    <string name="off">关</string>
     <string name="ok">确定</string>
+    <string name="on">开</string>
     <string name="on_top_apps_marker">新</string>
     <string name="open_to_GP">在 Google Play 商店中打开</string>
     <string name="option_SELinux_permissive">设置 SELinux 为 Permissive</string>
@@ -1158,6 +1171,7 @@ Google Play 商店修改版说明：
     <string name="remodexerror">无法找到此应用的虚拟机缓存。</string>
     <string name="remove_all_saved_purchases">移除所有已保存的内购</string>
     <string name="remove_all_saved_purchases_message">是否删除幸运破解器保存的所有内购？</string>
+    <string name="remove_android_art_update">卸载 apex 模块 com.google.android.art 的更新</string>
     <string name="removefixes">"删除所有 ODEX 文件
  包含（/data/app 和 /system/app）"</string>
     <string name="reset_dialog_settings">重置全部对话框设置</string>

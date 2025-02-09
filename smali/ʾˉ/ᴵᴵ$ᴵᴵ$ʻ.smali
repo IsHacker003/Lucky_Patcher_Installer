@@ -1035,7 +1035,7 @@
     .line 480
     .line 481
     .line 482
-    const-class v8, Ljavaroot/utils/ʻᵢ;
+    const-class v8, Ljavaroot/utils/ʻⁱ;
 
     .line 483
     .line 484

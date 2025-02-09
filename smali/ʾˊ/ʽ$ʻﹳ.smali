@@ -67,7 +67,7 @@
 
     .line 6
     :try_start_0
-    sget-object v2, Lʾˉ/ᴵᴵ;->ʼﾞ:Lru/aaaaaccc/installer/MainActivity;
+    sget-object v2, Lʾˉ/ᴵᴵ;->ʼﾞ:Lru/aaaaaccd/installer/MainActivity;
 
     .line 7
     .line 8
@@ -243,7 +243,7 @@
 
     .line 95
     :goto_0
-    sget-object v2, Lʾˉ/ᴵᴵ;->ʼﾞ:Lru/aaaaaccc/installer/MainActivity;
+    sget-object v2, Lʾˉ/ᴵᴵ;->ʼﾞ:Lru/aaaaaccd/installer/MainActivity;
 
     .line 96
     .line 97

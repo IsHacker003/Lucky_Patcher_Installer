@@ -44,7 +44,7 @@
     .locals 2
 
     .line 1
-    invoke-static {}, Lʼˏ/ᵢ;->ˊʽ()Z
+    invoke-static {}, Lʼˏ/ᵢ;->ˊˉ()Z
 
     .line 2
     .line 3
@@ -52,7 +52,7 @@
     move-result v0
 
     .line 5
-    sput-boolean v0, Lʾˉ/ᴵᴵ;->ˉﾞ:Z
+    sput-boolean v0, Lʾˉ/ᴵᴵ;->ˊʻ:Z
 
     .line 6
     .line 7
@@ -74,7 +74,7 @@
     .line 15
     .line 16
     .line 17
-    sget-boolean v1, Lʾˉ/ᴵᴵ;->ˉﾞ:Z
+    sget-boolean v1, Lʾˉ/ᴵᴵ;->ˊʻ:Z
 
     .line 18
     .line 19

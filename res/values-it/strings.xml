@@ -168,6 +168,7 @@ memoria interna"</string>
     <string name="close">Chiudi</string>
     <string name="collect_logs">Colleziono registri...</string>
     <string name="common_google_play_services_unknown_issue">%1$s sta riscontrando problemi con Google Play Services. Riprova.</string>
+    <string name="context_add_app_for_zygisk_purchaces">"Abilita l'emulazione degli acquisti (zygisk) per quest'app"</string>
     <string name="context_automodeslvl">Modalità Automatica</string>
     <string name="context_backup_apk">Salva il file .apk</string>
     <string name="context_backup_apk_selected_apps">Backup file apk delle app selezionate</string>
@@ -200,6 +201,7 @@ Salvare la firma originale.
 (metodo instabile)"</string>
     <string name="context_hide_lp">Nascondi Lucky Patcher</string>
     <string name="context_hide_lp_descr">Cercate di nascondere Lucky Patcher dalle altre applicazioni. Aumenta il carico del sistema: utilizzare solo se necessario.</string>
+    <string name="context_ignor_app_for_zygisk_purchaces">"Disabilita l'emulazione degli acquisti (zygisk) per quest'app"</string>
     <string name="context_install">Installa</string>
     <string name="context_install_as_system">Installa come applicazione di sistema</string>
     <string name="context_integrate_dalvik">"Integra codice dalvik nell'applicazione già installata"</string>
@@ -378,7 +380,7 @@ Cartella del file:"</string>
     <string name="customdescr">Mostra tutte le app con una patch specifica applicata.</string>
     <string name="customtitle">App con patch specifiche</string>
     <string name="dalvik_cache_size">Dimensione della dalvik-cache:</string>
-    <string name="damadged_apk">"Il file dell'applicazione è danneggiato e può essere letto."</string>
+    <string name="damadged_apk">"Il file dell'applicazione è danneggiato e non può essere letto."</string>
     <string name="data_dir_size">Dimensione della cartella dei dati:</string>
     <string name="date_creation_patch">Data della patch aggiunta</string>
     <string name="days_on_up">Mostra prima le nuove app</string>

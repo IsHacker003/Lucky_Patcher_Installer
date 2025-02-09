@@ -71,7 +71,7 @@
 
     .line 2
     .line 3
-    invoke-static {v0}, Lʼˏ/ᵢ;->ˊˑ(Ljava/lang/String;)V
+    invoke-static {v0}, Lʼˏ/ᵢ;->ˊᵎ(Ljava/lang/String;)V
 
     .line 4
     .line 5
@@ -107,7 +107,7 @@
     .line 21
     .line 22
     .line 23
-    const-class v3, Ljavaroot/utils/ʻˋ;
+    const-class v3, Ljavaroot/utils/ʻˎ;
 
     .line 24
     .line 25
@@ -273,17 +273,17 @@
     .line 109
     .line 110
     .line 111
-    invoke-static {v3}, Lʼˏ/ᵢ;->ˊٴ(Z)V
+    invoke-static {v3}, Lʼˏ/ᵢ;->ˊⁱ(Z)V
 
     .line 112
     .line 113
     .line 114
-    invoke-static {v3}, Lʼˏ/ᵢ;->ˊᴵ(Z)V
+    invoke-static {v3}, Lʼˏ/ᵢ;->ˊﹶ(Z)V
 
     .line 115
     .line 116
     .line 117
-    invoke-static {v0}, Lʼˏ/ᵢ;->ˊˑ(Ljava/lang/String;)V
+    invoke-static {v0}, Lʼˏ/ᵢ;->ˊᵎ(Ljava/lang/String;)V
 
     .line 118
     .line 119

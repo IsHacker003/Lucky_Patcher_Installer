@@ -72,7 +72,7 @@
 
     .line 14
     .line 15
-    invoke-static {v0}, Lʼˏ/ᵢ;->ʾˈ(Ljava/lang/String;)Ljava/util/ArrayList;
+    invoke-static {v0}, Lʼˏ/ᵢ;->ʾˊ(Ljava/lang/String;)Ljava/util/ArrayList;
 
     .line 16
     .line 17
@@ -88,7 +88,7 @@
 
     .line 21
     .line 22
-    invoke-static {v0}, Lʼˏ/ᵢ;->ʽˑ(Ljava/lang/String;)Landroid/content/pm/ApplicationInfo;
+    invoke-static {v0}, Lʼˏ/ᵢ;->ʽـ(Ljava/lang/String;)Landroid/content/pm/ApplicationInfo;
 
     .line 23
     .line 24
@@ -100,7 +100,7 @@
 
     .line 27
     .line 28
-    invoke-static {v0}, Lʼˏ/ᵢ;->ʾˈ(Ljava/lang/String;)Ljava/util/ArrayList;
+    invoke-static {v0}, Lʼˏ/ᵢ;->ʾˊ(Ljava/lang/String;)Ljava/util/ArrayList;
 
     .line 29
     .line 30

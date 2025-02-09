@@ -25,12 +25,12 @@
     .line 4
     .line 5
     .line 6
-    invoke-static {p0}, Lʼˏ/ᵢ;->ˑʿ(Ljava/lang/Object;)V
+    invoke-static {p0}, Lʼˏ/ᵢ;->ˑˎ(Ljava/lang/Object;)V
 
     .line 7
     .line 8
     .line 9
-    invoke-static {}, Lʼˏ/ᵢ;->ˈᵢ()Ljava/util/ArrayList;
+    invoke-static {}, Lʼˏ/ᵢ;->ˈﾞ()Ljava/util/ArrayList;
 
     .line 10
     .line 11
@@ -51,7 +51,7 @@
     .line 18
     .line 19
     .line 20
-    invoke-static {}, Lʼˏ/ᵢ;->ʼˎ()V
+    invoke-static {}, Lʼˏ/ᵢ;->ʼˑ()V
 
     .line 21
     .line 22

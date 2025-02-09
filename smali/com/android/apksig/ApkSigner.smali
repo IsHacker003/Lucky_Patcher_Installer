@@ -2816,7 +2816,7 @@
     .line 89
     sget-object v3, Lcom/android/apksig/ApkSigner;->original_signature_bytes:[B
 
-    invoke-static {v3}, Lʼˏ/ᵢ;->ʾʻ([B)Ljava/util/List;
+    invoke-static {v3}, Lʼˏ/ᵢ;->ʾʽ([B)Ljava/util/List;
 
     move-result-object v3
 
@@ -3579,12 +3579,12 @@
     :try_end_2a
     .catchall {:try_start_2a .. :try_end_2a} :catchall_8
 
-    const v25, 0x7f1103cd
+    const v25, 0x7f1103cf
 
     move-object/from16 v32, v5
 
     :try_start_2b
-    invoke-static/range {v25 .. v25}, Lʼˏ/ᵢ;->ˈי(I)Ljava/lang/String;
+    invoke-static/range {v25 .. v25}, Lʼˏ/ᵢ;->ˈᐧ(I)Ljava/lang/String;
 
     move-result-object v5
 

@@ -232,12 +232,12 @@
     .line 94
     .line 95
     .line 96
-    const v3, 0x7f110426
+    const v3, 0x7f110428
 
     .line 97
     .line 98
     .line 99
-    invoke-static {v3}, Lʼˏ/ᵢ;->ˈי(I)Ljava/lang/String;
+    invoke-static {v3}, Lʼˏ/ᵢ;->ˈᐧ(I)Ljava/lang/String;
 
     .line 100
     .line 101
@@ -277,12 +277,12 @@
     .line 119
     .line 120
     .line 121
-    const v4, 0x7f110422
+    const v4, 0x7f110424
 
     .line 122
     .line 123
     .line 124
-    invoke-static {v4}, Lʼˏ/ᵢ;->ˈי(I)Ljava/lang/String;
+    invoke-static {v4}, Lʼˏ/ᵢ;->ˈᐧ(I)Ljava/lang/String;
 
     .line 125
     .line 126
@@ -368,7 +368,7 @@
 
     .line 169
     .line 170
-    invoke-static {p1, v0, v2}, Lʼˏ/ᵢ;->ʾʿ(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Landroid/text/SpannableString;
+    invoke-static {p1, v0, v2}, Lʼˏ/ᵢ;->ʾˈ(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Landroid/text/SpannableString;
 
     .line 171
     .line 172

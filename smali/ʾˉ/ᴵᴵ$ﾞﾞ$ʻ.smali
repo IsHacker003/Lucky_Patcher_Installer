@@ -44,12 +44,12 @@
     .locals 2
 
     .line 1
-    const v0, 0x7f11029f
+    const v0, 0x7f1102a1
 
     .line 2
     .line 3
     .line 4
-    invoke-static {v0}, Lʼˏ/ᵢ;->ˈי(I)Ljava/lang/String;
+    invoke-static {v0}, Lʼˏ/ᵢ;->ˈᐧ(I)Ljava/lang/String;
 
     .line 5
     .line 6
@@ -62,7 +62,7 @@
     .line 9
     .line 10
     .line 11
-    invoke-static {v1}, Lʼˏ/ᵢ;->ˈי(I)Ljava/lang/String;
+    invoke-static {v1}, Lʼˏ/ᵢ;->ˈᐧ(I)Ljava/lang/String;
 
     .line 12
     .line 13

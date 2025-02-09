@@ -5,7 +5,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lʾˉ/ᴵᴵ;->ˋˏ(Lru/aaaaaccc/installer/MainActivity;)V
+    value = Lʾˉ/ᴵᴵ;->ˋˏ(Lru/aaaaaccd/installer/MainActivity;)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -281,7 +281,7 @@
     move-result v1
 
     .line 114
-    invoke-static {v1}, Lʼˏ/ᵢ;->ˈי(I)Ljava/lang/String;
+    invoke-static {v1}, Lʼˏ/ᵢ;->ˈᐧ(I)Ljava/lang/String;
 
     .line 115
     .line 116
@@ -297,7 +297,7 @@
 
     .line 121
     .line 122
-    invoke-static {v1, v3, v2}, Lʼˏ/ᵢ;->ʾʿ(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Landroid/text/SpannableString;
+    invoke-static {v1, v3, v2}, Lʼˏ/ᵢ;->ʾˈ(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Landroid/text/SpannableString;
 
     .line 123
     .line 124
@@ -1173,21 +1173,21 @@
         0x7f110022 -> :sswitch_11
         0x7f110026 -> :sswitch_10
         0x7f1100c8 -> :sswitch_f
-        0x7f1101b9 -> :sswitch_e
-        0x7f1101f4 -> :sswitch_d
-        0x7f110293 -> :sswitch_c
-        0x7f11030f -> :sswitch_b
-        0x7f11032a -> :sswitch_a
-        0x7f11043c -> :sswitch_9
-        0x7f110454 -> :sswitch_8
-        0x7f1104aa -> :sswitch_7
-        0x7f1104ac -> :sswitch_6
-        0x7f1104ad -> :sswitch_5
-        0x7f1104ae -> :sswitch_4
-        0x7f1104af -> :sswitch_3
-        0x7f1104b3 -> :sswitch_2
-        0x7f1104c1 -> :sswitch_1
-        0x7f1104ef -> :sswitch_0
+        0x7f1101bb -> :sswitch_e
+        0x7f1101f6 -> :sswitch_d
+        0x7f110295 -> :sswitch_c
+        0x7f110311 -> :sswitch_b
+        0x7f11032c -> :sswitch_a
+        0x7f11043e -> :sswitch_9
+        0x7f110456 -> :sswitch_8
+        0x7f1104ac -> :sswitch_7
+        0x7f1104ae -> :sswitch_6
+        0x7f1104af -> :sswitch_5
+        0x7f1104b0 -> :sswitch_4
+        0x7f1104b1 -> :sswitch_3
+        0x7f1104b5 -> :sswitch_2
+        0x7f1104c3 -> :sswitch_1
+        0x7f1104f1 -> :sswitch_0
     .end sparse-switch
 .end method
 

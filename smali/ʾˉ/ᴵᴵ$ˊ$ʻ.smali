@@ -55,12 +55,12 @@
     .locals 6
 
     .line 1
-    const v0, 0x7f11029f
+    const v0, 0x7f1102a1
 
     .line 2
     .line 3
     .line 4
-    invoke-static {v0}, Lʼˏ/ᵢ;->ˈי(I)Ljava/lang/String;
+    invoke-static {v0}, Lʼˏ/ᵢ;->ˈᐧ(I)Ljava/lang/String;
 
     .line 5
     .line 6
@@ -77,12 +77,12 @@
     .line 11
     .line 12
     .line 13
-    const v2, 0x7f1101e8
+    const v2, 0x7f1101ea
 
     .line 14
     .line 15
     .line 16
-    invoke-static {v2}, Lʼˏ/ᵢ;->ˈי(I)Ljava/lang/String;
+    invoke-static {v2}, Lʼˏ/ᵢ;->ˈᐧ(I)Ljava/lang/String;
 
     .line 17
     .line 18

@@ -182,7 +182,7 @@
 
     .line 68
     .line 69
-    invoke-static {v5}, Lʼˏ/ᵢ;->ˊʿ(Ljava/lang/String;)Z
+    invoke-static {v5}, Lʼˏ/ᵢ;->ˊˎ(Ljava/lang/String;)Z
 
     .line 70
     .line 71
@@ -263,7 +263,7 @@
     move-result-object v5
 
     .line 108
-    invoke-static {v5}, Lʼˏ/ᵢ;->ˎʾ(Ljava/lang/String;)V
+    invoke-static {v5}, Lʼˏ/ᵢ;->ˎˋ(Ljava/lang/String;)V
 
     .line 109
     .line 110

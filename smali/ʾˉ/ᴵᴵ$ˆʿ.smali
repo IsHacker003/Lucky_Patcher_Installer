@@ -109,12 +109,12 @@
 
     .line 28
     :cond_0
-    const p1, 0x7f1104d3
+    const p1, 0x7f1104d5
 
     .line 29
     .line 30
     .line 31
-    invoke-static {p1}, Lʼˏ/ᵢ;->ˈי(I)Ljava/lang/String;
+    invoke-static {p1}, Lʼˏ/ᵢ;->ˈᐧ(I)Ljava/lang/String;
 
     .line 32
     .line 33
@@ -122,12 +122,12 @@
     move-result-object p1
 
     .line 35
-    const p2, 0x7f1103f9
+    const p2, 0x7f1103fb
 
     .line 36
     .line 37
     .line 38
-    invoke-static {p2}, Lʼˏ/ᵢ;->ˈי(I)Ljava/lang/String;
+    invoke-static {p2}, Lʼˏ/ᵢ;->ˈᐧ(I)Ljava/lang/String;
 
     .line 39
     .line 40

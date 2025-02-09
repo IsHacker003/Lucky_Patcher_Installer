@@ -32,24 +32,23 @@
     const/4 v1, 0x3
 
     .line 3
-    const/4 v2, 0x0
+    new-instance v2, Ljavaroot/utils/ʻﹶ$ʻ;
 
     .line 4
-    new-instance v3, Ljavaroot/utils/ʻﹶ$ʻ;
-
     .line 5
-    .line 6
-    invoke-direct {v3}, Ljavaroot/utils/ʻﹶ$ʻ;-><init>()V
+    invoke-direct {v2}, Ljavaroot/utils/ʻﹶ$ʻ;-><init>()V
 
+    .line 6
     .line 7
     .line 8
-    .line 9
-    invoke-static {v3}, Lʼˏ/ᵢ;->ˑʿ(Ljava/lang/Object;)V
+    invoke-static {v2}, Lʼˏ/ᵢ;->ˑˎ(Ljava/lang/Object;)V
 
+    .line 9
     .line 10
     .line 11
+    const/4 v2, 0x0
+
     .line 12
-    :try_start_0
     aget-object p0, p0, v2
 
     .line 13
@@ -58,7 +57,7 @@
 
     .line 15
     .line 16
-    invoke-static {}, Lʼˏ/ᵢ;->ˈˊ()Ljava/util/ArrayList;
+    invoke-static {}, Lʼˏ/ᵢ;->ˈˏ()Ljava/util/ArrayList;
 
     .line 17
     .line 18
@@ -101,7 +100,7 @@
     move-result v3
 
     .line 38
-    if-eqz v3, :cond_4
+    if-eqz v3, :cond_3
 
     .line 39
     .line 40
@@ -244,293 +243,141 @@
     goto :goto_1
 
     .line 110
-    :catchall_0
-    move-exception p0
-
-    .line 111
-    goto/16 :goto_3
-
-    .line 112
-    .line 113
     :cond_1
     new-instance v7, Ljava/io/File;
 
-    .line 114
-    .line 115
+    .line 111
+    .line 112
     new-instance v8, Ljava/lang/StringBuilder;
 
+    .line 113
+    .line 114
+    invoke-direct {v8}, Ljava/lang/StringBuilder;-><init>()V
+
+    .line 115
     .line 116
     .line 117
-    invoke-direct {v8}, Ljava/lang/StringBuilder;-><init>()V
+    invoke-virtual {v3}, Ljava/io/File;->getAbsolutePath()Ljava/lang/String;
 
     .line 118
     .line 119
     .line 120
-    invoke-virtual {v3}, Ljava/io/File;->getAbsolutePath()Ljava/lang/String;
-
-    .line 121
-    .line 122
-    .line 123
     move-result-object v9
 
-    .line 124
+    .line 121
     invoke-virtual {v8, v9}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 122
+    .line 123
+    .line 124
+    invoke-virtual {v8, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     .line 125
     .line 126
     .line 127
-    invoke-virtual {v8, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    sget-object v6, Ljavaroot/utils/ʻﹶ;->ʻ:Ljava/lang/String;
 
     .line 128
     .line 129
-    .line 130
-    sget-object v6, Ljavaroot/utils/ʻﹶ;->ʻ:Ljava/lang/String;
+    invoke-virtual {v8, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    .line 130
     .line 131
     .line 132
-    invoke-virtual {v8, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v8}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     .line 133
     .line 134
     .line 135
-    invoke-virtual {v8}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    .line 136
-    .line 137
-    .line 138
     move-result-object v6
 
-    .line 139
+    .line 136
     invoke-direct {v7, v6}, Ljava/io/File;-><init>(Ljava/lang/String;)V
 
-    .line 140
-    .line 141
-    .line 142
+    .line 137
+    .line 138
+    .line 139
     move-object v6, v7
 
-    .line 143
+    .line 140
     :goto_1
     new-instance v7, Ljava/io/File;
 
-    .line 144
-    .line 145
+    .line 141
+    .line 142
     new-instance v8, Ljava/lang/StringBuilder;
 
+    .line 143
+    .line 144
+    invoke-direct {v8}, Ljava/lang/StringBuilder;-><init>()V
+
+    .line 145
     .line 146
     .line 147
-    invoke-direct {v8}, Ljava/lang/StringBuilder;-><init>()V
+    invoke-virtual {v6}, Ljava/io/File;->getAbsolutePath()Ljava/lang/String;
 
     .line 148
     .line 149
     .line 150
-    invoke-virtual {v6}, Ljava/io/File;->getAbsolutePath()Ljava/lang/String;
-
-    .line 151
-    .line 152
-    .line 153
     move-result-object v9
 
-    .line 154
+    .line 151
     invoke-virtual {v8, v9}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 152
+    .line 153
+    .line 154
+    const-string v9, "_backup"
 
     .line 155
     .line 156
-    .line 157
-    const-string v9, "_backup"
+    invoke-virtual {v8, v9}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    .line 157
     .line 158
     .line 159
-    invoke-virtual {v8, v9}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v8}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     .line 160
     .line 161
     .line 162
-    invoke-virtual {v8}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    .line 163
-    .line 164
-    .line 165
     move-result-object v8
 
-    .line 166
+    .line 163
     invoke-direct {v7, v8}, Ljava/io/File;-><init>(Ljava/lang/String;)V
+
+    .line 164
+    .line 165
+    .line 166
+    invoke-virtual {v6}, Ljava/io/File;->exists()Z
 
     .line 167
     .line 168
     .line 169
-    invoke-virtual {v7}, Ljava/io/File;->exists()Z
+    move-result v8
 
     .line 170
-    .line 171
-    .line 172
-    move-result v8
-
-    .line 173
-    if-eqz v8, :cond_3
-
-    .line 174
-    .line 175
-    invoke-virtual {v6}, Ljava/io/File;->exists()Z
-
-    .line 176
-    .line 177
-    .line 178
-    move-result v8
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
-
-    .line 179
     if-eqz v8, :cond_2
 
-    .line 180
-    .line 181
-    :try_start_1
-    new-instance v8, Ljava/lang/StringBuilder;
+    .line 171
+    .line 172
+    invoke-virtual {v6, v7}, Ljava/io/File;->renameTo(Ljava/io/File;)Z
 
-    .line 182
-    .line 183
-    invoke-direct {v8}, Ljava/lang/StringBuilder;-><init>()V
-
-    .line 184
-    .line 185
-    .line 186
-    const-string v9, "delete dir:"
-
-    .line 187
-    .line 188
-    invoke-virtual {v8, v9}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 189
-    .line 190
-    .line 191
-    invoke-virtual {v6}, Ljava/io/File;->getAbsolutePath()Ljava/lang/String;
-
-    .line 192
-    .line 193
-    .line 194
-    move-result-object v9
-
-    .line 195
-    invoke-virtual {v8, v9}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 196
-    .line 197
-    .line 198
-    invoke-virtual {v8}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    .line 199
-    .line 200
-    .line 201
-    move-result-object v8
-
-    .line 202
-    invoke-static {v8}, Lʾˉ/ᴵᴵ;->ˉˎ(Ljava/lang/Object;)V
-
-    .line 203
-    .line 204
-    .line 205
-    new-instance v8, Lʼˏ/ᵢ;
-
-    .line 206
-    .line 207
-    invoke-direct {v8}, Lʼˏ/ᵢ;-><init>()V
-
-    .line 208
-    .line 209
-    .line 210
-    invoke-virtual {v8, v6}, Lʼˏ/ᵢ;->ʼʽ(Ljava/io/File;)V
-    :try_end_1
-    .catch Ljava/io/IOException; {:try_start_1 .. :try_end_1} :catch_0
-    .catchall {:try_start_1 .. :try_end_1} :catchall_0
-
-    .line 211
-    .line 212
-    .line 213
-    goto :goto_2
-
-    .line 214
-    :catch_0
-    move-exception v8
-
-    .line 215
-    :try_start_2
-    invoke-virtual {v8}, Ljava/lang/Throwable;->printStackTrace()V
-
-    .line 216
-    .line 217
-    .line 218
+    .line 173
+    .line 174
+    .line 175
     :cond_2
-    :goto_2
-    new-instance v8, Ljava/lang/StringBuilder;
-
-    .line 219
-    .line 220
-    invoke-direct {v8}, Ljava/lang/StringBuilder;-><init>()V
-
-    .line 221
-    .line 222
-    .line 223
-    const-string v9, "restore data from path:"
-
-    .line 224
-    .line 225
-    invoke-virtual {v8, v9}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 226
-    .line 227
-    .line 228
-    invoke-virtual {v6}, Ljava/io/File;->getAbsolutePath()Ljava/lang/String;
-
-    .line 229
-    .line 230
-    .line 231
-    move-result-object v9
-
-    .line 232
-    invoke-virtual {v8, v9}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 233
-    .line 234
-    .line 235
-    invoke-virtual {v8}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    .line 236
-    .line 237
-    .line 238
-    move-result-object v8
-
-    .line 239
-    invoke-static {v8}, Lʾˉ/ᴵᴵ;->ˉˎ(Ljava/lang/Object;)V
-
-    .line 240
-    .line 241
-    .line 242
-    invoke-virtual {v7, v6}, Ljava/io/File;->renameTo(Ljava/io/File;)Z
-    :try_end_2
-    .catchall {:try_start_2 .. :try_end_2} :catchall_0
-
-    .line 243
-    .line 244
-    .line 245
-    :cond_3
     add-int/2addr v5, v0
 
-    .line 246
-    goto/16 :goto_0
+    .line 176
+    goto :goto_0
 
-    .line 247
-    .line 248
-    :goto_3
-    invoke-virtual {p0}, Ljava/lang/Throwable;->printStackTrace()V
+    .line 177
+    :cond_3
+    invoke-static {}, Lʼˏ/ᵢ;->ʼˑ()V
 
-    .line 249
-    .line 250
-    .line 251
-    :cond_4
-    invoke-static {}, Lʼˏ/ᵢ;->ʼˎ()V
-
-    .line 252
-    .line 253
-    .line 254
+    .line 178
+    .line 179
+    .line 180
     return-void
 .end method

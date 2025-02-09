@@ -155,7 +155,7 @@
     .line 43
     .line 44
     .line 45
-    sget-boolean p2, Lʾˉ/ᴵᴵ;->ˈﹶ:Z
+    sget-boolean p2, Lʾˉ/ᴵᴵ;->ˈﾞ:Z
 
     .line 46
     .line 47

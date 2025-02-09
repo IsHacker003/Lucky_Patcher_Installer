@@ -201,7 +201,7 @@
     .line 74
     .line 75
     .line 76
-    invoke-static {v2, v0}, Lʼˏ/ᵢ;->ˆʿ(Ljava/lang/String;Z)Ljava/lang/String;
+    invoke-static {v2, v0}, Lʼˏ/ᵢ;->ˆˊ(Ljava/lang/String;Z)Ljava/lang/String;
 
     .line 77
     .line 78
@@ -222,7 +222,7 @@
     move-result-object v0
 
     .line 87
-    invoke-static {v0}, Lʼˏ/ᵢ;->ˎʾ(Ljava/lang/String;)V
+    invoke-static {v0}, Lʼˏ/ᵢ;->ˎˋ(Ljava/lang/String;)V
     :try_end_1
     .catch Ljava/lang/Exception; {:try_start_1 .. :try_end_1} :catch_0
 

@@ -65,7 +65,7 @@
 
     .line 4
     .line 5
-    invoke-static {}, Lʼˏ/ᵢ;->ʿᵢ()Ljava/lang/String;
+    invoke-static {}, Lʼˏ/ᵢ;->ʿﹶ()Ljava/lang/String;
 
     .line 6
     .line 7
@@ -123,7 +123,7 @@
 
     .line 33
     .line 34
-    invoke-static {v5}, Lʼˏ/ᵢ;->ʾˊ(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v5}, Lʼˏ/ᵢ;->ʾˎ(Ljava/lang/String;)Ljava/lang/String;
 
     .line 35
     .line 36
@@ -348,7 +348,7 @@
 
     .line 151
     .line 152
-    invoke-virtual {v3, v4, v5}, Lʼˏ/ᵢ;->יʿ(J)V
+    invoke-virtual {v3, v4, v5}, Lʼˏ/ᵢ;->יˎ(J)V
     :try_end_0
     .catch Landroid/content/pm/PackageManager$NameNotFoundException; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -361,7 +361,7 @@
 
     .line 156
     .line 157
-    invoke-static {v3, v1}, Lʼˏ/ᵢ;->ˆʼ(Ljava/lang/String;Z)Ljava/util/ArrayList;
+    invoke-static {v3, v1}, Lʼˏ/ᵢ;->ˆʿ(Ljava/lang/String;Z)Ljava/util/ArrayList;
 
     .line 158
     .line 159
@@ -377,7 +377,7 @@
     move-result-object v3
 
     .line 165
-    sput-object v3, Lʾˉ/ᴵᴵ;->ˊʻ:Ljava/lang/String;
+    sput-object v3, Lʾˉ/ᴵᴵ;->ˊʼ:Ljava/lang/String;
 
     .line 166
     .line 167
@@ -399,7 +399,7 @@
     .line 175
     .line 176
     .line 177
-    sget-object v4, Lʾˉ/ᴵᴵ;->ˊʻ:Ljava/lang/String;
+    sget-object v4, Lʾˉ/ᴵᴵ;->ˊʼ:Ljava/lang/String;
 
     .line 178
     .line 179
@@ -433,11 +433,11 @@
 
     .line 194
     .line 195
-    const-class v0, Ljavaroot/utils/ᵔᵔ;
+    const-class v0, Ljavaroot/utils/יי;
 
     .line 196
     .line 197
-    invoke-static {v0, v1}, Lʼˏ/ᵢ;->ˎʽ(Ljava/lang/Class;[Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v0, v1}, Lʼˏ/ᵢ;->ˎˊ(Ljava/lang/Class;[Ljava/lang/String;)Ljava/lang/String;
 
     .line 198
     .line 199
@@ -457,7 +457,7 @@
     move-result-object v0
 
     .line 207
-    sput-object v0, Lʾˉ/ᴵᴵ;->ˊʼ:Ljava/lang/String;
+    sput-object v0, Lʾˉ/ᴵᴵ;->ˊʽ:Ljava/lang/String;
 
     .line 208
     .line 209
@@ -479,7 +479,7 @@
     .line 217
     .line 218
     .line 219
-    sget-object v1, Lʾˉ/ᴵᴵ;->ˊʼ:Ljava/lang/String;
+    sget-object v1, Lʾˉ/ᴵᴵ;->ˊʽ:Ljava/lang/String;
 
     .line 220
     .line 221

@@ -345,10 +345,10 @@
         0x7f1100c3 -> :sswitch_7
         0x7f1100dc -> :sswitch_6
         0x7f110101 -> :sswitch_5
-        0x7f1102a1 -> :sswitch_4
-        0x7f110329 -> :sswitch_3
-        0x7f11035f -> :sswitch_2
-        0x7f110361 -> :sswitch_1
-        0x7f1104b8 -> :sswitch_0
+        0x7f1102a3 -> :sswitch_4
+        0x7f11032b -> :sswitch_3
+        0x7f110361 -> :sswitch_2
+        0x7f110363 -> :sswitch_1
+        0x7f1104ba -> :sswitch_0
     .end sparse-switch
 .end method

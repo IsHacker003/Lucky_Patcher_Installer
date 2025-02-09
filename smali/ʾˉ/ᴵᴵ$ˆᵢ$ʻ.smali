@@ -52,7 +52,7 @@
 
     .line 4
     .line 5
-    sget-object v0, Lʾˉ/ᴵᴵ;->ʼﾞ:Lru/aaaaaccc/installer/MainActivity;
+    sget-object v0, Lʾˉ/ᴵᴵ;->ʼﾞ:Lru/aaaaaccd/installer/MainActivity;
 
     .line 6
     .line 7
@@ -64,7 +64,7 @@
 
     .line 10
     .line 11
-    sget v2, Lʾˉ/ᴵᴵ;->ˉי:I
+    sget v2, Lʾˉ/ᴵᴵ;->ˉـ:I
 
     .line 12
     .line 13
@@ -76,7 +76,7 @@
     move-result-object v2
 
     .line 17
-    invoke-static {v0, v1, v2}, Lʼˏ/ᵢ;->ˑᵔ(Landroid/app/Activity;Ljava/lang/String;Ljava/lang/Integer;)V
+    invoke-static {v0, v1, v2}, Lʼˏ/ᵢ;->יʻ(Landroid/app/Activity;Ljava/lang/String;Ljava/lang/Integer;)V
 
     .line 18
     .line 19

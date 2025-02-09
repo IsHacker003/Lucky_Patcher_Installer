@@ -63,7 +63,7 @@
     .line 6
     .line 7
     .line 8
-    invoke-static {}, Lʼˏ/ᵢ;->ˋʻ()V
+    invoke-static {}, Lʼˏ/ᵢ;->ˋˈ()V
 
     .line 9
     .line 10
@@ -93,7 +93,7 @@
     const/4 v1, 0x1
 
     .line 23
-    invoke-static {v1, v0, v1}, Lʼˏ/ᵢ;->ˊﾞ(ZZZ)V
+    invoke-static {v1, v0, v1}, Lʼˏ/ᵢ;->ˋˆ(ZZZ)V
 
     .line 24
     .line 25

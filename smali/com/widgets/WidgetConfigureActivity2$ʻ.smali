@@ -240,7 +240,7 @@
     move-result-object v3
 
     .line 94
-    invoke-static {v3}, Lʼˏ/ᵢ;->ʼˊ(Landroid/graphics/drawable/Drawable;)Landroid/graphics/Bitmap;
+    invoke-static {v3}, Lʼˏ/ᵢ;->ʼˎ(Landroid/graphics/drawable/Drawable;)Landroid/graphics/Bitmap;
 
     .line 95
     .line 96

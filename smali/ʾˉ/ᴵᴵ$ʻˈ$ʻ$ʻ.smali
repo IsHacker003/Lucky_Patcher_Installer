@@ -73,7 +73,7 @@
 
     .line 15
     .line 16
-    const v1, 0x7f1104d3
+    const v1, 0x7f1104d5
 
     .line 17
     .line 18
@@ -98,7 +98,7 @@
 
     .line 28
     .line 29
-    const v2, 0x7f11019b
+    const v2, 0x7f11019d
 
     .line 30
     .line 31

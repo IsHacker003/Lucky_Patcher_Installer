@@ -52,7 +52,7 @@
 
     .line 4
     .line 5
-    sput-object v0, Lʾˉ/ᴵᴵ;->ˈˉ:Ljava/lang/String;
+    sput-object v0, Lʾˉ/ᴵᴵ;->ˈˊ:Ljava/lang/String;
 
     .line 6
     .line 7

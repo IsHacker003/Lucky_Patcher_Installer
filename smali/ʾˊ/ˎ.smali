@@ -151,12 +151,12 @@
 
     .line 24
     .line 25
-    const v0, 0x7f1104d2
+    const v0, 0x7f1104d4
 
     .line 26
     .line 27
     .line 28
-    invoke-static {v0}, Lʼˏ/ᵢ;->ˈי(I)Ljava/lang/String;
+    invoke-static {v0}, Lʼˏ/ᵢ;->ˈᐧ(I)Ljava/lang/String;
 
     .line 29
     .line 30
@@ -198,12 +198,12 @@
 
     .line 48
     .line 49
-    const v0, 0x7f1102ff
+    const v0, 0x7f110301
 
     .line 50
     .line 51
     .line 52
-    invoke-static {v0}, Lʼˏ/ᵢ;->ˈי(I)Ljava/lang/String;
+    invoke-static {v0}, Lʼˏ/ᵢ;->ˈᐧ(I)Ljava/lang/String;
 
     .line 53
     .line 54

@@ -112,7 +112,7 @@
     .line 35
     .line 36
     .line 37
-    sput-object p2, Lʾˉ/ᴵᴵ;->ˉˑ:Lʾˉ/ˎ;
+    sput-object p2, Lʾˉ/ᴵᴵ;->ˉי:Lʾˉ/ˎ;
 
     .line 38
     .line 39
@@ -120,7 +120,7 @@
 
     .line 40
     .line 41
-    sget v0, Lʾˉ/ᴵᴵ;->ˉᵢ:I
+    sget v0, Lʾˉ/ᴵᴵ;->ˉⁱ:I
 
     .line 42
     .line 43

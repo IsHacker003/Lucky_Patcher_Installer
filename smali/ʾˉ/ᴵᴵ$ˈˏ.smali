@@ -126,7 +126,7 @@
 
     .line 27
     :cond_1
-    sget-boolean v0, Lʾˉ/ᴵᴵ;->ˈˋ:Z
+    sget-boolean v0, Lʾˉ/ᴵᴵ;->ˈˎ:Z
 
     .line 28
     .line 29

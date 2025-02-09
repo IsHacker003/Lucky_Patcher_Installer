@@ -1070,7 +1070,7 @@
     .line 496
     .line 497
     .line 498
-    const-class v8, Ljavaroot/utils/ʻᵢ;
+    const-class v8, Ljavaroot/utils/ʻⁱ;
 
     .line 499
     .line 500

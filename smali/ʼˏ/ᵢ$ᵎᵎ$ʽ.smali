@@ -44,7 +44,7 @@
     .locals 0
 
     .line 1
-    invoke-static {}, Lʼˏ/ᵢ;->ʼי()Landroid/content/Intent;
+    invoke-static {}, Lʼˏ/ᵢ;->ʼٴ()Landroid/content/Intent;
 
     .line 2
     .line 3
@@ -82,7 +82,7 @@
 
     .line 19
     .line 20
-    invoke-static {p1}, Lʼˏ/ᵢ;->ˏʿ(Ljava/lang/String;)V
+    invoke-static {p1}, Lʼˏ/ᵢ;->ˏˎ(Ljava/lang/String;)V
 
     .line 21
     .line 22

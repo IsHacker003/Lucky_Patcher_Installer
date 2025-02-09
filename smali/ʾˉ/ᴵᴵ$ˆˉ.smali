@@ -167,7 +167,7 @@
     .line 57
     .line 58
     .line 59
-    invoke-static {}, Lru/aaaaaccc/installer/App;->getInstance()Landroid/content/Context;
+    invoke-static {}, Lru/aaaaaccd/installer/App;->getInstance()Landroid/content/Context;
 
     .line 60
     .line 61
@@ -175,7 +175,7 @@
     move-result-object p1
 
     .line 63
-    invoke-static {p1}, Lʼˏ/ᵢ;->ˎᵢ(Landroid/content/Context;)Landroid/content/Context;
+    invoke-static {p1}, Lʼˏ/ᵢ;->ˏʼ(Landroid/content/Context;)Landroid/content/Context;
 
     .line 64
     .line 65

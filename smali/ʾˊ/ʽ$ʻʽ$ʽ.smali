@@ -89,7 +89,7 @@
     .line 21
     .line 22
     .line 23
-    sput v0, Lʾˉ/ᴵᴵ;->ˈˏ:I
+    sput v0, Lʾˉ/ᴵᴵ;->ˈˑ:I
 
     .line 24
     .line 25
@@ -129,7 +129,7 @@
     .line 40
     .line 41
     .line 42
-    sput v0, Lʾˉ/ᴵᴵ;->ˈˏ:I
+    sput v0, Lʾˉ/ᴵᴵ;->ˈˑ:I
 
     .line 43
     .line 44

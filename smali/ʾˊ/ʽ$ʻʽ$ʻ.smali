@@ -77,7 +77,7 @@
     .line 16
     .line 17
     .line 18
-    sput-boolean p2, Lʾˉ/ᴵᴵ;->ˈˎ:Z
+    sput-boolean p2, Lʾˉ/ᴵᴵ;->ˈˏ:Z
 
     .line 19
     .line 20

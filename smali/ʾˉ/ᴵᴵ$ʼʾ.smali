@@ -116,7 +116,7 @@
 
     .line 32
     .line 33
-    invoke-static {v4}, Lʼˏ/ᵢ;->ˉˏ(Lʾˉ/ᵎ;)Z
+    invoke-static {v4}, Lʼˏ/ᵢ;->ˉᐧ(Lʾˉ/ᵎ;)Z
 
     .line 34
     .line 35

@@ -449,7 +449,7 @@
     .line 189
     .line 190
     :cond_3
-    invoke-static {}, Lʼˏ/ᵢ;->ʼˏ()V
+    invoke-static {}, Lʼˏ/ᵢ;->ʼי()V
 
     .line 191
     .line 192

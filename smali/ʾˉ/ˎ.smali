@@ -215,7 +215,7 @@
 
     move-result-object p2
 
-    invoke-static {p1, p2}, Lʼˏ/ᵢ;->ʾי(Lʼˆ/ʽ;Lʼˆ/ʼ;)Landroid/graphics/drawable/Drawable;
+    invoke-static {p1, p2}, Lʼˏ/ᵢ;->ʾٴ(Lʼˆ/ʽ;Lʼˆ/ʼ;)Landroid/graphics/drawable/Drawable;
 
     move-result-object p1
 
@@ -299,7 +299,7 @@
 
     move-result-object v3
 
-    invoke-static {v3, v1}, Lʼˏ/ᵢ;->ʽـ(Ljava/lang/String;I)Landroid/content/pm/PackageInfo;
+    invoke-static {v3, v1}, Lʼˏ/ᵢ;->ʽᐧ(Ljava/lang/String;I)Landroid/content/pm/PackageInfo;
 
     move-result-object v1
     :try_end_3
@@ -362,7 +362,7 @@
 
     move-result-object p2
 
-    invoke-static {p2}, Lʼˏ/ᵢ;->ʽי(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {p2}, Lʼˏ/ᵢ;->ʽٴ(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object p2
 
@@ -381,7 +381,7 @@
 
     move-result-object p2
 
-    invoke-static {p2}, Lʼˏ/ᵢ;->ʽי(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {p2}, Lʼˏ/ᵢ;->ʽٴ(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object p2
 
@@ -430,7 +430,7 @@
 
     move-result-object p3
 
-    invoke-static {p3}, Lʼˏ/ᵢ;->ʼˊ(Landroid/graphics/drawable/Drawable;)Landroid/graphics/Bitmap;
+    invoke-static {p3}, Lʼˏ/ᵢ;->ʼˎ(Landroid/graphics/drawable/Drawable;)Landroid/graphics/Bitmap;
 
     move-result-object p1
     :try_end_6
@@ -541,28 +541,28 @@
     iput-boolean v1, p0, Lʾˉ/ˎ;->ˈ:Z
 
     .line 78
-    invoke-static {p2}, Lʼˏ/ᵢ;->ʽᴵ(Ljava/io/File;)Ljava/lang/String;
+    invoke-static {p2}, Lʼˏ/ᵢ;->ʽᵔ(Ljava/io/File;)Ljava/lang/String;
 
     move-result-object p1
 
     iput-object p1, p0, Lʾˉ/ˎ;->ʻ:Ljava/lang/String;
 
     .line 79
-    invoke-static {p2}, Lʼˏ/ᵢ;->ʽٴ(Ljava/io/File;)Ljava/lang/String;
+    invoke-static {p2}, Lʼˏ/ᵢ;->ʽᴵ(Ljava/io/File;)Ljava/lang/String;
 
     move-result-object p1
 
     iput-object p1, p0, Lʾˉ/ˎ;->ʼ:Ljava/lang/String;
 
     .line 80
-    invoke-static {p2}, Lʼˏ/ᵢ;->ʽᵔ(Ljava/io/File;)Ljava/lang/String;
+    invoke-static {p2}, Lʼˏ/ᵢ;->ʽⁱ(Ljava/io/File;)Ljava/lang/String;
 
     move-result-object p1
 
     iput-object p1, p0, Lʾˉ/ˎ;->ʾ:Ljava/lang/String;
 
     .line 81
-    invoke-static {p2}, Lʼˏ/ᵢ;->ʽᵎ(Ljava/io/File;)Ljava/lang/String;
+    invoke-static {p2}, Lʼˏ/ᵢ;->ʽᵢ(Ljava/io/File;)Ljava/lang/String;
 
     move-result-object p1
 
@@ -580,7 +580,7 @@
 
     .line 82
     :try_start_7
-    invoke-static {p2}, Lʼˏ/ᵢ;->ʿʼ(Ljava/io/File;)Landroid/graphics/drawable/Drawable;
+    invoke-static {p2}, Lʼˏ/ᵢ;->ʿʾ(Ljava/io/File;)Landroid/graphics/drawable/Drawable;
 
     move-result-object p1
 

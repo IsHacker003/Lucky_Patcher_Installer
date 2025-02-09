@@ -406,6 +406,7 @@ Lucky Patcher может работать неправильно."</string>
     <string name="dirr_chg">Папка изменена на:</string>
     <string name="disable_autoupdate">Отключить автообновление.</string>
     <string name="disable_autoupdate_descr">Отключает проверку обновлений в интернете при старте Lucky Patcher.</string>
+    <string name="disable_for_all_apps">Отключить для всех приложений и включать для выбранных</string>
     <string name="disable_inapp_services_google">Cервисы покупок в Google Play Store</string>
     <string name="disable_inapp_services_google_descr">Некоторые приложения падают с критической ошибкой, когда в системе несколько сервисов покупок.</string>
     <string name="disable_license_services_google">Сервисы проверки и выдачи лицензии в Google Play Store</string>
@@ -422,6 +423,7 @@ Lucky Patcher может работать неправильно."</string>
     <string name="download_progress_dialog_message_resume_downloading">Возобновление загрузки</string>
     <string name="empty">Пусто</string>
     <string name="empty_binders">Вы должны создать хотя бы одну виртуальную папку.</string>
+    <string name="enable_for_all_apps">Включить для всех приложений и выключать для выбранных</string>
     <string name="enabled">Включено</string>
     <string name="enabled_package">Приложение включено.</string>
     <string name="enter_manual_path">Ввести путь</string>

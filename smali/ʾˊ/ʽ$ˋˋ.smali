@@ -437,7 +437,7 @@
 
     .line 197
     .line 198
-    invoke-static {p1}, Lʼˏ/ᵢ;->ˈי(I)Ljava/lang/String;
+    invoke-static {p1}, Lʼˏ/ᵢ;->ˈᐧ(I)Ljava/lang/String;
 
     .line 199
     .line 200
@@ -462,7 +462,7 @@
 
     .line 210
     .line 211
-    invoke-static {p1, v0, v5}, Lʼˏ/ᵢ;->ʾʿ(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Landroid/text/SpannableString;
+    invoke-static {p1, v0, v5}, Lʼˏ/ᵢ;->ʾˈ(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Landroid/text/SpannableString;
 
     .line 212
     .line 213

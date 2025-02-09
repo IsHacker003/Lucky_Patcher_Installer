@@ -264,7 +264,7 @@
 
     .line 110
     .line 111
-    invoke-static {v9}, Lʼˏ/ᵢ;->ʾᴵ(Ljava/lang/String;)Ljava/io/File;
+    invoke-static {v9}, Lʼˏ/ᵢ;->ʾᵔ(Ljava/lang/String;)Ljava/io/File;
 
     .line 112
     .line 113
@@ -281,7 +281,7 @@
 
     .line 119
     .line 120
-    invoke-static {v10, v3}, Lʼˏ/ᵢ;->ˆʿ(Ljava/lang/String;Z)Ljava/lang/String;
+    invoke-static {v10, v3}, Lʼˏ/ᵢ;->ˆˊ(Ljava/lang/String;Z)Ljava/lang/String;
 
     .line 121
     .line 122
@@ -316,7 +316,7 @@
     .line 137
     .line 138
     :try_start_1
-    invoke-static {}, Lʼˏ/ᵢ;->ˋˆ()Lorg/json/JSONObject;
+    invoke-static {}, Lʼˏ/ᵢ;->ˋˑ()Lorg/json/JSONObject;
 
     .line 139
     .line 140
@@ -519,13 +519,13 @@
     .line 236
     .line 237
     :cond_3
-    invoke-static {}, Lʼˏ/ᵢ;->ˋʻ()V
+    invoke-static {}, Lʼˏ/ᵢ;->ˋˈ()V
 
     .line 238
     .line 239
     .line 240
     :cond_4
-    invoke-static {v8}, Lʼˏ/ᵢ;->ˋʼ(Landroid/content/pm/PackageInfo;)V
+    invoke-static {v8}, Lʼˏ/ᵢ;->ˋˉ(Landroid/content/pm/PackageInfo;)V
 
     .line 241
     .line 242
@@ -636,7 +636,7 @@
 
     .line 297
     :cond_6
-    const v1, 0x7f110402
+    const v1, 0x7f110404
 
     .line 298
     .line 299
@@ -679,7 +679,7 @@
 
     .line 319
     :cond_7
-    const v1, 0x7f110403
+    const v1, 0x7f110405
 
     .line 320
     .line 321

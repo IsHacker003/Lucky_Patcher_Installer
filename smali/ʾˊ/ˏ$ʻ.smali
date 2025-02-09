@@ -52,7 +52,7 @@
 
     .line 4
     .line 5
-    invoke-static {}, Lʼˏ/ᵢ;->ʼˏ()V
+    invoke-static {}, Lʼˏ/ᵢ;->ʼי()V
 
     .line 6
     .line 7

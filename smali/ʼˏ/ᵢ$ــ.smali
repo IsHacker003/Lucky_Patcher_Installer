@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lʼˏ/ᵢ;->ˑʾ()V
+    value = Lʼˏ/ᵢ;->ˑˋ()V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;

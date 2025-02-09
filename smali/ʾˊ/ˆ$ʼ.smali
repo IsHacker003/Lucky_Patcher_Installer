@@ -80,7 +80,7 @@
     .locals 2
 
     .line 1
-    invoke-static {}, Lʼˏ/ᵢ;->ˊᵔ()Z
+    invoke-static {}, Lʼˏ/ᵢ;->ˋʻ()Z
 
     .line 2
     .line 3

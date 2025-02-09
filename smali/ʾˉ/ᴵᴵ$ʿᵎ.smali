@@ -216,7 +216,7 @@
 
     .line 79
     :sswitch_4
-    invoke-static {}, Lʼˏ/ᵢ;->ˉʻ()V
+    invoke-static {}, Lʼˏ/ᵢ;->ˉʿ()V
 
     .line 80
     .line 81
@@ -234,7 +234,7 @@
 
     .line 87
     :sswitch_6
-    invoke-static {}, Lʼˏ/ᵢ;->ʼˑ()V
+    invoke-static {}, Lʼˏ/ᵢ;->ʼـ()V
 
     .line 88
     .line 89
@@ -302,12 +302,12 @@
         0x7f110090 -> :sswitch_9
         0x7f11016e -> :sswitch_8
         0x7f11017d -> :sswitch_7
-        0x7f1101b9 -> :sswitch_6
-        0x7f1101f4 -> :sswitch_5
-        0x7f110293 -> :sswitch_4
-        0x7f1102fa -> :sswitch_3
-        0x7f110421 -> :sswitch_2
-        0x7f110433 -> :sswitch_1
-        0x7f1104c1 -> :sswitch_0
+        0x7f1101bb -> :sswitch_6
+        0x7f1101f6 -> :sswitch_5
+        0x7f110295 -> :sswitch_4
+        0x7f1102fc -> :sswitch_3
+        0x7f110423 -> :sswitch_2
+        0x7f110435 -> :sswitch_1
+        0x7f1104c3 -> :sswitch_0
     .end sparse-switch
 .end method

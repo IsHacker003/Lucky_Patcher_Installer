@@ -62,16 +62,16 @@
 
     .line 8
     .line 9
-    const-class v1, Ljavaroot/utils/ʻˑ;
+    const-class v1, Ljavaroot/utils/ʻי;
 
     .line 10
     .line 11
-    invoke-static {v1, v0}, Lʼˏ/ᵢ;->ˎʽ(Ljava/lang/Class;[Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v1, v0}, Lʼˏ/ᵢ;->ˎˊ(Ljava/lang/Class;[Ljava/lang/String;)Ljava/lang/String;
 
     .line 12
     .line 13
     .line 14
-    invoke-static {}, Lʼˏ/ᵢ;->ˋˉ()V
+    invoke-static {}, Lʼˏ/ᵢ;->ˋـ()V
 
     .line 15
     .line 16

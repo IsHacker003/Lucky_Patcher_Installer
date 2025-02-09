@@ -5,7 +5,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lʼˏ/ᵢ;->ʿᴵ(Ljava/io/File;)Landroid/content/pm/PackageInfo;
+    value = Lʼˏ/ᵢ;->ʿᵢ(Ljava/io/File;)Landroid/content/pm/PackageInfo;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -70,7 +70,7 @@
     move-result-object v1
 
     .line 15
-    invoke-static {v1}, Lʼˏ/ᵢ;->ʽˊ(Lcom/android/apksig/util/DataSource;)Ljava/nio/ByteBuffer;
+    invoke-static {v1}, Lʼˏ/ᵢ;->ʽˎ(Lcom/android/apksig/util/DataSource;)Ljava/nio/ByteBuffer;
 
     .line 16
     .line 17
@@ -273,7 +273,7 @@
     move-result-object v0
 
     .line 113
-    invoke-static {v0}, Lʼˏ/ᵢ;->ˆᐧ(Lcom/android/apksig/util/DataSource;)Ljava/nio/ByteBuffer;
+    invoke-static {v0}, Lʼˏ/ᵢ;->ˆᵔ(Lcom/android/apksig/util/DataSource;)Ljava/nio/ByteBuffer;
 
     .line 114
     .line 115

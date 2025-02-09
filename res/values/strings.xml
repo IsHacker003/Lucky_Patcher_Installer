@@ -409,6 +409,7 @@ File path:"</string>
     <string name="dirr_chg">Changed directory on:</string>
     <string name="disable_autoupdate">Disable Auto-update</string>
     <string name="disable_autoupdate_descr">Check to disable automatic updates.</string>
+    <string name="disable_for_all_apps">Disable for all applications and enable for selected applications</string>
     <string name="disable_inapp_services_google">InApp Services to Google Play Store</string>
     <string name="disable_inapp_services_google_descr">Some Apps crash if multiple InApp services are enabled.</string>
     <string name="disable_license_services_google">License Service to Google Play Store</string>
@@ -425,6 +426,7 @@ File path:"</string>
     <string name="download_progress_dialog_message_resume_downloading">Resuming file download</string>
     <string name="empty">empty</string>
     <string name="empty_binders">You must create at least one bind to add widget.</string>
+    <string name="enable_for_all_apps">Enable for all applications and disable for selected applications</string>
     <string name="enabled">enabled</string>
     <string name="enabled_package">Enabled package.</string>
     <string name="enter_manual_path">Manual path</string>

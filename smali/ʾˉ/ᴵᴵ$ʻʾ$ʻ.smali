@@ -196,7 +196,7 @@
 
     .line 78
     .line 79
-    sget-object v4, Lʾˉ/ᴵᴵ;->ʼﾞ:Lru/aaaaaccc/installer/MainActivity;
+    sget-object v4, Lʾˉ/ᴵᴵ;->ʼﾞ:Lru/aaaaaccd/installer/MainActivity;
 
     .line 80
     .line 81
@@ -209,7 +209,7 @@
     .line 84
     .line 85
     .line 86
-    invoke-static {}, Lru/aaaaaccc/installer/PkgName;->getPkgName()Ljava/lang/String;
+    invoke-static {}, Lru/aaaaaccd/installer/PkgName;->getPkgName()Ljava/lang/String;
 
     .line 87
     .line 88
@@ -344,12 +344,12 @@
     .line 154
     .line 155
     .line 156
-    const v5, 0x7f110453
+    const v5, 0x7f110455
 
     .line 157
     .line 158
     .line 159
-    invoke-static {v5}, Lʼˏ/ᵢ;->ˈי(I)Ljava/lang/String;
+    invoke-static {v5}, Lʼˏ/ᵢ;->ˈᐧ(I)Ljava/lang/String;
 
     .line 160
     .line 161

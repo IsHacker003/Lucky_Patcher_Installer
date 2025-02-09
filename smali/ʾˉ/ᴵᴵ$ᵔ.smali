@@ -86,12 +86,12 @@
 
     .line 22
     .line 23
-    const v1, 0x7f1104d2
+    const v1, 0x7f1104d4
 
     .line 24
     .line 25
     .line 26
-    invoke-static {v1}, Lʼˏ/ᵢ;->ˈי(I)Ljava/lang/String;
+    invoke-static {v1}, Lʼˏ/ᵢ;->ˈᐧ(I)Ljava/lang/String;
 
     .line 27
     .line 28

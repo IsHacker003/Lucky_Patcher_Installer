@@ -82,7 +82,7 @@
     .line 4
     .line 5
     .line 6
-    sget-object v1, Lʾˉ/ᴵᴵ;->ˈי:Ljava/io/File;
+    sget-object v1, Lʾˉ/ᴵᴵ;->ˈـ:Ljava/io/File;
 
     .line 7
     .line 8

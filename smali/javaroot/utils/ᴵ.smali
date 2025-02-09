@@ -25,12 +25,12 @@
     .line 4
     .line 5
     .line 6
-    invoke-static {p0}, Lʼˏ/ᵢ;->ˑʿ(Ljava/lang/Object;)V
+    invoke-static {p0}, Lʼˏ/ᵢ;->ˑˎ(Ljava/lang/Object;)V
 
     .line 7
     .line 8
     .line 9
-    invoke-static {}, Lʼˏ/ᵢ;->ʿﹳ()Ljava/lang/String;
+    invoke-static {}, Lʼˏ/ᵢ;->ˆʻ()Ljava/lang/String;
 
     .line 10
     .line 11
@@ -38,7 +38,7 @@
     move-result-object p0
 
     .line 13
-    invoke-static {}, Lʼˏ/ᵢ;->ʿⁱ()Ljava/lang/String;
+    invoke-static {}, Lʼˏ/ᵢ;->ʿﾞ()Ljava/lang/String;
 
     .line 14
     .line 15
@@ -132,7 +132,7 @@
     .line 60
     .line 61
     :cond_1
-    invoke-static {}, Lʼˏ/ᵢ;->ʼˎ()V
+    invoke-static {}, Lʼˏ/ᵢ;->ʼˑ()V
 
     .line 62
     .line 63

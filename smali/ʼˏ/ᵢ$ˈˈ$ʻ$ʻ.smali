@@ -171,7 +171,7 @@
     move-result-object v2
 
     .line 67
-    invoke-static {v2, v3, v1, v0}, Lʼˏ/ᵢ;->ˉˈ(Ljava/lang/String;Ljava/lang/String;ZZ)Ljava/lang/String;
+    invoke-static {v2, v3, v1, v0}, Lʼˏ/ᵢ;->ˉˏ(Ljava/lang/String;Ljava/lang/String;ZZ)Ljava/lang/String;
 
     .line 68
     .line 69
@@ -188,7 +188,7 @@
 
     .line 75
     .line 76
-    invoke-static {v0, v1, v1}, Lʼˏ/ᵢ;->ˑˎ(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1, v1}, Lʼˏ/ᵢ;->ˑᴵ(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;)V
 
     .line 77
     .line 78

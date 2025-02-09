@@ -176,7 +176,7 @@
 
     .line 70
     .line 71
-    sget-boolean v2, Lʾˉ/ᴵᴵ;->ˉﾞ:Z
+    sget-boolean v2, Lʾˉ/ᴵᴵ;->ˊʻ:Z
 
     .line 72
     .line 73

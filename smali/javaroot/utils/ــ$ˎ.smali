@@ -44,7 +44,7 @@
 
     .line 9
     .line 10
-    sget-boolean v0, Ljavaroot/utils/ــ;->ˑˏ:Z
+    sget-boolean v0, Ljavaroot/utils/ــ;->ˑˎ:Z
 
     .line 11
     .line 12

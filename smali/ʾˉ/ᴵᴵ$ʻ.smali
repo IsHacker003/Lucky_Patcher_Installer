@@ -168,7 +168,7 @@
     .line 65
     .line 66
     .line 67
-    invoke-static {v2, v1}, Lʼˏ/ᵢ;->ˆـ(ILjava/io/File;)Z
+    invoke-static {v2, v1}, Lʼˏ/ᵢ;->ˆᴵ(ILjava/io/File;)Z
 
     .line 68
     .line 69

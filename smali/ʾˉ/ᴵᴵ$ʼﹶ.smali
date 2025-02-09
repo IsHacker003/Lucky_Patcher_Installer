@@ -60,12 +60,12 @@
 
     .line 12
     .line 13
-    const v1, 0x7f1103c8
+    const v1, 0x7f1103ca
 
     .line 14
     .line 15
     .line 16
-    invoke-static {v1}, Lʼˏ/ᵢ;->ˈי(I)Ljava/lang/String;
+    invoke-static {v1}, Lʼˏ/ᵢ;->ˈᐧ(I)Ljava/lang/String;
 
     .line 17
     .line 18

@@ -1077,7 +1077,7 @@
     move-result v0
 
     .line 522
-    invoke-static {v0}, Lʼˏ/ᵢ;->ˈי(I)Ljava/lang/String;
+    invoke-static {v0}, Lʼˏ/ᵢ;->ˈᐧ(I)Ljava/lang/String;
 
     .line 523
     .line 524
@@ -1119,7 +1119,7 @@
     .line 541
     .line 542
     .line 543
-    invoke-static {v3}, Lʼˏ/ᵢ;->ˈי(I)Ljava/lang/String;
+    invoke-static {v3}, Lʼˏ/ᵢ;->ˈᐧ(I)Ljava/lang/String;
 
     .line 544
     .line 545
@@ -1135,7 +1135,7 @@
 
     .line 550
     .line 551
-    invoke-static {v0, v6}, Lʼˏ/ᵢ;->ˈٴ(I[Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v0, v6}, Lʼˏ/ᵢ;->ˈᵎ(I[Ljava/lang/String;)Ljava/lang/String;
 
     .line 552
     .line 553
@@ -1172,7 +1172,7 @@
         0x7f1100d2 -> :sswitch_4
         0x7f1100e1 -> :sswitch_3
         0x7f110172 -> :sswitch_2
-        0x7f110294 -> :sswitch_1
-        0x7f110456 -> :sswitch_0
+        0x7f110296 -> :sswitch_1
+        0x7f110458 -> :sswitch_0
     .end sparse-switch
 .end method

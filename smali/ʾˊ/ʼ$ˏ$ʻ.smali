@@ -278,7 +278,7 @@
     move-result-object v3
 
     .line 65
-    invoke-static {v3}, Lʼˏ/ᵢ;->ˆʾ(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v3}, Lʼˏ/ᵢ;->ˆˉ(Ljava/lang/String;)Ljava/lang/String;
 
     .line 66
     .line 67

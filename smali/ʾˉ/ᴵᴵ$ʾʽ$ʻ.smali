@@ -49,7 +49,7 @@
     .line 2
     .line 3
     .line 4
-    invoke-static {}, Lʼˏ/ᵢ;->ˋˉ()V
+    invoke-static {}, Lʼˏ/ᵢ;->ˋـ()V
 
     .line 5
     .line 6
@@ -68,7 +68,7 @@
     .line 13
     .line 14
     .line 15
-    invoke-static {}, Lʼˏ/ᵢ;->ˋˉ()V
+    invoke-static {}, Lʼˏ/ᵢ;->ˋـ()V
 
     .line 16
     .line 17

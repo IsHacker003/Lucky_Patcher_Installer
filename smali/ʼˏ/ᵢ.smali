@@ -319,7 +319,7 @@
     move-result-object p1
 
     .line 71
-    invoke-static {p1}, Lʼˏ/ᵢ;->ˋٴ(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {p1}, Lʼˏ/ᵢ;->ˋⁱ(Ljava/lang/String;)Ljava/lang/String;
 
     .line 72
     .line 73
@@ -380,7 +380,7 @@
     move-result-object p1
 
     .line 103
-    invoke-static {p1}, Lʼˏ/ᵢ;->ˋٴ(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {p1}, Lʼˏ/ᵢ;->ˋⁱ(Ljava/lang/String;)Ljava/lang/String;
 
     .line 104
     .line 105
@@ -707,7 +707,7 @@
 
     .line 1
     :try_start_0
-    invoke-static {}, Lʼˏ/ᵢ;->ˊᵔ()Z
+    invoke-static {}, Lʼˏ/ᵢ;->ˋʻ()Z
 
     .line 2
     .line 3
@@ -2051,322 +2051,6 @@
 .end method
 
 .method public static ʻˊ(Ljava/io/File;Ljava/io/File;)V
-    .locals 9
-
-    .line 1
-    new-instance v0, Ljava/lang/StringBuilder;
-
-    .line 2
-    .line 3
-    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
-
-    .line 4
-    .line 5
-    .line 6
-    invoke-virtual {p1}, Ljava/io/File;->getAbsolutePath()Ljava/lang/String;
-
-    .line 7
-    .line 8
-    .line 9
-    move-result-object p1
-
-    .line 10
-    invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 11
-    .line 12
-    .line 13
-    const-string p1, "/"
-
-    .line 14
-    .line 15
-    invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 16
-    .line 17
-    .line 18
-    invoke-virtual {p0}, Ljava/io/File;->getName()Ljava/lang/String;
-
-    .line 19
-    .line 20
-    .line 21
-    move-result-object v1
-
-    .line 22
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 23
-    .line 24
-    .line 25
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    .line 26
-    .line 27
-    .line 28
-    move-result-object v0
-
-    .line 29
-    new-instance v1, Ljava/lang/StringBuilder;
-
-    .line 30
-    .line 31
-    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
-
-    .line 32
-    .line 33
-    .line 34
-    invoke-virtual {p0}, Ljava/io/File;->getAbsolutePath()Ljava/lang/String;
-
-    .line 35
-    .line 36
-    .line 37
-    move-result-object v2
-
-    .line 38
-    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 39
-    .line 40
-    .line 41
-    invoke-virtual {v1, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 42
-    .line 43
-    .line 44
-    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    .line 45
-    .line 46
-    .line 47
-    move-result-object v1
-
-    .line 48
-    new-instance v2, Ljava/io/File;
-
-    .line 49
-    .line 50
-    invoke-direct {v2, v0}, Ljava/io/File;-><init>(Ljava/lang/String;)V
-
-    .line 51
-    .line 52
-    .line 53
-    invoke-virtual {v2}, Ljava/io/File;->mkdirs()Z
-
-    .line 54
-    .line 55
-    .line 56
-    invoke-virtual {p0}, Ljava/io/File;->exists()Z
-
-    .line 57
-    .line 58
-    .line 59
-    move-result v2
-
-    .line 60
-    if-eqz v2, :cond_2
-
-    .line 61
-    .line 62
-    invoke-virtual {p0}, Ljava/io/File;->listFiles()[Ljava/io/File;
-
-    .line 63
-    .line 64
-    .line 65
-    move-result-object p0
-
-    .line 66
-    if-eqz p0, :cond_2
-
-    .line 67
-    .line 68
-    array-length v2, p0
-
-    .line 69
-    if-lez v2, :cond_2
-
-    .line 70
-    .line 71
-    array-length v2, p0
-
-    .line 72
-    const/4 v3, 0x0
-
-    .line 73
-    :goto_0
-    if-ge v3, v2, :cond_2
-
-    .line 74
-    .line 75
-    aget-object v4, p0, v3
-
-    .line 76
-    .line 77
-    invoke-virtual {v4}, Ljava/io/File;->isDirectory()Z
-
-    .line 78
-    .line 79
-    .line 80
-    move-result v5
-
-    .line 81
-    const-string v6, ""
-
-    .line 82
-    .line 83
-    if-eqz v5, :cond_0
-
-    .line 84
-    .line 85
-    new-instance v5, Ljava/io/File;
-
-    .line 86
-    .line 87
-    new-instance v7, Ljava/lang/StringBuilder;
-
-    .line 88
-    .line 89
-    invoke-direct {v7}, Ljava/lang/StringBuilder;-><init>()V
-
-    .line 90
-    .line 91
-    .line 92
-    invoke-virtual {v7, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 93
-    .line 94
-    .line 95
-    invoke-virtual {v7, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 96
-    .line 97
-    .line 98
-    invoke-virtual {v4}, Ljava/io/File;->getAbsolutePath()Ljava/lang/String;
-
-    .line 99
-    .line 100
-    .line 101
-    move-result-object v8
-
-    .line 102
-    invoke-virtual {v8, v1, v6}, Ljava/lang/String;->replaceFirst(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
-
-    .line 103
-    .line 104
-    .line 105
-    move-result-object v8
-
-    .line 106
-    invoke-virtual {v7, v8}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 107
-    .line 108
-    .line 109
-    invoke-virtual {v7}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    .line 110
-    .line 111
-    .line 112
-    move-result-object v7
-
-    .line 113
-    invoke-direct {v5, v7}, Ljava/io/File;-><init>(Ljava/lang/String;)V
-
-    .line 114
-    .line 115
-    .line 116
-    invoke-virtual {v5}, Ljava/io/File;->mkdirs()Z
-
-    .line 117
-    .line 118
-    .line 119
-    :cond_0
-    invoke-virtual {v4}, Ljava/io/File;->isFile()Z
-
-    .line 120
-    .line 121
-    .line 122
-    move-result v5
-
-    .line 123
-    if-eqz v5, :cond_1
-
-    .line 124
-    .line 125
-    new-instance v5, Ljava/io/File;
-
-    .line 126
-    .line 127
-    new-instance v7, Ljava/lang/StringBuilder;
-
-    .line 128
-    .line 129
-    invoke-direct {v7}, Ljava/lang/StringBuilder;-><init>()V
-
-    .line 130
-    .line 131
-    .line 132
-    invoke-virtual {v7, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 133
-    .line 134
-    .line 135
-    invoke-virtual {v7, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 136
-    .line 137
-    .line 138
-    invoke-virtual {v4}, Ljava/io/File;->getAbsolutePath()Ljava/lang/String;
-
-    .line 139
-    .line 140
-    .line 141
-    move-result-object v8
-
-    .line 142
-    invoke-virtual {v8, v1, v6}, Ljava/lang/String;->replaceFirst(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
-
-    .line 143
-    .line 144
-    .line 145
-    move-result-object v6
-
-    .line 146
-    invoke-virtual {v7, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 147
-    .line 148
-    .line 149
-    invoke-virtual {v7}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    .line 150
-    .line 151
-    .line 152
-    move-result-object v6
-
-    .line 153
-    invoke-direct {v5, v6}, Ljava/io/File;-><init>(Ljava/lang/String;)V
-
-    .line 154
-    .line 155
-    .line 156
-    invoke-static {v4, v5}, Lʼˏ/ᵢ;->ʻˋ(Ljava/io/File;Ljava/io/File;)V
-
-    .line 157
-    .line 158
-    .line 159
-    :cond_1
-    add-int/lit8 v3, v3, 0x1
-
-    .line 160
-    .line 161
-    goto :goto_0
-
-    .line 162
-    :cond_2
-    return-void
-.end method
-
-.method public static ʻˋ(Ljava/io/File;Ljava/io/File;)V
     .locals 23
 
     .line 1
@@ -2401,7 +2085,7 @@
     .line 14
     .line 15
     .line 16
-    invoke-static/range {p1 .. p1}, Lʼˏ/ᵢ;->ʾˑ(Ljava/io/File;)Ljava/io/File;
+    invoke-static/range {p1 .. p1}, Lʼˏ/ᵢ;->ʾـ(Ljava/io/File;)Ljava/io/File;
 
     .line 17
     .line 18
@@ -2421,7 +2105,7 @@
 
     .line 25
     .line 26
-    invoke-static/range {p1 .. p1}, Lʼˏ/ᵢ;->ʾˑ(Ljava/io/File;)Ljava/io/File;
+    invoke-static/range {p1 .. p1}, Lʼˏ/ᵢ;->ʾـ(Ljava/io/File;)Ljava/io/File;
 
     .line 27
     .line 28
@@ -2689,7 +2373,7 @@
 
     .line 146
     .line 147
-    invoke-static {}, Lʼˏ/ᵢ;->ˆᵎ()Z
+    invoke-static {}, Lʼˏ/ᵢ;->ˆⁱ()Z
 
     .line 148
     .line 149
@@ -2991,7 +2675,7 @@
     move-result-object v1
 
     .line 300
-    invoke-static {v0, v1, v4, v4}, Lʼˏ/ᵢ;->ʻˏ(Ljava/lang/String;Ljava/lang/String;ZZ)Z
+    invoke-static {v0, v1, v4, v4}, Lʼˏ/ᵢ;->ʻˎ(Ljava/lang/String;Ljava/lang/String;ZZ)Z
 
     .line 301
     .line 302
@@ -3451,7 +3135,7 @@
     move-result-object v1
 
     .line 529
-    invoke-static {v0, v1, v4, v4}, Lʼˏ/ᵢ;->ʻˏ(Ljava/lang/String;Ljava/lang/String;ZZ)Z
+    invoke-static {v0, v1, v4, v4}, Lʼˏ/ᵢ;->ʻˎ(Ljava/lang/String;Ljava/lang/String;ZZ)Z
     :try_end_3
     .catch Ljava/lang/Exception; {:try_start_3 .. :try_end_3} :catch_0
     .catchall {:try_start_3 .. :try_end_3} :catchall_0
@@ -3675,7 +3359,7 @@
     goto :goto_e
 .end method
 
-.method public static ʻˎ(Ljava/io/InputStream;Ljava/io/File;)Z
+.method public static ʻˋ(Ljava/io/InputStream;Ljava/io/File;)Z
     .locals 4
 
     .line 1
@@ -3684,7 +3368,7 @@
     .line 2
     .line 3
     .line 4
-    invoke-static {p1}, Lʼˏ/ᵢ;->ʾˑ(Ljava/io/File;)Ljava/io/File;
+    invoke-static {p1}, Lʼˏ/ᵢ;->ʾـ(Ljava/io/File;)Ljava/io/File;
 
     .line 5
     .line 6
@@ -3704,7 +3388,7 @@
 
     .line 13
     .line 14
-    invoke-static {p1}, Lʼˏ/ᵢ;->ʾˑ(Ljava/io/File;)Ljava/io/File;
+    invoke-static {p1}, Lʼˏ/ᵢ;->ʾـ(Ljava/io/File;)Ljava/io/File;
 
     .line 15
     .line 16
@@ -3793,7 +3477,7 @@
     return v1
 .end method
 
-.method public static ʻˏ(Ljava/lang/String;Ljava/lang/String;ZZ)Z
+.method public static ʻˎ(Ljava/lang/String;Ljava/lang/String;ZZ)Z
     .locals 22
 
     .line 1
@@ -3853,7 +3537,7 @@
     .line 25
     .line 26
     :try_start_0
-    invoke-static/range {p0 .. p0}, Lʼˏ/ᵢ;->ʼˋ(Ljava/lang/String;)Z
+    invoke-static/range {p0 .. p0}, Lʼˏ/ᵢ;->ʼˏ(Ljava/lang/String;)Z
 
     .line 27
     .line 28
@@ -3869,7 +3553,7 @@
 
     .line 33
     .line 34
-    invoke-static {v1, v7}, Lʼˏ/ᵢ;->ˋי(Ljava/lang/String;Ljava/lang/String;)Z
+    invoke-static {v1, v7}, Lʼˏ/ᵢ;->ˋᵔ(Ljava/lang/String;Ljava/lang/String;)Z
 
     .line 35
     .line 36
@@ -3891,7 +3575,7 @@
 
     .line 42
     .line 43
-    invoke-static/range {p0 .. p0}, Lʼˏ/ᵢ;->ʿﾞ(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static/range {p0 .. p0}, Lʼˏ/ᵢ;->ˆʽ(Ljava/lang/String;)Ljava/lang/String;
 
     .line 44
     .line 45
@@ -3938,7 +3622,7 @@
     :cond_3
     :goto_1
     :try_start_2
-    invoke-static {}, Lʼˏ/ᵢ;->ʼˏ()V
+    invoke-static {}, Lʼˏ/ᵢ;->ʼי()V
 
     .line 60
     .line 61
@@ -4054,7 +3738,7 @@
 
     .line 118
     .line 119
-    invoke-static/range {p1 .. p1}, Lʼˏ/ᵢ;->ʼˋ(Ljava/lang/String;)Z
+    invoke-static/range {p1 .. p1}, Lʼˏ/ᵢ;->ʼˏ(Ljava/lang/String;)Z
 
     .line 120
     .line 121
@@ -4166,7 +3850,7 @@
 
     .line 177
     :cond_5
-    invoke-static/range {p1 .. p1}, Lʼˏ/ᵢ;->ʼˋ(Ljava/lang/String;)Z
+    invoke-static/range {p1 .. p1}, Lʼˏ/ᵢ;->ʼˏ(Ljava/lang/String;)Z
 
     .line 178
     .line 179
@@ -4251,7 +3935,7 @@
     .line 222
     .line 223
     :cond_6
-    invoke-static/range {p1 .. p1}, Lʼˏ/ᵢ;->ˎʼ(Ljava/lang/String;)V
+    invoke-static/range {p1 .. p1}, Lʼˏ/ᵢ;->ˎˉ(Ljava/lang/String;)V
 
     .line 224
     .line 225
@@ -4301,7 +3985,7 @@
     move-result-object v0
 
     .line 251
-    invoke-static {v0}, Lʼˏ/ᵢ;->ˎʾ(Ljava/lang/String;)V
+    invoke-static {v0}, Lʼˏ/ᵢ;->ˎˋ(Ljava/lang/String;)V
     :try_end_3
     .catch Ljava/lang/Exception; {:try_start_3 .. :try_end_3} :catch_0
 
@@ -4348,7 +4032,7 @@
 
     .line 271
     .line 272
-    invoke-static {v1, v7}, Lʼˏ/ᵢ;->ˋי(Ljava/lang/String;Ljava/lang/String;)Z
+    invoke-static {v1, v7}, Lʼˏ/ᵢ;->ˋᵔ(Ljava/lang/String;Ljava/lang/String;)Z
 
     .line 273
     .line 274
@@ -4358,7 +4042,7 @@
 
     .line 276
     .line 277
-    invoke-static/range {p0 .. p0}, Lʼˏ/ᵢ;->ʿﾞ(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static/range {p0 .. p0}, Lʼˏ/ᵢ;->ˆʽ(Ljava/lang/String;)Ljava/lang/String;
 
     .line 278
     .line 279
@@ -4884,13 +4568,13 @@
     .line 538
     .line 539
     :cond_11
-    invoke-static {v5, v6}, Lʼˏ/ᵢ;->ʻˋ(Ljava/io/File;Ljava/io/File;)V
+    invoke-static {v5, v6}, Lʼˏ/ᵢ;->ʻˊ(Ljava/io/File;Ljava/io/File;)V
 
     .line 540
     .line 541
     .line 542
     :cond_12
-    invoke-static/range {p1 .. p1}, Lʼˏ/ᵢ;->ˎʼ(Ljava/lang/String;)V
+    invoke-static/range {p1 .. p1}, Lʼˏ/ᵢ;->ˎˉ(Ljava/lang/String;)V
 
     .line 543
     .line 544
@@ -4949,7 +4633,7 @@
 
     .line 570
     .line 571
-    invoke-static {v0}, Lʼˏ/ᵢ;->ˎʿ([Ljava/lang/String;)V
+    invoke-static {v0}, Lʼˏ/ᵢ;->ˎˏ([Ljava/lang/String;)V
 
     .line 572
     .line 573
@@ -4976,7 +4660,7 @@
     return v8
 .end method
 
-.method public static ʻˑ(Ljava/io/File;Ljava/io/File;[Ljava/lang/String;)V
+.method public static ʻˏ(Ljava/io/File;Ljava/io/File;[Ljava/lang/String;)V
     .locals 12
     .annotation system Ldalvik/annotation/Throws;
         value = {
@@ -5240,7 +4924,7 @@
 
     .line 119
     .line 120
-    invoke-static {v6, v7, p2}, Lʼˏ/ᵢ;->ʻˑ(Ljava/io/File;Ljava/io/File;[Ljava/lang/String;)V
+    invoke-static {v6, v7, p2}, Lʼˏ/ᵢ;->ʻˏ(Ljava/io/File;Ljava/io/File;[Ljava/lang/String;)V
 
     .line 121
     .line 122
@@ -5254,7 +4938,7 @@
 
     .line 126
     :cond_8
-    invoke-static {p0, p1}, Lʼˏ/ᵢ;->ʻˋ(Ljava/io/File;Ljava/io/File;)V
+    invoke-static {p0, p1}, Lʼˏ/ᵢ;->ʻˊ(Ljava/io/File;Ljava/io/File;)V
 
     .line 127
     .line 128
@@ -5263,7 +4947,7 @@
     return-void
 .end method
 
-.method public static ʻי(Ljava/io/InputStream;Ljava/io/OutputStream;)V
+.method public static ʻˑ(Ljava/io/InputStream;Ljava/io/OutputStream;)V
     .locals 3
     .annotation system Ldalvik/annotation/Throws;
         value = {
@@ -5316,7 +5000,7 @@
     return-void
 .end method
 
-.method public static ʻـ(Ljava/lang/String;)Ljava/io/File;
+.method public static ʻי(Ljava/lang/String;)Ljava/io/File;
     .locals 14
 
     .line 1
@@ -5342,7 +5026,7 @@
     .line 9
     .line 10
     .line 11
-    invoke-static {}, Lʼˏ/ᵢ;->ʿᵔ()Ljava/lang/String;
+    invoke-static {}, Lʼˏ/ᵢ;->ʿﹳ()Ljava/lang/String;
 
     .line 12
     .line 13
@@ -5377,7 +5061,7 @@
 
     .line 29
     .line 30
-    invoke-static {}, Lʼˏ/ᵢ;->ʿᵔ()Ljava/lang/String;
+    invoke-static {}, Lʼˏ/ᵢ;->ʿﹳ()Ljava/lang/String;
 
     .line 31
     .line 32
@@ -5406,7 +5090,7 @@
 
     .line 44
     .line 45
-    invoke-static {}, Lʼˏ/ᵢ;->ʿᵔ()Ljava/lang/String;
+    invoke-static {}, Lʼˏ/ᵢ;->ʿﹳ()Ljava/lang/String;
 
     .line 46
     .line 47
@@ -5508,7 +5192,7 @@
     .line 93
     .line 94
     .line 95
-    invoke-static {}, Lʼˏ/ᵢ;->ʿᵔ()Ljava/lang/String;
+    invoke-static {}, Lʼˏ/ᵢ;->ʿﹳ()Ljava/lang/String;
 
     .line 96
     .line 97
@@ -5672,7 +5356,7 @@
     move-result-object v7
 
     .line 179
-    invoke-static {v5, v7, v2, v2}, Lʼˏ/ᵢ;->ʻˏ(Ljava/lang/String;Ljava/lang/String;ZZ)Z
+    invoke-static {v5, v7, v2, v2}, Lʼˏ/ᵢ;->ʻˎ(Ljava/lang/String;Ljava/lang/String;ZZ)Z
 
     .line 180
     .line 181
@@ -5702,12 +5386,12 @@
 
     .line 194
     :cond_3
-    invoke-static {}, Lʼˏ/ᵢ;->ʻᵎ()V
+    invoke-static {}, Lʼˏ/ᵢ;->ʻᴵ()V
 
     .line 195
     .line 196
     .line 197
-    invoke-static {v3}, Lʼˏ/ᵢ;->ˏʻ(Ljava/io/File;)V
+    invoke-static {v3}, Lʼˏ/ᵢ;->ˏˈ(Ljava/io/File;)V
 
     .line 198
     .line 199
@@ -5724,7 +5408,7 @@
     return-object v3
 .end method
 
-.method public static ʻٴ(Ljava/io/File;Ljava/util/ArrayList;Ljava/lang/String;)Ljava/io/File;
+.method public static ʻـ(Ljava/io/File;Ljava/util/ArrayList;Ljava/lang/String;)Ljava/io/File;
     .locals 12
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -5841,7 +5525,7 @@
     const/4 v4, 0x1
 
     .line 47
-    invoke-static {p2, v4}, Lʼˏ/ᵢ;->ʽـ(Ljava/lang/String;I)Landroid/content/pm/PackageInfo;
+    invoke-static {p2, v4}, Lʼˏ/ᵢ;->ʽᐧ(Ljava/lang/String;I)Landroid/content/pm/PackageInfo;
 
     .line 48
     .line 49
@@ -5861,7 +5545,7 @@
     move-result-object v6
 
     .line 57
-    invoke-static {v6}, Lʼˏ/ᵢ;->ʽי(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v6}, Lʼˏ/ᵢ;->ʽٴ(Ljava/lang/String;)Ljava/lang/String;
 
     .line 58
     .line 59
@@ -5939,7 +5623,7 @@
     move-result-object p2
 
     .line 99
-    invoke-static {p2}, Lʼˏ/ᵢ;->ʽˏ(Ljava/lang/String;)Landroid/graphics/drawable/Drawable;
+    invoke-static {p2}, Lʼˏ/ᵢ;->ʽי(Ljava/lang/String;)Landroid/graphics/drawable/Drawable;
 
     .line 100
     .line 101
@@ -6540,7 +6224,7 @@
     .line 384
     .line 385
     .line 386
-    invoke-static {}, Lʼˏ/ᵢ;->ˈˏ()Ljava/lang/String;
+    invoke-static {}, Lʼˏ/ᵢ;->ˈـ()Ljava/lang/String;
 
     .line 387
     .line 388
@@ -6632,7 +6316,7 @@
 
     .line 435
     .line 436
-    invoke-static {v3}, Lʼˏ/ᵢ;->ʼˊ(Landroid/graphics/drawable/Drawable;)Landroid/graphics/Bitmap;
+    invoke-static {v3}, Lʼˏ/ᵢ;->ʼˎ(Landroid/graphics/drawable/Drawable;)Landroid/graphics/Bitmap;
 
     .line 437
     .line 438
@@ -6754,7 +6438,7 @@
     .line 499
     .line 500
     :cond_7
-    invoke-static {p1, v8}, Lʼˏ/ᵢ;->יˑ(Ljava/util/List;Ljava/util/zip/ZipOutputStream;)V
+    invoke-static {p1, v8}, Lʼˏ/ᵢ;->יᵔ(Ljava/util/List;Ljava/util/zip/ZipOutputStream;)V
 
     .line 501
     .line 502
@@ -6956,7 +6640,7 @@
     goto :goto_8
 .end method
 
-.method public static ʻᐧ(Ljava/lang/String;)Ljava/lang/String;
+.method public static ʻٴ(Ljava/lang/String;)Ljava/lang/String;
     .locals 9
 
     .line 1
@@ -7093,7 +6777,7 @@
     .line 68
     .line 69
     .line 70
-    invoke-static {p0}, Lʼˏ/ᵢ;->ˆʾ(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {p0}, Lʼˏ/ᵢ;->ˆˉ(Ljava/lang/String;)Ljava/lang/String;
 
     .line 71
     .line 72
@@ -7251,7 +6935,7 @@
     .line 150
     .line 151
     .line 152
-    invoke-static {p0}, Lʼˏ/ᵢ;->ˆʾ(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {p0}, Lʼˏ/ᵢ;->ˆˉ(Ljava/lang/String;)Ljava/lang/String;
 
     .line 153
     .line 154
@@ -7377,7 +7061,7 @@
     const/4 v1, 0x0
 
     .line 218
-    invoke-static {v2, v1, p0}, Lʼˏ/ᵢ;->ʻٴ(Ljava/io/File;Ljava/util/ArrayList;Ljava/lang/String;)Ljava/io/File;
+    invoke-static {v2, v1, p0}, Lʼˏ/ᵢ;->ʻـ(Ljava/io/File;Ljava/util/ArrayList;Ljava/lang/String;)Ljava/io/File;
 
     .line 219
     .line 220
@@ -7412,7 +7096,7 @@
     return-object v0
 .end method
 
-.method public static ʻᴵ(Lorg/w3c/dom/Document;Ljava/lang/String;)Lorg/w3c/dom/Element;
+.method public static ʻᐧ(Lorg/w3c/dom/Document;Ljava/lang/String;)Lorg/w3c/dom/Element;
     .locals 2
 
     .line 1
@@ -7453,11 +7137,11 @@
     return-object v0
 .end method
 
-.method public static ʻᵎ()V
+.method public static ʻᴵ()V
     .locals 10
 
     .line 1
-    invoke-static {}, Lʼˏ/ᵢ;->ʿᵔ()Ljava/lang/String;
+    invoke-static {}, Lʼˏ/ᵢ;->ʿﹳ()Ljava/lang/String;
 
     .line 2
     .line 3
@@ -7529,7 +7213,7 @@
 
     .line 38
     .line 39
-    invoke-static {}, Lʼˏ/ᵢ;->ʼⁱ()J
+    invoke-static {}, Lʼˏ/ᵢ;->ʼﹶ()J
 
     .line 40
     .line 41
@@ -7605,7 +7289,7 @@
     move-result-object v0
 
     .line 81
-    invoke-static {v1, v0}, Lʼˏ/ᵢ;->ˎˏ(Ljava/io/File;Ljava/lang/String;)Z
+    invoke-static {v1, v0}, Lʼˏ/ᵢ;->ˎᴵ(Ljava/io/File;Ljava/lang/String;)Z
 
     .line 82
     .line 83
@@ -7646,7 +7330,7 @@
 
     .line 103
     :cond_0
-    invoke-static {}, Lʼˏ/ᵢ;->ʿˆ()J
+    invoke-static {}, Lʼˏ/ᵢ;->ʿˉ()J
 
     .line 104
     .line 105
@@ -7654,7 +7338,7 @@
     move-result-wide v6
 
     .line 107
-    invoke-static {}, Lʼˏ/ᵢ;->ʼⁱ()J
+    invoke-static {}, Lʼˏ/ᵢ;->ʼﹶ()J
 
     .line 108
     .line 109
@@ -7692,7 +7376,7 @@
 
     .line 125
     .line 126
-    invoke-static {}, Lʼˏ/ᵢ;->ʿˈ()Ljava/lang/String;
+    invoke-static {}, Lʼˏ/ᵢ;->ʿˊ()Ljava/lang/String;
 
     .line 127
     .line 128
@@ -7716,7 +7400,7 @@
 
     .line 137
     .line 138
-    invoke-static {}, Lʼˏ/ᵢ;->ʼⁱ()J
+    invoke-static {}, Lʼˏ/ᵢ;->ʼﹶ()J
 
     .line 139
     .line 140
@@ -7792,7 +7476,7 @@
     move-result-object v0
 
     .line 180
-    invoke-static {v1, v0}, Lʼˏ/ᵢ;->ˎˏ(Ljava/io/File;Ljava/lang/String;)Z
+    invoke-static {v1, v0}, Lʼˏ/ᵢ;->ˎᴵ(Ljava/io/File;Ljava/lang/String;)Z
 
     .line 181
     .line 182
@@ -7834,11 +7518,11 @@
     return-void
 .end method
 
-.method public static ʻᵔ()V
+.method public static ʻᵎ()V
     .locals 4
 
     .line 1
-    invoke-static {}, Lʼˏ/ᵢ;->ʿᵢ()Ljava/lang/String;
+    invoke-static {}, Lʼˏ/ᵢ;->ʿﹶ()Ljava/lang/String;
 
     .line 2
     .line 3
@@ -7938,7 +7622,7 @@
 
     .line 54
     .line 55
-    invoke-static {v1, v0}, Lʼˏ/ᵢ;->ˎˏ(Ljava/io/File;Ljava/lang/String;)Z
+    invoke-static {v1, v0}, Lʼˏ/ᵢ;->ˎᴵ(Ljava/io/File;Ljava/lang/String;)Z
 
     .line 56
     .line 57
@@ -7947,11 +7631,11 @@
     return-void
 .end method
 
-.method public static ʻᵢ(Ljava/io/File;Ljava/lang/String;)V
+.method public static ʻᵔ(Ljava/io/File;Ljava/lang/String;)V
     .locals 8
 
     .line 1
-    invoke-static {}, Lʼˏ/ᵢ;->ʿⁱ()Ljava/lang/String;
+    invoke-static {}, Lʼˏ/ᵢ;->ʿﾞ()Ljava/lang/String;
 
     .line 2
     .line 3
@@ -7968,7 +7652,7 @@
     .line 8
     .line 9
     .line 10
-    invoke-static {p0, v0}, Lʼˏ/ᵢ;->ˑﹳ(Ljava/io/File;Ljava/io/File;)V
+    invoke-static {p0, v0}, Lʼˏ/ᵢ;->יʾ(Ljava/io/File;Ljava/io/File;)V
 
     .line 11
     .line 12
@@ -8005,7 +7689,7 @@
     move-object v1, v7
 
     .line 29
-    invoke-virtual/range {v0 .. v6}, Lʼˏ/ᵢ;->ˏʼ(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+    invoke-virtual/range {v0 .. v6}, Lʼˏ/ᵢ;->ˏˉ(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
     .line 30
     .line 31
@@ -8082,7 +7766,7 @@
     .line 70
     .line 71
     .line 72
-    invoke-static {}, Lru/aaaaaccc/installer/PkgName;->getPkgName()Ljava/lang/String;
+    invoke-static {}, Lru/aaaaaccd/installer/PkgName;->getPkgName()Ljava/lang/String;
 
     .line 73
     .line 74
@@ -8112,7 +7796,7 @@
     move-result-object p1
 
     .line 88
-    invoke-static {p0, p1}, Lʼˏ/ᵢ;->ˎˏ(Ljava/io/File;Ljava/lang/String;)Z
+    invoke-static {p0, p1}, Lʼˏ/ᵢ;->ˎᴵ(Ljava/io/File;Ljava/lang/String;)Z
 
     .line 89
     .line 90
@@ -8120,213 +7804,270 @@
     return-void
 .end method
 
-.method public static ʻⁱ(Ljava/io/File;ZZZLjava/lang/String;)V
+.method public static ʻᵢ(Ljava/io/File;Ljava/io/File;)V
     .locals 8
 
     .line 1
-    invoke-static {}, Lʼˏ/ᵢ;->ʿﹳ()Ljava/lang/String;
+    invoke-static {}, Lʼˏ/ᵢ;->ˆʻ()Ljava/lang/String;
 
     .line 2
     .line 3
     .line 4
-    move-result-object v7
+    move-result-object v1
 
     .line 5
     new-instance v0, Ljava/io/File;
 
     .line 6
     .line 7
-    invoke-direct {v0, v7}, Ljava/io/File;-><init>(Ljava/lang/String;)V
+    invoke-direct {v0, v1}, Ljava/io/File;-><init>(Ljava/lang/String;)V
 
     .line 8
     .line 9
     .line 10
-    invoke-static {p0, v0}, Lʼˏ/ᵢ;->ˑﹳ(Ljava/io/File;Ljava/io/File;)V
+    invoke-static {p0, v0}, Lʼˏ/ᵢ;->יʾ(Ljava/io/File;Ljava/io/File;)V
 
     .line 11
     .line 12
     .line 13
-    new-instance v0, Lʼˏ/ᵢ;
+    new-instance p0, Ljava/io/File;
 
     .line 14
     .line 15
-    invoke-direct {v0}, Lʼˏ/ᵢ;-><init>()V
+    new-instance v0, Ljava/lang/StringBuilder;
 
     .line 16
     .line 17
-    .line 18
-    const-string v5, "0644"
+    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
 
+    .line 18
     .line 19
     .line 20
-    const-string v6, "u:object_r:system_file:s0"
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     .line 21
     .line 22
-    const-string v2, "0"
-
     .line 23
+    const-string v2, "/module.prop"
+
     .line 24
-    const-string v3, "0"
-
     .line 25
-    .line 26
-    const-string v4, "0755"
+    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    .line 26
     .line 27
     .line 28
-    move-object v1, v7
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     .line 29
-    invoke-virtual/range {v0 .. v6}, Lʼˏ/ᵢ;->ˏʼ(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
-
     .line 30
     .line 31
+    move-result-object v0
+
     .line 32
-    new-instance p0, Ljava/io/File;
+    invoke-direct {p0, v0}, Ljava/io/File;-><init>(Ljava/lang/String;)V
 
     .line 33
     .line 34
-    new-instance v0, Ljava/lang/StringBuilder;
-
     .line 35
-    .line 36
-    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
+    new-instance v0, Ljava/io/File;
 
+    .line 36
     .line 37
+    new-instance v3, Ljava/lang/StringBuilder;
+
     .line 38
     .line 39
-    invoke-virtual {v0, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-direct {v3}, Ljava/lang/StringBuilder;-><init>()V
 
     .line 40
     .line 41
     .line 42
-    const-string v1, "/module.prop"
+    invoke-virtual {v3, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     .line 43
     .line 44
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
     .line 45
+    invoke-virtual {v3, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
     .line 46
     .line 47
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
     .line 48
+    invoke-virtual {v3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
     .line 49
     .line 50
-    move-result-object v0
-
     .line 51
-    invoke-direct {p0, v0}, Ljava/io/File;-><init>(Ljava/lang/String;)V
+    move-result-object v2
 
     .line 52
+    invoke-direct {v0, v2}, Ljava/io/File;-><init>(Ljava/lang/String;)V
+
     .line 53
     .line 54
-    new-instance v0, Ljava/lang/StringBuilder;
-
     .line 55
-    .line 56
-    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
+    invoke-static {p1, v0}, Lʼˏ/ᵢ;->ʻˊ(Ljava/io/File;Ljava/io/File;)V
 
+    .line 56
     .line 57
     .line 58
-    .line 59
-    const-string v1, "# Generated by ZygoteLoader. DO NOT EDIT.\nversion="
+    invoke-virtual {p0}, Ljava/io/File;->getAbsolutePath()Ljava/lang/String;
 
+    .line 59
     .line 60
     .line 61
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    move-result-object p1
 
     .line 62
+    const-string v0, "chmod"
+
     .line 63
     .line 64
-    invoke-virtual {v0, p4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    const/4 v2, 0x3
 
     .line 65
+    new-array v3, v2, [Ljava/lang/String;
+
     .line 66
     .line 67
-    const-string p4, "\nversionCode=1000002\nminSdkVersion=26\nid=com_v7878_pmpatch_lp\nname=PMPatchLP\nauthor=v7878\ndescription=Patches to Android (Lucky Patcher Module) by vova7878@4pda\nentrypoint=com.v7878.hooks.pmpatch.Main\ninstaller_package="
+    const/4 v4, 0x0
 
     .line 68
-    .line 69
-    invoke-virtual {v0, p4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    aput-object v0, v3, v4
 
+    .line 69
     .line 70
+    const-string v5, "0644"
+
     .line 71
     .line 72
-    invoke-static {}, Lru/aaaaaccc/installer/PkgName;->getPkgName()Ljava/lang/String;
+    const/4 v6, 0x1
 
     .line 73
+    aput-object v5, v3, v6
+
     .line 74
     .line 75
-    move-result-object p4
+    const/4 v5, 0x2
 
     .line 76
-    invoke-virtual {v0, p4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    aput-object p1, v3, v5
 
     .line 77
     .line 78
-    .line 79
-    const-string p4, "\nPATCH_3="
+    invoke-static {v3}, Lʼˏ/ᵢ;->ˎˏ([Ljava/lang/String;)V
 
+    .line 79
     .line 80
     .line 81
-    invoke-virtual {v0, p4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {p0}, Ljava/io/File;->getAbsolutePath()Ljava/lang/String;
 
     .line 82
     .line 83
     .line 84
-    invoke-virtual {v0, p3}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
+    move-result-object p1
 
     .line 85
+    new-array v3, v2, [Ljava/lang/String;
+
     .line 86
     .line 87
-    const-string p3, "\nPATCH_1="
+    const-string v7, "chown"
 
     .line 88
     .line 89
-    invoke-virtual {v0, p3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    aput-object v7, v3, v4
 
     .line 90
     .line 91
-    .line 92
-    invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
+    const-string v7, "0.0"
 
+    .line 92
     .line 93
+    aput-object v7, v3, v6
+
     .line 94
     .line 95
-    const-string p1, "\nPATCH_2="
+    aput-object p1, v3, v5
 
     .line 96
     .line 97
-    invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-static {v3}, Lʼˏ/ᵢ;->ˎˏ([Ljava/lang/String;)V
 
     .line 98
     .line 99
     .line 100
-    invoke-virtual {v0, p2}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
+    invoke-virtual {p0}, Ljava/io/File;->getAbsolutePath()Ljava/lang/String;
 
     .line 101
     .line 102
     .line 103
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    move-result-object p0
 
     .line 104
+    new-array p1, v2, [Ljava/lang/String;
+
     .line 105
     .line 106
-    move-result-object p1
+    aput-object v0, p1, v4
 
     .line 107
-    invoke-static {p0, p1}, Lʼˏ/ᵢ;->ˎˏ(Ljava/io/File;Ljava/lang/String;)Z
-
     .line 108
+    const-string v0, "0:0"
+
     .line 109
     .line 110
+    aput-object v0, p1, v6
+
+    .line 111
+    .line 112
+    aput-object p0, p1, v5
+
+    .line 113
+    .line 114
+    invoke-static {p1}, Lʼˏ/ᵢ;->ˎˏ([Ljava/lang/String;)V
+
+    .line 115
+    .line 116
+    .line 117
+    new-instance v0, Lʼˏ/ᵢ;
+
+    .line 118
+    .line 119
+    invoke-direct {v0}, Lʼˏ/ᵢ;-><init>()V
+
+    .line 120
+    .line 121
+    .line 122
+    const-string v5, "0644"
+
+    .line 123
+    .line 124
+    const-string v6, "u:object_r:system_file:s0"
+
+    .line 125
+    .line 126
+    const-string v2, "0"
+
+    .line 127
+    .line 128
+    const-string v3, "0"
+
+    .line 129
+    .line 130
+    const-string v4, "0755"
+
+    .line 131
+    .line 132
+    invoke-virtual/range {v0 .. v6}, Lʼˏ/ᵢ;->ˏˉ(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+
+    .line 133
+    .line 134
+    .line 135
     return-void
 .end method
 
-.method public static ʻﹳ(Lorg/w3c/dom/Document;Ljava/lang/String;)Lorg/w3c/dom/Element;
+.method public static ʻⁱ(Lorg/w3c/dom/Document;Ljava/lang/String;)Lorg/w3c/dom/Element;
     .locals 2
 
     .line 1
@@ -8367,7 +8108,609 @@
     return-object v0
 .end method
 
-.method public static ʻﹶ(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Z)I
+.method public static ʻﹳ(Ljava/io/File;ZZZLjava/lang/String;)V
+    .locals 2
+
+    .line 1
+    new-instance v0, Ljava/lang/StringBuilder;
+
+    .line 2
+    .line 3
+    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
+
+    .line 4
+    .line 5
+    .line 6
+    const-string v1, "# Generated by ZygoteLoader. DO NOT EDIT.\nversion="
+
+    .line 7
+    .line 8
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 9
+    .line 10
+    .line 11
+    invoke-virtual {v0, p4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 12
+    .line 13
+    .line 14
+    const-string p4, "\nversionCode=1000002\nminSdkVersion=26\nid=com_v7878_pmpatch_lp\nname=PMPatchLP\nauthor=v7878\ndescription=Patches to Android (Lucky Patcher Module) by vova7878@4pda\nentrypoint=com.v7878.hooks.pmpatch.Main\ninstaller_package="
+
+    .line 15
+    .line 16
+    invoke-virtual {v0, p4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 17
+    .line 18
+    .line 19
+    invoke-static {}, Lru/aaaaaccd/installer/PkgName;->getPkgName()Ljava/lang/String;
+
+    .line 20
+    .line 21
+    .line 22
+    move-result-object p4
+
+    .line 23
+    invoke-virtual {v0, p4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 24
+    .line 25
+    .line 26
+    const-string p4, "\nPATCH_3="
+
+    .line 27
+    .line 28
+    invoke-virtual {v0, p4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 29
+    .line 30
+    .line 31
+    invoke-virtual {v0, p3}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
+
+    .line 32
+    .line 33
+    .line 34
+    const-string p3, "\nPATCH_1="
+
+    .line 35
+    .line 36
+    invoke-virtual {v0, p3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 37
+    .line 38
+    .line 39
+    invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
+
+    .line 40
+    .line 41
+    .line 42
+    const-string p1, "\nPATCH_2="
+
+    .line 43
+    .line 44
+    invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 45
+    .line 46
+    .line 47
+    invoke-virtual {v0, p2}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
+
+    .line 48
+    .line 49
+    .line 50
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    .line 51
+    .line 52
+    .line 53
+    move-result-object p1
+
+    .line 54
+    invoke-static {p0, p1}, Lʼˏ/ᵢ;->ˎᴵ(Ljava/io/File;Ljava/lang/String;)Z
+
+    .line 55
+    .line 56
+    .line 57
+    return-void
+.end method
+
+.method public static ʻﹶ(Ljava/io/File;Ljava/io/File;[Ljava/lang/String;[Ljava/lang/String;)V
+    .locals 8
+
+    .line 1
+    const-string v0, "/.all"
+
+    .line 2
+    .line 3
+    const-string v1, "/"
+
+    .line 4
+    .line 5
+    if-eqz p1, :cond_0
+
+    .line 6
+    .line 7
+    invoke-virtual {p1}, Ljava/io/File;->mkdirs()Z
+
+    .line 8
+    .line 9
+    .line 10
+    invoke-virtual {p1}, Ljava/io/File;->exists()Z
+
+    .line 11
+    .line 12
+    .line 13
+    move-result v2
+
+    .line 14
+    if-eqz v2, :cond_0
+
+    .line 15
+    .line 16
+    new-instance v2, Ljava/io/File;
+
+    .line 17
+    .line 18
+    new-instance v3, Ljava/lang/StringBuilder;
+
+    .line 19
+    .line 20
+    invoke-direct {v3}, Ljava/lang/StringBuilder;-><init>()V
+
+    .line 21
+    .line 22
+    .line 23
+    invoke-virtual {p1}, Ljava/io/File;->getAbsolutePath()Ljava/lang/String;
+
+    .line 24
+    .line 25
+    .line 26
+    move-result-object v4
+
+    .line 27
+    invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 28
+    .line 29
+    .line 30
+    invoke-virtual {v3, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 31
+    .line 32
+    .line 33
+    invoke-virtual {v3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    .line 34
+    .line 35
+    .line 36
+    move-result-object v3
+
+    .line 37
+    invoke-direct {v2, v3}, Ljava/io/File;-><init>(Ljava/lang/String;)V
+
+    .line 38
+    .line 39
+    .line 40
+    invoke-virtual {v2}, Ljava/io/File;->delete()Z
+
+    .line 41
+    .line 42
+    .line 43
+    :try_start_0
+    new-instance v2, Ljava/io/File;
+
+    .line 44
+    .line 45
+    new-instance v3, Ljava/lang/StringBuilder;
+
+    .line 46
+    .line 47
+    invoke-direct {v3}, Ljava/lang/StringBuilder;-><init>()V
+
+    .line 48
+    .line 49
+    .line 50
+    invoke-virtual {p1}, Ljava/io/File;->getAbsolutePath()Ljava/lang/String;
+
+    .line 51
+    .line 52
+    .line 53
+    move-result-object p1
+
+    .line 54
+    invoke-virtual {v3, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 55
+    .line 56
+    .line 57
+    invoke-virtual {v3, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 58
+    .line 59
+    .line 60
+    invoke-static {}, Lru/aaaaaccd/installer/PkgName;->getPkgName()Ljava/lang/String;
+
+    .line 61
+    .line 62
+    .line 63
+    move-result-object p1
+
+    .line 64
+    invoke-virtual {v3, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 65
+    .line 66
+    .line 67
+    invoke-virtual {v3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    .line 68
+    .line 69
+    .line 70
+    move-result-object p1
+
+    .line 71
+    invoke-direct {v2, p1}, Ljava/io/File;-><init>(Ljava/lang/String;)V
+
+    .line 72
+    .line 73
+    .line 74
+    invoke-virtual {v2}, Ljava/io/File;->createNewFile()Z
+    :try_end_0
+    .catch Ljava/io/IOException; {:try_start_0 .. :try_end_0} :catch_0
+
+    .line 75
+    .line 76
+    .line 77
+    goto :goto_0
+
+    .line 78
+    :catch_0
+    move-exception p1
+
+    .line 79
+    invoke-virtual {p1}, Ljava/lang/Throwable;->printStackTrace()V
+
+    .line 80
+    .line 81
+    .line 82
+    :cond_0
+    :goto_0
+    if-eqz p0, :cond_4
+
+    .line 83
+    .line 84
+    invoke-virtual {p0}, Ljava/io/File;->mkdirs()Z
+
+    .line 85
+    .line 86
+    .line 87
+    invoke-virtual {p0}, Ljava/io/File;->exists()Z
+
+    .line 88
+    .line 89
+    .line 90
+    move-result p1
+
+    .line 91
+    if-eqz p1, :cond_4
+
+    .line 92
+    .line 93
+    :try_start_1
+    new-instance p1, Ljava/io/File;
+
+    .line 94
+    .line 95
+    new-instance v2, Ljava/lang/StringBuilder;
+
+    .line 96
+    .line 97
+    invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
+
+    .line 98
+    .line 99
+    .line 100
+    invoke-virtual {p0}, Ljava/io/File;->getAbsolutePath()Ljava/lang/String;
+
+    .line 101
+    .line 102
+    .line 103
+    move-result-object v3
+
+    .line 104
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 105
+    .line 106
+    .line 107
+    invoke-virtual {v2, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 108
+    .line 109
+    .line 110
+    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    .line 111
+    .line 112
+    .line 113
+    move-result-object v0
+
+    .line 114
+    invoke-direct {p1, v0}, Ljava/io/File;-><init>(Ljava/lang/String;)V
+
+    .line 115
+    .line 116
+    .line 117
+    invoke-virtual {p1}, Ljava/io/File;->createNewFile()Z
+    :try_end_1
+    .catchall {:try_start_1 .. :try_end_1} :catchall_0
+
+    .line 118
+    .line 119
+    .line 120
+    goto :goto_1
+
+    .line 121
+    :catchall_0
+    move-exception p1
+
+    .line 122
+    invoke-virtual {p1}, Ljava/lang/Throwable;->printStackTrace()V
+
+    .line 123
+    .line 124
+    .line 125
+    :goto_1
+    invoke-static {}, Lʼˏ/ᵢ;->ˈי()[Ljava/lang/String;
+
+    .line 126
+    .line 127
+    .line 128
+    move-result-object p1
+
+    .line 129
+    const/4 v0, 0x0
+
+    .line 130
+    if-eqz p1, :cond_2
+
+    .line 131
+    .line 132
+    array-length v2, p1
+
+    .line 133
+    if-lez v2, :cond_2
+
+    .line 134
+    .line 135
+    array-length v2, p1
+
+    .line 136
+    const/4 v3, 0x0
+
+    .line 137
+    :goto_2
+    if-ge v3, v2, :cond_2
+
+    .line 138
+    .line 139
+    aget-object v4, p1, v3
+
+    .line 140
+    .line 141
+    array-length v5, p2
+
+    .line 142
+    if-lez v5, :cond_1
+
+    .line 143
+    .line 144
+    aget-object v5, p2, v0
+
+    .line 145
+    .line 146
+    invoke-virtual {v4, v5}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    .line 147
+    .line 148
+    .line 149
+    move-result v5
+
+    .line 150
+    if-eqz v5, :cond_1
+
+    .line 151
+    .line 152
+    goto :goto_3
+
+    .line 153
+    :cond_1
+    :try_start_2
+    new-instance v5, Ljava/io/File;
+
+    .line 154
+    .line 155
+    new-instance v6, Ljava/lang/StringBuilder;
+
+    .line 156
+    .line 157
+    invoke-direct {v6}, Ljava/lang/StringBuilder;-><init>()V
+
+    .line 158
+    .line 159
+    .line 160
+    invoke-virtual {p0}, Ljava/io/File;->getAbsolutePath()Ljava/lang/String;
+
+    .line 161
+    .line 162
+    .line 163
+    move-result-object v7
+
+    .line 164
+    invoke-virtual {v6, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 165
+    .line 166
+    .line 167
+    invoke-virtual {v6, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 168
+    .line 169
+    .line 170
+    invoke-virtual {v6, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 171
+    .line 172
+    .line 173
+    invoke-virtual {v6}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    .line 174
+    .line 175
+    .line 176
+    move-result-object v4
+
+    .line 177
+    invoke-direct {v5, v4}, Ljava/io/File;-><init>(Ljava/lang/String;)V
+
+    .line 178
+    .line 179
+    .line 180
+    invoke-virtual {v5}, Ljava/io/File;->createNewFile()Z
+    :try_end_2
+    .catchall {:try_start_2 .. :try_end_2} :catchall_1
+
+    .line 181
+    .line 182
+    .line 183
+    goto :goto_3
+
+    .line 184
+    :catchall_1
+    move-exception v4
+
+    .line 185
+    invoke-virtual {v4}, Ljava/lang/Throwable;->printStackTrace()V
+
+    .line 186
+    .line 187
+    .line 188
+    :goto_3
+    add-int/lit8 v3, v3, 0x1
+
+    .line 189
+    .line 190
+    goto :goto_2
+
+    .line 191
+    :cond_2
+    array-length p1, p3
+
+    .line 192
+    :goto_4
+    if-ge v0, p1, :cond_4
+
+    .line 193
+    .line 194
+    aget-object p2, p3, v0
+
+    .line 195
+    .line 196
+    new-instance v2, Ljava/io/File;
+
+    .line 197
+    .line 198
+    new-instance v3, Ljava/lang/StringBuilder;
+
+    .line 199
+    .line 200
+    invoke-direct {v3}, Ljava/lang/StringBuilder;-><init>()V
+
+    .line 201
+    .line 202
+    .line 203
+    invoke-virtual {p0}, Ljava/io/File;->getAbsolutePath()Ljava/lang/String;
+
+    .line 204
+    .line 205
+    .line 206
+    move-result-object v4
+
+    .line 207
+    invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 208
+    .line 209
+    .line 210
+    invoke-virtual {v3, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 211
+    .line 212
+    .line 213
+    invoke-virtual {v3, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 214
+    .line 215
+    .line 216
+    invoke-virtual {v3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    .line 217
+    .line 218
+    .line 219
+    move-result-object p2
+
+    .line 220
+    invoke-direct {v2, p2}, Ljava/io/File;-><init>(Ljava/lang/String;)V
+
+    .line 221
+    .line 222
+    .line 223
+    invoke-virtual {v2}, Ljava/io/File;->exists()Z
+
+    .line 224
+    .line 225
+    .line 226
+    move-result p2
+
+    .line 227
+    if-nez p2, :cond_3
+
+    .line 228
+    .line 229
+    :try_start_3
+    invoke-virtual {v2}, Ljava/io/File;->createNewFile()Z
+    :try_end_3
+    .catchall {:try_start_3 .. :try_end_3} :catchall_2
+
+    .line 230
+    .line 231
+    .line 232
+    goto :goto_5
+
+    .line 233
+    :catchall_2
+    move-exception p2
+
+    .line 234
+    invoke-virtual {p2}, Ljava/lang/Throwable;->printStackTrace()V
+
+    .line 235
+    .line 236
+    .line 237
+    :cond_3
+    :goto_5
+    add-int/lit8 v0, v0, 0x1
+
+    .line 238
+    .line 239
+    goto :goto_4
+
+    .line 240
+    :cond_4
+    return-void
+.end method
+
+.method public static ʻﾞ(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Z)I
     .locals 20
 
     .line 1
@@ -8423,7 +8766,7 @@
 
     .line 24
     .line 25
-    invoke-static {v0}, Lʼˏ/ᵢ;->ˎʿ([Ljava/lang/String;)V
+    invoke-static {v0}, Lʼˏ/ᵢ;->ˎˏ([Ljava/lang/String;)V
 
     .line 26
     .line 27
@@ -8452,7 +8795,7 @@
 
     .line 39
     .line 40
-    invoke-static {v0}, Lʼˏ/ᵢ;->ˎʿ([Ljava/lang/String;)V
+    invoke-static {v0}, Lʼˏ/ᵢ;->ˎˏ([Ljava/lang/String;)V
 
     .line 41
     .line 42
@@ -8477,13 +8820,13 @@
 
     .line 52
     .line 53
-    invoke-static {v0}, Lʼˏ/ᵢ;->ˎʿ([Ljava/lang/String;)V
+    invoke-static {v0}, Lʼˏ/ᵢ;->ˎˏ([Ljava/lang/String;)V
 
     .line 54
     .line 55
     .line 56
     :try_start_0
-    invoke-static/range {p1 .. p1}, Lʼˏ/ᵢ;->ʾᵎ(Ljava/lang/String;)Ljava/io/File;
+    invoke-static/range {p1 .. p1}, Lʼˏ/ᵢ;->ʾᵢ(Ljava/lang/String;)Ljava/io/File;
 
     .line 57
     .line 58
@@ -8519,7 +8862,7 @@
 
     .line 69
     .line 70
-    invoke-static/range {p1 .. p2}, Lʼˏ/ᵢ;->ʿٴ(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static/range {p1 .. p2}, Lʼˏ/ᵢ;->ʿᵎ(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     .line 71
     .line 72
@@ -8565,7 +8908,7 @@
 
     .line 91
     .line 92
-    invoke-static {v0, v14}, Lʼˏ/ᵢ;->ˋי(Ljava/lang/String;Ljava/lang/String;)Z
+    invoke-static {v0, v14}, Lʼˏ/ᵢ;->ˋᵔ(Ljava/lang/String;Ljava/lang/String;)Z
 
     .line 93
     .line 94
@@ -8599,12 +8942,12 @@
     .line 109
     .line 110
     .line 111
-    invoke-static/range {p1 .. p2}, Lʼˏ/ᵢ;->ʿٴ(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static/range {p1 .. p2}, Lʼˏ/ᵢ;->ʿᵎ(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     .line 112
     .line 113
     .line 114
-    invoke-static/range {p1 .. p1}, Lʼˏ/ᵢ;->ʾᵎ(Ljava/lang/String;)Ljava/io/File;
+    invoke-static/range {p1 .. p1}, Lʼˏ/ᵢ;->ʾᵢ(Ljava/lang/String;)Ljava/io/File;
 
     .line 115
     .line 116
@@ -8636,7 +8979,7 @@
     .line 130
     .line 131
     :try_start_1
-    invoke-static {}, Lʼˏ/ᵢ;->ʾˆ()Ljava/lang/String;
+    invoke-static {}, Lʼˏ/ᵢ;->ʾˉ()Ljava/lang/String;
 
     .line 132
     .line 133
@@ -8919,7 +9262,7 @@
 
     .line 256
     .line 257
-    invoke-static {v7}, Lʼˏ/ᵢ;->ˎʿ([Ljava/lang/String;)V
+    invoke-static {v7}, Lʼˏ/ᵢ;->ˎˏ([Ljava/lang/String;)V
 
     .line 258
     .line 259
@@ -8981,7 +9324,7 @@
 
     .line 286
     .line 287
-    invoke-static {v15, v0}, Lʼˏ/ᵢ;->ʿـ(Ljava/io/File;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v15, v0}, Lʼˏ/ᵢ;->ʿᴵ(Ljava/io/File;Ljava/lang/String;)Ljava/lang/String;
 
     .line 288
     .line 289
@@ -8994,7 +9337,7 @@
 
     .line 292
     .line 293
-    invoke-static {v15, v4}, Lʼˏ/ᵢ;->ʿـ(Ljava/io/File;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v15, v4}, Lʼˏ/ᵢ;->ʿᴵ(Ljava/io/File;Ljava/lang/String;)Ljava/lang/String;
 
     .line 294
     .line 295
@@ -9049,7 +9392,7 @@
 
     .line 320
     .line 321
-    invoke-static {v15, v4}, Lʼˏ/ᵢ;->ʿי(Ljava/io/File;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v15, v4}, Lʼˏ/ᵢ;->ʿᐧ(Ljava/io/File;Ljava/lang/String;)Ljava/lang/String;
 
     .line 322
     .line 323
@@ -9573,7 +9916,7 @@
 
     .line 585
     .line 586
-    invoke-static {v4}, Lʼˏ/ᵢ;->ˎʿ([Ljava/lang/String;)V
+    invoke-static {v4}, Lʼˏ/ᵢ;->ˎˏ([Ljava/lang/String;)V
     :try_end_9
     .catch Ljava/lang/Exception; {:try_start_9 .. :try_end_9} :catch_3
 
@@ -9763,7 +10106,7 @@
     const/4 v8, 0x1
 
     .line 667
-    invoke-static {v0, v4, v7, v8, v8}, Lʼˏ/ᵢ;->ʼʻ(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ZZ)Z
+    invoke-static {v0, v4, v7, v8, v8}, Lʼˏ/ᵢ;->ʼʽ(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ZZ)Z
 
     .line 668
     .line 669
@@ -9908,7 +10251,7 @@
     .line 734
     :cond_10
     :goto_10
-    invoke-static/range {p1 .. p1}, Lʼˏ/ᵢ;->ˊˉ(Ljava/lang/String;)Z
+    invoke-static/range {p1 .. p1}, Lʼˏ/ᵢ;->ˊי(Ljava/lang/String;)Z
 
     .line 735
     .line 736
@@ -9963,7 +10306,7 @@
 
     .line 757
     .line 758
-    invoke-static {v3}, Lʼˏ/ᵢ;->ˎʿ([Ljava/lang/String;)V
+    invoke-static {v3}, Lʼˏ/ᵢ;->ˎˏ([Ljava/lang/String;)V
 
     .line 759
     .line 760
@@ -10004,7 +10347,7 @@
 
     .line 776
     .line 777
-    invoke-static {v2}, Lʼˏ/ᵢ;->ˎʿ([Ljava/lang/String;)V
+    invoke-static {v2}, Lʼˏ/ᵢ;->ˎˏ([Ljava/lang/String;)V
 
     .line 778
     .line 779
@@ -10045,7 +10388,7 @@
 
     .line 795
     .line 796
-    invoke-static {v1}, Lʼˏ/ᵢ;->ˎʿ([Ljava/lang/String;)V
+    invoke-static {v1}, Lʼˏ/ᵢ;->ˎˏ([Ljava/lang/String;)V
 
     .line 797
     .line 798
@@ -10090,7 +10433,7 @@
 
     .line 815
     .line 816
-    invoke-static {v4}, Lʼˏ/ᵢ;->ˎʿ([Ljava/lang/String;)V
+    invoke-static {v4}, Lʼˏ/ᵢ;->ˎˏ([Ljava/lang/String;)V
 
     .line 817
     .line 818
@@ -10162,7 +10505,7 @@
 
     .line 851
     .line 852
-    invoke-static {v4}, Lʼˏ/ᵢ;->ˎʿ([Ljava/lang/String;)V
+    invoke-static {v4}, Lʼˏ/ᵢ;->ˎˏ([Ljava/lang/String;)V
 
     .line 853
     .line 854
@@ -10234,7 +10577,7 @@
 
     .line 887
     .line 888
-    invoke-static {v2}, Lʼˏ/ᵢ;->ˎʿ([Ljava/lang/String;)V
+    invoke-static {v2}, Lʼˏ/ᵢ;->ˎˏ([Ljava/lang/String;)V
     :try_end_f
     .catch Ljava/lang/Exception; {:try_start_f .. :try_end_f} :catch_9
 
@@ -10357,7 +10700,81 @@
     return v3
 .end method
 
-.method public static ʻﾞ(Ljava/lang/String;Ljava/util/ArrayList;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ZLjava/io/File;)I
+.method public static final ʼ()V
+    .locals 3
+
+    .line 1
+    new-instance v0, Landroid/content/Intent;
+
+    .line 2
+    .line 3
+    sget-object v1, Lʾˉ/ᴵᴵ;->ʼˎ:Lʾˉ/ᴵᴵ;
+
+    .line 4
+    .line 5
+    invoke-virtual {v1}, Lʾˉ/ᴵᴵ;->ˈˑ()Landroidx/fragment/app/ʿ;
+
+    .line 6
+    .line 7
+    .line 8
+    move-result-object v1
+
+    .line 9
+    sget-object v2, Lʾˉ/ᴵᴵ;->ʼˎ:Lʾˉ/ᴵᴵ;
+
+    .line 10
+    .line 11
+    invoke-virtual {v2}, Landroidx/fragment/app/Fragment;->ˆ()Landroidx/fragment/app/ʿ;
+
+    .line 12
+    .line 13
+    .line 14
+    move-result-object v2
+
+    .line 15
+    invoke-virtual {v2}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 16
+    .line 17
+    .line 18
+    move-result-object v2
+
+    .line 19
+    invoke-direct {v0, v1, v2}, Landroid/content/Intent;-><init>(Landroid/content/Context;Ljava/lang/Class;)V
+
+    .line 20
+    .line 21
+    .line 22
+    const/high16 v1, 0x20000
+
+    .line 23
+    .line 24
+    invoke-virtual {v0, v1}, Landroid/content/Intent;->setFlags(I)Landroid/content/Intent;
+
+    .line 25
+    .line 26
+    .line 27
+    sget-object v1, Lʾˉ/ᴵᴵ;->ʼˎ:Lʾˉ/ᴵᴵ;
+
+    .line 28
+    .line 29
+    invoke-virtual {v1}, Lʾˉ/ᴵᴵ;->ˈˑ()Landroidx/fragment/app/ʿ;
+
+    .line 30
+    .line 31
+    .line 32
+    move-result-object v1
+
+    .line 33
+    invoke-virtual {v1, v0}, Landroid/content/Context;->startActivity(Landroid/content/Intent;)V
+
+    .line 34
+    .line 35
+    .line 36
+    return-void
+.end method
+
+.method public static ʼʻ(Ljava/lang/String;Ljava/util/ArrayList;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ZLjava/io/File;)I
     .locals 48
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -10435,7 +10852,7 @@
 
     aput-object v1, v6, v5
 
-    invoke-static {v6}, Lʼˏ/ᵢ;->ˎʿ([Ljava/lang/String;)V
+    invoke-static {v6}, Lʼˏ/ᵢ;->ˎˏ([Ljava/lang/String;)V
 
     .line 3
     const-string v6, "chown"
@@ -10460,7 +10877,7 @@
 
     aput-object v1, v7, v25
 
-    invoke-static {v7}, Lʼˏ/ᵢ;->ˎʿ([Ljava/lang/String;)V
+    invoke-static {v7}, Lʼˏ/ᵢ;->ˎˏ([Ljava/lang/String;)V
 
     .line 4
     const-string v7, "0.0"
@@ -10475,12 +10892,12 @@
 
     aput-object v1, v8, v25
 
-    invoke-static {v8}, Lʼˏ/ᵢ;->ˎʿ([Ljava/lang/String;)V
+    invoke-static {v8}, Lʼˏ/ᵢ;->ˎˏ([Ljava/lang/String;)V
 
     if-nez p4, :cond_0
 
     .line 5
-    invoke-static/range {p2 .. p3}, Lʼˏ/ᵢ;->ʿٴ(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static/range {p2 .. p3}, Lʼˏ/ᵢ;->ʿᵎ(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v5
 
@@ -10502,12 +10919,12 @@
     move-object/from16 v28, v7
 
     .line 7
-    invoke-static/range {p2 .. p3}, Lʼˏ/ᵢ;->ʿٴ(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static/range {p2 .. p3}, Lʼˏ/ᵢ;->ʿᵎ(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v7
 
     .line 8
-    invoke-static/range {p2 .. p2}, Lʼˏ/ᵢ;->ʾᵎ(Ljava/lang/String;)Ljava/io/File;
+    invoke-static/range {p2 .. p2}, Lʼˏ/ᵢ;->ʾᵢ(Ljava/lang/String;)Ljava/io/File;
 
     move-result-object v29
 
@@ -10752,7 +11169,7 @@
     .line 26
     :cond_4
     :try_start_1
-    invoke-static {}, Lʼˏ/ᵢ;->ʾˆ()Ljava/lang/String;
+    invoke-static {}, Lʼˏ/ᵢ;->ʾˉ()Ljava/lang/String;
 
     move-result-object v5
 
@@ -10835,7 +11252,7 @@
     .catch Ljava/lang/Exception; {:try_start_4 .. :try_end_4} :catch_3
 
     :try_start_5
-    invoke-static {v12}, Lʼˏ/ᵢ;->ˎʿ([Ljava/lang/String;)V
+    invoke-static {v12}, Lʼˏ/ᵢ;->ˎˏ([Ljava/lang/String;)V
 
     .line 29
     invoke-virtual {v13}, Ljava/io/File;->exists()Z
@@ -10890,7 +11307,7 @@
     .catch Ljava/lang/Exception; {:try_start_6 .. :try_end_6} :catch_2
 
     :try_start_7
-    invoke-static {v15}, Lʼˏ/ᵢ;->ˎʿ([Ljava/lang/String;)V
+    invoke-static {v15}, Lʼˏ/ᵢ;->ˎˏ([Ljava/lang/String;)V
 
     .line 31
     new-instance v7, Ljava/lang/StringBuilder;
@@ -10945,7 +11362,7 @@
     .catch Ljava/lang/Exception; {:try_start_8 .. :try_end_8} :catch_1
 
     :try_start_9
-    invoke-static {v14}, Lʼˏ/ᵢ;->ˎʿ([Ljava/lang/String;)V
+    invoke-static {v14}, Lʼˏ/ᵢ;->ˎˏ([Ljava/lang/String;)V
     :try_end_9
     .catch Ljava/lang/Exception; {:try_start_9 .. :try_end_9} :catch_0
 
@@ -11034,7 +11451,7 @@
     .catch Ljava/lang/Exception; {:try_start_b .. :try_end_b} :catch_64
 
     :try_start_c
-    invoke-static {v13}, Lʼˏ/ᵢ;->ˎʿ([Ljava/lang/String;)V
+    invoke-static {v13}, Lʼˏ/ᵢ;->ˎˏ([Ljava/lang/String;)V
 
     .line 33
     new-instance v7, Ljava/lang/StringBuilder;
@@ -11083,7 +11500,7 @@
     .catch Ljava/lang/Exception; {:try_start_d .. :try_end_d} :catch_63
 
     :try_start_e
-    invoke-static {v13}, Lʼˏ/ᵢ;->ˎʿ([Ljava/lang/String;)V
+    invoke-static {v13}, Lʼˏ/ᵢ;->ˎˏ([Ljava/lang/String;)V
 
     .line 34
     new-instance v7, Ljava/io/File;
@@ -11169,7 +11586,7 @@
     .catch Ljava/lang/Exception; {:try_start_10 .. :try_end_10} :catch_4
 
     :try_start_11
-    invoke-static {v13}, Lʼˏ/ᵢ;->ˎʿ([Ljava/lang/String;)V
+    invoke-static {v13}, Lʼˏ/ᵢ;->ˎˏ([Ljava/lang/String;)V
     :try_end_11
     .catch Ljava/lang/Exception; {:try_start_11 .. :try_end_11} :catch_0
 
@@ -11184,7 +11601,7 @@
     :cond_7
     :goto_a
     :try_start_12
-    invoke-static/range {p2 .. p2}, Lʼˏ/ᵢ;->ʾᵎ(Ljava/lang/String;)Ljava/io/File;
+    invoke-static/range {p2 .. p2}, Lʼˏ/ᵢ;->ʾᵢ(Ljava/lang/String;)Ljava/io/File;
 
     move-result-object v7
 
@@ -11211,7 +11628,7 @@
     invoke-static/range {v20 .. v20}, Lʾˉ/ᴵᴵ;->ˉˎ(Ljava/lang/Object;)V
 
     .line 41
-    invoke-static {v8, v1, v2, v9, v3}, Lʼˏ/ᵢ;->יˎ(Ljava/lang/String;Ljava/lang/String;Ljava/util/ArrayList;Ljava/io/File;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v8, v1, v2, v9, v3}, Lʼˏ/ᵢ;->יᴵ(Ljava/lang/String;Ljava/lang/String;Ljava/util/ArrayList;Ljava/io/File;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v9
     :try_end_13
@@ -11405,7 +11822,7 @@
     .line 51
     const-string v8, "--instruction-set"
 
-    invoke-static {v7, v8}, Lʼˏ/ᵢ;->ʿـ(Ljava/io/File;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v7, v8}, Lʼˏ/ᵢ;->ʿᴵ(Ljava/io/File;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v8
 
@@ -11413,7 +11830,7 @@
     :cond_f
     const-string v10, "classpath"
 
-    invoke-static {v7, v10}, Lʼˏ/ᵢ;->ʿـ(Ljava/io/File;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v7, v10}, Lʼˏ/ᵢ;->ʿᴵ(Ljava/io/File;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v10
 
@@ -11437,7 +11854,7 @@
     .line 54
     const-string v1, "--class-loader-context"
 
-    invoke-static {v7, v1}, Lʼˏ/ᵢ;->ʿי(Ljava/io/File;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v7, v1}, Lʼˏ/ᵢ;->ʿᐧ(Ljava/io/File;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v1
 
@@ -11682,7 +12099,7 @@
 
     aput-object v1, v7, v5
 
-    invoke-static {v7}, Lʼˏ/ᵢ;->ˎʿ([Ljava/lang/String;)V
+    invoke-static {v7}, Lʼˏ/ᵢ;->ˎˏ([Ljava/lang/String;)V
 
     goto :goto_12
 
@@ -11816,7 +12233,7 @@
 
     const/4 v7, 0x0
 
-    invoke-static {v5, v2, v3, v9, v7}, Lʼˏ/ᵢ;->ʼﹳ(Ljava/io/File;Ljava/util/ArrayList;Ljava/lang/String;Ljava/lang/String;Z)V
+    invoke-static {v5, v2, v3, v9, v7}, Lʼˏ/ᵢ;->ʼﾞ(Ljava/io/File;Ljava/util/ArrayList;Ljava/lang/String;Ljava/lang/String;Z)V
 
     goto :goto_14
 
@@ -11851,7 +12268,7 @@
 
     aput-object v1, v7, v5
 
-    invoke-static {v7}, Lʼˏ/ᵢ;->ˎʿ([Ljava/lang/String;)V
+    invoke-static {v7}, Lʼˏ/ᵢ;->ˎˏ([Ljava/lang/String;)V
     :try_end_1a
     .catch Ljava/lang/Exception; {:try_start_1a .. :try_end_1a} :catch_7
 
@@ -12062,7 +12479,7 @@
     .catch Ljava/lang/Exception; {:try_start_1c .. :try_end_1c} :catch_8
 
     :try_start_1d
-    invoke-static {v13}, Lʼˏ/ᵢ;->ˎʿ([Ljava/lang/String;)V
+    invoke-static {v13}, Lʼˏ/ᵢ;->ˎˏ([Ljava/lang/String;)V
 
     goto :goto_17
 
@@ -12119,7 +12536,7 @@
     .catch Ljava/lang/Exception; {:try_start_1e .. :try_end_1e} :catch_9
 
     :try_start_1f
-    invoke-static {v9}, Lʼˏ/ᵢ;->ˎʿ([Ljava/lang/String;)V
+    invoke-static {v9}, Lʼˏ/ᵢ;->ˎˏ([Ljava/lang/String;)V
 
     .line 90
     new-instance v9, Ljava/io/File;
@@ -12169,7 +12586,7 @@
 
     const/4 v15, 0x1
 
-    invoke-static {v9, v13, v3, v15, v15}, Lʼˏ/ᵢ;->ʼʻ(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ZZ)Z
+    invoke-static {v9, v13, v3, v15, v15}, Lʼˏ/ᵢ;->ʼʽ(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ZZ)Z
 
     move-result v9
 
@@ -12238,7 +12655,7 @@
     .catch Ljava/lang/Exception; {:try_start_21 .. :try_end_21} :catch_12
 
     :try_start_22
-    invoke-static {v5}, Lʼˏ/ᵢ;->ˎʿ([Ljava/lang/String;)V
+    invoke-static {v5}, Lʼˏ/ᵢ;->ˎˏ([Ljava/lang/String;)V
 
     .line 97
     new-instance v2, Ljava/lang/StringBuilder;
@@ -12275,7 +12692,7 @@
     .catch Ljava/lang/Exception; {:try_start_23 .. :try_end_23} :catch_11
 
     :try_start_24
-    invoke-static {v9}, Lʼˏ/ᵢ;->ˎʿ([Ljava/lang/String;)V
+    invoke-static {v9}, Lʼˏ/ᵢ;->ˎˏ([Ljava/lang/String;)V
 
     .line 98
     new-instance v2, Ljava/lang/StringBuilder;
@@ -12314,7 +12731,7 @@
     .catch Ljava/lang/Exception; {:try_start_25 .. :try_end_25} :catch_10
 
     :try_start_26
-    invoke-static {v13}, Lʼˏ/ᵢ;->ˎʿ([Ljava/lang/String;)V
+    invoke-static {v13}, Lʼˏ/ᵢ;->ˎˏ([Ljava/lang/String;)V
     :try_end_26
     .catch Ljava/lang/Exception; {:try_start_26 .. :try_end_26} :catch_5
 
@@ -12331,7 +12748,7 @@
     .catch Ljava/lang/Exception; {:try_start_27 .. :try_end_27} :catch_f
 
     :try_start_28
-    invoke-static {v13}, Lʼˏ/ᵢ;->ˎʿ([Ljava/lang/String;)V
+    invoke-static {v13}, Lʼˏ/ᵢ;->ˎˏ([Ljava/lang/String;)V
 
     .line 100
     new-instance v2, Ljava/lang/StringBuilder;
@@ -12368,7 +12785,7 @@
     .catch Ljava/lang/Exception; {:try_start_29 .. :try_end_29} :catch_e
 
     :try_start_2a
-    invoke-static {v13}, Lʼˏ/ᵢ;->ˎʿ([Ljava/lang/String;)V
+    invoke-static {v13}, Lʼˏ/ᵢ;->ˎˏ([Ljava/lang/String;)V
 
     .line 101
     new-instance v2, Ljava/lang/StringBuilder;
@@ -12405,7 +12822,7 @@
     .catch Ljava/lang/Exception; {:try_start_2b .. :try_end_2b} :catch_d
 
     :try_start_2c
-    invoke-static {v13}, Lʼˏ/ᵢ;->ˎʿ([Ljava/lang/String;)V
+    invoke-static {v13}, Lʼˏ/ᵢ;->ˎˏ([Ljava/lang/String;)V
     :try_end_2c
     .catch Ljava/lang/Exception; {:try_start_2c .. :try_end_2c} :catch_5
 
@@ -12422,7 +12839,7 @@
     .catch Ljava/lang/Exception; {:try_start_2d .. :try_end_2d} :catch_c
 
     :try_start_2e
-    invoke-static {v13}, Lʼˏ/ᵢ;->ˎʿ([Ljava/lang/String;)V
+    invoke-static {v13}, Lʼˏ/ᵢ;->ˎˏ([Ljava/lang/String;)V
 
     .line 103
     new-instance v2, Ljava/lang/StringBuilder;
@@ -12459,7 +12876,7 @@
     .catch Ljava/lang/Exception; {:try_start_2f .. :try_end_2f} :catch_b
 
     :try_start_30
-    invoke-static {v13}, Lʼˏ/ᵢ;->ˎʿ([Ljava/lang/String;)V
+    invoke-static {v13}, Lʼˏ/ᵢ;->ˎˏ([Ljava/lang/String;)V
 
     .line 104
     new-instance v2, Ljava/lang/StringBuilder;
@@ -12496,7 +12913,7 @@
     .catch Ljava/lang/Exception; {:try_start_31 .. :try_end_31} :catch_a
 
     :try_start_32
-    invoke-static {v13}, Lʼˏ/ᵢ;->ˎʿ([Ljava/lang/String;)V
+    invoke-static {v13}, Lʼˏ/ᵢ;->ˎˏ([Ljava/lang/String;)V
     :try_end_32
     .catch Ljava/lang/Exception; {:try_start_32 .. :try_end_32} :catch_5
 
@@ -12613,7 +13030,7 @@
 
     const/4 v15, 0x1
 
-    invoke-static {v5, v1, v13, v15, v15}, Lʼˏ/ᵢ;->ʼʻ(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ZZ)Z
+    invoke-static {v5, v1, v13, v15, v15}, Lʼˏ/ᵢ;->ʼʽ(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ZZ)Z
 
     move-result v1
 
@@ -12671,7 +13088,7 @@
     .line 110
     :cond_1e
     :try_start_34
-    invoke-static/range {p2 .. p2}, Lʼˏ/ᵢ;->ˊˉ(Ljava/lang/String;)Z
+    invoke-static/range {p2 .. p2}, Lʼˏ/ᵢ;->ˊי(Ljava/lang/String;)Z
 
     move-result v1
     :try_end_34
@@ -12700,7 +13117,7 @@
     .catch Ljava/lang/Exception; {:try_start_35 .. :try_end_35} :catch_1d
 
     :try_start_36
-    invoke-static {v2}, Lʼˏ/ᵢ;->ˎʿ([Ljava/lang/String;)V
+    invoke-static {v2}, Lʼˏ/ᵢ;->ˎˏ([Ljava/lang/String;)V
     :try_end_36
     .catch Ljava/lang/Exception; {:try_start_36 .. :try_end_36} :catch_13
 
@@ -12717,7 +13134,7 @@
     .catch Ljava/lang/Exception; {:try_start_37 .. :try_end_37} :catch_1c
 
     :try_start_38
-    invoke-static {v2}, Lʼˏ/ᵢ;->ˎʿ([Ljava/lang/String;)V
+    invoke-static {v2}, Lʼˏ/ᵢ;->ˎˏ([Ljava/lang/String;)V
     :try_end_38
     .catch Ljava/lang/Exception; {:try_start_38 .. :try_end_38} :catch_13
 
@@ -12734,7 +13151,7 @@
     .catch Ljava/lang/Exception; {:try_start_39 .. :try_end_39} :catch_1b
 
     :try_start_3a
-    invoke-static {v2}, Lʼˏ/ᵢ;->ˎʿ([Ljava/lang/String;)V
+    invoke-static {v2}, Lʼˏ/ᵢ;->ˎˏ([Ljava/lang/String;)V
     :try_end_3a
     .catch Ljava/lang/Exception; {:try_start_3a .. :try_end_3a} :catch_13
 
@@ -12751,7 +13168,7 @@
     .catch Ljava/lang/Exception; {:try_start_3b .. :try_end_3b} :catch_1a
 
     :try_start_3c
-    invoke-static {v2}, Lʼˏ/ᵢ;->ˎʿ([Ljava/lang/String;)V
+    invoke-static {v2}, Lʼˏ/ᵢ;->ˎˏ([Ljava/lang/String;)V
     :try_end_3c
     .catch Ljava/lang/Exception; {:try_start_3c .. :try_end_3c} :catch_13
 
@@ -12768,7 +13185,7 @@
     .catch Ljava/lang/Exception; {:try_start_3d .. :try_end_3d} :catch_19
 
     :try_start_3e
-    invoke-static {v2}, Lʼˏ/ᵢ;->ˎʿ([Ljava/lang/String;)V
+    invoke-static {v2}, Lʼˏ/ᵢ;->ˎˏ([Ljava/lang/String;)V
     :try_end_3e
     .catch Ljava/lang/Exception; {:try_start_3e .. :try_end_3e} :catch_13
 
@@ -12785,7 +13202,7 @@
     .catch Ljava/lang/Exception; {:try_start_3f .. :try_end_3f} :catch_18
 
     :try_start_40
-    invoke-static {v2}, Lʼˏ/ᵢ;->ˎʿ([Ljava/lang/String;)V
+    invoke-static {v2}, Lʼˏ/ᵢ;->ˎˏ([Ljava/lang/String;)V
     :try_end_40
     .catch Ljava/lang/Exception; {:try_start_40 .. :try_end_40} :catch_13
 
@@ -12802,7 +13219,7 @@
     .catch Ljava/lang/Exception; {:try_start_41 .. :try_end_41} :catch_17
 
     :try_start_42
-    invoke-static {v2}, Lʼˏ/ᵢ;->ˎʿ([Ljava/lang/String;)V
+    invoke-static {v2}, Lʼˏ/ᵢ;->ˎˏ([Ljava/lang/String;)V
     :try_end_42
     .catch Ljava/lang/Exception; {:try_start_42 .. :try_end_42} :catch_13
 
@@ -12819,7 +13236,7 @@
     .catch Ljava/lang/Exception; {:try_start_43 .. :try_end_43} :catch_16
 
     :try_start_44
-    invoke-static {v2}, Lʼˏ/ᵢ;->ˎʿ([Ljava/lang/String;)V
+    invoke-static {v2}, Lʼˏ/ᵢ;->ˎˏ([Ljava/lang/String;)V
     :try_end_44
     .catch Ljava/lang/Exception; {:try_start_44 .. :try_end_44} :catch_13
 
@@ -12836,7 +13253,7 @@
     .catch Ljava/lang/Exception; {:try_start_45 .. :try_end_45} :catch_15
 
     :try_start_46
-    invoke-static {v2}, Lʼˏ/ᵢ;->ˎʿ([Ljava/lang/String;)V
+    invoke-static {v2}, Lʼˏ/ᵢ;->ˎˏ([Ljava/lang/String;)V
     :try_end_46
     .catch Ljava/lang/Exception; {:try_start_46 .. :try_end_46} :catch_13
 
@@ -12909,7 +13326,7 @@
     .catch Ljava/lang/Exception; {:try_start_47 .. :try_end_47} :catch_26
 
     :try_start_48
-    invoke-static {v2}, Lʼˏ/ᵢ;->ˎʿ([Ljava/lang/String;)V
+    invoke-static {v2}, Lʼˏ/ᵢ;->ˎˏ([Ljava/lang/String;)V
 
     .line 121
     new-instance v1, Ljava/lang/StringBuilder;
@@ -12946,7 +13363,7 @@
     .catch Ljava/lang/Exception; {:try_start_49 .. :try_end_49} :catch_25
 
     :try_start_4a
-    invoke-static {v5}, Lʼˏ/ᵢ;->ˎʿ([Ljava/lang/String;)V
+    invoke-static {v5}, Lʼˏ/ᵢ;->ˎˏ([Ljava/lang/String;)V
 
     .line 122
     new-instance v1, Ljava/lang/StringBuilder;
@@ -12983,7 +13400,7 @@
     .catch Ljava/lang/Exception; {:try_start_4b .. :try_end_4b} :catch_24
 
     :try_start_4c
-    invoke-static {v5}, Lʼˏ/ᵢ;->ˎʿ([Ljava/lang/String;)V
+    invoke-static {v5}, Lʼˏ/ᵢ;->ˎˏ([Ljava/lang/String;)V
     :try_end_4c
     .catch Ljava/lang/Exception; {:try_start_4c .. :try_end_4c} :catch_13
 
@@ -13000,7 +13417,7 @@
     .catch Ljava/lang/Exception; {:try_start_4d .. :try_end_4d} :catch_23
 
     :try_start_4e
-    invoke-static {v3}, Lʼˏ/ᵢ;->ˎʿ([Ljava/lang/String;)V
+    invoke-static {v3}, Lʼˏ/ᵢ;->ˎˏ([Ljava/lang/String;)V
 
     .line 124
     new-instance v1, Ljava/lang/StringBuilder;
@@ -13037,7 +13454,7 @@
     .catch Ljava/lang/Exception; {:try_start_4f .. :try_end_4f} :catch_22
 
     :try_start_50
-    invoke-static {v3}, Lʼˏ/ᵢ;->ˎʿ([Ljava/lang/String;)V
+    invoke-static {v3}, Lʼˏ/ᵢ;->ˎˏ([Ljava/lang/String;)V
 
     .line 125
     new-instance v1, Ljava/lang/StringBuilder;
@@ -13074,7 +13491,7 @@
     .catch Ljava/lang/Exception; {:try_start_51 .. :try_end_51} :catch_21
 
     :try_start_52
-    invoke-static {v3}, Lʼˏ/ᵢ;->ˎʿ([Ljava/lang/String;)V
+    invoke-static {v3}, Lʼˏ/ᵢ;->ˎˏ([Ljava/lang/String;)V
     :try_end_52
     .catch Ljava/lang/Exception; {:try_start_52 .. :try_end_52} :catch_13
 
@@ -13091,7 +13508,7 @@
     .catch Ljava/lang/Exception; {:try_start_53 .. :try_end_53} :catch_20
 
     :try_start_54
-    invoke-static {v3}, Lʼˏ/ᵢ;->ˎʿ([Ljava/lang/String;)V
+    invoke-static {v3}, Lʼˏ/ᵢ;->ˎˏ([Ljava/lang/String;)V
 
     .line 127
     new-instance v1, Ljava/lang/StringBuilder;
@@ -13128,7 +13545,7 @@
     .catch Ljava/lang/Exception; {:try_start_55 .. :try_end_55} :catch_1f
 
     :try_start_56
-    invoke-static {v3}, Lʼˏ/ᵢ;->ˎʿ([Ljava/lang/String;)V
+    invoke-static {v3}, Lʼˏ/ᵢ;->ˎˏ([Ljava/lang/String;)V
 
     .line 128
     new-instance v1, Ljava/lang/StringBuilder;
@@ -13165,11 +13582,11 @@
     .catch Ljava/lang/Exception; {:try_start_57 .. :try_end_57} :catch_1e
 
     :try_start_58
-    invoke-static {v3}, Lʼˏ/ᵢ;->ˎʿ([Ljava/lang/String;)V
+    invoke-static {v3}, Lʼˏ/ᵢ;->ˎˏ([Ljava/lang/String;)V
 
     .line 129
     :goto_1e
-    invoke-static/range {p2 .. p3}, Lʼˏ/ᵢ;->ʿٴ(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static/range {p2 .. p3}, Lʼˏ/ᵢ;->ʿᵎ(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v5
     :try_end_58
@@ -13280,7 +13697,7 @@
     .catch Ljava/lang/Exception; {:try_start_5a .. :try_end_5a} :catch_27
 
     :try_start_5b
-    invoke-static {v5}, Lʼˏ/ᵢ;->ˎʿ([Ljava/lang/String;)V
+    invoke-static {v5}, Lʼˏ/ᵢ;->ˎˏ([Ljava/lang/String;)V
     :try_end_5b
     .catch Ljava/lang/Exception; {:try_start_5b .. :try_end_5b} :catch_14
 
@@ -13389,7 +13806,7 @@
     .catch Ljava/lang/Exception; {:try_start_5d .. :try_end_5d} :catch_28
 
     :try_start_5e
-    invoke-static {v5}, Lʼˏ/ᵢ;->ˎʿ([Ljava/lang/String;)V
+    invoke-static {v5}, Lʼˏ/ᵢ;->ˎˏ([Ljava/lang/String;)V
 
     goto :goto_22
 
@@ -13436,7 +13853,7 @@
     .catch Ljava/lang/Exception; {:try_start_5f .. :try_end_5f} :catch_29
 
     :try_start_60
-    invoke-static {v2}, Lʼˏ/ᵢ;->ˎʿ([Ljava/lang/String;)V
+    invoke-static {v2}, Lʼˏ/ᵢ;->ˎˏ([Ljava/lang/String;)V
 
     goto :goto_23
 
@@ -13450,7 +13867,7 @@
     :goto_23
     new-instance v1, Ljava/io/File;
 
-    invoke-static/range {p2 .. p3}, Lʼˏ/ᵢ;->ʿٴ(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static/range {p2 .. p3}, Lʼˏ/ᵢ;->ʿᵎ(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v2
 
@@ -13574,7 +13991,7 @@
     .catch Ljava/lang/Exception; {:try_start_61 .. :try_end_61} :catch_2a
 
     :try_start_62
-    invoke-static {v13}, Lʼˏ/ᵢ;->ˎʿ([Ljava/lang/String;)V
+    invoke-static {v13}, Lʼˏ/ᵢ;->ˎˏ([Ljava/lang/String;)V
 
     goto :goto_26
 
@@ -13649,7 +14066,7 @@
 
     const/4 v13, 0x0
 
-    invoke-static {v7, v9, v10, v2, v13}, Lʼˏ/ᵢ;->ʼﹳ(Ljava/io/File;Ljava/util/ArrayList;Ljava/lang/String;Ljava/lang/String;Z)V
+    invoke-static {v7, v9, v10, v2, v13}, Lʼˏ/ᵢ;->ʼﾞ(Ljava/io/File;Ljava/util/ArrayList;Ljava/lang/String;Ljava/lang/String;Z)V
 
     goto :goto_27
 
@@ -13713,7 +14130,7 @@
 
     const/4 v9, 0x1
 
-    invoke-static {v2, v1, v7, v9, v9}, Lʼˏ/ᵢ;->ʼʻ(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ZZ)Z
+    invoke-static {v2, v1, v7, v9, v9}, Lʼˏ/ᵢ;->ʼʽ(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ZZ)Z
 
     move-result v1
 
@@ -13770,7 +14187,7 @@
     .catch Ljava/lang/Exception; {:try_start_63 .. :try_end_63} :catch_2b
 
     :try_start_64
-    invoke-static {v2}, Lʼˏ/ᵢ;->ˎʿ([Ljava/lang/String;)V
+    invoke-static {v2}, Lʼˏ/ᵢ;->ˎˏ([Ljava/lang/String;)V
     :try_end_64
     .catch Ljava/lang/Exception; {:try_start_64 .. :try_end_64} :catch_5
 
@@ -13834,7 +14251,7 @@
     .catch Ljava/lang/Exception; {:try_start_65 .. :try_end_65} :catch_31
 
     :try_start_66
-    invoke-static {v9}, Lʼˏ/ᵢ;->ˎʿ([Ljava/lang/String;)V
+    invoke-static {v9}, Lʼˏ/ᵢ;->ˎˏ([Ljava/lang/String;)V
     :try_end_66
     .catch Ljava/lang/Exception; {:try_start_66 .. :try_end_66} :catch_30
 
@@ -13889,7 +14306,7 @@
 
     if-eqz v2, :cond_32
 
-    invoke-virtual {v1, v15}, Lʼˏ/ᵢ;->ʼʽ(Ljava/io/File;)V
+    invoke-virtual {v1, v15}, Lʼˏ/ᵢ;->ʼʾ(Ljava/io/File;)V
     :try_end_69
     .catch Ljava/lang/Exception; {:try_start_69 .. :try_end_69} :catch_2c
 
@@ -14046,7 +14463,7 @@
 
     move-result-object v1
 
-    invoke-static {v2, v8, v9, v1}, Lʼˏ/ᵢ;->יˋ(Ljava/lang/String;Ljava/lang/String;Ljava/util/ArrayList;Ljava/lang/String;)V
+    invoke-static {v2, v8, v9, v1}, Lʼˏ/ᵢ;->יᐧ(Ljava/lang/String;Ljava/lang/String;Ljava/util/ArrayList;Ljava/lang/String;)V
 
     .line 171
     new-instance v1, Ljava/lang/StringBuilder;
@@ -14085,7 +14502,7 @@
     .catch Ljava/lang/Exception; {:try_start_6c .. :try_end_6c} :catch_62
 
     :try_start_6d
-    invoke-static {v9}, Lʼˏ/ᵢ;->ˎʿ([Ljava/lang/String;)V
+    invoke-static {v9}, Lʼˏ/ᵢ;->ˎˏ([Ljava/lang/String;)V
 
     .line 172
     new-instance v1, Ljava/lang/StringBuilder;
@@ -14136,7 +14553,7 @@
     .catch Ljava/lang/Exception; {:try_start_6e .. :try_end_6e} :catch_61
 
     :try_start_6f
-    invoke-static {v13}, Lʼˏ/ᵢ;->ˎʿ([Ljava/lang/String;)V
+    invoke-static {v13}, Lʼˏ/ᵢ;->ˎˏ([Ljava/lang/String;)V
 
     .line 173
     new-instance v1, Ljava/lang/StringBuilder;
@@ -14189,7 +14606,7 @@
     .catch Ljava/lang/Exception; {:try_start_70 .. :try_end_70} :catch_60
 
     :try_start_71
-    invoke-static {v15}, Lʼˏ/ᵢ;->ˎʿ([Ljava/lang/String;)V
+    invoke-static {v15}, Lʼˏ/ᵢ;->ˎˏ([Ljava/lang/String;)V
 
     .line 174
     new-instance v1, Ljava/io/File;
@@ -14555,7 +14972,7 @@
     if-eqz v1, :cond_3c
 
     .line 188
-    invoke-static {v13, v10}, Lʼˏ/ᵢ;->ʽʾ(Ljava/io/File;Ljava/lang/String;)V
+    invoke-static {v13, v10}, Lʼˏ/ᵢ;->ʽˆ(Ljava/io/File;Ljava/lang/String;)V
 
     .line 189
     sget-object v1, Lʾˉ/ᴵᴵ;->ʼٴ:Ljava/lang/String;
@@ -14576,7 +14993,7 @@
 
     const/4 v15, 0x1
 
-    invoke-static {v1, v13, v7, v15, v15}, Lʼˏ/ᵢ;->ʼʻ(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ZZ)Z
+    invoke-static {v1, v13, v7, v15, v15}, Lʼˏ/ᵢ;->ʼʽ(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ZZ)Z
 
     move-result v1
 
@@ -14646,7 +15063,7 @@
     .catch Ljava/lang/Exception; {:try_start_78 .. :try_end_78} :catch_38
 
     :try_start_79
-    invoke-static {v13}, Lʼˏ/ᵢ;->ˎʿ([Ljava/lang/String;)V
+    invoke-static {v13}, Lʼˏ/ᵢ;->ˎˏ([Ljava/lang/String;)V
 
     goto :goto_3d
 
@@ -14687,7 +15104,7 @@
 
     const/4 v7, 0x1
 
-    invoke-static {v1, v13, v15, v7, v7}, Lʼˏ/ᵢ;->ʼʻ(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ZZ)Z
+    invoke-static {v1, v13, v15, v7, v7}, Lʼˏ/ᵢ;->ʼʽ(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ZZ)Z
 
     move-result v1
 
@@ -14743,7 +15160,7 @@
     .catch Ljava/lang/Exception; {:try_start_7a .. :try_end_7a} :catch_39
 
     :try_start_7b
-    invoke-static {v7}, Lʼˏ/ᵢ;->ˎʿ([Ljava/lang/String;)V
+    invoke-static {v7}, Lʼˏ/ᵢ;->ˎˏ([Ljava/lang/String;)V
     :try_end_7b
     .catch Ljava/lang/Exception; {:try_start_7b .. :try_end_7b} :catch_37
 
@@ -14820,7 +15237,7 @@
     .catch Ljava/lang/Exception; {:try_start_7d .. :try_end_7d} :catch_45
 
     :try_start_7e
-    invoke-static {v1}, Lʼˏ/ᵢ;->ˎʿ([Ljava/lang/String;)V
+    invoke-static {v1}, Lʼˏ/ᵢ;->ˎˏ([Ljava/lang/String;)V
 
     .line 200
     new-instance v1, Ljava/lang/StringBuilder;
@@ -14857,7 +15274,7 @@
     .catch Ljava/lang/Exception; {:try_start_7f .. :try_end_7f} :catch_44
 
     :try_start_80
-    invoke-static {v15}, Lʼˏ/ᵢ;->ˎʿ([Ljava/lang/String;)V
+    invoke-static {v15}, Lʼˏ/ᵢ;->ˎˏ([Ljava/lang/String;)V
 
     .line 201
     new-instance v1, Ljava/lang/StringBuilder;
@@ -14894,7 +15311,7 @@
     .catch Ljava/lang/Exception; {:try_start_81 .. :try_end_81} :catch_43
 
     :try_start_82
-    invoke-static {v15}, Lʼˏ/ᵢ;->ˎʿ([Ljava/lang/String;)V
+    invoke-static {v15}, Lʼˏ/ᵢ;->ˎˏ([Ljava/lang/String;)V
 
     .line 202
     new-instance v1, Ljava/lang/StringBuilder;
@@ -14978,7 +15395,7 @@
 
     invoke-direct {v1, v3}, Ljava/io/File;-><init>(Ljava/lang/String;)V
 
-    invoke-static {v1, v10}, Lʼˏ/ᵢ;->ʽʾ(Ljava/io/File;Ljava/lang/String;)V
+    invoke-static {v1, v10}, Lʼˏ/ᵢ;->ʽˆ(Ljava/io/File;Ljava/lang/String;)V
 
     goto/16 :goto_44
 
@@ -15021,7 +15438,7 @@
     .catch Ljava/lang/Exception; {:try_start_85 .. :try_end_85} :catch_41
 
     :try_start_86
-    invoke-static {v5}, Lʼˏ/ᵢ;->ˎʿ([Ljava/lang/String;)V
+    invoke-static {v5}, Lʼˏ/ᵢ;->ˎˏ([Ljava/lang/String;)V
 
     .line 208
     invoke-virtual/range {v29 .. v29}, Ljava/io/File;->getAbsolutePath()Ljava/lang/String;
@@ -15057,7 +15474,7 @@
     .catch Ljava/lang/Exception; {:try_start_87 .. :try_end_87} :catch_3b
 
     :try_start_88
-    invoke-static {v3}, Lʼˏ/ᵢ;->ˎʿ([Ljava/lang/String;)V
+    invoke-static {v3}, Lʼˏ/ᵢ;->ˎˏ([Ljava/lang/String;)V
 
     goto :goto_42
 
@@ -15108,7 +15525,7 @@
     .catch Ljava/lang/Exception; {:try_start_89 .. :try_end_89} :catch_40
 
     :try_start_8a
-    invoke-static {v7}, Lʼˏ/ᵢ;->ˎʿ([Ljava/lang/String;)V
+    invoke-static {v7}, Lʼˏ/ᵢ;->ˎˏ([Ljava/lang/String;)V
 
     .line 211
     new-instance v1, Ljava/lang/StringBuilder;
@@ -15214,7 +15631,7 @@
     .catch Ljava/lang/Exception; {:try_start_8d .. :try_end_8d} :catch_3e
 
     :try_start_8e
-    invoke-static {v7}, Lʼˏ/ᵢ;->ˎʿ([Ljava/lang/String;)V
+    invoke-static {v7}, Lʼˏ/ᵢ;->ˎˏ([Ljava/lang/String;)V
 
     .line 213
     new-instance v1, Ljava/lang/StringBuilder;
@@ -15253,7 +15670,7 @@
     .catch Ljava/lang/Exception; {:try_start_8f .. :try_end_8f} :catch_3d
 
     :try_start_90
-    invoke-static {v7}, Lʼˏ/ᵢ;->ˎʿ([Ljava/lang/String;)V
+    invoke-static {v7}, Lʼˏ/ᵢ;->ˎˏ([Ljava/lang/String;)V
 
     .line 214
     new-instance v1, Ljava/lang/StringBuilder;
@@ -15292,7 +15709,7 @@
     .catch Ljava/lang/Exception; {:try_start_91 .. :try_end_91} :catch_3c
 
     :try_start_92
-    invoke-static {v7}, Lʼˏ/ᵢ;->ˎʿ([Ljava/lang/String;)V
+    invoke-static {v7}, Lʼˏ/ᵢ;->ˎˏ([Ljava/lang/String;)V
 
     .line 215
     new-instance v1, Ljava/io/File;
@@ -15313,7 +15730,7 @@
 
     invoke-direct {v1, v3}, Ljava/io/File;-><init>(Ljava/lang/String;)V
 
-    invoke-static {v1, v10}, Lʼˏ/ᵢ;->ʽʾ(Ljava/io/File;Ljava/lang/String;)V
+    invoke-static {v1, v10}, Lʼˏ/ᵢ;->ʽˆ(Ljava/io/File;Ljava/lang/String;)V
 
     .line 216
     new-instance v1, Ljava/lang/StringBuilder;
@@ -15334,7 +15751,7 @@
 
     const/4 v7, 0x1
 
-    invoke-static {v1, v5, v3, v7}, Lʼˏ/ᵢ;->ʻˏ(Ljava/lang/String;Ljava/lang/String;ZZ)Z
+    invoke-static {v1, v5, v3, v7}, Lʼˏ/ᵢ;->ʻˎ(Ljava/lang/String;Ljava/lang/String;ZZ)Z
     :try_end_92
     .catch Ljava/lang/Exception; {:try_start_92 .. :try_end_92} :catch_3a
 
@@ -15423,7 +15840,7 @@
     .line 217
     :goto_45
     :try_start_93
-    invoke-static/range {p2 .. p2}, Lʼˏ/ᵢ;->ˊˉ(Ljava/lang/String;)Z
+    invoke-static/range {p2 .. p2}, Lʼˏ/ᵢ;->ˊי(Ljava/lang/String;)Z
 
     move-result v9
     :try_end_93
@@ -15452,7 +15869,7 @@
     .catch Ljava/lang/Exception; {:try_start_94 .. :try_end_94} :catch_50
 
     :try_start_95
-    invoke-static {v4}, Lʼˏ/ᵢ;->ˎʿ([Ljava/lang/String;)V
+    invoke-static {v4}, Lʼˏ/ᵢ;->ˎˏ([Ljava/lang/String;)V
     :try_end_95
     .catch Ljava/lang/Exception; {:try_start_95 .. :try_end_95} :catch_47
 
@@ -15469,7 +15886,7 @@
     .catch Ljava/lang/Exception; {:try_start_96 .. :try_end_96} :catch_4f
 
     :try_start_97
-    invoke-static {v4}, Lʼˏ/ᵢ;->ˎʿ([Ljava/lang/String;)V
+    invoke-static {v4}, Lʼˏ/ᵢ;->ˎˏ([Ljava/lang/String;)V
     :try_end_97
     .catch Ljava/lang/Exception; {:try_start_97 .. :try_end_97} :catch_47
 
@@ -15486,7 +15903,7 @@
     .catch Ljava/lang/Exception; {:try_start_98 .. :try_end_98} :catch_4e
 
     :try_start_99
-    invoke-static {v4}, Lʼˏ/ᵢ;->ˎʿ([Ljava/lang/String;)V
+    invoke-static {v4}, Lʼˏ/ᵢ;->ˎˏ([Ljava/lang/String;)V
 
     move-object/from16 v9, v17
 
@@ -15517,7 +15934,7 @@
     .catch Ljava/lang/Exception; {:try_start_9a .. :try_end_9a} :catch_4d
 
     :try_start_9b
-    invoke-static {v13}, Lʼˏ/ᵢ;->ˎʿ([Ljava/lang/String;)V
+    invoke-static {v13}, Lʼˏ/ᵢ;->ˎˏ([Ljava/lang/String;)V
 
     .line 222
     invoke-static {v5, v9}, Lʼˏ/ᵢ;->ᵎ(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
@@ -15546,7 +15963,7 @@
     .catch Ljava/lang/Exception; {:try_start_9c .. :try_end_9c} :catch_4c
 
     :try_start_9d
-    invoke-static {v13}, Lʼˏ/ᵢ;->ˎʿ([Ljava/lang/String;)V
+    invoke-static {v13}, Lʼˏ/ᵢ;->ˎˏ([Ljava/lang/String;)V
 
     .line 223
     invoke-static {v5, v9}, Lʼˏ/ᵢ;->ᵎ(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
@@ -15575,7 +15992,7 @@
     .catch Ljava/lang/Exception; {:try_start_9e .. :try_end_9e} :catch_4b
 
     :try_start_9f
-    invoke-static {v10}, Lʼˏ/ᵢ;->ˎʿ([Ljava/lang/String;)V
+    invoke-static {v10}, Lʼˏ/ᵢ;->ˎˏ([Ljava/lang/String;)V
 
     move-object/from16 v10, v46
 
@@ -15606,7 +16023,7 @@
     .catch Ljava/lang/Exception; {:try_start_a0 .. :try_end_a0} :catch_4a
 
     :try_start_a1
-    invoke-static {v13}, Lʼˏ/ᵢ;->ˎʿ([Ljava/lang/String;)V
+    invoke-static {v13}, Lʼˏ/ᵢ;->ˎˏ([Ljava/lang/String;)V
 
     .line 225
     invoke-static {v5, v10}, Lʼˏ/ᵢ;->ᵎ(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
@@ -15635,7 +16052,7 @@
     .catch Ljava/lang/Exception; {:try_start_a2 .. :try_end_a2} :catch_49
 
     :try_start_a3
-    invoke-static {v13}, Lʼˏ/ᵢ;->ˎʿ([Ljava/lang/String;)V
+    invoke-static {v13}, Lʼˏ/ᵢ;->ˎˏ([Ljava/lang/String;)V
 
     .line 226
     invoke-static {v5, v10}, Lʼˏ/ᵢ;->ᵎ(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
@@ -15664,7 +16081,7 @@
     .catch Ljava/lang/Exception; {:try_start_a4 .. :try_end_a4} :catch_48
 
     :try_start_a5
-    invoke-static {v9}, Lʼˏ/ᵢ;->ˎʿ([Ljava/lang/String;)V
+    invoke-static {v9}, Lʼˏ/ᵢ;->ˎˏ([Ljava/lang/String;)V
     :try_end_a5
     .catch Ljava/lang/Exception; {:try_start_a5 .. :try_end_a5} :catch_47
 
@@ -15767,7 +16184,7 @@
     .catch Ljava/lang/Exception; {:try_start_a6 .. :try_end_a6} :catch_5e
 
     :try_start_a7
-    invoke-static {v15}, Lʼˏ/ᵢ;->ˎʿ([Ljava/lang/String;)V
+    invoke-static {v15}, Lʼˏ/ᵢ;->ˎˏ([Ljava/lang/String;)V
 
     .line 228
     new-instance v13, Ljava/lang/StringBuilder;
@@ -15806,7 +16223,7 @@
     .catch Ljava/lang/Exception; {:try_start_a8 .. :try_end_a8} :catch_5c
 
     :try_start_a9
-    invoke-static {v1}, Lʼˏ/ᵢ;->ˎʿ([Ljava/lang/String;)V
+    invoke-static {v1}, Lʼˏ/ᵢ;->ˎˏ([Ljava/lang/String;)V
 
     .line 229
     new-instance v1, Ljava/lang/StringBuilder;
@@ -15847,7 +16264,7 @@
     .catch Ljava/lang/Exception; {:try_start_aa .. :try_end_aa} :catch_5a
 
     :try_start_ab
-    invoke-static {v3}, Lʼˏ/ᵢ;->ˎʿ([Ljava/lang/String;)V
+    invoke-static {v3}, Lʼˏ/ᵢ;->ˎˏ([Ljava/lang/String;)V
 
     .line 230
     invoke-static {v5, v9}, Lʼˏ/ᵢ;->ᵎ(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
@@ -15876,7 +16293,7 @@
     .catch Ljava/lang/Exception; {:try_start_ac .. :try_end_ac} :catch_59
 
     :try_start_ad
-    invoke-static {v15}, Lʼˏ/ᵢ;->ˎʿ([Ljava/lang/String;)V
+    invoke-static {v15}, Lʼˏ/ᵢ;->ˎˏ([Ljava/lang/String;)V
 
     .line 231
     new-instance v1, Ljava/lang/StringBuilder;
@@ -15919,7 +16336,7 @@
     .catch Ljava/lang/Exception; {:try_start_ae .. :try_end_ae} :catch_57
 
     :try_start_af
-    invoke-static {v7}, Lʼˏ/ᵢ;->ˎʿ([Ljava/lang/String;)V
+    invoke-static {v7}, Lʼˏ/ᵢ;->ˎˏ([Ljava/lang/String;)V
 
     .line 232
     new-instance v1, Ljava/lang/StringBuilder;
@@ -15960,7 +16377,7 @@
     .catch Ljava/lang/Exception; {:try_start_b0 .. :try_end_b0} :catch_56
 
     :try_start_b1
-    invoke-static {v9}, Lʼˏ/ᵢ;->ˎʿ([Ljava/lang/String;)V
+    invoke-static {v9}, Lʼˏ/ᵢ;->ˎˏ([Ljava/lang/String;)V
 
     .line 233
     invoke-static {v5, v10}, Lʼˏ/ᵢ;->ᵎ(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
@@ -15989,7 +16406,7 @@
     .catch Ljava/lang/Exception; {:try_start_b2 .. :try_end_b2} :catch_55
 
     :try_start_b3
-    invoke-static {v7}, Lʼˏ/ᵢ;->ˎʿ([Ljava/lang/String;)V
+    invoke-static {v7}, Lʼˏ/ᵢ;->ˎˏ([Ljava/lang/String;)V
 
     .line 234
     new-instance v1, Ljava/lang/StringBuilder;
@@ -16030,7 +16447,7 @@
     .catch Ljava/lang/Exception; {:try_start_b4 .. :try_end_b4} :catch_54
 
     :try_start_b5
-    invoke-static {v9}, Lʼˏ/ᵢ;->ˎʿ([Ljava/lang/String;)V
+    invoke-static {v9}, Lʼˏ/ᵢ;->ˎˏ([Ljava/lang/String;)V
 
     .line 235
     new-instance v1, Ljava/lang/StringBuilder;
@@ -16071,7 +16488,7 @@
     .catch Ljava/lang/Exception; {:try_start_b6 .. :try_end_b6} :catch_53
 
     :try_start_b7
-    invoke-static {v5}, Lʼˏ/ᵢ;->ˎʿ([Ljava/lang/String;)V
+    invoke-static {v5}, Lʼˏ/ᵢ;->ˎˏ([Ljava/lang/String;)V
 
     .line 236
     :goto_47
@@ -16203,7 +16620,7 @@
     .catch Ljava/lang/Exception; {:try_start_b8 .. :try_end_b8} :catch_52
 
     :try_start_b9
-    invoke-static {v3}, Lʼˏ/ᵢ;->ˎʿ([Ljava/lang/String;)V
+    invoke-static {v3}, Lʼˏ/ᵢ;->ˎˏ([Ljava/lang/String;)V
     :try_end_b9
     .catch Ljava/lang/Exception; {:try_start_b9 .. :try_end_b9} :catch_51
 
@@ -16472,81 +16889,437 @@
     return v3
 .end method
 
-.method public static final ʼ()V
-    .locals 3
+.method public static ʼʼ()Z
+    .locals 13
 
     .line 1
-    new-instance v0, Landroid/content/Intent;
+    const-string v0, "com.android.vending"
 
     .line 2
     .line 3
-    sget-object v1, Lʾˉ/ᴵᴵ;->ʼˎ:Lʾˉ/ᴵᴵ;
+    const/4 v1, 0x0
 
     .line 4
-    .line 5
-    invoke-virtual {v1}, Lʾˉ/ᴵᴵ;->ˈˑ()Landroidx/fragment/app/ʿ;
+    invoke-static {v0, v1}, Lʼˏ/ᵢ;->ˆˈ(Ljava/lang/String;I)Landroid/content/pm/PackageInfo;
 
+    .line 5
     .line 6
     .line 7
+    move-result-object v0
+
     .line 8
-    move-result-object v1
+    if-eqz v0, :cond_4
 
     .line 9
-    sget-object v2, Lʾˉ/ᴵᴵ;->ʼˎ:Lʾˉ/ᴵᴵ;
-
     .line 10
-    .line 11
-    invoke-virtual {v2}, Landroidx/fragment/app/Fragment;->ˆ()Landroidx/fragment/app/ʿ;
+    new-instance v2, Ljava/io/File;
 
+    .line 11
     .line 12
+    iget-object v3, v0, Landroid/content/pm/PackageInfo;->applicationInfo:Landroid/content/pm/ApplicationInfo;
+
     .line 13
     .line 14
-    move-result-object v2
+    iget-object v3, v3, Landroid/content/pm/ApplicationInfo;->sourceDir:Ljava/lang/String;
 
     .line 15
-    invoke-virtual {v2}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
-
     .line 16
+    const/4 v4, 0x1
+
     .line 17
+    invoke-static {v3, v4}, Lʼˏ/ᵢ;->ˆˊ(Ljava/lang/String;Z)Ljava/lang/String;
+
     .line 18
-    move-result-object v2
-
     .line 19
-    invoke-direct {v0, v1, v2}, Landroid/content/Intent;-><init>(Landroid/content/Context;Ljava/lang/Class;)V
-
     .line 20
-    .line 21
-    .line 22
-    const/high16 v1, 0x20000
+    move-result-object v3
 
+    .line 21
+    invoke-direct {v2, v3}, Ljava/io/File;-><init>(Ljava/lang/String;)V
+
+    .line 22
     .line 23
     .line 24
-    invoke-virtual {v0, v1}, Landroid/content/Intent;->setFlags(I)Landroid/content/Intent;
+    iget-object v0, v0, Landroid/content/pm/PackageInfo;->applicationInfo:Landroid/content/pm/ApplicationInfo;
 
     .line 25
     .line 26
+    iget-object v0, v0, Landroid/content/pm/ApplicationInfo;->sourceDir:Ljava/lang/String;
+
     .line 27
-    sget-object v1, Lʾˉ/ᴵᴵ;->ʼˎ:Lʾˉ/ᴵᴵ;
-
     .line 28
-    .line 29
-    invoke-virtual {v1}, Lʾˉ/ᴵᴵ;->ˈˑ()Landroidx/fragment/app/ʿ;
+    invoke-static {v0}, Lʼˏ/ᵢ;->ʾᵔ(Ljava/lang/String;)Ljava/io/File;
 
+    .line 29
     .line 30
     .line 31
+    move-result-object v0
+
     .line 32
-    move-result-object v1
+    const-string v3, "vdex"
 
     .line 33
-    invoke-virtual {v1, v0}, Landroid/content/Context;->startActivity(Landroid/content/Intent;)V
-
     .line 34
+    const-wide/16 v5, 0x0
+
     .line 35
     .line 36
-    return-void
+    const/4 v7, 0x0
+
+    .line 37
+    if-eqz v0, :cond_0
+
+    .line 38
+    .line 39
+    :try_start_0
+    invoke-virtual {v0}, Ljava/io/File;->length()J
+
+    .line 40
+    .line 41
+    .line 42
+    move-result-wide v8
+    :try_end_0
+    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_2
+
+    .line 43
+    :try_start_1
+    new-instance v10, Ljava/io/File;
+
+    .line 44
+    .line 45
+    invoke-virtual {v0}, Ljava/io/File;->getAbsolutePath()Ljava/lang/String;
+
+    .line 46
+    .line 47
+    .line 48
+    move-result-object v11
+
+    .line 49
+    invoke-static {v11, v3}, Lʼˏ/ᵢ;->ᵎ(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+
+    .line 50
+    .line 51
+    .line 52
+    move-result-object v11
+
+    .line 53
+    invoke-direct {v10, v11}, Ljava/io/File;-><init>(Ljava/lang/String;)V
+    :try_end_1
+    .catch Ljava/lang/Exception; {:try_start_1 .. :try_end_1} :catch_1
+
+    .line 54
+    .line 55
+    .line 56
+    :try_start_2
+    invoke-virtual {v10}, Ljava/io/File;->length()J
+
+    .line 57
+    .line 58
+    .line 59
+    move-result-wide v11
+    :try_end_2
+    .catch Ljava/lang/Exception; {:try_start_2 .. :try_end_2} :catch_0
+
+    .line 60
+    move-object v7, v10
+
+    .line 61
+    goto :goto_0
+
+    .line 62
+    :catch_0
+    move-exception v2
+
+    .line 63
+    move-wide v11, v5
+
+    .line 64
+    move-object v7, v10
+
+    .line 65
+    goto :goto_1
+
+    .line 66
+    :catch_1
+    move-exception v2
+
+    .line 67
+    move-wide v11, v5
+
+    .line 68
+    goto :goto_1
+
+    .line 69
+    :catch_2
+    move-exception v2
+
+    .line 70
+    move-wide v8, v5
+
+    .line 71
+    move-wide v11, v8
+
+    .line 72
+    goto :goto_1
+
+    .line 73
+    :cond_0
+    move-wide v8, v5
+
+    .line 74
+    move-wide v11, v8
+
+    .line 75
+    :goto_0
+    :try_start_3
+    invoke-virtual {v2}, Ljava/io/File;->length()J
+
+    .line 76
+    .line 77
+    .line 78
+    move-result-wide v8
+
+    .line 79
+    new-instance v10, Ljava/io/File;
+
+    .line 80
+    .line 81
+    invoke-virtual {v2}, Ljava/io/File;->getAbsolutePath()Ljava/lang/String;
+
+    .line 82
+    .line 83
+    .line 84
+    move-result-object v2
+
+    .line 85
+    invoke-static {v2, v3}, Lʼˏ/ᵢ;->ᵎ(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+
+    .line 86
+    .line 87
+    .line 88
+    move-result-object v2
+
+    .line 89
+    invoke-direct {v10, v2}, Ljava/io/File;-><init>(Ljava/lang/String;)V
+
+    .line 90
+    .line 91
+    .line 92
+    invoke-virtual {v10}, Ljava/io/File;->length()J
+
+    .line 93
+    .line 94
+    .line 95
+    move-result-wide v2
+    :try_end_3
+    .catch Ljava/lang/Exception; {:try_start_3 .. :try_end_3} :catch_3
+
+    .line 96
+    goto :goto_4
+
+    .line 97
+    :catch_3
+    move-exception v2
+
+    .line 98
+    :goto_1
+    invoke-virtual {v2}, Ljava/lang/Throwable;->printStackTrace()V
+
+    .line 99
+    .line 100
+    .line 101
+    if-eqz v7, :cond_1
+
+    .line 102
+    .line 103
+    :try_start_4
+    invoke-virtual {v7}, Ljava/io/File;->exists()Z
+
+    .line 104
+    .line 105
+    .line 106
+    move-result v2
+
+    .line 107
+    if-eqz v2, :cond_1
+
+    .line 108
+    .line 109
+    invoke-virtual {v7}, Ljava/io/File;->length()J
+
+    .line 110
+    .line 111
+    .line 112
+    move-result-wide v2
+
+    .line 113
+    goto :goto_4
+
+    .line 114
+    :catch_4
+    move-exception v0
+
+    .line 115
+    goto :goto_2
+
+    .line 116
+    :cond_1
+    if-eqz v0, :cond_2
+
+    .line 117
+    .line 118
+    invoke-virtual {v0}, Ljava/io/File;->exists()Z
+
+    .line 119
+    .line 120
+    .line 121
+    move-result v2
+
+    .line 122
+    if-eqz v2, :cond_2
+
+    .line 123
+    .line 124
+    invoke-virtual {v0}, Ljava/io/File;->length()J
+
+    .line 125
+    .line 126
+    .line 127
+    move-result-wide v2
+    :try_end_4
+    .catch Ljava/lang/Exception; {:try_start_4 .. :try_end_4} :catch_4
+
+    .line 128
+    move-wide v8, v2
+
+    .line 129
+    goto :goto_3
+
+    .line 130
+    :goto_2
+    invoke-virtual {v0}, Ljava/lang/Throwable;->printStackTrace()V
+
+    .line 131
+    .line 132
+    .line 133
+    :cond_2
+    :goto_3
+    move-wide v2, v11
+
+    .line 134
+    :goto_4
+    new-instance v0, Ljava/lang/StringBuilder;
+
+    .line 135
+    .line 136
+    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
+
+    .line 137
+    .line 138
+    .line 139
+    const-string v7, "vdex="
+
+    .line 140
+    .line 141
+    invoke-virtual {v0, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 142
+    .line 143
+    .line 144
+    invoke-virtual {v0, v2, v3}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
+
+    .line 145
+    .line 146
+    .line 147
+    const-string v7, " odex="
+
+    .line 148
+    .line 149
+    invoke-virtual {v0, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 150
+    .line 151
+    .line 152
+    invoke-virtual {v0, v8, v9}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
+
+    .line 153
+    .line 154
+    .line 155
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    .line 156
+    .line 157
+    .line 158
+    move-result-object v0
+
+    .line 159
+    invoke-static {v0}, Lʾˉ/ᴵᴵ;->ˉˎ(Ljava/lang/Object;)V
+
+    .line 160
+    .line 161
+    .line 162
+    const-wide/32 v10, 0x37000
+
+    .line 163
+    .line 164
+    .line 165
+    cmp-long v0, v8, v10
+
+    .line 166
+    .line 167
+    if-gez v0, :cond_4
+
+    .line 168
+    .line 169
+    cmp-long v0, v8, v5
+
+    .line 170
+    .line 171
+    if-lez v0, :cond_4
+
+    .line 172
+    .line 173
+    cmp-long v0, v2, v5
+
+    .line 174
+    .line 175
+    if-nez v0, :cond_3
+
+    .line 176
+    .line 177
+    return v4
+
+    .line 178
+    :cond_3
+    cmp-long v0, v2, v5
+
+    .line 179
+    .line 180
+    if-lez v0, :cond_4
+
+    .line 181
+    .line 182
+    const-wide/32 v5, 0x100000
+
+    .line 183
+    .line 184
+    .line 185
+    cmp-long v0, v2, v5
+
+    .line 186
+    .line 187
+    if-gez v0, :cond_4
+
+    .line 188
+    .line 189
+    return v4
+
+    .line 190
+    :cond_4
+    return v1
 .end method
 
-.method public static ʼʻ(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ZZ)Z
+.method public static ʼʽ(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ZZ)Z
     .locals 26
 
     .line 1
@@ -16675,7 +17448,7 @@
 
     .line 65
     .line 66
-    invoke-static {v1, v15}, Lʼˏ/ᵢ;->ˋי(Ljava/lang/String;Ljava/lang/String;)Z
+    invoke-static {v1, v15}, Lʼˏ/ᵢ;->ˋᵔ(Ljava/lang/String;Ljava/lang/String;)Z
 
     .line 67
     .line 68
@@ -17743,437 +18516,142 @@
     return v16
 .end method
 
-.method public static ʼʼ()Z
-    .locals 13
+.method public static varargs ʼʿ(Lʾˉ/ᵎ;[Ljava/lang/String;)V
+    .locals 4
 
     .line 1
-    const-string v0, "com.android.vending"
+    :try_start_0
+    invoke-static {}, Lʾˉ/ᴵᴵ;->ˈᵎ()Landroid/content/pm/PackageManager;
 
     .line 2
     .line 3
-    const/4 v1, 0x0
-
     .line 4
-    invoke-static {v0, v1}, Lʼˏ/ᵢ;->ˆʽ(Ljava/lang/String;I)Landroid/content/pm/PackageInfo;
-
-    .line 5
-    .line 6
-    .line 7
     move-result-object v0
 
+    .line 5
+    iget-object v1, p0, Lʾˉ/ᵎ;->ʻ:Ljava/lang/String;
+
+    .line 6
+    .line 7
+    const/16 v2, 0x2000
+
     .line 8
-    if-eqz v0, :cond_4
-
     .line 9
-    .line 10
-    new-instance v2, Ljava/io/File;
+    invoke-virtual {v0, v1, v2}, Landroid/content/pm/PackageManager;->getPackageInfo(Ljava/lang/String;I)Landroid/content/pm/PackageInfo;
 
+    .line 10
     .line 11
     .line 12
-    iget-object v3, v0, Landroid/content/pm/PackageInfo;->applicationInfo:Landroid/content/pm/ApplicationInfo;
+    move-result-object v0
 
     .line 13
+    iget-object v0, v0, Landroid/content/pm/PackageInfo;->applicationInfo:Landroid/content/pm/ApplicationInfo;
+
     .line 14
-    iget-object v3, v3, Landroid/content/pm/ApplicationInfo;->sourceDir:Ljava/lang/String;
-
     .line 15
-    .line 16
-    const/4 v4, 0x1
+    iget-object v0, v0, Landroid/content/pm/ApplicationInfo;->sourceDir:Ljava/lang/String;
 
+    .line 16
     .line 17
-    invoke-static {v3, v4}, Lʼˏ/ᵢ;->ˆʿ(Ljava/lang/String;Z)Ljava/lang/String;
+    const-class v1, Ljavaroot/utils/ˊˊ;
 
     .line 18
     .line 19
-    .line 20
-    move-result-object v3
+    new-instance v2, Ljava/lang/StringBuilder;
 
+    .line 20
     .line 21
-    invoke-direct {v2, v3}, Ljava/io/File;-><init>(Ljava/lang/String;)V
+    invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
 
     .line 22
     .line 23
     .line 24
-    iget-object v0, v0, Landroid/content/pm/PackageInfo;->applicationInfo:Landroid/content/pm/ApplicationInfo;
+    const-string v3, ""
 
     .line 25
     .line 26
-    iget-object v0, v0, Landroid/content/pm/ApplicationInfo;->sourceDir:Ljava/lang/String;
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     .line 27
     .line 28
-    invoke-static {v0}, Lʼˏ/ᵢ;->ʾᴵ(Ljava/lang/String;)Ljava/io/File;
-
     .line 29
+    iget-boolean p0, p0, Lʾˉ/ᵎ;->ﹳ:Z
+
     .line 30
     .line 31
-    move-result-object v0
+    invoke-virtual {v2, p0}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
 
     .line 32
-    const-string v3, "vdex"
-
     .line 33
     .line 34
-    const-wide/16 v5, 0x0
+    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     .line 35
     .line 36
-    const/4 v7, 0x0
-
     .line 37
-    if-eqz v0, :cond_0
+    move-result-object p0
 
     .line 38
-    .line 39
-    :try_start_0
-    invoke-virtual {v0}, Ljava/io/File;->length()J
+    invoke-static {p1}, Lʼˏ/ᵢ;->ᵎᵎ([Ljava/lang/String;)Ljava/lang/String;
 
+    .line 39
     .line 40
     .line 41
+    move-result-object p1
+
     .line 42
-    move-result-wide v8
-    :try_end_0
-    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_2
+    const/4 v2, 0x3
 
     .line 43
-    :try_start_1
-    new-instance v10, Ljava/io/File;
+    new-array v2, v2, [Ljava/lang/String;
 
     .line 44
     .line 45
-    invoke-virtual {v0}, Ljava/io/File;->getAbsolutePath()Ljava/lang/String;
+    const/4 v3, 0x0
 
     .line 46
+    aput-object v0, v2, v3
+
     .line 47
     .line 48
-    move-result-object v11
+    const/4 v0, 0x1
 
     .line 49
-    invoke-static {v11, v3}, Lʼˏ/ᵢ;->ᵎ(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    aput-object p0, v2, v0
 
     .line 50
     .line 51
+    const/4 p0, 0x2
+
     .line 52
-    move-result-object v11
+    aput-object p1, v2, p0
 
     .line 53
-    invoke-direct {v10, v11}, Ljava/io/File;-><init>(Ljava/lang/String;)V
-    :try_end_1
-    .catch Ljava/lang/Exception; {:try_start_1 .. :try_end_1} :catch_1
-
     .line 54
+    invoke-static {v1, v2}, Lʼˏ/ᵢ;->ˎˊ(Ljava/lang/Class;[Ljava/lang/String;)Ljava/lang/String;
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
     .line 55
     .line 56
-    :try_start_2
-    invoke-virtual {v10}, Ljava/io/File;->length()J
-
     .line 57
-    .line 58
-    .line 59
-    move-result-wide v11
-    :try_end_2
-    .catch Ljava/lang/Exception; {:try_start_2 .. :try_end_2} :catch_0
-
-    .line 60
-    move-object v7, v10
-
-    .line 61
     goto :goto_0
 
+    .line 58
+    :catchall_0
+    move-exception p0
+
+    .line 59
+    invoke-virtual {p0}, Ljava/lang/Throwable;->printStackTrace()V
+
+    .line 60
+    .line 61
     .line 62
-    :catch_0
-    move-exception v2
-
-    .line 63
-    move-wide v11, v5
-
-    .line 64
-    move-object v7, v10
-
-    .line 65
-    goto :goto_1
-
-    .line 66
-    :catch_1
-    move-exception v2
-
-    .line 67
-    move-wide v11, v5
-
-    .line 68
-    goto :goto_1
-
-    .line 69
-    :catch_2
-    move-exception v2
-
-    .line 70
-    move-wide v8, v5
-
-    .line 71
-    move-wide v11, v8
-
-    .line 72
-    goto :goto_1
-
-    .line 73
-    :cond_0
-    move-wide v8, v5
-
-    .line 74
-    move-wide v11, v8
-
-    .line 75
     :goto_0
-    :try_start_3
-    invoke-virtual {v2}, Ljava/io/File;->length()J
-
-    .line 76
-    .line 77
-    .line 78
-    move-result-wide v8
-
-    .line 79
-    new-instance v10, Ljava/io/File;
-
-    .line 80
-    .line 81
-    invoke-virtual {v2}, Ljava/io/File;->getAbsolutePath()Ljava/lang/String;
-
-    .line 82
-    .line 83
-    .line 84
-    move-result-object v2
-
-    .line 85
-    invoke-static {v2, v3}, Lʼˏ/ᵢ;->ᵎ(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
-
-    .line 86
-    .line 87
-    .line 88
-    move-result-object v2
-
-    .line 89
-    invoke-direct {v10, v2}, Ljava/io/File;-><init>(Ljava/lang/String;)V
-
-    .line 90
-    .line 91
-    .line 92
-    invoke-virtual {v10}, Ljava/io/File;->length()J
-
-    .line 93
-    .line 94
-    .line 95
-    move-result-wide v2
-    :try_end_3
-    .catch Ljava/lang/Exception; {:try_start_3 .. :try_end_3} :catch_3
-
-    .line 96
-    goto :goto_4
-
-    .line 97
-    :catch_3
-    move-exception v2
-
-    .line 98
-    :goto_1
-    invoke-virtual {v2}, Ljava/lang/Throwable;->printStackTrace()V
-
-    .line 99
-    .line 100
-    .line 101
-    if-eqz v7, :cond_1
-
-    .line 102
-    .line 103
-    :try_start_4
-    invoke-virtual {v7}, Ljava/io/File;->exists()Z
-
-    .line 104
-    .line 105
-    .line 106
-    move-result v2
-
-    .line 107
-    if-eqz v2, :cond_1
-
-    .line 108
-    .line 109
-    invoke-virtual {v7}, Ljava/io/File;->length()J
-
-    .line 110
-    .line 111
-    .line 112
-    move-result-wide v2
-
-    .line 113
-    goto :goto_4
-
-    .line 114
-    :catch_4
-    move-exception v0
-
-    .line 115
-    goto :goto_2
-
-    .line 116
-    :cond_1
-    if-eqz v0, :cond_2
-
-    .line 117
-    .line 118
-    invoke-virtual {v0}, Ljava/io/File;->exists()Z
-
-    .line 119
-    .line 120
-    .line 121
-    move-result v2
-
-    .line 122
-    if-eqz v2, :cond_2
-
-    .line 123
-    .line 124
-    invoke-virtual {v0}, Ljava/io/File;->length()J
-
-    .line 125
-    .line 126
-    .line 127
-    move-result-wide v2
-    :try_end_4
-    .catch Ljava/lang/Exception; {:try_start_4 .. :try_end_4} :catch_4
-
-    .line 128
-    move-wide v8, v2
-
-    .line 129
-    goto :goto_3
-
-    .line 130
-    :goto_2
-    invoke-virtual {v0}, Ljava/lang/Throwable;->printStackTrace()V
-
-    .line 131
-    .line 132
-    .line 133
-    :cond_2
-    :goto_3
-    move-wide v2, v11
-
-    .line 134
-    :goto_4
-    new-instance v0, Ljava/lang/StringBuilder;
-
-    .line 135
-    .line 136
-    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
-
-    .line 137
-    .line 138
-    .line 139
-    const-string v7, "vdex="
-
-    .line 140
-    .line 141
-    invoke-virtual {v0, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 142
-    .line 143
-    .line 144
-    invoke-virtual {v0, v2, v3}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
-
-    .line 145
-    .line 146
-    .line 147
-    const-string v7, " odex="
-
-    .line 148
-    .line 149
-    invoke-virtual {v0, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 150
-    .line 151
-    .line 152
-    invoke-virtual {v0, v8, v9}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
-
-    .line 153
-    .line 154
-    .line 155
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    .line 156
-    .line 157
-    .line 158
-    move-result-object v0
-
-    .line 159
-    invoke-static {v0}, Lʾˉ/ᴵᴵ;->ˉˎ(Ljava/lang/Object;)V
-
-    .line 160
-    .line 161
-    .line 162
-    const-wide/32 v10, 0x37000
-
-    .line 163
-    .line 164
-    .line 165
-    cmp-long v0, v8, v10
-
-    .line 166
-    .line 167
-    if-gez v0, :cond_4
-
-    .line 168
-    .line 169
-    cmp-long v0, v8, v5
-
-    .line 170
-    .line 171
-    if-lez v0, :cond_4
-
-    .line 172
-    .line 173
-    cmp-long v0, v2, v5
-
-    .line 174
-    .line 175
-    if-nez v0, :cond_3
-
-    .line 176
-    .line 177
-    return v4
-
-    .line 178
-    :cond_3
-    cmp-long v0, v2, v5
-
-    .line 179
-    .line 180
-    if-lez v0, :cond_4
-
-    .line 181
-    .line 182
-    const-wide/32 v5, 0x100000
-
-    .line 183
-    .line 184
-    .line 185
-    cmp-long v0, v2, v5
-
-    .line 186
-    .line 187
-    if-gez v0, :cond_4
-
-    .line 188
-    .line 189
-    return v4
-
-    .line 190
-    :cond_4
-    return v1
+    return-void
 .end method
 
-.method public static ʼʾ(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Boolean;Z)I
+.method public static ʼˆ(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Boolean;Z)I
     .locals 23
 
     .line 1
@@ -18248,7 +18726,7 @@
 
     .line 35
     .line 36
-    invoke-static {v8}, Lʼˏ/ᵢ;->ˎʿ([Ljava/lang/String;)V
+    invoke-static {v8}, Lʼˏ/ᵢ;->ˎˏ([Ljava/lang/String;)V
 
     .line 37
     .line 38
@@ -18262,7 +18740,7 @@
     .line 42
     .line 43
     .line 44
-    invoke-static {v8}, Lʼˏ/ᵢ;->ʾˑ(Ljava/io/File;)Ljava/io/File;
+    invoke-static {v8}, Lʼˏ/ᵢ;->ʾـ(Ljava/io/File;)Ljava/io/File;
 
     .line 45
     .line 46
@@ -18294,7 +18772,7 @@
 
     .line 59
     .line 60
-    invoke-static {v12}, Lʼˏ/ᵢ;->ˎʿ([Ljava/lang/String;)V
+    invoke-static {v12}, Lʼˏ/ᵢ;->ˎˏ([Ljava/lang/String;)V
 
     .line 61
     .line 62
@@ -18308,7 +18786,7 @@
     .line 66
     .line 67
     .line 68
-    invoke-static {v8}, Lʼˏ/ᵢ;->ʾˑ(Ljava/io/File;)Ljava/io/File;
+    invoke-static {v8}, Lʼˏ/ᵢ;->ʾـ(Ljava/io/File;)Ljava/io/File;
 
     .line 69
     .line 70
@@ -18348,7 +18826,7 @@
 
     .line 87
     .line 88
-    invoke-static {v14}, Lʼˏ/ᵢ;->ˎʿ([Ljava/lang/String;)V
+    invoke-static {v14}, Lʼˏ/ᵢ;->ˎˏ([Ljava/lang/String;)V
 
     .line 89
     .line 90
@@ -18362,7 +18840,7 @@
     .line 94
     .line 95
     .line 96
-    invoke-static {v8}, Lʼˏ/ᵢ;->ʾˑ(Ljava/io/File;)Ljava/io/File;
+    invoke-static {v8}, Lʼˏ/ᵢ;->ʾـ(Ljava/io/File;)Ljava/io/File;
 
     .line 97
     .line 98
@@ -18398,7 +18876,7 @@
 
     .line 113
     .line 114
-    invoke-static {v15}, Lʼˏ/ᵢ;->ˎʿ([Ljava/lang/String;)V
+    invoke-static {v15}, Lʼˏ/ᵢ;->ˎˏ([Ljava/lang/String;)V
 
     .line 115
     .line 116
@@ -18419,7 +18897,7 @@
 
     .line 124
     .line 125
-    invoke-static {v8}, Lʼˏ/ᵢ;->ˎʿ([Ljava/lang/String;)V
+    invoke-static {v8}, Lʼˏ/ᵢ;->ˎˏ([Ljava/lang/String;)V
 
     .line 126
     .line 127
@@ -18440,7 +18918,7 @@
 
     .line 135
     .line 136
-    invoke-static {v0}, Lʼˏ/ᵢ;->ˎʿ([Ljava/lang/String;)V
+    invoke-static {v0}, Lʼˏ/ᵢ;->ˎˏ([Ljava/lang/String;)V
 
     .line 137
     .line 138
@@ -18461,7 +18939,7 @@
 
     .line 146
     .line 147
-    invoke-static {v0}, Lʼˏ/ᵢ;->ˎʿ([Ljava/lang/String;)V
+    invoke-static {v0}, Lʼˏ/ᵢ;->ˎˏ([Ljava/lang/String;)V
 
     .line 148
     .line 149
@@ -18470,7 +18948,7 @@
 
     .line 151
     .line 152
-    invoke-static {v1, v3}, Lʼˏ/ᵢ;->ʿٴ(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v1, v3}, Lʼˏ/ᵢ;->ʿᵎ(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     .line 153
     .line 154
@@ -18498,13 +18976,13 @@
 
     .line 163
     .line 164
-    invoke-static {v8, v0}, Lʼˏ/ᵢ;->ˋי(Ljava/lang/String;Ljava/lang/String;)Z
+    invoke-static {v8, v0}, Lʼˏ/ᵢ;->ˋᵔ(Ljava/lang/String;Ljava/lang/String;)Z
 
     .line 165
     .line 166
     .line 167
     :cond_1
-    invoke-static {v1, v3}, Lʼˏ/ᵢ;->ʿٴ(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v1, v3}, Lʼˏ/ᵢ;->ʿᵎ(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     .line 168
     .line 169
@@ -18587,7 +19065,7 @@
 
     .line 211
     :try_start_0
-    invoke-static/range {p0 .. p0}, Lʼˏ/ᵢ;->ʾᵎ(Ljava/lang/String;)Ljava/io/File;
+    invoke-static/range {p0 .. p0}, Lʼˏ/ᵢ;->ʾᵢ(Ljava/lang/String;)Ljava/io/File;
 
     .line 212
     .line 213
@@ -18901,7 +19379,7 @@
 
     .line 353
     .line 354
-    invoke-static {v0, v7}, Lʼˏ/ᵢ;->ʿـ(Ljava/io/File;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v0, v7}, Lʼˏ/ᵢ;->ʿᴵ(Ljava/io/File;Ljava/lang/String;)Ljava/lang/String;
 
     .line 355
     .line 356
@@ -18929,7 +19407,7 @@
 
     .line 364
     .line 365
-    invoke-static {v0, v9}, Lʼˏ/ᵢ;->ʿـ(Ljava/io/File;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v0, v9}, Lʼˏ/ᵢ;->ʿᴵ(Ljava/io/File;Ljava/lang/String;)Ljava/lang/String;
 
     .line 366
     .line 367
@@ -18984,7 +19462,7 @@
 
     .line 392
     .line 393
-    invoke-static {v0, v9}, Lʼˏ/ᵢ;->ʿי(Ljava/io/File;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v0, v9}, Lʼˏ/ᵢ;->ʿᐧ(Ljava/io/File;Ljava/lang/String;)Ljava/lang/String;
 
     .line 394
     .line 395
@@ -19510,7 +19988,7 @@
 
     .line 655
     .line 656
-    invoke-static {v0}, Lʼˏ/ᵢ;->ˎʿ([Ljava/lang/String;)V
+    invoke-static {v0}, Lʼˏ/ᵢ;->ˎˏ([Ljava/lang/String;)V
 
     .line 657
     .line 658
@@ -19909,7 +20387,7 @@
 
     .line 854
     .line 855
-    invoke-static {v0}, Lʼˏ/ᵢ;->ˎʿ([Ljava/lang/String;)V
+    invoke-static {v0}, Lʼˏ/ᵢ;->ˎˏ([Ljava/lang/String;)V
 
     .line 856
     .line 857
@@ -20018,7 +20496,7 @@
 
     .line 909
     .line 910
-    invoke-static {v0}, Lʼˏ/ᵢ;->ˎʿ([Ljava/lang/String;)V
+    invoke-static {v0}, Lʼˏ/ᵢ;->ˎˏ([Ljava/lang/String;)V
     :try_end_a
     .catch Ljava/lang/Exception; {:try_start_a .. :try_end_a} :catch_4
 
@@ -20190,7 +20668,7 @@
 
     .line 990
     .line 991
-    invoke-static {v9}, Lʼˏ/ᵢ;->ˎʿ([Ljava/lang/String;)V
+    invoke-static {v9}, Lʼˏ/ᵢ;->ˎˏ([Ljava/lang/String;)V
 
     .line 992
     .line 993
@@ -20211,7 +20689,7 @@
     const/4 v10, 0x1
 
     .line 1001
-    invoke-static {v7, v9, v8, v10, v10}, Lʼˏ/ᵢ;->ʼʻ(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ZZ)Z
+    invoke-static {v7, v9, v8, v10, v10}, Lʼˏ/ᵢ;->ʼʽ(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ZZ)Z
 
     .line 1002
     .line 1003
@@ -20307,7 +20785,7 @@
 
     .line 1046
     .line 1047
-    invoke-static {v9}, Lʼˏ/ᵢ;->ˎʿ([Ljava/lang/String;)V
+    invoke-static {v9}, Lʼˏ/ᵢ;->ˎˏ([Ljava/lang/String;)V
 
     .line 1048
     .line 1049
@@ -20369,7 +20847,7 @@
 
     .line 1077
     .line 1078
-    invoke-static {v7}, Lʼˏ/ᵢ;->ˎʿ([Ljava/lang/String;)V
+    invoke-static {v7}, Lʼˏ/ᵢ;->ˎˏ([Ljava/lang/String;)V
 
     .line 1079
     .line 1080
@@ -20379,7 +20857,7 @@
 
     .line 1082
     .line 1083
-    invoke-static {v1, v3}, Lʼˏ/ᵢ;->ʿٴ(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v1, v3}, Lʼˏ/ᵢ;->ʿᵎ(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     .line 1084
     .line 1085
@@ -20421,7 +20899,7 @@
     .line 1102
     :goto_10
     :try_start_c
-    invoke-static/range {p0 .. p0}, Lʼˏ/ᵢ;->ˊˉ(Ljava/lang/String;)Z
+    invoke-static/range {p0 .. p0}, Lʼˏ/ᵢ;->ˊי(Ljava/lang/String;)Z
 
     .line 1103
     .line 1104
@@ -20468,7 +20946,7 @@
 
     .line 1121
     .line 1122
-    invoke-static {v3}, Lʼˏ/ᵢ;->ˎʿ([Ljava/lang/String;)V
+    invoke-static {v3}, Lʼˏ/ᵢ;->ˎˏ([Ljava/lang/String;)V
 
     .line 1123
     .line 1124
@@ -20489,7 +20967,7 @@
 
     .line 1132
     .line 1133
-    invoke-static {v3}, Lʼˏ/ᵢ;->ˎʿ([Ljava/lang/String;)V
+    invoke-static {v3}, Lʼˏ/ᵢ;->ˎˏ([Ljava/lang/String;)V
 
     .line 1134
     .line 1135
@@ -20510,7 +20988,7 @@
 
     .line 1143
     .line 1144
-    invoke-static {v3}, Lʼˏ/ᵢ;->ˎʿ([Ljava/lang/String;)V
+    invoke-static {v3}, Lʼˏ/ᵢ;->ˎˏ([Ljava/lang/String;)V
 
     .line 1145
     .line 1146
@@ -20554,7 +21032,7 @@
 
     .line 1161
     .line 1162
-    invoke-static {v9}, Lʼˏ/ᵢ;->ˎʿ([Ljava/lang/String;)V
+    invoke-static {v9}, Lʼˏ/ᵢ;->ˎˏ([Ljava/lang/String;)V
 
     .line 1163
     .line 1164
@@ -20618,7 +21096,7 @@
 
     .line 1193
     .line 1194
-    invoke-static {v9}, Lʼˏ/ᵢ;->ˎʿ([Ljava/lang/String;)V
+    invoke-static {v9}, Lʼˏ/ᵢ;->ˎˏ([Ljava/lang/String;)V
 
     .line 1195
     .line 1196
@@ -20682,7 +21160,7 @@
 
     .line 1225
     .line 1226
-    invoke-static {v7}, Lʼˏ/ᵢ;->ˎʿ([Ljava/lang/String;)V
+    invoke-static {v7}, Lʼˏ/ᵢ;->ˎˏ([Ljava/lang/String;)V
     :try_end_d
     .catch Ljava/lang/Exception; {:try_start_d .. :try_end_d} :catch_8
 
@@ -20894,7 +21372,7 @@
 
     .line 1321
     .line 1322
-    invoke-static {v0}, Lʼˏ/ᵢ;->ˎʿ([Ljava/lang/String;)V
+    invoke-static {v0}, Lʼˏ/ᵢ;->ˎˏ([Ljava/lang/String;)V
 
     .line 1323
     .line 1324
@@ -20917,7 +21395,7 @@
     return v10
 .end method
 
-.method public static ʼʿ()V
+.method public static ʼˈ()V
     .locals 11
 
     .line 1
@@ -21089,7 +21567,7 @@
     move-result-wide v7
 
     .line 86
-    invoke-static {v1}, Lʼˏ/ᵢ;->ˆי(I)J
+    invoke-static {v1}, Lʼˏ/ᵢ;->ˆᐧ(I)J
 
     .line 87
     .line 88
@@ -21145,7 +21623,7 @@
     move-result-object v0
 
     .line 115
-    invoke-static {v0}, Lʼˏ/ᵢ;->ˎʾ(Ljava/lang/String;)V
+    invoke-static {v0}, Lʼˏ/ᵢ;->ˎˋ(Ljava/lang/String;)V
 
     .line 116
     .line 117
@@ -21186,7 +21664,7 @@
     move-result-object v0
 
     .line 138
-    invoke-static {v0}, Lʼˏ/ᵢ;->ˎʾ(Ljava/lang/String;)V
+    invoke-static {v0}, Lʼˏ/ᵢ;->ˎˋ(Ljava/lang/String;)V
 
     .line 139
     .line 140
@@ -21227,7 +21705,7 @@
     move-result-object v0
 
     .line 161
-    invoke-static {v0}, Lʼˏ/ᵢ;->ˎʾ(Ljava/lang/String;)V
+    invoke-static {v0}, Lʼˏ/ᵢ;->ˎˋ(Ljava/lang/String;)V
 
     .line 162
     .line 163
@@ -21279,7 +21757,7 @@
     .line 186
     .line 187
     .line 188
-    invoke-static {v1, v0}, Lʼˏ/ᵢ;->ˆـ(ILjava/io/File;)Z
+    invoke-static {v1, v0}, Lʼˏ/ᵢ;->ˆᴵ(ILjava/io/File;)Z
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -21393,7 +21871,7 @@
     move-result-object v0
 
     .line 246
-    invoke-static {v0}, Lʼˏ/ᵢ;->ˎʾ(Ljava/lang/String;)V
+    invoke-static {v0}, Lʼˏ/ᵢ;->ˎˋ(Ljava/lang/String;)V
 
     .line 247
     .line 248
@@ -21434,7 +21912,7 @@
     move-result-object v0
 
     .line 269
-    invoke-static {v0}, Lʼˏ/ᵢ;->ˎʾ(Ljava/lang/String;)V
+    invoke-static {v0}, Lʼˏ/ᵢ;->ˎˋ(Ljava/lang/String;)V
 
     .line 270
     .line 271
@@ -21475,7 +21953,7 @@
     move-result-object v0
 
     .line 292
-    invoke-static {v0}, Lʼˏ/ᵢ;->ˎʾ(Ljava/lang/String;)V
+    invoke-static {v0}, Lʼˏ/ᵢ;->ˎˋ(Ljava/lang/String;)V
 
     .line 293
     .line 294
@@ -21484,7 +21962,7 @@
     return-void
 .end method
 
-.method public static ʼˆ(Ljava/lang/String;Ljava/lang/Runnable;Ljava/lang/Runnable;)V
+.method public static ʼˉ(Ljava/lang/String;Ljava/lang/Runnable;Ljava/lang/Runnable;)V
     .locals 2
 
     .line 1
@@ -21523,7 +22001,7 @@
     return-void
 .end method
 
-.method public static ʼˈ(Ljava/util/ArrayList;Ljava/lang/Runnable;Ljava/lang/Runnable;)V
+.method public static ʼˊ(Ljava/util/ArrayList;Ljava/lang/Runnable;Ljava/lang/Runnable;)V
     .locals 2
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -21573,7 +22051,7 @@
     return-void
 .end method
 
-.method public static ʼˉ(F)F
+.method public static ʼˋ(F)F
     .locals 1
 
     .line 1
@@ -21611,7 +22089,7 @@
     return p0
 .end method
 
-.method public static ʼˊ(Landroid/graphics/drawable/Drawable;)Landroid/graphics/Bitmap;
+.method public static ʼˎ(Landroid/graphics/drawable/Drawable;)Landroid/graphics/Bitmap;
     .locals 5
 
     .line 1
@@ -21731,7 +22209,7 @@
     return-object v0
 .end method
 
-.method public static ʼˋ(Ljava/lang/String;)Z
+.method public static ʼˏ(Ljava/lang/String;)Z
     .locals 5
 
     .line 1
@@ -21846,7 +22324,7 @@
     .line 54
     .line 55
     .line 56
-    const-class v4, Ljavaroot/utils/ᵢᵢ;
+    const-class v4, Ljavaroot/utils/ⁱⁱ;
 
     .line 57
     .line 58
@@ -21933,7 +22411,7 @@
     return v0
 .end method
 
-.method public static ʼˎ()V
+.method public static ʼˑ()V
     .locals 2
 
     .line 1
@@ -21973,7 +22451,7 @@
     return-void
 .end method
 
-.method public static ʼˏ()V
+.method public static ʼי()V
     .locals 2
 
     .line 1
@@ -22184,7 +22662,7 @@
     return-void
 .end method
 
-.method public static ʼˑ()V
+.method public static ʼـ()V
     .locals 3
 
     .line 1
@@ -22215,7 +22693,7 @@
     return-void
 .end method
 
-.method public static ʼי()Landroid/content/Intent;
+.method public static ʼٴ()Landroid/content/Intent;
     .locals 16
 
     .line 1
@@ -22803,7 +23281,7 @@
     return-object v0
 .end method
 
-.method private static ʼᵔ(Ljava/lang/String;)Lʾˉ/ٴ;
+.method private static ʼⁱ(Ljava/lang/String;)Lʾˉ/ٴ;
     .locals 12
 
     .line 1
@@ -22816,7 +23294,7 @@
 
     .line 5
     :try_start_0
-    invoke-static {}, Lʼˏ/ᵢ;->ʿˋ()Ljava/util/ArrayList;
+    invoke-static {}, Lʼˏ/ᵢ;->ʿˑ()Ljava/util/ArrayList;
 
     .line 6
     .line 7
@@ -23369,7 +23847,7 @@
     return-object v0
 .end method
 
-.method public static ʼᵢ(Lcom/android/apksig/util/DataSource;)Lcom/android/apksig/apk/ApkUtils$ZipSections;
+.method public static ʼﹳ(Lcom/android/apksig/util/DataSource;)Lcom/android/apksig/apk/ApkUtils$ZipSections;
     .locals 10
     .annotation system Ldalvik/annotation/Throws;
         value = {
@@ -23627,7 +24105,7 @@
     throw p0
 .end method
 
-.method public static ʼⁱ()J
+.method public static ʼﹶ()J
     .locals 3
 
     .line 1
@@ -23788,7 +24266,7 @@
     return-wide v0
 .end method
 
-.method public static ʼﹳ(Ljava/io/File;Ljava/util/ArrayList;Ljava/lang/String;Ljava/lang/String;Z)V
+.method public static ʼﾞ(Ljava/io/File;Ljava/util/ArrayList;Ljava/lang/String;Ljava/lang/String;Z)V
     .locals 25
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -23881,7 +24359,7 @@
 
     .line 37
     .line 38
-    invoke-static {v10}, Lʼˏ/ᵢ;->ˎʿ([Ljava/lang/String;)V
+    invoke-static {v10}, Lʼˏ/ᵢ;->ˎˏ([Ljava/lang/String;)V
 
     .line 39
     .line 40
@@ -23969,7 +24447,7 @@
 
     .line 81
     .line 82
-    invoke-static {v0}, Lʼˏ/ᵢ;->ˎʿ([Ljava/lang/String;)V
+    invoke-static {v0}, Lʼˏ/ᵢ;->ˎˏ([Ljava/lang/String;)V
     :try_end_1
     .catch Ljava/lang/Exception; {:try_start_1 .. :try_end_1} :catch_1
 
@@ -24798,7 +25276,7 @@
     move-result-object v0
 
     .line 464
-    invoke-static {v0}, Lʼˏ/ᵢ;->ˎٴ(Ljava/lang/String;)V
+    invoke-static {v0}, Lʼˏ/ᵢ;->ˎⁱ(Ljava/lang/String;)V
 
     .line 465
     .line 466
@@ -26154,7 +26632,7 @@
 
     .line 1122
     .line 1123
-    invoke-static {v0}, Lʼˏ/ᵢ;->ˎٴ(Ljava/lang/String;)V
+    invoke-static {v0}, Lʼˏ/ᵢ;->ˎⁱ(Ljava/lang/String;)V
 
     .line 1124
     .line 1125
@@ -27338,7 +27816,14 @@
     return-void
 .end method
 
-.method public static ʽʻ(Ljava/lang/String;)V
+.method public static ʽʽ()V
+    .locals 0
+
+    .line 1
+    return-void
+.end method
+
+.method public static ʽʾ(Ljava/lang/String;)V
     .locals 31
 
     .line 1
@@ -27728,7 +28213,7 @@
 
     .line 192
     .line 193
-    invoke-static {v10}, Lʼˏ/ᵢ;->ˎʿ([Ljava/lang/String;)V
+    invoke-static {v10}, Lʼˏ/ᵢ;->ˎˏ([Ljava/lang/String;)V
 
     .line 194
     .line 195
@@ -27757,7 +28242,7 @@
 
     .line 207
     .line 208
-    invoke-static {v10}, Lʼˏ/ᵢ;->ˎʿ([Ljava/lang/String;)V
+    invoke-static {v10}, Lʼˏ/ᵢ;->ˎˏ([Ljava/lang/String;)V
 
     .line 209
     .line 210
@@ -28121,7 +28606,7 @@
 
     .line 388
     .line 389
-    invoke-static {v3}, Lʼˏ/ᵢ;->ˎʿ([Ljava/lang/String;)V
+    invoke-static {v3}, Lʼˏ/ᵢ;->ˎˏ([Ljava/lang/String;)V
 
     .line 390
     .line 391
@@ -28200,7 +28685,7 @@
 
     .line 426
     .line 427
-    invoke-static {v3}, Lʼˏ/ᵢ;->ˎʿ([Ljava/lang/String;)V
+    invoke-static {v3}, Lʼˏ/ᵢ;->ˎˏ([Ljava/lang/String;)V
 
     .line 428
     .line 429
@@ -28362,7 +28847,7 @@
 
     .line 501
     .line 502
-    invoke-static {v3}, Lʼˏ/ᵢ;->ˎʿ([Ljava/lang/String;)V
+    invoke-static {v3}, Lʼˏ/ᵢ;->ˎˏ([Ljava/lang/String;)V
 
     .line 503
     .line 504
@@ -28595,7 +29080,7 @@
     move-result-object v1
 
     .line 618
-    invoke-static {v1}, Lʼˏ/ᵢ;->ˎʾ(Ljava/lang/String;)V
+    invoke-static {v1}, Lʼˏ/ᵢ;->ˎˋ(Ljava/lang/String;)V
 
     .line 619
     .line 620
@@ -28631,7 +29116,7 @@
     move-result-object v1
 
     .line 638
-    invoke-static {v1}, Lʼˏ/ᵢ;->ˎʾ(Ljava/lang/String;)V
+    invoke-static {v1}, Lʼˏ/ᵢ;->ˎˋ(Ljava/lang/String;)V
 
     .line 639
     .line 640
@@ -29017,7 +29502,7 @@
     move-result-object v0
 
     .line 833
-    invoke-static {v0}, Lʼˏ/ᵢ;->ˎʾ(Ljava/lang/String;)V
+    invoke-static {v0}, Lʼˏ/ᵢ;->ˎˋ(Ljava/lang/String;)V
 
     .line 834
     .line 835
@@ -29114,7 +29599,7 @@
     move-result-object v0
 
     .line 883
-    invoke-static {v0}, Lʼˏ/ᵢ;->ˎʾ(Ljava/lang/String;)V
+    invoke-static {v0}, Lʼˏ/ᵢ;->ˎˋ(Ljava/lang/String;)V
 
     .line 884
     .line 885
@@ -29290,7 +29775,7 @@
     move-result-object v0
 
     .line 968
-    invoke-static {v0}, Lʼˏ/ᵢ;->ˎʾ(Ljava/lang/String;)V
+    invoke-static {v0}, Lʼˏ/ᵢ;->ˎˋ(Ljava/lang/String;)V
 
     .line 969
     .line 970
@@ -29300,7 +29785,7 @@
     return-void
 .end method
 
-.method public static ʽʼ(Ljava/io/File;Z)V
+.method public static ʽʿ(Ljava/io/File;Z)V
     .locals 4
 
     .line 1
@@ -29417,14 +29902,7 @@
     return-void
 .end method
 
-.method public static ʽʽ()V
-    .locals 0
-
-    .line 1
-    return-void
-.end method
-
-.method public static ʽʾ(Ljava/io/File;Ljava/lang/String;)V
+.method public static ʽˆ(Ljava/io/File;Ljava/lang/String;)V
     .locals 27
 
     .line 1
@@ -29764,7 +30242,7 @@
 
     .line 170
     .line 171
-    invoke-static {v0}, Lʼˏ/ᵢ;->ˎʿ([Ljava/lang/String;)V
+    invoke-static {v0}, Lʼˏ/ᵢ;->ˎˏ([Ljava/lang/String;)V
 
     .line 172
     .line 173
@@ -29812,7 +30290,7 @@
     move-result-object v0
 
     .line 195
-    invoke-static {v0}, Lʼˏ/ᵢ;->ˎʾ(Ljava/lang/String;)V
+    invoke-static {v0}, Lʼˏ/ᵢ;->ˎˋ(Ljava/lang/String;)V
 
     .line 196
     .line 197
@@ -29966,7 +30444,7 @@
     move-result-wide v18
 
     .line 269
-    invoke-static/range {v18 .. v19}, Lʼˏ/ᵢ;->ˊˏ(J)J
+    invoke-static/range {v18 .. v19}, Lʼˏ/ᵢ;->ˊᐧ(J)J
 
     .line 270
     .line 271
@@ -30680,7 +31158,7 @@
     move-result-wide v9
 
     .line 614
-    invoke-static {v9, v10}, Lʼˏ/ᵢ;->ˊˏ(J)J
+    invoke-static {v9, v10}, Lʼˏ/ᵢ;->ˊᐧ(J)J
 
     .line 615
     .line 616
@@ -31476,7 +31954,7 @@
     .end array-data
 .end method
 
-.method public static ʽʿ(Ljava/io/File;Ljava/io/File;Ljava/lang/String;)Z
+.method public static ʽˈ(Ljava/io/File;Ljava/io/File;Ljava/lang/String;)Z
     .locals 10
 
     .line 1
@@ -31497,7 +31975,7 @@
     .line 6
     .line 7
     :try_start_0
-    invoke-static {p0}, Lʼˏ/ᵢ;->ʿᵎ(Ljava/io/File;)Ljava/lang/String;
+    invoke-static {p0}, Lʼˏ/ᵢ;->ʿⁱ(Ljava/io/File;)Ljava/lang/String;
 
     .line 8
     .line 9
@@ -31506,7 +31984,7 @@
 
     .line 11
     :cond_0
-    invoke-static {p1}, Lʼˏ/ᵢ;->ʾˑ(Ljava/io/File;)Ljava/io/File;
+    invoke-static {p1}, Lʼˏ/ᵢ;->ʾـ(Ljava/io/File;)Ljava/io/File;
 
     .line 12
     .line 13
@@ -31756,12 +32234,12 @@
 
     .line 138
     .line 139
-    invoke-static {p1, p2}, Lʼˏ/ᵢ;->ˋי(Ljava/lang/String;Ljava/lang/String;)Z
+    invoke-static {p1, p2}, Lʼˏ/ᵢ;->ˋᵔ(Ljava/lang/String;Ljava/lang/String;)Z
 
     .line 140
     .line 141
     .line 142
-    invoke-static {v6}, Lʼˏ/ᵢ;->ʾˑ(Ljava/io/File;)Ljava/io/File;
+    invoke-static {v6}, Lʼˏ/ᵢ;->ʾـ(Ljava/io/File;)Ljava/io/File;
 
     .line 143
     .line 144
@@ -31787,7 +32265,7 @@
     .line 154
     .line 155
     :cond_2
-    invoke-static {p0}, Lʼˏ/ᵢ;->ˆʻ(Ljava/io/File;)Ljava/util/ArrayList;
+    invoke-static {p0}, Lʼˏ/ᵢ;->ˆʾ(Ljava/io/File;)Ljava/util/ArrayList;
 
     .line 156
     .line 157
@@ -31795,7 +32273,7 @@
     move-result-object p1
 
     .line 159
-    invoke-static {p0}, Lʼˏ/ᵢ;->ʾـ(Ljava/io/File;)Ljava/util/ArrayList;
+    invoke-static {p0}, Lʼˏ/ᵢ;->ʾᐧ(Ljava/io/File;)Ljava/util/ArrayList;
 
     .line 160
     .line 161
@@ -31943,7 +32421,7 @@
 
     .line 235
     .line 236
-    invoke-static {p2, v5}, Lʼˏ/ᵢ;->ʻﹳ(Lorg/w3c/dom/Document;Ljava/lang/String;)Lorg/w3c/dom/Element;
+    invoke-static {p2, v5}, Lʼˏ/ᵢ;->ʻⁱ(Lorg/w3c/dom/Document;Ljava/lang/String;)Lorg/w3c/dom/Element;
 
     .line 237
     .line 238
@@ -31998,7 +32476,7 @@
 
     .line 262
     .line 263
-    invoke-static {p2, p1}, Lʼˏ/ᵢ;->ʻᴵ(Lorg/w3c/dom/Document;Ljava/lang/String;)Lorg/w3c/dom/Element;
+    invoke-static {p2, p1}, Lʼˏ/ᵢ;->ʻᐧ(Lorg/w3c/dom/Document;Ljava/lang/String;)Lorg/w3c/dom/Element;
 
     .line 264
     .line 265
@@ -32135,7 +32613,7 @@
 
     .line 333
     .line 334
-    invoke-static {p1}, Lʼˏ/ᵢ;->ˎʿ([Ljava/lang/String;)V
+    invoke-static {p1}, Lʼˏ/ᵢ;->ˎˏ([Ljava/lang/String;)V
 
     .line 335
     .line 336
@@ -32168,7 +32646,7 @@
 
     .line 350
     .line 351
-    invoke-static {p1}, Lʼˏ/ᵢ;->ˎʿ([Ljava/lang/String;)V
+    invoke-static {p1}, Lʼˏ/ᵢ;->ˎˏ([Ljava/lang/String;)V
 
     .line 352
     .line 353
@@ -32201,7 +32679,7 @@
 
     .line 367
     .line 368
-    invoke-static {p1}, Lʼˏ/ᵢ;->ˎʿ([Ljava/lang/String;)V
+    invoke-static {p1}, Lʼˏ/ᵢ;->ˎˏ([Ljava/lang/String;)V
 
     .line 369
     .line 370
@@ -32234,7 +32712,7 @@
     return v2
 .end method
 
-.method public static ʽˆ(II)I
+.method public static ʽˉ(II)I
     .locals 1
 
     .line 1
@@ -32264,7 +32742,7 @@
     return p1
 .end method
 
-.method public static ʽˈ(Ljava/lang/String;Ljava/util/ArrayList;ZZ)Ljava/util/ArrayList;
+.method public static ʽˊ(Ljava/lang/String;Ljava/util/ArrayList;ZZ)Ljava/util/ArrayList;
     .locals 22
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -32396,7 +32874,7 @@
 
     .line 58
     .line 59
-    invoke-static {v11}, Lʼˏ/ᵢ;->ˎʿ([Ljava/lang/String;)V
+    invoke-static {v11}, Lʼˏ/ᵢ;->ˎˏ([Ljava/lang/String;)V
 
     .line 60
     .line 61
@@ -32444,7 +32922,7 @@
     move-result-object v11
 
     .line 84
-    invoke-static {v11}, Lʼˏ/ᵢ;->ˎʾ(Ljava/lang/String;)V
+    invoke-static {v11}, Lʼˏ/ᵢ;->ˎˋ(Ljava/lang/String;)V
 
     .line 85
     .line 86
@@ -32937,7 +33415,7 @@
     move-result v5
 
     .line 326
-    invoke-static {v11, v15, v5}, Lʼˏ/ᵢ;->יʻ(Ljava/nio/MappedByteBuffer;Lʼـ/ˑ;I)Z
+    invoke-static {v11, v15, v5}, Lʼˏ/ᵢ;->יˈ(Ljava/nio/MappedByteBuffer;Lʼـ/ˑ;I)Z
 
     .line 327
     .line 328
@@ -33217,7 +33695,7 @@
     return-object v10
 .end method
 
-.method public static ʽˉ(Landroid/content/Context;Ljava/lang/String;)Ljava/lang/String;
+.method public static ʽˋ(Landroid/content/Context;Ljava/lang/String;)Ljava/lang/String;
     .locals 17
 
     .line 1
@@ -33432,7 +33910,7 @@
     move-result-object v13
 
     .line 110
-    invoke-static {v13}, Lʼˏ/ᵢ;->ˎʾ(Ljava/lang/String;)V
+    invoke-static {v13}, Lʼˏ/ᵢ;->ˎˋ(Ljava/lang/String;)V
 
     .line 111
     .line 112
@@ -33641,7 +34119,7 @@
     move-result-object v14
 
     .line 223
-    invoke-static {v14}, Lʼˏ/ᵢ;->ˎٴ(Ljava/lang/String;)V
+    invoke-static {v14}, Lʼˏ/ᵢ;->ˎⁱ(Ljava/lang/String;)V
 
     .line 224
     .line 225
@@ -33845,7 +34323,7 @@
     move-result-object v1
 
     .line 320
-    invoke-static {v1}, Lʼˏ/ᵢ;->ˎʾ(Ljava/lang/String;)V
+    invoke-static {v1}, Lʼˏ/ᵢ;->ˎˋ(Ljava/lang/String;)V
 
     .line 321
     .line 322
@@ -34066,7 +34544,7 @@
     move-result-object v0
 
     .line 437
-    invoke-static {v0}, Lʼˏ/ᵢ;->ˎٴ(Ljava/lang/String;)V
+    invoke-static {v0}, Lʼˏ/ᵢ;->ˎⁱ(Ljava/lang/String;)V
 
     .line 438
     .line 439
@@ -34197,7 +34675,7 @@
 
     .line 498
     .line 499
-    invoke-static {v2, v7}, Lʼˏ/ᵢ;->ˈⁱ(Lorg/xmlpull/v1/XmlPullParser;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v2, v7}, Lʼˏ/ᵢ;->ˉʻ(Lorg/xmlpull/v1/XmlPullParser;Ljava/lang/String;)Ljava/lang/String;
 
     .line 500
     .line 501
@@ -34224,7 +34702,7 @@
 
     .line 510
     .line 511
-    invoke-static {v2, v3}, Lʼˏ/ᵢ;->ˈⁱ(Lorg/xmlpull/v1/XmlPullParser;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v2, v3}, Lʼˏ/ᵢ;->ˉʻ(Lorg/xmlpull/v1/XmlPullParser;Ljava/lang/String;)Ljava/lang/String;
 
     .line 512
     .line 513
@@ -34433,7 +34911,7 @@
     return-object v11
 .end method
 
-.method public static ʽˊ(Lcom/android/apksig/util/DataSource;)Ljava/nio/ByteBuffer;
+.method public static ʽˎ(Lcom/android/apksig/util/DataSource;)Ljava/nio/ByteBuffer;
     .locals 5
     .annotation system Ldalvik/annotation/Throws;
         value = {
@@ -34449,7 +34927,7 @@
     .line 3
     .line 4
     :try_start_0
-    invoke-static {p0}, Lʼˏ/ᵢ;->ʼᵢ(Lcom/android/apksig/util/DataSource;)Lcom/android/apksig/apk/ApkUtils$ZipSections;
+    invoke-static {p0}, Lʼˏ/ᵢ;->ʼﹳ(Lcom/android/apksig/util/DataSource;)Lcom/android/apksig/apk/ApkUtils$ZipSections;
 
     .line 5
     .line 6
@@ -34651,7 +35129,7 @@
     goto :goto_1
 .end method
 
-.method public static ʽˋ()Ljava/lang/String;
+.method public static ʽˏ()Ljava/lang/String;
     .locals 2
 
     .line 1
@@ -35497,7 +35975,7 @@
     .end packed-switch
 .end method
 
-.method public static ʽˎ()Ljava/lang/String;
+.method public static ʽˑ()Ljava/lang/String;
     .locals 3
 
     .line 1
@@ -35592,7 +36070,7 @@
     return-object v0
 .end method
 
-.method public static ʽˏ(Ljava/lang/String;)Landroid/graphics/drawable/Drawable;
+.method public static ʽי(Ljava/lang/String;)Landroid/graphics/drawable/Drawable;
     .locals 2
 
     .line 1
@@ -35654,7 +36132,7 @@
     return-object p0
 .end method
 
-.method public static ʽˑ(Ljava/lang/String;)Landroid/content/pm/ApplicationInfo;
+.method public static ʽـ(Ljava/lang/String;)Landroid/content/pm/ApplicationInfo;
     .locals 2
 
     .line 1
@@ -35721,7 +36199,7 @@
     .line 30
     .line 31
     .line 32
-    invoke-static {v1}, Lʼˏ/ᵢ;->ʿᵎ(Ljava/io/File;)Ljava/lang/String;
+    invoke-static {v1}, Lʼˏ/ᵢ;->ʿⁱ(Ljava/io/File;)Ljava/lang/String;
 
     .line 33
     .line 34
@@ -35753,7 +36231,7 @@
     return-object p0
 .end method
 
-.method public static ʽי(Ljava/lang/String;)Ljava/lang/String;
+.method public static ʽٴ(Ljava/lang/String;)Ljava/lang/String;
     .locals 8
 
     .line 1
@@ -35842,7 +36320,7 @@
     move-result-object p0
 
     .line 42
-    invoke-static {p0}, Lʼˏ/ᵢ;->ʽˊ(Lcom/android/apksig/util/DataSource;)Ljava/nio/ByteBuffer;
+    invoke-static {p0}, Lʼˏ/ᵢ;->ʽˎ(Lcom/android/apksig/util/DataSource;)Ljava/nio/ByteBuffer;
 
     .line 43
     .line 44
@@ -36063,7 +36541,7 @@
     move-result-object v1
 
     .line 150
-    invoke-static {v1}, Lʼˏ/ᵢ;->ˆᐧ(Lcom/android/apksig/util/DataSource;)Ljava/nio/ByteBuffer;
+    invoke-static {v1}, Lʼˏ/ᵢ;->ˆᵔ(Lcom/android/apksig/util/DataSource;)Ljava/nio/ByteBuffer;
 
     .line 151
     .line 152
@@ -36210,7 +36688,7 @@
     return-object v0
 .end method
 
-.method public static ʽـ(Ljava/lang/String;I)Landroid/content/pm/PackageInfo;
+.method public static ʽᐧ(Ljava/lang/String;I)Landroid/content/pm/PackageInfo;
     .locals 2
 
     .line 1
@@ -36289,7 +36767,7 @@
     .line 33
     .line 34
     .line 35
-    invoke-static {p1}, Lʼˏ/ᵢ;->ʿᴵ(Ljava/io/File;)Landroid/content/pm/PackageInfo;
+    invoke-static {p1}, Lʼˏ/ᵢ;->ʿᵢ(Ljava/io/File;)Landroid/content/pm/PackageInfo;
 
     .line 36
     .line 37
@@ -36314,7 +36792,7 @@
     return-object v1
 .end method
 
-.method public static ʽٴ(Ljava/io/File;)Ljava/lang/String;
+.method public static ʽᴵ(Ljava/io/File;)Ljava/lang/String;
     .locals 4
 
     .line 1
@@ -36436,7 +36914,7 @@
     .line 51
     .line 52
     :try_start_1
-    invoke-static {p0}, Lʼˏ/ᵢ;->ʽⁱ(Ljava/io/File;)Ljava/io/File;
+    invoke-static {p0}, Lʼˏ/ᵢ;->ʽﹶ(Ljava/io/File;)Ljava/io/File;
 
     .line 53
     .line 54
@@ -36452,7 +36930,7 @@
     move-result-object p0
 
     .line 60
-    invoke-static {p0}, Lʼˏ/ᵢ;->ʽי(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {p0}, Lʼˏ/ᵢ;->ʽٴ(Ljava/lang/String;)Ljava/lang/String;
 
     .line 61
     .line 62
@@ -36485,7 +36963,7 @@
     return-object v1
 .end method
 
-.method public static ʽᐧ(Ljava/io/File;)Ljava/lang/String;
+.method public static ʽᵎ(Ljava/io/File;)Ljava/lang/String;
     .locals 7
     .annotation system Ldalvik/annotation/Throws;
         value = {
@@ -36528,7 +37006,7 @@
     move-result-object p0
 
     .line 16
-    invoke-static {p0}, Lʼˏ/ᵢ;->ʽˊ(Lcom/android/apksig/util/DataSource;)Ljava/nio/ByteBuffer;
+    invoke-static {p0}, Lʼˏ/ᵢ;->ʽˎ(Lcom/android/apksig/util/DataSource;)Ljava/nio/ByteBuffer;
 
     .line 17
     .line 18
@@ -36731,7 +37209,7 @@
     move-result-object v4
 
     .line 114
-    invoke-static {v4}, Lʼˏ/ᵢ;->ˆᐧ(Lcom/android/apksig/util/DataSource;)Ljava/nio/ByteBuffer;
+    invoke-static {v4}, Lʼˏ/ᵢ;->ˆᵔ(Lcom/android/apksig/util/DataSource;)Ljava/nio/ByteBuffer;
 
     .line 115
     .line 116
@@ -36942,7 +37420,7 @@
     goto :goto_6
 .end method
 
-.method public static ʽᴵ(Ljava/io/File;)Ljava/lang/String;
+.method public static ʽᵔ(Ljava/io/File;)Ljava/lang/String;
     .locals 5
 
     .line 1
@@ -37068,7 +37546,7 @@
 
     .line 54
     .line 55
-    invoke-static {p0}, Lʼˏ/ᵢ;->ʽⁱ(Ljava/io/File;)Ljava/io/File;
+    invoke-static {p0}, Lʼˏ/ᵢ;->ʽﹶ(Ljava/io/File;)Ljava/io/File;
 
     .line 56
     .line 57
@@ -37084,7 +37562,7 @@
     move-result-object p0
 
     .line 63
-    invoke-static {p0, v1}, Lʼˏ/ᵢ;->ʽـ(Ljava/lang/String;I)Landroid/content/pm/PackageInfo;
+    invoke-static {p0, v1}, Lʼˏ/ᵢ;->ʽᐧ(Ljava/lang/String;I)Landroid/content/pm/PackageInfo;
 
     .line 64
     .line 65
@@ -37103,7 +37581,7 @@
     return-object v2
 .end method
 
-.method public static ʽᵎ(Ljava/io/File;)Ljava/lang/String;
+.method public static ʽᵢ(Ljava/io/File;)Ljava/lang/String;
     .locals 4
 
     .line 1
@@ -37238,7 +37716,7 @@
     .line 58
     .line 59
     .line 60
-    invoke-static {p0}, Lʼˏ/ᵢ;->ʽⁱ(Ljava/io/File;)Ljava/io/File;
+    invoke-static {p0}, Lʼˏ/ᵢ;->ʽﹶ(Ljava/io/File;)Ljava/io/File;
 
     .line 61
     .line 62
@@ -37257,7 +37735,7 @@
     const/4 v0, 0x1
 
     .line 69
-    invoke-static {p0, v0}, Lʼˏ/ᵢ;->ʽـ(Ljava/lang/String;I)Landroid/content/pm/PackageInfo;
+    invoke-static {p0, v0}, Lʼˏ/ᵢ;->ʽᐧ(Ljava/lang/String;I)Landroid/content/pm/PackageInfo;
 
     .line 70
     .line 71
@@ -37289,7 +37767,7 @@
     return-object v1
 .end method
 
-.method public static ʽᵔ(Ljava/io/File;)Ljava/lang/String;
+.method public static ʽⁱ(Ljava/io/File;)Ljava/lang/String;
     .locals 4
 
     .line 1
@@ -37424,7 +37902,7 @@
     .line 58
     .line 59
     .line 60
-    invoke-static {p0}, Lʼˏ/ᵢ;->ʽⁱ(Ljava/io/File;)Ljava/io/File;
+    invoke-static {p0}, Lʼˏ/ᵢ;->ʽﹶ(Ljava/io/File;)Ljava/io/File;
 
     .line 61
     .line 62
@@ -37443,7 +37921,7 @@
     const/4 v0, 0x1
 
     .line 69
-    invoke-static {p0, v0}, Lʼˏ/ᵢ;->ʽـ(Ljava/lang/String;I)Landroid/content/pm/PackageInfo;
+    invoke-static {p0, v0}, Lʼˏ/ᵢ;->ʽᐧ(Ljava/lang/String;I)Landroid/content/pm/PackageInfo;
 
     .line 70
     .line 71
@@ -37475,7 +37953,7 @@
     return-object v1
 .end method
 
-.method public static ʽᵢ(Ljava/lang/String;Ljava/lang/String;)V
+.method public static ʽﹳ(Ljava/lang/String;Ljava/lang/String;)V
     .locals 3
     .annotation system Ldalvik/annotation/Throws;
         value = {
@@ -37626,7 +38104,7 @@
     return-void
 .end method
 
-.method public static ʽⁱ(Ljava/io/File;)Ljava/io/File;
+.method public static ʽﹶ(Ljava/io/File;)Ljava/io/File;
     .locals 15
 
     .line 1
@@ -37647,7 +38125,7 @@
     .line 8
     .line 9
     .line 10
-    invoke-static {}, Lʼˏ/ᵢ;->ˈˏ()Ljava/lang/String;
+    invoke-static {}, Lʼˏ/ᵢ;->ˈـ()Ljava/lang/String;
 
     .line 11
     .line 12
@@ -37975,7 +38453,7 @@
     move-result-object v8
 
     .line 167
-    invoke-static {v8}, Lʼˏ/ᵢ;->ʽי(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v8}, Lʼˏ/ᵢ;->ʽٴ(Ljava/lang/String;)Ljava/lang/String;
 
     .line 168
     .line 169
@@ -38009,7 +38487,7 @@
     move-result-object v9
 
     .line 185
-    invoke-static {v9}, Lʼˏ/ᵢ;->ʽי(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v9}, Lʼˏ/ᵢ;->ʽٴ(Ljava/lang/String;)Ljava/lang/String;
 
     .line 186
     .line 187
@@ -38070,7 +38548,7 @@
     move-result-object v1
 
     .line 212
-    invoke-static {v1}, Lʼˏ/ᵢ;->ʽי(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v1}, Lʼˏ/ᵢ;->ʽٴ(Ljava/lang/String;)Ljava/lang/String;
 
     .line 213
     .line 214
@@ -38104,7 +38582,7 @@
     move-result-object v3
 
     .line 230
-    invoke-static {v3}, Lʼˏ/ᵢ;->ʽי(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v3}, Lʼˏ/ᵢ;->ʽٴ(Ljava/lang/String;)Ljava/lang/String;
 
     .line 231
     .line 232
@@ -38305,7 +38783,7 @@
     move-result-object v8
 
     .line 323
-    invoke-static {v8}, Lʼˏ/ᵢ;->ʽי(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v8}, Lʼˏ/ᵢ;->ʽٴ(Ljava/lang/String;)Ljava/lang/String;
 
     .line 324
     .line 325
@@ -38368,7 +38846,7 @@
     return-object v2
 .end method
 
-.method public static ʽﹳ(Ljava/util/ArrayList;)Ljava/io/File;
+.method public static ʽﾞ(Ljava/util/ArrayList;)Ljava/io/File;
     .locals 4
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -38507,7 +38985,7 @@
     move-result-object v1
 
     .line 62
-    invoke-static {v1}, Lʼˏ/ᵢ;->ʽי(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v1}, Lʼˏ/ᵢ;->ʽٴ(Ljava/lang/String;)Ljava/lang/String;
 
     .line 63
     .line 64
@@ -38529,7 +39007,942 @@
     return-object p0
 .end method
 
-.method public static ʽﹶ(Ljava/io/File;)Ljava/lang/String;
+.method public static ʾ(Ljava/lang/String;)V
+    .locals 12
+
+    .line 1
+    const/4 v0, 0x1
+
+    .line 2
+    const/4 v1, 0x0
+
+    .line 3
+    new-instance v2, Ljava/lang/StringBuilder;
+
+    .line 4
+    .line 5
+    invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
+
+    .line 6
+    .line 7
+    .line 8
+    sget-object v3, Lʾˉ/ᴵᴵ;->ʼٴ:Ljava/lang/String;
+
+    .line 9
+    .line 10
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 11
+    .line 12
+    .line 13
+    const-string v3, "/inapp_zygisk_exclude/packages/"
+
+    .line 14
+    .line 15
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 16
+    .line 17
+    .line 18
+    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    .line 19
+    .line 20
+    .line 21
+    move-result-object v2
+
+    .line 22
+    :try_start_0
+    invoke-static {}, Lʼˏ/ᵢ;->ˉـ()Z
+
+    .line 23
+    .line 24
+    .line 25
+    move-result v4
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_1
+
+    .line 26
+    const-string v5, "/inapp_zygisk_exclude"
+
+    .line 27
+    .line 28
+    const-class v6, Ljavaroot/utils/ˈˈ;
+
+    .line 29
+    .line 30
+    const-string v7, ".all"
+
+    .line 31
+    .line 32
+    const-string v8, "/inapp_zygisk_exclude/packages_selected/"
+
+    .line 33
+    .line 34
+    if-nez v4, :cond_0
+
+    .line 35
+    .line 36
+    :try_start_1
+    new-instance v2, Ljava/lang/StringBuilder;
+
+    .line 37
+    .line 38
+    invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
+
+    .line 39
+    .line 40
+    .line 41
+    sget-object v4, Lʾˉ/ᴵᴵ;->ʼٴ:Ljava/lang/String;
+
+    .line 42
+    .line 43
+    invoke-virtual {v2, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 44
+    .line 45
+    .line 46
+    invoke-virtual {v2, v8}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 47
+    .line 48
+    .line 49
+    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    .line 50
+    .line 51
+    .line 52
+    move-result-object v2
+
+    .line 53
+    new-instance v4, Ljava/io/File;
+
+    .line 54
+    .line 55
+    new-instance v9, Ljava/lang/StringBuilder;
+
+    .line 56
+    .line 57
+    invoke-direct {v9}, Ljava/lang/StringBuilder;-><init>()V
+
+    .line 58
+    .line 59
+    .line 60
+    invoke-virtual {v9, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 61
+    .line 62
+    .line 63
+    invoke-virtual {v9, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 64
+    .line 65
+    .line 66
+    invoke-virtual {v9}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    .line 67
+    .line 68
+    .line 69
+    move-result-object v9
+
+    .line 70
+    invoke-direct {v4, v9}, Ljava/io/File;-><init>(Ljava/lang/String;)V
+
+    .line 71
+    .line 72
+    .line 73
+    new-instance v9, Ljava/io/File;
+
+    .line 74
+    .line 75
+    new-instance v10, Ljava/lang/StringBuilder;
+
+    .line 76
+    .line 77
+    invoke-direct {v10}, Ljava/lang/StringBuilder;-><init>()V
+
+    .line 78
+    .line 79
+    .line 80
+    invoke-virtual {v10, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 81
+    .line 82
+    .line 83
+    invoke-static {}, Lru/aaaaaccd/installer/PkgName;->getPkgName()Ljava/lang/String;
+
+    .line 84
+    .line 85
+    .line 86
+    move-result-object v11
+
+    .line 87
+    invoke-virtual {v10, v11}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 88
+    .line 89
+    .line 90
+    invoke-virtual {v10}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    .line 91
+    .line 92
+    .line 93
+    move-result-object v10
+
+    .line 94
+    invoke-direct {v9, v10}, Ljava/io/File;-><init>(Ljava/lang/String;)V
+
+    .line 95
+    .line 96
+    .line 97
+    new-instance v10, Ljava/io/File;
+
+    .line 98
+    .line 99
+    new-instance v11, Ljava/lang/StringBuilder;
+
+    .line 100
+    .line 101
+    invoke-direct {v11}, Ljava/lang/StringBuilder;-><init>()V
+
+    .line 102
+    .line 103
+    .line 104
+    invoke-virtual {v11, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 105
+    .line 106
+    .line 107
+    invoke-virtual {v11, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 108
+    .line 109
+    .line 110
+    invoke-virtual {v11}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    .line 111
+    .line 112
+    .line 113
+    move-result-object v7
+
+    .line 114
+    invoke-direct {v10, v7}, Ljava/io/File;-><init>(Ljava/lang/String;)V
+    :try_end_1
+    .catchall {:try_start_1 .. :try_end_1} :catchall_1
+
+    .line 115
+    .line 116
+    .line 117
+    :try_start_2
+    invoke-virtual {v4}, Ljava/io/File;->createNewFile()Z
+
+    .line 118
+    .line 119
+    .line 120
+    invoke-virtual {v9}, Ljava/io/File;->createNewFile()Z
+
+    .line 121
+    .line 122
+    .line 123
+    invoke-virtual {v10}, Ljava/io/File;->delete()Z
+
+    .line 124
+    .line 125
+    .line 126
+    invoke-static {p0}, Lʼˏ/ᵢ;->ˊᵔ(Ljava/lang/String;)Z
+    :try_end_2
+    .catchall {:try_start_2 .. :try_end_2} :catchall_0
+
+    .line 127
+    .line 128
+    .line 129
+    goto :goto_0
+
+    .line 130
+    :catchall_0
+    move-exception p0
+
+    .line 131
+    :try_start_3
+    invoke-virtual {p0}, Ljava/lang/Throwable;->printStackTrace()V
+
+    .line 132
+    .line 133
+    .line 134
+    :goto_0
+    invoke-virtual {v4}, Ljava/io/File;->exists()Z
+
+    .line 135
+    .line 136
+    .line 137
+    move-result p0
+
+    .line 138
+    if-nez p0, :cond_1
+
+    .line 139
+    .line 140
+    new-instance p0, Ljava/lang/StringBuilder;
+
+    .line 141
+    .line 142
+    invoke-direct {p0}, Ljava/lang/StringBuilder;-><init>()V
+
+    .line 143
+    .line 144
+    .line 145
+    sget-object v7, Lʾˉ/ᴵᴵ;->ʼٴ:Ljava/lang/String;
+
+    .line 146
+    .line 147
+    invoke-virtual {p0, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 148
+    .line 149
+    .line 150
+    invoke-virtual {p0, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 151
+    .line 152
+    .line 153
+    invoke-virtual {p0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    .line 154
+    .line 155
+    .line 156
+    move-result-object p0
+
+    .line 157
+    new-array v5, v0, [Ljava/lang/String;
+
+    .line 158
+    .line 159
+    aput-object p0, v5, v1
+
+    .line 160
+    .line 161
+    invoke-static {v6, v5}, Lʼˏ/ᵢ;->ˎˊ(Ljava/lang/Class;[Ljava/lang/String;)Ljava/lang/String;
+
+    .line 162
+    .line 163
+    .line 164
+    new-instance p0, Ljava/io/File;
+
+    .line 165
+    .line 166
+    new-instance v5, Ljava/lang/StringBuilder;
+
+    .line 167
+    .line 168
+    invoke-direct {v5}, Ljava/lang/StringBuilder;-><init>()V
+
+    .line 169
+    .line 170
+    .line 171
+    sget-object v6, Lʾˉ/ᴵᴵ;->ʼٴ:Ljava/lang/String;
+
+    .line 172
+    .line 173
+    invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 174
+    .line 175
+    .line 176
+    invoke-virtual {v5, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 177
+    .line 178
+    .line 179
+    invoke-virtual {v5}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    .line 180
+    .line 181
+    .line 182
+    move-result-object v3
+
+    .line 183
+    invoke-direct {p0, v3}, Ljava/io/File;-><init>(Ljava/lang/String;)V
+
+    .line 184
+    .line 185
+    .line 186
+    new-instance v3, Ljava/io/File;
+
+    .line 187
+    .line 188
+    new-instance v5, Ljava/lang/StringBuilder;
+
+    .line 189
+    .line 190
+    invoke-direct {v5}, Ljava/lang/StringBuilder;-><init>()V
+
+    .line 191
+    .line 192
+    .line 193
+    sget-object v6, Lʾˉ/ᴵᴵ;->ʼٴ:Ljava/lang/String;
+
+    .line 194
+    .line 195
+    invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 196
+    .line 197
+    .line 198
+    invoke-virtual {v5, v8}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 199
+    .line 200
+    .line 201
+    invoke-virtual {v5}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    .line 202
+    .line 203
+    .line 204
+    move-result-object v5
+
+    .line 205
+    invoke-direct {v3, v5}, Ljava/io/File;-><init>(Ljava/lang/String;)V
+
+    .line 206
+    .line 207
+    .line 208
+    invoke-static {}, Lru/aaaaaccd/installer/PkgName;->getPkgName()Ljava/lang/String;
+
+    .line 209
+    .line 210
+    .line 211
+    move-result-object v5
+
+    .line 212
+    new-array v6, v0, [Ljava/lang/String;
+
+    .line 213
+    .line 214
+    aput-object v5, v6, v1
+
+    .line 215
+    .line 216
+    new-array v5, v1, [Ljava/lang/String;
+
+    .line 217
+    .line 218
+    invoke-static {p0, v3, v6, v5}, Lʼˏ/ᵢ;->ʻﹶ(Ljava/io/File;Ljava/io/File;[Ljava/lang/String;[Ljava/lang/String;)V
+    :try_end_3
+    .catchall {:try_start_3 .. :try_end_3} :catchall_1
+
+    .line 219
+    .line 220
+    .line 221
+    :try_start_4
+    invoke-virtual {v4}, Ljava/io/File;->createNewFile()Z
+
+    .line 222
+    .line 223
+    .line 224
+    invoke-virtual {v9}, Ljava/io/File;->createNewFile()Z
+
+    .line 225
+    .line 226
+    .line 227
+    invoke-virtual {v10}, Ljava/io/File;->delete()Z
+    :try_end_4
+    .catch Ljava/io/IOException; {:try_start_4 .. :try_end_4} :catch_0
+    .catchall {:try_start_4 .. :try_end_4} :catchall_1
+
+    .line 228
+    .line 229
+    .line 230
+    goto/16 :goto_2
+
+    .line 231
+    .line 232
+    :catchall_1
+    move-exception p0
+
+    .line 233
+    goto/16 :goto_3
+
+    .line 234
+    .line 235
+    :catch_0
+    move-exception p0
+
+    .line 236
+    :try_start_5
+    new-instance v0, Ljava/lang/RuntimeException;
+
+    .line 237
+    .line 238
+    invoke-direct {v0, p0}, Ljava/lang/RuntimeException;-><init>(Ljava/lang/Throwable;)V
+
+    .line 239
+    .line 240
+    .line 241
+    throw v0
+
+    .line 242
+    :cond_0
+    new-instance v4, Ljava/io/File;
+
+    .line 243
+    .line 244
+    new-instance v9, Ljava/lang/StringBuilder;
+
+    .line 245
+    .line 246
+    invoke-direct {v9}, Ljava/lang/StringBuilder;-><init>()V
+
+    .line 247
+    .line 248
+    .line 249
+    invoke-virtual {v9, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 250
+    .line 251
+    .line 252
+    invoke-virtual {v9, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 253
+    .line 254
+    .line 255
+    invoke-virtual {v9}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    .line 256
+    .line 257
+    .line 258
+    move-result-object v9
+
+    .line 259
+    invoke-direct {v4, v9}, Ljava/io/File;-><init>(Ljava/lang/String;)V
+
+    .line 260
+    .line 261
+    .line 262
+    new-instance v9, Ljava/io/File;
+
+    .line 263
+    .line 264
+    new-instance v10, Ljava/lang/StringBuilder;
+
+    .line 265
+    .line 266
+    invoke-direct {v10}, Ljava/lang/StringBuilder;-><init>()V
+
+    .line 267
+    .line 268
+    .line 269
+    invoke-virtual {v10, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 270
+    .line 271
+    .line 272
+    invoke-static {}, Lru/aaaaaccd/installer/PkgName;->getPkgName()Ljava/lang/String;
+
+    .line 273
+    .line 274
+    .line 275
+    move-result-object v11
+
+    .line 276
+    invoke-virtual {v10, v11}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 277
+    .line 278
+    .line 279
+    invoke-virtual {v10}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    .line 280
+    .line 281
+    .line 282
+    move-result-object v10
+
+    .line 283
+    invoke-direct {v9, v10}, Ljava/io/File;-><init>(Ljava/lang/String;)V
+
+    .line 284
+    .line 285
+    .line 286
+    new-instance v10, Ljava/io/File;
+
+    .line 287
+    .line 288
+    new-instance v11, Ljava/lang/StringBuilder;
+
+    .line 289
+    .line 290
+    invoke-direct {v11}, Ljava/lang/StringBuilder;-><init>()V
+
+    .line 291
+    .line 292
+    .line 293
+    invoke-virtual {v11, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 294
+    .line 295
+    .line 296
+    invoke-virtual {v11, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 297
+    .line 298
+    .line 299
+    invoke-virtual {v11}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    .line 300
+    .line 301
+    .line 302
+    move-result-object v7
+
+    .line 303
+    invoke-direct {v10, v7}, Ljava/io/File;-><init>(Ljava/lang/String;)V
+
+    .line 304
+    .line 305
+    .line 306
+    invoke-virtual {v4}, Ljava/io/File;->exists()Z
+
+    .line 307
+    .line 308
+    .line 309
+    move-result v7
+    :try_end_5
+    .catchall {:try_start_5 .. :try_end_5} :catchall_1
+
+    .line 310
+    if-eqz v7, :cond_1
+
+    .line 311
+    .line 312
+    :try_start_6
+    invoke-virtual {v4}, Ljava/io/File;->delete()Z
+
+    .line 313
+    .line 314
+    .line 315
+    invoke-static {p0}, Lʼˏ/ᵢ;->ˊᵔ(Ljava/lang/String;)Z
+    :try_end_6
+    .catchall {:try_start_6 .. :try_end_6} :catchall_2
+
+    .line 316
+    .line 317
+    .line 318
+    goto :goto_1
+
+    .line 319
+    :catchall_2
+    move-exception p0
+
+    .line 320
+    :try_start_7
+    invoke-virtual {p0}, Ljava/lang/Throwable;->printStackTrace()V
+
+    .line 321
+    .line 322
+    .line 323
+    :goto_1
+    invoke-virtual {v4}, Ljava/io/File;->exists()Z
+
+    .line 324
+    .line 325
+    .line 326
+    move-result p0
+
+    .line 327
+    if-eqz p0, :cond_1
+
+    .line 328
+    .line 329
+    new-instance p0, Ljava/lang/StringBuilder;
+
+    .line 330
+    .line 331
+    invoke-direct {p0}, Ljava/lang/StringBuilder;-><init>()V
+
+    .line 332
+    .line 333
+    .line 334
+    sget-object v7, Lʾˉ/ᴵᴵ;->ʼٴ:Ljava/lang/String;
+
+    .line 335
+    .line 336
+    invoke-virtual {p0, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 337
+    .line 338
+    .line 339
+    invoke-virtual {p0, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 340
+    .line 341
+    .line 342
+    invoke-virtual {p0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    .line 343
+    .line 344
+    .line 345
+    move-result-object p0
+
+    .line 346
+    new-array v5, v0, [Ljava/lang/String;
+
+    .line 347
+    .line 348
+    aput-object p0, v5, v1
+
+    .line 349
+    .line 350
+    invoke-static {v6, v5}, Lʼˏ/ᵢ;->ˎˊ(Ljava/lang/Class;[Ljava/lang/String;)Ljava/lang/String;
+
+    .line 351
+    .line 352
+    .line 353
+    new-instance p0, Ljava/io/File;
+
+    .line 354
+    .line 355
+    new-instance v5, Ljava/lang/StringBuilder;
+
+    .line 356
+    .line 357
+    invoke-direct {v5}, Ljava/lang/StringBuilder;-><init>()V
+
+    .line 358
+    .line 359
+    .line 360
+    sget-object v6, Lʾˉ/ᴵᴵ;->ʼٴ:Ljava/lang/String;
+
+    .line 361
+    .line 362
+    invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 363
+    .line 364
+    .line 365
+    invoke-virtual {v5, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 366
+    .line 367
+    .line 368
+    invoke-virtual {v5}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    .line 369
+    .line 370
+    .line 371
+    move-result-object v3
+
+    .line 372
+    invoke-direct {p0, v3}, Ljava/io/File;-><init>(Ljava/lang/String;)V
+
+    .line 373
+    .line 374
+    .line 375
+    new-instance v3, Ljava/io/File;
+
+    .line 376
+    .line 377
+    new-instance v5, Ljava/lang/StringBuilder;
+
+    .line 378
+    .line 379
+    invoke-direct {v5}, Ljava/lang/StringBuilder;-><init>()V
+
+    .line 380
+    .line 381
+    .line 382
+    sget-object v6, Lʾˉ/ᴵᴵ;->ʼٴ:Ljava/lang/String;
+
+    .line 383
+    .line 384
+    invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 385
+    .line 386
+    .line 387
+    invoke-virtual {v5, v8}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 388
+    .line 389
+    .line 390
+    invoke-virtual {v5}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    .line 391
+    .line 392
+    .line 393
+    move-result-object v5
+
+    .line 394
+    invoke-direct {v3, v5}, Ljava/io/File;-><init>(Ljava/lang/String;)V
+
+    .line 395
+    .line 396
+    .line 397
+    invoke-static {}, Lru/aaaaaccd/installer/PkgName;->getPkgName()Ljava/lang/String;
+
+    .line 398
+    .line 399
+    .line 400
+    move-result-object v5
+
+    .line 401
+    new-array v6, v0, [Ljava/lang/String;
+
+    .line 402
+    .line 403
+    aput-object v5, v6, v1
+
+    .line 404
+    .line 405
+    new-array v5, v1, [Ljava/lang/String;
+
+    .line 406
+    .line 407
+    invoke-static {p0, v3, v6, v5}, Lʼˏ/ᵢ;->ʻﹶ(Ljava/io/File;Ljava/io/File;[Ljava/lang/String;[Ljava/lang/String;)V
+    :try_end_7
+    .catchall {:try_start_7 .. :try_end_7} :catchall_1
+
+    .line 408
+    .line 409
+    .line 410
+    :try_start_8
+    invoke-virtual {v4}, Ljava/io/File;->delete()Z
+
+    .line 411
+    .line 412
+    .line 413
+    invoke-virtual {v10}, Ljava/io/File;->createNewFile()Z
+
+    .line 414
+    .line 415
+    .line 416
+    invoke-virtual {v9}, Ljava/io/File;->delete()Z
+    :try_end_8
+    .catch Ljava/io/IOException; {:try_start_8 .. :try_end_8} :catch_1
+    .catchall {:try_start_8 .. :try_end_8} :catchall_1
+
+    .line 417
+    .line 418
+    .line 419
+    goto :goto_2
+
+    .line 420
+    :catch_1
+    move-exception p0
+
+    .line 421
+    :try_start_9
+    new-instance v0, Ljava/lang/RuntimeException;
+
+    .line 422
+    .line 423
+    invoke-direct {v0, p0}, Ljava/lang/RuntimeException;-><init>(Ljava/lang/Throwable;)V
+
+    .line 424
+    .line 425
+    .line 426
+    throw v0
+
+    .line 427
+    :cond_1
+    :goto_2
+    sget-object p0, Lʾˉ/ᴵᴵ;->ʼᵎ:Lʾˉ/ᵎ;
+
+    .line 428
+    .line 429
+    new-array v3, v0, [Ljava/lang/String;
+
+    .line 430
+    .line 431
+    const-string v4, "--inline-max-code-units=0"
+
+    .line 432
+    .line 433
+    aput-object v4, v3, v1
+
+    .line 434
+    .line 435
+    invoke-static {p0, v3}, Lʼˏ/ᵢ;->ʼʿ(Lʾˉ/ᵎ;[Ljava/lang/String;)V
+
+    .line 436
+    .line 437
+    .line 438
+    const-class p0, Ljavaroot/utils/ʻﹳ;
+
+    .line 439
+    .line 440
+    new-instance v3, Ljava/lang/StringBuilder;
+
+    .line 441
+    .line 442
+    invoke-direct {v3}, Ljava/lang/StringBuilder;-><init>()V
+
+    .line 443
+    .line 444
+    .line 445
+    invoke-static {}, Lʼˏ/ᵢ;->ʿﾞ()Ljava/lang/String;
+
+    .line 446
+    .line 447
+    .line 448
+    move-result-object v4
+
+    .line 449
+    invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 450
+    .line 451
+    .line 452
+    const-string v4, "/packages"
+
+    .line 453
+    .line 454
+    invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 455
+    .line 456
+    .line 457
+    invoke-virtual {v3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    .line 458
+    .line 459
+    .line 460
+    move-result-object v3
+
+    .line 461
+    const/4 v4, 0x2
+
+    .line 462
+    new-array v4, v4, [Ljava/lang/String;
+
+    .line 463
+    .line 464
+    aput-object v2, v4, v1
+
+    .line 465
+    .line 466
+    aput-object v3, v4, v0
+
+    .line 467
+    .line 468
+    invoke-static {p0, v4}, Lʼˏ/ᵢ;->ˎˊ(Ljava/lang/Class;[Ljava/lang/String;)Ljava/lang/String;
+    :try_end_9
+    .catchall {:try_start_9 .. :try_end_9} :catchall_1
+
+    .line 469
+    .line 470
+    .line 471
+    goto :goto_4
+
+    .line 472
+    :goto_3
+    invoke-virtual {p0}, Ljava/lang/Throwable;->printStackTrace()V
+
+    .line 473
+    .line 474
+    .line 475
+    :goto_4
+    return-void
+.end method
+
+.method public static ʾʻ(Ljava/io/File;)Ljava/lang/String;
     .locals 10
 
     .line 1
@@ -38843,12 +40256,12 @@
     .line 148
     .line 149
     .line 150
-    const v8, 0x7f11038e
+    const v8, 0x7f110390
 
     .line 151
     .line 152
     .line 153
-    invoke-static {v8}, Lʼˏ/ᵢ;->ˈי(I)Ljava/lang/String;
+    invoke-static {v8}, Lʼˏ/ᵢ;->ˈᐧ(I)Ljava/lang/String;
 
     .line 154
     .line 155
@@ -38955,11 +40368,11 @@
     return-object v4
 .end method
 
-.method public static ʽﾞ()[Ljava/lang/String;
+.method public static ʾʼ()[Ljava/lang/String;
     .locals 6
 
     .line 1
-    invoke-static {}, Lʼˏ/ᵢ;->ˆﾞ()[Ljava/lang/String;
+    invoke-static {}, Lʼˏ/ᵢ;->ˈʽ()[Ljava/lang/String;
 
     .line 2
     .line 3
@@ -39012,7 +40425,7 @@
     .line 25
     .line 26
     .line 27
-    sget-object v3, Lʾˉ/ᴵᴵ;->ˈʻ:Ljava/lang/String;
+    sget-object v3, Lʾˉ/ᴵᴵ;->ˈʼ:Ljava/lang/String;
 
     .line 28
     .line 29
@@ -39063,7 +40476,7 @@
     .line 52
     :cond_0
     :try_start_0
-    invoke-static {v4}, Lʼˏ/ᵢ;->ˋˈ(Ljava/io/File;)Ljava/lang/String;
+    invoke-static {v4}, Lʼˏ/ᵢ;->ˋי(Ljava/io/File;)Ljava/lang/String;
 
     .line 53
     .line 54
@@ -39176,291 +40589,7 @@
     return-object v0
 .end method
 
-.method public static ʾ(Ljava/lang/String;)V
-    .locals 4
-
-    .line 1
-    new-instance v0, Ljava/io/File;
-
-    .line 2
-    .line 3
-    new-instance v1, Ljava/lang/StringBuilder;
-
-    .line 4
-    .line 5
-    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
-
-    .line 6
-    .line 7
-    .line 8
-    sget-object v2, Lʾˉ/ᴵᴵ;->ʼٴ:Ljava/lang/String;
-
-    .line 9
-    .line 10
-    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 11
-    .line 12
-    .line 13
-    const-string v2, "/inapp_zygisk_exclude/packages/"
-
-    .line 14
-    .line 15
-    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 16
-    .line 17
-    .line 18
-    invoke-virtual {v1, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 19
-    .line 20
-    .line 21
-    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    .line 22
-    .line 23
-    .line 24
-    move-result-object v1
-
-    .line 25
-    invoke-direct {v0, v1}, Ljava/io/File;-><init>(Ljava/lang/String;)V
-
-    .line 26
-    .line 27
-    .line 28
-    new-instance v1, Ljava/io/File;
-
-    .line 29
-    .line 30
-    new-instance v2, Ljava/lang/StringBuilder;
-
-    .line 31
-    .line 32
-    invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
-
-    .line 33
-    .line 34
-    .line 35
-    sget-object v3, Lʾˉ/ᴵᴵ;->ʼٴ:Ljava/lang/String;
-
-    .line 36
-    .line 37
-    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 38
-    .line 39
-    .line 40
-    const-string v3, "/inapp_zygisk_exclude/packages/.all"
-
-    .line 41
-    .line 42
-    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 43
-    .line 44
-    .line 45
-    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    .line 46
-    .line 47
-    .line 48
-    move-result-object v2
-
-    .line 49
-    invoke-direct {v1, v2}, Ljava/io/File;-><init>(Ljava/lang/String;)V
-
-    .line 50
-    .line 51
-    .line 52
-    invoke-virtual {v1}, Ljava/io/File;->exists()Z
-
-    .line 53
-    .line 54
-    .line 55
-    move-result v1
-
-    .line 56
-    if-nez v1, :cond_0
-
-    .line 57
-    .line 58
-    :try_start_0
-    invoke-virtual {v0}, Ljava/io/File;->createNewFile()Z
-
-    .line 59
-    .line 60
-    .line 61
-    invoke-static {p0}, Lʼˏ/ᵢ;->ˊי(Ljava/lang/String;)Z
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
-
-    .line 62
-    .line 63
-    .line 64
-    goto :goto_0
-
-    .line 65
-    :catchall_0
-    move-exception p0
-
-    .line 66
-    invoke-virtual {p0}, Ljava/lang/Throwable;->printStackTrace()V
-
-    .line 67
-    .line 68
-    .line 69
-    goto :goto_0
-
-    .line 70
-    :cond_0
-    invoke-virtual {v0}, Ljava/io/File;->exists()Z
-
-    .line 71
-    .line 72
-    .line 73
-    move-result v1
-
-    .line 74
-    if-eqz v1, :cond_1
-
-    .line 75
-    .line 76
-    :try_start_1
-    invoke-virtual {v0}, Ljava/io/File;->delete()Z
-
-    .line 77
-    .line 78
-    .line 79
-    invoke-static {p0}, Lʼˏ/ᵢ;->ˊי(Ljava/lang/String;)Z
-    :try_end_1
-    .catchall {:try_start_1 .. :try_end_1} :catchall_1
-
-    .line 80
-    .line 81
-    .line 82
-    goto :goto_0
-
-    .line 83
-    :catchall_1
-    move-exception p0
-
-    .line 84
-    invoke-virtual {p0}, Ljava/lang/Throwable;->printStackTrace()V
-
-    .line 85
-    .line 86
-    .line 87
-    :cond_1
-    :goto_0
-    new-instance p0, Ljava/lang/StringBuilder;
-
-    .line 88
-    .line 89
-    invoke-direct {p0}, Ljava/lang/StringBuilder;-><init>()V
-
-    .line 90
-    .line 91
-    .line 92
-    sget-object v0, Lʾˉ/ᴵᴵ;->ʼٴ:Ljava/lang/String;
-
-    .line 93
-    .line 94
-    invoke-virtual {p0, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 95
-    .line 96
-    .line 97
-    const-string v0, "/inapp_zygisk_exclude/packages"
-
-    .line 98
-    .line 99
-    invoke-virtual {p0, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 100
-    .line 101
-    .line 102
-    invoke-virtual {p0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    .line 103
-    .line 104
-    .line 105
-    move-result-object p0
-
-    .line 106
-    new-instance v0, Ljava/lang/StringBuilder;
-
-    .line 107
-    .line 108
-    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
-
-    .line 109
-    .line 110
-    .line 111
-    invoke-static {}, Lʼˏ/ᵢ;->ʿⁱ()Ljava/lang/String;
-
-    .line 112
-    .line 113
-    .line 114
-    move-result-object v1
-
-    .line 115
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 116
-    .line 117
-    .line 118
-    const-string v1, "/packages"
-
-    .line 119
-    .line 120
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 121
-    .line 122
-    .line 123
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    .line 124
-    .line 125
-    .line 126
-    move-result-object v0
-
-    .line 127
-    const/4 v1, 0x2
-
-    .line 128
-    new-array v1, v1, [Ljava/lang/String;
-
-    .line 129
-    .line 130
-    const/4 v2, 0x0
-
-    .line 131
-    aput-object p0, v1, v2
-
-    .line 132
-    .line 133
-    const/4 p0, 0x1
-
-    .line 134
-    aput-object v0, v1, p0
-
-    .line 135
-    .line 136
-    const-class p0, Ljavaroot/utils/ʻⁱ;
-
-    .line 137
-    .line 138
-    invoke-static {p0, v1}, Lʼˏ/ᵢ;->ˎʽ(Ljava/lang/Class;[Ljava/lang/String;)Ljava/lang/String;
-
-    .line 139
-    .line 140
-    .line 141
-    return-void
-.end method
-
-.method public static ʾʻ([B)Ljava/util/List;
+.method public static ʾʽ([B)Ljava/util/List;
     .locals 4
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -39721,7 +40850,185 @@
     return-object v0
 .end method
 
-.method public static ʾʽ(Ljava/lang/String;ILjava/lang/String;)Landroid/text/SpannableString;
+.method public static ʾʾ(Ljava/io/File;)Ljava/lang/String;
+    .locals 2
+
+    .line 1
+    :try_start_0
+    new-instance v0, Lʼˆ/ʽ;
+
+    .line 2
+    .line 3
+    invoke-direct {v0, p0}, Lʼˆ/ʽ;-><init>(Ljava/io/File;)V
+
+    .line 4
+    .line 5
+    .line 6
+    invoke-virtual {v0}, Lʼˆ/ʽ;->ʽ()Ljava/util/Enumeration;
+
+    .line 7
+    .line 8
+    .line 9
+    move-result-object p0
+
+    .line 10
+    :cond_0
+    invoke-interface {p0}, Ljava/util/Enumeration;->hasMoreElements()Z
+
+    .line 11
+    .line 12
+    .line 13
+    move-result v0
+
+    .line 14
+    if-eqz v0, :cond_2
+
+    .line 15
+    .line 16
+    invoke-interface {p0}, Ljava/util/Enumeration;->nextElement()Ljava/lang/Object;
+
+    .line 17
+    .line 18
+    .line 19
+    move-result-object v0
+
+    .line 20
+    check-cast v0, Lʼˆ/ʼ;
+
+    .line 21
+    .line 22
+    invoke-virtual {v0}, Lʼˆ/ʼ;->getName()Ljava/lang/String;
+
+    .line 23
+    .line 24
+    .line 25
+    move-result-object v0
+
+    .line 26
+    invoke-virtual {v0}, Ljava/lang/String;->toUpperCase()Ljava/lang/String;
+
+    .line 27
+    .line 28
+    .line 29
+    move-result-object v0
+
+    .line 30
+    const-string v1, "META-INF/"
+
+    .line 31
+    .line 32
+    invoke-virtual {v0, v1}, Ljava/lang/String;->startsWith(Ljava/lang/String;)Z
+
+    .line 33
+    .line 34
+    .line 35
+    move-result v1
+
+    .line 36
+    if-eqz v1, :cond_0
+
+    .line 37
+    .line 38
+    const-string v1, ".RSA"
+
+    .line 39
+    .line 40
+    invoke-virtual {v0, v1}, Ljava/lang/String;->endsWith(Ljava/lang/String;)Z
+
+    .line 41
+    .line 42
+    .line 43
+    move-result v1
+
+    .line 44
+    if-nez v1, :cond_1
+
+    .line 45
+    .line 46
+    const-string v1, ".DSA"
+
+    .line 47
+    .line 48
+    invoke-virtual {v0, v1}, Ljava/lang/String;->endsWith(Ljava/lang/String;)Z
+
+    .line 49
+    .line 50
+    .line 51
+    move-result v1
+
+    .line 52
+    if-eqz v1, :cond_0
+
+    .line 53
+    .line 54
+    goto :goto_0
+
+    .line 55
+    :catchall_0
+    move-exception p0
+
+    .line 56
+    goto :goto_1
+
+    .line 57
+    :cond_1
+    :goto_0
+    const-string p0, "/"
+
+    .line 58
+    .line 59
+    invoke-virtual {v0, p0}, Ljava/lang/String;->lastIndexOf(Ljava/lang/String;)I
+
+    .line 60
+    .line 61
+    .line 62
+    move-result p0
+
+    .line 63
+    add-int/lit8 p0, p0, 0x1
+
+    .line 64
+    .line 65
+    const-string v1, "."
+
+    .line 66
+    .line 67
+    invoke-virtual {v0, v1}, Ljava/lang/String;->lastIndexOf(Ljava/lang/String;)I
+
+    .line 68
+    .line 69
+    .line 70
+    move-result v1
+
+    .line 71
+    invoke-virtual {v0, p0, v1}, Ljava/lang/String;->substring(II)Ljava/lang/String;
+
+    .line 72
+    .line 73
+    .line 74
+    move-result-object p0
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    .line 75
+    return-object p0
+
+    .line 76
+    :goto_1
+    invoke-virtual {p0}, Ljava/lang/Throwable;->printStackTrace()V
+
+    .line 77
+    .line 78
+    .line 79
+    :cond_2
+    const-string p0, ""
+
+    .line 80
+    .line 81
+    return-object p0
+.end method
+
+.method public static ʾˆ(Ljava/lang/String;ILjava/lang/String;)Landroid/text/SpannableString;
     .locals 4
 
     .line 1
@@ -39901,185 +41208,7 @@
     return-object p1
 .end method
 
-.method public static ʾʾ(Ljava/io/File;)Ljava/lang/String;
-    .locals 2
-
-    .line 1
-    :try_start_0
-    new-instance v0, Lʼˆ/ʽ;
-
-    .line 2
-    .line 3
-    invoke-direct {v0, p0}, Lʼˆ/ʽ;-><init>(Ljava/io/File;)V
-
-    .line 4
-    .line 5
-    .line 6
-    invoke-virtual {v0}, Lʼˆ/ʽ;->ʽ()Ljava/util/Enumeration;
-
-    .line 7
-    .line 8
-    .line 9
-    move-result-object p0
-
-    .line 10
-    :cond_0
-    invoke-interface {p0}, Ljava/util/Enumeration;->hasMoreElements()Z
-
-    .line 11
-    .line 12
-    .line 13
-    move-result v0
-
-    .line 14
-    if-eqz v0, :cond_2
-
-    .line 15
-    .line 16
-    invoke-interface {p0}, Ljava/util/Enumeration;->nextElement()Ljava/lang/Object;
-
-    .line 17
-    .line 18
-    .line 19
-    move-result-object v0
-
-    .line 20
-    check-cast v0, Lʼˆ/ʼ;
-
-    .line 21
-    .line 22
-    invoke-virtual {v0}, Lʼˆ/ʼ;->getName()Ljava/lang/String;
-
-    .line 23
-    .line 24
-    .line 25
-    move-result-object v0
-
-    .line 26
-    invoke-virtual {v0}, Ljava/lang/String;->toUpperCase()Ljava/lang/String;
-
-    .line 27
-    .line 28
-    .line 29
-    move-result-object v0
-
-    .line 30
-    const-string v1, "META-INF/"
-
-    .line 31
-    .line 32
-    invoke-virtual {v0, v1}, Ljava/lang/String;->startsWith(Ljava/lang/String;)Z
-
-    .line 33
-    .line 34
-    .line 35
-    move-result v1
-
-    .line 36
-    if-eqz v1, :cond_0
-
-    .line 37
-    .line 38
-    const-string v1, ".RSA"
-
-    .line 39
-    .line 40
-    invoke-virtual {v0, v1}, Ljava/lang/String;->endsWith(Ljava/lang/String;)Z
-
-    .line 41
-    .line 42
-    .line 43
-    move-result v1
-
-    .line 44
-    if-nez v1, :cond_1
-
-    .line 45
-    .line 46
-    const-string v1, ".DSA"
-
-    .line 47
-    .line 48
-    invoke-virtual {v0, v1}, Ljava/lang/String;->endsWith(Ljava/lang/String;)Z
-
-    .line 49
-    .line 50
-    .line 51
-    move-result v1
-
-    .line 52
-    if-eqz v1, :cond_0
-
-    .line 53
-    .line 54
-    goto :goto_0
-
-    .line 55
-    :catchall_0
-    move-exception p0
-
-    .line 56
-    goto :goto_1
-
-    .line 57
-    :cond_1
-    :goto_0
-    const-string p0, "/"
-
-    .line 58
-    .line 59
-    invoke-virtual {v0, p0}, Ljava/lang/String;->lastIndexOf(Ljava/lang/String;)I
-
-    .line 60
-    .line 61
-    .line 62
-    move-result p0
-
-    .line 63
-    add-int/lit8 p0, p0, 0x1
-
-    .line 64
-    .line 65
-    const-string v1, "."
-
-    .line 66
-    .line 67
-    invoke-virtual {v0, v1}, Ljava/lang/String;->lastIndexOf(Ljava/lang/String;)I
-
-    .line 68
-    .line 69
-    .line 70
-    move-result v1
-
-    .line 71
-    invoke-virtual {v0, p0, v1}, Ljava/lang/String;->substring(II)Ljava/lang/String;
-
-    .line 72
-    .line 73
-    .line 74
-    move-result-object p0
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
-
-    .line 75
-    return-object p0
-
-    .line 76
-    :goto_1
-    invoke-virtual {p0}, Ljava/lang/Throwable;->printStackTrace()V
-
-    .line 77
-    .line 78
-    .line 79
-    :cond_2
-    const-string p0, ""
-
-    .line 80
-    .line 81
-    return-object p0
-.end method
-
-.method public static ʾʿ(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Landroid/text/SpannableString;
+.method public static ʾˈ(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Landroid/text/SpannableString;
     .locals 5
 
     .line 1
@@ -40300,7 +41429,7 @@
     return-object p1
 .end method
 
-.method public static ʾˆ()Ljava/lang/String;
+.method public static ʾˉ()Ljava/lang/String;
     .locals 9
 
     .line 1
@@ -40619,7 +41748,7 @@
     return-object v4
 .end method
 
-.method public static ʾˈ(Ljava/lang/String;)Ljava/util/ArrayList;
+.method public static ʾˊ(Ljava/lang/String;)Ljava/util/ArrayList;
     .locals 9
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -41250,7 +42379,7 @@
     return-object v2
 .end method
 
-.method public static ʾˉ(Landroid/content/Context;)Ljava/lang/String;
+.method public static ʾˋ(Landroid/content/Context;)Ljava/lang/String;
     .locals 0
 
     .line 1
@@ -41273,7 +42402,7 @@
     return-object p0
 .end method
 
-.method public static ʾˊ(Ljava/lang/String;)Ljava/lang/String;
+.method public static ʾˎ(Ljava/lang/String;)Ljava/lang/String;
     .locals 2
     .annotation system Ldalvik/annotation/Throws;
         value = {
@@ -41313,7 +42442,7 @@
     return-object p0
 .end method
 
-.method public static ʾˋ(Ljava/io/File;Ljava/util/ArrayList;Ljava/util/ArrayList;)V
+.method public static ʾˏ(Ljava/io/File;Ljava/util/ArrayList;Ljava/util/ArrayList;)V
     .locals 16
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -42666,7 +43795,7 @@
     goto :goto_9
 .end method
 
-.method public static ʾˎ(Ljava/io/File;Lʼـ/ʿ;)V
+.method public static ʾˑ(Ljava/io/File;Lʼـ/ʿ;)V
     .locals 17
 
     .line 1
@@ -43871,7 +45000,7 @@
     .line 608
     .line 609
     .line 610
-    invoke-static {v11}, Lʼˏ/ᵢ;->ˈי(I)Ljava/lang/String;
+    invoke-static {v11}, Lʼˏ/ᵢ;->ˈᐧ(I)Ljava/lang/String;
 
     .line 611
     .line 612
@@ -44091,7 +45220,7 @@
     goto :goto_b
 .end method
 
-.method public static ʾˏ()Ljava/lang/String;
+.method public static ʾי()Ljava/lang/String;
     .locals 2
 
     .line 1
@@ -44116,7 +45245,7 @@
     return-object v1
 .end method
 
-.method public static ʾˑ(Ljava/io/File;)Ljava/io/File;
+.method public static ʾـ(Ljava/io/File;)Ljava/io/File;
     .locals 3
 
     .line 1
@@ -44227,7 +45356,7 @@
     return-object p0
 .end method
 
-.method public static ʾי(Lʼˆ/ʽ;Lʼˆ/ʼ;)Landroid/graphics/drawable/Drawable;
+.method public static ʾٴ(Lʼˆ/ʽ;Lʼˆ/ʼ;)Landroid/graphics/drawable/Drawable;
     .locals 9
 
     .line 1
@@ -44413,7 +45542,7 @@
     return-object v0
 .end method
 
-.method public static ʾـ(Ljava/io/File;)Ljava/util/ArrayList;
+.method public static ʾᐧ(Ljava/io/File;)Ljava/util/ArrayList;
     .locals 8
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -44470,7 +45599,7 @@
     move-result-object p0
 
     .line 20
-    invoke-static {p0}, Lʼˏ/ᵢ;->ʽˊ(Lcom/android/apksig/util/DataSource;)Ljava/nio/ByteBuffer;
+    invoke-static {p0}, Lʼˏ/ᵢ;->ʽˎ(Lcom/android/apksig/util/DataSource;)Ljava/nio/ByteBuffer;
 
     .line 21
     .line 22
@@ -44660,7 +45789,7 @@
     move-result-object v5
 
     .line 111
-    invoke-static {v5}, Lʼˏ/ᵢ;->ˆᐧ(Lcom/android/apksig/util/DataSource;)Ljava/nio/ByteBuffer;
+    invoke-static {v5}, Lʼˏ/ᵢ;->ˆᵔ(Lcom/android/apksig/util/DataSource;)Ljava/nio/ByteBuffer;
 
     .line 112
     .line 113
@@ -44812,7 +45941,7 @@
     return-object v0
 .end method
 
-.method public static ʾٴ(Ljava/io/File;)[B
+.method public static ʾᴵ(Ljava/io/File;)[B
     .locals 8
     .annotation system Ldalvik/annotation/Throws;
         value = {
@@ -44935,7 +46064,7 @@
     return-object v1
 .end method
 
-.method public static ʾᐧ(Ljava/io/File;I)[B
+.method public static ʾᵎ(Ljava/io/File;I)[B
     .locals 1
 
     .line 1
@@ -44975,7 +46104,7 @@
     return-object p0
 .end method
 
-.method public static ʾᴵ(Ljava/lang/String;)Ljava/io/File;
+.method public static ʾᵔ(Ljava/lang/String;)Ljava/io/File;
     .locals 11
 
     .line 1
@@ -45261,7 +46390,7 @@
     move-result-object v4
 
     .line 142
-    invoke-static {p0}, Lʼˏ/ᵢ;->ˊˉ(Ljava/lang/String;)Z
+    invoke-static {p0}, Lʼˏ/ᵢ;->ˊי(Ljava/lang/String;)Z
 
     .line 143
     .line 144
@@ -45298,7 +46427,7 @@
     .line 159
     .line 160
     .line 161
-    invoke-static {v0}, Lʼˏ/ᵢ;->ʾˑ(Ljava/io/File;)Ljava/io/File;
+    invoke-static {v0}, Lʼˏ/ᵢ;->ʾـ(Ljava/io/File;)Ljava/io/File;
 
     .line 162
     .line 163
@@ -45391,7 +46520,7 @@
     .line 206
     .line 207
     .line 208
-    invoke-static {v0}, Lʼˏ/ᵢ;->ʾˑ(Ljava/io/File;)Ljava/io/File;
+    invoke-static {v0}, Lʼˏ/ᵢ;->ʾـ(Ljava/io/File;)Ljava/io/File;
 
     .line 209
     .line 210
@@ -45572,7 +46701,7 @@
     .line 299
     .line 300
     .line 301
-    invoke-virtual {v0, v4, p0}, Lʼˏ/ᵢ;->ʼٴ(Ljava/io/File;Ljava/lang/String;)Ljava/lang/String;
+    invoke-virtual {v0, v4, p0}, Lʼˏ/ᵢ;->ʼᴵ(Ljava/io/File;Ljava/lang/String;)Ljava/lang/String;
 
     .line 302
     .line 303
@@ -46264,7 +47393,7 @@
     return-object p0
 .end method
 
-.method public static ʾᵎ(Ljava/lang/String;)Ljava/io/File;
+.method public static ʾᵢ(Ljava/lang/String;)Ljava/io/File;
     .locals 16
 
     .line 1
@@ -46881,7 +48010,7 @@
 
     .line 313
     .line 314
-    invoke-static {v11}, Lʼˏ/ᵢ;->ʼˋ(Ljava/lang/String;)Z
+    invoke-static {v11}, Lʼˏ/ᵢ;->ʼˏ(Ljava/lang/String;)Z
 
     .line 315
     .line 316
@@ -46893,7 +48022,7 @@
 
     .line 319
     .line 320
-    invoke-static {v8}, Lʼˏ/ᵢ;->ʼˋ(Ljava/lang/String;)Z
+    invoke-static {v8}, Lʼˏ/ᵢ;->ʼˏ(Ljava/lang/String;)Z
 
     .line 321
     .line 322
@@ -46905,7 +48034,7 @@
 
     .line 325
     .line 326
-    invoke-static {v6}, Lʼˏ/ᵢ;->ʼˋ(Ljava/lang/String;)Z
+    invoke-static {v6}, Lʼˏ/ᵢ;->ʼˏ(Ljava/lang/String;)Z
 
     .line 327
     .line 328
@@ -46917,7 +48046,7 @@
 
     .line 331
     .line 332
-    invoke-static {v4}, Lʼˏ/ᵢ;->ʼˋ(Ljava/lang/String;)Z
+    invoke-static {v4}, Lʼˏ/ᵢ;->ʼˏ(Ljava/lang/String;)Z
 
     .line 333
     .line 334
@@ -46974,7 +48103,7 @@
     .line 360
     :cond_6
     :goto_3
-    invoke-static {v11}, Lʼˏ/ᵢ;->ʼˋ(Ljava/lang/String;)Z
+    invoke-static {v11}, Lʼˏ/ᵢ;->ʼˏ(Ljava/lang/String;)Z
 
     .line 361
     .line 362
@@ -47023,7 +48152,7 @@
     .line 385
     .line 386
     :cond_7
-    invoke-static {v8}, Lʼˏ/ᵢ;->ʼˋ(Ljava/lang/String;)Z
+    invoke-static {v8}, Lʼˏ/ᵢ;->ʼˏ(Ljava/lang/String;)Z
 
     .line 387
     .line 388
@@ -47072,7 +48201,7 @@
     .line 411
     .line 412
     :cond_8
-    invoke-static {v6}, Lʼˏ/ᵢ;->ʼˋ(Ljava/lang/String;)Z
+    invoke-static {v6}, Lʼˏ/ᵢ;->ʼˏ(Ljava/lang/String;)Z
 
     .line 413
     .line 414
@@ -47124,7 +48253,7 @@
 
     .line 439
     :cond_9
-    invoke-static {v4}, Lʼˏ/ᵢ;->ʼˋ(Ljava/lang/String;)Z
+    invoke-static {v4}, Lʼˏ/ᵢ;->ʼˏ(Ljava/lang/String;)Z
 
     .line 440
     .line 441
@@ -47438,7 +48567,7 @@
 
     .line 595
     :cond_f
-    invoke-static {v11}, Lʼˏ/ᵢ;->ʼˋ(Ljava/lang/String;)Z
+    invoke-static {v11}, Lʼˏ/ᵢ;->ʼˏ(Ljava/lang/String;)Z
 
     .line 596
     .line 597
@@ -47454,7 +48583,7 @@
 
     .line 602
     :cond_10
-    invoke-static {v8}, Lʼˏ/ᵢ;->ʼˋ(Ljava/lang/String;)Z
+    invoke-static {v8}, Lʼˏ/ᵢ;->ʼˏ(Ljava/lang/String;)Z
 
     .line 603
     .line 604
@@ -47470,7 +48599,7 @@
 
     .line 609
     :cond_11
-    invoke-static {v6}, Lʼˏ/ᵢ;->ʼˋ(Ljava/lang/String;)Z
+    invoke-static {v6}, Lʼˏ/ᵢ;->ʼˏ(Ljava/lang/String;)Z
 
     .line 610
     .line 611
@@ -47490,7 +48619,7 @@
 
     .line 617
     :goto_6
-    invoke-static {v4}, Lʼˏ/ᵢ;->ʼˋ(Ljava/lang/String;)Z
+    invoke-static {v4}, Lʼˏ/ᵢ;->ʼˏ(Ljava/lang/String;)Z
 
     .line 618
     .line 619
@@ -47523,7 +48652,7 @@
     move-result-object v2
 
     .line 633
-    invoke-static/range {p0 .. p0}, Lʼˏ/ᵢ;->ˊˉ(Ljava/lang/String;)Z
+    invoke-static/range {p0 .. p0}, Lʼˏ/ᵢ;->ˊי(Ljava/lang/String;)Z
 
     .line 634
     .line 635
@@ -47560,7 +48689,7 @@
     .line 650
     .line 651
     .line 652
-    invoke-static {v1}, Lʼˏ/ᵢ;->ʾˑ(Ljava/io/File;)Ljava/io/File;
+    invoke-static {v1}, Lʼˏ/ᵢ;->ʾـ(Ljava/io/File;)Ljava/io/File;
 
     .line 653
     .line 654
@@ -47653,7 +48782,7 @@
     .line 697
     .line 698
     .line 699
-    invoke-static {v1}, Lʼˏ/ᵢ;->ʾˑ(Ljava/io/File;)Ljava/io/File;
+    invoke-static {v1}, Lʼˏ/ᵢ;->ʾـ(Ljava/io/File;)Ljava/io/File;
 
     .line 700
     .line 701
@@ -47722,7 +48851,7 @@
     return-object v10
 .end method
 
-.method public static ʾᵔ(Ljava/lang/String;)Ljava/lang/String;
+.method public static ʾⁱ(Ljava/lang/String;)Ljava/lang/String;
     .locals 2
 
     .line 1
@@ -47768,7 +48897,7 @@
     return-object p0
 .end method
 
-.method public static ʾᵢ(Ljava/lang/String;)Ljava/lang/String;
+.method public static ʾﹳ(Ljava/lang/String;)Ljava/lang/String;
     .locals 1
 
     .line 1
@@ -47818,7 +48947,7 @@
     return-object p0
 .end method
 
-.method public static ʾⁱ(Ljava/lang/String;)Ljava/lang/String;
+.method public static ʾﹶ(Ljava/lang/String;)Ljava/lang/String;
     .locals 3
 
     .line 1
@@ -47955,7 +49084,7 @@
     return-object v0
 .end method
 
-.method public static ʾﹳ(Landroid/content/Context;Landroid/net/Uri;Ljava/lang/String;)Ljava/lang/String;
+.method public static ʾﾞ(Landroid/content/Context;Landroid/net/Uri;Ljava/lang/String;)Ljava/lang/String;
     .locals 5
     .annotation build Landroid/annotation/SuppressLint;
         value = {
@@ -48220,7 +49349,7 @@
 
     .line 121
     .line 122
-    invoke-static {p1}, Lʼˏ/ᵢ;->ˉᵢ(Landroid/net/Uri;)Z
+    invoke-static {p1}, Lʼˏ/ᵢ;->ˊʻ(Landroid/net/Uri;)Z
 
     .line 123
     .line 124
@@ -48307,7 +49436,7 @@
 
     .line 166
     :cond_6
-    invoke-static {p1}, Lʼˏ/ᵢ;->ˉᴵ(Landroid/net/Uri;)Z
+    invoke-static {p1}, Lʼˏ/ᵢ;->ˉﹳ(Landroid/net/Uri;)Z
 
     .line 167
     .line 168
@@ -48367,7 +49496,7 @@
 
     .line 195
     :cond_7
-    invoke-static {p1}, Lʼˏ/ᵢ;->ˊʻ(Landroid/net/Uri;)Z
+    invoke-static {p1}, Lʼˏ/ᵢ;->ˊˆ(Landroid/net/Uri;)Z
 
     .line 196
     .line 197
@@ -48835,501 +49964,6 @@
     return-object p0
 .end method
 
-.method public static ʾﹶ([Ljava/lang/String;Ljava/lang/String;)Ljava/util/ArrayList;
-    .locals 5
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "([",
-            "Ljava/lang/String;",
-            "Ljava/lang/String;",
-            ")",
-            "Ljava/util/ArrayList<",
-            "Ljava/io/File;",
-            ">;"
-        }
-    .end annotation
-
-    .line 1
-    new-instance v0, Ljava/util/ArrayList;
-
-    .line 2
-    .line 3
-    invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
-
-    .line 4
-    .line 5
-    .line 6
-    array-length v1, p0
-
-    .line 7
-    const/4 v2, 0x0
-
-    .line 8
-    :goto_0
-    if-ge v2, v1, :cond_2
-
-    .line 9
-    .line 10
-    aget-object v3, p0, v2
-
-    .line 11
-    .line 12
-    const-string v4, ""
-
-    .line 13
-    .line 14
-    invoke-virtual {p1, v4}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    .line 15
-    .line 16
-    .line 17
-    move-result v4
-
-    .line 18
-    if-nez v4, :cond_0
-
-    .line 19
-    .line 20
-    invoke-static {v3, p1}, Lʼˏ/ᵢ;->ᵎ(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
-
-    .line 21
-    .line 22
-    .line 23
-    move-result-object v3
-
-    .line 24
-    :cond_0
-    new-instance v4, Ljava/io/File;
-
-    .line 25
-    .line 26
-    invoke-direct {v4, v3}, Ljava/io/File;-><init>(Ljava/lang/String;)V
-
-    .line 27
-    .line 28
-    .line 29
-    invoke-virtual {v4}, Ljava/io/File;->exists()Z
-
-    .line 30
-    .line 31
-    .line 32
-    move-result v4
-
-    .line 33
-    if-eqz v4, :cond_1
-
-    .line 34
-    .line 35
-    new-instance v4, Ljava/io/File;
-
-    .line 36
-    .line 37
-    invoke-direct {v4, v3}, Ljava/io/File;-><init>(Ljava/lang/String;)V
-
-    .line 38
-    .line 39
-    .line 40
-    invoke-virtual {v0, v4}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
-
-    .line 41
-    .line 42
-    .line 43
-    :cond_1
-    add-int/lit8 v2, v2, 0x1
-
-    .line 44
-    .line 45
-    goto :goto_0
-
-    .line 46
-    :cond_2
-    return-object v0
-.end method
-
-.method public static ʾﾞ(Ljava/lang/String;Ljava/io/File;Ljava/util/ArrayList;)V
-    .locals 10
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Ljava/lang/String;",
-            "Ljava/io/File;",
-            "Ljava/util/ArrayList<",
-            "Ljava/io/File;",
-            ">;)V"
-        }
-    .end annotation
-
-    .line 1
-    invoke-virtual {p1}, Ljava/io/File;->listFiles()[Ljava/io/File;
-
-    .line 2
-    .line 3
-    .line 4
-    move-result-object v0
-
-    .line 5
-    if-eqz v0, :cond_4
-
-    .line 6
-    .line 7
-    array-length v1, v0
-
-    .line 8
-    if-eqz v1, :cond_4
-
-    .line 9
-    .line 10
-    array-length p1, v0
-
-    .line 11
-    const/4 v1, 0x0
-
-    .line 12
-    const/4 v2, 0x0
-
-    .line 13
-    :goto_0
-    const-string v3, ".apk"
-
-    .line 14
-    .line 15
-    if-ge v2, p1, :cond_1
-
-    .line 16
-    .line 17
-    aget-object v4, v0, v2
-
-    .line 18
-    .line 19
-    invoke-virtual {v4}, Ljava/io/File;->getAbsolutePath()Ljava/lang/String;
-
-    .line 20
-    .line 21
-    .line 22
-    move-result-object v5
-
-    .line 23
-    invoke-virtual {v5, v3}, Ljava/lang/String;->endsWith(Ljava/lang/String;)Z
-
-    .line 24
-    .line 25
-    .line 26
-    move-result v3
-
-    .line 27
-    if-eqz v3, :cond_0
-
-    .line 28
-    .line 29
-    :try_start_0
-    new-instance v3, Lʾˉ/ˎ;
-
-    .line 30
-    .line 31
-    invoke-static {}, Lʾˉ/ᴵᴵ;->ˈי()Landroid/content/Context;
-
-    .line 32
-    .line 33
-    .line 34
-    move-result-object v5
-
-    .line 35
-    invoke-direct {v3, v5, v4, v1}, Lʾˉ/ˎ;-><init>(Landroid/content/Context;Ljava/io/File;Z)V
-
-    .line 36
-    .line 37
-    .line 38
-    iget-object v3, v3, Lʾˉ/ˎ;->ʻ:Ljava/lang/String;
-
-    .line 39
-    .line 40
-    invoke-virtual {p0, v3}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    .line 41
-    .line 42
-    .line 43
-    move-result v3
-
-    .line 44
-    if-eqz v3, :cond_0
-
-    .line 45
-    .line 46
-    invoke-static {v4}, Lʼˏ/ᵢ;->ˉˑ(Ljava/io/File;)Z
-
-    .line 47
-    .line 48
-    .line 49
-    move-result v3
-
-    .line 50
-    if-eqz v3, :cond_0
-
-    .line 51
-    .line 52
-    invoke-virtual {p2, v4}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
-    :try_end_0
-    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
-
-    .line 53
-    .line 54
-    .line 55
-    goto :goto_1
-
-    .line 56
-    :catch_0
-    move-exception v3
-
-    .line 57
-    invoke-virtual {v3}, Ljava/lang/Throwable;->printStackTrace()V
-
-    .line 58
-    .line 59
-    .line 60
-    :cond_0
-    :goto_1
-    add-int/lit8 v2, v2, 0x1
-
-    .line 61
-    .line 62
-    goto :goto_0
-
-    .line 63
-    :cond_1
-    array-length p1, v0
-
-    .line 64
-    const/4 v2, 0x0
-
-    .line 65
-    :goto_2
-    if-ge v2, p1, :cond_5
-
-    .line 66
-    .line 67
-    aget-object v4, v0, v2
-
-    .line 68
-    .line 69
-    invoke-virtual {v4}, Ljava/io/File;->isDirectory()Z
-
-    .line 70
-    .line 71
-    .line 72
-    move-result v5
-
-    .line 73
-    if-eqz v5, :cond_3
-
-    .line 74
-    .line 75
-    :try_start_1
-    invoke-virtual {v4}, Ljava/io/File;->listFiles()[Ljava/io/File;
-
-    .line 76
-    .line 77
-    .line 78
-    move-result-object v4
-
-    .line 79
-    if-eqz v4, :cond_3
-
-    .line 80
-    .line 81
-    array-length v5, v4
-
-    .line 82
-    if-eqz v5, :cond_3
-
-    .line 83
-    .line 84
-    array-length v5, v4
-
-    .line 85
-    const/4 v6, 0x0
-
-    .line 86
-    :goto_3
-    if-ge v6, v5, :cond_3
-
-    .line 87
-    .line 88
-    aget-object v7, v4, v6
-
-    .line 89
-    .line 90
-    invoke-virtual {v7}, Ljava/io/File;->getAbsolutePath()Ljava/lang/String;
-
-    .line 91
-    .line 92
-    .line 93
-    move-result-object v8
-
-    .line 94
-    invoke-virtual {v8, v3}, Ljava/lang/String;->endsWith(Ljava/lang/String;)Z
-
-    .line 95
-    .line 96
-    .line 97
-    move-result v8
-    :try_end_1
-    .catch Ljava/lang/Exception; {:try_start_1 .. :try_end_1} :catch_2
-
-    .line 98
-    if-eqz v8, :cond_2
-
-    .line 99
-    .line 100
-    :try_start_2
-    new-instance v8, Lʾˉ/ˎ;
-
-    .line 101
-    .line 102
-    invoke-static {}, Lʾˉ/ᴵᴵ;->ˈי()Landroid/content/Context;
-
-    .line 103
-    .line 104
-    .line 105
-    move-result-object v9
-
-    .line 106
-    invoke-direct {v8, v9, v7, v1}, Lʾˉ/ˎ;-><init>(Landroid/content/Context;Ljava/io/File;Z)V
-
-    .line 107
-    .line 108
-    .line 109
-    iget-object v8, v8, Lʾˉ/ˎ;->ʻ:Ljava/lang/String;
-
-    .line 110
-    .line 111
-    invoke-virtual {p0, v8}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    .line 112
-    .line 113
-    .line 114
-    move-result v8
-
-    .line 115
-    if-eqz v8, :cond_2
-
-    .line 116
-    .line 117
-    invoke-static {v7}, Lʼˏ/ᵢ;->ˉˑ(Ljava/io/File;)Z
-
-    .line 118
-    .line 119
-    .line 120
-    move-result v8
-
-    .line 121
-    if-eqz v8, :cond_2
-
-    .line 122
-    .line 123
-    invoke-virtual {p2, v7}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
-    :try_end_2
-    .catch Ljava/lang/Exception; {:try_start_2 .. :try_end_2} :catch_1
-
-    .line 124
-    .line 125
-    .line 126
-    goto :goto_4
-
-    .line 127
-    :catch_1
-    move-exception v7
-
-    .line 128
-    :try_start_3
-    invoke-virtual {v7}, Ljava/lang/Throwable;->printStackTrace()V
-    :try_end_3
-    .catch Ljava/lang/Exception; {:try_start_3 .. :try_end_3} :catch_2
-
-    .line 129
-    .line 130
-    .line 131
-    goto :goto_4
-
-    .line 132
-    :catch_2
-    move-exception v4
-
-    .line 133
-    goto :goto_5
-
-    .line 134
-    :cond_2
-    :goto_4
-    add-int/lit8 v6, v6, 0x1
-
-    .line 135
-    .line 136
-    goto :goto_3
-
-    .line 137
-    :goto_5
-    invoke-virtual {v4}, Ljava/lang/Throwable;->printStackTrace()V
-
-    .line 138
-    .line 139
-    .line 140
-    :cond_3
-    add-int/lit8 v2, v2, 0x1
-
-    .line 141
-    .line 142
-    goto :goto_2
-
-    .line 143
-    :cond_4
-    new-instance p0, Ljava/lang/StringBuilder;
-
-    .line 144
-    .line 145
-    invoke-direct {p0}, Ljava/lang/StringBuilder;-><init>()V
-
-    .line 146
-    .line 147
-    .line 148
-    const-string p2, "LuckyPatcher: 0 packages found in "
-
-    .line 149
-    .line 150
-    invoke-virtual {p0, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 151
-    .line 152
-    .line 153
-    invoke-virtual {p1}, Ljava/io/File;->getAbsolutePath()Ljava/lang/String;
-
-    .line 154
-    .line 155
-    .line 156
-    move-result-object p1
-
-    .line 157
-    invoke-virtual {p0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 158
-    .line 159
-    .line 160
-    invoke-virtual {p0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    .line 161
-    .line 162
-    .line 163
-    move-result-object p0
-
-    .line 164
-    invoke-static {p0}, Lʾˉ/ᴵᴵ;->ˉˎ(Ljava/lang/Object;)V
-
-    .line 165
-    .line 166
-    .line 167
-    :cond_5
-    return-void
-.end method
-
 .method public static ʿ(Ljava/lang/String;)V
     .locals 7
 
@@ -49519,7 +50153,502 @@
     return-void
 .end method
 
-.method public static ʿʻ(Lʼـ/ʽʽ;)Ljava/util/ArrayList;
+.method public static ʿʻ([Ljava/lang/String;Ljava/lang/String;)Ljava/util/ArrayList;
+    .locals 5
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "([",
+            "Ljava/lang/String;",
+            "Ljava/lang/String;",
+            ")",
+            "Ljava/util/ArrayList<",
+            "Ljava/io/File;",
+            ">;"
+        }
+    .end annotation
+
+    .line 1
+    new-instance v0, Ljava/util/ArrayList;
+
+    .line 2
+    .line 3
+    invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
+
+    .line 4
+    .line 5
+    .line 6
+    array-length v1, p0
+
+    .line 7
+    const/4 v2, 0x0
+
+    .line 8
+    :goto_0
+    if-ge v2, v1, :cond_2
+
+    .line 9
+    .line 10
+    aget-object v3, p0, v2
+
+    .line 11
+    .line 12
+    const-string v4, ""
+
+    .line 13
+    .line 14
+    invoke-virtual {p1, v4}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    .line 15
+    .line 16
+    .line 17
+    move-result v4
+
+    .line 18
+    if-nez v4, :cond_0
+
+    .line 19
+    .line 20
+    invoke-static {v3, p1}, Lʼˏ/ᵢ;->ᵎ(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+
+    .line 21
+    .line 22
+    .line 23
+    move-result-object v3
+
+    .line 24
+    :cond_0
+    new-instance v4, Ljava/io/File;
+
+    .line 25
+    .line 26
+    invoke-direct {v4, v3}, Ljava/io/File;-><init>(Ljava/lang/String;)V
+
+    .line 27
+    .line 28
+    .line 29
+    invoke-virtual {v4}, Ljava/io/File;->exists()Z
+
+    .line 30
+    .line 31
+    .line 32
+    move-result v4
+
+    .line 33
+    if-eqz v4, :cond_1
+
+    .line 34
+    .line 35
+    new-instance v4, Ljava/io/File;
+
+    .line 36
+    .line 37
+    invoke-direct {v4, v3}, Ljava/io/File;-><init>(Ljava/lang/String;)V
+
+    .line 38
+    .line 39
+    .line 40
+    invoke-virtual {v0, v4}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+
+    .line 41
+    .line 42
+    .line 43
+    :cond_1
+    add-int/lit8 v2, v2, 0x1
+
+    .line 44
+    .line 45
+    goto :goto_0
+
+    .line 46
+    :cond_2
+    return-object v0
+.end method
+
+.method public static ʿʼ(Ljava/lang/String;Ljava/io/File;Ljava/util/ArrayList;)V
+    .locals 10
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Ljava/lang/String;",
+            "Ljava/io/File;",
+            "Ljava/util/ArrayList<",
+            "Ljava/io/File;",
+            ">;)V"
+        }
+    .end annotation
+
+    .line 1
+    invoke-virtual {p1}, Ljava/io/File;->listFiles()[Ljava/io/File;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object v0
+
+    .line 5
+    if-eqz v0, :cond_4
+
+    .line 6
+    .line 7
+    array-length v1, v0
+
+    .line 8
+    if-eqz v1, :cond_4
+
+    .line 9
+    .line 10
+    array-length p1, v0
+
+    .line 11
+    const/4 v1, 0x0
+
+    .line 12
+    const/4 v2, 0x0
+
+    .line 13
+    :goto_0
+    const-string v3, ".apk"
+
+    .line 14
+    .line 15
+    if-ge v2, p1, :cond_1
+
+    .line 16
+    .line 17
+    aget-object v4, v0, v2
+
+    .line 18
+    .line 19
+    invoke-virtual {v4}, Ljava/io/File;->getAbsolutePath()Ljava/lang/String;
+
+    .line 20
+    .line 21
+    .line 22
+    move-result-object v5
+
+    .line 23
+    invoke-virtual {v5, v3}, Ljava/lang/String;->endsWith(Ljava/lang/String;)Z
+
+    .line 24
+    .line 25
+    .line 26
+    move-result v3
+
+    .line 27
+    if-eqz v3, :cond_0
+
+    .line 28
+    .line 29
+    :try_start_0
+    new-instance v3, Lʾˉ/ˎ;
+
+    .line 30
+    .line 31
+    invoke-static {}, Lʾˉ/ᴵᴵ;->ˈי()Landroid/content/Context;
+
+    .line 32
+    .line 33
+    .line 34
+    move-result-object v5
+
+    .line 35
+    invoke-direct {v3, v5, v4, v1}, Lʾˉ/ˎ;-><init>(Landroid/content/Context;Ljava/io/File;Z)V
+
+    .line 36
+    .line 37
+    .line 38
+    iget-object v3, v3, Lʾˉ/ˎ;->ʻ:Ljava/lang/String;
+
+    .line 39
+    .line 40
+    invoke-virtual {p0, v3}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    .line 41
+    .line 42
+    .line 43
+    move-result v3
+
+    .line 44
+    if-eqz v3, :cond_0
+
+    .line 45
+    .line 46
+    invoke-static {v4}, Lʼˏ/ᵢ;->ˉᴵ(Ljava/io/File;)Z
+
+    .line 47
+    .line 48
+    .line 49
+    move-result v3
+
+    .line 50
+    if-eqz v3, :cond_0
+
+    .line 51
+    .line 52
+    invoke-virtual {p2, v4}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+    :try_end_0
+    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
+
+    .line 53
+    .line 54
+    .line 55
+    goto :goto_1
+
+    .line 56
+    :catch_0
+    move-exception v3
+
+    .line 57
+    invoke-virtual {v3}, Ljava/lang/Throwable;->printStackTrace()V
+
+    .line 58
+    .line 59
+    .line 60
+    :cond_0
+    :goto_1
+    add-int/lit8 v2, v2, 0x1
+
+    .line 61
+    .line 62
+    goto :goto_0
+
+    .line 63
+    :cond_1
+    array-length p1, v0
+
+    .line 64
+    const/4 v2, 0x0
+
+    .line 65
+    :goto_2
+    if-ge v2, p1, :cond_5
+
+    .line 66
+    .line 67
+    aget-object v4, v0, v2
+
+    .line 68
+    .line 69
+    invoke-virtual {v4}, Ljava/io/File;->isDirectory()Z
+
+    .line 70
+    .line 71
+    .line 72
+    move-result v5
+
+    .line 73
+    if-eqz v5, :cond_3
+
+    .line 74
+    .line 75
+    :try_start_1
+    invoke-virtual {v4}, Ljava/io/File;->listFiles()[Ljava/io/File;
+
+    .line 76
+    .line 77
+    .line 78
+    move-result-object v4
+
+    .line 79
+    if-eqz v4, :cond_3
+
+    .line 80
+    .line 81
+    array-length v5, v4
+
+    .line 82
+    if-eqz v5, :cond_3
+
+    .line 83
+    .line 84
+    array-length v5, v4
+
+    .line 85
+    const/4 v6, 0x0
+
+    .line 86
+    :goto_3
+    if-ge v6, v5, :cond_3
+
+    .line 87
+    .line 88
+    aget-object v7, v4, v6
+
+    .line 89
+    .line 90
+    invoke-virtual {v7}, Ljava/io/File;->getAbsolutePath()Ljava/lang/String;
+
+    .line 91
+    .line 92
+    .line 93
+    move-result-object v8
+
+    .line 94
+    invoke-virtual {v8, v3}, Ljava/lang/String;->endsWith(Ljava/lang/String;)Z
+
+    .line 95
+    .line 96
+    .line 97
+    move-result v8
+    :try_end_1
+    .catch Ljava/lang/Exception; {:try_start_1 .. :try_end_1} :catch_2
+
+    .line 98
+    if-eqz v8, :cond_2
+
+    .line 99
+    .line 100
+    :try_start_2
+    new-instance v8, Lʾˉ/ˎ;
+
+    .line 101
+    .line 102
+    invoke-static {}, Lʾˉ/ᴵᴵ;->ˈי()Landroid/content/Context;
+
+    .line 103
+    .line 104
+    .line 105
+    move-result-object v9
+
+    .line 106
+    invoke-direct {v8, v9, v7, v1}, Lʾˉ/ˎ;-><init>(Landroid/content/Context;Ljava/io/File;Z)V
+
+    .line 107
+    .line 108
+    .line 109
+    iget-object v8, v8, Lʾˉ/ˎ;->ʻ:Ljava/lang/String;
+
+    .line 110
+    .line 111
+    invoke-virtual {p0, v8}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    .line 112
+    .line 113
+    .line 114
+    move-result v8
+
+    .line 115
+    if-eqz v8, :cond_2
+
+    .line 116
+    .line 117
+    invoke-static {v7}, Lʼˏ/ᵢ;->ˉᴵ(Ljava/io/File;)Z
+
+    .line 118
+    .line 119
+    .line 120
+    move-result v8
+
+    .line 121
+    if-eqz v8, :cond_2
+
+    .line 122
+    .line 123
+    invoke-virtual {p2, v7}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+    :try_end_2
+    .catch Ljava/lang/Exception; {:try_start_2 .. :try_end_2} :catch_1
+
+    .line 124
+    .line 125
+    .line 126
+    goto :goto_4
+
+    .line 127
+    :catch_1
+    move-exception v7
+
+    .line 128
+    :try_start_3
+    invoke-virtual {v7}, Ljava/lang/Throwable;->printStackTrace()V
+    :try_end_3
+    .catch Ljava/lang/Exception; {:try_start_3 .. :try_end_3} :catch_2
+
+    .line 129
+    .line 130
+    .line 131
+    goto :goto_4
+
+    .line 132
+    :catch_2
+    move-exception v4
+
+    .line 133
+    goto :goto_5
+
+    .line 134
+    :cond_2
+    :goto_4
+    add-int/lit8 v6, v6, 0x1
+
+    .line 135
+    .line 136
+    goto :goto_3
+
+    .line 137
+    :goto_5
+    invoke-virtual {v4}, Ljava/lang/Throwable;->printStackTrace()V
+
+    .line 138
+    .line 139
+    .line 140
+    :cond_3
+    add-int/lit8 v2, v2, 0x1
+
+    .line 141
+    .line 142
+    goto :goto_2
+
+    .line 143
+    :cond_4
+    new-instance p0, Ljava/lang/StringBuilder;
+
+    .line 144
+    .line 145
+    invoke-direct {p0}, Ljava/lang/StringBuilder;-><init>()V
+
+    .line 146
+    .line 147
+    .line 148
+    const-string p2, "LuckyPatcher: 0 packages found in "
+
+    .line 149
+    .line 150
+    invoke-virtual {p0, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 151
+    .line 152
+    .line 153
+    invoke-virtual {p1}, Ljava/io/File;->getAbsolutePath()Ljava/lang/String;
+
+    .line 154
+    .line 155
+    .line 156
+    move-result-object p1
+
+    .line 157
+    invoke-virtual {p0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 158
+    .line 159
+    .line 160
+    invoke-virtual {p0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    .line 161
+    .line 162
+    .line 163
+    move-result-object p0
+
+    .line 164
+    invoke-static {p0}, Lʾˉ/ᴵᴵ;->ˉˎ(Ljava/lang/Object;)V
+
+    .line 165
+    .line 166
+    .line 167
+    :cond_5
+    return-void
+.end method
+
+.method public static ʿʽ(Lʼـ/ʽʽ;)Ljava/util/ArrayList;
     .locals 46
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -49991,7 +51120,7 @@
 
     .line 226
     .line 227
-    invoke-static {v3, v4}, Lʼˏ/ᵢ;->ʾﹶ([Ljava/lang/String;Ljava/lang/String;)Ljava/util/ArrayList;
+    invoke-static {v3, v4}, Lʼˏ/ᵢ;->ʿʻ([Ljava/lang/String;Ljava/lang/String;)Ljava/util/ArrayList;
 
     .line 228
     .line 229
@@ -50003,7 +51132,7 @@
 
     .line 232
     .line 233
-    invoke-static {v3, v15}, Lʼˏ/ᵢ;->ʾﹶ([Ljava/lang/String;Ljava/lang/String;)Ljava/util/ArrayList;
+    invoke-static {v3, v15}, Lʼˏ/ᵢ;->ʿʻ([Ljava/lang/String;Ljava/lang/String;)Ljava/util/ArrayList;
 
     .line 234
     .line 235
@@ -50015,7 +51144,7 @@
 
     .line 238
     .line 239
-    invoke-static {v3, v14}, Lʼˏ/ᵢ;->ʾﹶ([Ljava/lang/String;Ljava/lang/String;)Ljava/util/ArrayList;
+    invoke-static {v3, v14}, Lʼˏ/ᵢ;->ʿʻ([Ljava/lang/String;Ljava/lang/String;)Ljava/util/ArrayList;
 
     .line 240
     .line 241
@@ -50299,7 +51428,7 @@
 
     .line 380
     .line 381
-    invoke-static {v13, v4}, Lʼˏ/ᵢ;->ʾﹶ([Ljava/lang/String;Ljava/lang/String;)Ljava/util/ArrayList;
+    invoke-static {v13, v4}, Lʼˏ/ᵢ;->ʿʻ([Ljava/lang/String;Ljava/lang/String;)Ljava/util/ArrayList;
 
     .line 382
     .line 383
@@ -50307,7 +51436,7 @@
     move-result-object v32
 
     .line 385
-    invoke-static {v13, v15}, Lʼˏ/ᵢ;->ʾﹶ([Ljava/lang/String;Ljava/lang/String;)Ljava/util/ArrayList;
+    invoke-static {v13, v15}, Lʼˏ/ᵢ;->ʿʻ([Ljava/lang/String;Ljava/lang/String;)Ljava/util/ArrayList;
 
     .line 386
     .line 387
@@ -50315,7 +51444,7 @@
     move-result-object v33
 
     .line 389
-    invoke-static {v13, v14}, Lʼˏ/ᵢ;->ʾﹶ([Ljava/lang/String;Ljava/lang/String;)Ljava/util/ArrayList;
+    invoke-static {v13, v14}, Lʼˏ/ᵢ;->ʿʻ([Ljava/lang/String;Ljava/lang/String;)Ljava/util/ArrayList;
 
     .line 390
     .line 391
@@ -50483,7 +51612,7 @@
 
     .line 472
     .line 473
-    invoke-static {v11, v4}, Lʼˏ/ᵢ;->ʾﹶ([Ljava/lang/String;Ljava/lang/String;)Ljava/util/ArrayList;
+    invoke-static {v11, v4}, Lʼˏ/ᵢ;->ʿʻ([Ljava/lang/String;Ljava/lang/String;)Ljava/util/ArrayList;
 
     .line 474
     .line 475
@@ -50615,7 +51744,7 @@
 
     .line 538
     .line 539
-    invoke-static {v12, v4}, Lʼˏ/ᵢ;->ʾﹶ([Ljava/lang/String;Ljava/lang/String;)Ljava/util/ArrayList;
+    invoke-static {v12, v4}, Lʼˏ/ᵢ;->ʿʻ([Ljava/lang/String;Ljava/lang/String;)Ljava/util/ArrayList;
 
     .line 540
     .line 541
@@ -50643,7 +51772,7 @@
 
     .line 552
     .line 553
-    invoke-static {v12, v4}, Lʼˏ/ᵢ;->ʾﹶ([Ljava/lang/String;Ljava/lang/String;)Ljava/util/ArrayList;
+    invoke-static {v12, v4}, Lʼˏ/ᵢ;->ʿʻ([Ljava/lang/String;Ljava/lang/String;)Ljava/util/ArrayList;
 
     .line 554
     .line 555
@@ -50943,7 +52072,7 @@
 
     .line 702
     .line 703
-    invoke-static {v9, v4}, Lʼˏ/ᵢ;->ʾﹶ([Ljava/lang/String;Ljava/lang/String;)Ljava/util/ArrayList;
+    invoke-static {v9, v4}, Lʼˏ/ᵢ;->ʿʻ([Ljava/lang/String;Ljava/lang/String;)Ljava/util/ArrayList;
 
     .line 704
     .line 705
@@ -51118,7 +52247,7 @@
 
     .line 789
     .line 790
-    invoke-static {v8, v4}, Lʼˏ/ᵢ;->ʾﹶ([Ljava/lang/String;Ljava/lang/String;)Ljava/util/ArrayList;
+    invoke-static {v8, v4}, Lʼˏ/ᵢ;->ʿʻ([Ljava/lang/String;Ljava/lang/String;)Ljava/util/ArrayList;
 
     .line 791
     .line 792
@@ -51126,7 +52255,7 @@
     move-result-object v6
 
     .line 794
-    invoke-static {v7, v4}, Lʼˏ/ᵢ;->ʾﹶ([Ljava/lang/String;Ljava/lang/String;)Ljava/util/ArrayList;
+    invoke-static {v7, v4}, Lʼˏ/ᵢ;->ʿʻ([Ljava/lang/String;Ljava/lang/String;)Ljava/util/ArrayList;
 
     .line 795
     .line 796
@@ -51238,7 +52367,7 @@
 
     .line 849
     .line 850
-    invoke-static {v1, v4}, Lʼˏ/ᵢ;->ʾﹶ([Ljava/lang/String;Ljava/lang/String;)Ljava/util/ArrayList;
+    invoke-static {v1, v4}, Lʼˏ/ᵢ;->ʿʻ([Ljava/lang/String;Ljava/lang/String;)Ljava/util/ArrayList;
 
     .line 851
     .line 852
@@ -51394,7 +52523,7 @@
 
     .line 927
     .line 928
-    invoke-static {v1, v4}, Lʼˏ/ᵢ;->ʾﹶ([Ljava/lang/String;Ljava/lang/String;)Ljava/util/ArrayList;
+    invoke-static {v1, v4}, Lʼˏ/ᵢ;->ʿʻ([Ljava/lang/String;Ljava/lang/String;)Ljava/util/ArrayList;
 
     .line 929
     .line 930
@@ -51402,7 +52531,7 @@
     move-result-object v8
 
     .line 932
-    invoke-static {v1, v14}, Lʼˏ/ᵢ;->ʾﹶ([Ljava/lang/String;Ljava/lang/String;)Ljava/util/ArrayList;
+    invoke-static {v1, v14}, Lʼˏ/ᵢ;->ʿʻ([Ljava/lang/String;Ljava/lang/String;)Ljava/util/ArrayList;
 
     .line 933
     .line 934
@@ -51410,7 +52539,7 @@
     move-result-object v14
 
     .line 936
-    invoke-static {v1, v15}, Lʼˏ/ᵢ;->ʾﹶ([Ljava/lang/String;Ljava/lang/String;)Ljava/util/ArrayList;
+    invoke-static {v1, v15}, Lʼˏ/ᵢ;->ʿʻ([Ljava/lang/String;Ljava/lang/String;)Ljava/util/ArrayList;
 
     .line 937
     .line 938
@@ -51541,7 +52670,7 @@
 
     .line 1000
     .line 1001
-    invoke-static {v1, v4}, Lʼˏ/ᵢ;->ʾﹶ([Ljava/lang/String;Ljava/lang/String;)Ljava/util/ArrayList;
+    invoke-static {v1, v4}, Lʼˏ/ᵢ;->ʿʻ([Ljava/lang/String;Ljava/lang/String;)Ljava/util/ArrayList;
 
     .line 1002
     .line 1003
@@ -51549,7 +52678,7 @@
     move-result-object v1
 
     .line 1005
-    invoke-static {v14, v4}, Lʼˏ/ᵢ;->ʾﹶ([Ljava/lang/String;Ljava/lang/String;)Ljava/util/ArrayList;
+    invoke-static {v14, v4}, Lʼˏ/ᵢ;->ʿʻ([Ljava/lang/String;Ljava/lang/String;)Ljava/util/ArrayList;
 
     .line 1006
     .line 1007
@@ -51813,7 +52942,7 @@
 
     .line 1136
     .line 1137
-    invoke-static {v15, v4}, Lʼˏ/ᵢ;->ʾﹶ([Ljava/lang/String;Ljava/lang/String;)Ljava/util/ArrayList;
+    invoke-static {v15, v4}, Lʼˏ/ᵢ;->ʿʻ([Ljava/lang/String;Ljava/lang/String;)Ljava/util/ArrayList;
 
     .line 1138
     .line 1139
@@ -52005,7 +53134,7 @@
 
     .line 1232
     .line 1233
-    invoke-static {v5, v4}, Lʼˏ/ᵢ;->ʾﹶ([Ljava/lang/String;Ljava/lang/String;)Ljava/util/ArrayList;
+    invoke-static {v5, v4}, Lʼˏ/ᵢ;->ʿʻ([Ljava/lang/String;Ljava/lang/String;)Ljava/util/ArrayList;
 
     .line 1234
     .line 1235
@@ -52052,7 +53181,7 @@
 
     .line 1255
     .line 1256
-    invoke-static {v5, v4}, Lʼˏ/ᵢ;->ʾﹶ([Ljava/lang/String;Ljava/lang/String;)Ljava/util/ArrayList;
+    invoke-static {v5, v4}, Lʼˏ/ᵢ;->ʿʻ([Ljava/lang/String;Ljava/lang/String;)Ljava/util/ArrayList;
 
     .line 1257
     .line 1258
@@ -52060,7 +53189,7 @@
     move-result-object v5
 
     .line 1260
-    invoke-static {v15, v4}, Lʼˏ/ᵢ;->ʾﹶ([Ljava/lang/String;Ljava/lang/String;)Ljava/util/ArrayList;
+    invoke-static {v15, v4}, Lʼˏ/ᵢ;->ʿʻ([Ljava/lang/String;Ljava/lang/String;)Ljava/util/ArrayList;
 
     .line 1261
     .line 1262
@@ -53319,7 +54448,7 @@
     move-result-object v2
 
     .line 1867
-    invoke-static {v2}, Lʼˏ/ᵢ;->ʻـ(Ljava/lang/String;)Ljava/io/File;
+    invoke-static {v2}, Lʼˏ/ᵢ;->ʻי(Ljava/lang/String;)Ljava/io/File;
 
     .line 1868
     .line 1869
@@ -53509,7 +54638,7 @@
     return-object v3
 .end method
 
-.method public static ʿʼ(Ljava/io/File;)Landroid/graphics/drawable/Drawable;
+.method public static ʿʾ(Ljava/io/File;)Landroid/graphics/drawable/Drawable;
     .locals 10
 
     .line 1
@@ -53719,7 +54848,7 @@
     .line 90
     .line 91
     :cond_0
-    invoke-static {p0}, Lʼˏ/ᵢ;->ʽⁱ(Ljava/io/File;)Ljava/io/File;
+    invoke-static {p0}, Lʼˏ/ᵢ;->ʽﹶ(Ljava/io/File;)Ljava/io/File;
 
     .line 92
     .line 93
@@ -53735,7 +54864,7 @@
     move-result-object p0
 
     .line 99
-    invoke-static {p0}, Lʼˏ/ᵢ;->ʽˏ(Ljava/lang/String;)Landroid/graphics/drawable/Drawable;
+    invoke-static {p0}, Lʼˏ/ᵢ;->ʽי(Ljava/lang/String;)Landroid/graphics/drawable/Drawable;
 
     .line 100
     .line 101
@@ -53744,210 +54873,6 @@
 
     .line 103
     return-object p0
-.end method
-
-.method public static ʿʽ(Ljava/io/File;)Landroid/graphics/drawable/Drawable;
-    .locals 9
-
-    .line 1
-    invoke-static {}, Lʼˏ/ᵢ;->ʽʽ()V
-
-    .line 2
-    .line 3
-    .line 4
-    const/4 v0, 0x0
-
-    .line 5
-    if-eqz p0, :cond_0
-
-    .line 6
-    .line 7
-    :try_start_0
-    invoke-virtual {p0}, Ljava/io/File;->exists()Z
-
-    .line 8
-    .line 9
-    .line 10
-    move-result v1
-
-    .line 11
-    if-eqz v1, :cond_0
-
-    .line 12
-    .line 13
-    invoke-static {}, Lʾˉ/ᴵᴵ;->ˈᵔ()Landroid/content/res/Resources;
-
-    .line 14
-    .line 15
-    .line 16
-    move-result-object v1
-
-    .line 17
-    invoke-virtual {v1}, Landroid/content/res/Resources;->getDisplayMetrics()Landroid/util/DisplayMetrics;
-
-    .line 18
-    .line 19
-    .line 20
-    move-result-object v1
-
-    .line 21
-    iget v1, v1, Landroid/util/DisplayMetrics;->density:F
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
-
-    .line 22
-    .line 23
-    const/high16 v2, 0x420c0000    # 35.0f
-
-    .line 24
-    .line 25
-    mul-float v1, v1, v2
-
-    .line 26
-    .line 27
-    const/high16 v2, 0x3f000000    # 0.5f
-
-    .line 28
-    .line 29
-    add-float/2addr v1, v2
-
-    .line 30
-    float-to-int v1, v1
-
-    .line 31
-    :try_start_1
-    new-instance v2, Ljava/io/FileInputStream;
-
-    .line 32
-    .line 33
-    invoke-direct {v2, p0}, Ljava/io/FileInputStream;-><init>(Ljava/io/File;)V
-
-    .line 34
-    .line 35
-    .line 36
-    invoke-static {v2}, Landroid/graphics/BitmapFactory;->decodeStream(Ljava/io/InputStream;)Landroid/graphics/Bitmap;
-
-    .line 37
-    .line 38
-    .line 39
-    move-result-object p0
-    :try_end_1
-    .catch Ljava/lang/Exception; {:try_start_1 .. :try_end_1} :catch_0
-    .catchall {:try_start_1 .. :try_end_1} :catchall_0
-
-    .line 40
-    move-object v2, p0
-
-    .line 41
-    goto :goto_0
-
-    .line 42
-    :catchall_0
-    move-exception p0
-
-    .line 43
-    goto :goto_1
-
-    .line 44
-    :catch_0
-    move-exception p0
-
-    .line 45
-    :try_start_2
-    invoke-virtual {p0}, Ljava/lang/Throwable;->printStackTrace()V
-
-    .line 46
-    .line 47
-    .line 48
-    move-object v2, v0
-
-    .line 49
-    :goto_0
-    invoke-virtual {v2}, Landroid/graphics/Bitmap;->getWidth()I
-
-    .line 50
-    .line 51
-    .line 52
-    move-result v5
-
-    .line 53
-    invoke-virtual {v2}, Landroid/graphics/Bitmap;->getHeight()I
-
-    .line 54
-    .line 55
-    .line 56
-    move-result v6
-
-    .line 57
-    int-to-float p0, v1
-
-    .line 58
-    int-to-float v1, v5
-
-    .line 59
-    div-float v1, p0, v1
-
-    .line 60
-    .line 61
-    int-to-float v3, v6
-
-    .line 62
-    div-float/2addr p0, v3
-
-    .line 63
-    new-instance v7, Landroid/graphics/Matrix;
-
-    .line 64
-    .line 65
-    invoke-direct {v7}, Landroid/graphics/Matrix;-><init>()V
-
-    .line 66
-    .line 67
-    .line 68
-    invoke-virtual {v7, v1, p0}, Landroid/graphics/Matrix;->postScale(FF)Z
-
-    .line 69
-    .line 70
-    .line 71
-    const/4 v4, 0x0
-
-    .line 72
-    const/4 v8, 0x1
-
-    .line 73
-    const/4 v3, 0x0
-
-    .line 74
-    invoke-static/range {v2 .. v8}, Landroid/graphics/Bitmap;->createBitmap(Landroid/graphics/Bitmap;IIIILandroid/graphics/Matrix;Z)Landroid/graphics/Bitmap;
-
-    .line 75
-    .line 76
-    .line 77
-    move-result-object p0
-
-    .line 78
-    new-instance v1, Landroid/graphics/drawable/BitmapDrawable;
-
-    .line 79
-    .line 80
-    invoke-direct {v1, p0}, Landroid/graphics/drawable/BitmapDrawable;-><init>(Landroid/graphics/Bitmap;)V
-    :try_end_2
-    .catchall {:try_start_2 .. :try_end_2} :catchall_0
-
-    .line 81
-    .line 82
-    .line 83
-    return-object v1
-
-    .line 84
-    :goto_1
-    invoke-virtual {p0}, Ljava/lang/Throwable;->printStackTrace()V
-
-    .line 85
-    .line 86
-    .line 87
-    :cond_0
-    return-object v0
 .end method
 
 .method public static ʿʿ(Ljava/lang/String;)Ljava/lang/String;
@@ -53984,7 +54909,7 @@
 
     .line 14
     :try_start_0
-    invoke-static {p0}, Lʼˏ/ᵢ;->ʾᴵ(Ljava/lang/String;)Ljava/io/File;
+    invoke-static {p0}, Lʼˏ/ᵢ;->ʾᵔ(Ljava/lang/String;)Ljava/io/File;
 
     .line 15
     .line 16
@@ -54315,11 +55240,215 @@
     .end array-data
 .end method
 
-.method public static ʿˆ()J
+.method public static ʿˆ(Ljava/io/File;)Landroid/graphics/drawable/Drawable;
+    .locals 9
+
+    .line 1
+    invoke-static {}, Lʼˏ/ᵢ;->ʽʽ()V
+
+    .line 2
+    .line 3
+    .line 4
+    const/4 v0, 0x0
+
+    .line 5
+    if-eqz p0, :cond_0
+
+    .line 6
+    .line 7
+    :try_start_0
+    invoke-virtual {p0}, Ljava/io/File;->exists()Z
+
+    .line 8
+    .line 9
+    .line 10
+    move-result v1
+
+    .line 11
+    if-eqz v1, :cond_0
+
+    .line 12
+    .line 13
+    invoke-static {}, Lʾˉ/ᴵᴵ;->ˈᵔ()Landroid/content/res/Resources;
+
+    .line 14
+    .line 15
+    .line 16
+    move-result-object v1
+
+    .line 17
+    invoke-virtual {v1}, Landroid/content/res/Resources;->getDisplayMetrics()Landroid/util/DisplayMetrics;
+
+    .line 18
+    .line 19
+    .line 20
+    move-result-object v1
+
+    .line 21
+    iget v1, v1, Landroid/util/DisplayMetrics;->density:F
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    .line 22
+    .line 23
+    const/high16 v2, 0x420c0000    # 35.0f
+
+    .line 24
+    .line 25
+    mul-float v1, v1, v2
+
+    .line 26
+    .line 27
+    const/high16 v2, 0x3f000000    # 0.5f
+
+    .line 28
+    .line 29
+    add-float/2addr v1, v2
+
+    .line 30
+    float-to-int v1, v1
+
+    .line 31
+    :try_start_1
+    new-instance v2, Ljava/io/FileInputStream;
+
+    .line 32
+    .line 33
+    invoke-direct {v2, p0}, Ljava/io/FileInputStream;-><init>(Ljava/io/File;)V
+
+    .line 34
+    .line 35
+    .line 36
+    invoke-static {v2}, Landroid/graphics/BitmapFactory;->decodeStream(Ljava/io/InputStream;)Landroid/graphics/Bitmap;
+
+    .line 37
+    .line 38
+    .line 39
+    move-result-object p0
+    :try_end_1
+    .catch Ljava/lang/Exception; {:try_start_1 .. :try_end_1} :catch_0
+    .catchall {:try_start_1 .. :try_end_1} :catchall_0
+
+    .line 40
+    move-object v2, p0
+
+    .line 41
+    goto :goto_0
+
+    .line 42
+    :catchall_0
+    move-exception p0
+
+    .line 43
+    goto :goto_1
+
+    .line 44
+    :catch_0
+    move-exception p0
+
+    .line 45
+    :try_start_2
+    invoke-virtual {p0}, Ljava/lang/Throwable;->printStackTrace()V
+
+    .line 46
+    .line 47
+    .line 48
+    move-object v2, v0
+
+    .line 49
+    :goto_0
+    invoke-virtual {v2}, Landroid/graphics/Bitmap;->getWidth()I
+
+    .line 50
+    .line 51
+    .line 52
+    move-result v5
+
+    .line 53
+    invoke-virtual {v2}, Landroid/graphics/Bitmap;->getHeight()I
+
+    .line 54
+    .line 55
+    .line 56
+    move-result v6
+
+    .line 57
+    int-to-float p0, v1
+
+    .line 58
+    int-to-float v1, v5
+
+    .line 59
+    div-float v1, p0, v1
+
+    .line 60
+    .line 61
+    int-to-float v3, v6
+
+    .line 62
+    div-float/2addr p0, v3
+
+    .line 63
+    new-instance v7, Landroid/graphics/Matrix;
+
+    .line 64
+    .line 65
+    invoke-direct {v7}, Landroid/graphics/Matrix;-><init>()V
+
+    .line 66
+    .line 67
+    .line 68
+    invoke-virtual {v7, v1, p0}, Landroid/graphics/Matrix;->postScale(FF)Z
+
+    .line 69
+    .line 70
+    .line 71
+    const/4 v4, 0x0
+
+    .line 72
+    const/4 v8, 0x1
+
+    .line 73
+    const/4 v3, 0x0
+
+    .line 74
+    invoke-static/range {v2 .. v8}, Landroid/graphics/Bitmap;->createBitmap(Landroid/graphics/Bitmap;IIIILandroid/graphics/Matrix;Z)Landroid/graphics/Bitmap;
+
+    .line 75
+    .line 76
+    .line 77
+    move-result-object p0
+
+    .line 78
+    new-instance v1, Landroid/graphics/drawable/BitmapDrawable;
+
+    .line 79
+    .line 80
+    invoke-direct {v1, p0}, Landroid/graphics/drawable/BitmapDrawable;-><init>(Landroid/graphics/Bitmap;)V
+    :try_end_2
+    .catchall {:try_start_2 .. :try_end_2} :catchall_0
+
+    .line 81
+    .line 82
+    .line 83
+    return-object v1
+
+    .line 84
+    :goto_1
+    invoke-virtual {p0}, Ljava/lang/Throwable;->printStackTrace()V
+
+    .line 85
+    .line 86
+    .line 87
+    :cond_0
+    return-object v0
+.end method
+
+.method public static ʿˉ()J
     .locals 7
 
     .line 1
-    invoke-static {}, Lʼˏ/ᵢ;->ʿᵔ()Ljava/lang/String;
+    invoke-static {}, Lʼˏ/ᵢ;->ʿﹳ()Ljava/lang/String;
 
     .line 2
     .line 3
@@ -54420,7 +55549,7 @@
     .line 53
     .line 54
     .line 55
-    invoke-static {v1}, Lʼˏ/ᵢ;->ˋˈ(Ljava/io/File;)Ljava/lang/String;
+    invoke-static {v1}, Lʼˏ/ᵢ;->ˋי(Ljava/io/File;)Ljava/lang/String;
 
     .line 56
     .line 57
@@ -54580,11 +55709,11 @@
     return-wide v4
 .end method
 
-.method public static ʿˈ()Ljava/lang/String;
+.method public static ʿˊ()Ljava/lang/String;
     .locals 6
 
     .line 1
-    invoke-static {}, Lʼˏ/ᵢ;->ʿᵔ()Ljava/lang/String;
+    invoke-static {}, Lʼˏ/ᵢ;->ʿﹳ()Ljava/lang/String;
 
     .line 2
     .line 3
@@ -54685,7 +55814,7 @@
     .line 53
     .line 54
     .line 55
-    invoke-static {v1}, Lʼˏ/ᵢ;->ˋˈ(Ljava/io/File;)Ljava/lang/String;
+    invoke-static {v1}, Lʼˏ/ᵢ;->ˋי(Ljava/io/File;)Ljava/lang/String;
 
     .line 56
     .line 57
@@ -54829,7 +55958,7 @@
     return-object v2
 .end method
 
-.method public static ʿˊ(Ljava/lang/String;Ljava/util/ArrayList;ZZ)Z
+.method public static ʿˎ(Ljava/lang/String;Ljava/util/ArrayList;ZZ)Z
     .locals 22
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -54951,7 +56080,7 @@
 
     .line 55
     .line 56
-    invoke-static {v11}, Lʼˏ/ᵢ;->ˎʿ([Ljava/lang/String;)V
+    invoke-static {v11}, Lʼˏ/ᵢ;->ˎˏ([Ljava/lang/String;)V
 
     .line 57
     .line 58
@@ -54999,7 +56128,7 @@
     move-result-object v11
 
     .line 81
-    invoke-static {v11}, Lʼˏ/ᵢ;->ˎʾ(Ljava/lang/String;)V
+    invoke-static {v11}, Lʼˏ/ᵢ;->ˎˋ(Ljava/lang/String;)V
 
     .line 82
     .line 83
@@ -55954,7 +57083,7 @@
     move-result v12
 
     .line 539
-    invoke-static {v11, v8, v12}, Lʼˏ/ᵢ;->יʻ(Ljava/nio/MappedByteBuffer;Lʼـ/ˑ;I)Z
+    invoke-static {v11, v8, v12}, Lʼˏ/ᵢ;->יˈ(Ljava/nio/MappedByteBuffer;Lʼـ/ˑ;I)Z
 
     .line 540
     .line 541
@@ -56384,7 +57513,58 @@
     return v7
 .end method
 
-.method public static ʿˋ()Ljava/util/ArrayList;
+.method public static ʿˏ()Ljava/io/File;
+    .locals 3
+
+    .line 1
+    new-instance v0, Ljava/io/File;
+
+    .line 2
+    .line 3
+    new-instance v1, Ljava/lang/StringBuilder;
+
+    .line 4
+    .line 5
+    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
+
+    .line 6
+    .line 7
+    .line 8
+    sget-object v2, Lʾˉ/ᴵᴵ;->ʼٴ:Ljava/lang/String;
+
+    .line 9
+    .line 10
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 11
+    .line 12
+    .line 13
+    const-string v2, "/module.prop.zygisk"
+
+    .line 14
+    .line 15
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 16
+    .line 17
+    .line 18
+    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    .line 19
+    .line 20
+    .line 21
+    move-result-object v1
+
+    .line 22
+    invoke-direct {v0, v1}, Ljava/io/File;-><init>(Ljava/lang/String;)V
+
+    .line 23
+    .line 24
+    .line 25
+    return-object v0
+.end method
+
+.method public static ʿˑ()Ljava/util/ArrayList;
     .locals 16
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -56517,7 +57697,7 @@
 
     .line 61
     .line 62
-    invoke-static {}, Lʼˏ/ᵢ;->ʼˏ()V
+    invoke-static {}, Lʼˏ/ᵢ;->ʼי()V
 
     .line 63
     .line 64
@@ -57088,7 +58268,7 @@
 
     .line 329
     .line 330
-    invoke-static {v7, v8, v2, v3}, Lʼˏ/ᵢ;->ʻˏ(Ljava/lang/String;Ljava/lang/String;ZZ)Z
+    invoke-static {v7, v8, v2, v3}, Lʼˏ/ᵢ;->ʻˎ(Ljava/lang/String;Ljava/lang/String;ZZ)Z
 
     .line 331
     .line 332
@@ -57097,7 +58277,7 @@
 
     .line 334
     .line 335
-    invoke-static {v5}, Lʼˏ/ᵢ;->ˎʾ(Ljava/lang/String;)V
+    invoke-static {v5}, Lʼˏ/ᵢ;->ˎˋ(Ljava/lang/String;)V
 
     .line 336
     .line 337
@@ -57106,7 +58286,7 @@
 
     .line 339
     :cond_7
-    invoke-static {v7, v8, v2, v3}, Lʼˏ/ᵢ;->ʻˏ(Ljava/lang/String;Ljava/lang/String;ZZ)Z
+    invoke-static {v7, v8, v2, v3}, Lʼˏ/ᵢ;->ʻˎ(Ljava/lang/String;Ljava/lang/String;ZZ)Z
 
     .line 340
     .line 341
@@ -57135,7 +58315,7 @@
 
     .line 353
     .line 354
-    invoke-static {v5}, Lʼˏ/ᵢ;->ˎʿ([Ljava/lang/String;)V
+    invoke-static {v5}, Lʼˏ/ᵢ;->ˎˏ([Ljava/lang/String;)V
 
     .line 355
     .line 356
@@ -57288,7 +58468,7 @@
     return-object v6
 .end method
 
-.method public static ʿˎ()Ljava/lang/String;
+.method public static ʿי()Ljava/lang/String;
     .locals 8
 
     .line 1
@@ -57687,7 +58867,7 @@
     throw v1
 .end method
 
-.method public static ʿˏ()Ljava/lang/String;
+.method public static ʿـ()Ljava/lang/String;
     .locals 8
 
     .line 1
@@ -58098,7 +59278,7 @@
     throw v1
 .end method
 
-.method public static ʿˑ()Ljava/lang/String;
+.method public static ʿٴ()Ljava/lang/String;
     .locals 8
 
     .line 1
@@ -58489,7 +59669,7 @@
     throw v1
 .end method
 
-.method public static ʿי(Ljava/io/File;Ljava/lang/String;)Ljava/lang/String;
+.method public static ʿᐧ(Ljava/io/File;Ljava/lang/String;)Ljava/lang/String;
     .locals 10
 
     .line 1
@@ -58891,7 +60071,7 @@
     goto :goto_6
 .end method
 
-.method public static ʿـ(Ljava/io/File;Ljava/lang/String;)Ljava/lang/String;
+.method public static ʿᴵ(Ljava/io/File;Ljava/lang/String;)Ljava/lang/String;
     .locals 10
 
     .line 1
@@ -59299,7 +60479,7 @@
     goto :goto_6
 .end method
 
-.method public static ʿٴ(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+.method public static ʿᵎ(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
     .locals 47
 
     .line 1
@@ -59995,7 +61175,7 @@
     .line 350
     .line 351
     .line 352
-    invoke-static {v13}, Lʼˏ/ᵢ;->ʾˑ(Ljava/io/File;)Ljava/io/File;
+    invoke-static {v13}, Lʼˏ/ᵢ;->ʾـ(Ljava/io/File;)Ljava/io/File;
 
     .line 353
     .line 354
@@ -60044,7 +61224,7 @@
     .line 377
     .line 378
     .line 379
-    invoke-static {v13}, Lʼˏ/ᵢ;->ʾˑ(Ljava/io/File;)Ljava/io/File;
+    invoke-static {v13}, Lʼˏ/ᵢ;->ʾـ(Ljava/io/File;)Ljava/io/File;
 
     .line 380
     .line 381
@@ -60105,7 +61285,7 @@
     .line 410
     .line 411
     .line 412
-    invoke-static {v13}, Lʼˏ/ᵢ;->ʾˑ(Ljava/io/File;)Ljava/io/File;
+    invoke-static {v13}, Lʼˏ/ᵢ;->ʾـ(Ljava/io/File;)Ljava/io/File;
 
     .line 413
     .line 414
@@ -60167,7 +61347,7 @@
     .line 443
     .line 444
     .line 445
-    invoke-static {v13}, Lʼˏ/ᵢ;->ʾˑ(Ljava/io/File;)Ljava/io/File;
+    invoke-static {v13}, Lʼˏ/ᵢ;->ʾـ(Ljava/io/File;)Ljava/io/File;
 
     .line 446
     .line 447
@@ -60226,7 +61406,7 @@
     .line 476
     .line 477
     .line 478
-    invoke-static {v13}, Lʼˏ/ᵢ;->ʾˑ(Ljava/io/File;)Ljava/io/File;
+    invoke-static {v13}, Lʼˏ/ᵢ;->ʾـ(Ljava/io/File;)Ljava/io/File;
 
     .line 479
     .line 480
@@ -60300,7 +61480,7 @@
     .line 516
     .line 517
     .line 518
-    invoke-static {v13}, Lʼˏ/ᵢ;->ʾˑ(Ljava/io/File;)Ljava/io/File;
+    invoke-static {v13}, Lʼˏ/ᵢ;->ʾـ(Ljava/io/File;)Ljava/io/File;
 
     .line 519
     .line 520
@@ -60351,7 +61531,7 @@
 
     .line 542
     .line 543
-    invoke-static {v4}, Lʼˏ/ᵢ;->ˎʿ([Ljava/lang/String;)V
+    invoke-static {v4}, Lʼˏ/ᵢ;->ˎˏ([Ljava/lang/String;)V
 
     .line 544
     .line 545
@@ -60396,7 +61576,7 @@
     .line 566
     .line 567
     .line 568
-    invoke-static {v13}, Lʼˏ/ᵢ;->ʾˑ(Ljava/io/File;)Ljava/io/File;
+    invoke-static {v13}, Lʼˏ/ᵢ;->ʾـ(Ljava/io/File;)Ljava/io/File;
 
     .line 569
     .line 570
@@ -60447,7 +61627,7 @@
 
     .line 592
     .line 593
-    invoke-static {v6}, Lʼˏ/ᵢ;->ˎʿ([Ljava/lang/String;)V
+    invoke-static {v6}, Lʼˏ/ᵢ;->ˎˏ([Ljava/lang/String;)V
 
     .line 594
     .line 595
@@ -60492,7 +61672,7 @@
     .line 616
     .line 617
     .line 618
-    invoke-static {v13}, Lʼˏ/ᵢ;->ʾˑ(Ljava/io/File;)Ljava/io/File;
+    invoke-static {v13}, Lʼˏ/ᵢ;->ʾـ(Ljava/io/File;)Ljava/io/File;
 
     .line 619
     .line 620
@@ -60543,7 +61723,7 @@
 
     .line 642
     .line 643
-    invoke-static {v7}, Lʼˏ/ᵢ;->ˎʿ([Ljava/lang/String;)V
+    invoke-static {v7}, Lʼˏ/ᵢ;->ˎˏ([Ljava/lang/String;)V
 
     .line 644
     .line 645
@@ -60557,7 +61737,7 @@
     .line 649
     .line 650
     .line 651
-    invoke-static {v13}, Lʼˏ/ᵢ;->ʾˑ(Ljava/io/File;)Ljava/io/File;
+    invoke-static {v13}, Lʼˏ/ᵢ;->ʾـ(Ljava/io/File;)Ljava/io/File;
 
     .line 652
     .line 653
@@ -60613,7 +61793,7 @@
 
     .line 678
     .line 679
-    invoke-static {v6}, Lʼˏ/ᵢ;->ˎʿ([Ljava/lang/String;)V
+    invoke-static {v6}, Lʼˏ/ᵢ;->ˎˏ([Ljava/lang/String;)V
 
     .line 680
     .line 681
@@ -60654,7 +61834,7 @@
     .line 700
     .line 701
     .line 702
-    invoke-static {v13}, Lʼˏ/ᵢ;->ʾˑ(Ljava/io/File;)Ljava/io/File;
+    invoke-static {v13}, Lʼˏ/ᵢ;->ʾـ(Ljava/io/File;)Ljava/io/File;
 
     .line 703
     .line 704
@@ -60710,7 +61890,7 @@
 
     .line 729
     .line 730
-    invoke-static {v6}, Lʼˏ/ᵢ;->ˎʿ([Ljava/lang/String;)V
+    invoke-static {v6}, Lʼˏ/ᵢ;->ˎˏ([Ljava/lang/String;)V
 
     .line 731
     .line 732
@@ -60751,7 +61931,7 @@
     .line 751
     .line 752
     .line 753
-    invoke-static {v13}, Lʼˏ/ᵢ;->ʾˑ(Ljava/io/File;)Ljava/io/File;
+    invoke-static {v13}, Lʼˏ/ᵢ;->ʾـ(Ljava/io/File;)Ljava/io/File;
 
     .line 754
     .line 755
@@ -60807,7 +61987,7 @@
 
     .line 780
     .line 781
-    invoke-static {v3}, Lʼˏ/ᵢ;->ˎʿ([Ljava/lang/String;)V
+    invoke-static {v3}, Lʼˏ/ᵢ;->ˎˏ([Ljava/lang/String;)V
 
     .line 782
     .line 783
@@ -60826,7 +62006,7 @@
     .line 789
     .line 790
     .line 791
-    invoke-static {v13}, Lʼˏ/ᵢ;->ʾˑ(Ljava/io/File;)Ljava/io/File;
+    invoke-static {v13}, Lʼˏ/ᵢ;->ʾـ(Ljava/io/File;)Ljava/io/File;
 
     .line 792
     .line 793
@@ -60877,7 +62057,7 @@
 
     .line 815
     .line 816
-    invoke-static {v4}, Lʼˏ/ᵢ;->ˎʿ([Ljava/lang/String;)V
+    invoke-static {v4}, Lʼˏ/ᵢ;->ˎˏ([Ljava/lang/String;)V
 
     .line 817
     .line 818
@@ -60922,7 +62102,7 @@
     .line 839
     .line 840
     .line 841
-    invoke-static {v13}, Lʼˏ/ᵢ;->ʾˑ(Ljava/io/File;)Ljava/io/File;
+    invoke-static {v13}, Lʼˏ/ᵢ;->ʾـ(Ljava/io/File;)Ljava/io/File;
 
     .line 842
     .line 843
@@ -60973,7 +62153,7 @@
 
     .line 865
     .line 866
-    invoke-static {v6}, Lʼˏ/ᵢ;->ˎʿ([Ljava/lang/String;)V
+    invoke-static {v6}, Lʼˏ/ᵢ;->ˎˏ([Ljava/lang/String;)V
 
     .line 867
     .line 868
@@ -61018,7 +62198,7 @@
     .line 889
     .line 890
     .line 891
-    invoke-static {v13}, Lʼˏ/ᵢ;->ʾˑ(Ljava/io/File;)Ljava/io/File;
+    invoke-static {v13}, Lʼˏ/ᵢ;->ʾـ(Ljava/io/File;)Ljava/io/File;
 
     .line 892
     .line 893
@@ -61069,7 +62249,7 @@
 
     .line 915
     .line 916
-    invoke-static {v7}, Lʼˏ/ᵢ;->ˎʿ([Ljava/lang/String;)V
+    invoke-static {v7}, Lʼˏ/ᵢ;->ˎˏ([Ljava/lang/String;)V
 
     .line 917
     .line 918
@@ -61083,7 +62263,7 @@
     .line 922
     .line 923
     .line 924
-    invoke-static {v13}, Lʼˏ/ᵢ;->ʾˑ(Ljava/io/File;)Ljava/io/File;
+    invoke-static {v13}, Lʼˏ/ᵢ;->ʾـ(Ljava/io/File;)Ljava/io/File;
 
     .line 925
     .line 926
@@ -61139,7 +62319,7 @@
 
     .line 951
     .line 952
-    invoke-static {v6}, Lʼˏ/ᵢ;->ˎʿ([Ljava/lang/String;)V
+    invoke-static {v6}, Lʼˏ/ᵢ;->ˎˏ([Ljava/lang/String;)V
 
     .line 953
     .line 954
@@ -61180,7 +62360,7 @@
     .line 973
     .line 974
     .line 975
-    invoke-static {v13}, Lʼˏ/ᵢ;->ʾˑ(Ljava/io/File;)Ljava/io/File;
+    invoke-static {v13}, Lʼˏ/ᵢ;->ʾـ(Ljava/io/File;)Ljava/io/File;
 
     .line 976
     .line 977
@@ -61236,7 +62416,7 @@
 
     .line 1002
     .line 1003
-    invoke-static {v6}, Lʼˏ/ᵢ;->ˎʿ([Ljava/lang/String;)V
+    invoke-static {v6}, Lʼˏ/ᵢ;->ˎˏ([Ljava/lang/String;)V
 
     .line 1004
     .line 1005
@@ -61277,7 +62457,7 @@
     .line 1024
     .line 1025
     .line 1026
-    invoke-static {v13}, Lʼˏ/ᵢ;->ʾˑ(Ljava/io/File;)Ljava/io/File;
+    invoke-static {v13}, Lʼˏ/ᵢ;->ʾـ(Ljava/io/File;)Ljava/io/File;
 
     .line 1027
     .line 1028
@@ -61333,7 +62513,7 @@
 
     .line 1053
     .line 1054
-    invoke-static {v3}, Lʼˏ/ᵢ;->ˎʿ([Ljava/lang/String;)V
+    invoke-static {v3}, Lʼˏ/ᵢ;->ˎˏ([Ljava/lang/String;)V
 
     .line 1055
     .line 1056
@@ -61349,7 +62529,7 @@
     .line 1060
     .line 1061
     :cond_a
-    invoke-static {v2}, Lʼˏ/ᵢ;->ʼˋ(Ljava/lang/String;)Z
+    invoke-static {v2}, Lʼˏ/ᵢ;->ʼˏ(Ljava/lang/String;)Z
 
     .line 1062
     .line 1063
@@ -61373,7 +62553,7 @@
 
     .line 1071
     :goto_5
-    invoke-static {v0}, Lʼˏ/ᵢ;->ʼˋ(Ljava/lang/String;)Z
+    invoke-static {v0}, Lʼˏ/ᵢ;->ʼˏ(Ljava/lang/String;)Z
 
     .line 1072
     .line 1073
@@ -61390,7 +62570,7 @@
     .line 1078
     .line 1079
     :cond_c
-    invoke-static {v14}, Lʼˏ/ᵢ;->ʼˋ(Ljava/lang/String;)Z
+    invoke-static {v14}, Lʼˏ/ᵢ;->ʼˏ(Ljava/lang/String;)Z
 
     .line 1080
     .line 1081
@@ -61411,7 +62591,7 @@
     .line 1087
     .line 1088
     :goto_6
-    invoke-static {v4}, Lʼˏ/ᵢ;->ʼˋ(Ljava/lang/String;)Z
+    invoke-static {v4}, Lʼˏ/ᵢ;->ʼˏ(Ljava/lang/String;)Z
 
     .line 1089
     .line 1090
@@ -61475,7 +62655,7 @@
     move-result-object v2
 
     .line 1120
-    invoke-static {v2}, Lʼˏ/ᵢ;->ʼˋ(Ljava/lang/String;)Z
+    invoke-static {v2}, Lʼˏ/ᵢ;->ʼˏ(Ljava/lang/String;)Z
 
     .line 1121
     .line 1122
@@ -61496,7 +62676,7 @@
     .line 1129
     .line 1130
     .line 1131
-    invoke-static {v13}, Lʼˏ/ᵢ;->ʾˑ(Ljava/io/File;)Ljava/io/File;
+    invoke-static {v13}, Lʼˏ/ᵢ;->ʾـ(Ljava/io/File;)Ljava/io/File;
 
     .line 1132
     .line 1133
@@ -61527,7 +62707,7 @@
     move-result-object v2
 
     .line 1148
-    invoke-static {v2}, Lʼˏ/ᵢ;->ʼˋ(Ljava/lang/String;)Z
+    invoke-static {v2}, Lʼˏ/ᵢ;->ʼˏ(Ljava/lang/String;)Z
 
     .line 1149
     .line 1150
@@ -61557,7 +62737,7 @@
     .line 1162
     .line 1163
     .line 1164
-    invoke-static {v13}, Lʼˏ/ᵢ;->ʾˑ(Ljava/io/File;)Ljava/io/File;
+    invoke-static {v13}, Lʼˏ/ᵢ;->ʾـ(Ljava/io/File;)Ljava/io/File;
 
     .line 1165
     .line 1166
@@ -61597,7 +62777,7 @@
     move-result-object v2
 
     .line 1186
-    invoke-static {v2}, Lʼˏ/ᵢ;->ˎʾ(Ljava/lang/String;)V
+    invoke-static {v2}, Lʼˏ/ᵢ;->ˎˋ(Ljava/lang/String;)V
 
     .line 1187
     .line 1188
@@ -61611,7 +62791,7 @@
     .line 1192
     .line 1193
     .line 1194
-    invoke-static {v13}, Lʼˏ/ᵢ;->ʾˑ(Ljava/io/File;)Ljava/io/File;
+    invoke-static {v13}, Lʼˏ/ᵢ;->ʾـ(Ljava/io/File;)Ljava/io/File;
 
     .line 1195
     .line 1196
@@ -61642,7 +62822,7 @@
     move-result-object v2
 
     .line 1211
-    invoke-static {v2}, Lʼˏ/ᵢ;->ʼˋ(Ljava/lang/String;)Z
+    invoke-static {v2}, Lʼˏ/ᵢ;->ʼˏ(Ljava/lang/String;)Z
 
     .line 1212
     .line 1213
@@ -61684,7 +62864,7 @@
     .line 1231
     .line 1232
     .line 1233
-    invoke-static {v13}, Lʼˏ/ᵢ;->ʾˑ(Ljava/io/File;)Ljava/io/File;
+    invoke-static {v13}, Lʼˏ/ᵢ;->ʾـ(Ljava/io/File;)Ljava/io/File;
 
     .line 1234
     .line 1235
@@ -61710,7 +62890,7 @@
     move-result-object v2
 
     .line 1247
-    invoke-static {v2}, Lʼˏ/ᵢ;->ˎʾ(Ljava/lang/String;)V
+    invoke-static {v2}, Lʼˏ/ᵢ;->ˎˋ(Ljava/lang/String;)V
 
     .line 1248
     .line 1249
@@ -61747,7 +62927,7 @@
     .line 1266
     .line 1267
     .line 1268
-    invoke-static {v13}, Lʼˏ/ᵢ;->ʾˑ(Ljava/io/File;)Ljava/io/File;
+    invoke-static {v13}, Lʼˏ/ᵢ;->ʾـ(Ljava/io/File;)Ljava/io/File;
 
     .line 1269
     .line 1270
@@ -61773,7 +62953,7 @@
     move-result-object v2
 
     .line 1282
-    invoke-static {v2}, Lʼˏ/ᵢ;->ˎʾ(Ljava/lang/String;)V
+    invoke-static {v2}, Lʼˏ/ᵢ;->ˎˋ(Ljava/lang/String;)V
 
     .line 1283
     .line 1284
@@ -61806,7 +62986,7 @@
     .line 1299
     .line 1300
     .line 1301
-    invoke-static {v13}, Lʼˏ/ᵢ;->ʾˑ(Ljava/io/File;)Ljava/io/File;
+    invoke-static {v13}, Lʼˏ/ᵢ;->ʾـ(Ljava/io/File;)Ljava/io/File;
 
     .line 1302
     .line 1303
@@ -61832,7 +63012,7 @@
     move-result-object v2
 
     .line 1315
-    invoke-static {v2}, Lʼˏ/ᵢ;->ˎʾ(Ljava/lang/String;)V
+    invoke-static {v2}, Lʼˏ/ᵢ;->ˎˋ(Ljava/lang/String;)V
 
     .line 1316
     .line 1317
@@ -61851,7 +63031,7 @@
     .line 1324
     .line 1325
     .line 1326
-    invoke-static {v13}, Lʼˏ/ᵢ;->ʾˑ(Ljava/io/File;)Ljava/io/File;
+    invoke-static {v13}, Lʼˏ/ᵢ;->ʾـ(Ljava/io/File;)Ljava/io/File;
 
     .line 1327
     .line 1328
@@ -61882,7 +63062,7 @@
     move-result-object v2
 
     .line 1343
-    invoke-static {v2}, Lʼˏ/ᵢ;->ˎʾ(Ljava/lang/String;)V
+    invoke-static {v2}, Lʼˏ/ᵢ;->ˎˋ(Ljava/lang/String;)V
 
     .line 1344
     .line 1345
@@ -61911,7 +63091,7 @@
     .line 1358
     .line 1359
     .line 1360
-    invoke-static {v13}, Lʼˏ/ᵢ;->ʾˑ(Ljava/io/File;)Ljava/io/File;
+    invoke-static {v13}, Lʼˏ/ᵢ;->ʾـ(Ljava/io/File;)Ljava/io/File;
 
     .line 1361
     .line 1362
@@ -61942,7 +63122,7 @@
     move-result-object v2
 
     .line 1377
-    invoke-static {v2}, Lʼˏ/ᵢ;->ˎʾ(Ljava/lang/String;)V
+    invoke-static {v2}, Lʼˏ/ᵢ;->ˎˋ(Ljava/lang/String;)V
 
     .line 1378
     .line 1379
@@ -61971,7 +63151,7 @@
     .line 1392
     .line 1393
     .line 1394
-    invoke-static {v13}, Lʼˏ/ᵢ;->ʾˑ(Ljava/io/File;)Ljava/io/File;
+    invoke-static {v13}, Lʼˏ/ᵢ;->ʾـ(Ljava/io/File;)Ljava/io/File;
 
     .line 1395
     .line 1396
@@ -62002,7 +63182,7 @@
     move-result-object v1
 
     .line 1411
-    invoke-static {v1}, Lʼˏ/ᵢ;->ˎʾ(Ljava/lang/String;)V
+    invoke-static {v1}, Lʼˏ/ᵢ;->ˎˋ(Ljava/lang/String;)V
 
     .line 1412
     .line 1413
@@ -62034,7 +63214,7 @@
     .line 1426
     .line 1427
     .line 1428
-    invoke-static {v13}, Lʼˏ/ᵢ;->ʾˑ(Ljava/io/File;)Ljava/io/File;
+    invoke-static {v13}, Lʼˏ/ᵢ;->ʾـ(Ljava/io/File;)Ljava/io/File;
 
     .line 1429
     .line 1430
@@ -62060,7 +63240,7 @@
     move-result-object v2
 
     .line 1442
-    invoke-static {v2}, Lʼˏ/ᵢ;->ˎʾ(Ljava/lang/String;)V
+    invoke-static {v2}, Lʼˏ/ᵢ;->ˎˋ(Ljava/lang/String;)V
 
     .line 1443
     .line 1444
@@ -62093,7 +63273,7 @@
     .line 1459
     .line 1460
     .line 1461
-    invoke-static {v13}, Lʼˏ/ᵢ;->ʾˑ(Ljava/io/File;)Ljava/io/File;
+    invoke-static {v13}, Lʼˏ/ᵢ;->ʾـ(Ljava/io/File;)Ljava/io/File;
 
     .line 1462
     .line 1463
@@ -62119,7 +63299,7 @@
     move-result-object v2
 
     .line 1475
-    invoke-static {v2}, Lʼˏ/ᵢ;->ˎʾ(Ljava/lang/String;)V
+    invoke-static {v2}, Lʼˏ/ᵢ;->ˎˋ(Ljava/lang/String;)V
 
     .line 1476
     .line 1477
@@ -62152,7 +63332,7 @@
     .line 1492
     .line 1493
     .line 1494
-    invoke-static {v13}, Lʼˏ/ᵢ;->ʾˑ(Ljava/io/File;)Ljava/io/File;
+    invoke-static {v13}, Lʼˏ/ᵢ;->ʾـ(Ljava/io/File;)Ljava/io/File;
 
     .line 1495
     .line 1496
@@ -62178,7 +63358,7 @@
     move-result-object v2
 
     .line 1508
-    invoke-static {v2}, Lʼˏ/ᵢ;->ˎʾ(Ljava/lang/String;)V
+    invoke-static {v2}, Lʼˏ/ᵢ;->ˎˋ(Ljava/lang/String;)V
 
     .line 1509
     .line 1510
@@ -62197,7 +63377,7 @@
     .line 1517
     .line 1518
     .line 1519
-    invoke-static {v13}, Lʼˏ/ᵢ;->ʾˑ(Ljava/io/File;)Ljava/io/File;
+    invoke-static {v13}, Lʼˏ/ᵢ;->ʾـ(Ljava/io/File;)Ljava/io/File;
 
     .line 1520
     .line 1521
@@ -62228,7 +63408,7 @@
     move-result-object v2
 
     .line 1536
-    invoke-static {v2}, Lʼˏ/ᵢ;->ˎʾ(Ljava/lang/String;)V
+    invoke-static {v2}, Lʼˏ/ᵢ;->ˎˋ(Ljava/lang/String;)V
 
     .line 1537
     .line 1538
@@ -62257,7 +63437,7 @@
     .line 1551
     .line 1552
     .line 1553
-    invoke-static {v13}, Lʼˏ/ᵢ;->ʾˑ(Ljava/io/File;)Ljava/io/File;
+    invoke-static {v13}, Lʼˏ/ᵢ;->ʾـ(Ljava/io/File;)Ljava/io/File;
 
     .line 1554
     .line 1555
@@ -62288,7 +63468,7 @@
     move-result-object v2
 
     .line 1570
-    invoke-static {v2}, Lʼˏ/ᵢ;->ˎʾ(Ljava/lang/String;)V
+    invoke-static {v2}, Lʼˏ/ᵢ;->ˎˋ(Ljava/lang/String;)V
 
     .line 1571
     .line 1572
@@ -62317,7 +63497,7 @@
     .line 1585
     .line 1586
     .line 1587
-    invoke-static {v13}, Lʼˏ/ᵢ;->ʾˑ(Ljava/io/File;)Ljava/io/File;
+    invoke-static {v13}, Lʼˏ/ᵢ;->ʾـ(Ljava/io/File;)Ljava/io/File;
 
     .line 1588
     .line 1589
@@ -62348,7 +63528,7 @@
     move-result-object v1
 
     .line 1604
-    invoke-static {v1}, Lʼˏ/ᵢ;->ˎʾ(Ljava/lang/String;)V
+    invoke-static {v1}, Lʼˏ/ᵢ;->ˎˋ(Ljava/lang/String;)V
 
     .line 1605
     .line 1606
@@ -62383,7 +63563,7 @@
     .line 1620
     .line 1621
     .line 1622
-    invoke-static {v13}, Lʼˏ/ᵢ;->ʾˑ(Ljava/io/File;)Ljava/io/File;
+    invoke-static {v13}, Lʼˏ/ᵢ;->ʾـ(Ljava/io/File;)Ljava/io/File;
 
     .line 1623
     .line 1624
@@ -62469,7 +63649,7 @@
     .line 1665
     .line 1666
     .line 1667
-    invoke-static {v13}, Lʼˏ/ᵢ;->ʾˑ(Ljava/io/File;)Ljava/io/File;
+    invoke-static {v13}, Lʼˏ/ᵢ;->ʾـ(Ljava/io/File;)Ljava/io/File;
 
     .line 1668
     .line 1669
@@ -62952,7 +64132,7 @@
     .line 1913
     .line 1914
     .line 1915
-    invoke-static {v13}, Lʼˏ/ᵢ;->ʾˑ(Ljava/io/File;)Ljava/io/File;
+    invoke-static {v13}, Lʼˏ/ᵢ;->ʾـ(Ljava/io/File;)Ljava/io/File;
 
     .line 1916
     .line 1917
@@ -62996,7 +64176,7 @@
     .line 1937
     .line 1938
     .line 1939
-    invoke-static {v13}, Lʼˏ/ᵢ;->ʾˑ(Ljava/io/File;)Ljava/io/File;
+    invoke-static {v13}, Lʼˏ/ᵢ;->ʾـ(Ljava/io/File;)Ljava/io/File;
 
     .line 1940
     .line 1941
@@ -63052,7 +64232,7 @@
     .line 1967
     .line 1968
     .line 1969
-    invoke-static {v13}, Lʼˏ/ᵢ;->ʾˑ(Ljava/io/File;)Ljava/io/File;
+    invoke-static {v13}, Lʼˏ/ᵢ;->ʾـ(Ljava/io/File;)Ljava/io/File;
 
     .line 1970
     .line 1971
@@ -63109,7 +64289,7 @@
     .line 1997
     .line 1998
     .line 1999
-    invoke-static {v13}, Lʼˏ/ᵢ;->ʾˑ(Ljava/io/File;)Ljava/io/File;
+    invoke-static {v13}, Lʼˏ/ᵢ;->ʾـ(Ljava/io/File;)Ljava/io/File;
 
     .line 2000
     .line 2001
@@ -63163,7 +64343,7 @@
     .line 2027
     .line 2028
     .line 2029
-    invoke-static {v13}, Lʼˏ/ᵢ;->ʾˑ(Ljava/io/File;)Ljava/io/File;
+    invoke-static {v13}, Lʼˏ/ᵢ;->ʾـ(Ljava/io/File;)Ljava/io/File;
 
     .line 2030
     .line 2031
@@ -63232,7 +64412,7 @@
     .line 2064
     .line 2065
     .line 2066
-    invoke-static {v13}, Lʼˏ/ᵢ;->ʾˑ(Ljava/io/File;)Ljava/io/File;
+    invoke-static {v13}, Lʼˏ/ᵢ;->ʾـ(Ljava/io/File;)Ljava/io/File;
 
     .line 2067
     .line 2068
@@ -63283,7 +64463,7 @@
 
     .line 2090
     .line 2091
-    invoke-static {v4}, Lʼˏ/ᵢ;->ˎʿ([Ljava/lang/String;)V
+    invoke-static {v4}, Lʼˏ/ᵢ;->ˎˏ([Ljava/lang/String;)V
 
     .line 2092
     .line 2093
@@ -63324,7 +64504,7 @@
     .line 2112
     .line 2113
     .line 2114
-    invoke-static {v13}, Lʼˏ/ᵢ;->ʾˑ(Ljava/io/File;)Ljava/io/File;
+    invoke-static {v13}, Lʼˏ/ᵢ;->ʾـ(Ljava/io/File;)Ljava/io/File;
 
     .line 2115
     .line 2116
@@ -63375,7 +64555,7 @@
 
     .line 2138
     .line 2139
-    invoke-static {v5}, Lʼˏ/ᵢ;->ˎʿ([Ljava/lang/String;)V
+    invoke-static {v5}, Lʼˏ/ᵢ;->ˎˏ([Ljava/lang/String;)V
 
     .line 2140
     .line 2141
@@ -63416,7 +64596,7 @@
     .line 2160
     .line 2161
     .line 2162
-    invoke-static {v13}, Lʼˏ/ᵢ;->ʾˑ(Ljava/io/File;)Ljava/io/File;
+    invoke-static {v13}, Lʼˏ/ᵢ;->ʾـ(Ljava/io/File;)Ljava/io/File;
 
     .line 2163
     .line 2164
@@ -63467,7 +64647,7 @@
 
     .line 2186
     .line 2187
-    invoke-static {v3}, Lʼˏ/ᵢ;->ˎʿ([Ljava/lang/String;)V
+    invoke-static {v3}, Lʼˏ/ᵢ;->ˎˏ([Ljava/lang/String;)V
 
     .line 2188
     .line 2189
@@ -63486,7 +64666,7 @@
     .line 2195
     .line 2196
     .line 2197
-    invoke-static {v13}, Lʼˏ/ᵢ;->ʾˑ(Ljava/io/File;)Ljava/io/File;
+    invoke-static {v13}, Lʼˏ/ᵢ;->ʾـ(Ljava/io/File;)Ljava/io/File;
 
     .line 2198
     .line 2199
@@ -63537,7 +64717,7 @@
 
     .line 2221
     .line 2222
-    invoke-static {v4}, Lʼˏ/ᵢ;->ˎʿ([Ljava/lang/String;)V
+    invoke-static {v4}, Lʼˏ/ᵢ;->ˎˏ([Ljava/lang/String;)V
 
     .line 2223
     .line 2224
@@ -63582,7 +64762,7 @@
     .line 2245
     .line 2246
     .line 2247
-    invoke-static {v13}, Lʼˏ/ᵢ;->ʾˑ(Ljava/io/File;)Ljava/io/File;
+    invoke-static {v13}, Lʼˏ/ᵢ;->ʾـ(Ljava/io/File;)Ljava/io/File;
 
     .line 2248
     .line 2249
@@ -63633,7 +64813,7 @@
 
     .line 2271
     .line 2272
-    invoke-static {v5}, Lʼˏ/ᵢ;->ˎʿ([Ljava/lang/String;)V
+    invoke-static {v5}, Lʼˏ/ᵢ;->ˎˏ([Ljava/lang/String;)V
 
     .line 2273
     .line 2274
@@ -63678,7 +64858,7 @@
     .line 2295
     .line 2296
     .line 2297
-    invoke-static {v13}, Lʼˏ/ᵢ;->ʾˑ(Ljava/io/File;)Ljava/io/File;
+    invoke-static {v13}, Lʼˏ/ᵢ;->ʾـ(Ljava/io/File;)Ljava/io/File;
 
     .line 2298
     .line 2299
@@ -63729,7 +64909,7 @@
 
     .line 2321
     .line 2322
-    invoke-static {v3}, Lʼˏ/ᵢ;->ˎʿ([Ljava/lang/String;)V
+    invoke-static {v3}, Lʼˏ/ᵢ;->ˎˏ([Ljava/lang/String;)V
 
     .line 2323
     .line 2324
@@ -63759,7 +64939,7 @@
     const/4 v5, 0x0
 
     .line 2333
-    invoke-static {v2}, Lʼˏ/ᵢ;->ʼˋ(Ljava/lang/String;)Z
+    invoke-static {v2}, Lʼˏ/ᵢ;->ʼˏ(Ljava/lang/String;)Z
 
     .line 2334
     .line 2335
@@ -63780,7 +64960,7 @@
     .line 2341
     .line 2342
     :goto_e
-    invoke-static {v0}, Lʼˏ/ᵢ;->ʼˋ(Ljava/lang/String;)Z
+    invoke-static {v0}, Lʼˏ/ᵢ;->ʼˏ(Ljava/lang/String;)Z
 
     .line 2343
     .line 2344
@@ -63801,7 +64981,7 @@
     .line 2350
     .line 2351
     :goto_f
-    invoke-static {v14}, Lʼˏ/ᵢ;->ʼˋ(Ljava/lang/String;)Z
+    invoke-static {v14}, Lʼˏ/ᵢ;->ʼˏ(Ljava/lang/String;)Z
 
     .line 2352
     .line 2353
@@ -63822,7 +65002,7 @@
     .line 2359
     .line 2360
     :goto_10
-    invoke-static {v4}, Lʼˏ/ᵢ;->ʼˋ(Ljava/lang/String;)Z
+    invoke-static {v4}, Lʼˏ/ᵢ;->ʼˏ(Ljava/lang/String;)Z
 
     .line 2361
     .line 2362
@@ -63886,7 +65066,7 @@
     move-result-object v2
 
     .line 2392
-    invoke-static {v2}, Lʼˏ/ᵢ;->ʼˋ(Ljava/lang/String;)Z
+    invoke-static {v2}, Lʼˏ/ᵢ;->ʼˏ(Ljava/lang/String;)Z
 
     .line 2393
     .line 2394
@@ -63907,7 +65087,7 @@
     .line 2401
     .line 2402
     .line 2403
-    invoke-static {v13}, Lʼˏ/ᵢ;->ʾˑ(Ljava/io/File;)Ljava/io/File;
+    invoke-static {v13}, Lʼˏ/ᵢ;->ʾـ(Ljava/io/File;)Ljava/io/File;
 
     .line 2404
     .line 2405
@@ -63933,7 +65113,7 @@
     move-result-object v2
 
     .line 2417
-    invoke-static {v2}, Lʼˏ/ᵢ;->ʼˋ(Ljava/lang/String;)Z
+    invoke-static {v2}, Lʼˏ/ᵢ;->ʼˏ(Ljava/lang/String;)Z
 
     .line 2418
     .line 2419
@@ -63963,7 +65143,7 @@
     .line 2431
     .line 2432
     .line 2433
-    invoke-static {v13}, Lʼˏ/ᵢ;->ʾˑ(Ljava/io/File;)Ljava/io/File;
+    invoke-static {v13}, Lʼˏ/ᵢ;->ʾـ(Ljava/io/File;)Ljava/io/File;
 
     .line 2434
     .line 2435
@@ -63998,7 +65178,7 @@
     move-result-object v2
 
     .line 2452
-    invoke-static {v2}, Lʼˏ/ᵢ;->ˎʾ(Ljava/lang/String;)V
+    invoke-static {v2}, Lʼˏ/ᵢ;->ˎˋ(Ljava/lang/String;)V
 
     .line 2453
     .line 2454
@@ -64012,7 +65192,7 @@
     .line 2458
     .line 2459
     .line 2460
-    invoke-static {v13}, Lʼˏ/ᵢ;->ʾˑ(Ljava/io/File;)Ljava/io/File;
+    invoke-static {v13}, Lʼˏ/ᵢ;->ʾـ(Ljava/io/File;)Ljava/io/File;
 
     .line 2461
     .line 2462
@@ -64038,7 +65218,7 @@
     move-result-object v2
 
     .line 2474
-    invoke-static {v2}, Lʼˏ/ᵢ;->ʼˋ(Ljava/lang/String;)Z
+    invoke-static {v2}, Lʼˏ/ᵢ;->ʼˏ(Ljava/lang/String;)Z
 
     .line 2475
     .line 2476
@@ -64080,7 +65260,7 @@
     .line 2494
     .line 2495
     .line 2496
-    invoke-static {v13}, Lʼˏ/ᵢ;->ʾˑ(Ljava/io/File;)Ljava/io/File;
+    invoke-static {v13}, Lʼˏ/ᵢ;->ʾـ(Ljava/io/File;)Ljava/io/File;
 
     .line 2497
     .line 2498
@@ -64106,7 +65286,7 @@
     move-result-object v2
 
     .line 2510
-    invoke-static {v2}, Lʼˏ/ᵢ;->ˎʾ(Ljava/lang/String;)V
+    invoke-static {v2}, Lʼˏ/ᵢ;->ˎˋ(Ljava/lang/String;)V
 
     .line 2511
     .line 2512
@@ -64143,7 +65323,7 @@
     .line 2529
     .line 2530
     .line 2531
-    invoke-static {v13}, Lʼˏ/ᵢ;->ʾˑ(Ljava/io/File;)Ljava/io/File;
+    invoke-static {v13}, Lʼˏ/ᵢ;->ʾـ(Ljava/io/File;)Ljava/io/File;
 
     .line 2532
     .line 2533
@@ -64169,7 +65349,7 @@
     move-result-object v2
 
     .line 2545
-    invoke-static {v2}, Lʼˏ/ᵢ;->ˎʾ(Ljava/lang/String;)V
+    invoke-static {v2}, Lʼˏ/ᵢ;->ˎˋ(Ljava/lang/String;)V
 
     .line 2546
     .line 2547
@@ -64202,7 +65382,7 @@
     .line 2562
     .line 2563
     .line 2564
-    invoke-static {v13}, Lʼˏ/ᵢ;->ʾˑ(Ljava/io/File;)Ljava/io/File;
+    invoke-static {v13}, Lʼˏ/ᵢ;->ʾـ(Ljava/io/File;)Ljava/io/File;
 
     .line 2565
     .line 2566
@@ -64228,7 +65408,7 @@
     move-result-object v1
 
     .line 2578
-    invoke-static {v1}, Lʼˏ/ᵢ;->ˎʾ(Ljava/lang/String;)V
+    invoke-static {v1}, Lʼˏ/ᵢ;->ˎˋ(Ljava/lang/String;)V
 
     .line 2579
     .line 2580
@@ -64260,7 +65440,7 @@
     .line 2593
     .line 2594
     .line 2595
-    invoke-static {v13}, Lʼˏ/ᵢ;->ʾˑ(Ljava/io/File;)Ljava/io/File;
+    invoke-static {v13}, Lʼˏ/ᵢ;->ʾـ(Ljava/io/File;)Ljava/io/File;
 
     .line 2596
     .line 2597
@@ -64286,7 +65466,7 @@
     move-result-object v2
 
     .line 2609
-    invoke-static {v2}, Lʼˏ/ᵢ;->ˎʾ(Ljava/lang/String;)V
+    invoke-static {v2}, Lʼˏ/ᵢ;->ˎˋ(Ljava/lang/String;)V
 
     .line 2610
     .line 2611
@@ -64319,7 +65499,7 @@
     .line 2626
     .line 2627
     .line 2628
-    invoke-static {v13}, Lʼˏ/ᵢ;->ʾˑ(Ljava/io/File;)Ljava/io/File;
+    invoke-static {v13}, Lʼˏ/ᵢ;->ʾـ(Ljava/io/File;)Ljava/io/File;
 
     .line 2629
     .line 2630
@@ -64345,7 +65525,7 @@
     move-result-object v2
 
     .line 2642
-    invoke-static {v2}, Lʼˏ/ᵢ;->ˎʾ(Ljava/lang/String;)V
+    invoke-static {v2}, Lʼˏ/ᵢ;->ˎˋ(Ljava/lang/String;)V
 
     .line 2643
     .line 2644
@@ -64378,7 +65558,7 @@
     .line 2659
     .line 2660
     .line 2661
-    invoke-static {v13}, Lʼˏ/ᵢ;->ʾˑ(Ljava/io/File;)Ljava/io/File;
+    invoke-static {v13}, Lʼˏ/ᵢ;->ʾـ(Ljava/io/File;)Ljava/io/File;
 
     .line 2662
     .line 2663
@@ -64404,7 +65584,7 @@
     move-result-object v1
 
     .line 2675
-    invoke-static {v1}, Lʼˏ/ᵢ;->ˎʾ(Ljava/lang/String;)V
+    invoke-static {v1}, Lʼˏ/ᵢ;->ˎˋ(Ljava/lang/String;)V
 
     .line 2676
     .line 2677
@@ -64427,7 +65607,7 @@
     .line 2685
     .line 2686
     .line 2687
-    invoke-static {v13}, Lʼˏ/ᵢ;->ʾˑ(Ljava/io/File;)Ljava/io/File;
+    invoke-static {v13}, Lʼˏ/ᵢ;->ʾـ(Ljava/io/File;)Ljava/io/File;
 
     .line 2688
     .line 2689
@@ -64510,7 +65690,7 @@
     return-object v0
 .end method
 
-.method public static ʿᴵ(Ljava/io/File;)Landroid/content/pm/PackageInfo;
+.method public static ʿᵢ(Ljava/io/File;)Landroid/content/pm/PackageInfo;
     .locals 4
     .annotation system Ldalvik/annotation/Throws;
         value = {
@@ -64569,7 +65749,7 @@
     move-result-object p0
 
     .line 27
-    invoke-static {p0}, Lʼˏ/ᵢ;->ʽˊ(Lcom/android/apksig/util/DataSource;)Ljava/nio/ByteBuffer;
+    invoke-static {p0}, Lʼˏ/ᵢ;->ʽˎ(Lcom/android/apksig/util/DataSource;)Ljava/nio/ByteBuffer;
 
     .line 28
     .line 29
@@ -64921,7 +66101,7 @@
     return-object p0
 .end method
 
-.method public static ʿᵎ(Ljava/io/File;)Ljava/lang/String;
+.method public static ʿⁱ(Ljava/io/File;)Ljava/lang/String;
     .locals 5
     .annotation system Ldalvik/annotation/Throws;
         value = {
@@ -64965,7 +66145,7 @@
     move-result-object p0
 
     .line 16
-    invoke-static {p0}, Lʼˏ/ᵢ;->ʽˊ(Lcom/android/apksig/util/DataSource;)Ljava/nio/ByteBuffer;
+    invoke-static {p0}, Lʼˏ/ᵢ;->ʽˎ(Lcom/android/apksig/util/DataSource;)Ljava/nio/ByteBuffer;
 
     .line 17
     .line 18
@@ -65258,7 +66438,7 @@
     goto :goto_4
 .end method
 
-.method public static ʿᵔ()Ljava/lang/String;
+.method public static ʿﹳ()Ljava/lang/String;
     .locals 5
 
     .line 1
@@ -65328,7 +66508,7 @@
 
     .line 33
     :cond_1
-    invoke-static {v1}, Lʼˏ/ᵢ;->ʼˋ(Ljava/lang/String;)Z
+    invoke-static {v1}, Lʼˏ/ᵢ;->ʼˏ(Ljava/lang/String;)Z
 
     .line 34
     .line 35
@@ -65344,7 +66524,7 @@
 
     .line 40
     :cond_2
-    invoke-static {v3}, Lʼˏ/ᵢ;->ʼˋ(Ljava/lang/String;)Z
+    invoke-static {v3}, Lʼˏ/ᵢ;->ʼˏ(Ljava/lang/String;)Z
 
     .line 41
     .line 42
@@ -65367,7 +66547,7 @@
     return-object v0
 .end method
 
-.method public static ʿᵢ()Ljava/lang/String;
+.method public static ʿﹶ()Ljava/lang/String;
     .locals 5
 
     .line 1
@@ -65437,7 +66617,7 @@
 
     .line 33
     :cond_1
-    invoke-static {v1}, Lʼˏ/ᵢ;->ʼˋ(Ljava/lang/String;)Z
+    invoke-static {v1}, Lʼˏ/ᵢ;->ʼˏ(Ljava/lang/String;)Z
 
     .line 34
     .line 35
@@ -65453,7 +66633,7 @@
 
     .line 40
     :cond_2
-    invoke-static {v3}, Lʼˏ/ᵢ;->ʼˋ(Ljava/lang/String;)Z
+    invoke-static {v3}, Lʼˏ/ᵢ;->ʼˏ(Ljava/lang/String;)Z
 
     .line 41
     .line 42
@@ -65476,7 +66656,7 @@
     return-object v0
 .end method
 
-.method public static ʿⁱ()Ljava/lang/String;
+.method public static ʿﾞ()Ljava/lang/String;
     .locals 5
 
     .line 1
@@ -65546,7 +66726,7 @@
 
     .line 33
     :cond_1
-    invoke-static {v1}, Lʼˏ/ᵢ;->ʼˋ(Ljava/lang/String;)Z
+    invoke-static {v1}, Lʼˏ/ᵢ;->ʼˏ(Ljava/lang/String;)Z
 
     .line 34
     .line 35
@@ -65562,7 +66742,7 @@
 
     .line 40
     :cond_2
-    invoke-static {v3}, Lʼˏ/ᵢ;->ʼˋ(Ljava/lang/String;)Z
+    invoke-static {v3}, Lʼˏ/ᵢ;->ʼˏ(Ljava/lang/String;)Z
 
     .line 41
     .line 42
@@ -65585,7 +66765,131 @@
     return-object v0
 .end method
 
-.method public static ʿﹳ()Ljava/lang/String;
+.method public static ˆ(Ljava/io/File;Ljava/util/ArrayList;)V
+    .locals 7
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Ljava/io/File;",
+            "Ljava/util/ArrayList<",
+            "Ljava/io/File;",
+            ">;)V"
+        }
+    .end annotation
+
+    .line 1
+    if-eqz p1, :cond_2
+
+    .line 2
+    .line 3
+    invoke-virtual {p1}, Ljava/util/ArrayList;->size()I
+
+    .line 4
+    .line 5
+    .line 6
+    move-result v0
+
+    .line 7
+    if-lez v0, :cond_2
+
+    .line 8
+    .line 9
+    invoke-virtual {p1}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
+
+    .line 10
+    .line 11
+    .line 12
+    move-result-object v0
+
+    .line 13
+    const/4 v1, 0x0
+
+    .line 14
+    :cond_0
+    :goto_0
+    invoke-interface {v0}, Ljava/util/Iterator;->hasNext()Z
+
+    .line 15
+    .line 16
+    .line 17
+    move-result v2
+
+    .line 18
+    if-eqz v2, :cond_1
+
+    .line 19
+    .line 20
+    invoke-interface {v0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+
+    .line 21
+    .line 22
+    .line 23
+    move-result-object v2
+
+    .line 24
+    check-cast v2, Ljava/io/File;
+
+    .line 25
+    .line 26
+    invoke-virtual {v2}, Ljava/io/File;->length()J
+
+    .line 27
+    .line 28
+    .line 29
+    move-result-wide v2
+
+    .line 30
+    invoke-virtual {p0}, Ljava/io/File;->length()J
+
+    .line 31
+    .line 32
+    .line 33
+    move-result-wide v4
+
+    .line 34
+    cmp-long v6, v2, v4
+
+    .line 35
+    .line 36
+    if-nez v6, :cond_0
+
+    .line 37
+    .line 38
+    const/4 v1, 0x1
+
+    .line 39
+    goto :goto_0
+
+    .line 40
+    :cond_1
+    if-nez v1, :cond_3
+
+    .line 41
+    .line 42
+    invoke-virtual {p1, p0}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+
+    .line 43
+    .line 44
+    .line 45
+    goto :goto_1
+
+    .line 46
+    :cond_2
+    if-eqz p1, :cond_3
+
+    .line 47
+    .line 48
+    invoke-virtual {p1, p0}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+
+    .line 49
+    .line 50
+    .line 51
+    :cond_3
+    :goto_1
+    return-void
+.end method
+
+.method public static ˆʻ()Ljava/lang/String;
     .locals 5
 
     .line 1
@@ -65655,7 +66959,7 @@
 
     .line 33
     :cond_1
-    invoke-static {v1}, Lʼˏ/ᵢ;->ʼˋ(Ljava/lang/String;)Z
+    invoke-static {v1}, Lʼˏ/ᵢ;->ʼˏ(Ljava/lang/String;)Z
 
     .line 34
     .line 35
@@ -65671,7 +66975,7 @@
 
     .line 40
     :cond_2
-    invoke-static {v3}, Lʼˏ/ᵢ;->ʼˋ(Ljava/lang/String;)Z
+    invoke-static {v3}, Lʼˏ/ᵢ;->ʼˏ(Ljava/lang/String;)Z
 
     .line 41
     .line 42
@@ -65694,7 +66998,7 @@
     return-object v0
 .end method
 
-.method public static ʿﹶ()Ljava/lang/String;
+.method public static ˆʼ()Ljava/lang/String;
     .locals 3
 
     .line 1
@@ -65756,7 +67060,7 @@
 
     .line 29
     :cond_1
-    invoke-static {v1}, Lʼˏ/ᵢ;->ʼˋ(Ljava/lang/String;)Z
+    invoke-static {v1}, Lʼˏ/ᵢ;->ʼˏ(Ljava/lang/String;)Z
 
     .line 30
     .line 31
@@ -65772,7 +67076,7 @@
 
     .line 36
     :cond_2
-    invoke-static {v2}, Lʼˏ/ᵢ;->ʼˋ(Ljava/lang/String;)Z
+    invoke-static {v2}, Lʼˏ/ᵢ;->ʼˏ(Ljava/lang/String;)Z
 
     .line 37
     .line 38
@@ -65795,7 +67099,7 @@
     return-object v0
 .end method
 
-.method public static ʿﾞ(Ljava/lang/String;)Ljava/lang/String;
+.method public static ˆʽ(Ljava/lang/String;)Ljava/lang/String;
     .locals 16
 
     .line 1
@@ -66298,131 +67602,7 @@
     return-object v1
 .end method
 
-.method public static ˆ(Ljava/io/File;Ljava/util/ArrayList;)V
-    .locals 7
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Ljava/io/File;",
-            "Ljava/util/ArrayList<",
-            "Ljava/io/File;",
-            ">;)V"
-        }
-    .end annotation
-
-    .line 1
-    if-eqz p1, :cond_2
-
-    .line 2
-    .line 3
-    invoke-virtual {p1}, Ljava/util/ArrayList;->size()I
-
-    .line 4
-    .line 5
-    .line 6
-    move-result v0
-
-    .line 7
-    if-lez v0, :cond_2
-
-    .line 8
-    .line 9
-    invoke-virtual {p1}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
-
-    .line 10
-    .line 11
-    .line 12
-    move-result-object v0
-
-    .line 13
-    const/4 v1, 0x0
-
-    .line 14
-    :cond_0
-    :goto_0
-    invoke-interface {v0}, Ljava/util/Iterator;->hasNext()Z
-
-    .line 15
-    .line 16
-    .line 17
-    move-result v2
-
-    .line 18
-    if-eqz v2, :cond_1
-
-    .line 19
-    .line 20
-    invoke-interface {v0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
-
-    .line 21
-    .line 22
-    .line 23
-    move-result-object v2
-
-    .line 24
-    check-cast v2, Ljava/io/File;
-
-    .line 25
-    .line 26
-    invoke-virtual {v2}, Ljava/io/File;->length()J
-
-    .line 27
-    .line 28
-    .line 29
-    move-result-wide v2
-
-    .line 30
-    invoke-virtual {p0}, Ljava/io/File;->length()J
-
-    .line 31
-    .line 32
-    .line 33
-    move-result-wide v4
-
-    .line 34
-    cmp-long v6, v2, v4
-
-    .line 35
-    .line 36
-    if-nez v6, :cond_0
-
-    .line 37
-    .line 38
-    const/4 v1, 0x1
-
-    .line 39
-    goto :goto_0
-
-    .line 40
-    :cond_1
-    if-nez v1, :cond_3
-
-    .line 41
-    .line 42
-    invoke-virtual {p1, p0}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
-
-    .line 43
-    .line 44
-    .line 45
-    goto :goto_1
-
-    .line 46
-    :cond_2
-    if-eqz p1, :cond_3
-
-    .line 47
-    .line 48
-    invoke-virtual {p1, p0}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
-
-    .line 49
-    .line 50
-    .line 51
-    :cond_3
-    :goto_1
-    return-void
-.end method
-
-.method public static ˆʻ(Ljava/io/File;)Ljava/util/ArrayList;
+.method public static ˆʾ(Ljava/io/File;)Ljava/util/ArrayList;
     .locals 8
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -66479,7 +67659,7 @@
     move-result-object p0
 
     .line 20
-    invoke-static {p0}, Lʼˏ/ᵢ;->ʽˊ(Lcom/android/apksig/util/DataSource;)Ljava/nio/ByteBuffer;
+    invoke-static {p0}, Lʼˏ/ᵢ;->ʽˎ(Lcom/android/apksig/util/DataSource;)Ljava/nio/ByteBuffer;
 
     .line 21
     .line 22
@@ -66669,7 +67849,7 @@
     move-result-object v5
 
     .line 111
-    invoke-static {v5}, Lʼˏ/ᵢ;->ˆᐧ(Lcom/android/apksig/util/DataSource;)Ljava/nio/ByteBuffer;
+    invoke-static {v5}, Lʼˏ/ᵢ;->ˆᵔ(Lcom/android/apksig/util/DataSource;)Ljava/nio/ByteBuffer;
 
     .line 112
     .line 113
@@ -66821,7 +68001,7 @@
     return-object v0
 .end method
 
-.method public static ˆʼ(Ljava/lang/String;Z)Ljava/util/ArrayList;
+.method public static ˆʿ(Ljava/lang/String;Z)Ljava/util/ArrayList;
     .locals 16
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -66856,7 +68036,7 @@
 
     .line 11
     .line 12
-    invoke-static {}, Lʼˏ/ᵢ;->ʿᵢ()Ljava/lang/String;
+    invoke-static {}, Lʼˏ/ᵢ;->ʿﹶ()Ljava/lang/String;
 
     .line 13
     .line 14
@@ -67662,7 +68842,241 @@
     return-object v2
 .end method
 
-.method public static ˆʽ(Ljava/lang/String;I)Landroid/content/pm/PackageInfo;
+.method public static ˆˆ(Ljava/io/File;)Z
+    .locals 5
+
+    .line 1
+    const-string v0, "classes.dex"
+
+    .line 2
+    .line 3
+    const/4 v1, 0x1
+
+    .line 4
+    :try_start_0
+    new-instance v2, Ljava/io/FileInputStream;
+
+    .line 5
+    .line 6
+    invoke-direct {v2, p0}, Ljava/io/FileInputStream;-><init>(Ljava/io/File;)V
+
+    .line 7
+    .line 8
+    .line 9
+    new-instance v3, Ljava/util/zip/ZipInputStream;
+
+    .line 10
+    .line 11
+    invoke-direct {v3, v2}, Ljava/util/zip/ZipInputStream;-><init>(Ljava/io/InputStream;)V
+
+    .line 12
+    .line 13
+    .line 14
+    invoke-virtual {v3}, Ljava/util/zip/ZipInputStream;->getNextEntry()Ljava/util/zip/ZipEntry;
+
+    .line 15
+    .line 16
+    .line 17
+    move-result-object v4
+
+    .line 18
+    :goto_0
+    if-eqz v4, :cond_1
+
+    .line 19
+    .line 20
+    invoke-virtual {v4}, Ljava/util/zip/ZipEntry;->getName()Ljava/lang/String;
+
+    .line 21
+    .line 22
+    .line 23
+    move-result-object v4
+
+    .line 24
+    invoke-virtual {v4}, Ljava/lang/String;->toLowerCase()Ljava/lang/String;
+
+    .line 25
+    .line 26
+    .line 27
+    move-result-object v4
+
+    .line 28
+    invoke-virtual {v4, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    .line 29
+    .line 30
+    .line 31
+    move-result v4
+
+    .line 32
+    if-eqz v4, :cond_0
+
+    .line 33
+    .line 34
+    invoke-virtual {v3}, Ljava/util/zip/ZipInputStream;->closeEntry()V
+
+    .line 35
+    .line 36
+    .line 37
+    invoke-virtual {v3}, Ljava/util/zip/ZipInputStream;->close()V
+
+    .line 38
+    .line 39
+    .line 40
+    invoke-virtual {v2}, Ljava/io/FileInputStream;->close()V
+
+    .line 41
+    .line 42
+    .line 43
+    return v1
+
+    .line 44
+    :cond_0
+    invoke-virtual {v3}, Ljava/util/zip/ZipInputStream;->getNextEntry()Ljava/util/zip/ZipEntry;
+
+    .line 45
+    .line 46
+    .line 47
+    move-result-object v4
+
+    .line 48
+    goto :goto_0
+
+    .line 49
+    :cond_1
+    invoke-virtual {v3}, Ljava/util/zip/ZipInputStream;->close()V
+
+    .line 50
+    .line 51
+    .line 52
+    invoke-virtual {v2}, Ljava/io/FileInputStream;->close()V
+    :try_end_0
+    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
+
+    .line 53
+    .line 54
+    .line 55
+    goto :goto_1
+
+    .line 56
+    :catch_0
+    :try_start_1
+    invoke-virtual {p0}, Ljava/io/File;->getAbsolutePath()Ljava/lang/String;
+
+    .line 57
+    .line 58
+    .line 59
+    move-result-object p0
+
+    .line 60
+    invoke-static {p0}, Lʿʼ/ʾ;->ˆ(Ljava/lang/String;)Lʿʼ/ʾ;
+
+    .line 61
+    .line 62
+    .line 63
+    move-result-object p0
+
+    .line 64
+    invoke-virtual {p0}, Lʿʼ/ʾ;->ʽ()Ljava/util/Map;
+
+    .line 65
+    .line 66
+    .line 67
+    move-result-object p0
+
+    .line 68
+    invoke-interface {p0}, Ljava/util/Map;->values()Ljava/util/Collection;
+
+    .line 69
+    .line 70
+    .line 71
+    move-result-object p0
+
+    .line 72
+    invoke-interface {p0}, Ljava/util/Collection;->iterator()Ljava/util/Iterator;
+
+    .line 73
+    .line 74
+    .line 75
+    move-result-object p0
+
+    .line 76
+    :cond_2
+    invoke-interface {p0}, Ljava/util/Iterator;->hasNext()Z
+
+    .line 77
+    .line 78
+    .line 79
+    move-result v2
+
+    .line 80
+    if-eqz v2, :cond_3
+
+    .line 81
+    .line 82
+    invoke-interface {p0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+
+    .line 83
+    .line 84
+    .line 85
+    move-result-object v2
+
+    .line 86
+    check-cast v2, Lʿʼ/ʼ;
+
+    .line 87
+    .line 88
+    invoke-virtual {v2}, Lʿʼ/ʼ;->ˋ()Ljava/lang/String;
+
+    .line 89
+    .line 90
+    .line 91
+    move-result-object v2
+
+    .line 92
+    invoke-virtual {v2}, Ljava/lang/String;->toLowerCase()Ljava/lang/String;
+
+    .line 93
+    .line 94
+    .line 95
+    move-result-object v2
+
+    .line 96
+    invoke-virtual {v2, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    .line 97
+    .line 98
+    .line 99
+    move-result v2
+    :try_end_1
+    .catch Ljava/io/IOException; {:try_start_1 .. :try_end_1} :catch_1
+
+    .line 100
+    if-eqz v2, :cond_2
+
+    .line 101
+    .line 102
+    return v1
+
+    .line 103
+    :catch_1
+    move-exception p0
+
+    .line 104
+    invoke-virtual {p0}, Ljava/lang/Throwable;->printStackTrace()V
+
+    .line 105
+    .line 106
+    .line 107
+    :cond_3
+    :goto_1
+    const/4 p0, 0x0
+
+    .line 108
+    return p0
+.end method
+
+.method public static ˆˈ(Ljava/lang/String;I)Landroid/content/pm/PackageInfo;
     .locals 1
 
     .line 1
@@ -67726,7 +69140,7 @@
     return-object p0
 .end method
 
-.method public static ˆʾ(Ljava/lang/String;)Ljava/lang/String;
+.method public static ˆˉ(Ljava/lang/String;)Ljava/lang/String;
     .locals 4
 
     .line 1
@@ -67803,7 +69217,7 @@
     return-object v0
 .end method
 
-.method public static ˆʿ(Ljava/lang/String;Z)Ljava/lang/String;
+.method public static ˆˊ(Ljava/lang/String;Z)Ljava/lang/String;
     .locals 16
 
     .line 1
@@ -68205,7 +69619,7 @@
 
     .line 200
     :cond_4
-    invoke-static {v14}, Lʼˏ/ᵢ;->ʼˋ(Ljava/lang/String;)Z
+    invoke-static {v14}, Lʼˏ/ᵢ;->ʼˏ(Ljava/lang/String;)Z
 
     .line 201
     .line 202
@@ -68225,7 +69639,7 @@
 
     .line 208
     :goto_4
-    invoke-static {v13}, Lʼˏ/ᵢ;->ʼˋ(Ljava/lang/String;)Z
+    invoke-static {v13}, Lʼˏ/ᵢ;->ʼˏ(Ljava/lang/String;)Z
 
     .line 209
     .line 210
@@ -68245,7 +69659,7 @@
 
     .line 216
     :goto_5
-    invoke-static {v12}, Lʼˏ/ᵢ;->ʼˋ(Ljava/lang/String;)Z
+    invoke-static {v12}, Lʼˏ/ᵢ;->ʼˏ(Ljava/lang/String;)Z
 
     .line 217
     .line 218
@@ -68265,7 +69679,7 @@
 
     .line 224
     :goto_6
-    invoke-static {v11}, Lʼˏ/ᵢ;->ʼˋ(Ljava/lang/String;)Z
+    invoke-static {v11}, Lʼˏ/ᵢ;->ʼˏ(Ljava/lang/String;)Z
 
     .line 225
     .line 226
@@ -68324,7 +69738,7 @@
     move-result-object v2
 
     .line 253
-    invoke-static {v2}, Lʼˏ/ᵢ;->ʼˋ(Ljava/lang/String;)Z
+    invoke-static {v2}, Lʼˏ/ᵢ;->ʼˏ(Ljava/lang/String;)Z
 
     .line 254
     .line 255
@@ -68340,7 +69754,7 @@
     .line 259
     .line 260
     .line 261
-    invoke-static {v1}, Lʼˏ/ᵢ;->ʾˑ(Ljava/io/File;)Ljava/io/File;
+    invoke-static {v1}, Lʼˏ/ᵢ;->ʾـ(Ljava/io/File;)Ljava/io/File;
 
     .line 262
     .line 263
@@ -68719,7 +70133,7 @@
 
     .line 448
     :cond_10
-    invoke-static {v14}, Lʼˏ/ᵢ;->ʼˋ(Ljava/lang/String;)Z
+    invoke-static {v14}, Lʼˏ/ᵢ;->ʼˏ(Ljava/lang/String;)Z
 
     .line 449
     .line 450
@@ -68739,7 +70153,7 @@
 
     .line 456
     :goto_e
-    invoke-static {v13}, Lʼˏ/ᵢ;->ʼˋ(Ljava/lang/String;)Z
+    invoke-static {v13}, Lʼˏ/ᵢ;->ʼˏ(Ljava/lang/String;)Z
 
     .line 457
     .line 458
@@ -68759,7 +70173,7 @@
 
     .line 464
     :goto_f
-    invoke-static {v12}, Lʼˏ/ᵢ;->ʼˋ(Ljava/lang/String;)Z
+    invoke-static {v12}, Lʼˏ/ᵢ;->ʼˏ(Ljava/lang/String;)Z
 
     .line 465
     .line 466
@@ -68779,7 +70193,7 @@
 
     .line 472
     :goto_10
-    invoke-static {v11}, Lʼˏ/ᵢ;->ʼˋ(Ljava/lang/String;)Z
+    invoke-static {v11}, Lʼˏ/ᵢ;->ʼˏ(Ljava/lang/String;)Z
 
     .line 473
     .line 474
@@ -68838,7 +70252,7 @@
     move-result-object v2
 
     .line 501
-    invoke-static {v2}, Lʼˏ/ᵢ;->ʼˋ(Ljava/lang/String;)Z
+    invoke-static {v2}, Lʼˏ/ᵢ;->ʼˏ(Ljava/lang/String;)Z
 
     .line 502
     .line 503
@@ -68867,7 +70281,7 @@
     .line 513
     .line 514
     .line 515
-    invoke-static {v1}, Lʼˏ/ᵢ;->ʾˑ(Ljava/io/File;)Ljava/io/File;
+    invoke-static {v1}, Lʼˏ/ᵢ;->ʾـ(Ljava/io/File;)Ljava/io/File;
 
     .line 516
     .line 517
@@ -68934,241 +70348,7 @@
     return-object v0
 .end method
 
-.method public static ˆˆ(Ljava/io/File;)Z
-    .locals 5
-
-    .line 1
-    const-string v0, "classes.dex"
-
-    .line 2
-    .line 3
-    const/4 v1, 0x1
-
-    .line 4
-    :try_start_0
-    new-instance v2, Ljava/io/FileInputStream;
-
-    .line 5
-    .line 6
-    invoke-direct {v2, p0}, Ljava/io/FileInputStream;-><init>(Ljava/io/File;)V
-
-    .line 7
-    .line 8
-    .line 9
-    new-instance v3, Ljava/util/zip/ZipInputStream;
-
-    .line 10
-    .line 11
-    invoke-direct {v3, v2}, Ljava/util/zip/ZipInputStream;-><init>(Ljava/io/InputStream;)V
-
-    .line 12
-    .line 13
-    .line 14
-    invoke-virtual {v3}, Ljava/util/zip/ZipInputStream;->getNextEntry()Ljava/util/zip/ZipEntry;
-
-    .line 15
-    .line 16
-    .line 17
-    move-result-object v4
-
-    .line 18
-    :goto_0
-    if-eqz v4, :cond_1
-
-    .line 19
-    .line 20
-    invoke-virtual {v4}, Ljava/util/zip/ZipEntry;->getName()Ljava/lang/String;
-
-    .line 21
-    .line 22
-    .line 23
-    move-result-object v4
-
-    .line 24
-    invoke-virtual {v4}, Ljava/lang/String;->toLowerCase()Ljava/lang/String;
-
-    .line 25
-    .line 26
-    .line 27
-    move-result-object v4
-
-    .line 28
-    invoke-virtual {v4, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    .line 29
-    .line 30
-    .line 31
-    move-result v4
-
-    .line 32
-    if-eqz v4, :cond_0
-
-    .line 33
-    .line 34
-    invoke-virtual {v3}, Ljava/util/zip/ZipInputStream;->closeEntry()V
-
-    .line 35
-    .line 36
-    .line 37
-    invoke-virtual {v3}, Ljava/util/zip/ZipInputStream;->close()V
-
-    .line 38
-    .line 39
-    .line 40
-    invoke-virtual {v2}, Ljava/io/FileInputStream;->close()V
-
-    .line 41
-    .line 42
-    .line 43
-    return v1
-
-    .line 44
-    :cond_0
-    invoke-virtual {v3}, Ljava/util/zip/ZipInputStream;->getNextEntry()Ljava/util/zip/ZipEntry;
-
-    .line 45
-    .line 46
-    .line 47
-    move-result-object v4
-
-    .line 48
-    goto :goto_0
-
-    .line 49
-    :cond_1
-    invoke-virtual {v3}, Ljava/util/zip/ZipInputStream;->close()V
-
-    .line 50
-    .line 51
-    .line 52
-    invoke-virtual {v2}, Ljava/io/FileInputStream;->close()V
-    :try_end_0
-    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
-
-    .line 53
-    .line 54
-    .line 55
-    goto :goto_1
-
-    .line 56
-    :catch_0
-    :try_start_1
-    invoke-virtual {p0}, Ljava/io/File;->getAbsolutePath()Ljava/lang/String;
-
-    .line 57
-    .line 58
-    .line 59
-    move-result-object p0
-
-    .line 60
-    invoke-static {p0}, Lʿʼ/ʾ;->ˆ(Ljava/lang/String;)Lʿʼ/ʾ;
-
-    .line 61
-    .line 62
-    .line 63
-    move-result-object p0
-
-    .line 64
-    invoke-virtual {p0}, Lʿʼ/ʾ;->ʽ()Ljava/util/Map;
-
-    .line 65
-    .line 66
-    .line 67
-    move-result-object p0
-
-    .line 68
-    invoke-interface {p0}, Ljava/util/Map;->values()Ljava/util/Collection;
-
-    .line 69
-    .line 70
-    .line 71
-    move-result-object p0
-
-    .line 72
-    invoke-interface {p0}, Ljava/util/Collection;->iterator()Ljava/util/Iterator;
-
-    .line 73
-    .line 74
-    .line 75
-    move-result-object p0
-
-    .line 76
-    :cond_2
-    invoke-interface {p0}, Ljava/util/Iterator;->hasNext()Z
-
-    .line 77
-    .line 78
-    .line 79
-    move-result v2
-
-    .line 80
-    if-eqz v2, :cond_3
-
-    .line 81
-    .line 82
-    invoke-interface {p0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
-
-    .line 83
-    .line 84
-    .line 85
-    move-result-object v2
-
-    .line 86
-    check-cast v2, Lʿʼ/ʼ;
-
-    .line 87
-    .line 88
-    invoke-virtual {v2}, Lʿʼ/ʼ;->ˋ()Ljava/lang/String;
-
-    .line 89
-    .line 90
-    .line 91
-    move-result-object v2
-
-    .line 92
-    invoke-virtual {v2}, Ljava/lang/String;->toLowerCase()Ljava/lang/String;
-
-    .line 93
-    .line 94
-    .line 95
-    move-result-object v2
-
-    .line 96
-    invoke-virtual {v2, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    .line 97
-    .line 98
-    .line 99
-    move-result v2
-    :try_end_1
-    .catch Ljava/io/IOException; {:try_start_1 .. :try_end_1} :catch_1
-
-    .line 100
-    if-eqz v2, :cond_2
-
-    .line 101
-    .line 102
-    return v1
-
-    .line 103
-    :catch_1
-    move-exception p0
-
-    .line 104
-    invoke-virtual {p0}, Ljava/lang/Throwable;->printStackTrace()V
-
-    .line 105
-    .line 106
-    .line 107
-    :cond_3
-    :goto_1
-    const/4 p0, 0x0
-
-    .line 108
-    return p0
-.end method
-
-.method public static ˆˈ(Ljava/lang/String;)Ljava/security/PrivateKey;
+.method public static ˆˋ(Ljava/lang/String;)Ljava/security/PrivateKey;
     .locals 1
 
     .line 1
@@ -69238,7 +70418,7 @@
     return-object p0
 .end method
 
-.method public static ˆˉ(Ljava/lang/String;)Ljava/security/PublicKey;
+.method public static ˆˎ(Ljava/lang/String;)Ljava/security/PublicKey;
     .locals 1
 
     .line 1
@@ -69308,7 +70488,7 @@
     return-object p0
 .end method
 
-.method public static ˆˊ(JJ)J
+.method public static ˆˏ(JJ)J
     .locals 8
 
     .line 1
@@ -69378,7 +70558,7 @@
     return-wide v5
 .end method
 
-.method public static ˆˋ(I)Ljava/lang/String;
+.method public static ˆˑ(I)Ljava/lang/String;
     .locals 4
 
     .line 1
@@ -69451,7 +70631,7 @@
     return-object p0
 .end method
 
-.method public static ˆˎ(I)Ljava/lang/String;
+.method public static ˆי(I)Ljava/lang/String;
     .locals 4
 
     .line 1
@@ -69524,7 +70704,7 @@
     return-object p0
 .end method
 
-.method public static ˆˏ(I)Ljava/lang/String;
+.method public static ˆـ(I)Ljava/lang/String;
     .locals 4
 
     .line 1
@@ -69597,7 +70777,7 @@
     return-object p0
 .end method
 
-.method public static ˆˑ(II)[B
+.method public static ˆٴ(II)[B
     .locals 1
 
     .line 1
@@ -69644,7 +70824,7 @@
     return-object p0
 .end method
 
-.method public static ˆי(I)J
+.method public static ˆᐧ(I)J
     .locals 7
 
     .line 1
@@ -69756,7 +70936,7 @@
     return-wide v0
 .end method
 
-.method public static ˆـ(ILjava/io/File;)Z
+.method public static ˆᴵ(ILjava/io/File;)Z
     .locals 3
 
     .line 1
@@ -69786,7 +70966,7 @@
 
     .line 14
     :cond_0
-    invoke-static {p1}, Lʼˏ/ᵢ;->ʾˑ(Ljava/io/File;)Ljava/io/File;
+    invoke-static {p1}, Lʼˏ/ᵢ;->ʾـ(Ljava/io/File;)Ljava/io/File;
 
     .line 15
     .line 16
@@ -69912,7 +71092,7 @@
     return v1
 .end method
 
-.method public static varargs ˆٴ([Ljava/lang/String;)Lʼˏ/ʽ;
+.method public static varargs ˆᵎ([Ljava/lang/String;)Lʼˏ/ʽ;
     .locals 14
 
     .line 1
@@ -70592,7 +71772,7 @@
     return-object v2
 .end method
 
-.method public static ˆᐧ(Lcom/android/apksig/util/DataSource;)Ljava/nio/ByteBuffer;
+.method public static ˆᵔ(Lcom/android/apksig/util/DataSource;)Ljava/nio/ByteBuffer;
     .locals 5
     .annotation system Ldalvik/annotation/Throws;
         value = {
@@ -70608,7 +71788,7 @@
     .line 3
     .line 4
     :try_start_0
-    invoke-static {p0}, Lʼˏ/ᵢ;->ʼᵢ(Lcom/android/apksig/util/DataSource;)Lcom/android/apksig/apk/ApkUtils$ZipSections;
+    invoke-static {p0}, Lʼˏ/ᵢ;->ʼﹳ(Lcom/android/apksig/util/DataSource;)Lcom/android/apksig/apk/ApkUtils$ZipSections;
 
     .line 5
     .line 6
@@ -70810,7 +71990,7 @@
     goto :goto_1
 .end method
 
-.method public static ˆᴵ()V
+.method public static ˆᵢ()V
     .locals 3
 
     .line 1
@@ -70984,7 +72164,7 @@
     .line 80
     :catch_1
     :try_start_3
-    invoke-static {}, Lʼˏ/ᵢ;->ʼˏ()V
+    invoke-static {}, Lʼˏ/ᵢ;->ʼי()V
 
     .line 81
     .line 82
@@ -71100,7 +72280,7 @@
     return-void
 .end method
 
-.method public static ˆᵎ()Z
+.method public static ˆⁱ()Z
     .locals 3
 
     .line 1
@@ -71157,7 +72337,7 @@
     return v0
 .end method
 
-.method public static ˆᵔ()Ljava/lang/String;
+.method public static ˆﹳ()Ljava/lang/String;
     .locals 6
 
     .line 1
@@ -71278,7 +72458,7 @@
     .line 55
     .line 56
     .line 57
-    invoke-static {}, Lru/aaaaaccc/installer/App;->getInstance()Landroid/content/Context;
+    invoke-static {}, Lru/aaaaaccd/installer/App;->getInstance()Landroid/content/Context;
 
     .line 58
     .line 59
@@ -71440,7 +72620,7 @@
     .line 135
     .line 136
     .line 137
-    invoke-static {}, Lru/aaaaaccc/installer/App;->getInstance()Landroid/content/Context;
+    invoke-static {}, Lru/aaaaaccd/installer/App;->getInstance()Landroid/content/Context;
 
     .line 138
     .line 139
@@ -71493,7 +72673,7 @@
     return-object v2
 .end method
 
-.method public static ˆᵢ()Ljava/lang/String;
+.method public static ˆﹶ()Ljava/lang/String;
     .locals 6
 
     .line 1
@@ -71605,7 +72785,7 @@
     .line 50
     .line 51
     .line 52
-    invoke-static {}, Lru/aaaaaccc/installer/App;->getInstance()Landroid/content/Context;
+    invoke-static {}, Lru/aaaaaccd/installer/App;->getInstance()Landroid/content/Context;
 
     .line 53
     .line 54
@@ -71758,7 +72938,7 @@
     .line 125
     .line 126
     .line 127
-    invoke-static {}, Lru/aaaaaccc/installer/App;->getInstance()Landroid/content/Context;
+    invoke-static {}, Lru/aaaaaccd/installer/App;->getInstance()Landroid/content/Context;
 
     .line 128
     .line 129
@@ -71811,11 +72991,11 @@
     return-object v2
 .end method
 
-.method public static ˆⁱ()Ljava/lang/String;
+.method public static ˆﾞ()Ljava/lang/String;
     .locals 6
 
     .line 1
-    invoke-static {}, Lʼˏ/ᵢ;->ˆﾞ()[Ljava/lang/String;
+    invoke-static {}, Lʼˏ/ᵢ;->ˈʽ()[Ljava/lang/String;
 
     .line 2
     .line 3
@@ -71877,7 +73057,7 @@
     .line 30
     .line 31
     .line 32
-    sget-object v3, Lʾˉ/ᴵᴵ;->ˈʻ:Ljava/lang/String;
+    sget-object v3, Lʾˉ/ᴵᴵ;->ˈʼ:Ljava/lang/String;
 
     .line 33
     .line 34
@@ -71928,7 +73108,7 @@
     .line 57
     :cond_0
     :try_start_0
-    invoke-static {v4}, Lʼˏ/ᵢ;->ˋˈ(Ljava/io/File;)Ljava/lang/String;
+    invoke-static {v4}, Lʼˏ/ᵢ;->ˋי(Ljava/io/File;)Ljava/lang/String;
 
     .line 58
     .line 59
@@ -72034,1121 +73214,6 @@
     return-object v0
 .end method
 
-.method public static ˆﹳ(Ljava/io/File;)Ljava/lang/String;
-    .locals 9
-
-    .line 1
-    sget-object v0, Lʾˉ/ᴵᴵ;->ʿᴵ:Ljava/lang/Boolean;
-
-    .line 2
-    .line 3
-    invoke-virtual {v0}, Ljava/lang/Boolean;->booleanValue()Z
-
-    .line 4
-    .line 5
-    .line 6
-    move-result v0
-
-    .line 7
-    const-string v1, "/system/bin/toybox"
-
-    .line 8
-    .line 9
-    const/4 v2, 0x1
-
-    .line 10
-    const/4 v3, 0x0
-
-    .line 11
-    if-eqz v0, :cond_1
-
-    .line 12
-    .line 13
-    const/4 v0, 0x3
-
-    .line 14
-    new-array v4, v0, [Ljava/lang/String;
-
-    .line 15
-    .line 16
-    const-string v5, "ls"
-
-    .line 17
-    .line 18
-    aput-object v5, v4, v3
-
-    .line 19
-    .line 20
-    const-string v6, "-dZ"
-
-    .line 21
-    .line 22
-    aput-object v6, v4, v2
-
-    .line 23
-    .line 24
-    invoke-virtual {p0}, Ljava/io/File;->getAbsolutePath()Ljava/lang/String;
-
-    .line 25
-    .line 26
-    .line 27
-    move-result-object v7
-
-    .line 28
-    const/4 v8, 0x2
-
-    .line 29
-    aput-object v7, v4, v8
-
-    .line 30
-    .line 31
-    new-instance v7, Ljava/io/File;
-
-    .line 32
-    .line 33
-    invoke-direct {v7, v1}, Ljava/io/File;-><init>(Ljava/lang/String;)V
-
-    .line 34
-    .line 35
-    .line 36
-    invoke-virtual {v7}, Ljava/io/File;->exists()Z
-
-    .line 37
-    .line 38
-    .line 39
-    move-result v1
-
-    .line 40
-    if-eqz v1, :cond_0
-
-    .line 41
-    .line 42
-    const-string v1, "use toybox"
-
-    .line 43
-    .line 44
-    invoke-static {v1}, Lʾˉ/ᴵᴵ;->ˉˎ(Ljava/lang/Object;)V
-
-    .line 45
-    .line 46
-    .line 47
-    const/4 v1, 0x4
-
-    .line 48
-    new-array v4, v1, [Ljava/lang/String;
-
-    .line 49
-    .line 50
-    const-string v1, "toybox"
-
-    .line 51
-    .line 52
-    aput-object v1, v4, v3
-
-    .line 53
-    .line 54
-    aput-object v5, v4, v2
-
-    .line 55
-    .line 56
-    aput-object v6, v4, v8
-
-    .line 57
-    .line 58
-    invoke-virtual {p0}, Ljava/io/File;->getAbsolutePath()Ljava/lang/String;
-
-    .line 59
-    .line 60
-    .line 61
-    move-result-object p0
-
-    .line 62
-    aput-object p0, v4, v0
-
-    .line 63
-    .line 64
-    :cond_0
-    invoke-static {v4}, Lʼˏ/ᵢ;->ˊˊ([Ljava/lang/String;)Ljava/lang/String;
-
-    .line 65
-    .line 66
-    .line 67
-    move-result-object p0
-
-    .line 68
-    return-object p0
-
-    .line 69
-    :cond_1
-    new-array v0, v2, [Ljava/lang/String;
-
-    .line 70
-    .line 71
-    new-instance v4, Ljava/lang/StringBuilder;
-
-    .line 72
-    .line 73
-    invoke-direct {v4}, Ljava/lang/StringBuilder;-><init>()V
-
-    .line 74
-    .line 75
-    .line 76
-    const-string v5, "ls -dZ "
-
-    .line 77
-    .line 78
-    invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 79
-    .line 80
-    .line 81
-    invoke-virtual {p0}, Ljava/io/File;->getAbsolutePath()Ljava/lang/String;
-
-    .line 82
-    .line 83
-    .line 84
-    move-result-object v5
-
-    .line 85
-    invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 86
-    .line 87
-    .line 88
-    invoke-virtual {v4}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    .line 89
-    .line 90
-    .line 91
-    move-result-object v4
-
-    .line 92
-    aput-object v4, v0, v3
-
-    .line 93
-    .line 94
-    new-instance v4, Ljava/io/File;
-
-    .line 95
-    .line 96
-    invoke-direct {v4, v1}, Ljava/io/File;-><init>(Ljava/lang/String;)V
-
-    .line 97
-    .line 98
-    .line 99
-    invoke-virtual {v4}, Ljava/io/File;->exists()Z
-
-    .line 100
-    .line 101
-    .line 102
-    move-result v1
-
-    .line 103
-    if-eqz v1, :cond_2
-
-    .line 104
-    .line 105
-    new-array v0, v2, [Ljava/lang/String;
-
-    .line 106
-    .line 107
-    new-instance v1, Ljava/lang/StringBuilder;
-
-    .line 108
-    .line 109
-    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
-
-    .line 110
-    .line 111
-    .line 112
-    const-string v2, "toybox ls -dZ "
-
-    .line 113
-    .line 114
-    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 115
-    .line 116
-    .line 117
-    invoke-virtual {p0}, Ljava/io/File;->getAbsolutePath()Ljava/lang/String;
-
-    .line 118
-    .line 119
-    .line 120
-    move-result-object p0
-
-    .line 121
-    invoke-virtual {v1, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 122
-    .line 123
-    .line 124
-    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    .line 125
-    .line 126
-    .line 127
-    move-result-object p0
-
-    .line 128
-    aput-object p0, v0, v3
-
-    .line 129
-    .line 130
-    :cond_2
-    new-instance p0, Lʼˏ/ᵢ;
-
-    .line 131
-    .line 132
-    const-string v1, ""
-
-    .line 133
-    .line 134
-    invoke-direct {p0, v1}, Lʼˏ/ᵢ;-><init>(Ljava/lang/String;)V
-
-    .line 135
-    .line 136
-    .line 137
-    invoke-virtual {p0, v0}, Lʼˏ/ᵢ;->ˎˎ([Ljava/lang/String;)Ljava/lang/String;
-
-    .line 138
-    .line 139
-    .line 140
-    move-result-object p0
-
-    .line 141
-    return-object p0
-.end method
-
-.method public static ˆﹶ(Ljava/io/File;)Lʼـ/ᐧᐧ;
-    .locals 5
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Lcom/android/apksig/apk/ApkFormatException;,
-            Ljava/io/IOException;
-        }
-    .end annotation
-
-    .line 1
-    invoke-static {}, Lʼˏ/ᵢ;->ʽʽ()V
-
-    .line 2
-    .line 3
-    .line 4
-    :try_start_0
-    new-instance v0, Lʼـ/ᐧᐧ;
-
-    .line 5
-    .line 6
-    invoke-direct {v0}, Lʼـ/ᐧᐧ;-><init>()V
-
-    .line 7
-    .line 8
-    .line 9
-    new-instance v1, Ljava/io/RandomAccessFile;
-
-    .line 10
-    .line 11
-    const-string v2, "r"
-
-    .line 12
-    .line 13
-    invoke-direct {v1, p0, v2}, Ljava/io/RandomAccessFile;-><init>(Ljava/io/File;Ljava/lang/String;)V
-
-    .line 14
-    .line 15
-    .line 16
-    invoke-static {v1}, Lcom/android/apksig/util/DataSources;->asDataSource(Ljava/io/RandomAccessFile;)Lcom/android/apksig/util/DataSource;
-
-    .line 17
-    .line 18
-    .line 19
-    move-result-object p0
-
-    .line 20
-    invoke-static {p0}, Lʼˏ/ᵢ;->ʽˊ(Lcom/android/apksig/util/DataSource;)Ljava/nio/ByteBuffer;
-
-    .line 21
-    .line 22
-    .line 23
-    move-result-object p0
-
-    .line 24
-    new-instance v1, Lcom/android/apksig/internal/apk/AndroidBinXmlParser;
-
-    .line 25
-    .line 26
-    invoke-direct {v1, p0}, Lcom/android/apksig/internal/apk/AndroidBinXmlParser;-><init>(Ljava/nio/ByteBuffer;)V
-
-    .line 27
-    .line 28
-    .line 29
-    invoke-virtual {v1}, Lcom/android/apksig/internal/apk/AndroidBinXmlParser;->getEventType()I
-
-    .line 30
-    .line 31
-    .line 32
-    move-result p0
-
-    .line 33
-    :goto_0
-    const/4 v2, 0x2
-
-    .line 34
-    if-eq p0, v2, :cond_8
-
-    .line 35
-    .line 36
-    const/4 v3, 0x3
-
-    .line 37
-    if-ne p0, v3, :cond_7
-
-    .line 38
-    .line 39
-    invoke-virtual {v1}, Lcom/android/apksig/internal/apk/AndroidBinXmlParser;->getDepth()I
-
-    .line 40
-    .line 41
-    .line 42
-    move-result p0
-
-    .line 43
-    if-gt p0, v2, :cond_7
-
-    .line 44
-    .line 45
-    const-string p0, "manifest"
-
-    .line 46
-    .line 47
-    invoke-virtual {v1}, Lcom/android/apksig/internal/apk/AndroidBinXmlParser;->getName()Ljava/lang/String;
-
-    .line 48
-    .line 49
-    .line 50
-    move-result-object v3
-
-    .line 51
-    invoke-virtual {p0, v3}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    .line 52
-    .line 53
-    .line 54
-    move-result p0
-
-    .line 55
-    if-nez p0, :cond_0
-
-    .line 56
-    .line 57
-    const-string p0, "uses-sdk"
-
-    .line 58
-    .line 59
-    invoke-virtual {v1}, Lcom/android/apksig/internal/apk/AndroidBinXmlParser;->getName()Ljava/lang/String;
-
-    .line 60
-    .line 61
-    .line 62
-    move-result-object v3
-
-    .line 63
-    invoke-virtual {p0, v3}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    .line 64
-    .line 65
-    .line 66
-    move-result p0
-
-    .line 67
-    if-eqz p0, :cond_7
-
-    .line 68
-    .line 69
-    goto :goto_1
-
-    .line 70
-    :catch_0
-    move-exception p0
-
-    .line 71
-    goto/16 :goto_3
-
-    .line 72
-    .line 73
-    :cond_0
-    :goto_1
-    invoke-virtual {v1}, Lcom/android/apksig/internal/apk/AndroidBinXmlParser;->getNamespace()Ljava/lang/String;
-
-    .line 74
-    .line 75
-    .line 76
-    move-result-object p0
-
-    .line 77
-    invoke-virtual {p0}, Ljava/lang/String;->isEmpty()Z
-
-    .line 78
-    .line 79
-    .line 80
-    move-result p0
-
-    .line 81
-    if-eqz p0, :cond_7
-
-    .line 82
-    .line 83
-    const/4 p0, 0x0
-
-    .line 84
-    :goto_2
-    invoke-virtual {v1}, Lcom/android/apksig/internal/apk/AndroidBinXmlParser;->getAttributeCount()I
-
-    .line 85
-    .line 86
-    .line 87
-    move-result v3
-
-    .line 88
-    if-ge p0, v3, :cond_7
-
-    .line 89
-    .line 90
-    const-string v3, "compileSdkVersion"
-
-    .line 91
-    .line 92
-    invoke-virtual {v1, p0}, Lcom/android/apksig/internal/apk/AndroidBinXmlParser;->getAttributeName(I)Ljava/lang/String;
-
-    .line 93
-    .line 94
-    .line 95
-    move-result-object v4
-
-    .line 96
-    invoke-virtual {v3, v4}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    .line 97
-    .line 98
-    .line 99
-    move-result v3
-
-    .line 100
-    if-nez v3, :cond_1
-
-    .line 101
-    .line 102
-    invoke-virtual {v1, p0}, Lcom/android/apksig/internal/apk/AndroidBinXmlParser;->getAttributeValueType(I)I
-
-    .line 103
-    .line 104
-    .line 105
-    move-result v3
-
-    .line 106
-    if-ne v3, v2, :cond_2
-
-    .line 107
-    .line 108
-    invoke-virtual {v1, p0}, Lcom/android/apksig/internal/apk/AndroidBinXmlParser;->getAttributeNameResourceId(I)I
-
-    .line 109
-    .line 110
-    .line 111
-    move-result v3
-
-    .line 112
-    const v4, 0x1010572
-
-    .line 113
-    .line 114
-    .line 115
-    if-ne v3, v4, :cond_2
-
-    .line 116
-    .line 117
-    :cond_1
-    invoke-virtual {v1}, Lcom/android/apksig/internal/apk/AndroidBinXmlParser;->getNamespace()Ljava/lang/String;
-
-    .line 118
-    .line 119
-    .line 120
-    move-result-object v3
-
-    .line 121
-    invoke-virtual {v3}, Ljava/lang/String;->isEmpty()Z
-
-    .line 122
-    .line 123
-    .line 124
-    move-result v3
-
-    .line 125
-    if-eqz v3, :cond_2
-
-    .line 126
-    .line 127
-    invoke-virtual {v1, p0}, Lcom/android/apksig/internal/apk/AndroidBinXmlParser;->getAttributeIntValue(I)I
-
-    .line 128
-    .line 129
-    .line 130
-    move-result v3
-
-    .line 131
-    iput v3, v0, Lʼـ/ᐧᐧ;->ʼ:I
-
-    .line 132
-    .line 133
-    :cond_2
-    const-string v3, "minSdkVersion"
-
-    .line 134
-    .line 135
-    invoke-virtual {v1, p0}, Lcom/android/apksig/internal/apk/AndroidBinXmlParser;->getAttributeName(I)Ljava/lang/String;
-
-    .line 136
-    .line 137
-    .line 138
-    move-result-object v4
-
-    .line 139
-    invoke-virtual {v3, v4}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    .line 140
-    .line 141
-    .line 142
-    move-result v3
-
-    .line 143
-    if-nez v3, :cond_3
-
-    .line 144
-    .line 145
-    invoke-virtual {v1, p0}, Lcom/android/apksig/internal/apk/AndroidBinXmlParser;->getAttributeValueType(I)I
-
-    .line 146
-    .line 147
-    .line 148
-    move-result v3
-
-    .line 149
-    if-ne v3, v2, :cond_4
-
-    .line 150
-    .line 151
-    invoke-virtual {v1, p0}, Lcom/android/apksig/internal/apk/AndroidBinXmlParser;->getAttributeNameResourceId(I)I
-
-    .line 152
-    .line 153
-    .line 154
-    move-result v3
-
-    .line 155
-    const v4, 0x101020c
-
-    .line 156
-    .line 157
-    .line 158
-    if-ne v3, v4, :cond_4
-
-    .line 159
-    .line 160
-    :cond_3
-    invoke-virtual {v1}, Lcom/android/apksig/internal/apk/AndroidBinXmlParser;->getNamespace()Ljava/lang/String;
-
-    .line 161
-    .line 162
-    .line 163
-    move-result-object v3
-
-    .line 164
-    invoke-virtual {v3}, Ljava/lang/String;->isEmpty()Z
-
-    .line 165
-    .line 166
-    .line 167
-    move-result v3
-
-    .line 168
-    if-eqz v3, :cond_4
-
-    .line 169
-    .line 170
-    invoke-virtual {v1, p0}, Lcom/android/apksig/internal/apk/AndroidBinXmlParser;->getAttributeIntValue(I)I
-
-    .line 171
-    .line 172
-    .line 173
-    move-result v3
-
-    .line 174
-    iput v3, v0, Lʼـ/ᐧᐧ;->ʽ:I
-
-    .line 175
-    .line 176
-    :cond_4
-    const-string v3, "targetSdkVersion"
-
-    .line 177
-    .line 178
-    invoke-virtual {v1, p0}, Lcom/android/apksig/internal/apk/AndroidBinXmlParser;->getAttributeName(I)Ljava/lang/String;
-
-    .line 179
-    .line 180
-    .line 181
-    move-result-object v4
-
-    .line 182
-    invoke-virtual {v3, v4}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    .line 183
-    .line 184
-    .line 185
-    move-result v3
-
-    .line 186
-    if-nez v3, :cond_5
-
-    .line 187
-    .line 188
-    invoke-virtual {v1, p0}, Lcom/android/apksig/internal/apk/AndroidBinXmlParser;->getAttributeValueType(I)I
-
-    .line 189
-    .line 190
-    .line 191
-    move-result v3
-
-    .line 192
-    if-ne v3, v2, :cond_6
-
-    .line 193
-    .line 194
-    invoke-virtual {v1, p0}, Lcom/android/apksig/internal/apk/AndroidBinXmlParser;->getAttributeNameResourceId(I)I
-
-    .line 195
-    .line 196
-    .line 197
-    move-result v3
-
-    .line 198
-    const v4, 0x1010270
-
-    .line 199
-    .line 200
-    .line 201
-    if-ne v3, v4, :cond_6
-
-    .line 202
-    .line 203
-    :cond_5
-    invoke-virtual {v1}, Lcom/android/apksig/internal/apk/AndroidBinXmlParser;->getNamespace()Ljava/lang/String;
-
-    .line 204
-    .line 205
-    .line 206
-    move-result-object v3
-
-    .line 207
-    invoke-virtual {v3}, Ljava/lang/String;->isEmpty()Z
-
-    .line 208
-    .line 209
-    .line 210
-    move-result v3
-
-    .line 211
-    if-eqz v3, :cond_6
-
-    .line 212
-    .line 213
-    invoke-virtual {v1, p0}, Lcom/android/apksig/internal/apk/AndroidBinXmlParser;->getAttributeIntValue(I)I
-
-    .line 214
-    .line 215
-    .line 216
-    move-result v3
-
-    .line 217
-    iput v3, v0, Lʼـ/ᐧᐧ;->ʻ:I
-
-    .line 218
-    .line 219
-    :cond_6
-    add-int/lit8 p0, p0, 0x1
-
-    .line 220
-    .line 221
-    goto/16 :goto_2
-
-    .line 222
-    .line 223
-    :cond_7
-    invoke-virtual {v1}, Lcom/android/apksig/internal/apk/AndroidBinXmlParser;->next()I
-
-    .line 224
-    .line 225
-    .line 226
-    move-result p0
-    :try_end_0
-    .catch Lcom/android/apksig/internal/apk/AndroidBinXmlParser$XmlParserException; {:try_start_0 .. :try_end_0} :catch_0
-
-    .line 227
-    goto/16 :goto_0
-
-    .line 228
-    .line 229
-    :cond_8
-    return-object v0
-
-    .line 230
-    :goto_3
-    invoke-virtual {p0}, Ljava/lang/Throwable;->printStackTrace()V
-
-    .line 231
-    .line 232
-    .line 233
-    const-string p0, "Unable to determine APK package name: malformed binary resource: AndroidManifest.xml"
-
-    .line 234
-    .line 235
-    invoke-static {p0}, Lʾˉ/ᴵᴵ;->ˉˎ(Ljava/lang/Object;)V
-
-    .line 236
-    .line 237
-    .line 238
-    const/4 p0, 0x0
-
-    .line 239
-    return-object p0
-.end method
-
-.method public static ˆﾞ()[Ljava/lang/String;
-    .locals 7
-
-    .line 1
-    const/4 v0, 0x0
-
-    .line 2
-    const/4 v1, 0x1
-
-    .line 3
-    invoke-static {}, Lru/aaaaaccc/installer/PkgName;->getPkgName()Ljava/lang/String;
-
-    .line 4
-    .line 5
-    .line 6
-    move-result-object v2
-
-    .line 7
-    sget-object v3, Lʾˉ/ᴵᴵ;->ˆᵎ:Ljava/lang/Boolean;
-
-    .line 8
-    .line 9
-    if-nez v3, :cond_1
-
-    .line 10
-    .line 11
-    new-instance v3, Ljava/io/File;
-
-    .line 12
-    .line 13
-    const-string v4, "/data/user/0/io.va.exposed/virtual/"
-
-    .line 14
-    .line 15
-    invoke-direct {v3, v4}, Ljava/io/File;-><init>(Ljava/lang/String;)V
-
-    .line 16
-    .line 17
-    .line 18
-    invoke-virtual {v3}, Ljava/io/File;->exists()Z
-
-    .line 19
-    .line 20
-    .line 21
-    move-result v3
-
-    .line 22
-    if-eqz v3, :cond_0
-
-    .line 23
-    .line 24
-    const-string v3, "vxp"
-
-    .line 25
-    .line 26
-    invoke-static {v3}, Ljava/lang/System;->getProperty(Ljava/lang/String;)Ljava/lang/String;
-
-    .line 27
-    .line 28
-    .line 29
-    move-result-object v3
-
-    .line 30
-    if-eqz v3, :cond_0
-
-    .line 31
-    .line 32
-    sget-object v3, Ljava/lang/System;->out:Ljava/io/PrintStream;
-
-    .line 33
-    .line 34
-    const-string v4, "Virtual Xposed detected!"
-
-    .line 35
-    .line 36
-    invoke-virtual {v3, v4}, Ljava/io/PrintStream;->println(Ljava/lang/String;)V
-
-    .line 37
-    .line 38
-    .line 39
-    sget-object v3, Ljava/lang/Boolean;->TRUE:Ljava/lang/Boolean;
-
-    .line 40
-    .line 41
-    sput-object v3, Lʾˉ/ᴵᴵ;->ˆᵎ:Ljava/lang/Boolean;
-
-    .line 42
-    .line 43
-    const-string v3, "/data/user/0/io.va.exposed/virtual"
-
-    .line 44
-    .line 45
-    sput-object v3, Lʾˉ/ᴵᴵ;->ˆᵔ:Ljava/lang/String;
-
-    .line 46
-    .line 47
-    goto :goto_0
-
-    .line 48
-    :cond_0
-    sget-object v3, Ljava/lang/Boolean;->FALSE:Ljava/lang/Boolean;
-
-    .line 49
-    .line 50
-    sput-object v3, Lʾˉ/ᴵᴵ;->ˆᵎ:Ljava/lang/Boolean;
-
-    .line 51
-    .line 52
-    :cond_1
-    :goto_0
-    sget-object v3, Lʾˉ/ᴵᴵ;->ˆᵎ:Ljava/lang/Boolean;
-
-    .line 53
-    .line 54
-    const-string v4, "/lp"
-
-    .line 55
-    .line 56
-    if-eqz v3, :cond_2
-
-    .line 57
-    .line 58
-    invoke-virtual {v3}, Ljava/lang/Boolean;->booleanValue()Z
-
-    .line 59
-    .line 60
-    .line 61
-    move-result v3
-
-    .line 62
-    if-eqz v3, :cond_2
-
-    .line 63
-    .line 64
-    new-instance v3, Ljava/lang/StringBuilder;
-
-    .line 65
-    .line 66
-    invoke-direct {v3}, Ljava/lang/StringBuilder;-><init>()V
-
-    .line 67
-    .line 68
-    .line 69
-    sget-object v5, Lʾˉ/ᴵᴵ;->ˆᵔ:Ljava/lang/String;
-
-    .line 70
-    .line 71
-    invoke-virtual {v3, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 72
-    .line 73
-    .line 74
-    const-string v5, "/data/user/0/"
-
-    .line 75
-    .line 76
-    invoke-virtual {v3, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 77
-    .line 78
-    .line 79
-    invoke-virtual {v3, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 80
-    .line 81
-    .line 82
-    invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 83
-    .line 84
-    .line 85
-    invoke-virtual {v3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    .line 86
-    .line 87
-    .line 88
-    move-result-object v2
-
-    .line 89
-    new-array v1, v1, [Ljava/lang/String;
-
-    .line 90
-    .line 91
-    aput-object v2, v1, v0
-
-    .line 92
-    .line 93
-    return-object v1
-
-    .line 94
-    :cond_2
-    new-instance v3, Ljava/lang/StringBuilder;
-
-    .line 95
-    .line 96
-    invoke-direct {v3}, Ljava/lang/StringBuilder;-><init>()V
-
-    .line 97
-    .line 98
-    .line 99
-    const-string v5, "/data/"
-
-    .line 100
-    .line 101
-    invoke-virtual {v3, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 102
-    .line 103
-    .line 104
-    invoke-virtual {v3, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 105
-    .line 106
-    .line 107
-    invoke-virtual {v3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    .line 108
-    .line 109
-    .line 110
-    move-result-object v3
-
-    .line 111
-    new-instance v5, Ljava/lang/StringBuilder;
-
-    .line 112
-    .line 113
-    invoke-direct {v5}, Ljava/lang/StringBuilder;-><init>()V
-
-    .line 114
-    .line 115
-    .line 116
-    const-string v6, "/data/data/"
-
-    .line 117
-    .line 118
-    invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 119
-    .line 120
-    .line 121
-    invoke-virtual {v5, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 122
-    .line 123
-    .line 124
-    invoke-virtual {v5, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 125
-    .line 126
-    .line 127
-    invoke-virtual {v5}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    .line 128
-    .line 129
-    .line 130
-    move-result-object v4
-
-    .line 131
-    new-instance v5, Ljava/lang/StringBuilder;
-
-    .line 132
-    .line 133
-    invoke-direct {v5}, Ljava/lang/StringBuilder;-><init>()V
-
-    .line 134
-    .line 135
-    .line 136
-    const-string v6, "/data/misc/"
-
-    .line 137
-    .line 138
-    invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 139
-    .line 140
-    .line 141
-    invoke-virtual {v5, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 142
-    .line 143
-    .line 144
-    invoke-virtual {v5}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    .line 145
-    .line 146
-    .line 147
-    move-result-object v2
-
-    .line 148
-    const/4 v5, 0x4
-
-    .line 149
-    new-array v5, v5, [Ljava/lang/String;
-
-    .line 150
-    .line 151
-    aput-object v3, v5, v0
-
-    .line 152
-    .line 153
-    aput-object v4, v5, v1
-
-    .line 154
-    .line 155
-    const-string v0, "/data/local/tmp"
-
-    .line 156
-    .line 157
-    const/4 v1, 0x2
-
-    .line 158
-    aput-object v0, v5, v1
-
-    .line 159
-    .line 160
-    const/4 v0, 0x3
-
-    .line 161
-    aput-object v2, v5, v0
-
-    .line 162
-    .line 163
-    return-object v5
-.end method
-
 .method public static ˈ(Ljava/lang/String;Ljava/lang/String;Ljava/util/ArrayList;)V
     .locals 13
     .annotation system Ldalvik/annotation/Signature;
@@ -73178,7 +73243,7 @@
     .line 4
     .line 5
     .line 6
-    invoke-static {v0}, Lʼˏ/ᵢ;->ʾˑ(Ljava/io/File;)Ljava/io/File;
+    invoke-static {v0}, Lʼˏ/ᵢ;->ʾـ(Ljava/io/File;)Ljava/io/File;
 
     .line 7
     .line 8
@@ -73293,12 +73358,12 @@
     .line 62
     .line 63
     .line 64
-    const v3, 0x7f1103cd
+    const v3, 0x7f1103cf
 
     .line 65
     .line 66
     .line 67
-    invoke-static {v3}, Lʼˏ/ᵢ;->ˈי(I)Ljava/lang/String;
+    invoke-static {v3}, Lʼˏ/ᵢ;->ˈᐧ(I)Ljava/lang/String;
 
     .line 68
     .line 69
@@ -74066,7 +74131,1122 @@
     return-void
 .end method
 
-.method private static ˈʻ()V
+.method public static ˈʻ(Ljava/io/File;)Ljava/lang/String;
+    .locals 9
+
+    .line 1
+    sget-object v0, Lʾˉ/ᴵᴵ;->ʿᴵ:Ljava/lang/Boolean;
+
+    .line 2
+    .line 3
+    invoke-virtual {v0}, Ljava/lang/Boolean;->booleanValue()Z
+
+    .line 4
+    .line 5
+    .line 6
+    move-result v0
+
+    .line 7
+    const-string v1, "/system/bin/toybox"
+
+    .line 8
+    .line 9
+    const/4 v2, 0x1
+
+    .line 10
+    const/4 v3, 0x0
+
+    .line 11
+    if-eqz v0, :cond_1
+
+    .line 12
+    .line 13
+    const/4 v0, 0x3
+
+    .line 14
+    new-array v4, v0, [Ljava/lang/String;
+
+    .line 15
+    .line 16
+    const-string v5, "ls"
+
+    .line 17
+    .line 18
+    aput-object v5, v4, v3
+
+    .line 19
+    .line 20
+    const-string v6, "-dZ"
+
+    .line 21
+    .line 22
+    aput-object v6, v4, v2
+
+    .line 23
+    .line 24
+    invoke-virtual {p0}, Ljava/io/File;->getAbsolutePath()Ljava/lang/String;
+
+    .line 25
+    .line 26
+    .line 27
+    move-result-object v7
+
+    .line 28
+    const/4 v8, 0x2
+
+    .line 29
+    aput-object v7, v4, v8
+
+    .line 30
+    .line 31
+    new-instance v7, Ljava/io/File;
+
+    .line 32
+    .line 33
+    invoke-direct {v7, v1}, Ljava/io/File;-><init>(Ljava/lang/String;)V
+
+    .line 34
+    .line 35
+    .line 36
+    invoke-virtual {v7}, Ljava/io/File;->exists()Z
+
+    .line 37
+    .line 38
+    .line 39
+    move-result v1
+
+    .line 40
+    if-eqz v1, :cond_0
+
+    .line 41
+    .line 42
+    const-string v1, "use toybox"
+
+    .line 43
+    .line 44
+    invoke-static {v1}, Lʾˉ/ᴵᴵ;->ˉˎ(Ljava/lang/Object;)V
+
+    .line 45
+    .line 46
+    .line 47
+    const/4 v1, 0x4
+
+    .line 48
+    new-array v4, v1, [Ljava/lang/String;
+
+    .line 49
+    .line 50
+    const-string v1, "toybox"
+
+    .line 51
+    .line 52
+    aput-object v1, v4, v3
+
+    .line 53
+    .line 54
+    aput-object v5, v4, v2
+
+    .line 55
+    .line 56
+    aput-object v6, v4, v8
+
+    .line 57
+    .line 58
+    invoke-virtual {p0}, Ljava/io/File;->getAbsolutePath()Ljava/lang/String;
+
+    .line 59
+    .line 60
+    .line 61
+    move-result-object p0
+
+    .line 62
+    aput-object p0, v4, v0
+
+    .line 63
+    .line 64
+    :cond_0
+    invoke-static {v4}, Lʼˏ/ᵢ;->ˊˊ([Ljava/lang/String;)Ljava/lang/String;
+
+    .line 65
+    .line 66
+    .line 67
+    move-result-object p0
+
+    .line 68
+    return-object p0
+
+    .line 69
+    :cond_1
+    new-array v0, v2, [Ljava/lang/String;
+
+    .line 70
+    .line 71
+    new-instance v4, Ljava/lang/StringBuilder;
+
+    .line 72
+    .line 73
+    invoke-direct {v4}, Ljava/lang/StringBuilder;-><init>()V
+
+    .line 74
+    .line 75
+    .line 76
+    const-string v5, "ls -dZ "
+
+    .line 77
+    .line 78
+    invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 79
+    .line 80
+    .line 81
+    invoke-virtual {p0}, Ljava/io/File;->getAbsolutePath()Ljava/lang/String;
+
+    .line 82
+    .line 83
+    .line 84
+    move-result-object v5
+
+    .line 85
+    invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 86
+    .line 87
+    .line 88
+    invoke-virtual {v4}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    .line 89
+    .line 90
+    .line 91
+    move-result-object v4
+
+    .line 92
+    aput-object v4, v0, v3
+
+    .line 93
+    .line 94
+    new-instance v4, Ljava/io/File;
+
+    .line 95
+    .line 96
+    invoke-direct {v4, v1}, Ljava/io/File;-><init>(Ljava/lang/String;)V
+
+    .line 97
+    .line 98
+    .line 99
+    invoke-virtual {v4}, Ljava/io/File;->exists()Z
+
+    .line 100
+    .line 101
+    .line 102
+    move-result v1
+
+    .line 103
+    if-eqz v1, :cond_2
+
+    .line 104
+    .line 105
+    new-array v0, v2, [Ljava/lang/String;
+
+    .line 106
+    .line 107
+    new-instance v1, Ljava/lang/StringBuilder;
+
+    .line 108
+    .line 109
+    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
+
+    .line 110
+    .line 111
+    .line 112
+    const-string v2, "toybox ls -dZ "
+
+    .line 113
+    .line 114
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 115
+    .line 116
+    .line 117
+    invoke-virtual {p0}, Ljava/io/File;->getAbsolutePath()Ljava/lang/String;
+
+    .line 118
+    .line 119
+    .line 120
+    move-result-object p0
+
+    .line 121
+    invoke-virtual {v1, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 122
+    .line 123
+    .line 124
+    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    .line 125
+    .line 126
+    .line 127
+    move-result-object p0
+
+    .line 128
+    aput-object p0, v0, v3
+
+    .line 129
+    .line 130
+    :cond_2
+    new-instance p0, Lʼˏ/ᵢ;
+
+    .line 131
+    .line 132
+    const-string v1, ""
+
+    .line 133
+    .line 134
+    invoke-direct {p0, v1}, Lʼˏ/ᵢ;-><init>(Ljava/lang/String;)V
+
+    .line 135
+    .line 136
+    .line 137
+    invoke-virtual {p0, v0}, Lʼˏ/ᵢ;->ˎˎ([Ljava/lang/String;)Ljava/lang/String;
+
+    .line 138
+    .line 139
+    .line 140
+    move-result-object p0
+
+    .line 141
+    return-object p0
+.end method
+
+.method public static ˈʼ(Ljava/io/File;)Lʼـ/ᐧᐧ;
+    .locals 5
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Lcom/android/apksig/apk/ApkFormatException;,
+            Ljava/io/IOException;
+        }
+    .end annotation
+
+    .line 1
+    invoke-static {}, Lʼˏ/ᵢ;->ʽʽ()V
+
+    .line 2
+    .line 3
+    .line 4
+    :try_start_0
+    new-instance v0, Lʼـ/ᐧᐧ;
+
+    .line 5
+    .line 6
+    invoke-direct {v0}, Lʼـ/ᐧᐧ;-><init>()V
+
+    .line 7
+    .line 8
+    .line 9
+    new-instance v1, Ljava/io/RandomAccessFile;
+
+    .line 10
+    .line 11
+    const-string v2, "r"
+
+    .line 12
+    .line 13
+    invoke-direct {v1, p0, v2}, Ljava/io/RandomAccessFile;-><init>(Ljava/io/File;Ljava/lang/String;)V
+
+    .line 14
+    .line 15
+    .line 16
+    invoke-static {v1}, Lcom/android/apksig/util/DataSources;->asDataSource(Ljava/io/RandomAccessFile;)Lcom/android/apksig/util/DataSource;
+
+    .line 17
+    .line 18
+    .line 19
+    move-result-object p0
+
+    .line 20
+    invoke-static {p0}, Lʼˏ/ᵢ;->ʽˎ(Lcom/android/apksig/util/DataSource;)Ljava/nio/ByteBuffer;
+
+    .line 21
+    .line 22
+    .line 23
+    move-result-object p0
+
+    .line 24
+    new-instance v1, Lcom/android/apksig/internal/apk/AndroidBinXmlParser;
+
+    .line 25
+    .line 26
+    invoke-direct {v1, p0}, Lcom/android/apksig/internal/apk/AndroidBinXmlParser;-><init>(Ljava/nio/ByteBuffer;)V
+
+    .line 27
+    .line 28
+    .line 29
+    invoke-virtual {v1}, Lcom/android/apksig/internal/apk/AndroidBinXmlParser;->getEventType()I
+
+    .line 30
+    .line 31
+    .line 32
+    move-result p0
+
+    .line 33
+    :goto_0
+    const/4 v2, 0x2
+
+    .line 34
+    if-eq p0, v2, :cond_8
+
+    .line 35
+    .line 36
+    const/4 v3, 0x3
+
+    .line 37
+    if-ne p0, v3, :cond_7
+
+    .line 38
+    .line 39
+    invoke-virtual {v1}, Lcom/android/apksig/internal/apk/AndroidBinXmlParser;->getDepth()I
+
+    .line 40
+    .line 41
+    .line 42
+    move-result p0
+
+    .line 43
+    if-gt p0, v2, :cond_7
+
+    .line 44
+    .line 45
+    const-string p0, "manifest"
+
+    .line 46
+    .line 47
+    invoke-virtual {v1}, Lcom/android/apksig/internal/apk/AndroidBinXmlParser;->getName()Ljava/lang/String;
+
+    .line 48
+    .line 49
+    .line 50
+    move-result-object v3
+
+    .line 51
+    invoke-virtual {p0, v3}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    .line 52
+    .line 53
+    .line 54
+    move-result p0
+
+    .line 55
+    if-nez p0, :cond_0
+
+    .line 56
+    .line 57
+    const-string p0, "uses-sdk"
+
+    .line 58
+    .line 59
+    invoke-virtual {v1}, Lcom/android/apksig/internal/apk/AndroidBinXmlParser;->getName()Ljava/lang/String;
+
+    .line 60
+    .line 61
+    .line 62
+    move-result-object v3
+
+    .line 63
+    invoke-virtual {p0, v3}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    .line 64
+    .line 65
+    .line 66
+    move-result p0
+
+    .line 67
+    if-eqz p0, :cond_7
+
+    .line 68
+    .line 69
+    goto :goto_1
+
+    .line 70
+    :catch_0
+    move-exception p0
+
+    .line 71
+    goto/16 :goto_3
+
+    .line 72
+    .line 73
+    :cond_0
+    :goto_1
+    invoke-virtual {v1}, Lcom/android/apksig/internal/apk/AndroidBinXmlParser;->getNamespace()Ljava/lang/String;
+
+    .line 74
+    .line 75
+    .line 76
+    move-result-object p0
+
+    .line 77
+    invoke-virtual {p0}, Ljava/lang/String;->isEmpty()Z
+
+    .line 78
+    .line 79
+    .line 80
+    move-result p0
+
+    .line 81
+    if-eqz p0, :cond_7
+
+    .line 82
+    .line 83
+    const/4 p0, 0x0
+
+    .line 84
+    :goto_2
+    invoke-virtual {v1}, Lcom/android/apksig/internal/apk/AndroidBinXmlParser;->getAttributeCount()I
+
+    .line 85
+    .line 86
+    .line 87
+    move-result v3
+
+    .line 88
+    if-ge p0, v3, :cond_7
+
+    .line 89
+    .line 90
+    const-string v3, "compileSdkVersion"
+
+    .line 91
+    .line 92
+    invoke-virtual {v1, p0}, Lcom/android/apksig/internal/apk/AndroidBinXmlParser;->getAttributeName(I)Ljava/lang/String;
+
+    .line 93
+    .line 94
+    .line 95
+    move-result-object v4
+
+    .line 96
+    invoke-virtual {v3, v4}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    .line 97
+    .line 98
+    .line 99
+    move-result v3
+
+    .line 100
+    if-nez v3, :cond_1
+
+    .line 101
+    .line 102
+    invoke-virtual {v1, p0}, Lcom/android/apksig/internal/apk/AndroidBinXmlParser;->getAttributeValueType(I)I
+
+    .line 103
+    .line 104
+    .line 105
+    move-result v3
+
+    .line 106
+    if-ne v3, v2, :cond_2
+
+    .line 107
+    .line 108
+    invoke-virtual {v1, p0}, Lcom/android/apksig/internal/apk/AndroidBinXmlParser;->getAttributeNameResourceId(I)I
+
+    .line 109
+    .line 110
+    .line 111
+    move-result v3
+
+    .line 112
+    const v4, 0x1010572
+
+    .line 113
+    .line 114
+    .line 115
+    if-ne v3, v4, :cond_2
+
+    .line 116
+    .line 117
+    :cond_1
+    invoke-virtual {v1}, Lcom/android/apksig/internal/apk/AndroidBinXmlParser;->getNamespace()Ljava/lang/String;
+
+    .line 118
+    .line 119
+    .line 120
+    move-result-object v3
+
+    .line 121
+    invoke-virtual {v3}, Ljava/lang/String;->isEmpty()Z
+
+    .line 122
+    .line 123
+    .line 124
+    move-result v3
+
+    .line 125
+    if-eqz v3, :cond_2
+
+    .line 126
+    .line 127
+    invoke-virtual {v1, p0}, Lcom/android/apksig/internal/apk/AndroidBinXmlParser;->getAttributeIntValue(I)I
+
+    .line 128
+    .line 129
+    .line 130
+    move-result v3
+
+    .line 131
+    iput v3, v0, Lʼـ/ᐧᐧ;->ʼ:I
+
+    .line 132
+    .line 133
+    :cond_2
+    const-string v3, "minSdkVersion"
+
+    .line 134
+    .line 135
+    invoke-virtual {v1, p0}, Lcom/android/apksig/internal/apk/AndroidBinXmlParser;->getAttributeName(I)Ljava/lang/String;
+
+    .line 136
+    .line 137
+    .line 138
+    move-result-object v4
+
+    .line 139
+    invoke-virtual {v3, v4}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    .line 140
+    .line 141
+    .line 142
+    move-result v3
+
+    .line 143
+    if-nez v3, :cond_3
+
+    .line 144
+    .line 145
+    invoke-virtual {v1, p0}, Lcom/android/apksig/internal/apk/AndroidBinXmlParser;->getAttributeValueType(I)I
+
+    .line 146
+    .line 147
+    .line 148
+    move-result v3
+
+    .line 149
+    if-ne v3, v2, :cond_4
+
+    .line 150
+    .line 151
+    invoke-virtual {v1, p0}, Lcom/android/apksig/internal/apk/AndroidBinXmlParser;->getAttributeNameResourceId(I)I
+
+    .line 152
+    .line 153
+    .line 154
+    move-result v3
+
+    .line 155
+    const v4, 0x101020c
+
+    .line 156
+    .line 157
+    .line 158
+    if-ne v3, v4, :cond_4
+
+    .line 159
+    .line 160
+    :cond_3
+    invoke-virtual {v1}, Lcom/android/apksig/internal/apk/AndroidBinXmlParser;->getNamespace()Ljava/lang/String;
+
+    .line 161
+    .line 162
+    .line 163
+    move-result-object v3
+
+    .line 164
+    invoke-virtual {v3}, Ljava/lang/String;->isEmpty()Z
+
+    .line 165
+    .line 166
+    .line 167
+    move-result v3
+
+    .line 168
+    if-eqz v3, :cond_4
+
+    .line 169
+    .line 170
+    invoke-virtual {v1, p0}, Lcom/android/apksig/internal/apk/AndroidBinXmlParser;->getAttributeIntValue(I)I
+
+    .line 171
+    .line 172
+    .line 173
+    move-result v3
+
+    .line 174
+    iput v3, v0, Lʼـ/ᐧᐧ;->ʽ:I
+
+    .line 175
+    .line 176
+    :cond_4
+    const-string v3, "targetSdkVersion"
+
+    .line 177
+    .line 178
+    invoke-virtual {v1, p0}, Lcom/android/apksig/internal/apk/AndroidBinXmlParser;->getAttributeName(I)Ljava/lang/String;
+
+    .line 179
+    .line 180
+    .line 181
+    move-result-object v4
+
+    .line 182
+    invoke-virtual {v3, v4}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    .line 183
+    .line 184
+    .line 185
+    move-result v3
+
+    .line 186
+    if-nez v3, :cond_5
+
+    .line 187
+    .line 188
+    invoke-virtual {v1, p0}, Lcom/android/apksig/internal/apk/AndroidBinXmlParser;->getAttributeValueType(I)I
+
+    .line 189
+    .line 190
+    .line 191
+    move-result v3
+
+    .line 192
+    if-ne v3, v2, :cond_6
+
+    .line 193
+    .line 194
+    invoke-virtual {v1, p0}, Lcom/android/apksig/internal/apk/AndroidBinXmlParser;->getAttributeNameResourceId(I)I
+
+    .line 195
+    .line 196
+    .line 197
+    move-result v3
+
+    .line 198
+    const v4, 0x1010270
+
+    .line 199
+    .line 200
+    .line 201
+    if-ne v3, v4, :cond_6
+
+    .line 202
+    .line 203
+    :cond_5
+    invoke-virtual {v1}, Lcom/android/apksig/internal/apk/AndroidBinXmlParser;->getNamespace()Ljava/lang/String;
+
+    .line 204
+    .line 205
+    .line 206
+    move-result-object v3
+
+    .line 207
+    invoke-virtual {v3}, Ljava/lang/String;->isEmpty()Z
+
+    .line 208
+    .line 209
+    .line 210
+    move-result v3
+
+    .line 211
+    if-eqz v3, :cond_6
+
+    .line 212
+    .line 213
+    invoke-virtual {v1, p0}, Lcom/android/apksig/internal/apk/AndroidBinXmlParser;->getAttributeIntValue(I)I
+
+    .line 214
+    .line 215
+    .line 216
+    move-result v3
+
+    .line 217
+    iput v3, v0, Lʼـ/ᐧᐧ;->ʻ:I
+
+    .line 218
+    .line 219
+    :cond_6
+    add-int/lit8 p0, p0, 0x1
+
+    .line 220
+    .line 221
+    goto/16 :goto_2
+
+    .line 222
+    .line 223
+    :cond_7
+    invoke-virtual {v1}, Lcom/android/apksig/internal/apk/AndroidBinXmlParser;->next()I
+
+    .line 224
+    .line 225
+    .line 226
+    move-result p0
+    :try_end_0
+    .catch Lcom/android/apksig/internal/apk/AndroidBinXmlParser$XmlParserException; {:try_start_0 .. :try_end_0} :catch_0
+
+    .line 227
+    goto/16 :goto_0
+
+    .line 228
+    .line 229
+    :cond_8
+    return-object v0
+
+    .line 230
+    :goto_3
+    invoke-virtual {p0}, Ljava/lang/Throwable;->printStackTrace()V
+
+    .line 231
+    .line 232
+    .line 233
+    const-string p0, "Unable to determine APK package name: malformed binary resource: AndroidManifest.xml"
+
+    .line 234
+    .line 235
+    invoke-static {p0}, Lʾˉ/ᴵᴵ;->ˉˎ(Ljava/lang/Object;)V
+
+    .line 236
+    .line 237
+    .line 238
+    const/4 p0, 0x0
+
+    .line 239
+    return-object p0
+.end method
+
+.method public static ˈʽ()[Ljava/lang/String;
+    .locals 7
+
+    .line 1
+    const/4 v0, 0x0
+
+    .line 2
+    const/4 v1, 0x1
+
+    .line 3
+    invoke-static {}, Lru/aaaaaccd/installer/PkgName;->getPkgName()Ljava/lang/String;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object v2
+
+    .line 7
+    sget-object v3, Lʾˉ/ᴵᴵ;->ˆᵎ:Ljava/lang/Boolean;
+
+    .line 8
+    .line 9
+    if-nez v3, :cond_1
+
+    .line 10
+    .line 11
+    new-instance v3, Ljava/io/File;
+
+    .line 12
+    .line 13
+    const-string v4, "/data/user/0/io.va.exposed/virtual/"
+
+    .line 14
+    .line 15
+    invoke-direct {v3, v4}, Ljava/io/File;-><init>(Ljava/lang/String;)V
+
+    .line 16
+    .line 17
+    .line 18
+    invoke-virtual {v3}, Ljava/io/File;->exists()Z
+
+    .line 19
+    .line 20
+    .line 21
+    move-result v3
+
+    .line 22
+    if-eqz v3, :cond_0
+
+    .line 23
+    .line 24
+    const-string v3, "vxp"
+
+    .line 25
+    .line 26
+    invoke-static {v3}, Ljava/lang/System;->getProperty(Ljava/lang/String;)Ljava/lang/String;
+
+    .line 27
+    .line 28
+    .line 29
+    move-result-object v3
+
+    .line 30
+    if-eqz v3, :cond_0
+
+    .line 31
+    .line 32
+    sget-object v3, Ljava/lang/System;->out:Ljava/io/PrintStream;
+
+    .line 33
+    .line 34
+    const-string v4, "Virtual Xposed detected!"
+
+    .line 35
+    .line 36
+    invoke-virtual {v3, v4}, Ljava/io/PrintStream;->println(Ljava/lang/String;)V
+
+    .line 37
+    .line 38
+    .line 39
+    sget-object v3, Ljava/lang/Boolean;->TRUE:Ljava/lang/Boolean;
+
+    .line 40
+    .line 41
+    sput-object v3, Lʾˉ/ᴵᴵ;->ˆᵎ:Ljava/lang/Boolean;
+
+    .line 42
+    .line 43
+    const-string v3, "/data/user/0/io.va.exposed/virtual"
+
+    .line 44
+    .line 45
+    sput-object v3, Lʾˉ/ᴵᴵ;->ˆᵔ:Ljava/lang/String;
+
+    .line 46
+    .line 47
+    goto :goto_0
+
+    .line 48
+    :cond_0
+    sget-object v3, Ljava/lang/Boolean;->FALSE:Ljava/lang/Boolean;
+
+    .line 49
+    .line 50
+    sput-object v3, Lʾˉ/ᴵᴵ;->ˆᵎ:Ljava/lang/Boolean;
+
+    .line 51
+    .line 52
+    :cond_1
+    :goto_0
+    sget-object v3, Lʾˉ/ᴵᴵ;->ˆᵎ:Ljava/lang/Boolean;
+
+    .line 53
+    .line 54
+    const-string v4, "/lp"
+
+    .line 55
+    .line 56
+    if-eqz v3, :cond_2
+
+    .line 57
+    .line 58
+    invoke-virtual {v3}, Ljava/lang/Boolean;->booleanValue()Z
+
+    .line 59
+    .line 60
+    .line 61
+    move-result v3
+
+    .line 62
+    if-eqz v3, :cond_2
+
+    .line 63
+    .line 64
+    new-instance v3, Ljava/lang/StringBuilder;
+
+    .line 65
+    .line 66
+    invoke-direct {v3}, Ljava/lang/StringBuilder;-><init>()V
+
+    .line 67
+    .line 68
+    .line 69
+    sget-object v5, Lʾˉ/ᴵᴵ;->ˆᵔ:Ljava/lang/String;
+
+    .line 70
+    .line 71
+    invoke-virtual {v3, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 72
+    .line 73
+    .line 74
+    const-string v5, "/data/user/0/"
+
+    .line 75
+    .line 76
+    invoke-virtual {v3, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 77
+    .line 78
+    .line 79
+    invoke-virtual {v3, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 80
+    .line 81
+    .line 82
+    invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 83
+    .line 84
+    .line 85
+    invoke-virtual {v3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    .line 86
+    .line 87
+    .line 88
+    move-result-object v2
+
+    .line 89
+    new-array v1, v1, [Ljava/lang/String;
+
+    .line 90
+    .line 91
+    aput-object v2, v1, v0
+
+    .line 92
+    .line 93
+    return-object v1
+
+    .line 94
+    :cond_2
+    new-instance v3, Ljava/lang/StringBuilder;
+
+    .line 95
+    .line 96
+    invoke-direct {v3}, Ljava/lang/StringBuilder;-><init>()V
+
+    .line 97
+    .line 98
+    .line 99
+    const-string v5, "/data/"
+
+    .line 100
+    .line 101
+    invoke-virtual {v3, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 102
+    .line 103
+    .line 104
+    invoke-virtual {v3, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 105
+    .line 106
+    .line 107
+    invoke-virtual {v3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    .line 108
+    .line 109
+    .line 110
+    move-result-object v3
+
+    .line 111
+    new-instance v5, Ljava/lang/StringBuilder;
+
+    .line 112
+    .line 113
+    invoke-direct {v5}, Ljava/lang/StringBuilder;-><init>()V
+
+    .line 114
+    .line 115
+    .line 116
+    const-string v6, "/data/data/"
+
+    .line 117
+    .line 118
+    invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 119
+    .line 120
+    .line 121
+    invoke-virtual {v5, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 122
+    .line 123
+    .line 124
+    invoke-virtual {v5, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 125
+    .line 126
+    .line 127
+    invoke-virtual {v5}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    .line 128
+    .line 129
+    .line 130
+    move-result-object v4
+
+    .line 131
+    new-instance v5, Ljava/lang/StringBuilder;
+
+    .line 132
+    .line 133
+    invoke-direct {v5}, Ljava/lang/StringBuilder;-><init>()V
+
+    .line 134
+    .line 135
+    .line 136
+    const-string v6, "/data/misc/"
+
+    .line 137
+    .line 138
+    invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 139
+    .line 140
+    .line 141
+    invoke-virtual {v5, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 142
+    .line 143
+    .line 144
+    invoke-virtual {v5}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    .line 145
+    .line 146
+    .line 147
+    move-result-object v2
+
+    .line 148
+    const/4 v5, 0x4
+
+    .line 149
+    new-array v5, v5, [Ljava/lang/String;
+
+    .line 150
+    .line 151
+    aput-object v3, v5, v0
+
+    .line 152
+    .line 153
+    aput-object v4, v5, v1
+
+    .line 154
+    .line 155
+    const-string v0, "/data/local/tmp"
+
+    .line 156
+    .line 157
+    const/4 v1, 0x2
+
+    .line 158
+    aput-object v0, v5, v1
+
+    .line 159
+    .line 160
+    const/4 v0, 0x3
+
+    .line 161
+    aput-object v2, v5, v0
+
+    .line 162
+    .line 163
+    return-object v5
+.end method
+
+.method private static ˈʾ()V
     .locals 4
 
     .line 1
@@ -74110,7 +75290,7 @@
     move-result-object v2
 
     .line 22
-    invoke-static {v1, v2}, Lʼˏ/ᵢ;->ʽᵢ(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v1, v2}, Lʼˏ/ᵢ;->ʽﹳ(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 23
     .line 24
@@ -74150,7 +75330,7 @@
     move-result-object v2
 
     .line 44
-    invoke-static {v1, v2}, Lʼˏ/ᵢ;->ʽᵢ(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v1, v2}, Lʼˏ/ᵢ;->ʽﹳ(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 45
     .line 46
@@ -74190,7 +75370,7 @@
     move-result-object v0
 
     .line 66
-    invoke-static {v1, v0}, Lʼˏ/ᵢ;->ʽᵢ(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v1, v0}, Lʼˏ/ᵢ;->ʽﹳ(Ljava/lang/String;Ljava/lang/String;)V
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -74213,7 +75393,7 @@
     return-void
 .end method
 
-.method public static ˈʼ(Ljava/io/File;)Ljava/util/List;
+.method public static ˈʿ(Ljava/io/File;)Ljava/util/List;
     .locals 5
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -74402,7 +75582,7 @@
     return-object v0
 .end method
 
-.method public static ˈʽ(Ljava/lang/String;)Ljava/lang/String;
+.method public static ˈˆ(Ljava/lang/String;)Ljava/lang/String;
     .locals 12
 
     .line 1
@@ -74983,7 +76163,748 @@
     return-object v5
 .end method
 
-.method public static ˈʾ(Ljava/io/File;)Ljava/util/ArrayList;
+.method public static ˈˈ()V
+    .locals 12
+
+    .line 1
+    const/4 v0, 0x2
+
+    .line 2
+    const/4 v1, 0x0
+
+    .line 3
+    const/4 v2, 0x1
+
+    .line 4
+    const-string v3, "/data/app"
+
+    .line 5
+    .line 6
+    invoke-static {}, Lʼˏ/ᵢ;->ʽʽ()V
+
+    .line 7
+    .line 8
+    .line 9
+    const-string v4, "/system"
+
+    .line 10
+    .line 11
+    const-string v5, "ro"
+
+    .line 12
+    .line 13
+    invoke-static {v4, v5}, Lʼˏ/ᵢ;->ˋᵔ(Ljava/lang/String;Ljava/lang/String;)Z
+
+    .line 14
+    .line 15
+    .line 16
+    sget-object v4, Lʾˉ/ᴵᴵ;->ʿᴵ:Ljava/lang/Boolean;
+
+    .line 17
+    .line 18
+    invoke-virtual {v4}, Ljava/lang/Boolean;->booleanValue()Z
+
+    .line 19
+    .line 20
+    .line 21
+    move-result v4
+
+    .line 22
+    if-eqz v4, :cond_3
+
+    .line 23
+    .line 24
+    sget v4, Lʾˉ/ᴵᴵ;->ʾᐧ:I
+
+    .line 25
+    .line 26
+    const/16 v5, 0x17
+
+    .line 27
+    .line 28
+    if-lt v4, v5, :cond_2
+
+    .line 29
+    .line 30
+    :try_start_0
+    new-instance v4, Ljava/io/File;
+
+    .line 31
+    .line 32
+    invoke-direct {v4, v3}, Ljava/io/File;-><init>(Ljava/lang/String;)V
+
+    .line 33
+    .line 34
+    .line 35
+    invoke-virtual {v4}, Ljava/io/File;->exists()Z
+
+    .line 36
+    .line 37
+    .line 38
+    move-result v4
+
+    .line 39
+    if-eqz v4, :cond_2
+
+    .line 40
+    .line 41
+    new-instance v4, Ljava/io/File;
+
+    .line 42
+    .line 43
+    invoke-direct {v4, v3}, Ljava/io/File;-><init>(Ljava/lang/String;)V
+
+    .line 44
+    .line 45
+    .line 46
+    invoke-virtual {v4}, Ljava/io/File;->listFiles()[Ljava/io/File;
+
+    .line 47
+    .line 48
+    .line 49
+    move-result-object v3
+
+    .line 50
+    array-length v4, v3
+
+    .line 51
+    const/4 v5, 0x0
+
+    .line 52
+    :goto_0
+    if-ge v5, v4, :cond_2
+
+    .line 53
+    .line 54
+    aget-object v6, v3, v5
+
+    .line 55
+    .line 56
+    invoke-virtual {v6}, Ljava/io/File;->isDirectory()Z
+
+    .line 57
+    .line 58
+    .line 59
+    move-result v7
+
+    .line 60
+    if-eqz v7, :cond_1
+
+    .line 61
+    .line 62
+    invoke-virtual {v6}, Ljava/io/File;->listFiles()[Ljava/io/File;
+
+    .line 63
+    .line 64
+    .line 65
+    move-result-object v6
+
+    .line 66
+    if-eqz v6, :cond_1
+
+    .line 67
+    .line 68
+    array-length v7, v6
+
+    .line 69
+    if-lez v7, :cond_1
+
+    .line 70
+    .line 71
+    array-length v7, v6
+
+    .line 72
+    const/4 v8, 0x0
+
+    .line 73
+    :goto_1
+    if-ge v8, v7, :cond_1
+
+    .line 74
+    .line 75
+    aget-object v9, v6, v8
+
+    .line 76
+    .line 77
+    invoke-virtual {v9}, Ljava/io/File;->isDirectory()Z
+
+    .line 78
+    .line 79
+    .line 80
+    move-result v10
+
+    .line 81
+    if-eqz v10, :cond_0
+
+    .line 82
+    .line 83
+    invoke-virtual {v9}, Ljava/io/File;->getName()Ljava/lang/String;
+
+    .line 84
+    .line 85
+    .line 86
+    move-result-object v10
+
+    .line 87
+    const-string v11, "oat"
+
+    .line 88
+    .line 89
+    invoke-virtual {v10, v11}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    .line 90
+    .line 91
+    .line 92
+    move-result v10
+
+    .line 93
+    if-eqz v10, :cond_0
+
+    .line 94
+    .line 95
+    new-instance v10, Ljava/lang/StringBuilder;
+
+    .line 96
+    .line 97
+    invoke-direct {v10}, Ljava/lang/StringBuilder;-><init>()V
+
+    .line 98
+    .line 99
+    .line 100
+    const-string v11, "delete folder:"
+
+    .line 101
+    .line 102
+    invoke-virtual {v10, v11}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 103
+    .line 104
+    .line 105
+    invoke-virtual {v9}, Ljava/io/File;->getAbsolutePath()Ljava/lang/String;
+
+    .line 106
+    .line 107
+    .line 108
+    move-result-object v11
+
+    .line 109
+    invoke-virtual {v10, v11}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 110
+    .line 111
+    .line 112
+    invoke-virtual {v10}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    .line 113
+    .line 114
+    .line 115
+    move-result-object v10
+
+    .line 116
+    invoke-static {v10}, Lʾˉ/ᴵᴵ;->ˉˎ(Ljava/lang/Object;)V
+
+    .line 117
+    .line 118
+    .line 119
+    new-instance v10, Lʼˏ/ᵢ;
+
+    .line 120
+    .line 121
+    const-string v11, ""
+
+    .line 122
+    .line 123
+    invoke-direct {v10, v11}, Lʼˏ/ᵢ;-><init>(Ljava/lang/String;)V
+
+    .line 124
+    .line 125
+    .line 126
+    invoke-virtual {v10, v9}, Lʼˏ/ᵢ;->ʼʾ(Ljava/io/File;)V
+    :try_end_0
+    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
+
+    .line 127
+    .line 128
+    .line 129
+    :cond_0
+    add-int/2addr v8, v2
+
+    .line 130
+    goto :goto_1
+
+    .line 131
+    :cond_1
+    add-int/2addr v5, v2
+
+    .line 132
+    goto :goto_0
+
+    .line 133
+    :catch_0
+    :cond_2
+    const-string v3, "rm"
+
+    .line 134
+    .line 135
+    new-array v4, v0, [Ljava/lang/String;
+
+    .line 136
+    .line 137
+    aput-object v3, v4, v1
+
+    .line 138
+    .line 139
+    const-string v5, "/data/dalvik-cache/*.dex"
+
+    .line 140
+    .line 141
+    aput-object v5, v4, v2
+
+    .line 142
+    .line 143
+    invoke-static {v4}, Lʼˏ/ᵢ;->ˎˏ([Ljava/lang/String;)V
+
+    .line 144
+    .line 145
+    .line 146
+    new-array v4, v0, [Ljava/lang/String;
+
+    .line 147
+    .line 148
+    aput-object v3, v4, v1
+
+    .line 149
+    .line 150
+    const-string v5, "/data/dalvik-cache/*.oat"
+
+    .line 151
+    .line 152
+    aput-object v5, v4, v2
+
+    .line 153
+    .line 154
+    invoke-static {v4}, Lʼˏ/ᵢ;->ˎˏ([Ljava/lang/String;)V
+
+    .line 155
+    .line 156
+    .line 157
+    new-array v4, v0, [Ljava/lang/String;
+
+    .line 158
+    .line 159
+    aput-object v3, v4, v1
+
+    .line 160
+    .line 161
+    const-string v5, "/data/dalvik-cache/*.art"
+
+    .line 162
+    .line 163
+    aput-object v5, v4, v2
+
+    .line 164
+    .line 165
+    invoke-static {v4}, Lʼˏ/ᵢ;->ˎˏ([Ljava/lang/String;)V
+
+    .line 166
+    .line 167
+    .line 168
+    new-array v4, v0, [Ljava/lang/String;
+
+    .line 169
+    .line 170
+    aput-object v3, v4, v1
+
+    .line 171
+    .line 172
+    const-string v5, "/data/dalvik-cache/arm/*.dex"
+
+    .line 173
+    .line 174
+    aput-object v5, v4, v2
+
+    .line 175
+    .line 176
+    invoke-static {v4}, Lʼˏ/ᵢ;->ˎˏ([Ljava/lang/String;)V
+
+    .line 177
+    .line 178
+    .line 179
+    new-array v4, v0, [Ljava/lang/String;
+
+    .line 180
+    .line 181
+    aput-object v3, v4, v1
+
+    .line 182
+    .line 183
+    const-string v5, "/data/dalvik-cache/arm/*.art"
+
+    .line 184
+    .line 185
+    aput-object v5, v4, v2
+
+    .line 186
+    .line 187
+    invoke-static {v4}, Lʼˏ/ᵢ;->ˎˏ([Ljava/lang/String;)V
+
+    .line 188
+    .line 189
+    .line 190
+    new-array v4, v0, [Ljava/lang/String;
+
+    .line 191
+    .line 192
+    aput-object v3, v4, v1
+
+    .line 193
+    .line 194
+    const-string v5, "/data/dalvik-cache/arm/*.oat"
+
+    .line 195
+    .line 196
+    aput-object v5, v4, v2
+
+    .line 197
+    .line 198
+    invoke-static {v4}, Lʼˏ/ᵢ;->ˎˏ([Ljava/lang/String;)V
+
+    .line 199
+    .line 200
+    .line 201
+    new-array v4, v0, [Ljava/lang/String;
+
+    .line 202
+    .line 203
+    aput-object v3, v4, v1
+
+    .line 204
+    .line 205
+    const-string v5, "/data/dalvik-cache/arm64/*.dex"
+
+    .line 206
+    .line 207
+    aput-object v5, v4, v2
+
+    .line 208
+    .line 209
+    invoke-static {v4}, Lʼˏ/ᵢ;->ˎˏ([Ljava/lang/String;)V
+
+    .line 210
+    .line 211
+    .line 212
+    new-array v4, v0, [Ljava/lang/String;
+
+    .line 213
+    .line 214
+    aput-object v3, v4, v1
+
+    .line 215
+    .line 216
+    const-string v5, "/data/dalvik-cache/arm64/*.art"
+
+    .line 217
+    .line 218
+    aput-object v5, v4, v2
+
+    .line 219
+    .line 220
+    invoke-static {v4}, Lʼˏ/ᵢ;->ˎˏ([Ljava/lang/String;)V
+
+    .line 221
+    .line 222
+    .line 223
+    new-array v4, v0, [Ljava/lang/String;
+
+    .line 224
+    .line 225
+    aput-object v3, v4, v1
+
+    .line 226
+    .line 227
+    const-string v5, "/data/dalvik-cache/arm64/*.oat"
+
+    .line 228
+    .line 229
+    aput-object v5, v4, v2
+
+    .line 230
+    .line 231
+    invoke-static {v4}, Lʼˏ/ᵢ;->ˎˏ([Ljava/lang/String;)V
+
+    .line 232
+    .line 233
+    .line 234
+    new-array v4, v0, [Ljava/lang/String;
+
+    .line 235
+    .line 236
+    aput-object v3, v4, v1
+
+    .line 237
+    .line 238
+    const-string v5, "/data/dalvik-cache/x86/*.dex"
+
+    .line 239
+    .line 240
+    aput-object v5, v4, v2
+
+    .line 241
+    .line 242
+    invoke-static {v4}, Lʼˏ/ᵢ;->ˎˏ([Ljava/lang/String;)V
+
+    .line 243
+    .line 244
+    .line 245
+    new-array v4, v0, [Ljava/lang/String;
+
+    .line 246
+    .line 247
+    aput-object v3, v4, v1
+
+    .line 248
+    .line 249
+    const-string v5, "/data/dalvik-cache/x86/*.art"
+
+    .line 250
+    .line 251
+    aput-object v5, v4, v2
+
+    .line 252
+    .line 253
+    invoke-static {v4}, Lʼˏ/ᵢ;->ˎˏ([Ljava/lang/String;)V
+
+    .line 254
+    .line 255
+    .line 256
+    new-array v4, v0, [Ljava/lang/String;
+
+    .line 257
+    .line 258
+    aput-object v3, v4, v1
+
+    .line 259
+    .line 260
+    const-string v5, "/data/dalvik-cache/x86/*.oat"
+
+    .line 261
+    .line 262
+    aput-object v5, v4, v2
+
+    .line 263
+    .line 264
+    invoke-static {v4}, Lʼˏ/ᵢ;->ˎˏ([Ljava/lang/String;)V
+
+    .line 265
+    .line 266
+    .line 267
+    new-array v4, v0, [Ljava/lang/String;
+
+    .line 268
+    .line 269
+    aput-object v3, v4, v1
+
+    .line 270
+    .line 271
+    const-string v5, "/data/dalvik-cache/x86_64/*.dex"
+
+    .line 272
+    .line 273
+    aput-object v5, v4, v2
+
+    .line 274
+    .line 275
+    invoke-static {v4}, Lʼˏ/ᵢ;->ˎˏ([Ljava/lang/String;)V
+
+    .line 276
+    .line 277
+    .line 278
+    new-array v4, v0, [Ljava/lang/String;
+
+    .line 279
+    .line 280
+    aput-object v3, v4, v1
+
+    .line 281
+    .line 282
+    const-string v5, "/data/dalvik-cache/x86_64/*.art"
+
+    .line 283
+    .line 284
+    aput-object v5, v4, v2
+
+    .line 285
+    .line 286
+    invoke-static {v4}, Lʼˏ/ᵢ;->ˎˏ([Ljava/lang/String;)V
+
+    .line 287
+    .line 288
+    .line 289
+    new-array v0, v0, [Ljava/lang/String;
+
+    .line 290
+    .line 291
+    aput-object v3, v0, v1
+
+    .line 292
+    .line 293
+    const-string v1, "/data/dalvik-cache/x86_64/*.oat"
+
+    .line 294
+    .line 295
+    aput-object v1, v0, v2
+
+    .line 296
+    .line 297
+    invoke-static {v0}, Lʼˏ/ᵢ;->ˎˏ([Ljava/lang/String;)V
+
+    .line 298
+    .line 299
+    .line 300
+    goto :goto_2
+
+    .line 301
+    :cond_3
+    const-string v0, "rm /data/dalvik-cache/*.dex"
+
+    .line 302
+    .line 303
+    invoke-static {v0}, Lʼˏ/ᵢ;->ˎˋ(Ljava/lang/String;)V
+
+    .line 304
+    .line 305
+    .line 306
+    const-string v0, "rm /data/dalvik-cache/*.oat"
+
+    .line 307
+    .line 308
+    invoke-static {v0}, Lʼˏ/ᵢ;->ˎˋ(Ljava/lang/String;)V
+
+    .line 309
+    .line 310
+    .line 311
+    const-string v0, "rm /data/dalvik-cache/*.art"
+
+    .line 312
+    .line 313
+    invoke-static {v0}, Lʼˏ/ᵢ;->ˎˋ(Ljava/lang/String;)V
+
+    .line 314
+    .line 315
+    .line 316
+    const-string v0, "rm /data/dalvik-cache/arm/*.dex"
+
+    .line 317
+    .line 318
+    invoke-static {v0}, Lʼˏ/ᵢ;->ˎˋ(Ljava/lang/String;)V
+
+    .line 319
+    .line 320
+    .line 321
+    const-string v0, "rm /data/dalvik-cache/arm/*.art"
+
+    .line 322
+    .line 323
+    invoke-static {v0}, Lʼˏ/ᵢ;->ˎˋ(Ljava/lang/String;)V
+
+    .line 324
+    .line 325
+    .line 326
+    const-string v0, "rm /data/dalvik-cache/arm/*.oat"
+
+    .line 327
+    .line 328
+    invoke-static {v0}, Lʼˏ/ᵢ;->ˎˋ(Ljava/lang/String;)V
+
+    .line 329
+    .line 330
+    .line 331
+    const-string v0, "rm /data/dalvik-cache/arm64/*.dex"
+
+    .line 332
+    .line 333
+    invoke-static {v0}, Lʼˏ/ᵢ;->ˎˋ(Ljava/lang/String;)V
+
+    .line 334
+    .line 335
+    .line 336
+    const-string v0, "rm /data/dalvik-cache/arm64/*.art"
+
+    .line 337
+    .line 338
+    invoke-static {v0}, Lʼˏ/ᵢ;->ˎˋ(Ljava/lang/String;)V
+
+    .line 339
+    .line 340
+    .line 341
+    const-string v0, "rm /data/dalvik-cache/arm64/*.oat"
+
+    .line 342
+    .line 343
+    invoke-static {v0}, Lʼˏ/ᵢ;->ˎˋ(Ljava/lang/String;)V
+
+    .line 344
+    .line 345
+    .line 346
+    const-string v0, "rm /data/dalvik-cache/x86/*.dex"
+
+    .line 347
+    .line 348
+    invoke-static {v0}, Lʼˏ/ᵢ;->ˎˋ(Ljava/lang/String;)V
+
+    .line 349
+    .line 350
+    .line 351
+    const-string v0, "rm /data/dalvik-cache/x86/*.art"
+
+    .line 352
+    .line 353
+    invoke-static {v0}, Lʼˏ/ᵢ;->ˎˋ(Ljava/lang/String;)V
+
+    .line 354
+    .line 355
+    .line 356
+    const-string v0, "rm /data/dalvik-cache/x86/*.oat"
+
+    .line 357
+    .line 358
+    invoke-static {v0}, Lʼˏ/ᵢ;->ˎˋ(Ljava/lang/String;)V
+
+    .line 359
+    .line 360
+    .line 361
+    const-string v0, "rm /data/dalvik-cache/x86_64/*.dex"
+
+    .line 362
+    .line 363
+    invoke-static {v0}, Lʼˏ/ᵢ;->ˎˋ(Ljava/lang/String;)V
+
+    .line 364
+    .line 365
+    .line 366
+    const-string v0, "rm /data/dalvik-cache/x86_64/*.art"
+
+    .line 367
+    .line 368
+    invoke-static {v0}, Lʼˏ/ᵢ;->ˎˋ(Ljava/lang/String;)V
+
+    .line 369
+    .line 370
+    .line 371
+    const-string v0, "rm /data/dalvik-cache/x86_64/*.oat"
+
+    .line 372
+    .line 373
+    invoke-static {v0}, Lʼˏ/ᵢ;->ˎˋ(Ljava/lang/String;)V
+
+    .line 374
+    .line 375
+    .line 376
+    :goto_2
+    return-void
+.end method
+
+.method public static ˈˉ(Ljava/io/File;)Ljava/util/ArrayList;
     .locals 9
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -75029,7 +76950,7 @@
     .line 16
     .line 17
     .line 18
-    invoke-static {}, Lʼˏ/ᵢ;->ˈˏ()Ljava/lang/String;
+    invoke-static {}, Lʼˏ/ᵢ;->ˈـ()Ljava/lang/String;
 
     .line 19
     .line 20
@@ -75289,7 +77210,7 @@
     move-result-object v3
 
     .line 152
-    invoke-static {v3}, Lʼˏ/ᵢ;->ʽי(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v3}, Lʼˏ/ᵢ;->ʽٴ(Ljava/lang/String;)Ljava/lang/String;
 
     .line 153
     .line 154
@@ -75340,7 +77261,7 @@
     return-object v0
 .end method
 
-.method public static ˈʿ(Ljava/lang/String;)Ljava/util/ArrayList;
+.method public static ˈˊ(Ljava/lang/String;)Ljava/util/ArrayList;
     .locals 5
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -75497,7 +77418,7 @@
     return-object v0
 .end method
 
-.method public static ˈˆ()V
+.method public static ˈˋ()V
     .locals 3
 
     .line 1
@@ -75542,7 +77463,7 @@
     .line 21
     .line 22
     .line 23
-    invoke-static {}, Lru/aaaaaccc/installer/PkgName;->getPkgName()Ljava/lang/String;
+    invoke-static {}, Lru/aaaaaccd/installer/PkgName;->getPkgName()Ljava/lang/String;
 
     .line 24
     .line 25
@@ -75616,748 +77537,7 @@
     return-void
 .end method
 
-.method public static ˈˈ()V
-    .locals 12
-
-    .line 1
-    const/4 v0, 0x2
-
-    .line 2
-    const/4 v1, 0x0
-
-    .line 3
-    const/4 v2, 0x1
-
-    .line 4
-    const-string v3, "/data/app"
-
-    .line 5
-    .line 6
-    invoke-static {}, Lʼˏ/ᵢ;->ʽʽ()V
-
-    .line 7
-    .line 8
-    .line 9
-    const-string v4, "/system"
-
-    .line 10
-    .line 11
-    const-string v5, "ro"
-
-    .line 12
-    .line 13
-    invoke-static {v4, v5}, Lʼˏ/ᵢ;->ˋי(Ljava/lang/String;Ljava/lang/String;)Z
-
-    .line 14
-    .line 15
-    .line 16
-    sget-object v4, Lʾˉ/ᴵᴵ;->ʿᴵ:Ljava/lang/Boolean;
-
-    .line 17
-    .line 18
-    invoke-virtual {v4}, Ljava/lang/Boolean;->booleanValue()Z
-
-    .line 19
-    .line 20
-    .line 21
-    move-result v4
-
-    .line 22
-    if-eqz v4, :cond_3
-
-    .line 23
-    .line 24
-    sget v4, Lʾˉ/ᴵᴵ;->ʾᐧ:I
-
-    .line 25
-    .line 26
-    const/16 v5, 0x17
-
-    .line 27
-    .line 28
-    if-lt v4, v5, :cond_2
-
-    .line 29
-    .line 30
-    :try_start_0
-    new-instance v4, Ljava/io/File;
-
-    .line 31
-    .line 32
-    invoke-direct {v4, v3}, Ljava/io/File;-><init>(Ljava/lang/String;)V
-
-    .line 33
-    .line 34
-    .line 35
-    invoke-virtual {v4}, Ljava/io/File;->exists()Z
-
-    .line 36
-    .line 37
-    .line 38
-    move-result v4
-
-    .line 39
-    if-eqz v4, :cond_2
-
-    .line 40
-    .line 41
-    new-instance v4, Ljava/io/File;
-
-    .line 42
-    .line 43
-    invoke-direct {v4, v3}, Ljava/io/File;-><init>(Ljava/lang/String;)V
-
-    .line 44
-    .line 45
-    .line 46
-    invoke-virtual {v4}, Ljava/io/File;->listFiles()[Ljava/io/File;
-
-    .line 47
-    .line 48
-    .line 49
-    move-result-object v3
-
-    .line 50
-    array-length v4, v3
-
-    .line 51
-    const/4 v5, 0x0
-
-    .line 52
-    :goto_0
-    if-ge v5, v4, :cond_2
-
-    .line 53
-    .line 54
-    aget-object v6, v3, v5
-
-    .line 55
-    .line 56
-    invoke-virtual {v6}, Ljava/io/File;->isDirectory()Z
-
-    .line 57
-    .line 58
-    .line 59
-    move-result v7
-
-    .line 60
-    if-eqz v7, :cond_1
-
-    .line 61
-    .line 62
-    invoke-virtual {v6}, Ljava/io/File;->listFiles()[Ljava/io/File;
-
-    .line 63
-    .line 64
-    .line 65
-    move-result-object v6
-
-    .line 66
-    if-eqz v6, :cond_1
-
-    .line 67
-    .line 68
-    array-length v7, v6
-
-    .line 69
-    if-lez v7, :cond_1
-
-    .line 70
-    .line 71
-    array-length v7, v6
-
-    .line 72
-    const/4 v8, 0x0
-
-    .line 73
-    :goto_1
-    if-ge v8, v7, :cond_1
-
-    .line 74
-    .line 75
-    aget-object v9, v6, v8
-
-    .line 76
-    .line 77
-    invoke-virtual {v9}, Ljava/io/File;->isDirectory()Z
-
-    .line 78
-    .line 79
-    .line 80
-    move-result v10
-
-    .line 81
-    if-eqz v10, :cond_0
-
-    .line 82
-    .line 83
-    invoke-virtual {v9}, Ljava/io/File;->getName()Ljava/lang/String;
-
-    .line 84
-    .line 85
-    .line 86
-    move-result-object v10
-
-    .line 87
-    const-string v11, "oat"
-
-    .line 88
-    .line 89
-    invoke-virtual {v10, v11}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    .line 90
-    .line 91
-    .line 92
-    move-result v10
-
-    .line 93
-    if-eqz v10, :cond_0
-
-    .line 94
-    .line 95
-    new-instance v10, Ljava/lang/StringBuilder;
-
-    .line 96
-    .line 97
-    invoke-direct {v10}, Ljava/lang/StringBuilder;-><init>()V
-
-    .line 98
-    .line 99
-    .line 100
-    const-string v11, "delete folder:"
-
-    .line 101
-    .line 102
-    invoke-virtual {v10, v11}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 103
-    .line 104
-    .line 105
-    invoke-virtual {v9}, Ljava/io/File;->getAbsolutePath()Ljava/lang/String;
-
-    .line 106
-    .line 107
-    .line 108
-    move-result-object v11
-
-    .line 109
-    invoke-virtual {v10, v11}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 110
-    .line 111
-    .line 112
-    invoke-virtual {v10}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    .line 113
-    .line 114
-    .line 115
-    move-result-object v10
-
-    .line 116
-    invoke-static {v10}, Lʾˉ/ᴵᴵ;->ˉˎ(Ljava/lang/Object;)V
-
-    .line 117
-    .line 118
-    .line 119
-    new-instance v10, Lʼˏ/ᵢ;
-
-    .line 120
-    .line 121
-    const-string v11, ""
-
-    .line 122
-    .line 123
-    invoke-direct {v10, v11}, Lʼˏ/ᵢ;-><init>(Ljava/lang/String;)V
-
-    .line 124
-    .line 125
-    .line 126
-    invoke-virtual {v10, v9}, Lʼˏ/ᵢ;->ʼʽ(Ljava/io/File;)V
-    :try_end_0
-    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
-
-    .line 127
-    .line 128
-    .line 129
-    :cond_0
-    add-int/2addr v8, v2
-
-    .line 130
-    goto :goto_1
-
-    .line 131
-    :cond_1
-    add-int/2addr v5, v2
-
-    .line 132
-    goto :goto_0
-
-    .line 133
-    :catch_0
-    :cond_2
-    const-string v3, "rm"
-
-    .line 134
-    .line 135
-    new-array v4, v0, [Ljava/lang/String;
-
-    .line 136
-    .line 137
-    aput-object v3, v4, v1
-
-    .line 138
-    .line 139
-    const-string v5, "/data/dalvik-cache/*.dex"
-
-    .line 140
-    .line 141
-    aput-object v5, v4, v2
-
-    .line 142
-    .line 143
-    invoke-static {v4}, Lʼˏ/ᵢ;->ˎʿ([Ljava/lang/String;)V
-
-    .line 144
-    .line 145
-    .line 146
-    new-array v4, v0, [Ljava/lang/String;
-
-    .line 147
-    .line 148
-    aput-object v3, v4, v1
-
-    .line 149
-    .line 150
-    const-string v5, "/data/dalvik-cache/*.oat"
-
-    .line 151
-    .line 152
-    aput-object v5, v4, v2
-
-    .line 153
-    .line 154
-    invoke-static {v4}, Lʼˏ/ᵢ;->ˎʿ([Ljava/lang/String;)V
-
-    .line 155
-    .line 156
-    .line 157
-    new-array v4, v0, [Ljava/lang/String;
-
-    .line 158
-    .line 159
-    aput-object v3, v4, v1
-
-    .line 160
-    .line 161
-    const-string v5, "/data/dalvik-cache/*.art"
-
-    .line 162
-    .line 163
-    aput-object v5, v4, v2
-
-    .line 164
-    .line 165
-    invoke-static {v4}, Lʼˏ/ᵢ;->ˎʿ([Ljava/lang/String;)V
-
-    .line 166
-    .line 167
-    .line 168
-    new-array v4, v0, [Ljava/lang/String;
-
-    .line 169
-    .line 170
-    aput-object v3, v4, v1
-
-    .line 171
-    .line 172
-    const-string v5, "/data/dalvik-cache/arm/*.dex"
-
-    .line 173
-    .line 174
-    aput-object v5, v4, v2
-
-    .line 175
-    .line 176
-    invoke-static {v4}, Lʼˏ/ᵢ;->ˎʿ([Ljava/lang/String;)V
-
-    .line 177
-    .line 178
-    .line 179
-    new-array v4, v0, [Ljava/lang/String;
-
-    .line 180
-    .line 181
-    aput-object v3, v4, v1
-
-    .line 182
-    .line 183
-    const-string v5, "/data/dalvik-cache/arm/*.art"
-
-    .line 184
-    .line 185
-    aput-object v5, v4, v2
-
-    .line 186
-    .line 187
-    invoke-static {v4}, Lʼˏ/ᵢ;->ˎʿ([Ljava/lang/String;)V
-
-    .line 188
-    .line 189
-    .line 190
-    new-array v4, v0, [Ljava/lang/String;
-
-    .line 191
-    .line 192
-    aput-object v3, v4, v1
-
-    .line 193
-    .line 194
-    const-string v5, "/data/dalvik-cache/arm/*.oat"
-
-    .line 195
-    .line 196
-    aput-object v5, v4, v2
-
-    .line 197
-    .line 198
-    invoke-static {v4}, Lʼˏ/ᵢ;->ˎʿ([Ljava/lang/String;)V
-
-    .line 199
-    .line 200
-    .line 201
-    new-array v4, v0, [Ljava/lang/String;
-
-    .line 202
-    .line 203
-    aput-object v3, v4, v1
-
-    .line 204
-    .line 205
-    const-string v5, "/data/dalvik-cache/arm64/*.dex"
-
-    .line 206
-    .line 207
-    aput-object v5, v4, v2
-
-    .line 208
-    .line 209
-    invoke-static {v4}, Lʼˏ/ᵢ;->ˎʿ([Ljava/lang/String;)V
-
-    .line 210
-    .line 211
-    .line 212
-    new-array v4, v0, [Ljava/lang/String;
-
-    .line 213
-    .line 214
-    aput-object v3, v4, v1
-
-    .line 215
-    .line 216
-    const-string v5, "/data/dalvik-cache/arm64/*.art"
-
-    .line 217
-    .line 218
-    aput-object v5, v4, v2
-
-    .line 219
-    .line 220
-    invoke-static {v4}, Lʼˏ/ᵢ;->ˎʿ([Ljava/lang/String;)V
-
-    .line 221
-    .line 222
-    .line 223
-    new-array v4, v0, [Ljava/lang/String;
-
-    .line 224
-    .line 225
-    aput-object v3, v4, v1
-
-    .line 226
-    .line 227
-    const-string v5, "/data/dalvik-cache/arm64/*.oat"
-
-    .line 228
-    .line 229
-    aput-object v5, v4, v2
-
-    .line 230
-    .line 231
-    invoke-static {v4}, Lʼˏ/ᵢ;->ˎʿ([Ljava/lang/String;)V
-
-    .line 232
-    .line 233
-    .line 234
-    new-array v4, v0, [Ljava/lang/String;
-
-    .line 235
-    .line 236
-    aput-object v3, v4, v1
-
-    .line 237
-    .line 238
-    const-string v5, "/data/dalvik-cache/x86/*.dex"
-
-    .line 239
-    .line 240
-    aput-object v5, v4, v2
-
-    .line 241
-    .line 242
-    invoke-static {v4}, Lʼˏ/ᵢ;->ˎʿ([Ljava/lang/String;)V
-
-    .line 243
-    .line 244
-    .line 245
-    new-array v4, v0, [Ljava/lang/String;
-
-    .line 246
-    .line 247
-    aput-object v3, v4, v1
-
-    .line 248
-    .line 249
-    const-string v5, "/data/dalvik-cache/x86/*.art"
-
-    .line 250
-    .line 251
-    aput-object v5, v4, v2
-
-    .line 252
-    .line 253
-    invoke-static {v4}, Lʼˏ/ᵢ;->ˎʿ([Ljava/lang/String;)V
-
-    .line 254
-    .line 255
-    .line 256
-    new-array v4, v0, [Ljava/lang/String;
-
-    .line 257
-    .line 258
-    aput-object v3, v4, v1
-
-    .line 259
-    .line 260
-    const-string v5, "/data/dalvik-cache/x86/*.oat"
-
-    .line 261
-    .line 262
-    aput-object v5, v4, v2
-
-    .line 263
-    .line 264
-    invoke-static {v4}, Lʼˏ/ᵢ;->ˎʿ([Ljava/lang/String;)V
-
-    .line 265
-    .line 266
-    .line 267
-    new-array v4, v0, [Ljava/lang/String;
-
-    .line 268
-    .line 269
-    aput-object v3, v4, v1
-
-    .line 270
-    .line 271
-    const-string v5, "/data/dalvik-cache/x86_64/*.dex"
-
-    .line 272
-    .line 273
-    aput-object v5, v4, v2
-
-    .line 274
-    .line 275
-    invoke-static {v4}, Lʼˏ/ᵢ;->ˎʿ([Ljava/lang/String;)V
-
-    .line 276
-    .line 277
-    .line 278
-    new-array v4, v0, [Ljava/lang/String;
-
-    .line 279
-    .line 280
-    aput-object v3, v4, v1
-
-    .line 281
-    .line 282
-    const-string v5, "/data/dalvik-cache/x86_64/*.art"
-
-    .line 283
-    .line 284
-    aput-object v5, v4, v2
-
-    .line 285
-    .line 286
-    invoke-static {v4}, Lʼˏ/ᵢ;->ˎʿ([Ljava/lang/String;)V
-
-    .line 287
-    .line 288
-    .line 289
-    new-array v0, v0, [Ljava/lang/String;
-
-    .line 290
-    .line 291
-    aput-object v3, v0, v1
-
-    .line 292
-    .line 293
-    const-string v1, "/data/dalvik-cache/x86_64/*.oat"
-
-    .line 294
-    .line 295
-    aput-object v1, v0, v2
-
-    .line 296
-    .line 297
-    invoke-static {v0}, Lʼˏ/ᵢ;->ˎʿ([Ljava/lang/String;)V
-
-    .line 298
-    .line 299
-    .line 300
-    goto :goto_2
-
-    .line 301
-    :cond_3
-    const-string v0, "rm /data/dalvik-cache/*.dex"
-
-    .line 302
-    .line 303
-    invoke-static {v0}, Lʼˏ/ᵢ;->ˎʾ(Ljava/lang/String;)V
-
-    .line 304
-    .line 305
-    .line 306
-    const-string v0, "rm /data/dalvik-cache/*.oat"
-
-    .line 307
-    .line 308
-    invoke-static {v0}, Lʼˏ/ᵢ;->ˎʾ(Ljava/lang/String;)V
-
-    .line 309
-    .line 310
-    .line 311
-    const-string v0, "rm /data/dalvik-cache/*.art"
-
-    .line 312
-    .line 313
-    invoke-static {v0}, Lʼˏ/ᵢ;->ˎʾ(Ljava/lang/String;)V
-
-    .line 314
-    .line 315
-    .line 316
-    const-string v0, "rm /data/dalvik-cache/arm/*.dex"
-
-    .line 317
-    .line 318
-    invoke-static {v0}, Lʼˏ/ᵢ;->ˎʾ(Ljava/lang/String;)V
-
-    .line 319
-    .line 320
-    .line 321
-    const-string v0, "rm /data/dalvik-cache/arm/*.art"
-
-    .line 322
-    .line 323
-    invoke-static {v0}, Lʼˏ/ᵢ;->ˎʾ(Ljava/lang/String;)V
-
-    .line 324
-    .line 325
-    .line 326
-    const-string v0, "rm /data/dalvik-cache/arm/*.oat"
-
-    .line 327
-    .line 328
-    invoke-static {v0}, Lʼˏ/ᵢ;->ˎʾ(Ljava/lang/String;)V
-
-    .line 329
-    .line 330
-    .line 331
-    const-string v0, "rm /data/dalvik-cache/arm64/*.dex"
-
-    .line 332
-    .line 333
-    invoke-static {v0}, Lʼˏ/ᵢ;->ˎʾ(Ljava/lang/String;)V
-
-    .line 334
-    .line 335
-    .line 336
-    const-string v0, "rm /data/dalvik-cache/arm64/*.art"
-
-    .line 337
-    .line 338
-    invoke-static {v0}, Lʼˏ/ᵢ;->ˎʾ(Ljava/lang/String;)V
-
-    .line 339
-    .line 340
-    .line 341
-    const-string v0, "rm /data/dalvik-cache/arm64/*.oat"
-
-    .line 342
-    .line 343
-    invoke-static {v0}, Lʼˏ/ᵢ;->ˎʾ(Ljava/lang/String;)V
-
-    .line 344
-    .line 345
-    .line 346
-    const-string v0, "rm /data/dalvik-cache/x86/*.dex"
-
-    .line 347
-    .line 348
-    invoke-static {v0}, Lʼˏ/ᵢ;->ˎʾ(Ljava/lang/String;)V
-
-    .line 349
-    .line 350
-    .line 351
-    const-string v0, "rm /data/dalvik-cache/x86/*.art"
-
-    .line 352
-    .line 353
-    invoke-static {v0}, Lʼˏ/ᵢ;->ˎʾ(Ljava/lang/String;)V
-
-    .line 354
-    .line 355
-    .line 356
-    const-string v0, "rm /data/dalvik-cache/x86/*.oat"
-
-    .line 357
-    .line 358
-    invoke-static {v0}, Lʼˏ/ᵢ;->ˎʾ(Ljava/lang/String;)V
-
-    .line 359
-    .line 360
-    .line 361
-    const-string v0, "rm /data/dalvik-cache/x86_64/*.dex"
-
-    .line 362
-    .line 363
-    invoke-static {v0}, Lʼˏ/ᵢ;->ˎʾ(Ljava/lang/String;)V
-
-    .line 364
-    .line 365
-    .line 366
-    const-string v0, "rm /data/dalvik-cache/x86_64/*.art"
-
-    .line 367
-    .line 368
-    invoke-static {v0}, Lʼˏ/ᵢ;->ˎʾ(Ljava/lang/String;)V
-
-    .line 369
-    .line 370
-    .line 371
-    const-string v0, "rm /data/dalvik-cache/x86_64/*.oat"
-
-    .line 372
-    .line 373
-    invoke-static {v0}, Lʼˏ/ᵢ;->ˎʾ(Ljava/lang/String;)V
-
-    .line 374
-    .line 375
-    .line 376
-    :goto_2
-    return-void
-.end method
-
-.method public static ˈˉ()Ljava/util/ArrayList;
+.method public static ˈˎ()Ljava/util/ArrayList;
     .locals 5
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -76616,7 +77796,7 @@
     return-object v0
 .end method
 
-.method public static ˈˊ()Ljava/util/ArrayList;
+.method public static ˈˏ()Ljava/util/ArrayList;
     .locals 5
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -76875,7 +78055,7 @@
     return-object v0
 .end method
 
-.method public static ˈˋ(Ljava/lang/String;Ljava/util/ArrayList;Z)Ljava/util/ArrayList;
+.method public static ˈˑ(Ljava/lang/String;Ljava/util/ArrayList;Z)Ljava/util/ArrayList;
     .locals 27
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -77000,7 +78180,7 @@
 
     .line 55
     .line 56
-    invoke-static {v9}, Lʼˏ/ᵢ;->ˎʿ([Ljava/lang/String;)V
+    invoke-static {v9}, Lʼˏ/ᵢ;->ˎˏ([Ljava/lang/String;)V
 
     .line 57
     .line 58
@@ -77048,7 +78228,7 @@
     move-result-object v9
 
     .line 81
-    invoke-static {v9}, Lʼˏ/ᵢ;->ˎʾ(Ljava/lang/String;)V
+    invoke-static {v9}, Lʼˏ/ᵢ;->ˎˋ(Ljava/lang/String;)V
 
     .line 82
     .line 83
@@ -78589,7 +79769,7 @@
     return-object v9
 .end method
 
-.method public static ˈˎ()[Ljava/lang/String;
+.method public static ˈי()[Ljava/lang/String;
     .locals 5
 
     .line 1
@@ -78792,7 +79972,7 @@
     return-object v0
 .end method
 
-.method public static ˈˏ()Ljava/lang/String;
+.method public static ˈـ()Ljava/lang/String;
     .locals 4
 
     .line 1
@@ -78875,7 +80055,7 @@
     return-object v0
 .end method
 
-.method public static ˈˑ()Ljava/lang/String;
+.method public static ˈٴ()Ljava/lang/String;
     .locals 2
 
     .line 1
@@ -78917,7 +80097,7 @@
     return-object v0
 .end method
 
-.method public static ˈי(I)Ljava/lang/String;
+.method public static ˈᐧ(I)Ljava/lang/String;
     .locals 1
 
     .line 1
@@ -78940,7 +80120,7 @@
     return-object p0
 .end method
 
-.method public static ˈـ(I[I)Ljava/lang/String;
+.method public static ˈᴵ(I[I)Ljava/lang/String;
     .locals 5
 
     .line 1
@@ -79043,7 +80223,7 @@
     return-object p0
 .end method
 
-.method public static varargs ˈٴ(I[Ljava/lang/String;)Ljava/lang/String;
+.method public static varargs ˈᵎ(I[Ljava/lang/String;)Ljava/lang/String;
     .locals 1
 
     .line 1
@@ -79078,7 +80258,7 @@
     return-object p0
 .end method
 
-.method public static ˈᐧ(Ljava/lang/String;[IZ)Ljava/lang/String;
+.method public static ˈᵔ(Ljava/lang/String;[IZ)Ljava/lang/String;
     .locals 6
 
     .line 1
@@ -79211,7 +80391,50 @@
     return-object p0
 .end method
 
-.method public static ˈᴵ(Ljava/lang/String;Ljava/util/ArrayList;Z)Z
+.method public static ˈᵢ()Ljava/lang/String;
+    .locals 2
+
+    .line 1
+    invoke-static {}, Lʼˏ/ᵢ;->ʿˏ()Ljava/io/File;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object v0
+
+    .line 5
+    invoke-virtual {v0}, Ljava/io/File;->exists()Z
+
+    .line 6
+    .line 7
+    .line 8
+    move-result v1
+
+    .line 9
+    if-eqz v1, :cond_0
+
+    .line 10
+    .line 11
+    invoke-static {v0}, Lʼˏ/ᵢ;->ˋי(Ljava/io/File;)Ljava/lang/String;
+
+    .line 12
+    .line 13
+    .line 14
+    move-result-object v0
+
+    .line 15
+    return-object v0
+
+    .line 16
+    :cond_0
+    const-string v0, ""
+
+    .line 17
+    .line 18
+    return-object v0
+.end method
+
+.method public static ˈⁱ(Ljava/lang/String;Ljava/util/ArrayList;Z)Z
     .locals 13
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -79317,7 +80540,7 @@
 
     .line 47
     .line 48
-    invoke-static {v4}, Lʼˏ/ᵢ;->ˎʿ([Ljava/lang/String;)V
+    invoke-static {v4}, Lʼˏ/ᵢ;->ˎˏ([Ljava/lang/String;)V
 
     .line 49
     .line 50
@@ -79365,7 +80588,7 @@
     move-result-object v4
 
     .line 73
-    invoke-static {v4}, Lʼˏ/ᵢ;->ˎʾ(Ljava/lang/String;)V
+    invoke-static {v4}, Lʼˏ/ᵢ;->ˎˋ(Ljava/lang/String;)V
 
     .line 74
     .line 75
@@ -80031,7 +81254,7 @@
     return v1
 .end method
 
-.method public static ˈᵎ(Ljava/io/File;)I
+.method public static ˈﹳ(Ljava/io/File;)I
     .locals 4
     .annotation system Ldalvik/annotation/Throws;
         value = {
@@ -80068,7 +81291,7 @@
     move-result-object p0
 
     .line 15
-    invoke-static {p0}, Lʼˏ/ᵢ;->ʽˊ(Lcom/android/apksig/util/DataSource;)Ljava/nio/ByteBuffer;
+    invoke-static {p0}, Lʼˏ/ᵢ;->ʽˎ(Lcom/android/apksig/util/DataSource;)Ljava/nio/ByteBuffer;
 
     .line 16
     .line 17
@@ -80311,7 +81534,7 @@
     goto :goto_3
 .end method
 
-.method public static ˈᵔ(Ljava/io/File;)Ljava/lang/String;
+.method public static ˈﹶ(Ljava/io/File;)Ljava/lang/String;
     .locals 4
     .annotation system Ldalvik/annotation/Throws;
         value = {
@@ -80348,7 +81571,7 @@
     move-result-object p0
 
     .line 15
-    invoke-static {p0}, Lʼˏ/ᵢ;->ʽˊ(Lcom/android/apksig/util/DataSource;)Ljava/nio/ByteBuffer;
+    invoke-static {p0}, Lʼˏ/ᵢ;->ʽˎ(Lcom/android/apksig/util/DataSource;)Ljava/nio/ByteBuffer;
 
     .line 16
     .line 17
@@ -80588,7 +81811,7 @@
     goto :goto_3
 .end method
 
-.method public static ˈᵢ()Ljava/util/ArrayList;
+.method public static ˈﾞ()Ljava/util/ArrayList;
     .locals 11
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -81054,7 +82277,563 @@
     return-object v4
 .end method
 
-.method public static ˈⁱ(Lorg/xmlpull/v1/XmlPullParser;Ljava/lang/String;)Ljava/lang/String;
+.method public static ˉ(Ljava/lang/String;Ljava/lang/String;Ljava/util/ArrayList;Ljava/util/ArrayList;)V
+    .locals 9
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Ljava/lang/String;",
+            "Ljava/lang/String;",
+            "Ljava/util/ArrayList<",
+            "L\u02be\u02c9/\u02bb;",
+            ">;",
+            "Ljava/util/ArrayList<",
+            "L\u02bc\u0640/\u2071;",
+            ">;)V"
+        }
+    .end annotation
+
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/io/IOException;
+        }
+    .end annotation
+
+    .line 1
+    new-instance p3, Ljava/io/File;
+
+    .line 2
+    .line 3
+    invoke-direct {p3, p1}, Ljava/io/File;-><init>(Ljava/lang/String;)V
+
+    .line 4
+    .line 5
+    .line 6
+    invoke-static {p3}, Lʼˏ/ᵢ;->ʾـ(Ljava/io/File;)Ljava/io/File;
+
+    .line 7
+    .line 8
+    .line 9
+    move-result-object p3
+
+    .line 10
+    invoke-virtual {p3}, Ljava/io/File;->mkdirs()Z
+
+    .line 11
+    .line 12
+    .line 13
+    const/4 p3, 0x0
+
+    .line 14
+    :try_start_0
+    new-instance v0, Lʼˆ/ʽ;
+
+    .line 15
+    .line 16
+    invoke-direct {v0, p0}, Lʼˆ/ʽ;-><init>(Ljava/lang/String;)V
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_4
+
+    .line 17
+    .line 18
+    .line 19
+    :try_start_1
+    new-instance p0, Lʼˆ/ʿ;
+
+    .line 20
+    .line 21
+    new-instance v1, Ljava/io/File;
+
+    .line 22
+    .line 23
+    invoke-direct {v1, p1}, Ljava/io/File;-><init>(Ljava/lang/String;)V
+
+    .line 24
+    .line 25
+    .line 26
+    invoke-direct {p0, v1}, Lʼˆ/ʿ;-><init>(Ljava/io/File;)V
+    :try_end_1
+    .catchall {:try_start_1 .. :try_end_1} :catchall_2
+
+    .line 27
+    .line 28
+    .line 29
+    :try_start_2
+    invoke-virtual {v0}, Lʼˆ/ʽ;->ʽ()Ljava/util/Enumeration;
+
+    .line 30
+    .line 31
+    .line 32
+    move-result-object p1
+
+    .line 33
+    :cond_0
+    :goto_0
+    invoke-interface {p1}, Ljava/util/Enumeration;->hasMoreElements()Z
+
+    .line 34
+    .line 35
+    .line 36
+    move-result p3
+
+    .line 37
+    if-eqz p3, :cond_4
+
+    .line 38
+    .line 39
+    invoke-interface {p1}, Ljava/util/Enumeration;->nextElement()Ljava/lang/Object;
+
+    .line 40
+    .line 41
+    .line 42
+    move-result-object p3
+
+    .line 43
+    check-cast p3, Lʼˆ/ʼ;
+
+    .line 44
+    .line 45
+    invoke-virtual {p3}, Lʼˆ/ʼ;->getName()Ljava/lang/String;
+
+    .line 46
+    .line 47
+    .line 48
+    move-result-object v1
+
+    .line 49
+    invoke-virtual {p2}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
+
+    .line 50
+    .line 51
+    .line 52
+    move-result-object v2
+
+    .line 53
+    const/4 v3, 0x0
+
+    .line 54
+    const/4 v4, 0x0
+
+    .line 55
+    :cond_1
+    :goto_1
+    invoke-interface {v2}, Ljava/util/Iterator;->hasNext()Z
+
+    .line 56
+    .line 57
+    .line 58
+    move-result v5
+
+    .line 59
+    if-eqz v5, :cond_3
+
+    .line 60
+    .line 61
+    invoke-interface {v2}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+
+    .line 62
+    .line 63
+    .line 64
+    move-result-object v5
+
+    .line 65
+    check-cast v5, Lʾˉ/ʻ;
+
+    .line 66
+    .line 67
+    iget-object v6, v5, Lʾˉ/ʻ;->ʻ:Ljava/lang/String;
+
+    .line 68
+    .line 69
+    iget-object v7, v5, Lʾˉ/ʻ;->ʼ:Ljava/lang/String;
+
+    .line 70
+    .line 71
+    const-string v8, ""
+
+    .line 72
+    .line 73
+    invoke-virtual {v6, v7, v8}, Ljava/lang/String;->replace(Ljava/lang/CharSequence;Ljava/lang/CharSequence;)Ljava/lang/String;
+
+    .line 74
+    .line 75
+    .line 76
+    move-result-object v6
+
+    .line 77
+    invoke-virtual {v1, v6}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    .line 78
+    .line 79
+    .line 80
+    move-result v6
+
+    .line 81
+    if-eqz v6, :cond_1
+
+    .line 82
+    .line 83
+    new-instance v4, Ljava/io/File;
+
+    .line 84
+    .line 85
+    iget-object v5, v5, Lʾˉ/ʻ;->ʻ:Ljava/lang/String;
+
+    .line 86
+    .line 87
+    invoke-direct {v4, v5}, Ljava/io/File;-><init>(Ljava/lang/String;)V
+
+    .line 88
+    .line 89
+    .line 90
+    new-instance v5, Lʼˆ/ʼ;
+
+    .line 91
+    .line 92
+    invoke-direct {v5, v1}, Lʼˆ/ʼ;-><init>(Ljava/lang/String;)V
+
+    .line 93
+    .line 94
+    .line 95
+    invoke-virtual {p3}, Ljava/util/zip/ZipEntry;->getTime()J
+
+    .line 96
+    .line 97
+    .line 98
+    move-result-wide v6
+
+    .line 99
+    invoke-virtual {v5, v6, v7}, Ljava/util/zip/ZipEntry;->setTime(J)V
+
+    .line 100
+    .line 101
+    .line 102
+    invoke-virtual {p3}, Ljava/util/zip/ZipEntry;->getCrc()J
+
+    .line 103
+    .line 104
+    .line 105
+    move-result-wide v6
+
+    .line 106
+    invoke-virtual {v5, v6, v7}, Ljava/util/zip/ZipEntry;->setCrc(J)V
+
+    .line 107
+    .line 108
+    .line 109
+    invoke-virtual {p3}, Ljava/util/zip/ZipEntry;->getMethod()I
+
+    .line 110
+    .line 111
+    .line 112
+    move-result v6
+
+    .line 113
+    const/16 v7, 0x8
+
+    .line 114
+    .line 115
+    if-ne v6, v7, :cond_2
+
+    .line 116
+    .line 117
+    invoke-virtual {v5, v7}, Ljava/util/zip/ZipEntry;->setMethod(I)V
+
+    .line 118
+    .line 119
+    .line 120
+    goto :goto_2
+
+    .line 121
+    :catchall_0
+    move-exception p1
+
+    .line 122
+    move-object p3, p0
+
+    .line 123
+    goto :goto_3
+
+    .line 124
+    :cond_2
+    invoke-virtual {v5, v3}, Ljava/util/zip/ZipEntry;->setMethod(I)V
+
+    .line 125
+    .line 126
+    .line 127
+    :goto_2
+    invoke-virtual {p0, v5}, Lʼˆ/ʿ;->ˋ(Lʼˆ/ʼ;)V
+
+    .line 128
+    .line 129
+    .line 130
+    new-instance v5, Ljava/lang/StringBuilder;
+
+    .line 131
+    .line 132
+    invoke-direct {v5}, Ljava/lang/StringBuilder;-><init>()V
+
+    .line 133
+    .line 134
+    .line 135
+    const-string v6, "entry:"
+
+    .line 136
+    .line 137
+    invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 138
+    .line 139
+    .line 140
+    invoke-virtual {v5, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 141
+    .line 142
+    .line 143
+    invoke-virtual {v5}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    .line 144
+    .line 145
+    .line 146
+    move-result-object v5
+
+    .line 147
+    invoke-static {v5}, Lʾˉ/ᴵᴵ;->ˉˎ(Ljava/lang/Object;)V
+
+    .line 148
+    .line 149
+    .line 150
+    new-instance v5, Ljava/lang/StringBuilder;
+
+    .line 151
+    .line 152
+    invoke-direct {v5}, Ljava/lang/StringBuilder;-><init>()V
+
+    .line 153
+    .line 154
+    .line 155
+    const-string v6, "hex crc orig:"
+
+    .line 156
+    .line 157
+    invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 158
+    .line 159
+    .line 160
+    invoke-virtual {p3}, Ljava/util/zip/ZipEntry;->getCrc()J
+
+    .line 161
+    .line 162
+    .line 163
+    move-result-wide v6
+
+    .line 164
+    invoke-static {v6, v7}, Ljava/lang/Long;->toHexString(J)Ljava/lang/String;
+
+    .line 165
+    .line 166
+    .line 167
+    move-result-object v6
+
+    .line 168
+    invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 169
+    .line 170
+    .line 171
+    invoke-virtual {v5}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    .line 172
+    .line 173
+    .line 174
+    move-result-object v5
+
+    .line 175
+    invoke-static {v5}, Lʾˉ/ᴵᴵ;->ˉˎ(Ljava/lang/Object;)V
+
+    .line 176
+    .line 177
+    .line 178
+    new-instance v5, Ljava/io/FileInputStream;
+
+    .line 179
+    .line 180
+    invoke-direct {v5, v4}, Ljava/io/FileInputStream;-><init>(Ljava/io/File;)V
+
+    .line 181
+    .line 182
+    .line 183
+    invoke-virtual {p0, v5}, Lʼˆ/ʿ;->ᴵ(Ljava/io/InputStream;)V
+
+    .line 184
+    .line 185
+    .line 186
+    invoke-virtual {p0}, Lʼˆ/ʿ;->ʼ()V
+
+    .line 187
+    .line 188
+    .line 189
+    const/4 v4, 0x1
+
+    .line 190
+    goto/16 :goto_1
+
+    .line 191
+    .line 192
+    :cond_3
+    if-nez v4, :cond_0
+
+    .line 193
+    .line 194
+    new-instance v2, Ljava/lang/StringBuilder;
+
+    .line 195
+    .line 196
+    invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
+
+    .line 197
+    .line 198
+    .line 199
+    const-string v3, "dont change:"
+
+    .line 200
+    .line 201
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 202
+    .line 203
+    .line 204
+    invoke-virtual {v2, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 205
+    .line 206
+    .line 207
+    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    .line 208
+    .line 209
+    .line 210
+    move-result-object v1
+
+    .line 211
+    invoke-static {v1}, Lʾˉ/ᴵᴵ;->ˉˎ(Ljava/lang/Object;)V
+
+    .line 212
+    .line 213
+    .line 214
+    invoke-virtual {p0, p3, v0}, Lʼˆ/ʿ;->ʽ(Lʼˆ/ʼ;Lʼˆ/ʽ;)V
+    :try_end_2
+    .catchall {:try_start_2 .. :try_end_2} :catchall_0
+
+    .line 215
+    .line 216
+    .line 217
+    goto/16 :goto_0
+
+    .line 218
+    .line 219
+    :cond_4
+    :try_start_3
+    invoke-virtual {v0}, Lʼˆ/ʽ;->close()V
+    :try_end_3
+    .catchall {:try_start_3 .. :try_end_3} :catchall_1
+
+    .line 220
+    .line 221
+    .line 222
+    invoke-virtual {p0}, Lʼˆ/ʿ;->close()V
+
+    .line 223
+    .line 224
+    .line 225
+    return-void
+
+    .line 226
+    :catchall_1
+    move-exception p1
+
+    .line 227
+    move-object p3, p0
+
+    .line 228
+    goto :goto_5
+
+    .line 229
+    :catchall_2
+    move-exception p1
+
+    .line 230
+    :goto_3
+    :try_start_4
+    invoke-virtual {v0}, Lʼˆ/ʽ;->close()V
+    :try_end_4
+    .catchall {:try_start_4 .. :try_end_4} :catchall_3
+
+    .line 231
+    .line 232
+    .line 233
+    goto :goto_4
+
+    .line 234
+    :catchall_3
+    move-exception p0
+
+    .line 235
+    :try_start_5
+    invoke-static {p1, p0}, Lﹳ/ˋ;->ʻ(Ljava/lang/Throwable;Ljava/lang/Throwable;)V
+
+    .line 236
+    .line 237
+    .line 238
+    :goto_4
+    throw p1
+    :try_end_5
+    .catchall {:try_start_5 .. :try_end_5} :catchall_4
+
+    .line 239
+    :catchall_4
+    move-exception p1
+
+    .line 240
+    :goto_5
+    :try_start_6
+    invoke-virtual {p1}, Ljava/lang/Throwable;->printStackTrace()V
+
+    .line 241
+    .line 242
+    .line 243
+    throw p1
+    :try_end_6
+    .catchall {:try_start_6 .. :try_end_6} :catchall_5
+
+    .line 244
+    :catchall_5
+    move-exception p0
+
+    .line 245
+    if-eqz p3, :cond_5
+
+    .line 246
+    .line 247
+    invoke-virtual {p3}, Lʼˆ/ʿ;->close()V
+
+    .line 248
+    .line 249
+    .line 250
+    :cond_5
+    goto :goto_7
+
+    .line 251
+    :goto_6
+    throw p0
+
+    .line 252
+    :goto_7
+    goto :goto_6
+.end method
+
+.method public static ˉʻ(Lorg/xmlpull/v1/XmlPullParser;Ljava/lang/String;)Ljava/lang/String;
     .locals 4
     .annotation system Ldalvik/annotation/Throws;
         value = {
@@ -81240,7 +83019,7 @@
     goto :goto_1
 .end method
 
-.method public static ˈﹳ()I
+.method public static ˉʼ()I
     .locals 16
 
     .line 1
@@ -81832,7 +83611,7 @@
     .end array-data
 .end method
 
-.method public static ˈﹶ(Ljava/io/File;)I
+.method public static ˉʽ(Ljava/io/File;)I
     .locals 7
 
     .line 1
@@ -82128,7 +83907,7 @@
     return v2
 .end method
 
-.method public static ˈﾞ(Ljava/lang/String;Z)J
+.method public static ˉʾ(Ljava/lang/String;Z)J
     .locals 3
     .annotation build Landroid/annotation/SuppressLint;
         value = {
@@ -82261,563 +84040,7 @@
     return-wide p0
 .end method
 
-.method public static ˉ(Ljava/lang/String;Ljava/lang/String;Ljava/util/ArrayList;Ljava/util/ArrayList;)V
-    .locals 9
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Ljava/lang/String;",
-            "Ljava/lang/String;",
-            "Ljava/util/ArrayList<",
-            "L\u02be\u02c9/\u02bb;",
-            ">;",
-            "Ljava/util/ArrayList<",
-            "L\u02bc\u0640/\u2071;",
-            ">;)V"
-        }
-    .end annotation
-
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Ljava/io/IOException;
-        }
-    .end annotation
-
-    .line 1
-    new-instance p3, Ljava/io/File;
-
-    .line 2
-    .line 3
-    invoke-direct {p3, p1}, Ljava/io/File;-><init>(Ljava/lang/String;)V
-
-    .line 4
-    .line 5
-    .line 6
-    invoke-static {p3}, Lʼˏ/ᵢ;->ʾˑ(Ljava/io/File;)Ljava/io/File;
-
-    .line 7
-    .line 8
-    .line 9
-    move-result-object p3
-
-    .line 10
-    invoke-virtual {p3}, Ljava/io/File;->mkdirs()Z
-
-    .line 11
-    .line 12
-    .line 13
-    const/4 p3, 0x0
-
-    .line 14
-    :try_start_0
-    new-instance v0, Lʼˆ/ʽ;
-
-    .line 15
-    .line 16
-    invoke-direct {v0, p0}, Lʼˆ/ʽ;-><init>(Ljava/lang/String;)V
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_4
-
-    .line 17
-    .line 18
-    .line 19
-    :try_start_1
-    new-instance p0, Lʼˆ/ʿ;
-
-    .line 20
-    .line 21
-    new-instance v1, Ljava/io/File;
-
-    .line 22
-    .line 23
-    invoke-direct {v1, p1}, Ljava/io/File;-><init>(Ljava/lang/String;)V
-
-    .line 24
-    .line 25
-    .line 26
-    invoke-direct {p0, v1}, Lʼˆ/ʿ;-><init>(Ljava/io/File;)V
-    :try_end_1
-    .catchall {:try_start_1 .. :try_end_1} :catchall_2
-
-    .line 27
-    .line 28
-    .line 29
-    :try_start_2
-    invoke-virtual {v0}, Lʼˆ/ʽ;->ʽ()Ljava/util/Enumeration;
-
-    .line 30
-    .line 31
-    .line 32
-    move-result-object p1
-
-    .line 33
-    :cond_0
-    :goto_0
-    invoke-interface {p1}, Ljava/util/Enumeration;->hasMoreElements()Z
-
-    .line 34
-    .line 35
-    .line 36
-    move-result p3
-
-    .line 37
-    if-eqz p3, :cond_4
-
-    .line 38
-    .line 39
-    invoke-interface {p1}, Ljava/util/Enumeration;->nextElement()Ljava/lang/Object;
-
-    .line 40
-    .line 41
-    .line 42
-    move-result-object p3
-
-    .line 43
-    check-cast p3, Lʼˆ/ʼ;
-
-    .line 44
-    .line 45
-    invoke-virtual {p3}, Lʼˆ/ʼ;->getName()Ljava/lang/String;
-
-    .line 46
-    .line 47
-    .line 48
-    move-result-object v1
-
-    .line 49
-    invoke-virtual {p2}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
-
-    .line 50
-    .line 51
-    .line 52
-    move-result-object v2
-
-    .line 53
-    const/4 v3, 0x0
-
-    .line 54
-    const/4 v4, 0x0
-
-    .line 55
-    :cond_1
-    :goto_1
-    invoke-interface {v2}, Ljava/util/Iterator;->hasNext()Z
-
-    .line 56
-    .line 57
-    .line 58
-    move-result v5
-
-    .line 59
-    if-eqz v5, :cond_3
-
-    .line 60
-    .line 61
-    invoke-interface {v2}, Ljava/util/Iterator;->next()Ljava/lang/Object;
-
-    .line 62
-    .line 63
-    .line 64
-    move-result-object v5
-
-    .line 65
-    check-cast v5, Lʾˉ/ʻ;
-
-    .line 66
-    .line 67
-    iget-object v6, v5, Lʾˉ/ʻ;->ʻ:Ljava/lang/String;
-
-    .line 68
-    .line 69
-    iget-object v7, v5, Lʾˉ/ʻ;->ʼ:Ljava/lang/String;
-
-    .line 70
-    .line 71
-    const-string v8, ""
-
-    .line 72
-    .line 73
-    invoke-virtual {v6, v7, v8}, Ljava/lang/String;->replace(Ljava/lang/CharSequence;Ljava/lang/CharSequence;)Ljava/lang/String;
-
-    .line 74
-    .line 75
-    .line 76
-    move-result-object v6
-
-    .line 77
-    invoke-virtual {v1, v6}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    .line 78
-    .line 79
-    .line 80
-    move-result v6
-
-    .line 81
-    if-eqz v6, :cond_1
-
-    .line 82
-    .line 83
-    new-instance v4, Ljava/io/File;
-
-    .line 84
-    .line 85
-    iget-object v5, v5, Lʾˉ/ʻ;->ʻ:Ljava/lang/String;
-
-    .line 86
-    .line 87
-    invoke-direct {v4, v5}, Ljava/io/File;-><init>(Ljava/lang/String;)V
-
-    .line 88
-    .line 89
-    .line 90
-    new-instance v5, Lʼˆ/ʼ;
-
-    .line 91
-    .line 92
-    invoke-direct {v5, v1}, Lʼˆ/ʼ;-><init>(Ljava/lang/String;)V
-
-    .line 93
-    .line 94
-    .line 95
-    invoke-virtual {p3}, Ljava/util/zip/ZipEntry;->getTime()J
-
-    .line 96
-    .line 97
-    .line 98
-    move-result-wide v6
-
-    .line 99
-    invoke-virtual {v5, v6, v7}, Ljava/util/zip/ZipEntry;->setTime(J)V
-
-    .line 100
-    .line 101
-    .line 102
-    invoke-virtual {p3}, Ljava/util/zip/ZipEntry;->getCrc()J
-
-    .line 103
-    .line 104
-    .line 105
-    move-result-wide v6
-
-    .line 106
-    invoke-virtual {v5, v6, v7}, Ljava/util/zip/ZipEntry;->setCrc(J)V
-
-    .line 107
-    .line 108
-    .line 109
-    invoke-virtual {p3}, Ljava/util/zip/ZipEntry;->getMethod()I
-
-    .line 110
-    .line 111
-    .line 112
-    move-result v6
-
-    .line 113
-    const/16 v7, 0x8
-
-    .line 114
-    .line 115
-    if-ne v6, v7, :cond_2
-
-    .line 116
-    .line 117
-    invoke-virtual {v5, v7}, Ljava/util/zip/ZipEntry;->setMethod(I)V
-
-    .line 118
-    .line 119
-    .line 120
-    goto :goto_2
-
-    .line 121
-    :catchall_0
-    move-exception p1
-
-    .line 122
-    move-object p3, p0
-
-    .line 123
-    goto :goto_3
-
-    .line 124
-    :cond_2
-    invoke-virtual {v5, v3}, Ljava/util/zip/ZipEntry;->setMethod(I)V
-
-    .line 125
-    .line 126
-    .line 127
-    :goto_2
-    invoke-virtual {p0, v5}, Lʼˆ/ʿ;->ˋ(Lʼˆ/ʼ;)V
-
-    .line 128
-    .line 129
-    .line 130
-    new-instance v5, Ljava/lang/StringBuilder;
-
-    .line 131
-    .line 132
-    invoke-direct {v5}, Ljava/lang/StringBuilder;-><init>()V
-
-    .line 133
-    .line 134
-    .line 135
-    const-string v6, "entry:"
-
-    .line 136
-    .line 137
-    invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 138
-    .line 139
-    .line 140
-    invoke-virtual {v5, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 141
-    .line 142
-    .line 143
-    invoke-virtual {v5}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    .line 144
-    .line 145
-    .line 146
-    move-result-object v5
-
-    .line 147
-    invoke-static {v5}, Lʾˉ/ᴵᴵ;->ˉˎ(Ljava/lang/Object;)V
-
-    .line 148
-    .line 149
-    .line 150
-    new-instance v5, Ljava/lang/StringBuilder;
-
-    .line 151
-    .line 152
-    invoke-direct {v5}, Ljava/lang/StringBuilder;-><init>()V
-
-    .line 153
-    .line 154
-    .line 155
-    const-string v6, "hex crc orig:"
-
-    .line 156
-    .line 157
-    invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 158
-    .line 159
-    .line 160
-    invoke-virtual {p3}, Ljava/util/zip/ZipEntry;->getCrc()J
-
-    .line 161
-    .line 162
-    .line 163
-    move-result-wide v6
-
-    .line 164
-    invoke-static {v6, v7}, Ljava/lang/Long;->toHexString(J)Ljava/lang/String;
-
-    .line 165
-    .line 166
-    .line 167
-    move-result-object v6
-
-    .line 168
-    invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 169
-    .line 170
-    .line 171
-    invoke-virtual {v5}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    .line 172
-    .line 173
-    .line 174
-    move-result-object v5
-
-    .line 175
-    invoke-static {v5}, Lʾˉ/ᴵᴵ;->ˉˎ(Ljava/lang/Object;)V
-
-    .line 176
-    .line 177
-    .line 178
-    new-instance v5, Ljava/io/FileInputStream;
-
-    .line 179
-    .line 180
-    invoke-direct {v5, v4}, Ljava/io/FileInputStream;-><init>(Ljava/io/File;)V
-
-    .line 181
-    .line 182
-    .line 183
-    invoke-virtual {p0, v5}, Lʼˆ/ʿ;->ᴵ(Ljava/io/InputStream;)V
-
-    .line 184
-    .line 185
-    .line 186
-    invoke-virtual {p0}, Lʼˆ/ʿ;->ʼ()V
-
-    .line 187
-    .line 188
-    .line 189
-    const/4 v4, 0x1
-
-    .line 190
-    goto/16 :goto_1
-
-    .line 191
-    .line 192
-    :cond_3
-    if-nez v4, :cond_0
-
-    .line 193
-    .line 194
-    new-instance v2, Ljava/lang/StringBuilder;
-
-    .line 195
-    .line 196
-    invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
-
-    .line 197
-    .line 198
-    .line 199
-    const-string v3, "dont change:"
-
-    .line 200
-    .line 201
-    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 202
-    .line 203
-    .line 204
-    invoke-virtual {v2, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 205
-    .line 206
-    .line 207
-    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    .line 208
-    .line 209
-    .line 210
-    move-result-object v1
-
-    .line 211
-    invoke-static {v1}, Lʾˉ/ᴵᴵ;->ˉˎ(Ljava/lang/Object;)V
-
-    .line 212
-    .line 213
-    .line 214
-    invoke-virtual {p0, p3, v0}, Lʼˆ/ʿ;->ʽ(Lʼˆ/ʼ;Lʼˆ/ʽ;)V
-    :try_end_2
-    .catchall {:try_start_2 .. :try_end_2} :catchall_0
-
-    .line 215
-    .line 216
-    .line 217
-    goto/16 :goto_0
-
-    .line 218
-    .line 219
-    :cond_4
-    :try_start_3
-    invoke-virtual {v0}, Lʼˆ/ʽ;->close()V
-    :try_end_3
-    .catchall {:try_start_3 .. :try_end_3} :catchall_1
-
-    .line 220
-    .line 221
-    .line 222
-    invoke-virtual {p0}, Lʼˆ/ʿ;->close()V
-
-    .line 223
-    .line 224
-    .line 225
-    return-void
-
-    .line 226
-    :catchall_1
-    move-exception p1
-
-    .line 227
-    move-object p3, p0
-
-    .line 228
-    goto :goto_5
-
-    .line 229
-    :catchall_2
-    move-exception p1
-
-    .line 230
-    :goto_3
-    :try_start_4
-    invoke-virtual {v0}, Lʼˆ/ʽ;->close()V
-    :try_end_4
-    .catchall {:try_start_4 .. :try_end_4} :catchall_3
-
-    .line 231
-    .line 232
-    .line 233
-    goto :goto_4
-
-    .line 234
-    :catchall_3
-    move-exception p0
-
-    .line 235
-    :try_start_5
-    invoke-static {p1, p0}, Lﹳ/ˋ;->ʻ(Ljava/lang/Throwable;Ljava/lang/Throwable;)V
-
-    .line 236
-    .line 237
-    .line 238
-    :goto_4
-    throw p1
-    :try_end_5
-    .catchall {:try_start_5 .. :try_end_5} :catchall_4
-
-    .line 239
-    :catchall_4
-    move-exception p1
-
-    .line 240
-    :goto_5
-    :try_start_6
-    invoke-virtual {p1}, Ljava/lang/Throwable;->printStackTrace()V
-
-    .line 241
-    .line 242
-    .line 243
-    throw p1
-    :try_end_6
-    .catchall {:try_start_6 .. :try_end_6} :catchall_5
-
-    .line 244
-    :catchall_5
-    move-exception p0
-
-    .line 245
-    if-eqz p3, :cond_5
-
-    .line 246
-    .line 247
-    invoke-virtual {p3}, Lʼˆ/ʿ;->close()V
-
-    .line 248
-    .line 249
-    .line 250
-    :cond_5
-    goto :goto_7
-
-    .line 251
-    :goto_6
-    throw p0
-
-    .line 252
-    :goto_7
-    goto :goto_6
-.end method
-
-.method public static ˉʻ()V
+.method public static ˉʿ()V
     .locals 3
 
     .line 1
@@ -82849,7 +84072,7 @@
     return-void
 .end method
 
-.method public static ˉʼ(Z)Z
+.method public static ˉˆ(Z)Z
     .locals 1
 
     .line 1
@@ -82879,7 +84102,7 @@
     return p0
 .end method
 
-.method public static ˉʽ(Z)Z
+.method public static ˉˈ(Z)Z
     .locals 1
 
     .line 1
@@ -82909,7 +84132,53 @@
     return p0
 .end method
 
-.method public static ˉʾ()I
+.method public static ˉˉ(Ljava/io/File;)V
+    .locals 2
+
+    .line 1
+    :try_start_0
+    new-instance v0, Lʼˏ/ᵢ;
+
+    .line 2
+    .line 3
+    const-string v1, ""
+
+    .line 4
+    .line 5
+    invoke-direct {v0, v1}, Lʼˏ/ᵢ;-><init>(Ljava/lang/String;)V
+
+    .line 6
+    .line 7
+    .line 8
+    invoke-virtual {v0, p0}, Lʼˏ/ᵢ;->ʼʾ(Ljava/io/File;)V
+    :try_end_0
+    .catch Ljava/io/IOException; {:try_start_0 .. :try_end_0} :catch_0
+
+    .line 9
+    .line 10
+    .line 11
+    goto :goto_0
+
+    .line 12
+    :catch_0
+    move-exception v0
+
+    .line 13
+    invoke-virtual {v0}, Ljava/lang/Throwable;->printStackTrace()V
+
+    .line 14
+    .line 15
+    .line 16
+    :goto_0
+    invoke-virtual {p0}, Ljava/io/File;->mkdirs()Z
+
+    .line 17
+    .line 18
+    .line 19
+    return-void
+.end method
+
+.method public static ˉˊ()I
     .locals 19
     .annotation build Landroid/annotation/SuppressLint;
         value = {
@@ -82921,7 +84190,7 @@
     const/4 v3, 0x1
 
     .line 2
-    invoke-static {}, Lʼˏ/ᵢ;->ˆﾞ()[Ljava/lang/String;
+    invoke-static {}, Lʼˏ/ᵢ;->ˈʽ()[Ljava/lang/String;
 
     .line 3
     .line 4
@@ -83096,7 +84365,7 @@
     .line 88
     .line 89
     .line 90
-    sget-object v14, Lʾˉ/ᴵᴵ;->ˈʼ:Ljava/lang/String;
+    sget-object v14, Lʾˉ/ᴵᴵ;->ˈʽ:Ljava/lang/String;
 
     .line 91
     .line 92
@@ -83147,7 +84416,7 @@
     .line 116
     .line 117
     .line 118
-    sget-object v13, Lʾˉ/ᴵᴵ;->ˈʼ:Ljava/lang/String;
+    sget-object v13, Lʾˉ/ᴵᴵ;->ˈʽ:Ljava/lang/String;
 
     .line 119
     .line 120
@@ -83312,7 +84581,7 @@
     .line 204
     .line 205
     .line 206
-    sget-object v3, Lʾˉ/ᴵᴵ;->ˈʼ:Ljava/lang/String;
+    sget-object v3, Lʾˉ/ᴵᴵ;->ˈʽ:Ljava/lang/String;
 
     .line 207
     .line 208
@@ -83329,7 +84598,7 @@
     move-result-object v0
 
     .line 215
-    invoke-static {v0}, Lʼˏ/ᵢ;->ʽʻ(Ljava/lang/String;)V
+    invoke-static {v0}, Lʼˏ/ᵢ;->ʽʾ(Ljava/lang/String;)V
     :try_end_0
     .catch Ljava/lang/NoSuchMethodError; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -83378,7 +84647,7 @@
 
     .line 234
     .line 235
-    invoke-static {v0}, Lʼˏ/ᵢ;->ˎʿ([Ljava/lang/String;)V
+    invoke-static {v0}, Lʼˏ/ᵢ;->ˎˏ([Ljava/lang/String;)V
 
     .line 236
     .line 237
@@ -83418,7 +84687,7 @@
     move-result-object v0
 
     .line 256
-    invoke-static {v0}, Lʼˏ/ᵢ;->ˎʾ(Ljava/lang/String;)V
+    invoke-static {v0}, Lʼˏ/ᵢ;->ˎˋ(Ljava/lang/String;)V
 
     .line 257
     .line 258
@@ -83470,7 +84739,7 @@
     .line 280
     .line 281
     :goto_4
-    invoke-static {v10}, Lʼˏ/ᵢ;->ʽʻ(Ljava/lang/String;)V
+    invoke-static {v10}, Lʼˏ/ᵢ;->ʽʾ(Ljava/lang/String;)V
 
     .line 282
     .line 283
@@ -83588,7 +84857,7 @@
 
     .line 339
     .line 340
-    sget-object v4, Lʾˉ/ᴵᴵ;->ˈʼ:Ljava/lang/String;
+    sget-object v4, Lʾˉ/ᴵᴵ;->ˈʽ:Ljava/lang/String;
 
     .line 341
     .line 342
@@ -83618,7 +84887,7 @@
     move-result-object v3
 
     .line 356
-    invoke-static {v0, v3}, Lʼˏ/ᵢ;->ˎˏ(Ljava/io/File;Ljava/lang/String;)Z
+    invoke-static {v0, v3}, Lʼˏ/ᵢ;->ˎᴵ(Ljava/io/File;Ljava/lang/String;)Z
 
     .line 357
     .line 358
@@ -83647,7 +84916,7 @@
     .line 370
     .line 371
     .line 372
-    sget-object v4, Lʾˉ/ᴵᴵ;->ˈʼ:Ljava/lang/String;
+    sget-object v4, Lʾˉ/ᴵᴵ;->ˈʽ:Ljava/lang/String;
 
     .line 373
     .line 374
@@ -83703,7 +84972,7 @@
     .line 400
     .line 401
     .line 402
-    sget-object v4, Lʾˉ/ᴵᴵ;->ˈʼ:Ljava/lang/String;
+    sget-object v4, Lʾˉ/ᴵᴵ;->ˈʽ:Ljava/lang/String;
 
     .line 403
     .line 404
@@ -83755,7 +85024,7 @@
     .line 428
     .line 429
     .line 430
-    sget-object v3, Lʾˉ/ᴵᴵ;->ˈʼ:Ljava/lang/String;
+    sget-object v3, Lʾˉ/ᴵᴵ;->ˈʽ:Ljava/lang/String;
 
     .line 431
     .line 432
@@ -83772,7 +85041,7 @@
     move-result-object v0
 
     .line 439
-    invoke-static {v0}, Lʼˏ/ᵢ;->ʽʻ(Ljava/lang/String;)V
+    invoke-static {v0}, Lʼˏ/ᵢ;->ʽʾ(Ljava/lang/String;)V
     :try_end_3
     .catch Ljava/lang/NoSuchMethodError; {:try_start_3 .. :try_end_3} :catch_3
 
@@ -83811,7 +85080,7 @@
     .line 456
     .line 457
     .line 458
-    sget-object v3, Lʾˉ/ᴵᴵ;->ˈʼ:Ljava/lang/String;
+    sget-object v3, Lʾˉ/ᴵᴵ;->ˈʽ:Ljava/lang/String;
 
     .line 459
     .line 460
@@ -83828,7 +85097,7 @@
     move-result-object v0
 
     .line 467
-    invoke-static {v0}, Lʼˏ/ᵢ;->ʽʻ(Ljava/lang/String;)V
+    invoke-static {v0}, Lʼˏ/ᵢ;->ʽʾ(Ljava/lang/String;)V
 
     .line 468
     .line 469
@@ -83865,7 +85134,7 @@
     .line 485
     .line 486
     .line 487
-    sget-object v7, Lʾˉ/ᴵᴵ;->ˈʼ:Ljava/lang/String;
+    sget-object v7, Lʾˉ/ᴵᴵ;->ˈʽ:Ljava/lang/String;
 
     .line 488
     .line 489
@@ -83895,7 +85164,7 @@
     move-result-object v3
 
     .line 503
-    invoke-static {v0, v3}, Lʼˏ/ᵢ;->ˎˏ(Ljava/io/File;Ljava/lang/String;)Z
+    invoke-static {v0, v3}, Lʼˏ/ᵢ;->ˎᴵ(Ljava/io/File;Ljava/lang/String;)Z
 
     .line 504
     .line 505
@@ -83924,7 +85193,7 @@
     .line 517
     .line 518
     .line 519
-    sget-object v4, Lʾˉ/ᴵᴵ;->ˈʼ:Ljava/lang/String;
+    sget-object v4, Lʾˉ/ᴵᴵ;->ˈʽ:Ljava/lang/String;
 
     .line 520
     .line 521
@@ -83980,7 +85249,7 @@
     .line 547
     .line 548
     .line 549
-    sget-object v4, Lʾˉ/ᴵᴵ;->ˈʼ:Ljava/lang/String;
+    sget-object v4, Lʾˉ/ᴵᴵ;->ˈʽ:Ljava/lang/String;
 
     .line 550
     .line 551
@@ -84047,7 +85316,7 @@
     .line 580
     .line 581
     .line 582
-    sget-object v3, Lʾˉ/ᴵᴵ;->ˈʼ:Ljava/lang/String;
+    sget-object v3, Lʾˉ/ᴵᴵ;->ˈʽ:Ljava/lang/String;
 
     .line 583
     .line 584
@@ -84064,7 +85333,7 @@
     move-result-object v0
 
     .line 591
-    invoke-static {v0}, Lʼˏ/ᵢ;->ʽʻ(Ljava/lang/String;)V
+    invoke-static {v0}, Lʼˏ/ᵢ;->ʽʾ(Ljava/lang/String;)V
 
     .line 592
     .line 593
@@ -84122,7 +85391,7 @@
     .line 618
     .line 619
     .line 620
-    sget-object v4, Lʾˉ/ᴵᴵ;->ˈʼ:Ljava/lang/String;
+    sget-object v4, Lʾˉ/ᴵᴵ;->ˈʽ:Ljava/lang/String;
 
     .line 621
     .line 622
@@ -84178,7 +85447,7 @@
     .line 648
     .line 649
     .line 650
-    sget-object v4, Lʾˉ/ᴵᴵ;->ˈʼ:Ljava/lang/String;
+    sget-object v4, Lʾˉ/ᴵᴵ;->ˈʽ:Ljava/lang/String;
 
     .line 651
     .line 652
@@ -84230,7 +85499,7 @@
     .line 676
     .line 677
     .line 678
-    sget-object v3, Lʾˉ/ᴵᴵ;->ˈʼ:Ljava/lang/String;
+    sget-object v3, Lʾˉ/ᴵᴵ;->ˈʽ:Ljava/lang/String;
 
     .line 679
     .line 680
@@ -84247,7 +85516,7 @@
     move-result-object v0
 
     .line 687
-    invoke-static {v0}, Lʼˏ/ᵢ;->ʽʻ(Ljava/lang/String;)V
+    invoke-static {v0}, Lʼˏ/ᵢ;->ʽʾ(Ljava/lang/String;)V
     :try_end_5
     .catch Ljava/lang/NoSuchMethodError; {:try_start_5 .. :try_end_5} :catch_5
 
@@ -84286,7 +85555,7 @@
     .line 704
     .line 705
     .line 706
-    sget-object v3, Lʾˉ/ᴵᴵ;->ˈʼ:Ljava/lang/String;
+    sget-object v3, Lʾˉ/ᴵᴵ;->ˈʽ:Ljava/lang/String;
 
     .line 707
     .line 708
@@ -84331,7 +85600,7 @@
 
     .line 726
     .line 727
-    invoke-static {v4}, Lʼˏ/ᵢ;->ˎʿ([Ljava/lang/String;)V
+    invoke-static {v4}, Lʼˏ/ᵢ;->ˎˏ([Ljava/lang/String;)V
 
     .line 728
     .line 729
@@ -84367,7 +85636,7 @@
     .line 743
     .line 744
     .line 745
-    sget-object v7, Lʾˉ/ᴵᴵ;->ˈʼ:Ljava/lang/String;
+    sget-object v7, Lʾˉ/ᴵᴵ;->ˈʽ:Ljava/lang/String;
 
     .line 746
     .line 747
@@ -84423,7 +85692,7 @@
     .line 773
     .line 774
     .line 775
-    sget-object v7, Lʾˉ/ᴵᴵ;->ˈʼ:Ljava/lang/String;
+    sget-object v7, Lʾˉ/ᴵᴵ;->ˈʽ:Ljava/lang/String;
 
     .line 776
     .line 777
@@ -84490,7 +85759,7 @@
     .line 806
     .line 807
     .line 808
-    sget-object v4, Lʾˉ/ᴵᴵ;->ˈʼ:Ljava/lang/String;
+    sget-object v4, Lʾˉ/ᴵᴵ;->ˈʽ:Ljava/lang/String;
 
     .line 809
     .line 810
@@ -84507,7 +85776,7 @@
     move-result-object v0
 
     .line 817
-    invoke-static {v0}, Lʼˏ/ᵢ;->ʽʻ(Ljava/lang/String;)V
+    invoke-static {v0}, Lʼˏ/ᵢ;->ʽʾ(Ljava/lang/String;)V
 
     .line 818
     .line 819
@@ -84541,7 +85810,7 @@
     .line 833
     .line 834
     .line 835
-    sget-object v3, Lʾˉ/ᴵᴵ;->ˈʼ:Ljava/lang/String;
+    sget-object v3, Lʾˉ/ᴵᴵ;->ˈʽ:Ljava/lang/String;
 
     .line 836
     .line 837
@@ -84563,7 +85832,7 @@
     .line 845
     .line 846
     .line 847
-    invoke-static {v4}, Lʼˏ/ᵢ;->ˋˈ(Ljava/io/File;)Ljava/lang/String;
+    invoke-static {v4}, Lʼˏ/ᵢ;->ˋי(Ljava/io/File;)Ljava/lang/String;
 
     .line 848
     .line 849
@@ -84601,7 +85870,7 @@
     .line 864
     .line 865
     .line 866
-    sget-object v3, Lʾˉ/ᴵᴵ;->ˈʼ:Ljava/lang/String;
+    sget-object v3, Lʾˉ/ᴵᴵ;->ˈʽ:Ljava/lang/String;
 
     .line 867
     .line 868
@@ -84618,7 +85887,7 @@
     move-result-object v0
 
     .line 875
-    invoke-static {v0}, Lʼˏ/ᵢ;->ʽʻ(Ljava/lang/String;)V
+    invoke-static {v0}, Lʼˏ/ᵢ;->ʽʾ(Ljava/lang/String;)V
 
     .line 876
     .line 877
@@ -84652,7 +85921,7 @@
     .line 891
     .line 892
     .line 893
-    sget-object v7, Lʾˉ/ᴵᴵ;->ˈʼ:Ljava/lang/String;
+    sget-object v7, Lʾˉ/ᴵᴵ;->ˈʽ:Ljava/lang/String;
 
     .line 894
     .line 895
@@ -84674,7 +85943,7 @@
     .line 903
     .line 904
     .line 905
-    invoke-static {v3}, Lʼˏ/ᵢ;->ˋˈ(Ljava/io/File;)Ljava/lang/String;
+    invoke-static {v3}, Lʼˏ/ᵢ;->ˋי(Ljava/io/File;)Ljava/lang/String;
 
     .line 906
     .line 907
@@ -84806,7 +86075,7 @@
     .line 969
     .line 970
     .line 971
-    sget-object v4, Lʾˉ/ᴵᴵ;->ˈʼ:Ljava/lang/String;
+    sget-object v4, Lʾˉ/ᴵᴵ;->ˈʽ:Ljava/lang/String;
 
     .line 972
     .line 973
@@ -84836,7 +86105,7 @@
     move-result-object v2
 
     .line 987
-    invoke-static {v0, v2}, Lʼˏ/ᵢ;->ˎˏ(Ljava/io/File;Ljava/lang/String;)Z
+    invoke-static {v0, v2}, Lʼˏ/ᵢ;->ˎᴵ(Ljava/io/File;Ljava/lang/String;)Z
 
     .line 988
     .line 989
@@ -84860,7 +86129,7 @@
     .line 999
     .line 1000
     .line 1001
-    sget-object v2, Lʾˉ/ᴵᴵ;->ˈʼ:Ljava/lang/String;
+    sget-object v2, Lʾˉ/ᴵᴵ;->ˈʽ:Ljava/lang/String;
 
     .line 1002
     .line 1003
@@ -84877,7 +86146,7 @@
     move-result-object v0
 
     .line 1010
-    invoke-static {v0}, Lʼˏ/ᵢ;->ʽʻ(Ljava/lang/String;)V
+    invoke-static {v0}, Lʼˏ/ᵢ;->ʽʾ(Ljava/lang/String;)V
 
     .line 1011
     .line 1012
@@ -84909,7 +86178,7 @@
     .line 1025
     .line 1026
     .line 1027
-    sget-object v4, Lʾˉ/ᴵᴵ;->ˈʼ:Ljava/lang/String;
+    sget-object v4, Lʾˉ/ᴵᴵ;->ˈʽ:Ljava/lang/String;
 
     .line 1028
     .line 1029
@@ -84939,7 +86208,7 @@
     move-result-object v2
 
     .line 1043
-    invoke-static {v0, v2}, Lʼˏ/ᵢ;->ˎˏ(Ljava/io/File;Ljava/lang/String;)Z
+    invoke-static {v0, v2}, Lʼˏ/ᵢ;->ˎᴵ(Ljava/io/File;Ljava/lang/String;)Z
 
     .line 1044
     .line 1045
@@ -84963,7 +86232,7 @@
     .line 1055
     .line 1056
     .line 1057
-    sget-object v2, Lʾˉ/ᴵᴵ;->ˈʼ:Ljava/lang/String;
+    sget-object v2, Lʾˉ/ᴵᴵ;->ˈʽ:Ljava/lang/String;
 
     .line 1058
     .line 1059
@@ -84980,7 +86249,7 @@
     move-result-object v0
 
     .line 1066
-    invoke-static {v0}, Lʼˏ/ᵢ;->ʽʻ(Ljava/lang/String;)V
+    invoke-static {v0}, Lʼˏ/ᵢ;->ʽʾ(Ljava/lang/String;)V
 
     .line 1067
     .line 1068
@@ -85014,7 +86283,7 @@
     .line 1082
     .line 1083
     .line 1084
-    sget-object v7, Lʾˉ/ᴵᴵ;->ˈʼ:Ljava/lang/String;
+    sget-object v7, Lʾˉ/ᴵᴵ;->ˈʽ:Ljava/lang/String;
 
     .line 1085
     .line 1086
@@ -85036,7 +86305,7 @@
     .line 1094
     .line 1095
     .line 1096
-    invoke-static {v2}, Lʼˏ/ᵢ;->ˋˈ(Ljava/io/File;)Ljava/lang/String;
+    invoke-static {v2}, Lʼˏ/ᵢ;->ˋי(Ljava/io/File;)Ljava/lang/String;
 
     .line 1097
     .line 1098
@@ -85077,7 +86346,7 @@
     .line 1114
     .line 1115
     .line 1116
-    sget-object v4, Lʾˉ/ᴵᴵ;->ˈʼ:Ljava/lang/String;
+    sget-object v4, Lʾˉ/ᴵᴵ;->ˈʽ:Ljava/lang/String;
 
     .line 1117
     .line 1118
@@ -85094,7 +86363,7 @@
     move-result-object v2
 
     .line 1125
-    invoke-static {v2}, Lʼˏ/ᵢ;->ʽʻ(Ljava/lang/String;)V
+    invoke-static {v2}, Lʼˏ/ᵢ;->ʽʾ(Ljava/lang/String;)V
 
     .line 1126
     .line 1127
@@ -85275,7 +86544,7 @@
     return v1
 .end method
 
-.method public static ˉʿ(Landroid/app/Activity;Ljava/io/File;Ljava/lang/Integer;)V
+.method public static ˉˋ(Landroid/app/Activity;Ljava/io/File;Ljava/lang/Integer;)V
     .locals 1
 
     .line 1
@@ -85324,7 +86593,7 @@
     return-void
 .end method
 
-.method public static ˉˈ(Ljava/lang/String;Ljava/lang/String;ZZ)Ljava/lang/String;
+.method public static ˉˏ(Ljava/lang/String;Ljava/lang/String;ZZ)Ljava/lang/String;
     .locals 20
 
     .line 1
@@ -85370,7 +86639,7 @@
     .line 18
     .line 19
     .line 20
-    invoke-static {v4}, Lʼˏ/ᵢ;->ˆﹶ(Ljava/io/File;)Lʼـ/ᐧᐧ;
+    invoke-static {v4}, Lʼˏ/ᵢ;->ˈʼ(Ljava/io/File;)Lʼـ/ᐧᐧ;
 
     .line 21
     .line 22
@@ -85793,7 +87062,7 @@
     .line 231
     .line 232
     .line 233
-    invoke-static {v10, v5}, Lʼˏ/ᵢ;->ʻˋ(Ljava/io/File;Ljava/io/File;)V
+    invoke-static {v10, v5}, Lʼˏ/ᵢ;->ʻˊ(Ljava/io/File;Ljava/io/File;)V
 
     .line 234
     .line 235
@@ -85884,12 +87153,12 @@
     move-result-object v8
 
     .line 279
-    invoke-static {v8}, Lʼˏ/ᵢ;->ˎʾ(Ljava/lang/String;)V
+    invoke-static {v8}, Lʼˏ/ᵢ;->ˎˋ(Ljava/lang/String;)V
 
     .line 280
     .line 281
     .line 282
-    invoke-static {v4}, Lʼˏ/ᵢ;->ʾˑ(Ljava/io/File;)Ljava/io/File;
+    invoke-static {v4}, Lʼˏ/ᵢ;->ʾـ(Ljava/io/File;)Ljava/io/File;
 
     .line 283
     .line 284
@@ -86139,7 +87408,7 @@
     .line 407
     :cond_9
     :goto_2
-    invoke-static {}, Lʼˏ/ᵢ;->ʾˏ()Ljava/lang/String;
+    invoke-static {}, Lʼˏ/ᵢ;->ʾי()Ljava/lang/String;
 
     .line 408
     .line 409
@@ -86232,7 +87501,7 @@
     .line 453
     .line 454
     .line 455
-    invoke-static {v10, v4}, Lʼˏ/ᵢ;->ʻˋ(Ljava/io/File;Ljava/io/File;)V
+    invoke-static {v10, v4}, Lʼˏ/ᵢ;->ʻˊ(Ljava/io/File;Ljava/io/File;)V
 
     .line 456
     .line 457
@@ -86306,12 +87575,12 @@
     move-result-object v8
 
     .line 493
-    invoke-static {v8}, Lʼˏ/ᵢ;->ˎʾ(Ljava/lang/String;)V
+    invoke-static {v8}, Lʼˏ/ᵢ;->ˎˋ(Ljava/lang/String;)V
 
     .line 494
     .line 495
     .line 496
-    invoke-static {v5}, Lʼˏ/ᵢ;->ʾˑ(Ljava/io/File;)Ljava/io/File;
+    invoke-static {v5}, Lʼˏ/ᵢ;->ʾـ(Ljava/io/File;)Ljava/io/File;
 
     .line 497
     .line 498
@@ -86634,12 +87903,12 @@
     move-result-object v5
 
     .line 659
-    invoke-static {v5}, Lʼˏ/ᵢ;->ˎʾ(Ljava/lang/String;)V
+    invoke-static {v5}, Lʼˏ/ᵢ;->ˎˋ(Ljava/lang/String;)V
 
     .line 660
     .line 661
     .line 662
-    invoke-static {v4}, Lʼˏ/ᵢ;->ʾˑ(Ljava/io/File;)Ljava/io/File;
+    invoke-static {v4}, Lʼˏ/ᵢ;->ʾـ(Ljava/io/File;)Ljava/io/File;
 
     .line 663
     .line 664
@@ -87004,7 +88273,7 @@
     .line 846
     .line 847
     .line 848
-    invoke-static {v7, v8}, Lʼˏ/ᵢ;->ʻˋ(Ljava/io/File;Ljava/io/File;)V
+    invoke-static {v7, v8}, Lʼˏ/ᵢ;->ʻˊ(Ljava/io/File;Ljava/io/File;)V
 
     .line 849
     .line 850
@@ -87074,12 +88343,12 @@
     move-result-object v4
 
     .line 884
-    invoke-static {v4}, Lʼˏ/ᵢ;->ˎʾ(Ljava/lang/String;)V
+    invoke-static {v4}, Lʼˏ/ᵢ;->ˎˋ(Ljava/lang/String;)V
 
     .line 885
     .line 886
     .line 887
-    invoke-static {v0}, Lʼˏ/ᵢ;->ʾˑ(Ljava/io/File;)Ljava/io/File;
+    invoke-static {v0}, Lʼˏ/ᵢ;->ʾـ(Ljava/io/File;)Ljava/io/File;
 
     .line 888
     .line 889
@@ -87290,7 +88559,7 @@
     .line 992
     :cond_18
     :goto_7
-    invoke-static {}, Lʼˏ/ᵢ;->ʾˏ()Ljava/lang/String;
+    invoke-static {}, Lʼˏ/ᵢ;->ʾי()Ljava/lang/String;
 
     .line 993
     .line 994
@@ -87380,7 +88649,7 @@
     .line 1037
     .line 1038
     .line 1039
-    invoke-static {v7, v4}, Lʼˏ/ᵢ;->ʻˋ(Ljava/io/File;Ljava/io/File;)V
+    invoke-static {v7, v4}, Lʼˏ/ᵢ;->ʻˊ(Ljava/io/File;Ljava/io/File;)V
 
     .line 1040
     .line 1041
@@ -87453,12 +88722,12 @@
     move-result-object v4
 
     .line 1076
-    invoke-static {v4}, Lʼˏ/ᵢ;->ˎʾ(Ljava/lang/String;)V
+    invoke-static {v4}, Lʼˏ/ᵢ;->ˎˋ(Ljava/lang/String;)V
 
     .line 1077
     .line 1078
     .line 1079
-    invoke-static {v0}, Lʼˏ/ᵢ;->ʾˑ(Ljava/io/File;)Ljava/io/File;
+    invoke-static {v0}, Lʼˏ/ᵢ;->ʾـ(Ljava/io/File;)Ljava/io/File;
 
     .line 1080
     .line 1081
@@ -87679,12 +88948,12 @@
     move-result-object v4
 
     .line 1192
-    invoke-static {v4}, Lʼˏ/ᵢ;->ˎʾ(Ljava/lang/String;)V
+    invoke-static {v4}, Lʼˏ/ᵢ;->ˎˋ(Ljava/lang/String;)V
 
     .line 1193
     .line 1194
     .line 1195
-    invoke-static {v1}, Lʼˏ/ᵢ;->ʾˑ(Ljava/io/File;)Ljava/io/File;
+    invoke-static {v1}, Lʼˏ/ᵢ;->ʾـ(Ljava/io/File;)Ljava/io/File;
 
     .line 1196
     .line 1197
@@ -87880,53 +89149,7 @@
     goto :goto_c
 .end method
 
-.method public static ˉˉ(Ljava/io/File;)V
-    .locals 2
-
-    .line 1
-    :try_start_0
-    new-instance v0, Lʼˏ/ᵢ;
-
-    .line 2
-    .line 3
-    const-string v1, ""
-
-    .line 4
-    .line 5
-    invoke-direct {v0, v1}, Lʼˏ/ᵢ;-><init>(Ljava/lang/String;)V
-
-    .line 6
-    .line 7
-    .line 8
-    invoke-virtual {v0, p0}, Lʼˏ/ᵢ;->ʼʽ(Ljava/io/File;)V
-    :try_end_0
-    .catch Ljava/io/IOException; {:try_start_0 .. :try_end_0} :catch_0
-
-    .line 9
-    .line 10
-    .line 11
-    goto :goto_0
-
-    .line 12
-    :catch_0
-    move-exception v0
-
-    .line 13
-    invoke-virtual {v0}, Ljava/lang/Throwable;->printStackTrace()V
-
-    .line 14
-    .line 15
-    .line 16
-    :goto_0
-    invoke-virtual {p0}, Ljava/io/File;->mkdirs()Z
-
-    .line 17
-    .line 18
-    .line 19
-    return-void
-.end method
-
-.method public static ˉˊ(Ljava/io/File;Ljava/util/ArrayList;Ljava/lang/String;ZZ)Ljava/lang/String;
+.method public static ˉˑ(Ljava/io/File;Ljava/util/ArrayList;Ljava/lang/String;ZZ)Ljava/lang/String;
     .locals 18
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -87996,7 +89219,7 @@
     .line 24
     .line 25
     :try_start_1
-    invoke-static/range {p0 .. p0}, Lʼˏ/ᵢ;->ʽⁱ(Ljava/io/File;)Ljava/io/File;
+    invoke-static/range {p0 .. p0}, Lʼˏ/ᵢ;->ʽﹶ(Ljava/io/File;)Ljava/io/File;
 
     .line 26
     .line 27
@@ -88004,7 +89227,7 @@
     move-result-object v7
 
     .line 29
-    invoke-static {v7}, Lʼˏ/ᵢ;->ˆﹶ(Ljava/io/File;)Lʼـ/ᐧᐧ;
+    invoke-static {v7}, Lʼˏ/ᵢ;->ˈʼ(Ljava/io/File;)Lʼـ/ᐧᐧ;
 
     .line 30
     .line 31
@@ -88083,7 +89306,7 @@
 
     .line 67
     .line 68
-    invoke-static/range {p1 .. p1}, Lʼˏ/ᵢ;->ʽﹳ(Ljava/util/ArrayList;)Ljava/io/File;
+    invoke-static/range {p1 .. p1}, Lʼˏ/ᵢ;->ʽﾞ(Ljava/util/ArrayList;)Ljava/io/File;
 
     .line 69
     .line 70
@@ -88091,7 +89314,7 @@
     move-result-object v7
 
     .line 72
-    invoke-static {v7}, Lʼˏ/ᵢ;->ˆﹶ(Ljava/io/File;)Lʼـ/ᐧᐧ;
+    invoke-static {v7}, Lʼˏ/ᵢ;->ˈʼ(Ljava/io/File;)Lʼـ/ᐧᐧ;
 
     .line 73
     .line 74
@@ -88509,7 +89732,7 @@
     .line 285
     .line 286
     .line 287
-    invoke-static {}, Lʼˏ/ᵢ;->ˈˏ()Ljava/lang/String;
+    invoke-static {}, Lʼˏ/ᵢ;->ˈـ()Ljava/lang/String;
 
     .line 288
     .line 289
@@ -88809,12 +90032,12 @@
     move-result-object v1
 
     .line 442
-    invoke-static {v1}, Lʼˏ/ᵢ;->ˎʾ(Ljava/lang/String;)V
+    invoke-static {v1}, Lʼˏ/ᵢ;->ˎˋ(Ljava/lang/String;)V
 
     .line 443
     .line 444
     .line 445
-    invoke-static {v0}, Lʼˏ/ᵢ;->ʾˑ(Ljava/io/File;)Ljava/io/File;
+    invoke-static {v0}, Lʼˏ/ᵢ;->ʾـ(Ljava/io/File;)Ljava/io/File;
 
     .line 446
     .line 447
@@ -89213,12 +90436,12 @@
     move-result-object v3
 
     .line 642
-    invoke-static {v3}, Lʼˏ/ᵢ;->ˎʾ(Ljava/lang/String;)V
+    invoke-static {v3}, Lʼˏ/ᵢ;->ˎˋ(Ljava/lang/String;)V
 
     .line 643
     .line 644
     .line 645
-    invoke-static {v2}, Lʼˏ/ᵢ;->ʾˑ(Ljava/io/File;)Ljava/io/File;
+    invoke-static {v2}, Lʼˏ/ᵢ;->ʾـ(Ljava/io/File;)Ljava/io/File;
 
     .line 646
     .line 647
@@ -89581,7 +90804,7 @@
     .line 829
     .line 830
     :cond_11
-    invoke-static/range {p0 .. p0}, Lʼˏ/ᵢ;->ˎˈ(Ljava/io/File;)Z
+    invoke-static/range {p0 .. p0}, Lʼˏ/ᵢ;->ˎי(Ljava/io/File;)Z
 
     .line 831
     .line 832
@@ -89593,16 +90816,16 @@
 
     .line 835
     .line 836
-    sget-object v2, Lʾˉ/ᴵᴵ;->ʼﾞ:Lru/aaaaaccc/installer/MainActivity;
+    sget-object v2, Lʾˉ/ᴵᴵ;->ʼﾞ:Lru/aaaaaccd/installer/MainActivity;
 
     .line 837
     .line 838
-    const v3, 0x7f1104d3
+    const v3, 0x7f1104d5
 
     .line 839
     .line 840
     .line 841
-    invoke-static {v3}, Lʼˏ/ᵢ;->ˈי(I)Ljava/lang/String;
+    invoke-static {v3}, Lʼˏ/ᵢ;->ˈᐧ(I)Ljava/lang/String;
 
     .line 842
     .line 843
@@ -89610,12 +90833,12 @@
     move-result-object v3
 
     .line 845
-    const v5, 0x7f1101a5
+    const v5, 0x7f1101a7
 
     .line 846
     .line 847
     .line 848
-    invoke-static {v5}, Lʼˏ/ᵢ;->ˈי(I)Ljava/lang/String;
+    invoke-static {v5}, Lʼˏ/ᵢ;->ˈᐧ(I)Ljava/lang/String;
 
     .line 849
     .line 850
@@ -89623,7 +90846,7 @@
     move-result-object v5
 
     .line 852
-    invoke-static {v2, v3, v5}, Lʼˏ/ᵢ;->ˏᴵ(Landroid/app/Activity;Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v2, v3, v5}, Lʼˏ/ᵢ;->ˏﹶ(Landroid/app/Activity;Ljava/lang/String;Ljava/lang/String;)V
 
     .line 853
     .line 854
@@ -89771,7 +90994,7 @@
 
     .line 927
     .line 928
-    invoke-static {}, Lʼˏ/ᵢ;->ˈˏ()Ljava/lang/String;
+    invoke-static {}, Lʼˏ/ᵢ;->ˈـ()Ljava/lang/String;
 
     .line 929
     .line 930
@@ -89804,7 +91027,7 @@
     return-object v4
 .end method
 
-.method public static final ˉˋ(Ljava/lang/String;)Z
+.method public static final ˉי(Ljava/lang/String;)Z
     .locals 2
 
     .line 1
@@ -90702,7 +91925,83 @@
     return p0
 .end method
 
-.method public static ˉˎ(Ljava/lang/String;)Z
+.method public static ˉـ()Z
+    .locals 3
+
+    .line 1
+    sget-object v0, Lʾˉ/ᴵᴵ;->ˆᵢ:Ljava/lang/Boolean;
+
+    .line 2
+    .line 3
+    if-nez v0, :cond_1
+
+    .line 4
+    .line 5
+    invoke-static {}, Lʾˉ/ᴵᴵ;->ˈˏ()Landroid/content/SharedPreferences;
+
+    .line 6
+    .line 7
+    .line 8
+    move-result-object v0
+
+    .line 9
+    const-string v1, "zygisk_inapp_apply_all"
+
+    .line 10
+    .line 11
+    const/4 v2, 0x0
+
+    .line 12
+    invoke-interface {v0, v1, v2}, Landroid/content/SharedPreferences;->getBoolean(Ljava/lang/String;Z)Z
+
+    .line 13
+    .line 14
+    .line 15
+    move-result v0
+
+    .line 16
+    if-nez v0, :cond_0
+
+    .line 17
+    .line 18
+    sget-object v0, Ljava/lang/Boolean;->FALSE:Ljava/lang/Boolean;
+
+    .line 19
+    .line 20
+    sput-object v0, Lʾˉ/ᴵᴵ;->ˆᵢ:Ljava/lang/Boolean;
+
+    .line 21
+    .line 22
+    goto :goto_0
+
+    .line 23
+    :cond_0
+    sget-object v0, Ljava/lang/Boolean;->TRUE:Ljava/lang/Boolean;
+
+    .line 24
+    .line 25
+    sput-object v0, Lʾˉ/ᴵᴵ;->ˆᵢ:Ljava/lang/Boolean;
+
+    .line 26
+    .line 27
+    :cond_1
+    :goto_0
+    sget-object v0, Lʾˉ/ᴵᴵ;->ˆᵢ:Ljava/lang/Boolean;
+
+    .line 28
+    .line 29
+    invoke-virtual {v0}, Ljava/lang/Boolean;->booleanValue()Z
+
+    .line 30
+    .line 31
+    .line 32
+    move-result v0
+
+    .line 33
+    return v0
+.end method
+
+.method public static ˉٴ(Ljava/lang/String;)Z
     .locals 2
 
     .line 1
@@ -90797,7 +92096,7 @@
     return p0
 .end method
 
-.method public static ˉˏ(Lʾˉ/ᵎ;)Z
+.method public static ˉᐧ(Lʾˉ/ᵎ;)Z
     .locals 9
 
     .line 1
@@ -90840,7 +92139,7 @@
 
     .line 18
     .line 19
-    invoke-static {v4, v1}, Lʼˏ/ᵢ;->ˈﾞ(Ljava/lang/String;Z)J
+    invoke-static {v4, v1}, Lʼˏ/ᵢ;->ˉʾ(Ljava/lang/String;Z)J
 
     .line 20
     .line 21
@@ -91084,7 +92383,7 @@
     .line 131
     :cond_3
     :goto_1
-    invoke-static {v3}, Lʼˏ/ᵢ;->ˊʾ(Ljava/lang/String;)Z
+    invoke-static {v3}, Lʼˏ/ᵢ;->ˊˋ(Ljava/lang/String;)Z
 
     .line 132
     .line 133
@@ -91136,7 +92435,7 @@
 
     .line 152
     .line 153
-    invoke-static {v3}, Lʼˏ/ᵢ;->ˉᐧ(Ljava/lang/String;)Z
+    invoke-static {v3}, Lʼˏ/ᵢ;->ˉⁱ(Ljava/lang/String;)Z
 
     .line 154
     .line 155
@@ -91176,7 +92475,7 @@
 
     .line 170
     .line 171
-    invoke-static {v3}, Lʼˏ/ᵢ;->ˊʼ(Ljava/lang/String;)Z
+    invoke-static {v3}, Lʼˏ/ᵢ;->ˊˈ(Ljava/lang/String;)Z
 
     .line 172
     .line 173
@@ -91242,7 +92541,7 @@
 
     .line 199
     .line 200
-    invoke-static {v2}, Lʼˏ/ᵢ;->ˉי(Ljava/lang/String;)Z
+    invoke-static {v2}, Lʼˏ/ᵢ;->ˉᵎ(Ljava/lang/String;)Z
 
     .line 201
     .line 202
@@ -91338,7 +92637,7 @@
     return v1
 .end method
 
-.method public static ˉˑ(Ljava/io/File;)Z
+.method public static ˉᴵ(Ljava/io/File;)Z
     .locals 4
 
     .line 1
@@ -91372,7 +92671,7 @@
     move-result-object p0
 
     .line 16
-    invoke-static {p0}, Lʼˏ/ᵢ;->ʽˊ(Lcom/android/apksig/util/DataSource;)Ljava/nio/ByteBuffer;
+    invoke-static {p0}, Lʼˏ/ᵢ;->ʽˎ(Lcom/android/apksig/util/DataSource;)Ljava/nio/ByteBuffer;
 
     .line 17
     .line 18
@@ -91590,7 +92889,7 @@
     return v0
 .end method
 
-.method public static ˉי(Ljava/lang/String;)Z
+.method public static ˉᵎ(Ljava/lang/String;)Z
     .locals 7
 
     .line 1
@@ -91707,7 +93006,7 @@
     return v2
 .end method
 
-.method public static ˉـ()Z
+.method public static ˉᵔ()Z
     .locals 2
 
     .line 1
@@ -91735,7 +93034,7 @@
 
     .line 12
     .line 13
-    invoke-static {v0}, Lʼˏ/ᵢ;->ʿʻ(Lʼـ/ʽʽ;)Ljava/util/ArrayList;
+    invoke-static {v0}, Lʼˏ/ᵢ;->ʿʽ(Lʼـ/ʽʽ;)Ljava/util/ArrayList;
 
     .line 14
     .line 15
@@ -91765,7 +93064,7 @@
     return v0
 .end method
 
-.method public static ˉٴ(Ljava/io/File;Lʼـ/ʿ;)Z
+.method public static ˉᵢ(Ljava/io/File;Lʼـ/ʿ;)Z
     .locals 10
 
     .line 1
@@ -92281,7 +93580,7 @@
     goto :goto_5
 .end method
 
-.method public static ˉᐧ(Ljava/lang/String;)Z
+.method public static ˉⁱ(Ljava/lang/String;)Z
     .locals 12
 
     .line 1
@@ -92843,7 +94142,7 @@
     return v2
 .end method
 
-.method public static ˉᴵ(Landroid/net/Uri;)Z
+.method public static ˉﹳ(Landroid/net/Uri;)Z
     .locals 1
 
     .line 1
@@ -92870,7 +94169,7 @@
     return p0
 .end method
 
-.method public static ˉᵎ(Ljava/io/File;)Z
+.method public static ˉﹶ(Ljava/io/File;)Z
     .locals 9
 
     .line 1
@@ -93075,7 +94374,7 @@
     return v0
 .end method
 
-.method public static ˉᵔ(Ljava/lang/String;)Z
+.method public static ˉﾞ(Ljava/lang/String;)Z
     .locals 7
 
     .line 1
@@ -93182,7 +94481,257 @@
     return v3
 .end method
 
-.method public static ˉᵢ(Landroid/net/Uri;)Z
+.method public static ˊ(Landroid/widget/LinearLayout;Ljava/lang/Runnable;Ljava/util/Timer;Ljava/util/TimerTask;Z)V
+    .locals 11
+
+    .line 1
+    const-string v0, "UnityBanner"
+
+    .line 2
+    .line 3
+    invoke-virtual {p0, v0}, Landroid/view/View;->findViewWithTag(Ljava/lang/Object;)Landroid/view/View;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object v1
+
+    .line 7
+    if-nez v1, :cond_0
+
+    .line 8
+    .line 9
+    sget-object v1, Lʾˉ/ᴵᴵ;->ʼˎ:Lʾˉ/ᴵᴵ;
+
+    .line 10
+    .line 11
+    if-eqz v1, :cond_0
+
+    .line 12
+    .line 13
+    invoke-virtual {v1}, Lʾˉ/ᴵᴵ;->ˈˑ()Landroidx/fragment/app/ʿ;
+
+    .line 14
+    .line 15
+    .line 16
+    move-result-object v1
+
+    .line 17
+    new-instance v2, Lʼˏ/ᵢ$ʾ;
+
+    .line 18
+    .line 19
+    invoke-direct {v2}, Lʼˏ/ᵢ$ʾ;-><init>()V
+
+    .line 20
+    .line 21
+    .line 22
+    const/4 v3, 0x0
+
+    .line 23
+    const/4 v4, 0x1
+
+    .line 24
+    const-string v5, "5531053"
+
+    .line 25
+    .line 26
+    invoke-static {v1, v5, v2, v3, v4}, Lcom/unity3d/ads/UnityAds;->initialize(Landroid/app/Activity;Ljava/lang/String;Lcom/unity3d/ads/IUnityAdsListener;ZZ)V
+
+    .line 27
+    .line 28
+    .line 29
+    invoke-static {}, Lʾˉ/ᴵᴵ;->ˈᵔ()Landroid/content/res/Resources;
+
+    .line 30
+    .line 31
+    .line 32
+    move-result-object v1
+
+    .line 33
+    invoke-virtual {v1}, Landroid/content/res/Resources;->getDisplayMetrics()Landroid/util/DisplayMetrics;
+
+    .line 34
+    .line 35
+    .line 36
+    move-result-object v1
+
+    .line 37
+    iget v1, v1, Landroid/util/DisplayMetrics;->widthPixels:I
+
+    .line 38
+    .line 39
+    int-to-float v1, v1
+
+    .line 40
+    invoke-static {v1}, Lʼˏ/ᵢ;->ʼˋ(F)F
+
+    .line 41
+    .line 42
+    .line 43
+    move-result v1
+
+    .line 44
+    invoke-static {v1}, Ljava/lang/Float;->valueOf(F)Ljava/lang/Float;
+
+    .line 45
+    .line 46
+    .line 47
+    move-result-object v1
+
+    .line 48
+    invoke-static {v1}, Lʾˉ/ᴵᴵ;->ˉˎ(Ljava/lang/Object;)V
+
+    .line 49
+    .line 50
+    .line 51
+    new-instance v1, Lcom/unity3d/services/banners/BannerView;
+
+    .line 52
+    .line 53
+    sget-object v2, Lʾˉ/ᴵᴵ;->ʼﾞ:Lru/aaaaaccd/installer/MainActivity;
+
+    .line 54
+    .line 55
+    const-string v3, "banner"
+
+    .line 56
+    .line 57
+    invoke-static {v2}, Lcom/unity3d/services/banners/UnityBannerSize;->getDynamicSize(Landroid/content/Context;)Lcom/unity3d/services/banners/UnityBannerSize;
+
+    .line 58
+    .line 59
+    .line 60
+    move-result-object v4
+
+    .line 61
+    invoke-direct {v1, v2, v3, v4}, Lcom/unity3d/services/banners/BannerView;-><init>(Landroid/app/Activity;Ljava/lang/String;Lcom/unity3d/services/banners/UnityBannerSize;)V
+
+    .line 62
+    .line 63
+    .line 64
+    new-instance v2, Lʼˏ/ᵢ$ʿ;
+
+    .line 65
+    .line 66
+    move-object v5, v2
+
+    .line 67
+    move-object v6, p2
+
+    .line 68
+    move-object v7, p3
+
+    .line 69
+    move-object v8, p0
+
+    .line 70
+    move-object v9, p1
+
+    .line 71
+    move v10, p4
+
+    .line 72
+    invoke-direct/range {v5 .. v10}, Lʼˏ/ᵢ$ʿ;-><init>(Ljava/util/Timer;Ljava/util/TimerTask;Landroid/widget/LinearLayout;Ljava/lang/Runnable;Z)V
+
+    .line 73
+    .line 74
+    .line 75
+    invoke-virtual {v1, v2}, Lcom/unity3d/services/banners/BannerView;->setListener(Lcom/unity3d/services/banners/BannerView$IListener;)V
+
+    .line 76
+    .line 77
+    .line 78
+    new-instance p1, Landroid/widget/LinearLayout$LayoutParams;
+
+    .line 79
+    .line 80
+    const/4 p2, -0x2
+
+    .line 81
+    const/4 p3, 0x0
+
+    .line 82
+    const/4 p4, -0x1
+
+    .line 83
+    invoke-direct {p1, p4, p2, p3}, Landroid/widget/LinearLayout$LayoutParams;-><init>(IIF)V
+
+    .line 84
+    .line 85
+    .line 86
+    invoke-virtual {v1, v0}, Landroid/view/View;->setTag(Ljava/lang/Object;)V
+
+    .line 87
+    .line 88
+    .line 89
+    new-instance p2, Ljava/lang/StringBuilder;
+
+    .line 90
+    .line 91
+    invoke-direct {p2}, Ljava/lang/StringBuilder;-><init>()V
+
+    .line 92
+    .line 93
+    .line 94
+    const-string p3, "unity banner wight:"
+
+    .line 95
+    .line 96
+    invoke-virtual {p2, p3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 97
+    .line 98
+    .line 99
+    invoke-virtual {v1}, Lcom/unity3d/services/banners/BannerView;->getSize()Lcom/unity3d/services/banners/UnityBannerSize;
+
+    .line 100
+    .line 101
+    .line 102
+    move-result-object p3
+
+    .line 103
+    invoke-virtual {p3}, Lcom/unity3d/services/banners/UnityBannerSize;->getWidth()I
+
+    .line 104
+    .line 105
+    .line 106
+    move-result p3
+
+    .line 107
+    invoke-virtual {p2, p3}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    .line 108
+    .line 109
+    .line 110
+    invoke-virtual {p2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    .line 111
+    .line 112
+    .line 113
+    move-result-object p2
+
+    .line 114
+    invoke-static {p2}, Lʾˉ/ᴵᴵ;->ˉˎ(Ljava/lang/Object;)V
+
+    .line 115
+    .line 116
+    .line 117
+    invoke-virtual {p0, v1, p1}, Landroid/view/ViewGroup;->addView(Landroid/view/View;Landroid/view/ViewGroup$LayoutParams;)V
+
+    .line 118
+    .line 119
+    .line 120
+    invoke-virtual {v1}, Lcom/unity3d/services/banners/BannerView;->load()V
+
+    .line 121
+    .line 122
+    .line 123
+    :cond_0
+    return-void
+.end method
+
+.method public static ˊʻ(Landroid/net/Uri;)Z
     .locals 1
 
     .line 1
@@ -93209,202 +94758,162 @@
     return p0
 .end method
 
-.method public static ˉⁱ(Ljava/lang/String;)Z
-    .locals 5
+.method public static ˊʼ(Ljava/lang/String;)Z
+    .locals 4
 
     .line 1
-    new-instance v0, Ljava/io/File;
+    invoke-static {}, Lʼˏ/ᵢ;->ˉـ()Z
 
     .line 2
     .line 3
-    new-instance v1, Ljava/lang/StringBuilder;
-
     .line 4
+    move-result v0
+
     .line 5
-    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
+    const/4 v1, 0x0
 
     .line 6
+    if-eqz v0, :cond_0
+
     .line 7
     .line 8
-    sget-object v2, Lʾˉ/ᴵᴵ;->ʼٴ:Ljava/lang/String;
+    new-instance v0, Ljava/io/File;
 
     .line 9
     .line 10
-    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    new-instance v2, Ljava/lang/StringBuilder;
 
     .line 11
     .line 12
-    .line 13
-    const-string v2, "/inapp_zygisk_exclude/packages/.all"
+    invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
 
+    .line 13
     .line 14
     .line 15
-    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    sget-object v3, Lʾˉ/ᴵᴵ;->ʼٴ:Ljava/lang/String;
 
     .line 16
     .line 17
-    .line 18
-    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    .line 18
     .line 19
     .line 20
-    .line 21
-    move-result-object v1
+    const-string v3, "/inapp_zygisk_exclude/packages/"
 
+    .line 21
     .line 22
-    invoke-direct {v0, v1}, Ljava/io/File;-><init>(Ljava/lang/String;)V
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     .line 23
     .line 24
     .line 25
-    invoke-virtual {v0}, Ljava/io/File;->exists()Z
+    invoke-virtual {v2, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     .line 26
     .line 27
     .line 28
-    move-result v0
+    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     .line 29
-    const/4 v1, 0x0
-
     .line 30
-    const-string v2, "/inapp_zygisk_exclude/packages/"
-
     .line 31
+    move-result-object p0
+
     .line 32
-    if-eqz v0, :cond_0
+    invoke-direct {v0, p0}, Ljava/io/File;-><init>(Ljava/lang/String;)V
 
     .line 33
     .line 34
-    new-instance v0, Ljava/io/File;
-
     .line 35
-    .line 36
-    new-instance v3, Ljava/lang/StringBuilder;
+    invoke-virtual {v0}, Ljava/io/File;->exists()Z
 
+    .line 36
     .line 37
     .line 38
-    invoke-direct {v3}, Ljava/lang/StringBuilder;-><init>()V
+    move-result p0
 
     .line 39
+    if-eqz p0, :cond_1
+
     .line 40
     .line 41
-    sget-object v4, Lʾˉ/ᴵᴵ;->ʼٴ:Ljava/lang/String;
+    return v1
 
     .line 42
-    .line 43
-    invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    :cond_0
+    new-instance v0, Ljava/io/File;
 
+    .line 43
     .line 44
+    new-instance v2, Ljava/lang/StringBuilder;
+
     .line 45
     .line 46
-    invoke-virtual {v3, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
 
     .line 47
     .line 48
     .line 49
-    invoke-virtual {v3, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    sget-object v3, Lʾˉ/ᴵᴵ;->ʼٴ:Ljava/lang/String;
 
     .line 50
     .line 51
-    .line 52
-    invoke-virtual {v3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    .line 52
     .line 53
     .line 54
-    .line 55
-    move-result-object p0
+    const-string v3, "/inapp_zygisk_exclude/packages_selected/"
 
+    .line 55
     .line 56
-    invoke-direct {v0, p0}, Ljava/io/File;-><init>(Ljava/lang/String;)V
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     .line 57
     .line 58
     .line 59
-    invoke-virtual {v0}, Ljava/io/File;->exists()Z
+    invoke-virtual {v2, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     .line 60
     .line 61
     .line 62
-    move-result p0
+    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     .line 63
-    if-eqz p0, :cond_1
-
     .line 64
     .line 65
-    return v1
+    move-result-object p0
 
     .line 66
-    :cond_0
-    new-instance v0, Ljava/io/File;
+    invoke-direct {v0, p0}, Ljava/io/File;-><init>(Ljava/lang/String;)V
 
     .line 67
     .line 68
-    new-instance v3, Ljava/lang/StringBuilder;
-
     .line 69
-    .line 70
-    invoke-direct {v3}, Ljava/lang/StringBuilder;-><init>()V
+    invoke-virtual {v0}, Ljava/io/File;->exists()Z
 
+    .line 70
     .line 71
     .line 72
+    move-result p0
+
     .line 73
-    sget-object v4, Lʾˉ/ᴵᴵ;->ʼٴ:Ljava/lang/String;
+    if-nez p0, :cond_1
 
     .line 74
     .line 75
-    invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 76
-    .line 77
-    .line 78
-    invoke-virtual {v3, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 79
-    .line 80
-    .line 81
-    invoke-virtual {v3, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 82
-    .line 83
-    .line 84
-    invoke-virtual {v3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    .line 85
-    .line 86
-    .line 87
-    move-result-object p0
-
-    .line 88
-    invoke-direct {v0, p0}, Ljava/io/File;-><init>(Ljava/lang/String;)V
-
-    .line 89
-    .line 90
-    .line 91
-    invoke-virtual {v0}, Ljava/io/File;->exists()Z
-
-    .line 92
-    .line 93
-    .line 94
-    move-result p0
-
-    .line 95
-    if-nez p0, :cond_1
-
-    .line 96
-    .line 97
     return v1
 
-    .line 98
+    .line 76
     :cond_1
     const/4 p0, 0x1
 
-    .line 99
+    .line 77
     return p0
 .end method
 
-.method public static ˉﹳ()Z
+.method public static ˊʽ()Z
     .locals 3
 
     .line 1
@@ -93538,7 +95047,7 @@
     return v1
 .end method
 
-.method public static ˉﹶ(Ljava/lang/String;)Z
+.method public static ˊʾ(Ljava/lang/String;)Z
     .locals 5
 
     .line 1
@@ -93702,7 +95211,7 @@
     return v4
 .end method
 
-.method public static ˉﾞ(Ljava/lang/String;)Z
+.method public static ˊʿ(Ljava/lang/String;)Z
     .locals 2
 
     .line 1
@@ -93876,257 +95385,7 @@
     return p0
 .end method
 
-.method public static ˊ(Landroid/widget/LinearLayout;Ljava/lang/Runnable;Ljava/util/Timer;Ljava/util/TimerTask;Z)V
-    .locals 11
-
-    .line 1
-    const-string v0, "UnityBanner"
-
-    .line 2
-    .line 3
-    invoke-virtual {p0, v0}, Landroid/view/View;->findViewWithTag(Ljava/lang/Object;)Landroid/view/View;
-
-    .line 4
-    .line 5
-    .line 6
-    move-result-object v1
-
-    .line 7
-    if-nez v1, :cond_0
-
-    .line 8
-    .line 9
-    sget-object v1, Lʾˉ/ᴵᴵ;->ʼˎ:Lʾˉ/ᴵᴵ;
-
-    .line 10
-    .line 11
-    if-eqz v1, :cond_0
-
-    .line 12
-    .line 13
-    invoke-virtual {v1}, Lʾˉ/ᴵᴵ;->ˈˑ()Landroidx/fragment/app/ʿ;
-
-    .line 14
-    .line 15
-    .line 16
-    move-result-object v1
-
-    .line 17
-    new-instance v2, Lʼˏ/ᵢ$ʾ;
-
-    .line 18
-    .line 19
-    invoke-direct {v2}, Lʼˏ/ᵢ$ʾ;-><init>()V
-
-    .line 20
-    .line 21
-    .line 22
-    const/4 v3, 0x0
-
-    .line 23
-    const/4 v4, 0x1
-
-    .line 24
-    const-string v5, "5531053"
-
-    .line 25
-    .line 26
-    invoke-static {v1, v5, v2, v3, v4}, Lcom/unity3d/ads/UnityAds;->initialize(Landroid/app/Activity;Ljava/lang/String;Lcom/unity3d/ads/IUnityAdsListener;ZZ)V
-
-    .line 27
-    .line 28
-    .line 29
-    invoke-static {}, Lʾˉ/ᴵᴵ;->ˈᵔ()Landroid/content/res/Resources;
-
-    .line 30
-    .line 31
-    .line 32
-    move-result-object v1
-
-    .line 33
-    invoke-virtual {v1}, Landroid/content/res/Resources;->getDisplayMetrics()Landroid/util/DisplayMetrics;
-
-    .line 34
-    .line 35
-    .line 36
-    move-result-object v1
-
-    .line 37
-    iget v1, v1, Landroid/util/DisplayMetrics;->widthPixels:I
-
-    .line 38
-    .line 39
-    int-to-float v1, v1
-
-    .line 40
-    invoke-static {v1}, Lʼˏ/ᵢ;->ʼˉ(F)F
-
-    .line 41
-    .line 42
-    .line 43
-    move-result v1
-
-    .line 44
-    invoke-static {v1}, Ljava/lang/Float;->valueOf(F)Ljava/lang/Float;
-
-    .line 45
-    .line 46
-    .line 47
-    move-result-object v1
-
-    .line 48
-    invoke-static {v1}, Lʾˉ/ᴵᴵ;->ˉˎ(Ljava/lang/Object;)V
-
-    .line 49
-    .line 50
-    .line 51
-    new-instance v1, Lcom/unity3d/services/banners/BannerView;
-
-    .line 52
-    .line 53
-    sget-object v2, Lʾˉ/ᴵᴵ;->ʼﾞ:Lru/aaaaaccc/installer/MainActivity;
-
-    .line 54
-    .line 55
-    const-string v3, "banner"
-
-    .line 56
-    .line 57
-    invoke-static {v2}, Lcom/unity3d/services/banners/UnityBannerSize;->getDynamicSize(Landroid/content/Context;)Lcom/unity3d/services/banners/UnityBannerSize;
-
-    .line 58
-    .line 59
-    .line 60
-    move-result-object v4
-
-    .line 61
-    invoke-direct {v1, v2, v3, v4}, Lcom/unity3d/services/banners/BannerView;-><init>(Landroid/app/Activity;Ljava/lang/String;Lcom/unity3d/services/banners/UnityBannerSize;)V
-
-    .line 62
-    .line 63
-    .line 64
-    new-instance v2, Lʼˏ/ᵢ$ʿ;
-
-    .line 65
-    .line 66
-    move-object v5, v2
-
-    .line 67
-    move-object v6, p2
-
-    .line 68
-    move-object v7, p3
-
-    .line 69
-    move-object v8, p0
-
-    .line 70
-    move-object v9, p1
-
-    .line 71
-    move v10, p4
-
-    .line 72
-    invoke-direct/range {v5 .. v10}, Lʼˏ/ᵢ$ʿ;-><init>(Ljava/util/Timer;Ljava/util/TimerTask;Landroid/widget/LinearLayout;Ljava/lang/Runnable;Z)V
-
-    .line 73
-    .line 74
-    .line 75
-    invoke-virtual {v1, v2}, Lcom/unity3d/services/banners/BannerView;->setListener(Lcom/unity3d/services/banners/BannerView$IListener;)V
-
-    .line 76
-    .line 77
-    .line 78
-    new-instance p1, Landroid/widget/LinearLayout$LayoutParams;
-
-    .line 79
-    .line 80
-    const/4 p2, -0x2
-
-    .line 81
-    const/4 p3, 0x0
-
-    .line 82
-    const/4 p4, -0x1
-
-    .line 83
-    invoke-direct {p1, p4, p2, p3}, Landroid/widget/LinearLayout$LayoutParams;-><init>(IIF)V
-
-    .line 84
-    .line 85
-    .line 86
-    invoke-virtual {v1, v0}, Landroid/view/View;->setTag(Ljava/lang/Object;)V
-
-    .line 87
-    .line 88
-    .line 89
-    new-instance p2, Ljava/lang/StringBuilder;
-
-    .line 90
-    .line 91
-    invoke-direct {p2}, Ljava/lang/StringBuilder;-><init>()V
-
-    .line 92
-    .line 93
-    .line 94
-    const-string p3, "unity banner wight:"
-
-    .line 95
-    .line 96
-    invoke-virtual {p2, p3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 97
-    .line 98
-    .line 99
-    invoke-virtual {v1}, Lcom/unity3d/services/banners/BannerView;->getSize()Lcom/unity3d/services/banners/UnityBannerSize;
-
-    .line 100
-    .line 101
-    .line 102
-    move-result-object p3
-
-    .line 103
-    invoke-virtual {p3}, Lcom/unity3d/services/banners/UnityBannerSize;->getWidth()I
-
-    .line 104
-    .line 105
-    .line 106
-    move-result p3
-
-    .line 107
-    invoke-virtual {p2, p3}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
-
-    .line 108
-    .line 109
-    .line 110
-    invoke-virtual {p2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    .line 111
-    .line 112
-    .line 113
-    move-result-object p2
-
-    .line 114
-    invoke-static {p2}, Lʾˉ/ᴵᴵ;->ˉˎ(Ljava/lang/Object;)V
-
-    .line 115
-    .line 116
-    .line 117
-    invoke-virtual {p0, v1, p1}, Landroid/view/ViewGroup;->addView(Landroid/view/View;Landroid/view/ViewGroup$LayoutParams;)V
-
-    .line 118
-    .line 119
-    .line 120
-    invoke-virtual {v1}, Lcom/unity3d/services/banners/BannerView;->load()V
-
-    .line 121
-    .line 122
-    .line 123
-    :cond_0
-    return-void
-.end method
-
-.method public static ˊʻ(Landroid/net/Uri;)Z
+.method public static ˊˆ(Landroid/net/Uri;)Z
     .locals 1
 
     .line 1
@@ -94153,7 +95412,7 @@
     return p0
 .end method
 
-.method public static ˊʼ(Ljava/lang/String;)Z
+.method public static ˊˈ(Ljava/lang/String;)Z
     .locals 5
 
     .line 1
@@ -94290,7 +95549,7 @@
     return v1
 .end method
 
-.method public static ˊʽ()Z
+.method public static ˊˉ()Z
     .locals 5
 
     .line 1
@@ -94328,7 +95587,7 @@
 
     .line 16
     :cond_0
-    invoke-static {}, Lʼˏ/ᵢ;->ˊᵔ()Z
+    invoke-static {}, Lʼˏ/ᵢ;->ˋʻ()Z
 
     .line 17
     .line 18
@@ -94428,1571 +95687,6 @@
     .line 66
     :cond_1
     return v3
-.end method
-
-.method public static ˊʾ(Ljava/lang/String;)Z
-    .locals 6
-
-    .line 1
-    const-string v0, "odex"
-
-    .line 2
-    .line 3
-    :try_start_0
-    new-instance v1, Ljava/io/File;
-
-    .line 4
-    .line 5
-    invoke-direct {v1, p0}, Ljava/io/File;-><init>(Ljava/lang/String;)V
-
-    .line 6
-    .line 7
-    .line 8
-    invoke-virtual {v1}, Ljava/io/File;->getName()Ljava/lang/String;
-
-    .line 9
-    .line 10
-    .line 11
-    move-result-object v2
-
-    .line 12
-    invoke-static {v2, v0}, Lʼˏ/ᵢ;->ᵎ(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
-
-    .line 13
-    .line 14
-    .line 15
-    move-result-object v2
-
-    .line 16
-    sget v3, Lʾˉ/ᴵᴵ;->ʾᐧ:I
-
-    .line 17
-    .line 18
-    const/16 v4, 0x17
-
-    .line 19
-    .line 20
-    const/4 v5, 0x1
-
-    .line 21
-    if-lt v3, v4, :cond_3
-
-    .line 22
-    .line 23
-    new-instance p0, Ljava/io/File;
-
-    .line 24
-    .line 25
-    new-instance v0, Ljava/lang/StringBuilder;
-
-    .line 26
-    .line 27
-    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
-
-    .line 28
-    .line 29
-    .line 30
-    invoke-static {v1}, Lʼˏ/ᵢ;->ʾˑ(Ljava/io/File;)Ljava/io/File;
-
-    .line 31
-    .line 32
-    .line 33
-    move-result-object v3
-
-    .line 34
-    invoke-virtual {v0, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
-
-    .line 35
-    .line 36
-    .line 37
-    const-string v3, "/oat/arm/"
-
-    .line 38
-    .line 39
-    invoke-virtual {v0, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 40
-    .line 41
-    .line 42
-    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 43
-    .line 44
-    .line 45
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    .line 46
-    .line 47
-    .line 48
-    move-result-object v0
-
-    .line 49
-    invoke-direct {p0, v0}, Ljava/io/File;-><init>(Ljava/lang/String;)V
-
-    .line 50
-    .line 51
-    .line 52
-    invoke-virtual {p0}, Ljava/io/File;->exists()Z
-
-    .line 53
-    .line 54
-    .line 55
-    move-result p0
-
-    .line 56
-    if-eqz p0, :cond_0
-
-    .line 57
-    .line 58
-    return v5
-
-    .line 59
-    :cond_0
-    new-instance p0, Ljava/io/File;
-
-    .line 60
-    .line 61
-    new-instance v0, Ljava/lang/StringBuilder;
-
-    .line 62
-    .line 63
-    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
-
-    .line 64
-    .line 65
-    .line 66
-    invoke-static {v1}, Lʼˏ/ᵢ;->ʾˑ(Ljava/io/File;)Ljava/io/File;
-
-    .line 67
-    .line 68
-    .line 69
-    move-result-object v3
-
-    .line 70
-    invoke-virtual {v0, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
-
-    .line 71
-    .line 72
-    .line 73
-    const-string v3, "/oat/arm64/"
-
-    .line 74
-    .line 75
-    invoke-virtual {v0, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 76
-    .line 77
-    .line 78
-    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 79
-    .line 80
-    .line 81
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    .line 82
-    .line 83
-    .line 84
-    move-result-object v0
-
-    .line 85
-    invoke-direct {p0, v0}, Ljava/io/File;-><init>(Ljava/lang/String;)V
-
-    .line 86
-    .line 87
-    .line 88
-    invoke-virtual {p0}, Ljava/io/File;->exists()Z
-
-    .line 89
-    .line 90
-    .line 91
-    move-result p0
-
-    .line 92
-    if-eqz p0, :cond_1
-
-    .line 93
-    .line 94
-    return v5
-
-    .line 95
-    :cond_1
-    new-instance p0, Ljava/io/File;
-
-    .line 96
-    .line 97
-    new-instance v0, Ljava/lang/StringBuilder;
-
-    .line 98
-    .line 99
-    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
-
-    .line 100
-    .line 101
-    .line 102
-    invoke-static {v1}, Lʼˏ/ᵢ;->ʾˑ(Ljava/io/File;)Ljava/io/File;
-
-    .line 103
-    .line 104
-    .line 105
-    move-result-object v3
-
-    .line 106
-    invoke-virtual {v0, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
-
-    .line 107
-    .line 108
-    .line 109
-    const-string v3, "/oat/x86/"
-
-    .line 110
-    .line 111
-    invoke-virtual {v0, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 112
-    .line 113
-    .line 114
-    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 115
-    .line 116
-    .line 117
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    .line 118
-    .line 119
-    .line 120
-    move-result-object v0
-
-    .line 121
-    invoke-direct {p0, v0}, Ljava/io/File;-><init>(Ljava/lang/String;)V
-
-    .line 122
-    .line 123
-    .line 124
-    invoke-virtual {p0}, Ljava/io/File;->exists()Z
-
-    .line 125
-    .line 126
-    .line 127
-    move-result p0
-
-    .line 128
-    if-eqz p0, :cond_2
-
-    .line 129
-    .line 130
-    return v5
-
-    .line 131
-    :cond_2
-    new-instance p0, Ljava/io/File;
-
-    .line 132
-    .line 133
-    new-instance v0, Ljava/lang/StringBuilder;
-
-    .line 134
-    .line 135
-    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
-
-    .line 136
-    .line 137
-    .line 138
-    invoke-static {v1}, Lʼˏ/ᵢ;->ʾˑ(Ljava/io/File;)Ljava/io/File;
-
-    .line 139
-    .line 140
-    .line 141
-    move-result-object v1
-
-    .line 142
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
-
-    .line 143
-    .line 144
-    .line 145
-    const-string v1, "/oat/x86_64/"
-
-    .line 146
-    .line 147
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 148
-    .line 149
-    .line 150
-    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 151
-    .line 152
-    .line 153
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    .line 154
-    .line 155
-    .line 156
-    move-result-object v0
-
-    .line 157
-    invoke-direct {p0, v0}, Ljava/io/File;-><init>(Ljava/lang/String;)V
-
-    .line 158
-    .line 159
-    .line 160
-    invoke-virtual {p0}, Ljava/io/File;->exists()Z
-
-    .line 161
-    .line 162
-    .line 163
-    move-result p0
-
-    .line 164
-    if-eqz p0, :cond_8
-
-    .line 165
-    .line 166
-    return v5
-
-    .line 167
-    :catch_0
-    move-exception p0
-
-    .line 168
-    goto/16 :goto_0
-
-    .line 169
-    .line 170
-    :cond_3
-    new-instance v2, Ljava/io/File;
-
-    .line 171
-    .line 172
-    invoke-static {p0, v0}, Lʼˏ/ᵢ;->ᵎ(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
-
-    .line 173
-    .line 174
-    .line 175
-    move-result-object p0
-
-    .line 176
-    invoke-direct {v2, p0}, Ljava/io/File;-><init>(Ljava/lang/String;)V
-
-    .line 177
-    .line 178
-    .line 179
-    invoke-virtual {v2}, Ljava/io/File;->exists()Z
-
-    .line 180
-    .line 181
-    .line 182
-    move-result p0
-
-    .line 183
-    if-eqz p0, :cond_4
-
-    .line 184
-    .line 185
-    return v5
-
-    .line 186
-    :cond_4
-    new-instance p0, Ljava/io/File;
-
-    .line 187
-    .line 188
-    new-instance v2, Ljava/lang/StringBuilder;
-
-    .line 189
-    .line 190
-    invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
-
-    .line 191
-    .line 192
-    .line 193
-    invoke-static {v1}, Lʼˏ/ᵢ;->ʾˑ(Ljava/io/File;)Ljava/io/File;
-
-    .line 194
-    .line 195
-    .line 196
-    move-result-object v3
-
-    .line 197
-    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
-
-    .line 198
-    .line 199
-    .line 200
-    const-string v3, "/arm/"
-
-    .line 201
-    .line 202
-    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 203
-    .line 204
-    .line 205
-    invoke-virtual {v1}, Ljava/io/File;->getName()Ljava/lang/String;
-
-    .line 206
-    .line 207
-    .line 208
-    move-result-object v3
-
-    .line 209
-    invoke-static {v3, v0}, Lʼˏ/ᵢ;->ᵎ(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
-
-    .line 210
-    .line 211
-    .line 212
-    move-result-object v3
-
-    .line 213
-    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 214
-    .line 215
-    .line 216
-    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    .line 217
-    .line 218
-    .line 219
-    move-result-object v2
-
-    .line 220
-    invoke-direct {p0, v2}, Ljava/io/File;-><init>(Ljava/lang/String;)V
-
-    .line 221
-    .line 222
-    .line 223
-    invoke-virtual {p0}, Ljava/io/File;->exists()Z
-
-    .line 224
-    .line 225
-    .line 226
-    move-result p0
-
-    .line 227
-    if-eqz p0, :cond_5
-
-    .line 228
-    .line 229
-    return v5
-
-    .line 230
-    :cond_5
-    new-instance p0, Ljava/io/File;
-
-    .line 231
-    .line 232
-    new-instance v2, Ljava/lang/StringBuilder;
-
-    .line 233
-    .line 234
-    invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
-
-    .line 235
-    .line 236
-    .line 237
-    invoke-static {v1}, Lʼˏ/ᵢ;->ʾˑ(Ljava/io/File;)Ljava/io/File;
-
-    .line 238
-    .line 239
-    .line 240
-    move-result-object v3
-
-    .line 241
-    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
-
-    .line 242
-    .line 243
-    .line 244
-    const-string v3, "/arm64/"
-
-    .line 245
-    .line 246
-    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 247
-    .line 248
-    .line 249
-    invoke-virtual {v1}, Ljava/io/File;->getName()Ljava/lang/String;
-
-    .line 250
-    .line 251
-    .line 252
-    move-result-object v3
-
-    .line 253
-    invoke-static {v3, v0}, Lʼˏ/ᵢ;->ᵎ(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
-
-    .line 254
-    .line 255
-    .line 256
-    move-result-object v3
-
-    .line 257
-    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 258
-    .line 259
-    .line 260
-    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    .line 261
-    .line 262
-    .line 263
-    move-result-object v2
-
-    .line 264
-    invoke-direct {p0, v2}, Ljava/io/File;-><init>(Ljava/lang/String;)V
-
-    .line 265
-    .line 266
-    .line 267
-    invoke-virtual {p0}, Ljava/io/File;->exists()Z
-
-    .line 268
-    .line 269
-    .line 270
-    move-result p0
-
-    .line 271
-    if-eqz p0, :cond_6
-
-    .line 272
-    .line 273
-    return v5
-
-    .line 274
-    :cond_6
-    new-instance p0, Ljava/io/File;
-
-    .line 275
-    .line 276
-    new-instance v2, Ljava/lang/StringBuilder;
-
-    .line 277
-    .line 278
-    invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
-
-    .line 279
-    .line 280
-    .line 281
-    invoke-static {v1}, Lʼˏ/ᵢ;->ʾˑ(Ljava/io/File;)Ljava/io/File;
-
-    .line 282
-    .line 283
-    .line 284
-    move-result-object v3
-
-    .line 285
-    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
-
-    .line 286
-    .line 287
-    .line 288
-    const-string v3, "/x86/"
-
-    .line 289
-    .line 290
-    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 291
-    .line 292
-    .line 293
-    invoke-virtual {v1}, Ljava/io/File;->getName()Ljava/lang/String;
-
-    .line 294
-    .line 295
-    .line 296
-    move-result-object v3
-
-    .line 297
-    invoke-static {v3, v0}, Lʼˏ/ᵢ;->ᵎ(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
-
-    .line 298
-    .line 299
-    .line 300
-    move-result-object v3
-
-    .line 301
-    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 302
-    .line 303
-    .line 304
-    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    .line 305
-    .line 306
-    .line 307
-    move-result-object v2
-
-    .line 308
-    invoke-direct {p0, v2}, Ljava/io/File;-><init>(Ljava/lang/String;)V
-
-    .line 309
-    .line 310
-    .line 311
-    invoke-virtual {p0}, Ljava/io/File;->exists()Z
-
-    .line 312
-    .line 313
-    .line 314
-    move-result p0
-
-    .line 315
-    if-eqz p0, :cond_7
-
-    .line 316
-    .line 317
-    return v5
-
-    .line 318
-    :cond_7
-    new-instance p0, Ljava/io/File;
-
-    .line 319
-    .line 320
-    new-instance v2, Ljava/lang/StringBuilder;
-
-    .line 321
-    .line 322
-    invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
-
-    .line 323
-    .line 324
-    .line 325
-    invoke-static {v1}, Lʼˏ/ᵢ;->ʾˑ(Ljava/io/File;)Ljava/io/File;
-
-    .line 326
-    .line 327
-    .line 328
-    move-result-object v3
-
-    .line 329
-    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
-
-    .line 330
-    .line 331
-    .line 332
-    const-string v3, "/x86_64/"
-
-    .line 333
-    .line 334
-    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 335
-    .line 336
-    .line 337
-    invoke-virtual {v1}, Ljava/io/File;->getName()Ljava/lang/String;
-
-    .line 338
-    .line 339
-    .line 340
-    move-result-object v1
-
-    .line 341
-    invoke-static {v1, v0}, Lʼˏ/ᵢ;->ᵎ(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
-
-    .line 342
-    .line 343
-    .line 344
-    move-result-object v0
-
-    .line 345
-    invoke-virtual {v2, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 346
-    .line 347
-    .line 348
-    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    .line 349
-    .line 350
-    .line 351
-    move-result-object v0
-
-    .line 352
-    invoke-direct {p0, v0}, Ljava/io/File;-><init>(Ljava/lang/String;)V
-
-    .line 353
-    .line 354
-    .line 355
-    invoke-virtual {p0}, Ljava/io/File;->exists()Z
-
-    .line 356
-    .line 357
-    .line 358
-    move-result p0
-    :try_end_0
-    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
-
-    .line 359
-    if-eqz p0, :cond_8
-
-    .line 360
-    .line 361
-    return v5
-
-    .line 362
-    :goto_0
-    invoke-virtual {p0}, Ljava/lang/Throwable;->printStackTrace()V
-
-    .line 363
-    .line 364
-    .line 365
-    :cond_8
-    const/4 p0, 0x0
-
-    .line 366
-    return p0
-.end method
-
-.method public static ˊʿ(Ljava/lang/String;)Z
-    .locals 3
-
-    .line 1
-    const/4 v0, 0x0
-
-    .line 2
-    :try_start_0
-    sget v1, Lʾˉ/ᴵᴵ;->ʾᐧ:I
-
-    .line 3
-    .line 4
-    const/16 v2, 0x15
-
-    .line 5
-    .line 6
-    if-lt v1, v2, :cond_2
-
-    .line 7
-    .line 8
-    invoke-static {}, Lʾˉ/ᴵᴵ;->ˈᵎ()Landroid/content/pm/PackageManager;
-
-    .line 9
-    .line 10
-    .line 11
-    move-result-object v1
-
-    .line 12
-    const/16 v2, 0x2000
-
-    .line 13
-    .line 14
-    invoke-virtual {v1, p0, v2}, Landroid/content/pm/PackageManager;->getPackageInfo(Ljava/lang/String;I)Landroid/content/pm/PackageInfo;
-
-    .line 15
-    .line 16
-    .line 17
-    move-result-object p0
-
-    .line 18
-    invoke-static {p0}, Lʼˏ/ᵎ;->ʻ(Landroid/content/pm/PackageInfo;)[Ljava/lang/String;
-
-    .line 19
-    .line 20
-    .line 21
-    move-result-object p0
-
-    .line 22
-    if-eqz p0, :cond_1
-
-    .line 23
-    .line 24
-    array-length p0, p0
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
-
-    .line 25
-    if-nez p0, :cond_0
-
-    .line 26
-    .line 27
-    goto :goto_0
-
-    .line 28
-    :cond_0
-    const/4 p0, 0x1
-
-    .line 29
-    return p0
-
-    .line 30
-    :catchall_0
-    move-exception p0
-
-    .line 31
-    goto :goto_1
-
-    .line 32
-    :cond_1
-    :goto_0
-    return v0
-
-    .line 33
-    :goto_1
-    invoke-virtual {p0}, Ljava/lang/Throwable;->printStackTrace()V
-
-    .line 34
-    .line 35
-    .line 36
-    :cond_2
-    return v0
-.end method
-
-.method public static final ˊˆ(Ljava/lang/String;)Z
-    .locals 1
-
-    .line 1
-    const-string v0, ".sub"
-
-    .line 2
-    .line 3
-    invoke-virtual {p0, v0}, Ljava/lang/String;->contains(Ljava/lang/CharSequence;)Z
-
-    .line 4
-    .line 5
-    .line 6
-    move-result v0
-
-    .line 7
-    if-nez v0, :cond_1
-
-    .line 8
-    .line 9
-    const-string v0, "_sub"
-
-    .line 10
-    .line 11
-    invoke-virtual {p0, v0}, Ljava/lang/String;->contains(Ljava/lang/CharSequence;)Z
-
-    .line 12
-    .line 13
-    .line 14
-    move-result v0
-
-    .line 15
-    if-nez v0, :cond_1
-
-    .line 16
-    .line 17
-    const-string v0, "subscription"
-
-    .line 18
-    .line 19
-    invoke-virtual {p0, v0}, Ljava/lang/String;->contains(Ljava/lang/CharSequence;)Z
-
-    .line 20
-    .line 21
-    .line 22
-    move-result v0
-
-    .line 23
-    if-nez v0, :cond_1
-
-    .line 24
-    .line 25
-    const-string v0, "subscribe"
-
-    .line 26
-    .line 27
-    invoke-virtual {p0, v0}, Ljava/lang/String;->contains(Ljava/lang/CharSequence;)Z
-
-    .line 28
-    .line 29
-    .line 30
-    move-result v0
-
-    .line 31
-    if-nez v0, :cond_1
-
-    .line 32
-    .line 33
-    const-string v0, "noads"
-
-    .line 34
-    .line 35
-    invoke-virtual {p0, v0}, Ljava/lang/String;->contains(Ljava/lang/CharSequence;)Z
-
-    .line 36
-    .line 37
-    .line 38
-    move-result v0
-
-    .line 39
-    if-nez v0, :cond_1
-
-    .line 40
-    .line 41
-    const-string v0, ".ads"
-
-    .line 42
-    .line 43
-    invoke-virtual {p0, v0}, Ljava/lang/String;->contains(Ljava/lang/CharSequence;)Z
-
-    .line 44
-    .line 45
-    .line 46
-    move-result v0
-
-    .line 47
-    if-nez v0, :cond_1
-
-    .line 48
-    .line 49
-    const-string v0, "_ads"
-
-    .line 50
-    .line 51
-    invoke-virtual {p0, v0}, Ljava/lang/String;->contains(Ljava/lang/CharSequence;)Z
-
-    .line 52
-    .line 53
-    .line 54
-    move-result v0
-
-    .line 55
-    if-nez v0, :cond_1
-
-    .line 56
-    .line 57
-    const-string v0, "full_version"
-
-    .line 58
-    .line 59
-    invoke-virtual {p0, v0}, Ljava/lang/String;->contains(Ljava/lang/CharSequence;)Z
-
-    .line 60
-    .line 61
-    .line 62
-    move-result v0
-
-    .line 63
-    if-nez v0, :cond_1
-
-    .line 64
-    .line 65
-    const-string v0, "fullversion"
-
-    .line 66
-    .line 67
-    invoke-virtual {p0, v0}, Ljava/lang/String;->contains(Ljava/lang/CharSequence;)Z
-
-    .line 68
-    .line 69
-    .line 70
-    move-result v0
-
-    .line 71
-    if-nez v0, :cond_1
-
-    .line 72
-    .line 73
-    const-string v0, "full.version"
-
-    .line 74
-    .line 75
-    invoke-virtual {p0, v0}, Ljava/lang/String;->contains(Ljava/lang/CharSequence;)Z
-
-    .line 76
-    .line 77
-    .line 78
-    move-result v0
-
-    .line 79
-    if-nez v0, :cond_1
-
-    .line 80
-    .line 81
-    const-string v0, "removeads"
-
-    .line 82
-    .line 83
-    invoke-virtual {p0, v0}, Ljava/lang/String;->contains(Ljava/lang/CharSequence;)Z
-
-    .line 84
-    .line 85
-    .line 86
-    move-result v0
-
-    .line 87
-    if-nez v0, :cond_1
-
-    .line 88
-    .line 89
-    const-string v0, "remove"
-
-    .line 90
-    .line 91
-    invoke-virtual {p0, v0}, Ljava/lang/String;->contains(Ljava/lang/CharSequence;)Z
-
-    .line 92
-    .line 93
-    .line 94
-    move-result v0
-
-    .line 95
-    if-nez v0, :cond_1
-
-    .line 96
-    .line 97
-    const-string v0, "unlock"
-
-    .line 98
-    .line 99
-    invoke-virtual {p0, v0}, Ljava/lang/String;->contains(Ljava/lang/CharSequence;)Z
-
-    .line 100
-    .line 101
-    .line 102
-    move-result p0
-
-    .line 103
-    if-eqz p0, :cond_0
-
-    .line 104
-    .line 105
-    goto :goto_0
-
-    .line 106
-    :cond_0
-    const/4 p0, 0x0
-
-    .line 107
-    return p0
-
-    .line 108
-    :cond_1
-    :goto_0
-    const/4 p0, 0x1
-
-    .line 109
-    return p0
-.end method
-
-.method public static ˊˈ(Ljava/io/File;)Z
-    .locals 9
-
-    .line 1
-    const/4 v0, 0x2
-
-    .line 2
-    const/4 v1, 0x3
-
-    .line 3
-    const/4 v2, 0x1
-
-    .line 4
-    const/4 v3, 0x0
-
-    .line 5
-    :try_start_0
-    invoke-static {p0}, Lcom/android/apksigner/ʻ;->ʻ(Ljava/io/File;)Ljava/nio/file/Path;
-
-    .line 6
-    .line 7
-    .line 8
-    move-result-object v4
-
-    .line 9
-    invoke-static {v4}, Lʼˏ/ˎ;->ʻ(Ljava/nio/file/Path;)Z
-
-    .line 10
-    .line 11
-    .line 12
-    move-result p0
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
-
-    .line 13
-    if-eqz p0, :cond_0
-
-    .line 14
-    .line 15
-    return v2
-
-    .line 16
-    :cond_0
-    return v3
-
-    .line 17
-    :catchall_0
-    nop
-
-    .line 18
-    sget-object v4, Lʾˉ/ᴵᴵ;->ʿᴵ:Ljava/lang/Boolean;
-
-    .line 19
-    .line 20
-    invoke-virtual {v4}, Ljava/lang/Boolean;->booleanValue()Z
-
-    .line 21
-    .line 22
-    .line 23
-    move-result v4
-
-    .line 24
-    const-string v5, "^.*?\\-\\>\\s+(.*)$"
-
-    .line 25
-    .line 26
-    if-eqz v4, :cond_3
-
-    .line 27
-    .line 28
-    invoke-virtual {p0}, Ljava/io/File;->getAbsolutePath()Ljava/lang/String;
-
-    .line 29
-    .line 30
-    .line 31
-    move-result-object v4
-
-    .line 32
-    const-string v6, "ls"
-
-    .line 33
-    .line 34
-    const-string v7, "-l"
-
-    .line 35
-    .line 36
-    new-array v8, v1, [Ljava/lang/String;
-
-    .line 37
-    .line 38
-    aput-object v6, v8, v3
-
-    .line 39
-    .line 40
-    aput-object v7, v8, v2
-
-    .line 41
-    .line 42
-    aput-object v4, v8, v0
-
-    .line 43
-    .line 44
-    invoke-static {v8}, Lʼˏ/ᵢ;->ˊˊ([Ljava/lang/String;)Ljava/lang/String;
-
-    .line 45
-    .line 46
-    .line 47
-    move-result-object v4
-
-    .line 48
-    invoke-static {v5}, Ljava/util/regex/Pattern;->compile(Ljava/lang/String;)Ljava/util/regex/Pattern;
-
-    .line 49
-    .line 50
-    .line 51
-    move-result-object v8
-
-    .line 52
-    invoke-virtual {v8, v4}, Ljava/util/regex/Pattern;->matcher(Ljava/lang/CharSequence;)Ljava/util/regex/Matcher;
-
-    .line 53
-    .line 54
-    .line 55
-    move-result-object v4
-
-    .line 56
-    invoke-virtual {v4}, Ljava/util/regex/Matcher;->find()Z
-
-    .line 57
-    .line 58
-    .line 59
-    move-result v4
-
-    .line 60
-    if-eqz v4, :cond_1
-
-    .line 61
-    .line 62
-    return v2
-
-    .line 63
-    :cond_1
-    new-instance v4, Ljava/lang/StringBuilder;
-
-    .line 64
-    .line 65
-    invoke-direct {v4}, Ljava/lang/StringBuilder;-><init>()V
-
-    .line 66
-    .line 67
-    .line 68
-    sget-object v8, Lʾˉ/ᴵᴵ;->ʼٴ:Ljava/lang/String;
-
-    .line 69
-    .line 70
-    invoke-virtual {v4, v8}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 71
-    .line 72
-    .line 73
-    const-string v8, "/busybox"
-
-    .line 74
-    .line 75
-    invoke-virtual {v4, v8}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 76
-    .line 77
-    .line 78
-    invoke-virtual {v4}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    .line 79
-    .line 80
-    .line 81
-    move-result-object v4
-
-    .line 82
-    invoke-virtual {p0}, Ljava/io/File;->getAbsolutePath()Ljava/lang/String;
-
-    .line 83
-    .line 84
-    .line 85
-    move-result-object p0
-
-    .line 86
-    const/4 v8, 0x4
-
-    .line 87
-    new-array v8, v8, [Ljava/lang/String;
-
-    .line 88
-    .line 89
-    aput-object v4, v8, v3
-
-    .line 90
-    .line 91
-    aput-object v6, v8, v2
-
-    .line 92
-    .line 93
-    aput-object v7, v8, v0
-
-    .line 94
-    .line 95
-    aput-object p0, v8, v1
-
-    .line 96
-    .line 97
-    invoke-static {v8}, Lʼˏ/ᵢ;->ˊˊ([Ljava/lang/String;)Ljava/lang/String;
-
-    .line 98
-    .line 99
-    .line 100
-    move-result-object p0
-
-    .line 101
-    invoke-static {p0}, Lʾˉ/ᴵᴵ;->ˉˎ(Ljava/lang/Object;)V
-
-    .line 102
-    .line 103
-    .line 104
-    invoke-static {v5}, Ljava/util/regex/Pattern;->compile(Ljava/lang/String;)Ljava/util/regex/Pattern;
-
-    .line 105
-    .line 106
-    .line 107
-    move-result-object v0
-
-    .line 108
-    invoke-virtual {v0, p0}, Ljava/util/regex/Pattern;->matcher(Ljava/lang/CharSequence;)Ljava/util/regex/Matcher;
-
-    .line 109
-    .line 110
-    .line 111
-    move-result-object p0
-
-    .line 112
-    invoke-virtual {p0}, Ljava/util/regex/Matcher;->find()Z
-
-    .line 113
-    .line 114
-    .line 115
-    move-result p0
-
-    .line 116
-    if-eqz p0, :cond_2
-
-    .line 117
-    .line 118
-    return v2
-
-    .line 119
-    :cond_2
-    return v3
-
-    .line 120
-    :cond_3
-    sget-boolean v0, Lʾˉ/ᴵᴵ;->ʽﾞ:Z
-
-    .line 121
-    .line 122
-    if-eqz v0, :cond_5
-
-    .line 123
-    .line 124
-    new-instance v0, Lʼˏ/ᵢ;
-
-    .line 125
-    .line 126
-    const-string v1, ""
-
-    .line 127
-    .line 128
-    invoke-direct {v0, v1}, Lʼˏ/ᵢ;-><init>(Ljava/lang/String;)V
-
-    .line 129
-    .line 130
-    .line 131
-    new-instance v4, Ljava/lang/StringBuilder;
-
-    .line 132
-    .line 133
-    invoke-direct {v4}, Ljava/lang/StringBuilder;-><init>()V
-
-    .line 134
-    .line 135
-    .line 136
-    const-string v6, "ls -l "
-
-    .line 137
-    .line 138
-    invoke-virtual {v4, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 139
-    .line 140
-    .line 141
-    invoke-virtual {p0}, Ljava/io/File;->getAbsolutePath()Ljava/lang/String;
-
-    .line 142
-    .line 143
-    .line 144
-    move-result-object v6
-
-    .line 145
-    invoke-virtual {v4, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 146
-    .line 147
-    .line 148
-    invoke-virtual {v4}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    .line 149
-    .line 150
-    .line 151
-    move-result-object v4
-
-    .line 152
-    new-array v6, v2, [Ljava/lang/String;
-
-    .line 153
-    .line 154
-    aput-object v4, v6, v3
-
-    .line 155
-    .line 156
-    invoke-virtual {v0, v6}, Lʼˏ/ᵢ;->ˎˎ([Ljava/lang/String;)Ljava/lang/String;
-
-    .line 157
-    .line 158
-    .line 159
-    move-result-object v0
-
-    .line 160
-    invoke-static {v5}, Ljava/util/regex/Pattern;->compile(Ljava/lang/String;)Ljava/util/regex/Pattern;
-
-    .line 161
-    .line 162
-    .line 163
-    move-result-object v4
-
-    .line 164
-    invoke-virtual {v4, v0}, Ljava/util/regex/Pattern;->matcher(Ljava/lang/CharSequence;)Ljava/util/regex/Matcher;
-
-    .line 165
-    .line 166
-    .line 167
-    move-result-object v0
-
-    .line 168
-    invoke-virtual {v0}, Ljava/util/regex/Matcher;->find()Z
-
-    .line 169
-    .line 170
-    .line 171
-    move-result v0
-
-    .line 172
-    if-eqz v0, :cond_4
-
-    .line 173
-    .line 174
-    return v2
-
-    .line 175
-    :cond_4
-    new-instance v0, Lʼˏ/ᵢ;
-
-    .line 176
-    .line 177
-    invoke-direct {v0, v1}, Lʼˏ/ᵢ;-><init>(Ljava/lang/String;)V
-
-    .line 178
-    .line 179
-    .line 180
-    new-instance v1, Ljava/lang/StringBuilder;
-
-    .line 181
-    .line 182
-    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
-
-    .line 183
-    .line 184
-    .line 185
-    sget-object v4, Lʾˉ/ᴵᴵ;->ʼٴ:Ljava/lang/String;
-
-    .line 186
-    .line 187
-    invoke-virtual {v1, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 188
-    .line 189
-    .line 190
-    const-string v4, "/busybox ls -l "
-
-    .line 191
-    .line 192
-    invoke-virtual {v1, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 193
-    .line 194
-    .line 195
-    invoke-virtual {p0}, Ljava/io/File;->getAbsolutePath()Ljava/lang/String;
-
-    .line 196
-    .line 197
-    .line 198
-    move-result-object p0
-
-    .line 199
-    invoke-virtual {v1, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 200
-    .line 201
-    .line 202
-    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    .line 203
-    .line 204
-    .line 205
-    move-result-object p0
-
-    .line 206
-    new-array v1, v2, [Ljava/lang/String;
-
-    .line 207
-    .line 208
-    aput-object p0, v1, v3
-
-    .line 209
-    .line 210
-    invoke-virtual {v0, v1}, Lʼˏ/ᵢ;->ˎˎ([Ljava/lang/String;)Ljava/lang/String;
-
-    .line 211
-    .line 212
-    .line 213
-    move-result-object p0
-
-    .line 214
-    invoke-static {v5}, Ljava/util/regex/Pattern;->compile(Ljava/lang/String;)Ljava/util/regex/Pattern;
-
-    .line 215
-    .line 216
-    .line 217
-    move-result-object v0
-
-    .line 218
-    invoke-virtual {v0, p0}, Ljava/util/regex/Pattern;->matcher(Ljava/lang/CharSequence;)Ljava/util/regex/Matcher;
-
-    .line 219
-    .line 220
-    .line 221
-    move-result-object p0
-
-    .line 222
-    invoke-virtual {p0}, Ljava/util/regex/Matcher;->find()Z
-
-    .line 223
-    .line 224
-    .line 225
-    move-result p0
-
-    .line 226
-    if-eqz p0, :cond_5
-
-    .line 227
-    .line 228
-    return v2
-
-    .line 229
-    :cond_5
-    return v3
-.end method
-
-.method public static ˊˉ(Ljava/lang/String;)Z
-    .locals 1
-
-    .line 1
-    const-string v0, "/data/"
-
-    .line 2
-    .line 3
-    invoke-virtual {p0, v0}, Ljava/lang/String;->startsWith(Ljava/lang/String;)Z
-
-    .line 4
-    .line 5
-    .line 6
-    move-result v0
-
-    .line 7
-    if-nez v0, :cond_0
-
-    .line 8
-    .line 9
-    const-string v0, "/mnt/"
-
-    .line 10
-    .line 11
-    invoke-virtual {p0, v0}, Ljava/lang/String;->startsWith(Ljava/lang/String;)Z
-
-    .line 12
-    .line 13
-    .line 14
-    move-result p0
-
-    .line 15
-    if-nez p0, :cond_0
-
-    .line 16
-    .line 17
-    const/4 p0, 0x1
-
-    .line 18
-    return p0
-
-    .line 19
-    :cond_0
-    const/4 p0, 0x0
-
-    .line 20
-    return p0
 .end method
 
 .method public static varargs ˊˊ([Ljava/lang/String;)Ljava/lang/String;
@@ -96954,7 +96648,1572 @@
     return-object v0
 .end method
 
-.method public static ˊˋ([B)Z
+.method public static ˊˋ(Ljava/lang/String;)Z
+    .locals 6
+
+    .line 1
+    const-string v0, "odex"
+
+    .line 2
+    .line 3
+    :try_start_0
+    new-instance v1, Ljava/io/File;
+
+    .line 4
+    .line 5
+    invoke-direct {v1, p0}, Ljava/io/File;-><init>(Ljava/lang/String;)V
+
+    .line 6
+    .line 7
+    .line 8
+    invoke-virtual {v1}, Ljava/io/File;->getName()Ljava/lang/String;
+
+    .line 9
+    .line 10
+    .line 11
+    move-result-object v2
+
+    .line 12
+    invoke-static {v2, v0}, Lʼˏ/ᵢ;->ᵎ(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+
+    .line 13
+    .line 14
+    .line 15
+    move-result-object v2
+
+    .line 16
+    sget v3, Lʾˉ/ᴵᴵ;->ʾᐧ:I
+
+    .line 17
+    .line 18
+    const/16 v4, 0x17
+
+    .line 19
+    .line 20
+    const/4 v5, 0x1
+
+    .line 21
+    if-lt v3, v4, :cond_3
+
+    .line 22
+    .line 23
+    new-instance p0, Ljava/io/File;
+
+    .line 24
+    .line 25
+    new-instance v0, Ljava/lang/StringBuilder;
+
+    .line 26
+    .line 27
+    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
+
+    .line 28
+    .line 29
+    .line 30
+    invoke-static {v1}, Lʼˏ/ᵢ;->ʾـ(Ljava/io/File;)Ljava/io/File;
+
+    .line 31
+    .line 32
+    .line 33
+    move-result-object v3
+
+    .line 34
+    invoke-virtual {v0, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    .line 35
+    .line 36
+    .line 37
+    const-string v3, "/oat/arm/"
+
+    .line 38
+    .line 39
+    invoke-virtual {v0, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 40
+    .line 41
+    .line 42
+    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 43
+    .line 44
+    .line 45
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    .line 46
+    .line 47
+    .line 48
+    move-result-object v0
+
+    .line 49
+    invoke-direct {p0, v0}, Ljava/io/File;-><init>(Ljava/lang/String;)V
+
+    .line 50
+    .line 51
+    .line 52
+    invoke-virtual {p0}, Ljava/io/File;->exists()Z
+
+    .line 53
+    .line 54
+    .line 55
+    move-result p0
+
+    .line 56
+    if-eqz p0, :cond_0
+
+    .line 57
+    .line 58
+    return v5
+
+    .line 59
+    :cond_0
+    new-instance p0, Ljava/io/File;
+
+    .line 60
+    .line 61
+    new-instance v0, Ljava/lang/StringBuilder;
+
+    .line 62
+    .line 63
+    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
+
+    .line 64
+    .line 65
+    .line 66
+    invoke-static {v1}, Lʼˏ/ᵢ;->ʾـ(Ljava/io/File;)Ljava/io/File;
+
+    .line 67
+    .line 68
+    .line 69
+    move-result-object v3
+
+    .line 70
+    invoke-virtual {v0, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    .line 71
+    .line 72
+    .line 73
+    const-string v3, "/oat/arm64/"
+
+    .line 74
+    .line 75
+    invoke-virtual {v0, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 76
+    .line 77
+    .line 78
+    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 79
+    .line 80
+    .line 81
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    .line 82
+    .line 83
+    .line 84
+    move-result-object v0
+
+    .line 85
+    invoke-direct {p0, v0}, Ljava/io/File;-><init>(Ljava/lang/String;)V
+
+    .line 86
+    .line 87
+    .line 88
+    invoke-virtual {p0}, Ljava/io/File;->exists()Z
+
+    .line 89
+    .line 90
+    .line 91
+    move-result p0
+
+    .line 92
+    if-eqz p0, :cond_1
+
+    .line 93
+    .line 94
+    return v5
+
+    .line 95
+    :cond_1
+    new-instance p0, Ljava/io/File;
+
+    .line 96
+    .line 97
+    new-instance v0, Ljava/lang/StringBuilder;
+
+    .line 98
+    .line 99
+    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
+
+    .line 100
+    .line 101
+    .line 102
+    invoke-static {v1}, Lʼˏ/ᵢ;->ʾـ(Ljava/io/File;)Ljava/io/File;
+
+    .line 103
+    .line 104
+    .line 105
+    move-result-object v3
+
+    .line 106
+    invoke-virtual {v0, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    .line 107
+    .line 108
+    .line 109
+    const-string v3, "/oat/x86/"
+
+    .line 110
+    .line 111
+    invoke-virtual {v0, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 112
+    .line 113
+    .line 114
+    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 115
+    .line 116
+    .line 117
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    .line 118
+    .line 119
+    .line 120
+    move-result-object v0
+
+    .line 121
+    invoke-direct {p0, v0}, Ljava/io/File;-><init>(Ljava/lang/String;)V
+
+    .line 122
+    .line 123
+    .line 124
+    invoke-virtual {p0}, Ljava/io/File;->exists()Z
+
+    .line 125
+    .line 126
+    .line 127
+    move-result p0
+
+    .line 128
+    if-eqz p0, :cond_2
+
+    .line 129
+    .line 130
+    return v5
+
+    .line 131
+    :cond_2
+    new-instance p0, Ljava/io/File;
+
+    .line 132
+    .line 133
+    new-instance v0, Ljava/lang/StringBuilder;
+
+    .line 134
+    .line 135
+    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
+
+    .line 136
+    .line 137
+    .line 138
+    invoke-static {v1}, Lʼˏ/ᵢ;->ʾـ(Ljava/io/File;)Ljava/io/File;
+
+    .line 139
+    .line 140
+    .line 141
+    move-result-object v1
+
+    .line 142
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    .line 143
+    .line 144
+    .line 145
+    const-string v1, "/oat/x86_64/"
+
+    .line 146
+    .line 147
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 148
+    .line 149
+    .line 150
+    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 151
+    .line 152
+    .line 153
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    .line 154
+    .line 155
+    .line 156
+    move-result-object v0
+
+    .line 157
+    invoke-direct {p0, v0}, Ljava/io/File;-><init>(Ljava/lang/String;)V
+
+    .line 158
+    .line 159
+    .line 160
+    invoke-virtual {p0}, Ljava/io/File;->exists()Z
+
+    .line 161
+    .line 162
+    .line 163
+    move-result p0
+
+    .line 164
+    if-eqz p0, :cond_8
+
+    .line 165
+    .line 166
+    return v5
+
+    .line 167
+    :catch_0
+    move-exception p0
+
+    .line 168
+    goto/16 :goto_0
+
+    .line 169
+    .line 170
+    :cond_3
+    new-instance v2, Ljava/io/File;
+
+    .line 171
+    .line 172
+    invoke-static {p0, v0}, Lʼˏ/ᵢ;->ᵎ(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+
+    .line 173
+    .line 174
+    .line 175
+    move-result-object p0
+
+    .line 176
+    invoke-direct {v2, p0}, Ljava/io/File;-><init>(Ljava/lang/String;)V
+
+    .line 177
+    .line 178
+    .line 179
+    invoke-virtual {v2}, Ljava/io/File;->exists()Z
+
+    .line 180
+    .line 181
+    .line 182
+    move-result p0
+
+    .line 183
+    if-eqz p0, :cond_4
+
+    .line 184
+    .line 185
+    return v5
+
+    .line 186
+    :cond_4
+    new-instance p0, Ljava/io/File;
+
+    .line 187
+    .line 188
+    new-instance v2, Ljava/lang/StringBuilder;
+
+    .line 189
+    .line 190
+    invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
+
+    .line 191
+    .line 192
+    .line 193
+    invoke-static {v1}, Lʼˏ/ᵢ;->ʾـ(Ljava/io/File;)Ljava/io/File;
+
+    .line 194
+    .line 195
+    .line 196
+    move-result-object v3
+
+    .line 197
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    .line 198
+    .line 199
+    .line 200
+    const-string v3, "/arm/"
+
+    .line 201
+    .line 202
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 203
+    .line 204
+    .line 205
+    invoke-virtual {v1}, Ljava/io/File;->getName()Ljava/lang/String;
+
+    .line 206
+    .line 207
+    .line 208
+    move-result-object v3
+
+    .line 209
+    invoke-static {v3, v0}, Lʼˏ/ᵢ;->ᵎ(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+
+    .line 210
+    .line 211
+    .line 212
+    move-result-object v3
+
+    .line 213
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 214
+    .line 215
+    .line 216
+    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    .line 217
+    .line 218
+    .line 219
+    move-result-object v2
+
+    .line 220
+    invoke-direct {p0, v2}, Ljava/io/File;-><init>(Ljava/lang/String;)V
+
+    .line 221
+    .line 222
+    .line 223
+    invoke-virtual {p0}, Ljava/io/File;->exists()Z
+
+    .line 224
+    .line 225
+    .line 226
+    move-result p0
+
+    .line 227
+    if-eqz p0, :cond_5
+
+    .line 228
+    .line 229
+    return v5
+
+    .line 230
+    :cond_5
+    new-instance p0, Ljava/io/File;
+
+    .line 231
+    .line 232
+    new-instance v2, Ljava/lang/StringBuilder;
+
+    .line 233
+    .line 234
+    invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
+
+    .line 235
+    .line 236
+    .line 237
+    invoke-static {v1}, Lʼˏ/ᵢ;->ʾـ(Ljava/io/File;)Ljava/io/File;
+
+    .line 238
+    .line 239
+    .line 240
+    move-result-object v3
+
+    .line 241
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    .line 242
+    .line 243
+    .line 244
+    const-string v3, "/arm64/"
+
+    .line 245
+    .line 246
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 247
+    .line 248
+    .line 249
+    invoke-virtual {v1}, Ljava/io/File;->getName()Ljava/lang/String;
+
+    .line 250
+    .line 251
+    .line 252
+    move-result-object v3
+
+    .line 253
+    invoke-static {v3, v0}, Lʼˏ/ᵢ;->ᵎ(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+
+    .line 254
+    .line 255
+    .line 256
+    move-result-object v3
+
+    .line 257
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 258
+    .line 259
+    .line 260
+    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    .line 261
+    .line 262
+    .line 263
+    move-result-object v2
+
+    .line 264
+    invoke-direct {p0, v2}, Ljava/io/File;-><init>(Ljava/lang/String;)V
+
+    .line 265
+    .line 266
+    .line 267
+    invoke-virtual {p0}, Ljava/io/File;->exists()Z
+
+    .line 268
+    .line 269
+    .line 270
+    move-result p0
+
+    .line 271
+    if-eqz p0, :cond_6
+
+    .line 272
+    .line 273
+    return v5
+
+    .line 274
+    :cond_6
+    new-instance p0, Ljava/io/File;
+
+    .line 275
+    .line 276
+    new-instance v2, Ljava/lang/StringBuilder;
+
+    .line 277
+    .line 278
+    invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
+
+    .line 279
+    .line 280
+    .line 281
+    invoke-static {v1}, Lʼˏ/ᵢ;->ʾـ(Ljava/io/File;)Ljava/io/File;
+
+    .line 282
+    .line 283
+    .line 284
+    move-result-object v3
+
+    .line 285
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    .line 286
+    .line 287
+    .line 288
+    const-string v3, "/x86/"
+
+    .line 289
+    .line 290
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 291
+    .line 292
+    .line 293
+    invoke-virtual {v1}, Ljava/io/File;->getName()Ljava/lang/String;
+
+    .line 294
+    .line 295
+    .line 296
+    move-result-object v3
+
+    .line 297
+    invoke-static {v3, v0}, Lʼˏ/ᵢ;->ᵎ(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+
+    .line 298
+    .line 299
+    .line 300
+    move-result-object v3
+
+    .line 301
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 302
+    .line 303
+    .line 304
+    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    .line 305
+    .line 306
+    .line 307
+    move-result-object v2
+
+    .line 308
+    invoke-direct {p0, v2}, Ljava/io/File;-><init>(Ljava/lang/String;)V
+
+    .line 309
+    .line 310
+    .line 311
+    invoke-virtual {p0}, Ljava/io/File;->exists()Z
+
+    .line 312
+    .line 313
+    .line 314
+    move-result p0
+
+    .line 315
+    if-eqz p0, :cond_7
+
+    .line 316
+    .line 317
+    return v5
+
+    .line 318
+    :cond_7
+    new-instance p0, Ljava/io/File;
+
+    .line 319
+    .line 320
+    new-instance v2, Ljava/lang/StringBuilder;
+
+    .line 321
+    .line 322
+    invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
+
+    .line 323
+    .line 324
+    .line 325
+    invoke-static {v1}, Lʼˏ/ᵢ;->ʾـ(Ljava/io/File;)Ljava/io/File;
+
+    .line 326
+    .line 327
+    .line 328
+    move-result-object v3
+
+    .line 329
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    .line 330
+    .line 331
+    .line 332
+    const-string v3, "/x86_64/"
+
+    .line 333
+    .line 334
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 335
+    .line 336
+    .line 337
+    invoke-virtual {v1}, Ljava/io/File;->getName()Ljava/lang/String;
+
+    .line 338
+    .line 339
+    .line 340
+    move-result-object v1
+
+    .line 341
+    invoke-static {v1, v0}, Lʼˏ/ᵢ;->ᵎ(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+
+    .line 342
+    .line 343
+    .line 344
+    move-result-object v0
+
+    .line 345
+    invoke-virtual {v2, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 346
+    .line 347
+    .line 348
+    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    .line 349
+    .line 350
+    .line 351
+    move-result-object v0
+
+    .line 352
+    invoke-direct {p0, v0}, Ljava/io/File;-><init>(Ljava/lang/String;)V
+
+    .line 353
+    .line 354
+    .line 355
+    invoke-virtual {p0}, Ljava/io/File;->exists()Z
+
+    .line 356
+    .line 357
+    .line 358
+    move-result p0
+    :try_end_0
+    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
+
+    .line 359
+    if-eqz p0, :cond_8
+
+    .line 360
+    .line 361
+    return v5
+
+    .line 362
+    :goto_0
+    invoke-virtual {p0}, Ljava/lang/Throwable;->printStackTrace()V
+
+    .line 363
+    .line 364
+    .line 365
+    :cond_8
+    const/4 p0, 0x0
+
+    .line 366
+    return p0
+.end method
+
+.method public static ˊˎ(Ljava/lang/String;)Z
+    .locals 3
+
+    .line 1
+    const/4 v0, 0x0
+
+    .line 2
+    :try_start_0
+    sget v1, Lʾˉ/ᴵᴵ;->ʾᐧ:I
+
+    .line 3
+    .line 4
+    const/16 v2, 0x15
+
+    .line 5
+    .line 6
+    if-lt v1, v2, :cond_2
+
+    .line 7
+    .line 8
+    invoke-static {}, Lʾˉ/ᴵᴵ;->ˈᵎ()Landroid/content/pm/PackageManager;
+
+    .line 9
+    .line 10
+    .line 11
+    move-result-object v1
+
+    .line 12
+    const/16 v2, 0x2000
+
+    .line 13
+    .line 14
+    invoke-virtual {v1, p0, v2}, Landroid/content/pm/PackageManager;->getPackageInfo(Ljava/lang/String;I)Landroid/content/pm/PackageInfo;
+
+    .line 15
+    .line 16
+    .line 17
+    move-result-object p0
+
+    .line 18
+    invoke-static {p0}, Lʼˏ/ᵎ;->ʻ(Landroid/content/pm/PackageInfo;)[Ljava/lang/String;
+
+    .line 19
+    .line 20
+    .line 21
+    move-result-object p0
+
+    .line 22
+    if-eqz p0, :cond_1
+
+    .line 23
+    .line 24
+    array-length p0, p0
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    .line 25
+    if-nez p0, :cond_0
+
+    .line 26
+    .line 27
+    goto :goto_0
+
+    .line 28
+    :cond_0
+    const/4 p0, 0x1
+
+    .line 29
+    return p0
+
+    .line 30
+    :catchall_0
+    move-exception p0
+
+    .line 31
+    goto :goto_1
+
+    .line 32
+    :cond_1
+    :goto_0
+    return v0
+
+    .line 33
+    :goto_1
+    invoke-virtual {p0}, Ljava/lang/Throwable;->printStackTrace()V
+
+    .line 34
+    .line 35
+    .line 36
+    :cond_2
+    return v0
+.end method
+
+.method public static final ˊˏ(Ljava/lang/String;)Z
+    .locals 1
+
+    .line 1
+    const-string v0, ".sub"
+
+    .line 2
+    .line 3
+    invoke-virtual {p0, v0}, Ljava/lang/String;->contains(Ljava/lang/CharSequence;)Z
+
+    .line 4
+    .line 5
+    .line 6
+    move-result v0
+
+    .line 7
+    if-nez v0, :cond_1
+
+    .line 8
+    .line 9
+    const-string v0, "_sub"
+
+    .line 10
+    .line 11
+    invoke-virtual {p0, v0}, Ljava/lang/String;->contains(Ljava/lang/CharSequence;)Z
+
+    .line 12
+    .line 13
+    .line 14
+    move-result v0
+
+    .line 15
+    if-nez v0, :cond_1
+
+    .line 16
+    .line 17
+    const-string v0, "subscription"
+
+    .line 18
+    .line 19
+    invoke-virtual {p0, v0}, Ljava/lang/String;->contains(Ljava/lang/CharSequence;)Z
+
+    .line 20
+    .line 21
+    .line 22
+    move-result v0
+
+    .line 23
+    if-nez v0, :cond_1
+
+    .line 24
+    .line 25
+    const-string v0, "subscribe"
+
+    .line 26
+    .line 27
+    invoke-virtual {p0, v0}, Ljava/lang/String;->contains(Ljava/lang/CharSequence;)Z
+
+    .line 28
+    .line 29
+    .line 30
+    move-result v0
+
+    .line 31
+    if-nez v0, :cond_1
+
+    .line 32
+    .line 33
+    const-string v0, "noads"
+
+    .line 34
+    .line 35
+    invoke-virtual {p0, v0}, Ljava/lang/String;->contains(Ljava/lang/CharSequence;)Z
+
+    .line 36
+    .line 37
+    .line 38
+    move-result v0
+
+    .line 39
+    if-nez v0, :cond_1
+
+    .line 40
+    .line 41
+    const-string v0, ".ads"
+
+    .line 42
+    .line 43
+    invoke-virtual {p0, v0}, Ljava/lang/String;->contains(Ljava/lang/CharSequence;)Z
+
+    .line 44
+    .line 45
+    .line 46
+    move-result v0
+
+    .line 47
+    if-nez v0, :cond_1
+
+    .line 48
+    .line 49
+    const-string v0, "_ads"
+
+    .line 50
+    .line 51
+    invoke-virtual {p0, v0}, Ljava/lang/String;->contains(Ljava/lang/CharSequence;)Z
+
+    .line 52
+    .line 53
+    .line 54
+    move-result v0
+
+    .line 55
+    if-nez v0, :cond_1
+
+    .line 56
+    .line 57
+    const-string v0, "full_version"
+
+    .line 58
+    .line 59
+    invoke-virtual {p0, v0}, Ljava/lang/String;->contains(Ljava/lang/CharSequence;)Z
+
+    .line 60
+    .line 61
+    .line 62
+    move-result v0
+
+    .line 63
+    if-nez v0, :cond_1
+
+    .line 64
+    .line 65
+    const-string v0, "fullversion"
+
+    .line 66
+    .line 67
+    invoke-virtual {p0, v0}, Ljava/lang/String;->contains(Ljava/lang/CharSequence;)Z
+
+    .line 68
+    .line 69
+    .line 70
+    move-result v0
+
+    .line 71
+    if-nez v0, :cond_1
+
+    .line 72
+    .line 73
+    const-string v0, "full.version"
+
+    .line 74
+    .line 75
+    invoke-virtual {p0, v0}, Ljava/lang/String;->contains(Ljava/lang/CharSequence;)Z
+
+    .line 76
+    .line 77
+    .line 78
+    move-result v0
+
+    .line 79
+    if-nez v0, :cond_1
+
+    .line 80
+    .line 81
+    const-string v0, "removeads"
+
+    .line 82
+    .line 83
+    invoke-virtual {p0, v0}, Ljava/lang/String;->contains(Ljava/lang/CharSequence;)Z
+
+    .line 84
+    .line 85
+    .line 86
+    move-result v0
+
+    .line 87
+    if-nez v0, :cond_1
+
+    .line 88
+    .line 89
+    const-string v0, "remove"
+
+    .line 90
+    .line 91
+    invoke-virtual {p0, v0}, Ljava/lang/String;->contains(Ljava/lang/CharSequence;)Z
+
+    .line 92
+    .line 93
+    .line 94
+    move-result v0
+
+    .line 95
+    if-nez v0, :cond_1
+
+    .line 96
+    .line 97
+    const-string v0, "unlock"
+
+    .line 98
+    .line 99
+    invoke-virtual {p0, v0}, Ljava/lang/String;->contains(Ljava/lang/CharSequence;)Z
+
+    .line 100
+    .line 101
+    .line 102
+    move-result p0
+
+    .line 103
+    if-eqz p0, :cond_0
+
+    .line 104
+    .line 105
+    goto :goto_0
+
+    .line 106
+    :cond_0
+    const/4 p0, 0x0
+
+    .line 107
+    return p0
+
+    .line 108
+    :cond_1
+    :goto_0
+    const/4 p0, 0x1
+
+    .line 109
+    return p0
+.end method
+
+.method public static ˊˑ(Ljava/io/File;)Z
+    .locals 9
+
+    .line 1
+    const/4 v0, 0x2
+
+    .line 2
+    const/4 v1, 0x3
+
+    .line 3
+    const/4 v2, 0x1
+
+    .line 4
+    const/4 v3, 0x0
+
+    .line 5
+    :try_start_0
+    invoke-static {p0}, Lcom/android/apksigner/ʻ;->ʻ(Ljava/io/File;)Ljava/nio/file/Path;
+
+    .line 6
+    .line 7
+    .line 8
+    move-result-object v4
+
+    .line 9
+    invoke-static {v4}, Lʼˏ/ˎ;->ʻ(Ljava/nio/file/Path;)Z
+
+    .line 10
+    .line 11
+    .line 12
+    move-result p0
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    .line 13
+    if-eqz p0, :cond_0
+
+    .line 14
+    .line 15
+    return v2
+
+    .line 16
+    :cond_0
+    return v3
+
+    .line 17
+    :catchall_0
+    nop
+
+    .line 18
+    sget-object v4, Lʾˉ/ᴵᴵ;->ʿᴵ:Ljava/lang/Boolean;
+
+    .line 19
+    .line 20
+    invoke-virtual {v4}, Ljava/lang/Boolean;->booleanValue()Z
+
+    .line 21
+    .line 22
+    .line 23
+    move-result v4
+
+    .line 24
+    const-string v5, "^.*?\\-\\>\\s+(.*)$"
+
+    .line 25
+    .line 26
+    if-eqz v4, :cond_3
+
+    .line 27
+    .line 28
+    invoke-virtual {p0}, Ljava/io/File;->getAbsolutePath()Ljava/lang/String;
+
+    .line 29
+    .line 30
+    .line 31
+    move-result-object v4
+
+    .line 32
+    const-string v6, "ls"
+
+    .line 33
+    .line 34
+    const-string v7, "-l"
+
+    .line 35
+    .line 36
+    new-array v8, v1, [Ljava/lang/String;
+
+    .line 37
+    .line 38
+    aput-object v6, v8, v3
+
+    .line 39
+    .line 40
+    aput-object v7, v8, v2
+
+    .line 41
+    .line 42
+    aput-object v4, v8, v0
+
+    .line 43
+    .line 44
+    invoke-static {v8}, Lʼˏ/ᵢ;->ˊˊ([Ljava/lang/String;)Ljava/lang/String;
+
+    .line 45
+    .line 46
+    .line 47
+    move-result-object v4
+
+    .line 48
+    invoke-static {v5}, Ljava/util/regex/Pattern;->compile(Ljava/lang/String;)Ljava/util/regex/Pattern;
+
+    .line 49
+    .line 50
+    .line 51
+    move-result-object v8
+
+    .line 52
+    invoke-virtual {v8, v4}, Ljava/util/regex/Pattern;->matcher(Ljava/lang/CharSequence;)Ljava/util/regex/Matcher;
+
+    .line 53
+    .line 54
+    .line 55
+    move-result-object v4
+
+    .line 56
+    invoke-virtual {v4}, Ljava/util/regex/Matcher;->find()Z
+
+    .line 57
+    .line 58
+    .line 59
+    move-result v4
+
+    .line 60
+    if-eqz v4, :cond_1
+
+    .line 61
+    .line 62
+    return v2
+
+    .line 63
+    :cond_1
+    new-instance v4, Ljava/lang/StringBuilder;
+
+    .line 64
+    .line 65
+    invoke-direct {v4}, Ljava/lang/StringBuilder;-><init>()V
+
+    .line 66
+    .line 67
+    .line 68
+    sget-object v8, Lʾˉ/ᴵᴵ;->ʼٴ:Ljava/lang/String;
+
+    .line 69
+    .line 70
+    invoke-virtual {v4, v8}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 71
+    .line 72
+    .line 73
+    const-string v8, "/busybox"
+
+    .line 74
+    .line 75
+    invoke-virtual {v4, v8}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 76
+    .line 77
+    .line 78
+    invoke-virtual {v4}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    .line 79
+    .line 80
+    .line 81
+    move-result-object v4
+
+    .line 82
+    invoke-virtual {p0}, Ljava/io/File;->getAbsolutePath()Ljava/lang/String;
+
+    .line 83
+    .line 84
+    .line 85
+    move-result-object p0
+
+    .line 86
+    const/4 v8, 0x4
+
+    .line 87
+    new-array v8, v8, [Ljava/lang/String;
+
+    .line 88
+    .line 89
+    aput-object v4, v8, v3
+
+    .line 90
+    .line 91
+    aput-object v6, v8, v2
+
+    .line 92
+    .line 93
+    aput-object v7, v8, v0
+
+    .line 94
+    .line 95
+    aput-object p0, v8, v1
+
+    .line 96
+    .line 97
+    invoke-static {v8}, Lʼˏ/ᵢ;->ˊˊ([Ljava/lang/String;)Ljava/lang/String;
+
+    .line 98
+    .line 99
+    .line 100
+    move-result-object p0
+
+    .line 101
+    invoke-static {p0}, Lʾˉ/ᴵᴵ;->ˉˎ(Ljava/lang/Object;)V
+
+    .line 102
+    .line 103
+    .line 104
+    invoke-static {v5}, Ljava/util/regex/Pattern;->compile(Ljava/lang/String;)Ljava/util/regex/Pattern;
+
+    .line 105
+    .line 106
+    .line 107
+    move-result-object v0
+
+    .line 108
+    invoke-virtual {v0, p0}, Ljava/util/regex/Pattern;->matcher(Ljava/lang/CharSequence;)Ljava/util/regex/Matcher;
+
+    .line 109
+    .line 110
+    .line 111
+    move-result-object p0
+
+    .line 112
+    invoke-virtual {p0}, Ljava/util/regex/Matcher;->find()Z
+
+    .line 113
+    .line 114
+    .line 115
+    move-result p0
+
+    .line 116
+    if-eqz p0, :cond_2
+
+    .line 117
+    .line 118
+    return v2
+
+    .line 119
+    :cond_2
+    return v3
+
+    .line 120
+    :cond_3
+    sget-boolean v0, Lʾˉ/ᴵᴵ;->ʽﾞ:Z
+
+    .line 121
+    .line 122
+    if-eqz v0, :cond_5
+
+    .line 123
+    .line 124
+    new-instance v0, Lʼˏ/ᵢ;
+
+    .line 125
+    .line 126
+    const-string v1, ""
+
+    .line 127
+    .line 128
+    invoke-direct {v0, v1}, Lʼˏ/ᵢ;-><init>(Ljava/lang/String;)V
+
+    .line 129
+    .line 130
+    .line 131
+    new-instance v4, Ljava/lang/StringBuilder;
+
+    .line 132
+    .line 133
+    invoke-direct {v4}, Ljava/lang/StringBuilder;-><init>()V
+
+    .line 134
+    .line 135
+    .line 136
+    const-string v6, "ls -l "
+
+    .line 137
+    .line 138
+    invoke-virtual {v4, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 139
+    .line 140
+    .line 141
+    invoke-virtual {p0}, Ljava/io/File;->getAbsolutePath()Ljava/lang/String;
+
+    .line 142
+    .line 143
+    .line 144
+    move-result-object v6
+
+    .line 145
+    invoke-virtual {v4, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 146
+    .line 147
+    .line 148
+    invoke-virtual {v4}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    .line 149
+    .line 150
+    .line 151
+    move-result-object v4
+
+    .line 152
+    new-array v6, v2, [Ljava/lang/String;
+
+    .line 153
+    .line 154
+    aput-object v4, v6, v3
+
+    .line 155
+    .line 156
+    invoke-virtual {v0, v6}, Lʼˏ/ᵢ;->ˎˎ([Ljava/lang/String;)Ljava/lang/String;
+
+    .line 157
+    .line 158
+    .line 159
+    move-result-object v0
+
+    .line 160
+    invoke-static {v5}, Ljava/util/regex/Pattern;->compile(Ljava/lang/String;)Ljava/util/regex/Pattern;
+
+    .line 161
+    .line 162
+    .line 163
+    move-result-object v4
+
+    .line 164
+    invoke-virtual {v4, v0}, Ljava/util/regex/Pattern;->matcher(Ljava/lang/CharSequence;)Ljava/util/regex/Matcher;
+
+    .line 165
+    .line 166
+    .line 167
+    move-result-object v0
+
+    .line 168
+    invoke-virtual {v0}, Ljava/util/regex/Matcher;->find()Z
+
+    .line 169
+    .line 170
+    .line 171
+    move-result v0
+
+    .line 172
+    if-eqz v0, :cond_4
+
+    .line 173
+    .line 174
+    return v2
+
+    .line 175
+    :cond_4
+    new-instance v0, Lʼˏ/ᵢ;
+
+    .line 176
+    .line 177
+    invoke-direct {v0, v1}, Lʼˏ/ᵢ;-><init>(Ljava/lang/String;)V
+
+    .line 178
+    .line 179
+    .line 180
+    new-instance v1, Ljava/lang/StringBuilder;
+
+    .line 181
+    .line 182
+    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
+
+    .line 183
+    .line 184
+    .line 185
+    sget-object v4, Lʾˉ/ᴵᴵ;->ʼٴ:Ljava/lang/String;
+
+    .line 186
+    .line 187
+    invoke-virtual {v1, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 188
+    .line 189
+    .line 190
+    const-string v4, "/busybox ls -l "
+
+    .line 191
+    .line 192
+    invoke-virtual {v1, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 193
+    .line 194
+    .line 195
+    invoke-virtual {p0}, Ljava/io/File;->getAbsolutePath()Ljava/lang/String;
+
+    .line 196
+    .line 197
+    .line 198
+    move-result-object p0
+
+    .line 199
+    invoke-virtual {v1, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 200
+    .line 201
+    .line 202
+    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    .line 203
+    .line 204
+    .line 205
+    move-result-object p0
+
+    .line 206
+    new-array v1, v2, [Ljava/lang/String;
+
+    .line 207
+    .line 208
+    aput-object p0, v1, v3
+
+    .line 209
+    .line 210
+    invoke-virtual {v0, v1}, Lʼˏ/ᵢ;->ˎˎ([Ljava/lang/String;)Ljava/lang/String;
+
+    .line 211
+    .line 212
+    .line 213
+    move-result-object p0
+
+    .line 214
+    invoke-static {v5}, Ljava/util/regex/Pattern;->compile(Ljava/lang/String;)Ljava/util/regex/Pattern;
+
+    .line 215
+    .line 216
+    .line 217
+    move-result-object v0
+
+    .line 218
+    invoke-virtual {v0, p0}, Ljava/util/regex/Pattern;->matcher(Ljava/lang/CharSequence;)Ljava/util/regex/Matcher;
+
+    .line 219
+    .line 220
+    .line 221
+    move-result-object p0
+
+    .line 222
+    invoke-virtual {p0}, Ljava/util/regex/Matcher;->find()Z
+
+    .line 223
+    .line 224
+    .line 225
+    move-result p0
+
+    .line 226
+    if-eqz p0, :cond_5
+
+    .line 227
+    .line 228
+    return v2
+
+    .line 229
+    :cond_5
+    return v3
+.end method
+
+.method public static ˊי(Ljava/lang/String;)Z
+    .locals 1
+
+    .line 1
+    const-string v0, "/data/"
+
+    .line 2
+    .line 3
+    invoke-virtual {p0, v0}, Ljava/lang/String;->startsWith(Ljava/lang/String;)Z
+
+    .line 4
+    .line 5
+    .line 6
+    move-result v0
+
+    .line 7
+    if-nez v0, :cond_0
+
+    .line 8
+    .line 9
+    const-string v0, "/mnt/"
+
+    .line 10
+    .line 11
+    invoke-virtual {p0, v0}, Ljava/lang/String;->startsWith(Ljava/lang/String;)Z
+
+    .line 12
+    .line 13
+    .line 14
+    move-result p0
+
+    .line 15
+    if-nez p0, :cond_0
+
+    .line 16
+    .line 17
+    const/4 p0, 0x1
+
+    .line 18
+    return p0
+
+    .line 19
+    :cond_0
+    const/4 p0, 0x0
+
+    .line 20
+    return p0
+.end method
+
+.method public static ˊـ([B)Z
     .locals 2
 
     .line 1
@@ -97031,7 +98290,7 @@
     return p0
 .end method
 
-.method public static ˊˎ()Z
+.method public static ˊٴ()Z
     .locals 10
 
     .line 1
@@ -97322,7 +98581,7 @@
     return v2
 .end method
 
-.method public static ˊˏ(J)J
+.method public static ˊᐧ(J)J
     .locals 2
 
     .line 1
@@ -97457,7 +98716,49 @@
     return-wide p0
 .end method
 
-.method public static ˊˑ(Ljava/lang/String;)V
+.method public static ˊᴵ([Ljava/lang/String;[Ljava/lang/String;)[Ljava/lang/String;
+    .locals 3
+
+    .line 1
+    array-length v0, p0
+
+    .line 2
+    array-length v1, p1
+
+    .line 3
+    add-int/2addr v0, v1
+
+    .line 4
+    new-array v0, v0, [Ljava/lang/String;
+
+    .line 5
+    .line 6
+    array-length v1, p0
+
+    .line 7
+    const/4 v2, 0x0
+
+    .line 8
+    invoke-static {p0, v2, v0, v2, v1}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
+
+    .line 9
+    .line 10
+    .line 11
+    array-length p0, p0
+
+    .line 12
+    array-length v1, p1
+
+    .line 13
+    invoke-static {p1, v2, v0, p0, v1}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
+
+    .line 14
+    .line 15
+    .line 16
+    return-object v0
+.end method
+
+.method public static ˊᵎ(Ljava/lang/String;)V
     .locals 1
 
     .line 1
@@ -97477,7 +98778,7 @@
 
     .line 8
     .line 9
-    invoke-static {p0}, Lʼˏ/ᵢ;->ˊי(Ljava/lang/String;)Z
+    invoke-static {p0}, Lʼˏ/ᵢ;->ˊᵔ(Ljava/lang/String;)Z
 
     .line 10
     .line 11
@@ -97494,7 +98795,7 @@
 
     .line 16
     .line 17
-    invoke-static {p0}, Lʼˏ/ᵢ;->ˊי(Ljava/lang/String;)Z
+    invoke-static {p0}, Lʼˏ/ᵢ;->ˊᵔ(Ljava/lang/String;)Z
 
     .line 18
     .line 19
@@ -97504,7 +98805,7 @@
     return-void
 .end method
 
-.method public static ˊי(Ljava/lang/String;)Z
+.method public static ˊᵔ(Ljava/lang/String;)Z
     .locals 19
 
     .line 1
@@ -97715,7 +99016,7 @@
 
     .line 103
     .line 104
-    invoke-static {}, Lʼˏ/ᵢ;->ʼˏ()V
+    invoke-static {}, Lʼˏ/ᵢ;->ʼי()V
 
     .line 105
     .line 106
@@ -99354,7 +100655,7 @@
     return v1
 .end method
 
-.method public static ˊـ(Ljava/io/File;)Ljava/lang/String;
+.method public static ˊᵢ(Ljava/io/File;)Ljava/lang/String;
     .locals 2
     .annotation system Ldalvik/annotation/Throws;
         value = {
@@ -99395,7 +100696,7 @@
 
     .line 15
     .line 16
-    invoke-static {p0}, Lʼˏ/ᵢ;->ˋˈ(Ljava/io/File;)Ljava/lang/String;
+    invoke-static {p0}, Lʼˏ/ᵢ;->ˋי(Ljava/io/File;)Ljava/lang/String;
 
     .line 17
     .line 18
@@ -99439,7 +100740,7 @@
     return-object v0
 .end method
 
-.method public static ˊٴ(Z)V
+.method public static ˊⁱ(Z)V
     .locals 2
 
     .line 1
@@ -99478,7 +100779,7 @@
     return-void
 .end method
 
-.method public static ˊᐧ(Z)V
+.method public static ˊﹳ(Z)V
     .locals 12
 
     .line 1
@@ -99970,7 +101271,7 @@
     return-void
 .end method
 
-.method public static ˊᴵ(Z)V
+.method public static ˊﹶ(Z)V
     .locals 2
 
     .line 1
@@ -100009,7 +101310,7 @@
     return-void
 .end method
 
-.method public static ˊᵎ(Z)V
+.method public static ˊﾞ(Z)V
     .locals 12
 
     .line 1
@@ -100047,7 +101348,7 @@
 
     .line 16
     .line 17
-    invoke-static {v4, v3}, Lʼˏ/ᵢ;->ˆʽ(Ljava/lang/String;I)Landroid/content/pm/PackageInfo;
+    invoke-static {v4, v3}, Lʼˏ/ᵢ;->ˆˈ(Ljava/lang/String;I)Landroid/content/pm/PackageInfo;
 
     .line 18
     .line 19
@@ -100415,11 +101716,615 @@
     return-void
 .end method
 
-.method public static ˊᵔ()Z
+.method public static ˋ(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+    .locals 18
+
+    .line 1
+    move-object/from16 v0, p0
+
+    .line 2
+    .line 3
+    move-object/from16 v1, p2
+
+    .line 4
+    .line 5
+    move-object/from16 v2, p3
+
+    .line 6
+    .line 7
+    const/4 v3, 0x2
+
+    .line 8
+    const/4 v4, 0x1
+
+    .line 9
+    const/4 v5, 0x0
+
+    .line 10
+    const/4 v6, 0x3
+
+    .line 11
+    new-instance v7, Ljava/lang/StringBuilder;
+
+    .line 12
+    .line 13
+    invoke-direct {v7}, Ljava/lang/StringBuilder;-><init>()V
+
+    .line 14
+    .line 15
+    .line 16
+    const-string v8, "uid:"
+
+    .line 17
+    .line 18
+    invoke-virtual {v7, v8}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 19
+    .line 20
+    .line 21
+    invoke-virtual {v7, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 22
+    .line 23
+    .line 24
+    invoke-virtual {v7}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    .line 25
+    .line 26
+    .line 27
+    move-result-object v7
+
+    .line 28
+    invoke-static {v7}, Lʾˉ/ᴵᴵ;->ˉˎ(Ljava/lang/Object;)V
+
+    .line 29
+    .line 30
+    .line 31
+    const-string v7, "copyDC"
+
+    .line 32
+    .line 33
+    invoke-virtual {v0, v7}, Ljava/lang/String;->contains(Ljava/lang/CharSequence;)Z
+
+    .line 34
+    .line 35
+    .line 36
+    move-result v8
+
+    .line 37
+    if-nez v8, :cond_0
+
+    .line 38
+    .line 39
+    const-string v8, "deleteDC"
+
+    .line 40
+    .line 41
+    invoke-virtual {v0, v8}, Ljava/lang/String;->contains(Ljava/lang/CharSequence;)Z
+
+    .line 42
+    .line 43
+    .line 44
+    move-result v8
+
+    .line 45
+    if-eqz v8, :cond_2
+
+    .line 46
+    .line 47
+    :cond_0
+    invoke-static/range {p1 .. p1}, Lʼˏ/ᵢ;->ʾᵔ(Ljava/lang/String;)Ljava/io/File;
+
+    .line 48
+    .line 49
+    .line 50
+    move-result-object v8
+
+    .line 51
+    const-string v9, "1000."
+
+    .line 52
+    .line 53
+    const-string v10, "1000:"
+
+    .line 54
+    .line 55
+    const-string v11, "644"
+
+    .line 56
+    .line 57
+    const-string v12, "chmod"
+
+    .line 58
+    .line 59
+    const-string v13, "chown"
+
+    .line 60
+    .line 61
+    if-eqz v8, :cond_1
+
+    .line 62
+    .line 63
+    invoke-virtual {v8}, Ljava/io/File;->delete()Z
+
+    .line 64
+    .line 65
+    .line 66
+    invoke-virtual {v0, v7}, Ljava/lang/String;->contains(Ljava/lang/CharSequence;)Z
+
+    .line 67
+    .line 68
+    .line 69
+    move-result v0
+
+    .line 70
+    if-eqz v0, :cond_2
+
+    .line 71
+    .line 72
+    new-instance v0, Ljava/io/File;
+
+    .line 73
+    .line 74
+    invoke-direct {v0, v1}, Ljava/io/File;-><init>(Ljava/lang/String;)V
+
+    .line 75
+    .line 76
+    .line 77
+    invoke-static {v0, v8}, Lʼˏ/ᵢ;->ʻˊ(Ljava/io/File;Ljava/io/File;)V
+
+    .line 78
+    .line 79
+    .line 80
+    invoke-virtual {v8}, Ljava/io/File;->exists()Z
+
+    .line 81
+    .line 82
+    .line 83
+    move-result v0
+
+    .line 84
+    if-eqz v0, :cond_2
+
+    .line 85
+    .line 86
+    invoke-virtual {v8}, Ljava/io/File;->length()J
+
+    .line 87
+    .line 88
+    .line 89
+    move-result-wide v14
+
+    .line 90
+    new-instance v0, Ljava/io/File;
+
+    .line 91
+    .line 92
+    invoke-direct {v0, v1}, Ljava/io/File;-><init>(Ljava/lang/String;)V
+
+    .line 93
+    .line 94
+    .line 95
+    invoke-virtual {v0}, Ljava/io/File;->length()J
+
+    .line 96
+    .line 97
+    .line 98
+    move-result-wide v16
+
+    .line 99
+    cmp-long v0, v14, v16
+
+    .line 100
+    .line 101
+    if-nez v0, :cond_2
+
+    .line 102
+    .line 103
+    new-instance v0, Ljava/io/File;
+
+    .line 104
+    .line 105
+    invoke-direct {v0, v1}, Ljava/io/File;-><init>(Ljava/lang/String;)V
+
+    .line 106
+    .line 107
+    .line 108
+    invoke-virtual {v0}, Ljava/io/File;->delete()Z
+
+    .line 109
+    .line 110
+    .line 111
+    invoke-virtual {v8}, Ljava/io/File;->getAbsolutePath()Ljava/lang/String;
+
+    .line 112
+    .line 113
+    .line 114
+    move-result-object v0
+
+    .line 115
+    new-array v1, v6, [Ljava/lang/String;
+
+    .line 116
+    .line 117
+    aput-object v12, v1, v5
+
+    .line 118
+    .line 119
+    aput-object v11, v1, v4
+
+    .line 120
+    .line 121
+    aput-object v0, v1, v3
+
+    .line 122
+    .line 123
+    invoke-static {v1}, Lʼˏ/ᵢ;->ˎˏ([Ljava/lang/String;)V
+
+    .line 124
+    .line 125
+    .line 126
+    new-instance v0, Ljava/lang/StringBuilder;
+
+    .line 127
+    .line 128
+    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
+
+    .line 129
+    .line 130
+    .line 131
+    invoke-virtual {v0, v10}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 132
+    .line 133
+    .line 134
+    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 135
+    .line 136
+    .line 137
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    .line 138
+    .line 139
+    .line 140
+    move-result-object v0
+
+    .line 141
+    invoke-virtual {v8}, Ljava/io/File;->getAbsolutePath()Ljava/lang/String;
+
+    .line 142
+    .line 143
+    .line 144
+    move-result-object v1
+
+    .line 145
+    new-array v7, v6, [Ljava/lang/String;
+
+    .line 146
+    .line 147
+    aput-object v13, v7, v5
+
+    .line 148
+    .line 149
+    aput-object v0, v7, v4
+
+    .line 150
+    .line 151
+    aput-object v1, v7, v3
+
+    .line 152
+    .line 153
+    invoke-static {v7}, Lʼˏ/ᵢ;->ˎˏ([Ljava/lang/String;)V
+
+    .line 154
+    .line 155
+    .line 156
+    new-instance v0, Ljava/lang/StringBuilder;
+
+    .line 157
+    .line 158
+    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
+
+    .line 159
+    .line 160
+    .line 161
+    invoke-virtual {v0, v9}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 162
+    .line 163
+    .line 164
+    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 165
+    .line 166
+    .line 167
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    .line 168
+    .line 169
+    .line 170
+    move-result-object v0
+
+    .line 171
+    invoke-virtual {v8}, Ljava/io/File;->getAbsolutePath()Ljava/lang/String;
+
+    .line 172
+    .line 173
+    .line 174
+    move-result-object v1
+
+    .line 175
+    new-array v2, v6, [Ljava/lang/String;
+
+    .line 176
+    .line 177
+    aput-object v13, v2, v5
+
+    .line 178
+    .line 179
+    aput-object v0, v2, v4
+
+    .line 180
+    .line 181
+    aput-object v1, v2, v3
+
+    .line 182
+    .line 183
+    invoke-static {v2}, Lʼˏ/ᵢ;->ˎˏ([Ljava/lang/String;)V
+
+    .line 184
+    .line 185
+    .line 186
+    goto/16 :goto_0
+
+    .line 187
+    .line 188
+    :cond_1
+    invoke-virtual {v0, v7}, Ljava/lang/String;->contains(Ljava/lang/CharSequence;)Z
+
+    .line 189
+    .line 190
+    .line 191
+    move-result v0
+
+    .line 192
+    if-eqz v0, :cond_2
+
+    .line 193
+    .line 194
+    invoke-static/range {p1 .. p1}, Lʼˏ/ᵢ;->ʾᵢ(Ljava/lang/String;)Ljava/io/File;
+
+    .line 195
+    .line 196
+    .line 197
+    move-result-object v0
+
+    .line 198
+    new-instance v7, Ljava/io/File;
+
+    .line 199
+    .line 200
+    invoke-direct {v7, v1}, Ljava/io/File;-><init>(Ljava/lang/String;)V
+
+    .line 201
+    .line 202
+    .line 203
+    invoke-static {v7, v0}, Lʼˏ/ᵢ;->ʻˊ(Ljava/io/File;Ljava/io/File;)V
+
+    .line 204
+    .line 205
+    .line 206
+    invoke-virtual {v0}, Ljava/io/File;->exists()Z
+
+    .line 207
+    .line 208
+    .line 209
+    move-result v7
+
+    .line 210
+    if-eqz v7, :cond_2
+
+    .line 211
+    .line 212
+    invoke-virtual {v0}, Ljava/io/File;->length()J
+
+    .line 213
+    .line 214
+    .line 215
+    move-result-wide v7
+
+    .line 216
+    new-instance v14, Ljava/io/File;
+
+    .line 217
+    .line 218
+    invoke-direct {v14, v1}, Ljava/io/File;-><init>(Ljava/lang/String;)V
+
+    .line 219
+    .line 220
+    .line 221
+    invoke-virtual {v14}, Ljava/io/File;->length()J
+
+    .line 222
+    .line 223
+    .line 224
+    move-result-wide v14
+
+    .line 225
+    cmp-long v16, v7, v14
+
+    .line 226
+    .line 227
+    if-nez v16, :cond_2
+
+    .line 228
+    .line 229
+    new-instance v7, Ljava/io/File;
+
+    .line 230
+    .line 231
+    invoke-direct {v7, v1}, Ljava/io/File;-><init>(Ljava/lang/String;)V
+
+    .line 232
+    .line 233
+    .line 234
+    invoke-virtual {v7}, Ljava/io/File;->delete()Z
+
+    .line 235
+    .line 236
+    .line 237
+    invoke-virtual {v0}, Ljava/io/File;->getAbsolutePath()Ljava/lang/String;
+
+    .line 238
+    .line 239
+    .line 240
+    move-result-object v1
+
+    .line 241
+    new-array v7, v6, [Ljava/lang/String;
+
+    .line 242
+    .line 243
+    aput-object v12, v7, v5
+
+    .line 244
+    .line 245
+    aput-object v11, v7, v4
+
+    .line 246
+    .line 247
+    aput-object v1, v7, v3
+
+    .line 248
+    .line 249
+    invoke-static {v7}, Lʼˏ/ᵢ;->ˎˏ([Ljava/lang/String;)V
+
+    .line 250
+    .line 251
+    .line 252
+    new-instance v1, Ljava/lang/StringBuilder;
+
+    .line 253
+    .line 254
+    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
+
+    .line 255
+    .line 256
+    .line 257
+    invoke-virtual {v1, v10}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 258
+    .line 259
+    .line 260
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 261
+    .line 262
+    .line 263
+    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    .line 264
+    .line 265
+    .line 266
+    move-result-object v1
+
+    .line 267
+    invoke-virtual {v0}, Ljava/io/File;->getAbsolutePath()Ljava/lang/String;
+
+    .line 268
+    .line 269
+    .line 270
+    move-result-object v7
+
+    .line 271
+    new-array v8, v6, [Ljava/lang/String;
+
+    .line 272
+    .line 273
+    aput-object v13, v8, v5
+
+    .line 274
+    .line 275
+    aput-object v1, v8, v4
+
+    .line 276
+    .line 277
+    aput-object v7, v8, v3
+
+    .line 278
+    .line 279
+    invoke-static {v8}, Lʼˏ/ᵢ;->ˎˏ([Ljava/lang/String;)V
+
+    .line 280
+    .line 281
+    .line 282
+    new-instance v1, Ljava/lang/StringBuilder;
+
+    .line 283
+    .line 284
+    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
+
+    .line 285
+    .line 286
+    .line 287
+    invoke-virtual {v1, v9}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 288
+    .line 289
+    .line 290
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 291
+    .line 292
+    .line 293
+    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    .line 294
+    .line 295
+    .line 296
+    move-result-object v1
+
+    .line 297
+    invoke-virtual {v0}, Ljava/io/File;->getAbsolutePath()Ljava/lang/String;
+
+    .line 298
+    .line 299
+    .line 300
+    move-result-object v0
+
+    .line 301
+    new-array v2, v6, [Ljava/lang/String;
+
+    .line 302
+    .line 303
+    aput-object v13, v2, v5
+
+    .line 304
+    .line 305
+    aput-object v1, v2, v4
+
+    .line 306
+    .line 307
+    aput-object v0, v2, v3
+
+    .line 308
+    .line 309
+    invoke-static {v2}, Lʼˏ/ᵢ;->ˎˏ([Ljava/lang/String;)V
+
+    .line 310
+    .line 311
+    .line 312
+    :cond_2
+    :goto_0
+    return-void
+.end method
+
+.method public static ˋʻ()Z
     .locals 2
 
     .line 1
-    invoke-static {}, Lʼˏ/ᵢ;->ʿᵔ()Ljava/lang/String;
+    invoke-static {}, Lʼˏ/ᵢ;->ʿﹳ()Ljava/lang/String;
 
     .line 2
     .line 3
@@ -100468,7 +102373,7 @@
     return v0
 .end method
 
-.method public static ˊᵢ()Z
+.method public static ˋʼ()Z
     .locals 3
 
     .line 1
@@ -100518,7 +102423,7 @@
     return v0
 .end method
 
-.method public static ˊⁱ(Ljava/io/File;Ljava/lang/String;Ljava/lang/String;)Z
+.method public static ˋʽ(Ljava/io/File;Ljava/lang/String;Ljava/lang/String;)Z
     .locals 11
     .annotation system Ldalvik/annotation/Throws;
         value = {
@@ -100834,7 +102739,7 @@
 
     .line 151
     .line 152
-    invoke-static {v7, v9, v3}, Lʼˏ/ᵢ;->יˆ([BII)V
+    invoke-static {v7, v9, v3}, Lʼˏ/ᵢ;->יˏ([BII)V
 
     .line 153
     .line 154
@@ -100848,7 +102753,7 @@
     .line 158
     .line 159
     .line 160
-    invoke-static {v7, v9, v10}, Lʼˏ/ᵢ;->יˆ([BII)V
+    invoke-static {v7, v9, v10}, Lʼˏ/ᵢ;->יˏ([BII)V
 
     .line 161
     .line 162
@@ -100857,7 +102762,7 @@
 
     .line 164
     .line 165
-    invoke-static {v7, v8, v3}, Lʼˏ/ᵢ;->יˆ([BII)V
+    invoke-static {v7, v8, v3}, Lʼˏ/ᵢ;->יˏ([BII)V
 
     .line 166
     .line 167
@@ -100974,7 +102879,7 @@
     return v3
 .end method
 
-.method public static ˊﹳ(Landroid/app/Activity;)Z
+.method public static ˋʾ(Landroid/app/Activity;)Z
     .locals 0
 
     .line 1
@@ -100984,7 +102889,7 @@
     return p0
 .end method
 
-.method public static ˊﹶ(I)V
+.method public static ˋʿ(I)V
     .locals 2
 
     .line 1
@@ -101015,7 +102920,7 @@
     return-void
 .end method
 
-.method public static ˊﾞ(ZZZ)V
+.method public static ˋˆ(ZZZ)V
     .locals 8
 
     .line 1
@@ -101068,7 +102973,7 @@
     .line 26
     .line 27
     .line 28
-    invoke-static {v1}, Lʼˏ/ᵢ;->ˆי(I)J
+    invoke-static {v1}, Lʼˏ/ᵢ;->ˆᐧ(I)J
 
     .line 29
     .line 30
@@ -101296,7 +103201,7 @@
     .line 146
     .line 147
     .line 148
-    invoke-static {v1, v3}, Lʼˏ/ᵢ;->ˆـ(ILjava/io/File;)Z
+    invoke-static {v1, v3}, Lʼˏ/ᵢ;->ˆᴵ(ILjava/io/File;)Z
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -101398,7 +103303,7 @@
     move-result-object v1
 
     .line 198
-    invoke-static {v1}, Lʼˏ/ᵢ;->ˎʾ(Ljava/lang/String;)V
+    invoke-static {v1}, Lʼˏ/ᵢ;->ˎˋ(Ljava/lang/String;)V
 
     .line 199
     .line 200
@@ -101442,7 +103347,7 @@
     move-result-object v1
 
     .line 222
-    invoke-static {v1}, Lʼˏ/ᵢ;->ˎʾ(Ljava/lang/String;)V
+    invoke-static {v1}, Lʼˏ/ᵢ;->ˎˋ(Ljava/lang/String;)V
 
     .line 223
     .line 224
@@ -101486,7 +103391,7 @@
     move-result-object v1
 
     .line 246
-    invoke-static {v1}, Lʼˏ/ᵢ;->ˎʾ(Ljava/lang/String;)V
+    invoke-static {v1}, Lʼˏ/ᵢ;->ˎˋ(Ljava/lang/String;)V
 
     .line 247
     .line 248
@@ -101615,7 +103520,7 @@
     const/4 p1, 0x1
 
     .line 312
-    invoke-static {p0, p1}, Lʼˏ/ᵢ;->ʽـ(Ljava/lang/String;I)Landroid/content/pm/PackageInfo;
+    invoke-static {p0, p1}, Lʼˏ/ᵢ;->ʽᐧ(Ljava/lang/String;I)Landroid/content/pm/PackageInfo;
 
     .line 313
     .line 314
@@ -101762,16 +103667,16 @@
 
     .line 380
     .line 381
-    sget-object p0, Lʾˉ/ᴵᴵ;->ʼﾞ:Lru/aaaaaccc/installer/MainActivity;
+    sget-object p0, Lʾˉ/ᴵᴵ;->ʼﾞ:Lru/aaaaaccd/installer/MainActivity;
 
     .line 382
     .line 383
-    const p1, 0x7f1104d3
+    const p1, 0x7f1104d5
 
     .line 384
     .line 385
     .line 386
-    invoke-static {p1}, Lʼˏ/ᵢ;->ˈי(I)Ljava/lang/String;
+    invoke-static {p1}, Lʼˏ/ᵢ;->ˈᐧ(I)Ljava/lang/String;
 
     .line 387
     .line 388
@@ -101779,12 +103684,12 @@
     move-result-object p1
 
     .line 390
-    const p2, 0x7f1104df
+    const p2, 0x7f1104e1
 
     .line 391
     .line 392
     .line 393
-    invoke-static {p2}, Lʼˏ/ᵢ;->ˈי(I)Ljava/lang/String;
+    invoke-static {p2}, Lʼˏ/ᵢ;->ˈᐧ(I)Ljava/lang/String;
 
     .line 394
     .line 395
@@ -101792,7 +103697,7 @@
     move-result-object p2
 
     .line 397
-    invoke-static {p0, p1, p2}, Lʼˏ/ᵢ;->ˏᴵ(Landroid/app/Activity;Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {p0, p1, p2}, Lʼˏ/ᵢ;->ˏﹶ(Landroid/app/Activity;Ljava/lang/String;Ljava/lang/String;)V
 
     .line 398
     .line 399
@@ -101802,611 +103707,7 @@
     return-void
 .end method
 
-.method public static ˋ(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
-    .locals 18
-
-    .line 1
-    move-object/from16 v0, p0
-
-    .line 2
-    .line 3
-    move-object/from16 v1, p2
-
-    .line 4
-    .line 5
-    move-object/from16 v2, p3
-
-    .line 6
-    .line 7
-    const/4 v3, 0x2
-
-    .line 8
-    const/4 v4, 0x1
-
-    .line 9
-    const/4 v5, 0x0
-
-    .line 10
-    const/4 v6, 0x3
-
-    .line 11
-    new-instance v7, Ljava/lang/StringBuilder;
-
-    .line 12
-    .line 13
-    invoke-direct {v7}, Ljava/lang/StringBuilder;-><init>()V
-
-    .line 14
-    .line 15
-    .line 16
-    const-string v8, "uid:"
-
-    .line 17
-    .line 18
-    invoke-virtual {v7, v8}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 19
-    .line 20
-    .line 21
-    invoke-virtual {v7, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 22
-    .line 23
-    .line 24
-    invoke-virtual {v7}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    .line 25
-    .line 26
-    .line 27
-    move-result-object v7
-
-    .line 28
-    invoke-static {v7}, Lʾˉ/ᴵᴵ;->ˉˎ(Ljava/lang/Object;)V
-
-    .line 29
-    .line 30
-    .line 31
-    const-string v7, "copyDC"
-
-    .line 32
-    .line 33
-    invoke-virtual {v0, v7}, Ljava/lang/String;->contains(Ljava/lang/CharSequence;)Z
-
-    .line 34
-    .line 35
-    .line 36
-    move-result v8
-
-    .line 37
-    if-nez v8, :cond_0
-
-    .line 38
-    .line 39
-    const-string v8, "deleteDC"
-
-    .line 40
-    .line 41
-    invoke-virtual {v0, v8}, Ljava/lang/String;->contains(Ljava/lang/CharSequence;)Z
-
-    .line 42
-    .line 43
-    .line 44
-    move-result v8
-
-    .line 45
-    if-eqz v8, :cond_2
-
-    .line 46
-    .line 47
-    :cond_0
-    invoke-static/range {p1 .. p1}, Lʼˏ/ᵢ;->ʾᴵ(Ljava/lang/String;)Ljava/io/File;
-
-    .line 48
-    .line 49
-    .line 50
-    move-result-object v8
-
-    .line 51
-    const-string v9, "1000."
-
-    .line 52
-    .line 53
-    const-string v10, "1000:"
-
-    .line 54
-    .line 55
-    const-string v11, "644"
-
-    .line 56
-    .line 57
-    const-string v12, "chmod"
-
-    .line 58
-    .line 59
-    const-string v13, "chown"
-
-    .line 60
-    .line 61
-    if-eqz v8, :cond_1
-
-    .line 62
-    .line 63
-    invoke-virtual {v8}, Ljava/io/File;->delete()Z
-
-    .line 64
-    .line 65
-    .line 66
-    invoke-virtual {v0, v7}, Ljava/lang/String;->contains(Ljava/lang/CharSequence;)Z
-
-    .line 67
-    .line 68
-    .line 69
-    move-result v0
-
-    .line 70
-    if-eqz v0, :cond_2
-
-    .line 71
-    .line 72
-    new-instance v0, Ljava/io/File;
-
-    .line 73
-    .line 74
-    invoke-direct {v0, v1}, Ljava/io/File;-><init>(Ljava/lang/String;)V
-
-    .line 75
-    .line 76
-    .line 77
-    invoke-static {v0, v8}, Lʼˏ/ᵢ;->ʻˋ(Ljava/io/File;Ljava/io/File;)V
-
-    .line 78
-    .line 79
-    .line 80
-    invoke-virtual {v8}, Ljava/io/File;->exists()Z
-
-    .line 81
-    .line 82
-    .line 83
-    move-result v0
-
-    .line 84
-    if-eqz v0, :cond_2
-
-    .line 85
-    .line 86
-    invoke-virtual {v8}, Ljava/io/File;->length()J
-
-    .line 87
-    .line 88
-    .line 89
-    move-result-wide v14
-
-    .line 90
-    new-instance v0, Ljava/io/File;
-
-    .line 91
-    .line 92
-    invoke-direct {v0, v1}, Ljava/io/File;-><init>(Ljava/lang/String;)V
-
-    .line 93
-    .line 94
-    .line 95
-    invoke-virtual {v0}, Ljava/io/File;->length()J
-
-    .line 96
-    .line 97
-    .line 98
-    move-result-wide v16
-
-    .line 99
-    cmp-long v0, v14, v16
-
-    .line 100
-    .line 101
-    if-nez v0, :cond_2
-
-    .line 102
-    .line 103
-    new-instance v0, Ljava/io/File;
-
-    .line 104
-    .line 105
-    invoke-direct {v0, v1}, Ljava/io/File;-><init>(Ljava/lang/String;)V
-
-    .line 106
-    .line 107
-    .line 108
-    invoke-virtual {v0}, Ljava/io/File;->delete()Z
-
-    .line 109
-    .line 110
-    .line 111
-    invoke-virtual {v8}, Ljava/io/File;->getAbsolutePath()Ljava/lang/String;
-
-    .line 112
-    .line 113
-    .line 114
-    move-result-object v0
-
-    .line 115
-    new-array v1, v6, [Ljava/lang/String;
-
-    .line 116
-    .line 117
-    aput-object v12, v1, v5
-
-    .line 118
-    .line 119
-    aput-object v11, v1, v4
-
-    .line 120
-    .line 121
-    aput-object v0, v1, v3
-
-    .line 122
-    .line 123
-    invoke-static {v1}, Lʼˏ/ᵢ;->ˎʿ([Ljava/lang/String;)V
-
-    .line 124
-    .line 125
-    .line 126
-    new-instance v0, Ljava/lang/StringBuilder;
-
-    .line 127
-    .line 128
-    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
-
-    .line 129
-    .line 130
-    .line 131
-    invoke-virtual {v0, v10}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 132
-    .line 133
-    .line 134
-    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 135
-    .line 136
-    .line 137
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    .line 138
-    .line 139
-    .line 140
-    move-result-object v0
-
-    .line 141
-    invoke-virtual {v8}, Ljava/io/File;->getAbsolutePath()Ljava/lang/String;
-
-    .line 142
-    .line 143
-    .line 144
-    move-result-object v1
-
-    .line 145
-    new-array v7, v6, [Ljava/lang/String;
-
-    .line 146
-    .line 147
-    aput-object v13, v7, v5
-
-    .line 148
-    .line 149
-    aput-object v0, v7, v4
-
-    .line 150
-    .line 151
-    aput-object v1, v7, v3
-
-    .line 152
-    .line 153
-    invoke-static {v7}, Lʼˏ/ᵢ;->ˎʿ([Ljava/lang/String;)V
-
-    .line 154
-    .line 155
-    .line 156
-    new-instance v0, Ljava/lang/StringBuilder;
-
-    .line 157
-    .line 158
-    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
-
-    .line 159
-    .line 160
-    .line 161
-    invoke-virtual {v0, v9}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 162
-    .line 163
-    .line 164
-    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 165
-    .line 166
-    .line 167
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    .line 168
-    .line 169
-    .line 170
-    move-result-object v0
-
-    .line 171
-    invoke-virtual {v8}, Ljava/io/File;->getAbsolutePath()Ljava/lang/String;
-
-    .line 172
-    .line 173
-    .line 174
-    move-result-object v1
-
-    .line 175
-    new-array v2, v6, [Ljava/lang/String;
-
-    .line 176
-    .line 177
-    aput-object v13, v2, v5
-
-    .line 178
-    .line 179
-    aput-object v0, v2, v4
-
-    .line 180
-    .line 181
-    aput-object v1, v2, v3
-
-    .line 182
-    .line 183
-    invoke-static {v2}, Lʼˏ/ᵢ;->ˎʿ([Ljava/lang/String;)V
-
-    .line 184
-    .line 185
-    .line 186
-    goto/16 :goto_0
-
-    .line 187
-    .line 188
-    :cond_1
-    invoke-virtual {v0, v7}, Ljava/lang/String;->contains(Ljava/lang/CharSequence;)Z
-
-    .line 189
-    .line 190
-    .line 191
-    move-result v0
-
-    .line 192
-    if-eqz v0, :cond_2
-
-    .line 193
-    .line 194
-    invoke-static/range {p1 .. p1}, Lʼˏ/ᵢ;->ʾᵎ(Ljava/lang/String;)Ljava/io/File;
-
-    .line 195
-    .line 196
-    .line 197
-    move-result-object v0
-
-    .line 198
-    new-instance v7, Ljava/io/File;
-
-    .line 199
-    .line 200
-    invoke-direct {v7, v1}, Ljava/io/File;-><init>(Ljava/lang/String;)V
-
-    .line 201
-    .line 202
-    .line 203
-    invoke-static {v7, v0}, Lʼˏ/ᵢ;->ʻˋ(Ljava/io/File;Ljava/io/File;)V
-
-    .line 204
-    .line 205
-    .line 206
-    invoke-virtual {v0}, Ljava/io/File;->exists()Z
-
-    .line 207
-    .line 208
-    .line 209
-    move-result v7
-
-    .line 210
-    if-eqz v7, :cond_2
-
-    .line 211
-    .line 212
-    invoke-virtual {v0}, Ljava/io/File;->length()J
-
-    .line 213
-    .line 214
-    .line 215
-    move-result-wide v7
-
-    .line 216
-    new-instance v14, Ljava/io/File;
-
-    .line 217
-    .line 218
-    invoke-direct {v14, v1}, Ljava/io/File;-><init>(Ljava/lang/String;)V
-
-    .line 219
-    .line 220
-    .line 221
-    invoke-virtual {v14}, Ljava/io/File;->length()J
-
-    .line 222
-    .line 223
-    .line 224
-    move-result-wide v14
-
-    .line 225
-    cmp-long v16, v7, v14
-
-    .line 226
-    .line 227
-    if-nez v16, :cond_2
-
-    .line 228
-    .line 229
-    new-instance v7, Ljava/io/File;
-
-    .line 230
-    .line 231
-    invoke-direct {v7, v1}, Ljava/io/File;-><init>(Ljava/lang/String;)V
-
-    .line 232
-    .line 233
-    .line 234
-    invoke-virtual {v7}, Ljava/io/File;->delete()Z
-
-    .line 235
-    .line 236
-    .line 237
-    invoke-virtual {v0}, Ljava/io/File;->getAbsolutePath()Ljava/lang/String;
-
-    .line 238
-    .line 239
-    .line 240
-    move-result-object v1
-
-    .line 241
-    new-array v7, v6, [Ljava/lang/String;
-
-    .line 242
-    .line 243
-    aput-object v12, v7, v5
-
-    .line 244
-    .line 245
-    aput-object v11, v7, v4
-
-    .line 246
-    .line 247
-    aput-object v1, v7, v3
-
-    .line 248
-    .line 249
-    invoke-static {v7}, Lʼˏ/ᵢ;->ˎʿ([Ljava/lang/String;)V
-
-    .line 250
-    .line 251
-    .line 252
-    new-instance v1, Ljava/lang/StringBuilder;
-
-    .line 253
-    .line 254
-    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
-
-    .line 255
-    .line 256
-    .line 257
-    invoke-virtual {v1, v10}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 258
-    .line 259
-    .line 260
-    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 261
-    .line 262
-    .line 263
-    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    .line 264
-    .line 265
-    .line 266
-    move-result-object v1
-
-    .line 267
-    invoke-virtual {v0}, Ljava/io/File;->getAbsolutePath()Ljava/lang/String;
-
-    .line 268
-    .line 269
-    .line 270
-    move-result-object v7
-
-    .line 271
-    new-array v8, v6, [Ljava/lang/String;
-
-    .line 272
-    .line 273
-    aput-object v13, v8, v5
-
-    .line 274
-    .line 275
-    aput-object v1, v8, v4
-
-    .line 276
-    .line 277
-    aput-object v7, v8, v3
-
-    .line 278
-    .line 279
-    invoke-static {v8}, Lʼˏ/ᵢ;->ˎʿ([Ljava/lang/String;)V
-
-    .line 280
-    .line 281
-    .line 282
-    new-instance v1, Ljava/lang/StringBuilder;
-
-    .line 283
-    .line 284
-    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
-
-    .line 285
-    .line 286
-    .line 287
-    invoke-virtual {v1, v9}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 288
-    .line 289
-    .line 290
-    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 291
-    .line 292
-    .line 293
-    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    .line 294
-    .line 295
-    .line 296
-    move-result-object v1
-
-    .line 297
-    invoke-virtual {v0}, Ljava/io/File;->getAbsolutePath()Ljava/lang/String;
-
-    .line 298
-    .line 299
-    .line 300
-    move-result-object v0
-
-    .line 301
-    new-array v2, v6, [Ljava/lang/String;
-
-    .line 302
-    .line 303
-    aput-object v13, v2, v5
-
-    .line 304
-    .line 305
-    aput-object v1, v2, v4
-
-    .line 306
-    .line 307
-    aput-object v0, v2, v3
-
-    .line 308
-    .line 309
-    invoke-static {v2}, Lʼˏ/ᵢ;->ˎʿ([Ljava/lang/String;)V
-
-    .line 310
-    .line 311
-    .line 312
-    :cond_2
-    :goto_0
-    return-void
-.end method
-
-.method public static ˋʻ()V
+.method public static ˋˈ()V
     .locals 13
 
     .line 1
@@ -102459,7 +103760,7 @@
     .line 26
     .line 27
     .line 28
-    invoke-static {v1}, Lʼˏ/ᵢ;->ˆי(I)J
+    invoke-static {v1}, Lʼˏ/ᵢ;->ˆᐧ(I)J
 
     .line 29
     .line 30
@@ -102707,7 +104008,7 @@
     .line 156
     .line 157
     .line 158
-    invoke-static {v1, v3}, Lʼˏ/ᵢ;->ˆـ(ILjava/io/File;)Z
+    invoke-static {v1, v3}, Lʼˏ/ᵢ;->ˆᴵ(ILjava/io/File;)Z
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -102793,7 +104094,7 @@
     move-result-object v1
 
     .line 200
-    invoke-static {v1}, Lʼˏ/ᵢ;->ˎʾ(Ljava/lang/String;)V
+    invoke-static {v1}, Lʼˏ/ᵢ;->ˎˋ(Ljava/lang/String;)V
 
     .line 201
     .line 202
@@ -102833,7 +104134,7 @@
     move-result-object v1
 
     .line 222
-    invoke-static {v1}, Lʼˏ/ᵢ;->ˎʾ(Ljava/lang/String;)V
+    invoke-static {v1}, Lʼˏ/ᵢ;->ˎˋ(Ljava/lang/String;)V
 
     .line 223
     .line 224
@@ -102873,7 +104174,7 @@
     move-result-object v0
 
     .line 244
-    invoke-static {v0}, Lʼˏ/ᵢ;->ˎʾ(Ljava/lang/String;)V
+    invoke-static {v0}, Lʼˏ/ᵢ;->ˎˋ(Ljava/lang/String;)V
 
     .line 245
     .line 246
@@ -102928,7 +104229,7 @@
     .line 272
     .line 273
     .line 274
-    invoke-static {v1}, Lʼˏ/ᵢ;->ˆי(I)J
+    invoke-static {v1}, Lʼˏ/ᵢ;->ˆᐧ(I)J
 
     .line 275
     .line 276
@@ -103094,7 +104395,7 @@
     .line 359
     .line 360
     .line 361
-    invoke-static {v1, v3}, Lʼˏ/ᵢ;->ˆـ(ILjava/io/File;)Z
+    invoke-static {v1, v3}, Lʼˏ/ᵢ;->ˆᴵ(ILjava/io/File;)Z
     :try_end_2
     .catch Ljava/lang/Exception; {:try_start_2 .. :try_end_2} :catch_2
 
@@ -103180,7 +104481,7 @@
     move-result-object v1
 
     .line 403
-    invoke-static {v1}, Lʼˏ/ᵢ;->ˎʾ(Ljava/lang/String;)V
+    invoke-static {v1}, Lʼˏ/ᵢ;->ˎˋ(Ljava/lang/String;)V
 
     .line 404
     .line 405
@@ -103220,7 +104521,7 @@
     move-result-object v1
 
     .line 425
-    invoke-static {v1}, Lʼˏ/ᵢ;->ˎʾ(Ljava/lang/String;)V
+    invoke-static {v1}, Lʼˏ/ᵢ;->ˎˋ(Ljava/lang/String;)V
 
     .line 426
     .line 427
@@ -103260,7 +104561,7 @@
     move-result-object v0
 
     .line 447
-    invoke-static {v0}, Lʼˏ/ᵢ;->ˎʾ(Ljava/lang/String;)V
+    invoke-static {v0}, Lʼˏ/ᵢ;->ˎˋ(Ljava/lang/String;)V
 
     .line 448
     .line 449
@@ -103269,7 +104570,7 @@
     return-void
 .end method
 
-.method public static ˋʼ(Landroid/content/pm/PackageInfo;)V
+.method public static ˋˉ(Landroid/content/pm/PackageInfo;)V
     .locals 13
 
     .line 1
@@ -103295,7 +104596,7 @@
     .line 10
     .line 11
     .line 12
-    invoke-static {v1}, Lʼˏ/ᵢ;->ˈﹶ(Ljava/io/File;)I
+    invoke-static {v1}, Lʼˏ/ᵢ;->ˉʽ(Ljava/io/File;)I
 
     .line 13
     .line 14
@@ -103355,7 +104656,7 @@
 
     .line 43
     .line 44
-    invoke-static {v1}, Lʼˏ/ᵢ;->ˈﹶ(Ljava/io/File;)I
+    invoke-static {v1}, Lʼˏ/ᵢ;->ˉʽ(Ljava/io/File;)I
 
     .line 45
     .line 46
@@ -103859,7 +105160,7 @@
     move-result-object p0
 
     .line 296
-    invoke-static {p0}, Lʼˏ/ᵢ;->ˎʾ(Ljava/lang/String;)V
+    invoke-static {p0}, Lʼˏ/ᵢ;->ˎˋ(Ljava/lang/String;)V
 
     .line 297
     .line 298
@@ -103904,7 +105205,7 @@
     move-result-object p0
 
     .line 321
-    invoke-static {p0}, Lʼˏ/ᵢ;->ˎʾ(Ljava/lang/String;)V
+    invoke-static {p0}, Lʼˏ/ᵢ;->ˎˋ(Ljava/lang/String;)V
 
     .line 322
     .line 323
@@ -103949,7 +105250,7 @@
     move-result-object p0
 
     .line 346
-    invoke-static {p0}, Lʼˏ/ᵢ;->ˎʾ(Ljava/lang/String;)V
+    invoke-static {p0}, Lʼˏ/ᵢ;->ˎˋ(Ljava/lang/String;)V
     :try_end_3
     .catchall {:try_start_3 .. :try_end_3} :catchall_2
 
@@ -104065,7 +105366,7 @@
     return-void
 .end method
 
-.method public static ˋʽ(F)F
+.method public static ˋˊ(F)F
     .locals 1
 
     .line 1
@@ -104094,1476 +105395,6 @@
     .line 12
     .line 13
     return p0
-.end method
-
-.method public static ˋʾ(Ljava/io/InputStream;)Ljava/lang/String;
-    .locals 3
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Ljava/io/IOException;
-        }
-    .end annotation
-
-    .line 1
-    new-instance v0, Ljava/io/ByteArrayOutputStream;
-
-    .line 2
-    .line 3
-    invoke-direct {v0}, Ljava/io/ByteArrayOutputStream;-><init>()V
-
-    .line 4
-    .line 5
-    .line 6
-    :goto_0
-    invoke-virtual {p0}, Ljava/io/InputStream;->read()I
-
-    .line 7
-    .line 8
-    .line 9
-    move-result v1
-
-    .line 10
-    if-gez v1, :cond_0
-
-    .line 11
-    .line 12
-    const/4 p0, 0x0
-
-    .line 13
-    return-object p0
-
-    .line 14
-    :cond_0
-    const/16 v2, 0xa
-
-    .line 15
-    .line 16
-    if-ne v1, v2, :cond_1
-
-    .line 17
-    .line 18
-    new-instance p0, Ljava/lang/String;
-
-    .line 19
-    .line 20
-    invoke-virtual {v0}, Ljava/io/ByteArrayOutputStream;->toByteArray()[B
-
-    .line 21
-    .line 22
-    .line 23
-    move-result-object v0
-
-    .line 24
-    const-string v1, "UTF-8"
-
-    .line 25
-    .line 26
-    invoke-direct {p0, v0, v1}, Ljava/lang/String;-><init>([BLjava/lang/String;)V
-
-    .line 27
-    .line 28
-    .line 29
-    return-object p0
-
-    .line 30
-    :cond_1
-    invoke-virtual {v0, v1}, Ljava/io/ByteArrayOutputStream;->write(I)V
-
-    .line 31
-    .line 32
-    .line 33
-    goto :goto_0
-.end method
-
-.method public static ˋʿ(Ljava/nio/MappedByteBuffer;)I
-    .locals 5
-
-    .line 1
-    const/4 v0, 0x0
-
-    .line 2
-    const/4 v1, 0x0
-
-    .line 3
-    :cond_0
-    invoke-virtual {p0}, Ljava/nio/ByteBuffer;->get()B
-
-    .line 4
-    .line 5
-    .line 6
-    move-result v2
-
-    .line 7
-    and-int/lit8 v3, v2, 0x7f
-
-    .line 8
-    .line 9
-    mul-int/lit8 v4, v1, 0x7
-
-    .line 10
-    .line 11
-    shl-int/2addr v3, v4
-
-    .line 12
-    or-int/2addr v0, v3
-
-    .line 13
-    add-int/lit8 v1, v1, 0x1
-
-    .line 14
-    .line 15
-    const/16 v3, 0x80
-
-    .line 16
-    .line 17
-    and-int/2addr v2, v3
-
-    .line 18
-    if-ne v2, v3, :cond_1
-
-    .line 19
-    .line 20
-    const/4 v4, 0x5
-
-    .line 21
-    if-lt v1, v4, :cond_0
-
-    .line 22
-    .line 23
-    :cond_1
-    if-ne v2, v3, :cond_2
-
-    .line 24
-    .line 25
-    const-string p0, "LuckyPatcher:invalid LEB128 sequence"
-
-    .line 26
-    .line 27
-    invoke-static {p0}, Lʾˉ/ᴵᴵ;->ˉˎ(Ljava/lang/Object;)V
-
-    .line 28
-    .line 29
-    .line 30
-    :cond_2
-    return v0
-.end method
-
-.method public static ˋˆ()Lorg/json/JSONObject;
-    .locals 8
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Lorg/json/JSONException;
-        }
-    .end annotation
-
-    .line 1
-    const-string v0, "/"
-
-    .line 2
-    .line 3
-    invoke-static {}, Lʼˏ/ᵢ;->ˆﾞ()[Ljava/lang/String;
-
-    .line 4
-    .line 5
-    .line 6
-    move-result-object v1
-
-    .line 7
-    const/4 v2, 0x0
-
-    .line 8
-    const/4 v3, 0x0
-
-    .line 9
-    :goto_0
-    array-length v4, v1
-
-    .line 10
-    if-ge v3, v4, :cond_1
-
-    .line 11
-    .line 12
-    aget-object v4, v1, v3
-
-    .line 13
-    .line 14
-    :try_start_0
-    new-instance v5, Ljava/io/File;
-
-    .line 15
-    .line 16
-    new-instance v6, Ljava/lang/StringBuilder;
-
-    .line 17
-    .line 18
-    invoke-direct {v6}, Ljava/lang/StringBuilder;-><init>()V
-
-    .line 19
-    .line 20
-    .line 21
-    invoke-virtual {v6, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 22
-    .line 23
-    .line 24
-    invoke-virtual {v6, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 25
-    .line 26
-    .line 27
-    sget-object v7, Lʾˉ/ᴵᴵ;->ˈʼ:Ljava/lang/String;
-
-    .line 28
-    .line 29
-    invoke-virtual {v6, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 30
-    .line 31
-    .line 32
-    invoke-virtual {v6}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    .line 33
-    .line 34
-    .line 35
-    move-result-object v6
-
-    .line 36
-    invoke-direct {v5, v6}, Ljava/io/File;-><init>(Ljava/lang/String;)V
-
-    .line 37
-    .line 38
-    .line 39
-    invoke-virtual {v5}, Ljava/io/File;->exists()Z
-
-    .line 40
-    .line 41
-    .line 42
-    move-result v5
-
-    .line 43
-    if-eqz v5, :cond_0
-
-    .line 44
-    .line 45
-    new-instance v5, Ljava/io/File;
-
-    .line 46
-    .line 47
-    new-instance v6, Ljava/lang/StringBuilder;
-
-    .line 48
-    .line 49
-    invoke-direct {v6}, Ljava/lang/StringBuilder;-><init>()V
-
-    .line 50
-    .line 51
-    .line 52
-    invoke-virtual {v6, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 53
-    .line 54
-    .line 55
-    invoke-virtual {v6, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 56
-    .line 57
-    .line 58
-    sget-object v7, Lʾˉ/ᴵᴵ;->ˈʼ:Ljava/lang/String;
-
-    .line 59
-    .line 60
-    invoke-virtual {v6, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 61
-    .line 62
-    .line 63
-    invoke-virtual {v6}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    .line 64
-    .line 65
-    .line 66
-    move-result-object v6
-
-    .line 67
-    invoke-direct {v5, v6}, Ljava/io/File;-><init>(Ljava/lang/String;)V
-
-    .line 68
-    .line 69
-    .line 70
-    invoke-virtual {v5}, Ljava/io/File;->canRead()Z
-
-    .line 71
-    .line 72
-    .line 73
-    move-result v5
-
-    .line 74
-    if-eqz v5, :cond_0
-
-    .line 75
-    .line 76
-    new-instance v5, Lorg/json/JSONObject;
-
-    .line 77
-    .line 78
-    new-instance v6, Ljava/io/File;
-
-    .line 79
-    .line 80
-    new-instance v7, Ljava/lang/StringBuilder;
-
-    .line 81
-    .line 82
-    invoke-direct {v7}, Ljava/lang/StringBuilder;-><init>()V
-
-    .line 83
-    .line 84
-    .line 85
-    invoke-virtual {v7, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 86
-    .line 87
-    .line 88
-    invoke-virtual {v7, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 89
-    .line 90
-    .line 91
-    sget-object v4, Lʾˉ/ᴵᴵ;->ˈʼ:Ljava/lang/String;
-
-    .line 92
-    .line 93
-    invoke-virtual {v7, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 94
-    .line 95
-    .line 96
-    invoke-virtual {v7}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    .line 97
-    .line 98
-    .line 99
-    move-result-object v4
-
-    .line 100
-    invoke-direct {v6, v4}, Ljava/io/File;-><init>(Ljava/lang/String;)V
-
-    .line 101
-    .line 102
-    .line 103
-    invoke-static {v6}, Lʼˏ/ᵢ;->ˋˈ(Ljava/io/File;)Ljava/lang/String;
-
-    .line 104
-    .line 105
-    .line 106
-    move-result-object v4
-
-    .line 107
-    invoke-direct {v5, v4}, Lorg/json/JSONObject;-><init>(Ljava/lang/String;)V
-    :try_end_0
-    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
-
-    .line 108
-    .line 109
-    .line 110
-    move-object v2, v5
-
-    .line 111
-    goto :goto_1
-
-    .line 112
-    :catch_0
-    move-exception v4
-
-    .line 113
-    invoke-virtual {v4}, Ljava/lang/Throwable;->printStackTrace()V
-
-    .line 114
-    .line 115
-    .line 116
-    :cond_0
-    :goto_1
-    add-int/lit8 v3, v3, 0x1
-
-    .line 117
-    .line 118
-    goto :goto_0
-
-    .line 119
-    :cond_1
-    return-object v2
-.end method
-
-.method public static ˋˈ(Ljava/io/File;)Ljava/lang/String;
-    .locals 4
-
-    .line 1
-    invoke-static {}, Lʼˏ/ᵢ;->ʽʽ()V
-
-    .line 2
-    .line 3
-    .line 4
-    invoke-virtual {p0}, Ljava/io/File;->length()J
-
-    .line 5
-    .line 6
-    .line 7
-    move-result-wide v0
-
-    .line 8
-    long-to-int v1, v0
-
-    .line 9
-    new-array v0, v1, [B
-
-    .line 10
-    .line 11
-    :try_start_0
-    new-instance v1, Ljava/io/RandomAccessFile;
-
-    .line 12
-    .line 13
-    const-string v2, "r"
-
-    .line 14
-    .line 15
-    invoke-direct {v1, p0, v2}, Ljava/io/RandomAccessFile;-><init>(Ljava/io/File;Ljava/lang/String;)V
-
-    .line 16
-    .line 17
-    .line 18
-    const-wide/16 v2, 0x0
-
-    .line 19
-    .line 20
-    invoke-virtual {v1, v2, v3}, Ljava/io/RandomAccessFile;->seek(J)V
-
-    .line 21
-    .line 22
-    .line 23
-    invoke-virtual {v1, v0}, Ljava/io/RandomAccessFile;->read([B)I
-
-    .line 24
-    .line 25
-    .line 26
-    invoke-virtual {v1}, Ljava/io/RandomAccessFile;->close()V
-    :try_end_0
-    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
-
-    .line 27
-    .line 28
-    .line 29
-    goto :goto_0
-
-    .line 30
-    :catch_0
-    move-exception p0
-
-    .line 31
-    invoke-virtual {p0}, Ljava/lang/Throwable;->printStackTrace()V
-
-    .line 32
-    .line 33
-    .line 34
-    :goto_0
-    new-instance p0, Ljava/lang/String;
-
-    .line 35
-    .line 36
-    invoke-direct {p0, v0}, Ljava/lang/String;-><init>([B)V
-
-    .line 37
-    .line 38
-    .line 39
-    return-object p0
-.end method
-
-.method public static ˋˉ()V
-    .locals 10
-
-    .line 1
-    const/4 v0, 0x0
-
-    .line 2
-    const/4 v1, 0x1
-
-    .line 3
-    const-string v2, ""
-
-    .line 4
-    .line 5
-    sget-object v3, Lʾˉ/ᴵᴵ;->ʿᴵ:Ljava/lang/Boolean;
-
-    .line 6
-    .line 7
-    invoke-virtual {v3}, Ljava/lang/Boolean;->booleanValue()Z
-
-    .line 8
-    .line 9
-    .line 10
-    move-result v3
-
-    .line 11
-    const-string v4, "/reboot"
-
-    .line 12
-    .line 13
-    const-string v5, "busybox reboot"
-
-    .line 14
-    .line 15
-    const-string v6, "/system/xbin/reboot"
-
-    .line 16
-    .line 17
-    const-string v7, "/system/bin/reboot"
-
-    .line 18
-    .line 19
-    const-string v8, "reboot"
-
-    .line 20
-    .line 21
-    if-nez v3, :cond_0
-
-    .line 22
-    .line 23
-    :try_start_0
-    new-instance v3, Lʼˏ/ᵢ;
-
-    .line 24
-    .line 25
-    invoke-direct {v3, v2}, Lʼˏ/ᵢ;-><init>(Ljava/lang/String;)V
-
-    .line 26
-    .line 27
-    .line 28
-    new-array v9, v1, [Ljava/lang/String;
-
-    .line 29
-    .line 30
-    aput-object v8, v9, v0
-
-    .line 31
-    .line 32
-    invoke-virtual {v3, v9}, Lʼˏ/ᵢ;->ˎˎ([Ljava/lang/String;)Ljava/lang/String;
-    :try_end_0
-    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
-
-    .line 33
-    .line 34
-    .line 35
-    goto :goto_0
-
-    .line 36
-    :catch_0
-    move-exception v3
-
-    .line 37
-    invoke-virtual {v3}, Ljava/lang/Throwable;->printStackTrace()V
-
-    .line 38
-    .line 39
-    .line 40
-    :goto_0
-    :try_start_1
-    new-instance v3, Lʼˏ/ᵢ;
-
-    .line 41
-    .line 42
-    invoke-direct {v3, v2}, Lʼˏ/ᵢ;-><init>(Ljava/lang/String;)V
-
-    .line 43
-    .line 44
-    .line 45
-    new-array v9, v1, [Ljava/lang/String;
-
-    .line 46
-    .line 47
-    aput-object v7, v9, v0
-
-    .line 48
-    .line 49
-    invoke-virtual {v3, v9}, Lʼˏ/ᵢ;->ˎˎ([Ljava/lang/String;)Ljava/lang/String;
-    :try_end_1
-    .catch Ljava/lang/Exception; {:try_start_1 .. :try_end_1} :catch_1
-
-    .line 50
-    .line 51
-    .line 52
-    goto :goto_1
-
-    .line 53
-    :catch_1
-    move-exception v3
-
-    .line 54
-    invoke-virtual {v3}, Ljava/lang/Throwable;->printStackTrace()V
-
-    .line 55
-    .line 56
-    .line 57
-    :goto_1
-    :try_start_2
-    new-instance v3, Lʼˏ/ᵢ;
-
-    .line 58
-    .line 59
-    invoke-direct {v3, v2}, Lʼˏ/ᵢ;-><init>(Ljava/lang/String;)V
-
-    .line 60
-    .line 61
-    .line 62
-    new-array v7, v1, [Ljava/lang/String;
-
-    .line 63
-    .line 64
-    aput-object v6, v7, v0
-
-    .line 65
-    .line 66
-    invoke-virtual {v3, v7}, Lʼˏ/ᵢ;->ˎˎ([Ljava/lang/String;)Ljava/lang/String;
-    :try_end_2
-    .catch Ljava/lang/Exception; {:try_start_2 .. :try_end_2} :catch_2
-
-    .line 67
-    .line 68
-    .line 69
-    goto :goto_2
-
-    .line 70
-    :catch_2
-    move-exception v3
-
-    .line 71
-    invoke-virtual {v3}, Ljava/lang/Throwable;->printStackTrace()V
-
-    .line 72
-    .line 73
-    .line 74
-    :goto_2
-    :try_start_3
-    new-instance v3, Lʼˏ/ᵢ;
-
-    .line 75
-    .line 76
-    invoke-direct {v3, v2}, Lʼˏ/ᵢ;-><init>(Ljava/lang/String;)V
-
-    .line 77
-    .line 78
-    .line 79
-    new-array v2, v1, [Ljava/lang/String;
-
-    .line 80
-    .line 81
-    aput-object v5, v2, v0
-
-    .line 82
-    .line 83
-    invoke-virtual {v3, v2}, Lʼˏ/ᵢ;->ˎˎ([Ljava/lang/String;)Ljava/lang/String;
-    :try_end_3
-    .catch Ljava/lang/Exception; {:try_start_3 .. :try_end_3} :catch_3
-
-    .line 84
-    .line 85
-    .line 86
-    goto :goto_3
-
-    .line 87
-    :catch_3
-    move-exception v2
-
-    .line 88
-    invoke-virtual {v2}, Ljava/lang/Throwable;->printStackTrace()V
-
-    .line 89
-    .line 90
-    .line 91
-    :goto_3
-    :try_start_4
-    new-array v1, v1, [Ljava/lang/String;
-
-    .line 92
-    .line 93
-    aput-object v8, v1, v0
-
-    .line 94
-    .line 95
-    invoke-static {v1}, Lʼˏ/ᵢ;->ˋˋ([Ljava/lang/String;)Ljava/lang/String;
-    :try_end_4
-    .catch Ljava/lang/Exception; {:try_start_4 .. :try_end_4} :catch_4
-
-    .line 96
-    .line 97
-    .line 98
-    goto :goto_4
-
-    .line 99
-    :catch_4
-    move-exception v0
-
-    .line 100
-    invoke-virtual {v0}, Ljava/lang/Throwable;->printStackTrace()V
-
-    .line 101
-    .line 102
-    .line 103
-    :goto_4
-    :try_start_5
-    invoke-static {v8}, Lʼˏ/ᵢ;->ˎʾ(Ljava/lang/String;)V
-    :try_end_5
-    .catch Ljava/lang/Exception; {:try_start_5 .. :try_end_5} :catch_5
-
-    .line 104
-    .line 105
-    .line 106
-    goto :goto_5
-
-    .line 107
-    :catch_5
-    move-exception v0
-
-    .line 108
-    invoke-virtual {v0}, Ljava/lang/Throwable;->printStackTrace()V
-
-    .line 109
-    .line 110
-    .line 111
-    :goto_5
-    :try_start_6
-    sget-object v0, Lʾˉ/ᴵᴵ;->ʼﾞ:Lru/aaaaaccc/installer/MainActivity;
-
-    .line 112
-    .line 113
-    new-instance v1, Lʼˏ/ᵢ$ʻʻ;
-
-    .line 114
-    .line 115
-    invoke-direct {v1}, Lʼˏ/ᵢ$ʻʻ;-><init>()V
-
-    .line 116
-    .line 117
-    .line 118
-    invoke-virtual {v0, v1}, Landroid/app/Activity;->runOnUiThread(Ljava/lang/Runnable;)V
-    :try_end_6
-    .catch Ljava/lang/Exception; {:try_start_6 .. :try_end_6} :catch_6
-
-    .line 119
-    .line 120
-    .line 121
-    goto :goto_6
-
-    .line 122
-    :catch_6
-    move-exception v0
-
-    .line 123
-    invoke-virtual {v0}, Ljava/lang/Throwable;->printStackTrace()V
-
-    .line 124
-    .line 125
-    .line 126
-    :goto_6
-    new-instance v0, Lʼˏ/ᵢ;
-
-    .line 127
-    .line 128
-    const-string v1, "w"
-
-    .line 129
-    .line 130
-    invoke-direct {v0, v1}, Lʼˏ/ᵢ;-><init>(Ljava/lang/String;)V
-
-    .line 131
-    .line 132
-    .line 133
-    const-wide/16 v1, 0x1388
-
-    .line 134
-    .line 135
-    invoke-virtual {v0, v1, v2}, Lʼˏ/ᵢ;->יʿ(J)V
-
-    .line 136
-    .line 137
-    .line 138
-    :try_start_7
-    new-instance v0, Ljava/lang/StringBuilder;
-
-    .line 139
-    .line 140
-    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
-
-    .line 141
-    .line 142
-    .line 143
-    invoke-static {}, Lʾˉ/ᴵᴵ;->ˈי()Landroid/content/Context;
-
-    .line 144
-    .line 145
-    .line 146
-    move-result-object v1
-
-    .line 147
-    invoke-static {v1}, Lʼˏ/ᵢ;->ʾˉ(Landroid/content/Context;)Ljava/lang/String;
-
-    .line 148
-    .line 149
-    .line 150
-    move-result-object v1
-
-    .line 151
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 152
-    .line 153
-    .line 154
-    invoke-virtual {v0, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 155
-    .line 156
-    .line 157
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    .line 158
-    .line 159
-    .line 160
-    move-result-object v0
-
-    .line 161
-    invoke-static {v0}, Lʼˏ/ᵢ;->ˎʾ(Ljava/lang/String;)V
-    :try_end_7
-    .catch Ljava/lang/Exception; {:try_start_7 .. :try_end_7} :catch_7
-
-    .line 162
-    .line 163
-    .line 164
-    goto :goto_d
-
-    .line 165
-    :catch_7
-    move-exception v0
-
-    .line 166
-    invoke-virtual {v0}, Ljava/lang/Throwable;->printStackTrace()V
-
-    .line 167
-    .line 168
-    .line 169
-    goto :goto_d
-
-    .line 170
-    :cond_0
-    :try_start_8
-    new-array v2, v1, [Ljava/lang/String;
-
-    .line 171
-    .line 172
-    aput-object v8, v2, v0
-
-    .line 173
-    .line 174
-    invoke-static {v2}, Lʼˏ/ᵢ;->ˊˊ([Ljava/lang/String;)Ljava/lang/String;
-    :try_end_8
-    .catch Ljava/lang/Exception; {:try_start_8 .. :try_end_8} :catch_8
-
-    .line 175
-    .line 176
-    .line 177
-    goto :goto_7
-
-    .line 178
-    :catch_8
-    move-exception v2
-
-    .line 179
-    invoke-virtual {v2}, Ljava/lang/Throwable;->printStackTrace()V
-
-    .line 180
-    .line 181
-    .line 182
-    :goto_7
-    :try_start_9
-    new-array v2, v1, [Ljava/lang/String;
-
-    .line 183
-    .line 184
-    aput-object v7, v2, v0
-
-    .line 185
-    .line 186
-    invoke-static {v2}, Lʼˏ/ᵢ;->ˊˊ([Ljava/lang/String;)Ljava/lang/String;
-    :try_end_9
-    .catch Ljava/lang/Exception; {:try_start_9 .. :try_end_9} :catch_9
-
-    .line 187
-    .line 188
-    .line 189
-    goto :goto_8
-
-    .line 190
-    :catch_9
-    move-exception v2
-
-    .line 191
-    invoke-virtual {v2}, Ljava/lang/Throwable;->printStackTrace()V
-
-    .line 192
-    .line 193
-    .line 194
-    :goto_8
-    :try_start_a
-    new-array v2, v1, [Ljava/lang/String;
-
-    .line 195
-    .line 196
-    aput-object v6, v2, v0
-
-    .line 197
-    .line 198
-    invoke-static {v2}, Lʼˏ/ᵢ;->ˊˊ([Ljava/lang/String;)Ljava/lang/String;
-    :try_end_a
-    .catch Ljava/lang/Exception; {:try_start_a .. :try_end_a} :catch_a
-
-    .line 199
-    .line 200
-    .line 201
-    goto :goto_9
-
-    .line 202
-    :catch_a
-    move-exception v2
-
-    .line 203
-    invoke-virtual {v2}, Ljava/lang/Throwable;->printStackTrace()V
-
-    .line 204
-    .line 205
-    .line 206
-    :goto_9
-    :try_start_b
-    new-array v2, v1, [Ljava/lang/String;
-
-    .line 207
-    .line 208
-    aput-object v5, v2, v0
-
-    .line 209
-    .line 210
-    invoke-static {v2}, Lʼˏ/ᵢ;->ˊˊ([Ljava/lang/String;)Ljava/lang/String;
-    :try_end_b
-    .catch Ljava/lang/Exception; {:try_start_b .. :try_end_b} :catch_b
-
-    .line 211
-    .line 212
-    .line 213
-    goto :goto_a
-
-    .line 214
-    :catch_b
-    move-exception v2
-
-    .line 215
-    invoke-virtual {v2}, Ljava/lang/Throwable;->printStackTrace()V
-
-    .line 216
-    .line 217
-    .line 218
-    :goto_a
-    :try_start_c
-    new-array v2, v1, [Ljava/lang/String;
-
-    .line 219
-    .line 220
-    aput-object v8, v2, v0
-
-    .line 221
-    .line 222
-    invoke-static {v2}, Lʼˏ/ᵢ;->ˋˋ([Ljava/lang/String;)Ljava/lang/String;
-    :try_end_c
-    .catch Ljava/lang/Exception; {:try_start_c .. :try_end_c} :catch_c
-
-    .line 223
-    .line 224
-    .line 225
-    goto :goto_b
-
-    .line 226
-    :catch_c
-    move-exception v2
-
-    .line 227
-    invoke-virtual {v2}, Ljava/lang/Throwable;->printStackTrace()V
-
-    .line 228
-    .line 229
-    .line 230
-    :goto_b
-    :try_start_d
-    new-array v2, v1, [Ljava/lang/String;
-
-    .line 231
-    .line 232
-    aput-object v8, v2, v0
-
-    .line 233
-    .line 234
-    invoke-static {v2}, Lʼˏ/ᵢ;->ˎʿ([Ljava/lang/String;)V
-    :try_end_d
-    .catch Ljava/lang/Exception; {:try_start_d .. :try_end_d} :catch_d
-
-    .line 235
-    .line 236
-    .line 237
-    goto :goto_c
-
-    .line 238
-    :catch_d
-    move-exception v2
-
-    .line 239
-    invoke-virtual {v2}, Ljava/lang/Throwable;->printStackTrace()V
-
-    .line 240
-    .line 241
-    .line 242
-    :goto_c
-    :try_start_e
-    new-instance v2, Ljava/lang/StringBuilder;
-
-    .line 243
-    .line 244
-    invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
-
-    .line 245
-    .line 246
-    .line 247
-    sget-object v3, Lʾˉ/ᴵᴵ;->ʼٴ:Ljava/lang/String;
-
-    .line 248
-    .line 249
-    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 250
-    .line 251
-    .line 252
-    invoke-virtual {v2, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 253
-    .line 254
-    .line 255
-    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    .line 256
-    .line 257
-    .line 258
-    move-result-object v2
-
-    .line 259
-    new-array v1, v1, [Ljava/lang/String;
-
-    .line 260
-    .line 261
-    aput-object v2, v1, v0
-
-    .line 262
-    .line 263
-    invoke-static {v1}, Lʼˏ/ᵢ;->ˎʿ([Ljava/lang/String;)V
-    :try_end_e
-    .catch Ljava/lang/Exception; {:try_start_e .. :try_end_e} :catch_e
-
-    .line 264
-    .line 265
-    .line 266
-    goto :goto_d
-
-    .line 267
-    :catch_e
-    move-exception v0
-
-    .line 268
-    invoke-virtual {v0}, Ljava/lang/Throwable;->printStackTrace()V
-
-    .line 269
-    .line 270
-    .line 271
-    :goto_d
-    return-void
-.end method
-
-.method public static ˋˊ()V
-    .locals 7
-
-    .line 1
-    const/4 v0, 0x0
-
-    .line 2
-    const/4 v1, 0x1
-
-    .line 3
-    const-string v2, "reboot bootloader"
-
-    .line 4
-    .line 5
-    const-string v3, ""
-
-    .line 6
-    .line 7
-    sget-object v4, Lʾˉ/ᴵᴵ;->ʿᴵ:Ljava/lang/Boolean;
-
-    .line 8
-    .line 9
-    invoke-virtual {v4}, Ljava/lang/Boolean;->booleanValue()Z
-
-    .line 10
-    .line 11
-    .line 12
-    move-result v4
-
-    .line 13
-    if-nez v4, :cond_0
-
-    .line 14
-    .line 15
-    :try_start_0
-    new-instance v4, Lʼˏ/ᵢ;
-
-    .line 16
-    .line 17
-    invoke-direct {v4, v3}, Lʼˏ/ᵢ;-><init>(Ljava/lang/String;)V
-
-    .line 18
-    .line 19
-    .line 20
-    new-array v5, v1, [Ljava/lang/String;
-
-    .line 21
-    .line 22
-    aput-object v2, v5, v0
-
-    .line 23
-    .line 24
-    invoke-virtual {v4, v5}, Lʼˏ/ᵢ;->ˎˎ([Ljava/lang/String;)Ljava/lang/String;
-    :try_end_0
-    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
-
-    .line 25
-    .line 26
-    .line 27
-    goto :goto_0
-
-    .line 28
-    :catch_0
-    move-exception v4
-
-    .line 29
-    invoke-virtual {v4}, Ljava/lang/Throwable;->printStackTrace()V
-
-    .line 30
-    .line 31
-    .line 32
-    :goto_0
-    :try_start_1
-    new-instance v4, Lʼˏ/ᵢ;
-
-    .line 33
-    .line 34
-    invoke-direct {v4, v3}, Lʼˏ/ᵢ;-><init>(Ljava/lang/String;)V
-
-    .line 35
-    .line 36
-    .line 37
-    new-array v5, v1, [Ljava/lang/String;
-
-    .line 38
-    .line 39
-    const-string v6, "/system/bin/reboot bootloader"
-
-    .line 40
-    .line 41
-    aput-object v6, v5, v0
-
-    .line 42
-    .line 43
-    invoke-virtual {v4, v5}, Lʼˏ/ᵢ;->ˎˎ([Ljava/lang/String;)Ljava/lang/String;
-    :try_end_1
-    .catch Ljava/lang/Exception; {:try_start_1 .. :try_end_1} :catch_1
-
-    .line 44
-    .line 45
-    .line 46
-    goto :goto_1
-
-    .line 47
-    :catch_1
-    move-exception v4
-
-    .line 48
-    invoke-virtual {v4}, Ljava/lang/Throwable;->printStackTrace()V
-
-    .line 49
-    .line 50
-    .line 51
-    :goto_1
-    :try_start_2
-    new-instance v4, Lʼˏ/ᵢ;
-
-    .line 52
-    .line 53
-    invoke-direct {v4, v3}, Lʼˏ/ᵢ;-><init>(Ljava/lang/String;)V
-
-    .line 54
-    .line 55
-    .line 56
-    new-array v5, v1, [Ljava/lang/String;
-
-    .line 57
-    .line 58
-    const-string v6, "/system/xbin/reboot bootloader"
-
-    .line 59
-    .line 60
-    aput-object v6, v5, v0
-
-    .line 61
-    .line 62
-    invoke-virtual {v4, v5}, Lʼˏ/ᵢ;->ˎˎ([Ljava/lang/String;)Ljava/lang/String;
-    :try_end_2
-    .catch Ljava/lang/Exception; {:try_start_2 .. :try_end_2} :catch_2
-
-    .line 63
-    .line 64
-    .line 65
-    goto :goto_2
-
-    .line 66
-    :catch_2
-    move-exception v4
-
-    .line 67
-    invoke-virtual {v4}, Ljava/lang/Throwable;->printStackTrace()V
-
-    .line 68
-    .line 69
-    .line 70
-    :goto_2
-    :try_start_3
-    new-instance v4, Lʼˏ/ᵢ;
-
-    .line 71
-    .line 72
-    invoke-direct {v4, v3}, Lʼˏ/ᵢ;-><init>(Ljava/lang/String;)V
-
-    .line 73
-    .line 74
-    .line 75
-    new-array v3, v1, [Ljava/lang/String;
-
-    .line 76
-    .line 77
-    const-string v5, "busybox reboot bootloader"
-
-    .line 78
-    .line 79
-    aput-object v5, v3, v0
-
-    .line 80
-    .line 81
-    invoke-virtual {v4, v3}, Lʼˏ/ᵢ;->ˎˎ([Ljava/lang/String;)Ljava/lang/String;
-    :try_end_3
-    .catch Ljava/lang/Exception; {:try_start_3 .. :try_end_3} :catch_3
-
-    .line 82
-    .line 83
-    .line 84
-    goto :goto_3
-
-    .line 85
-    :catch_3
-    move-exception v3
-
-    .line 86
-    invoke-virtual {v3}, Ljava/lang/Throwable;->printStackTrace()V
-
-    .line 87
-    .line 88
-    .line 89
-    :goto_3
-    :try_start_4
-    new-array v1, v1, [Ljava/lang/String;
-
-    .line 90
-    .line 91
-    aput-object v2, v1, v0
-
-    .line 92
-    .line 93
-    invoke-static {v1}, Lʼˏ/ᵢ;->ˋˋ([Ljava/lang/String;)Ljava/lang/String;
-    :try_end_4
-    .catch Ljava/lang/Exception; {:try_start_4 .. :try_end_4} :catch_4
-
-    .line 94
-    .line 95
-    .line 96
-    goto :goto_4
-
-    .line 97
-    :catch_4
-    move-exception v0
-
-    .line 98
-    invoke-virtual {v0}, Ljava/lang/Throwable;->printStackTrace()V
-
-    .line 99
-    .line 100
-    .line 101
-    :goto_4
-    :try_start_5
-    invoke-static {v2}, Lʼˏ/ᵢ;->ˎʾ(Ljava/lang/String;)V
-    :try_end_5
-    .catch Ljava/lang/Exception; {:try_start_5 .. :try_end_5} :catch_5
-
-    .line 102
-    .line 103
-    .line 104
-    goto :goto_5
-
-    .line 105
-    :catch_5
-    move-exception v0
-
-    .line 106
-    invoke-virtual {v0}, Ljava/lang/Throwable;->printStackTrace()V
-
-    .line 107
-    .line 108
-    .line 109
-    :goto_5
-    :try_start_6
-    sget-object v0, Lʾˉ/ᴵᴵ;->ʼﾞ:Lru/aaaaaccc/installer/MainActivity;
-
-    .line 110
-    .line 111
-    new-instance v1, Lʼˏ/ᵢ$ʿʿ;
-
-    .line 112
-    .line 113
-    invoke-direct {v1}, Lʼˏ/ᵢ$ʿʿ;-><init>()V
-
-    .line 114
-    .line 115
-    .line 116
-    invoke-virtual {v0, v1}, Landroid/app/Activity;->runOnUiThread(Ljava/lang/Runnable;)V
-    :try_end_6
-    .catch Ljava/lang/Exception; {:try_start_6 .. :try_end_6} :catch_6
-
-    .line 117
-    .line 118
-    .line 119
-    goto :goto_6
-
-    .line 120
-    :catch_6
-    move-exception v0
-
-    .line 121
-    invoke-virtual {v0}, Ljava/lang/Throwable;->printStackTrace()V
-
-    .line 122
-    .line 123
-    .line 124
-    :goto_6
-    new-instance v0, Lʼˏ/ᵢ;
-
-    .line 125
-    .line 126
-    const-string v1, "w"
-
-    .line 127
-    .line 128
-    invoke-direct {v0, v1}, Lʼˏ/ᵢ;-><init>(Ljava/lang/String;)V
-
-    .line 129
-    .line 130
-    .line 131
-    const-wide/16 v1, 0x1388
-
-    .line 132
-    .line 133
-    invoke-virtual {v0, v1, v2}, Lʼˏ/ᵢ;->יʿ(J)V
-
-    .line 134
-    .line 135
-    .line 136
-    :try_start_7
-    new-instance v0, Ljava/lang/StringBuilder;
-
-    .line 137
-    .line 138
-    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
-
-    .line 139
-    .line 140
-    .line 141
-    invoke-static {}, Lʾˉ/ᴵᴵ;->ˈי()Landroid/content/Context;
-
-    .line 142
-    .line 143
-    .line 144
-    move-result-object v1
-
-    .line 145
-    invoke-static {v1}, Lʼˏ/ᵢ;->ʾˉ(Landroid/content/Context;)Ljava/lang/String;
-
-    .line 146
-    .line 147
-    .line 148
-    move-result-object v1
-
-    .line 149
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 150
-    .line 151
-    .line 152
-    const-string v1, "/reboot"
-
-    .line 153
-    .line 154
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 155
-    .line 156
-    .line 157
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    .line 158
-    .line 159
-    .line 160
-    move-result-object v0
-
-    .line 161
-    invoke-static {v0}, Lʼˏ/ᵢ;->ˎʾ(Ljava/lang/String;)V
-    :try_end_7
-    .catch Ljava/lang/Exception; {:try_start_7 .. :try_end_7} :catch_7
-
-    .line 162
-    .line 163
-    .line 164
-    goto :goto_7
-
-    .line 165
-    :catch_7
-    move-exception v0
-
-    .line 166
-    invoke-virtual {v0}, Ljava/lang/Throwable;->printStackTrace()V
-
-    .line 167
-    .line 168
-    .line 169
-    :cond_0
-    :goto_7
-    return-void
 .end method
 
 .method public static varargs ˋˋ([Ljava/lang/String;)Ljava/lang/String;
@@ -105815,7 +105646,7 @@
 
     .line 114
     .line 115
-    invoke-virtual {v6, v7, v8}, Lʼˏ/ᵢ;->יʿ(J)V
+    invoke-virtual {v6, v7, v8}, Lʼˏ/ᵢ;->יˎ(J)V
     :try_end_0
     .catch Ljava/io/IOException; {:try_start_0 .. :try_end_0} :catch_1
     .catch Ljava/lang/InterruptedException; {:try_start_0 .. :try_end_0} :catch_0
@@ -105863,7 +105694,1477 @@
     return-object v2
 .end method
 
-.method public static ˋˎ()V
+.method public static ˋˎ(Ljava/io/InputStream;)Ljava/lang/String;
+    .locals 3
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/io/IOException;
+        }
+    .end annotation
+
+    .line 1
+    new-instance v0, Ljava/io/ByteArrayOutputStream;
+
+    .line 2
+    .line 3
+    invoke-direct {v0}, Ljava/io/ByteArrayOutputStream;-><init>()V
+
+    .line 4
+    .line 5
+    .line 6
+    :goto_0
+    invoke-virtual {p0}, Ljava/io/InputStream;->read()I
+
+    .line 7
+    .line 8
+    .line 9
+    move-result v1
+
+    .line 10
+    if-gez v1, :cond_0
+
+    .line 11
+    .line 12
+    const/4 p0, 0x0
+
+    .line 13
+    return-object p0
+
+    .line 14
+    :cond_0
+    const/16 v2, 0xa
+
+    .line 15
+    .line 16
+    if-ne v1, v2, :cond_1
+
+    .line 17
+    .line 18
+    new-instance p0, Ljava/lang/String;
+
+    .line 19
+    .line 20
+    invoke-virtual {v0}, Ljava/io/ByteArrayOutputStream;->toByteArray()[B
+
+    .line 21
+    .line 22
+    .line 23
+    move-result-object v0
+
+    .line 24
+    const-string v1, "UTF-8"
+
+    .line 25
+    .line 26
+    invoke-direct {p0, v0, v1}, Ljava/lang/String;-><init>([BLjava/lang/String;)V
+
+    .line 27
+    .line 28
+    .line 29
+    return-object p0
+
+    .line 30
+    :cond_1
+    invoke-virtual {v0, v1}, Ljava/io/ByteArrayOutputStream;->write(I)V
+
+    .line 31
+    .line 32
+    .line 33
+    goto :goto_0
+.end method
+
+.method public static ˋˏ(Ljava/nio/MappedByteBuffer;)I
+    .locals 5
+
+    .line 1
+    const/4 v0, 0x0
+
+    .line 2
+    const/4 v1, 0x0
+
+    .line 3
+    :cond_0
+    invoke-virtual {p0}, Ljava/nio/ByteBuffer;->get()B
+
+    .line 4
+    .line 5
+    .line 6
+    move-result v2
+
+    .line 7
+    and-int/lit8 v3, v2, 0x7f
+
+    .line 8
+    .line 9
+    mul-int/lit8 v4, v1, 0x7
+
+    .line 10
+    .line 11
+    shl-int/2addr v3, v4
+
+    .line 12
+    or-int/2addr v0, v3
+
+    .line 13
+    add-int/lit8 v1, v1, 0x1
+
+    .line 14
+    .line 15
+    const/16 v3, 0x80
+
+    .line 16
+    .line 17
+    and-int/2addr v2, v3
+
+    .line 18
+    if-ne v2, v3, :cond_1
+
+    .line 19
+    .line 20
+    const/4 v4, 0x5
+
+    .line 21
+    if-lt v1, v4, :cond_0
+
+    .line 22
+    .line 23
+    :cond_1
+    if-ne v2, v3, :cond_2
+
+    .line 24
+    .line 25
+    const-string p0, "LuckyPatcher:invalid LEB128 sequence"
+
+    .line 26
+    .line 27
+    invoke-static {p0}, Lʾˉ/ᴵᴵ;->ˉˎ(Ljava/lang/Object;)V
+
+    .line 28
+    .line 29
+    .line 30
+    :cond_2
+    return v0
+.end method
+
+.method public static ˋˑ()Lorg/json/JSONObject;
+    .locals 8
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Lorg/json/JSONException;
+        }
+    .end annotation
+
+    .line 1
+    const-string v0, "/"
+
+    .line 2
+    .line 3
+    invoke-static {}, Lʼˏ/ᵢ;->ˈʽ()[Ljava/lang/String;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object v1
+
+    .line 7
+    const/4 v2, 0x0
+
+    .line 8
+    const/4 v3, 0x0
+
+    .line 9
+    :goto_0
+    array-length v4, v1
+
+    .line 10
+    if-ge v3, v4, :cond_1
+
+    .line 11
+    .line 12
+    aget-object v4, v1, v3
+
+    .line 13
+    .line 14
+    :try_start_0
+    new-instance v5, Ljava/io/File;
+
+    .line 15
+    .line 16
+    new-instance v6, Ljava/lang/StringBuilder;
+
+    .line 17
+    .line 18
+    invoke-direct {v6}, Ljava/lang/StringBuilder;-><init>()V
+
+    .line 19
+    .line 20
+    .line 21
+    invoke-virtual {v6, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 22
+    .line 23
+    .line 24
+    invoke-virtual {v6, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 25
+    .line 26
+    .line 27
+    sget-object v7, Lʾˉ/ᴵᴵ;->ˈʽ:Ljava/lang/String;
+
+    .line 28
+    .line 29
+    invoke-virtual {v6, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 30
+    .line 31
+    .line 32
+    invoke-virtual {v6}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    .line 33
+    .line 34
+    .line 35
+    move-result-object v6
+
+    .line 36
+    invoke-direct {v5, v6}, Ljava/io/File;-><init>(Ljava/lang/String;)V
+
+    .line 37
+    .line 38
+    .line 39
+    invoke-virtual {v5}, Ljava/io/File;->exists()Z
+
+    .line 40
+    .line 41
+    .line 42
+    move-result v5
+
+    .line 43
+    if-eqz v5, :cond_0
+
+    .line 44
+    .line 45
+    new-instance v5, Ljava/io/File;
+
+    .line 46
+    .line 47
+    new-instance v6, Ljava/lang/StringBuilder;
+
+    .line 48
+    .line 49
+    invoke-direct {v6}, Ljava/lang/StringBuilder;-><init>()V
+
+    .line 50
+    .line 51
+    .line 52
+    invoke-virtual {v6, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 53
+    .line 54
+    .line 55
+    invoke-virtual {v6, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 56
+    .line 57
+    .line 58
+    sget-object v7, Lʾˉ/ᴵᴵ;->ˈʽ:Ljava/lang/String;
+
+    .line 59
+    .line 60
+    invoke-virtual {v6, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 61
+    .line 62
+    .line 63
+    invoke-virtual {v6}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    .line 64
+    .line 65
+    .line 66
+    move-result-object v6
+
+    .line 67
+    invoke-direct {v5, v6}, Ljava/io/File;-><init>(Ljava/lang/String;)V
+
+    .line 68
+    .line 69
+    .line 70
+    invoke-virtual {v5}, Ljava/io/File;->canRead()Z
+
+    .line 71
+    .line 72
+    .line 73
+    move-result v5
+
+    .line 74
+    if-eqz v5, :cond_0
+
+    .line 75
+    .line 76
+    new-instance v5, Lorg/json/JSONObject;
+
+    .line 77
+    .line 78
+    new-instance v6, Ljava/io/File;
+
+    .line 79
+    .line 80
+    new-instance v7, Ljava/lang/StringBuilder;
+
+    .line 81
+    .line 82
+    invoke-direct {v7}, Ljava/lang/StringBuilder;-><init>()V
+
+    .line 83
+    .line 84
+    .line 85
+    invoke-virtual {v7, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 86
+    .line 87
+    .line 88
+    invoke-virtual {v7, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 89
+    .line 90
+    .line 91
+    sget-object v4, Lʾˉ/ᴵᴵ;->ˈʽ:Ljava/lang/String;
+
+    .line 92
+    .line 93
+    invoke-virtual {v7, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 94
+    .line 95
+    .line 96
+    invoke-virtual {v7}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    .line 97
+    .line 98
+    .line 99
+    move-result-object v4
+
+    .line 100
+    invoke-direct {v6, v4}, Ljava/io/File;-><init>(Ljava/lang/String;)V
+
+    .line 101
+    .line 102
+    .line 103
+    invoke-static {v6}, Lʼˏ/ᵢ;->ˋי(Ljava/io/File;)Ljava/lang/String;
+
+    .line 104
+    .line 105
+    .line 106
+    move-result-object v4
+
+    .line 107
+    invoke-direct {v5, v4}, Lorg/json/JSONObject;-><init>(Ljava/lang/String;)V
+    :try_end_0
+    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
+
+    .line 108
+    .line 109
+    .line 110
+    move-object v2, v5
+
+    .line 111
+    goto :goto_1
+
+    .line 112
+    :catch_0
+    move-exception v4
+
+    .line 113
+    invoke-virtual {v4}, Ljava/lang/Throwable;->printStackTrace()V
+
+    .line 114
+    .line 115
+    .line 116
+    :cond_0
+    :goto_1
+    add-int/lit8 v3, v3, 0x1
+
+    .line 117
+    .line 118
+    goto :goto_0
+
+    .line 119
+    :cond_1
+    return-object v2
+.end method
+
+.method public static ˋי(Ljava/io/File;)Ljava/lang/String;
+    .locals 4
+
+    .line 1
+    invoke-static {}, Lʼˏ/ᵢ;->ʽʽ()V
+
+    .line 2
+    .line 3
+    .line 4
+    invoke-virtual {p0}, Ljava/io/File;->length()J
+
+    .line 5
+    .line 6
+    .line 7
+    move-result-wide v0
+
+    .line 8
+    long-to-int v1, v0
+
+    .line 9
+    new-array v0, v1, [B
+
+    .line 10
+    .line 11
+    :try_start_0
+    new-instance v1, Ljava/io/RandomAccessFile;
+
+    .line 12
+    .line 13
+    const-string v2, "r"
+
+    .line 14
+    .line 15
+    invoke-direct {v1, p0, v2}, Ljava/io/RandomAccessFile;-><init>(Ljava/io/File;Ljava/lang/String;)V
+
+    .line 16
+    .line 17
+    .line 18
+    const-wide/16 v2, 0x0
+
+    .line 19
+    .line 20
+    invoke-virtual {v1, v2, v3}, Ljava/io/RandomAccessFile;->seek(J)V
+
+    .line 21
+    .line 22
+    .line 23
+    invoke-virtual {v1, v0}, Ljava/io/RandomAccessFile;->read([B)I
+
+    .line 24
+    .line 25
+    .line 26
+    invoke-virtual {v1}, Ljava/io/RandomAccessFile;->close()V
+    :try_end_0
+    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
+
+    .line 27
+    .line 28
+    .line 29
+    goto :goto_0
+
+    .line 30
+    :catch_0
+    move-exception p0
+
+    .line 31
+    invoke-virtual {p0}, Ljava/lang/Throwable;->printStackTrace()V
+
+    .line 32
+    .line 33
+    .line 34
+    :goto_0
+    new-instance p0, Ljava/lang/String;
+
+    .line 35
+    .line 36
+    invoke-direct {p0, v0}, Ljava/lang/String;-><init>([B)V
+
+    .line 37
+    .line 38
+    .line 39
+    return-object p0
+.end method
+
+.method public static ˋـ()V
+    .locals 10
+
+    .line 1
+    const/4 v0, 0x0
+
+    .line 2
+    const/4 v1, 0x1
+
+    .line 3
+    const-string v2, ""
+
+    .line 4
+    .line 5
+    sget-object v3, Lʾˉ/ᴵᴵ;->ʿᴵ:Ljava/lang/Boolean;
+
+    .line 6
+    .line 7
+    invoke-virtual {v3}, Ljava/lang/Boolean;->booleanValue()Z
+
+    .line 8
+    .line 9
+    .line 10
+    move-result v3
+
+    .line 11
+    const-string v4, "/reboot"
+
+    .line 12
+    .line 13
+    const-string v5, "busybox reboot"
+
+    .line 14
+    .line 15
+    const-string v6, "/system/xbin/reboot"
+
+    .line 16
+    .line 17
+    const-string v7, "/system/bin/reboot"
+
+    .line 18
+    .line 19
+    const-string v8, "reboot"
+
+    .line 20
+    .line 21
+    if-nez v3, :cond_0
+
+    .line 22
+    .line 23
+    :try_start_0
+    new-instance v3, Lʼˏ/ᵢ;
+
+    .line 24
+    .line 25
+    invoke-direct {v3, v2}, Lʼˏ/ᵢ;-><init>(Ljava/lang/String;)V
+
+    .line 26
+    .line 27
+    .line 28
+    new-array v9, v1, [Ljava/lang/String;
+
+    .line 29
+    .line 30
+    aput-object v8, v9, v0
+
+    .line 31
+    .line 32
+    invoke-virtual {v3, v9}, Lʼˏ/ᵢ;->ˎˎ([Ljava/lang/String;)Ljava/lang/String;
+    :try_end_0
+    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
+
+    .line 33
+    .line 34
+    .line 35
+    goto :goto_0
+
+    .line 36
+    :catch_0
+    move-exception v3
+
+    .line 37
+    invoke-virtual {v3}, Ljava/lang/Throwable;->printStackTrace()V
+
+    .line 38
+    .line 39
+    .line 40
+    :goto_0
+    :try_start_1
+    new-instance v3, Lʼˏ/ᵢ;
+
+    .line 41
+    .line 42
+    invoke-direct {v3, v2}, Lʼˏ/ᵢ;-><init>(Ljava/lang/String;)V
+
+    .line 43
+    .line 44
+    .line 45
+    new-array v9, v1, [Ljava/lang/String;
+
+    .line 46
+    .line 47
+    aput-object v7, v9, v0
+
+    .line 48
+    .line 49
+    invoke-virtual {v3, v9}, Lʼˏ/ᵢ;->ˎˎ([Ljava/lang/String;)Ljava/lang/String;
+    :try_end_1
+    .catch Ljava/lang/Exception; {:try_start_1 .. :try_end_1} :catch_1
+
+    .line 50
+    .line 51
+    .line 52
+    goto :goto_1
+
+    .line 53
+    :catch_1
+    move-exception v3
+
+    .line 54
+    invoke-virtual {v3}, Ljava/lang/Throwable;->printStackTrace()V
+
+    .line 55
+    .line 56
+    .line 57
+    :goto_1
+    :try_start_2
+    new-instance v3, Lʼˏ/ᵢ;
+
+    .line 58
+    .line 59
+    invoke-direct {v3, v2}, Lʼˏ/ᵢ;-><init>(Ljava/lang/String;)V
+
+    .line 60
+    .line 61
+    .line 62
+    new-array v7, v1, [Ljava/lang/String;
+
+    .line 63
+    .line 64
+    aput-object v6, v7, v0
+
+    .line 65
+    .line 66
+    invoke-virtual {v3, v7}, Lʼˏ/ᵢ;->ˎˎ([Ljava/lang/String;)Ljava/lang/String;
+    :try_end_2
+    .catch Ljava/lang/Exception; {:try_start_2 .. :try_end_2} :catch_2
+
+    .line 67
+    .line 68
+    .line 69
+    goto :goto_2
+
+    .line 70
+    :catch_2
+    move-exception v3
+
+    .line 71
+    invoke-virtual {v3}, Ljava/lang/Throwable;->printStackTrace()V
+
+    .line 72
+    .line 73
+    .line 74
+    :goto_2
+    :try_start_3
+    new-instance v3, Lʼˏ/ᵢ;
+
+    .line 75
+    .line 76
+    invoke-direct {v3, v2}, Lʼˏ/ᵢ;-><init>(Ljava/lang/String;)V
+
+    .line 77
+    .line 78
+    .line 79
+    new-array v2, v1, [Ljava/lang/String;
+
+    .line 80
+    .line 81
+    aput-object v5, v2, v0
+
+    .line 82
+    .line 83
+    invoke-virtual {v3, v2}, Lʼˏ/ᵢ;->ˎˎ([Ljava/lang/String;)Ljava/lang/String;
+    :try_end_3
+    .catch Ljava/lang/Exception; {:try_start_3 .. :try_end_3} :catch_3
+
+    .line 84
+    .line 85
+    .line 86
+    goto :goto_3
+
+    .line 87
+    :catch_3
+    move-exception v2
+
+    .line 88
+    invoke-virtual {v2}, Ljava/lang/Throwable;->printStackTrace()V
+
+    .line 89
+    .line 90
+    .line 91
+    :goto_3
+    :try_start_4
+    new-array v1, v1, [Ljava/lang/String;
+
+    .line 92
+    .line 93
+    aput-object v8, v1, v0
+
+    .line 94
+    .line 95
+    invoke-static {v1}, Lʼˏ/ᵢ;->ˋˋ([Ljava/lang/String;)Ljava/lang/String;
+    :try_end_4
+    .catch Ljava/lang/Exception; {:try_start_4 .. :try_end_4} :catch_4
+
+    .line 96
+    .line 97
+    .line 98
+    goto :goto_4
+
+    .line 99
+    :catch_4
+    move-exception v0
+
+    .line 100
+    invoke-virtual {v0}, Ljava/lang/Throwable;->printStackTrace()V
+
+    .line 101
+    .line 102
+    .line 103
+    :goto_4
+    :try_start_5
+    invoke-static {v8}, Lʼˏ/ᵢ;->ˎˋ(Ljava/lang/String;)V
+    :try_end_5
+    .catch Ljava/lang/Exception; {:try_start_5 .. :try_end_5} :catch_5
+
+    .line 104
+    .line 105
+    .line 106
+    goto :goto_5
+
+    .line 107
+    :catch_5
+    move-exception v0
+
+    .line 108
+    invoke-virtual {v0}, Ljava/lang/Throwable;->printStackTrace()V
+
+    .line 109
+    .line 110
+    .line 111
+    :goto_5
+    :try_start_6
+    sget-object v0, Lʾˉ/ᴵᴵ;->ʼﾞ:Lru/aaaaaccd/installer/MainActivity;
+
+    .line 112
+    .line 113
+    new-instance v1, Lʼˏ/ᵢ$ʻʻ;
+
+    .line 114
+    .line 115
+    invoke-direct {v1}, Lʼˏ/ᵢ$ʻʻ;-><init>()V
+
+    .line 116
+    .line 117
+    .line 118
+    invoke-virtual {v0, v1}, Landroid/app/Activity;->runOnUiThread(Ljava/lang/Runnable;)V
+    :try_end_6
+    .catch Ljava/lang/Exception; {:try_start_6 .. :try_end_6} :catch_6
+
+    .line 119
+    .line 120
+    .line 121
+    goto :goto_6
+
+    .line 122
+    :catch_6
+    move-exception v0
+
+    .line 123
+    invoke-virtual {v0}, Ljava/lang/Throwable;->printStackTrace()V
+
+    .line 124
+    .line 125
+    .line 126
+    :goto_6
+    new-instance v0, Lʼˏ/ᵢ;
+
+    .line 127
+    .line 128
+    const-string v1, "w"
+
+    .line 129
+    .line 130
+    invoke-direct {v0, v1}, Lʼˏ/ᵢ;-><init>(Ljava/lang/String;)V
+
+    .line 131
+    .line 132
+    .line 133
+    const-wide/16 v1, 0x1388
+
+    .line 134
+    .line 135
+    invoke-virtual {v0, v1, v2}, Lʼˏ/ᵢ;->יˎ(J)V
+
+    .line 136
+    .line 137
+    .line 138
+    :try_start_7
+    new-instance v0, Ljava/lang/StringBuilder;
+
+    .line 139
+    .line 140
+    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
+
+    .line 141
+    .line 142
+    .line 143
+    invoke-static {}, Lʾˉ/ᴵᴵ;->ˈי()Landroid/content/Context;
+
+    .line 144
+    .line 145
+    .line 146
+    move-result-object v1
+
+    .line 147
+    invoke-static {v1}, Lʼˏ/ᵢ;->ʾˋ(Landroid/content/Context;)Ljava/lang/String;
+
+    .line 148
+    .line 149
+    .line 150
+    move-result-object v1
+
+    .line 151
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 152
+    .line 153
+    .line 154
+    invoke-virtual {v0, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 155
+    .line 156
+    .line 157
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    .line 158
+    .line 159
+    .line 160
+    move-result-object v0
+
+    .line 161
+    invoke-static {v0}, Lʼˏ/ᵢ;->ˎˋ(Ljava/lang/String;)V
+    :try_end_7
+    .catch Ljava/lang/Exception; {:try_start_7 .. :try_end_7} :catch_7
+
+    .line 162
+    .line 163
+    .line 164
+    goto :goto_d
+
+    .line 165
+    :catch_7
+    move-exception v0
+
+    .line 166
+    invoke-virtual {v0}, Ljava/lang/Throwable;->printStackTrace()V
+
+    .line 167
+    .line 168
+    .line 169
+    goto :goto_d
+
+    .line 170
+    :cond_0
+    :try_start_8
+    new-array v2, v1, [Ljava/lang/String;
+
+    .line 171
+    .line 172
+    aput-object v8, v2, v0
+
+    .line 173
+    .line 174
+    invoke-static {v2}, Lʼˏ/ᵢ;->ˊˊ([Ljava/lang/String;)Ljava/lang/String;
+    :try_end_8
+    .catch Ljava/lang/Exception; {:try_start_8 .. :try_end_8} :catch_8
+
+    .line 175
+    .line 176
+    .line 177
+    goto :goto_7
+
+    .line 178
+    :catch_8
+    move-exception v2
+
+    .line 179
+    invoke-virtual {v2}, Ljava/lang/Throwable;->printStackTrace()V
+
+    .line 180
+    .line 181
+    .line 182
+    :goto_7
+    :try_start_9
+    new-array v2, v1, [Ljava/lang/String;
+
+    .line 183
+    .line 184
+    aput-object v7, v2, v0
+
+    .line 185
+    .line 186
+    invoke-static {v2}, Lʼˏ/ᵢ;->ˊˊ([Ljava/lang/String;)Ljava/lang/String;
+    :try_end_9
+    .catch Ljava/lang/Exception; {:try_start_9 .. :try_end_9} :catch_9
+
+    .line 187
+    .line 188
+    .line 189
+    goto :goto_8
+
+    .line 190
+    :catch_9
+    move-exception v2
+
+    .line 191
+    invoke-virtual {v2}, Ljava/lang/Throwable;->printStackTrace()V
+
+    .line 192
+    .line 193
+    .line 194
+    :goto_8
+    :try_start_a
+    new-array v2, v1, [Ljava/lang/String;
+
+    .line 195
+    .line 196
+    aput-object v6, v2, v0
+
+    .line 197
+    .line 198
+    invoke-static {v2}, Lʼˏ/ᵢ;->ˊˊ([Ljava/lang/String;)Ljava/lang/String;
+    :try_end_a
+    .catch Ljava/lang/Exception; {:try_start_a .. :try_end_a} :catch_a
+
+    .line 199
+    .line 200
+    .line 201
+    goto :goto_9
+
+    .line 202
+    :catch_a
+    move-exception v2
+
+    .line 203
+    invoke-virtual {v2}, Ljava/lang/Throwable;->printStackTrace()V
+
+    .line 204
+    .line 205
+    .line 206
+    :goto_9
+    :try_start_b
+    new-array v2, v1, [Ljava/lang/String;
+
+    .line 207
+    .line 208
+    aput-object v5, v2, v0
+
+    .line 209
+    .line 210
+    invoke-static {v2}, Lʼˏ/ᵢ;->ˊˊ([Ljava/lang/String;)Ljava/lang/String;
+    :try_end_b
+    .catch Ljava/lang/Exception; {:try_start_b .. :try_end_b} :catch_b
+
+    .line 211
+    .line 212
+    .line 213
+    goto :goto_a
+
+    .line 214
+    :catch_b
+    move-exception v2
+
+    .line 215
+    invoke-virtual {v2}, Ljava/lang/Throwable;->printStackTrace()V
+
+    .line 216
+    .line 217
+    .line 218
+    :goto_a
+    :try_start_c
+    new-array v2, v1, [Ljava/lang/String;
+
+    .line 219
+    .line 220
+    aput-object v8, v2, v0
+
+    .line 221
+    .line 222
+    invoke-static {v2}, Lʼˏ/ᵢ;->ˋˋ([Ljava/lang/String;)Ljava/lang/String;
+    :try_end_c
+    .catch Ljava/lang/Exception; {:try_start_c .. :try_end_c} :catch_c
+
+    .line 223
+    .line 224
+    .line 225
+    goto :goto_b
+
+    .line 226
+    :catch_c
+    move-exception v2
+
+    .line 227
+    invoke-virtual {v2}, Ljava/lang/Throwable;->printStackTrace()V
+
+    .line 228
+    .line 229
+    .line 230
+    :goto_b
+    :try_start_d
+    new-array v2, v1, [Ljava/lang/String;
+
+    .line 231
+    .line 232
+    aput-object v8, v2, v0
+
+    .line 233
+    .line 234
+    invoke-static {v2}, Lʼˏ/ᵢ;->ˎˏ([Ljava/lang/String;)V
+    :try_end_d
+    .catch Ljava/lang/Exception; {:try_start_d .. :try_end_d} :catch_d
+
+    .line 235
+    .line 236
+    .line 237
+    goto :goto_c
+
+    .line 238
+    :catch_d
+    move-exception v2
+
+    .line 239
+    invoke-virtual {v2}, Ljava/lang/Throwable;->printStackTrace()V
+
+    .line 240
+    .line 241
+    .line 242
+    :goto_c
+    :try_start_e
+    new-instance v2, Ljava/lang/StringBuilder;
+
+    .line 243
+    .line 244
+    invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
+
+    .line 245
+    .line 246
+    .line 247
+    sget-object v3, Lʾˉ/ᴵᴵ;->ʼٴ:Ljava/lang/String;
+
+    .line 248
+    .line 249
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 250
+    .line 251
+    .line 252
+    invoke-virtual {v2, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 253
+    .line 254
+    .line 255
+    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    .line 256
+    .line 257
+    .line 258
+    move-result-object v2
+
+    .line 259
+    new-array v1, v1, [Ljava/lang/String;
+
+    .line 260
+    .line 261
+    aput-object v2, v1, v0
+
+    .line 262
+    .line 263
+    invoke-static {v1}, Lʼˏ/ᵢ;->ˎˏ([Ljava/lang/String;)V
+    :try_end_e
+    .catch Ljava/lang/Exception; {:try_start_e .. :try_end_e} :catch_e
+
+    .line 264
+    .line 265
+    .line 266
+    goto :goto_d
+
+    .line 267
+    :catch_e
+    move-exception v0
+
+    .line 268
+    invoke-virtual {v0}, Ljava/lang/Throwable;->printStackTrace()V
+
+    .line 269
+    .line 270
+    .line 271
+    :goto_d
+    return-void
+.end method
+
+.method public static ˋٴ()V
+    .locals 7
+
+    .line 1
+    const/4 v0, 0x0
+
+    .line 2
+    const/4 v1, 0x1
+
+    .line 3
+    const-string v2, "reboot bootloader"
+
+    .line 4
+    .line 5
+    const-string v3, ""
+
+    .line 6
+    .line 7
+    sget-object v4, Lʾˉ/ᴵᴵ;->ʿᴵ:Ljava/lang/Boolean;
+
+    .line 8
+    .line 9
+    invoke-virtual {v4}, Ljava/lang/Boolean;->booleanValue()Z
+
+    .line 10
+    .line 11
+    .line 12
+    move-result v4
+
+    .line 13
+    if-nez v4, :cond_0
+
+    .line 14
+    .line 15
+    :try_start_0
+    new-instance v4, Lʼˏ/ᵢ;
+
+    .line 16
+    .line 17
+    invoke-direct {v4, v3}, Lʼˏ/ᵢ;-><init>(Ljava/lang/String;)V
+
+    .line 18
+    .line 19
+    .line 20
+    new-array v5, v1, [Ljava/lang/String;
+
+    .line 21
+    .line 22
+    aput-object v2, v5, v0
+
+    .line 23
+    .line 24
+    invoke-virtual {v4, v5}, Lʼˏ/ᵢ;->ˎˎ([Ljava/lang/String;)Ljava/lang/String;
+    :try_end_0
+    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
+
+    .line 25
+    .line 26
+    .line 27
+    goto :goto_0
+
+    .line 28
+    :catch_0
+    move-exception v4
+
+    .line 29
+    invoke-virtual {v4}, Ljava/lang/Throwable;->printStackTrace()V
+
+    .line 30
+    .line 31
+    .line 32
+    :goto_0
+    :try_start_1
+    new-instance v4, Lʼˏ/ᵢ;
+
+    .line 33
+    .line 34
+    invoke-direct {v4, v3}, Lʼˏ/ᵢ;-><init>(Ljava/lang/String;)V
+
+    .line 35
+    .line 36
+    .line 37
+    new-array v5, v1, [Ljava/lang/String;
+
+    .line 38
+    .line 39
+    const-string v6, "/system/bin/reboot bootloader"
+
+    .line 40
+    .line 41
+    aput-object v6, v5, v0
+
+    .line 42
+    .line 43
+    invoke-virtual {v4, v5}, Lʼˏ/ᵢ;->ˎˎ([Ljava/lang/String;)Ljava/lang/String;
+    :try_end_1
+    .catch Ljava/lang/Exception; {:try_start_1 .. :try_end_1} :catch_1
+
+    .line 44
+    .line 45
+    .line 46
+    goto :goto_1
+
+    .line 47
+    :catch_1
+    move-exception v4
+
+    .line 48
+    invoke-virtual {v4}, Ljava/lang/Throwable;->printStackTrace()V
+
+    .line 49
+    .line 50
+    .line 51
+    :goto_1
+    :try_start_2
+    new-instance v4, Lʼˏ/ᵢ;
+
+    .line 52
+    .line 53
+    invoke-direct {v4, v3}, Lʼˏ/ᵢ;-><init>(Ljava/lang/String;)V
+
+    .line 54
+    .line 55
+    .line 56
+    new-array v5, v1, [Ljava/lang/String;
+
+    .line 57
+    .line 58
+    const-string v6, "/system/xbin/reboot bootloader"
+
+    .line 59
+    .line 60
+    aput-object v6, v5, v0
+
+    .line 61
+    .line 62
+    invoke-virtual {v4, v5}, Lʼˏ/ᵢ;->ˎˎ([Ljava/lang/String;)Ljava/lang/String;
+    :try_end_2
+    .catch Ljava/lang/Exception; {:try_start_2 .. :try_end_2} :catch_2
+
+    .line 63
+    .line 64
+    .line 65
+    goto :goto_2
+
+    .line 66
+    :catch_2
+    move-exception v4
+
+    .line 67
+    invoke-virtual {v4}, Ljava/lang/Throwable;->printStackTrace()V
+
+    .line 68
+    .line 69
+    .line 70
+    :goto_2
+    :try_start_3
+    new-instance v4, Lʼˏ/ᵢ;
+
+    .line 71
+    .line 72
+    invoke-direct {v4, v3}, Lʼˏ/ᵢ;-><init>(Ljava/lang/String;)V
+
+    .line 73
+    .line 74
+    .line 75
+    new-array v3, v1, [Ljava/lang/String;
+
+    .line 76
+    .line 77
+    const-string v5, "busybox reboot bootloader"
+
+    .line 78
+    .line 79
+    aput-object v5, v3, v0
+
+    .line 80
+    .line 81
+    invoke-virtual {v4, v3}, Lʼˏ/ᵢ;->ˎˎ([Ljava/lang/String;)Ljava/lang/String;
+    :try_end_3
+    .catch Ljava/lang/Exception; {:try_start_3 .. :try_end_3} :catch_3
+
+    .line 82
+    .line 83
+    .line 84
+    goto :goto_3
+
+    .line 85
+    :catch_3
+    move-exception v3
+
+    .line 86
+    invoke-virtual {v3}, Ljava/lang/Throwable;->printStackTrace()V
+
+    .line 87
+    .line 88
+    .line 89
+    :goto_3
+    :try_start_4
+    new-array v1, v1, [Ljava/lang/String;
+
+    .line 90
+    .line 91
+    aput-object v2, v1, v0
+
+    .line 92
+    .line 93
+    invoke-static {v1}, Lʼˏ/ᵢ;->ˋˋ([Ljava/lang/String;)Ljava/lang/String;
+    :try_end_4
+    .catch Ljava/lang/Exception; {:try_start_4 .. :try_end_4} :catch_4
+
+    .line 94
+    .line 95
+    .line 96
+    goto :goto_4
+
+    .line 97
+    :catch_4
+    move-exception v0
+
+    .line 98
+    invoke-virtual {v0}, Ljava/lang/Throwable;->printStackTrace()V
+
+    .line 99
+    .line 100
+    .line 101
+    :goto_4
+    :try_start_5
+    invoke-static {v2}, Lʼˏ/ᵢ;->ˎˋ(Ljava/lang/String;)V
+    :try_end_5
+    .catch Ljava/lang/Exception; {:try_start_5 .. :try_end_5} :catch_5
+
+    .line 102
+    .line 103
+    .line 104
+    goto :goto_5
+
+    .line 105
+    :catch_5
+    move-exception v0
+
+    .line 106
+    invoke-virtual {v0}, Ljava/lang/Throwable;->printStackTrace()V
+
+    .line 107
+    .line 108
+    .line 109
+    :goto_5
+    :try_start_6
+    sget-object v0, Lʾˉ/ᴵᴵ;->ʼﾞ:Lru/aaaaaccd/installer/MainActivity;
+
+    .line 110
+    .line 111
+    new-instance v1, Lʼˏ/ᵢ$ʿʿ;
+
+    .line 112
+    .line 113
+    invoke-direct {v1}, Lʼˏ/ᵢ$ʿʿ;-><init>()V
+
+    .line 114
+    .line 115
+    .line 116
+    invoke-virtual {v0, v1}, Landroid/app/Activity;->runOnUiThread(Ljava/lang/Runnable;)V
+    :try_end_6
+    .catch Ljava/lang/Exception; {:try_start_6 .. :try_end_6} :catch_6
+
+    .line 117
+    .line 118
+    .line 119
+    goto :goto_6
+
+    .line 120
+    :catch_6
+    move-exception v0
+
+    .line 121
+    invoke-virtual {v0}, Ljava/lang/Throwable;->printStackTrace()V
+
+    .line 122
+    .line 123
+    .line 124
+    :goto_6
+    new-instance v0, Lʼˏ/ᵢ;
+
+    .line 125
+    .line 126
+    const-string v1, "w"
+
+    .line 127
+    .line 128
+    invoke-direct {v0, v1}, Lʼˏ/ᵢ;-><init>(Ljava/lang/String;)V
+
+    .line 129
+    .line 130
+    .line 131
+    const-wide/16 v1, 0x1388
+
+    .line 132
+    .line 133
+    invoke-virtual {v0, v1, v2}, Lʼˏ/ᵢ;->יˎ(J)V
+
+    .line 134
+    .line 135
+    .line 136
+    :try_start_7
+    new-instance v0, Ljava/lang/StringBuilder;
+
+    .line 137
+    .line 138
+    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
+
+    .line 139
+    .line 140
+    .line 141
+    invoke-static {}, Lʾˉ/ᴵᴵ;->ˈי()Landroid/content/Context;
+
+    .line 142
+    .line 143
+    .line 144
+    move-result-object v1
+
+    .line 145
+    invoke-static {v1}, Lʼˏ/ᵢ;->ʾˋ(Landroid/content/Context;)Ljava/lang/String;
+
+    .line 146
+    .line 147
+    .line 148
+    move-result-object v1
+
+    .line 149
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 150
+    .line 151
+    .line 152
+    const-string v1, "/reboot"
+
+    .line 153
+    .line 154
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 155
+    .line 156
+    .line 157
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    .line 158
+    .line 159
+    .line 160
+    move-result-object v0
+
+    .line 161
+    invoke-static {v0}, Lʼˏ/ᵢ;->ˎˋ(Ljava/lang/String;)V
+    :try_end_7
+    .catch Ljava/lang/Exception; {:try_start_7 .. :try_end_7} :catch_7
+
+    .line 162
+    .line 163
+    .line 164
+    goto :goto_7
+
+    .line 165
+    :catch_7
+    move-exception v0
+
+    .line 166
+    invoke-virtual {v0}, Ljava/lang/Throwable;->printStackTrace()V
+
+    .line 167
+    .line 168
+    .line 169
+    :cond_0
+    :goto_7
+    return-void
+.end method
+
+.method public static ˋᐧ()V
     .locals 7
 
     .line 1
@@ -106091,7 +107392,7 @@
     .line 101
     :goto_4
     :try_start_5
-    invoke-static {v2}, Lʼˏ/ᵢ;->ˎʾ(Ljava/lang/String;)V
+    invoke-static {v2}, Lʼˏ/ᵢ;->ˎˋ(Ljava/lang/String;)V
     :try_end_5
     .catch Ljava/lang/Exception; {:try_start_5 .. :try_end_5} :catch_5
 
@@ -106112,7 +107413,7 @@
     .line 109
     :goto_5
     :try_start_6
-    sget-object v0, Lʾˉ/ᴵᴵ;->ʼﾞ:Lru/aaaaaccc/installer/MainActivity;
+    sget-object v0, Lʾˉ/ᴵᴵ;->ʼﾞ:Lru/aaaaaccd/installer/MainActivity;
 
     .line 110
     .line 111
@@ -106162,7 +107463,7 @@
 
     .line 132
     .line 133
-    invoke-virtual {v0, v1, v2}, Lʼˏ/ᵢ;->יʿ(J)V
+    invoke-virtual {v0, v1, v2}, Lʼˏ/ᵢ;->יˎ(J)V
 
     .line 134
     .line 135
@@ -106185,7 +107486,7 @@
     move-result-object v1
 
     .line 145
-    invoke-static {v1}, Lʼˏ/ᵢ;->ʾˉ(Landroid/content/Context;)Ljava/lang/String;
+    invoke-static {v1}, Lʼˏ/ᵢ;->ʾˋ(Landroid/content/Context;)Ljava/lang/String;
 
     .line 146
     .line 147
@@ -106215,7 +107516,7 @@
     move-result-object v0
 
     .line 161
-    invoke-static {v0}, Lʼˏ/ᵢ;->ˎʾ(Ljava/lang/String;)V
+    invoke-static {v0}, Lʼˏ/ᵢ;->ˎˋ(Ljava/lang/String;)V
     :try_end_7
     .catch Ljava/lang/Exception; {:try_start_7 .. :try_end_7} :catch_7
 
@@ -106239,7 +107540,7 @@
     return-void
 .end method
 
-.method public static ˋˏ(Ljava/lang/String;Ljava/lang/String;Ljava/util/ArrayList;Ljava/io/File;)V
+.method public static ˋᴵ(Ljava/lang/String;Ljava/lang/String;Ljava/util/ArrayList;Ljava/io/File;)V
     .locals 16
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -106280,7 +107581,7 @@
     .line 8
     .line 9
     .line 10
-    invoke-static {v3}, Lʼˏ/ᵢ;->ʾˑ(Ljava/io/File;)Ljava/io/File;
+    invoke-static {v3}, Lʼˏ/ᵢ;->ʾـ(Ljava/io/File;)Ljava/io/File;
 
     .line 11
     .line 12
@@ -106644,16 +107945,16 @@
 
     .line 183
     .line 184
-    sget-object v4, Lʾˉ/ᴵᴵ;->ʼﾞ:Lru/aaaaaccc/installer/MainActivity;
+    sget-object v4, Lʾˉ/ᴵᴵ;->ʼﾞ:Lru/aaaaaccd/installer/MainActivity;
 
     .line 185
     .line 186
-    const v5, 0x7f1104d3
+    const v5, 0x7f1104d5
 
     .line 187
     .line 188
     .line 189
-    invoke-static {v5}, Lʼˏ/ᵢ;->ˈי(I)Ljava/lang/String;
+    invoke-static {v5}, Lʼˏ/ᵢ;->ˈᐧ(I)Ljava/lang/String;
 
     .line 190
     .line 191
@@ -106684,12 +107985,12 @@
 
     .line 203
     .line 204
-    const v6, 0x7f1101a6
+    const v6, 0x7f1101a8
 
     .line 205
     .line 206
     .line 207
-    invoke-static {v6, v7}, Lʼˏ/ᵢ;->ˈٴ(I[Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v6, v7}, Lʼˏ/ᵢ;->ˈᵎ(I[Ljava/lang/String;)Ljava/lang/String;
 
     .line 208
     .line 209
@@ -106697,7 +107998,7 @@
     move-result-object v6
 
     .line 211
-    invoke-static {v4, v5, v6}, Lʼˏ/ᵢ;->ˏᴵ(Landroid/app/Activity;Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v4, v5, v6}, Lʼˏ/ᵢ;->ˏﹶ(Landroid/app/Activity;Ljava/lang/String;Ljava/lang/String;)V
 
     .line 212
     .line 213
@@ -106778,7 +108079,7 @@
     return-void
 .end method
 
-.method public static ˋˑ(Ljava/lang/String;Ljava/lang/String;Ljava/util/ArrayList;Ljava/util/ArrayList;Ljava/util/ArrayList;Ljava/util/ArrayList;)V
+.method public static ˋᵎ(Ljava/lang/String;Ljava/lang/String;Ljava/util/ArrayList;Ljava/util/ArrayList;Ljava/util/ArrayList;Ljava/util/ArrayList;)V
     .locals 16
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -106824,7 +108125,7 @@
     .line 8
     .line 9
     .line 10
-    invoke-static {v2}, Lʼˏ/ᵢ;->ʾˑ(Ljava/io/File;)Ljava/io/File;
+    invoke-static {v2}, Lʼˏ/ᵢ;->ʾـ(Ljava/io/File;)Ljava/io/File;
 
     .line 11
     .line 12
@@ -107778,7 +109079,7 @@
     return-void
 .end method
 
-.method public static ˋי(Ljava/lang/String;Ljava/lang/String;)Z
+.method public static ˋᵔ(Ljava/lang/String;Ljava/lang/String;)Z
     .locals 22
 
     .line 1
@@ -107935,7 +109236,7 @@
     .line 76
     .line 77
     .line 78
-    invoke-static {v5}, Lʼˏ/ᵢ;->ʼˋ(Ljava/lang/String;)Z
+    invoke-static {v5}, Lʼˏ/ᵢ;->ʼˏ(Ljava/lang/String;)Z
 
     .line 79
     .line 80
@@ -107947,7 +109248,7 @@
 
     .line 83
     .line 84
-    invoke-static {v2}, Lʼˏ/ᵢ;->ʼˋ(Ljava/lang/String;)Z
+    invoke-static {v2}, Lʼˏ/ᵢ;->ʼˏ(Ljava/lang/String;)Z
 
     .line 85
     .line 86
@@ -107992,7 +109293,7 @@
 
     .line 105
     .line 106
-    invoke-static {v2}, Lʼˏ/ᵢ;->ˎʾ(Ljava/lang/String;)V
+    invoke-static {v2}, Lʼˏ/ᵢ;->ˎˋ(Ljava/lang/String;)V
 
     .line 107
     .line 108
@@ -108001,7 +109302,7 @@
 
     .line 110
     .line 111
-    invoke-static {v2}, Lʼˏ/ᵢ;->ˎʾ(Ljava/lang/String;)V
+    invoke-static {v2}, Lʼˏ/ᵢ;->ˎˋ(Ljava/lang/String;)V
 
     .line 112
     .line 113
@@ -108064,7 +109365,7 @@
 
     .line 140
     :cond_3
-    invoke-static {v0}, Lʼˏ/ᵢ;->ʼᵔ(Ljava/lang/String;)Lʾˉ/ٴ;
+    invoke-static {v0}, Lʼˏ/ᵢ;->ʼⁱ(Ljava/lang/String;)Lʾˉ/ٴ;
 
     .line 141
     .line 142
@@ -108328,7 +109629,7 @@
     move-result-object v4
 
     .line 278
-    invoke-static {v4}, Lʼˏ/ᵢ;->ˎʾ(Ljava/lang/String;)V
+    invoke-static {v4}, Lʼˏ/ᵢ;->ˎˋ(Ljava/lang/String;)V
 
     .line 279
     .line 280
@@ -108424,12 +109725,12 @@
     move-result-object v2
 
     .line 330
-    invoke-static {v2}, Lʼˏ/ᵢ;->ˎʾ(Ljava/lang/String;)V
+    invoke-static {v2}, Lʼˏ/ᵢ;->ˎˋ(Ljava/lang/String;)V
 
     .line 331
     .line 332
     .line 333
-    invoke-static {v0}, Lʼˏ/ᵢ;->ʼᵔ(Ljava/lang/String;)Lʾˉ/ٴ;
+    invoke-static {v0}, Lʼˏ/ᵢ;->ʼⁱ(Ljava/lang/String;)Lʾˉ/ٴ;
 
     .line 334
     .line 335
@@ -108556,7 +109857,7 @@
     move-result-object v2
 
     .line 400
-    invoke-static {v2}, Lʼˏ/ᵢ;->ˎʾ(Ljava/lang/String;)V
+    invoke-static {v2}, Lʼˏ/ᵢ;->ˎˋ(Ljava/lang/String;)V
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -108565,7 +109866,7 @@
     .line 403
     :catch_0
     :cond_5
-    invoke-static {v0}, Lʼˏ/ᵢ;->ʼᵔ(Ljava/lang/String;)Lʾˉ/ٴ;
+    invoke-static {v0}, Lʼˏ/ᵢ;->ʼⁱ(Ljava/lang/String;)Lʾˉ/ٴ;
 
     .line 404
     .line 405
@@ -108970,7 +110271,7 @@
 
     .line 604
     .line 605
-    invoke-static {v10}, Lʼˏ/ᵢ;->ˎʿ([Ljava/lang/String;)V
+    invoke-static {v10}, Lʼˏ/ᵢ;->ˎˏ([Ljava/lang/String;)V
 
     .line 606
     .line 607
@@ -108991,7 +110292,7 @@
 
     .line 615
     .line 616
-    invoke-static {v5}, Lʼˏ/ᵢ;->ˎʿ([Ljava/lang/String;)V
+    invoke-static {v5}, Lʼˏ/ᵢ;->ˎˏ([Ljava/lang/String;)V
 
     .line 617
     .line 618
@@ -109053,7 +110354,7 @@
 
     .line 645
     :cond_c
-    invoke-static {v0}, Lʼˏ/ᵢ;->ʼᵔ(Ljava/lang/String;)Lʾˉ/ٴ;
+    invoke-static {v0}, Lʼˏ/ᵢ;->ʼⁱ(Ljava/lang/String;)Lʾˉ/ٴ;
 
     .line 646
     .line 647
@@ -109322,7 +110623,7 @@
 
     .line 781
     .line 782
-    invoke-static {v7}, Lʼˏ/ᵢ;->ˎʿ([Ljava/lang/String;)V
+    invoke-static {v7}, Lʼˏ/ᵢ;->ˎˏ([Ljava/lang/String;)V
 
     .line 783
     .line 784
@@ -109440,12 +110741,12 @@
 
     .line 839
     .line 840
-    invoke-static {v8}, Lʼˏ/ᵢ;->ˎʿ([Ljava/lang/String;)V
+    invoke-static {v8}, Lʼˏ/ᵢ;->ˎˏ([Ljava/lang/String;)V
 
     .line 841
     .line 842
     .line 843
-    invoke-static {v0}, Lʼˏ/ᵢ;->ʼᵔ(Ljava/lang/String;)Lʾˉ/ٴ;
+    invoke-static {v0}, Lʼˏ/ᵢ;->ʼⁱ(Ljava/lang/String;)Lʾˉ/ٴ;
 
     .line 844
     .line 845
@@ -109574,7 +110875,7 @@
 
     .line 903
     .line 904
-    invoke-static {v6}, Lʼˏ/ᵢ;->ˎʿ([Ljava/lang/String;)V
+    invoke-static {v6}, Lʼˏ/ᵢ;->ˎˏ([Ljava/lang/String;)V
     :try_end_1
     .catch Ljava/lang/Exception; {:try_start_1 .. :try_end_1} :catch_1
 
@@ -109583,7 +110884,7 @@
     .line 907
     :catch_1
     :cond_e
-    invoke-static {v0}, Lʼˏ/ᵢ;->ʼᵔ(Ljava/lang/String;)Lʾˉ/ٴ;
+    invoke-static {v0}, Lʼˏ/ᵢ;->ʼⁱ(Ljava/lang/String;)Lʾˉ/ٴ;
 
     .line 908
     .line 909
@@ -109802,291 +111103,883 @@
     return v0
 .end method
 
-.method public static ˋـ(Ljava/lang/String;)V
-    .locals 4
+.method public static ˋᵢ(Ljava/lang/String;)V
+    .locals 12
 
     .line 1
-    new-instance v0, Ljava/io/File;
+    const/4 v0, 0x1
 
     .line 2
-    .line 3
     new-instance v1, Ljava/lang/StringBuilder;
 
+    .line 3
     .line 4
-    .line 5
     invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
 
+    .line 5
     .line 6
     .line 7
-    .line 8
     sget-object v2, Lʾˉ/ᴵᴵ;->ʼٴ:Ljava/lang/String;
 
+    .line 8
     .line 9
-    .line 10
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    .line 10
     .line 11
     .line 12
-    .line 13
     const-string v2, "/inapp_zygisk_exclude/packages/"
 
+    .line 13
     .line 14
-    .line 15
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    .line 15
     .line 16
     .line 17
-    .line 18
-    invoke-virtual {v1, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
+    .line 18
     .line 19
     .line 20
+    move-result-object v1
+
     .line 21
-    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-static {}, Lʼˏ/ᵢ;->ˉـ()Z
 
     .line 22
     .line 23
     .line 24
-    move-result-object v1
+    move-result v3
 
     .line 25
-    invoke-direct {v0, v1}, Ljava/io/File;-><init>(Ljava/lang/String;)V
+    const/4 v4, 0x0
 
     .line 26
+    const-string v5, "/inapp_zygisk_exclude"
+
     .line 27
     .line 28
-    new-instance v1, Ljava/io/File;
+    const-class v6, Ljavaroot/utils/ˈˈ;
 
     .line 29
     .line 30
-    new-instance v2, Ljava/lang/StringBuilder;
+    const-string v7, ".all"
 
     .line 31
     .line 32
-    invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
+    const-string v8, "/inapp_zygisk_exclude/packages_selected/"
 
     .line 33
     .line 34
+    if-nez v3, :cond_0
+
     .line 35
-    sget-object v3, Lʾˉ/ᴵᴵ;->ʼٴ:Ljava/lang/String;
-
     .line 36
-    .line 37
-    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    new-instance v1, Ljava/lang/StringBuilder;
 
+    .line 37
     .line 38
+    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
+
     .line 39
     .line 40
-    const-string v3, "/inapp_zygisk_exclude/packages/.all"
-
     .line 41
-    .line 42
-    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    sget-object v3, Lʾˉ/ᴵᴵ;->ʼٴ:Ljava/lang/String;
 
+    .line 42
     .line 43
+    invoke-virtual {v1, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
     .line 44
     .line 45
-    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
     .line 46
+    invoke-virtual {v1, v8}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
     .line 47
     .line 48
-    move-result-object v2
-
     .line 49
-    invoke-direct {v1, v2}, Ljava/io/File;-><init>(Ljava/lang/String;)V
+    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     .line 50
     .line 51
     .line 52
-    invoke-virtual {v1}, Ljava/io/File;->exists()Z
+    move-result-object v1
 
     .line 53
+    new-instance v3, Ljava/io/File;
+
     .line 54
     .line 55
-    move-result v1
+    new-instance v9, Ljava/lang/StringBuilder;
 
     .line 56
-    if-nez v1, :cond_0
-
     .line 57
-    .line 58
-    :try_start_0
-    invoke-virtual {v0}, Ljava/io/File;->delete()Z
+    invoke-direct {v9}, Ljava/lang/StringBuilder;-><init>()V
 
+    .line 58
     .line 59
     .line 60
-    .line 61
-    invoke-static {p0}, Lʼˏ/ᵢ;->ˊי(Ljava/lang/String;)Z
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+    invoke-virtual {v9, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    .line 61
     .line 62
     .line 63
+    invoke-virtual {v9, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
     .line 64
-    goto :goto_0
-
     .line 65
-    :catchall_0
-    move-exception p0
-
     .line 66
-    invoke-virtual {p0}, Ljava/lang/Throwable;->printStackTrace()V
+    invoke-virtual {v9}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     .line 67
     .line 68
     .line 69
-    goto :goto_0
+    move-result-object v9
 
     .line 70
-    :cond_0
-    invoke-virtual {v0}, Ljava/io/File;->exists()Z
+    invoke-direct {v3, v9}, Ljava/io/File;-><init>(Ljava/lang/String;)V
 
     .line 71
     .line 72
     .line 73
-    move-result v1
+    new-instance v9, Ljava/io/File;
 
     .line 74
-    if-nez v1, :cond_1
-
     .line 75
-    .line 76
-    :try_start_1
-    invoke-virtual {v0}, Ljava/io/File;->createNewFile()Z
+    new-instance v10, Ljava/lang/StringBuilder;
 
+    .line 76
     .line 77
+    invoke-direct {v10}, Ljava/lang/StringBuilder;-><init>()V
+
     .line 78
     .line 79
-    invoke-static {p0}, Lʼˏ/ᵢ;->ˊי(Ljava/lang/String;)Z
-    :try_end_1
-    .catchall {:try_start_1 .. :try_end_1} :catchall_1
-
     .line 80
+    invoke-virtual {v10, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
     .line 81
     .line 82
-    goto :goto_0
-
     .line 83
-    :catchall_1
-    move-exception p0
+    invoke-static {}, Lru/aaaaaccd/installer/PkgName;->getPkgName()Ljava/lang/String;
 
     .line 84
-    invoke-virtual {p0}, Ljava/lang/Throwable;->printStackTrace()V
-
     .line 85
     .line 86
+    move-result-object v11
+
     .line 87
-    :cond_1
-    :goto_0
-    new-instance p0, Ljava/lang/StringBuilder;
+    invoke-virtual {v10, v11}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     .line 88
     .line 89
-    invoke-direct {p0}, Ljava/lang/StringBuilder;-><init>()V
-
     .line 90
+    invoke-virtual {v10}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
     .line 91
     .line 92
-    sget-object v0, Lʾˉ/ᴵᴵ;->ʼٴ:Ljava/lang/String;
-
     .line 93
+    move-result-object v10
+
     .line 94
-    invoke-virtual {p0, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-direct {v9, v10}, Ljava/io/File;-><init>(Ljava/lang/String;)V
 
     .line 95
     .line 96
     .line 97
-    const-string v0, "/inapp_zygisk_exclude/packages"
+    new-instance v10, Ljava/io/File;
 
     .line 98
     .line 99
-    invoke-virtual {p0, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    new-instance v11, Ljava/lang/StringBuilder;
 
     .line 100
     .line 101
-    .line 102
-    invoke-virtual {p0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-direct {v11}, Ljava/lang/StringBuilder;-><init>()V
 
+    .line 102
     .line 103
     .line 104
+    invoke-virtual {v11, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
     .line 105
-    move-result-object p0
-
     .line 106
-    new-instance v0, Ljava/lang/StringBuilder;
-
     .line 107
-    .line 108
-    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
+    invoke-virtual {v11, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    .line 108
     .line 109
     .line 110
-    .line 111
-    invoke-static {}, Lʼˏ/ᵢ;->ʿⁱ()Ljava/lang/String;
+    invoke-virtual {v11}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
+    .line 111
     .line 112
     .line 113
+    move-result-object v7
+
     .line 114
-    move-result-object v1
+    invoke-direct {v10, v7}, Ljava/io/File;-><init>(Ljava/lang/String;)V
 
     .line 115
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
     .line 116
     .line 117
-    .line 118
-    const-string v1, "/packages"
+    :try_start_0
+    invoke-virtual {v3}, Ljava/io/File;->delete()Z
 
+    .line 118
     .line 119
     .line 120
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v9}, Ljava/io/File;->createNewFile()Z
 
     .line 121
     .line 122
     .line 123
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-virtual {v10}, Ljava/io/File;->delete()Z
 
     .line 124
     .line 125
     .line 126
-    move-result-object v0
+    invoke-static {p0}, Lʼˏ/ᵢ;->ˊᵔ(Ljava/lang/String;)Z
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
     .line 127
-    const/4 v1, 0x2
-
     .line 128
-    new-array v1, v1, [Ljava/lang/String;
-
     .line 129
+    goto :goto_0
+
     .line 130
-    const/4 v2, 0x0
+    :catchall_0
+    move-exception p0
 
     .line 131
-    aput-object p0, v1, v2
+    invoke-virtual {p0}, Ljava/lang/Throwable;->printStackTrace()V
 
     .line 132
     .line 133
-    const/4 p0, 0x1
-
     .line 134
-    aput-object v0, v1, p0
+    :goto_0
+    invoke-virtual {v3}, Ljava/io/File;->exists()Z
 
     .line 135
     .line 136
-    const-class p0, Ljavaroot/utils/ʻⁱ;
-
     .line 137
+    move-result p0
+
     .line 138
-    invoke-static {p0, v1}, Lʼˏ/ᵢ;->ˎʽ(Ljava/lang/Class;[Ljava/lang/String;)Ljava/lang/String;
+    if-eqz p0, :cond_1
 
     .line 139
     .line 140
+    new-instance p0, Ljava/lang/StringBuilder;
+
     .line 141
+    .line 142
+    invoke-direct {p0}, Ljava/lang/StringBuilder;-><init>()V
+
+    .line 143
+    .line 144
+    .line 145
+    sget-object v3, Lʾˉ/ᴵᴵ;->ʼٴ:Ljava/lang/String;
+
+    .line 146
+    .line 147
+    invoke-virtual {p0, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 148
+    .line 149
+    .line 150
+    invoke-virtual {p0, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 151
+    .line 152
+    .line 153
+    invoke-virtual {p0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    .line 154
+    .line 155
+    .line 156
+    move-result-object p0
+
+    .line 157
+    new-array v3, v0, [Ljava/lang/String;
+
+    .line 158
+    .line 159
+    aput-object p0, v3, v4
+
+    .line 160
+    .line 161
+    invoke-static {v6, v3}, Lʼˏ/ᵢ;->ˎˊ(Ljava/lang/Class;[Ljava/lang/String;)Ljava/lang/String;
+
+    .line 162
+    .line 163
+    .line 164
+    new-instance p0, Ljava/io/File;
+
+    .line 165
+    .line 166
+    new-instance v3, Ljava/lang/StringBuilder;
+
+    .line 167
+    .line 168
+    invoke-direct {v3}, Ljava/lang/StringBuilder;-><init>()V
+
+    .line 169
+    .line 170
+    .line 171
+    sget-object v5, Lʾˉ/ᴵᴵ;->ʼٴ:Ljava/lang/String;
+
+    .line 172
+    .line 173
+    invoke-virtual {v3, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 174
+    .line 175
+    .line 176
+    invoke-virtual {v3, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 177
+    .line 178
+    .line 179
+    invoke-virtual {v3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    .line 180
+    .line 181
+    .line 182
+    move-result-object v2
+
+    .line 183
+    invoke-direct {p0, v2}, Ljava/io/File;-><init>(Ljava/lang/String;)V
+
+    .line 184
+    .line 185
+    .line 186
+    new-instance v2, Ljava/io/File;
+
+    .line 187
+    .line 188
+    new-instance v3, Ljava/lang/StringBuilder;
+
+    .line 189
+    .line 190
+    invoke-direct {v3}, Ljava/lang/StringBuilder;-><init>()V
+
+    .line 191
+    .line 192
+    .line 193
+    sget-object v5, Lʾˉ/ᴵᴵ;->ʼٴ:Ljava/lang/String;
+
+    .line 194
+    .line 195
+    invoke-virtual {v3, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 196
+    .line 197
+    .line 198
+    invoke-virtual {v3, v8}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 199
+    .line 200
+    .line 201
+    invoke-virtual {v3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    .line 202
+    .line 203
+    .line 204
+    move-result-object v3
+
+    .line 205
+    invoke-direct {v2, v3}, Ljava/io/File;-><init>(Ljava/lang/String;)V
+
+    .line 206
+    .line 207
+    .line 208
+    invoke-static {}, Lru/aaaaaccd/installer/PkgName;->getPkgName()Ljava/lang/String;
+
+    .line 209
+    .line 210
+    .line 211
+    move-result-object v3
+
+    .line 212
+    new-array v5, v0, [Ljava/lang/String;
+
+    .line 213
+    .line 214
+    aput-object v3, v5, v4
+
+    .line 215
+    .line 216
+    new-array v3, v4, [Ljava/lang/String;
+
+    .line 217
+    .line 218
+    invoke-static {p0, v2, v5, v3}, Lʼˏ/ᵢ;->ʻﹶ(Ljava/io/File;Ljava/io/File;[Ljava/lang/String;[Ljava/lang/String;)V
+
+    .line 219
+    .line 220
+    .line 221
+    :try_start_1
+    invoke-virtual {v9}, Ljava/io/File;->createNewFile()Z
+    :try_end_1
+    .catch Ljava/io/IOException; {:try_start_1 .. :try_end_1} :catch_0
+
+    .line 222
+    .line 223
+    .line 224
+    goto/16 :goto_2
+
+    .line 225
+    .line 226
+    :catch_0
+    move-exception p0
+
+    .line 227
+    new-instance v0, Ljava/lang/RuntimeException;
+
+    .line 228
+    .line 229
+    invoke-direct {v0, p0}, Ljava/lang/RuntimeException;-><init>(Ljava/lang/Throwable;)V
+
+    .line 230
+    .line 231
+    .line 232
+    throw v0
+
+    .line 233
+    :cond_0
+    new-instance v3, Ljava/io/File;
+
+    .line 234
+    .line 235
+    new-instance v9, Ljava/lang/StringBuilder;
+
+    .line 236
+    .line 237
+    invoke-direct {v9}, Ljava/lang/StringBuilder;-><init>()V
+
+    .line 238
+    .line 239
+    .line 240
+    invoke-virtual {v9, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 241
+    .line 242
+    .line 243
+    invoke-virtual {v9, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 244
+    .line 245
+    .line 246
+    invoke-virtual {v9}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    .line 247
+    .line 248
+    .line 249
+    move-result-object v9
+
+    .line 250
+    invoke-direct {v3, v9}, Ljava/io/File;-><init>(Ljava/lang/String;)V
+
+    .line 251
+    .line 252
+    .line 253
+    new-instance v9, Ljava/io/File;
+
+    .line 254
+    .line 255
+    new-instance v10, Ljava/lang/StringBuilder;
+
+    .line 256
+    .line 257
+    invoke-direct {v10}, Ljava/lang/StringBuilder;-><init>()V
+
+    .line 258
+    .line 259
+    .line 260
+    invoke-virtual {v10, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 261
+    .line 262
+    .line 263
+    invoke-static {}, Lru/aaaaaccd/installer/PkgName;->getPkgName()Ljava/lang/String;
+
+    .line 264
+    .line 265
+    .line 266
+    move-result-object v11
+
+    .line 267
+    invoke-virtual {v10, v11}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 268
+    .line 269
+    .line 270
+    invoke-virtual {v10}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    .line 271
+    .line 272
+    .line 273
+    move-result-object v10
+
+    .line 274
+    invoke-direct {v9, v10}, Ljava/io/File;-><init>(Ljava/lang/String;)V
+
+    .line 275
+    .line 276
+    .line 277
+    new-instance v10, Ljava/io/File;
+
+    .line 278
+    .line 279
+    new-instance v11, Ljava/lang/StringBuilder;
+
+    .line 280
+    .line 281
+    invoke-direct {v11}, Ljava/lang/StringBuilder;-><init>()V
+
+    .line 282
+    .line 283
+    .line 284
+    invoke-virtual {v11, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 285
+    .line 286
+    .line 287
+    invoke-virtual {v11, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 288
+    .line 289
+    .line 290
+    invoke-virtual {v11}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    .line 291
+    .line 292
+    .line 293
+    move-result-object v7
+
+    .line 294
+    invoke-direct {v10, v7}, Ljava/io/File;-><init>(Ljava/lang/String;)V
+
+    .line 295
+    .line 296
+    .line 297
+    invoke-virtual {v3}, Ljava/io/File;->exists()Z
+
+    .line 298
+    .line 299
+    .line 300
+    move-result v7
+
+    .line 301
+    if-nez v7, :cond_1
+
+    .line 302
+    .line 303
+    :try_start_2
+    invoke-virtual {v3}, Ljava/io/File;->createNewFile()Z
+
+    .line 304
+    .line 305
+    .line 306
+    invoke-virtual {v10}, Ljava/io/File;->createNewFile()Z
+
+    .line 307
+    .line 308
+    .line 309
+    invoke-virtual {v9}, Ljava/io/File;->delete()Z
+
+    .line 310
+    .line 311
+    .line 312
+    invoke-static {p0}, Lʼˏ/ᵢ;->ˊᵔ(Ljava/lang/String;)Z
+    :try_end_2
+    .catchall {:try_start_2 .. :try_end_2} :catchall_1
+
+    .line 313
+    .line 314
+    .line 315
+    goto :goto_1
+
+    .line 316
+    :catchall_1
+    move-exception p0
+
+    .line 317
+    invoke-virtual {p0}, Ljava/lang/Throwable;->printStackTrace()V
+
+    .line 318
+    .line 319
+    .line 320
+    :goto_1
+    invoke-virtual {v3}, Ljava/io/File;->exists()Z
+
+    .line 321
+    .line 322
+    .line 323
+    move-result p0
+
+    .line 324
+    if-nez p0, :cond_1
+
+    .line 325
+    .line 326
+    new-instance p0, Ljava/lang/StringBuilder;
+
+    .line 327
+    .line 328
+    invoke-direct {p0}, Ljava/lang/StringBuilder;-><init>()V
+
+    .line 329
+    .line 330
+    .line 331
+    sget-object v7, Lʾˉ/ᴵᴵ;->ʼٴ:Ljava/lang/String;
+
+    .line 332
+    .line 333
+    invoke-virtual {p0, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 334
+    .line 335
+    .line 336
+    invoke-virtual {p0, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 337
+    .line 338
+    .line 339
+    invoke-virtual {p0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    .line 340
+    .line 341
+    .line 342
+    move-result-object p0
+
+    .line 343
+    new-array v5, v0, [Ljava/lang/String;
+
+    .line 344
+    .line 345
+    aput-object p0, v5, v4
+
+    .line 346
+    .line 347
+    invoke-static {v6, v5}, Lʼˏ/ᵢ;->ˎˊ(Ljava/lang/Class;[Ljava/lang/String;)Ljava/lang/String;
+
+    .line 348
+    .line 349
+    .line 350
+    new-instance p0, Ljava/io/File;
+
+    .line 351
+    .line 352
+    new-instance v5, Ljava/lang/StringBuilder;
+
+    .line 353
+    .line 354
+    invoke-direct {v5}, Ljava/lang/StringBuilder;-><init>()V
+
+    .line 355
+    .line 356
+    .line 357
+    sget-object v6, Lʾˉ/ᴵᴵ;->ʼٴ:Ljava/lang/String;
+
+    .line 358
+    .line 359
+    invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 360
+    .line 361
+    .line 362
+    invoke-virtual {v5, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 363
+    .line 364
+    .line 365
+    invoke-virtual {v5}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    .line 366
+    .line 367
+    .line 368
+    move-result-object v2
+
+    .line 369
+    invoke-direct {p0, v2}, Ljava/io/File;-><init>(Ljava/lang/String;)V
+
+    .line 370
+    .line 371
+    .line 372
+    new-instance v2, Ljava/io/File;
+
+    .line 373
+    .line 374
+    new-instance v5, Ljava/lang/StringBuilder;
+
+    .line 375
+    .line 376
+    invoke-direct {v5}, Ljava/lang/StringBuilder;-><init>()V
+
+    .line 377
+    .line 378
+    .line 379
+    sget-object v6, Lʾˉ/ᴵᴵ;->ʼٴ:Ljava/lang/String;
+
+    .line 380
+    .line 381
+    invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 382
+    .line 383
+    .line 384
+    invoke-virtual {v5, v8}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 385
+    .line 386
+    .line 387
+    invoke-virtual {v5}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    .line 388
+    .line 389
+    .line 390
+    move-result-object v5
+
+    .line 391
+    invoke-direct {v2, v5}, Ljava/io/File;-><init>(Ljava/lang/String;)V
+
+    .line 392
+    .line 393
+    .line 394
+    invoke-static {}, Lru/aaaaaccd/installer/PkgName;->getPkgName()Ljava/lang/String;
+
+    .line 395
+    .line 396
+    .line 397
+    move-result-object v5
+
+    .line 398
+    new-array v6, v0, [Ljava/lang/String;
+
+    .line 399
+    .line 400
+    aput-object v5, v6, v4
+
+    .line 401
+    .line 402
+    new-array v5, v4, [Ljava/lang/String;
+
+    .line 403
+    .line 404
+    invoke-static {p0, v2, v6, v5}, Lʼˏ/ᵢ;->ʻﹶ(Ljava/io/File;Ljava/io/File;[Ljava/lang/String;[Ljava/lang/String;)V
+
+    .line 405
+    .line 406
+    .line 407
+    :try_start_3
+    invoke-virtual {v10}, Ljava/io/File;->createNewFile()Z
+
+    .line 408
+    .line 409
+    .line 410
+    invoke-virtual {v3}, Ljava/io/File;->createNewFile()Z
+
+    .line 411
+    .line 412
+    .line 413
+    invoke-virtual {v9}, Ljava/io/File;->delete()Z
+    :try_end_3
+    .catch Ljava/io/IOException; {:try_start_3 .. :try_end_3} :catch_1
+
+    .line 414
+    .line 415
+    .line 416
+    goto :goto_2
+
+    .line 417
+    :catch_1
+    move-exception p0
+
+    .line 418
+    new-instance v0, Ljava/lang/RuntimeException;
+
+    .line 419
+    .line 420
+    invoke-direct {v0, p0}, Ljava/lang/RuntimeException;-><init>(Ljava/lang/Throwable;)V
+
+    .line 421
+    .line 422
+    .line 423
+    throw v0
+
+    .line 424
+    :cond_1
+    :goto_2
+    new-instance p0, Ljava/lang/StringBuilder;
+
+    .line 425
+    .line 426
+    invoke-direct {p0}, Ljava/lang/StringBuilder;-><init>()V
+
+    .line 427
+    .line 428
+    .line 429
+    invoke-static {}, Lʼˏ/ᵢ;->ʿﾞ()Ljava/lang/String;
+
+    .line 430
+    .line 431
+    .line 432
+    move-result-object v2
+
+    .line 433
+    invoke-virtual {p0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 434
+    .line 435
+    .line 436
+    const-string v2, "/packages"
+
+    .line 437
+    .line 438
+    invoke-virtual {p0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 439
+    .line 440
+    .line 441
+    invoke-virtual {p0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    .line 442
+    .line 443
+    .line 444
+    move-result-object p0
+
+    .line 445
+    const/4 v2, 0x2
+
+    .line 446
+    new-array v2, v2, [Ljava/lang/String;
+
+    .line 447
+    .line 448
+    aput-object v1, v2, v4
+
+    .line 449
+    .line 450
+    aput-object p0, v2, v0
+
+    .line 451
+    .line 452
+    const-class p0, Ljavaroot/utils/ʻﹳ;
+
+    .line 453
+    .line 454
+    invoke-static {p0, v2}, Lʼˏ/ᵢ;->ˎˊ(Ljava/lang/Class;[Ljava/lang/String;)Ljava/lang/String;
+
+    .line 455
+    .line 456
+    .line 457
     return-void
 .end method
 
-.method public static ˋٴ(Ljava/lang/String;)Ljava/lang/String;
+.method public static ˋⁱ(Ljava/lang/String;)Ljava/lang/String;
     .locals 3
 
     .line 1
@@ -110215,7 +112108,7 @@
     return-object v0
 .end method
 
-.method public static ˋᐧ(Ljava/lang/String;)V
+.method public static ˋﹳ(Ljava/lang/String;)V
     .locals 13
 
     .line 1
@@ -110227,7 +112120,7 @@
 
     .line 4
     .line 5
-    invoke-static {v0, v1}, Lʼˏ/ᵢ;->ˋי(Ljava/lang/String;Ljava/lang/String;)Z
+    invoke-static {v0, v1}, Lʼˏ/ᵢ;->ˋᵔ(Ljava/lang/String;Ljava/lang/String;)Z
 
     .line 6
     .line 7
@@ -110268,7 +112161,7 @@
     .line 23
     .line 24
     :try_start_1
-    invoke-static {p0}, Lʼˏ/ᵢ;->ʾˊ(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {p0}, Lʼˏ/ᵢ;->ʾˎ(Ljava/lang/String;)Ljava/lang/String;
 
     .line 25
     .line 26
@@ -110277,7 +112170,7 @@
 
     .line 28
     .line 29
-    invoke-static {v1, v2}, Lʼˏ/ᵢ;->ˋי(Ljava/lang/String;Ljava/lang/String;)Z
+    invoke-static {v1, v2}, Lʼˏ/ᵢ;->ˋᵔ(Ljava/lang/String;Ljava/lang/String;)Z
 
     .line 30
     .line 31
@@ -110313,7 +112206,7 @@
     move-result-object v2
 
     .line 49
-    invoke-static {v2}, Lʼˏ/ᵢ;->ˎʾ(Ljava/lang/String;)V
+    invoke-static {v2}, Lʼˏ/ᵢ;->ˎˋ(Ljava/lang/String;)V
 
     .line 50
     .line 51
@@ -110349,7 +112242,7 @@
     move-result-object v2
 
     .line 69
-    invoke-static {v2}, Lʼˏ/ᵢ;->ˎʾ(Ljava/lang/String;)V
+    invoke-static {v2}, Lʼˏ/ᵢ;->ˎˋ(Ljava/lang/String;)V
     :try_end_1
     .catch Ljava/lang/Exception; {:try_start_1 .. :try_end_1} :catch_0
 
@@ -110438,7 +112331,7 @@
     .line 108
     .line 109
     .line 110
-    invoke-static {v0}, Lʼˏ/ᵢ;->ˋᴵ(Ljava/io/File;)V
+    invoke-static {v0}, Lʼˏ/ᵢ;->ˋﹶ(Ljava/io/File;)V
 
     .line 111
     .line 112
@@ -110618,7 +112511,7 @@
 
     .line 198
     .line 199
-    invoke-static {v6}, Lʼˏ/ᵢ;->ˋᴵ(Ljava/io/File;)V
+    invoke-static {v6}, Lʼˏ/ᵢ;->ˋﹶ(Ljava/io/File;)V
     :try_end_2
     .catch Ljava/lang/Exception; {:try_start_2 .. :try_end_2} :catch_2
 
@@ -110765,7 +112658,7 @@
 
     .line 263
     .line 264
-    invoke-static {v10}, Lʼˏ/ᵢ;->ˋᴵ(Ljava/io/File;)V
+    invoke-static {v10}, Lʼˏ/ᵢ;->ˋﹶ(Ljava/io/File;)V
 
     .line 265
     .line 266
@@ -110818,7 +112711,7 @@
     move-result-object v10
 
     .line 293
-    invoke-static {v10}, Lʼˏ/ᵢ;->ˎʾ(Ljava/lang/String;)V
+    invoke-static {v10}, Lʼˏ/ᵢ;->ˎˋ(Ljava/lang/String;)V
     :try_end_4
     .catch Ljava/lang/Exception; {:try_start_4 .. :try_end_4} :catch_3
 
@@ -110926,7 +112819,7 @@
     return-void
 .end method
 
-.method public static ˋᴵ(Ljava/io/File;)V
+.method public static ˋﹶ(Ljava/io/File;)V
     .locals 7
 
     .line 1
@@ -110938,7 +112831,7 @@
     move-result-object v0
 
     .line 5
-    invoke-static {v0}, Lʼˏ/ᵢ;->ˈʽ(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v0}, Lʼˏ/ᵢ;->ˈˆ(Ljava/lang/String;)Ljava/lang/String;
 
     .line 6
     .line 7
@@ -111006,7 +112899,7 @@
     move-result-object v1
 
     .line 41
-    invoke-static {v1}, Lʼˏ/ᵢ;->ˎʾ(Ljava/lang/String;)V
+    invoke-static {v1}, Lʼˏ/ᵢ;->ˎˋ(Ljava/lang/String;)V
 
     .line 42
     .line 43
@@ -111043,7 +112936,7 @@
     move-result-object v0
 
     .line 62
-    invoke-static {v0}, Lʼˏ/ᵢ;->ˎʾ(Ljava/lang/String;)V
+    invoke-static {v0}, Lʼˏ/ᵢ;->ˎˋ(Ljava/lang/String;)V
 
     .line 63
     .line 64
@@ -111057,7 +112950,7 @@
     move-result-object v0
 
     .line 69
-    invoke-static {v0}, Lʼˏ/ᵢ;->ʾᵎ(Ljava/lang/String;)Ljava/io/File;
+    invoke-static {v0}, Lʼˏ/ᵢ;->ʾᵢ(Ljava/lang/String;)Ljava/io/File;
 
     .line 70
     .line 71
@@ -111121,7 +113014,7 @@
     move-result-object v1
 
     .line 103
-    invoke-static {v1}, Lʼˏ/ᵢ;->ˎʾ(Ljava/lang/String;)V
+    invoke-static {v1}, Lʼˏ/ᵢ;->ˎˋ(Ljava/lang/String;)V
 
     .line 104
     .line 105
@@ -111178,7 +113071,7 @@
     move-result-object v1
 
     .line 134
-    invoke-static {v1}, Lʼˏ/ᵢ;->ˎʾ(Ljava/lang/String;)V
+    invoke-static {v1}, Lʼˏ/ᵢ;->ˎˋ(Ljava/lang/String;)V
 
     .line 135
     .line 136
@@ -111235,7 +113128,7 @@
     move-result-object v0
 
     .line 165
-    invoke-static {v0}, Lʼˏ/ᵢ;->ˎʾ(Ljava/lang/String;)V
+    invoke-static {v0}, Lʼˏ/ᵢ;->ˎˋ(Ljava/lang/String;)V
 
     .line 166
     .line 167
@@ -111281,7 +113174,7 @@
     move-result-object v0
 
     .line 190
-    invoke-static {v0}, Lʼˏ/ᵢ;->ˎʾ(Ljava/lang/String;)V
+    invoke-static {v0}, Lʼˏ/ᵢ;->ˎˋ(Ljava/lang/String;)V
 
     .line 191
     .line 192
@@ -111326,7 +113219,7 @@
     move-result-object v0
 
     .line 215
-    invoke-static {v0}, Lʼˏ/ᵢ;->ˎʾ(Ljava/lang/String;)V
+    invoke-static {v0}, Lʼˏ/ᵢ;->ˎˋ(Ljava/lang/String;)V
 
     .line 216
     .line 217
@@ -111356,7 +113249,7 @@
     const/4 v2, 0x0
 
     .line 231
-    invoke-static {v1, v2}, Lʼˏ/ᵢ;->ˆʿ(Ljava/lang/String;Z)Ljava/lang/String;
+    invoke-static {v1, v2}, Lʼˏ/ᵢ;->ˆˊ(Ljava/lang/String;Z)Ljava/lang/String;
 
     .line 232
     .line 233
@@ -111382,12 +113275,12 @@
     move-result-object v0
 
     .line 245
-    invoke-static {v0}, Lʼˏ/ᵢ;->ˎʾ(Ljava/lang/String;)V
+    invoke-static {v0}, Lʼˏ/ᵢ;->ˎˋ(Ljava/lang/String;)V
 
     .line 246
     .line 247
     .line 248
-    invoke-static {p0}, Lʼˏ/ᵢ;->ʾˑ(Ljava/io/File;)Ljava/io/File;
+    invoke-static {p0}, Lʼˏ/ᵢ;->ʾـ(Ljava/io/File;)Ljava/io/File;
 
     .line 249
     .line 250
@@ -111519,7 +113412,7 @@
     move-result-object p0
 
     .line 316
-    invoke-static {p0}, Lʼˏ/ᵢ;->ˎʾ(Ljava/lang/String;)V
+    invoke-static {p0}, Lʼˏ/ᵢ;->ˎˋ(Ljava/lang/String;)V
 
     .line 317
     .line 318
@@ -111528,7 +113421,7 @@
     return-void
 .end method
 
-.method public static ˋᵎ(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+.method public static ˋﾞ(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
     .locals 2
 
     .line 1
@@ -111605,7 +113498,26 @@
     return-object p0
 .end method
 
-.method public static ˋᵔ(Ljava/lang/String;[Ljava/lang/String;Z[Ljava/lang/String;)I
+.method public static ˎ(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    const-string v0, "%PACKAGE_NAME%"
+
+    .line 2
+    .line 3
+    invoke-virtual {p0, v0, p1}, Ljava/lang/String;->replaceAll(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object p0
+
+    .line 7
+    return-object p0
+.end method
+
+.method public static ˎʻ(Ljava/lang/String;[Ljava/lang/String;Z[Ljava/lang/String;)I
     .locals 16
 
     .line 1
@@ -111698,7 +113610,7 @@
 
     .line 45
     .line 46
-    invoke-static {v3}, Lʼˏ/ᵢ;->ˎʿ([Ljava/lang/String;)V
+    invoke-static {v3}, Lʼˏ/ᵢ;->ˎˏ([Ljava/lang/String;)V
 
     .line 47
     .line 48
@@ -112120,7 +114032,7 @@
     .line 247
     .line 248
     .line 249
-    invoke-static {v4}, Lʼˏ/ᵢ;->ˋʿ(Ljava/nio/MappedByteBuffer;)I
+    invoke-static {v4}, Lʼˏ/ᵢ;->ˋˏ(Ljava/nio/MappedByteBuffer;)I
 
     .line 250
     .line 251
@@ -112136,7 +114048,7 @@
     move-result v12
 
     .line 257
-    invoke-static {v4, v11}, Lʼˏ/ᵢ;->ˑﹶ(Ljava/nio/MappedByteBuffer;I)[B
+    invoke-static {v4, v11}, Lʼˏ/ᵢ;->יʿ(Ljava/nio/MappedByteBuffer;I)[B
 
     .line 258
     .line 259
@@ -112226,7 +114138,7 @@
     move-result v5
 
     .line 302
-    invoke-static {v4, v5}, Lʼˏ/ᵢ;->יˊ(Ljava/nio/MappedByteBuffer;I)V
+    invoke-static {v4, v5}, Lʼˏ/ᵢ;->יٴ(Ljava/nio/MappedByteBuffer;I)V
 
     .line 303
     .line 304
@@ -112240,7 +114152,7 @@
 
     .line 309
     .line 310
-    invoke-static {v4, v5}, Lʼˏ/ᵢ;->יˈ(Ljava/nio/MappedByteBuffer;Ljava/lang/String;)V
+    invoke-static {v4, v5}, Lʼˏ/ᵢ;->יˑ(Ljava/nio/MappedByteBuffer;Ljava/lang/String;)V
 
     .line 311
     .line 312
@@ -112791,7 +114703,7 @@
     .line 555
     .line 556
     .line 557
-    invoke-static {v4}, Lʼˏ/ᵢ;->ˋʿ(Ljava/nio/MappedByteBuffer;)I
+    invoke-static {v4}, Lʼˏ/ᵢ;->ˋˏ(Ljava/nio/MappedByteBuffer;)I
 
     .line 558
     .line 559
@@ -112807,7 +114719,7 @@
     move-result v11
 
     .line 565
-    invoke-static {v4, v10}, Lʼˏ/ᵢ;->ˑﹶ(Ljava/nio/MappedByteBuffer;I)[B
+    invoke-static {v4, v10}, Lʼˏ/ᵢ;->יʿ(Ljava/nio/MappedByteBuffer;I)[B
 
     .line 566
     .line 567
@@ -112893,7 +114805,7 @@
     move-result v14
 
     .line 608
-    invoke-static {v4, v14}, Lʼˏ/ᵢ;->יˊ(Ljava/nio/MappedByteBuffer;I)V
+    invoke-static {v4, v14}, Lʼˏ/ᵢ;->יٴ(Ljava/nio/MappedByteBuffer;I)V
 
     .line 609
     .line 610
@@ -112907,7 +114819,7 @@
 
     .line 615
     .line 616
-    invoke-static {v4, v14}, Lʼˏ/ᵢ;->יˈ(Ljava/nio/MappedByteBuffer;Ljava/lang/String;)V
+    invoke-static {v4, v14}, Lʼˏ/ᵢ;->יˑ(Ljava/nio/MappedByteBuffer;Ljava/lang/String;)V
 
     .line 617
     .line 618
@@ -113020,7 +114932,7 @@
     return v5
 .end method
 
-.method public static ˋᵢ(Ljava/lang/String;[Ljava/lang/String;)I
+.method public static ˎʼ(Ljava/lang/String;[Ljava/lang/String;)I
     .locals 19
 
     .line 1
@@ -113149,7 +115061,7 @@
 
     .line 58
     .line 59
-    invoke-static {v11}, Lʼˏ/ᵢ;->ˑˆ(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v11}, Lʼˏ/ᵢ;->ˑˏ(Ljava/lang/String;)Ljava/lang/String;
 
     .line 60
     .line 61
@@ -113376,7 +115288,7 @@
 
     .line 156
     .line 157
-    invoke-static {v1}, Lʼˏ/ᵢ;->ˎʿ([Ljava/lang/String;)V
+    invoke-static {v1}, Lʼˏ/ᵢ;->ˎˏ([Ljava/lang/String;)V
 
     .line 158
     .line 159
@@ -114044,7 +115956,7 @@
     return v2
 .end method
 
-.method public static ˋⁱ(Ljava/lang/String;[Ljava/lang/String;[Ljava/lang/String;)I
+.method public static ˎʽ(Ljava/lang/String;[Ljava/lang/String;[Ljava/lang/String;)I
     .locals 24
 
     .line 1
@@ -115697,7 +117609,7 @@
     .end array-data
 .end method
 
-.method public static ˋﹳ(Ljava/util/ArrayList;)V
+.method public static ˎʾ(Ljava/util/ArrayList;)V
     .locals 3
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -115803,7 +117715,7 @@
     return-void
 .end method
 
-.method public static ˋﹶ(Ljava/lang/String;Ljava/lang/String;Ljava/util/ArrayList;ZLjava/io/File;ZLjava/util/ArrayList;Ljava/io/File;Lʼˑ/ʼ;)Z
+.method public static ˎʿ(Ljava/lang/String;Ljava/lang/String;Ljava/util/ArrayList;ZLjava/io/File;ZLjava/util/ArrayList;Ljava/io/File;Lʼˑ/ʼ;)Z
     .locals 18
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -116093,7 +118005,7 @@
 
     .line 24
     :cond_6
-    invoke-static {}, Lʼˏ/ᵢ;->ˈʻ()V
+    invoke-static {}, Lʼˏ/ᵢ;->ˈʾ()V
 
     .line 25
     new-instance v0, Ljava/util/ArrayList;
@@ -116280,7 +118192,7 @@
 
     move-object/from16 v1, p0
 
-    invoke-static/range {v1 .. v6}, Lʼˏ/ᵢ;->ˋˑ(Ljava/lang/String;Ljava/lang/String;Ljava/util/ArrayList;Ljava/util/ArrayList;Ljava/util/ArrayList;Ljava/util/ArrayList;)V
+    invoke-static/range {v1 .. v6}, Lʼˏ/ᵢ;->ˋᵎ(Ljava/lang/String;Ljava/lang/String;Ljava/util/ArrayList;Ljava/util/ArrayList;Ljava/util/ArrayList;Ljava/util/ArrayList;)V
 
     .line 40
     new-instance v0, Ljava/lang/StringBuilder;
@@ -116362,7 +118274,7 @@
 
     .line 44
     :try_start_3
-    invoke-static {v0, v1, v2, v9}, Lʼˏ/ᵢ;->ˋˏ(Ljava/lang/String;Ljava/lang/String;Ljava/util/ArrayList;Ljava/io/File;)V
+    invoke-static {v0, v1, v2, v9}, Lʼˏ/ᵢ;->ˋᴵ(Ljava/lang/String;Ljava/lang/String;Ljava/util/ArrayList;Ljava/io/File;)V
     :try_end_3
     .catch Ljava/io/IOException; {:try_start_3 .. :try_end_3} :catch_0
 
@@ -116418,7 +118330,7 @@
 
     .line 48
     :goto_7
-    invoke-static/range {p3 .. p3}, Lʼˏ/ᵢ;->ˉʼ(Z)Z
+    invoke-static/range {p3 .. p3}, Lʼˏ/ᵢ;->ˉˆ(Z)Z
 
     move-result v0
 
@@ -116427,7 +118339,7 @@
     xor-int/lit8 v5, v0, 0x1
 
     .line 49
-    invoke-static/range {p3 .. p3}, Lʼˏ/ᵢ;->ˉʽ(Z)Z
+    invoke-static/range {p3 .. p3}, Lʼˏ/ᵢ;->ˉˈ(Z)Z
 
     move-result v0
 
@@ -116697,7 +118609,7 @@
     :try_start_6
     sget-object v0, Lcom/android/apksig/ApkSigner;->file_for_use_original_signature:Ljava/io/File;
 
-    invoke-static {v0}, Lʼˏ/ᵢ;->ˈʼ(Ljava/io/File;)Ljava/util/List;
+    invoke-static {v0}, Lʼˏ/ᵢ;->ˈʿ(Ljava/io/File;)Ljava/util/List;
 
     move-result-object v0
 
@@ -116949,9 +118861,9 @@
 
     aput-object v0, v2, v3
 
-    const v0, 0x7f1103ce
+    const v0, 0x7f1103d0
 
-    invoke-static {v0, v2}, Lʼˏ/ᵢ;->ˈٴ(I[Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v0, v2}, Lʼˏ/ᵢ;->ˈᵎ(I[Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 
@@ -117113,7 +119025,7 @@
     goto :goto_18
 .end method
 
-.method public static ˋﾞ(Ljava/lang/String;Ljava/lang/String;Ljava/util/ArrayList;ZZ)Z
+.method public static ˎˆ(Ljava/lang/String;Ljava/lang/String;Ljava/util/ArrayList;ZZ)Z
     .locals 9
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -117138,7 +119050,7 @@
     .line 2
     .line 3
     .line 4
-    invoke-static {}, Lʼˏ/ᵢ;->ˈʻ()V
+    invoke-static {}, Lʼˏ/ᵢ;->ˈʾ()V
 
     .line 5
     .line 6
@@ -117459,7 +119371,7 @@
 
     .line 164
     :goto_1
-    invoke-static {p3}, Lʼˏ/ᵢ;->ˉʼ(Z)Z
+    invoke-static {p3}, Lʼˏ/ᵢ;->ˉˆ(Z)Z
 
     .line 165
     .line 166
@@ -117470,7 +119382,7 @@
     xor-int/2addr v0, v1
 
     .line 169
-    invoke-static {p3}, Lʼˏ/ᵢ;->ˉʼ(Z)Z
+    invoke-static {p3}, Lʼˏ/ᵢ;->ˉˆ(Z)Z
 
     .line 170
     .line 171
@@ -117846,30 +119758,11 @@
     goto :goto_8
 .end method
 
-.method public static ˎ(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
-    .locals 1
-
-    .line 1
-    const-string v0, "%PACKAGE_NAME%"
-
-    .line 2
-    .line 3
-    invoke-virtual {p0, v0, p1}, Ljava/lang/String;->replaceAll(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
-
-    .line 4
-    .line 5
-    .line 6
-    move-result-object p0
-
-    .line 7
-    return-object p0
-.end method
-
-.method public static ˎʻ(Ljava/lang/String;)V
+.method public static ˎˈ(Ljava/lang/String;)V
     .locals 7
 
     .line 1
-    invoke-static {}, Lʼˏ/ᵢ;->ˈˊ()Ljava/util/ArrayList;
+    invoke-static {}, Lʼˏ/ᵢ;->ˈˏ()Ljava/util/ArrayList;
 
     .line 2
     .line 3
@@ -118252,7 +120145,7 @@
     return-void
 .end method
 
-.method public static ˎʼ(Ljava/lang/String;)V
+.method public static ˎˉ(Ljava/lang/String;)V
     .locals 21
 
     .line 1
@@ -118269,7 +120162,7 @@
     .line 6
     .line 7
     .line 8
-    invoke-static {v1}, Lʼˏ/ᵢ;->ʾˑ(Ljava/io/File;)Ljava/io/File;
+    invoke-static {v1}, Lʼˏ/ᵢ;->ʾـ(Ljava/io/File;)Ljava/io/File;
 
     .line 9
     .line 10
@@ -118490,7 +120383,7 @@
 
     .line 114
     .line 115
-    invoke-static {v2}, Lʼˏ/ᵢ;->ˎʿ([Ljava/lang/String;)V
+    invoke-static {v2}, Lʼˏ/ᵢ;->ˎˏ([Ljava/lang/String;)V
 
     .line 116
     .line 117
@@ -118790,7 +120683,7 @@
 
     .line 269
     .line 270
-    invoke-static {v3}, Lʼˏ/ᵢ;->ˎʿ([Ljava/lang/String;)V
+    invoke-static {v3}, Lʼˏ/ᵢ;->ˎˏ([Ljava/lang/String;)V
 
     .line 271
     .line 272
@@ -118869,7 +120762,7 @@
 
     .line 307
     .line 308
-    invoke-static {v3}, Lʼˏ/ᵢ;->ˎʿ([Ljava/lang/String;)V
+    invoke-static {v3}, Lʼˏ/ᵢ;->ˎˏ([Ljava/lang/String;)V
 
     .line 309
     .line 310
@@ -118933,7 +120826,7 @@
 
     .line 340
     .line 341
-    invoke-static {v1}, Lʼˏ/ᵢ;->ˎʿ([Ljava/lang/String;)V
+    invoke-static {v1}, Lʼˏ/ᵢ;->ˎˏ([Ljava/lang/String;)V
 
     .line 342
     .line 343
@@ -119126,7 +121019,7 @@
     move-result-object v2
 
     .line 442
-    invoke-static {v2}, Lʼˏ/ᵢ;->ˎʾ(Ljava/lang/String;)V
+    invoke-static {v2}, Lʼˏ/ᵢ;->ˎˋ(Ljava/lang/String;)V
 
     .line 443
     .line 444
@@ -119451,7 +121344,7 @@
     move-result-object v0
 
     .line 612
-    invoke-static {v0}, Lʼˏ/ᵢ;->ˎʾ(Ljava/lang/String;)V
+    invoke-static {v0}, Lʼˏ/ᵢ;->ˎˋ(Ljava/lang/String;)V
 
     .line 613
     .line 614
@@ -119547,7 +121440,7 @@
     move-result-object v0
 
     .line 661
-    invoke-static {v0}, Lʼˏ/ᵢ;->ˎʾ(Ljava/lang/String;)V
+    invoke-static {v0}, Lʼˏ/ᵢ;->ˎˋ(Ljava/lang/String;)V
 
     .line 662
     .line 663
@@ -119625,7 +121518,7 @@
     move-result-object v0
 
     .line 704
-    invoke-static {v0}, Lʼˏ/ᵢ;->ˎʾ(Ljava/lang/String;)V
+    invoke-static {v0}, Lʼˏ/ᵢ;->ˎˋ(Ljava/lang/String;)V
 
     .line 705
     .line 706
@@ -119635,7 +121528,7 @@
     return-void
 .end method
 
-.method public static varargs ˎʽ(Ljava/lang/Class;[Ljava/lang/String;)Ljava/lang/String;
+.method public static varargs ˎˊ(Ljava/lang/Class;[Ljava/lang/String;)Ljava/lang/String;
     .locals 4
 
     .line 1
@@ -119814,12 +121707,12 @@
     return-object p0
 .end method
 
-.method public static ˎʾ(Ljava/lang/String;)V
+.method public static ˎˋ(Ljava/lang/String;)V
     .locals 7
 
     .line 1
     :try_start_0
-    invoke-static {}, Lʼˏ/ᵢ;->יʼ()V
+    invoke-static {}, Lʼˏ/ᵢ;->יˉ()V
 
     .line 2
     .line 3
@@ -119982,12 +121875,12 @@
     return-void
 .end method
 
-.method public static varargs ˎʿ([Ljava/lang/String;)V
+.method public static varargs ˎˏ([Ljava/lang/String;)V
     .locals 6
 
     .line 1
     :try_start_0
-    invoke-static {}, Lʼˏ/ᵢ;->יʼ()V
+    invoke-static {}, Lʼˏ/ᵢ;->יˉ()V
 
     .line 2
     .line 3
@@ -120113,7 +122006,7 @@
     return-void
 .end method
 
-.method public static ˎˆ(Ljava/io/File;Ljava/lang/String;)Z
+.method public static ˎˑ(Ljava/io/File;Ljava/lang/String;)Z
     .locals 3
 
     .line 1
@@ -120134,7 +122027,7 @@
 
     .line 8
     .line 9
-    invoke-static {p0}, Lʼˏ/ᵢ;->ˋˈ(Ljava/io/File;)Ljava/lang/String;
+    invoke-static {p0}, Lʼˏ/ᵢ;->ˋי(Ljava/io/File;)Ljava/lang/String;
 
     .line 10
     .line 11
@@ -120224,7 +122117,7 @@
     move-result-object p1
 
     .line 49
-    invoke-static {p0, p1}, Lʼˏ/ᵢ;->ˎˏ(Ljava/io/File;Ljava/lang/String;)Z
+    invoke-static {p0, p1}, Lʼˏ/ᵢ;->ˎᴵ(Ljava/io/File;Ljava/lang/String;)Z
 
     .line 50
     .line 51
@@ -120274,7 +122167,7 @@
     return p0
 .end method
 
-.method public static ˎˈ(Ljava/io/File;)Z
+.method public static ˎי(Ljava/io/File;)Z
     .locals 11
 
     .line 1
@@ -120715,7 +122608,7 @@
     move-result-object v6
 
     .line 219
-    invoke-static {v6, v8}, Lʼˏ/ᵢ;->ʻˎ(Ljava/io/InputStream;Ljava/io/File;)Z
+    invoke-static {v6, v8}, Lʼˏ/ᵢ;->ʻˋ(Ljava/io/InputStream;Ljava/io/File;)Z
 
     .line 220
     .line 221
@@ -120753,7 +122646,7 @@
     return v0
 .end method
 
-.method public static ˎˉ(Landroid/graphics/drawable/Drawable;Ljava/io/File;)Z
+.method public static ˎـ(Landroid/graphics/drawable/Drawable;Ljava/io/File;)Z
     .locals 3
 
     .line 1
@@ -120762,7 +122655,7 @@
     .line 2
     .line 3
     :try_start_0
-    invoke-static {p0}, Lʼˏ/ᵢ;->ʼˊ(Landroid/graphics/drawable/Drawable;)Landroid/graphics/Bitmap;
+    invoke-static {p0}, Lʼˏ/ᵢ;->ʼˎ(Landroid/graphics/drawable/Drawable;)Landroid/graphics/Bitmap;
 
     .line 4
     .line 5
@@ -120862,7 +122755,7 @@
     return p0
 .end method
 
-.method public static ˎˊ(Ljava/io/File;Ljava/lang/String;)Z
+.method public static ˎٴ(Ljava/io/File;Ljava/lang/String;)Z
     .locals 7
 
     .line 1
@@ -120887,7 +122780,7 @@
 
     .line 10
     .line 11
-    invoke-static {p0}, Lʼˏ/ᵢ;->ʾˑ(Ljava/io/File;)Ljava/io/File;
+    invoke-static {p0}, Lʼˏ/ᵢ;->ʾـ(Ljava/io/File;)Ljava/io/File;
 
     .line 12
     .line 13
@@ -121073,7 +122966,7 @@
     return v0
 .end method
 
-.method public static ˎˋ(Ljava/io/File;Ljava/io/File;)Z
+.method public static ˎᐧ(Ljava/io/File;Ljava/io/File;)Z
     .locals 4
 
     .line 1
@@ -121260,7 +123153,7 @@
     return v0
 .end method
 
-.method public static ˎˏ(Ljava/io/File;Ljava/lang/String;)Z
+.method public static ˎᴵ(Ljava/io/File;Ljava/lang/String;)Z
     .locals 5
     .annotation build Landroid/annotation/SuppressLint;
         value = {
@@ -121293,7 +123186,7 @@
 
     .line 11
     .line 12
-    invoke-static {p0}, Lʼˏ/ᵢ;->ʾˑ(Ljava/io/File;)Ljava/io/File;
+    invoke-static {p0}, Lʼˏ/ᵢ;->ʾـ(Ljava/io/File;)Ljava/io/File;
 
     .line 13
     .line 14
@@ -121448,7 +123341,7 @@
     return v0
 .end method
 
-.method public static ˎˑ(Ljava/io/File;Ljava/lang/String;)Z
+.method public static ˎᵎ(Ljava/io/File;Ljava/lang/String;)Z
     .locals 6
 
     .line 1
@@ -121650,7 +123543,7 @@
     return v0
 .end method
 
-.method public static ˎי(Ljava/lang/String;)Z
+.method public static ˎᵔ(Ljava/lang/String;)Z
     .locals 0
 
     .line 1
@@ -121665,7 +123558,7 @@
     return p0
 .end method
 
-.method public static ˎـ(Ljava/lang/String;)Z
+.method public static ˎᵢ(Ljava/lang/String;)Z
     .locals 0
 
     .line 1
@@ -121680,7 +123573,7 @@
     return p0
 .end method
 
-.method public static ˎٴ(Ljava/lang/String;)V
+.method public static ˎⁱ(Ljava/lang/String;)V
     .locals 16
 
     .line 1
@@ -121884,7 +123777,7 @@
 
     .line 96
     .line 97
-    invoke-static {v5}, Lʼˏ/ᵢ;->ˎʿ([Ljava/lang/String;)V
+    invoke-static {v5}, Lʼˏ/ᵢ;->ˎˏ([Ljava/lang/String;)V
 
     .line 98
     .line 99
@@ -122007,7 +123900,7 @@
 
     .line 156
     .line 157
-    invoke-static {v2}, Lʼˏ/ᵢ;->ˎʿ([Ljava/lang/String;)V
+    invoke-static {v2}, Lʼˏ/ᵢ;->ˎˏ([Ljava/lang/String;)V
 
     .line 158
     .line 159
@@ -122071,7 +123964,7 @@
 
     .line 187
     .line 188
-    invoke-static {v2}, Lʼˏ/ᵢ;->ˎʿ([Ljava/lang/String;)V
+    invoke-static {v2}, Lʼˏ/ᵢ;->ˎˏ([Ljava/lang/String;)V
 
     .line 189
     .line 190
@@ -122100,7 +123993,7 @@
 
     .line 201
     .line 202
-    invoke-static {v1}, Lʼˏ/ᵢ;->ˎʿ([Ljava/lang/String;)V
+    invoke-static {v1}, Lʼˏ/ᵢ;->ˎˏ([Ljava/lang/String;)V
 
     .line 203
     .line 204
@@ -122274,7 +124167,7 @@
     move-result-object v4
 
     .line 292
-    invoke-static {v4}, Lʼˏ/ᵢ;->ˎʾ(Ljava/lang/String;)V
+    invoke-static {v4}, Lʼˏ/ᵢ;->ˎˋ(Ljava/lang/String;)V
 
     .line 293
     .line 294
@@ -122419,7 +124312,7 @@
     move-result-object v0
 
     .line 366
-    invoke-static {v0}, Lʼˏ/ᵢ;->ˎʾ(Ljava/lang/String;)V
+    invoke-static {v0}, Lʼˏ/ᵢ;->ˎˋ(Ljava/lang/String;)V
 
     .line 367
     .line 368
@@ -122503,7 +124396,7 @@
     move-result-object v0
 
     .line 409
-    invoke-static {v0}, Lʼˏ/ᵢ;->ˎʾ(Ljava/lang/String;)V
+    invoke-static {v0}, Lʼˏ/ᵢ;->ˎˋ(Ljava/lang/String;)V
 
     .line 410
     .line 411
@@ -122549,7 +124442,7 @@
     move-result-object v0
 
     .line 434
-    invoke-static {v0}, Lʼˏ/ᵢ;->ˎʾ(Ljava/lang/String;)V
+    invoke-static {v0}, Lʼˏ/ᵢ;->ˎˋ(Ljava/lang/String;)V
 
     .line 435
     .line 436
@@ -122559,7 +124452,7 @@
     return-void
 .end method
 
-.method public static ˎᵎ(Lʾˉ/ˎ;Ljava/io/File;)V
+.method public static ˎﾞ(Lʾˉ/ˎ;Ljava/io/File;)V
     .locals 7
 
     .line 1
@@ -122875,7 +124768,547 @@
     return-void
 .end method
 
-.method public static final ˎᵔ(I)V
+.method public static ˏ(Ljava/lang/String;)V
+    .locals 8
+
+    .line 1
+    invoke-static {}, Lʼˏ/ᵢ;->ˈˏ()Ljava/util/ArrayList;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object v0
+
+    .line 5
+    if-eqz v0, :cond_a
+
+    .line 6
+    .line 7
+    :try_start_0
+    invoke-virtual {v0}, Ljava/util/ArrayList;->size()I
+
+    .line 8
+    .line 9
+    .line 10
+    move-result v1
+
+    .line 11
+    if-lez v1, :cond_a
+
+    .line 12
+    .line 13
+    invoke-virtual {v0}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
+
+    .line 14
+    .line 15
+    .line 16
+    move-result-object v0
+
+    .line 17
+    :cond_0
+    :goto_0
+    invoke-interface {v0}, Ljava/util/Iterator;->hasNext()Z
+
+    .line 18
+    .line 19
+    .line 20
+    move-result v1
+
+    .line 21
+    if-eqz v1, :cond_a
+
+    .line 22
+    .line 23
+    invoke-interface {v0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+
+    .line 24
+    .line 25
+    .line 26
+    move-result-object v1
+
+    .line 27
+    check-cast v1, Ljava/io/File;
+
+    .line 28
+    .line 29
+    new-instance v2, Ljava/io/File;
+
+    .line 30
+    .line 31
+    new-instance v3, Ljava/lang/StringBuilder;
+
+    .line 32
+    .line 33
+    invoke-direct {v3}, Ljava/lang/StringBuilder;-><init>()V
+
+    .line 34
+    .line 35
+    .line 36
+    invoke-virtual {v1}, Ljava/io/File;->getAbsolutePath()Ljava/lang/String;
+
+    .line 37
+    .line 38
+    .line 39
+    move-result-object v4
+
+    .line 40
+    invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 41
+    .line 42
+    .line 43
+    const-string v4, "/Android/obb/"
+
+    .line 44
+    .line 45
+    invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 46
+    .line 47
+    .line 48
+    invoke-virtual {v3, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 49
+    .line 50
+    .line 51
+    invoke-virtual {v3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    .line 52
+    .line 53
+    .line 54
+    move-result-object v3
+
+    .line 55
+    invoke-direct {v2, v3}, Ljava/io/File;-><init>(Ljava/lang/String;)V
+
+    .line 56
+    .line 57
+    .line 58
+    new-instance v3, Ljava/io/File;
+
+    .line 59
+    .line 60
+    new-instance v4, Ljava/lang/StringBuilder;
+
+    .line 61
+    .line 62
+    invoke-direct {v4}, Ljava/lang/StringBuilder;-><init>()V
+
+    .line 63
+    .line 64
+    .line 65
+    invoke-virtual {v1}, Ljava/io/File;->getAbsolutePath()Ljava/lang/String;
+
+    .line 66
+    .line 67
+    .line 68
+    move-result-object v5
+
+    .line 69
+    invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 70
+    .line 71
+    .line 72
+    const-string v5, "/Android/data/"
+
+    .line 73
+    .line 74
+    invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 75
+    .line 76
+    .line 77
+    invoke-virtual {v4, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 78
+    .line 79
+    .line 80
+    invoke-virtual {v4}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    .line 81
+    .line 82
+    .line 83
+    move-result-object v4
+
+    .line 84
+    invoke-direct {v3, v4}, Ljava/io/File;-><init>(Ljava/lang/String;)V
+
+    .line 85
+    .line 86
+    .line 87
+    new-instance v4, Ljava/io/File;
+
+    .line 88
+    .line 89
+    new-instance v5, Ljava/lang/StringBuilder;
+
+    .line 90
+    .line 91
+    invoke-direct {v5}, Ljava/lang/StringBuilder;-><init>()V
+
+    .line 92
+    .line 93
+    .line 94
+    invoke-virtual {v1}, Ljava/io/File;->getAbsolutePath()Ljava/lang/String;
+
+    .line 95
+    .line 96
+    .line 97
+    move-result-object v6
+
+    .line 98
+    invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 99
+    .line 100
+    .line 101
+    const-string v6, "/Android/obb/!lp_backup_"
+
+    .line 102
+    .line 103
+    invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 104
+    .line 105
+    .line 106
+    invoke-virtual {v5, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 107
+    .line 108
+    .line 109
+    invoke-virtual {v5}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    .line 110
+    .line 111
+    .line 112
+    move-result-object v5
+
+    .line 113
+    invoke-direct {v4, v5}, Ljava/io/File;-><init>(Ljava/lang/String;)V
+
+    .line 114
+    .line 115
+    .line 116
+    new-instance v5, Ljava/io/File;
+
+    .line 117
+    .line 118
+    new-instance v6, Ljava/lang/StringBuilder;
+
+    .line 119
+    .line 120
+    invoke-direct {v6}, Ljava/lang/StringBuilder;-><init>()V
+
+    .line 121
+    .line 122
+    .line 123
+    invoke-virtual {v1}, Ljava/io/File;->getAbsolutePath()Ljava/lang/String;
+
+    .line 124
+    .line 125
+    .line 126
+    move-result-object v1
+
+    .line 127
+    invoke-virtual {v6, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 128
+    .line 129
+    .line 130
+    const-string v1, "/Android/data/!lp_backup_"
+
+    .line 131
+    .line 132
+    invoke-virtual {v6, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 133
+    .line 134
+    .line 135
+    invoke-virtual {v6, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 136
+    .line 137
+    .line 138
+    invoke-virtual {v6}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    .line 139
+    .line 140
+    .line 141
+    move-result-object v1
+
+    .line 142
+    invoke-direct {v5, v1}, Ljava/io/File;-><init>(Ljava/lang/String;)V
+
+    .line 143
+    .line 144
+    .line 145
+    invoke-virtual {v2}, Ljava/io/File;->exists()Z
+
+    .line 146
+    .line 147
+    .line 148
+    move-result v1
+    :try_end_0
+    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
+
+    .line 149
+    const-string v6, "777"
+
+    .line 150
+    .line 151
+    const-string v7, ""
+
+    .line 152
+    .line 153
+    if-eqz v1, :cond_5
+
+    .line 154
+    .line 155
+    :try_start_1
+    invoke-virtual {v4}, Ljava/io/File;->exists()Z
+
+    .line 156
+    .line 157
+    .line 158
+    move-result v1
+
+    .line 159
+    if-nez v1, :cond_2
+
+    .line 160
+    .line 161
+    sget-boolean v1, Lʾˉ/ᴵᴵ;->ʽﾞ:Z
+
+    .line 162
+    .line 163
+    if-eqz v1, :cond_1
+
+    .line 164
+    .line 165
+    new-instance v1, Lʼˏ/ᵢ;
+
+    .line 166
+    .line 167
+    invoke-direct {v1, v7}, Lʼˏ/ᵢ;-><init>(Ljava/lang/String;)V
+
+    .line 168
+    .line 169
+    .line 170
+    invoke-virtual {v1, v2, v6}, Lʼˏ/ᵢ;->ʽʼ(Ljava/io/File;Ljava/lang/String;)V
+
+    .line 171
+    .line 172
+    .line 173
+    goto :goto_1
+
+    .line 174
+    :catch_0
+    move-exception p0
+
+    .line 175
+    goto :goto_3
+
+    .line 176
+    :cond_1
+    :goto_1
+    invoke-virtual {v2, v4}, Ljava/io/File;->renameTo(Ljava/io/File;)Z
+
+    .line 177
+    .line 178
+    .line 179
+    goto :goto_2
+
+    .line 180
+    :cond_2
+    sget-boolean v1, Lʾˉ/ᴵᴵ;->ʽﾞ:Z
+
+    .line 181
+    .line 182
+    if-eqz v1, :cond_3
+
+    .line 183
+    .line 184
+    new-instance v1, Lʼˏ/ᵢ;
+
+    .line 185
+    .line 186
+    invoke-direct {v1, v7}, Lʼˏ/ᵢ;-><init>(Ljava/lang/String;)V
+
+    .line 187
+    .line 188
+    .line 189
+    invoke-virtual {v1, v4, v6}, Lʼˏ/ᵢ;->ʽʼ(Ljava/io/File;Ljava/lang/String;)V
+
+    .line 190
+    .line 191
+    .line 192
+    :cond_3
+    invoke-virtual {v4}, Ljava/io/File;->delete()Z
+
+    .line 193
+    .line 194
+    .line 195
+    sget-boolean v1, Lʾˉ/ᴵᴵ;->ʽﾞ:Z
+
+    .line 196
+    .line 197
+    if-eqz v1, :cond_4
+
+    .line 198
+    .line 199
+    new-instance v1, Lʼˏ/ᵢ;
+
+    .line 200
+    .line 201
+    invoke-direct {v1, v7}, Lʼˏ/ᵢ;-><init>(Ljava/lang/String;)V
+
+    .line 202
+    .line 203
+    .line 204
+    invoke-virtual {v1, v2, v6}, Lʼˏ/ᵢ;->ʽʼ(Ljava/io/File;Ljava/lang/String;)V
+
+    .line 205
+    .line 206
+    .line 207
+    :cond_4
+    invoke-virtual {v2, v4}, Ljava/io/File;->renameTo(Ljava/io/File;)Z
+
+    .line 208
+    .line 209
+    .line 210
+    :cond_5
+    :goto_2
+    invoke-virtual {v3}, Ljava/io/File;->exists()Z
+
+    .line 211
+    .line 212
+    .line 213
+    move-result v1
+
+    .line 214
+    if-eqz v1, :cond_0
+
+    .line 215
+    .line 216
+    invoke-virtual {v5}, Ljava/io/File;->exists()Z
+
+    .line 217
+    .line 218
+    .line 219
+    move-result v1
+
+    .line 220
+    if-nez v1, :cond_7
+
+    .line 221
+    .line 222
+    sget-boolean v1, Lʾˉ/ᴵᴵ;->ʽﾞ:Z
+
+    .line 223
+    .line 224
+    if-eqz v1, :cond_6
+
+    .line 225
+    .line 226
+    new-instance v1, Lʼˏ/ᵢ;
+
+    .line 227
+    .line 228
+    invoke-direct {v1, v7}, Lʼˏ/ᵢ;-><init>(Ljava/lang/String;)V
+
+    .line 229
+    .line 230
+    .line 231
+    invoke-virtual {v1, v3, v6}, Lʼˏ/ᵢ;->ʽʼ(Ljava/io/File;Ljava/lang/String;)V
+
+    .line 232
+    .line 233
+    .line 234
+    :cond_6
+    invoke-virtual {v3, v5}, Ljava/io/File;->renameTo(Ljava/io/File;)Z
+
+    .line 235
+    .line 236
+    .line 237
+    goto/16 :goto_0
+
+    .line 238
+    .line 239
+    :cond_7
+    sget-boolean v1, Lʾˉ/ᴵᴵ;->ʽﾞ:Z
+
+    .line 240
+    .line 241
+    if-eqz v1, :cond_8
+
+    .line 242
+    .line 243
+    new-instance v1, Lʼˏ/ᵢ;
+
+    .line 244
+    .line 245
+    invoke-direct {v1, v7}, Lʼˏ/ᵢ;-><init>(Ljava/lang/String;)V
+
+    .line 246
+    .line 247
+    .line 248
+    invoke-virtual {v1, v5, v6}, Lʼˏ/ᵢ;->ʽʼ(Ljava/io/File;Ljava/lang/String;)V
+
+    .line 249
+    .line 250
+    .line 251
+    :cond_8
+    invoke-virtual {v5}, Ljava/io/File;->delete()Z
+
+    .line 252
+    .line 253
+    .line 254
+    sget-boolean v1, Lʾˉ/ᴵᴵ;->ʽﾞ:Z
+
+    .line 255
+    .line 256
+    if-eqz v1, :cond_9
+
+    .line 257
+    .line 258
+    new-instance v1, Lʼˏ/ᵢ;
+
+    .line 259
+    .line 260
+    invoke-direct {v1, v7}, Lʼˏ/ᵢ;-><init>(Ljava/lang/String;)V
+
+    .line 261
+    .line 262
+    .line 263
+    invoke-virtual {v1, v3, v6}, Lʼˏ/ᵢ;->ʽʼ(Ljava/io/File;Ljava/lang/String;)V
+
+    .line 264
+    .line 265
+    .line 266
+    :cond_9
+    invoke-virtual {v3, v5}, Ljava/io/File;->renameTo(Ljava/io/File;)Z
+    :try_end_1
+    .catch Ljava/lang/Exception; {:try_start_1 .. :try_end_1} :catch_0
+
+    .line 267
+    .line 268
+    .line 269
+    goto/16 :goto_0
+
+    .line 270
+    .line 271
+    :goto_3
+    invoke-virtual {p0}, Ljava/lang/Throwable;->printStackTrace()V
+
+    .line 272
+    .line 273
+    .line 274
+    :cond_a
+    return-void
+.end method
+
+.method public static final ˏʻ(I)V
     .locals 15
     .annotation build Landroid/annotation/SuppressLint;
         value = {
@@ -128700,7 +131133,7 @@
     .end packed-switch
 .end method
 
-.method public static ˎᵢ(Landroid/content/Context;)Landroid/content/Context;
+.method public static ˏʼ(Landroid/content/Context;)Landroid/content/Context;
     .locals 11
 
     .line 1
@@ -129212,7 +131645,7 @@
     return-object v1
 .end method
 
-.method public static ˎⁱ(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Z)V
+.method public static ˏʽ(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Z)V
     .locals 10
 
     .line 1
@@ -129508,7 +131941,7 @@
     return-void
 .end method
 
-.method public static ˎﹳ(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Z)V
+.method public static ˏʾ(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Z)V
     .locals 7
 
     .line 1
@@ -129767,7 +132200,7 @@
     return-void
 .end method
 
-.method public static ˎﹶ(Ljava/lang/String;)V
+.method public static ˏʿ(Ljava/lang/String;)V
     .locals 2
 
     .line 1
@@ -129802,7 +132235,7 @@
     move-result-object v0
 
     .line 18
-    invoke-static {v0}, Lʼˏ/ᵢ;->ˎʾ(Ljava/lang/String;)V
+    invoke-static {v0}, Lʼˏ/ᵢ;->ˎˋ(Ljava/lang/String;)V
 
     .line 19
     .line 20
@@ -129838,7 +132271,7 @@
     move-result-object v0
 
     .line 38
-    invoke-static {v0}, Lʼˏ/ᵢ;->ˎʾ(Ljava/lang/String;)V
+    invoke-static {v0}, Lʼˏ/ᵢ;->ˎˋ(Ljava/lang/String;)V
 
     .line 39
     .line 40
@@ -129874,7 +132307,7 @@
     move-result-object p0
 
     .line 58
-    invoke-static {p0}, Lʼˏ/ᵢ;->ˎʾ(Ljava/lang/String;)V
+    invoke-static {p0}, Lʼˏ/ᵢ;->ˎˋ(Ljava/lang/String;)V
 
     .line 59
     .line 60
@@ -129882,7 +132315,7 @@
     return-void
 .end method
 
-.method public static ˎﾞ(Ljava/lang/String;[[BBLjava/lang/String;)I
+.method public static ˏˆ(Ljava/lang/String;[[BBLjava/lang/String;)I
     .locals 18
 
     .line 1
@@ -129979,7 +132412,7 @@
 
     .line 47
     .line 48
-    invoke-static {v4}, Lʼˏ/ᵢ;->ˎʿ([Ljava/lang/String;)V
+    invoke-static {v4}, Lʼˏ/ᵢ;->ˎˏ([Ljava/lang/String;)V
 
     .line 49
     .line 50
@@ -130467,7 +132900,7 @@
     .line 274
     .line 275
     .line 276
-    invoke-static {v1}, Lʼˏ/ᵢ;->ˋʿ(Ljava/nio/MappedByteBuffer;)I
+    invoke-static {v1}, Lʼˏ/ᵢ;->ˋˏ(Ljava/nio/MappedByteBuffer;)I
 
     .line 277
     .line 278
@@ -131144,547 +133577,7 @@
     return v6
 .end method
 
-.method public static ˏ(Ljava/lang/String;)V
-    .locals 8
-
-    .line 1
-    invoke-static {}, Lʼˏ/ᵢ;->ˈˊ()Ljava/util/ArrayList;
-
-    .line 2
-    .line 3
-    .line 4
-    move-result-object v0
-
-    .line 5
-    if-eqz v0, :cond_a
-
-    .line 6
-    .line 7
-    :try_start_0
-    invoke-virtual {v0}, Ljava/util/ArrayList;->size()I
-
-    .line 8
-    .line 9
-    .line 10
-    move-result v1
-
-    .line 11
-    if-lez v1, :cond_a
-
-    .line 12
-    .line 13
-    invoke-virtual {v0}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
-
-    .line 14
-    .line 15
-    .line 16
-    move-result-object v0
-
-    .line 17
-    :cond_0
-    :goto_0
-    invoke-interface {v0}, Ljava/util/Iterator;->hasNext()Z
-
-    .line 18
-    .line 19
-    .line 20
-    move-result v1
-
-    .line 21
-    if-eqz v1, :cond_a
-
-    .line 22
-    .line 23
-    invoke-interface {v0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
-
-    .line 24
-    .line 25
-    .line 26
-    move-result-object v1
-
-    .line 27
-    check-cast v1, Ljava/io/File;
-
-    .line 28
-    .line 29
-    new-instance v2, Ljava/io/File;
-
-    .line 30
-    .line 31
-    new-instance v3, Ljava/lang/StringBuilder;
-
-    .line 32
-    .line 33
-    invoke-direct {v3}, Ljava/lang/StringBuilder;-><init>()V
-
-    .line 34
-    .line 35
-    .line 36
-    invoke-virtual {v1}, Ljava/io/File;->getAbsolutePath()Ljava/lang/String;
-
-    .line 37
-    .line 38
-    .line 39
-    move-result-object v4
-
-    .line 40
-    invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 41
-    .line 42
-    .line 43
-    const-string v4, "/Android/obb/"
-
-    .line 44
-    .line 45
-    invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 46
-    .line 47
-    .line 48
-    invoke-virtual {v3, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 49
-    .line 50
-    .line 51
-    invoke-virtual {v3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    .line 52
-    .line 53
-    .line 54
-    move-result-object v3
-
-    .line 55
-    invoke-direct {v2, v3}, Ljava/io/File;-><init>(Ljava/lang/String;)V
-
-    .line 56
-    .line 57
-    .line 58
-    new-instance v3, Ljava/io/File;
-
-    .line 59
-    .line 60
-    new-instance v4, Ljava/lang/StringBuilder;
-
-    .line 61
-    .line 62
-    invoke-direct {v4}, Ljava/lang/StringBuilder;-><init>()V
-
-    .line 63
-    .line 64
-    .line 65
-    invoke-virtual {v1}, Ljava/io/File;->getAbsolutePath()Ljava/lang/String;
-
-    .line 66
-    .line 67
-    .line 68
-    move-result-object v5
-
-    .line 69
-    invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 70
-    .line 71
-    .line 72
-    const-string v5, "/Android/data/"
-
-    .line 73
-    .line 74
-    invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 75
-    .line 76
-    .line 77
-    invoke-virtual {v4, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 78
-    .line 79
-    .line 80
-    invoke-virtual {v4}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    .line 81
-    .line 82
-    .line 83
-    move-result-object v4
-
-    .line 84
-    invoke-direct {v3, v4}, Ljava/io/File;-><init>(Ljava/lang/String;)V
-
-    .line 85
-    .line 86
-    .line 87
-    new-instance v4, Ljava/io/File;
-
-    .line 88
-    .line 89
-    new-instance v5, Ljava/lang/StringBuilder;
-
-    .line 90
-    .line 91
-    invoke-direct {v5}, Ljava/lang/StringBuilder;-><init>()V
-
-    .line 92
-    .line 93
-    .line 94
-    invoke-virtual {v1}, Ljava/io/File;->getAbsolutePath()Ljava/lang/String;
-
-    .line 95
-    .line 96
-    .line 97
-    move-result-object v6
-
-    .line 98
-    invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 99
-    .line 100
-    .line 101
-    const-string v6, "/Android/obb/!lp_backup_"
-
-    .line 102
-    .line 103
-    invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 104
-    .line 105
-    .line 106
-    invoke-virtual {v5, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 107
-    .line 108
-    .line 109
-    invoke-virtual {v5}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    .line 110
-    .line 111
-    .line 112
-    move-result-object v5
-
-    .line 113
-    invoke-direct {v4, v5}, Ljava/io/File;-><init>(Ljava/lang/String;)V
-
-    .line 114
-    .line 115
-    .line 116
-    new-instance v5, Ljava/io/File;
-
-    .line 117
-    .line 118
-    new-instance v6, Ljava/lang/StringBuilder;
-
-    .line 119
-    .line 120
-    invoke-direct {v6}, Ljava/lang/StringBuilder;-><init>()V
-
-    .line 121
-    .line 122
-    .line 123
-    invoke-virtual {v1}, Ljava/io/File;->getAbsolutePath()Ljava/lang/String;
-
-    .line 124
-    .line 125
-    .line 126
-    move-result-object v1
-
-    .line 127
-    invoke-virtual {v6, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 128
-    .line 129
-    .line 130
-    const-string v1, "/Android/data/!lp_backup_"
-
-    .line 131
-    .line 132
-    invoke-virtual {v6, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 133
-    .line 134
-    .line 135
-    invoke-virtual {v6, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 136
-    .line 137
-    .line 138
-    invoke-virtual {v6}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    .line 139
-    .line 140
-    .line 141
-    move-result-object v1
-
-    .line 142
-    invoke-direct {v5, v1}, Ljava/io/File;-><init>(Ljava/lang/String;)V
-
-    .line 143
-    .line 144
-    .line 145
-    invoke-virtual {v2}, Ljava/io/File;->exists()Z
-
-    .line 146
-    .line 147
-    .line 148
-    move-result v1
-    :try_end_0
-    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
-
-    .line 149
-    const-string v6, "777"
-
-    .line 150
-    .line 151
-    const-string v7, ""
-
-    .line 152
-    .line 153
-    if-eqz v1, :cond_5
-
-    .line 154
-    .line 155
-    :try_start_1
-    invoke-virtual {v4}, Ljava/io/File;->exists()Z
-
-    .line 156
-    .line 157
-    .line 158
-    move-result v1
-
-    .line 159
-    if-nez v1, :cond_2
-
-    .line 160
-    .line 161
-    sget-boolean v1, Lʾˉ/ᴵᴵ;->ʽﾞ:Z
-
-    .line 162
-    .line 163
-    if-eqz v1, :cond_1
-
-    .line 164
-    .line 165
-    new-instance v1, Lʼˏ/ᵢ;
-
-    .line 166
-    .line 167
-    invoke-direct {v1, v7}, Lʼˏ/ᵢ;-><init>(Ljava/lang/String;)V
-
-    .line 168
-    .line 169
-    .line 170
-    invoke-virtual {v1, v2, v6}, Lʼˏ/ᵢ;->ʼﾞ(Ljava/io/File;Ljava/lang/String;)V
-
-    .line 171
-    .line 172
-    .line 173
-    goto :goto_1
-
-    .line 174
-    :catch_0
-    move-exception p0
-
-    .line 175
-    goto :goto_3
-
-    .line 176
-    :cond_1
-    :goto_1
-    invoke-virtual {v2, v4}, Ljava/io/File;->renameTo(Ljava/io/File;)Z
-
-    .line 177
-    .line 178
-    .line 179
-    goto :goto_2
-
-    .line 180
-    :cond_2
-    sget-boolean v1, Lʾˉ/ᴵᴵ;->ʽﾞ:Z
-
-    .line 181
-    .line 182
-    if-eqz v1, :cond_3
-
-    .line 183
-    .line 184
-    new-instance v1, Lʼˏ/ᵢ;
-
-    .line 185
-    .line 186
-    invoke-direct {v1, v7}, Lʼˏ/ᵢ;-><init>(Ljava/lang/String;)V
-
-    .line 187
-    .line 188
-    .line 189
-    invoke-virtual {v1, v4, v6}, Lʼˏ/ᵢ;->ʼﾞ(Ljava/io/File;Ljava/lang/String;)V
-
-    .line 190
-    .line 191
-    .line 192
-    :cond_3
-    invoke-virtual {v4}, Ljava/io/File;->delete()Z
-
-    .line 193
-    .line 194
-    .line 195
-    sget-boolean v1, Lʾˉ/ᴵᴵ;->ʽﾞ:Z
-
-    .line 196
-    .line 197
-    if-eqz v1, :cond_4
-
-    .line 198
-    .line 199
-    new-instance v1, Lʼˏ/ᵢ;
-
-    .line 200
-    .line 201
-    invoke-direct {v1, v7}, Lʼˏ/ᵢ;-><init>(Ljava/lang/String;)V
-
-    .line 202
-    .line 203
-    .line 204
-    invoke-virtual {v1, v2, v6}, Lʼˏ/ᵢ;->ʼﾞ(Ljava/io/File;Ljava/lang/String;)V
-
-    .line 205
-    .line 206
-    .line 207
-    :cond_4
-    invoke-virtual {v2, v4}, Ljava/io/File;->renameTo(Ljava/io/File;)Z
-
-    .line 208
-    .line 209
-    .line 210
-    :cond_5
-    :goto_2
-    invoke-virtual {v3}, Ljava/io/File;->exists()Z
-
-    .line 211
-    .line 212
-    .line 213
-    move-result v1
-
-    .line 214
-    if-eqz v1, :cond_0
-
-    .line 215
-    .line 216
-    invoke-virtual {v5}, Ljava/io/File;->exists()Z
-
-    .line 217
-    .line 218
-    .line 219
-    move-result v1
-
-    .line 220
-    if-nez v1, :cond_7
-
-    .line 221
-    .line 222
-    sget-boolean v1, Lʾˉ/ᴵᴵ;->ʽﾞ:Z
-
-    .line 223
-    .line 224
-    if-eqz v1, :cond_6
-
-    .line 225
-    .line 226
-    new-instance v1, Lʼˏ/ᵢ;
-
-    .line 227
-    .line 228
-    invoke-direct {v1, v7}, Lʼˏ/ᵢ;-><init>(Ljava/lang/String;)V
-
-    .line 229
-    .line 230
-    .line 231
-    invoke-virtual {v1, v3, v6}, Lʼˏ/ᵢ;->ʼﾞ(Ljava/io/File;Ljava/lang/String;)V
-
-    .line 232
-    .line 233
-    .line 234
-    :cond_6
-    invoke-virtual {v3, v5}, Ljava/io/File;->renameTo(Ljava/io/File;)Z
-
-    .line 235
-    .line 236
-    .line 237
-    goto/16 :goto_0
-
-    .line 238
-    .line 239
-    :cond_7
-    sget-boolean v1, Lʾˉ/ᴵᴵ;->ʽﾞ:Z
-
-    .line 240
-    .line 241
-    if-eqz v1, :cond_8
-
-    .line 242
-    .line 243
-    new-instance v1, Lʼˏ/ᵢ;
-
-    .line 244
-    .line 245
-    invoke-direct {v1, v7}, Lʼˏ/ᵢ;-><init>(Ljava/lang/String;)V
-
-    .line 246
-    .line 247
-    .line 248
-    invoke-virtual {v1, v5, v6}, Lʼˏ/ᵢ;->ʼﾞ(Ljava/io/File;Ljava/lang/String;)V
-
-    .line 249
-    .line 250
-    .line 251
-    :cond_8
-    invoke-virtual {v5}, Ljava/io/File;->delete()Z
-
-    .line 252
-    .line 253
-    .line 254
-    sget-boolean v1, Lʾˉ/ᴵᴵ;->ʽﾞ:Z
-
-    .line 255
-    .line 256
-    if-eqz v1, :cond_9
-
-    .line 257
-    .line 258
-    new-instance v1, Lʼˏ/ᵢ;
-
-    .line 259
-    .line 260
-    invoke-direct {v1, v7}, Lʼˏ/ᵢ;-><init>(Ljava/lang/String;)V
-
-    .line 261
-    .line 262
-    .line 263
-    invoke-virtual {v1, v3, v6}, Lʼˏ/ᵢ;->ʼﾞ(Ljava/io/File;Ljava/lang/String;)V
-
-    .line 264
-    .line 265
-    .line 266
-    :cond_9
-    invoke-virtual {v3, v5}, Ljava/io/File;->renameTo(Ljava/io/File;)Z
-    :try_end_1
-    .catch Ljava/lang/Exception; {:try_start_1 .. :try_end_1} :catch_0
-
-    .line 267
-    .line 268
-    .line 269
-    goto/16 :goto_0
-
-    .line 270
-    .line 271
-    :goto_3
-    invoke-virtual {p0}, Ljava/lang/Throwable;->printStackTrace()V
-
-    .line 272
-    .line 273
-    .line 274
-    :cond_a
-    return-void
-.end method
-
-.method public static ˏʻ(Ljava/io/File;)V
+.method public static ˏˈ(Ljava/io/File;)V
     .locals 13
 
     .line 1
@@ -131768,7 +133661,7 @@
 
     .line 38
     .line 39
-    invoke-static {v11}, Lʼˏ/ᵢ;->ˎʿ([Ljava/lang/String;)V
+    invoke-static {v11}, Lʼˏ/ᵢ;->ˎˏ([Ljava/lang/String;)V
 
     .line 40
     .line 41
@@ -131805,7 +133698,7 @@
 
     .line 57
     .line 58
-    invoke-static {v11}, Lʼˏ/ᵢ;->ˎʿ([Ljava/lang/String;)V
+    invoke-static {v11}, Lʼˏ/ᵢ;->ˎˏ([Ljava/lang/String;)V
 
     .line 59
     .line 60
@@ -131838,7 +133731,7 @@
 
     .line 74
     .line 75
-    invoke-static {v11}, Lʼˏ/ᵢ;->ˎʿ([Ljava/lang/String;)V
+    invoke-static {v11}, Lʼˏ/ᵢ;->ˎˏ([Ljava/lang/String;)V
 
     .line 76
     .line 77
@@ -131921,7 +133814,7 @@
 
     .line 119
     .line 120
-    invoke-static {v3}, Lʼˏ/ᵢ;->ˎʿ([Ljava/lang/String;)V
+    invoke-static {v3}, Lʼˏ/ᵢ;->ˎˏ([Ljava/lang/String;)V
 
     .line 121
     .line 122
@@ -131958,7 +133851,7 @@
     .line 139
     .line 140
     .line 141
-    invoke-static {p0}, Lʼˏ/ᵢ;->ˆﹳ(Ljava/io/File;)Ljava/lang/String;
+    invoke-static {p0}, Lʼˏ/ᵢ;->ˈʻ(Ljava/io/File;)Ljava/lang/String;
 
     .line 142
     .line 143
@@ -132028,7 +133921,7 @@
     move-result-object v0
 
     .line 178
-    invoke-static {v0}, Lʼˏ/ᵢ;->ˎʾ(Ljava/lang/String;)V
+    invoke-static {v0}, Lʼˏ/ᵢ;->ˎˋ(Ljava/lang/String;)V
 
     .line 179
     .line 180
@@ -132072,7 +133965,7 @@
     move-result-object v0
 
     .line 202
-    invoke-static {v0}, Lʼˏ/ᵢ;->ˎʾ(Ljava/lang/String;)V
+    invoke-static {v0}, Lʼˏ/ᵢ;->ˎˋ(Ljava/lang/String;)V
 
     .line 203
     .line 204
@@ -132116,7 +134009,7 @@
     move-result-object v0
 
     .line 226
-    invoke-static {v0}, Lʼˏ/ᵢ;->ˎʾ(Ljava/lang/String;)V
+    invoke-static {v0}, Lʼˏ/ᵢ;->ˎˋ(Ljava/lang/String;)V
 
     .line 227
     .line 228
@@ -132220,7 +134113,7 @@
     move-result-object v0
 
     .line 284
-    invoke-static {v0}, Lʼˏ/ᵢ;->ˎʾ(Ljava/lang/String;)V
+    invoke-static {v0}, Lʼˏ/ᵢ;->ˎˋ(Ljava/lang/String;)V
 
     .line 285
     .line 286
@@ -132257,7 +134150,7 @@
     .line 303
     .line 304
     .line 305
-    invoke-static {p0}, Lʼˏ/ᵢ;->ˆﹳ(Ljava/io/File;)Ljava/lang/String;
+    invoke-static {p0}, Lʼˏ/ᵢ;->ˈʻ(Ljava/io/File;)Ljava/lang/String;
 
     .line 306
     .line 307
@@ -132287,7 +134180,7 @@
     return-void
 .end method
 
-.method public static ˏʽ(Ljava/lang/String;)Ljava/lang/String;
+.method public static ˏˊ(Ljava/lang/String;)Ljava/lang/String;
     .locals 2
 
     .line 1
@@ -132308,7 +134201,7 @@
 
     .line 8
     .line 9
-    invoke-static {v1}, Lʼˏ/ᵢ;->ˆˈ(Ljava/lang/String;)Ljava/security/PrivateKey;
+    invoke-static {v1}, Lʼˏ/ᵢ;->ˆˋ(Ljava/lang/String;)Ljava/security/PrivateKey;
 
     .line 10
     .line 11
@@ -132411,7 +134304,7 @@
     return-object p0
 .end method
 
-.method public static ˏʾ(Ljava/lang/String;)Ljava/lang/String;
+.method public static ˏˋ(Ljava/lang/String;)Ljava/lang/String;
     .locals 2
 
     .line 1
@@ -132432,7 +134325,7 @@
 
     .line 8
     .line 9
-    invoke-static {v1}, Lʼˏ/ᵢ;->ˆˈ(Ljava/lang/String;)Ljava/security/PrivateKey;
+    invoke-static {v1}, Lʼˏ/ᵢ;->ˆˋ(Ljava/lang/String;)Ljava/security/PrivateKey;
 
     .line 10
     .line 11
@@ -132539,7 +134432,7 @@
     return-object p0
 .end method
 
-.method public static ˏʿ(Ljava/lang/String;)V
+.method public static ˏˎ(Ljava/lang/String;)V
     .locals 1
 
     .line 1
@@ -132569,7 +134462,7 @@
     return-void
 .end method
 
-.method public static ˏˆ(Landroid/app/Dialog;)V
+.method public static ˏˑ(Landroid/app/Dialog;)V
     .locals 1
 
     .line 1
@@ -132606,7 +134499,7 @@
     return-void
 .end method
 
-.method public static ˏˈ(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Landroid/content/DialogInterface$OnClickListener;Landroid/content/DialogInterface$OnClickListener;Landroid/content/DialogInterface$OnCancelListener;ZLjava/lang/Runnable;J)V
+.method public static ˏי(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Landroid/content/DialogInterface$OnClickListener;Landroid/content/DialogInterface$OnClickListener;Landroid/content/DialogInterface$OnCancelListener;ZLjava/lang/Runnable;J)V
     .locals 6
 
     .line 1
@@ -132618,7 +134511,7 @@
     .line 3
     .line 4
     :try_start_0
-    sget-object v1, Lʾˉ/ᴵᴵ;->ʼﾞ:Lru/aaaaaccc/installer/MainActivity;
+    sget-object v1, Lʾˉ/ᴵᴵ;->ʼﾞ:Lru/aaaaaccd/installer/MainActivity;
 
     .line 5
     .line 6
@@ -132662,7 +134555,7 @@
     .line 24
     .line 25
     .line 26
-    sget-object v2, Lʾˉ/ᴵᴵ;->ʼﾞ:Lru/aaaaaccc/installer/MainActivity;
+    sget-object v2, Lʾˉ/ᴵᴵ;->ʼﾞ:Lru/aaaaaccd/installer/MainActivity;
 
     .line 27
     .line 28
@@ -132850,12 +134743,12 @@
     move-result-object v1
 
     .line 118
-    const v3, 0x7f11038f
+    const v3, 0x7f110391
 
     .line 119
     .line 120
     .line 121
-    invoke-static {v3}, Lʼˏ/ᵢ;->ˈי(I)Ljava/lang/String;
+    invoke-static {v3}, Lʼˏ/ᵢ;->ˈᐧ(I)Ljava/lang/String;
 
     .line 122
     .line 123
@@ -132991,7 +134884,7 @@
 
     .line 188
     :try_start_4
-    invoke-static/range {p0 .. p6}, Lʼˏ/ᵢ;->ˏˊ(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Landroid/content/DialogInterface$OnClickListener;Landroid/content/DialogInterface$OnClickListener;Landroid/content/DialogInterface$OnCancelListener;Z)V
+    invoke-static/range {p0 .. p6}, Lʼˏ/ᵢ;->ˏٴ(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Landroid/content/DialogInterface$OnClickListener;Landroid/content/DialogInterface$OnClickListener;Landroid/content/DialogInterface$OnCancelListener;Z)V
 
     .line 189
     .line 190
@@ -133018,7 +134911,7 @@
 
     .line 202
     :cond_1
-    invoke-static/range {p0 .. p6}, Lʼˏ/ᵢ;->ˏˊ(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Landroid/content/DialogInterface$OnClickListener;Landroid/content/DialogInterface$OnClickListener;Landroid/content/DialogInterface$OnCancelListener;Z)V
+    invoke-static/range {p0 .. p6}, Lʼˏ/ᵢ;->ˏٴ(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Landroid/content/DialogInterface$OnClickListener;Landroid/content/DialogInterface$OnClickListener;Landroid/content/DialogInterface$OnCancelListener;Z)V
 
     .line 203
     .line 204
@@ -133052,12 +134945,12 @@
     return-void
 .end method
 
-.method public static ˏˉ(Landroid/app/Dialog;)V
+.method public static ˏـ(Landroid/app/Dialog;)V
     .locals 2
 
     .line 1
     :try_start_0
-    sget-object v0, Lʾˉ/ᴵᴵ;->ʼﾞ:Lru/aaaaaccc/installer/MainActivity;
+    sget-object v0, Lʾˉ/ᴵᴵ;->ʼﾞ:Lru/aaaaaccd/installer/MainActivity;
 
     .line 2
     .line 3
@@ -133077,7 +134970,7 @@
 
     .line 10
     .line 11
-    sget-object v0, Lʾˉ/ᴵᴵ;->ˈʽ:Ljava/util/ArrayList;
+    sget-object v0, Lʾˉ/ᴵᴵ;->ˈʾ:Ljava/util/ArrayList;
 
     .line 12
     .line 13
@@ -133093,7 +134986,7 @@
 
     .line 18
     .line 19
-    sget-object v0, Lʾˉ/ᴵᴵ;->ˈʽ:Ljava/util/ArrayList;
+    sget-object v0, Lʾˉ/ᴵᴵ;->ˈʾ:Ljava/util/ArrayList;
 
     .line 20
     .line 21
@@ -133145,7 +135038,7 @@
     return-void
 .end method
 
-.method public static ˏˊ(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Landroid/content/DialogInterface$OnClickListener;Landroid/content/DialogInterface$OnClickListener;Landroid/content/DialogInterface$OnCancelListener;Z)V
+.method public static ˏٴ(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Landroid/content/DialogInterface$OnClickListener;Landroid/content/DialogInterface$OnClickListener;Landroid/content/DialogInterface$OnCancelListener;Z)V
     .locals 9
 
     .line 1
@@ -133190,12 +135083,12 @@
     return-void
 .end method
 
-.method public static ˏˋ(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Landroid/content/DialogInterface$OnClickListener;Ljava/lang/String;Landroid/content/DialogInterface$OnClickListener;Landroid/content/DialogInterface$OnCancelListener;)V
+.method public static ˏᐧ(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Landroid/content/DialogInterface$OnClickListener;Ljava/lang/String;Landroid/content/DialogInterface$OnClickListener;Landroid/content/DialogInterface$OnCancelListener;)V
     .locals 9
 
     .line 1
     :try_start_0
-    sget-object v0, Lʾˉ/ᴵᴵ;->ʼﾞ:Lru/aaaaaccc/installer/MainActivity;
+    sget-object v0, Lʾˉ/ᴵᴵ;->ʼﾞ:Lru/aaaaaccd/installer/MainActivity;
 
     .line 2
     .line 3
@@ -133272,12 +135165,12 @@
     return-void
 .end method
 
-.method public static ˏˎ(Ljava/lang/String;Landroid/text/SpannableStringBuilder;Ljava/lang/String;Landroid/content/DialogInterface$OnClickListener;Ljava/lang/String;Landroid/content/DialogInterface$OnClickListener;Landroid/content/DialogInterface$OnCancelListener;)V
+.method public static ˏᴵ(Ljava/lang/String;Landroid/text/SpannableStringBuilder;Ljava/lang/String;Landroid/content/DialogInterface$OnClickListener;Ljava/lang/String;Landroid/content/DialogInterface$OnClickListener;Landroid/content/DialogInterface$OnCancelListener;)V
     .locals 5
 
     .line 1
     :try_start_0
-    sget-object v0, Lʾˉ/ᴵᴵ;->ʼﾞ:Lru/aaaaaccc/installer/MainActivity;
+    sget-object v0, Lʾˉ/ᴵᴵ;->ʼﾞ:Lru/aaaaaccd/installer/MainActivity;
 
     .line 2
     .line 3
@@ -133301,7 +135194,7 @@
 
     .line 12
     .line 13
-    sget-object v1, Lʾˉ/ᴵᴵ;->ʼﾞ:Lru/aaaaaccc/installer/MainActivity;
+    sget-object v1, Lʾˉ/ᴵᴵ;->ʼﾞ:Lru/aaaaaccd/installer/MainActivity;
 
     .line 14
     .line 15
@@ -133407,7 +135300,7 @@
     move-result-object p0
 
     .line 67
-    invoke-static {p0}, Lʼˏ/ᵢ;->ˏˉ(Landroid/app/Dialog;)V
+    invoke-static {p0}, Lʼˏ/ᵢ;->ˏـ(Landroid/app/Dialog;)V
 
     .line 68
     .line 69
@@ -133484,7 +135377,7 @@
     move-result-object p0
 
     .line 104
-    invoke-static {p0}, Lʼˏ/ᵢ;->ˏˉ(Landroid/app/Dialog;)V
+    invoke-static {p0}, Lʼˏ/ᵢ;->ˏـ(Landroid/app/Dialog;)V
 
     .line 105
     .line 106
@@ -133510,12 +135403,12 @@
     return-void
 .end method
 
-.method public static ˏˑ(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Landroid/content/DialogInterface$OnClickListener;Ljava/lang/String;Landroid/content/DialogInterface$OnClickListener;Landroid/content/DialogInterface$OnCancelListener;)V
+.method public static ˏᵎ(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Landroid/content/DialogInterface$OnClickListener;Ljava/lang/String;Landroid/content/DialogInterface$OnClickListener;Landroid/content/DialogInterface$OnCancelListener;)V
     .locals 5
 
     .line 1
     :try_start_0
-    sget-object v0, Lʾˉ/ᴵᴵ;->ʼﾞ:Lru/aaaaaccc/installer/MainActivity;
+    sget-object v0, Lʾˉ/ᴵᴵ;->ʼﾞ:Lru/aaaaaccd/installer/MainActivity;
 
     .line 2
     .line 3
@@ -133539,7 +135432,7 @@
 
     .line 12
     .line 13
-    sget-object v1, Lʾˉ/ᴵᴵ;->ʼﾞ:Lru/aaaaaccc/installer/MainActivity;
+    sget-object v1, Lʾˉ/ᴵᴵ;->ʼﾞ:Lru/aaaaaccd/installer/MainActivity;
 
     .line 14
     .line 15
@@ -133645,7 +135538,7 @@
     move-result-object p0
 
     .line 67
-    invoke-static {p0}, Lʼˏ/ᵢ;->ˏˉ(Landroid/app/Dialog;)V
+    invoke-static {p0}, Lʼˏ/ᵢ;->ˏـ(Landroid/app/Dialog;)V
 
     .line 68
     .line 69
@@ -133722,7 +135615,7 @@
     move-result-object p0
 
     .line 104
-    invoke-static {p0}, Lʼˏ/ᵢ;->ˏˉ(Landroid/app/Dialog;)V
+    invoke-static {p0}, Lʼˏ/ᵢ;->ˏـ(Landroid/app/Dialog;)V
 
     .line 105
     .line 106
@@ -133748,7 +135641,7 @@
     return-void
 .end method
 
-.method public static ˏי(Ljava/lang/String;Ljava/lang/String;Landroid/content/DialogInterface$OnClickListener;Landroid/content/DialogInterface$OnClickListener;Landroid/content/DialogInterface$OnCancelListener;)V
+.method public static ˏᵔ(Ljava/lang/String;Ljava/lang/String;Landroid/content/DialogInterface$OnClickListener;Landroid/content/DialogInterface$OnClickListener;Landroid/content/DialogInterface$OnCancelListener;)V
     .locals 7
 
     .line 1
@@ -133796,7 +135689,7 @@
     return-void
 .end method
 
-.method public static ˏـ(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Landroid/widget/CompoundButton$OnCheckedChangeListener;ZLandroid/content/DialogInterface$OnClickListener;Landroid/content/DialogInterface$OnClickListener;Landroid/content/DialogInterface$OnCancelListener;Z)V
+.method public static ˏᵢ(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Landroid/widget/CompoundButton$OnCheckedChangeListener;ZLandroid/content/DialogInterface$OnClickListener;Landroid/content/DialogInterface$OnClickListener;Landroid/content/DialogInterface$OnCancelListener;Z)V
     .locals 11
 
     .line 1
@@ -133851,7 +135744,7 @@
     return-void
 .end method
 
-.method public static ˏٴ(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Landroid/widget/CompoundButton$OnCheckedChangeListener;ZLandroid/content/DialogInterface$OnClickListener;Landroid/content/DialogInterface$OnClickListener;Landroid/content/DialogInterface$OnCancelListener;Z)V
+.method public static ˏⁱ(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Landroid/widget/CompoundButton$OnCheckedChangeListener;ZLandroid/content/DialogInterface$OnClickListener;Landroid/content/DialogInterface$OnClickListener;Landroid/content/DialogInterface$OnCancelListener;Z)V
     .locals 11
 
     .line 1
@@ -133906,7 +135799,7 @@
     return-void
 .end method
 
-.method public static ˏᐧ(Ljava/lang/String;Ljava/lang/String;Landroid/content/DialogInterface$OnClickListener;Landroid/content/DialogInterface$OnClickListener;Landroid/content/DialogInterface$OnCancelListener;)V
+.method public static ˏﹳ(Ljava/lang/String;Ljava/lang/String;Landroid/content/DialogInterface$OnClickListener;Landroid/content/DialogInterface$OnClickListener;Landroid/content/DialogInterface$OnCancelListener;)V
     .locals 7
 
     .line 1
@@ -133954,7 +135847,7 @@
     return-void
 .end method
 
-.method public static ˏᴵ(Landroid/app/Activity;Ljava/lang/String;Ljava/lang/String;)V
+.method public static ˏﹶ(Landroid/app/Activity;Ljava/lang/String;Ljava/lang/String;)V
     .locals 1
 
     .line 1
@@ -133980,7 +135873,7 @@
     return-void
 .end method
 
-.method public static ˏᵎ(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Landroid/widget/CompoundButton$OnCheckedChangeListener;ZLandroid/content/DialogInterface$OnClickListener;Z)V
+.method public static ˏﾞ(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Landroid/widget/CompoundButton$OnCheckedChangeListener;ZLandroid/content/DialogInterface$OnClickListener;Z)V
     .locals 9
 
     .line 1
@@ -134025,7 +135918,48 @@
     return-void
 .end method
 
-.method public static ˏᵔ(Landroid/app/Activity;Ljava/lang/String;Landroid/text/SpannableStringBuilder;)V
+.method public static ˑ(Z)Ljava/lang/String;
+    .locals 0
+
+    .line 1
+    if-eqz p0, :cond_0
+
+    .line 2
+    .line 3
+    const p0, 0x7f1103ae
+
+    .line 4
+    .line 5
+    .line 6
+    invoke-static {p0}, Lʼˏ/ᵢ;->ˈᐧ(I)Ljava/lang/String;
+
+    .line 7
+    .line 8
+    .line 9
+    move-result-object p0
+
+    .line 10
+    return-object p0
+
+    .line 11
+    :cond_0
+    const p0, 0x7f1103ac
+
+    .line 12
+    .line 13
+    .line 14
+    invoke-static {p0}, Lʼˏ/ᵢ;->ˈᐧ(I)Ljava/lang/String;
+
+    .line 15
+    .line 16
+    .line 17
+    move-result-object p0
+
+    .line 18
+    return-object p0
+.end method
+
+.method public static ˑʻ(Landroid/app/Activity;Ljava/lang/String;Landroid/text/SpannableStringBuilder;)V
     .locals 1
 
     .line 1
@@ -134051,7 +135985,7 @@
     return-void
 .end method
 
-.method public static ˏᵢ(Landroid/app/Activity;Ljava/lang/String;Ljava/lang/String;)V
+.method public static ˑʼ(Landroid/app/Activity;Ljava/lang/String;Ljava/lang/String;)V
     .locals 1
 
     .line 1
@@ -134077,7 +136011,7 @@
     return-void
 .end method
 
-.method public static ˏⁱ(Landroid/app/Activity;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Landroid/content/DialogInterface$OnClickListener;)V
+.method public static ˑʽ(Landroid/app/Activity;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Landroid/content/DialogInterface$OnClickListener;)V
     .locals 7
 
     .line 1
@@ -134121,7 +136055,7 @@
     return-void
 .end method
 
-.method public static ˏﹳ(Ljava/lang/String;Ljava/lang/String;Landroid/content/DialogInterface$OnClickListener;Landroid/content/DialogInterface$OnCancelListener;)V
+.method public static ˑʾ(Ljava/lang/String;Ljava/lang/String;Landroid/content/DialogInterface$OnClickListener;Landroid/content/DialogInterface$OnCancelListener;)V
     .locals 1
 
     .line 1
@@ -134158,7 +136092,7 @@
     return-void
 .end method
 
-.method public static ˏﹶ(ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+.method public static ˑʿ(ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
     .locals 5
 
     .line 1
@@ -134286,7 +136220,7 @@
     move-result-object v2
 
     .line 64
-    const-class v4, Lru/aaaaaccc/installer/MainActivity;
+    const-class v4, Lru/aaaaaccd/installer/MainActivity;
 
     .line 65
     .line 66
@@ -134386,7 +136320,7 @@
     return-void
 .end method
 
-.method public static ˏﾞ(Ljava/lang/String;Ljava/lang/String;Landroid/view/View$OnClickListener;Landroid/view/View$OnClickListener;)V
+.method public static ˑˆ(Ljava/lang/String;Ljava/lang/String;Landroid/view/View$OnClickListener;Landroid/view/View$OnClickListener;)V
     .locals 7
 
     .line 1
@@ -134625,48 +136559,7 @@
     return-void
 .end method
 
-.method public static ˑ(Z)Ljava/lang/String;
-    .locals 0
-
-    .line 1
-    if-eqz p0, :cond_0
-
-    .line 2
-    .line 3
-    const p0, 0x7f1103ac
-
-    .line 4
-    .line 5
-    .line 6
-    invoke-static {p0}, Lʼˏ/ᵢ;->ˈי(I)Ljava/lang/String;
-
-    .line 7
-    .line 8
-    .line 9
-    move-result-object p0
-
-    .line 10
-    return-object p0
-
-    .line 11
-    :cond_0
-    const p0, 0x7f1103aa
-
-    .line 12
-    .line 13
-    .line 14
-    invoke-static {p0}, Lʼˏ/ᵢ;->ˈי(I)Ljava/lang/String;
-
-    .line 15
-    .line 16
-    .line 17
-    move-result-object p0
-
-    .line 18
-    return-object p0
-.end method
-
-.method public static ˑʻ(Ljava/lang/String;Ljava/lang/String;)Z
+.method public static ˑˈ(Ljava/lang/String;Ljava/lang/String;)Z
     .locals 6
 
     .line 1
@@ -134913,7 +136806,7 @@
     return p0
 .end method
 
-.method public static ˑʽ(Ljava/lang/String;)V
+.method public static ˑˊ(Ljava/lang/String;)V
     .locals 7
 
     .line 1
@@ -135217,7 +137110,7 @@
 
     .line 154
     :cond_4
-    sget-object p0, Lʾˉ/ᴵᴵ;->ʼﾞ:Lru/aaaaaccc/installer/MainActivity;
+    sget-object p0, Lʾˉ/ᴵᴵ;->ʼﾞ:Lru/aaaaaccd/installer/MainActivity;
 
     .line 155
     .line 156
@@ -135239,7 +137132,7 @@
     return-void
 .end method
 
-.method public static ˑʾ()V
+.method public static ˑˋ()V
     .locals 7
 
     .line 1
@@ -135286,7 +137179,7 @@
     .line 22
     .line 23
     .line 24
-    invoke-static {}, Lʼˏ/ᵢ;->ˆﾞ()[Ljava/lang/String;
+    invoke-static {}, Lʼˏ/ᵢ;->ˈʽ()[Ljava/lang/String;
 
     .line 25
     .line 26
@@ -135348,7 +137241,7 @@
     .line 53
     .line 54
     .line 55
-    sget-object v3, Lʾˉ/ᴵᴵ;->ˈʻ:Ljava/lang/String;
+    sget-object v3, Lʾˉ/ᴵᴵ;->ˈʼ:Ljava/lang/String;
 
     .line 56
     .line 57
@@ -135398,7 +137291,7 @@
 
     .line 80
     :cond_0
-    invoke-static {v4}, Lʼˏ/ᵢ;->ˋˈ(Ljava/io/File;)Ljava/lang/String;
+    invoke-static {v4}, Lʼˏ/ᵢ;->ˋי(Ljava/io/File;)Ljava/lang/String;
 
     .line 81
     .line 82
@@ -135564,7 +137457,7 @@
     return-void
 .end method
 
-.method public static ˑʿ(Ljava/lang/Object;)V
+.method public static ˑˎ(Ljava/lang/Object;)V
     .locals 7
 
     .line 1
@@ -135659,7 +137552,7 @@
     .line 47
     .line 48
     .line 49
-    invoke-static {}, Lʼˏ/ᵢ;->ˆﾞ()[Ljava/lang/String;
+    invoke-static {}, Lʼˏ/ᵢ;->ˈʽ()[Ljava/lang/String;
 
     .line 50
     .line 51
@@ -135721,7 +137614,7 @@
     .line 78
     .line 79
     .line 80
-    sget-object v3, Lʾˉ/ᴵᴵ;->ˈʻ:Ljava/lang/String;
+    sget-object v3, Lʾˉ/ᴵᴵ;->ˈʼ:Ljava/lang/String;
 
     .line 81
     .line 82
@@ -135772,7 +137665,7 @@
     .line 105
     .line 106
     :cond_1
-    invoke-static {v4}, Lʼˏ/ᵢ;->ˋˈ(Ljava/io/File;)Ljava/lang/String;
+    invoke-static {v4}, Lʼˏ/ᵢ;->ˋי(Ljava/io/File;)Ljava/lang/String;
 
     .line 107
     .line 108
@@ -136110,7 +138003,7 @@
     return-void
 .end method
 
-.method public static ˑˆ(Ljava/lang/String;)Ljava/lang/String;
+.method public static ˑˏ(Ljava/lang/String;)Ljava/lang/String;
     .locals 4
 
     .line 1
@@ -136206,432 +138099,6 @@
     .line 42
     .line 43
     return-object v0
-.end method
-
-.method public static ˑˊ(Ljava/io/File;Ljava/io/File;)V
-    .locals 1
-
-    .line 1
-    new-instance v0, Lʼˏ/ᵢ;
-
-    .line 2
-    .line 3
-    invoke-direct {v0}, Lʼˏ/ᵢ;-><init>()V
-
-    .line 4
-    .line 5
-    .line 6
-    invoke-virtual {v0, p0, p1}, Lʼˏ/ᵢ;->ˑˈ(Ljava/io/File;Ljava/io/File;)V
-
-    .line 7
-    .line 8
-    .line 9
-    new-instance v0, Lʼˏ/ᵢ;
-
-    .line 10
-    .line 11
-    invoke-direct {v0}, Lʼˏ/ᵢ;-><init>()V
-
-    .line 12
-    .line 13
-    .line 14
-    invoke-virtual {v0, p1, p0}, Lʼˏ/ᵢ;->ˑˉ(Ljava/io/File;Ljava/io/File;)V
-
-    .line 15
-    .line 16
-    .line 17
-    return-void
-.end method
-
-.method public static ˑˋ(ZLjava/lang/String;)Z
-    .locals 6
-
-    .line 1
-    const-string v0, "/tmp.txt"
-
-    .line 2
-    .line 3
-    const-string v1, "test path."
-
-    .line 4
-    .line 5
-    invoke-static {v1}, Lʾˉ/ᴵᴵ;->ˉˎ(Ljava/lang/Object;)V
-
-    .line 6
-    .line 7
-    .line 8
-    const/4 v1, 0x0
-
-    .line 9
-    const v2, 0x7f11032c
-
-    .line 10
-    .line 11
-    .line 12
-    const v3, 0x7f1104d3
-
-    .line 13
-    .line 14
-    .line 15
-    :try_start_0
-    new-instance v4, Ljava/io/File;
-
-    .line 16
-    .line 17
-    invoke-direct {v4, p1}, Ljava/io/File;-><init>(Ljava/lang/String;)V
-
-    .line 18
-    .line 19
-    .line 20
-    invoke-virtual {v4}, Ljava/io/File;->exists()Z
-
-    .line 21
-    .line 22
-    .line 23
-    move-result v4
-
-    .line 24
-    if-nez v4, :cond_0
-
-    .line 25
-    .line 26
-    new-instance v4, Ljava/io/File;
-
-    .line 27
-    .line 28
-    invoke-direct {v4, p1}, Ljava/io/File;-><init>(Ljava/lang/String;)V
-
-    .line 29
-    .line 30
-    .line 31
-    invoke-virtual {v4}, Ljava/io/File;->mkdirs()Z
-
-    .line 32
-    .line 33
-    .line 34
-    goto :goto_0
-
-    .line 35
-    :catch_0
-    nop
-
-    .line 36
-    goto :goto_1
-
-    .line 37
-    :cond_0
-    :goto_0
-    new-instance v4, Ljava/io/File;
-
-    .line 38
-    .line 39
-    invoke-direct {v4, p1}, Ljava/io/File;-><init>(Ljava/lang/String;)V
-
-    .line 40
-    .line 41
-    .line 42
-    invoke-virtual {v4}, Ljava/io/File;->exists()Z
-
-    .line 43
-    .line 44
-    .line 45
-    move-result v4
-
-    .line 46
-    if-nez v4, :cond_1
-
-    .line 47
-    .line 48
-    sget-object p1, Lʾˉ/ᴵᴵ;->ʼﾞ:Lru/aaaaaccc/installer/MainActivity;
-
-    .line 49
-    .line 50
-    invoke-static {v3}, Lʼˏ/ᵢ;->ˈי(I)Ljava/lang/String;
-
-    .line 51
-    .line 52
-    .line 53
-    move-result-object v0
-
-    .line 54
-    invoke-static {v2}, Lʼˏ/ᵢ;->ˈי(I)Ljava/lang/String;
-
-    .line 55
-    .line 56
-    .line 57
-    move-result-object v4
-
-    .line 58
-    invoke-static {p1, v0, v4}, Lʼˏ/ᵢ;->ˏᴵ(Landroid/app/Activity;Ljava/lang/String;Ljava/lang/String;)V
-
-    .line 59
-    .line 60
-    .line 61
-    return v1
-
-    .line 62
-    :cond_1
-    new-instance v4, Ljava/io/File;
-
-    .line 63
-    .line 64
-    new-instance v5, Ljava/lang/StringBuilder;
-
-    .line 65
-    .line 66
-    invoke-direct {v5}, Ljava/lang/StringBuilder;-><init>()V
-
-    .line 67
-    .line 68
-    .line 69
-    invoke-virtual {v5, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 70
-    .line 71
-    .line 72
-    invoke-virtual {v5, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 73
-    .line 74
-    .line 75
-    invoke-virtual {v5}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    .line 76
-    .line 77
-    .line 78
-    move-result-object v5
-
-    .line 79
-    invoke-direct {v4, v5}, Ljava/io/File;-><init>(Ljava/lang/String;)V
-
-    .line 80
-    .line 81
-    .line 82
-    invoke-virtual {v4}, Ljava/io/File;->createNewFile()Z
-
-    .line 83
-    .line 84
-    .line 85
-    move-result v4
-
-    .line 86
-    if-eqz v4, :cond_2
-
-    .line 87
-    .line 88
-    new-instance v4, Ljava/io/File;
-
-    .line 89
-    .line 90
-    new-instance v5, Ljava/lang/StringBuilder;
-
-    .line 91
-    .line 92
-    invoke-direct {v5}, Ljava/lang/StringBuilder;-><init>()V
-
-    .line 93
-    .line 94
-    .line 95
-    invoke-virtual {v5, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 96
-    .line 97
-    .line 98
-    invoke-virtual {v5, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 99
-    .line 100
-    .line 101
-    invoke-virtual {v5}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    .line 102
-    .line 103
-    .line 104
-    move-result-object p1
-
-    .line 105
-    invoke-direct {v4, p1}, Ljava/io/File;-><init>(Ljava/lang/String;)V
-
-    .line 106
-    .line 107
-    .line 108
-    invoke-virtual {v4}, Ljava/io/File;->delete()Z
-
-    .line 109
-    .line 110
-    .line 111
-    const/4 p0, 0x1
-
-    .line 112
-    return p0
-
-    .line 113
-    :cond_2
-    if-eqz p0, :cond_3
-
-    .line 114
-    .line 115
-    sget-object p1, Lʾˉ/ᴵᴵ;->ʼﾞ:Lru/aaaaaccc/installer/MainActivity;
-
-    .line 116
-    .line 117
-    invoke-static {v3}, Lʼˏ/ᵢ;->ˈי(I)Ljava/lang/String;
-
-    .line 118
-    .line 119
-    .line 120
-    move-result-object v0
-
-    .line 121
-    invoke-static {v2}, Lʼˏ/ᵢ;->ˈי(I)Ljava/lang/String;
-
-    .line 122
-    .line 123
-    .line 124
-    move-result-object v4
-
-    .line 125
-    invoke-static {p1, v0, v4}, Lʼˏ/ᵢ;->ˏᴵ(Landroid/app/Activity;Ljava/lang/String;Ljava/lang/String;)V
-    :try_end_0
-    .catch Ljava/io/IOException; {:try_start_0 .. :try_end_0} :catch_0
-
-    .line 126
-    .line 127
-    .line 128
-    :cond_3
-    return v1
-
-    .line 129
-    :goto_1
-    if-eqz p0, :cond_4
-
-    .line 130
-    .line 131
-    sget-object p0, Lʾˉ/ᴵᴵ;->ʼﾞ:Lru/aaaaaccc/installer/MainActivity;
-
-    .line 132
-    .line 133
-    invoke-static {v3}, Lʼˏ/ᵢ;->ˈי(I)Ljava/lang/String;
-
-    .line 134
-    .line 135
-    .line 136
-    move-result-object p1
-
-    .line 137
-    invoke-static {v2}, Lʼˏ/ᵢ;->ˈי(I)Ljava/lang/String;
-
-    .line 138
-    .line 139
-    .line 140
-    move-result-object v0
-
-    .line 141
-    invoke-static {p0, p1, v0}, Lʼˏ/ᵢ;->ˏᴵ(Landroid/app/Activity;Ljava/lang/String;Ljava/lang/String;)V
-
-    .line 142
-    .line 143
-    .line 144
-    :cond_4
-    return v1
-.end method
-
-.method public static ˑˎ(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;)V
-    .locals 0
-
-    .line 1
-    new-instance p0, Lʼˏ/ᵢ$ᵎᵎ;
-
-    .line 2
-    .line 3
-    invoke-direct {p0, p2, p1}, Lʼˏ/ᵢ$ᵎᵎ;-><init>(Ljava/lang/String;Ljava/lang/String;)V
-
-    .line 4
-    .line 5
-    .line 6
-    invoke-static {p0}, Lʾˉ/ᴵᴵ;->ˊⁱ(Ljava/lang/Runnable;)V
-
-    .line 7
-    .line 8
-    .line 9
-    return-void
-.end method
-
-.method private static ˑˏ(II)[B
-    .locals 3
-
-    .line 1
-    new-instance v0, Ljava/lang/IllegalArgumentException;
-
-    .line 2
-    .line 3
-    new-instance v1, Ljava/lang/StringBuilder;
-
-    .line 4
-    .line 5
-    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
-
-    .line 6
-    .line 7
-    .line 8
-    const-string v2, "bad utf-8 byte "
-
-    .line 9
-    .line 10
-    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 11
-    .line 12
-    .line 13
-    invoke-static {p0}, Lʼʽ/ˈ;->ʻ(I)Ljava/lang/String;
-
-    .line 14
-    .line 15
-    .line 16
-    move-result-object p0
-
-    .line 17
-    invoke-virtual {v1, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 18
-    .line 19
-    .line 20
-    const-string p0, " at offset "
-
-    .line 21
-    .line 22
-    invoke-virtual {v1, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 23
-    .line 24
-    .line 25
-    invoke-static {p1}, Lʼʽ/ˈ;->ʼ(I)Ljava/lang/String;
-
-    .line 26
-    .line 27
-    .line 28
-    move-result-object p0
-
-    .line 29
-    invoke-virtual {v1, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 30
-    .line 31
-    .line 32
-    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    .line 33
-    .line 34
-    .line 35
-    move-result-object p0
-
-    .line 36
-    invoke-direct {v0, p0}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
-
-    .line 37
-    .line 38
-    .line 39
-    throw v0
 .end method
 
 .method public static ˑˑ(Ljava/lang/String;)J
@@ -136807,7 +138274,433 @@
     goto :goto_3
 .end method
 
-.method public static ˑי([B)Ljava/lang/String;
+.method public static ˑٴ(Ljava/io/File;Ljava/io/File;)V
+    .locals 1
+
+    .line 1
+    new-instance v0, Lʼˏ/ᵢ;
+
+    .line 2
+    .line 3
+    invoke-direct {v0}, Lʼˏ/ᵢ;-><init>()V
+
+    .line 4
+    .line 5
+    .line 6
+    invoke-virtual {v0, p0, p1}, Lʼˏ/ᵢ;->ˑי(Ljava/io/File;Ljava/io/File;)V
+
+    .line 7
+    .line 8
+    .line 9
+    new-instance v0, Lʼˏ/ᵢ;
+
+    .line 10
+    .line 11
+    invoke-direct {v0}, Lʼˏ/ᵢ;-><init>()V
+
+    .line 12
+    .line 13
+    .line 14
+    invoke-virtual {v0, p1, p0}, Lʼˏ/ᵢ;->ˑـ(Ljava/io/File;Ljava/io/File;)V
+
+    .line 15
+    .line 16
+    .line 17
+    return-void
+.end method
+
+.method public static ˑᐧ(ZLjava/lang/String;)Z
+    .locals 6
+
+    .line 1
+    const-string v0, "/tmp.txt"
+
+    .line 2
+    .line 3
+    const-string v1, "test path."
+
+    .line 4
+    .line 5
+    invoke-static {v1}, Lʾˉ/ᴵᴵ;->ˉˎ(Ljava/lang/Object;)V
+
+    .line 6
+    .line 7
+    .line 8
+    const/4 v1, 0x0
+
+    .line 9
+    const v2, 0x7f11032e
+
+    .line 10
+    .line 11
+    .line 12
+    const v3, 0x7f1104d5
+
+    .line 13
+    .line 14
+    .line 15
+    :try_start_0
+    new-instance v4, Ljava/io/File;
+
+    .line 16
+    .line 17
+    invoke-direct {v4, p1}, Ljava/io/File;-><init>(Ljava/lang/String;)V
+
+    .line 18
+    .line 19
+    .line 20
+    invoke-virtual {v4}, Ljava/io/File;->exists()Z
+
+    .line 21
+    .line 22
+    .line 23
+    move-result v4
+
+    .line 24
+    if-nez v4, :cond_0
+
+    .line 25
+    .line 26
+    new-instance v4, Ljava/io/File;
+
+    .line 27
+    .line 28
+    invoke-direct {v4, p1}, Ljava/io/File;-><init>(Ljava/lang/String;)V
+
+    .line 29
+    .line 30
+    .line 31
+    invoke-virtual {v4}, Ljava/io/File;->mkdirs()Z
+
+    .line 32
+    .line 33
+    .line 34
+    goto :goto_0
+
+    .line 35
+    :catch_0
+    nop
+
+    .line 36
+    goto :goto_1
+
+    .line 37
+    :cond_0
+    :goto_0
+    new-instance v4, Ljava/io/File;
+
+    .line 38
+    .line 39
+    invoke-direct {v4, p1}, Ljava/io/File;-><init>(Ljava/lang/String;)V
+
+    .line 40
+    .line 41
+    .line 42
+    invoke-virtual {v4}, Ljava/io/File;->exists()Z
+
+    .line 43
+    .line 44
+    .line 45
+    move-result v4
+
+    .line 46
+    if-nez v4, :cond_1
+
+    .line 47
+    .line 48
+    sget-object p1, Lʾˉ/ᴵᴵ;->ʼﾞ:Lru/aaaaaccd/installer/MainActivity;
+
+    .line 49
+    .line 50
+    invoke-static {v3}, Lʼˏ/ᵢ;->ˈᐧ(I)Ljava/lang/String;
+
+    .line 51
+    .line 52
+    .line 53
+    move-result-object v0
+
+    .line 54
+    invoke-static {v2}, Lʼˏ/ᵢ;->ˈᐧ(I)Ljava/lang/String;
+
+    .line 55
+    .line 56
+    .line 57
+    move-result-object v4
+
+    .line 58
+    invoke-static {p1, v0, v4}, Lʼˏ/ᵢ;->ˏﹶ(Landroid/app/Activity;Ljava/lang/String;Ljava/lang/String;)V
+
+    .line 59
+    .line 60
+    .line 61
+    return v1
+
+    .line 62
+    :cond_1
+    new-instance v4, Ljava/io/File;
+
+    .line 63
+    .line 64
+    new-instance v5, Ljava/lang/StringBuilder;
+
+    .line 65
+    .line 66
+    invoke-direct {v5}, Ljava/lang/StringBuilder;-><init>()V
+
+    .line 67
+    .line 68
+    .line 69
+    invoke-virtual {v5, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 70
+    .line 71
+    .line 72
+    invoke-virtual {v5, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 73
+    .line 74
+    .line 75
+    invoke-virtual {v5}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    .line 76
+    .line 77
+    .line 78
+    move-result-object v5
+
+    .line 79
+    invoke-direct {v4, v5}, Ljava/io/File;-><init>(Ljava/lang/String;)V
+
+    .line 80
+    .line 81
+    .line 82
+    invoke-virtual {v4}, Ljava/io/File;->createNewFile()Z
+
+    .line 83
+    .line 84
+    .line 85
+    move-result v4
+
+    .line 86
+    if-eqz v4, :cond_2
+
+    .line 87
+    .line 88
+    new-instance v4, Ljava/io/File;
+
+    .line 89
+    .line 90
+    new-instance v5, Ljava/lang/StringBuilder;
+
+    .line 91
+    .line 92
+    invoke-direct {v5}, Ljava/lang/StringBuilder;-><init>()V
+
+    .line 93
+    .line 94
+    .line 95
+    invoke-virtual {v5, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 96
+    .line 97
+    .line 98
+    invoke-virtual {v5, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 99
+    .line 100
+    .line 101
+    invoke-virtual {v5}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    .line 102
+    .line 103
+    .line 104
+    move-result-object p1
+
+    .line 105
+    invoke-direct {v4, p1}, Ljava/io/File;-><init>(Ljava/lang/String;)V
+
+    .line 106
+    .line 107
+    .line 108
+    invoke-virtual {v4}, Ljava/io/File;->delete()Z
+
+    .line 109
+    .line 110
+    .line 111
+    const/4 p0, 0x1
+
+    .line 112
+    return p0
+
+    .line 113
+    :cond_2
+    if-eqz p0, :cond_3
+
+    .line 114
+    .line 115
+    sget-object p1, Lʾˉ/ᴵᴵ;->ʼﾞ:Lru/aaaaaccd/installer/MainActivity;
+
+    .line 116
+    .line 117
+    invoke-static {v3}, Lʼˏ/ᵢ;->ˈᐧ(I)Ljava/lang/String;
+
+    .line 118
+    .line 119
+    .line 120
+    move-result-object v0
+
+    .line 121
+    invoke-static {v2}, Lʼˏ/ᵢ;->ˈᐧ(I)Ljava/lang/String;
+
+    .line 122
+    .line 123
+    .line 124
+    move-result-object v4
+
+    .line 125
+    invoke-static {p1, v0, v4}, Lʼˏ/ᵢ;->ˏﹶ(Landroid/app/Activity;Ljava/lang/String;Ljava/lang/String;)V
+    :try_end_0
+    .catch Ljava/io/IOException; {:try_start_0 .. :try_end_0} :catch_0
+
+    .line 126
+    .line 127
+    .line 128
+    :cond_3
+    return v1
+
+    .line 129
+    :goto_1
+    if-eqz p0, :cond_4
+
+    .line 130
+    .line 131
+    sget-object p0, Lʾˉ/ᴵᴵ;->ʼﾞ:Lru/aaaaaccd/installer/MainActivity;
+
+    .line 132
+    .line 133
+    invoke-static {v3}, Lʼˏ/ᵢ;->ˈᐧ(I)Ljava/lang/String;
+
+    .line 134
+    .line 135
+    .line 136
+    move-result-object p1
+
+    .line 137
+    invoke-static {v2}, Lʼˏ/ᵢ;->ˈᐧ(I)Ljava/lang/String;
+
+    .line 138
+    .line 139
+    .line 140
+    move-result-object v0
+
+    .line 141
+    invoke-static {p0, p1, v0}, Lʼˏ/ᵢ;->ˏﹶ(Landroid/app/Activity;Ljava/lang/String;Ljava/lang/String;)V
+
+    .line 142
+    .line 143
+    .line 144
+    :cond_4
+    return v1
+.end method
+
+.method public static ˑᴵ(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;)V
+    .locals 0
+
+    .line 1
+    new-instance p0, Lʼˏ/ᵢ$ᵎᵎ;
+
+    .line 2
+    .line 3
+    invoke-direct {p0, p2, p1}, Lʼˏ/ᵢ$ᵎᵎ;-><init>(Ljava/lang/String;Ljava/lang/String;)V
+
+    .line 4
+    .line 5
+    .line 6
+    invoke-static {p0}, Lʾˉ/ᴵᴵ;->ˊⁱ(Ljava/lang/Runnable;)V
+
+    .line 7
+    .line 8
+    .line 9
+    return-void
+.end method
+
+.method private static ˑᵎ(II)[B
+    .locals 3
+
+    .line 1
+    new-instance v0, Ljava/lang/IllegalArgumentException;
+
+    .line 2
+    .line 3
+    new-instance v1, Ljava/lang/StringBuilder;
+
+    .line 4
+    .line 5
+    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
+
+    .line 6
+    .line 7
+    .line 8
+    const-string v2, "bad utf-8 byte "
+
+    .line 9
+    .line 10
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 11
+    .line 12
+    .line 13
+    invoke-static {p0}, Lʼʽ/ˈ;->ʻ(I)Ljava/lang/String;
+
+    .line 14
+    .line 15
+    .line 16
+    move-result-object p0
+
+    .line 17
+    invoke-virtual {v1, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 18
+    .line 19
+    .line 20
+    const-string p0, " at offset "
+
+    .line 21
+    .line 22
+    invoke-virtual {v1, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 23
+    .line 24
+    .line 25
+    invoke-static {p1}, Lʼʽ/ˈ;->ʼ(I)Ljava/lang/String;
+
+    .line 26
+    .line 27
+    .line 28
+    move-result-object p0
+
+    .line 29
+    invoke-virtual {v1, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 30
+    .line 31
+    .line 32
+    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    .line 33
+    .line 34
+    .line 35
+    move-result-object p0
+
+    .line 36
+    invoke-direct {v0, p0}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
+
+    .line 37
+    .line 38
+    .line 39
+    throw v0
+.end method
+
+.method public static ˑᵔ([B)Ljava/lang/String;
     .locals 4
 
     .line 1
@@ -136920,7 +138813,7 @@
     return-object v0
 .end method
 
-.method public static ˑـ(Ljava/lang/String;)Ljava/lang/String;
+.method public static ˑᵢ(Ljava/lang/String;)Ljava/lang/String;
     .locals 8
 
     .line 1
@@ -136941,7 +138834,7 @@
     .line 8
     .line 9
     :try_start_0
-    invoke-static {}, Lru/aaaaaccc/installer/PkgName;->getPkgName()Ljava/lang/String;
+    invoke-static {}, Lru/aaaaaccd/installer/PkgName;->getPkgName()Ljava/lang/String;
 
     .line 10
     .line 11
@@ -137106,7 +138999,7 @@
     return-object p0
 .end method
 
-.method public static ˑٴ([Ljava/lang/String;Ljava/lang/String;)Z
+.method public static ˑⁱ([Ljava/lang/String;Ljava/lang/String;)Z
     .locals 12
 
     .line 1
@@ -137473,7 +139366,7 @@
     .line 186
     .line 187
     .line 188
-    invoke-static {v6, v7}, Lʼˏ/ᵢ;->ʻˋ(Ljava/io/File;Ljava/io/File;)V
+    invoke-static {v6, v7}, Lʼˏ/ᵢ;->ʻˊ(Ljava/io/File;Ljava/io/File;)V
 
     .line 189
     .line 190
@@ -137514,7 +139407,7 @@
     move-result-object v6
 
     .line 211
-    invoke-static {v6}, Lʼˏ/ᵢ;->ʽʻ(Ljava/lang/String;)V
+    invoke-static {v6}, Lʼˏ/ᵢ;->ʽʾ(Ljava/lang/String;)V
 
     .line 212
     .line 213
@@ -137555,7 +139448,7 @@
     move-result-object v6
 
     .line 234
-    invoke-static {v6}, Lʼˏ/ᵢ;->ʽʻ(Ljava/lang/String;)V
+    invoke-static {v6}, Lʼˏ/ᵢ;->ʽʾ(Ljava/lang/String;)V
 
     .line 235
     .line 236
@@ -137902,7 +139795,7 @@
     return p0
 .end method
 
-.method public static final ˑᐧ(Ljava/lang/String;)V
+.method public static final ˑﹳ(Ljava/lang/String;)V
     .locals 5
 
     .line 1
@@ -138127,7 +140020,7 @@
     return-void
 .end method
 
-.method public static final ˑᴵ()V
+.method public static final ˑﹶ()V
     .locals 3
 
     .line 1
@@ -138171,7 +140064,7 @@
     return-void
 .end method
 
-.method public static final ˑᵎ(Ljava/lang/String;)V
+.method public static final ˑﾞ(Ljava/lang/String;)V
     .locals 6
 
     .line 1
@@ -138477,7 +140370,159 @@
     return-void
 .end method
 
-.method public static ˑᵔ(Landroid/app/Activity;Ljava/lang/String;Ljava/lang/Integer;)V
+.method public static י(Landroid/os/Bundle;)V
+    .locals 4
+
+    .line 1
+    :try_start_0
+    const-string v0, "Bundle{"
+
+    .line 2
+    .line 3
+    invoke-static {v0}, Lʾˉ/ᴵᴵ;->ˉˎ(Ljava/lang/Object;)V
+
+    .line 4
+    .line 5
+    .line 6
+    if-eqz p0, :cond_0
+
+    .line 7
+    .line 8
+    invoke-virtual {p0}, Landroid/os/Bundle;->keySet()Ljava/util/Set;
+
+    .line 9
+    .line 10
+    .line 11
+    move-result-object v0
+
+    .line 12
+    invoke-interface {v0}, Ljava/util/Set;->iterator()Ljava/util/Iterator;
+
+    .line 13
+    .line 14
+    .line 15
+    move-result-object v0
+
+    .line 16
+    :goto_0
+    invoke-interface {v0}, Ljava/util/Iterator;->hasNext()Z
+
+    .line 17
+    .line 18
+    .line 19
+    move-result v1
+
+    .line 20
+    if-eqz v1, :cond_0
+
+    .line 21
+    .line 22
+    invoke-interface {v0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+
+    .line 23
+    .line 24
+    .line 25
+    move-result-object v1
+
+    .line 26
+    check-cast v1, Ljava/lang/String;
+
+    .line 27
+    .line 28
+    new-instance v2, Ljava/lang/StringBuilder;
+
+    .line 29
+    .line 30
+    invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
+
+    .line 31
+    .line 32
+    .line 33
+    invoke-virtual {v2, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 34
+    .line 35
+    .line 36
+    const-string v3, " = \""
+
+    .line 37
+    .line 38
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 39
+    .line 40
+    .line 41
+    invoke-virtual {p0, v1}, Landroid/os/Bundle;->get(Ljava/lang/String;)Ljava/lang/Object;
+
+    .line 42
+    .line 43
+    .line 44
+    move-result-object v1
+
+    .line 45
+    invoke-virtual {v2, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    .line 46
+    .line 47
+    .line 48
+    const-string v1, "\""
+
+    .line 49
+    .line 50
+    invoke-virtual {v2, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 51
+    .line 52
+    .line 53
+    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    .line 54
+    .line 55
+    .line 56
+    move-result-object v1
+
+    .line 57
+    invoke-static {v1}, Lʾˉ/ᴵᴵ;->ˉˎ(Ljava/lang/Object;)V
+
+    .line 58
+    .line 59
+    .line 60
+    goto :goto_0
+
+    .line 61
+    :catchall_0
+    move-exception p0
+
+    .line 62
+    goto :goto_1
+
+    .line 63
+    :cond_0
+    const-string p0, "}Bundle;"
+
+    .line 64
+    .line 65
+    invoke-static {p0}, Lʾˉ/ᴵᴵ;->ˉˎ(Ljava/lang/Object;)V
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    .line 66
+    .line 67
+    .line 68
+    goto :goto_2
+
+    .line 69
+    :goto_1
+    invoke-virtual {p0}, Ljava/lang/Throwable;->printStackTrace()V
+
+    .line 70
+    .line 71
+    .line 72
+    :goto_2
+    return-void
+.end method
+
+.method public static יʻ(Landroid/app/Activity;Ljava/lang/String;Ljava/lang/Integer;)V
     .locals 1
 
     .line 1
@@ -138526,7 +140571,7 @@
     return-void
 .end method
 
-.method public static ˑᵢ(Ljava/io/File;)V
+.method public static יʼ(Ljava/io/File;)V
     .locals 8
 
     .line 1
@@ -138662,7 +140707,7 @@
 
     .line 61
     .line 62
-    invoke-static {v0}, Lʼˏ/ᵢ;->ˎʿ([Ljava/lang/String;)V
+    invoke-static {v0}, Lʼˏ/ᵢ;->ˎˏ([Ljava/lang/String;)V
 
     .line 63
     .line 64
@@ -138714,7 +140759,7 @@
     move-result-object p0
 
     .line 89
-    invoke-static {p0}, Lʼˏ/ᵢ;->ˎʾ(Ljava/lang/String;)V
+    invoke-static {p0}, Lʼˏ/ᵢ;->ˎˋ(Ljava/lang/String;)V
 
     .line 90
     .line 91
@@ -138759,7 +140804,7 @@
 
     .line 110
     .line 111
-    invoke-static {v0}, Lʼˏ/ᵢ;->ˎʿ([Ljava/lang/String;)V
+    invoke-static {v0}, Lʼˏ/ᵢ;->ˎˏ([Ljava/lang/String;)V
 
     .line 112
     .line 113
@@ -138811,7 +140856,7 @@
     move-result-object p0
 
     .line 138
-    invoke-static {p0}, Lʼˏ/ᵢ;->ˎʾ(Ljava/lang/String;)V
+    invoke-static {p0}, Lʼˏ/ᵢ;->ˎˋ(Ljava/lang/String;)V
 
     .line 139
     .line 140
@@ -138821,7 +140866,7 @@
     return-void
 .end method
 
-.method public static ˑⁱ(Ljava/io/File;Ljava/lang/String;Ljava/io/File;)Z
+.method public static יʽ(Ljava/io/File;Ljava/lang/String;Ljava/io/File;)Z
     .locals 19
 
     .line 1
@@ -139156,7 +141201,7 @@
     move-result-object v3
 
     .line 158
-    invoke-static {v3}, Lʼˏ/ᵢ;->ˎʾ(Ljava/lang/String;)V
+    invoke-static {v3}, Lʼˏ/ᵢ;->ˎˋ(Ljava/lang/String;)V
 
     .line 159
     .line 160
@@ -139385,7 +141430,7 @@
     .line 266
     .line 267
     .line 268
-    invoke-static/range {p2 .. p2}, Lʼˏ/ᵢ;->ʾˑ(Ljava/io/File;)Ljava/io/File;
+    invoke-static/range {p2 .. p2}, Lʼˏ/ᵢ;->ʾـ(Ljava/io/File;)Ljava/io/File;
 
     .line 269
     .line 270
@@ -139437,7 +141482,7 @@
     .line 294
     .line 295
     .line 296
-    invoke-static/range {p2 .. p2}, Lʼˏ/ᵢ;->ʾˑ(Ljava/io/File;)Ljava/io/File;
+    invoke-static/range {p2 .. p2}, Lʼˏ/ᵢ;->ʾـ(Ljava/io/File;)Ljava/io/File;
 
     .line 297
     .line 298
@@ -139656,7 +141701,7 @@
     move-result-object v8
 
     .line 399
-    invoke-static {v8}, Lʼˏ/ᵢ;->ˎʾ(Ljava/lang/String;)V
+    invoke-static {v8}, Lʼˏ/ᵢ;->ˎˋ(Ljava/lang/String;)V
 
     .line 400
     .line 401
@@ -139749,7 +141794,7 @@
     return v10
 .end method
 
-.method public static ˑﹳ(Ljava/io/File;Ljava/io/File;)V
+.method public static יʾ(Ljava/io/File;Ljava/io/File;)V
     .locals 7
 
     .line 1
@@ -139894,7 +141939,7 @@
     .line 69
     .line 70
     .line 71
-    invoke-static {v2, v4}, Lʼˏ/ᵢ;->ʻˎ(Ljava/io/InputStream;Ljava/io/File;)Z
+    invoke-static {v2, v4}, Lʼˏ/ᵢ;->ʻˋ(Ljava/io/InputStream;Ljava/io/File;)Z
     :try_end_2
     .catchall {:try_start_2 .. :try_end_2} :catchall_0
 
@@ -140051,7 +142096,7 @@
     return-void
 .end method
 
-.method public static ˑﹶ(Ljava/nio/MappedByteBuffer;I)[B
+.method public static יʿ(Ljava/nio/MappedByteBuffer;I)[B
     .locals 9
     .annotation system Ldalvik/annotation/Throws;
         value = {
@@ -140143,7 +142188,7 @@
     move-result p0
 
     .line 40
-    invoke-static {v4, p0}, Lʼˏ/ᵢ;->ˑˏ(II)[B
+    invoke-static {v4, p0}, Lʼˏ/ᵢ;->ˑᵎ(II)[B
 
     .line 41
     .line 42
@@ -140183,7 +142228,7 @@
     move-result p0
 
     .line 59
-    invoke-static {v5, p0}, Lʼˏ/ᵢ;->ˑˏ(II)[B
+    invoke-static {v5, p0}, Lʼˏ/ᵢ;->ˑᵎ(II)[B
 
     .line 60
     .line 61
@@ -140223,7 +142268,7 @@
     move-result p0
 
     .line 78
-    invoke-static {v7, p0}, Lʼˏ/ᵢ;->ˑˏ(II)[B
+    invoke-static {v7, p0}, Lʼˏ/ᵢ;->ˑᵎ(II)[B
 
     .line 79
     .line 80
@@ -140277,7 +142322,7 @@
     move-result p0
 
     .line 103
-    invoke-static {v7, p0}, Lʼˏ/ᵢ;->ˑˏ(II)[B
+    invoke-static {v7, p0}, Lʼˏ/ᵢ;->ˑᵎ(II)[B
 
     .line 104
     .line 105
@@ -140324,7 +142369,7 @@
     move-result p0
 
     .line 124
-    invoke-static {v5, p0}, Lʼˏ/ᵢ;->ˑˏ(II)[B
+    invoke-static {v5, p0}, Lʼˏ/ᵢ;->ˑᵎ(II)[B
 
     .line 125
     .line 126
@@ -140367,7 +142412,7 @@
     move-result p0
 
     .line 144
-    invoke-static {v5, p0}, Lʼˏ/ᵢ;->ˑˏ(II)[B
+    invoke-static {v5, p0}, Lʼˏ/ᵢ;->ˑᵎ(II)[B
 
     .line 145
     .line 146
@@ -140391,7 +142436,7 @@
     move-result p0
 
     .line 155
-    invoke-static {v4, p0}, Lʼˏ/ᵢ;->ˑˏ(II)[B
+    invoke-static {v4, p0}, Lʼˏ/ᵢ;->ˑᵎ(II)[B
 
     .line 156
     .line 157
@@ -140468,7 +142513,7 @@
     .end packed-switch
 .end method
 
-.method public static ˑﾞ(ZZ)Z
+.method public static יˆ(ZZ)Z
     .locals 2
 
     .line 1
@@ -140509,159 +142554,7 @@
     return v0
 .end method
 
-.method public static י(Landroid/os/Bundle;)V
-    .locals 4
-
-    .line 1
-    :try_start_0
-    const-string v0, "Bundle{"
-
-    .line 2
-    .line 3
-    invoke-static {v0}, Lʾˉ/ᴵᴵ;->ˉˎ(Ljava/lang/Object;)V
-
-    .line 4
-    .line 5
-    .line 6
-    if-eqz p0, :cond_0
-
-    .line 7
-    .line 8
-    invoke-virtual {p0}, Landroid/os/Bundle;->keySet()Ljava/util/Set;
-
-    .line 9
-    .line 10
-    .line 11
-    move-result-object v0
-
-    .line 12
-    invoke-interface {v0}, Ljava/util/Set;->iterator()Ljava/util/Iterator;
-
-    .line 13
-    .line 14
-    .line 15
-    move-result-object v0
-
-    .line 16
-    :goto_0
-    invoke-interface {v0}, Ljava/util/Iterator;->hasNext()Z
-
-    .line 17
-    .line 18
-    .line 19
-    move-result v1
-
-    .line 20
-    if-eqz v1, :cond_0
-
-    .line 21
-    .line 22
-    invoke-interface {v0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
-
-    .line 23
-    .line 24
-    .line 25
-    move-result-object v1
-
-    .line 26
-    check-cast v1, Ljava/lang/String;
-
-    .line 27
-    .line 28
-    new-instance v2, Ljava/lang/StringBuilder;
-
-    .line 29
-    .line 30
-    invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
-
-    .line 31
-    .line 32
-    .line 33
-    invoke-virtual {v2, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 34
-    .line 35
-    .line 36
-    const-string v3, " = \""
-
-    .line 37
-    .line 38
-    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 39
-    .line 40
-    .line 41
-    invoke-virtual {p0, v1}, Landroid/os/Bundle;->get(Ljava/lang/String;)Ljava/lang/Object;
-
-    .line 42
-    .line 43
-    .line 44
-    move-result-object v1
-
-    .line 45
-    invoke-virtual {v2, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
-
-    .line 46
-    .line 47
-    .line 48
-    const-string v1, "\""
-
-    .line 49
-    .line 50
-    invoke-virtual {v2, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 51
-    .line 52
-    .line 53
-    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    .line 54
-    .line 55
-    .line 56
-    move-result-object v1
-
-    .line 57
-    invoke-static {v1}, Lʾˉ/ᴵᴵ;->ˉˎ(Ljava/lang/Object;)V
-
-    .line 58
-    .line 59
-    .line 60
-    goto :goto_0
-
-    .line 61
-    :catchall_0
-    move-exception p0
-
-    .line 62
-    goto :goto_1
-
-    .line 63
-    :cond_0
-    const-string p0, "}Bundle;"
-
-    .line 64
-    .line 65
-    invoke-static {p0}, Lʾˉ/ᴵᴵ;->ˉˎ(Ljava/lang/Object;)V
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
-
-    .line 66
-    .line 67
-    .line 68
-    goto :goto_2
-
-    .line 69
-    :goto_1
-    invoke-virtual {p0}, Ljava/lang/Throwable;->printStackTrace()V
-
-    .line 70
-    .line 71
-    .line 72
-    :goto_2
-    return-void
-.end method
-
-.method public static יʻ(Ljava/nio/MappedByteBuffer;Lʼـ/ˑ;I)Z
+.method public static יˈ(Ljava/nio/MappedByteBuffer;Lʼـ/ˑ;I)Z
     .locals 6
 
     .line 1
@@ -140897,7 +142790,7 @@
     return v2
 .end method
 
-.method public static יʼ()V
+.method public static יˉ()V
     .locals 9
 
     .line 1
@@ -141200,7 +143093,7 @@
 
     .line 147
     :cond_2
-    invoke-static {}, Lʼˏ/ᵢ;->ˈᵢ()Ljava/util/ArrayList;
+    invoke-static {}, Lʼˏ/ᵢ;->ˈﾞ()Ljava/util/ArrayList;
 
     .line 148
     .line 149
@@ -141262,7 +143155,7 @@
     return-void
 .end method
 
-.method public static יʽ(Ljava/lang/String;Ljava/lang/String;)V
+.method public static יˊ(Ljava/lang/String;Ljava/lang/String;)V
     .locals 7
 
     .line 1
@@ -141510,7 +143403,7 @@
     return-void
 .end method
 
-.method public static יʾ(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+.method public static יˋ(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
     .locals 16
 
     .line 1
@@ -141783,7 +143676,7 @@
     move-result-object v9
 
     .line 137
-    invoke-static {v11, v9}, Lʼˏ/ᵢ;->יʽ(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v11, v9}, Lʼˏ/ᵢ;->יˊ(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 138
     .line 139
@@ -141842,7 +143735,7 @@
     move-result-object v0
 
     .line 169
-    invoke-static {v11, v0}, Lʼˏ/ᵢ;->יʽ(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v11, v0}, Lʼˏ/ᵢ;->יˊ(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 170
     .line 171
@@ -141945,7 +143838,7 @@
     move-result-object v0
 
     .line 222
-    invoke-static {v0}, Lʼˏ/ᵢ;->ˎʾ(Ljava/lang/String;)V
+    invoke-static {v0}, Lʼˏ/ᵢ;->ˎˋ(Ljava/lang/String;)V
 
     .line 223
     .line 224
@@ -141977,7 +143870,7 @@
     move-result-object v0
 
     .line 240
-    invoke-static {v0}, Lʼˏ/ᵢ;->ʼˋ(Ljava/lang/String;)Z
+    invoke-static {v0}, Lʼˏ/ᵢ;->ʼˏ(Ljava/lang/String;)Z
 
     .line 241
     .line 242
@@ -142029,7 +143922,7 @@
     move-result-object v0
 
     .line 268
-    invoke-static {v0}, Lʼˏ/ᵢ;->ˎʾ(Ljava/lang/String;)V
+    invoke-static {v0}, Lʼˏ/ᵢ;->ˎˋ(Ljava/lang/String;)V
 
     .line 269
     .line 270
@@ -142205,7 +144098,7 @@
     move-result-object v0
 
     .line 363
-    invoke-static {v0}, Lʼˏ/ᵢ;->ˎʾ(Ljava/lang/String;)V
+    invoke-static {v0}, Lʼˏ/ᵢ;->ˎˋ(Ljava/lang/String;)V
 
     .line 364
     .line 365
@@ -142237,7 +144130,7 @@
     move-result-object v0
 
     .line 381
-    invoke-static {v0}, Lʼˏ/ᵢ;->ʼˋ(Ljava/lang/String;)Z
+    invoke-static {v0}, Lʼˏ/ᵢ;->ʼˏ(Ljava/lang/String;)Z
 
     .line 382
     .line 383
@@ -142413,7 +144306,7 @@
     move-result-object v0
 
     .line 474
-    invoke-static {v0}, Lʼˏ/ᵢ;->ˎʾ(Ljava/lang/String;)V
+    invoke-static {v0}, Lʼˏ/ᵢ;->ˎˋ(Ljava/lang/String;)V
 
     .line 475
     .line 476
@@ -142445,7 +144338,7 @@
     move-result-object v0
 
     .line 492
-    invoke-static {v0}, Lʼˏ/ᵢ;->ʼˋ(Ljava/lang/String;)Z
+    invoke-static {v0}, Lʼˏ/ᵢ;->ʼˏ(Ljava/lang/String;)Z
 
     .line 493
     .line 494
@@ -142677,7 +144570,7 @@
     move-result-object v0
 
     .line 617
-    invoke-static {v0}, Lʼˏ/ᵢ;->ˎʾ(Ljava/lang/String;)V
+    invoke-static {v0}, Lʼˏ/ᵢ;->ˎˋ(Ljava/lang/String;)V
 
     .line 618
     .line 619
@@ -142709,7 +144602,7 @@
     move-result-object v0
 
     .line 635
-    invoke-static {v0}, Lʼˏ/ᵢ;->ʼˋ(Ljava/lang/String;)Z
+    invoke-static {v0}, Lʼˏ/ᵢ;->ʼˏ(Ljava/lang/String;)Z
 
     .line 636
     .line 637
@@ -142823,7 +144716,7 @@
     move-result-object v0
 
     .line 693
-    invoke-static {v0}, Lʼˏ/ᵢ;->ʼˋ(Ljava/lang/String;)Z
+    invoke-static {v0}, Lʼˏ/ᵢ;->ʼˏ(Ljava/lang/String;)Z
 
     .line 694
     .line 695
@@ -142862,7 +144755,7 @@
     move-result-object v0
 
     .line 714
-    invoke-static {v0}, Lʼˏ/ᵢ;->ʼˋ(Ljava/lang/String;)Z
+    invoke-static {v0}, Lʼˏ/ᵢ;->ʼˏ(Ljava/lang/String;)Z
 
     .line 715
     .line 716
@@ -143033,7 +144926,7 @@
     move-result-object v0
 
     .line 807
-    invoke-static {v0}, Lʼˏ/ᵢ;->ʼˋ(Ljava/lang/String;)Z
+    invoke-static {v0}, Lʼˏ/ᵢ;->ʼˏ(Ljava/lang/String;)Z
 
     .line 808
     .line 809
@@ -143081,7 +144974,7 @@
     move-result-object v0
 
     .line 833
-    invoke-static {v0}, Lʼˏ/ᵢ;->ˎʾ(Ljava/lang/String;)V
+    invoke-static {v0}, Lʼˏ/ᵢ;->ˎˋ(Ljava/lang/String;)V
 
     .line 834
     .line 835
@@ -143090,7 +144983,7 @@
     return-void
 .end method
 
-.method private static יˆ([BII)V
+.method private static יˏ([BII)V
     .locals 3
 
     .line 1
@@ -143165,7 +145058,7 @@
     return-void
 .end method
 
-.method public static יˈ(Ljava/nio/MappedByteBuffer;Ljava/lang/String;)V
+.method public static יˑ(Ljava/nio/MappedByteBuffer;Ljava/lang/String;)V
     .locals 10
     .annotation system Ldalvik/annotation/Throws;
         value = {
@@ -143415,7 +145308,203 @@
     return-void
 .end method
 
-.method public static יˉ([BLjava/io/File;)V
+.method public static יי(Ljava/util/ArrayList;)Ljava/lang/String;
+    .locals 3
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Ljava/util/ArrayList<",
+            "Ljava/lang/String;",
+            ">;)",
+            "Ljava/lang/String;"
+        }
+    .end annotation
+
+    .line 1
+    const-string v0, "{"
+
+    .line 2
+    .line 3
+    const/4 v1, 0x0
+
+    .line 4
+    :goto_0
+    invoke-virtual {p0}, Ljava/util/ArrayList;->size()I
+
+    .line 5
+    .line 6
+    .line 7
+    move-result v2
+
+    .line 8
+    if-ge v1, v2, :cond_2
+
+    .line 9
+    .line 10
+    invoke-virtual {p0}, Ljava/util/ArrayList;->size()I
+
+    .line 11
+    .line 12
+    .line 13
+    move-result v2
+
+    .line 14
+    add-int/lit8 v2, v2, -0x2
+
+    .line 15
+    .line 16
+    if-gt v1, v2, :cond_0
+
+    .line 17
+    .line 18
+    new-instance v2, Ljava/lang/StringBuilder;
+
+    .line 19
+    .line 20
+    invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
+
+    .line 21
+    .line 22
+    .line 23
+    invoke-virtual {v2, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 24
+    .line 25
+    .line 26
+    invoke-virtual {p0, v1}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
+
+    .line 27
+    .line 28
+    .line 29
+    move-result-object v0
+
+    .line 30
+    check-cast v0, Ljava/lang/String;
+
+    .line 31
+    .line 32
+    invoke-virtual {v2, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 33
+    .line 34
+    .line 35
+    const-string v0, "--lp--"
+
+    .line 36
+    .line 37
+    invoke-virtual {v2, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 38
+    .line 39
+    .line 40
+    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    .line 41
+    .line 42
+    .line 43
+    move-result-object v0
+
+    .line 44
+    :cond_0
+    invoke-virtual {p0}, Ljava/util/ArrayList;->size()I
+
+    .line 45
+    .line 46
+    .line 47
+    move-result v2
+
+    .line 48
+    add-int/lit8 v2, v2, -0x1
+
+    .line 49
+    .line 50
+    if-ne v1, v2, :cond_1
+
+    .line 51
+    .line 52
+    new-instance v2, Ljava/lang/StringBuilder;
+
+    .line 53
+    .line 54
+    invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
+
+    .line 55
+    .line 56
+    .line 57
+    invoke-virtual {v2, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 58
+    .line 59
+    .line 60
+    invoke-virtual {p0, v1}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
+
+    .line 61
+    .line 62
+    .line 63
+    move-result-object v0
+
+    .line 64
+    check-cast v0, Ljava/lang/String;
+
+    .line 65
+    .line 66
+    invoke-virtual {v2, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 67
+    .line 68
+    .line 69
+    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    .line 70
+    .line 71
+    .line 72
+    move-result-object v0
+
+    .line 73
+    :cond_1
+    add-int/lit8 v1, v1, 0x1
+
+    .line 74
+    .line 75
+    goto :goto_0
+
+    .line 76
+    :cond_2
+    new-instance p0, Ljava/lang/StringBuilder;
+
+    .line 77
+    .line 78
+    invoke-direct {p0}, Ljava/lang/StringBuilder;-><init>()V
+
+    .line 79
+    .line 80
+    .line 81
+    invoke-virtual {p0, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 82
+    .line 83
+    .line 84
+    const-string v0, "}"
+
+    .line 85
+    .line 86
+    invoke-virtual {p0, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 87
+    .line 88
+    .line 89
+    invoke-virtual {p0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    .line 90
+    .line 91
+    .line 92
+    move-result-object p0
+
+    .line 93
+    return-object p0
+.end method
+
+.method public static יـ([BLjava/io/File;)V
     .locals 3
     .annotation system Ldalvik/annotation/Throws;
         value = {
@@ -143574,7 +145663,7 @@
     goto :goto_3
 .end method
 
-.method public static יˊ(Ljava/nio/MappedByteBuffer;I)V
+.method public static יٴ(Ljava/nio/MappedByteBuffer;I)V
     .locals 1
     .annotation system Ldalvik/annotation/Throws;
         value = {
@@ -143627,7 +145716,7 @@
     return-void
 .end method
 
-.method public static יˋ(Ljava/lang/String;Ljava/lang/String;Ljava/util/ArrayList;Ljava/lang/String;)V
+.method public static יᐧ(Ljava/lang/String;Ljava/lang/String;Ljava/util/ArrayList;Ljava/lang/String;)V
     .locals 10
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -144106,7 +146195,7 @@
     return-void
 .end method
 
-.method public static יˎ(Ljava/lang/String;Ljava/lang/String;Ljava/util/ArrayList;Ljava/io/File;Ljava/lang/String;)Ljava/lang/String;
+.method public static יᴵ(Ljava/lang/String;Ljava/lang/String;Ljava/util/ArrayList;Ljava/io/File;Ljava/lang/String;)Ljava/lang/String;
     .locals 16
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -144188,7 +146277,7 @@
 
     .line 30
     .line 31
-    invoke-static {v10}, Lʼˏ/ᵢ;->ˎʿ([Ljava/lang/String;)V
+    invoke-static {v10}, Lʼˏ/ᵢ;->ˎˏ([Ljava/lang/String;)V
 
     .line 32
     .line 33
@@ -144301,7 +146390,7 @@
 
     .line 90
     .line 91
-    invoke-static {v14}, Lʼˏ/ᵢ;->ˎʿ([Ljava/lang/String;)V
+    invoke-static {v14}, Lʼˏ/ᵢ;->ˎˏ([Ljava/lang/String;)V
 
     .line 92
     .line 93
@@ -144379,7 +146468,7 @@
 
     .line 125
     .line 126
-    invoke-static {v9}, Lʼˏ/ᵢ;->ˎʿ([Ljava/lang/String;)V
+    invoke-static {v9}, Lʼˏ/ᵢ;->ˎˏ([Ljava/lang/String;)V
 
     .line 127
     .line 128
@@ -144404,7 +146493,7 @@
 
     .line 137
     .line 138
-    invoke-static {v9}, Lʼˏ/ᵢ;->ˎʿ([Ljava/lang/String;)V
+    invoke-static {v9}, Lʼˏ/ᵢ;->ˎˏ([Ljava/lang/String;)V
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
@@ -144474,7 +146563,7 @@
 
     .line 171
     .line 172
-    invoke-virtual {v13, v9}, Lʼˏ/ᵢ;->ʼʽ(Ljava/io/File;)V
+    invoke-virtual {v13, v9}, Lʼˏ/ᵢ;->ʼʾ(Ljava/io/File;)V
     :try_end_1
     .catch Ljava/lang/Exception; {:try_start_1 .. :try_end_1} :catch_0
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
@@ -145906,7 +147995,7 @@
     return-object v6
 .end method
 
-.method public static יˏ(Ljava/util/List;Ljava/io/File;)V
+.method public static יᵎ(Ljava/util/List;Ljava/io/File;)V
     .locals 6
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -146271,7 +148360,7 @@
     goto :goto_5
 .end method
 
-.method public static יˑ(Ljava/util/List;Ljava/util/zip/ZipOutputStream;)V
+.method public static יᵔ(Ljava/util/List;Ljava/util/zip/ZipOutputStream;)V
     .locals 5
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -146489,203 +148578,7 @@
     return-void
 .end method
 
-.method public static יי(Ljava/util/ArrayList;)Ljava/lang/String;
-    .locals 3
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Ljava/util/ArrayList<",
-            "Ljava/lang/String;",
-            ">;)",
-            "Ljava/lang/String;"
-        }
-    .end annotation
-
-    .line 1
-    const-string v0, "{"
-
-    .line 2
-    .line 3
-    const/4 v1, 0x0
-
-    .line 4
-    :goto_0
-    invoke-virtual {p0}, Ljava/util/ArrayList;->size()I
-
-    .line 5
-    .line 6
-    .line 7
-    move-result v2
-
-    .line 8
-    if-ge v1, v2, :cond_2
-
-    .line 9
-    .line 10
-    invoke-virtual {p0}, Ljava/util/ArrayList;->size()I
-
-    .line 11
-    .line 12
-    .line 13
-    move-result v2
-
-    .line 14
-    add-int/lit8 v2, v2, -0x2
-
-    .line 15
-    .line 16
-    if-gt v1, v2, :cond_0
-
-    .line 17
-    .line 18
-    new-instance v2, Ljava/lang/StringBuilder;
-
-    .line 19
-    .line 20
-    invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
-
-    .line 21
-    .line 22
-    .line 23
-    invoke-virtual {v2, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 24
-    .line 25
-    .line 26
-    invoke-virtual {p0, v1}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
-
-    .line 27
-    .line 28
-    .line 29
-    move-result-object v0
-
-    .line 30
-    check-cast v0, Ljava/lang/String;
-
-    .line 31
-    .line 32
-    invoke-virtual {v2, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 33
-    .line 34
-    .line 35
-    const-string v0, "--lp--"
-
-    .line 36
-    .line 37
-    invoke-virtual {v2, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 38
-    .line 39
-    .line 40
-    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    .line 41
-    .line 42
-    .line 43
-    move-result-object v0
-
-    .line 44
-    :cond_0
-    invoke-virtual {p0}, Ljava/util/ArrayList;->size()I
-
-    .line 45
-    .line 46
-    .line 47
-    move-result v2
-
-    .line 48
-    add-int/lit8 v2, v2, -0x1
-
-    .line 49
-    .line 50
-    if-ne v1, v2, :cond_1
-
-    .line 51
-    .line 52
-    new-instance v2, Ljava/lang/StringBuilder;
-
-    .line 53
-    .line 54
-    invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
-
-    .line 55
-    .line 56
-    .line 57
-    invoke-virtual {v2, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 58
-    .line 59
-    .line 60
-    invoke-virtual {p0, v1}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
-
-    .line 61
-    .line 62
-    .line 63
-    move-result-object v0
-
-    .line 64
-    check-cast v0, Ljava/lang/String;
-
-    .line 65
-    .line 66
-    invoke-virtual {v2, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 67
-    .line 68
-    .line 69
-    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    .line 70
-    .line 71
-    .line 72
-    move-result-object v0
-
-    .line 73
-    :cond_1
-    add-int/lit8 v1, v1, 0x1
-
-    .line 74
-    .line 75
-    goto :goto_0
-
-    .line 76
-    :cond_2
-    new-instance p0, Ljava/lang/StringBuilder;
-
-    .line 77
-    .line 78
-    invoke-direct {p0}, Ljava/lang/StringBuilder;-><init>()V
-
-    .line 79
-    .line 80
-    .line 81
-    invoke-virtual {p0, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 82
-    .line 83
-    .line 84
-    const-string v0, "}"
-
-    .line 85
-    .line 86
-    invoke-virtual {p0, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 87
-    .line 88
-    .line 89
-    invoke-virtual {p0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    .line 90
-    .line 91
-    .line 92
-    move-result-object p0
-
-    .line 93
-    return-object p0
-.end method
-
-.method public static יـ(Ljava/io/File;)Z
+.method public static יᵢ(Ljava/io/File;)Z
     .locals 7
 
     .line 1
@@ -147222,7 +149115,7 @@
 
     .line 121
     .line 122
-    invoke-static {v0}, Lʼˏ/ᵢ;->ˎʿ([Ljava/lang/String;)V
+    invoke-static {v0}, Lʼˏ/ᵢ;->ˎˏ([Ljava/lang/String;)V
 
     .line 123
     .line 124
@@ -147292,7 +149185,7 @@
     move-result-object p0
 
     .line 159
-    invoke-static {p0}, Lʼˏ/ᵢ;->ˎʾ(Ljava/lang/String;)V
+    invoke-static {p0}, Lʼˏ/ᵢ;->ˎˋ(Ljava/lang/String;)V
 
     .line 160
     .line 161
@@ -147906,7 +149799,7 @@
     .line 26
     .line 27
     .line 28
-    invoke-static/range {p0 .. p1}, Lʼˏ/ᵢ;->ˉٴ(Ljava/io/File;Lʼـ/ʿ;)Z
+    invoke-static/range {p0 .. p1}, Lʼˏ/ᵢ;->ˉᵢ(Ljava/io/File;Lʼـ/ʿ;)Z
 
     .line 29
     .line 30
@@ -149482,7 +151375,7 @@
     .locals 3
 
     .line 1
-    invoke-static {}, Lʼˏ/ᵢ;->ʿˆ()J
+    invoke-static {}, Lʼˏ/ᵢ;->ʿˉ()J
 
     .line 2
     .line 3
@@ -150853,7 +152746,7 @@
     .line 294
     .line 295
     .line 296
-    invoke-static {v6}, Lʼˏ/ᵢ;->ˋʿ(Ljava/nio/MappedByteBuffer;)I
+    invoke-static {v6}, Lʼˏ/ᵢ;->ˋˏ(Ljava/nio/MappedByteBuffer;)I
 
     .line 297
     .line 298
@@ -150869,7 +152762,7 @@
     move-result v12
 
     .line 304
-    invoke-static {v6, v11}, Lʼˏ/ᵢ;->ˑﹶ(Ljava/nio/MappedByteBuffer;I)[B
+    invoke-static {v6, v11}, Lʼˏ/ᵢ;->יʿ(Ljava/nio/MappedByteBuffer;I)[B
 
     .line 305
     .line 306
@@ -150969,7 +152862,7 @@
     move-result v1
 
     .line 353
-    invoke-static {v6, v1}, Lʼˏ/ᵢ;->יˊ(Ljava/nio/MappedByteBuffer;I)V
+    invoke-static {v6, v1}, Lʼˏ/ᵢ;->יٴ(Ljava/nio/MappedByteBuffer;I)V
 
     .line 354
     .line 355
@@ -150979,7 +152872,7 @@
     .line 357
     .line 358
     .line 359
-    invoke-static {v6, v15}, Lʼˏ/ᵢ;->יˈ(Ljava/nio/MappedByteBuffer;Ljava/lang/String;)V
+    invoke-static {v6, v15}, Lʼˏ/ᵢ;->יˑ(Ljava/nio/MappedByteBuffer;Ljava/lang/String;)V
 
     .line 360
     .line 361
@@ -151086,7 +152979,7 @@
     move-result v7
 
     .line 411
-    invoke-static {v6, v7}, Lʼˏ/ᵢ;->יˊ(Ljava/nio/MappedByteBuffer;I)V
+    invoke-static {v6, v7}, Lʼˏ/ᵢ;->יٴ(Ljava/nio/MappedByteBuffer;I)V
 
     .line 412
     .line 413
@@ -151096,7 +152989,7 @@
     .line 415
     .line 416
     .line 417
-    invoke-static {v6, v1}, Lʼˏ/ᵢ;->יˈ(Ljava/nio/MappedByteBuffer;Ljava/lang/String;)V
+    invoke-static {v6, v1}, Lʼˏ/ᵢ;->יˑ(Ljava/nio/MappedByteBuffer;Ljava/lang/String;)V
 
     .line 418
     .line 419
@@ -151676,7 +153569,7 @@
     move-result-object p0
 
     .line 138
-    invoke-static {v8, p0}, Lʼˏ/ᵢ;->יʽ(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v8, p0}, Lʼˏ/ᵢ;->יˊ(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 139
     .line 140
@@ -151735,7 +153628,7 @@
     move-result-object p0
 
     .line 170
-    invoke-static {v8, p0}, Lʼˏ/ᵢ;->יʽ(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v8, p0}, Lʼˏ/ᵢ;->יˊ(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 171
     .line 172
@@ -151838,7 +153731,7 @@
     move-result-object p0
 
     .line 223
-    invoke-static {p0}, Lʼˏ/ᵢ;->ˎʾ(Ljava/lang/String;)V
+    invoke-static {p0}, Lʼˏ/ᵢ;->ˎˋ(Ljava/lang/String;)V
 
     .line 224
     .line 225
@@ -151870,7 +153763,7 @@
     move-result-object p0
 
     .line 241
-    invoke-static {p0}, Lʼˏ/ᵢ;->ʼˋ(Ljava/lang/String;)Z
+    invoke-static {p0}, Lʼˏ/ᵢ;->ʼˏ(Ljava/lang/String;)Z
 
     .line 242
     .line 243
@@ -151954,7 +153847,7 @@
     move-result-object p0
 
     .line 287
-    invoke-static {p0}, Lʼˏ/ᵢ;->ʼˋ(Ljava/lang/String;)Z
+    invoke-static {p0}, Lʼˏ/ᵢ;->ʼˏ(Ljava/lang/String;)Z
 
     .line 288
     .line 289
@@ -151998,7 +153891,7 @@
     move-result-object p0
 
     .line 311
-    invoke-static {p0}, Lʼˏ/ᵢ;->ˎʾ(Ljava/lang/String;)V
+    invoke-static {p0}, Lʼˏ/ᵢ;->ˎˋ(Ljava/lang/String;)V
 
     .line 312
     .line 313
@@ -152076,7 +153969,7 @@
     move-result-object p0
 
     .line 353
-    invoke-static {p0}, Lʼˏ/ᵢ;->ʼˋ(Ljava/lang/String;)Z
+    invoke-static {p0}, Lʼˏ/ᵢ;->ʼˏ(Ljava/lang/String;)Z
 
     .line 354
     .line 355
@@ -152120,7 +154013,7 @@
     move-result-object p0
 
     .line 377
-    invoke-static {p0}, Lʼˏ/ᵢ;->ˎʾ(Ljava/lang/String;)V
+    invoke-static {p0}, Lʼˏ/ᵢ;->ˎˋ(Ljava/lang/String;)V
 
     .line 378
     .line 379
@@ -152158,7 +154051,7 @@
 
     .line 4
     .line 5
-    invoke-static {v2}, Lʼˏ/ᵢ;->ˆˉ(Ljava/lang/String;)Ljava/security/PublicKey;
+    invoke-static {v2}, Lʼˏ/ᵢ;->ˆˎ(Ljava/lang/String;)Ljava/security/PublicKey;
 
     .line 6
     .line 7
@@ -152236,16 +154129,16 @@
 
     .line 44
     .line 45
-    sget-object v2, Lʾˉ/ᴵᴵ;->ʼﾞ:Lru/aaaaaccc/installer/MainActivity;
+    sget-object v2, Lʾˉ/ᴵᴵ;->ʼﾞ:Lru/aaaaaccd/installer/MainActivity;
 
     .line 46
     .line 47
-    const v4, 0x7f110198
+    const v4, 0x7f11019a
 
     .line 48
     .line 49
     .line 50
-    invoke-static {v4}, Lʼˏ/ᵢ;->ˈי(I)Ljava/lang/String;
+    invoke-static {v4}, Lʼˏ/ᵢ;->ˈᐧ(I)Ljava/lang/String;
 
     .line 51
     .line 52
@@ -152258,7 +154151,7 @@
     .line 55
     .line 56
     .line 57
-    invoke-static {v6}, Lʼˏ/ᵢ;->ˈי(I)Ljava/lang/String;
+    invoke-static {v6}, Lʼˏ/ᵢ;->ˈᐧ(I)Ljava/lang/String;
 
     .line 58
     .line 59
@@ -152274,12 +154167,12 @@
 
     .line 64
     .line 65
-    const v6, 0x7f11019a
+    const v6, 0x7f11019c
 
     .line 66
     .line 67
     .line 68
-    invoke-static {v6, v7}, Lʼˏ/ᵢ;->ˈٴ(I[Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v6, v7}, Lʼˏ/ᵢ;->ˈᵎ(I[Ljava/lang/String;)Ljava/lang/String;
 
     .line 69
     .line 70
@@ -152287,7 +154180,7 @@
     move-result-object v6
 
     .line 72
-    invoke-static {v2, v4, v6}, Lʼˏ/ᵢ;->ˏᴵ(Landroid/app/Activity;Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v2, v4, v6}, Lʼˏ/ᵢ;->ˏﹶ(Landroid/app/Activity;Ljava/lang/String;Ljava/lang/String;)V
 
     .line 73
     .line 74
@@ -152389,7 +154282,7 @@
 
     .line 4
     .line 5
-    invoke-static {v2}, Lʼˏ/ᵢ;->ˆˉ(Ljava/lang/String;)Ljava/security/PublicKey;
+    invoke-static {v2}, Lʼˏ/ᵢ;->ˆˎ(Ljava/lang/String;)Ljava/security/PublicKey;
 
     .line 6
     .line 7
@@ -152467,16 +154360,16 @@
 
     .line 44
     .line 45
-    sget-object v2, Lʾˉ/ᴵᴵ;->ʼﾞ:Lru/aaaaaccc/installer/MainActivity;
+    sget-object v2, Lʾˉ/ᴵᴵ;->ʼﾞ:Lru/aaaaaccd/installer/MainActivity;
 
     .line 46
     .line 47
-    const v4, 0x7f110198
+    const v4, 0x7f11019a
 
     .line 48
     .line 49
     .line 50
-    invoke-static {v4}, Lʼˏ/ᵢ;->ˈי(I)Ljava/lang/String;
+    invoke-static {v4}, Lʼˏ/ᵢ;->ˈᐧ(I)Ljava/lang/String;
 
     .line 51
     .line 52
@@ -152489,7 +154382,7 @@
     .line 55
     .line 56
     .line 57
-    invoke-static {v6}, Lʼˏ/ᵢ;->ˈי(I)Ljava/lang/String;
+    invoke-static {v6}, Lʼˏ/ᵢ;->ˈᐧ(I)Ljava/lang/String;
 
     .line 58
     .line 59
@@ -152505,12 +154398,12 @@
 
     .line 64
     .line 65
-    const v6, 0x7f11019a
+    const v6, 0x7f11019c
 
     .line 66
     .line 67
     .line 68
-    invoke-static {v6, v7}, Lʼˏ/ᵢ;->ˈٴ(I[Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v6, v7}, Lʼˏ/ᵢ;->ˈᵎ(I[Ljava/lang/String;)Ljava/lang/String;
 
     .line 69
     .line 70
@@ -152518,7 +154411,7 @@
     move-result-object v6
 
     .line 72
-    invoke-static {v2, v4, v6}, Lʼˏ/ᵢ;->ˏᴵ(Landroid/app/Activity;Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v2, v4, v6}, Lʼˏ/ᵢ;->ˏﹶ(Landroid/app/Activity;Ljava/lang/String;Ljava/lang/String;)V
 
     .line 73
     .line 74
@@ -153245,7 +155138,7 @@
 
     .line 126
     .line 127
-    invoke-static {}, Lru/aaaaaccc/installer/PkgName;->getPkgName()Ljava/lang/String;
+    invoke-static {}, Lru/aaaaaccd/installer/PkgName;->getPkgName()Ljava/lang/String;
 
     .line 128
     .line 129
@@ -153650,7 +155543,7 @@
 
 
 # virtual methods
-.method public ʼʽ(Ljava/io/File;)V
+.method public ʼʾ(Ljava/io/File;)V
     .locals 4
     .annotation system Ldalvik/annotation/Throws;
         value = {
@@ -153676,7 +155569,7 @@
 
     .line 9
     .line 10
-    invoke-static {p1}, Lʼˏ/ᵢ;->ˑᵢ(Ljava/io/File;)V
+    invoke-static {p1}, Lʼˏ/ᵢ;->יʼ(Ljava/io/File;)V
 
     .line 11
     .line 12
@@ -153697,7 +155590,7 @@
 
     .line 19
     .line 20
-    invoke-static {p1}, Lʼˏ/ᵢ;->ˊˈ(Ljava/io/File;)Z
+    invoke-static {p1}, Lʼˏ/ᵢ;->ˊˑ(Ljava/io/File;)Z
 
     .line 21
     .line 22
@@ -153709,7 +155602,7 @@
 
     .line 25
     .line 26
-    invoke-static {p1}, Lʼˏ/ᵢ;->ˑᵢ(Ljava/io/File;)V
+    invoke-static {p1}, Lʼˏ/ᵢ;->יʼ(Ljava/io/File;)V
 
     .line 27
     .line 28
@@ -153745,7 +155638,7 @@
 
     .line 41
     .line 42
-    invoke-virtual {p0, v3}, Lʼˏ/ᵢ;->ʼʽ(Ljava/io/File;)V
+    invoke-virtual {p0, v3}, Lʼˏ/ᵢ;->ʼʾ(Ljava/io/File;)V
 
     .line 43
     .line 44
@@ -153759,7 +155652,7 @@
     .line 48
     :cond_2
     :goto_1
-    invoke-static {p1}, Lʼˏ/ᵢ;->ˊˈ(Ljava/io/File;)Z
+    invoke-static {p1}, Lʼˏ/ᵢ;->ˊˑ(Ljava/io/File;)Z
 
     .line 49
     .line 50
@@ -153771,7 +155664,7 @@
 
     .line 53
     .line 54
-    invoke-static {p1}, Lʼˏ/ᵢ;->ˑᵢ(Ljava/io/File;)V
+    invoke-static {p1}, Lʼˏ/ᵢ;->יʼ(Ljava/io/File;)V
 
     .line 55
     .line 56
@@ -153789,7 +155682,7 @@
     return-void
 .end method
 
-.method public ʼـ(Ljava/io/File;Ljava/lang/String;)Ljava/lang/String;
+.method public ʼᐧ(Ljava/io/File;Ljava/lang/String;)Ljava/lang/String;
     .locals 6
     .annotation system Ldalvik/annotation/Throws;
         value = {
@@ -153858,7 +155751,7 @@
 
     .line 28
     .line 29
-    invoke-virtual {p0, v4, p2}, Lʼˏ/ᵢ;->ʼـ(Ljava/io/File;Ljava/lang/String;)Ljava/lang/String;
+    invoke-virtual {p0, v4, p2}, Lʼˏ/ᵢ;->ʼᐧ(Ljava/io/File;Ljava/lang/String;)Ljava/lang/String;
 
     .line 30
     .line 31
@@ -153925,7 +155818,7 @@
     return-object v1
 .end method
 
-.method public ʼٴ(Ljava/io/File;Ljava/lang/String;)Ljava/lang/String;
+.method public ʼᴵ(Ljava/io/File;Ljava/lang/String;)Ljava/lang/String;
     .locals 6
     .annotation system Ldalvik/annotation/Throws;
         value = {
@@ -153978,7 +155871,7 @@
 
     .line 21
     .line 22
-    invoke-virtual {p0, v4, p2}, Lʼˏ/ᵢ;->ʼٴ(Ljava/io/File;Ljava/lang/String;)Ljava/lang/String;
+    invoke-virtual {p0, v4, p2}, Lʼˏ/ᵢ;->ʼᴵ(Ljava/io/File;Ljava/lang/String;)Ljava/lang/String;
 
     .line 23
     .line 24
@@ -154045,7 +155938,7 @@
     return-object v1
 .end method
 
-.method public ʼᐧ(Ljava/io/File;Ljava/lang/String;Ljava/util/ArrayList;)Ljava/lang/String;
+.method public ʼᵎ(Ljava/io/File;Ljava/lang/String;Ljava/util/ArrayList;)Ljava/lang/String;
     .locals 6
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -154126,7 +156019,7 @@
 
     .line 28
     .line 29
-    invoke-virtual {p0, v4, p2, p3}, Lʼˏ/ᵢ;->ʼᐧ(Ljava/io/File;Ljava/lang/String;Ljava/util/ArrayList;)Ljava/lang/String;
+    invoke-virtual {p0, v4, p2, p3}, Lʼˏ/ᵢ;->ʼᵎ(Ljava/io/File;Ljava/lang/String;Ljava/util/ArrayList;)Ljava/lang/String;
 
     .line 30
     .line 31
@@ -154209,7 +156102,7 @@
     return-object v1
 .end method
 
-.method public ʼᴵ(Ljava/io/File;Ljava/lang/String;)Z
+.method public ʼᵔ(Ljava/io/File;Ljava/lang/String;)Z
     .locals 5
 
     .line 1
@@ -154273,7 +156166,7 @@
 
     .line 27
     .line 28
-    invoke-virtual {p0, v4, p2}, Lʼˏ/ᵢ;->ʼᴵ(Ljava/io/File;Ljava/lang/String;)Z
+    invoke-virtual {p0, v4, p2}, Lʼˏ/ᵢ;->ʼᵔ(Ljava/io/File;Ljava/lang/String;)Z
 
     .line 29
     .line 30
@@ -154342,7 +156235,7 @@
     return v0
 .end method
 
-.method public ʼᵎ(Ljava/util/ArrayList;Ljava/io/File;Ljava/lang/String;)V
+.method public ʼᵢ(Ljava/util/ArrayList;Ljava/io/File;Ljava/lang/String;)V
     .locals 8
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -154532,7 +156425,7 @@
 
     .line 75
     .line 76
-    invoke-virtual {p0, p1, v1, p3}, Lʼˏ/ᵢ;->ʼᵎ(Ljava/util/ArrayList;Ljava/io/File;Ljava/lang/String;)V
+    invoke-virtual {p0, p1, v1, p3}, Lʼˏ/ᵢ;->ʼᵢ(Ljava/util/ArrayList;Ljava/io/File;Ljava/lang/String;)V
 
     .line 77
     .line 78
@@ -154673,7 +156566,7 @@
     return-void
 .end method
 
-.method public ʼﹶ(Ljava/io/File;Ljava/lang/String;)V
+.method public ʽʻ(Ljava/io/File;Ljava/lang/String;)V
     .locals 11
     .annotation system Ldalvik/annotation/Throws;
         value = {
@@ -154727,7 +156620,7 @@
 
     .line 21
     .line 22
-    invoke-static {v3}, Lʼˏ/ᵢ;->ˎʿ([Ljava/lang/String;)V
+    invoke-static {v3}, Lʼˏ/ᵢ;->ˎˏ([Ljava/lang/String;)V
 
     .line 23
     .line 24
@@ -154791,12 +156684,12 @@
 
     .line 52
     .line 53
-    invoke-static {v10}, Lʼˏ/ᵢ;->ˎʿ([Ljava/lang/String;)V
+    invoke-static {v10}, Lʼˏ/ᵢ;->ˎˏ([Ljava/lang/String;)V
 
     .line 54
     .line 55
     .line 56
-    invoke-virtual {p0, v8, p2}, Lʼˏ/ᵢ;->ʼﹶ(Ljava/io/File;Ljava/lang/String;)V
+    invoke-virtual {p0, v8, p2}, Lʼˏ/ᵢ;->ʽʻ(Ljava/io/File;Ljava/lang/String;)V
 
     .line 57
     .line 58
@@ -154811,7 +156704,7 @@
     return-void
 .end method
 
-.method public ʼﾞ(Ljava/io/File;Ljava/lang/String;)V
+.method public ʽʼ(Ljava/io/File;Ljava/lang/String;)V
     .locals 11
     .annotation system Ldalvik/annotation/Throws;
         value = {
@@ -154865,7 +156758,7 @@
 
     .line 21
     .line 22
-    invoke-static {v3}, Lʼˏ/ᵢ;->ˎʿ([Ljava/lang/String;)V
+    invoke-static {v3}, Lʼˏ/ᵢ;->ˎˏ([Ljava/lang/String;)V
 
     .line 23
     .line 24
@@ -154929,12 +156822,12 @@
 
     .line 52
     .line 53
-    invoke-static {v10}, Lʼˏ/ᵢ;->ˎʿ([Ljava/lang/String;)V
+    invoke-static {v10}, Lʼˏ/ᵢ;->ˎˏ([Ljava/lang/String;)V
 
     .line 54
     .line 55
     .line 56
-    invoke-virtual {p0, v8, p2}, Lʼˏ/ᵢ;->ʼﾞ(Ljava/io/File;Ljava/lang/String;)V
+    invoke-virtual {p0, v8, p2}, Lʼˏ/ᵢ;->ʽʼ(Ljava/io/File;Ljava/lang/String;)V
 
     .line 57
     .line 58
@@ -154949,7 +156842,7 @@
     return-void
 .end method
 
-.method public ʾʼ(Ljava/lang/String;)Ljava/lang/String;
+.method public ʾʿ(Ljava/lang/String;)Ljava/lang/String;
     .locals 2
 
     .line 1
@@ -155051,7 +156944,7 @@
     return-object p1
 .end method
 
-.method public ʿʾ(ZLʼˏ/ᵢ$ʻˉ;)Ljava/lang/String;
+.method public ʿˈ(ZLʼˏ/ᵢ$ʻˉ;)Ljava/lang/String;
     .locals 8
     .annotation system Ldalvik/annotation/Throws;
         value = {
@@ -155254,7 +157147,7 @@
 
     .line 97
     .line 98
-    invoke-static {v3}, Lʼˏ/ᵢ;->ˋʾ(Ljava/io/InputStream;)Ljava/lang/String;
+    invoke-static {v3}, Lʼˏ/ᵢ;->ˋˎ(Ljava/io/InputStream;)Ljava/lang/String;
 
     .line 99
     .line 100
@@ -155735,7 +157628,7 @@
     return-object v2
 .end method
 
-.method public ʿˉ(Ljava/lang/String;)Ljava/lang/String;
+.method public ʿˋ(Ljava/lang/String;)Ljava/lang/String;
     .locals 2
 
     .line 1
@@ -155838,7 +157731,7 @@
     return-object p1
 .end method
 
-.method public ʿᐧ(Ljava/io/File;Ljava/util/ArrayList;)Lʼˏ/ᵢ$ʻˆ;
+.method public ʿᵔ(Ljava/io/File;Ljava/util/ArrayList;)Lʼˏ/ᵢ$ʻˆ;
     .locals 24
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -156055,7 +157948,7 @@
     .line 102
     .line 103
     .line 104
-    invoke-virtual {v1, v0}, Lʼˏ/ᵢ;->ʾʼ(Ljava/lang/String;)Ljava/lang/String;
+    invoke-virtual {v1, v0}, Lʼˏ/ᵢ;->ʾʿ(Ljava/lang/String;)Ljava/lang/String;
 
     .line 105
     .line 106
@@ -156102,7 +157995,7 @@
     .line 125
     .line 126
     .line 127
-    invoke-virtual {v1, v0}, Lʼˏ/ᵢ;->ʿˉ(Ljava/lang/String;)Ljava/lang/String;
+    invoke-virtual {v1, v0}, Lʼˏ/ᵢ;->ʿˋ(Ljava/lang/String;)Ljava/lang/String;
 
     .line 128
     .line 129
@@ -157546,7 +159439,7 @@
     return-object v6
 .end method
 
-.method public ˉˆ(Ljava/io/File;I)V
+.method public ˉˎ(Ljava/io/File;I)V
     .locals 4
 
     .line 1
@@ -157591,7 +159484,7 @@
 
     .line 21
     .line 22
-    sget-object v0, Lʾˉ/ᴵᴵ;->ʼﾞ:Lru/aaaaaccc/installer/MainActivity;
+    sget-object v0, Lʾˉ/ᴵᴵ;->ʼﾞ:Lru/aaaaaccd/installer/MainActivity;
 
     .line 23
     .line 24
@@ -157621,7 +159514,7 @@
     .line 36
     .line 37
     .line 38
-    invoke-static {}, Lru/aaaaaccc/installer/PkgName;->getPkgName()Ljava/lang/String;
+    invoke-static {}, Lru/aaaaaccd/installer/PkgName;->getPkgName()Ljava/lang/String;
 
     .line 39
     .line 40
@@ -157659,7 +159552,7 @@
     .line 56
     .line 57
     .line 58
-    sget v2, Lʾˉ/ᴵᴵ;->ˉᵢ:I
+    sget v2, Lʾˉ/ᴵᴵ;->ˉⁱ:I
 
     .line 59
     .line 60
@@ -157669,12 +159562,12 @@
     .line 62
     .line 63
     :cond_0
-    const v0, 0x7f1104d2
+    const v0, 0x7f1104d4
 
     .line 64
     .line 65
     .line 66
-    invoke-static {v0}, Lʼˏ/ᵢ;->ˈי(I)Ljava/lang/String;
+    invoke-static {v0}, Lʼˏ/ᵢ;->ˈᐧ(I)Ljava/lang/String;
 
     .line 67
     .line 68
@@ -157682,12 +159575,12 @@
     move-result-object v0
 
     .line 70
-    const v1, 0x7f1102b6
+    const v1, 0x7f1102b8
 
     .line 71
     .line 72
     .line 73
-    invoke-static {v1}, Lʼˏ/ᵢ;->ˈי(I)Ljava/lang/String;
+    invoke-static {v1}, Lʼˏ/ᵢ;->ˈᐧ(I)Ljava/lang/String;
 
     .line 74
     .line 75
@@ -158076,7 +159969,7 @@
     .line 148
     .line 149
     .line 150
-    invoke-static {}, Lʼˏ/ᵢ;->ʼˏ()V
+    invoke-static {}, Lʼˏ/ᵢ;->ʼי()V
 
     .line 151
     .line 152
@@ -158101,7 +159994,7 @@
     return-object p1
 .end method
 
-.method public ˎᐧ(Ljava/io/File;)V
+.method public ˎﹳ(Ljava/io/File;)V
     .locals 5
     .annotation build Landroid/annotation/SuppressLint;
         value = {
@@ -158159,7 +160052,7 @@
     .line 22
     .line 23
     .line 24
-    invoke-virtual {p0, v4}, Lʼˏ/ᵢ;->ˎᐧ(Ljava/io/File;)V
+    invoke-virtual {p0, v4}, Lʼˏ/ᵢ;->ˎﹳ(Ljava/io/File;)V
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_1
     .catch Ljava/lang/NoSuchMethodError; {:try_start_0 .. :try_end_0} :catch_0
@@ -158195,7 +160088,7 @@
     return-void
 .end method
 
-.method public ˎᴵ(Ljava/io/File;)V
+.method public ˎﹶ(Ljava/io/File;)V
     .locals 5
     .annotation build Landroid/annotation/SuppressLint;
         value = {
@@ -158253,7 +160146,7 @@
     .line 22
     .line 23
     .line 24
-    invoke-virtual {p0, v4}, Lʼˏ/ᵢ;->ˎᴵ(Ljava/io/File;)V
+    invoke-virtual {p0, v4}, Lʼˏ/ᵢ;->ˎﹶ(Ljava/io/File;)V
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_1
     .catch Ljava/lang/NoSuchMethodError; {:try_start_0 .. :try_end_0} :catch_0
@@ -158289,7 +160182,7 @@
     return-void
 .end method
 
-.method public ˏʼ(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+.method public ˏˉ(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
     .locals 24
 
     .line 1
@@ -158382,7 +160275,7 @@
 
     .line 43
     .line 44
-    invoke-static {v2}, Lʼˏ/ᵢ;->ˎʿ([Ljava/lang/String;)V
+    invoke-static {v2}, Lʼˏ/ᵢ;->ˎˏ([Ljava/lang/String;)V
 
     .line 45
     .line 46
@@ -158464,7 +160357,7 @@
 
     .line 86
     .line 87
-    invoke-static {v3}, Lʼˏ/ᵢ;->ˎʿ([Ljava/lang/String;)V
+    invoke-static {v3}, Lʼˏ/ᵢ;->ˎˏ([Ljava/lang/String;)V
 
     .line 88
     .line 89
@@ -158510,7 +160403,7 @@
 
     .line 109
     .line 110
-    invoke-static {v2}, Lʼˏ/ᵢ;->ˎʿ([Ljava/lang/String;)V
+    invoke-static {v2}, Lʼˏ/ᵢ;->ˎˏ([Ljava/lang/String;)V
 
     .line 111
     .line 112
@@ -158613,7 +160506,7 @@
 
     .line 158
     .line 159
-    invoke-virtual/range {v0 .. v6}, Lʼˏ/ᵢ;->ˏʼ(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+    invoke-virtual/range {v0 .. v6}, Lʼˏ/ᵢ;->ˏˉ(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
     .line 160
     .line 161
@@ -158693,7 +160586,7 @@
 
     .line 196
     .line 197
-    invoke-static {v1}, Lʼˏ/ᵢ;->ˎʿ([Ljava/lang/String;)V
+    invoke-static {v1}, Lʼˏ/ᵢ;->ˎˏ([Ljava/lang/String;)V
 
     .line 198
     .line 199
@@ -158774,7 +160667,7 @@
 
     .line 238
     .line 239
-    invoke-static {v3}, Lʼˏ/ᵢ;->ˎʿ([Ljava/lang/String;)V
+    invoke-static {v3}, Lʼˏ/ᵢ;->ˎˏ([Ljava/lang/String;)V
 
     .line 240
     .line 241
@@ -158827,7 +160720,7 @@
 
     .line 263
     .line 264
-    invoke-static {v3}, Lʼˏ/ᵢ;->ˎʿ([Ljava/lang/String;)V
+    invoke-static {v3}, Lʼˏ/ᵢ;->ˎˏ([Ljava/lang/String;)V
 
     .line 265
     .line 266
@@ -159174,7 +161067,7 @@
     .line 137
     .line 138
     .line 139
-    invoke-static {}, Lʼˏ/ᵢ;->ʼˏ()V
+    invoke-static {}, Lʼˏ/ᵢ;->ʼי()V
 
     .line 140
     .line 141
@@ -159199,7 +161092,7 @@
     return-object p1
 .end method
 
-.method public ˑʼ(Ljava/io/File;Z)F
+.method public ˑˉ(Ljava/io/File;Z)F
     .locals 4
     .annotation system Ldalvik/annotation/Throws;
         value = {
@@ -159263,7 +161156,7 @@
 
     .line 25
     .line 26
-    invoke-virtual {p0, v3, v1}, Lʼˏ/ᵢ;->ˑʼ(Ljava/io/File;Z)F
+    invoke-virtual {p0, v3, v1}, Lʼˏ/ᵢ;->ˑˉ(Ljava/io/File;Z)F
 
     .line 27
     .line 28
@@ -159325,7 +161218,7 @@
     return p2
 .end method
 
-.method public ˑˈ(Ljava/io/File;Ljava/io/File;)V
+.method public ˑי(Ljava/io/File;Ljava/io/File;)V
     .locals 9
 
     .line 1
@@ -159610,7 +161503,7 @@
     .line 139
     .line 140
     .line 141
-    invoke-virtual {p0, v3, v4}, Lʼˏ/ᵢ;->ˑˈ(Ljava/io/File;Ljava/io/File;)V
+    invoke-virtual {p0, v3, v4}, Lʼˏ/ᵢ;->ˑי(Ljava/io/File;Ljava/io/File;)V
 
     .line 142
     .line 143
@@ -159627,7 +161520,7 @@
     return-void
 .end method
 
-.method public ˑˉ(Ljava/io/File;Ljava/io/File;)V
+.method public ˑـ(Ljava/io/File;Ljava/io/File;)V
     .locals 9
 
     .line 1
@@ -159906,7 +161799,7 @@
     .line 139
     .line 140
     .line 141
-    invoke-virtual {v4, v3}, Lʼˏ/ᵢ;->ʼʽ(Ljava/io/File;)V
+    invoke-virtual {v4, v3}, Lʼˏ/ᵢ;->ʼʾ(Ljava/io/File;)V
     :try_end_0
     .catch Ljava/io/IOException; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -159933,7 +161826,7 @@
 
     .line 152
     :cond_1
-    invoke-virtual {p0, v3, v4}, Lʼˏ/ᵢ;->ˑˉ(Ljava/io/File;Ljava/io/File;)V
+    invoke-virtual {p0, v3, v4}, Lʼˏ/ᵢ;->ˑـ(Ljava/io/File;Ljava/io/File;)V
 
     .line 153
     .line 154
@@ -159951,7 +161844,7 @@
     return-void
 .end method
 
-.method public יʿ(J)V
+.method public יˎ(J)V
     .locals 3
 
     .line 1

@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lʼˏ/ᵢ;->ˏᐧ(Ljava/lang/String;Ljava/lang/String;Landroid/content/DialogInterface$OnClickListener;Landroid/content/DialogInterface$OnClickListener;Landroid/content/DialogInterface$OnCancelListener;)V
+    value = Lʼˏ/ᵢ;->ˏﹳ(Ljava/lang/String;Ljava/lang/String;Landroid/content/DialogInterface$OnClickListener;Landroid/content/DialogInterface$OnClickListener;Landroid/content/DialogInterface$OnCancelListener;)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -74,7 +74,7 @@
 
     .line 1
     :try_start_0
-    sget-object v0, Lʾˉ/ᴵᴵ;->ʼﾞ:Lru/aaaaaccc/installer/MainActivity;
+    sget-object v0, Lʾˉ/ᴵᴵ;->ʼﾞ:Lru/aaaaaccd/installer/MainActivity;
 
     .line 2
     .line 3
@@ -157,7 +157,7 @@
     .line 42
     .line 43
     .line 44
-    invoke-static {v1}, Lʼˏ/ᵢ;->ˈי(I)Ljava/lang/String;
+    invoke-static {v1}, Lʼˏ/ᵢ;->ˈᐧ(I)Ljava/lang/String;
 
     .line 45
     .line 46
@@ -177,12 +177,12 @@
     move-result-object v0
 
     .line 54
-    const v1, 0x7f11038f
+    const v1, 0x7f110391
 
     .line 55
     .line 56
     .line 57
-    invoke-static {v1}, Lʼˏ/ᵢ;->ˈי(I)Ljava/lang/String;
+    invoke-static {v1}, Lʼˏ/ᵢ;->ˈᐧ(I)Ljava/lang/String;
 
     .line 58
     .line 59
@@ -233,7 +233,7 @@
     move-result-object v0
 
     .line 82
-    invoke-static {v0}, Lʼˏ/ᵢ;->ˏˉ(Landroid/app/Dialog;)V
+    invoke-static {v0}, Lʼˏ/ᵢ;->ˏـ(Landroid/app/Dialog;)V
 
     .line 83
     .line 84

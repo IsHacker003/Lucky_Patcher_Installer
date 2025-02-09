@@ -13,547 +13,772 @@
 .end method
 
 .method public static main([Ljava/lang/String;)V
-    .locals 15
+    .locals 25
 
     .line 1
-    const/16 p0, 0x73
+    const/4 v1, 0x2
 
     .line 2
+    const/4 v2, 0x3
+
     .line 3
-    const/16 v0, 0x68
+    const-string v3, "Add info"
 
     .line 4
     .line 5
-    const/16 v1, 0x70
+    const-string v4, "\'"
 
     .line 6
     .line 7
-    const/16 v2, 0x61
+    const-string v5, "\',updated_at=\'"
 
     .line 8
     .line 9
-    const/16 v3, 0x5f
+    const-string v6, "\',path_hash=\'"
 
     .line 10
     .line 11
-    const/16 v4, 0x9
+    const-string v7, "UPDATE storages SET path=\'"
 
     .line 12
     .line 13
-    new-array v5, v4, [B
+    const-string v8, "/mnt/sdcard"
 
     .line 14
     .line 15
-    fill-array-data v5, :array_0
+    const-string v9, "path"
 
     .line 16
     .line 17
-    .line 18
-    const/4 v6, 0x0
+    new-instance v10, Ljavaroot/utils/ʻˊ$ʻ;
 
+    .line 18
     .line 19
-    new-array v7, v4, [B
+    invoke-direct {v10}, Ljavaroot/utils/ʻˊ$ʻ;-><init>()V
 
     .line 20
     .line 21
-    fill-array-data v7, :array_1
-
     .line 22
+    invoke-static {v10}, Lʼˏ/ᵢ;->ˑˎ(Ljava/lang/Object;)V
+
     .line 23
     .line 24
-    new-array v8, v4, [B
-
     .line 25
+    const/4 v10, 0x0
+
     .line 26
-    aput-byte v1, v8, v6
+    aget-object v11, p0, v10
 
     .line 27
     .line 28
-    const/4 v1, 0x1
+    const/4 v12, 0x1
 
     .line 29
-    aput-byte v2, v8, v1
+    aget-object v13, p0, v12
 
     .line 30
     .line 31
-    const/4 v9, 0x2
+    const/4 v13, 0x0
 
     .line 32
-    const/16 v10, 0x6c
+    :try_start_0
+    new-instance v14, Lʼˏ/ᵢ;
 
     .line 33
     .line 34
-    aput-byte v10, v8, v9
+    const-string v15, "asd"
 
     .line 35
     .line 36
-    const/4 v9, 0x3
+    invoke-direct {v14, v15}, Lʼˏ/ᵢ;-><init>(Ljava/lang/String;)V
 
     .line 37
-    aput-byte v0, v8, v9
-
     .line 38
     .line 39
-    const/4 v9, 0x4
+    new-instance v15, Ljava/io/File;
 
     .line 40
-    aput-byte v3, v8, v9
-
     .line 41
-    .line 42
-    const/4 v3, 0x5
+    const-string v0, "/data/data/com.maxmpz.audioplayer/"
 
+    .line 42
     .line 43
-    aput-byte v0, v8, v3
+    invoke-direct {v15, v0}, Ljava/io/File;-><init>(Ljava/lang/String;)V
 
     .line 44
     .line 45
-    const/4 v3, 0x6
-
     .line 46
-    aput-byte v2, v8, v3
+    const-string v0, "folders.db"
 
     .line 47
     .line 48
-    const/4 v2, 0x7
+    invoke-virtual {v14, v15, v0}, Lʼˏ/ᵢ;->ʼᐧ(Ljava/io/File;Ljava/lang/String;)Ljava/lang/String;
 
     .line 49
-    aput-byte p0, v8, v2
-
     .line 50
     .line 51
-    const/16 p0, 0x8
+    move-result-object v0
 
     .line 52
+    const-string v14, ""
+
     .line 53
-    aput-byte v0, v8, p0
-
     .line 54
-    .line 55
-    new-array p0, v4, [B
+    invoke-virtual {v0, v14}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
+    .line 55
     .line 56
     .line 57
-    fill-array-data p0, :array_2
+    move-result v14
+    :try_end_0
+    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_2
 
     .line 58
+    const-string v15, "chmod"
+
     .line 59
     .line 60
-    :try_start_0
-    new-instance v0, Ljavaroot/utils/ʻˊ$ʻ;
+    if-nez v14, :cond_4
 
     .line 61
     .line 62
-    invoke-direct {v0}, Ljavaroot/utils/ʻˊ$ʻ;-><init>()V
+    :try_start_1
+    new-array v14, v2, [Ljava/lang/String;
 
     .line 63
     .line 64
-    .line 65
-    invoke-static {v0}, Lʼˏ/ᵢ;->ˑʿ(Ljava/lang/Object;)V
+    aput-object v15, v14, v10
 
+    .line 65
     .line 66
+    const-string v16, "777"
+
     .line 67
     .line 68
-    new-instance v0, Ljava/io/File;
+    aput-object v16, v14, v12
 
     .line 69
     .line 70
-    const-string v2, "/data/data/com.maxmpz.audioplayer/databases/folders.db"
+    aput-object v0, v14, v1
 
     .line 71
     .line 72
-    invoke-direct {v0, v2}, Ljava/io/File;-><init>(Ljava/lang/String;)V
+    invoke-static {v14}, Lʼˏ/ᵢ;->ˎˏ([Ljava/lang/String;)V
 
     .line 73
     .line 74
     .line 75
-    invoke-virtual {v0}, Ljava/io/File;->exists()Z
+    invoke-static {v0, v13, v10}, Landroid/database/sqlite/SQLiteDatabase;->openDatabase(Ljava/lang/String;Landroid/database/sqlite/SQLiteDatabase$CursorFactory;I)Landroid/database/sqlite/SQLiteDatabase;
 
     .line 76
     .line 77
     .line 78
-    move-result v2
+    move-result-object v13
 
     .line 79
-    if-eqz v2, :cond_7
+    const-string v18, "storages"
 
     .line 80
     .line 81
-    new-instance v2, Ljava/io/RandomAccessFile;
+    const/4 v14, 0x4
 
     .line 82
+    new-array v2, v14, [Ljava/lang/String;
+
     .line 83
-    const-string v3, "rw"
-
     .line 84
-    .line 85
-    invoke-direct {v2, v0, v3}, Ljava/io/RandomAccessFile;-><init>(Ljava/io/File;Ljava/lang/String;)V
+    const-string v14, "_id"
 
+    .line 85
     .line 86
+    aput-object v14, v2, v10
+
     .line 87
     .line 88
-    invoke-virtual {v2}, Ljava/io/RandomAccessFile;->getChannel()Ljava/nio/channels/FileChannel;
+    aput-object v9, v2, v12
 
     .line 89
     .line 90
-    .line 91
-    move-result-object v0
+    const-string v14, "path_hash"
 
+    .line 91
     .line 92
-    sget-object v10, Ljava/nio/channels/FileChannel$MapMode;->READ_WRITE:Ljava/nio/channels/FileChannel$MapMode;
+    aput-object v14, v2, v1
 
     .line 93
     .line 94
-    invoke-virtual {v0}, Ljava/nio/channels/FileChannel;->size()J
+    const-string v14, "updated_at"
 
     .line 95
     .line 96
-    .line 97
-    move-result-wide v2
+    const/16 v16, 0x3
 
+    .line 97
     .line 98
-    long-to-int v3, v2
+    aput-object v14, v2, v16
 
     .line 99
-    int-to-long v13, v3
-
     .line 100
-    const-wide/16 v11, 0x0
+    const/16 v23, 0x0
 
     .line 101
     .line 102
-    move-object v9, v0
+    const/16 v24, 0x0
 
     .line 103
-    invoke-virtual/range {v9 .. v14}, Ljava/nio/channels/FileChannel;->map(Ljava/nio/channels/FileChannel$MapMode;JJ)Ljava/nio/MappedByteBuffer;
-
     .line 104
+    const/16 v20, 0x0
+
     .line 105
     .line 106
-    move-result-object v2
-    :try_end_0
-    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_1
+    const/16 v21, 0x0
 
     .line 107
-    :goto_0
-    :try_start_1
-    invoke-virtual {v2}, Ljava/nio/Buffer;->hasRemaining()Z
-
     .line 108
+    const/16 v22, 0x0
+
     .line 109
     .line 110
-    move-result v3
+    move-object/from16 v17, v13
 
     .line 111
-    if-eqz v3, :cond_6
-
     .line 112
-    .line 113
-    invoke-virtual {v2}, Ljava/nio/Buffer;->position()I
+    move-object/from16 v19, v2
 
+    .line 113
     .line 114
+    invoke-virtual/range {v17 .. v24}, Landroid/database/sqlite/SQLiteDatabase;->query(Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Landroid/database/Cursor;
+
     .line 115
     .line 116
-    move-result v3
-
     .line 117
-    invoke-virtual {v2}, Ljava/nio/ByteBuffer;->get()B
+    move-result-object v2
 
     .line 118
+    invoke-interface {v2}, Landroid/database/Cursor;->moveToFirst()Z
+
     .line 119
     .line 120
-    move-result v9
-
     .line 121
-    aget-byte v10, v5, v6
+    :goto_0
+    invoke-interface {v2, v9}, Landroid/database/Cursor;->getColumnIndex(Ljava/lang/String;)I
 
     .line 122
     .line 123
-    if-ne v9, v10, :cond_5
-
     .line 124
+    move-result v14
+
     .line 125
-    aget-byte v10, p0, v6
+    invoke-interface {v2, v14}, Landroid/database/Cursor;->getString(I)Ljava/lang/String;
 
     .line 126
     .line 127
-    if-nez v10, :cond_0
-
     .line 128
+    move-result-object v14
+    :try_end_1
+    .catch Ljava/lang/Exception; {:try_start_1 .. :try_end_1} :catch_2
+
     .line 129
-    aput-byte v9, v8, v6
+    :try_start_2
+    invoke-interface {v2}, Landroid/database/Cursor;->moveToNext()Z
 
     .line 130
     .line 131
-    goto :goto_1
-
     .line 132
-    :catch_0
-    move-exception p0
+    move-result v17
 
     .line 133
-    goto :goto_4
+    if-nez v17, :cond_0
 
     .line 134
-    :cond_0
-    :goto_1
-    add-int/lit8 v9, v3, 0x1
-
     .line 135
-    .line 136
-    invoke-virtual {v2, v9}, Ljava/nio/Buffer;->position(I)Ljava/nio/Buffer;
+    invoke-interface {v2}, Landroid/database/Cursor;->close()V
+    :try_end_2
+    .catch Ljava/lang/Exception; {:try_start_2 .. :try_end_2} :catch_0
 
+    .line 136
     .line 137
     .line 138
+    move-object v10, v8
+
     .line 139
-    invoke-virtual {v2}, Ljava/nio/ByteBuffer;->get()B
+    goto/16 :goto_3
 
     .line 140
     .line 141
+    :catch_0
+    move-object v10, v8
+
     .line 142
-    move-result v10
+    goto/16 :goto_2
 
     .line 143
-    const/4 v11, 0x1
-
     .line 144
-    :goto_2
-    aget-byte v12, v5, v11
+    :cond_0
+    :try_start_3
+    invoke-virtual {v14}, Ljava/lang/String;->length()I
 
     .line 145
     .line 146
-    if-eq v10, v12, :cond_1
-
     .line 147
+    move-result v1
+
     .line 148
-    aget-byte v12, v7, v11
+    const/4 v12, 0x4
 
     .line 149
+    if-ge v1, v12, :cond_1
+
     .line 150
-    if-ne v12, v1, :cond_3
-
     .line 151
-    .line 152
-    :cond_1
-    aget-byte v12, p0, v11
+    invoke-static {}, Landroid/os/Environment;->getExternalStorageDirectory()Ljava/io/File;
 
+    .line 152
     .line 153
     .line 154
-    if-nez v12, :cond_2
+    move-result-object v1
 
     .line 155
-    .line 156
-    aput-byte v10, v8, v11
+    invoke-virtual {v1}, Ljava/io/File;->getAbsolutePath()Ljava/lang/String;
 
+    .line 156
     .line 157
     .line 158
-    :cond_2
-    add-int/2addr v11, v1
+    move-result-object v14
 
     .line 159
-    if-ne v11, v4, :cond_4
+    :cond_1
+    sget-object v1, Ljava/lang/System;->out:Ljava/io/PrintStream;
 
     .line 160
     .line 161
-    invoke-virtual {v2, v3}, Ljava/nio/Buffer;->position(I)Ljava/nio/Buffer;
+    new-instance v12, Ljava/lang/StringBuilder;
 
     .line 162
     .line 163
-    .line 164
-    invoke-virtual {v2, v8}, Ljava/nio/ByteBuffer;->put([B)Ljava/nio/ByteBuffer;
+    invoke-direct {v12}, Ljava/lang/StringBuilder;-><init>()V
 
+    .line 164
     .line 165
     .line 166
-    .line 167
-    invoke-virtual {v2}, Ljava/nio/MappedByteBuffer;->force()Ljava/nio/MappedByteBuffer;
+    const-string v10, "2 "
 
+    .line 167
     .line 168
+    invoke-virtual {v12, v10}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
     .line 169
     .line 170
-    :cond_3
-    invoke-virtual {v2, v9}, Ljava/nio/Buffer;->position(I)Ljava/nio/Buffer;
-
     .line 171
+    invoke-virtual {v12, v14}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
     .line 172
     .line 173
-    goto :goto_3
-
     .line 174
-    :cond_4
-    invoke-virtual {v2}, Ljava/nio/ByteBuffer;->get()B
+    invoke-virtual {v12}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     .line 175
     .line 176
     .line 177
-    move-result v10
+    move-result-object v10
 
     .line 178
-    goto :goto_2
+    invoke-virtual {v1, v10}, Ljava/io/PrintStream;->println(Ljava/lang/String;)V
+    :try_end_3
+    .catch Ljava/lang/Exception; {:try_start_3 .. :try_end_3} :catch_1
 
     .line 179
-    :cond_5
-    :goto_3
-    add-int/2addr v3, v1
-
     .line 180
-    invoke-virtual {v2, v3}, Ljava/nio/Buffer;->position(I)Ljava/nio/Buffer;
-    :try_end_1
-    .catch Ljava/lang/Exception; {:try_start_1 .. :try_end_1} :catch_0
-
     .line 181
+    goto :goto_1
+
     .line 182
+    :catch_1
+    :try_start_4
+    invoke-static {}, Landroid/os/Environment;->getExternalStorageDirectory()Ljava/io/File;
+
     .line 183
-    goto :goto_0
-
     .line 184
-    :goto_4
-    :try_start_2
-    sget-object v1, Ljava/lang/System;->out:Ljava/io/PrintStream;
-
     .line 185
+    move-result-object v1
+
     .line 186
-    new-instance v2, Ljava/lang/StringBuilder;
+    invoke-virtual {v1}, Ljava/io/File;->getAbsolutePath()Ljava/lang/String;
 
     .line 187
     .line 188
-    invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
-
     .line 189
+    move-result-object v14
+
     .line 190
+    sget-object v1, Ljava/lang/System;->out:Ljava/io/PrintStream;
+
     .line 191
-    const-string v3, ""
-
     .line 192
-    .line 193
-    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    new-instance v10, Ljava/lang/StringBuilder;
 
+    .line 193
     .line 194
+    invoke-direct {v10}, Ljava/lang/StringBuilder;-><init>()V
+
     .line 195
     .line 196
-    invoke-virtual {v2, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
-
     .line 197
+    const-string v12, "3 "
+
     .line 198
     .line 199
-    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-virtual {v10, v12}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     .line 200
     .line 201
     .line 202
-    move-result-object p0
+    invoke-virtual {v10, v14}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     .line 203
-    invoke-virtual {v1, p0}, Ljava/io/PrintStream;->println(Ljava/lang/String;)V
-
     .line 204
     .line 205
-    .line 206
-    :cond_6
-    invoke-virtual {v0}, Ljava/nio/channels/spi/AbstractInterruptibleChannel;->close()V
+    invoke-virtual {v10}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
+    .line 206
     .line 207
     .line 208
+    move-result-object v10
+
     .line 209
-    goto :goto_6
+    invoke-virtual {v1, v10}, Ljava/io/PrintStream;->println(Ljava/lang/String;)V
 
     .line 210
-    :catch_1
-    move-exception p0
-
     .line 211
-    goto :goto_5
-
     .line 212
-    :cond_7
-    new-instance p0, Ljava/io/FileNotFoundException;
+    :goto_1
+    if-nez v14, :cond_2
 
     .line 213
     .line 214
-    invoke-direct {p0}, Ljava/io/FileNotFoundException;-><init>()V
+    move-object v14, v8
 
     .line 215
+    :cond_2
+    new-instance v1, Ljava/lang/StringBuilder;
+
     .line 216
     .line 217
-    throw p0
-    :try_end_2
-    .catch Ljava/lang/Exception; {:try_start_2 .. :try_end_2} :catch_1
+    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
 
     .line 218
-    :goto_5
-    invoke-virtual {p0}, Ljava/lang/Throwable;->printStackTrace()V
-
     .line 219
     .line 220
-    .line 221
-    :goto_6
-    invoke-static {}, Lʼˏ/ᵢ;->ʼˎ()V
+    invoke-virtual {v1, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    .line 221
     .line 222
     .line 223
+    invoke-virtual {v1, v14}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
     .line 224
-    return-void
-
     .line 225
-    :array_0
-    .array-data 1
-        0x70t
-        0x61t
-        0x74t
-        0x68t
-        0x5ft
-        0x68t
-        0x61t
-        0x73t
-        0x68t
-    .end array-data
-
     .line 226
+    invoke-virtual {v1, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
     .line 227
     .line 228
     .line 229
+    invoke-virtual {v1, v11}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
     .line 230
     .line 231
     .line 232
+    invoke-virtual {v1, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
     .line 233
     .line 234
-    nop
-
     .line 235
-    :array_1
-    .array-data 1
-        0x0t
-        0x0t
-        0x0t
-        0x0t
-        0x0t
-        0x0t
-        0x0t
-        0x0t
-        0x0t
-    .end array-data
+    move-object v10, v8
 
     .line 236
+    move-object v12, v9
+
     .line 237
+    invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
+
     .line 238
     .line 239
     .line 240
+    move-result-wide v8
+
     .line 241
+    invoke-virtual {v1, v8, v9}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
+
     .line 242
     .line 243
     .line 244
-    nop
+    invoke-virtual {v1, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     .line 245
-    :array_2
-    .array-data 1
-        0x0t
-        0x0t
-        0x1t
-        0x0t
-        0x0t
-        0x0t
-        0x0t
-        0x0t
-        0x0t
-    .end array-data
+    .line 246
+    .line 247
+    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    .line 248
+    .line 249
+    .line 250
+    move-result-object v1
+
+    .line 251
+    invoke-virtual {v13, v1}, Landroid/database/sqlite/SQLiteDatabase;->execSQL(Ljava/lang/String;)V
+
+    .line 252
+    .line 253
+    .line 254
+    sget-object v1, Ljava/lang/System;->out:Ljava/io/PrintStream;
+
+    .line 255
+    .line 256
+    invoke-virtual {v1, v3}, Ljava/io/PrintStream;->println(Ljava/lang/String;)V
+
+    .line 257
+    .line 258
+    .line 259
+    move-object v8, v10
+
+    .line 260
+    move-object v9, v12
+
+    .line 261
+    const/4 v1, 0x2
+
+    .line 262
+    const/4 v10, 0x0
+
+    .line 263
+    const/4 v12, 0x1
+
+    .line 264
+    goto/16 :goto_0
+
+    .line 265
+    .line 266
+    :catch_2
+    move-exception v0
+
+    .line 267
+    goto :goto_6
+
+    .line 268
+    :goto_2
+    invoke-interface {v2}, Landroid/database/Cursor;->close()V
+
+    .line 269
+    .line 270
+    .line 271
+    :goto_3
+    if-nez v14, :cond_3
+
+    .line 272
+    .line 273
+    move-object v8, v10
+
+    .line 274
+    goto :goto_4
+
+    .line 275
+    :cond_3
+    move-object v8, v14
+
+    .line 276
+    :goto_4
+    sget-object v1, Ljava/lang/System;->out:Ljava/io/PrintStream;
+
+    .line 277
+    .line 278
+    new-instance v2, Ljava/lang/StringBuilder;
+
+    .line 279
+    .line 280
+    invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
+
+    .line 281
+    .line 282
+    .line 283
+    const-string v9, "4 "
+
+    .line 284
+    .line 285
+    invoke-virtual {v2, v9}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 286
+    .line 287
+    .line 288
+    invoke-virtual {v2, v8}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 289
+    .line 290
+    .line 291
+    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    .line 292
+    .line 293
+    .line 294
+    move-result-object v2
+
+    .line 295
+    invoke-virtual {v1, v2}, Ljava/io/PrintStream;->println(Ljava/lang/String;)V
+
+    .line 296
+    .line 297
+    .line 298
+    new-instance v2, Ljava/lang/StringBuilder;
+
+    .line 299
+    .line 300
+    invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
+
+    .line 301
+    .line 302
+    .line 303
+    invoke-virtual {v2, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 304
+    .line 305
+    .line 306
+    invoke-virtual {v2, v8}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 307
+    .line 308
+    .line 309
+    invoke-virtual {v2, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 310
+    .line 311
+    .line 312
+    invoke-virtual {v2, v11}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 313
+    .line 314
+    .line 315
+    invoke-virtual {v2, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 316
+    .line 317
+    .line 318
+    invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
+
+    .line 319
+    .line 320
+    .line 321
+    move-result-wide v5
+
+    .line 322
+    invoke-virtual {v2, v5, v6}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
+
+    .line 323
+    .line 324
+    .line 325
+    invoke-virtual {v2, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 326
+    .line 327
+    .line 328
+    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    .line 329
+    .line 330
+    .line 331
+    move-result-object v2
+
+    .line 332
+    invoke-virtual {v13, v2}, Landroid/database/sqlite/SQLiteDatabase;->execSQL(Ljava/lang/String;)V
+
+    .line 333
+    .line 334
+    .line 335
+    invoke-virtual {v1, v3}, Ljava/io/PrintStream;->println(Ljava/lang/String;)V
+
+    .line 336
+    .line 337
+    .line 338
+    goto :goto_5
+
+    .line 339
+    :cond_4
+    sget-object v1, Ljava/lang/System;->out:Ljava/io/PrintStream;
+
+    .line 340
+    .line 341
+    const-string v2, "SU Java-Code Running!\nYou must run Poweramp before patch!\nRun Poweramp and apply custom patch again!\n\nGood Luck!\nSaNX@forpda.ru"
+
+    .line 342
+    .line 343
+    invoke-virtual {v1, v2}, Ljava/io/PrintStream;->println(Ljava/lang/String;)V
+
+    .line 344
+    .line 345
+    .line 346
+    :goto_5
+    invoke-virtual {v13}, Landroid/database/sqlite/SQLiteDatabase;->close()V
+
+    .line 347
+    .line 348
+    .line 349
+    const/4 v1, 0x3
+
+    .line 350
+    new-array v1, v1, [Ljava/lang/String;
+
+    .line 351
+    .line 352
+    const/4 v2, 0x0
+
+    .line 353
+    aput-object v15, v1, v2
+
+    .line 354
+    .line 355
+    const-string v2, "644"
+
+    .line 356
+    .line 357
+    const/4 v3, 0x1
+
+    .line 358
+    aput-object v2, v1, v3
+
+    .line 359
+    .line 360
+    const/4 v2, 0x2
+
+    .line 361
+    aput-object v0, v1, v2
+
+    .line 362
+    .line 363
+    invoke-static {v1}, Lʼˏ/ᵢ;->ˎˏ([Ljava/lang/String;)V
+    :try_end_4
+    .catch Ljava/lang/Exception; {:try_start_4 .. :try_end_4} :catch_2
+
+    .line 364
+    .line 365
+    .line 366
+    goto :goto_7
+
+    .line 367
+    :goto_6
+    invoke-virtual {v13}, Landroid/database/sqlite/SQLiteDatabase;->close()V
+
+    .line 368
+    .line 369
+    .line 370
+    invoke-virtual {v0}, Ljava/lang/Throwable;->printStackTrace()V
+
+    .line 371
+    .line 372
+    .line 373
+    :goto_7
+    invoke-static {}, Lʼˏ/ᵢ;->ʼˑ()V
+
+    .line 374
+    .line 375
+    .line 376
+    return-void
 .end method

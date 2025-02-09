@@ -52,12 +52,12 @@
     move-result-object v0
 
     .line 5
-    const v1, 0x7f110291
+    const v1, 0x7f110293
 
     .line 6
     .line 7
     .line 8
-    invoke-static {v1}, Lʼˏ/ᵢ;->ˈי(I)Ljava/lang/String;
+    invoke-static {v1}, Lʼˏ/ᵢ;->ˈᐧ(I)Ljava/lang/String;
 
     .line 9
     .line 10

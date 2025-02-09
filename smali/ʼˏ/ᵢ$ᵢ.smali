@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lʼˏ/ᵢ;->ʼﹳ(Ljava/io/File;Ljava/util/ArrayList;Ljava/lang/String;Ljava/lang/String;Z)V
+    value = Lʼˏ/ᵢ;->ʼﾞ(Ljava/io/File;Ljava/util/ArrayList;Ljava/lang/String;Ljava/lang/String;Z)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;

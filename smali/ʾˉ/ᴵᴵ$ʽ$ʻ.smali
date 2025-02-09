@@ -105,7 +105,7 @@
 
     .line 23
     .line 24
-    invoke-static {v5}, Lʼˏ/ᵢ;->ʾˊ(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v5}, Lʼˏ/ᵢ;->ʾˎ(Ljava/lang/String;)Ljava/lang/String;
 
     .line 25
     .line 26
@@ -167,7 +167,7 @@
     move-result-object v10
 
     .line 57
-    invoke-static {v10}, Lʼˏ/ᵢ;->ʼˋ(Ljava/lang/String;)Z
+    invoke-static {v10}, Lʼˏ/ᵢ;->ʼˏ(Ljava/lang/String;)Z
 
     .line 58
     .line 59
@@ -230,7 +230,7 @@
     .line 90
     .line 91
     .line 92
-    sput-object v0, Lʾˉ/ᴵᴵ;->ˈי:Ljava/io/File;
+    sput-object v0, Lʾˉ/ᴵᴵ;->ˈـ:Ljava/io/File;
 
     .line 93
     .line 94
@@ -304,7 +304,7 @@
     move-result-object v10
 
     .line 130
-    invoke-static {v10}, Lʼˏ/ᵢ;->ʼˋ(Ljava/lang/String;)Z
+    invoke-static {v10}, Lʼˏ/ᵢ;->ʼˏ(Ljava/lang/String;)Z
 
     .line 131
     .line 132
@@ -384,7 +384,7 @@
     .line 172
     .line 173
     .line 174
-    sput-object v3, Lʾˉ/ᴵᴵ;->ˈי:Ljava/io/File;
+    sput-object v3, Lʾˉ/ᴵᴵ;->ˈـ:Ljava/io/File;
 
     .line 175
     .line 176
@@ -406,7 +406,7 @@
     .line 183
     .line 184
     .line 185
-    const v4, 0x7f11038c
+    const v4, 0x7f11038e
 
     .line 186
     .line 187

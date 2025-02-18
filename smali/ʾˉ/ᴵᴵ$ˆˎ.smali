@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lʾˉ/ᴵᴵ;->ˉᐧ()V
+    value = Lʾˉ/ᴵᴵ;->ˉٴ()V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -44,7 +44,7 @@
     .locals 2
 
     .line 1
-    invoke-static {}, Lʼˏ/ᵢ;->ˊˉ()Z
+    invoke-static {}, Lʼˏ/ᵢ;->ˊˎ()Z
 
     .line 2
     .line 3
@@ -91,7 +91,7 @@
     move-result-object v0
 
     .line 26
-    invoke-static {v0}, Lʾˉ/ᴵᴵ;->ˉˎ(Ljava/lang/Object;)V
+    invoke-static {v0}, Lʾˉ/ᴵᴵ;->ˉˋ(Ljava/lang/Object;)V
 
     .line 27
     .line 28

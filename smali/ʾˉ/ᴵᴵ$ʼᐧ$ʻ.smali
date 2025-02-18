@@ -176,7 +176,7 @@
     move-result-object v2
 
     .line 69
-    invoke-static {v2}, Lʾˉ/ᴵᴵ;->ˉˎ(Ljava/lang/Object;)V
+    invoke-static {v2}, Lʾˉ/ᴵᴵ;->ˉˋ(Ljava/lang/Object;)V
 
     .line 70
     .line 71
@@ -191,7 +191,7 @@
     const/4 v2, 0x0
 
     .line 75
-    invoke-static {v0, v2, v2, v1}, Lʾˉ/ᴵᴵ;->ˉˈ(Ljava/util/ArrayList;ZZZ)V
+    invoke-static {v0, v2, v2, v1}, Lʾˉ/ᴵᴵ;->ˉˆ(Ljava/util/ArrayList;ZZZ)V
 
     .line 76
     .line 77

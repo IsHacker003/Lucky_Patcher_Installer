@@ -86,7 +86,7 @@
 
     .line 19
     .line 20
-    invoke-static {v0}, Lʾˉ/ᴵᴵ;->ˉˎ(Ljava/lang/Object;)V
+    invoke-static {v0}, Lʾˉ/ᴵᴵ;->ˉˋ(Ljava/lang/Object;)V
 
     .line 21
     .line 22
@@ -120,7 +120,7 @@
 
     .line 36
     .line 37
-    invoke-static {v1}, Lʾˉ/ᴵᴵ;->ˉˎ(Ljava/lang/Object;)V
+    invoke-static {v1}, Lʾˉ/ᴵᴵ;->ˉˋ(Ljava/lang/Object;)V
 
     .line 38
     .line 39
@@ -174,7 +174,7 @@
     move-result-object v3
 
     .line 63
-    invoke-static {v3}, Lʾˉ/ᴵᴵ;->ˊˏ(Ljava/lang/Integer;)V
+    invoke-static {v3}, Lʾˉ/ᴵᴵ;->ˊˎ(Ljava/lang/Integer;)V
 
     .line 64
     .line 65
@@ -199,7 +199,7 @@
     move-result-object v3
 
     .line 73
-    invoke-static {v3}, Lʾˉ/ᴵᴵ;->ˊˏ(Ljava/lang/Integer;)V
+    invoke-static {v3}, Lʾˉ/ᴵᴵ;->ˊˎ(Ljava/lang/Integer;)V
 
     .line 74
     .line 75
@@ -216,7 +216,7 @@
     move-result-object v3
 
     .line 82
-    invoke-static {v3}, Lʾˉ/ᴵᴵ;->ˊˏ(Ljava/lang/Integer;)V
+    invoke-static {v3}, Lʾˉ/ᴵᴵ;->ˊˎ(Ljava/lang/Integer;)V
     :try_end_1
     .catch Ljava/lang/Exception; {:try_start_1 .. :try_end_1} :catch_0
 
@@ -425,7 +425,7 @@
     move-result-object v4
 
     .line 181
-    invoke-static {v4}, Lʾˉ/ᴵᴵ;->ˉˎ(Ljava/lang/Object;)V
+    invoke-static {v4}, Lʾˉ/ᴵᴵ;->ˉˋ(Ljava/lang/Object;)V
     :try_end_5
     .catch Ljava/lang/Exception; {:try_start_5 .. :try_end_5} :catch_2
 
@@ -449,7 +449,7 @@
     .line 189
     .line 190
     :cond_3
-    invoke-static {}, Lʼˏ/ᵢ;->ʼי()V
+    invoke-static {}, Lʼˏ/ᵢ;->ʼٴ()V
 
     .line 191
     .line 192

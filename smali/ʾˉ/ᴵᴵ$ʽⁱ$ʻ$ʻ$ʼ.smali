@@ -60,7 +60,7 @@
 
     .line 8
     .line 9
-    invoke-virtual {v0}, Lʾˉ/ᴵᴵ;->ˈˑ()Landroidx/fragment/app/ʿ;
+    invoke-virtual {v0}, Lʾˉ/ᴵᴵ;->ˈˏ()Landroidx/fragment/app/ʿ;
 
     .line 10
     .line 11
@@ -73,7 +73,7 @@
     .line 14
     .line 15
     .line 16
-    invoke-static {v1}, Lʼˏ/ᵢ;->ˈᐧ(I)Ljava/lang/String;
+    invoke-static {v1}, Lʼˏ/ᵢ;->ˈᵎ(I)Ljava/lang/String;
 
     .line 17
     .line 18

@@ -104,7 +104,7 @@
     move-result-object v2
 
     .line 26
-    invoke-static {v2}, Lʾˉ/ᴵᴵ;->ˉˎ(Ljava/lang/Object;)V
+    invoke-static {v2}, Lʾˉ/ᴵᴵ;->ˉˋ(Ljava/lang/Object;)V
 
     .line 27
     .line 28
@@ -223,7 +223,7 @@
 
     .line 88
     .line 89
-    invoke-virtual {v3, v5}, Lʼˏ/ᵢ;->ˎˎ([Ljava/lang/String;)Ljava/lang/String;
+    invoke-virtual {v3, v5}, Lʼˏ/ᵢ;->ˑˑ([Ljava/lang/String;)Ljava/lang/String;
 
     .line 90
     .line 91

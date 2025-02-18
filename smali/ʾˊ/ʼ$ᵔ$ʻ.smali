@@ -83,7 +83,7 @@
 
     .line 14
     .line 15
-    invoke-virtual {v1, v2, v0}, Lʾˉ/ᴵᴵ;->ˆﹶ(Lʾˉ/ᵎ;Lʾˉ/ᴵ;)V
+    invoke-virtual {v1, v2, v0}, Lʾˉ/ᴵᴵ;->ˆﹳ(Lʾˉ/ᵎ;Lʾˉ/ᴵ;)V
 
     .line 16
     .line 17

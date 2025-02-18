@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lʾˉ/ᴵᴵ;->ˉˈ(Ljava/util/ArrayList;ZZZ)V
+    value = Lʾˉ/ᴵᴵ;->ˉˆ(Ljava/util/ArrayList;ZZZ)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;

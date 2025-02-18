@@ -55,7 +55,7 @@
     move-result-object p1
 
     .line 6
-    invoke-static {p1}, Lʾˉ/ᴵᴵ;->ˊˏ(Ljava/lang/Integer;)V
+    invoke-static {p1}, Lʾˉ/ᴵᴵ;->ˊˎ(Ljava/lang/Integer;)V
 
     .line 7
     .line 8
@@ -76,7 +76,7 @@
 
     .line 16
     .line 17
-    invoke-virtual {p2, p1}, Lʾˉ/ᴵᴵ;->ˈʻ(Ljava/util/ArrayList;)V
+    invoke-virtual {p2, p1}, Lʾˉ/ᴵᴵ;->ˆﾞ(Ljava/util/ArrayList;)V
 
     .line 18
     .line 19

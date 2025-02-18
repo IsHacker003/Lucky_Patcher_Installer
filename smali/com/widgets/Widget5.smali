@@ -84,7 +84,7 @@
 
     .line 19
     .line 20
-    invoke-static {p1}, Lʾˉ/ᴵᴵ;->ˉʼ(Landroid/content/Context;)V
+    invoke-static {p1}, Lʾˉ/ᴵᴵ;->ˉʻ(Landroid/content/Context;)V
 
     .line 21
     .line 22
@@ -185,7 +185,7 @@
 
     .line 74
     .line 75
-    invoke-static {}, Lʼˏ/ᵢ;->ⁱ()Z
+    invoke-static {}, Lʼˏ/ᵢ;->ﹳ()Z
 
     .line 76
     .line 77
@@ -264,7 +264,7 @@
 
     .line 110
     .line 111
-    invoke-static {v9}, Lʼˏ/ᵢ;->ʾᵔ(Ljava/lang/String;)Ljava/io/File;
+    invoke-static {v9}, Lʼˏ/ᵢ;->ʾⁱ(Ljava/lang/String;)Ljava/io/File;
 
     .line 112
     .line 113
@@ -281,7 +281,7 @@
 
     .line 119
     .line 120
-    invoke-static {v10, v3}, Lʼˏ/ᵢ;->ˆˊ(Ljava/lang/String;Z)Ljava/lang/String;
+    invoke-static {v10, v3}, Lʼˏ/ᵢ;->ˆˎ(Ljava/lang/String;Z)Ljava/lang/String;
 
     .line 121
     .line 122
@@ -316,7 +316,7 @@
     .line 137
     .line 138
     :try_start_1
-    invoke-static {}, Lʼˏ/ᵢ;->ˋˑ()Lorg/json/JSONObject;
+    invoke-static {}, Lʼˏ/ᵢ;->ˋـ()Lorg/json/JSONObject;
 
     .line 139
     .line 140
@@ -519,18 +519,18 @@
     .line 236
     .line 237
     :cond_3
-    invoke-static {}, Lʼˏ/ᵢ;->ˋˈ()V
+    invoke-static {}, Lʼˏ/ᵢ;->ˋˊ()V
 
     .line 238
     .line 239
     .line 240
     :cond_4
-    invoke-static {v8}, Lʼˏ/ᵢ;->ˋˉ(Landroid/content/pm/PackageInfo;)V
+    invoke-static {v8}, Lʼˏ/ᵢ;->ˋˎ(Landroid/content/pm/PackageInfo;)V
 
     .line 241
     .line 242
     .line 243
-    invoke-static {}, Lʼˏ/ᵢ;->ʼʼ()Z
+    invoke-static {}, Lʼˏ/ᵢ;->ʿʿ()Z
 
     .line 244
     .line 245
@@ -662,7 +662,7 @@
     .line 309
     .line 310
     .line 311
-    invoke-static {}, Lʾˉ/ᴵᴵ;->ˈי()Landroid/content/Context;
+    invoke-static {}, Lʾˉ/ᴵᴵ;->ˈˑ()Landroid/content/Context;
 
     .line 312
     .line 313
@@ -705,7 +705,7 @@
     .line 331
     .line 332
     .line 333
-    invoke-static {}, Lʾˉ/ᴵᴵ;->ˈי()Landroid/content/Context;
+    invoke-static {}, Lʾˉ/ᴵᴵ;->ˈˑ()Landroid/content/Context;
 
     .line 334
     .line 335
@@ -976,7 +976,7 @@
 
     .line 90
     .line 91
-    invoke-static {}, Lʼˏ/ᵢ;->ʼʼ()Z
+    invoke-static {}, Lʼˏ/ᵢ;->ʿʿ()Z
 
     .line 92
     .line 93

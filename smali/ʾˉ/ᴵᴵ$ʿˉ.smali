@@ -48,7 +48,7 @@
 
     .line 2
     .line 3
-    invoke-static {}, Lʾˉ/ᴵᴵ;->ˈי()Landroid/content/Context;
+    invoke-static {}, Lʾˉ/ᴵᴵ;->ˈˑ()Landroid/content/Context;
 
     .line 4
     .line 5
@@ -88,7 +88,7 @@
     move-result-object v1
 
     .line 23
-    invoke-static {v1}, Lʾˉ/ᴵᴵ;->ˊˏ(Ljava/lang/Integer;)V
+    invoke-static {v1}, Lʾˉ/ᴵᴵ;->ˊˎ(Ljava/lang/Integer;)V
 
     .line 24
     .line 25

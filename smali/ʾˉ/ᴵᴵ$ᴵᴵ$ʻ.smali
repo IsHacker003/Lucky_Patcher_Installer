@@ -1035,7 +1035,7 @@
     .line 480
     .line 481
     .line 482
-    const-class v8, Ljavaroot/utils/ʻⁱ;
+    const-class v8, Ljavaroot/utils/ʻﹳ;
 
     .line 483
     .line 484
@@ -1117,7 +1117,7 @@
 
     .line 525
     .line 526
-    invoke-virtual {v3, v7}, Lʼˏ/ᵢ;->ˎˎ([Ljava/lang/String;)Ljava/lang/String;
+    invoke-virtual {v3, v7}, Lʼˏ/ᵢ;->ˑˑ([Ljava/lang/String;)Ljava/lang/String;
     :try_end_6
     .catch Ljava/lang/Exception; {:try_start_6 .. :try_end_6} :catch_2
 

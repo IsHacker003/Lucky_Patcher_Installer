@@ -13,1884 +13,1573 @@
 .end method
 
 .method public static main([Ljava/lang/String;)V
-    .locals 19
+    .locals 24
 
     .line 1
-    const-string v0, "/files/dalvikvm"
+    const-string v1, "Error: core.odex not found!\n\nPlease Odex core.jar and try again!"
 
     .line 2
     .line 3
-    const-string v1, "/files/zipalign"
+    const-string v2, "Exception e"
 
     .line 4
     .line 5
-    const-string v2, "/files/reboot"
+    const-string v3, "/system/framework/patch3.done"
 
     .line 6
     .line 7
-    const-string v3, "/files/p.apk"
+    new-instance v0, Ljavaroot/utils/ʼʽ$ʻ;
 
     .line 8
     .line 9
-    const-string v4, "0.0"
+    invoke-direct {v0}, Ljavaroot/utils/ʼʽ$ʻ;-><init>()V
 
     .line 10
     .line 11
-    const-string v5, "0:0"
-
     .line 12
-    .line 13
-    const-string v6, "777"
+    invoke-static {v0}, Lʼˏ/ᵢ;->ˑי(Ljava/lang/Object;)V
 
+    .line 13
     .line 14
     .line 15
-    const-string v7, "chmod"
+    const/4 v0, 0x6
 
     .line 16
+    const/4 v4, 0x0
+
     .line 17
-    const-string v8, "/files/busybox"
+    const/4 v5, 0x4
 
     .line 18
+    const/16 v6, 0x10
+
     .line 19
-    const-string v9, "chown"
-
     .line 20
+    new-array v7, v6, [B
+
     .line 21
-    new-instance v10, Ljavaroot/utils/ʼʽ$ʻ;
-
     .line 22
-    .line 23
-    invoke-direct {v10}, Ljavaroot/utils/ʼʽ$ʻ;-><init>()V
+    fill-array-data v7, :array_0
 
+    .line 23
     .line 24
     .line 25
+    const/4 v8, 0x1
+
     .line 26
-    invoke-static {v10}, Lʼˏ/ᵢ;->ˑˎ(Ljava/lang/Object;)V
+    new-array v9, v6, [B
 
     .line 27
     .line 28
+    fill-array-data v9, :array_1
+
     .line 29
-    const/4 v10, 0x0
-
     .line 30
-    aget-object v11, p0, v10
-
     .line 31
-    .line 32
-    const/4 v12, 0x1
+    const/16 v10, 0x13
 
+    .line 32
     .line 33
-    aget-object v13, p0, v12
+    const/16 v11, 0x18
 
     .line 34
     .line 35
-    const/4 v14, 0x2
+    new-array v12, v11, [B
 
     .line 36
-    aget-object v15, p0, v14
-
     .line 37
+    fill-array-data v12, :array_2
+
     .line 38
-    const/4 v14, 0x3
-
     .line 39
-    aget-object v12, p0, v14
-
     .line 40
+    new-array v13, v11, [B
+
     .line 41
-    new-instance v14, Ljava/lang/StringBuilder;
-
     .line 42
-    .line 43
-    invoke-direct {v14}, Ljava/lang/StringBuilder;-><init>()V
+    fill-array-data v13, :array_3
 
+    .line 43
     .line 44
     .line 45
-    .line 46
-    invoke-virtual {v14, v13}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    new-array v14, v10, [B
 
+    .line 46
     .line 47
+    fill-array-data v14, :array_4
+
     .line 48
     .line 49
-    const-string v10, "/app_lptest"
-
     .line 50
-    .line 51
-    invoke-virtual {v14, v10}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    new-array v15, v10, [B
 
+    .line 51
     .line 52
+    fill-array-data v15, :array_5
+
     .line 53
     .line 54
-    invoke-virtual {v14}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
     .line 55
+    const/16 v16, 0x0
+
     .line 56
     .line 57
-    move-result-object v10
+    :try_start_0
+    new-instance v10, Ljava/io/File;
 
     .line 58
-    const-string v14, ""
-
     .line 59
-    .line 60
-    invoke-virtual {v12, v10, v14}, Ljava/lang/String;->replace(Ljava/lang/CharSequence;Ljava/lang/CharSequence;)Ljava/lang/String;
+    const-string v11, "/system/framework/core.odex"
 
+    .line 60
     .line 61
+    invoke-direct {v10, v11}, Ljava/io/File;-><init>(Ljava/lang/String;)V
+    :try_end_0
+    .catch Ljava/io/FileNotFoundException; {:try_start_0 .. :try_end_0} :catch_3
+    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
+
     .line 62
     .line 63
-    move-result-object v10
-
     .line 64
-    sget-object v12, Ljava/lang/System;->out:Ljava/io/PrintStream;
+    :try_start_1
+    invoke-virtual {v10}, Ljava/io/File;->exists()Z
 
     .line 65
     .line 66
-    move-object/from16 v16, v0
-
     .line 67
+    move-result v11
+
     .line 68
-    new-instance v0, Ljava/lang/StringBuilder;
+    if-nez v11, :cond_1
 
     .line 69
     .line 70
-    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
+    new-array v11, v0, [Ljava/lang/String;
 
     .line 71
     .line 72
+    const-string v16, "/data/dalvik-cache/"
+
     .line 73
-    move-object/from16 v17, v3
-
     .line 74
+    aput-object v16, v11, v4
+
     .line 75
-    const-string v3, "dt:"
-
     .line 76
-    .line 77
-    invoke-virtual {v0, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    const-string v16, "/data/dalvik-cache/arm/"
 
+    .line 77
     .line 78
+    aput-object v16, v11, v8
+
     .line 79
     .line 80
-    invoke-virtual {v0, v10}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    const-string v16, "/sd-ext/data/dalvik-cache/"
 
     .line 81
     .line 82
-    .line 83
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    const/16 v17, 0x2
 
+    .line 83
     .line 84
+    aput-object v16, v11, v17
+
     .line 85
     .line 86
-    move-result-object v0
+    const-string v16, "/cache/dalvik-cache/"
 
     .line 87
-    invoke-virtual {v12, v0}, Ljava/io/PrintStream;->println(Ljava/lang/String;)V
-
     .line 88
+    const/16 v17, 0x3
+
     .line 89
     .line 90
-    :try_start_0
-    invoke-static {v11}, Lʼˏ/ᵢ;->ˊᵔ(Ljava/lang/String;)Z
+    aput-object v16, v11, v17
 
     .line 91
     .line 92
+    const-string v16, "/sd-ext/data/cache/dalvik-cache/"
+
     .line 93
-    new-instance v0, Lʼˏ/ᵢ;
-
     .line 94
-    .line 95
-    invoke-direct {v0, v14}, Lʼˏ/ᵢ;-><init>(Ljava/lang/String;)V
+    aput-object v16, v11, v5
 
+    .line 95
     .line 96
+    const-string v5, "/data/cache/dalvik-cache/"
+
     .line 97
     .line 98
-    new-instance v3, Ljava/io/File;
+    const/16 v16, 0x5
 
     .line 99
     .line 100
-    move-object/from16 v18, v1
+    aput-object v5, v11, v16
+    :try_end_1
+    .catch Ljava/io/FileNotFoundException; {:try_start_1 .. :try_end_1} :catch_1
+    .catch Ljava/lang/Exception; {:try_start_1 .. :try_end_1} :catch_2
 
     .line 101
     .line 102
-    new-instance v1, Ljava/lang/StringBuilder;
+    move-object/from16 v16, v10
 
     .line 103
     .line 104
-    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
+    const/4 v5, 0x0
 
     .line 105
+    :goto_0
+    if-ge v5, v0, :cond_2
+
     .line 106
     .line 107
-    invoke-virtual {v1, v10}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    :try_start_2
+    aget-object v10, v11, v5
 
     .line 108
     .line 109
-    .line 110
-    invoke-virtual {v1, v11}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    new-instance v0, Ljava/io/File;
 
+    .line 110
     .line 111
+    new-instance v6, Ljava/lang/StringBuilder;
+
     .line 112
     .line 113
-    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-direct {v6}, Ljava/lang/StringBuilder;-><init>()V
 
     .line 114
     .line 115
     .line 116
-    move-result-object v1
+    invoke-virtual {v6, v10}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     .line 117
-    invoke-direct {v3, v1}, Ljava/io/File;-><init>(Ljava/lang/String;)V
-
     .line 118
     .line 119
-    .line 120
-    invoke-virtual {v0, v3}, Lʼˏ/ᵢ;->ˎﹶ(Ljava/io/File;)V
+    const-string v10, "system@framework@core.jar@classes.dex"
 
+    .line 120
     .line 121
+    invoke-virtual {v6, v10}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
     .line 122
     .line 123
-    new-instance v0, Lʼˏ/ᵢ;
-
     .line 124
-    .line 125
-    invoke-direct {v0, v14}, Lʼˏ/ᵢ;-><init>(Ljava/lang/String;)V
+    invoke-virtual {v6}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
+    .line 125
     .line 126
     .line 127
+    move-result-object v6
+
     .line 128
-    new-instance v1, Ljava/io/File;
+    invoke-direct {v0, v6}, Ljava/io/File;-><init>(Ljava/lang/String;)V
 
     .line 129
     .line 130
-    new-instance v3, Ljava/lang/StringBuilder;
-
     .line 131
-    .line 132
-    invoke-direct {v3}, Ljava/lang/StringBuilder;-><init>()V
+    invoke-virtual {v0}, Ljava/io/File;->exists()Z
 
+    .line 132
     .line 133
     .line 134
+    move-result v6
+
     .line 135
-    invoke-virtual {v3, v10}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    if-eqz v6, :cond_0
 
     .line 136
     .line 137
-    .line 138
-    invoke-virtual {v3, v13}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    sget-object v6, Ljava/lang/System;->out:Ljava/io/PrintStream;
 
+    .line 138
     .line 139
+    new-instance v10, Ljava/lang/StringBuilder;
+
     .line 140
     .line 141
-    invoke-virtual {v3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-direct {v10}, Ljava/lang/StringBuilder;-><init>()V
 
     .line 142
     .line 143
     .line 144
-    move-result-object v3
+    const-string v4, "Dalvik Cache ("
 
     .line 145
-    invoke-direct {v1, v3}, Ljava/io/File;-><init>(Ljava/lang/String;)V
-
     .line 146
+    invoke-virtual {v10, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
     .line 147
     .line 148
-    invoke-virtual {v0, v1}, Lʼˏ/ᵢ;->ˎﹶ(Ljava/io/File;)V
-
     .line 149
+    invoke-virtual {v0}, Ljava/io/File;->toString()Ljava/lang/String;
+
     .line 150
     .line 151
-    const/4 v0, 0x5
-
     .line 152
-    new-array v0, v0, [Ljava/lang/String;
+    move-result-object v4
 
     .line 153
-    .line 154
-    const-string v1, "app_sdcard"
+    invoke-virtual {v10, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    .line 154
     .line 155
     .line 156
-    const/4 v3, 0x0
+    const-string v4, ")!"
 
     .line 157
-    aput-object v1, v0, v3
-
     .line 158
-    .line 159
-    const-string v1, "dexopt-wrapper"
+    invoke-virtual {v10, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    .line 159
     .line 160
     .line 161
-    const/4 v3, 0x1
+    invoke-virtual {v10}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     .line 162
-    aput-object v1, v0, v3
-
     .line 163
     .line 164
-    const-string v1, "reboot"
+    move-result-object v4
 
     .line 165
+    invoke-virtual {v6, v4}, Ljava/io/PrintStream;->println(Ljava/lang/String;)V
+
     .line 166
-    const/4 v3, 0x2
-
     .line 167
-    aput-object v1, v0, v3
-
     .line 168
-    .line 169
-    const-string v1, "p.apk"
+    move-object/from16 v16, v0
 
+    .line 169
     .line 170
+    goto :goto_1
+
     .line 171
-    const/4 v3, 0x3
+    :catch_0
+    move-exception v0
 
     .line 172
-    aput-object v1, v0, v3
+    goto :goto_3
 
     .line 173
+    :cond_0
+    :goto_1
+    add-int/2addr v5, v8
+
     .line 174
-    const-string v1, "dalvikvm"
+    const/4 v0, 0x6
 
     .line 175
+    const/4 v4, 0x0
+
     .line 176
-    const/4 v3, 0x4
+    const/16 v6, 0x10
 
     .line 177
-    aput-object v1, v0, v3
-
     .line 178
+    goto :goto_0
+
     .line 179
-    new-instance v1, Ljava/io/File;
+    :goto_2
+    move-object/from16 v16, v10
 
     .line 180
     .line 181
-    new-instance v3, Ljava/lang/StringBuilder;
+    goto :goto_3
 
     .line 182
+    :catch_1
+    move-object/from16 v16, v10
+
     .line 183
-    invoke-direct {v3}, Ljava/lang/StringBuilder;-><init>()V
-
     .line 184
-    .line 185
-    .line 186
-    invoke-virtual {v3, v10}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    goto :goto_4
 
+    .line 185
+    :cond_1
+    move-object/from16 v16, v10
+
+    .line 186
     .line 187
+    :cond_2
+    invoke-virtual/range {v16 .. v16}, Ljava/io/File;->exists()Z
+
     .line 188
     .line 189
-    invoke-virtual {v3, v11}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
     .line 190
-    .line 191
-    .line 192
-    invoke-virtual {v3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    move-result v0
 
+    .line 191
+    if-eqz v0, :cond_3
+
+    .line 192
     .line 193
+    new-instance v0, Ljava/io/File;
+
     .line 194
     .line 195
-    move-result-object v3
+    const-string v4, "/system/framework/patch1.done"
 
     .line 196
-    invoke-direct {v1, v3}, Ljava/io/File;-><init>(Ljava/lang/String;)V
-
     .line 197
+    invoke-direct {v0, v4}, Ljava/io/File;-><init>(Ljava/lang/String;)V
+
     .line 198
     .line 199
-    new-instance v3, Ljava/io/File;
-
     .line 200
+    new-instance v4, Ljava/io/File;
+
     .line 201
-    new-instance v11, Ljava/lang/StringBuilder;
-
     .line 202
-    .line 203
-    invoke-direct {v11}, Ljava/lang/StringBuilder;-><init>()V
+    const-string v5, "/system/framework/patch2.done"
 
+    .line 203
     .line 204
+    invoke-direct {v4, v5}, Ljava/io/File;-><init>(Ljava/lang/String;)V
+
     .line 205
     .line 206
-    invoke-virtual {v11, v10}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
     .line 207
+    new-instance v5, Ljava/io/File;
+
     .line 208
     .line 209
-    invoke-virtual {v11, v13}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    const-string v6, "/system/framework/patch1.2.done"
 
     .line 210
     .line 211
-    .line 212
-    invoke-virtual {v11}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-direct {v5, v6}, Ljava/io/File;-><init>(Ljava/lang/String;)V
 
+    .line 212
     .line 213
     .line 214
-    .line 215
-    move-result-object v11
+    new-instance v6, Ljava/io/File;
 
+    .line 215
     .line 216
-    invoke-direct {v3, v11}, Ljava/io/File;-><init>(Ljava/lang/String;)V
+    invoke-direct {v6, v3}, Ljava/io/File;-><init>(Ljava/lang/String;)V
 
     .line 217
     .line 218
     .line 219
-    invoke-static {v1, v3, v0}, Lʼˏ/ᵢ;->ʻˏ(Ljava/io/File;Ljava/io/File;[Ljava/lang/String;)V
+    invoke-virtual {v0}, Ljava/io/File;->delete()Z
 
     .line 220
     .line 221
     .line 222
-    new-instance v0, Ljava/io/File;
+    invoke-virtual {v4}, Ljava/io/File;->delete()Z
 
     .line 223
     .line 224
-    new-instance v1, Ljava/lang/StringBuilder;
-
     .line 225
-    .line 226
-    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
+    invoke-virtual {v5}, Ljava/io/File;->delete()Z
 
+    .line 226
     .line 227
     .line 228
-    .line 229
-    invoke-virtual {v1, v10}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v6}, Ljava/io/File;->delete()Z
 
+    .line 229
     .line 230
     .line 231
+    goto :goto_5
+
     .line 232
-    invoke-virtual {v1, v13}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    :cond_3
+    new-instance v0, Ljava/io/FileNotFoundException;
 
     .line 233
     .line 234
-    .line 235
-    invoke-virtual {v1, v8}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-direct {v0}, Ljava/io/FileNotFoundException;-><init>()V
 
+    .line 235
     .line 236
     .line 237
+    throw v0
+    :try_end_2
+    .catch Ljava/io/FileNotFoundException; {:try_start_2 .. :try_end_2} :catch_3
+    .catch Ljava/lang/Exception; {:try_start_2 .. :try_end_2} :catch_0
+
     .line 238
-    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    :catch_2
+    move-exception v0
 
     .line 239
-    .line 240
-    .line 241
-    move-result-object v1
+    goto :goto_2
 
+    .line 240
+    :goto_3
+    sget-object v4, Ljava/lang/System;->out:Ljava/io/PrintStream;
+
+    .line 241
     .line 242
-    invoke-direct {v0, v1}, Ljava/io/File;-><init>(Ljava/lang/String;)V
+    new-instance v5, Ljava/lang/StringBuilder;
 
     .line 243
     .line 244
-    .line 245
-    invoke-virtual {v0}, Ljava/io/File;->exists()Z
+    invoke-direct {v5}, Ljava/lang/StringBuilder;-><init>()V
 
+    .line 245
     .line 246
     .line 247
+    invoke-virtual {v5, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
     .line 248
-    move-result v0
-
     .line 249
-    if-eqz v0, :cond_0
-
     .line 250
-    .line 251
-    const-string v0, "busybox found"
+    invoke-virtual {v0}, Ljava/lang/Object;->toString()Ljava/lang/String;
 
+    .line 251
     .line 252
     .line 253
-    invoke-virtual {v12, v0}, Ljava/io/PrintStream;->println(Ljava/lang/String;)V
+    move-result-object v0
 
     .line 254
+    invoke-virtual {v5, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
     .line 255
     .line 256
-    goto :goto_0
-
     .line 257
-    :catch_0
-    move-exception v0
+    invoke-virtual {v5}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     .line 258
-    goto/16 :goto_1
-
     .line 259
     .line 260
-    :cond_0
-    const-string v0, "busybox not found"
+    move-result-object v0
 
     .line 261
-    .line 262
-    invoke-virtual {v12, v0}, Ljava/io/PrintStream;->println(Ljava/lang/String;)V
+    invoke-virtual {v4, v0}, Ljava/io/PrintStream;->println(Ljava/lang/String;)V
 
+    .line 262
     .line 263
     .line 264
+    goto :goto_5
+
     .line 265
-    :goto_0
-    new-instance v0, Lʼˏ/ᵢ;
+    :catch_3
+    :goto_4
+    sget-object v0, Ljava/lang/System;->out:Ljava/io/PrintStream;
 
     .line 266
     .line 267
-    const-string v1, "tr"
+    invoke-virtual {v0, v1}, Ljava/io/PrintStream;->println(Ljava/lang/String;)V
 
     .line 268
     .line 269
-    invoke-direct {v0, v1}, Lʼˏ/ᵢ;-><init>(Ljava/lang/String;)V
-
     .line 270
+    :goto_5
+    :try_start_3
+    const-string v0, "/system/framework/services.jar"
+
     .line 271
     .line 272
-    new-instance v1, Ljava/io/File;
+    invoke-static {v0}, Lʼˏ/ᵢ;->ʾﹳ(Ljava/lang/String;)Ljava/io/File;
 
     .line 273
     .line 274
-    new-instance v3, Ljava/lang/StringBuilder;
-
     .line 275
+    move-result-object v0
+
     .line 276
-    invoke-direct {v3}, Ljava/lang/StringBuilder;-><init>()V
+    invoke-virtual {v0}, Ljava/io/File;->exists()Z
 
     .line 277
     .line 278
     .line 279
-    invoke-virtual {v3, v10}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    move-result v0
 
     .line 280
+    if-nez v0, :cond_5
+
     .line 281
     .line 282
-    invoke-virtual {v3, v13}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    new-instance v0, Ljava/io/File;
 
     .line 283
     .line 284
-    .line 285
-    invoke-virtual {v3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    const-string v4, "/system/framework/services.odex"
 
+    .line 285
     .line 286
+    invoke-direct {v0, v4}, Ljava/io/File;-><init>(Ljava/lang/String;)V
+
     .line 287
     .line 288
-    move-result-object v3
-
     .line 289
-    invoke-direct {v1, v3}, Ljava/io/File;-><init>(Ljava/lang/String;)V
+    invoke-virtual {v0}, Ljava/io/File;->exists()Z
 
     .line 290
     .line 291
     .line 292
-    const-string v3, "775"
+    move-result v4
 
     .line 293
+    if-eqz v4, :cond_4
+
     .line 294
-    invoke-virtual {v0, v1, v3}, Lʼˏ/ᵢ;->ʽʼ(Ljava/io/File;Ljava/lang/String;)V
-
     .line 295
+    goto :goto_6
+
     .line 296
+    :cond_4
+    new-instance v0, Ljava/io/FileNotFoundException;
+
     .line 297
-    new-instance v0, Lʼˏ/ᵢ;
-
     .line 298
-    .line 299
-    const-string v1, "r1"
+    invoke-direct {v0}, Ljava/io/FileNotFoundException;-><init>()V
 
+    .line 299
     .line 300
     .line 301
-    invoke-direct {v0, v1}, Lʼˏ/ᵢ;-><init>(Ljava/lang/String;)V
+    throw v0
 
     .line 302
+    :catch_4
+    move-exception v0
+
     .line 303
+    goto/16 :goto_19
+
     .line 304
-    new-instance v1, Ljava/io/File;
-
     .line 305
+    :catch_5
+    move-object/from16 v18, v1
+
     .line 306
-    new-instance v3, Ljava/lang/StringBuilder;
-
     .line 307
-    .line 308
-    invoke-direct {v3}, Ljava/lang/StringBuilder;-><init>()V
+    goto/16 :goto_1a
 
+    .line 308
     .line 309
+    :cond_5
+    move-object/from16 v0, v16
+
     .line 310
     .line 311
-    invoke-virtual {v3, v10}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    :goto_6
+    new-instance v4, Ljava/io/File;
 
     .line 312
     .line 313
-    .line 314
-    invoke-virtual {v3, v13}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-direct {v4, v3}, Ljava/io/File;-><init>(Ljava/lang/String;)V
 
+    .line 314
     .line 315
     .line 316
-    .line 317
-    invoke-virtual {v3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-virtual {v4}, Ljava/io/File;->delete()Z
 
+    .line 317
     .line 318
     .line 319
-    .line 320
-    move-result-object v3
+    new-instance v3, Ljava/io/RandomAccessFile;
 
+    .line 320
     .line 321
-    invoke-direct {v1, v3}, Ljava/io/File;-><init>(Ljava/lang/String;)V
+    const-string v5, "r"
 
     .line 322
     .line 323
-    .line 324
-    new-instance v3, Ljava/lang/StringBuilder;
+    invoke-direct {v3, v0, v5}, Ljava/io/RandomAccessFile;-><init>(Ljava/io/File;Ljava/lang/String;)V
 
+    .line 324
     .line 325
     .line 326
-    invoke-direct {v3}, Ljava/lang/StringBuilder;-><init>()V
+    invoke-virtual {v3}, Ljava/io/RandomAccessFile;->getChannel()Ljava/nio/channels/FileChannel;
 
     .line 327
     .line 328
     .line 329
-    invoke-virtual {v3, v15}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    move-result-object v3
 
     .line 330
+    sget-object v19, Ljava/nio/channels/FileChannel$MapMode;->READ_ONLY:Ljava/nio/channels/FileChannel$MapMode;
+
     .line 331
     .line 332
-    const-string v11, ":"
+    invoke-virtual {v3}, Ljava/nio/channels/FileChannel;->size()J
 
     .line 333
     .line 334
-    invoke-virtual {v3, v11}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
     .line 335
+    move-result-wide v5
+
     .line 336
+    long-to-int v0, v5
+
     .line 337
-    invoke-virtual {v3, v15}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    int-to-long v5, v0
 
     .line 338
+    const-wide/16 v20, 0x0
+
     .line 339
     .line 340
-    invoke-virtual {v3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    move-object/from16 v18, v3
 
     .line 341
     .line 342
-    .line 343
-    move-result-object v3
+    move-wide/from16 v22, v5
 
+    .line 343
     .line 344
-    invoke-virtual {v0, v1, v3}, Lʼˏ/ᵢ;->ʽʻ(Ljava/io/File;Ljava/lang/String;)V
+    invoke-virtual/range {v18 .. v23}, Ljava/nio/channels/FileChannel;->map(Ljava/nio/channels/FileChannel$MapMode;JJ)Ljava/nio/MappedByteBuffer;
 
     .line 345
     .line 346
     .line 347
-    new-instance v0, Lʼˏ/ᵢ;
+    move-result-object v0
+    :try_end_3
+    .catch Ljava/io/FileNotFoundException; {:try_start_3 .. :try_end_3} :catch_5
+    .catch Ljava/lang/Exception; {:try_start_3 .. :try_end_3} :catch_4
 
     .line 348
-    .line 349
-    const-string v1, "r2"
+    :goto_7
+    :try_start_4
+    invoke-virtual {v0}, Ljava/nio/Buffer;->hasRemaining()Z
 
+    .line 349
     .line 350
     .line 351
-    invoke-direct {v0, v1}, Lʼˏ/ᵢ;-><init>(Ljava/lang/String;)V
+    move-result v5
 
     .line 352
+    if-eqz v5, :cond_12
+
     .line 353
     .line 354
-    new-instance v1, Ljava/io/File;
+    invoke-virtual {v0}, Ljava/nio/Buffer;->position()I
 
     .line 355
     .line 356
-    new-instance v3, Ljava/lang/StringBuilder;
-
     .line 357
+    move-result v5
+
     .line 358
-    invoke-direct {v3}, Ljava/lang/StringBuilder;-><init>()V
+    invoke-virtual {v0}, Ljava/nio/ByteBuffer;->get()B
 
     .line 359
     .line 360
     .line 361
-    invoke-virtual {v3, v10}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    move-result v6
 
     .line 362
-    .line 363
-    .line 364
-    invoke-virtual {v3, v13}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    const/4 v10, 0x0
 
+    .line 363
+    aget-byte v11, v7, v10
+    :try_end_4
+    .catch Ljava/lang/Exception; {:try_start_4 .. :try_end_4} :catch_7
+
+    .line 364
     .line 365
+    const-string v10, "Core patch3 found!\n"
+
     .line 366
     .line 367
-    invoke-virtual {v3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    if-ne v6, v11, :cond_9
 
     .line 368
     .line 369
-    .line 370
-    move-result-object v3
+    add-int/lit8 v11, v5, 0x1
 
+    .line 370
     .line 371
-    invoke-direct {v1, v3}, Ljava/io/File;-><init>(Ljava/lang/String;)V
+    :try_start_5
+    invoke-virtual {v0, v11}, Ljava/nio/Buffer;->position(I)Ljava/nio/Buffer;
 
     .line 372
     .line 373
     .line 374
-    new-instance v3, Ljava/lang/StringBuilder;
+    invoke-virtual {v0}, Ljava/nio/ByteBuffer;->get()B
 
     .line 375
     .line 376
-    invoke-direct {v3}, Ljava/lang/StringBuilder;-><init>()V
-
     .line 377
-    .line 378
-    .line 379
-    invoke-virtual {v3, v15}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    move-result v16
+    :try_end_5
+    .catch Ljava/lang/Exception; {:try_start_5 .. :try_end_5} :catch_7
 
+    .line 378
+    move-object/from16 v18, v1
+
+    .line 379
     .line 380
+    move/from16 v8, v16
+
     .line 381
     .line 382
-    const-string v11, "."
+    const/16 v16, 0x1
 
     .line 383
     .line 384
-    invoke-virtual {v3, v11}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    :goto_8
+    :try_start_6
+    aget-byte v1, v7, v16
 
     .line 385
     .line 386
-    .line 387
-    invoke-virtual {v3, v15}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    if-eq v8, v1, :cond_7
 
+    .line 387
     .line 388
+    aget-byte v1, v9, v16
+
     .line 389
     .line 390
-    invoke-virtual {v3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    const/4 v8, 0x1
 
     .line 391
+    if-ne v1, v8, :cond_6
+
     .line 392
     .line 393
-    move-result-object v3
+    goto :goto_9
 
     .line 394
-    invoke-virtual {v0, v1, v3}, Lʼˏ/ᵢ;->ʽʻ(Ljava/io/File;Ljava/lang/String;)V
+    :cond_6
+    const/16 v8, 0x10
 
     .line 395
     .line 396
+    goto :goto_a
+
     .line 397
-    new-instance v0, Ljava/lang/StringBuilder;
+    :catch_6
+    move-exception v0
 
     .line 398
+    goto/16 :goto_17
+
     .line 399
-    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
-
     .line 400
-    .line 401
-    .line 402
-    invoke-virtual {v0, v10}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    :cond_7
+    const/4 v8, 0x1
 
+    .line 401
+    :goto_9
+    add-int/lit8 v1, v16, 0x1
+
+    .line 402
     .line 403
+    const/16 v8, 0x10
+
     .line 404
     .line 405
-    invoke-virtual {v0, v13}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    if-ne v1, v8, :cond_8
 
     .line 406
     .line 407
-    .line 408
-    invoke-virtual {v0, v8}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    sget-object v1, Ljava/lang/System;->out:Ljava/io/PrintStream;
 
+    .line 408
     .line 409
+    invoke-virtual {v1, v10}, Ljava/io/PrintStream;->println(Ljava/lang/String;)V
+
     .line 410
     .line 411
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
     .line 412
+    invoke-virtual {v4}, Ljava/io/File;->createNewFile()Z
+
     .line 413
     .line 414
-    move-result-object v0
-
     .line 415
-    const/4 v1, 0x3
+    :goto_a
+    invoke-virtual {v0, v11}, Ljava/nio/Buffer;->position(I)Ljava/nio/Buffer;
 
     .line 416
-    new-array v3, v1, [Ljava/lang/String;
-
     .line 417
     .line 418
+    :goto_b
     const/4 v1, 0x0
 
     .line 419
-    aput-object v7, v3, v1
+    goto :goto_c
 
     .line 420
+    :cond_8
+    invoke-virtual {v0}, Ljava/nio/ByteBuffer;->get()B
+
     .line 421
-    const/4 v1, 0x1
-
     .line 422
-    aput-object v6, v3, v1
-
     .line 423
+    move-result v16
+
     .line 424
-    const/4 v1, 0x2
+    move/from16 v8, v16
 
     .line 425
-    aput-object v0, v3, v1
-
     .line 426
-    .line 427
-    invoke-static {v3}, Lʼˏ/ᵢ;->ˎˏ([Ljava/lang/String;)V
+    move/from16 v16, v1
 
+    .line 427
     .line 428
+    goto :goto_8
+
     .line 429
+    :catch_7
+    move-exception v0
+
     .line 430
-    new-instance v0, Ljava/lang/StringBuilder;
+    move-object/from16 v18, v1
 
     .line 431
     .line 432
-    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
+    goto/16 :goto_17
 
     .line 433
     .line 434
-    .line 435
-    invoke-virtual {v0, v10}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    :cond_9
+    move-object/from16 v18, v1
 
+    .line 435
     .line 436
+    const/16 v8, 0x10
+
     .line 437
     .line 438
-    invoke-virtual {v0, v13}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    goto :goto_b
 
     .line 439
+    :goto_c
+    aget-byte v11, v12, v1
+
     .line 440
     .line 441
-    invoke-virtual {v0, v8}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    if-ne v6, v11, :cond_d
 
     .line 442
     .line 443
+    const/4 v1, 0x1
+
     .line 444
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    add-int/lit8 v11, v5, 0x1
 
     .line 445
     .line 446
+    invoke-virtual {v0, v11}, Ljava/nio/Buffer;->position(I)Ljava/nio/Buffer;
+
     .line 447
-    move-result-object v0
-
     .line 448
-    const/4 v1, 0x3
-
     .line 449
-    new-array v3, v1, [Ljava/lang/String;
+    invoke-virtual {v0}, Ljava/nio/ByteBuffer;->get()B
 
     .line 450
     .line 451
-    const/4 v1, 0x0
-
     .line 452
-    aput-object v9, v3, v1
+    move-result v16
 
     .line 453
-    .line 454
-    const/4 v1, 0x1
+    move/from16 v8, v16
 
+    .line 454
     .line 455
-    aput-object v5, v3, v1
+    const/16 v17, 0x1
 
     .line 456
     .line 457
-    const/4 v1, 0x2
+    :goto_d
+    aget-byte v1, v12, v17
 
     .line 458
-    aput-object v0, v3, v1
-
     .line 459
-    .line 460
-    invoke-static {v3}, Lʼˏ/ᵢ;->ˎˏ([Ljava/lang/String;)V
+    if-eq v8, v1, :cond_b
 
+    .line 460
     .line 461
+    aget-byte v1, v13, v17
+
     .line 462
     .line 463
-    new-instance v0, Ljava/lang/StringBuilder;
+    const/4 v8, 0x1
 
     .line 464
+    if-ne v1, v8, :cond_a
+
     .line 465
-    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
-
     .line 466
-    .line 467
-    .line 468
-    invoke-virtual {v0, v10}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    goto :goto_e
 
+    .line 467
+    :cond_a
+    const/16 v8, 0x18
+
+    .line 468
     .line 469
+    goto :goto_f
+
     .line 470
+    :cond_b
+    const/4 v8, 0x1
+
     .line 471
-    invoke-virtual {v0, v13}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    :goto_e
+    add-int/lit8 v1, v17, 0x1
 
     .line 472
     .line 473
-    .line 474
-    invoke-virtual {v0, v8}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    const/16 v8, 0x18
 
+    .line 474
     .line 475
+    if-ne v1, v8, :cond_c
+
     .line 476
     .line 477
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    sget-object v1, Ljava/lang/System;->out:Ljava/io/PrintStream;
 
     .line 478
     .line 479
+    invoke-virtual {v1, v10}, Ljava/io/PrintStream;->println(Ljava/lang/String;)V
+
     .line 480
-    move-result-object v0
-
     .line 481
-    const/4 v1, 0x3
-
     .line 482
-    new-array v3, v1, [Ljava/lang/String;
+    invoke-virtual {v4}, Ljava/io/File;->createNewFile()Z
 
     .line 483
     .line 484
-    const/4 v1, 0x0
-
     .line 485
-    aput-object v9, v3, v1
+    :goto_f
+    invoke-virtual {v0, v11}, Ljava/nio/Buffer;->position(I)Ljava/nio/Buffer;
 
     .line 486
     .line 487
-    const/4 v1, 0x1
-
     .line 488
-    aput-object v4, v3, v1
+    :goto_10
+    const/4 v1, 0x0
 
     .line 489
+    goto :goto_11
+
     .line 490
-    const/4 v1, 0x2
+    :cond_c
+    invoke-virtual {v0}, Ljava/nio/ByteBuffer;->get()B
 
     .line 491
-    aput-object v0, v3, v1
-
     .line 492
     .line 493
-    invoke-static {v3}, Lʼˏ/ᵢ;->ˎˏ([Ljava/lang/String;)V
+    move-result v16
 
     .line 494
+    move/from16 v17, v1
+
     .line 495
     .line 496
-    new-instance v0, Ljava/lang/StringBuilder;
+    move/from16 v8, v16
 
     .line 497
     .line 498
-    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
+    goto :goto_d
 
     .line 499
+    :cond_d
+    const/16 v8, 0x18
+
     .line 500
     .line 501
-    invoke-virtual {v0, v10}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    goto :goto_10
 
     .line 502
+    :goto_11
+    aget-byte v11, v14, v1
+
     .line 503
     .line 504
-    invoke-virtual {v0, v13}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    if-ne v6, v11, :cond_11
 
     .line 505
     .line 506
+    const/4 v6, 0x1
+
     .line 507
-    invoke-virtual {v0, v8}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    add-int/lit8 v11, v5, 0x1
 
     .line 508
     .line 509
-    .line 510
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-virtual {v0, v11}, Ljava/nio/Buffer;->position(I)Ljava/nio/Buffer;
 
+    .line 510
     .line 511
     .line 512
+    invoke-virtual {v0}, Ljava/nio/ByteBuffer;->get()B
+
     .line 513
-    move-result-object v0
-
     .line 514
-    const/4 v1, 0x3
-
     .line 515
-    new-array v3, v1, [Ljava/lang/String;
+    move-result v16
 
     .line 516
+    move/from16 v1, v16
+
     .line 517
-    const-string v1, "chcon"
-
     .line 518
-    .line 519
-    const/4 v8, 0x0
+    const/16 v17, 0x1
 
+    .line 519
     .line 520
-    aput-object v1, v3, v8
+    :goto_12
+    aget-byte v8, v14, v17
 
     .line 521
     .line 522
-    const-string v1, "u:object_r:magisk_file:s0"
+    if-eq v1, v8, :cond_f
 
     .line 523
     .line 524
-    const/4 v8, 0x1
+    aget-byte v1, v15, v17
 
     .line 525
-    aput-object v1, v3, v8
-
     .line 526
-    .line 527
-    const/4 v1, 0x2
+    if-ne v1, v6, :cond_e
 
+    .line 527
     .line 528
-    aput-object v0, v3, v1
+    goto :goto_13
 
     .line 529
+    :cond_e
+    const/16 v6, 0x13
+
     .line 530
-    invoke-static {v3}, Lʼˏ/ᵢ;->ˎˏ([Ljava/lang/String;)V
-
     .line 531
+    goto :goto_14
+
     .line 532
+    :cond_f
+    :goto_13
+    add-int/lit8 v1, v17, 0x1
+
     .line 533
-    new-instance v0, Ljava/lang/StringBuilder;
-
     .line 534
-    .line 535
-    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
+    const/16 v6, 0x13
 
+    .line 535
     .line 536
+    if-ne v1, v6, :cond_10
+
     .line 537
     .line 538
-    invoke-virtual {v0, v10}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    sget-object v1, Ljava/lang/System;->out:Ljava/io/PrintStream;
 
     .line 539
     .line 540
-    .line 541
-    invoke-virtual {v0, v13}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v1, v10}, Ljava/io/PrintStream;->println(Ljava/lang/String;)V
 
+    .line 541
     .line 542
     .line 543
-    .line 544
-    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v4}, Ljava/io/File;->createNewFile()Z
 
+    .line 544
     .line 545
     .line 546
-    .line 547
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    :goto_14
+    invoke-virtual {v0, v11}, Ljava/nio/Buffer;->position(I)Ljava/nio/Buffer;
 
+    .line 547
     .line 548
     .line 549
+    :goto_15
+    const/4 v1, 0x1
+
     .line 550
-    move-result-object v0
+    goto :goto_16
 
     .line 551
-    const/4 v1, 0x3
+    :cond_10
+    invoke-virtual {v0}, Ljava/nio/ByteBuffer;->get()B
 
     .line 552
-    new-array v3, v1, [Ljava/lang/String;
-
     .line 553
     .line 554
-    const/4 v1, 0x0
+    move-result v8
 
     .line 555
-    aput-object v7, v3, v1
+    move/from16 v17, v1
 
     .line 556
     .line 557
-    const/4 v1, 0x1
+    move v1, v8
 
     .line 558
-    aput-object v6, v3, v1
+    const/4 v6, 0x1
 
     .line 559
+    goto :goto_12
+
     .line 560
-    const/4 v1, 0x2
+    :cond_11
+    const/16 v6, 0x13
 
     .line 561
-    aput-object v0, v3, v1
-
     .line 562
+    goto :goto_15
+
     .line 563
-    invoke-static {v3}, Lʼˏ/ᵢ;->ˎˏ([Ljava/lang/String;)V
+    :goto_16
+    add-int/2addr v5, v1
 
     .line 564
+    invoke-virtual {v0, v5}, Ljava/nio/Buffer;->position(I)Ljava/nio/Buffer;
+    :try_end_6
+    .catch Ljava/lang/Exception; {:try_start_6 .. :try_end_6} :catch_6
+
     .line 565
     .line 566
-    new-instance v0, Ljava/lang/StringBuilder;
-
     .line 567
+    move-object/from16 v1, v18
+
     .line 568
-    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
-
     .line 569
-    .line 570
-    .line 571
-    invoke-virtual {v0, v10}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    const/4 v8, 0x1
 
+    .line 570
+    goto/16 :goto_7
+
+    .line 571
     .line 572
+    :cond_12
+    move-object/from16 v18, v1
+
     .line 573
     .line 574
-    invoke-virtual {v0, v13}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    goto :goto_18
 
     .line 575
+    :goto_17
+    :try_start_7
+    sget-object v1, Ljava/lang/System;->out:Ljava/io/PrintStream;
+
     .line 576
     .line 577
-    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    new-instance v4, Ljava/lang/StringBuilder;
 
     .line 578
     .line 579
-    .line 580
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-direct {v4}, Ljava/lang/StringBuilder;-><init>()V
 
+    .line 580
     .line 581
     .line 582
-    .line 583
-    move-result-object v0
+    const-string v5, ""
 
+    .line 583
     .line 584
-    const/4 v1, 0x3
+    invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     .line 585
-    new-array v3, v1, [Ljava/lang/String;
-
     .line 586
     .line 587
-    const/4 v1, 0x0
+    invoke-virtual {v4, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
     .line 588
-    aput-object v9, v3, v1
-
     .line 589
     .line 590
-    const/4 v1, 0x1
+    invoke-virtual {v4}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     .line 591
-    aput-object v5, v3, v1
-
     .line 592
     .line 593
-    const/4 v1, 0x2
+    move-result-object v0
 
     .line 594
-    aput-object v0, v3, v1
+    invoke-virtual {v1, v0}, Ljava/io/PrintStream;->println(Ljava/lang/String;)V
 
     .line 595
     .line 596
-    invoke-static {v3}, Lʼˏ/ᵢ;->ˎˏ([Ljava/lang/String;)V
-
     .line 597
+    :goto_18
+    invoke-virtual {v3}, Ljava/nio/channels/spi/AbstractInterruptibleChannel;->close()V
+    :try_end_7
+    .catch Ljava/io/FileNotFoundException; {:try_start_7 .. :try_end_7} :catch_8
+    .catch Ljava/lang/Exception; {:try_start_7 .. :try_end_7} :catch_4
+
     .line 598
     .line 599
-    new-instance v0, Ljava/lang/StringBuilder;
-
     .line 600
+    goto :goto_1b
+
     .line 601
-    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
+    :goto_19
+    sget-object v1, Ljava/lang/System;->out:Ljava/io/PrintStream;
 
     .line 602
     .line 603
-    .line 604
-    invoke-virtual {v0, v10}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    new-instance v3, Ljava/lang/StringBuilder;
 
+    .line 604
     .line 605
+    invoke-direct {v3}, Ljava/lang/StringBuilder;-><init>()V
+
     .line 606
     .line 607
-    invoke-virtual {v0, v13}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
     .line 608
+    invoke-virtual {v3, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
     .line 609
     .line 610
-    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
     .line 611
+    invoke-virtual {v0}, Ljava/lang/Object;->toString()Ljava/lang/String;
+
     .line 612
     .line 613
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
     .line 614
-    .line 615
-    .line 616
     move-result-object v0
 
-    .line 617
-    const/4 v1, 0x3
+    .line 615
+    invoke-virtual {v3, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
+    .line 616
+    .line 617
     .line 618
-    new-array v2, v1, [Ljava/lang/String;
+    invoke-virtual {v3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     .line 619
     .line 620
-    const/4 v1, 0x0
-
     .line 621
-    aput-object v9, v2, v1
+    move-result-object v0
 
     .line 622
+    invoke-virtual {v1, v0}, Ljava/io/PrintStream;->println(Ljava/lang/String;)V
+
     .line 623
-    const/4 v1, 0x1
-
     .line 624
-    aput-object v4, v2, v1
-
     .line 625
+    goto :goto_1b
+
     .line 626
-    const/4 v1, 0x2
+    :catch_8
+    :goto_1a
+    sget-object v0, Ljava/lang/System;->out:Ljava/io/PrintStream;
 
     .line 627
-    aput-object v0, v2, v1
-
     .line 628
-    .line 629
-    invoke-static {v2}, Lʼˏ/ᵢ;->ˎˏ([Ljava/lang/String;)V
+    move-object/from16 v1, v18
 
+    .line 629
     .line 630
+    invoke-virtual {v0, v1}, Ljava/io/PrintStream;->println(Ljava/lang/String;)V
+
     .line 631
     .line 632
-    new-instance v0, Ljava/lang/StringBuilder;
-
     .line 633
-    .line 634
-    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
+    :goto_1b
+    invoke-static {}, Lʼˏ/ᵢ;->ʼـ()V
 
+    .line 634
     .line 635
     .line 636
+    return-void
+
     .line 637
-    invoke-virtual {v0, v10}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    :array_0
+    .array-data 1
+        0x39t
+        0x66t
+        0x8t
+        0x0t
+        0x39t
+        0x66t
+        0x4t
+        0x0t
+        0x12t
+        0x16t
+        0x12t
+        0x6t
+        0x12t
+        0x6t
+        0xft
+        0x6t
+    .end array-data
 
     .line 638
     .line 639
     .line 640
-    invoke-virtual {v0, v13}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
     .line 641
     .line 642
     .line 643
-    move-object/from16 v1, v18
-
     .line 644
     .line 645
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
     .line 646
     .line 647
     .line 648
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
     .line 649
+    :array_1
+    .array-data 1
+        0x0t
+        0x1t
+        0x0t
+        0x0t
+        0x0t
+        0x1t
+        0x0t
+        0x0t
+        0x0t
+        0x0t
+        0x0t
+        0x0t
+        0x0t
+        0x0t
+        0x0t
+        0x0t
+    .end array-data
+
     .line 650
     .line 651
-    move-result-object v0
-
     .line 652
-    const/4 v2, 0x3
-
     .line 653
-    new-array v3, v2, [Ljava/lang/String;
-
     .line 654
     .line 655
-    const/4 v2, 0x0
-
     .line 656
-    aput-object v7, v3, v2
-
     .line 657
     .line 658
-    const/4 v2, 0x1
-
     .line 659
-    aput-object v6, v3, v2
-
     .line 660
     .line 661
-    const/4 v2, 0x2
+    :array_2
+    .array-data 1
+        0x12t
+        0x66t
+        0x38t
+        0x66t
+        0x66t
+        0x66t
+        0x1at
+        0x66t
+        0x66t
+        0x66t
+        0x1at
+        0x66t
+        0x66t
+        0x66t
+        0x71t
+        0x66t
+        0x66t
+        0x66t
+        0x66t
+        0x66t
+        0x13t
+        0x66t
+        -0x13t
+        -0x1t
+    .end array-data
 
     .line 662
-    aput-object v0, v3, v2
-
     .line 663
     .line 664
-    invoke-static {v3}, Lʼˏ/ᵢ;->ˎˏ([Ljava/lang/String;)V
-
     .line 665
     .line 666
     .line 667
-    new-instance v0, Ljava/lang/StringBuilder;
-
     .line 668
     .line 669
-    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
-
     .line 670
     .line 671
     .line 672
-    invoke-virtual {v0, v10}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
     .line 673
     .line 674
     .line 675
-    invoke-virtual {v0, v13}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
     .line 676
     .line 677
-    .line 678
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    :array_3
+    .array-data 1
+        0x0t
+        0x1t
+        0x0t
+        0x1t
+        0x1t
+        0x1t
+        0x0t
+        0x1t
+        0x1t
+        0x1t
+        0x0t
+        0x1t
+        0x1t
+        0x1t
+        0x0t
+        0x1t
+        0x1t
+        0x1t
+        0x1t
+        0x1t
+        0x0t
+        0x1t
+        0x0t
+        0x0t
+    .end array-data
 
+    .line 678
     .line 679
     .line 680
     .line 681
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
     .line 682
     .line 683
     .line 684
-    move-result-object v0
-
     .line 685
-    const/4 v2, 0x3
-
     .line 686
-    new-array v3, v2, [Ljava/lang/String;
-
     .line 687
     .line 688
-    const/4 v2, 0x0
-
     .line 689
-    aput-object v9, v3, v2
-
     .line 690
     .line 691
-    const/4 v2, 0x1
-
     .line 692
-    aput-object v5, v3, v2
-
     .line 693
+    :array_4
+    .array-data 1
+        -0x80t
+        0x0t
+        0x39t
+        0x66t
+        0x66t
+        0x66t
+        0x66t
+        0x66t
+        0x66t
+        0x66t
+        0x66t
+        0x66t
+        0x66t
+        0x66t
+        0x35t
+        -0x78t
+        0x66t
+        0x66t
+        0x1at
+    .end array-data
+
     .line 694
-    const/4 v2, 0x2
-
     .line 695
-    aput-object v0, v3, v2
-
     .line 696
     .line 697
-    invoke-static {v3}, Lʼˏ/ᵢ;->ˎˏ([Ljava/lang/String;)V
-
     .line 698
     .line 699
     .line 700
-    new-instance v0, Ljava/lang/StringBuilder;
-
     .line 701
     .line 702
-    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
-
     .line 703
     .line 704
     .line 705
-    invoke-virtual {v0, v10}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
     .line 706
     .line 707
-    .line 708
-    invoke-virtual {v0, v13}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 709
-    .line 710
-    .line 711
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 712
-    .line 713
-    .line 714
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    .line 715
-    .line 716
-    .line 717
-    move-result-object v0
-
-    .line 718
-    const/4 v1, 0x3
-
-    .line 719
-    new-array v2, v1, [Ljava/lang/String;
-
-    .line 720
-    .line 721
-    const/4 v1, 0x0
-
-    .line 722
-    aput-object v9, v2, v1
-
-    .line 723
-    .line 724
-    const/4 v1, 0x1
-
-    .line 725
-    aput-object v4, v2, v1
-
-    .line 726
-    .line 727
-    const/4 v1, 0x2
-
-    .line 728
-    aput-object v0, v2, v1
-
-    .line 729
-    .line 730
-    invoke-static {v2}, Lʼˏ/ᵢ;->ˎˏ([Ljava/lang/String;)V
-
-    .line 731
-    .line 732
-    .line 733
-    new-instance v0, Ljava/lang/StringBuilder;
-
-    .line 734
-    .line 735
-    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
-
-    .line 736
-    .line 737
-    .line 738
-    invoke-virtual {v0, v10}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 739
-    .line 740
-    .line 741
-    invoke-virtual {v0, v13}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 742
-    .line 743
-    .line 744
-    move-object/from16 v1, v17
-
-    .line 745
-    .line 746
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 747
-    .line 748
-    .line 749
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    .line 750
-    .line 751
-    .line 752
-    move-result-object v0
-
-    .line 753
-    const/4 v2, 0x3
-
-    .line 754
-    new-array v3, v2, [Ljava/lang/String;
-
-    .line 755
-    .line 756
-    const/4 v2, 0x0
-
-    .line 757
-    aput-object v7, v3, v2
-
-    .line 758
-    .line 759
-    const/4 v2, 0x1
-
-    .line 760
-    aput-object v6, v3, v2
-
-    .line 761
-    .line 762
-    const/4 v2, 0x2
-
-    .line 763
-    aput-object v0, v3, v2
-
-    .line 764
-    .line 765
-    invoke-static {v3}, Lʼˏ/ᵢ;->ˎˏ([Ljava/lang/String;)V
-
-    .line 766
-    .line 767
-    .line 768
-    new-instance v0, Ljava/lang/StringBuilder;
-
-    .line 769
-    .line 770
-    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
-
-    .line 771
-    .line 772
-    .line 773
-    invoke-virtual {v0, v10}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 774
-    .line 775
-    .line 776
-    invoke-virtual {v0, v13}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 777
-    .line 778
-    .line 779
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 780
-    .line 781
-    .line 782
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    .line 783
-    .line 784
-    .line 785
-    move-result-object v0
-
-    .line 786
-    const/4 v2, 0x3
-
-    .line 787
-    new-array v3, v2, [Ljava/lang/String;
-
-    .line 788
-    .line 789
-    const/4 v2, 0x0
-
-    .line 790
-    aput-object v9, v3, v2
-
-    .line 791
-    .line 792
-    const/4 v2, 0x1
-
-    .line 793
-    aput-object v5, v3, v2
-
-    .line 794
-    .line 795
-    const/4 v2, 0x2
-
-    .line 796
-    aput-object v0, v3, v2
-
-    .line 797
-    .line 798
-    invoke-static {v3}, Lʼˏ/ᵢ;->ˎˏ([Ljava/lang/String;)V
-
-    .line 799
-    .line 800
-    .line 801
-    new-instance v0, Ljava/lang/StringBuilder;
-
-    .line 802
-    .line 803
-    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
-
-    .line 804
-    .line 805
-    .line 806
-    invoke-virtual {v0, v10}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 807
-    .line 808
-    .line 809
-    invoke-virtual {v0, v13}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 810
-    .line 811
-    .line 812
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 813
-    .line 814
-    .line 815
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    .line 816
-    .line 817
-    .line 818
-    move-result-object v0
-
-    .line 819
-    const/4 v2, 0x3
-
-    .line 820
-    new-array v3, v2, [Ljava/lang/String;
-
-    .line 821
-    .line 822
-    const/4 v2, 0x0
-
-    .line 823
-    aput-object v9, v3, v2
-
-    .line 824
-    .line 825
-    const/4 v2, 0x1
-
-    .line 826
-    aput-object v4, v3, v2
-
-    .line 827
-    .line 828
-    const/4 v2, 0x2
-
-    .line 829
-    aput-object v0, v3, v2
-
-    .line 830
-    .line 831
-    invoke-static {v3}, Lʼˏ/ᵢ;->ˎˏ([Ljava/lang/String;)V
-
-    .line 832
-    .line 833
-    .line 834
-    new-instance v0, Ljava/io/File;
-
-    .line 835
-    .line 836
-    new-instance v2, Ljava/lang/StringBuilder;
-
-    .line 837
-    .line 838
-    invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
-
-    .line 839
-    .line 840
-    .line 841
-    invoke-virtual {v2, v10}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 842
-    .line 843
-    .line 844
-    invoke-virtual {v2, v13}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 845
-    .line 846
-    .line 847
-    invoke-virtual {v2, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 848
-    .line 849
-    .line 850
-    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    .line 851
-    .line 852
-    .line 853
-    move-result-object v1
-
-    .line 854
-    invoke-direct {v0, v1}, Ljava/io/File;-><init>(Ljava/lang/String;)V
-
-    .line 855
-    .line 856
-    .line 857
-    invoke-virtual {v0}, Ljava/io/File;->delete()Z
-
-    .line 858
-    .line 859
-    .line 860
-    new-instance v0, Ljava/lang/StringBuilder;
-
-    .line 861
-    .line 862
-    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
-
-    .line 863
-    .line 864
-    .line 865
-    invoke-virtual {v0, v10}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 866
-    .line 867
-    .line 868
-    invoke-virtual {v0, v13}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 869
-    .line 870
-    .line 871
-    move-object/from16 v1, v16
-
-    .line 872
-    .line 873
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 874
-    .line 875
-    .line 876
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    .line 877
-    .line 878
-    .line 879
-    move-result-object v0
-
-    .line 880
-    const/4 v2, 0x3
-
-    .line 881
-    new-array v3, v2, [Ljava/lang/String;
-
-    .line 882
-    .line 883
-    const/4 v2, 0x0
-
-    .line 884
-    aput-object v7, v3, v2
-
-    .line 885
-    .line 886
-    const/4 v2, 0x1
-
-    .line 887
-    aput-object v6, v3, v2
-
-    .line 888
-    .line 889
-    const/4 v2, 0x2
-
-    .line 890
-    aput-object v0, v3, v2
-
-    .line 891
-    .line 892
-    invoke-static {v3}, Lʼˏ/ᵢ;->ˎˏ([Ljava/lang/String;)V
-
-    .line 893
-    .line 894
-    .line 895
-    new-instance v0, Ljava/lang/StringBuilder;
-
-    .line 896
-    .line 897
-    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
-
-    .line 898
-    .line 899
-    .line 900
-    invoke-virtual {v0, v10}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 901
-    .line 902
-    .line 903
-    invoke-virtual {v0, v13}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 904
-    .line 905
-    .line 906
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 907
-    .line 908
-    .line 909
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    .line 910
-    .line 911
-    .line 912
-    move-result-object v0
-
-    .line 913
-    const/4 v2, 0x3
-
-    .line 914
-    new-array v3, v2, [Ljava/lang/String;
-
-    .line 915
-    .line 916
-    const/4 v2, 0x0
-
-    .line 917
-    aput-object v9, v3, v2
-
-    .line 918
-    .line 919
-    const/4 v2, 0x1
-
-    .line 920
-    aput-object v5, v3, v2
-
-    .line 921
-    .line 922
-    const/4 v2, 0x2
-
-    .line 923
-    aput-object v0, v3, v2
-
-    .line 924
-    .line 925
-    invoke-static {v3}, Lʼˏ/ᵢ;->ˎˏ([Ljava/lang/String;)V
-
-    .line 926
-    .line 927
-    .line 928
-    new-instance v0, Ljava/lang/StringBuilder;
-
-    .line 929
-    .line 930
-    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
-
-    .line 931
-    .line 932
-    .line 933
-    invoke-virtual {v0, v10}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 934
-    .line 935
-    .line 936
-    invoke-virtual {v0, v13}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 937
-    .line 938
-    .line 939
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 940
-    .line 941
-    .line 942
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    .line 943
-    .line 944
-    .line 945
-    move-result-object v0
-
-    .line 946
-    const/4 v1, 0x3
-
-    .line 947
-    new-array v1, v1, [Ljava/lang/String;
-
-    .line 948
-    .line 949
-    const/4 v2, 0x0
-
-    .line 950
-    aput-object v9, v1, v2
-
-    .line 951
-    .line 952
-    const/4 v2, 0x1
-
-    .line 953
-    aput-object v4, v1, v2
-
-    .line 954
-    .line 955
-    const/4 v2, 0x2
-
-    .line 956
-    aput-object v0, v1, v2
-
-    .line 957
-    .line 958
-    invoke-static {v1}, Lʼˏ/ᵢ;->ˎˏ([Ljava/lang/String;)V
-
-    .line 959
-    .line 960
-    .line 961
-    const-string v0, "all data copied to new settings"
-
-    .line 962
-    .line 963
-    invoke-virtual {v12, v0}, Ljava/io/PrintStream;->println(Ljava/lang/String;)V
-    :try_end_0
-    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
-
-    .line 964
-    .line 965
-    .line 966
-    goto :goto_2
-
-    .line 967
-    :goto_1
-    invoke-virtual {v0}, Ljava/lang/Throwable;->printStackTrace()V
-
-    .line 968
-    .line 969
-    .line 970
-    :goto_2
-    invoke-static {}, Lʼˏ/ᵢ;->ʼˑ()V
-
-    .line 971
-    .line 972
-    .line 973
-    return-void
+    :array_5
+    .array-data 1
+        0x0t
+        0x0t
+        0x0t
+        0x1t
+        0x1t
+        0x1t
+        0x1t
+        0x1t
+        0x1t
+        0x1t
+        0x1t
+        0x1t
+        0x1t
+        0x1t
+        0x0t
+        0x0t
+        0x1t
+        0x1t
+        0x0t
+    .end array-data
 .end method

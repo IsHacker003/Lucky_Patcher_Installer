@@ -180,7 +180,7 @@
 
     .line 55
     .line 56
-    invoke-virtual {v1}, Lʾˉ/ᴵᴵ;->ˈˑ()Landroidx/fragment/app/ʿ;
+    invoke-virtual {v1}, Lʾˉ/ᴵᴵ;->ˈˏ()Landroidx/fragment/app/ʿ;
 
     .line 57
     .line 58

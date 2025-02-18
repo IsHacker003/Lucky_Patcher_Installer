@@ -13,7 +13,7 @@
 .end method
 
 .method public static main([Ljava/lang/String;)V
-    .locals 2
+    .locals 4
 
     .line 1
     new-instance p0, Ljavaroot/utils/ᵎ$ʻ;
@@ -25,120 +25,117 @@
     .line 4
     .line 5
     .line 6
-    invoke-static {p0}, Lʼˏ/ᵢ;->ˑˎ(Ljava/lang/Object;)V
+    invoke-static {p0}, Lʼˏ/ᵢ;->ˑי(Ljava/lang/Object;)V
 
     .line 7
     .line 8
     .line 9
-    new-instance p0, Ljava/io/File;
+    invoke-static {}, Lʼˏ/ᵢ;->ˆʽ()Ljava/lang/String;
 
     .line 10
     .line 11
-    const-string v0, "/sbin/.magisk/modules/"
-
     .line 12
+    move-result-object p0
+
     .line 13
-    invoke-direct {p0, v0}, Ljava/io/File;-><init>(Ljava/lang/String;)V
+    invoke-static {}, Lʼˏ/ᵢ;->ˆʼ()Ljava/lang/String;
 
     .line 14
     .line 15
     .line 16
-    new-instance v0, Ljava/io/File;
+    move-result-object v0
 
     .line 17
+    const-string v1, ""
+
     .line 18
-    const-string v1, "/data/adb/modules/"
-
     .line 19
-    .line 20
-    invoke-direct {v0, v1}, Ljava/io/File;-><init>(Ljava/lang/String;)V
+    invoke-virtual {p0, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
+    .line 20
     .line 21
     .line 22
+    move-result v2
+
     .line 23
-    invoke-virtual {p0}, Ljava/io/File;->exists()Z
+    const-string v3, "magisk module found"
 
     .line 24
     .line 25
-    .line 26
-    move-result v1
+    if-nez v2, :cond_0
 
+    .line 26
     .line 27
-    if-eqz v1, :cond_0
+    new-instance v2, Ljava/io/File;
 
     .line 28
     .line 29
-    invoke-virtual {p0}, Ljava/io/File;->listFiles()[Ljava/io/File;
+    invoke-direct {v2, p0}, Ljava/io/File;-><init>(Ljava/lang/String;)V
 
     .line 30
     .line 31
     .line 32
-    move-result-object p0
+    invoke-virtual {v2}, Ljava/io/File;->exists()Z
 
     .line 33
-    if-eqz p0, :cond_0
-
     .line 34
     .line 35
-    array-length p0, p0
+    move-result p0
 
     .line 36
-    if-lez p0, :cond_0
+    if-eqz p0, :cond_0
 
     .line 37
     .line 38
-    return-void
+    invoke-static {v3}, Lʾˉ/ᴵᴵ;->ˉˋ(Ljava/lang/Object;)V
 
     .line 39
-    :cond_0
-    invoke-virtual {v0}, Ljava/io/File;->exists()Z
-
     .line 40
     .line 41
+    :cond_0
+    invoke-virtual {v0, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
     .line 42
+    .line 43
+    .line 44
     move-result p0
 
-    .line 43
-    if-eqz p0, :cond_1
-
-    .line 44
     .line 45
-    invoke-virtual {v0}, Ljava/io/File;->listFiles()[Ljava/io/File;
+    if-nez p0, :cond_1
 
     .line 46
     .line 47
-    .line 48
-    move-result-object p0
+    new-instance p0, Ljava/io/File;
 
+    .line 48
     .line 49
-    if-eqz p0, :cond_1
+    invoke-direct {p0, v0}, Ljava/io/File;-><init>(Ljava/lang/String;)V
 
     .line 50
     .line 51
-    array-length p0, p0
-
     .line 52
-    if-lez p0, :cond_1
+    invoke-virtual {p0}, Ljava/io/File;->exists()Z
 
     .line 53
     .line 54
-    return-void
-
     .line 55
-    :cond_1
-    const-string p0, "Magisk modules not found"
+    move-result p0
 
     .line 56
-    .line 57
-    invoke-static {p0}, Lʾˉ/ᴵᴵ;->ˉˎ(Ljava/lang/Object;)V
+    if-eqz p0, :cond_1
 
+    .line 57
     .line 58
+    invoke-static {v3}, Lʾˉ/ᴵᴵ;->ˉˋ(Ljava/lang/Object;)V
+
     .line 59
     .line 60
-    invoke-static {}, Lʼˏ/ᵢ;->ʼˑ()V
-
     .line 61
+    :cond_1
+    invoke-static {}, Lʼˏ/ᵢ;->ʼـ()V
+
     .line 62
     .line 63
+    .line 64
     return-void
 .end method

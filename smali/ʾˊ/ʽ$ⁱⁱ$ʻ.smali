@@ -300,7 +300,7 @@
 
     .line 117
     .line 118
-    invoke-static {v0, v1, v2}, Lʼˏ/ᵢ;->ʾˆ(Ljava/lang/String;ILjava/lang/String;)Landroid/text/SpannableString;
+    invoke-static {v0, v1, v2}, Lʼˏ/ᵢ;->ʾˉ(Ljava/lang/String;ILjava/lang/String;)Landroid/text/SpannableString;
 
     .line 119
     .line 120

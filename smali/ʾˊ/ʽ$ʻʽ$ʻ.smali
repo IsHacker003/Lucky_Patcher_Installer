@@ -44,7 +44,7 @@
     .locals 1
 
     .line 1
-    invoke-static {}, Lʾˉ/ᴵᴵ;->ˈˏ()Landroid/content/SharedPreferences;
+    invoke-static {}, Lʾˉ/ᴵᴵ;->ˈˎ()Landroid/content/SharedPreferences;
 
     .line 2
     .line 3

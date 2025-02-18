@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lʼˏ/ᵢ;->ʿˈ(ZLʼˏ/ᵢ$ʻˉ;)Ljava/lang/String;
+    value = Lʼˏ/ᵢ;->ʿˊ(ZLʼˏ/ᵢ$ʻˉ;)Ljava/lang/String;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -73,7 +73,7 @@
     .line 14
     .line 15
     .line 16
-    invoke-static {v1}, Lʼˏ/ᵢ;->ˈᐧ(I)Ljava/lang/String;
+    invoke-static {v1}, Lʼˏ/ᵢ;->ˈᵎ(I)Ljava/lang/String;
 
     .line 17
     .line 18

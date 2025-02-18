@@ -61,7 +61,7 @@
 
     .line 8
     .line 9
-    invoke-static {}, Lʼˏ/ᵢ;->ʾˉ()Ljava/lang/String;
+    invoke-static {}, Lʼˏ/ᵢ;->ʾˋ()Ljava/lang/String;
 
     .line 10
     .line 11
@@ -69,7 +69,7 @@
     move-result-object v2
 
     .line 13
-    invoke-static {v2}, Lʾˉ/ᴵᴵ;->ˉˎ(Ljava/lang/Object;)V
+    invoke-static {v2}, Lʾˉ/ᴵᴵ;->ˉˋ(Ljava/lang/Object;)V
 
     .line 14
     .line 15
@@ -115,7 +115,7 @@
 
     .line 36
     .line 37
-    invoke-virtual {v2, v0}, Lʼˏ/ᵢ;->ˎˎ([Ljava/lang/String;)Ljava/lang/String;
+    invoke-virtual {v2, v0}, Lʼˏ/ᵢ;->ˑˑ([Ljava/lang/String;)Ljava/lang/String;
 
     .line 38
     .line 39
@@ -337,7 +337,7 @@
     move-result-object v1
 
     .line 148
-    invoke-static {v1}, Lʾˉ/ᴵᴵ;->ˉˎ(Ljava/lang/Object;)V
+    invoke-static {v1}, Lʾˉ/ᴵᴵ;->ˉˋ(Ljava/lang/Object;)V
 
     .line 149
     .line 150
@@ -372,7 +372,7 @@
 
     .line 164
     .line 165
-    invoke-static {v0}, Lʾˉ/ᴵᴵ;->ˉˎ(Ljava/lang/Object;)V
+    invoke-static {v0}, Lʾˉ/ᴵᴵ;->ˉˋ(Ljava/lang/Object;)V
 
     .line 166
     .line 167

@@ -73,7 +73,7 @@
     move-result-object p2
 
     .line 16
-    invoke-static {p2, p1, p1}, Lʼˏ/ᵢ;->ʼˉ(Ljava/lang/String;Ljava/lang/Runnable;Ljava/lang/Runnable;)V
+    invoke-static {p2, p1, p1}, Lʼˏ/ᵢ;->ʼˋ(Ljava/lang/String;Ljava/lang/Runnable;Ljava/lang/Runnable;)V
 
     .line 17
     .line 18

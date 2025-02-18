@@ -198,7 +198,7 @@
     if-ne v0, v1, :cond_3
 
     .line 15
-    invoke-static {}, Lru/aaaaaccd/installer/PkgName;->getPkgName()Ljava/lang/String;
+    invoke-static {}, Lru/aaaaacce/installer/PkgName;->getPkgName()Ljava/lang/String;
 
     move-result-object p1
 

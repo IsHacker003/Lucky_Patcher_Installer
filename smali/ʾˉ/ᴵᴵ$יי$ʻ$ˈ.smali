@@ -56,7 +56,7 @@
     move-result-object v0
 
     .line 7
-    invoke-static {v0}, Lʾˉ/ᴵᴵ;->ˊˏ(Ljava/lang/Integer;)V
+    invoke-static {v0}, Lʾˉ/ᴵᴵ;->ˊˎ(Ljava/lang/Integer;)V
 
     .line 8
     .line 9
@@ -150,7 +150,7 @@
     .line 52
     .line 53
     .line 54
-    invoke-static {}, Lʾˉ/ᴵᴵ;->ˈˏ()Landroid/content/SharedPreferences;
+    invoke-static {}, Lʾˉ/ᴵᴵ;->ˈˎ()Landroid/content/SharedPreferences;
 
     .line 55
     .line 56
@@ -234,7 +234,7 @@
     move-result-object v1
 
     .line 94
-    invoke-static {v1}, Lʾˉ/ᴵᴵ;->ˊˏ(Ljava/lang/Integer;)V
+    invoke-static {v1}, Lʾˉ/ᴵᴵ;->ˊˎ(Ljava/lang/Integer;)V
 
     .line 95
     .line 96
@@ -277,7 +277,7 @@
     .line 115
     .line 116
     .line 117
-    invoke-static {v0}, Lʼˏ/ᵢ;->ˈᐧ(I)Ljava/lang/String;
+    invoke-static {v0}, Lʼˏ/ᵢ;->ˈᵎ(I)Ljava/lang/String;
 
     .line 118
     .line 119
@@ -290,7 +290,7 @@
     .line 122
     .line 123
     .line 124
-    invoke-static {v1}, Lʼˏ/ᵢ;->ˈᐧ(I)Ljava/lang/String;
+    invoke-static {v1}, Lʼˏ/ᵢ;->ˈᵎ(I)Ljava/lang/String;
 
     .line 125
     .line 126

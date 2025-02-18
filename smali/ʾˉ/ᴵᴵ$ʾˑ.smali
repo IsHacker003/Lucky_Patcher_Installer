@@ -138,7 +138,7 @@
 
     .line 43
     .line 44
-    invoke-virtual {v2, v1}, Lʼˏ/ᵢ;->ˎˎ([Ljava/lang/String;)Ljava/lang/String;
+    invoke-virtual {v2, v1}, Lʼˏ/ᵢ;->ˑˑ([Ljava/lang/String;)Ljava/lang/String;
 
     .line 45
     .line 46
@@ -208,7 +208,7 @@
 
     .line 80
     .line 81
-    invoke-virtual {v2, v1}, Lʼˏ/ᵢ;->ˎˎ([Ljava/lang/String;)Ljava/lang/String;
+    invoke-virtual {v2, v1}, Lʼˏ/ᵢ;->ˑˑ([Ljava/lang/String;)Ljava/lang/String;
 
     .line 82
     .line 83

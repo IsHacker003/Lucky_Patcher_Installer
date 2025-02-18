@@ -83,7 +83,7 @@
 
     .line 14
     .line 15
-    invoke-static {}, Lʾˉ/ᴵᴵ;->ˈˏ()Landroid/content/SharedPreferences;
+    invoke-static {}, Lʾˉ/ᴵᴵ;->ˈˎ()Landroid/content/SharedPreferences;
 
     .line 16
     .line 17
@@ -140,7 +140,7 @@
     .line 42
     .line 43
     .line 44
-    invoke-static {}, Lʾˉ/ᴵᴵ;->ˈˏ()Landroid/content/SharedPreferences;
+    invoke-static {}, Lʾˉ/ᴵᴵ;->ˈˎ()Landroid/content/SharedPreferences;
 
     .line 45
     .line 46
@@ -176,7 +176,7 @@
     .line 60
     .line 61
     .line 62
-    invoke-static {}, Lʾˉ/ᴵᴵ;->ˈˏ()Landroid/content/SharedPreferences;
+    invoke-static {}, Lʾˉ/ᴵᴵ;->ˈˎ()Landroid/content/SharedPreferences;
 
     .line 63
     .line 64

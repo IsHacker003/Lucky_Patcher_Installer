@@ -171,7 +171,7 @@
     .line 57
     .line 58
     :cond_1
-    invoke-static {}, Lʾˉ/ᴵᴵ;->ˈי()Landroid/content/Context;
+    invoke-static {}, Lʾˉ/ᴵᴵ;->ˈˑ()Landroid/content/Context;
 
     .line 59
     .line 60
@@ -179,7 +179,7 @@
     move-result-object v1
 
     .line 62
-    invoke-static {}, Lʾˉ/ᴵᴵ;->ˈᵢ()I
+    invoke-static {}, Lʾˉ/ᴵᴵ;->ˈᵔ()I
 
     .line 63
     .line 64

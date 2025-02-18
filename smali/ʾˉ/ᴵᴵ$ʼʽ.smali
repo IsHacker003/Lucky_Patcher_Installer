@@ -59,7 +59,7 @@
 
     .line 2
     .line 3
-    sget-object v1, Lʾˉ/ᴵᴵ;->ʼﾞ:Lru/aaaaaccd/installer/MainActivity;
+    sget-object v1, Lʾˉ/ᴵᴵ;->ʼﾞ:Lru/aaaaacce/installer/MainActivity;
 
     .line 4
     .line 5
@@ -108,7 +108,7 @@
     move-result-object v0
 
     .line 29
-    invoke-static {v0}, Lʼˏ/ᵢ;->ˏˑ(Landroid/app/Dialog;)V
+    invoke-static {v0}, Lʼˏ/ᵢ;->ˏـ(Landroid/app/Dialog;)V
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 

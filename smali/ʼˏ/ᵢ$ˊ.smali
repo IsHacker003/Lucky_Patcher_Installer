@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lʼˏ/ᵢ;->ˏˑ(Landroid/app/Dialog;)V
+    value = Lʼˏ/ᵢ;->ˏـ(Landroid/app/Dialog;)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -49,7 +49,7 @@
     .locals 1
 
     .line 1
-    sget-object v0, Lʾˉ/ᴵᴵ;->ʼﾞ:Lru/aaaaaccd/installer/MainActivity;
+    sget-object v0, Lʾˉ/ᴵᴵ;->ʼﾞ:Lru/aaaaacce/installer/MainActivity;
 
     .line 2
     .line 3

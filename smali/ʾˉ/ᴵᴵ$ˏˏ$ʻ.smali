@@ -80,7 +80,7 @@
 
     .line 12
     .line 13
-    invoke-static {v3}, Lʼˏ/ᵢ;->ˊᵎ(Ljava/lang/String;)V
+    invoke-static {v3}, Lʼˏ/ᵢ;->ˊᵢ(Ljava/lang/String;)V
 
     .line 14
     .line 15
@@ -97,7 +97,7 @@
 
     .line 21
     .line 22
-    invoke-static {v3}, Lʼˏ/ᵢ;->ʾˎ(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v3}, Lʼˏ/ᵢ;->ʾˑ(Ljava/lang/String;)Ljava/lang/String;
 
     .line 23
     .line 24
@@ -105,7 +105,7 @@
     move-result-object v3
 
     .line 26
-    invoke-static {}, Lʾˉ/ᴵᴵ;->ˈᵎ()Landroid/content/pm/PackageManager;
+    invoke-static {}, Lʾˉ/ᴵᴵ;->ˈᴵ()Landroid/content/pm/PackageManager;
 
     .line 27
     .line 28
@@ -164,7 +164,7 @@
 
     .line 52
     .line 53
-    invoke-static {}, Lʾˉ/ᴵᴵ;->ˈי()Landroid/content/Context;
+    invoke-static {}, Lʾˉ/ᴵᴵ;->ˈˑ()Landroid/content/Context;
 
     .line 54
     .line 55
@@ -200,7 +200,7 @@
     move-result-object v6
 
     .line 71
-    invoke-static {}, Lʾˉ/ᴵᴵ;->ˈי()Landroid/content/Context;
+    invoke-static {}, Lʾˉ/ᴵᴵ;->ˈˑ()Landroid/content/Context;
 
     .line 72
     .line 73
@@ -253,7 +253,7 @@
     .line 94
     :cond_0
     :goto_0
-    invoke-static {v5}, Lʾˉ/ᴵᴵ;->ˉˎ(Ljava/lang/Object;)V
+    invoke-static {v5}, Lʾˉ/ᴵᴵ;->ˉˋ(Ljava/lang/Object;)V
 
     .line 95
     .line 96
@@ -285,7 +285,7 @@
     .line 110
     .line 111
     .line 112
-    const-class v7, Ljavaroot/utils/ʻᴵ;
+    const-class v7, Ljavaroot/utils/ʻᵎ;
 
     .line 113
     .line 114
@@ -411,7 +411,7 @@
 
     .line 179
     .line 180
-    invoke-virtual {v6, v1}, Lʼˏ/ᵢ;->ˎˎ([Ljava/lang/String;)Ljava/lang/String;
+    invoke-virtual {v6, v1}, Lʼˏ/ᵢ;->ˑˑ([Ljava/lang/String;)Ljava/lang/String;
 
     .line 181
     .line 182
@@ -419,7 +419,7 @@
     move-result-object v0
 
     .line 184
-    invoke-static {v0}, Lʾˉ/ᴵᴵ;->ˉˎ(Ljava/lang/Object;)V
+    invoke-static {v0}, Lʾˉ/ᴵᴵ;->ˉˋ(Ljava/lang/Object;)V
 
     .line 185
     .line 186

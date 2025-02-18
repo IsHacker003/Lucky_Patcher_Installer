@@ -70,7 +70,7 @@
 
     .line 13
     :pswitch_1
-    invoke-static {}, Lʼˏ/ᵢ;->ˋᐧ()V
+    invoke-static {}, Lʼˏ/ᵢ;->ˋᵎ()V
 
     .line 14
     .line 15
@@ -79,7 +79,7 @@
 
     .line 17
     :pswitch_2
-    invoke-static {}, Lʼˏ/ᵢ;->ˋٴ()V
+    invoke-static {}, Lʼˏ/ᵢ;->ˋᴵ()V
 
     .line 18
     .line 19
@@ -88,7 +88,7 @@
 
     .line 21
     :pswitch_3
-    invoke-static {}, Lʼˏ/ᵢ;->ˋـ()V
+    invoke-static {}, Lʼˏ/ᵢ;->ˋᐧ()V
 
     .line 22
     .line 23

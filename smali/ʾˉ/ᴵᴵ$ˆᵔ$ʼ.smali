@@ -56,7 +56,7 @@
     move-result-object v0
 
     .line 7
-    invoke-static {v0}, Lʾˉ/ᴵᴵ;->ˊˏ(Ljava/lang/Integer;)V
+    invoke-static {v0}, Lʾˉ/ᴵᴵ;->ˊˎ(Ljava/lang/Integer;)V
 
     .line 8
     .line 9
@@ -83,7 +83,7 @@
     .line 20
     .line 21
     .line 22
-    invoke-static {v2}, Lʼˏ/ᵢ;->ˈᐧ(I)Ljava/lang/String;
+    invoke-static {v2}, Lʼˏ/ᵢ;->ˈᵎ(I)Ljava/lang/String;
 
     .line 23
     .line 24
@@ -110,7 +110,7 @@
     .line 35
     .line 36
     .line 37
-    invoke-static {v3}, Lʼˏ/ᵢ;->ˈᐧ(I)Ljava/lang/String;
+    invoke-static {v3}, Lʼˏ/ᵢ;->ˈᵎ(I)Ljava/lang/String;
 
     .line 38
     .line 39
@@ -133,7 +133,7 @@
     .line 48
     .line 49
     .line 50
-    invoke-static {v2}, Lʼˏ/ᵢ;->ˈᐧ(I)Ljava/lang/String;
+    invoke-static {v2}, Lʼˏ/ᵢ;->ˈᵎ(I)Ljava/lang/String;
 
     .line 51
     .line 52
@@ -166,7 +166,7 @@
     const/4 v3, 0x0
 
     .line 67
-    invoke-static {v0, v1, v2, v3, v3}, Lʼˏ/ᵢ;->ˏᵔ(Ljava/lang/String;Ljava/lang/String;Landroid/content/DialogInterface$OnClickListener;Landroid/content/DialogInterface$OnClickListener;Landroid/content/DialogInterface$OnCancelListener;)V
+    invoke-static {v0, v1, v2, v3, v3}, Lʼˏ/ᵢ;->ˏⁱ(Ljava/lang/String;Ljava/lang/String;Landroid/content/DialogInterface$OnClickListener;Landroid/content/DialogInterface$OnClickListener;Landroid/content/DialogInterface$OnCancelListener;)V
 
     .line 68
     .line 69

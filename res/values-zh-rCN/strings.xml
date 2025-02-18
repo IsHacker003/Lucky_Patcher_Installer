@@ -962,6 +962,7 @@ Google Play 商店修改版说明：
     <string name="message_signature_killer_for_apps_with_test_signature">目标应用有一个测试签名，所以\"%1$s\"选项已被禁用。</string>
     <string name="message_test_patch_downgrade">测试降级应用</string>
     <string name="message_test_patch_signatures">测试安装不同签名的应用</string>
+    <string name="message_test_patch_signatures_shareduser">正在测试安装具有不同签名和相同 sharedUserId 的应用程序</string>
     <string name="message_test_patch_terget_sdk_30_installing">测试安装目标 SDK 为 30，但没有 V2 签名的应用</string>
     <string name="message_test_patch_unlocked">破解功能已解锁</string>
     <string name="message_test_pm_utility">测试“pm”功能</string>
@@ -1172,6 +1173,7 @@ Google Play 商店修改版说明：
     <string name="remove_all_saved_purchases">移除所有已保存的内购</string>
     <string name="remove_all_saved_purchases_message">是否删除幸运破解器保存的所有内购？</string>
     <string name="remove_android_art_update">卸载 apex 模块 com.google.android.art 的更新</string>
+    <string name="remove_android_art_update_description">当通过 LSPosed 或常规系统文件补丁的 Android 补丁不起作用时，这对新版本的 Android 会有所帮助。</string>
     <string name="removefixes">"删除所有 ODEX 文件
  包含（/data/app 和 /system/app）"</string>
     <string name="reset_dialog_settings">重置全部对话框设置</string>

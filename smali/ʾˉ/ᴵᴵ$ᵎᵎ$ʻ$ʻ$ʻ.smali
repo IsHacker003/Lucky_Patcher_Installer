@@ -53,7 +53,7 @@
 
     .line 4
     .line 5
-    invoke-static {p1}, Lʼˏ/ᵢ;->ˑˊ(Ljava/lang/String;)V
+    invoke-static {p1}, Lʼˏ/ᵢ;->ˑˎ(Ljava/lang/String;)V
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 

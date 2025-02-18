@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lʾˉ/ᴵᴵ;->ˉⁱ(IILandroid/content/Intent;)V
+    value = Lʾˉ/ᴵᴵ;->ˉᵢ(IILandroid/content/Intent;)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;

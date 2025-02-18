@@ -86,7 +86,7 @@
 
     .line 15
     .line 16
-    invoke-virtual {v0, v1}, Lʼˏ/ᵢ;->ˎˎ([Ljava/lang/String;)Ljava/lang/String;
+    invoke-virtual {v0, v1}, Lʼˏ/ᵢ;->ˑˑ([Ljava/lang/String;)Ljava/lang/String;
 
     .line 17
     .line 18
@@ -112,7 +112,7 @@
 
     .line 28
     .line 29
-    invoke-static {}, Lʾˉ/ᴵᴵ;->ˈᵎ()Landroid/content/pm/PackageManager;
+    invoke-static {}, Lʾˉ/ᴵᴵ;->ˈᴵ()Landroid/content/pm/PackageManager;
 
     .line 30
     .line 31
@@ -189,7 +189,7 @@
     .line 68
     .line 69
     .line 70
-    invoke-static {v1}, Lʼˏ/ᵢ;->ˈﹳ(Ljava/io/File;)I
+    invoke-static {v1}, Lʼˏ/ᵢ;->ˈﾞ(Ljava/io/File;)I
 
     .line 71
     .line 72
@@ -206,7 +206,7 @@
     .line 77
     .line 78
     .line 79
-    invoke-static {v0}, Lʼˏ/ᵢ;->ˈᐧ(I)Ljava/lang/String;
+    invoke-static {v0}, Lʼˏ/ᵢ;->ˈᵎ(I)Ljava/lang/String;
 
     .line 80
     .line 81
@@ -219,7 +219,7 @@
     .line 84
     .line 85
     .line 86
-    invoke-static {v1}, Lʼˏ/ᵢ;->ˈᐧ(I)Ljava/lang/String;
+    invoke-static {v1}, Lʼˏ/ᵢ;->ˈᵎ(I)Ljava/lang/String;
 
     .line 87
     .line 88
@@ -239,7 +239,7 @@
     const/4 v3, 0x0
 
     .line 96
-    invoke-static {v0, v1, v2, v3, v3}, Lʼˏ/ᵢ;->ˏᵔ(Ljava/lang/String;Ljava/lang/String;Landroid/content/DialogInterface$OnClickListener;Landroid/content/DialogInterface$OnClickListener;Landroid/content/DialogInterface$OnCancelListener;)V
+    invoke-static {v0, v1, v2, v3, v3}, Lʼˏ/ᵢ;->ˏⁱ(Ljava/lang/String;Ljava/lang/String;Landroid/content/DialogInterface$OnClickListener;Landroid/content/DialogInterface$OnClickListener;Landroid/content/DialogInterface$OnCancelListener;)V
 
     .line 97
     .line 98

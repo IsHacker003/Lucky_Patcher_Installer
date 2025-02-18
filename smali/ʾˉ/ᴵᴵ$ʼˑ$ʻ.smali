@@ -244,7 +244,7 @@
     .line 102
     .line 103
     .line 104
-    invoke-virtual {v0, v1}, Lʼˏ/ᵢ;->ˎˎ([Ljava/lang/String;)Ljava/lang/String;
+    invoke-virtual {v0, v1}, Lʼˏ/ᵢ;->ˑˑ([Ljava/lang/String;)Ljava/lang/String;
 
     .line 105
     .line 106
@@ -253,7 +253,7 @@
 
     .line 108
     :cond_2
-    invoke-static {v1}, Lʼˏ/ᵢ;->ˋˋ([Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v1}, Lʼˏ/ᵢ;->ˊˊ([Ljava/lang/String;)Ljava/lang/String;
 
     .line 109
     .line 110

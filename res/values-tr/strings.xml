@@ -404,6 +404,7 @@ Dosya dizini:"</string>
     <string name="dirr_chg">Dizin değiştirildi:</string>
     <string name="disable_autoupdate">Otomatik güncellemeleri kapat</string>
     <string name="disable_autoupdate_descr">İnternetten otomatik güncelleme kontrolünü devre dışı bırakır.</string>
+    <string name="disable_for_all_apps">Tüm uygulamalar için devre dışı bırak ve seçilen uygulamalar için etkinleştir</string>
     <string name="disable_inapp_services_google">Google Play Store için Uygulama içi Hizmetleri</string>
     <string name="disable_inapp_services_google_descr">Bazı uygulamalar birden fazla Uygulama İçi hizmet aktif iken çökebilir.</string>
     <string name="disable_license_services_google">Google Play Store için Lisans Hizmeti</string>
@@ -420,6 +421,7 @@ Dosya dizini:"</string>
     <string name="download_progress_dialog_message_resume_downloading">Dosya indirmesine devam ediliyor</string>
     <string name="empty">boş</string>
     <string name="empty_binders">Widget eklemek için en az bir bağlama oluşturmanız gerekir.</string>
+    <string name="enable_for_all_apps">Tüm uygulamalar için etkinleştirin ve seçilen uygulamalar için devre dışı bırakın</string>
     <string name="enabled">etkin</string>
     <string name="enabled_package">Paket etkinleştirildi.</string>
     <string name="enter_manual_path">Dizini el ile gir</string>

@@ -185,7 +185,7 @@
     move-result-object v3
 
     .line 74
-    invoke-static {v3}, Lʾˉ/ᴵᴵ;->ˉˎ(Ljava/lang/Object;)V
+    invoke-static {v3}, Lʾˉ/ᴵᴵ;->ˉˋ(Ljava/lang/Object;)V
 
     .line 75
     .line 76
@@ -280,7 +280,7 @@
     .line 122
     .line 123
     .line 124
-    invoke-virtual {v0, v1}, Lʼˏ/ᵢ;->ˎˎ([Ljava/lang/String;)Ljava/lang/String;
+    invoke-virtual {v0, v1}, Lʼˏ/ᵢ;->ˑˑ([Ljava/lang/String;)Ljava/lang/String;
 
     .line 125
     .line 126
@@ -289,7 +289,7 @@
 
     .line 128
     :cond_2
-    invoke-static {v1}, Lʼˏ/ᵢ;->ˋˋ([Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v1}, Lʼˏ/ᵢ;->ˊˊ([Ljava/lang/String;)Ljava/lang/String;
 
     .line 129
     .line 130

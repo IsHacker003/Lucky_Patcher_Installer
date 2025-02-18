@@ -52,7 +52,7 @@
     .line 3
     .line 4
     :try_start_0
-    invoke-static {}, Lʾˉ/ᴵᴵ;->ˈᵎ()Landroid/content/pm/PackageManager;
+    invoke-static {}, Lʾˉ/ᴵᴵ;->ˈᴵ()Landroid/content/pm/PackageManager;
 
     .line 5
     .line 6
@@ -166,7 +166,7 @@
 
     .line 56
     .line 57
-    invoke-virtual {v3, v5}, Lʼˏ/ᵢ;->ˎˎ([Ljava/lang/String;)Ljava/lang/String;
+    invoke-virtual {v3, v5}, Lʼˏ/ᵢ;->ˑˑ([Ljava/lang/String;)Ljava/lang/String;
 
     .line 58
     .line 59
@@ -201,7 +201,7 @@
     .line 74
     .line 75
     .line 76
-    invoke-static {v2, v0}, Lʼˏ/ᵢ;->ˆˊ(Ljava/lang/String;Z)Ljava/lang/String;
+    invoke-static {v2, v0}, Lʼˏ/ᵢ;->ˆˎ(Ljava/lang/String;Z)Ljava/lang/String;
 
     .line 77
     .line 78
@@ -222,7 +222,7 @@
     move-result-object v0
 
     .line 87
-    invoke-static {v0}, Lʼˏ/ᵢ;->ˎˋ(Ljava/lang/String;)V
+    invoke-static {v0}, Lʼˏ/ᵢ;->ˎˑ(Ljava/lang/String;)V
     :try_end_1
     .catch Ljava/lang/Exception; {:try_start_1 .. :try_end_1} :catch_0
 
@@ -279,7 +279,7 @@
     move-result-object v0
 
     .line 116
-    invoke-static {v0}, Lʾˉ/ᴵᴵ;->ˉˎ(Ljava/lang/Object;)V
+    invoke-static {v0}, Lʾˉ/ᴵᴵ;->ˉˋ(Ljava/lang/Object;)V
 
     .line 117
     .line 118

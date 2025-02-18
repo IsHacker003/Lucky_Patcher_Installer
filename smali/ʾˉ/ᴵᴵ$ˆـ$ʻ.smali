@@ -49,7 +49,7 @@
     .line 2
     .line 3
     :try_start_0
-    invoke-static {}, Lʾˉ/ᴵᴵ;->ˈᵎ()Landroid/content/pm/PackageManager;
+    invoke-static {}, Lʾˉ/ᴵᴵ;->ˈᴵ()Landroid/content/pm/PackageManager;
 
     .line 4
     .line 5
@@ -120,7 +120,7 @@
     move-result-object v1
 
     .line 40
-    invoke-static {v1}, Lʾˉ/ᴵᴵ;->ˉˎ(Ljava/lang/Object;)V
+    invoke-static {v1}, Lʾˉ/ᴵᴵ;->ˉˋ(Ljava/lang/Object;)V
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -143,7 +143,7 @@
 
     .line 48
     .line 49
-    invoke-static {v1}, Lʼˏ/ᵢ;->ˊˎ(Ljava/lang/String;)Z
+    invoke-static {v1}, Lʼˏ/ᵢ;->ˊˑ(Ljava/lang/String;)Z
 
     .line 50
     .line 51
@@ -165,7 +165,7 @@
 
     .line 58
     .line 59
-    invoke-static {v0, v4, v3, v2}, Lʼˏ/ᵢ;->ˉˏ(Ljava/lang/String;Ljava/lang/String;ZZ)Ljava/lang/String;
+    invoke-static {v0, v4, v3, v2}, Lʼˏ/ᵢ;->ˉי(Ljava/lang/String;Ljava/lang/String;ZZ)Ljava/lang/String;
 
     .line 60
     .line 61
@@ -185,7 +185,7 @@
 
     .line 67
     .line 68
-    invoke-static {v1}, Lʼˏ/ᵢ;->ˈˊ(Ljava/lang/String;)Ljava/util/ArrayList;
+    invoke-static {v1}, Lʼˏ/ᵢ;->ˈˎ(Ljava/lang/String;)Ljava/util/ArrayList;
 
     .line 69
     .line 70
@@ -210,7 +210,7 @@
     const/4 v0, 0x0
 
     .line 81
-    invoke-static {v0, v1, v4, v3, v2}, Lʼˏ/ᵢ;->ˉˑ(Ljava/io/File;Ljava/util/ArrayList;Ljava/lang/String;ZZ)Ljava/lang/String;
+    invoke-static {v0, v1, v4, v3, v2}, Lʼˏ/ᵢ;->ˉـ(Ljava/io/File;Ljava/util/ArrayList;Ljava/lang/String;ZZ)Ljava/lang/String;
 
     .line 82
     .line 83

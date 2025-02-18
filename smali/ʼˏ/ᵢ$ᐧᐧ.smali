@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lʼˏ/ᵢ;->ˊⁱ(Z)V
+    value = Lʼˏ/ᵢ;->ˊﹶ(Z)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -72,7 +72,7 @@
 
     .line 11
     .line 12
-    invoke-static {v3, v2}, Lʼˏ/ᵢ;->ˆˈ(Ljava/lang/String;I)Landroid/content/pm/PackageInfo;
+    invoke-static {v3, v2}, Lʼˏ/ᵢ;->ˆˊ(Ljava/lang/String;I)Landroid/content/pm/PackageInfo;
 
     .line 13
     .line 14
@@ -199,7 +199,7 @@
     .line 69
     :cond_0
     :goto_1
-    invoke-static {}, Lʾˉ/ᴵᴵ;->ˈᵎ()Landroid/content/pm/PackageManager;
+    invoke-static {}, Lʾˉ/ᴵᴵ;->ˈᴵ()Landroid/content/pm/PackageManager;
 
     .line 70
     .line 71
@@ -308,7 +308,7 @@
 
     .line 125
     .line 126
-    invoke-virtual {v5, v7}, Lʼˏ/ᵢ;->ˎˎ([Ljava/lang/String;)Ljava/lang/String;
+    invoke-virtual {v5, v7}, Lʼˏ/ᵢ;->ˑˑ([Ljava/lang/String;)Ljava/lang/String;
 
     .line 127
     .line 128
@@ -362,7 +362,7 @@
     .line 151
     .line 152
     :cond_2
-    invoke-static {}, Lʾˉ/ᴵᴵ;->ˈᵎ()Landroid/content/pm/PackageManager;
+    invoke-static {}, Lʾˉ/ᴵᴵ;->ˈᴵ()Landroid/content/pm/PackageManager;
 
     .line 153
     .line 154
@@ -468,7 +468,7 @@
 
     .line 207
     .line 208
-    invoke-virtual {v5, v7}, Lʼˏ/ᵢ;->ˎˎ([Ljava/lang/String;)Ljava/lang/String;
+    invoke-virtual {v5, v7}, Lʼˏ/ᵢ;->ˑˑ([Ljava/lang/String;)Ljava/lang/String;
     :try_end_1
     .catch Ljava/lang/Exception; {:try_start_1 .. :try_end_1} :catch_0
 

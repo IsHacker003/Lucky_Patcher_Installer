@@ -1318,11 +1318,6 @@
 
     .line 566
     .line 567
-    .line 568
-    .line 569
-    .line 570
-    .line 571
-    .line 572
     :array_9
     .array-data 1
         0x9t

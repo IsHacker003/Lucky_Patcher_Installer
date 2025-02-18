@@ -79,7 +79,7 @@
 
     .line 19
     :cond_0
-    sget-object p1, Lru/aaaaaccd/installer/App;->MainActivity:Landroid/app/Activity;
+    sget-object p1, Lru/aaaaacce/installer/App;->MainActivity:Landroid/app/Activity;
 
     .line 20
     .line 21
@@ -90,7 +90,7 @@
     const/4 v0, 0x0
 
     .line 24
-    invoke-static {p1, p2, v0}, Lʼˏ/ᵢ;->יʻ(Landroid/app/Activity;Ljava/lang/String;Ljava/lang/Integer;)V
+    invoke-static {p1, p2, v0}, Lʼˏ/ᵢ;->יʽ(Landroid/app/Activity;Ljava/lang/String;Ljava/lang/Integer;)V
 
     .line 25
     .line 26

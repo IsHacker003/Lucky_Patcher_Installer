@@ -56,7 +56,7 @@
     move-result-object v0
 
     .line 7
-    invoke-static {v0}, Lʾˉ/ᴵᴵ;->ˊˏ(Ljava/lang/Integer;)V
+    invoke-static {v0}, Lʾˉ/ᴵᴵ;->ˊˎ(Ljava/lang/Integer;)V
 
     .line 8
     .line 9
@@ -65,7 +65,7 @@
 
     .line 11
     .line 12
-    invoke-virtual {v0}, Lʾˉ/ᴵᴵ;->ˈﾞ()V
+    invoke-virtual {v0}, Lʾˉ/ᴵᴵ;->ˈﹶ()V
 
     .line 13
     .line 14

@@ -62,7 +62,7 @@
     .line 9
     .line 10
     .line 11
-    const-class v1, Ljavaroot/utils/ᵎᵎ;
+    const-class v1, Ljavaroot/utils/ᵢᵢ;
 
     .line 12
     .line 13
@@ -260,7 +260,7 @@
     move-result-object v0
 
     .line 119
-    invoke-static {v0}, Lʾˉ/ᴵᴵ;->ˉˎ(Ljava/lang/Object;)V
+    invoke-static {v0}, Lʾˉ/ᴵᴵ;->ˉˋ(Ljava/lang/Object;)V
 
     .line 120
     .line 121

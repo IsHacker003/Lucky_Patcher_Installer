@@ -61,7 +61,7 @@
     .line 8
     .line 9
     .line 10
-    invoke-static {}, Lʼˏ/ᵢ;->ˉـ()Z
+    invoke-static {}, Lʼˏ/ᵢ;->ˉᐧ()Z
 
     .line 11
     .line 12
@@ -234,7 +234,7 @@
 
     .line 96
     .line 97
-    invoke-virtual {v1}, Lʾˉ/ᴵᴵ;->ˈˑ()Landroidx/fragment/app/ʿ;
+    invoke-virtual {v1}, Lʾˉ/ᴵᴵ;->ˈˏ()Landroidx/fragment/app/ʿ;
 
     .line 98
     .line 99

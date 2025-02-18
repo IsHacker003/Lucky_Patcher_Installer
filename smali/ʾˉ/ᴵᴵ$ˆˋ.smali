@@ -53,7 +53,7 @@
 
     .line 4
     .line 5
-    invoke-static {}, Lʾˉ/ᴵᴵ;->ˈי()Landroid/content/Context;
+    invoke-static {}, Lʾˉ/ᴵᴵ;->ˈˑ()Landroid/content/Context;
 
     .line 6
     .line 7
@@ -97,7 +97,7 @@
 
     .line 26
     .line 27
-    invoke-static {v0}, Lʼˏ/ᵢ;->ˊᵎ(Ljava/lang/String;)V
+    invoke-static {v0}, Lʼˏ/ᵢ;->ˊᵢ(Ljava/lang/String;)V
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 

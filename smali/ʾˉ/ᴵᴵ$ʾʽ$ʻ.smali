@@ -44,12 +44,12 @@
     .locals 1
 
     .line 1
-    invoke-static {}, Lʼˏ/ᵢ;->ˈˈ()V
+    invoke-static {}, Lʼˏ/ᵢ;->ˋˋ()V
 
     .line 2
     .line 3
     .line 4
-    invoke-static {}, Lʼˏ/ᵢ;->ˋـ()V
+    invoke-static {}, Lʼˏ/ᵢ;->ˋᐧ()V
 
     .line 5
     .line 6
@@ -68,7 +68,7 @@
     .line 13
     .line 14
     .line 15
-    invoke-static {}, Lʼˏ/ᵢ;->ˋـ()V
+    invoke-static {}, Lʼˏ/ᵢ;->ˋᐧ()V
 
     .line 16
     .line 17

@@ -44,7 +44,7 @@
     .locals 0
 
     .line 1
-    invoke-static {}, Lʼˏ/ᵢ;->ʻʻ()V
+    invoke-static {}, Lʼˏ/ᵢ;->ʽʽ()V
 
     .line 2
     .line 3

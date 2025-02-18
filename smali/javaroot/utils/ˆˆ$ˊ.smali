@@ -5,7 +5,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Ljavaroot/utils/ˆˆ;->ʼ(Ljava/util/ArrayList;[Ljava/lang/String;ZZ)V
+    value = Ljavaroot/utils/ˆˆ;->ˈ(Ljava/util/ArrayList;[Ljava/lang/String;ZZ)I
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;

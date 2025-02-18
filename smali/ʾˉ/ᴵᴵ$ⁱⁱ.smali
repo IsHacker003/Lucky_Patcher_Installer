@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lʾˉ/ᴵᴵ;->ˉⁱ(IILandroid/content/Intent;)V
+    value = Lʾˉ/ᴵᴵ;->ˉᵢ(IILandroid/content/Intent;)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -45,7 +45,7 @@
 
     .line 4
     .line 5
-    invoke-static {p1}, Lʼˏ/ᵢ;->ˑˊ(Ljava/lang/String;)V
+    invoke-static {p1}, Lʼˏ/ᵢ;->ˑˎ(Ljava/lang/String;)V
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 

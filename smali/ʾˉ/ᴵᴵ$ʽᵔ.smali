@@ -63,7 +63,7 @@
 
     .line 4
     .line 5
-    invoke-virtual {v1}, Lʾˉ/ᴵᴵ;->ˈˑ()Landroidx/fragment/app/ʿ;
+    invoke-virtual {v1}, Lʾˉ/ᴵᴵ;->ˈˏ()Landroidx/fragment/app/ʿ;
 
     .line 6
     .line 7
@@ -116,7 +116,7 @@
     move-result-object v0
 
     .line 33
-    invoke-static {v0}, Lʼˏ/ᵢ;->ˏˑ(Landroid/app/Dialog;)V
+    invoke-static {v0}, Lʼˏ/ᵢ;->ˏـ(Landroid/app/Dialog;)V
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 

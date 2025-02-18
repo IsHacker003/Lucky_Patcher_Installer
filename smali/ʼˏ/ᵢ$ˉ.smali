@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lʼˏ/ᵢ;->ˑʻ(Landroid/app/Activity;Ljava/lang/String;Landroid/text/SpannableStringBuilder;)V
+    value = Lʼˏ/ᵢ;->ˑʽ(Landroid/app/Activity;Ljava/lang/String;Landroid/text/SpannableStringBuilder;)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -122,7 +122,7 @@
     move-result-object v0
 
     .line 33
-    invoke-static {v0}, Lʼˏ/ᵢ;->ˏـ(Landroid/app/Dialog;)V
+    invoke-static {v0}, Lʼˏ/ᵢ;->ˏᐧ(Landroid/app/Dialog;)V
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 

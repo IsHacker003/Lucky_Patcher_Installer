@@ -211,7 +211,7 @@
     .line 84
     .line 85
     :try_start_1
-    invoke-static {v3}, Lʼˏ/ᵢ;->ˆᵎ([Ljava/lang/String;)Lʼˏ/ʽ;
+    invoke-static {v3}, Lʼˏ/ᵢ;->ˆᵢ([Ljava/lang/String;)Lʼˏ/ʽ;
 
     .line 86
     .line 87
@@ -348,7 +348,7 @@
 
     .line 142
     .line 143
-    invoke-static {}, Lʾˉ/ᴵᴵ;->ˈˏ()Landroid/content/SharedPreferences;
+    invoke-static {}, Lʾˉ/ᴵᴵ;->ˈˎ()Landroid/content/SharedPreferences;
 
     .line 144
     .line 145
@@ -372,7 +372,7 @@
 
     .line 154
     .line 155
-    invoke-static {}, Lʾˉ/ᴵᴵ;->ˈˏ()Landroid/content/SharedPreferences;
+    invoke-static {}, Lʾˉ/ᴵᴵ;->ˈˎ()Landroid/content/SharedPreferences;
 
     .line 156
     .line 157
@@ -448,7 +448,7 @@
 
     .line 192
     .line 193
-    invoke-static {v4}, Lʼˏ/ᵢ;->ˆᵎ([Ljava/lang/String;)Lʼˏ/ʽ;
+    invoke-static {v4}, Lʼˏ/ᵢ;->ˆᵢ([Ljava/lang/String;)Lʼˏ/ʽ;
 
     .line 194
     .line 195
@@ -571,7 +571,7 @@
 
     .line 257
     .line 258
-    invoke-static {v2, v4}, Lʼˏ/ᵢ;->ˎᴵ(Ljava/io/File;Ljava/lang/String;)Z
+    invoke-static {v2, v4}, Lʼˏ/ᵢ;->ˎᵔ(Ljava/io/File;Ljava/lang/String;)Z
     :try_end_3
     .catch Ljava/lang/Exception; {:try_start_3 .. :try_end_3} :catch_3
 
@@ -612,7 +612,7 @@
     move-result-object v1
 
     .line 277
-    invoke-static {v1}, Lʾˉ/ᴵᴵ;->ˊˏ(Ljava/lang/Integer;)V
+    invoke-static {v1}, Lʾˉ/ᴵᴵ;->ˊˎ(Ljava/lang/Integer;)V
 
     .line 278
     .line 279

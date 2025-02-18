@@ -52,7 +52,7 @@
 
     .line 4
     .line 5
-    invoke-static {v0}, Lʼˏ/ᵢ;->ˋᵢ(Ljava/lang/String;)V
+    invoke-static {v0}, Lʼˏ/ᵢ;->ˋﹳ(Ljava/lang/String;)V
 
     .line 6
     .line 7

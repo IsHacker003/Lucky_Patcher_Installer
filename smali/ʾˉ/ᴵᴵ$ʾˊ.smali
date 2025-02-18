@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lʾˉ/ᴵᴵ;->ˊˋ(Lʾˉ/ᵎ;)V
+    value = Lʾˉ/ᴵᴵ;->ˊˉ(Lʾˉ/ᵎ;)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -56,7 +56,7 @@
 
     .line 1
     :try_start_0
-    invoke-static {}, Lʾˉ/ᴵᴵ;->ˈᵎ()Landroid/content/pm/PackageManager;
+    invoke-static {}, Lʾˉ/ᴵᴵ;->ˈᴵ()Landroid/content/pm/PackageManager;
 
     .line 2
     .line 3
@@ -99,7 +99,7 @@
     const/4 v2, 0x0
 
     .line 22
-    invoke-static {v0, v1, v2, v2}, Lʼˏ/ᵢ;->ˉˏ(Ljava/lang/String;Ljava/lang/String;ZZ)Ljava/lang/String;
+    invoke-static {v0, v1, v2, v2}, Lʼˏ/ᵢ;->ˉי(Ljava/lang/String;Ljava/lang/String;ZZ)Ljava/lang/String;
 
     .line 23
     .line 24
@@ -148,7 +148,7 @@
     .line 44
     :cond_0
     :goto_0
-    invoke-static {}, Lʾˉ/ᴵᴵ;->ˈˏ()Landroid/content/SharedPreferences;
+    invoke-static {}, Lʾˉ/ᴵᴵ;->ˈˎ()Landroid/content/SharedPreferences;
 
     .line 45
     .line 46

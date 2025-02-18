@@ -119,7 +119,7 @@
 
     .line 22
     .line 23
-    invoke-static {}, Lʾˉ/ᴵᴵ;->ˈᵔ()Landroid/content/res/Resources;
+    invoke-static {}, Lʾˉ/ᴵᴵ;->ˈᵎ()Landroid/content/res/Resources;
 
     .line 24
     .line 25
@@ -139,7 +139,7 @@
 
     .line 32
     .line 33
-    invoke-static {}, Lʾˉ/ᴵᴵ;->ˈᵔ()Landroid/content/res/Resources;
+    invoke-static {}, Lʾˉ/ᴵᴵ;->ˈᵎ()Landroid/content/res/Resources;
 
     .line 34
     .line 35
@@ -341,7 +341,7 @@
     move-result-object v5
 
     .line 132
-    invoke-static {v5}, Lʾˉ/ᴵᴵ;->ˉˎ(Ljava/lang/Object;)V
+    invoke-static {v5}, Lʾˉ/ᴵᴵ;->ˉˋ(Ljava/lang/Object;)V
 
     .line 133
     .line 134

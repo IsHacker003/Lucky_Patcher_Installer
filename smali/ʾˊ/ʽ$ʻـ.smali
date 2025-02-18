@@ -239,7 +239,7 @@
     .line 94
     .line 95
     .line 96
-    invoke-static {p3}, Lʼˏ/ᵢ;->ˈᐧ(I)Ljava/lang/String;
+    invoke-static {p3}, Lʼˏ/ᵢ;->ˈᵎ(I)Ljava/lang/String;
 
     .line 97
     .line 98

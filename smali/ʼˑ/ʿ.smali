@@ -1591,7 +1591,7 @@
     move-result-object v14
 
     .line 809
-    invoke-static {v14}, Lʾˉ/ᴵᴵ;->ˉˎ(Ljava/lang/Object;)V
+    invoke-static {v14}, Lʾˉ/ᴵᴵ;->ˉˋ(Ljava/lang/Object;)V
 
     .line 810
     .line 811

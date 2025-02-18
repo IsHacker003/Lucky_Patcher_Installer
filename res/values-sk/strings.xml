@@ -392,6 +392,7 @@ Uložiť pôvodný podpis (bezpečná metóda)"</string>
     <string name="dirr_chg">Adresár bol zmenený na:</string>
     <string name="disable_autoupdate">Zakázať automatickú aktualizáciu</string>
     <string name="disable_autoupdate_descr">Zaškrtnite pre zakázanie automatickej aktualizácie</string>
+    <string name="disable_for_all_apps">Zakázať pre všetky aplikácie a povoliť pre vybrané aplikácie</string>
     <string name="disable_inapp_services_google">Služby nákupov v aplikáciách v Obchode Play</string>
     <string name="disable_inapp_services_google_descr">Niektoré aplikácie môžu zlyhať, ak je povolených viac služieb nákupov v aplikáciách.</string>
     <string name="disable_license_services_google">Licenčné služby v Obchode Play</string>
@@ -408,6 +409,7 @@ Uložiť pôvodný podpis (bezpečná metóda)"</string>
     <string name="download_progress_dialog_message_resume_downloading">Obnovuje sa sťahovanie</string>
     <string name="empty">prázdny</string>
     <string name="empty_binders">Musíte vytvoriť aspoň jedno prepojenie pre pridanie miniaplikácie.</string>
+    <string name="enable_for_all_apps">Povoliť pre všetky aplikácie a zakázať pre vybrané aplikácie</string>
     <string name="enabled">povolené</string>
     <string name="enabled_package">Povolený balík.</string>
     <string name="enter_manual_path">Umiestnenie</string>

@@ -406,6 +406,7 @@ Oto rezultaty:
     <string name="dirr_chg">Zmieniono folder na:</string>
     <string name="disable_autoupdate">Wyłącz automatyczną aktualizację</string>
     <string name="disable_autoupdate_descr">Wyłącz wyszukiwanie aktualizacji przy uruchamianiu Lucky Patchera.</string>
+    <string name="disable_for_all_apps">Wyłącz dla wszystkich aplikacji i włącz dla wybranych aplikacji</string>
     <string name="disable_inapp_services_google">Usługi zakupów w aplikacji do sklepu Google Play</string>
     <string name="disable_inapp_services_google_descr">Niektóre aplikacje ulegają awarii jeśli wiele usług zakupów w aplikacji jest uruchomionych.</string>
     <string name="disable_license_services_google">Usługa licencyjna do sklepu Google Play</string>
@@ -422,6 +423,7 @@ Oto rezultaty:
     <string name="download_progress_dialog_message_resume_downloading">Wznawianie pobierania...</string>
     <string name="empty">pusty</string>
     <string name="empty_binders">Musisz utworzyć przynajmniej jedno powiązanie, aby dodać widżet.</string>
+    <string name="enable_for_all_apps">Włącz dla wszystkich aplikacji i wyłącz dla wybranych aplikacji</string>
     <string name="enabled">włączone</string>
     <string name="enabled_package">Włączony pakiet</string>
     <string name="enter_manual_path">Wprowadź ścieżkę</string>

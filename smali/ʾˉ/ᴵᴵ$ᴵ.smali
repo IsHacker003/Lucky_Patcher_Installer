@@ -82,7 +82,7 @@
     move-result-object v0
 
     .line 18
-    invoke-static {}, Lʾˉ/ᴵᴵ;->ˈᵢ()I
+    invoke-static {}, Lʾˉ/ᴵᴵ;->ˈᵔ()I
 
     .line 19
     .line 20
@@ -95,7 +95,7 @@
     .line 23
     .line 24
     .line 25
-    invoke-static {}, Lʾˉ/ᴵᴵ;->ˈᵔ()Landroid/content/res/Resources;
+    invoke-static {}, Lʾˉ/ᴵᴵ;->ˈᵎ()Landroid/content/res/Resources;
 
     .line 26
     .line 27
@@ -237,7 +237,7 @@
     .line 97
     .line 98
     .line 99
-    invoke-static {v3}, Lʼˏ/ᵢ;->ˈᐧ(I)Ljava/lang/String;
+    invoke-static {v3}, Lʼˏ/ᵢ;->ˈᵎ(I)Ljava/lang/String;
 
     .line 100
     .line 101
@@ -282,7 +282,7 @@
     .line 122
     .line 123
     .line 124
-    invoke-static {v4}, Lʼˏ/ᵢ;->ˈᐧ(I)Ljava/lang/String;
+    invoke-static {v4}, Lʼˏ/ᵢ;->ˈᵎ(I)Ljava/lang/String;
 
     .line 125
     .line 126
@@ -368,7 +368,7 @@
 
     .line 169
     .line 170
-    invoke-static {p1, v0, v2}, Lʼˏ/ᵢ;->ʾˈ(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Landroid/text/SpannableString;
+    invoke-static {p1, v0, v2}, Lʼˏ/ᵢ;->ʾˊ(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Landroid/text/SpannableString;
 
     .line 171
     .line 172

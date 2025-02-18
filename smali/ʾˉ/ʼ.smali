@@ -493,7 +493,7 @@
     .line 14
     .line 15
     .line 16
-    invoke-static {p1}, Lʼˏ/ᵢ;->ˈᐧ(I)Ljava/lang/String;
+    invoke-static {p1}, Lʼˏ/ᵢ;->ˈᵎ(I)Ljava/lang/String;
 
     .line 17
     .line 18
@@ -866,7 +866,7 @@
 
     .line 26
     .line 27
-    invoke-static {p1}, Lʼˏ/ᵢ;->ˈᐧ(I)Ljava/lang/String;
+    invoke-static {p1}, Lʼˏ/ᵢ;->ˈᵎ(I)Ljava/lang/String;
 
     .line 28
     .line 29
@@ -2268,7 +2268,7 @@
     .line 14
     .line 15
     .line 16
-    invoke-static {p1}, Lʼˏ/ᵢ;->ˈᐧ(I)Ljava/lang/String;
+    invoke-static {p1}, Lʼˏ/ᵢ;->ˈᵎ(I)Ljava/lang/String;
 
     .line 17
     .line 18
@@ -2386,7 +2386,7 @@
     .line 14
     .line 15
     .line 16
-    invoke-static {p1}, Lʼˏ/ᵢ;->ˈᐧ(I)Ljava/lang/String;
+    invoke-static {p1}, Lʼˏ/ᵢ;->ˈᵎ(I)Ljava/lang/String;
 
     .line 17
     .line 18

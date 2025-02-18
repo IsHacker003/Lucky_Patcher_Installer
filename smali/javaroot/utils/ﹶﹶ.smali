@@ -3,17 +3,7 @@
 .source "SourceFile"
 
 
-# static fields
-.field private static ʻ:Ljava/lang/String; = "/data/dalvik-cache/data@app@zamenitetodelo-1.apk@classes.dex"
-
-
 # direct methods
-.method static constructor <clinit>()V
-    .locals 0
-
-    return-void
-.end method
-
 .method public constructor <init>()V
     .locals 0
 
@@ -23,176 +13,174 @@
 .end method
 
 .method public static main([Ljava/lang/String;)V
-    .locals 6
+    .locals 4
 
     .line 1
-    const-string v0, ""
+    new-instance v0, Ljavaroot/utils/ﹶﹶ$ʻ;
 
     .line 2
     .line 3
-    new-instance v1, Ljavaroot/utils/ﹶﹶ$ʻ;
+    invoke-direct {v0}, Ljavaroot/utils/ﹶﹶ$ʻ;-><init>()V
 
     .line 4
     .line 5
-    invoke-direct {v1}, Ljavaroot/utils/ﹶﹶ$ʻ;-><init>()V
-
     .line 6
+    invoke-static {v0}, Lʼˏ/ᵢ;->ˑי(Ljava/lang/Object;)V
+
     .line 7
     .line 8
-    invoke-static {v1}, Lʼˏ/ᵢ;->ˑˎ(Ljava/lang/Object;)V
-
     .line 9
+    const/4 v0, 0x0
+
     .line 10
+    aget-object p0, p0, v0
+
     .line 11
-    sget-object v1, Ljavaroot/utils/ﹶﹶ;->ʻ:Ljava/lang/String;
-
     .line 12
-    .line 13
-    const/4 v2, 0x0
+    :try_start_0
+    new-instance v0, Ljava/io/File;
 
+    .line 13
     .line 14
-    aget-object p0, p0, v2
+    invoke-direct {v0, p0}, Ljava/io/File;-><init>(Ljava/lang/String;)V
 
     .line 15
     .line 16
-    const-string v2, "zamenitetodelo"
-
     .line 17
-    .line 18
-    invoke-virtual {v1, v2, p0}, Ljava/lang/String;->replace(Ljava/lang/CharSequence;Ljava/lang/CharSequence;)Ljava/lang/String;
-
-    .line 19
-    .line 20
-    .line 21
-    move-result-object p0
-
-    .line 22
-    :try_start_0
     new-instance v1, Ljava/io/File;
 
-    .line 23
-    .line 24
-    invoke-direct {v1, p0}, Ljava/io/File;-><init>(Ljava/lang/String;)V
+    .line 18
+    .line 19
+    const-string v2, "/data/data/"
 
+    .line 20
+    .line 21
+    const-string v3, "/mnt/asec/"
+
+    .line 22
+    .line 23
+    invoke-virtual {p0, v2, v3}, Ljava/lang/String;->replace(Ljava/lang/CharSequence;Ljava/lang/CharSequence;)Ljava/lang/String;
+
+    .line 24
     .line 25
     .line 26
+    move-result-object v2
+
     .line 27
-    invoke-virtual {v1}, Ljava/io/File;->exists()Z
+    invoke-direct {v1, v2}, Ljava/io/File;-><init>(Ljava/lang/String;)V
 
     .line 28
     .line 29
     .line 30
+    invoke-virtual {v0}, Ljava/io/File;->exists()Z
+
+    .line 31
+    .line 32
+    .line 33
     move-result v2
+
+    .line 34
+    if-eqz v2, :cond_0
+
+    .line 35
+    .line 36
+    goto :goto_0
+
+    .line 37
+    :cond_0
+    move-object v0, v1
+
+    .line 38
+    :goto_0
+    invoke-virtual {v0}, Ljava/io/File;->exists()Z
+
+    .line 39
+    .line 40
+    .line 41
+    move-result v1
     :try_end_0
     .catch Ljava/io/FileNotFoundException; {:try_start_0 .. :try_end_0} :catch_1
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 31
-    const-string v3, "-2"
-
-    .line 32
-    .line 33
-    const-string v4, "-1"
-
-    .line 34
-    .line 35
-    if-nez v2, :cond_0
-
-    .line 36
-    .line 37
-    :try_start_1
-    new-instance v1, Ljava/io/File;
-
-    .line 38
-    .line 39
-    invoke-virtual {p0, v4, v3}, Ljava/lang/String;->replace(Ljava/lang/CharSequence;Ljava/lang/CharSequence;)Ljava/lang/String;
-
-    .line 40
-    .line 41
     .line 42
-    move-result-object v2
+    const-string v2, "-1"
 
     .line 43
-    invoke-direct {v1, v2}, Ljava/io/File;-><init>(Ljava/lang/String;)V
-
     .line 44
+    if-nez v1, :cond_1
+
     .line 45
     .line 46
-    goto :goto_0
+    :try_start_1
+    new-instance v0, Ljava/io/File;
 
     .line 47
-    :catch_0
-    move-exception p0
-
     .line 48
-    goto/16 :goto_2
+    new-instance v1, Ljava/lang/StringBuilder;
 
     .line 49
     .line 50
-    :cond_0
-    :goto_0
-    new-instance v2, Ljava/io/File;
+    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
 
     .line 51
     .line 52
-    invoke-virtual {p0, v4, v0}, Ljava/lang/String;->replace(Ljava/lang/CharSequence;Ljava/lang/CharSequence;)Ljava/lang/String;
-
     .line 53
+    invoke-virtual {v1, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
     .line 54
     .line 55
-    move-result-object v5
-
     .line 56
-    invoke-direct {v2, v5}, Ljava/io/File;-><init>(Ljava/lang/String;)V
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     .line 57
     .line 58
     .line 59
-    invoke-virtual {v1}, Ljava/io/File;->exists()Z
+    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     .line 60
     .line 61
     .line 62
-    move-result v5
+    move-result-object v1
 
     .line 63
-    if-eqz v5, :cond_1
+    invoke-direct {v0, v1}, Ljava/io/File;-><init>(Ljava/lang/String;)V
 
     .line 64
     .line 65
+    .line 66
     goto :goto_1
 
-    .line 66
-    :cond_1
-    move-object v1, v2
-
     .line 67
-    :goto_1
-    const-string v2, "data@app"
+    :catch_0
+    move-exception p0
 
     .line 68
+    goto :goto_2
+
     .line 69
-    const-string v5, "mnt@asec"
+    :cond_1
+    :goto_1
+    invoke-virtual {v0}, Ljava/io/File;->exists()Z
 
     .line 70
     .line 71
-    invoke-virtual {p0, v2, v5}, Ljava/lang/String;->replace(Ljava/lang/CharSequence;Ljava/lang/CharSequence;)Ljava/lang/String;
-
     .line 72
-    .line 73
-    .line 74
-    move-result-object p0
+    move-result v1
 
+    .line 73
+    if-nez v1, :cond_2
+
+    .line 74
     .line 75
-    const-string v2, ".apk@classes.dex"
+    new-instance v0, Ljava/io/File;
 
     .line 76
     .line 77
-    const-string v5, "@pkg.apk@classes.dex"
+    const-string v1, "-2"
 
     .line 78
     .line 79
-    invoke-virtual {p0, v2, v5}, Ljava/lang/String;->replace(Ljava/lang/CharSequence;Ljava/lang/CharSequence;)Ljava/lang/String;
+    invoke-virtual {p0, v2, v1}, Ljava/lang/String;->replace(Ljava/lang/CharSequence;Ljava/lang/CharSequence;)Ljava/lang/String;
 
     .line 80
     .line 81
@@ -200,275 +188,180 @@
     move-result-object p0
 
     .line 83
-    new-instance v2, Ljava/io/File;
+    invoke-direct {v0, p0}, Ljava/io/File;-><init>(Ljava/lang/String;)V
 
     .line 84
     .line 85
-    invoke-direct {v2, p0}, Ljava/io/File;-><init>(Ljava/lang/String;)V
-
     .line 86
+    :cond_2
+    invoke-virtual {v0}, Ljava/io/File;->exists()Z
+
     .line 87
     .line 88
-    invoke-virtual {v2}, Ljava/io/File;->exists()Z
-
     .line 89
-    .line 90
-    .line 91
-    move-result v5
+    move-result p0
 
+    .line 90
+    if-eqz p0, :cond_3
+
+    .line 91
     .line 92
-    if-eqz v5, :cond_2
+    new-instance p0, Ljava/lang/StringBuilder;
 
     .line 93
     .line 94
-    move-object v1, v2
+    invoke-direct {p0}, Ljava/lang/StringBuilder;-><init>()V
 
     .line 95
-    :cond_2
-    new-instance v2, Ljava/io/File;
-
     .line 96
     .line 97
-    invoke-virtual {p0, v4, v3}, Ljava/lang/String;->replace(Ljava/lang/CharSequence;Ljava/lang/CharSequence;)Ljava/lang/String;
+    invoke-virtual {v0}, Ljava/io/File;->getAbsolutePath()Ljava/lang/String;
 
     .line 98
     .line 99
     .line 100
-    move-result-object v3
+    move-result-object v1
 
     .line 101
-    invoke-direct {v2, v3}, Ljava/io/File;-><init>(Ljava/lang/String;)V
+    invoke-virtual {p0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     .line 102
     .line 103
     .line 104
-    invoke-virtual {v2}, Ljava/io/File;->exists()Z
+    const-string v1, ".backup"
 
     .line 105
     .line 106
+    invoke-virtual {p0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
     .line 107
-    move-result v3
-
     .line 108
-    if-eqz v3, :cond_3
-
     .line 109
+    invoke-virtual {p0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
     .line 110
-    move-object v1, v2
-
     .line 111
-    :cond_3
-    new-instance v2, Ljava/io/File;
-
     .line 112
+    move-result-object p0
+
     .line 113
-    invoke-virtual {p0, v4, v0}, Ljava/lang/String;->replace(Ljava/lang/CharSequence;Ljava/lang/CharSequence;)Ljava/lang/String;
+    new-instance v1, Ljava/io/File;
 
     .line 114
     .line 115
+    invoke-direct {v1, p0}, Ljava/io/File;-><init>(Ljava/lang/String;)V
+
     .line 116
-    move-result-object p0
-
     .line 117
-    invoke-direct {v2, p0}, Ljava/io/File;-><init>(Ljava/lang/String;)V
-
     .line 118
+    invoke-static {v0, v1}, Lʼˏ/ᵢ;->ʻˋ(Ljava/io/File;Ljava/io/File;)V
+
     .line 119
     .line 120
-    invoke-virtual {v2}, Ljava/io/File;->exists()Z
-
     .line 121
+    sget-object p0, Ljava/lang/System;->out:Ljava/io/PrintStream;
+
     .line 122
     .line 123
-    move-result p0
+    const-string v0, "Backup - done!"
 
     .line 124
-    if-eqz p0, :cond_4
-
     .line 125
+    invoke-virtual {p0, v0}, Ljava/io/PrintStream;->println(Ljava/lang/String;)V
+
     .line 126
-    move-object v1, v2
-
     .line 127
-    :cond_4
-    invoke-virtual {v1}, Ljava/io/File;->exists()Z
-
     .line 128
-    .line 129
-    .line 130
-    move-result p0
+    goto :goto_3
 
+    .line 129
+    :cond_3
+    new-instance p0, Ljava/io/FileNotFoundException;
+
+    .line 130
     .line 131
-    if-eqz p0, :cond_6
+    invoke-direct {p0}, Ljava/io/FileNotFoundException;-><init>()V
 
     .line 132
     .line 133
-    invoke-virtual {v1}, Ljava/io/File;->getAbsolutePath()Ljava/lang/String;
-
     .line 134
-    .line 135
-    .line 136
-    move-result-object p0
-
-    .line 137
-    const-string v0, "classes"
-
-    .line 138
-    .line 139
-    const-string v2, "backup"
-
-    .line 140
-    .line 141
-    invoke-virtual {p0, v0, v2}, Ljava/lang/String;->replace(Ljava/lang/CharSequence;Ljava/lang/CharSequence;)Ljava/lang/String;
-
-    .line 142
-    .line 143
-    .line 144
-    move-result-object p0
-
-    .line 145
-    new-instance v0, Ljava/io/File;
-
-    .line 146
-    .line 147
-    invoke-direct {v0, p0}, Ljava/io/File;-><init>(Ljava/lang/String;)V
-
-    .line 148
-    .line 149
-    .line 150
-    invoke-virtual {v0}, Ljava/io/File;->exists()Z
-
-    .line 151
-    .line 152
-    .line 153
-    move-result p0
-
-    .line 154
-    if-eqz p0, :cond_5
-
-    .line 155
-    .line 156
-    invoke-static {v0, v1}, Lʼˏ/ᵢ;->ʻˊ(Ljava/io/File;Ljava/io/File;)V
-
-    .line 157
-    .line 158
-    .line 159
-    sget-object p0, Ljava/lang/System;->out:Ljava/io/PrintStream;
-
-    .line 160
-    .line 161
-    const-string v0, "Restore - done!"
-
-    .line 162
-    .line 163
-    invoke-virtual {p0, v0}, Ljava/io/PrintStream;->println(Ljava/lang/String;)V
-
-    .line 164
-    .line 165
-    .line 166
-    goto :goto_3
-
-    .line 167
-    :cond_5
-    new-instance p0, Ljava/io/FileNotFoundException;
-
-    .line 168
-    .line 169
-    invoke-direct {p0}, Ljava/io/FileNotFoundException;-><init>()V
-
-    .line 170
-    .line 171
-    .line 172
-    throw p0
-
-    .line 173
-    :cond_6
-    new-instance p0, Ljava/io/FileNotFoundException;
-
-    .line 174
-    .line 175
-    invoke-direct {p0}, Ljava/io/FileNotFoundException;-><init>()V
-
-    .line 176
-    .line 177
-    .line 178
     throw p0
     :try_end_1
     .catch Ljava/io/FileNotFoundException; {:try_start_1 .. :try_end_1} :catch_1
     .catch Ljava/lang/Exception; {:try_start_1 .. :try_end_1} :catch_0
 
-    .line 179
+    .line 135
     :goto_2
     sget-object v0, Ljava/lang/System;->out:Ljava/io/PrintStream;
 
-    .line 180
-    .line 181
+    .line 136
+    .line 137
     new-instance v1, Ljava/lang/StringBuilder;
 
-    .line 182
-    .line 183
+    .line 138
+    .line 139
     invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
 
-    .line 184
-    .line 185
-    .line 186
+    .line 140
+    .line 141
+    .line 142
     const-string v2, "Exception e"
 
-    .line 187
-    .line 188
+    .line 143
+    .line 144
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 189
-    .line 190
-    .line 191
+    .line 145
+    .line 146
+    .line 147
     invoke-virtual {p0}, Ljava/lang/Object;->toString()Ljava/lang/String;
 
-    .line 192
-    .line 193
-    .line 194
+    .line 148
+    .line 149
+    .line 150
     move-result-object p0
 
-    .line 195
+    .line 151
     invoke-virtual {v1, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 196
-    .line 197
-    .line 198
+    .line 152
+    .line 153
+    .line 154
     invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    .line 199
-    .line 200
-    .line 201
+    .line 155
+    .line 156
+    .line 157
     move-result-object p0
 
-    .line 202
+    .line 158
     invoke-virtual {v0, p0}, Ljava/io/PrintStream;->println(Ljava/lang/String;)V
 
-    .line 203
-    .line 204
-    .line 205
+    .line 159
+    .line 160
+    .line 161
     goto :goto_3
 
-    .line 206
+    .line 162
     :catch_1
     sget-object p0, Ljava/lang/System;->out:Ljava/io/PrintStream;
 
-    .line 207
-    .line 208
-    const-string v0, "Error: Backup files are not found!"
+    .line 163
+    .line 164
+    const-string v0, "Error: Backup failed!\n\nMove Program to internal storage."
 
-    .line 209
-    .line 210
+    .line 165
+    .line 166
     invoke-virtual {p0, v0}, Ljava/io/PrintStream;->println(Ljava/lang/String;)V
 
-    .line 211
-    .line 212
-    .line 213
+    .line 167
+    .line 168
+    .line 169
     :goto_3
-    invoke-static {}, Lʼˏ/ᵢ;->ʼˑ()V
+    invoke-static {}, Lʼˏ/ᵢ;->ʼـ()V
 
-    .line 214
-    .line 215
-    .line 216
+    .line 170
+    .line 171
+    .line 172
     return-void
 .end method

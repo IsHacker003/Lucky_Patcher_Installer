@@ -32,7 +32,7 @@
     .locals 2
 
     .line 1
-    invoke-static {p0}, Lʾˉ/ᴵᴵ;->ˉʼ(Landroid/content/Context;)V
+    invoke-static {p0}, Lʾˉ/ᴵᴵ;->ˉʻ(Landroid/content/Context;)V
 
     .line 2
     .line 3
@@ -149,7 +149,7 @@
 
     .line 12
     .line 13
-    invoke-static {p1}, Lʾˉ/ᴵᴵ;->ˉʼ(Landroid/content/Context;)V
+    invoke-static {p1}, Lʾˉ/ᴵᴵ;->ˉʻ(Landroid/content/Context;)V
 
     .line 14
     .line 15

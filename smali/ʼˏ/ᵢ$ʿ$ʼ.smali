@@ -63,7 +63,7 @@
 
     .line 9
     .line 10
-    invoke-static {v0}, Lʼˏ/ᵢ;->ˏˑ(Landroid/app/Dialog;)V
+    invoke-static {v0}, Lʼˏ/ᵢ;->ˏـ(Landroid/app/Dialog;)V
 
     .line 11
     .line 12
@@ -81,7 +81,7 @@
     move-result-object v0
 
     .line 19
-    invoke-static {v0}, Lʾˉ/ᴵᴵ;->ˊˏ(Ljava/lang/Integer;)V
+    invoke-static {v0}, Lʾˉ/ᴵᴵ;->ˊˎ(Ljava/lang/Integer;)V
 
     .line 20
     .line 21

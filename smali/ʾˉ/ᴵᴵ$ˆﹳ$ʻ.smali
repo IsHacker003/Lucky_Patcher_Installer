@@ -75,7 +75,7 @@
     .line 16
     .line 17
     .line 18
-    invoke-static {}, Lʼˏ/ᵢ;->ʽˑ()Ljava/lang/String;
+    invoke-static {}, Lʼˏ/ᵢ;->ʽـ()Ljava/lang/String;
 
     .line 19
     .line 20
@@ -132,7 +132,7 @@
 
     .line 46
     .line 47
-    invoke-virtual {v0, v2}, Lʼˏ/ᵢ;->ˎˎ([Ljava/lang/String;)Ljava/lang/String;
+    invoke-virtual {v0, v2}, Lʼˏ/ᵢ;->ˑˑ([Ljava/lang/String;)Ljava/lang/String;
 
     .line 48
     .line 49

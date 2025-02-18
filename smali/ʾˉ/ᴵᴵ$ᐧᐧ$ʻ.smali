@@ -701,7 +701,7 @@
 
     .line 306
     .line 307
-    invoke-static {v3}, Lʾˉ/ᴵᴵ;->ˉˎ(Ljava/lang/Object;)V
+    invoke-static {v3}, Lʾˉ/ᴵᴵ;->ˉˋ(Ljava/lang/Object;)V
 
     .line 308
     .line 309
@@ -1070,7 +1070,7 @@
     .line 496
     .line 497
     .line 498
-    const-class v8, Ljavaroot/utils/ʻⁱ;
+    const-class v8, Ljavaroot/utils/ʻﹳ;
 
     .line 499
     .line 500
@@ -1152,7 +1152,7 @@
 
     .line 541
     .line 542
-    invoke-virtual {v4, v7}, Lʼˏ/ᵢ;->ˎˎ([Ljava/lang/String;)Ljava/lang/String;
+    invoke-virtual {v4, v7}, Lʼˏ/ᵢ;->ˑˑ([Ljava/lang/String;)Ljava/lang/String;
 
     .line 543
     .line 544
@@ -1192,7 +1192,7 @@
 
     .line 560
     .line 561
-    invoke-static {v0}, Lʾˉ/ᴵᴵ;->ˊˈ(Z)V
+    invoke-static {v0}, Lʾˉ/ᴵᴵ;->ˊˆ(Z)V
 
     .line 562
     .line 563

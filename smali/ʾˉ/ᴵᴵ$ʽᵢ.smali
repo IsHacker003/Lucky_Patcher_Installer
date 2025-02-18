@@ -58,7 +58,7 @@
 
     .line 7
     .line 8
-    invoke-static {}, Lʼˏ/ᵢ;->ˈٴ()Ljava/lang/String;
+    invoke-static {}, Lʼˏ/ᵢ;->ˈᴵ()Ljava/lang/String;
 
     .line 9
     .line 10
@@ -71,7 +71,7 @@
     .line 13
     .line 14
     .line 15
-    invoke-virtual {v0, v1}, Lʼˏ/ᵢ;->ʼʾ(Ljava/io/File;)V
+    invoke-virtual {v0, v1}, Lʼˏ/ᵢ;->ʼʿ(Ljava/io/File;)V
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 

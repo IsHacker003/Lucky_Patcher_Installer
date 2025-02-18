@@ -1,10 +1,10 @@
 Signature-Version: 1.0
 Created-By: Android Gradle 7.4.2
-SHA1-Digest-Manifest: KJL4vwbKtJRUp50ot7x4abUyzOg=
+SHA1-Digest-Manifest: nz5gILPbGrYSTrapX1VUpJVrAPE=
 X-Android-APK-Signed: 2
 
 Name: AndroidManifest.xml
-SHA1-Digest: N69cKBpPjNCWj6wP8waKEVYJoU8=
+SHA1-Digest: DgMY4rHiiwi/R1Ohqo2LuINkya0=
 
 Name: META-INF/androidx.activity_activity.version
 SHA1-Digest: iMj7cMEVNjiJlyYhVehe3qQ1ZGQ=
@@ -121,7 +121,7 @@ Name: assets/AdsBlockList_user_edit.txt
 SHA1-Digest: LNaQJwGHbtVP1yhEaiCJYNAz6jY=
 
 Name: assets/testkey.init
-SHA1-Digest: evdaJURqcN9cwNmo+OXOJBXxA3Q=
+SHA1-Digest: xSzt/Rymh0XIQFSPXNn+piO2VBc=
 
 Name: assets/testkey.pk8
 SHA1-Digest: u8Dvzfdtx1dsH0Kl7QgT2BmRDg4=
@@ -136,7 +136,7 @@ Name: assets/xposed_init
 SHA1-Digest: ZaJCb9iSd5LtMQ1nW+yfjWSlM7Q=
 
 Name: classes.dex
-SHA1-Digest: YTv2knw19n2CUnan0oiGkzeIHNA=
+SHA1-Digest: WjJ8REJtQM/4zmb2XXJy9XlX6IM=
 
 Name: com/android/apksigner/help.txt
 SHA1-Digest: H0xbe61TaenbbkPjhqf8EXkRzU8=
@@ -3484,5 +3484,5 @@ Name: res/zr.xml
 SHA1-Digest: +vrnzX0s6M3y5oPwjU0oz5K9Y/I=
 
 Name: resources.arsc
-SHA1-Digest: 7ydMEK5iF8PHo9d2eVkIjpaxzzg=
+SHA1-Digest: ZqmIZld74p8MNuazV+gzWzUifMc=
 

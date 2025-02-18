@@ -83,7 +83,7 @@
 
     .line 19
     .line 20
-    invoke-virtual {v0}, Lʾˉ/ᴵᴵ;->ˈˑ()Landroidx/fragment/app/ʿ;
+    invoke-virtual {v0}, Lʾˉ/ᴵᴵ;->ˈˏ()Landroidx/fragment/app/ʿ;
 
     .line 21
     .line 22
@@ -96,7 +96,7 @@
     .line 25
     .line 26
     .line 27
-    invoke-static {v1}, Lʼˏ/ᵢ;->ˈᐧ(I)Ljava/lang/String;
+    invoke-static {v1}, Lʼˏ/ᵢ;->ˈᵎ(I)Ljava/lang/String;
 
     .line 28
     .line 29
@@ -109,7 +109,7 @@
     .line 32
     .line 33
     .line 34
-    invoke-static {v2}, Lʼˏ/ᵢ;->ˈᐧ(I)Ljava/lang/String;
+    invoke-static {v2}, Lʼˏ/ᵢ;->ˈᵎ(I)Ljava/lang/String;
 
     .line 35
     .line 36
@@ -117,7 +117,7 @@
     move-result-object v2
 
     .line 38
-    invoke-static {v0, v1, v2}, Lʼˏ/ᵢ;->ˑʼ(Landroid/app/Activity;Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1, v2}, Lʼˏ/ᵢ;->ˑʾ(Landroid/app/Activity;Ljava/lang/String;Ljava/lang/String;)V
 
     .line 39
     .line 40

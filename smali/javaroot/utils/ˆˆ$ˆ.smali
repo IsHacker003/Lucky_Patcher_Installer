@@ -5,7 +5,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Ljavaroot/utils/ˆˆ;->ʼ(Ljava/util/ArrayList;[Ljava/lang/String;ZZ)V
+    value = Ljavaroot/utils/ˆˆ;->main([Ljava/lang/String;)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -16,27 +16,31 @@
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Ljava/util/ArrayList<",
-        "Ljava/lang/String;",
+        "Ljava/io/File;",
         ">;"
     }
 .end annotation
 
 
+# instance fields
+.field final synthetic ʻ:Ljava/io/File;
+
+
 # direct methods
-.method constructor <init>()V
-    .locals 1
+.method constructor <init>(Ljava/io/File;)V
+    .locals 0
 
     .line 1
-    invoke-direct {p0}, Ljava/util/ArrayList;-><init>()V
+    iput-object p1, p0, Ljavaroot/utils/ˆˆ$ˆ;->ʻ:Ljava/io/File;
 
     .line 2
     .line 3
-    .line 4
-    const-string v0, "boolean com.android.org.conscrypt.OpenSSLSignature.engineVerify(byte[])"
+    invoke-direct {p0}, Ljava/util/ArrayList;-><init>()V
 
+    .line 4
     .line 5
     .line 6
-    invoke-virtual {p0, v0}, Ljava/util/AbstractCollection;->add(Ljava/lang/Object;)Z
+    invoke-virtual {p0, p1}, Ljava/util/AbstractCollection;->add(Ljava/lang/Object;)Z
 
     .line 7
     .line 8

@@ -45,7 +45,7 @@
 
     .line 1
     :try_start_0
-    invoke-static {}, Lʾˉ/ᴵᴵ;->ˈᵎ()Landroid/content/pm/PackageManager;
+    invoke-static {}, Lʾˉ/ᴵᴵ;->ˈᴵ()Landroid/content/pm/PackageManager;
 
     .line 2
     .line 3
@@ -119,7 +119,7 @@
 
     .line 37
     :cond_0
-    sget-object p2, Lʾˉ/ᴵᴵ;->ʼﾞ:Lru/aaaaaccd/installer/MainActivity;
+    sget-object p2, Lʾˉ/ᴵᴵ;->ʼﾞ:Lru/aaaaacce/installer/MainActivity;
 
     .line 38
     .line 39

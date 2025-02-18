@@ -445,7 +445,7 @@
 
     .line 197
     .line 198
-    invoke-virtual {p2, v2}, Lʼˏ/ᵢ;->ʼʾ(Ljava/io/File;)V
+    invoke-virtual {p2, v2}, Lʼˏ/ᵢ;->ʼʿ(Ljava/io/File;)V
 
     .line 199
     .line 200
@@ -471,7 +471,7 @@
 
     .line 210
     .line 211
-    invoke-virtual {p2, v2}, Lʼˏ/ᵢ;->ʼʾ(Ljava/io/File;)V
+    invoke-virtual {p2, v2}, Lʼˏ/ᵢ;->ʼʿ(Ljava/io/File;)V
 
     .line 212
     .line 213
@@ -497,7 +497,7 @@
 
     .line 223
     .line 224
-    invoke-virtual {p2, v2}, Lʼˏ/ᵢ;->ʼʾ(Ljava/io/File;)V
+    invoke-virtual {p2, v2}, Lʼˏ/ᵢ;->ʼʿ(Ljava/io/File;)V
 
     .line 225
     .line 226
@@ -608,7 +608,7 @@
     .line 273
     .line 274
     .line 275
-    invoke-virtual {p2, p1}, Lʼˏ/ᵢ;->ʼʾ(Ljava/io/File;)V
+    invoke-virtual {p2, p1}, Lʼˏ/ᵢ;->ʼʿ(Ljava/io/File;)V
 
     .line 276
     .line 277

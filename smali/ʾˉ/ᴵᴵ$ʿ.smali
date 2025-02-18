@@ -121,7 +121,7 @@
 
     .line 34
     .line 35
-    invoke-static {}, Lʾˉ/ᴵᴵ;->ˈי()Landroid/content/Context;
+    invoke-static {}, Lʾˉ/ᴵᴵ;->ˈˑ()Landroid/content/Context;
 
     .line 36
     .line 37
@@ -287,7 +287,7 @@
 
     .line 117
     .line 118
-    invoke-static {v4}, Lʼˏ/ᵢ;->ˊʼ(Ljava/lang/String;)Z
+    invoke-static {v4}, Lʼˏ/ᵢ;->ˊʾ(Ljava/lang/String;)Z
 
     .line 119
     .line 120
@@ -476,7 +476,7 @@
     .line 218
     :cond_6
     :try_start_1
-    invoke-static {}, Lʾˉ/ᴵᴵ;->ˈᵎ()Landroid/content/pm/PackageManager;
+    invoke-static {}, Lʾˉ/ᴵᴵ;->ˈᴵ()Landroid/content/pm/PackageManager;
 
     .line 219
     .line 220
@@ -728,7 +728,7 @@
 
     .line 339
     .line 340
-    invoke-static {v8}, Lʼˏ/ᵢ;->ʻˈ(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v8}, Lʼˏ/ᵢ;->ʻˉ(Ljava/lang/String;)Ljava/lang/String;
 
     .line 341
     .line 342
@@ -774,7 +774,7 @@
 
     .line 357
     .line 358
-    invoke-static {v0}, Lʾˉ/ᴵᴵ;->ˉˎ(Ljava/lang/Object;)V
+    invoke-static {v0}, Lʾˉ/ᴵᴵ;->ˉˋ(Ljava/lang/Object;)V
 
     .line 359
     .line 360
@@ -854,7 +854,7 @@
 
     .line 399
     .line 400
-    invoke-virtual {v5, v6, v7}, Lʼˏ/ᵢ;->ʼᵔ(Ljava/io/File;Ljava/lang/String;)Z
+    invoke-virtual {v5, v6, v7}, Lʼˏ/ᵢ;->ʼⁱ(Ljava/io/File;Ljava/lang/String;)Z
 
     .line 401
     .line 402

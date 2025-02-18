@@ -48,7 +48,7 @@
 
     .line 2
     .line 3
-    invoke-virtual {p1}, Lʾˉ/ᴵᴵ;->ˊˆ()V
+    invoke-virtual {p1}, Lʾˉ/ᴵᴵ;->ˊʿ()V
 
     .line 4
     .line 5

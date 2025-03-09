@@ -4,11 +4,11 @@
 
 
 # direct methods
-.method public static bridge synthetic ʻ(Landroid/app/NotificationChannel;Z)V
+.method public static bridge synthetic ʻ(Landroid/app/NotificationManager;Landroid/app/NotificationChannel;)V
     .locals 0
 
     .line 1
-    invoke-virtual {p0, p1}, Landroid/app/NotificationChannel;->enableVibration(Z)V
+    invoke-virtual {p0, p1}, Landroid/app/NotificationManager;->createNotificationChannel(Landroid/app/NotificationChannel;)V
 
     return-void
 .end method

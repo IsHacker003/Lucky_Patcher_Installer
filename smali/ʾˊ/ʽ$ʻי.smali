@@ -3,12 +3,12 @@
 .source "SourceFile"
 
 # interfaces
-.implements Landroid/content/DialogInterface$OnClickListener;
+.implements Landroid/view/View$OnClickListener;
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lʾˊ/ʽ;->ˑ([Ljava/io/File;Ljava/lang/Runnable;Landroid/widget/CompoundButton$OnCheckedChangeListener;)V
+    value = Lʾˊ/ʽ;->ʻʻ()V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,13 +18,13 @@
 
 
 # instance fields
-.field final synthetic ʼ:[Ljava/io/File;
+.field final synthetic ʼ:Landroid/view/View;
 
-.field final synthetic ʽ:Ljava/lang/Runnable;
+.field final synthetic ʽ:Landroid/widget/ScrollView;
 
 
 # direct methods
-.method constructor <init>([Ljava/io/File;Ljava/lang/Runnable;)V
+.method constructor <init>(Landroid/view/View;Landroid/widget/ScrollView;)V
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -33,11 +33,11 @@
     .end annotation
 
     .line 1
-    iput-object p1, p0, Lʾˊ/ʽ$ʻי;->ʼ:[Ljava/io/File;
+    iput-object p1, p0, Lʾˊ/ʽ$ʻי;->ʼ:Landroid/view/View;
 
     .line 2
     .line 3
-    iput-object p2, p0, Lʾˊ/ʽ$ʻי;->ʽ:Ljava/lang/Runnable;
+    iput-object p2, p0, Lʾˊ/ʽ$ʻי;->ʽ:Landroid/widget/ScrollView;
 
     .line 4
     .line 5
@@ -51,42 +51,102 @@
 
 
 # virtual methods
-.method public onClick(Landroid/content/DialogInterface;I)V
-    .locals 1
+.method public onClick(Landroid/view/View;)V
+    .locals 2
 
     .line 1
-    iget-object p1, p0, Lʾˊ/ʽ$ʻי;->ʼ:[Ljava/io/File;
+    iget-object p1, p0, Lʾˊ/ʽ$ʻי;->ʼ:Landroid/view/View;
 
     .line 2
     .line 3
-    new-instance p2, Ljava/io/File;
+    const v0, 0x7f090261
 
     .line 4
     .line 5
-    sget-object v0, Lʾˊ/ʽ;->ʿ:Ljava/lang/String;
-
     .line 6
-    .line 7
-    invoke-direct {p2, v0}, Ljava/io/File;-><init>(Ljava/lang/String;)V
+    invoke-virtual {p1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
+    .line 7
     .line 8
     .line 9
+    move-result-object p1
+
     .line 10
-    const/4 v0, 0x0
+    check-cast p1, Landroid/widget/LinearLayout;
 
     .line 11
-    aput-object p2, p1, v0
-
     .line 12
+    const-string v0, "custom_help_tag"
+
     .line 13
-    iget-object p1, p0, Lʾˊ/ʽ$ʻי;->ʽ:Ljava/lang/Runnable;
-
     .line 14
-    .line 15
-    invoke-interface {p1}, Ljava/lang/Runnable;->run()V
+    invoke-virtual {p1, v0}, Landroid/view/View;->findViewWithTag(Ljava/lang/Object;)Landroid/view/View;
 
+    .line 15
     .line 16
     .line 17
+    move-result-object v0
+
     .line 18
+    check-cast v0, Landroid/widget/ScrollView;
+
+    .line 19
+    .line 20
+    if-eqz v0, :cond_0
+
+    .line 21
+    .line 22
+    const/16 v1, 0x8
+
+    .line 23
+    .line 24
+    invoke-virtual {v0, v1}, Landroid/view/View;->setVisibility(I)V
+
+    .line 25
+    .line 26
+    .line 27
+    :cond_0
+    const-string v0, "common_help_tag"
+
+    .line 28
+    .line 29
+    invoke-virtual {p1, v0}, Landroid/view/View;->findViewWithTag(Ljava/lang/Object;)Landroid/view/View;
+
+    .line 30
+    .line 31
+    .line 32
+    move-result-object v0
+
+    .line 33
+    if-nez v0, :cond_1
+
+    .line 34
+    .line 35
+    iget-object v0, p0, Lʾˊ/ʽ$ʻי;->ʽ:Landroid/widget/ScrollView;
+
+    .line 36
+    .line 37
+    invoke-virtual {p1, v0}, Landroid/view/ViewGroup;->addView(Landroid/view/View;)V
+
+    .line 38
+    .line 39
+    .line 40
+    goto :goto_0
+
+    .line 41
+    :cond_1
+    iget-object p1, p0, Lʾˊ/ʽ$ʻי;->ʽ:Landroid/widget/ScrollView;
+
+    .line 42
+    .line 43
+    const/4 v0, 0x0
+
+    .line 44
+    invoke-virtual {p1, v0}, Landroid/view/View;->setVisibility(I)V
+
+    .line 45
+    .line 46
+    .line 47
+    :goto_0
     return-void
 .end method

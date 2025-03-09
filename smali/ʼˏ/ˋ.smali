@@ -4,11 +4,13 @@
 
 
 # direct methods
-.method public static bridge synthetic ʻ(Ljava/util/ArrayList;Ljava/util/Comparator;)V
+.method public static bridge synthetic ʻ(Ljava/nio/file/Path;)Z
     .locals 0
 
     .line 1
-    invoke-virtual {p0, p1}, Ljava/util/ArrayList;->sort(Ljava/util/Comparator;)V
+    invoke-static {p0}, Ljava/nio/file/Files;->isSymbolicLink(Ljava/nio/file/Path;)Z
 
-    return-void
+    move-result p0
+
+    return p0
 .end method

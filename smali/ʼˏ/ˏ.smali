@@ -4,11 +4,11 @@
 
 
 # direct methods
-.method public static bridge synthetic ʻ(Landroid/net/Uri;)Ljava/lang/String;
+.method public static bridge synthetic ʻ(Landroid/app/NotificationManager;Ljava/lang/String;)Landroid/app/NotificationChannel;
     .locals 0
 
     .line 1
-    invoke-static {p0}, Landroid/provider/DocumentsContract;->getDocumentId(Landroid/net/Uri;)Ljava/lang/String;
+    invoke-virtual {p0, p1}, Landroid/app/NotificationManager;->getNotificationChannel(Ljava/lang/String;)Landroid/app/NotificationChannel;
 
     move-result-object p0
 

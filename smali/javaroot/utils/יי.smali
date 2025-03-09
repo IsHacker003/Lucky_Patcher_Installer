@@ -41,7 +41,7 @@
     .line 12
     .line 13
     .line 14
-    invoke-static {p0}, Lʼˏ/ᵢ;->ˑי(Ljava/lang/Object;)V
+    invoke-static {p0}, Lʼˏ/ᵔ;->ˑـ(Ljava/lang/Object;)V
 
     .line 15
     .line 16
@@ -643,7 +643,7 @@
     move-result-object p0
 
     .line 307
-    invoke-static {p0, v0}, Lʼˏ/ᵢ;->יᐧ([BLjava/io/File;)V
+    invoke-static {p0, v0}, Lʼˏ/ᵔ;->יᴵ([BLjava/io/File;)V
     :try_end_2
     .catch Ljava/io/IOException; {:try_start_2 .. :try_end_2} :catch_2
 
@@ -671,7 +671,7 @@
     .line 318
     :cond_6
     :goto_6
-    invoke-static {}, Lʼˏ/ᵢ;->ʼـ()V
+    invoke-static {}, Lʼˏ/ᵔ;->ʼـ()V
 
     .line 319
     .line 320

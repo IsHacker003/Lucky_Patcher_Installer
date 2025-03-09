@@ -25,7 +25,7 @@
     .line 4
     .line 5
     .line 6
-    invoke-static {p0}, Lʼˏ/ᵢ;->ˑי(Ljava/lang/Object;)V
+    invoke-static {p0}, Lʼˏ/ᵔ;->ˑـ(Ljava/lang/Object;)V
 
     .line 7
     .line 8
@@ -47,7 +47,7 @@
 
     .line 17
     .line 18
-    invoke-static {p0, v1}, Lʼˏ/ᵢ;->ˎᵔ(Ljava/io/File;Ljava/lang/String;)Z
+    invoke-static {p0, v1}, Lʼˏ/ᵔ;->ˎᵔ(Ljava/io/File;Ljava/lang/String;)Z
 
     .line 19
     .line 20
@@ -88,12 +88,12 @@
 
     .line 36
     .line 37
-    invoke-static {p0}, Lʼˏ/ᵢ;->ˏˏ([Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {p0}, Lʼˏ/ᵔ;->ˏˏ([Ljava/lang/String;)Ljava/lang/String;
 
     .line 38
     .line 39
     .line 40
-    invoke-static {}, Lʼˏ/ᵢ;->ʼـ()V
+    invoke-static {}, Lʼˏ/ᵔ;->ʼـ()V
 
     .line 41
     .line 42

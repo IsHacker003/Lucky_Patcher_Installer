@@ -48,7 +48,7 @@
 
     .line 2
     .line 3
-    invoke-static {v0}, Lʼˏ/ᵢ;->ˉᴵ(Ljava/lang/String;)Z
+    invoke-static {v0}, Lʼˏ/ᵔ;->ˉᴵ(Ljava/lang/String;)Z
 
     .line 4
     .line 5
@@ -73,7 +73,7 @@
     .line 14
     .line 15
     .line 16
-    invoke-static {v0}, Lʼˏ/ᵢ;->ʾʻ(Ljava/io/File;)Ljava/io/File;
+    invoke-static {v0}, Lʼˏ/ᵔ;->ʾʻ(Ljava/io/File;)Ljava/io/File;
 
     .line 17
     .line 18
@@ -102,7 +102,7 @@
     .line 29
     .line 30
     .line 31
-    invoke-static {v1}, Lʼˏ/ᵢ;->ˈᵎ(I)Ljava/lang/String;
+    invoke-static {v1}, Lʼˏ/ᵔ;->ˈᵎ(I)Ljava/lang/String;
 
     .line 32
     .line 33
@@ -115,7 +115,7 @@
     .line 36
     .line 37
     .line 38
-    invoke-static {v2}, Lʼˏ/ᵢ;->ˈᵎ(I)Ljava/lang/String;
+    invoke-static {v2}, Lʼˏ/ᵔ;->ˈᵎ(I)Ljava/lang/String;
 
     .line 39
     .line 40
@@ -123,7 +123,7 @@
     move-result-object v2
 
     .line 42
-    invoke-static {v0, v1, v2}, Lʼˏ/ᵢ;->ˑʻ(Landroid/app/Activity;Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, v1, v2}, Lʼˏ/ᵔ;->ˑʼ(Landroid/app/Activity;Ljava/lang/String;Ljava/lang/String;)V
 
     .line 43
     .line 44

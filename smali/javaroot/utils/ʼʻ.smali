@@ -44,7 +44,7 @@
     .line 7
     .line 8
     .line 9
-    invoke-static {v3}, Lʼˏ/ᵢ;->ˑי(Ljava/lang/Object;)V
+    invoke-static {v3}, Lʼˏ/ᵔ;->ˑـ(Ljava/lang/Object;)V
 
     .line 10
     .line 11
@@ -58,7 +58,7 @@
 
     .line 15
     .line 16
-    invoke-static {}, Lʼˏ/ᵢ;->ˈי()Ljava/util/ArrayList;
+    invoke-static {}, Lʼˏ/ᵔ;->ˈי()Ljava/util/ArrayList;
 
     .line 17
     .line 18
@@ -429,16 +429,16 @@
     .line 203
     .line 204
     .line 205
-    new-instance v8, Lʼˏ/ᵢ;
+    new-instance v8, Lʼˏ/ᵔ;
 
     .line 206
     .line 207
-    invoke-direct {v8}, Lʼˏ/ᵢ;-><init>()V
+    invoke-direct {v8}, Lʼˏ/ᵔ;-><init>()V
 
     .line 208
     .line 209
     .line 210
-    invoke-virtual {v8, v6}, Lʼˏ/ᵢ;->ʼʿ(Ljava/io/File;)V
+    invoke-virtual {v8, v6}, Lʼˏ/ᵔ;->ʼʿ(Ljava/io/File;)V
     :try_end_1
     .catch Ljava/io/IOException; {:try_start_1 .. :try_end_1} :catch_0
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
@@ -527,7 +527,7 @@
     .line 250
     .line 251
     :cond_4
-    invoke-static {}, Lʼˏ/ᵢ;->ʼـ()V
+    invoke-static {}, Lʼˏ/ᵔ;->ʼـ()V
 
     .line 252
     .line 253

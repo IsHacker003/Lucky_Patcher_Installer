@@ -25,7 +25,7 @@
     .line 4
     .line 5
     .line 6
-    invoke-static {v0}, Lʼˏ/ᵢ;->ˑי(Ljava/lang/Object;)V
+    invoke-static {v0}, Lʼˏ/ᵔ;->ˑـ(Ljava/lang/Object;)V
 
     .line 7
     .line 8
@@ -63,7 +63,7 @@
     .line 24
     .line 25
     :try_start_0
-    invoke-static {v0, v1}, Lʼˏ/ᵢ;->ˑᴵ(Ljava/io/File;Ljava/io/File;)V
+    invoke-static {v0, v1}, Lʼˏ/ᵔ;->ˑᵎ(Ljava/io/File;Ljava/io/File;)V
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
@@ -83,7 +83,7 @@
     .line 32
     .line 33
     :goto_0
-    invoke-static {}, Lʼˏ/ᵢ;->ʼـ()V
+    invoke-static {}, Lʼˏ/ᵔ;->ʼـ()V
 
     .line 34
     .line 35

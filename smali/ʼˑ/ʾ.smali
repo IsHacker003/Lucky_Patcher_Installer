@@ -84,7 +84,7 @@
 
     .line 26
     .line 27
-    invoke-static {}, Lʼˏ/ᵢ;->ʾˋ()Ljava/lang/String;
+    invoke-static {}, Lʼˏ/ᵔ;->ʾˋ()Ljava/lang/String;
 
     .line 28
     .line 29

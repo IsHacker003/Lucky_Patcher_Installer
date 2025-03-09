@@ -44,7 +44,7 @@
     .locals 3
 
     .line 1
-    const p1, 0x7f0901ec
+    const p1, 0x7f0901ed
 
     .line 2
     .line 3
@@ -64,7 +64,7 @@
 
     .line 10
     .line 11
-    const p1, 0x7f0901f2
+    const p1, 0x7f0901f3
 
     .line 12
     .line 13

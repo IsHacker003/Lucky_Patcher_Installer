@@ -124,7 +124,7 @@
     sput-boolean v1, Lʾˉ/ᴵᴵ;->ˈʻ:Z
 
     .line 10
-    sget-object p1, Lʼˏ/ᵢ;->ˏ:Ljava/lang/String;
+    sget-object p1, Lʼˏ/ᵔ;->ˏ:Ljava/lang/String;
 
     return-object p1
 
@@ -198,7 +198,7 @@
     if-ne v0, v1, :cond_3
 
     .line 15
-    invoke-static {}, Lru/aaaaacce/installer/PkgName;->getPkgName()Ljava/lang/String;
+    invoke-static {}, Lru/aaaaaccg/installer/PkgName;->getPkgName()Ljava/lang/String;
 
     move-result-object p1
 

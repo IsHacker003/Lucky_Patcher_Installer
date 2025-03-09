@@ -44,7 +44,7 @@
     .locals 4
 
     .line 1
-    new-instance v0, Lʼˏ/ᵢ;
+    new-instance v0, Lʼˏ/ᵔ;
 
     .line 2
     .line 3
@@ -52,7 +52,7 @@
 
     .line 4
     .line 5
-    invoke-direct {v0, v1}, Lʼˏ/ᵢ;-><init>(Ljava/lang/String;)V
+    invoke-direct {v0, v1}, Lʼˏ/ᵔ;-><init>(Ljava/lang/String;)V
 
     .line 6
     .line 7
@@ -75,7 +75,7 @@
     .line 16
     .line 17
     .line 18
-    invoke-static {}, Lʼˏ/ᵢ;->ʽـ()Ljava/lang/String;
+    invoke-static {}, Lʼˏ/ᵔ;->ʽـ()Ljava/lang/String;
 
     .line 19
     .line 20
@@ -132,7 +132,7 @@
 
     .line 46
     .line 47
-    invoke-virtual {v0, v2}, Lʼˏ/ᵢ;->ˑˑ([Ljava/lang/String;)Ljava/lang/String;
+    invoke-virtual {v0, v2}, Lʼˏ/ᵔ;->ˑˑ([Ljava/lang/String;)Ljava/lang/String;
 
     .line 48
     .line 49

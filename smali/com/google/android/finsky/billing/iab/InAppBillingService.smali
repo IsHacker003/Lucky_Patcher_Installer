@@ -4,7 +4,7 @@
 
 
 # static fields
-.field static ˋ:Landroid/content/ServiceConnection;
+.field static ˊ:Landroid/content/ServiceConnection;
 
 
 # instance fields
@@ -20,17 +20,7 @@
 
 .field ˈ:Landroid/os/IBinder;
 
-.field final ˉ:Ljava/util/ArrayList;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Ljava/util/ArrayList<",
-            "L\u02bc\u0674/\u02be;",
-            ">;"
-        }
-    .end annotation
-.end field
-
-.field private final ˊ:Lʼˎ/ʼ$ʻ;
+.field private final ˉ:Lʼˎ/ʼ$ʻ;
 
 
 # direct methods
@@ -65,32 +55,19 @@
 
     .line 13
     .line 14
-    new-instance v0, Ljava/util/ArrayList;
+    new-instance v0, Lcom/google/android/finsky/billing/iab/InAppBillingService$ʻ;
 
     .line 15
     .line 16
-    invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
+    invoke-direct {v0, p0}, Lcom/google/android/finsky/billing/iab/InAppBillingService$ʻ;-><init>(Lcom/google/android/finsky/billing/iab/InAppBillingService;)V
 
     .line 17
     .line 18
     .line 19
-    iput-object v0, p0, Lcom/google/android/finsky/billing/iab/InAppBillingService;->ˉ:Ljava/util/ArrayList;
+    iput-object v0, p0, Lcom/google/android/finsky/billing/iab/InAppBillingService;->ˉ:Lʼˎ/ʼ$ʻ;
 
     .line 20
     .line 21
-    new-instance v0, Lcom/google/android/finsky/billing/iab/InAppBillingService$ʼ;
-
-    .line 22
-    .line 23
-    invoke-direct {v0, p0}, Lcom/google/android/finsky/billing/iab/InAppBillingService$ʼ;-><init>(Lcom/google/android/finsky/billing/iab/InAppBillingService;)V
-
-    .line 24
-    .line 25
-    .line 26
-    iput-object v0, p0, Lcom/google/android/finsky/billing/iab/InAppBillingService;->ˊ:Lʼˎ/ʼ$ʻ;
-
-    .line 27
-    .line 28
     return-void
 .end method
 
@@ -199,7 +176,7 @@
     .line 47
     :cond_2
     :goto_1
-    iget-object p1, p0, Lcom/google/android/finsky/billing/iab/InAppBillingService;->ˊ:Lʼˎ/ʼ$ʻ;
+    iget-object p1, p0, Lcom/google/android/finsky/billing/iab/InAppBillingService;->ˉ:Lʼˎ/ʼ$ʻ;
 
     .line 48
     .line 49
@@ -267,7 +244,7 @@
 
     .line 31
     .line 32
-    invoke-virtual {p0}, Lcom/google/android/finsky/billing/iab/InAppBillingService;->ʼ()V
+    invoke-virtual {p0}, Lcom/google/android/finsky/billing/iab/InAppBillingService;->ʻ()V
 
     .line 33
     .line 34
@@ -289,7 +266,7 @@
     .line 4
     .line 5
     .line 6
-    sget-object v0, Lcom/google/android/finsky/billing/iab/InAppBillingService;->ˋ:Landroid/content/ServiceConnection;
+    sget-object v0, Lcom/google/android/finsky/billing/iab/InAppBillingService;->ˊ:Landroid/content/ServiceConnection;
 
     .line 7
     .line 8
@@ -306,7 +283,7 @@
     move-result-object v0
 
     .line 14
-    sget-object v1, Lcom/google/android/finsky/billing/iab/InAppBillingService;->ˋ:Landroid/content/ServiceConnection;
+    sget-object v1, Lcom/google/android/finsky/billing/iab/InAppBillingService;->ˊ:Landroid/content/ServiceConnection;
 
     .line 15
     .line 16
@@ -458,403 +435,7 @@
     return p1
 .end method
 
-.method public ʻ(Ljava/lang/String;)V
-    .locals 11
-
-    .line 1
-    invoke-virtual {p0}, Lcom/google/android/finsky/billing/iab/InAppBillingService;->ʼ()V
-
-    .line 2
-    .line 3
-    .line 4
-    iget-boolean v0, p0, Lcom/google/android/finsky/billing/iab/InAppBillingService;->ʽ:Z
-
-    .line 5
-    .line 6
-    if-nez v0, :cond_5
-
-    .line 7
-    .line 8
-    new-instance v0, Lcom/google/android/finsky/billing/iab/InAppBillingService$ʻ;
-
-    .line 9
-    .line 10
-    invoke-direct {v0, p0, p1}, Lcom/google/android/finsky/billing/iab/InAppBillingService$ʻ;-><init>(Lcom/google/android/finsky/billing/iab/InAppBillingService;Ljava/lang/String;)V
-
-    .line 11
-    .line 12
-    .line 13
-    sput-object v0, Lcom/google/android/finsky/billing/iab/InAppBillingService;->ˋ:Landroid/content/ServiceConnection;
-
-    .line 14
-    .line 15
-    new-instance p1, Landroid/content/Intent;
-
-    .line 16
-    .line 17
-    const-string v0, "com.android.vending.billing.InAppBillingService.BIND"
-
-    .line 18
-    .line 19
-    invoke-direct {p1, v0}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
-
-    .line 20
-    .line 21
-    .line 22
-    const-string v0, "com.android.vending"
-
-    .line 23
-    .line 24
-    invoke-virtual {p1, v0}, Landroid/content/Intent;->setPackage(Ljava/lang/String;)Landroid/content/Intent;
-
-    .line 25
-    .line 26
-    .line 27
-    const-string v1, "xexe"
-
-    .line 28
-    .line 29
-    const-string v2, "lp"
-
-    .line 30
-    .line 31
-    invoke-virtual {p1, v1, v2}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
-
-    .line 32
-    .line 33
-    .line 34
-    invoke-static {}, Lru/aaaaacce/installer/PkgName;->getPkgName()Ljava/lang/String;
-
-    .line 35
-    .line 36
-    .line 37
-    move-result-object v3
-
-    .line 38
-    const-string v4, ""
-
-    .line 39
-    .line 40
-    invoke-virtual {p1, v3, v4}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
-
-    .line 41
-    .line 42
-    .line 43
-    invoke-static {}, Lʾˉ/ᴵᴵ;->ˈᴵ()Landroid/content/pm/PackageManager;
-
-    .line 44
-    .line 45
-    .line 46
-    move-result-object v3
-
-    .line 47
-    const/4 v4, 0x0
-
-    .line 48
-    invoke-virtual {v3, p1, v4}, Landroid/content/pm/PackageManager;->queryIntentServices(Landroid/content/Intent;I)Ljava/util/List;
-
-    .line 49
-    .line 50
-    .line 51
-    move-result-object v3
-
-    .line 52
-    invoke-interface {v3}, Ljava/util/List;->isEmpty()Z
-
-    .line 53
-    .line 54
-    .line 55
-    move-result v3
-
-    .line 56
-    const-string v5, "w"
-
-    .line 57
-    .line 58
-    if-eqz v3, :cond_0
-
-    .line 59
-    .line 60
-    new-instance v3, Lʼˏ/ᵢ;
-
-    .line 61
-    .line 62
-    invoke-direct {v3, v5}, Lʼˏ/ᵢ;-><init>(Ljava/lang/String;)V
-
-    .line 63
-    .line 64
-    .line 65
-    const-wide/16 v6, 0x7d0
-
-    .line 66
-    .line 67
-    invoke-virtual {v3, v6, v7}, Lʼˏ/ᵢ;->יˑ(J)V
-
-    .line 68
-    .line 69
-    .line 70
-    :cond_0
-    invoke-static {}, Lʾˉ/ᴵᴵ;->ˈᴵ()Landroid/content/pm/PackageManager;
-
-    .line 71
-    .line 72
-    .line 73
-    move-result-object v3
-
-    .line 74
-    invoke-virtual {v3, p1, v4}, Landroid/content/pm/PackageManager;->queryIntentServices(Landroid/content/Intent;I)Ljava/util/List;
-
-    .line 75
-    .line 76
-    .line 77
-    move-result-object v3
-
-    .line 78
-    invoke-interface {v3}, Ljava/util/List;->isEmpty()Z
-
-    .line 79
-    .line 80
-    .line 81
-    move-result v3
-
-    .line 82
-    if-nez v3, :cond_3
-
-    .line 83
-    .line 84
-    invoke-static {}, Lʾˉ/ᴵᴵ;->ˈᴵ()Landroid/content/pm/PackageManager;
-
-    .line 85
-    .line 86
-    .line 87
-    move-result-object v3
-
-    .line 88
-    invoke-virtual {v3, p1, v4}, Landroid/content/pm/PackageManager;->queryIntentServices(Landroid/content/Intent;I)Ljava/util/List;
-
-    .line 89
-    .line 90
-    .line 91
-    move-result-object p1
-
-    .line 92
-    invoke-interface {p1}, Ljava/util/List;->iterator()Ljava/util/Iterator;
-
-    .line 93
-    .line 94
-    .line 95
-    move-result-object p1
-
-    .line 96
-    :cond_1
-    :goto_0
-    invoke-interface {p1}, Ljava/util/Iterator;->hasNext()Z
-
-    .line 97
-    .line 98
-    .line 99
-    move-result v3
-
-    .line 100
-    if-eqz v3, :cond_4
-
-    .line 101
-    .line 102
-    invoke-interface {p1}, Ljava/util/Iterator;->next()Ljava/lang/Object;
-
-    .line 103
-    .line 104
-    .line 105
-    move-result-object v3
-
-    .line 106
-    check-cast v3, Landroid/content/pm/ResolveInfo;
-
-    .line 107
-    .line 108
-    iget-object v6, v3, Landroid/content/pm/ResolveInfo;->serviceInfo:Landroid/content/pm/ServiceInfo;
-
-    .line 109
-    .line 110
-    iget-object v6, v6, Landroid/content/pm/ServiceInfo;->packageName:Ljava/lang/String;
-
-    .line 111
-    .line 112
-    if-eqz v6, :cond_1
-
-    .line 113
-    .line 114
-    invoke-virtual {v6, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    .line 115
-    .line 116
-    .line 117
-    move-result v6
-
-    .line 118
-    if-eqz v6, :cond_1
-
-    .line 119
-    .line 120
-    iget-object v3, v3, Landroid/content/pm/ResolveInfo;->serviceInfo:Landroid/content/pm/ServiceInfo;
-
-    .line 121
-    .line 122
-    iget-object v6, v3, Landroid/content/pm/ServiceInfo;->packageName:Ljava/lang/String;
-
-    .line 123
-    .line 124
-    iget-object v3, v3, Landroid/content/pm/ServiceInfo;->name:Ljava/lang/String;
-
-    .line 125
-    .line 126
-    new-instance v7, Landroid/content/ComponentName;
-
-    .line 127
-    .line 128
-    invoke-direct {v7, v6, v3}, Landroid/content/ComponentName;-><init>(Ljava/lang/String;Ljava/lang/String;)V
-
-    .line 129
-    .line 130
-    .line 131
-    new-instance v3, Landroid/content/Intent;
-
-    .line 132
-    .line 133
-    invoke-direct {v3}, Landroid/content/Intent;-><init>()V
-
-    .line 134
-    .line 135
-    .line 136
-    invoke-virtual {v3, v7}, Landroid/content/Intent;->setComponent(Landroid/content/ComponentName;)Landroid/content/Intent;
-
-    .line 137
-    .line 138
-    .line 139
-    invoke-virtual {v3, v1, v2}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
-
-    .line 140
-    .line 141
-    .line 142
-    invoke-static {}, Lʾˉ/ᴵᴵ;->ˈˑ()Landroid/content/Context;
-
-    .line 143
-    .line 144
-    .line 145
-    move-result-object v6
-
-    .line 146
-    sget-object v7, Lcom/google/android/finsky/billing/iab/InAppBillingService;->ˋ:Landroid/content/ServiceConnection;
-
-    .line 147
-    .line 148
-    const/4 v8, 0x1
-
-    .line 149
-    invoke-virtual {v6, v3, v7, v8}, Landroid/content/Context;->bindService(Landroid/content/Intent;Landroid/content/ServiceConnection;I)Z
-
-    .line 150
-    .line 151
-    .line 152
-    move-result v3
-
-    .line 153
-    if-eqz v3, :cond_1
-
-    .line 154
-    .line 155
-    const/4 v3, 0x0
-
-    .line 156
-    :cond_2
-    iget-boolean v6, p0, Lcom/google/android/finsky/billing/iab/InAppBillingService;->ʽ:Z
-
-    .line 157
-    .line 158
-    if-nez v6, :cond_1
-
-    .line 159
-    .line 160
-    iget-boolean v6, p0, Lcom/google/android/finsky/billing/iab/InAppBillingService;->ʾ:Z
-
-    .line 161
-    .line 162
-    if-nez v6, :cond_1
-
-    .line 163
-    .line 164
-    new-instance v6, Lʼˏ/ᵢ;
-
-    .line 165
-    .line 166
-    invoke-direct {v6, v5}, Lʼˏ/ᵢ;-><init>(Ljava/lang/String;)V
-
-    .line 167
-    .line 168
-    .line 169
-    const-wide/16 v9, 0x1f4
-
-    .line 170
-    .line 171
-    invoke-virtual {v6, v9, v10}, Lʼˏ/ᵢ;->יˑ(J)V
-
-    .line 172
-    .line 173
-    .line 174
-    add-int/2addr v3, v8
-
-    .line 175
-    const/16 v6, 0x1e
-
-    .line 176
-    .line 177
-    if-ne v3, v6, :cond_2
-
-    .line 178
-    .line 179
-    goto :goto_0
-
-    .line 180
-    :cond_3
-    const-string p1, "Billing service unavailable on device."
-
-    .line 181
-    .line 182
-    invoke-static {p1}, Lʾˉ/ᴵᴵ;->ˉˋ(Ljava/lang/Object;)V
-
-    .line 183
-    .line 184
-    .line 185
-    :cond_4
-    return-void
-
-    .line 186
-    :cond_5
-    new-instance p1, Ljava/lang/IllegalStateException;
-
-    .line 187
-    .line 188
-    const-string v0, "IAB helper is already set up."
-
-    .line 189
-    .line 190
-    invoke-direct {p1, v0}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
-
-    .line 191
-    .line 192
-    .line 193
-    goto :goto_2
-
-    .line 194
-    :goto_1
-    throw p1
-
-    .line 195
-    :goto_2
-    goto :goto_1
-.end method
-
-.method ʼ()V
+.method ʻ()V
     .locals 6
 
     .line 1
@@ -1061,7 +642,7 @@
 
     .line 93
     .line 94
-    invoke-static {v4}, Lʼˏ/ᵢ;->ˊﹶ(Z)V
+    invoke-static {v4}, Lʼˏ/ᵔ;->ˊﹶ(Z)V
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 

@@ -94,7 +94,7 @@
     const/4 v0, 0x0
 
     .line 37
-    invoke-static {v0}, Lʼˏ/ᵢ;->ˑי(Ljava/lang/Object;)V
+    invoke-static {v0}, Lʼˏ/ᵔ;->ˑـ(Ljava/lang/Object;)V
 
     .line 38
     .line 39
@@ -233,7 +233,7 @@
 
     .line 104
     .line 105
-    invoke-static {p0}, Lʼˏ/ᵢ;->ʻʾ(Ljava/lang/String;)Ljava/util/ArrayList;
+    invoke-static {p0}, Lʼˏ/ᵔ;->ʻʾ(Ljava/lang/String;)Ljava/util/ArrayList;
 
     .line 106
     .line 107
@@ -350,7 +350,7 @@
 
     .line 163
     .line 164
-    invoke-static {p0}, Lʼˏ/ᵢ;->ˎﹳ(Ljava/lang/String;)Z
+    invoke-static {p0}, Lʼˏ/ᵔ;->ˎﹳ(Ljava/lang/String;)Z
 
     .line 165
     .line 166
@@ -363,7 +363,7 @@
 
     .line 170
     .line 171
-    invoke-static {}, Lʼˏ/ᵢ;->ʼـ()V
+    invoke-static {}, Lʼˏ/ᵔ;->ʼـ()V
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
@@ -388,7 +388,7 @@
 
     .line 181
     .line 182
-    invoke-static {}, Lʼˏ/ᵢ;->ʼـ()V
+    invoke-static {}, Lʼˏ/ᵔ;->ʼـ()V
 
     .line 183
     .line 184

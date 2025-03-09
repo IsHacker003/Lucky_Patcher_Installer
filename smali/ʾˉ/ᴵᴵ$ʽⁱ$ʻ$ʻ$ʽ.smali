@@ -44,11 +44,11 @@
     .locals 1
 
     .line 1
-    sget-object v0, Lʾˉ/ᴵᴵ;->ʼﾞ:Lru/aaaaacce/installer/MainActivity;
+    sget-object v0, Lʾˉ/ᴵᴵ;->ʼﾞ:Lru/aaaaaccg/installer/MainActivity;
 
     .line 2
     .line 3
-    invoke-static {v0}, Lʾˉ/ᴵᴵ;->ˋˏ(Lru/aaaaacce/installer/MainActivity;)V
+    invoke-static {v0}, Lʾˉ/ᴵᴵ;->ˋˏ(Lru/aaaaaccg/installer/MainActivity;)V
 
     .line 4
     .line 5

@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lʾˊ/ʽ;->ᴵᴵ(ZLjava/io/File;)V
+    value = Lʾˊ/ʽ;->ⁱ(Ljava/io/File;)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -17,16 +17,35 @@
 .end annotation
 
 
+# instance fields
+.field final synthetic ʼ:[Ljava/io/File;
+
+.field final synthetic ʽ:Ljava/io/File;
+
+
 # direct methods
-.method constructor <init>()V
+.method constructor <init>([Ljava/io/File;Ljava/io/File;)V
     .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()V"
+        }
+    .end annotation
 
     .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    iput-object p1, p0, Lʾˊ/ʽ$ʼˋ;->ʼ:[Ljava/io/File;
 
     .line 2
     .line 3
+    iput-object p2, p0, Lʾˊ/ʽ$ʼˋ;->ʽ:Ljava/io/File;
+
     .line 4
+    .line 5
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 6
+    .line 7
+    .line 8
     return-void
 .end method
 

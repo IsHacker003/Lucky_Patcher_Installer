@@ -87,11 +87,11 @@
     .line 10
     .line 11
     :try_start_1
-    new-instance v3, Lʼˏ/ᵢ;
+    new-instance v3, Lʼˏ/ᵔ;
 
     .line 12
     .line 13
-    invoke-direct {v3, v4}, Lʼˏ/ᵢ;-><init>(Ljava/lang/String;)V
+    invoke-direct {v3, v4}, Lʼˏ/ᵔ;-><init>(Ljava/lang/String;)V
 
     .line 14
     .line 15
@@ -139,7 +139,7 @@
 
     .line 38
     .line 39
-    invoke-virtual {v3, v1}, Lʼˏ/ᵢ;->ˑˑ([Ljava/lang/String;)Ljava/lang/String;
+    invoke-virtual {v3, v1}, Lʼˏ/ᵔ;->ˑˑ([Ljava/lang/String;)Ljava/lang/String;
 
     .line 40
     .line 41
@@ -158,11 +158,11 @@
 
     .line 46
     :cond_0
-    new-instance v3, Lʼˏ/ᵢ;
+    new-instance v3, Lʼˏ/ᵔ;
 
     .line 47
     .line 48
-    invoke-direct {v3, v4}, Lʼˏ/ᵢ;-><init>(Ljava/lang/String;)V
+    invoke-direct {v3, v4}, Lʼˏ/ᵔ;-><init>(Ljava/lang/String;)V
 
     .line 49
     .line 50
@@ -210,7 +210,7 @@
 
     .line 73
     .line 74
-    invoke-virtual {v3, v1}, Lʼˏ/ᵢ;->ˑˑ([Ljava/lang/String;)Ljava/lang/String;
+    invoke-virtual {v3, v1}, Lʼˏ/ᵔ;->ˑˑ([Ljava/lang/String;)Ljava/lang/String;
 
     .line 75
     .line 76
@@ -300,7 +300,7 @@
     .line 118
     .line 119
     .line 120
-    invoke-static {v1}, Lʼˏ/ᵢ;->ˈᵎ(I)Ljava/lang/String;
+    invoke-static {v1}, Lʼˏ/ᵔ;->ˈᵎ(I)Ljava/lang/String;
 
     .line 121
     .line 122

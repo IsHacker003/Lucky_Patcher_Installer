@@ -102,7 +102,7 @@
 
     .line 30
     .line 31
-    invoke-virtual {v0, v1}, Lʼٴ/ʻ;->ʻ(Lʼٴ/ʽ;)V
+    invoke-virtual {v0, v1}, Lʼٴ/ʻ;->ʼ(Lʼٴ/ʽ;)V
 
     .line 32
     .line 33
@@ -169,7 +169,7 @@
     .line 64
     .line 65
     .line 66
-    invoke-static {v0}, Lʼˏ/ᵢ;->ˈᵎ(I)Ljava/lang/String;
+    invoke-static {v0}, Lʼˏ/ᵔ;->ˈᵎ(I)Ljava/lang/String;
 
     .line 67
     .line 68

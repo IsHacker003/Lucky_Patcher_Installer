@@ -80,7 +80,7 @@
 
     invoke-direct/range {v22 .. v22}, Ljavaroot/utils/ʻⁱ$ʻ;-><init>()V
 
-    invoke-static/range {v22 .. v22}, Lʼˏ/ᵢ;->ˑי(Ljava/lang/Object;)V
+    invoke-static/range {v22 .. v22}, Lʼˏ/ᵔ;->ˑـ(Ljava/lang/Object;)V
 
     const/4 v3, 0x3
 
@@ -133,7 +133,7 @@
 
     sget-object v13, Ljavaroot/utils/ʻⁱ;->ˈ:Ljava/lang/String;
 
-    invoke-static {v13, v1}, Lʼˏ/ᵢ;->ˆˎ(Ljava/lang/String;Z)Ljava/lang/String;
+    invoke-static {v13, v1}, Lʼˏ/ᵔ;->ˆˎ(Ljava/lang/String;Z)Ljava/lang/String;
 
     move-result-object v13
 
@@ -157,7 +157,7 @@
 
     if-eqz v13, :cond_2
 
-    invoke-static {v4}, Lʼˏ/ᵢ;->ˉˉ(Ljava/io/File;)Z
+    invoke-static {v4}, Lʼˏ/ᵔ;->ˉˉ(Ljava/io/File;)Z
 
     move-result v4
 
@@ -6590,7 +6590,7 @@
     .line 376
     :cond_97
     :goto_61
-    invoke-static {}, Lʼˏ/ᵢ;->ʼـ()V
+    invoke-static {}, Lʼˏ/ᵔ;->ʼـ()V
 
     return-void
 

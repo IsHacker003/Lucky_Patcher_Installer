@@ -52,12 +52,12 @@
 
     .line 4
     .line 5
-    invoke-static {v0}, Lʼˏ/ᵢ;->ˑ(Ljava/lang/String;)V
+    invoke-static {v0}, Lʼˏ/ᵔ;->ˑ(Ljava/lang/String;)V
 
     .line 6
     .line 7
     .line 8
-    new-instance v0, Lʼˏ/ᵢ;
+    new-instance v0, Lʼˏ/ᵔ;
 
     .line 9
     .line 10
@@ -65,7 +65,7 @@
 
     .line 11
     .line 12
-    invoke-direct {v0, v1}, Lʼˏ/ᵢ;-><init>(Ljava/lang/String;)V
+    invoke-direct {v0, v1}, Lʼˏ/ᵔ;-><init>(Ljava/lang/String;)V
 
     .line 13
     .line 14
@@ -123,7 +123,7 @@
 
     .line 41
     .line 42
-    invoke-virtual {v0, v2}, Lʼˏ/ᵢ;->ˑˑ([Ljava/lang/String;)Ljava/lang/String;
+    invoke-virtual {v0, v2}, Lʼˏ/ᵔ;->ˑˑ([Ljava/lang/String;)Ljava/lang/String;
 
     .line 43
     .line 44
@@ -168,7 +168,7 @@
     move-result-object v0
 
     .line 65
-    invoke-static {v0}, Lʼˏ/ᵢ;->ˉᴵ(Ljava/lang/String;)Z
+    invoke-static {v0}, Lʼˏ/ᵔ;->ˉᴵ(Ljava/lang/String;)Z
 
     .line 66
     .line 67
@@ -195,7 +195,7 @@
     const/4 v4, 0x0
 
     .line 78
-    invoke-static {v0, v4, v2, v3, v3}, Lʼˏ/ᵢ;->ˉـ(Ljava/io/File;Ljava/util/ArrayList;Ljava/lang/String;ZZ)Ljava/lang/String;
+    invoke-static {v0, v4, v2, v3, v3}, Lʼˏ/ᵔ;->ˉـ(Ljava/io/File;Ljava/util/ArrayList;Ljava/lang/String;ZZ)Ljava/lang/String;
 
     .line 79
     .line 80
@@ -223,7 +223,7 @@
     move-result-object v0
 
     .line 91
-    invoke-static {v0, v2, v3, v3}, Lʼˏ/ᵢ;->ˉי(Ljava/lang/String;Ljava/lang/String;ZZ)Ljava/lang/String;
+    invoke-static {v0, v2, v3, v3}, Lʼˏ/ᵔ;->ˉי(Ljava/lang/String;Ljava/lang/String;ZZ)Ljava/lang/String;
 
     .line 92
     .line 93
@@ -240,7 +240,7 @@
 
     .line 98
     .line 99
-    invoke-static {v2}, Lʼˏ/ᵢ;->ˎˊ(Ljava/lang/String;)V
+    invoke-static {v2}, Lʼˏ/ᵔ;->ˎˊ(Ljava/lang/String;)V
 
     .line 100
     .line 101

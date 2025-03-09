@@ -230,11 +230,11 @@
     .line 95
     :cond_0
     :try_start_1
-    new-instance v5, Lʼˏ/ᵢ;
+    new-instance v5, Lʼˏ/ᵔ;
 
     .line 96
     .line 97
-    invoke-direct {v5, v7}, Lʼˏ/ᵢ;-><init>(Ljava/lang/String;)V
+    invoke-direct {v5, v7}, Lʼˏ/ᵔ;-><init>(Ljava/lang/String;)V
 
     .line 98
     .line 99
@@ -304,7 +304,7 @@
 
     .line 134
     .line 135
-    invoke-virtual {v5, v6}, Lʼˏ/ᵢ;->ˑˑ([Ljava/lang/String;)Ljava/lang/String;
+    invoke-virtual {v5, v6}, Lʼˏ/ᵔ;->ˑˑ([Ljava/lang/String;)Ljava/lang/String;
 
     .line 136
     .line 137
@@ -314,11 +314,11 @@
     .line 139
     :cond_1
     :goto_1
-    new-instance v5, Lʼˏ/ᵢ;
+    new-instance v5, Lʼˏ/ᵔ;
 
     .line 140
     .line 141
-    invoke-direct {v5, v7}, Lʼˏ/ᵢ;-><init>(Ljava/lang/String;)V
+    invoke-direct {v5, v7}, Lʼˏ/ᵔ;-><init>(Ljava/lang/String;)V
 
     .line 142
     .line 143
@@ -388,7 +388,7 @@
 
     .line 178
     .line 179
-    invoke-virtual {v5, v6}, Lʼˏ/ᵢ;->ˑˑ([Ljava/lang/String;)Ljava/lang/String;
+    invoke-virtual {v5, v6}, Lʼˏ/ᵔ;->ˑˑ([Ljava/lang/String;)Ljava/lang/String;
     :try_end_1
     .catch Ljava/lang/SecurityException; {:try_start_1 .. :try_end_1} :catch_0
 

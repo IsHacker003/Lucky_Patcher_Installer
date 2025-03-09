@@ -66,7 +66,7 @@
     move-result-object p1
 
     .line 12
-    const p2, 0x7f0900ee
+    const p2, 0x7f0900ef
 
     .line 13
     .line 14

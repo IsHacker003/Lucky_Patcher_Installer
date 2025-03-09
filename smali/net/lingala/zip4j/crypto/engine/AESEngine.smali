@@ -450,7 +450,7 @@
         -0x11a5a54c
         -0x45f5fa5
         -0x9adad5c
-        0x4d3b3b76    # 1.9632726E8f
+        0x4d3b3b76    # 1.96327264E8f
         0x61d6d6b7
         -0x314c4c83
         0x7b292952
@@ -505,7 +505,7 @@
         0x1affffe5
         0xef3f3fd
         0x6dd2d2bf
-        0x4ccdcd81    # 1.0789991E8f
+        0x4ccdcd81    # 1.07899912E8f
         0x140c0c18
         0x35131326
         0x2fececc3

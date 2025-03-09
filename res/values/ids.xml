@@ -100,6 +100,7 @@
     <item type="id" name="button_test" />
     <item type="id" name="button_toolbox" />
     <item type="id" name="button_yes" />
+    <item type="id" name="buy" />
     <item type="id" name="cancel_button" />
     <item type="id" name="checkBox" />
     <item type="id" name="checkBox1_alert" />

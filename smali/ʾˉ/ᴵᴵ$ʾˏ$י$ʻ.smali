@@ -119,7 +119,7 @@
 
     .line 37
     :cond_0
-    sget-object p2, Lʾˉ/ᴵᴵ;->ʼﾞ:Lru/aaaaacce/installer/MainActivity;
+    sget-object p2, Lʾˉ/ᴵᴵ;->ʼﾞ:Lru/aaaaaccg/installer/MainActivity;
 
     .line 38
     .line 39

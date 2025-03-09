@@ -1,5 +1,5 @@
 version: 2.11.0
-apkFileName: Lucky_Patcher_Installer_11.7.1.apk
+apkFileName: Lucky_Patcher_Installer_11.7.4.apk
 isFrameworkApk: false
 usesFramework:
   ids:
@@ -12,8 +12,8 @@ packageInfo:
   forcedPackageId: 127
   renameManifestPackage: null
 versionInfo:
-  versionCode: 1931
-  versionName: 11.7.1
+  versionCode: 1934
+  versionName: 11.7.4
 sharedLibrary: false
 sparseResources: false
 compactEntries: false

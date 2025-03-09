@@ -25,12 +25,12 @@
     .line 4
     .line 5
     .line 6
-    invoke-static {p0}, Lʼˏ/ᵢ;->ˑי(Ljava/lang/Object;)V
+    invoke-static {p0}, Lʼˏ/ᵔ;->ˑـ(Ljava/lang/Object;)V
 
     .line 7
     .line 8
     .line 9
-    invoke-static {}, Lʼˏ/ᵢ;->ʿﾞ()Ljava/lang/String;
+    invoke-static {}, Lʼˏ/ᵔ;->ʿﾞ()Ljava/lang/String;
 
     .line 10
     .line 11
@@ -76,11 +76,11 @@
     .line 31
     .line 32
     :try_start_0
-    new-instance v0, Lʼˏ/ᵢ;
+    new-instance v0, Lʼˏ/ᵔ;
 
     .line 33
     .line 34
-    invoke-direct {v0}, Lʼˏ/ᵢ;-><init>()V
+    invoke-direct {v0}, Lʼˏ/ᵔ;-><init>()V
 
     .line 35
     .line 36
@@ -94,7 +94,7 @@
     .line 40
     .line 41
     .line 42
-    invoke-virtual {v0, v1}, Lʼˏ/ᵢ;->ʼʿ(Ljava/io/File;)V
+    invoke-virtual {v0, v1}, Lʼˏ/ᵔ;->ʼʿ(Ljava/io/File;)V
     :try_end_0
     .catch Ljava/io/IOException; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -115,7 +115,7 @@
     .line 50
     :cond_0
     :goto_0
-    invoke-static {}, Lʼˏ/ᵢ;->ʼـ()V
+    invoke-static {}, Lʼˏ/ᵔ;->ʼـ()V
 
     .line 51
     .line 52

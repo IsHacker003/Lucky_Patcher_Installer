@@ -1008,11 +1008,11 @@
 
     .line 466
     .line 467
-    new-instance v3, Lʼˏ/ᵢ;
+    new-instance v3, Lʼˏ/ᵔ;
 
     .line 468
     .line 469
-    invoke-direct {v3, v5}, Lʼˏ/ᵢ;-><init>(Ljava/lang/String;)V
+    invoke-direct {v3, v5}, Lʼˏ/ᵔ;-><init>(Ljava/lang/String;)V
 
     .line 470
     .line 471
@@ -1117,7 +1117,7 @@
 
     .line 525
     .line 526
-    invoke-virtual {v3, v7}, Lʼˏ/ᵢ;->ˑˑ([Ljava/lang/String;)Ljava/lang/String;
+    invoke-virtual {v3, v7}, Lʼˏ/ᵔ;->ˑˑ([Ljava/lang/String;)Ljava/lang/String;
     :try_end_6
     .catch Ljava/lang/Exception; {:try_start_6 .. :try_end_6} :catch_2
 

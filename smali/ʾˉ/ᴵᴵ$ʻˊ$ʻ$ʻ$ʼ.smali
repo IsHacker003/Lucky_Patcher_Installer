@@ -106,7 +106,7 @@
     move-result-object v0
 
     .line 25
-    invoke-static {v0}, Lʼˏ/ᵢ;->ʾⁱ(Ljava/lang/String;)Ljava/io/File;
+    invoke-static {v0}, Lʼˏ/ᵔ;->ʾⁱ(Ljava/lang/String;)Ljava/io/File;
 
     .line 26
     .line 27
@@ -157,7 +157,7 @@
     move-result-object v0
 
     .line 52
-    invoke-static {v0}, Lʼˏ/ᵢ;->ˎˑ(Ljava/lang/String;)V
+    invoke-static {v0}, Lʼˏ/ᵔ;->ˎˑ(Ljava/lang/String;)V
 
     .line 53
     .line 54

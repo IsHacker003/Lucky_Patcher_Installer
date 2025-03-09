@@ -5,7 +5,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lʾˉ/ᴵᴵ;->ˋˏ(Lru/aaaaacce/installer/MainActivity;)V
+    value = Lʾˉ/ᴵᴵ;->ˋˏ(Lru/aaaaaccg/installer/MainActivity;)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;

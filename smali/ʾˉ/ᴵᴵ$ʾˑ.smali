@@ -77,11 +77,11 @@
 
     .line 10
     .line 11
-    new-instance v2, Lʼˏ/ᵢ;
+    new-instance v2, Lʼˏ/ᵔ;
 
     .line 12
     .line 13
-    invoke-direct {v2, v4}, Lʼˏ/ᵢ;-><init>(Ljava/lang/String;)V
+    invoke-direct {v2, v4}, Lʼˏ/ᵔ;-><init>(Ljava/lang/String;)V
 
     .line 14
     .line 15
@@ -138,7 +138,7 @@
 
     .line 43
     .line 44
-    invoke-virtual {v2, v1}, Lʼˏ/ᵢ;->ˑˑ([Ljava/lang/String;)Ljava/lang/String;
+    invoke-virtual {v2, v1}, Lʼˏ/ᵔ;->ˑˑ([Ljava/lang/String;)Ljava/lang/String;
 
     .line 45
     .line 46
@@ -147,11 +147,11 @@
 
     .line 48
     :cond_0
-    new-instance v2, Lʼˏ/ᵢ;
+    new-instance v2, Lʼˏ/ᵔ;
 
     .line 49
     .line 50
-    invoke-direct {v2, v4}, Lʼˏ/ᵢ;-><init>(Ljava/lang/String;)V
+    invoke-direct {v2, v4}, Lʼˏ/ᵔ;-><init>(Ljava/lang/String;)V
 
     .line 51
     .line 52
@@ -208,7 +208,7 @@
 
     .line 80
     .line 81
-    invoke-virtual {v2, v1}, Lʼˏ/ᵢ;->ˑˑ([Ljava/lang/String;)Ljava/lang/String;
+    invoke-virtual {v2, v1}, Lʼˏ/ᵔ;->ˑˑ([Ljava/lang/String;)Ljava/lang/String;
 
     .line 82
     .line 83

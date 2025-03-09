@@ -216,7 +216,7 @@
 
     .line 79
     :sswitch_4
-    invoke-static {}, Lʼˏ/ᵢ;->ˉˈ()V
+    invoke-static {}, Lʼˏ/ᵔ;->ˉˈ()V
 
     .line 80
     .line 81
@@ -234,7 +234,7 @@
 
     .line 87
     :sswitch_6
-    invoke-static {}, Lʼˏ/ᵢ;->ʼᐧ()V
+    invoke-static {}, Lʼˏ/ᵔ;->ʼᐧ()V
 
     .line 88
     .line 89

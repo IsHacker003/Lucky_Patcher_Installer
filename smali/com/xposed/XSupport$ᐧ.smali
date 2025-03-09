@@ -156,7 +156,7 @@
 
     .line 54
     .line 55
-    invoke-static {}, Lru/aaaaacce/installer/PkgName;->getPkgName()Ljava/lang/String;
+    invoke-static {}, Lru/aaaaaccg/installer/PkgName;->getPkgName()Ljava/lang/String;
 
     .line 56
     .line 57

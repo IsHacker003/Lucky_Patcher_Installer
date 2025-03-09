@@ -37,7 +37,7 @@
     .line 10
     .line 11
     .line 12
-    invoke-static {v0}, Lʼˏ/ᵢ;->ˑי(Ljava/lang/Object;)V
+    invoke-static {v0}, Lʼˏ/ᵔ;->ˑـ(Ljava/lang/Object;)V
 
     .line 13
     .line 14
@@ -572,7 +572,7 @@
 
     .line 271
     .line 272
-    invoke-static {v0}, Lʼˏ/ᵢ;->ʾﹳ(Ljava/lang/String;)Ljava/io/File;
+    invoke-static {v0}, Lʼˏ/ᵔ;->ʾﹳ(Ljava/lang/String;)Ljava/io/File;
 
     .line 273
     .line 274
@@ -1363,7 +1363,7 @@
     .line 632
     .line 633
     :goto_1b
-    invoke-static {}, Lʼˏ/ᵢ;->ʼـ()V
+    invoke-static {}, Lʼˏ/ᵔ;->ʼـ()V
 
     .line 634
     .line 635

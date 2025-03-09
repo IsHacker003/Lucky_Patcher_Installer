@@ -4,11 +4,11 @@
 
 
 # direct methods
-.method public static bridge synthetic ʻ(Landroid/content/pm/PackageInfo;)[Ljava/lang/String;
+.method public static bridge synthetic ʻ(Ljava/lang/String;I)V
     .locals 0
 
     .line 1
-    iget-object p0, p0, Landroid/content/pm/PackageInfo;->splitNames:[Ljava/lang/String;
+    invoke-static {p0, p1}, Landroid/system/Os;->chmod(Ljava/lang/String;I)V
 
-    return-object p0
+    return-void
 .end method

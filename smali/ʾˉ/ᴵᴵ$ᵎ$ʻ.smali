@@ -151,7 +151,7 @@
 
     .line 53
     .line 54
-    invoke-static {}, Lʼˏ/ᵢ;->ﹳ()Z
+    invoke-static {}, Lʼˏ/ᵔ;->ﹳ()Z
 
     .line 55
     .line 56

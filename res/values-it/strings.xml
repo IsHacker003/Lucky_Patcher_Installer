@@ -405,6 +405,7 @@ Cartella del file:"</string>
     <string name="dirr_chg">Cambiata la cartella in:</string>
     <string name="disable_autoupdate">Disabilita auto-aggiornamento</string>
     <string name="disable_autoupdate_descr">Clicca per disabilitare gli aggiornamenti automatici</string>
+    <string name="disable_for_all_apps">Disabilita per tutte le applicazioni e abilita per le applicazioni selezionate</string>
     <string name="disable_inapp_services_google">Servizi InApp per Google Play Store</string>
     <string name="disable_inapp_services_google_descr">Alcune applicazioni si bloccano se sono abilitati più servizi InApp.</string>
     <string name="disable_license_services_google">Servizio licenza per Google Play Store</string>
@@ -421,6 +422,7 @@ Cartella del file:"</string>
     <string name="download_progress_dialog_message_resume_downloading">Ripresa download del file</string>
     <string name="empty">vuoto</string>
     <string name="empty_binders">Devi creare almeno un bind per aggiungere widget.</string>
+    <string name="enable_for_all_apps">Abilita per tutte le applicazioni e disabilita per le applicazioni selezionate</string>
     <string name="enabled">abilitato</string>
     <string name="enabled_package">Pacchetto abilitato.</string>
     <string name="enter_manual_path">Path manuale</string>

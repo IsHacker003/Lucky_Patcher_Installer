@@ -97,7 +97,7 @@
     .line 32
     .line 33
     .line 34
-    const v3, 0x7f0902a6
+    const v3, 0x7f0902a7
 
     .line 35
     .line 36
@@ -111,7 +111,7 @@
     .line 40
     .line 41
     .line 42
-    const v3, 0x7f0901b6
+    const v3, 0x7f0901b7
 
     .line 43
     .line 44
@@ -496,7 +496,7 @@
     move-result-object v1
 
     .line 39
-    const v2, 0x7f0902a6
+    const v2, 0x7f0902a7
 
     .line 40
     .line 41
@@ -515,7 +515,7 @@
     .line 48
     .line 49
     .line 50
-    const v1, 0x7f0901b6
+    const v1, 0x7f0901b7
 
     .line 51
     .line 52

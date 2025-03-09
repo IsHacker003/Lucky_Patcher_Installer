@@ -44,7 +44,7 @@
     .locals 3
 
     .line 1
-    sget-object v0, Lʾˉ/ᴵᴵ;->ʼﾞ:Lru/aaaaacce/installer/MainActivity;
+    sget-object v0, Lʾˉ/ᴵᴵ;->ʼﾞ:Lru/aaaaaccg/installer/MainActivity;
 
     .line 2
     .line 3
@@ -67,7 +67,7 @@
     const/4 v2, 0x0
 
     .line 12
-    invoke-static {v0, v1, v2}, Lʼˏ/ᵢ;->ˉˏ(Landroid/app/Activity;Ljava/io/File;Ljava/lang/Integer;)V
+    invoke-static {v0, v1, v2}, Lʼˏ/ᵔ;->ˉˏ(Landroid/app/Activity;Ljava/io/File;Ljava/lang/Integer;)V
 
     .line 13
     .line 14

@@ -270,8 +270,8 @@
     .line 111
     :sswitch_data_0
     .sparse-switch
-        0x7f0901ee -> :sswitch_2
-        0x7f0901ef -> :sswitch_1
-        0x7f0901fa -> :sswitch_0
+        0x7f0901ef -> :sswitch_2
+        0x7f0901f0 -> :sswitch_1
+        0x7f0901fb -> :sswitch_0
     .end sparse-switch
 .end method

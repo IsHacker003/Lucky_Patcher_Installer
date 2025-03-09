@@ -64,7 +64,7 @@
 
     .line 10
     .line 11
-    invoke-static {v0}, Lʼˏ/ᵢ;->ʿˆ(Lʼـ/ʽʽ;)Ljava/util/ArrayList;
+    invoke-static {v0}, Lʼˏ/ᵔ;->ʿˆ(Lʼـ/ʽʽ;)Ljava/util/ArrayList;
 
     .line 12
     .line 13
@@ -121,7 +121,7 @@
     move-result-object v5
 
     .line 38
-    invoke-static {v5}, Lʼˏ/ᵢ;->ʼי(Ljava/lang/String;)Z
+    invoke-static {v5}, Lʼˏ/ᵔ;->ʼי(Ljava/lang/String;)Z
 
     .line 39
     .line 40
@@ -207,7 +207,7 @@
     .line 80
     .line 81
     .line 82
-    invoke-static {}, Lʼˏ/ᵢ;->ʿٴ()Ljava/lang/String;
+    invoke-static {}, Lʼˏ/ᵔ;->ʿٴ()Ljava/lang/String;
 
     .line 83
     .line 84
@@ -215,12 +215,12 @@
     move-result-object v6
 
     .line 86
-    invoke-static {}, Lʼˏ/ᵢ;->ʿᴵ()Ljava/lang/String;
+    invoke-static {}, Lʼˏ/ᵔ;->ʿᴵ()Ljava/lang/String;
 
     .line 87
     .line 88
     .line 89
-    invoke-static {}, Lʼˏ/ᵢ;->ʿᐧ()Ljava/lang/String;
+    invoke-static {}, Lʼˏ/ᵔ;->ʿᐧ()Ljava/lang/String;
 
     .line 90
     .line 91
@@ -262,11 +262,11 @@
     .line 107
     :cond_3
     :goto_1
-    new-instance v6, Lʼˏ/ᵢ;
+    new-instance v6, Lʼˏ/ᵔ;
 
     .line 108
     .line 109
-    invoke-direct {v6, v2}, Lʼˏ/ᵢ;-><init>(Ljava/lang/String;)V
+    invoke-direct {v6, v2}, Lʼˏ/ᵔ;-><init>(Ljava/lang/String;)V
 
     .line 110
     .line 111
@@ -356,7 +356,7 @@
 
     .line 156
     .line 157
-    invoke-virtual {v6, v1}, Lʼˏ/ᵢ;->ˑˑ([Ljava/lang/String;)Ljava/lang/String;
+    invoke-virtual {v6, v1}, Lʼˏ/ᵔ;->ˑˑ([Ljava/lang/String;)Ljava/lang/String;
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -451,7 +451,7 @@
     .line 203
     .line 204
     :cond_5
-    invoke-static {v1, v4}, Lʼˏ/ᵢ;->יᵢ(Ljava/util/List;Ljava/io/File;)V
+    invoke-static {v1, v4}, Lʼˏ/ᵔ;->יⁱ(Ljava/util/List;Ljava/io/File;)V
 
     .line 205
     .line 206
@@ -512,7 +512,7 @@
 
     .line 236
     :cond_6
-    invoke-static {v3}, Lʼˏ/ᵢ;->ˈᵎ(I)Ljava/lang/String;
+    invoke-static {v3}, Lʼˏ/ᵔ;->ˈᵎ(I)Ljava/lang/String;
 
     .line 237
     .line 238
@@ -520,7 +520,7 @@
     move-result-object v1
 
     .line 240
-    invoke-static {v2}, Lʼˏ/ᵢ;->ˈᵎ(I)Ljava/lang/String;
+    invoke-static {v2}, Lʼˏ/ᵔ;->ˈᵎ(I)Ljava/lang/String;
 
     .line 241
     .line 242
@@ -543,7 +543,7 @@
     .line 251
     :cond_7
     :goto_4
-    invoke-static {v3}, Lʼˏ/ᵢ;->ˈᵎ(I)Ljava/lang/String;
+    invoke-static {v3}, Lʼˏ/ᵔ;->ˈᵎ(I)Ljava/lang/String;
 
     .line 252
     .line 253
@@ -551,7 +551,7 @@
     move-result-object v1
 
     .line 255
-    invoke-static {v2}, Lʼˏ/ᵢ;->ˈᵎ(I)Ljava/lang/String;
+    invoke-static {v2}, Lʼˏ/ᵔ;->ˈᵎ(I)Ljava/lang/String;
 
     .line 256
     .line 257

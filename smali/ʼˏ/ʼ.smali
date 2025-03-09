@@ -28,7 +28,7 @@
     .locals 4
 
     .line 1
-    invoke-static {}, Lru/aaaaacce/installer/PkgName;->getPkgName()Ljava/lang/String;
+    invoke-static {}, Lru/aaaaaccg/installer/PkgName;->getPkgName()Ljava/lang/String;
 
     .line 2
     .line 3

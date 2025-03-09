@@ -71,12 +71,12 @@
 
     .line 2
     .line 3
-    invoke-static {v0}, Lʼˏ/ᵢ;->ˊᵢ(Ljava/lang/String;)V
+    invoke-static {v0}, Lʼˏ/ᵔ;->ˊᵢ(Ljava/lang/String;)V
 
     .line 4
     .line 5
     .line 6
-    new-instance v1, Lʼˏ/ᵢ;
+    new-instance v1, Lʼˏ/ᵔ;
 
     .line 7
     .line 8
@@ -84,7 +84,7 @@
 
     .line 9
     .line 10
-    invoke-direct {v1, v2}, Lʼˏ/ᵢ;-><init>(Ljava/lang/String;)V
+    invoke-direct {v1, v2}, Lʼˏ/ᵔ;-><init>(Ljava/lang/String;)V
 
     .line 11
     .line 12
@@ -201,7 +201,7 @@
 
     .line 72
     .line 73
-    invoke-virtual {v1, v4}, Lʼˏ/ᵢ;->ˑˑ([Ljava/lang/String;)Ljava/lang/String;
+    invoke-virtual {v1, v4}, Lʼˏ/ᵔ;->ˑˑ([Ljava/lang/String;)Ljava/lang/String;
 
     .line 74
     .line 75
@@ -273,17 +273,17 @@
     .line 109
     .line 110
     .line 111
-    invoke-static {v3}, Lʼˏ/ᵢ;->ˊﹶ(Z)V
+    invoke-static {v3}, Lʼˏ/ᵔ;->ˊﹶ(Z)V
 
     .line 112
     .line 113
     .line 114
-    invoke-static {v3}, Lʼˏ/ᵢ;->ˋʻ(Z)V
+    invoke-static {v3}, Lʼˏ/ᵔ;->ˋʻ(Z)V
 
     .line 115
     .line 116
     .line 117
-    invoke-static {v0}, Lʼˏ/ᵢ;->ˊᵢ(Ljava/lang/String;)V
+    invoke-static {v0}, Lʼˏ/ᵔ;->ˊᵢ(Ljava/lang/String;)V
 
     .line 118
     .line 119

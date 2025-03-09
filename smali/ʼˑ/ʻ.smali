@@ -407,7 +407,7 @@
 
     .line 110
     .line 111
-    invoke-static {p1, p2}, Lʼˏ/ᵢ;->ʻˋ(Ljava/io/File;Ljava/io/File;)V
+    invoke-static {p1, p2}, Lʼˏ/ᵔ;->ʻˋ(Ljava/io/File;Ljava/io/File;)V
 
     .line 112
     .line 113
@@ -1481,7 +1481,7 @@
 
     .line 543
     .line 544
-    invoke-static {v14}, Lʼˏ/ᵢ;->ˏˏ([Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v14}, Lʼˏ/ᵔ;->ˏˏ([Ljava/lang/String;)Ljava/lang/String;
 
     .line 545
     .line 546
@@ -1547,7 +1547,7 @@
     move-result-object v9
 
     .line 579
-    invoke-static {v9}, Lʼˏ/ᵢ;->ˎˑ(Ljava/lang/String;)V
+    invoke-static {v9}, Lʼˏ/ᵔ;->ˎˑ(Ljava/lang/String;)V
 
     .line 580
     .line 581
@@ -1703,7 +1703,7 @@
 
     .line 658
     .line 659
-    invoke-static {v10}, Lʼˏ/ᵢ;->ˏˏ([Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v10}, Lʼˏ/ᵔ;->ˏˏ([Ljava/lang/String;)Ljava/lang/String;
 
     .line 660
     .line 661
@@ -1791,7 +1791,7 @@
     move-result-object v0
 
     .line 701
-    invoke-static {v0}, Lʼˏ/ᵢ;->ˎˑ(Ljava/lang/String;)V
+    invoke-static {v0}, Lʼˏ/ᵔ;->ˎˑ(Ljava/lang/String;)V
 
     .line 702
     .line 703
@@ -3712,7 +3712,7 @@
 
     .line 787
     .line 788
-    invoke-static {v13}, Lʼˏ/ᵢ;->ˏˏ([Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v13}, Lʼˏ/ᵔ;->ˏˏ([Ljava/lang/String;)Ljava/lang/String;
 
     .line 789
     .line 790
@@ -3778,7 +3778,7 @@
     move-result-object v1
 
     .line 823
-    invoke-static {v1}, Lʼˏ/ᵢ;->ˎˑ(Ljava/lang/String;)V
+    invoke-static {v1}, Lʼˏ/ᵔ;->ˎˑ(Ljava/lang/String;)V
     :try_end_a
     .catchall {:try_start_a .. :try_end_a} :catchall_3
 
@@ -4041,7 +4041,7 @@
 
     .line 943
     .line 944
-    invoke-static {v2}, Lʼˏ/ᵢ;->ˏˏ([Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v2}, Lʼˏ/ᵔ;->ˏˏ([Ljava/lang/String;)Ljava/lang/String;
 
     .line 945
     .line 946
@@ -4179,7 +4179,7 @@
     move-result-object v1
 
     .line 1001
-    invoke-static {v1}, Lʼˏ/ᵢ;->ˎˑ(Ljava/lang/String;)V
+    invoke-static {v1}, Lʼˏ/ᵔ;->ˎˑ(Ljava/lang/String;)V
 
     .line 1002
     .line 1003
@@ -5320,7 +5320,7 @@
     move-result-object v3
 
     .line 246
-    invoke-static {v3}, Lʼˏ/ᵢ;->ˎⁱ(Ljava/lang/String;)Z
+    invoke-static {v3}, Lʼˏ/ᵔ;->ˎⁱ(Ljava/lang/String;)Z
 
     .line 247
     .line 248
@@ -5400,7 +5400,7 @@
     move-result-object p1
 
     .line 286
-    invoke-static {p1}, Lʼˏ/ᵢ;->ˎⁱ(Ljava/lang/String;)Z
+    invoke-static {p1}, Lʼˏ/ᵔ;->ˎⁱ(Ljava/lang/String;)Z
 
     .line 287
     .line 288

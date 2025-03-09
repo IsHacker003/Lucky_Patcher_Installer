@@ -63,7 +63,7 @@
 
     .line 4
     .line 5
-    const v1, 0x7f0900d3
+    const v1, 0x7f0900d4
 
     .line 6
     .line 7

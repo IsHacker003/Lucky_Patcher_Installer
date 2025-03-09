@@ -4,11 +4,11 @@
 
 
 # direct methods
-.method public static bridge synthetic ʻ(Landroid/content/res/Configuration;Ljava/util/Locale;)V
+.method public static bridge synthetic ʻ(Landroid/content/pm/PackageInfo;)[Ljava/lang/String;
     .locals 0
 
     .line 1
-    invoke-virtual {p0, p1}, Landroid/content/res/Configuration;->setLayoutDirection(Ljava/util/Locale;)V
+    iget-object p0, p0, Landroid/content/pm/PackageInfo;->splitNames:[Ljava/lang/String;
 
-    return-void
+    return-object p0
 .end method

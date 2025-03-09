@@ -2816,7 +2816,7 @@
     .line 89
     sget-object v3, Lcom/android/apksig/ApkSigner;->original_signature_bytes:[B
 
-    invoke-static {v3}, Lʼˏ/ᵢ;->ʾˆ([B)Ljava/util/List;
+    invoke-static {v3}, Lʼˏ/ᵔ;->ʾˆ([B)Ljava/util/List;
 
     move-result-object v3
 
@@ -3584,7 +3584,7 @@
     move-object/from16 v32, v5
 
     :try_start_2b
-    invoke-static/range {v25 .. v25}, Lʼˏ/ᵢ;->ˈᵎ(I)Ljava/lang/String;
+    invoke-static/range {v25 .. v25}, Lʼˏ/ᵔ;->ˈᵎ(I)Ljava/lang/String;
 
     move-result-object v5
 

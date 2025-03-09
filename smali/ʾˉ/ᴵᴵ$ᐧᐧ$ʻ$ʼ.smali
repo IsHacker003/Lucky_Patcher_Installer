@@ -44,7 +44,7 @@
     .locals 2
 
     .line 1
-    invoke-static {}, Lʼˏ/ᵢ;->ʼ()V
+    invoke-static {}, Lʼˏ/ᵔ;->ʼ()V
 
     .line 2
     .line 3
@@ -54,7 +54,7 @@
     .line 5
     .line 6
     .line 7
-    invoke-static {v0}, Lʼˏ/ᵢ;->ˈᵎ(I)Ljava/lang/String;
+    invoke-static {v0}, Lʼˏ/ᵔ;->ˈᵎ(I)Ljava/lang/String;
 
     .line 8
     .line 9
@@ -67,7 +67,7 @@
     .line 12
     .line 13
     .line 14
-    invoke-static {v1}, Lʼˏ/ᵢ;->ˈᵎ(I)Ljava/lang/String;
+    invoke-static {v1}, Lʼˏ/ᵔ;->ˈᵎ(I)Ljava/lang/String;
 
     .line 15
     .line 16

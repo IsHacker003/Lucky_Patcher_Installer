@@ -232,7 +232,7 @@
     int-to-float v2, v3
 
     .line 79
-    invoke-static {v2}, Lʼˏ/ᵢ;->ʼˏ(F)F
+    invoke-static {v2}, Lʼˏ/ᵔ;->ʼˏ(F)F
 
     .line 80
     .line 81
@@ -262,7 +262,7 @@
     double-to-int v3, v5
 
     .line 95
-    invoke-static {v2}, Lʼˏ/ᵢ;->ʼˏ(F)F
+    invoke-static {v2}, Lʼˏ/ᵔ;->ʼˏ(F)F
 
     .line 96
     .line 97
@@ -308,7 +308,7 @@
     int-to-float v2, v2
 
     .line 116
-    invoke-static {v2}, Lʼˏ/ᵢ;->ˋˏ(F)F
+    invoke-static {v2}, Lʼˏ/ᵔ;->ˋˏ(F)F
 
     .line 117
     .line 118
@@ -334,7 +334,7 @@
     int-to-float v2, v3
 
     .line 127
-    invoke-static {v2}, Lʼˏ/ᵢ;->ˋˏ(F)F
+    invoke-static {v2}, Lʼˏ/ᵔ;->ˋˏ(F)F
 
     .line 128
     .line 129
@@ -365,7 +365,7 @@
     int-to-float v2, v2
 
     .line 141
-    invoke-static {v2}, Lʼˏ/ᵢ;->ʼˏ(F)F
+    invoke-static {v2}, Lʼˏ/ᵔ;->ʼˏ(F)F
 
     .line 142
     .line 143
@@ -392,7 +392,7 @@
     int-to-float v2, v2
 
     .line 154
-    invoke-static {v2}, Lʼˏ/ᵢ;->ʼˏ(F)F
+    invoke-static {v2}, Lʼˏ/ᵔ;->ʼˏ(F)F
 
     .line 155
     .line 156
@@ -408,7 +408,7 @@
 
     .line 161
     .line 162
-    invoke-static {v3}, Lʼˏ/ᵢ;->ˋˏ(F)F
+    invoke-static {v3}, Lʼˏ/ᵔ;->ˋˏ(F)F
 
     .line 163
     .line 164

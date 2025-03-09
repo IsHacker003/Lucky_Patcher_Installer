@@ -49,7 +49,7 @@
     <string name="android_patches_dialog_header2">بازیابی میان افزار بعد از انجام پچ ها</string>
     <string name="android_patches_dialog_remove_patch_3">حذف پچ \"%1s\"</string>
     <string name="android_patches_dialog_remove_patches_1_and_2" formatted="false">حذف پچ های \"%1s\" و \"%2s\"</string>
-    <string name="android_patches_dialog_use_magisk_module_for_patches">برای انجام پچ از ماژول Magisk استفاده کنید</string>
+    <string name="android_patches_dialog_use_magisk_module_for_patches">استفاده از ماژول Magisk برای انجام پچ</string>
     <string name="android_patches_dialog_use_magisk_module_zygisk_for_patches">استفاده از ماژول مجیسک - zygisk (توسط vova7878@4pda)</string>
     <string name="android_patches_for_bootlist">پچ اندروید روی حافظه پنهان dalvik</string>
     <string name="android_patches_for_bootlist_status">پچ های اندروید را در بوت دوباره انجام دهید</string>
@@ -82,7 +82,7 @@
     <string name="backup_settings_restore_message">آیا می خواهید تنظیمات برنامه پشتیبان را بازیابی کنید</string>
     <string name="backups_not_found">فایل های پشتیبان گیری شده در اینجا پیدا نشد :</string>
     <string name="bad_root_detected">روت پایدار نیست لطفا دوباره امتحان کنید یا روت خود را به روز رسانی کنید همچنین می توانید روش روت جاوا را در تنظیمات لاکی پچر تغییر دهید این کار در بعضی مواقع می تواند به شما کمک کند</string>
-    <string name="begin_changelog">نسخه برنامه نصب شده :</string>
+    <string name="begin_changelog">نسخه نصب شده :</string>
     <string name="billing_buy">آیا می خواهید این مورد را به صورت رایگان دریافت کنید؟</string>
     <string name="billing_hack2_auto_repeat_note">⭐ آموزش غیرفعال کردن تکرار خودکار خرید : ۱. لاکی پچر را باز کنید ۲. نماد برنامه مورد نظر را لمس کنید تا لیست گزینه ها نمایش داده شود ۳. گزینه \"ابزار\" -> \"حذف خرید های انتخابی ذخیره شده\" را انتخاب کنید ۴. موارد موجود را حذف کنید</string>
     <string name="billing_hack2_new">⭐ آموزش دریافت بهترین نتایج‌ : ۱. لاکی پچر را اجرا کنید ۲. بخش جعبه ابزار را باز کنید ۳. گزینه پچ های اندروید را انتخاب کرده ۴. پچ \"وضعیت تایید امضا همیشه درست است\" را انجام دهید ⭐ آموزش غیرفعال کردن هک خرید : ۱. لاکی پچر را اجرا کنید ۲. بخش \"پیکربندی\" در پایین صفحه اصلی لاکی پچر را باز کنید ۳. گزینه \"شبیه‌ سازی صورتحساب گوگل\" را غیرفعال کنید</string>
@@ -297,7 +297,7 @@
     <string name="contextreinstall">نصب دوباره برنامه (حذف تمام پچ ها)</string>
     <string name="contextrestore">بازگرداندن</string>
     <string name="contextselpatt">روش های انتخاب شده</string>
-    <string name="core_only_dalvik_cache_end">اگر دستگاه هنگ می کند یا همه پچ ها کار نمی کنند لطفا دستگاه را به صورت دستی راه اندازی مجدد کنید</string>
+    <string name="core_only_dalvik_cache_end">اگر گوشی شما هنگ کرده یا همه پچ ها کار نمی کنند لطفا گوشی خود را به صورت دستی خاموش و روشن کنید</string>
     <string name="core_only_dalvik_cache_finished">پچ اندروید برای حافظه پنهان dalvik به پایان رسید نتایج عبارتند از :</string>
     <string name="core_option">فقط پچ حافظه پنهان dalvik</string>
     <string name="core_patch_apply">(پچ انجام شده)</string>
@@ -383,6 +383,7 @@
     <string name="dirr_chg">پوشه تغییر یافت در :</string>
     <string name="disable_autoupdate">غیرفعال کردن به روز رسانی خودکار لاکی پچر</string>
     <string name="disable_autoupdate_descr">به روز رسانی خودکار را غیرفعال می کند</string>
+    <string name="disable_for_all_apps">غیرفعال کردن برای همه برنامه ها و فعال کردن برای برنامه های انتخاب شده</string>
     <string name="disable_inapp_services_google">خدمات درون برنامه ای فروشگاه گوگل پلی</string>
     <string name="disable_inapp_services_google_descr">اگر چند خدمات درون برنامه ای فعال شوند بعضی از برنامه ها متوقف می شوند</string>
     <string name="disable_license_services_google">لایسنس خدمات به فروشگاه گوگل پلی</string>
@@ -399,6 +400,7 @@
     <string name="download_progress_dialog_message_resume_downloading">شروع دوباره دانلود فایل</string>
     <string name="empty">خالی</string>
     <string name="empty_binders">برای افزودن ویجت باید حداقل یک پیوند ایجاد کنید</string>
+    <string name="enable_for_all_apps">فعال کردن برای همه برنامه ها و غیرفعال کردن برای برنامه های انتخاب شده</string>
     <string name="enabled">فعال شده</string>
     <string name="enabled_package">برنامه فعال است</string>
     <string name="enter_manual_path">مسیر دستی</string>
@@ -431,7 +433,7 @@
     <string name="error_not_found_storage_lic">مکان لایسنس یافت نشد</string>
     <string name="error_odex_app">خطا : عملکرد ساخت فایل odex ناموفق بود ... احتمالا فضای کافی در دیسک باقی نمانده است</string>
     <string name="error_odex_app_impossible">این برنامه دارای classes.dex نیست و بهینه سازی Dex امکان پذیر نیست</string>
-    <string name="error_out_of_memory">حافظه کافی (رم) برای تکمیل این عملیات کم و کوچک است</string>
+    <string name="error_out_of_memory">حافظه (رم) کافی برای تکمیل این عملیات وجود ندارد و برای استفاده از ماشین مجازی کم است</string>
     <string name="error_path">پچ اشتباه</string>
     <string name="error_path_exists">پوشه از قبل موجود است لطفا یک مسیر جدید را وارد کنید</string>
     <string name="error_read_folder">پوشه قابل خواندن نیست</string>
@@ -816,7 +818,7 @@
     <string name="message_error_move_to_sdcard">انتقال به کارت حافظه خارجی به پایان رسید با خطا (دوباره امتحان کنید) :</string>
     <string name="message_exit">آیا می خواهید از لاکی پچر خارج شوید؟</string>
     <string name="message_file_selector">آیا می خواهید فایل %s را انتخاب کنید؟</string>
-    <string name="message_for_reboot_after_android_patches">مراحل پچ به پایان رسیده است برای استفاده نهایی شما باید گوشی خود را دوباره راه اندازی کنید آیا می خواهید گوشی خود را دوباره راه اندازی کنید؟</string>
+    <string name="message_for_reboot_after_android_patches">مراحل پچ به پایان رسیده برای استفاده از آن شما باید گوشی خود را خاموش و روشن کنید آیا می خواهید گوشی خود را خاموش و روشن کنید؟</string>
     <string name="message_for_removed_patch_boot">پچ از لیست بوت حذف شد</string>
     <string name="message_for_uninstall_and_install">آیا می خواهید %1$s را حذف کنید و نسخه انتخاب شده برنامه را نصب کنید؟</string>
     <string name="message_installation_inapp_proxy">اگر از پچ \"شبیه سازی تایید لایسنس و خرید های درون برنامه ای\" برای هک کردن خرید ها استفاده می کنید باید یک سرویس \"سرور پروکسی برای خرید های درون برنامه ای\" را نصب کنید اما این کار از مخفی شدن لاکی پچر جلوگیری می کند آیا می خواهید این سرویس را نصب کنید؟</string>
@@ -990,7 +992,7 @@
     <string name="patterndependencies">وابستگی های فروشگاه گوگل پلی حذف شده</string>
     <string name="patternsamsung">پچ برنامه های سامسونگ موفق شد</string>
     <string name="patternsamsung_f">پچ برنامه های سامسونگ شکست خورد ...</string>
-    <string name="perm_ok">انجام و راه اندازی مجدد</string>
+    <string name="perm_ok">انجام و خاموش و روشن کردن گوشی</string>
     <string name="permission">تغییر مجوز ها</string>
     <string name="permission_not_descr">هیچ توضیحی برای این مجوز موجود نیست</string>
     <string name="permission_not_found">مجوزها یافت نشد</string>
@@ -998,7 +1000,7 @@
     <string name="play_protect_warning">سپر ایمنی فروشگاه گوگل پلی بیشتر اوقات لاکی پچر را به عنوان یک برنامه مضر تعریف می کند اما در واقعیت اینطور نیست برای حذف این هشدار ها به فروشگاه گوگل پلی -> سپر ایمنی فروشگاه گوگل پلی بروید و \"اسکن کردن برنامه ها با سپر ایمنی فروشگاه گوگل پلی\" را غیرفعال کنید</string>
     <string name="play_protect_warning2">بسیاری از وب سایت ها نسخه های جعلی لاکی پچر را به اشتراک می گذارند که شامل ویروس های زیادی هستند از شما می خواهم لینک دانلود از وب سایت رسمی ما را در وبلاگ یا فیلم های یوتیوب خود به اشتراک بگذارید لینک رسمی دانلود لاکی پچر : https://www.luckypatchers.com/download/</string>
     <string name="play_protect_warning_question_1">آیا میخواهید گزینه «سپر ایمنی گوگل پلی» را اجرا کنید؟</string>
-    <string name="please_enter_new_name_lp">لطفا یک نام برنامه جدید را وارد کنید</string>
+    <string name="please_enter_new_name_lp">لطفا یک نام جدید برای برنامه لاکی پچر انتخاب کنید</string>
     <string name="please_enter_path_to_open">مسیر پوشه را وارد کنید</string>
     <string name="poorresult">پچ فایل به دلیل نشناخته بودن نسخه تایید لایسنس ناموفق بود یا پچ قبلا انجام شده</string>
     <string name="provide">ارائه دهنده</string>
@@ -1027,14 +1029,14 @@
     <string name="purchases_sorter_type_subs_purchase">اشتراک</string>
     <string name="reboot">خاموش و روشن کردن گوشی</string>
     <string name="reboot_after_install_google_play_to_system_partition">برنامه در پارتیشن سیستم نصب شده و برای انجام همه تغییرات به خاموش و روشن کردن گوشی نیاز دارد آیا گوشی شما اکنون خاموش و روشن شود؟</string>
-    <string name="reboot_message">دستگاه را دوباره راه اندازی کنید اگر نمیخواهید دستگاه به صورت خودکار دوباره راه اندازی شود راه اندازی دوباره را به صورت دستی انجام دهید</string>
-    <string name="reboot_to_bootloader">راه اندازی مجدد دستگاه و رفتن به اجرا کننده بوت</string>
-    <string name="reboot_to_recovery">راه اندازی مجدد دستگاه و رفتن به ریکاوری</string>
+    <string name="reboot_message">اگر نمی خواهید گوشی شما به صورت خودکار خاموش و روشن شود گوشی خود را به صورت دستی خاموش و روشن کنید</string>
+    <string name="reboot_to_bootloader">خاموش و روشن کردن گوشی و رفتن به بوت لودر</string>
+    <string name="reboot_to_recovery">خاموش و روشن کردن گوشی و رفتن به ریکاوری</string>
     <string name="rebuild_info">خلاصه بازسازی</string>
     <string name="remodex">حافظه پنهان dalvik حذف شد</string>
     <string name="remodexerror">حافظه پنهان dalvik این برنامه یافت نشد</string>
-    <string name="remove_all_saved_purchases">همه خرید های ذخیره شده را حذف کنید</string>
-    <string name="remove_all_saved_purchases_message">آیا می خواهید همه خرید های ذخیره شده در لاکی پچر را حذف کنید؟</string>
+    <string name="remove_all_saved_purchases">حذف همه خرید های ذخیره شده از لاکی پچر</string>
+    <string name="remove_all_saved_purchases_message">آیا می خواهید همه خرید های ذخیره شده از لاکی پچر حذف شود؟</string>
     <string name="remove_android_art_update">حذف به‌ روز رسانی‌ های ماژول apex com.google.android.art</string>
     <string name="remove_android_art_update_description">این کار به نسخه های جدید اندروید در هنگامی که پچ های اندروید از طریق پچ های فایل سیستمی lsposed یا معمولی کار نمی‌کنند کمک می کند</string>
     <string name="removefixes">حذف همه فایل‌ های ODEX از (برنامه های کاربر و سیستمی)</string>
@@ -1068,7 +1070,7 @@
     <string name="settings">تنظیمات</string>
     <string name="settings_force_java_root_method">تنظیم روش روت جاوا</string>
     <string name="settings_force_java_root_method_app_process">با استفاده از پردازش ها</string>
-    <string name="settings_force_java_root_method_dalvikvm">استفاده از dalvikvm</string>
+    <string name="settings_force_java_root_method_dalvikvm">استفاده از ماشین مجازی dalvik</string>
     <string name="settings_force_java_root_method_description">اگر در دریافت دسترسی روت یا کار با پچ ها مشکل دارید می توانید روش دیگری را امتحان کنید</string>
     <string name="settings_force_root">تنظیم دسترسی روت</string>
     <string name="settings_force_root_description">اگر از وضعیت روت گوشی اطلاعی ندارید حالت خودکار را انتخاب کنید</string>

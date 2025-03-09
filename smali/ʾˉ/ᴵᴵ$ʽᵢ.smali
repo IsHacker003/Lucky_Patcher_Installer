@@ -45,11 +45,11 @@
 
     .line 1
     :try_start_0
-    new-instance v0, Lʼˏ/ᵢ;
+    new-instance v0, Lʼˏ/ᵔ;
 
     .line 2
     .line 3
-    invoke-direct {v0}, Lʼˏ/ᵢ;-><init>()V
+    invoke-direct {v0}, Lʼˏ/ᵔ;-><init>()V
 
     .line 4
     .line 5
@@ -58,7 +58,7 @@
 
     .line 7
     .line 8
-    invoke-static {}, Lʼˏ/ᵢ;->ˈᴵ()Ljava/lang/String;
+    invoke-static {}, Lʼˏ/ᵔ;->ˈᴵ()Ljava/lang/String;
 
     .line 9
     .line 10
@@ -71,7 +71,7 @@
     .line 13
     .line 14
     .line 15
-    invoke-virtual {v0, v1}, Lʼˏ/ᵢ;->ʼʿ(Ljava/io/File;)V
+    invoke-virtual {v0, v1}, Lʼˏ/ᵔ;->ʼʿ(Ljava/io/File;)V
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 

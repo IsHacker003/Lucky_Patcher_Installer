@@ -106,11 +106,11 @@
 
     .line 20
     .line 21
-    new-instance p4, Lʼˏ/ᵢ;
+    new-instance p4, Lʼˏ/ᵔ;
 
     .line 22
     .line 23
-    invoke-direct {p4, v1}, Lʼˏ/ᵢ;-><init>(Ljava/lang/String;)V
+    invoke-direct {p4, v1}, Lʼˏ/ᵔ;-><init>(Ljava/lang/String;)V
 
     .line 24
     .line 25
@@ -181,7 +181,7 @@
 
     .line 61
     .line 62
-    invoke-virtual {p4, v0}, Lʼˏ/ᵢ;->ˑˑ([Ljava/lang/String;)Ljava/lang/String;
+    invoke-virtual {p4, v0}, Lʼˏ/ᵔ;->ˑˑ([Ljava/lang/String;)Ljava/lang/String;
 
     .line 63
     .line 64
@@ -190,11 +190,11 @@
 
     .line 66
     :cond_0
-    new-instance p4, Lʼˏ/ᵢ;
+    new-instance p4, Lʼˏ/ᵔ;
 
     .line 67
     .line 68
-    invoke-direct {p4, v1}, Lʼˏ/ᵢ;-><init>(Ljava/lang/String;)V
+    invoke-direct {p4, v1}, Lʼˏ/ᵔ;-><init>(Ljava/lang/String;)V
 
     .line 69
     .line 70
@@ -265,7 +265,7 @@
 
     .line 106
     .line 107
-    invoke-virtual {p4, v0}, Lʼˏ/ᵢ;->ˑˑ([Ljava/lang/String;)Ljava/lang/String;
+    invoke-virtual {p4, v0}, Lʼˏ/ᵔ;->ˑˑ([Ljava/lang/String;)Ljava/lang/String;
 
     .line 108
     .line 109

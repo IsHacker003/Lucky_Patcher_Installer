@@ -132,7 +132,7 @@
     move-result-object v2
 
     .line 43
-    invoke-static {}, Lru/aaaaacce/installer/PkgName;->getPkgName()Ljava/lang/String;
+    invoke-static {}, Lru/aaaaaccg/installer/PkgName;->getPkgName()Ljava/lang/String;
 
     .line 44
     .line 45

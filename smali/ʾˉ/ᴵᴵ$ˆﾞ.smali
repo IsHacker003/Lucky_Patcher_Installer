@@ -178,7 +178,7 @@
 
     .line 59
     .line 60
-    invoke-static {v10}, Lʼˏ/ᵢ;->ˆᵢ([Ljava/lang/String;)Lʼˏ/ʽ;
+    invoke-static {v10}, Lʼˏ/ᵔ;->ˆᵢ([Ljava/lang/String;)Lʼˏ/ʽ;
 
     .line 61
     .line 62

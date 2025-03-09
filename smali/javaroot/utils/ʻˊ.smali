@@ -25,7 +25,7 @@
     .line 4
     .line 5
     .line 6
-    invoke-static {v0}, Lʼˏ/ᵢ;->ˑי(Ljava/lang/Object;)V
+    invoke-static {v0}, Lʼˏ/ᵔ;->ˑـ(Ljava/lang/Object;)V
 
     .line 7
     .line 8
@@ -136,7 +136,7 @@
     .line 56
     .line 57
     .line 58
-    invoke-static {v0}, Lʼˏ/ᵢ;->ˉˉ(Ljava/io/File;)Z
+    invoke-static {v0}, Lʼˏ/ᵔ;->ˉˉ(Ljava/io/File;)Z
 
     .line 59
     .line 60
@@ -148,7 +148,7 @@
 
     .line 63
     .line 64
-    invoke-static {v1, v4}, Lʼˏ/ᵢ;->ʿᵢ(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v1, v4}, Lʼˏ/ᵔ;->ʿᵢ(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     .line 65
     .line 66
@@ -179,7 +179,7 @@
     move-object v2, p0
 
     .line 79
-    invoke-static/range {v1 .. v6}, Lʼˏ/ᵢ;->ʼˉ(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Boolean;Z)I
+    invoke-static/range {v1 .. v6}, Lʼˏ/ᵔ;->ʼˉ(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Boolean;Z)I
 
     .line 80
     .line 81
@@ -266,7 +266,7 @@
     .line 120
     .line 121
     :cond_3
-    invoke-static {}, Lʼˏ/ᵢ;->ʼـ()V
+    invoke-static {}, Lʼˏ/ᵔ;->ʼـ()V
 
     .line 122
     .line 123

@@ -164,7 +164,7 @@
 
     move-result-object v4
 
-    invoke-static {v4}, Lʼˏ/ᵢ;->ʻʼ(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v4}, Lʼˏ/ᵔ;->ʻʼ(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v4
 
@@ -218,7 +218,7 @@
     move-result-object p1
 
     .line 27
-    invoke-static {p1}, Lʼˏ/ᵢ;->ʻʼ(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {p1}, Lʼˏ/ᵔ;->ʻʼ(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object p1
 

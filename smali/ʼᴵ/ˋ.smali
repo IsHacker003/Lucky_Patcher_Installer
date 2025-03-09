@@ -484,7 +484,7 @@
     move-result-object v1
 
     .line 19
-    invoke-static {v1}, Lʼˏ/ⁱ;->ʻ(Landroid/content/pm/PackageManager;)Landroid/content/pm/PackageInstaller;
+    invoke-static {v1}, Lʼˏ/ᵢ;->ʻ(Landroid/content/pm/PackageManager;)Landroid/content/pm/PackageInstaller;
 
     .line 20
     .line 21

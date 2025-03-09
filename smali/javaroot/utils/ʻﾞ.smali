@@ -41,7 +41,7 @@
     .line 6
     .line 7
     .line 8
-    invoke-static {v2}, Lʼˏ/ᵢ;->ˑי(Ljava/lang/Object;)V
+    invoke-static {v2}, Lʼˏ/ᵔ;->ˑـ(Ljava/lang/Object;)V
 
     .line 9
     .line 10
@@ -57,7 +57,7 @@
 
     .line 15
     .line 16
-    invoke-static {}, Lʼˏ/ᵢ;->ˈי()Ljava/util/ArrayList;
+    invoke-static {}, Lʼˏ/ᵔ;->ˈי()Ljava/util/ArrayList;
 
     .line 17
     .line 18
@@ -374,7 +374,7 @@
 
     .line 177
     :cond_3
-    invoke-static {}, Lʼˏ/ᵢ;->ʼـ()V
+    invoke-static {}, Lʼˏ/ᵔ;->ʼـ()V
 
     .line 178
     .line 179

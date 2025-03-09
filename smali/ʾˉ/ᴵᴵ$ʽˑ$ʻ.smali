@@ -44,11 +44,11 @@
     .locals 0
 
     .line 1
-    sget-object p1, Lʾˉ/ᴵᴵ;->ʼﾞ:Lru/aaaaacce/installer/MainActivity;
+    sget-object p1, Lʾˉ/ᴵᴵ;->ʼﾞ:Lru/aaaaaccg/installer/MainActivity;
 
     .line 2
     .line 3
-    invoke-virtual {p1}, Lru/aaaaacce/installer/MainActivity;->finish()V
+    invoke-virtual {p1}, Lru/aaaaaccg/installer/MainActivity;->finish()V
 
     .line 4
     .line 5
